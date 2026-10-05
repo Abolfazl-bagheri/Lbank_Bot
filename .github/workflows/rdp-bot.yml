@@ -60,34 +60,11 @@ jobs:
           Write-Host "RDP IP: $ts_ip"
           Write-Host "User: NvDAdmin"
 
-      - name: Start Telegram bot (background)
+            - name: Run bot until job timeout (~6h)
         shell: pwsh
         run: |
-          $dir = $env:GITHUB_WORKSPACE
-          Set-Location $dir
-          Write-Host "Files:" (Get-ChildItem | Select-Object -ExpandProperty Name)
+          Set-Location $env:GITHUB_WORKSPACE
+          Write-Host "Starting bot from: $(Get-Location)"
           Select-String -Path "bot.py" -Pattern "BOT_VERSION" | ForEach-Object { $_.Line }
-          Start-Process -FilePath "python" `
-            -ArgumentList "-u", "bot.py" `
-            -WorkingDirectory $dir `
-            -RedirectStandardOutput "$dir\bot_out.log" `
-            -RedirectStandardError "$dir\bot_err.log" `
-            -WindowStyle Hidden
-          Start-Sleep -Seconds 8
-          Write-Host "=== bot_out.log ==="
-          if (Test-Path bot_out.log) { Get-Content bot_out.log -Tail 30 } else { Write-Host "no out log" }
-          Write-Host "=== bot_err.log ==="
-          if (Test-Path bot_err.log) { Get-Content bot_err.log -Tail 30 } else { Write-Host "no err log" }
-          $p = Get-Process python -ErrorAction SilentlyContinue
-          if ($p) { Write-Host "python running PID:" $p.Id } else { Write-Host "WARNING: python not running" }
-
-      - name: Keep alive + save state every 30 min
-        shell: pwsh
-        run: |
-          # ~6 hours (timeout job = 360 min)
-          for ($i = 1; $i -le 360; $i++) {
-            Start-Sleep -Seconds 60
-            if ($i % 30 -eq 0) {
-              Write-Host "[$i] heartbeat — state file exists? $(Test-Path bot_state.json)"
-            }
-          }
+          # -u = لاگ بدون بافر؛ تا آخر جاب (حدود ۶ ساعت) همین‌جا می‌ماند
+          python -u bot.py
