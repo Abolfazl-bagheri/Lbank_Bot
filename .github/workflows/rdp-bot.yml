@@ -60,11 +60,10 @@ jobs:
           Write-Host "RDP IP: $ts_ip"
           Write-Host "User: NvDAdmin"
 
-            - name: Run bot until job timeout (~6h)
+      - name: Run bot until job timeout (~6h)
         shell: pwsh
         run: |
           Set-Location $env:GITHUB_WORKSPACE
           Write-Host "Starting bot from: $(Get-Location)"
           Select-String -Path "bot.py" -Pattern "BOT_VERSION" | ForEach-Object { $_.Line }
-          # -u = لاگ بدون بافر؛ تا آخر جاب (حدود ۶ ساعت) همین‌جا می‌ماند
           python -u bot.py
