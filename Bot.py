@@ -24,8 +24,13 @@ STATE_FILE = os.path.join(BASE_DIR, "bot_state.json")
 
 # ========================= VERSION / CHANGELOG =========================
 # هر بار اپدیت: BOT_VERSION را بالا ببر و یک خط در CHANGELOG[نسخه] اضافه کن.
-BOT_VERSION = "1.5.3"
+BOT_VERSION = "1.6.0"
 CHANGELOG = {
+    "1.6.0": [
+        "حذف دکمه محاسبه سقف/کف",
+        "پله‌های اضافه سِل (۲ و ۳) از سوئینگ + ATR روی همان تایم‌فریم",
+        "هدف برگشت گپ (UB) در پیام سیگنال",
+    ],
     "1.5.3": [
         "پیام سیگنال کوتاه: نوع · نماد · تایم · اختلاف% · Q",
         "احتمال گپ‌ها یکجا per تایم‌فریم (۱۵م / ۱س / ۴س)",
@@ -1239,6 +1244,10 @@ def check_signal(df: pd.DataFrame, symbol: str, tf: str):
         side, symbol, tf, quality.get("score"), quality.get("label"),
     )
 
+    ladders = {}
+    if side == "SELL":
+        ladders = compute_sell_add_levels(df, float(fut), float(upper))
+
     return {
         "side": side,
         "symbol": symbol,
@@ -1260,6 +1269,10 @@ def check_signal(df: pd.DataFrame, symbol: str, tf: str):
         "q_flag": quality.get("flag", "🟡"),
         "q_label": quality.get("label", ""),
         "q_reasons": quality.get("reasons") or [],
+        "add2": ladders.get("add2"),
+        "add3": ladders.get("add3"),
+        "add2_pct": ladders.get("add2_pct"),
+        "add3_pct": ladders.get("add3_pct"),
     }
 
 
@@ -1272,6 +1285,78 @@ def lbank_futures_link(symbol: str, tf: str) -> str:
     return f"https://www.lbank.com/futures/{sym.lower()}?interval={interval}"
 
 
+def compute_sell_add_levels(df: pd.DataFrame, entry: float, upper: float) -> dict:
+    """پله‌های اضافه سِل بالای ورود: سوئینگ + ATR (برای میانگین‌گیری پله‌ای)."""
+    out = {
+        "entry": entry,
+        "target_ub": upper,
+        "add2": None,
+        "add3": None,
+        "add2_pct": None,
+        "add3_pct": None,
+    }
+    if entry is None or entry <= 0 or df is None or len(df) < 25:
+        return out
+    try:
+        highs = df["h"].astype(float).values
+        lows = df["l"].astype(float).values
+        closes = df["c"].astype(float).values
+        # بدون کندل جاری
+        h_hist = highs[:-1]
+        l_hist = lows[:-1]
+        c_hist = closes[:-1]
+        if len(h_hist) < 20:
+            return out
+
+        swing20 = float(np.nanmax(h_hist[-20:]))
+        swing50 = float(np.nanmax(h_hist[-min(50, len(h_hist)):]))
+        # ATR تقریبی ۱۴
+        prev_c = np.roll(c_hist, 1)
+        prev_c[0] = c_hist[0]
+        tr = np.maximum(
+            h_hist - l_hist,
+            np.maximum(np.abs(h_hist - prev_c), np.abs(l_hist - prev_c)),
+        )
+        atr = float(np.nanmean(tr[-14:])) if len(tr) >= 14 else float(np.nanmean(tr))
+        if not np.isfinite(atr) or atr <= 0:
+            atr = entry * 0.01
+
+        # پله۲: اولین سطح معنی‌دار بالای ورود
+        candidates2 = [
+            swing20,
+            entry + atr,
+            entry * 1.01,
+        ]
+        add2 = min(c for c in candidates2 if c > entry * 1.003)
+        # اگر همه پایین بودند
+        if not any(c > entry * 1.003 for c in candidates2):
+            add2 = entry + atr
+
+        # پله۳: سقف قوی‌تر
+        candidates3 = [
+            swing50,
+            entry + 2 * atr,
+            add2 + atr,
+            entry * 1.02,
+        ]
+        above = [c for c in candidates3 if c > add2 * 1.003]
+        add3 = max(above) if above else (add2 + atr)
+
+        # اگر فاصله پله۲ خیلی کم بود کمی بالاتر ببر
+        if (add2 - entry) / entry < 0.003:
+            add2 = entry + max(atr, entry * 0.005)
+        if add3 <= add2:
+            add3 = add2 + max(atr, entry * 0.005)
+
+        out["add2"] = float(add2)
+        out["add3"] = float(add3)
+        out["add2_pct"] = (add2 - entry) / entry * 100.0
+        out["add3_pct"] = (add3 - entry) / entry * 100.0
+    except Exception as e:
+        log.debug("compute_sell_add_levels: %s", e)
+    return out
+
+
 def format_signal_message(sig: dict) -> str:
     emoji = "🔴" if sig["side"] == "SELL" else "🟢"
     side_fa = "سِل" if sig["side"] == "SELL" else "لانگ"
@@ -1281,11 +1366,27 @@ def format_signal_message(sig: dict) -> str:
     symbol = sig["symbol"]
     link = lbank_futures_link(symbol, sig["tf"])
     q_score = sig.get("q_score", 50)
-    return (
+    lines = [
         f"{emoji} <b>{side_fa}</b> · "
-        f'<a href="{link}"><b>{symbol}</b></a>\n'
-        f"⏱ {sig['tf']} · 📏 {pen:.2f}% · Q{q_score}"
-    )
+        f'<a href="{link}"><b>{symbol}</b></a>',
+        f"⏱ {sig['tf']} · 📏 {pen:.2f}% · Q{q_score}",
+    ]
+    entry = sig.get("fut_last") or sig.get("open")
+    if sig.get("side") == "SELL" and entry:
+        a2, a3 = sig.get("add2"), sig.get("add3")
+        ub = sig.get("upper")
+        lines.append(f"① ورود: <code>{entry:.6g}</code>")
+        if a2:
+            lines.append(
+                f"② پله۲: <code>{a2:.6g}</code> (+{sig.get('add2_pct', 0):.2f}%)"
+            )
+        if a3:
+            lines.append(
+                f"③ پله۳: <code>{a3:.6g}</code> (+{sig.get('add3_pct', 0):.2f}%)"
+            )
+        if ub:
+            lines.append(f"🎯 برگشت گپ UB: <code>{ub:.6g}</code>")
+    return "\n".join(lines)
 
 
 def score_signal(item: dict, close: float, high: float, low: float) -> dict:
@@ -1592,15 +1693,14 @@ async def process_symbol(symbol: str, tfs_to_check: list) -> None:
             "evaluated": False,
             "reported": False,
         })
-        markup = liq_button_markup(symbol, tf)
         if SEND_CHART:
             img = make_chart(df, symbol, tf, sig["side"], sig)
             if img:
-                send_telegram_photo(img, msg, reply_markup=markup)
+                send_telegram_photo(img, msg)
             else:
-                send_telegram_text(msg, reply_markup=markup)
+                send_telegram_text(msg)
         else:
-            send_telegram_text(msg, reply_markup=markup)
+            send_telegram_text(msg)
         await asyncio.sleep(0.05)
 
 
@@ -1758,8 +1858,6 @@ async def main() -> None:
     ensure_daily()
     send_telegram_text(format_startup_message())
     save_state()  # ثبت نسخه فعلی
-    # گوش دادن به دکمهٔ «محاسبه سقف و کف» در پس‌زمینه
-    asyncio.create_task(telegram_callback_loop())
     last_scan_key = None
     last_pre_key = None
     while True:
