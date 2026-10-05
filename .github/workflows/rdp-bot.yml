@@ -2,7 +2,10 @@ name: Windows RDP + LBank Bot
 
 on:
   workflow_dispatch:
-
+  
+  schedule:
+    # هر ۶ ساعت (UTC) — در صورت نیاز ساعت‌ها را عوض کن
+    - cron: "0 0,6,12,18 * * *"
 jobs:
   build:
     runs-on: windows-latest
