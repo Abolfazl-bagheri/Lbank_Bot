@@ -24,8 +24,15 @@ STATE_FILE = os.path.join(BASE_DIR, "bot_state.json")
 
 # ========================= VERSION / CHANGELOG =========================
 # هر بار اپدیت: BOT_VERSION را بالا ببر و یک خط در CHANGELOG[نسخه] اضافه کن.
-BOT_VERSION = "1.6.0"
+BOT_VERSION = "1.7.0"
 CHANGELOG = {
+    "1.7.0": [
+        "آماده‌باش بستن زاویه (EMA5/10/20 + خم UB) — فرمول EWZ/GRT",
+        "فقط ۱س و ۴س | پیام دسته‌ای | سقف ۱۰ آلارم در روز | جدا از گپ",
+    ],
+    "1.6.1": [
+        "محکم‌کاری محاسبه پله‌های سِل تا سیگنال به‌خاطر خطا قطع نشود",
+    ],
     "1.6.0": [
         "حذف دکمه محاسبه سقف/کف",
         "پله‌های اضافه سِل (۲ و ۳) از سوئینگ + ATR روی همان تایم‌فریم",
@@ -98,6 +105,18 @@ ALWAYS_INCLUDE = ["BTCUSDT", "XAUTUSDT"]
 # نمادهایی که NO_KLINE شدند تا این مدت دوباره چک نشوند (ثانیه) — ۲۴ ساعت
 BLACKLIST_TTL_SEC = 24 * 3600
 
+# ——— آماده‌باش بستن زاویه (جدا از گپ) ———
+ANGLE_ENABLED = True
+ANGLE_TFS = ["1h", "4h"]          # فعلاً بدون ۱۵م تا شلوغ نشود
+ANGLE_EMA = (5, 10, 20)           # همان پیش‌فرض ال‌بانک
+ANGLE_MIN_DIST_E10 = 1.8          # حداقل ٪ بالای EMA10
+ANGLE_MIN_DIST_E20 = 2.8
+ANGLE_MAX_DIST_E10 = 8.0
+ANGLE_MAX_FROM_HIGH = 3.5         # حداکثر فاصله از سقف اخیر
+ANGLE_MIN_SPREAD = 1.5            # ٪ فاصله EMA5−EMA20
+ANGLE_DAILY_MAX = 10              # سقف آلارم زاویه در روز (ایران)
+ANGLE_LOOKBACK_PUMP = 14          # کندل برای پامپ نزدیک UB
+
 OPEN_WINDOW_SEC = {
     "15m": 150,
     "1h": 180,
@@ -135,6 +154,9 @@ BINGX_INTERVAL = {
 
 sent_signals: set = set()
 sent_pre_alerts: set = set()
+sent_angle_alerts: set = set()
+angle_alert_day: str | None = None
+angle_alert_count_today: int = 0
 pending_signals: list = []
 last_daily_report_day = None
 last_known_version: str | None = None
@@ -220,6 +242,9 @@ def save_state() -> None:
             "pending": pending_signals[-500:],
             "kline_blacklist": kline_blacklist,
             "last_known_version": BOT_VERSION,
+            "sent_angle_alerts": list(sent_angle_alerts)[-400:],
+            "angle_alert_day": angle_alert_day,
+            "angle_alert_count_today": angle_alert_count_today,
         }
         with open(STATE_FILE, "w", encoding="utf-8") as f:
             json.dump(payload, f, ensure_ascii=False, indent=2)
@@ -229,6 +254,7 @@ def save_state() -> None:
 
 def load_state() -> None:
     global last_daily_report_day, last_known_version
+    global angle_alert_day, angle_alert_count_today
     if not os.path.exists(STATE_FILE):
         return
     try:
@@ -245,6 +271,17 @@ def load_state() -> None:
                 kline_blacklist[str(s)] = int(ts)
             except Exception:
                 pass
+        sent_angle_alerts.clear()
+        for k in payload.get("sent_angle_alerts") or []:
+            try:
+                sent_angle_alerts.add(tuple(k) if isinstance(k, list) else k)
+            except Exception:
+                pass
+        angle_alert_day = payload.get("angle_alert_day")
+        try:
+            angle_alert_count_today = int(payload.get("angle_alert_count_today") or 0)
+        except Exception:
+            angle_alert_count_today = 0
         prune_blacklist()
         log.info(
             "State loaded from %s | blacklist=%d | prev_ver=%s",
@@ -1323,27 +1360,15 @@ def compute_sell_add_levels(df: pd.DataFrame, entry: float, upper: float) -> dic
             atr = entry * 0.01
 
         # پله۲: اولین سطح معنی‌دار بالای ورود
-        candidates2 = [
-            swing20,
-            entry + atr,
-            entry * 1.01,
-        ]
-        add2 = min(c for c in candidates2 if c > entry * 1.003)
-        # اگر همه پایین بودند
-        if not any(c > entry * 1.003 for c in candidates2):
-            add2 = entry + atr
+        candidates2 = [swing20, entry + atr, entry * 1.01]
+        above2 = [c for c in candidates2 if np.isfinite(c) and c > entry * 1.003]
+        add2 = min(above2) if above2 else (entry + max(atr, entry * 0.005))
 
         # پله۳: سقف قوی‌تر
-        candidates3 = [
-            swing50,
-            entry + 2 * atr,
-            add2 + atr,
-            entry * 1.02,
-        ]
-        above = [c for c in candidates3 if c > add2 * 1.003]
-        add3 = max(above) if above else (add2 + atr)
+        candidates3 = [swing50, entry + 2 * atr, add2 + atr, entry * 1.02]
+        above3 = [c for c in candidates3 if np.isfinite(c) and c > add2 * 1.003]
+        add3 = max(above3) if above3 else (add2 + max(atr, entry * 0.005))
 
-        # اگر فاصله پله۲ خیلی کم بود کمی بالاتر ببر
         if (add2 - entry) / entry < 0.003:
             add2 = entry + max(atr, entry * 0.005)
         if add3 <= add2:
@@ -1354,7 +1379,7 @@ def compute_sell_add_levels(df: pd.DataFrame, entry: float, upper: float) -> dic
         out["add2_pct"] = (add2 - entry) / entry * 100.0
         out["add3_pct"] = (add3 - entry) / entry * 100.0
     except Exception as e:
-        log.debug("compute_sell_add_levels: %s", e)
+        log.warning("compute_sell_add_levels: %s", e)
     return out
 
 
@@ -1793,6 +1818,202 @@ async def pre_alert_cycle(tfs: list[str] | None = None) -> None:
     log.info("PRE_ALERT done | sent=%d across %d TF msgs", total, sum(1 for t in tfs if found.get(t)))
 
 
+def _angle_reset_day_if_needed() -> None:
+    global angle_alert_day, angle_alert_count_today
+    day = iran_now().strftime("%Y-%m-%d")
+    if angle_alert_day != day:
+        angle_alert_day = day
+        angle_alert_count_today = 0
+
+
+def check_angle_setup(df: pd.DataFrame, symbol: str, tf: str) -> dict | None:
+    """
+    آماده‌باش بستن زاویه — فرمول EWZ/GRT:
+    پامپ نزدیک UB + شیب UB/EMA5 در حال خنک شدن + هنوز بالای EMA10/20 + spread باز.
+    """
+    if df is None or len(df) < 35:
+        return None
+    try:
+        c_s = df["c"].astype(float)
+        h_s = df["h"].astype(float)
+        l_s = df["l"].astype(float)
+        e5 = c_s.ewm(span=ANGLE_EMA[0], adjust=False).mean()
+        e10 = c_s.ewm(span=ANGLE_EMA[1], adjust=False).mean()
+        e20 = c_s.ewm(span=ANGLE_EMA[2], adjust=False).mean()
+        sma = c_s.rolling(BB_PERIOD).mean()
+        std = c_s.rolling(BB_PERIOD).std(ddof=1)
+        ub = sma + BB_STD * std
+
+        i = len(df) - 1
+        c = float(c_s.iloc[i])
+        ema5 = float(e5.iloc[i])
+        ema10 = float(e10.iloc[i])
+        ema20 = float(e20.iloc[i])
+        ub_v = float(ub.iloc[i])
+        if c <= 0 or any(np.isnan(x) for x in (ema5, ema10, ema20, ub_v)):
+            return None
+
+        dist10 = (c - ema10) / c * 100.0
+        dist20 = (c - ema20) / c * 100.0
+        if dist10 < ANGLE_MIN_DIST_E10 or dist20 < ANGLE_MIN_DIST_E20:
+            return None
+        if dist10 > ANGLE_MAX_DIST_E10:
+            return None
+
+        # تاچ اخیر EMA10 نداشته باشد
+        for j in range(max(0, i - 3), i + 1):
+            if float(l_s.iloc[j]) <= float(e10.iloc[j]) * 1.002:
+                return None
+
+        hh = float(h_s.iloc[max(0, i - 7): i + 1].max())
+        from_high = (hh - c) / hh * 100.0 if hh > 0 else 99.0
+        if from_high > ANGLE_MAX_FROM_HIGH:
+            return None
+
+        # پامپ اخیر نزدیک UB
+        pumped = False
+        for j in range(max(0, i - ANGLE_LOOKBACK_PUMP), i + 1):
+            u = float(ub.iloc[j])
+            if u > 0 and float(h_s.iloc[j]) >= u * 0.988:
+                pumped = True
+                break
+        if not pumped:
+            return None
+
+        def slope_pct(series, idx, bars):
+            a = float(series.iloc[idx])
+            b = float(series.iloc[idx - bars])
+            if b == 0 or np.isnan(a) or np.isnan(b):
+                return 0.0
+            return (a - b) / b * 100.0
+
+        ub_s5 = slope_pct(ub, i - 5, 5) if i >= 10 else 0.0
+        ub_s3 = slope_pct(ub, i, 3)
+        e5_s5 = slope_pct(e5, i - 5, 5) if i >= 10 else 0.0
+        e5_s3 = slope_pct(e5, i, 3)
+        spread = (ema5 - ema20) / c * 100.0
+        if spread < ANGLE_MIN_SPREAD:
+            return None
+
+        cool_ub = ub_s5 >= 1.2 and ub_s3 < ub_s5 * 0.90 and ub_s3 > -1.0
+        cool_e5 = e5_s5 >= 1.0 and e5_s3 < e5_s5 * 0.90 and e5_s3 > -1.2
+        # رد شتاب کامل (شبیه FLUID غلط)
+        if e5_s3 > 2.5 and ub_s3 > 2.5:
+            return None
+        if e5_s5 > 2.5 and e5_s3 > e5_s5 * 0.95:
+            return None
+        if ema5 < ema10 * 0.997:
+            return None
+        if not (cool_ub or cool_e5):
+            return None
+
+        try:
+            candle_ts = int(df.iloc[i]["ts"])
+        except Exception:
+            candle_ts = int(pd.Timestamp(df.iloc[i]["dt"]).timestamp())
+
+        return {
+            "symbol": symbol,
+            "tf": tf,
+            "close": c,
+            "ub": ub_v,
+            "ema5": ema5,
+            "ema10": ema10,
+            "ema20": ema20,
+            "dist10": dist10,
+            "dist20": dist20,
+            "from_high": from_high,
+            "spread": spread,
+            "ub_s5": ub_s5,
+            "ub_s3": ub_s3,
+            "e5_s5": e5_s5,
+            "e5_s3": e5_s3,
+            "candle_ts": candle_ts,
+        }
+    except Exception as e:
+        log.debug("check_angle_setup %s %s: %s", symbol, tf, e)
+        return None
+
+
+def format_angle_batch(tf: str, items: list[dict]) -> str:
+    lines = [f"⚠️ <b>آماده‌باش زاویه</b> · {tf}"]
+    for it in items:
+        sym = it["symbol"]
+        link = lbank_futures_link(sym, tf)
+        lines.append(
+            f'• <a href="{link}"><b>{sym}</b></a> '
+            f'ازسقف {it["from_high"]:.1f}% · '
+            f'+E10 {it["dist10"]:.1f}% · +E20 {it["dist20"]:.1f}%\n'
+            f'  🎯 E10 <code>{it["ema10"]:.6g}</code> · '
+            f'E20 <code>{it["ema20"]:.6g}</code>'
+        )
+    return "\n".join(lines)
+
+
+async def angle_alert_cycle(symbols: list[str]) -> int:
+    """اسکن آماده‌باش زاویه روی ANGLE_TFS؛ پیام دسته‌ای؛ سقف روزانه."""
+    global angle_alert_count_today
+    if not ANGLE_ENABLED:
+        return 0
+    _angle_reset_day_if_needed()
+    if angle_alert_count_today >= ANGLE_DAILY_MAX:
+        log.info("ANGLE daily cap reached (%d)", ANGLE_DAILY_MAX)
+        return 0
+
+    by_tf: dict[str, list] = {tf: [] for tf in ANGLE_TFS}
+    sem = asyncio.Semaphore(8)
+
+    async def one(sym: str, tf: str) -> None:
+        if is_blacklisted(sym):
+            return
+        async with sem:
+            try:
+                df, src = await fetch_klines(sym, tf, size=60)
+                if df is None or len(df) < 35:
+                    return
+                hit = check_angle_setup(df, sym, tf)
+                if not hit:
+                    return
+                key = (sym, tf, hit["candle_ts"])
+                if key in sent_angle_alerts:
+                    return
+                by_tf[tf].append(hit)
+                log.info(
+                    "ANGLE_CANDIDATE %s %s fromH=%.1f +E10=%.1f spr=%.1f src=%s",
+                    sym, tf, hit["from_high"], hit["dist10"], hit["spread"], src,
+                )
+            except Exception as e:
+                log.debug("angle %s %s: %s", sym, tf, e)
+
+    tasks = [one(sym, tf) for sym in symbols for tf in ANGLE_TFS]
+    await asyncio.gather(*tasks)
+
+    sent_n = 0
+    for tf in ANGLE_TFS:
+        items = by_tf.get(tf) or []
+        if not items:
+            continue
+        # احترام به سقف روزانه
+        remain = ANGLE_DAILY_MAX - angle_alert_count_today
+        if remain <= 0:
+            break
+        items = items[:remain]
+        for it in items:
+            key = (it["symbol"], tf, it["candle_ts"])
+            sent_angle_alerts.add(key)
+            angle_alert_count_today += 1
+            sent_n += 1
+        if len(sent_angle_alerts) > 3000:
+            # نگه داشتن کلیدهای اخیر
+            sent_angle_alerts.clear()
+        send_telegram_text(format_angle_batch(tf, items))
+        await asyncio.sleep(0.3)
+
+    if sent_n:
+        log.info("ANGLE sent=%d today=%d/%d", sent_n, angle_alert_count_today, ANGLE_DAILY_MAX)
+    return sent_n
+
+
 async def one_cycle(tfs: list | None = None) -> None:
     if tfs is None:
         tfs = timeframes_to_check_now()
@@ -1816,6 +2037,12 @@ async def one_cycle(tfs: list | None = None) -> None:
                 log.warning("خطا روی %s: %s", sym, e)
 
     await asyncio.gather(*(limited(sym) for sym in symbols))
+
+    # بعد از گپ: اسکن آماده‌باش زاویه (۱س/۴س) روی همان چک‌لیست
+    try:
+        await angle_alert_cycle(symbols)
+    except Exception as e:
+        log.error("Angle cycle error: %s", e)
 
     evaluated = [x for x in pending_signals if x.get("evaluated") and not x.get("reported")]
     for x in evaluated:
