@@ -65,8 +65,9 @@ CHANGELOG = {
     ],
 }
 
-TELEGRAM_TOKEN = "8750093707:AAEL73X5nl-uPgsWzLpF7bFdski4vGl3DP8"
-CHAT_ID = "-5426058105"
+import os
+TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN", "")
+CHAT_ID = os.environ.get("CHAT_ID", "")
 
 TIMEFRAMES = {
     "15m": "15min",
