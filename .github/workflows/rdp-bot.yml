@@ -63,10 +63,9 @@ jobs:
           Write-Host "RDP IP: $ts_ip"
           Write-Host "User: NvDAdmin"
 
-      - name: Run bot until job timeout (~6h)
-        shell: pwsh
+      - name: Run bot (~6h)
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          CHAT_ID: ${{ secrets.CHAT_ID }}
         run: |
-          Set-Location $env:GITHUB_WORKSPACE
-          Write-Host "Starting bot from: $(Get-Location)"
-          Select-String -Path "bot.py" -Pattern "BOT_VERSION" | ForEach-Object { $_.Line }
           python -u bot.py
