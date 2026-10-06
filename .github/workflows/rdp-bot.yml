@@ -62,7 +62,9 @@ jobs:
           $ts_ip = & "C:\Program Files\Tailscale\tailscale.exe" ip -4
           Write-Host "RDP IP: $ts_ip"
           Write-Host "User: NvDAdmin"
-
+      - name: Show bot version on disk
+        run: |
+          grep BOT_VERSION bot.py | head -3
       - name: Run bot (~6h)
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
