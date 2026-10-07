@@ -24,8 +24,12 @@ STATE_FILE = os.path.join(BASE_DIR, "bot_state.json")
 
 # ========================= VERSION / CHANGELOG =========================
 # هر بار اپدیت: BOT_VERSION را بالا ببر و یک خط در CHANGELOG[نسخه] اضافه کن.
-BOT_VERSION = "1.8.0"
+BOT_VERSION = "1.8.1"
 CHANGELOG = {
+    "1.8.1": [
+        "زاویه: تایم‌فریم ۵م و ۱۵م به دکمه و اسکن اضافه شد",
+        "گپ: دکمه ۵م هم اضافه شد",
+    ],
     "1.8.0": [
         "حالت درخواستی: دکمه‌های گپ و زاویه + انتخاب تایم‌فریم",
         "اسکن همیشگی خاموش — فقط وقتی دکمه بزنی اسکن می‌کند",
@@ -82,6 +86,7 @@ TELEGRAM_TOKEN = os.environ.get(
 CHAT_ID = os.environ.get("CHAT_ID", "-5426058105")
 
 TIMEFRAMES = {
+    "5m": "5min",
     "15m": "15min",
     "1h": "1hr",
     "4h": "4hr",
@@ -112,7 +117,7 @@ BLACKLIST_TTL_SEC = 24 * 3600
 
 # ——— آماده‌باش بستن زاویه (جدا از گپ) ———
 ANGLE_ENABLED = True
-ANGLE_TFS = ["1h", "4h"]          # فعلاً بدون ۱۵م تا شلوغ نشود
+ANGLE_TFS = ["5m", "15m", "1h", "4h"]
 ANGLE_EMA = (5, 10, 20)           # همان پیش‌فرض ال‌بانک
 ANGLE_MIN_DIST_E10 = 1.8          # حداقل ٪ بالای EMA10
 ANGLE_MIN_DIST_E20 = 2.8
@@ -123,6 +128,7 @@ ANGLE_DAILY_MAX = 10              # سقف آلارم زاویه در روز (ا
 ANGLE_LOOKBACK_PUMP = 14          # کندل برای پامپ نزدیک UB
 
 OPEN_WINDOW_SEC = {
+    "5m": 120,
     "15m": 150,
     "1h": 180,
     "4h": 180,
@@ -130,13 +136,14 @@ OPEN_WINDOW_SEC = {
 }
 
 PERIOD_SEC = {
+    "5m": 5 * 60,
     "15m": 15 * 60,
     "1h": 60 * 60,
     "4h": 4 * 60 * 60,
     "1d": 24 * 60 * 60,
 }
 
-TF_ORDER = {"15m": 0, "1h": 1, "4h": 2, "1d": 3}
+TF_ORDER = {"5m": 0, "15m": 1, "1h": 2, "4h": 3, "1d": 4}
 
 FUTURES_TICKERS_URL = (
     "https://lbkperp.lbank.com/cfd/openApi/v1/pub/marketData?productGroup=SwapU"
@@ -145,12 +152,14 @@ SPOT_WS_URL = "wss://api.lbank.info/ws/V2/"
 
 # fallback intervals for Gate / BingX when LBank spot has no pair
 GATE_INTERVAL = {
+    "5m": "5m",
     "15m": "15m",
     "1h": "1h",
     "4h": "4h",
     "1d": "1d",
 }
 BINGX_INTERVAL = {
+    "5m": "5m",
     "15m": "15m",
     "1h": "1h",
     "4h": "4h",
@@ -1327,7 +1336,7 @@ def check_signal(df: pd.DataFrame, symbol: str, tf: str, on_demand: bool = False
 def lbank_futures_link(symbol: str, tf: str) -> str:
     """لینک فیوچرز ال‌بانک؛ interval برای لود تایم‌فریم روی وب."""
     sym = symbol.upper()
-    interval_map = {"15m": "15m", "1h": "1h", "4h": "4h", "1d": "1d"}
+    interval_map = {"5m": "5m", "15m": "15m", "1h": "1h", "4h": "4h", "1d": "1d"}
     interval = interval_map.get(tf, "15m")
     # universal/https — روی موبایل اگر اپ نصب باشد ممکن است پیشنهاد Open in App بدهد
     return f"https://www.lbank.com/futures/{sym.lower()}?interval={interval}"
@@ -2132,20 +2141,27 @@ def tf_keyboard(mode: str) -> dict:
     if mode == "angle":
         rows = [
             [
+                {"text": "5m", "callback_data": "scan:angle:5m"},
+                {"text": "15m", "callback_data": "scan:angle:15m"},
+            ],
+            [
                 {"text": "1h", "callback_data": "scan:angle:1h"},
                 {"text": "4h", "callback_data": "scan:angle:4h"},
             ],
-            [{"text": "1h + 4h", "callback_data": "scan:angle:1h,4h"}],
+            [{"text": "همه (5m+15m+1h+4h)", "callback_data": "scan:angle:5m,15m,1h,4h"}],
             [{"text": "« بازگشت", "callback_data": "menu"}],
         ]
     else:
         rows = [
             [
+                {"text": "5m", "callback_data": "scan:gap:5m"},
                 {"text": "15m", "callback_data": "scan:gap:15m"},
+            ],
+            [
                 {"text": "1h", "callback_data": "scan:gap:1h"},
                 {"text": "4h", "callback_data": "scan:gap:4h"},
             ],
-            [{"text": "همه (15m+1h+4h)", "callback_data": "scan:gap:15m,1h,4h"}],
+            [{"text": "همه (5m+15m+1h+4h)", "callback_data": "scan:gap:5m,15m,1h,4h"}],
             [{"text": "« بازگشت", "callback_data": "menu"}],
         ]
     return {"inline_keyboard": rows}
