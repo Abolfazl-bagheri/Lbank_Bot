@@ -24,8 +24,11 @@ STATE_FILE = os.path.join(BASE_DIR, "bot_state.json")
 
 # ========================= VERSION / CHANGELOG =========================
 # هر بار اپدیت: BOT_VERSION را بالا ببر و یک خط در CHANGELOG[نسخه] اضافه کن.
-BOT_VERSION = "1.9.0"
+BOT_VERSION = "1.9.1"
 CHANGELOG = {
+    "1.9.1": [
+        "رفع کندی شدید اتومات: زاویه فقط همان TF دور، بدون چارت، نماد کمتر، بدون انتظار کندل",
+    ],
     "1.9.0": [
         "حالت ترکیبی: اتومات در گروه (گپ + احتمال گپ + زاویه 5m/15m/1h/4h)",
         "دکمه درخواستی → نتیجه فقط در پیوی همان نفر",
@@ -134,10 +137,20 @@ TOP_VOLUME = 50
 ONDEMAND_TOP_GAINERS = 18
 ONDEMAND_TOP_VOLUME = 15
 ONDEMAND_FETCH_CONCURRENCY = 18
-SEND_CHART = True
+# چارت matplotlib روی سرور خیلی کند است — پیش‌فرض خاموش
+SEND_CHART = False
 ONLY_SELL = True
 # hybrid = اتومات گروه + دکمه پیوی | ondemand | auto
 BOT_MODE = os.environ.get("BOT_MODE", "hybrid").strip().lower()
+# اتومات: تعداد نماد کمتر روی TFهای ریز = تمام شدن قبل از بسته شدن پنجره
+AUTO_TOP_BY_TF = {
+    "5m": (12, 8),
+    "15m": (16, 10),
+    "1h": (22, 12),
+    "4h": (25, 15),
+    "1d": (20, 10),
+}
+AUTO_FETCH_CONCURRENCY = 20
 ALWAYS_INCLUDE = ["BTCUSDT", "XAUTUSDT"]
 # نمادهایی که NO_KLINE شدند تا این مدت دوباره چک نشوند (ثانیه) — ۲۴ ساعت
 BLACKLIST_TTL_SEC = 24 * 3600
@@ -1756,27 +1769,9 @@ async def process_symbol(
         expected_open = (now // period) * period
         df = None
         src = None
-        attempts = 1 if on_demand else 3
-        ksize = 45 if on_demand else 70
-        for attempt in range(attempts):
-            df, src = await fetch_klines(symbol, tf, size=ksize, prefer_rest=True)
-            if df is None or len(df) < BB_PERIOD + 2:
-                if not on_demand:
-                    await asyncio.sleep(0.5)
-                continue
-            try:
-                last_ts = int(df.iloc[-1]["ts"])
-            except Exception:
-                last_ts = int(pd.Timestamp(df.iloc[-1]["dt"]).timestamp())
-            if on_demand or last_ts >= expected_open:
-                break
-            if not on_demand:
-                log.info(
-                    "WAIT_CANDLE %s %s | got_ts=%s expected=%s try=%d src=%s",
-                    symbol, tf, last_ts, expected_open, attempt + 1, src,
-                )
-                await asyncio.sleep(0.5)
-            df = None
+        # یک‌بار بگیر؛ منتظر کندل جدید نمان (پنجره age در check_signal کافی است)
+        ksize = 40
+        df, src = await fetch_klines(symbol, tf, size=ksize, prefer_rest=True)
         if df is None or len(df) < BB_PERIOD + 2:
             continue
         if not on_demand:
@@ -1830,7 +1825,9 @@ async def pre_alert_cycle(tfs: list[str] | None = None) -> None:
     if not tfs:
         return
 
-    symbols = get_top_movers(TOP_GAINERS)
+    primary = tfs[0] if tfs else "15m"
+    n_g, n_v = AUTO_TOP_BY_TF.get(primary, (18, 10))
+    symbols = get_top_movers(n_g, vol_n=n_v)
     if not symbols:
         return
     priority = [s for s in ALWAYS_INCLUDE if s in symbols]
@@ -1839,7 +1836,7 @@ async def pre_alert_cycle(tfs: list[str] | None = None) -> None:
 
     now = int(time.time())
     log.info("PRE_ALERT scan | TFs=%s | %d نماد", ",".join(tfs), len(symbols))
-    sem = asyncio.Semaphore(8)
+    sem = asyncio.Semaphore(AUTO_FETCH_CONCURRENCY)
     # جمع‌آوری نتایج per تایم‌فریم → یک پیام واحد
     found: dict[str, list] = {tf: [] for tf in tfs}
     lock = asyncio.Lock()
@@ -2127,15 +2124,19 @@ async def one_cycle(tfs: list | None = None) -> None:
         tfs = timeframes_to_check_now()
     if not tfs:
         return
+    t0 = time.time()
     tfs = sorted(tfs, key=lambda x: TF_ORDER.get(x, 99))
-    symbols = get_top_movers(TOP_GAINERS)
+    # تعداد نماد را با کوچک‌ترین TF دور تنظیم کن (۵م = لیست کوتاه)
+    primary = tfs[0]
+    n_g, n_v = AUTO_TOP_BY_TF.get(primary, (TOP_GAINERS, TOP_VOLUME))
+    symbols = get_top_movers(n_g, vol_n=n_v)
     if not symbols:
         return
-    # بیت‌کوین و طلا اول چک شوند تا از پنجرهٔ باز شدن کندل جا نمانند
     priority = [s for s in ALWAYS_INCLUDE if s in symbols]
     rest = [s for s in symbols if s not in ALWAYS_INCLUDE]
     symbols = priority + rest
-    sem = asyncio.Semaphore(10)
+    log.info("one_cycle start TFs=%s symbols=%d", ",".join(tfs), len(symbols))
+    sem = asyncio.Semaphore(AUTO_FETCH_CONCURRENCY)
 
     async def limited(sym: str) -> None:
         async with sem:
@@ -2145,12 +2146,18 @@ async def one_cycle(tfs: list | None = None) -> None:
                 log.warning("خطا روی %s: %s", sym, e)
 
     await asyncio.gather(*(limited(sym) for sym in symbols))
+    log.info("gap scan done in %.1fs signals=%d", time.time() - t0, stats["signal_ok"])
 
-    # بعد از گپ: اسکن آماده‌باش زاویه (۱س/۴س) روی همان چک‌لیست
-    try:
-        await angle_alert_cycle(symbols)  # returns (n, texts)
-    except Exception as e:
-        log.error("Angle cycle error: %s", e)
+    # زاویه فقط روی همان TFهایی که این دور باز شده‌اند (نه هر ۴ تایم‌فریم!)
+    angle_tfs = [t for t in tfs if t in ANGLE_TFS]
+    if angle_tfs:
+        try:
+            t1 = time.time()
+            await angle_alert_cycle(symbols, tfs=angle_tfs)
+            log.info("angle scan done in %.1fs TFs=%s", time.time() - t1, ",".join(angle_tfs))
+        except Exception as e:
+            log.error("Angle cycle error: %s", e)
+    log.info("one_cycle total %.1fs", time.time() - t0)
 
     evaluated = [x for x in pending_signals if x.get("evaluated") and not x.get("reported")]
     for x in evaluated:
