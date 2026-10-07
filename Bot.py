@@ -24,8 +24,11 @@ STATE_FILE = os.path.join(BASE_DIR, "bot_state.json")
 
 # ========================= VERSION / CHANGELOG =========================
 # هر بار اپدیت: BOT_VERSION را بالا ببر و یک خط در CHANGELOG[نسخه] اضافه کن.
-BOT_VERSION = "1.8.1"
+BOT_VERSION = "1.8.2"
 CHANGELOG = {
+    "1.8.2": [
+        "دکمه تک‌نماد: نام ارز → گپ یا زاویه → تایم‌فریم → اسکن همان نماد",
+    ],
     "1.8.1": [
         "زاویه: تایم‌فریم ۵م و ۱۵م به دکمه و اسکن اضافه شد",
         "گپ: دکمه ۵م هم اضافه شد",
@@ -177,6 +180,8 @@ last_known_version: str | None = None
 futures_last_map: dict = {}
 # symbol -> unix time که بلک‌لیست شده
 kline_blacklist: dict[str, int] = {}
+# chat_id -> {"step": "symbol"|"kind", "symbol": "BTCUSDT", "mode": "gap"|"angle"}
+user_sessions: dict[str, dict] = {}
 
 daily = {"day": None, "by_tf": {}}
 
@@ -2131,7 +2136,22 @@ def main_menu_keyboard() -> dict:
             [
                 {"text": "🔍 گپ", "callback_data": "mode:gap"},
                 {"text": "⚠️ زاویه", "callback_data": "mode:angle"},
-            ]
+            ],
+            [
+                {"text": "📌 تک‌نماد", "callback_data": "mode:single"},
+            ],
+        ]
+    }
+
+
+def kind_keyboard() -> dict:
+    return {
+        "inline_keyboard": [
+            [
+                {"text": "🔍 گپ", "callback_data": "kind:gap"},
+                {"text": "⚠️ زاویه", "callback_data": "kind:angle"},
+            ],
+            [{"text": "« بازگشت", "callback_data": "menu"}],
         ]
     }
 
@@ -2167,22 +2187,47 @@ def tf_keyboard(mode: str) -> dict:
     return {"inline_keyboard": rows}
 
 
-async def on_demand_gap_scan(tfs: list[str], chat_id: str | int) -> None:
+def normalize_symbol(text: str) -> str | None:
+    """btc / btcusdt / BTC-USDT → BTCUSDT"""
+    if not text:
+        return None
+    s = text.strip().upper().replace("-", "").replace("/", "").replace("_", "").replace(" ", "")
+    if not s or len(s) > 20:
+        return None
+    if not s.endswith("USDT"):
+        s = s + "USDT"
+    # فقط حروف و عدد
+    if not all(c.isalnum() for c in s):
+        return None
+    return s
+
+
+def clear_session(chat_id) -> None:
+    user_sessions.pop(str(chat_id), None)
+
+
+async def on_demand_gap_scan(
+    tfs: list[str],
+    chat_id: str | int,
+    symbols: list[str] | None = None,
+) -> None:
     for k in stats:
         stats[k] = 0
-    symbols = get_top_movers(TOP_GAINERS)
-    if not symbols:
-        send_telegram_text("لیست نمادها خالی بود.", chat_id=chat_id)
-        return
-    priority = [s for s in ALWAYS_INCLUDE if s in symbols]
-    rest = [s for s in symbols if s not in ALWAYS_INCLUDE]
-    symbols = priority + rest
+    if symbols is None:
+        symbols = get_top_movers(TOP_GAINERS)
+        if not symbols:
+            send_telegram_text("لیست نمادها خالی بود.", chat_id=chat_id)
+            return
+        priority = [s for s in ALWAYS_INCLUDE if s in symbols]
+        rest = [s for s in symbols if s not in ALWAYS_INCLUDE]
+        symbols = priority + rest
     send_telegram_text(
         f"🔍 اسکن گپ · <b>{', '.join(tfs)}</b>\n"
-        f"نمادها: {len(symbols)} · لطفاً صبر کن…",
+        f"نمادها: <code>{', '.join(symbols[:8])}</code>"
+        f"{'…' if len(symbols) > 8 else ''} ({len(symbols)}) · صبر کن…",
         chat_id=chat_id,
     )
-    chart_budget = [5]  # حداکثر ۵ چارت در هر اسکن
+    chart_budget = [5 if len(symbols) > 1 else 3]
     sem = asyncio.Semaphore(10)
 
     async def limited(sym: str) -> None:
@@ -2197,15 +2242,16 @@ async def on_demand_gap_scan(tfs: list[str], chat_id: str | int) -> None:
     await asyncio.gather(*(limited(s) for s in symbols))
     n = stats["signal_ok"]
     clock = iran_now().strftime("%H:%M")
+    label = symbols[0] if len(symbols) == 1 else f"{len(symbols)} نماد"
     if n == 0:
         send_telegram_text(
-            f"🔍 گپ · <b>{', '.join(tfs)}</b>\nهیچ سیگنالی نبود · {clock}",
+            f"🔍 گپ · <b>{label}</b> · {', '.join(tfs)}\nهیچ سیگنالی نبود · {clock}",
             chat_id=chat_id,
             reply_markup=main_menu_keyboard(),
         )
     else:
         send_telegram_text(
-            f"🔍 گپ تمام · <b>{n}</b> سیگنال · {clock}",
+            f"🔍 گپ تمام · <b>{label}</b> · <b>{n}</b> سیگنال · {clock}",
             chat_id=chat_id,
             reply_markup=main_menu_keyboard(),
         )
@@ -2213,30 +2259,41 @@ async def on_demand_gap_scan(tfs: list[str], chat_id: str | int) -> None:
         stats[k] = 0
 
 
-async def on_demand_angle_scan(tfs: list[str], chat_id: str | int) -> None:
-    symbols = get_top_movers(TOP_GAINERS)
-    if not symbols:
-        send_telegram_text("لیست نمادها خالی بود.", chat_id=chat_id)
-        return
-    priority = [s for s in ALWAYS_INCLUDE if s in symbols]
-    rest = [s for s in symbols if s not in ALWAYS_INCLUDE]
-    symbols = priority + rest
+async def on_demand_angle_scan(
+    tfs: list[str],
+    chat_id: str | int,
+    symbols: list[str] | None = None,
+) -> None:
+    if symbols is None:
+        symbols = get_top_movers(TOP_GAINERS)
+        if not symbols:
+            send_telegram_text("لیست نمادها خالی بود.", chat_id=chat_id)
+            return
+        priority = [s for s in ALWAYS_INCLUDE if s in symbols]
+        rest = [s for s in symbols if s not in ALWAYS_INCLUDE]
+        symbols = priority + rest
     send_telegram_text(
         f"⚠️ اسکن زاویه · <b>{', '.join(tfs)}</b>\n"
-        f"نمادها: {len(symbols)} · لطفاً صبر کن…",
+        f"نمادها: <code>{', '.join(symbols[:8])}</code>"
+        f"{'…' if len(symbols) > 8 else ''} ({len(symbols)}) · صبر کن…",
         chat_id=chat_id,
     )
     n = await angle_alert_cycle(symbols, tfs=tfs, on_demand=True, chat_id=chat_id)
     clock = iran_now().strftime("%H:%M")
+    label = symbols[0] if len(symbols) == 1 else f"{len(symbols)} نماد"
     if n == 0:
+        # برای تک‌نماد: توضیح بده شرایط برقرار نبود
+        extra = ""
+        if len(symbols) == 1:
+            extra = "\n(شرایط آماده‌باش EWZ برقرار نبود)"
         send_telegram_text(
-            f"⚠️ زاویه · <b>{', '.join(tfs)}</b>\nآماده‌باشی نبود · {clock}",
+            f"⚠️ زاویه · <b>{label}</b> · {', '.join(tfs)}\nآماده‌باشی نبود{extra} · {clock}",
             chat_id=chat_id,
             reply_markup=main_menu_keyboard(),
         )
     else:
         send_telegram_text(
-            f"⚠️ زاویه تمام · <b>{n}</b> مورد · {clock}",
+            f"⚠️ زاویه تمام · <b>{label}</b> · <b>{n}</b> مورد · {clock}",
             chat_id=chat_id,
             reply_markup=main_menu_keyboard(),
         )
@@ -2248,9 +2305,11 @@ async def handle_callback(cq: dict) -> None:
     msg = cq.get("message") or {}
     chat = msg.get("chat") or {}
     chat_id = chat.get("id") or CHAT_ID
+    cid = str(chat_id)
     answer_callback_query(cb_id)
 
     if data == "menu" or data == "start":
+        clear_session(chat_id)
         send_telegram_text(
             "یکی را انتخاب کن:",
             chat_id=chat_id,
@@ -2258,7 +2317,17 @@ async def handle_callback(cq: dict) -> None:
         )
         return
 
+    if data == "mode:single":
+        user_sessions[cid] = {"step": "symbol"}
+        send_telegram_text(
+            "📌 نام ارز را بفرست\n"
+            "مثال: <code>btc</code> یا <code>EWZ</code> یا <code>BTCUSDT</code>",
+            chat_id=chat_id,
+        )
+        return
+
     if data == "mode:gap":
+        clear_session(chat_id)
         send_telegram_text(
             "تایم‌فریم گپ را انتخاب کن:",
             chat_id=chat_id,
@@ -2267,10 +2336,31 @@ async def handle_callback(cq: dict) -> None:
         return
 
     if data == "mode:angle":
+        clear_session(chat_id)
         send_telegram_text(
             "تایم‌فریم زاویه را انتخاب کن:",
             chat_id=chat_id,
             reply_markup=tf_keyboard("angle"),
+        )
+        return
+
+    if data.startswith("kind:"):
+        mode = data.split(":", 1)[1]
+        sess = user_sessions.get(cid) or {}
+        sym = sess.get("symbol")
+        if not sym or mode not in ("gap", "angle"):
+            send_telegram_text(
+                "جلسه منقضی شد. دوباره تک‌نماد را بزن.",
+                chat_id=chat_id,
+                reply_markup=main_menu_keyboard(),
+            )
+            clear_session(chat_id)
+            return
+        user_sessions[cid] = {"step": "tf", "symbol": sym, "mode": mode}
+        send_telegram_text(
+            f"<b>{sym}</b> — تایم‌فریم {('زاویه' if mode == 'angle' else 'گپ')} را انتخاب کن:",
+            chat_id=chat_id,
+            reply_markup=tf_keyboard(mode),
         )
         return
 
@@ -2283,11 +2373,16 @@ async def handle_callback(cq: dict) -> None:
         if not tfs:
             send_telegram_text("تایم‌فریم نامعتبر.", chat_id=chat_id)
             return
+        sess = user_sessions.get(cid) or {}
+        single = None
+        if sess.get("step") == "tf" and sess.get("symbol") and sess.get("mode") == mode:
+            single = [sess["symbol"]]
+        clear_session(chat_id)
         try:
             if mode == "gap":
-                await on_demand_gap_scan(tfs, chat_id)
+                await on_demand_gap_scan(tfs, chat_id, symbols=single)
             elif mode == "angle":
-                await on_demand_angle_scan(tfs, chat_id)
+                await on_demand_angle_scan(tfs, chat_id, symbols=single)
         except Exception as e:
             log.error("scan error: %s", e)
             send_telegram_text(f"خطا در اسکن: {e}", chat_id=chat_id)
@@ -2297,8 +2392,11 @@ async def handle_callback(cq: dict) -> None:
 async def handle_message(message: dict) -> None:
     chat = message.get("chat") or {}
     chat_id = chat.get("id") or CHAT_ID
+    cid = str(chat_id)
     text = (message.get("text") or "").strip()
+
     if text in ("/start", "/menu", "منو", "menu"):
+        clear_session(chat_id)
         send_telegram_text(
             f"✅ ربات درخواستی — <b>v{BOT_VERSION}</b>\n"
             "اسکن خودکار خاموش است. با دکمه اسکن کن:",
@@ -2306,7 +2404,24 @@ async def handle_message(message: dict) -> None:
             reply_markup=main_menu_keyboard(),
         )
         return
-    # هر متن دیگر → منو
+
+    sess = user_sessions.get(cid) or {}
+    if sess.get("step") == "symbol":
+        sym = normalize_symbol(text)
+        if not sym:
+            send_telegram_text(
+                "نام معتبر نیست. مثال: <code>btc</code> یا <code>ewz</code>",
+                chat_id=chat_id,
+            )
+            return
+        user_sessions[cid] = {"step": "kind", "symbol": sym}
+        send_telegram_text(
+            f"نماد: <b>{sym}</b>\nچی را چک کنم؟",
+            chat_id=chat_id,
+            reply_markup=kind_keyboard(),
+        )
+        return
+
     send_telegram_text(
         "از دکمه‌ها استفاده کن:",
         chat_id=chat_id,
