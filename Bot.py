@@ -30,7 +30,7 @@ CHANGELOG = {
         "رفع کندی شدید اتومات: زاویه فقط همان TF دور، بدون چارت، نماد کمتر، بدون انتظار کندل",
     ],
     "1.9.0": [
-        "حالت ترکیبی: اتومات در گروه (گپ + احتمال گپ + زاویه 5m/15m/1h/4h)",
+        "حالت ترکیبی: اتومات در گروه (گپ + احتمال گپ + زاویه /15m/1h/4h)",
         "دکمه درخواستی → نتیجه فقط در پیوی همان نفر",
     ],
     "1.8.5": [
@@ -109,7 +109,6 @@ TELEGRAM_TOKEN = os.environ.get(
 CHAT_ID = os.environ.get("CHAT_ID", "-5426058105")
 
 TIMEFRAMES = {
-    "5m": "5min",
     "15m": "15min",
     "1h": "1hr",
     "4h": "4hr",
@@ -125,7 +124,6 @@ PENETRATION_PCT_MAJOR = 0.25
 MIN_OPEN_GAP_PCT = 0.5
 # هشدار احتمال گپ: چند دقیقه قبل از باز شدن کندل (ثانیه)
 PRE_ALERT_BEFORE = {
-    "5m": 2 * 60,    # ۲ دقیقه قبل
     "15m": 3 * 60,   # ۳ دقیقه قبل
     "1h": 5 * 60,    # ۵ دقیقه قبل
     "4h": 20 * 60,   # ۲۰ دقیقه قبل
@@ -144,7 +142,6 @@ ONLY_SELL = True
 BOT_MODE = os.environ.get("BOT_MODE", "hybrid").strip().lower()
 # اتومات: تعداد نماد کمتر روی TFهای ریز = تمام شدن قبل از بسته شدن پنجره
 AUTO_TOP_BY_TF = {
-    "5m": (12, 8),
     "15m": (16, 10),
     "1h": (22, 12),
     "4h": (25, 15),
@@ -157,7 +154,7 @@ BLACKLIST_TTL_SEC = 24 * 3600
 
 # ——— آماده‌باش بستن زاویه (جدا از گپ) ———
 ANGLE_ENABLED = True
-ANGLE_TFS = ["5m", "15m", "1h", "4h"]
+ANGLE_TFS = ["15m", "1h", "4h"]
 ANGLE_EMA = (5, 10, 20)           # همان پیش‌فرض ال‌بانک
 ANGLE_MIN_DIST_E10 = 1.8          # حداقل ٪ بالای EMA10
 ANGLE_MIN_DIST_E20 = 2.8
@@ -168,7 +165,6 @@ ANGLE_DAILY_MAX = 25              # سقف آلارم زاویه در روز (ا
 ANGLE_LOOKBACK_PUMP = 14          # کندل برای پامپ نزدیک UB
 
 OPEN_WINDOW_SEC = {
-    "5m": 120,
     "15m": 150,
     "1h": 180,
     "4h": 180,
@@ -176,14 +172,13 @@ OPEN_WINDOW_SEC = {
 }
 
 PERIOD_SEC = {
-    "5m": 5 * 60,
     "15m": 15 * 60,
     "1h": 60 * 60,
     "4h": 4 * 60 * 60,
     "1d": 24 * 60 * 60,
 }
 
-TF_ORDER = {"5m": 0, "15m": 1, "1h": 2, "4h": 3, "1d": 4}
+TF_ORDER = {"15m": 1, "1h": 2, "4h": 3, "1d": 4}
 
 FUTURES_TICKERS_URL = (
     "https://lbkperp.lbank.com/cfd/openApi/v1/pub/marketData?productGroup=SwapU"
@@ -192,14 +187,12 @@ SPOT_WS_URL = "wss://api.lbank.info/ws/V2/"
 
 # fallback intervals for Gate / BingX when LBank spot has no pair
 GATE_INTERVAL = {
-    "5m": "5m",
     "15m": "15m",
     "1h": "1h",
     "4h": "4h",
     "1d": "1d",
 }
 BINGX_INTERVAL = {
-    "5m": "5m",
     "15m": "15m",
     "1h": "1h",
     "4h": "4h",
@@ -1425,7 +1418,7 @@ def check_signal(df: pd.DataFrame, symbol: str, tf: str, on_demand: bool = False
 def lbank_futures_link(symbol: str, tf: str) -> str:
     """لینک فیوچرز ال‌بانک؛ interval برای لود تایم‌فریم روی وب."""
     sym = symbol.upper()
-    interval_map = {"5m": "5m", "15m": "15m", "1h": "1h", "4h": "4h", "1d": "1d"}
+    interval_map = {"15m": "15m", "1h": "1h", "4h": "4h", "1d": "1d"}
     interval = interval_map.get(tf, "15m")
     # universal/https — روی موبایل اگر اپ نصب باشد ممکن است پیشنهاد Open in App بدهد
     return f"https://www.lbank.com/futures/{sym.lower()}?interval={interval}"
@@ -2227,27 +2220,25 @@ def tf_keyboard(mode: str) -> dict:
     if mode == "angle":
         rows = [
             [
-                {"text": "5m", "callback_data": "scan:angle:5m"},
                 {"text": "15m", "callback_data": "scan:angle:15m"},
             ],
             [
                 {"text": "1h", "callback_data": "scan:angle:1h"},
                 {"text": "4h", "callback_data": "scan:angle:4h"},
             ],
-            [{"text": "همه (5m+15m+1h+4h)", "callback_data": "scan:angle:5m,15m,1h,4h"}],
+            [{"text": "همه (15m+1h+4h)", "callback_data": "scan:angle:15m,1h,4h"}],
             [{"text": "« بازگشت", "callback_data": "menu"}],
         ]
     else:
         rows = [
             [
-                {"text": "5m", "callback_data": "scan:gap:5m"},
                 {"text": "15m", "callback_data": "scan:gap:15m"},
             ],
             [
                 {"text": "1h", "callback_data": "scan:gap:1h"},
                 {"text": "4h", "callback_data": "scan:gap:4h"},
             ],
-            [{"text": "همه (5m+15m+1h+4h)", "callback_data": "scan:gap:5m,15m,1h,4h"}],
+            [{"text": "همه (15m+1h+4h)", "callback_data": "scan:gap:15m,1h,4h"}],
             [{"text": "« بازگشت", "callback_data": "menu"}],
         ]
     return {"inline_keyboard": rows}
