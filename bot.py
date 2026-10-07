@@ -24,8 +24,11 @@ STATE_FILE = os.path.join(BASE_DIR, "bot_state.json")
 
 # ========================= VERSION / CHANGELOG =========================
 # هر بار اپدیت: BOT_VERSION را بالا ببر و یک خط در CHANGELOG[نسخه] اضافه کن.
-BOT_VERSION = "1.7.1"
+BOT_VERSION = "1.7.2"
 CHANGELOG = {
+    "1.7.2": [
+        "رفع آلارم غلط زاویه: فقط بعد از پامپ واقعی + از بالا به EMA؛ زیر میانگین‌ها دیگر سیگنال نمی‌دهد",
+    ],
     "1.7.1": [
         "زنجیره زاویه: بستن اول/دوم در TF پایین → چک جام TF بالاتر (۱۵م→۱س→۴س)",
         "سطح A/B/C + رد سقف‌جدید/شتاب | زاویه فقط روی TF همان دور (سرعت)",
@@ -1842,7 +1845,12 @@ def _slope_pct(series, idx: int, bars: int) -> float:
 
 
 def _angle_metrics(df: pd.DataFrame) -> dict | None:
-    """EMA/UB + بستن زاویه اول/دوم + جام/آماده‌باش روی یک TF."""
+    """
+    زاویه فقط وقتی معنا دارد که:
+    ۱) اخیراً پامپ نزدیک UB بوده
+    ۲) زاویه باز بوده (قیمت بالای EMAها با فاصله)
+    ۳) الان از بالا دارد به EMA نزدیک/تاچ می‌کند — نه اینکه از قبل زیر میانگین‌ها باشد
+    """
     if df is None or len(df) < 35:
         return None
     c_s = df["c"].astype(float)
@@ -1861,19 +1869,11 @@ def _angle_metrics(df: pd.DataFrame) -> dict | None:
     if c <= 0 or any(np.isnan(x) for x in (ema5, ema10, ema20, ub_v)):
         return None
 
-    close1 = close2 = False
-    for j in range(max(0, i - 1), i + 1):
-        lv, e10j, e20j = float(l_s.iloc[j]), float(e10.iloc[j]), float(e20.iloc[j])
-        if e10j > 0 and (lv <= e10j * 1.002 or abs(lv - e10j) / e10j * 100.0 <= ANGLE_CLOSE1_PCT):
-            close1 = True
-        if e20j > 0 and (lv <= e20j * 1.002 or abs(lv - e20j) / e20j * 100.0 <= ANGLE_CLOSE2_PCT):
-            close2 = True
+    dist10 = (c - ema10) / c * 100.0
+    dist20 = (c - ema20) / c * 100.0
+    spread = (ema5 - ema20) / c * 100.0
 
-    hh = float(h_s.iloc[max(0, i - 7): i + 1].max())
-    prev_hh = float(h_s.iloc[max(0, i - 7): i].max()) if i > 0 else hh
-    from_high = (hh - c) / hh * 100.0 if hh > 0 else 99.0
-    new_high = float(h_s.iloc[i]) >= prev_hh * 0.998
-
+    # ——— زمینهٔ پامپ + زاویهٔ باز در چند کندل قبل ———
     pumped = False
     for j in range(max(0, i - ANGLE_LOOKBACK_PUMP), i + 1):
         u = float(ub.iloc[j])
@@ -1881,20 +1881,65 @@ def _angle_metrics(df: pd.DataFrame) -> dict | None:
             pumped = True
             break
 
+    # در ۵–۱۰ کندل قبل باید حداقل یک‌بار خوب بالای EMA10 بوده باشد
+    was_elevated = False
+    max_prior_dist10 = -999.0
+    for j in range(max(0, i - 10), i):
+        cj, e10j = float(c_s.iloc[j]), float(e10.iloc[j])
+        if cj <= 0 or e10j <= 0:
+            continue
+        d = (cj - e10j) / cj * 100.0
+        if d > max_prior_dist10:
+            max_prior_dist10 = d
+        if d >= 1.5:
+            was_elevated = True
+
+    hh = float(h_s.iloc[max(0, i - 7): i + 1].max())
+    prev_hh = float(h_s.iloc[max(0, i - 7): i].max()) if i > 0 else hh
+    from_high = (hh - c) / hh * 100.0 if hh > 0 else 99.0
+    new_high = float(h_s.iloc[i]) >= prev_hh * 0.998
+
     ub_s5 = _slope_pct(ub, i - 5, 5) if i >= 10 else 0.0
     ub_s3 = _slope_pct(ub, i, 3)
     e5_s5 = _slope_pct(e5, i - 5, 5) if i >= 10 else 0.0
     e5_s3 = _slope_pct(e5, i, 3)
-    spread = (ema5 - ema20) / c * 100.0
-    dist10 = (c - ema10) / c * 100.0
-    dist20 = (c - ema20) / c * 100.0
-
     cool_ub = ub_s5 >= 1.0 and ub_s3 < ub_s5 * 0.90 and ub_s3 > -1.2
     cool_e5 = e5_s5 >= 0.8 and e5_s3 < e5_s5 * 0.90 and e5_s3 > -1.5
     hot = (e5_s3 > 2.5 and ub_s3 > 2.5) or (e5_s5 > 2.5 and e5_s3 > e5_s5 * 0.95)
 
+    # تاچ EMA فقط اگر از بالا بیاید + زمینه پامپ/ارتفاع
+    # close قیمت نباید عمیقاً زیر EMA باشد (مثل لیست غلط BTC/XAUT/…)
+    touch1 = touch2 = False
+    for j in range(max(0, i - 1), i + 1):
+        lv, e10j, e20j = float(l_s.iloc[j]), float(e10.iloc[j]), float(e20.iloc[j])
+        hj = float(h_s.iloc[j])
+        if e10j > 0 and lv <= e10j * (1.0 + ANGLE_CLOSE1_PCT / 100.0) and hj >= e10j * 0.998:
+            touch1 = True
+        if e20j > 0 and lv <= e20j * (1.0 + ANGLE_CLOSE2_PCT / 100.0) and hj >= e20j * 0.998:
+            touch2 = True
+
+    context_ok = pumped and was_elevated and not hot
+
+    # بستن زاویه اول: تاچ EMA10 از بالا، هنوز خیلی پایین‌تر نرفته
+    close1 = (
+        context_ok
+        and touch1
+        and -0.35 <= dist10 <= 1.8
+        and dist20 >= -0.5
+        and spread >= 0.8
+    )
+    # بستن زاویه دوم: تاچ EMA20 از بالا بعد از ارتفاع
+    close2 = (
+        context_ok
+        and touch2
+        and -0.5 <= dist20 <= 2.0
+        and max_prior_dist10 >= 2.0
+        and spread >= 0.6
+    )
+
     cup_forming = (
         pumped
+        and was_elevated
         and not hot
         and not new_high
         and (cool_ub or cool_e5)
@@ -1905,6 +1950,7 @@ def _angle_metrics(df: pd.DataFrame) -> dict | None:
 
     ready_early = (
         pumped
+        and was_elevated
         and not hot
         and not new_high
         and (cool_ub or cool_e5)
@@ -1914,6 +1960,7 @@ def _angle_metrics(df: pd.DataFrame) -> dict | None:
         and spread >= ANGLE_MIN_SPREAD
         and ema5 >= ema10 * 0.997
     )
+    # آماده‌باش = هنوز تاچ نکرده
     for j in range(max(0, i - 2), i + 1):
         if float(l_s.iloc[j]) <= float(e10.iloc[j]) * (1.0 + ANGLE_CLOSE1_PCT / 100.0):
             ready_early = False
@@ -1950,19 +1997,21 @@ def _angle_metrics(df: pd.DataFrame) -> dict | None:
 
 def check_angle_setup(df: pd.DataFrame, symbol: str, tf: str) -> dict | None:
     """
-    رویداد زاویه:
-    close2 / close1 = بستن زاویه | ready = آماده‌باش قبل از بستن (زود).
+    فقط سه حالت معتبر:
+    ready = هنوز بالای EMA، زاویه باز، در حال خنک شدن (بهترین برای ورود زود)
+    close1 / close2 = تاچ از بالا بعد از پامپ واقعی — نه قیمتی که از قبل زیر میانگین است
     """
     try:
         m = _angle_metrics(df)
         if not m:
             return None
-        if m["close2"]:
+        # اولویت: آماده‌باش زود، بعد بستن‌ها
+        if m["ready_early"]:
+            event = "ready"
+        elif m["close2"]:
             event = "close2"
         elif m["close1"]:
             event = "close1"
-        elif m["ready_early"]:
-            event = "ready"
         else:
             return None
         return {"symbol": symbol, "tf": tf, "event": event, **m}
