@@ -24,8 +24,16 @@ STATE_FILE = os.path.join(BASE_DIR, "bot_state.json")
 
 # ========================= VERSION / CHANGELOG =========================
 # هر بار اپدیت: BOT_VERSION را بالا ببر و یک خط در CHANGELOG[نسخه] اضافه کن.
-BOT_VERSION = "1.8.4"
+BOT_VERSION = "1.9.0"
 CHANGELOG = {
+    "1.9.0": [
+        "حالت ترکیبی: اتومات در گروه (گپ + احتمال گپ + زاویه 5m/15m/1h/4h)",
+        "دکمه درخواستی → نتیجه فقط در پیوی همان نفر",
+    ],
+    "1.8.5": [
+        "بهینه سرعت: Gate REST اول (بدون WS کند)، اسکن موازی بیشتر، لیست کوتاه‌تر",
+        "BOT_MODE=auto | ondemand | hybrid",
+    ],
     "1.8.4": [
         "منو و نتیجه با edit همان پیام (بدون اسپم پیام جدید)",
         "چند نفر هر کدام روی پیام خودشان کار می‌کنند",
@@ -114,6 +122,7 @@ PENETRATION_PCT_MAJOR = 0.25
 MIN_OPEN_GAP_PCT = 0.5
 # هشدار احتمال گپ: چند دقیقه قبل از باز شدن کندل (ثانیه)
 PRE_ALERT_BEFORE = {
+    "5m": 2 * 60,    # ۲ دقیقه قبل
     "15m": 3 * 60,   # ۳ دقیقه قبل
     "1h": 5 * 60,    # ۵ دقیقه قبل
     "4h": 20 * 60,   # ۲۰ دقیقه قبل
@@ -121,8 +130,14 @@ PRE_ALERT_BEFORE = {
 PRE_ALERT_MIN_PCT = 1.0  # فقط اگر اختلاف فیوچرز تا UB بالای ۱٪ باشد
 TOP_GAINERS = 30
 TOP_VOLUME = 50
+# اسکن درخواستی: کمتر نماد = خیلی سریع‌تر
+ONDEMAND_TOP_GAINERS = 18
+ONDEMAND_TOP_VOLUME = 15
+ONDEMAND_FETCH_CONCURRENCY = 18
 SEND_CHART = True
 ONLY_SELL = True
+# hybrid = اتومات گروه + دکمه پیوی | ondemand | auto
+BOT_MODE = os.environ.get("BOT_MODE", "hybrid").strip().lower()
 ALWAYS_INCLUDE = ["BTCUSDT", "XAUTUSDT"]
 # نمادهایی که NO_KLINE شدند تا این مدت دوباره چک نشوند (ثانیه) — ۲۴ ساعت
 BLACKLIST_TTL_SEC = 24 * 3600
@@ -136,7 +151,7 @@ ANGLE_MIN_DIST_E20 = 2.8
 ANGLE_MAX_DIST_E10 = 8.0
 ANGLE_MAX_FROM_HIGH = 3.5         # حداکثر فاصله از سقف اخیر
 ANGLE_MIN_SPREAD = 1.5            # ٪ فاصله EMA5−EMA20
-ANGLE_DAILY_MAX = 10              # سقف آلارم زاویه در روز (ایران)
+ANGLE_DAILY_MAX = 25              # سقف آلارم زاویه در روز (اتومات گروه)
 ANGLE_LOOKBACK_PUMP = 14          # کندل برای پامپ نزدیک UB
 
 OPEN_WINDOW_SEC = {
@@ -536,7 +551,7 @@ def refresh_futures_map() -> dict:
     return futures_last_map
 
 
-def get_top_movers(n: int = TOP_GAINERS) -> list:
+def get_top_movers(n: int = TOP_GAINERS, vol_n: int | None = None) -> list:
     fmap = refresh_futures_map()
     rows = []
     for sym, rec in fmap.items():
@@ -555,8 +570,9 @@ def get_top_movers(n: int = TOP_GAINERS) -> list:
         return list(ALWAYS_INCLUDE)
 
     df = pd.DataFrame(rows)
+    vn = TOP_VOLUME if vol_n is None else vol_n
     gainers = df.nlargest(n, "change")["symbol"].tolist()
-    volumes = df.nlargest(TOP_VOLUME, "vol")["symbol"].tolist()
+    volumes = df.nlargest(vn, "vol")["symbol"].tolist()
     symbols = list(dict.fromkeys(gainers + volumes + ALWAYS_INCLUDE))
     before = len(symbols)
     symbols = [s for s in symbols if not is_blacklisted(s)]
@@ -1602,55 +1618,35 @@ def _df_from_ohlc_rows(rows: list) -> pd.DataFrame | None:
 
 
 async def fetch_klines_ws(pair: str, kbar_type: str, size: int = 50):
+    """کند — فقط وقتی REST جواب ندهد."""
     try:
-        async with websockets.connect(SPOT_WS_URL, open_timeout=10, close_timeout=3) as ws:
+        async with websockets.connect(SPOT_WS_URL, open_timeout=4, close_timeout=2) as ws:
             await ws.send(json.dumps({
                 "action": "request", "request": "kbar",
                 "kbar": kbar_type, "pair": pair, "size": str(size),
             }))
-            await ws.send(json.dumps({
-                "action": "subscribe", "subscribe": "kbar",
-                "kbar": kbar_type, "pair": pair,
-            }))
             records = None
-            live = None
-            deadline = asyncio.get_event_loop().time() + 3
+            deadline = asyncio.get_event_loop().time() + 2.0
             while asyncio.get_event_loop().time() < deadline:
                 try:
-                    raw = await asyncio.wait_for(ws.recv(), timeout=1.0)
+                    raw = await asyncio.wait_for(ws.recv(), timeout=0.8)
                     data = json.loads(raw)
                     if isinstance(data, dict) and "records" in data:
                         records = data["records"]
-                    if isinstance(data, dict) and data.get("type") == "kbar" and data.get("pair") == pair:
-                        live = data.get("kbar")
-                    if records is not None and live is not None:
                         break
                 except asyncio.TimeoutError:
-                    if records is not None:
-                        break
+                    continue
             if not records:
                 return None
             rows = [{"ts": int(r[0]), "o": float(r[1]), "h": float(r[2]), "l": float(r[3]), "c": float(r[4])} for r in records]
-            df = _df_from_ohlc_rows(rows)
-            if df is None:
-                return None
-            if live and isinstance(live, dict):
-                df.loc[df.index[-1], "o"] = float(live.get("o", df.iloc[-1]["o"]))
-                df.loc[df.index[-1], "h"] = float(live.get("h", df.iloc[-1]["h"]))
-                df.loc[df.index[-1], "l"] = float(live.get("l", df.iloc[-1]["l"]))
-                df.loc[df.index[-1], "c"] = float(live.get("c", df.iloc[-1]["c"]))
-                sma, upper, lower = calc_bb(df["c"].values)
-                df["sma"] = sma.values
-                df["upper"] = upper.values
-                df["lower"] = lower.values
-            return df
+            return _df_from_ohlc_rows(rows)
     except Exception as e:
         log.debug("WS kline error %s %s: %s", pair, kbar_type, e)
         return None
 
 
 def fetch_klines_gate(symbol: str, tf: str, size: int = 50) -> pd.DataFrame | None:
-    """Gate.io USDT-M futures candlesticks — works when LBank has no spot pair."""
+    """Gate.io USDT-M futures — سریع (REST)."""
     interval = GATE_INTERVAL.get(tf)
     if not interval:
         return None
@@ -1662,22 +1658,19 @@ def fetch_klines_gate(symbol: str, tf: str, size: int = 50) -> pd.DataFrame | No
         f"?contract={contract}&interval={interval}&limit={size}"
     )
     try:
-        r = requests.get(url, timeout=10, headers={"User-Agent": "Mozilla/5.0"})
+        r = requests.get(url, timeout=5, headers={"User-Agent": "Mozilla/5.0"})
         if r.status_code != 200:
             return None
         data = r.json()
         if not isinstance(data, list) or not data:
             return None
-        rows = []
-        for x in data:
-            rows.append({
-                "ts": int(x.get("t") or 0),
-                "o": float(x.get("o") or 0),
-                "h": float(x.get("h") or 0),
-                "l": float(x.get("l") or 0),
-                "c": float(x.get("c") or 0),
-                "v": float(x.get("v") or x.get("sum") or 0),
-            })
+        rows = [{
+            "ts": int(x.get("t") or 0),
+            "o": float(x.get("o") or 0),
+            "h": float(x.get("h") or 0),
+            "l": float(x.get("l") or 0),
+            "c": float(x.get("c") or 0),
+        } for x in data]
         return _df_from_ohlc_rows(rows)
     except Exception as e:
         log.debug("Gate kline error %s %s: %s", symbol, tf, e)
@@ -1688,18 +1681,14 @@ def fetch_klines_bingx(symbol: str, tf: str, size: int = 50) -> pd.DataFrame | N
     interval = BINGX_INTERVAL.get(tf)
     if not interval:
         return None
-    # BingX swap symbol form: MAGMA-USDT
     base = symbol.upper()
-    if base.endswith("USDT"):
-        pair = base[:-4] + "-USDT"
-    else:
-        pair = base
+    pair = base[:-4] + "-USDT" if base.endswith("USDT") else base
     url = (
         f"https://open-api.bingx.com/openApi/swap/v3/quote/klines"
         f"?symbol={pair}&interval={interval}&limit={size}"
     )
     try:
-        r = requests.get(url, timeout=10, headers={"User-Agent": "Mozilla/5.0"})
+        r = requests.get(url, timeout=5, headers={"User-Agent": "Mozilla/5.0"})
         if r.status_code != 200:
             return None
         payload = r.json()
@@ -1724,24 +1713,26 @@ def fetch_klines_bingx(symbol: str, tf: str, size: int = 50) -> pd.DataFrame | N
         return None
 
 
-async def fetch_klines(symbol: str, tf: str, size: int = 50):
-    """LBank spot WS → Gate futures → BingX futures."""
-    pair = futures_to_spot_pair(symbol)
-    kbar = TIMEFRAMES.get(tf)
-    if kbar:
-        df = await fetch_klines_ws(pair, kbar, size=size)
-        if df is not None and len(df) >= BB_PERIOD + 2:
-            return df, "lbank_spot"
-
+async def fetch_klines(symbol: str, tf: str, size: int = 50, prefer_rest: bool = True):
+    """
+    پیش‌فرض: Gate → BingX → (اختیاری) WS ال‌بانک.
+    WS برای هر نماد چند ثانیه طول می‌کشد و اسکن را خیلی کند می‌کرد.
+    """
     df = await asyncio.to_thread(fetch_klines_gate, symbol, tf, size)
     if df is not None and len(df) >= BB_PERIOD + 2:
-        log.info("KLINE_SRC %s %s gate_futures", symbol, tf)
         return df, "gate_futures"
 
     df = await asyncio.to_thread(fetch_klines_bingx, symbol, tf, size)
     if df is not None and len(df) >= BB_PERIOD + 2:
-        log.info("KLINE_SRC %s %s bingx_futures", symbol, tf)
         return df, "bingx_futures"
+
+    if not prefer_rest:
+        pair = futures_to_spot_pair(symbol)
+        kbar = TIMEFRAMES.get(tf)
+        if kbar:
+            df = await fetch_klines_ws(pair, kbar, size=size)
+            if df is not None and len(df) >= BB_PERIOD + 2:
+                return df, "lbank_spot"
 
     log.info("NO_KLINE %s %s", symbol, tf)
     add_to_blacklist(symbol, reason=f"NO_KLINE:{tf}")
@@ -1766,11 +1757,12 @@ async def process_symbol(
         df = None
         src = None
         attempts = 1 if on_demand else 3
+        ksize = 45 if on_demand else 70
         for attempt in range(attempts):
-            df, src = await fetch_klines(symbol, tf, size=80)
+            df, src = await fetch_klines(symbol, tf, size=ksize, prefer_rest=True)
             if df is None or len(df) < BB_PERIOD + 2:
                 if not on_demand:
-                    await asyncio.sleep(1)
+                    await asyncio.sleep(0.5)
                 continue
             try:
                 last_ts = int(df.iloc[-1]["ts"])
@@ -1778,11 +1770,12 @@ async def process_symbol(
                 last_ts = int(pd.Timestamp(df.iloc[-1]["dt"]).timestamp())
             if on_demand or last_ts >= expected_open:
                 break
-            log.info(
-                "WAIT_CANDLE %s %s | got_ts=%s expected=%s try=%d src=%s",
-                symbol, tf, last_ts, expected_open, attempt + 1, src,
-            )
-            await asyncio.sleep(1)
+            if not on_demand:
+                log.info(
+                    "WAIT_CANDLE %s %s | got_ts=%s expected=%s try=%d src=%s",
+                    symbol, tf, last_ts, expected_open, attempt + 1, src,
+                )
+                await asyncio.sleep(0.5)
             df = None
         if df is None or len(df) < BB_PERIOD + 2:
             continue
@@ -2072,14 +2065,14 @@ async def angle_alert_cycle(
             return 0, []
 
     by_tf: dict[str, list] = {tf: [] for tf in tfs}
-    sem = asyncio.Semaphore(8)
+    sem = asyncio.Semaphore(ONDEMAND_FETCH_CONCURRENCY)
 
     async def one(sym: str, tf: str) -> None:
         if is_blacklisted(sym):
             return
         async with sem:
             try:
-                df, src = await fetch_klines(sym, tf, size=60)
+                df, src = await fetch_klines(sym, tf, size=40, prefer_rest=True)
                 if df is None or len(df) < 35:
                     return
                 hit = check_angle_setup(df, sym, tf)
@@ -2290,7 +2283,7 @@ async def on_demand_gap_scan(
     for k in stats:
         stats[k] = 0
     if symbols is None:
-        symbols = get_top_movers(TOP_GAINERS)
+        symbols = get_top_movers(ONDEMAND_TOP_GAINERS, vol_n=ONDEMAND_TOP_VOLUME)
         if not symbols:
             ui_reply("لیست نمادها خالی بود.", chat_id, message_id, main_menu_keyboard())
             return
@@ -2298,6 +2291,7 @@ async def on_demand_gap_scan(
         rest = [s for s in symbols if s not in ALWAYS_INCLUDE]
         symbols = priority + rest
     label_sym = symbols[0] if len(symbols) == 1 else f"{len(symbols)} نماد"
+    t0 = time.time()
     ui_reply(
         f"🔍 در حال اسکن گپ…\n"
         f"<b>{label_sym}</b> · {', '.join(tfs)}\n⏳",
@@ -2305,7 +2299,7 @@ async def on_demand_gap_scan(
         message_id,
     )
     collected: list[str] = []
-    sem = asyncio.Semaphore(10)
+    sem = asyncio.Semaphore(ONDEMAND_FETCH_CONCURRENCY)
 
     async def limited(sym: str) -> None:
         async with sem:
@@ -2321,6 +2315,7 @@ async def on_demand_gap_scan(
                 log.warning("on_demand gap %s: %s", sym, e)
 
     await asyncio.gather(*(limited(s) for s in symbols))
+    log.info("on_demand gap done in %.1fs symbols=%d", time.time() - t0, len(symbols))
     n = stats["signal_ok"]
     clock = iran_now().strftime("%H:%M")
     if n == 0:
@@ -2350,7 +2345,7 @@ async def on_demand_angle_scan(
     message_id: int | None = None,
 ) -> None:
     if symbols is None:
-        symbols = get_top_movers(TOP_GAINERS)
+        symbols = get_top_movers(ONDEMAND_TOP_GAINERS, vol_n=ONDEMAND_TOP_VOLUME)
         if not symbols:
             ui_reply("لیست نمادها خالی بود.", chat_id, message_id, main_menu_keyboard())
             return
@@ -2358,6 +2353,7 @@ async def on_demand_angle_scan(
         rest = [s for s in symbols if s not in ALWAYS_INCLUDE]
         symbols = priority + rest
     label_sym = symbols[0] if len(symbols) == 1 else f"{len(symbols)} نماد"
+    t0 = time.time()
     ui_reply(
         f"⚠️ در حال اسکن زاویه…\n"
         f"<b>{label_sym}</b> · {', '.join(tfs)}\n⏳",
@@ -2367,6 +2363,7 @@ async def on_demand_angle_scan(
     n, texts = await angle_alert_cycle(
         symbols, tfs=tfs, on_demand=True, chat_id=chat_id, quiet=True
     )
+    log.info("on_demand angle done in %.1fs symbols=%d hits=%d", time.time() - t0, len(symbols), n)
     clock = iran_now().strftime("%H:%M")
     if n == 0:
         extra = "\n(شرایط آماده‌باش برقرار نبود)" if len(symbols) == 1 else ""
@@ -2385,28 +2382,42 @@ async def handle_callback(cq: dict) -> None:
     data = (cq.get("data") or "").strip()
     msg = cq.get("message") or {}
     chat = msg.get("chat") or {}
-    chat_id = chat.get("id") or CHAT_ID
+    group_id = chat.get("id") or CHAT_ID
     mid = msg.get("message_id")
     from_user = cq.get("from") or {}
     user_id = from_user.get("id")
     uid = session_key(user_id)
     answer_callback_query(cb_id)
 
-    # همهٔ UI روی همان پیام (edit)
-    def show(text: str, markup: dict | None = None) -> None:
-        ui_reply(text, chat_id, mid, markup)
+    # درخواستی: UI و نتیجه در پیوی کاربر (گروه فقط اتومات می‌گیرد)
+    dest = user_id if user_id is not None else group_id
+    # اگر پیوی کار نکرد، روی همان پیام گروه edit می‌کنیم
+    private_ok = True
+
+    def show(text: str, markup: dict | None = None) -> bool:
+        nonlocal private_ok
+        ok = send_telegram_text(text, reply_markup=markup, chat_id=dest)
+        if not ok and dest != group_id:
+            private_ok = False
+            ui_reply(
+                text + "\n\n⚠️ اول در پیوی ربات /start بزن.",
+                group_id,
+                mid,
+                markup,
+            )
+            return False
+        return ok
 
     if data == "menu" or data == "start":
         clear_session(user_id)
-        show("یکی را انتخاب کن:", main_menu_keyboard())
+        show("منوی درخواستی (نتیجه در پیوی):\nیکی را انتخاب کن:", main_menu_keyboard())
         return
 
     if data == "mode:single":
-        user_sessions[uid] = {"step": "symbol", "ui_chat": chat_id, "ui_mid": mid}
+        user_sessions[uid] = {"step": "symbol", "ui_chat": dest, "ui_mid": None}
         show(
-            "📌 نام ارز را در گروه یا پیوی بفرست\n"
-            "مثال: <code>btc</code> یا <code>EWZ</code>\n"
-            f"(منتظر {from_user.get('first_name') or 'تو'})",
+            "📌 نام ارز را <b>در پیوی</b> بفرست\n"
+            "مثال: <code>btc</code> یا <code>EWZ</code>",
             {"inline_keyboard": [[{"text": "« بازگشت", "callback_data": "menu"}]]},
         )
         return
@@ -2433,8 +2444,8 @@ async def handle_callback(cq: dict) -> None:
             "step": "tf",
             "symbol": sym,
             "mode": mode,
-            "ui_chat": chat_id,
-            "ui_mid": mid,
+            "ui_chat": dest,
+            "ui_mid": None,
         }
         show(
             f"<b>{sym}</b> — تایم‌فریم {('زاویه' if mode == 'angle' else 'گپ')}:",
@@ -2456,19 +2467,21 @@ async def handle_callback(cq: dict) -> None:
         if sess.get("step") == "tf" and sess.get("symbol") and sess.get("mode") == mode:
             single = [sess["symbol"]]
         clear_session(user_id)
+        # نتیجه فقط پیوی
+        scan_chat = dest
         async with scan_semaphore:
             try:
                 if mode == "gap":
                     await on_demand_gap_scan(
-                        tfs, chat_id, symbols=single, message_id=mid
+                        tfs, scan_chat, symbols=single, message_id=None
                     )
                 elif mode == "angle":
                     await on_demand_angle_scan(
-                        tfs, chat_id, symbols=single, message_id=mid
+                        tfs, scan_chat, symbols=single, message_id=None
                     )
             except Exception as e:
                 log.error("scan error: %s", e)
-                show(f"خطا در اسکن: {e}", main_menu_keyboard())
+                send_telegram_text(f"خطا در اسکن: {e}", chat_id=scan_chat)
         return
 
 
@@ -2532,21 +2545,61 @@ async def handle_message(message: dict) -> None:
     )
 
 
-async def main() -> None:
-    load_state()
-    ensure_daily()
-    if not TELEGRAM_TOKEN or not CHAT_ID:
-        log.error("TELEGRAM_TOKEN / CHAT_ID تنظیم نشده")
-        return
-    send_telegram_text(
-        format_startup_message()
-        + "\n\nحالت: <b>درخواستی</b>\n"
-        "با زدن دکمه، <b>همین پیام</b> عوض می‌شود (پیام پشت‌سرهم نمی‌فرستد).",
-        reply_markup=main_menu_keyboard(),
-    )
-    save_state()
+async def auto_scan_loop() -> None:
+    """اسکن همیشگی → فقط گروه (CHAT_ID)."""
+    last_scan_key = None
+    last_pre_key = None
+    log.info("AUTO loop started")
+    while True:
+        try:
+            maybe_send_daily_report()
+            tfs = timeframes_to_check_now()
+            if tfs:
+                now = int(time.time())
+                scan_key = tuple(
+                    (tf, (now // PERIOD_SEC[tf]) * PERIOD_SEC[tf]) for tf in sorted(tfs)
+                )
+                if scan_key == last_scan_key:
+                    await asyncio.sleep(5)
+                    continue
+                await asyncio.sleep(1)
+                try:
+                    await one_cycle(tfs)
+                except Exception as e:
+                    log.error("Cycle error: %s", e)
+                last_scan_key = scan_key
+            else:
+                pre_tfs = pre_alert_tfs_now()
+                if pre_tfs:
+                    now = int(time.time())
+                    pre_key = tuple(
+                        (tf, (now // PERIOD_SEC[tf]) * PERIOD_SEC[tf] + PERIOD_SEC[tf])
+                        for tf in sorted(pre_tfs)
+                    )
+                    if pre_key != last_pre_key:
+                        try:
+                            await pre_alert_cycle(pre_tfs)
+                        except Exception as e:
+                            log.error("Pre-alert error: %s", e)
+                        last_pre_key = pre_key
+                    await asyncio.sleep(15)
+                    continue
+            wait = seconds_until_next_candle()
+            sleep_for = max(5 if tfs else 1, wait - 2)
+            next_iran = datetime.fromtimestamp(
+                int(time.time()) + wait, TEHRAN
+            ).strftime("%H:%M:%S")
+            log.info("خواب %d ثانیه تا رویداد بعدی (~%s ایران)", sleep_for, next_iran)
+            await asyncio.sleep(sleep_for)
+        except Exception as e:
+            log.error("auto_scan_loop: %s", e)
+            await asyncio.sleep(10)
+
+
+async def telegram_poll_loop() -> None:
+    """دکمه‌های درخواستی → پیوی."""
     offset = 0
-    log.info("On-demand bot started v%s — edit-in-place UI", BOT_VERSION)
+    log.info("Telegram poll loop started")
     while True:
         try:
             r = requests.get(
@@ -2569,6 +2622,50 @@ async def main() -> None:
             log.warning("poll error: %s", e)
             await asyncio.sleep(3)
         await asyncio.sleep(0.2)
+
+
+async def main() -> None:
+    load_state()
+    ensure_daily()
+    if not TELEGRAM_TOKEN or not CHAT_ID:
+        log.error("TELEGRAM_TOKEN / CHAT_ID تنظیم نشده")
+        return
+
+    mode = BOT_MODE
+    if mode in ("auto", "continuous", "always"):
+        send_telegram_text(
+            format_startup_message()
+            + "\n\nحالت: <b>فقط اتومات</b> (گروه)"
+        )
+        save_state()
+        await auto_scan_loop()
+        return
+
+    if mode in ("ondemand", "manual", "request"):
+        send_telegram_text(
+            format_startup_message()
+            + "\n\nحالت: <b>فقط درخواستی</b>\nنتیجه در پیوی — اول /start در پیوی",
+            reply_markup=main_menu_keyboard(),
+        )
+        save_state()
+        await telegram_poll_loop()
+        return
+
+    # پیش‌فرض: hybrid
+    send_telegram_text(
+        format_startup_message()
+        + "\n\nحالت: <b>ترکیبی</b>\n"
+        "• اتومات (گپ + احتمال گپ + زاویه) → <b>گروه</b>\n"
+        "• دکمه دستی → <b>پیوی</b> همان نفر\n"
+        "هر عضو یک‌بار در پیوی ربات /start بزند",
+        reply_markup=main_menu_keyboard(),
+    )
+    save_state()
+    log.info("HYBRID mode v%s — auto+ondemand", BOT_VERSION)
+    await asyncio.gather(
+        auto_scan_loop(),
+        telegram_poll_loop(),
+    )
 
 
 if __name__ == "__main__":
