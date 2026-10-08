@@ -24,8 +24,11 @@ STATE_FILE = os.path.join(BASE_DIR, "bot_state.json")
 
 # ========================= VERSION / CHANGELOG =========================
 # هر بار اپدیت: BOT_VERSION را بالا ببر و یک خط در CHANGELOG[نسخه] اضافه کن.
-BOT_VERSION = "1.7.4"
+BOT_VERSION = "1.7.5"
 CHANGELOG = {
+    "1.7.5": [
+        "۱۵م زاویه شل‌تر (تست) | گپ فقط خلاصه | INNO فقط 🔴INNO",
+    ],
     "1.7.4": [
         "هشدار تایم خبری (کلان + مرتبط با نماد) — ورود ممنوع در پنجره خبر",
         "علامت قرمز 🔴INNO روی ارزهای نوآوری/پرریسک",
@@ -755,32 +758,6 @@ def send_telegram_photo(
         return False
 
 
-def answer_callback_query(callback_id: str, text: str = "", show_alert: bool = False) -> None:
-    url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/answerCallbackQuery"
-    try:
-        requests.post(
-            url,
-            json={
-                "callback_query_id": callback_id,
-                "text": text,
-                "show_alert": show_alert,
-            },
-            timeout=10,
-        )
-    except Exception as e:
-        log.warning("answerCallbackQuery: %s", e)
-
-
-def liq_button_markup(symbol: str, tf: str) -> dict:
-    # callback_data max 64 bytes
-    data = f"liq:{symbol}:{tf}"
-    return {
-        "inline_keyboard": [
-            [{"text": "📐 محاسبه سقف و کف", "callback_data": data}]
-        ]
-    }
-
-
 def refresh_futures_map() -> dict:
     global futures_last_map
     try:
@@ -977,411 +954,6 @@ def make_chart(df: pd.DataFrame, symbol: str, tf: str, signal: str, sig: dict | 
     except Exception as e:
         log.warning("Chart error: %s", e)
         return None
-
-
-# ========================= LIQUIDITY CHARTS (4 methods) =========================
-
-def _swing_idxs(vals, kind: str, left: int = 2, right: int = 2):
-    out = []
-    n = len(vals)
-    for i in range(left, n - right):
-        w = vals[i - left : i + right + 1]
-        if kind == "high" and vals[i] == max(w):
-            out.append(i)
-        if kind == "low" and vals[i] == min(w):
-            out.append(i)
-    return out
-
-
-def _draw_candles_ax(ax, plot, ymin, ymax):
-    from matplotlib.patches import Rectangle
-    n = len(plot)
-    o, h, l, c = plot["o"].values, plot["h"].values, plot["l"].values, plot["c"].values
-    width = 0.32
-    for i in range(n):
-        col = "#26a69a" if c[i] >= o[i] else "#ef5350"
-        ax.plot([i, i], [l[i], h[i]], color=col, lw=0.9, zorder=3)
-        bot = min(o[i], c[i])
-        ht = max(abs(c[i] - o[i]), (ymax - ymin) * 0.001)
-        ax.add_patch(
-            Rectangle((i - width / 2, bot), width, ht, facecolor=col, edgecolor=col, lw=0, zorder=3)
-        )
-    return n
-
-
-def _style_white_ax(ax):
-    ax.set_facecolor("#ffffff")
-    for sp in ax.spines.values():
-        sp.set_color("#cccccc")
-    ax.tick_params(colors="#444444", labelsize=8)
-    ax.grid(True, color="#eeeeee", lw=0.65)
-
-
-def _fig_to_bytes(fig) -> bytes:
-    buf = BytesIO()
-    fig.savefig(buf, format="png", facecolor="#ffffff", bbox_inches="tight")
-    import matplotlib.pyplot as plt
-    plt.close(fig)
-    buf.seek(0)
-    return buf.read()
-
-
-def make_liquidity_charts(df: pd.DataFrame, symbol: str, tf: str) -> list[tuple[str, bytes]]:
-    """Return list of (caption, png_bytes) for 4 liquidity methods."""
-    try:
-        import matplotlib
-        matplotlib.use("Agg")
-        import matplotlib.pyplot as plt
-    except ImportError:
-        return []
-
-    if df is None or len(df) < 30:
-        return []
-
-    work = df.tail(168).copy().reset_index(drop=True)
-    if "v" not in work.columns:
-        work["v"] = 1.0
-    work["v"] = work["v"].astype(float).fillna(1.0)
-    if "ts" in work.columns:
-        work["dt"] = pd.to_datetime(work["ts"], unit="s", utc=True)
-    elif "dt" not in work.columns:
-        work["dt"] = pd.Timestamp.utcnow()
-
-    show = min(60, len(work))
-    plot = work.tail(show).reset_index(drop=True)
-    off = len(work) - show
-    px = float(work.iloc[-1]["c"])
-    ymin0 = float(plot["l"].min())
-    ymax0 = float(plot["h"].max())
-    pad = (ymax0 - ymin0) * 0.06 or 1.0
-    ymin0, ymax0 = ymin0 - pad, ymax0 + pad
-    tol = px * 0.0008
-
-    h = work["h"].astype(float).values
-    l = work["l"].astype(float).values
-    c = work["c"].astype(float).values
-    o = work["o"].astype(float).values
-    nfull = len(work)
-    results: list[tuple[str, bytes]] = []
-
-    # ----- 1) Equal H/L -----
-    try:
-        sh = _swing_idxs(h, "high")
-        sl = _swing_idxs(l, "low")
-
-        def cluster(idxs, vals):
-            if not idxs:
-                return []
-            items = sorted([(i, float(vals[i])) for i in idxs], key=lambda x: x[1])
-            clusters = []
-            cur = {"idxs": [items[0][0]], "prices": [items[0][1]]}
-            for i, p in items[1:]:
-                if abs(p - float(np.mean(cur["prices"]))) <= tol:
-                    cur["idxs"].append(i)
-                    cur["prices"].append(p)
-                else:
-                    clusters.append(cur)
-                    cur = {"idxs": [i], "prices": [p]}
-            clusters.append(cur)
-            out = []
-            for cl in clusters:
-                price = float(np.median(cl["prices"]))
-                count = len(cl["idxs"])
-                score = count * 10 + (25 if count >= 2 else 0)
-                out.append({"price": price, "count": count, "score": score, "idxs": cl["idxs"]})
-            return sorted(out, key=lambda x: -x["score"])
-
-        hi_lv = [x for x in cluster(sh, h) if abs(x["price"] - px) / px <= 0.03][:3]
-        lo_lv = [x for x in cluster(sl, l) if abs(x["price"] - px) / px <= 0.03][:3]
-
-        fig, ax = plt.subplots(figsize=(10.2, 4.8), dpi=130, facecolor="#fff")
-        _style_white_ax(ax)
-        nn = _draw_candles_ax(ax, plot, ymin0, ymax0)
-        for x in hi_lv:
-            ax.axhline(x["price"], color="#e65100", lw=1.3)
-            ax.text(
-                1, x["price"], f"  EQH {x['price']:.5g} ({x['count']}x)",
-                color="#e65100", fontsize=9, fontweight="bold", va="bottom",
-                bbox=dict(boxstyle="round,pad=0.2", fc="#fff3e0", ec="none"),
-            )
-        for x in lo_lv:
-            ax.axhline(x["price"], color="#1565c0", lw=1.3)
-            ax.text(
-                1, x["price"], f"  EQL {x['price']:.5g} ({x['count']}x)",
-                color="#1565c0", fontsize=9, fontweight="bold", va="top",
-                bbox=dict(boxstyle="round,pad=0.2", fc="#e3f2fd", ec="none"),
-            )
-        ax.set_xlim(-0.8, nn + 3)
-        ax.set_ylim(ymin0, ymax0)
-        fig.suptitle(f"1) Equal High/Low  ·  {symbol} {tf}", fontsize=12, fontweight="bold", x=0.08, ha="left")
-        results.append((f"1️⃣ Equal H/L — <b>{symbol}</b> {tf}", _fig_to_bytes(fig)))
-    except Exception as e:
-        log.warning("liq method1: %s", e)
-
-    # ----- 2) Session + PDH/PDL -----
-    try:
-        w2 = work.copy()
-        w2["hour"] = pd.to_datetime(w2["dt"]).dt.hour
-        w2["day"] = pd.to_datetime(w2["dt"]).dt.floor("D")
-        days = sorted(w2["day"].unique())
-        prev_day = days[-2] if len(days) >= 2 else days[-1]
-        pdf = w2[w2["day"] == prev_day]
-        pdh = float(pdf["h"].max()) if len(pdf) else px
-        pdl = float(pdf["l"].min()) if len(pdf) else px
-        recent = w2.tail(72)
-        levels = [("PDH", pdh, "#e65100"), ("PDL", pdl, "#1565c0")]
-        for name, hours, hc, lc in [
-            ("Asia", range(0, 8), "#ff8f00", "#0277bd"),
-            ("Lon", range(7, 16), "#ef6c00", "#0288d1"),
-            ("NY", range(13, 22), "#d84315", "#01579b"),
-        ]:
-            part = recent[recent["hour"].isin(list(hours))]
-            if len(part):
-                levels.append((f"{name} H", float(part["h"].max()), hc))
-                levels.append((f"{name} L", float(part["l"].min()), lc))
-
-        fig, ax = plt.subplots(figsize=(10.2, 4.8), dpi=130, facecolor="#fff")
-        _style_white_ax(ax)
-        nn = _draw_candles_ax(ax, plot, ymin0, ymax0)
-        for name, price, col in levels:
-            if price < ymin0 - pad or price > ymax0 + pad:
-                continue
-            ax.axhline(price, color=col, lw=1.2, ls="--" if name.startswith("PD") else "-")
-            ax.text(
-                1, price, f"  {name} {price:.5g}",
-                color=col, fontsize=8, fontweight="bold", va="bottom",
-                bbox=dict(boxstyle="round,pad=0.2", fc="#fafafa", ec="none", alpha=0.9),
-            )
-        ax.set_xlim(-0.8, nn + 3)
-        ax.set_ylim(ymin0, ymax0)
-        fig.suptitle(f"2) Session + PDH/PDL  ·  {symbol} {tf}", fontsize=12, fontweight="bold", x=0.08, ha="left")
-        results.append((f"2️⃣ Session/PDH — <b>{symbol}</b> {tf}", _fig_to_bytes(fig)))
-    except Exception as e:
-        log.warning("liq method2: %s", e)
-
-    # ----- 3) Volume Profile -----
-    try:
-        prof = work.tail(72)
-        bins = 40
-        lo_p, hi_p = float(prof["l"].min()), float(prof["h"].max())
-        edges = np.linspace(lo_p, hi_p, bins + 1)
-        vol_at = np.zeros(bins)
-        for _, row in prof.iterrows():
-            i0 = int(np.searchsorted(edges, row["l"], side="right") - 1)
-            i1 = int(np.searchsorted(edges, row["h"], side="right") - 1)
-            i0 = max(0, min(bins - 1, i0))
-            i1 = max(0, min(bins - 1, i1))
-            if i1 < i0:
-                i0, i1 = i1, i0
-            span = i1 - i0 + 1
-            for bi in range(i0, i1 + 1):
-                vol_at[bi] += float(row["v"]) / span
-        centers = (edges[:-1] + edges[1:]) / 2
-        hvn_idx = []
-        for bi in np.argsort(vol_at)[::-1]:
-            if any(abs(centers[bi] - centers[j]) < (hi_p - lo_p) * 0.015 for j in hvn_idx):
-                continue
-            hvn_idx.append(int(bi))
-            if len(hvn_idx) >= 3:
-                break
-        lvn_idx = []
-        for bi in np.argsort(vol_at):
-            if vol_at[bi] <= 0:
-                continue
-            if abs(centers[bi] - px) / px > 0.025:
-                continue
-            if any(abs(centers[bi] - centers[j]) < (hi_p - lo_p) * 0.02 for j in lvn_idx + hvn_idx):
-                continue
-            lvn_idx.append(int(bi))
-            if len(lvn_idx) >= 2:
-                break
-
-        fig, ax = plt.subplots(figsize=(10.2, 4.8), dpi=130, facecolor="#fff")
-        _style_white_ax(ax)
-        nn = _draw_candles_ax(ax, plot, ymin0, ymax0)
-        vmax = float(vol_at.max()) or 1.0
-        for bi in range(bins):
-            if centers[bi] < ymin0 or centers[bi] > ymax0:
-                continue
-            w = 8 * (vol_at[bi] / vmax)
-            ax.barh(
-                centers[bi], w, height=(hi_p - lo_p) / bins * 0.85,
-                left=nn + 0.5, color="#90a4ae", alpha=0.45, zorder=1,
-            )
-        for bi in hvn_idx:
-            ax.axhline(centers[bi], color="#6a1b9a", lw=1.4)
-            ax.text(
-                1, centers[bi], f"  HVN {centers[bi]:.5g}",
-                color="#6a1b9a", fontsize=9, fontweight="bold", va="bottom",
-                bbox=dict(boxstyle="round,pad=0.2", fc="#f3e5f5", ec="none"),
-            )
-        for bi in lvn_idx:
-            ax.axhline(centers[bi], color="#00838f", lw=1.2, ls=":")
-            ax.text(
-                1, centers[bi], f"  LVN {centers[bi]:.5g}",
-                color="#00838f", fontsize=9, fontweight="bold", va="top",
-                bbox=dict(boxstyle="round,pad=0.2", fc="#e0f7fa", ec="none"),
-            )
-        ax.set_xlim(-0.8, nn + 10)
-        ax.set_ylim(ymin0, ymax0)
-        fig.suptitle(f"3) Volume Profile  ·  {symbol} {tf}", fontsize=12, fontweight="bold", x=0.08, ha="left")
-        results.append((f"3️⃣ Volume Profile — <b>{symbol}</b> {tf}", _fig_to_bytes(fig)))
-    except Exception as e:
-        log.warning("liq method3: %s", e)
-
-    # ----- 4) Liquidity sweeps -----
-    try:
-        sh2 = _swing_idxs(h, "high", 3, 3)
-        sl2 = _swing_idxs(l, "low", 3, 3)
-        sweeps_h, sweeps_l = [], []
-        for i in range(5, nfull - 1):
-            prior_lows = [l[j] for j in sl2 if i - 20 <= j < i]
-            prior_highs = [h[j] for j in sh2 if i - 20 <= j < i]
-            if prior_lows:
-                m = min(prior_lows)
-                if l[i] < m and c[i] > m:
-                    sweeps_l.append({"i": i, "price": float(l[i])})
-            if prior_highs:
-                m = max(prior_highs)
-                if h[i] > m and c[i] < m:
-                    sweeps_h.append({"i": i, "price": float(h[i])})
-
-        def top_sweep(sweeps, k=3):
-            out = []
-            for s in reversed(sweeps):
-                if abs(s["price"] - px) / px > 0.03:
-                    continue
-                if any(abs(s["price"] - t["price"]) <= tol * 2 for t in out):
-                    continue
-                out.append(s)
-                if len(out) >= k:
-                    break
-            return out
-
-        th, tl = top_sweep(sweeps_h), top_sweep(sweeps_l)
-        fig, ax = plt.subplots(figsize=(10.2, 4.8), dpi=130, facecolor="#fff")
-        _style_white_ax(ax)
-        nn = _draw_candles_ax(ax, plot, ymin0, ymax0)
-        for s in th:
-            ax.axhline(s["price"], color="#c62828", lw=1.35)
-            ax.text(
-                1, s["price"], f"  Sweep High {s['price']:.5g}",
-                color="#c62828", fontsize=9, fontweight="bold", va="bottom",
-                bbox=dict(boxstyle="round,pad=0.2", fc="#ffebee", ec="none"),
-            )
-            pi = s["i"] - off
-            if 0 <= pi < nn:
-                ax.scatter([pi], [float(plot["h"].iloc[pi])], color="#c62828", s=50, zorder=5, marker="v")
-        for s in tl:
-            ax.axhline(s["price"], color="#2e7d32", lw=1.35)
-            ax.text(
-                1, s["price"], f"  Sweep Low {s['price']:.5g}",
-                color="#2e7d32", fontsize=9, fontweight="bold", va="top",
-                bbox=dict(boxstyle="round,pad=0.2", fc="#e8f5e9", ec="none"),
-            )
-            pi = s["i"] - off
-            if 0 <= pi < nn:
-                ax.scatter([pi], [float(plot["l"].iloc[pi])], color="#2e7d32", s=50, zorder=5, marker="^")
-        ax.set_xlim(-0.8, nn + 3)
-        ax.set_ylim(ymin0, ymax0)
-        fig.suptitle(f"4) Liquidity Sweep  ·  {symbol} {tf}", fontsize=12, fontweight="bold", x=0.08, ha="left")
-        results.append((f"4️⃣ Sweep — <b>{symbol}</b> {tf}", _fig_to_bytes(fig)))
-    except Exception as e:
-        log.warning("liq method4: %s", e)
-
-    return results
-
-
-async def handle_liq_request(
-    symbol: str,
-    tf: str,
-    user_id: int | None = None,
-    group_chat_id: str | int | None = None,
-) -> None:
-    """ارسال ۴ چارت سقف/کف به پیوی کاربر (نه گروه)."""
-    log.info("LIQ request %s %s user=%s", symbol, tf, user_id)
-    target = user_id if user_id is not None else CHAT_ID
-
-    # تست دسترسی پیوی: کاربر باید حداقل یک‌بار /start زده باشد
-    ok = send_telegram_text(
-        f"⏳ در حال محاسبه سقف/کف برای <b>{symbol}</b> ({tf}) …",
-        chat_id=target,
-    )
-    if not ok and user_id is not None:
-        # در گروه توضیح بده
-        if group_chat_id is not None:
-            send_telegram_text(
-                "⚠️ برای دریافت نمودارها در پیوی، اول ربات را باز کن و <b>/start</b> بزن، "
-                "بعد دوباره روی دکمه کلیک کن.",
-                chat_id=group_chat_id,
-            )
-        return
-
-    df, src = await fetch_klines(symbol, tf, size=120)
-    if df is None or len(df) < 30:
-        send_telegram_text(f"❌ دادهٔ کافی برای {symbol} {tf} نبود", chat_id=target)
-        return
-    if "v" not in df.columns or float(df["v"].fillna(0).sum()) <= 0:
-        g = await asyncio.to_thread(fetch_klines_gate, symbol, tf, 120)
-        if g is not None and "v" in g.columns:
-            df = g
-            src = "gate"
-    charts = await asyncio.to_thread(make_liquidity_charts, df, symbol, tf)
-    if not charts:
-        send_telegram_text("❌ ساخت نمودار ناموفق بود", chat_id=target)
-        return
-    for cap, img in charts:
-        send_telegram_photo(img, cap, chat_id=target)
-        await asyncio.sleep(0.4)
-    log.info("LIQ sent %d charts for %s %s src=%s → user %s", len(charts), symbol, tf, src, target)
-
-
-async def telegram_callback_loop() -> None:
-    """Poll Telegram for inline button presses."""
-    offset = None
-    url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/getUpdates"
-    while True:
-        try:
-            params = {"timeout": 25, "allowed_updates": json.dumps(["callback_query"])}
-            if offset is not None:
-                params["offset"] = offset
-            r = await asyncio.to_thread(requests.get, url, params=params, timeout=35)
-            data = r.json() if r.status_code == 200 else {}
-            for upd in data.get("result") or []:
-                offset = upd["update_id"] + 1
-                cq = upd.get("callback_query")
-                if not cq:
-                    continue
-                cb_id = cq.get("id")
-                raw = (cq.get("data") or "").strip()
-                user = cq.get("from") or {}
-                user_id = user.get("id")
-                msg = cq.get("message") or {}
-                group_chat_id = (msg.get("chat") or {}).get("id")
-
-                answer_callback_query(cb_id, "ارسال به پیوی شما…")
-                if not raw.startswith("liq:"):
-                    continue
-                parts = raw.split(":")
-                if len(parts) != 3:
-                    continue
-                _, symbol, tf = parts
-                symbol = symbol.upper()
-                if tf not in TIMEFRAMES:
-                    if user_id:
-                        send_telegram_text(f"تایم‌فریم نامعتبر: {tf}", chat_id=user_id)
-                    continue
-                try:
-                    await handle_liq_request(
-                        symbol, tf, user_id=user_id, group_chat_id=group_chat_id
-                    )
-                except Exception as e:
-                    log.warning("liq handle error: %s", e)
-                    if user_id:
-                        send_telegram_text(f"❌ خطا در محاسبه: {e}", chat_id=user_id)
-        except Exception as e:
-            log.warning("telegram poll: %s", e)
-            await asyncio.sleep(3)
 
 
 def entry_quality_score(df: pd.DataFrame, side: str) -> dict:
@@ -1731,6 +1303,7 @@ def compute_sell_add_levels(df: pd.DataFrame, entry: float, upper: float) -> dic
 
 
 def format_signal_message(sig: dict) -> str:
+    """خلاصه گپ — بدون ورود/خروج/پله."""
     emoji = "🔴" if sig["side"] == "SELL" else "🟢"
     side_fa = "سِل" if sig["side"] == "SELL" else "لانگ"
     pen = sig.get("diff_pct")
@@ -1745,26 +1318,9 @@ def format_signal_message(sig: dict) -> str:
         f'<a href="{link}"><b>{symbol}</b></a>{badge}',
         f"⏱ {sig['tf']} · 📏 {pen:.2f}% · Q{q_score}",
     ]
-    if badge:
-        lines.append("⛔ <b>INNO / نوآوری</b> — ریسک خیلی بالا؛ ترجیحاً رد یا سایز خیلی کم")
     nl = news_line_for_symbol(symbol)
     if nl:
         lines.append(nl)
-    entry = sig.get("fut_last") or sig.get("open")
-    if sig.get("side") == "SELL" and entry:
-        a2, a3 = sig.get("add2"), sig.get("add3")
-        ub = sig.get("upper")
-        lines.append(f"① ورود: <code>{entry:.6g}</code>")
-        if a2:
-            lines.append(
-                f"② پله۲: <code>{a2:.6g}</code> (+{sig.get('add2_pct', 0):.2f}%)"
-            )
-        if a3:
-            lines.append(
-                f"③ پله۳: <code>{a3:.6g}</code> (+{sig.get('add3_pct', 0):.2f}%)"
-            )
-        if ub:
-            lines.append(f"🎯 برگشت گپ UB: <code>{ub:.6g}</code>")
     return "\n".join(lines)
 
 
@@ -2304,8 +1860,7 @@ def _angle_metrics(df: pd.DataFrame) -> dict | None:
         and spread >= ANGLE_MIN_SPREAD
         and ema5 >= ema10 * 0.997
     )
-    # سبک TA: پامپ عمودی + زاویه باز + هنوز بالای EMA10
-    # (خنک شدن کامل لازم نیست؛ تأیید گپ ۱س/۴س بعداً در cycle اضافه می‌شود)
+    # سبک TA: پامپ + زاویه باز + بالای EMA10 (بدون خنک‌شدن کامل)
     cup_ta = (
         pumped
         and was_elevated
@@ -2316,6 +1871,18 @@ def _angle_metrics(df: pd.DataFrame) -> dict | None:
         and ema5 >= ema10 * 0.995
         and c >= ema10 * 1.008
     )
+    # ۱۵م شل‌تر (تست): فاصله کمتر، spread کمتر، سقف دورتر، hot شدید فقط رد
+    cup_ta_15m = (
+        pumped
+        and was_elevated
+        and dist10 >= 0.7
+        and dist20 >= 1.2
+        and spread >= 1.0
+        and from_high <= 8.0
+        and ema5 >= ema10 * 0.992
+        and c >= ema10 * 1.003
+        and not (e5_s3 > 4.0 and ub_s3 > 4.0)
+    )
     touched_e10 = False
     for j in range(max(0, i - 2), i + 1):
         if float(l_s.iloc[j]) <= float(e10.iloc[j]) * (1.0 + ANGLE_CLOSE1_PCT / 100.0):
@@ -2323,8 +1890,8 @@ def _angle_metrics(df: pd.DataFrame) -> dict | None:
             break
     if touched_e10:
         ready_strict = False
-        # اگر تازه تاچ کرده، دیگر «ورود جام» نیست؛ فقط close1
         cup_ta = False
+        cup_ta_15m = False
 
     ready_early = ready_strict or cup_ta
 
@@ -2351,27 +1918,31 @@ def _angle_metrics(df: pd.DataFrame) -> dict | None:
         "close2": close2,
         "cup_forming": cup_forming,
         "cup_ta": cup_ta,
+        "cup_ta_15m": cup_ta_15m,
         "ready_early": ready_early,
         "ready_strict": ready_strict,
         "new_high": new_high,
         "hot": hot,
+        "pumped": pumped,
+        "was_elevated": was_elevated,
         "candle_ts": candle_ts,
     }
 
 
 def check_angle_setup(df: pd.DataFrame, symbol: str, tf: str) -> dict | None:
     """
-    فقط سه حالت معتبر:
-    ready = هنوز بالای EMA، زاویه باز، در حال خنک شدن (بهترین برای ورود زود)
-    close1 / close2 = تاچ از بالا بعد از پامپ واقعی — نه قیمتی که از قبل زیر میانگین است
+    ready / close1 / close2
+    روی ۱۵م: cup_ta_15m شل‌تر هم قبول می‌شود (تست).
     """
     try:
         m = _angle_metrics(df)
         if not m:
             return None
-        # اولویت: آماده‌باش زود، بعد بستن‌ها
         if m["ready_early"]:
             event = "ready"
+        elif tf == "15m" and m.get("cup_ta_15m"):
+            event = "ready"
+            m = {**m, "cup_ta": True, "ready_early": True}
         elif m["close2"]:
             event = "close2"
         elif m["close1"]:
@@ -2449,14 +2020,13 @@ def format_angle_batch(tf: str, items: list[dict]) -> str:
             extra += f"\n  🔗 {gap_line}"
 
         badge = inno_badge(sym)
-        inno_line = "\n  ⛔ <b>🔴INNO</b> — خطرناک؛ ترجیحاً رد" if badge else ""
         nl = news_line_for_symbol(sym)
         news_extra = f"\n  {nl}" if nl else ""
         lines.append(
             f'• <a href="{link}"><b>{sym}</b></a>{badge} [{level}] {tag}\n'
             f'  ازسقف {it["from_high"]:.1f}% · +E10 {it["dist10"]:.1f}% · +E20 {it["dist20"]:.1f}%\n'
             f'  🎯 هدف کلوز (زاویه۱) E10 <code>{it["ema10"]:.6g}</code>'
-            f"{extra}{scale}{inno_line}{news_extra}"
+            f"{extra}{scale}{news_extra}"
         )
     return "\n".join(lines)
 
