@@ -24,8 +24,11 @@ STATE_FILE = os.path.join(BASE_DIR, "bot_state.json")
 
 # ========================= VERSION / CHANGELOG =========================
 # هر بار اپدیت: BOT_VERSION را بالا ببر و یک خط در CHANGELOG[نسخه] اضافه کن.
-BOT_VERSION = "1.7.2"
+BOT_VERSION = "1.7.3"
 CHANGELOG = {
+    "1.7.3": [
+        "زاویه سبک TA: جام ۱۵م بعد پامپ + گپ ۱س/۴س | هدف کلوز EMA10 | پله فقط با گپ بالاتر",
+    ],
     "1.7.2": [
         "رفع آلارم غلط زاویه: فقط بعد از پامپ واقعی + از بالا به EMA؛ زیر میانگین‌ها دیگر سیگنال نمی‌دهد",
     ],
@@ -1948,7 +1951,8 @@ def _angle_metrics(df: pd.DataFrame) -> dict | None:
         and dist10 >= 1.0
     )
 
-    ready_early = (
+    # آماده‌باش کلاسیک (سفت) — خنک شدن کامل
+    ready_strict = (
         pumped
         and was_elevated
         and not hot
@@ -1960,11 +1964,29 @@ def _angle_metrics(df: pd.DataFrame) -> dict | None:
         and spread >= ANGLE_MIN_SPREAD
         and ema5 >= ema10 * 0.997
     )
-    # آماده‌باش = هنوز تاچ نکرده
+    # سبک TA: پامپ عمودی + زاویه باز + هنوز بالای EMA10
+    # (خنک شدن کامل لازم نیست؛ تأیید گپ ۱س/۴س بعداً در cycle اضافه می‌شود)
+    cup_ta = (
+        pumped
+        and was_elevated
+        and dist10 >= 1.2
+        and dist20 >= 2.0
+        and spread >= 1.8
+        and from_high <= 5.5
+        and ema5 >= ema10 * 0.995
+        and c >= ema10 * 1.008
+    )
+    touched_e10 = False
     for j in range(max(0, i - 2), i + 1):
         if float(l_s.iloc[j]) <= float(e10.iloc[j]) * (1.0 + ANGLE_CLOSE1_PCT / 100.0):
-            ready_early = False
+            touched_e10 = True
             break
+    if touched_e10:
+        ready_strict = False
+        # اگر تازه تاچ کرده، دیگر «ورود جام» نیست؛ فقط close1
+        cup_ta = False
+
+    ready_early = ready_strict or cup_ta
 
     try:
         candle_ts = int(df.iloc[i]["ts"])
@@ -1988,7 +2010,9 @@ def _angle_metrics(df: pd.DataFrame) -> dict | None:
         "close1": close1,
         "close2": close2,
         "cup_forming": cup_forming,
+        "cup_ta": cup_ta,
         "ready_early": ready_early,
+        "ready_strict": ready_strict,
         "new_high": new_high,
         "hot": hot,
         "candle_ts": candle_ts,
@@ -2020,35 +2044,75 @@ def check_angle_setup(df: pd.DataFrame, symbol: str, tf: str) -> dict | None:
         return None
 
 
+def _df_has_sell_gap(df: pd.DataFrame) -> bool:
+    """آیا کندل جاری/اخیر گپ سِل نسبت به UB دارد؟"""
+    if df is None or len(df) < BB_PERIOD + 2 or "upper" not in df.columns:
+        return False
+    cur = df.iloc[-1]
+    try:
+        o = float(cur["o"])
+        h = float(cur["h"])
+        ub = float(cur["upper"])
+    except Exception:
+        return False
+    if ub <= 0 or np.isnan(ub):
+        return False
+    open_gap = (o - ub) / ub * 100.0
+    pen = (h - ub) / ub * 100.0 if h > ub else 0.0
+    # گپ اوپن یا نفوذ قوی به بالای UB
+    return open_gap >= MIN_OPEN_GAP_PCT or pen >= PENETRATION_PCT
+
+
 def format_angle_batch(tf: str, items: list[dict]) -> str:
-    lines = [f"⚠️ <b>زاویه / زنجیره</b> · {tf}"]
+    lines = [f"⚠️ <b>زاویه / جام</b> · {tf}"]
     for it in items:
         sym = it["symbol"]
         link = lbank_futures_link(sym, tf)
         ev = it.get("event") or "ready"
         level = it.get("level") or "?"
-        parent = it.get("parent_tf")
+        g1 = it.get("gap_1h")
+        g4 = it.get("gap_4h")
         parent_cup = it.get("parent_cup")
 
         if ev == "close2":
             tag = "بستن زاویه <b>دوم</b>"
         elif ev == "close1":
-            tag = "بستن زاویه <b>اول</b>"
+            tag = "بستن زاویه <b>اول</b> (هدف رسیده)"
+        elif it.get("cup_ta"):
+            tag = "جام ۱۵م بعد پامپ — <b>ورود سِل</b>"
         else:
-            tag = "آماده‌باش (قبل از بستن)"
+            tag = "آماده‌باش خنک‌شده"
+
+        gap_txt = []
+        if g1 is True:
+            gap_txt.append("۱س گپ✓")
+        elif g1 is False:
+            gap_txt.append("۱س گپ✗")
+        if g4 is True:
+            gap_txt.append("۴س گپ✓")
+        elif g4 is False:
+            gap_txt.append("۴س گپ✗")
+        gap_line = " · ".join(gap_txt) if gap_txt else ""
+
+        scale = ""
+        if g1 and g4:
+            scale = "\n  📌 پله: مجاز (گپ ۱س+۴س) — اگر سقف جدید زد میانگین کم کن"
+        elif g1 or g4:
+            scale = "\n  📌 پله: فقط با احتیاط (یکی از گپ‌ها)"
+        else:
+            scale = "\n  📌 پله: نه — بدون گپ بالاتر اضافه نکن"
 
         extra = ""
-        if parent:
-            if parent_cup:
-                extra = f"\n  ⬆ {parent}: <b>جام در حال شکل</b> → بزنگاه‌تر"
-            else:
-                extra = f"\n  ⬆ {parent}: هنوز جام آماده نیست (واچ)"
+        if parent_cup:
+            extra = "\n  ⬆ تایم بالاتر: جام در حال شکل"
+        if gap_line:
+            extra += f"\n  🔗 {gap_line}"
 
         lines.append(
             f'• <a href="{link}"><b>{sym}</b></a> [{level}] {tag}\n'
             f'  ازسقف {it["from_high"]:.1f}% · +E10 {it["dist10"]:.1f}% · +E20 {it["dist20"]:.1f}%\n'
-            f'  🎯 E10 <code>{it["ema10"]:.6g}</code> · E20 <code>{it["ema20"]:.6g}</code>'
-            f"{extra}"
+            f'  🎯 هدف کلوز (زاویه۱) E10 <code>{it["ema10"]:.6g}</code>'
+            f"{extra}{scale}"
         )
     return "\n".join(lines)
 
@@ -2089,16 +2153,36 @@ async def angle_alert_cycle(symbols: list[str], tfs: list[str] | None = None) ->
                 parent = ANGLE_PARENT.get(tf)
                 hit["parent_tf"] = parent
                 hit["parent_cup"] = False
+                hit["gap_1h"] = None
+                hit["gap_4h"] = None
                 if parent and parent in TIMEFRAMES:
                     try:
                         pdf, _ = await fetch_klines(sym, parent, size=50)
                         pm = _angle_metrics(pdf) if pdf is not None else None
-                        if pm and pm.get("cup_forming"):
+                        if pm and (pm.get("cup_forming") or pm.get("cup_ta")):
                             hit["parent_cup"] = True
                     except Exception:
                         pass
+                # تأیید گپ تایم‌های بالاتر (سبک TA: پله با ۱س+۴س)
+                try:
+                    d1, _ = await fetch_klines(sym, "1h", size=40)
+                    hit["gap_1h"] = _df_has_sell_gap(d1)
+                except Exception:
+                    hit["gap_1h"] = False
+                try:
+                    d4, _ = await fetch_klines(sym, "4h", size=40)
+                    hit["gap_4h"] = _df_has_sell_gap(d4)
+                except Exception:
+                    hit["gap_4h"] = False
 
-                if (ev == "ready" and hit["parent_cup"]) or (ev == "close2" and hit["parent_cup"]):
+                # سبک TA روی ۱۵م: اگر جام هست ولی هیچ گپ بالاتری نیست → فقط واچ ضعیف
+                if tf == "15m" and hit.get("cup_ta") and not hit["gap_1h"] and not hit["gap_4h"]:
+                    hit["level"] = "A"
+                elif hit["gap_1h"] and hit["gap_4h"] and ev in ("ready", "close1"):
+                    hit["level"] = "C"
+                elif (hit["gap_1h"] or hit["gap_4h"] or hit["parent_cup"]) and ev != "close2":
+                    hit["level"] = "B"
+                elif (ev == "ready" and hit["parent_cup"]) or (ev == "close2" and hit["parent_cup"]):
                     hit["level"] = "C"
                 elif ev == "close2" or (ev == "close1" and hit["parent_cup"]):
                     hit["level"] = "B"
@@ -2107,8 +2191,8 @@ async def angle_alert_cycle(symbols: list[str], tfs: list[str] | None = None) ->
 
                 by_tf[tf].append(hit)
                 log.info(
-                    "ANGLE %s %s %s L=%s parent_cup=%s fromH=%.1f src=%s",
-                    ev, sym, tf, hit["level"], hit["parent_cup"], hit["from_high"], src,
+                    "ANGLE %s %s %s L=%s gap1h=%s gap4h=%s fromH=%.1f src=%s",
+                    ev, sym, tf, hit["level"], hit["gap_1h"], hit["gap_4h"], hit["from_high"], src,
                 )
             except Exception as e:
                 log.debug("angle %s %s: %s", sym, tf, e)
