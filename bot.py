@@ -24,8 +24,12 @@ STATE_FILE = os.path.join(BASE_DIR, "bot_state.json")
 
 # ========================= VERSION / CHANGELOG =========================
 # هر بار اپدیت: BOT_VERSION را بالا ببر و یک خط در CHANGELOG[نسخه] اضافه کن.
-BOT_VERSION = "1.7.3"
+BOT_VERSION = "1.7.4"
 CHANGELOG = {
+    "1.7.4": [
+        "هشدار تایم خبری (کلان + مرتبط با نماد) — ورود ممنوع در پنجره خبر",
+        "علامت قرمز 🔴INNO روی ارزهای نوآوری/پرریسک",
+    ],
     "1.7.3": [
         "زاویه سبک TA: جام ۱۵م بعد پامپ + گپ ۱س/۴س | هدف کلوز EMA10 | پله فقط با گپ بالاتر",
     ],
@@ -115,6 +119,26 @@ ALWAYS_INCLUDE = ["BTCUSDT", "XAUTUSDT"]
 # نمادهایی که NO_KLINE شدند تا این مدت دوباره چک نشوند (ثانیه) — ۲۴ ساعت
 BLACKLIST_TTL_SEC = 24 * 3600
 
+# ——— تایم خبری ———
+NEWS_ENABLED = True
+NEWS_PRE_ALERT_MIN = 45          # چند دقیقه قبل از خبر هشدار بده
+NEWS_BLOCK_BEFORE_MIN = 15       # از چند دقیقه قبل ورود نکن
+NEWS_BLOCK_AFTER_MIN = 20        # تا چند دقیقه بعد ورود نکن
+NEWS_REFRESH_SEC = 3 * 3600      # هر چند وقت تقویم را تازه کن
+
+# ——— منطقه نوآوری (INNO) — ریسک خیلی بالا ———
+# دستی اضافه کن؛ به‌علاوه تشخیص خودکار از لeverage پایین (غیر سهام)
+INNO_MANUAL = set()  # مثال: {"XXXUSDT", "YYYUSDT"}
+INNO_FILE = os.path.join(BASE_DIR, "inno_symbols.txt")
+# سهام/کالا که lev پایین دارند ولی INNO نیستند
+NOT_INNO_BASES = {
+    "BTC", "ETH", "BNB", "SOL", "XRP", "DOGE", "ADA", "AVAX", "DOT", "LINK",
+    "LTC", "BCH", "NEAR", "ATOM", "UNI", "AAVE", "XAUT", "PAXG", "GOLD",
+    "SILVER", "TSLA", "NVDA", "AAPL", "MSFT", "GOOGL", "META", "AMZN", "COIN",
+    "MSTR", "SPY", "QQQ", "IWM", "NFLX", "AMD", "INTC", "BABA", "PLTR",
+    "SUGAR", "WHEAT", "COTTON", "COCOA", "SOYBEAN", "CRCL", "HOOD",
+}
+
 # ——— آماده‌باش بستن زاویه (جدا از گپ) ———
 ANGLE_ENABLED = True
 ANGLE_TFS = ["15m", "1h", "4h"]   # زنجیره: ۱۵م→۱س→۴س
@@ -176,6 +200,11 @@ last_known_version: str | None = None
 futures_last_map: dict = {}
 # symbol -> unix time که بلک‌لیست شده
 kline_blacklist: dict[str, int] = {}
+instrument_lev: dict[str, int] = {}
+inno_auto: set[str] = set()
+news_events_cache: list[dict] = []
+news_cache_ts: float = 0.0
+sent_news_alerts: set = set()
 
 daily = {"day": None, "by_tf": {}}
 
@@ -201,6 +230,311 @@ def iran_now():
 
 def iran_today() -> str:
     return iran_now().strftime("%Y-%m-%d")
+
+
+def symbol_base(symbol: str) -> str:
+    s = (symbol or "").upper().replace("USDT", "").replace("_", "")
+    return s
+
+
+def refresh_instrument_meta() -> None:
+    """اهرم و کاندیدهای INNO از API ال‌بانک."""
+    global instrument_lev, inno_auto
+    try:
+        r = requests.get(
+            "https://lbkperp.lbank.com/cfd/openApi/v1/pub/instrument?productGroup=SwapU",
+            timeout=15,
+        )
+        data = r.json().get("data") or []
+    except Exception as e:
+        log.warning("instrument meta: %s", e)
+        return
+    lev_map: dict[str, int] = {}
+    auto: set[str] = set()
+    for item in data:
+        sym = (item.get("symbol") or "").upper()
+        if not sym.endswith("USDT"):
+            continue
+        try:
+            lev = int(float(item.get("maxLeverage") or 0))
+        except Exception:
+            lev = 0
+        lev_map[sym] = lev
+        base = symbol_base(sym)
+        # lev خیلی پایین روی آلت غیرسهام ≈ منطقه پرریسک/نوآوری
+        if 0 < lev <= 25 and base not in NOT_INNO_BASES and len(base) >= 2:
+            auto.add(sym)
+    instrument_lev = lev_map
+    inno_auto = auto
+    log.info("Instrument meta: %d symbols, auto-INNO candidates=%d", len(lev_map), len(auto))
+
+
+def load_inno_manual() -> set[str]:
+    out = set(x.upper() for x in INNO_MANUAL)
+    if os.path.exists(INNO_FILE):
+        try:
+            with open(INNO_FILE, "r", encoding="utf-8") as f:
+                for line in f:
+                    line = line.strip().upper()
+                    if not line or line.startswith("#"):
+                        continue
+                    if not line.endswith("USDT"):
+                        line = line + "USDT"
+                    out.add(line)
+        except Exception as e:
+            log.warning("inno file: %s", e)
+    return out
+
+
+def is_inno(symbol: str) -> bool:
+    sym = (symbol or "").upper()
+    if sym in load_inno_manual():
+        return True
+    if not instrument_lev:
+        refresh_instrument_meta()
+    return sym in inno_auto
+
+
+def inno_badge(symbol: str) -> str:
+    if is_inno(symbol):
+        return ' <b>🔴INNO</b>'
+    return ""
+
+
+# ——— تقویم خبری ———
+# رویدادهای تکراری تقریبی + تلاش برای دریافت تقویم آنلاین
+_MACRO_AFFECTS = {
+    "default": ["BTCUSDT", "ETHUSDT", "XAUTUSDT"],
+    "cpi": ["BTCUSDT", "ETHUSDT", "XAUTUSDT", "SOLUSDT"],
+    "fomc": ["BTCUSDT", "ETHUSDT", "XAUTUSDT", "SOLUSDT", "BNBUSDT"],
+    "nfp": ["BTCUSDT", "ETHUSDT", "XAUTUSDT"],
+    "pce": ["BTCUSDT", "ETHUSDT", "XAUTUSDT"],
+    "gdp": ["BTCUSDT", "ETHUSDT"],
+}
+
+
+def _parse_ff_day_html(html: str, day_label: str) -> list[dict]:
+    """پارس ساده تقویم ForexFactory برای رویدادهای High impact."""
+    import re
+    from datetime import timedelta
+
+    events = []
+    # ردیف‌های جدول کلاسیک FF
+    rows = re.findall(
+        r'class="calendar__row[^"]*"[^>]*>(.*?)</tr>',
+        html,
+        re.I | re.S,
+    )
+    if not rows:
+        # ساختار جدیدتر
+        rows = re.findall(r'data-event-id="[^"]+"(.*?)</tr>', html, re.I | re.S)
+
+    current_date = iran_today()
+    for row in rows:
+        if "high" not in row.lower() and "calendar__impact" not in row.lower():
+            # فقط high
+            if "icon--ff-impact-red" not in row and "impact-red" not in row.lower():
+                if 'title="High"' not in row and "High Impact" not in row:
+                    continue
+        # currency
+        cur_m = re.search(r'calendar__currency[^>]*>([A-Z]{3})', row)
+        currency = cur_m.group(1) if cur_m else "USD"
+        if currency not in ("USD", "EUR", "GBP", "JPY", "CNY"):
+            continue
+        title_m = re.search(r'calendar__event-title[^>]*>([^<]+)', row)
+        if not title_m:
+            title_m = re.search(r'calendar__event[^>]*>([^<]+)', row)
+        title = (title_m.group(1).strip() if title_m else "High impact event")
+        time_m = re.search(r'calendar__time[^>]*>([^<]+)', row)
+        tstr = (time_m.group(1).strip() if time_m else "")
+        # فقط USD برای کریپتو مهم‌تر است؛ EUR/GBP هم اثر دارند
+        if currency != "USD" and not any(
+            k in title.lower() for k in ("rate", "ecb", "boe", "interest")
+        ):
+            continue
+        events.append({
+            "title": title,
+            "currency": currency,
+            "time_str": tstr,
+            "date": current_date,
+            "source": "forexfactory",
+        })
+    return events
+
+
+def _builtin_upcoming_macro() -> list[dict]:
+    """رویدادهای کلان شناخته‌شدهٔ نزدیک (تقریبی ماهانه) — پشتیبان اگر اسکرپ شکست بخورد."""
+    # تاریخ‌های مهم اکتبر ۲۰۲۶ از منابع عمومی
+    known = [
+        # (YYYY-MM-DD, HH:MM Iran roughly, title, tag)
+        ("2026-10-14", "16:00", "US CPI (تورم آمریکا)", "cpi"),
+        ("2026-10-15", "16:30", "US PPI / Retail Sales", "cpi"),
+        ("2026-10-28", "21:30", "FOMC Rate Decision", "fomc"),
+        ("2026-10-29", "16:30", "US PCE Price Index", "pce"),
+        ("2026-11-06", "16:00", "Non-Farm Payrolls (NFP)", "nfp"),
+    ]
+    out = []
+    now = iran_now()
+    for date_s, hm, title, tag in known:
+        try:
+            y, m, d = map(int, date_s.split("-"))
+            hh, mm = map(int, hm.split(":"))
+            dt = datetime(y, m, d, hh, mm, tzinfo=TEHRAN)
+        except Exception:
+            continue
+        if dt.timestamp() < time.time() - 3600:
+            continue
+        if dt.timestamp() > time.time() + 14 * 86400:
+            continue
+        out.append({
+            "title": title,
+            "currency": "USD",
+            "ts": int(dt.timestamp()),
+            "tag": tag,
+            "source": "builtin",
+            "affects": _MACRO_AFFECTS.get(tag, _MACRO_AFFECTS["default"]),
+        })
+    return out
+
+
+def refresh_news_calendar(force: bool = False) -> list[dict]:
+    global news_events_cache, news_cache_ts
+    if not NEWS_ENABLED:
+        return []
+    now = time.time()
+    if not force and news_events_cache and (now - news_cache_ts) < NEWS_REFRESH_SEC:
+        return news_events_cache
+
+    events: list[dict] = []
+    events.extend(_builtin_upcoming_macro())
+
+    # تلاش برای ForexFactory (ممکن است روی سرور بلاک شود)
+    try:
+        r = requests.get(
+            "https://www.forexfactory.com/calendar?day=today",
+            timeout=12,
+            headers={"User-Agent": "Mozilla/5.0 (compatible; LBankBot/1.7)"},
+        )
+        if r.status_code == 200 and len(r.text) > 500:
+            parsed = _parse_ff_day_html(r.text, "today")
+            for p in parsed:
+                events.append({
+                    "title": p["title"],
+                    "currency": p["currency"],
+                    "ts": int(now),  # زمان دقیق در HTML پیچیده است — فقط هشدار روزانه
+                    "tag": "high",
+                    "source": "forexfactory",
+                    "affects": _MACRO_AFFECTS["default"],
+                    "all_day_hint": True,
+                })
+    except Exception as e:
+        log.debug("FF calendar: %s", e)
+
+    # یکتا بر اساس title+date
+    seen = set()
+    uniq = []
+    for ev in events:
+        key = (ev.get("title"), ev.get("ts") or ev.get("date"))
+        if key in seen:
+            continue
+        seen.add(key)
+        uniq.append(ev)
+
+    news_events_cache = uniq
+    news_cache_ts = now
+    log.info("News calendar refreshed: %d events", len(uniq))
+    return uniq
+
+
+def news_blocking_now(symbol: str | None = None) -> list[dict]:
+    """رویدادهایی که الان پنجرهٔ ممنوعیت ورود دارند."""
+    events = refresh_news_calendar()
+    now = time.time()
+    hit = []
+    for ev in events:
+        ts = ev.get("ts")
+        if not ts:
+            continue
+        before = NEWS_BLOCK_BEFORE_MIN * 60
+        after = NEWS_BLOCK_AFTER_MIN * 60
+        if ts - before <= now <= ts + after:
+            affects = ev.get("affects") or _MACRO_AFFECTS["default"]
+            if symbol is None or symbol.upper() in affects or any(
+                symbol_base(symbol) in symbol_base(a) for a in affects
+            ):
+                hit.append(ev)
+            elif symbol and symbol.upper() in ("BTCUSDT", "ETHUSDT", "XAUTUSDT"):
+                hit.append(ev)
+    return hit
+
+
+def news_upcoming(within_min: int = 180) -> list[dict]:
+    events = refresh_news_calendar()
+    now = time.time()
+    out = []
+    for ev in events:
+        ts = ev.get("ts")
+        if not ts:
+            continue
+        if 0 <= ts - now <= within_min * 60:
+            out.append(ev)
+    out.sort(key=lambda x: x.get("ts") or 0)
+    return out
+
+
+def format_news_alert(events: list[dict], prefix: str = "🚨 تایم خبری") -> str:
+    lines = [f"<b>{prefix}</b> — تا اطلاع، ورود نکن / سایز را کم کن"]
+    for ev in events[:8]:
+        ts = ev.get("ts")
+        try:
+            tiran = datetime.fromtimestamp(ts, TEHRAN).strftime("%H:%M") if ts else "?"
+        except Exception:
+            tiran = "?"
+        aff = ev.get("affects") or []
+        aff_s = ", ".join(symbol_base(a) for a in aff[:4]) if aff else "بازار"
+        lines.append(
+            f"• {tiran} ایران · <b>{ev.get('title', 'خبر')}</b>\n"
+            f"  اثر روی: {aff_s}"
+        )
+    return "\n".join(lines)
+
+
+def maybe_send_news_prealerts() -> None:
+    """۴۵ دقیقه قبل از خبر کلان، یک‌بار هشدار بده."""
+    if not NEWS_ENABLED:
+        return
+    upcoming = news_upcoming(within_min=NEWS_PRE_ALERT_MIN + 5)
+    for ev in upcoming:
+        ts = ev.get("ts")
+        if not ts:
+            continue
+        left = ts - time.time()
+        if left > NEWS_PRE_ALERT_MIN * 60 or left < 0:
+            continue
+        key = ("pre", ev.get("title"), ts)
+        if key in sent_news_alerts:
+            continue
+        sent_news_alerts.add(key)
+        send_telegram_text(format_news_alert([ev], prefix="🚨 به‌زودی خبر مهم"))
+        log.info("NEWS pre-alert: %s", ev.get("title"))
+
+
+def news_line_for_symbol(symbol: str) -> str:
+    hits = news_blocking_now(symbol)
+    if not hits:
+        # نزدیک بودن بدون بلاک کامل
+        near = news_upcoming(within_min=NEWS_PRE_ALERT_MIN)
+        near = [
+            e for e in near
+            if symbol.upper() in (e.get("affects") or _MACRO_AFFECTS["default"])
+            or symbol.upper() in ("BTCUSDT", "ETHUSDT", "XAUTUSDT")
+        ]
+        if not near:
+            return ""
+        titles = ", ".join(e.get("title", "")[:40] for e in near[:2])
+        return f"⚠️ نزدیک خبر: {titles}"
+    titles = ", ".join(e.get("title", "")[:40] for e in hits[:2])
+    return f"🚨 <b>تایم خبری — ورود نکن</b>: {titles}"
 
 
 def ensure_daily() -> dict:
@@ -1405,11 +1739,17 @@ def format_signal_message(sig: dict) -> str:
     symbol = sig["symbol"]
     link = lbank_futures_link(symbol, sig["tf"])
     q_score = sig.get("q_score", 50)
+    badge = inno_badge(symbol)
     lines = [
         f"{emoji} <b>{side_fa}</b> · "
-        f'<a href="{link}"><b>{symbol}</b></a>',
+        f'<a href="{link}"><b>{symbol}</b></a>{badge}',
         f"⏱ {sig['tf']} · 📏 {pen:.2f}% · Q{q_score}",
     ]
+    if badge:
+        lines.append("⛔ <b>INNO / نوآوری</b> — ریسک خیلی بالا؛ ترجیحاً رد یا سایز خیلی کم")
+    nl = news_line_for_symbol(symbol)
+    if nl:
+        lines.append(nl)
     entry = sig.get("fut_last") or sig.get("open")
     if sig.get("side") == "SELL" and entry:
         a2, a3 = sig.get("add2"), sig.get("add3")
@@ -2108,11 +2448,15 @@ def format_angle_batch(tf: str, items: list[dict]) -> str:
         if gap_line:
             extra += f"\n  🔗 {gap_line}"
 
+        badge = inno_badge(sym)
+        inno_line = "\n  ⛔ <b>🔴INNO</b> — خطرناک؛ ترجیحاً رد" if badge else ""
+        nl = news_line_for_symbol(sym)
+        news_extra = f"\n  {nl}" if nl else ""
         lines.append(
-            f'• <a href="{link}"><b>{sym}</b></a> [{level}] {tag}\n'
+            f'• <a href="{link}"><b>{sym}</b></a>{badge} [{level}] {tag}\n'
             f'  ازسقف {it["from_high"]:.1f}% · +E10 {it["dist10"]:.1f}% · +E20 {it["dist20"]:.1f}%\n'
             f'  🎯 هدف کلوز (زاویه۱) E10 <code>{it["ema10"]:.6g}</code>'
-            f"{extra}{scale}"
+            f"{extra}{scale}{inno_line}{news_extra}"
         )
     return "\n".join(lines)
 
@@ -2296,12 +2640,36 @@ async def one_cycle(tfs: list | None = None) -> None:
 async def main() -> None:
     load_state()
     ensure_daily()
+    try:
+        refresh_instrument_meta()
+    except Exception as e:
+        log.warning("instrument meta on start: %s", e)
+    try:
+        refresh_news_calendar(force=True)
+    except Exception as e:
+        log.warning("news calendar on start: %s", e)
     send_telegram_text(format_startup_message())
+    # خلاصه اخبار نزدیک (اگر باشد)
+    try:
+        near = [e for e in refresh_news_calendar() if e.get("ts") and e["ts"] > time.time()]
+        near = sorted(near, key=lambda x: x["ts"])[:5]
+        if near:
+            send_telegram_text(format_news_alert(near, prefix="📅 اخبار مهم پیش‌رو"))
+    except Exception as e:
+        log.debug("startup news: %s", e)
     save_state()  # ثبت نسخه فعلی
     last_scan_key = None
     last_pre_key = None
+    last_news_refresh = time.time()
     while True:
         maybe_send_daily_report()
+        try:
+            maybe_send_news_prealerts()
+            if time.time() - last_news_refresh > NEWS_REFRESH_SEC:
+                refresh_news_calendar(force=True)
+                last_news_refresh = time.time()
+        except Exception as e:
+            log.debug("news loop: %s", e)
         tfs = timeframes_to_check_now()
         if tfs:
             now = int(time.time())
