@@ -24,8 +24,11 @@ STATE_FILE = os.path.join(BASE_DIR, "bot_state.json")
 
 # ========================= VERSION / CHANGELOG =========================
 # هر بار اپدیت: BOT_VERSION را بالا ببر و یک خط در CHANGELOG[نسخه] اضافه کن.
-BOT_VERSION = "1.7.5"
+BOT_VERSION = "1.7.6"
 CHANGELOG = {
+    "1.7.6": [
+        "زاویه زودتر: خم شدن نوک UB (قبل از بستن EMA) | بستن زاویه=دیر حذف از ۱۵م | واچ برای نوک تیز",
+    ],
     "1.7.5": [
         "۱۵م زاویه شل‌تر (تست) | گپ فقط خلاصه | INNO فقط 🔴INNO",
     ],
@@ -1805,9 +1808,15 @@ def _angle_metrics(df: pd.DataFrame) -> dict | None:
     cool_ub = ub_s5 >= 1.0 and ub_s3 < ub_s5 * 0.90 and ub_s3 > -1.2
     cool_e5 = e5_s5 >= 0.8 and e5_s3 < e5_s5 * 0.90 and e5_s3 > -1.5
     hot = (e5_s3 > 2.5 and ub_s3 > 2.5) or (e5_s5 > 2.5 and e5_s3 > e5_s5 * 0.95)
+    # شتاب دوباره (مثل MUBARAK سبزهای پشت‌سرهم) — نوک دوباره تیز شده
+    reaccel = e5_s3 > e5_s5 * 1.05 and e5_s3 > 1.2 and ub_s3 > ub_s5 * 0.98
 
-    # تاچ EMA فقط اگر از بالا بیاید + زمینه پامپ/ارتفاع
-    # close قیمت نباید عمیقاً زیر EMA باشد (مثل لیست غلط BTC/XAUT/…)
+    touched_e10 = False
+    for j in range(max(0, i - 2), i + 1):
+        if float(l_s.iloc[j]) <= float(e10.iloc[j]) * (1.0 + ANGLE_CLOSE1_PCT / 100.0):
+            touched_e10 = True
+            break
+
     touch1 = touch2 = False
     for j in range(max(0, i - 1), i + 1):
         lv, e10j, e20j = float(l_s.iloc[j]), float(e10.iloc[j]), float(e20.iloc[j])
@@ -1818,82 +1827,77 @@ def _angle_metrics(df: pd.DataFrame) -> dict | None:
             touch2 = True
 
     context_ok = pumped and was_elevated and not hot
-
-    # بستن زاویه اول: تاچ EMA10 از بالا، هنوز خیلی پایین‌تر نرفته
-    close1 = (
-        context_ok
-        and touch1
-        and -0.35 <= dist10 <= 1.8
-        and dist20 >= -0.5
-        and spread >= 0.8
-    )
-    # بستن زاویه دوم: تاچ EMA20 از بالا بعد از ارتفاع
+    close1 = context_ok and touch1 and -0.35 <= dist10 <= 1.8 and dist20 >= -0.5 and spread >= 0.8
     close2 = (
-        context_ok
-        and touch2
-        and -0.5 <= dist20 <= 2.0
-        and max_prior_dist10 >= 2.0
-        and spread >= 0.6
+        context_ok and touch2 and -0.5 <= dist20 <= 2.0
+        and max_prior_dist10 >= 2.0 and spread >= 0.6
     )
 
     cup_forming = (
-        pumped
-        and was_elevated
-        and not hot
-        and not new_high
+        pumped and was_elevated and not hot and not new_high
         and (cool_ub or cool_e5)
         and from_high <= ANGLE_MAX_FROM_HIGH + 1.0
         and spread >= ANGLE_MIN_SPREAD * 0.8
         and dist10 >= 1.0
     )
 
-    # آماده‌باش کلاسیک (سفت) — خنک شدن کامل
     ready_strict = (
-        pumped
-        and was_elevated
-        and not hot
-        and not new_high
+        pumped and was_elevated and not hot and not new_high
         and (cool_ub or cool_e5)
         and ANGLE_MIN_DIST_E10 <= dist10 <= ANGLE_MAX_DIST_E10
         and dist20 >= ANGLE_MIN_DIST_E20
         and from_high <= ANGLE_MAX_FROM_HIGH
         and spread >= ANGLE_MIN_SPREAD
         and ema5 >= ema10 * 0.997
+        and not touched_e10
     )
-    # سبک TA: پامپ + زاویه باز + بالای EMA10 (بدون خنک‌شدن کامل)
-    cup_ta = (
-        pumped
-        and was_elevated
-        and dist10 >= 1.2
-        and dist20 >= 2.0
-        and spread >= 1.8
-        and from_high <= 5.5
-        and ema5 >= ema10 * 0.995
-        and c >= ema10 * 1.008
-    )
-    # ۱۵م شل‌تر (تست): فاصله کمتر، spread کمتر، سقف دورتر، hot شدید فقط رد
-    cup_ta_15m = (
-        pumped
-        and was_elevated
-        and dist10 >= 0.7
-        and dist20 >= 1.2
-        and spread >= 1.0
-        and from_high <= 8.0
-        and ema5 >= ema10 * 0.992
-        and c >= ema10 * 1.003
-        and not (e5_s3 > 4.0 and ub_s3 > 4.0)
-    )
-    touched_e10 = False
-    for j in range(max(0, i - 2), i + 1):
-        if float(l_s.iloc[j]) <= float(e10.iloc[j]) * (1.0 + ANGLE_CLOSE1_PCT / 100.0):
-            touched_e10 = True
-            break
-    if touched_e10:
-        ready_strict = False
-        cup_ta = False
-        cup_ta_15m = False
 
-    ready_early = ready_strict or cup_ta
+    # ★ بزنگاه: نوک UB از تیز به خم (۱–۲ کندل قبل از تاچ EMA10)
+    # ub_s5 هنوز صعودی بوده، ub_s3 کند شده، قیمت بالای E10، نزدیک سقف
+    ub_bend = (
+        pumped
+        and was_elevated
+        and not touched_e10
+        and not reaccel
+        and not new_high
+        and dist10 >= 1.0
+        and dist20 >= 1.5
+        and spread >= 1.2
+        and from_high <= 4.5
+        and ub_s5 >= 1.2
+        and ub_s3 < ub_s5 * 0.88
+        and ub_s3 > -0.8
+        and c >= ema10 * 1.01
+        and ema5 >= ema10 * 0.995
+    )
+
+    # واچ: چسبیده به نوک UB ولی هنوز تیز به بالا (ورود نه)
+    near_ub = ub_v > 0 and c >= ub_v * 0.972
+    watch_tip = (
+        pumped
+        and was_elevated
+        and not touched_e10
+        and near_ub
+        and dist10 >= 1.2
+        and spread >= 1.0
+        and (hot or ub_s3 >= 1.5 or (ub_s5 >= 1.5 and ub_s3 >= ub_s5 * 0.92))
+    )
+
+    cup_ta = (
+        pumped and was_elevated and not touched_e10 and not reaccel
+        and dist10 >= 1.2 and dist20 >= 2.0 and spread >= 1.8
+        and from_high <= 5.5 and ema5 >= ema10 * 0.995 and c >= ema10 * 1.008
+        and not hot
+    )
+    cup_ta_15m = (
+        pumped and was_elevated and not touched_e10 and not reaccel
+        and dist10 >= 0.9 and dist20 >= 1.4 and spread >= 1.1
+        and from_high <= 6.5 and ema5 >= ema10 * 0.992 and c >= ema10 * 1.005
+        and not (e5_s3 > 3.5 and ub_s3 > 3.5)
+        and (ub_bend or cool_ub or cool_e5 or ub_s3 < ub_s5 * 0.95)
+    )
+
+    ready_early = ready_strict or cup_ta or ub_bend
 
     try:
         candle_ts = int(df.iloc[i]["ts"])
@@ -1919,10 +1923,13 @@ def _angle_metrics(df: pd.DataFrame) -> dict | None:
         "cup_forming": cup_forming,
         "cup_ta": cup_ta,
         "cup_ta_15m": cup_ta_15m,
+        "ub_bend": ub_bend,
+        "watch_tip": watch_tip,
         "ready_early": ready_early,
         "ready_strict": ready_strict,
         "new_high": new_high,
         "hot": hot,
+        "reaccel": reaccel,
         "pumped": pumped,
         "was_elevated": was_elevated,
         "candle_ts": candle_ts,
@@ -1931,21 +1938,28 @@ def _angle_metrics(df: pd.DataFrame) -> dict | None:
 
 def check_angle_setup(df: pd.DataFrame, symbol: str, tf: str) -> dict | None:
     """
-    ready / close1 / close2
-    روی ۱۵م: cup_ta_15m شل‌تر هم قبول می‌شود (تست).
+    اولویت:
+      bend  = خم شدن نوک UB (زود — بزنگاه)
+      ready = آماده‌باش خنک / جام
+      watch = نوک هنوز تیز — فقط واچ
+    روی ۱۵م بستن زاویه (close1/2) ارسال نمی‌شود چون از نظر تو دیر است.
     """
     try:
         m = _angle_metrics(df)
         if not m:
             return None
-        if m["ready_early"]:
+        if m.get("ub_bend"):
+            event = "bend"
+        elif m.get("ready_strict") or m.get("ready_early"):
             event = "ready"
         elif tf == "15m" and m.get("cup_ta_15m"):
             event = "ready"
             m = {**m, "cup_ta": True, "ready_early": True}
-        elif m["close2"]:
-            event = "close2"
-        elif m["close1"]:
+        elif m.get("watch_tip"):
+            event = "watch"
+        elif tf != "15m" and m.get("close2"):
+            event = "close2"  # فقط تایم بالاتر؛ برچسب دیر
+        elif tf != "15m" and m.get("close1"):
             event = "close1"
         else:
             return None
@@ -1985,12 +1999,16 @@ def format_angle_batch(tf: str, items: list[dict]) -> str:
         g4 = it.get("gap_4h")
         parent_cup = it.get("parent_cup")
 
-        if ev == "close2":
-            tag = "بستن زاویه <b>دوم</b>"
+        if ev == "bend":
+            tag = "نوک UB در حال <b>خم</b> — بزنگاه ورود"
+        elif ev == "watch":
+            tag = "واچ — نوک UB هنوز <b>تیز</b> (ورود نه)"
+        elif ev == "close2":
+            tag = "دیر — زاویه <b>دوم</b> بسته"
         elif ev == "close1":
-            tag = "بستن زاویه <b>اول</b> (هدف رسیده)"
-        elif it.get("cup_ta"):
-            tag = "جام ۱۵م بعد پامپ — <b>ورود سِل</b>"
+            tag = "دیر — زاویه <b>اول</b> بسته"
+        elif it.get("cup_ta") or it.get("ub_bend"):
+            tag = "جام / خم UB — <b>ورود سِل</b>"
         else:
             tag = "آماده‌باش خنک‌شده"
 
@@ -2089,16 +2107,17 @@ async def angle_alert_cycle(symbols: list[str], tfs: list[str] | None = None) ->
                 except Exception:
                     hit["gap_4h"] = False
 
-                # سبک TA روی ۱۵م: اگر جام هست ولی هیچ گپ بالاتری نیست → فقط واچ ضعیف
-                if tf == "15m" and hit.get("cup_ta") and not hit["gap_1h"] and not hit["gap_4h"]:
-                    hit["level"] = "A"
-                elif hit["gap_1h"] and hit["gap_4h"] and ev in ("ready", "close1"):
+                if ev == "watch":
+                    hit["level"] = "A"  # فقط واچ
+                elif ev in ("close1", "close2"):
+                    hit["level"] = "A"  # دیر
+                elif ev == "bend" and (hit["gap_1h"] or hit["gap_4h"]):
                     hit["level"] = "C"
-                elif (hit["gap_1h"] or hit["gap_4h"] or hit["parent_cup"]) and ev != "close2":
+                elif ev == "bend":
                     hit["level"] = "B"
-                elif (ev == "ready" and hit["parent_cup"]) or (ev == "close2" and hit["parent_cup"]):
+                elif hit["gap_1h"] and hit["gap_4h"] and ev == "ready":
                     hit["level"] = "C"
-                elif ev == "close2" or (ev == "close1" and hit["parent_cup"]):
+                elif (hit["gap_1h"] or hit["gap_4h"] or hit["parent_cup"]) and ev == "ready":
                     hit["level"] = "B"
                 else:
                     hit["level"] = "A"
