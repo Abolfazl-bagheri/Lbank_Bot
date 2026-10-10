@@ -24,8 +24,12 @@ STATE_FILE = os.path.join(BASE_DIR, "bot_state.json")
 
 # ========================= VERSION / CHANGELOG =========================
 # هر بار اپدیت: BOT_VERSION را بالا ببر و یک خط در CHANGELOG[نسخه] اضافه کن.
-BOT_VERSION = "1.7.6"
+BOT_VERSION = "1.7.7"
 CHANGELOG = {
+    "1.7.7": [
+        "علامت گپ: 📥از‌داخل‌باند / 🟠سواری‌UB / 🗡️کندل‌قوی",
+        "اخبار: یک نوتیف روزانه ساعت ۹ صبح ایران + اثر روی ارزها",
+    ],
     "1.7.6": [
         "زاویه زودتر: خم شدن نوک UB (قبل از بستن EMA) | بستن زاویه=دیر حذف از ۱۵م | واچ برای نوک تیز",
     ],
@@ -127,10 +131,12 @@ BLACKLIST_TTL_SEC = 24 * 3600
 
 # ——— تایم خبری ———
 NEWS_ENABLED = True
-NEWS_PRE_ALERT_MIN = 45          # چند دقیقه قبل از خبر هشدار بده
-NEWS_BLOCK_BEFORE_MIN = 15       # از چند دقیقه قبل ورود نکن
-NEWS_BLOCK_AFTER_MIN = 20        # تا چند دقیقه بعد ورود نکن
-NEWS_REFRESH_SEC = 3 * 3600      # هر چند وقت تقویم را تازه کن
+NEWS_PRE_ALERT_MIN = 45          # چند دقیقه قبل از خبر (فقط روی سیگنال، نه اسپم جدا)
+NEWS_BLOCK_BEFORE_MIN = 15
+NEWS_BLOCK_AFTER_MIN = 20
+NEWS_REFRESH_SEC = 3 * 3600
+NEWS_DAILY_HOUR = 9              # نوتیف روزانه اخبار — ساعت ایران
+NEWS_DAILY_MINUTE = 0
 
 # ——— منطقه نوآوری (INNO) — ریسک خیلی بالا ———
 # دستی اضافه کن؛ به‌علاوه تشخیص خودکار از لeverage پایین (غیر سهام)
@@ -211,6 +217,7 @@ inno_auto: set[str] = set()
 news_events_cache: list[dict] = []
 news_cache_ts: float = 0.0
 sent_news_alerts: set = set()
+last_news_daily_day: str | None = None  # آخرین روز ارسال نوتیف ۹ صبح
 
 daily = {"day": None, "by_tf": {}}
 
@@ -505,24 +512,110 @@ def format_news_alert(events: list[dict], prefix: str = "🚨 تایم خبری"
     return "\n".join(lines)
 
 
-def maybe_send_news_prealerts() -> None:
-    """۴۵ دقیقه قبل از خبر کلان، یک‌بار هشدار بده."""
-    if not NEWS_ENABLED:
-        return
-    upcoming = news_upcoming(within_min=NEWS_PRE_ALERT_MIN + 5)
-    for ev in upcoming:
+def _futures_change_24h(symbol: str) -> float | None:
+    """درصد تغییر ۲۴س از تیکر فیوچرز ال‌بانک (اگر باشد)."""
+    try:
+        refresh_futures_map()
+        item = None
+        # futures_last_map فقط last است؛ از API دوباره بخوان
+        r = requests.get(FUTURES_TICKERS_URL, timeout=12)
+        data = r.json().get("data") or []
+        for it in data:
+            if (it.get("symbol") or "").upper() == symbol.upper():
+                # فیلدهای رایج
+                for k in ("change", "changeRate", "priceChangePercent", "chg"):
+                    if it.get(k) is not None:
+                        v = float(it[k])
+                        # بعضی APIها کسری‌اند (0.05 = 5%)
+                        if abs(v) < 1.5:
+                            v *= 100.0
+                        return v
+                last = float(it.get("lastPrice") or 0)
+                open24 = float(it.get("openPrice") or it.get("open24h") or 0)
+                if last > 0 and open24 > 0:
+                    return (last - open24) / open24 * 100.0
+        return None
+    except Exception as e:
+        log.debug("chg24 %s: %s", symbol, e)
+        return None
+
+
+def format_daily_news_brief() -> str:
+    """خلاصهٔ یک‌بار در روز: اخبار امروز + اثر تقریبی روی ارزها."""
+    events = refresh_news_calendar(force=True)
+    now = time.time()
+    today = iran_today()
+    day_events = []
+    for ev in events:
         ts = ev.get("ts")
         if not ts:
+            # FF بدون ساعت دقیق
+            if ev.get("all_day_hint"):
+                day_events.append(ev)
             continue
-        left = ts - time.time()
-        if left > NEWS_PRE_ALERT_MIN * 60 or left < 0:
+        try:
+            d = datetime.fromtimestamp(ts, TEHRAN).strftime("%Y-%m-%d")
+        except Exception:
             continue
-        key = ("pre", ev.get("title"), ts)
-        if key in sent_news_alerts:
+        if d == today or 0 <= ts - now <= 20 * 3600:
+            day_events.append(ev)
+
+    lines = [f"📅 <b>اخبار امروز</b> · {today}", "────────────"]
+    if not day_events:
+        lines.append("خبر کلان مهمی در تقویم داخلی نیست (یا منبع در دسترس نبود).")
+    else:
+        for ev in day_events[:10]:
+            ts = ev.get("ts")
+            try:
+                tiran = datetime.fromtimestamp(ts, TEHRAN).strftime("%H:%M") if ts else "—"
+            except Exception:
+                tiran = "—"
+            title = ev.get("title") or "خبر"
+            aff = ev.get("affects") or _MACRO_AFFECTS.get("default") or []
+            aff_s = ", ".join(sorted({symbol_base(a) for a in aff[:6]})) or "بازار"
+            lines.append(f"• <b>{tiran}</b> · {title}\n  اثر محتمل: {aff_s}")
+
+    # اثر تقریبی روی چند نماد کلیدی (۲۴س)
+    lines.append("────────────")
+    lines.append("<b>اثر بازار (۲۴س اخیر)</b>")
+    watch = ["BTCUSDT", "ETHUSDT", "XAUTUSDT", "SOLUSDT", "XRPUSDT"]
+    for sym in watch:
+        chg = _futures_change_24h(sym)
+        if chg is None:
             continue
-        sent_news_alerts.add(key)
-        send_telegram_text(format_news_alert([ev], prefix="🚨 به‌زودی خبر مهم"))
-        log.info("NEWS pre-alert: %s", ev.get("title"))
+        arrow = "🟢" if chg >= 0 else "🔴"
+        lines.append(f"{arrow} {symbol_base(sym)}  {chg:+.2f}%")
+    lines.append("────────────")
+    lines.append("فقط یک‌بار در روز · ساعت ۹ صبح ایران")
+    return "\n".join(lines)
+
+
+def maybe_send_daily_news() -> None:
+    """روزی یک‌بار از ساعت ۹ صبح ایران به بعد، فقط یک نوتیف اخبار."""
+    global last_news_daily_day
+    if not NEWS_ENABLED:
+        return
+    now = iran_now()
+    today = now.strftime("%Y-%m-%d")
+    if last_news_daily_day == today:
+        return
+    if now.hour < NEWS_DAILY_HOUR:
+        return
+    try:
+        msg = format_daily_news_brief()
+        send_telegram_text(msg)
+        last_news_daily_day = today
+        log.info("Daily news brief sent for %s", today)
+        save_state()
+    except Exception as e:
+        log.warning("daily news: %s", e)
+
+
+def maybe_send_news_prealerts() -> None:
+    """غیرفعال به‌عنوان پیام جدا — فقط روی سیگنال با news_line علامت می‌خورد.
+    نوتیف اصلی اخبار = maybe_send_daily_news ساعت ۹.
+    """
+    return
 
 
 def news_line_for_symbol(symbol: str) -> str:
@@ -598,6 +691,7 @@ def save_state() -> None:
             "sent_angle_alerts": list(sent_angle_alerts)[-400:],
             "angle_alert_day": angle_alert_day,
             "angle_alert_count_today": angle_alert_count_today,
+            "last_news_daily_day": last_news_daily_day,
         }
         with open(STATE_FILE, "w", encoding="utf-8") as f:
             json.dump(payload, f, ensure_ascii=False, indent=2)
@@ -606,7 +700,7 @@ def save_state() -> None:
 
 
 def load_state() -> None:
-    global last_daily_report_day, last_known_version
+    global last_daily_report_day, last_known_version, last_news_daily_day
     global angle_alert_day, angle_alert_count_today
     if not os.path.exists(STATE_FILE):
         return
@@ -635,6 +729,7 @@ def load_state() -> None:
             angle_alert_count_today = int(payload.get("angle_alert_count_today") or 0)
         except Exception:
             angle_alert_count_today = 0
+        last_news_daily_day = payload.get("last_news_daily_day")
         prune_blacklist()
         log.info(
             "State loaded from %s | blacklist=%d | prev_ver=%s",
@@ -1097,6 +1192,85 @@ def entry_quality_score(df: pd.DataFrame, side: str) -> dict:
         return {"score": 50, "flag": "🟡", "label": "خطا در امتیازدهی", "reasons": []}
 
 
+def gap_context_flags(df: pd.DataFrame, side: str = "SELL") -> dict:
+    """
+    منشأ گپ + کندل قوی قبلی (الگوی LUMIA):
+      inside  → از داخل باند پامپ شده → پرشدن محتمل‌تر 📥
+      ride    → چند کندل روی/بالای UB → سواری 🟠
+      strong  → کندل قبلی بدنه≥۲/۳ و سایه بالا≤۱/۳ → احتمال شکست قله بعد 🗡️
+    """
+    out = {"inside": False, "ride": False, "strong_prev": False, "tags": []}
+    if df is None or len(df) < 3 or side != "SELL":
+        return out
+    try:
+        cur = df.iloc[-1]
+        prev = df.iloc[-2]
+        cur_o = float(cur["o"])
+        cur_ub = float(cur["upper"])
+        prev_o = float(prev["o"])
+        prev_h = float(prev["h"])
+        prev_l = float(prev["l"])
+        prev_c = float(prev["c"])
+        prev_ub = float(prev["upper"])
+        prev_lb = float(prev["lower"])
+
+        # کندل قوی قبلی (سبز، بدنه پر، سایه بالا کم)
+        rng = prev_h - prev_l
+        if rng > 0 and prev_c >= prev_o:
+            body = prev_c - prev_o
+            uw = prev_h - prev_c
+            if body >= rng * (2.0 / 3.0) and uw <= rng * (1.0 / 3.0):
+                out["strong_prev"] = True
+                out["tags"].append("🗡️کندل‌قوی→اول‌قله")
+
+        # سواری: اوپن فعلی و قبلی هر دو بالای UB خودشان
+        ride = False
+        if (
+            np.isfinite(cur_ub) and cur_ub > 0 and cur_o > cur_ub * 1.002
+            and np.isfinite(prev_ub) and prev_ub > 0 and prev_o > prev_ub * 1.001
+        ):
+            ride = True
+        # یا ۳ از ۴ کندل اخیر اوپن بالای UB
+        above_n = 0
+        look = min(5, len(df) - 1)
+        for j in range(-look, 0):
+            row = df.iloc[j]
+            o, ub = float(row["o"]), float(row["upper"])
+            if np.isfinite(ub) and ub > 0 and o > ub * 1.001:
+                above_n += 1
+        if above_n >= 3:
+            ride = True
+
+        # منشأ داخل باند: در ۱–۶ کندل قبل اوپنی زیر UB (ترجیحاً زیر mid)
+        inside = False
+        for j in range(-2, max(-7, -len(df)), -1):
+            row = df.iloc[j]
+            o = float(row["o"])
+            ub = float(row["upper"])
+            lb = float(row["lower"])
+            if not np.isfinite(ub) or ub <= 0:
+                continue
+            if o <= ub * 0.999:
+                inside = True
+                break
+            if np.isfinite(lb) and o < (ub + lb) / 2:
+                inside = True
+                break
+
+        if ride:
+            out["ride"] = True
+            out["tags"].append("🟠سواری‌UB")
+        elif inside:
+            out["inside"] = True
+            out["tags"].append("📥از‌داخل‌باند")
+        elif np.isfinite(prev_ub) and prev_o <= prev_ub:
+            out["inside"] = True
+            out["tags"].append("📥از‌داخل‌باند")
+    except Exception as e:
+        log.debug("gap_context: %s", e)
+    return out
+
+
 def check_signal(df: pd.DataFrame, symbol: str, tf: str):
     if len(df) < BB_PERIOD + 2:
         return None
@@ -1208,6 +1382,8 @@ def check_signal(df: pd.DataFrame, symbol: str, tf: str):
     if side == "SELL":
         ladders = compute_sell_add_levels(df, float(fut), float(upper))
 
+    ctx = gap_context_flags(df, side)
+
     return {
         "side": side,
         "symbol": symbol,
@@ -1233,6 +1409,10 @@ def check_signal(df: pd.DataFrame, symbol: str, tf: str):
         "add3": ladders.get("add3"),
         "add2_pct": ladders.get("add2_pct"),
         "add3_pct": ladders.get("add3_pct"),
+        "gap_tags": ctx.get("tags") or [],
+        "gap_inside": ctx.get("inside", False),
+        "gap_ride": ctx.get("ride", False),
+        "gap_strong": ctx.get("strong_prev", False),
     }
 
 
@@ -1306,7 +1486,7 @@ def compute_sell_add_levels(df: pd.DataFrame, entry: float, upper: float) -> dic
 
 
 def format_signal_message(sig: dict) -> str:
-    """خلاصه گپ — بدون ورود/خروج/پله."""
+    """خلاصه گپ + علامت منشأ/کندل‌قوی."""
     emoji = "🔴" if sig["side"] == "SELL" else "🟢"
     side_fa = "سِل" if sig["side"] == "SELL" else "لانگ"
     pen = sig.get("diff_pct")
@@ -1321,6 +1501,9 @@ def format_signal_message(sig: dict) -> str:
         f'<a href="{link}"><b>{symbol}</b></a>{badge}',
         f"⏱ {sig['tf']} · 📏 {pen:.2f}% · Q{q_score}",
     ]
+    tags = sig.get("gap_tags") or []
+    if tags:
+        lines.append(" · ".join(tags))
     nl = news_line_for_symbol(symbol)
     if nl:
         lines.append(nl)
@@ -1703,11 +1886,12 @@ async def pre_alert_cycle(tfs: list[str] | None = None) -> None:
                 sent_pre_alerts.add(key)
                 if len(sent_pre_alerts) > 3000:
                     sent_pre_alerts.clear()
+                tags = gap_context_flags(df, "SELL").get("tags") or []
                 async with lock:
-                    found[tf].append((symbol, gap_pct))
+                    found[tf].append((symbol, gap_pct, tags))
                 log.info(
-                    "PRE_ALERT %s %s src=%s px=%.6g ub=%.6g +%.2f%% left=%ds",
-                    symbol, tf, src, px, ub, gap_pct, secs_left,
+                    "PRE_ALERT %s %s src=%s px=%.6g ub=%.6g +%.2f%% left=%ds tags=%s",
+                    symbol, tf, src, px, ub, gap_pct, secs_left, tags,
                 )
             except Exception as e:
                 log.warning("pre_alert %s %s: %s", symbol, tf, e)
@@ -1722,9 +1906,16 @@ async def pre_alert_cycle(tfs: list[str] | None = None) -> None:
             continue
         items.sort(key=lambda x: -x[1])
         lines = [f"🟣 <b>احتمال گپ · {tf}</b>"]
-        for symbol, gap_pct in items:
+        for item in items:
+            if len(item) >= 3:
+                symbol, gap_pct, tags = item[0], item[1], item[2]
+            else:
+                symbol, gap_pct, tags = item[0], item[1], []
             link = lbank_futures_link(symbol, tf)
-            lines.append(f'• <a href="{link}"><b>{symbol}</b></a>  +{gap_pct:.2f}%')
+            tag_s = (" · " + " · ".join(tags)) if tags else ""
+            lines.append(
+                f'• <a href="{link}"><b>{symbol}</b></a>  +{gap_pct:.2f}%{tag_s}'
+            )
         send_telegram_text("\n".join(lines))
         total += len(items)
     log.info("PRE_ALERT done | sent=%d across %d TF msgs", total, sum(1 for t in tfs if found.get(t)))
@@ -2253,7 +2444,7 @@ async def main() -> None:
     while True:
         maybe_send_daily_report()
         try:
-            maybe_send_news_prealerts()
+            maybe_send_daily_news()
             if time.time() - last_news_refresh > NEWS_REFRESH_SEC:
                 refresh_news_calendar(force=True)
                 last_news_refresh = time.time()
