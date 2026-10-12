@@ -24,8 +24,11 @@ STATE_FILE = os.path.join(BASE_DIR, "bot_state.json")
 
 # ========================= VERSION / CHANGELOG =========================
 # هر بار اپدیت: BOT_VERSION را بالا ببر و یک خط در CHANGELOG[نسخه] اضافه کن.
-BOT_VERSION = "1.7.9"
+BOT_VERSION = "1.8.0"
 CHANGELOG = {
+    "1.8.0": [
+        "احتمال گپ: سطح ریسک + فاصله مقاومت + دکمه 📐 ساختار per نماد",
+    ],
     "1.7.9": [
         "اخبار فقط روز خبر (۹ صبح) — حذف پیام استارت تکراری",
     ],
@@ -2290,11 +2293,13 @@ async def pre_alert_cycle(tfs: list[str] | None = None) -> None:
                 if len(sent_pre_alerts) > 3000:
                     sent_pre_alerts.clear()
                 tags = gap_context_flags(df, "SELL").get("tags") or []
+                # ساختار سریع روی همان df (بدون API اضافه)
+                st = analyze_structure(df, fut if fut and fut > 0 else px)
                 async with lock:
-                    found[tf].append((symbol, gap_pct, tags))
+                    found[tf].append((symbol, gap_pct, tags, st))
                 log.info(
-                    "PRE_ALERT %s %s src=%s px=%.6g ub=%.6g +%.2f%% left=%ds tags=%s",
-                    symbol, tf, src, px, ub, gap_pct, secs_left, tags,
+                    "PRE_ALERT %s %s src=%s px=%.6g ub=%.6g +%.2f%% left=%ds tags=%s risk=%s",
+                    symbol, tf, src, px, ub, gap_pct, secs_left, tags, st.get("risk"),
                 )
             except Exception as e:
                 log.warning("pre_alert %s %s: %s", symbol, tf, e)
@@ -2309,17 +2314,44 @@ async def pre_alert_cycle(tfs: list[str] | None = None) -> None:
             continue
         items.sort(key=lambda x: -x[1])
         lines = [f"🟣 <b>احتمال گپ · {tf}</b>"]
+        # دکمه‌ها: حداکثر ۸ تا در دو ردیف (تلگرام محدودیت دارد)
+        buttons = []
         for item in items:
-            if len(item) >= 3:
-                symbol, gap_pct, tags = item[0], item[1], item[2]
+            if len(item) >= 4:
+                symbol, gap_pct, tags, st = item[0], item[1], item[2], item[3]
+            elif len(item) >= 3:
+                symbol, gap_pct, tags, st = item[0], item[1], item[2], {}
             else:
-                symbol, gap_pct, tags = item[0], item[1], []
+                symbol, gap_pct, tags, st = item[0], item[1], [], {}
             link = lbank_futures_link(symbol, tf)
             tag_s = (" · " + " · ".join(tags)) if tags else ""
+            risk_e = (st or {}).get("risk_emoji") or "⚪"
+            risk_fa = (st or {}).get("risk_fa") or "—"
+            res_s = ""
+            if (st or {}).get("res_price") is not None:
+                res_s = f" · مقاومت {(st or {}).get('res_price'):.6g} (+{(st or {}).get('res_dist_pct', 0):.1f}%)"
+            elif (st or {}).get("note"):
+                res_s = f" · {(st or {}).get('note')}"
             lines.append(
-                f'• <a href="{link}"><b>{symbol}</b></a>  +{gap_pct:.2f}%{tag_s}'
+                f'• <a href="{link}"><b>{symbol}</b></a>  +{gap_pct:.2f}%{tag_s}\n'
+                f'  {risk_e} <b>{risk_fa}</b>{res_s}'
             )
-        send_telegram_text("\n".join(lines))
+            data = f"st:{symbol}:{tf}"
+            if len(data) > 64:
+                data = f"st:{symbol[:20]}:{tf}"
+            buttons.append({"text": f"📐 {symbol[:12]}", "callback_data": data})
+        # چیدمان دکمه‌ها دو‌تایی
+        keyboard = []
+        row = []
+        for b in buttons[:8]:
+            row.append(b)
+            if len(row) == 2:
+                keyboard.append(row)
+                row = []
+        if row:
+            keyboard.append(row)
+        markup = {"inline_keyboard": keyboard} if keyboard else None
+        send_telegram_text("\n".join(lines), reply_markup=markup)
         total += len(items)
     log.info("PRE_ALERT done | sent=%d across %d TF msgs", total, sum(1 for t in tfs if found.get(t)))
 
