@@ -24,8 +24,11 @@ STATE_FILE = os.path.join(BASE_DIR, "bot_state.json")
 
 # ========================= VERSION / CHANGELOG =========================
 # هر بار اپدیت: BOT_VERSION را بالا ببر و یک خط در CHANGELOG[نسخه] اضافه کن.
-BOT_VERSION = "1.7.8"
+BOT_VERSION = "1.7.9"
 CHANGELOG = {
+    "1.7.9": [
+        "اخبار فقط روز خبر (۹ صبح) — حذف پیام استارت تکراری",
+    ],
     "1.7.8": [
         "گپ با سطح ریسک: قوی/متوسط/ضعیف + فاصله تا مقاومت",
         "دکمه 📐 ساختار — خط‌روند و مقاومت افقی درخواستی",
@@ -544,42 +547,47 @@ def _futures_change_24h(symbol: str) -> float | None:
         return None
 
 
-def format_daily_news_brief() -> str:
-    """خلاصهٔ یک‌بار در روز: اخبار امروز + اثر تقریبی روی ارزها."""
-    events = refresh_news_calendar(force=True)
-    now = time.time()
-    today = iran_today()
-    day_events = []
+def _events_for_iran_day(day: str | None = None) -> list[dict]:
+    """فقط رویدادهایی که تاریخ ایران‌شان همان روز است (نه کل هفته)."""
+    day = day or iran_today()
+    events = refresh_news_calendar(force=False)
+    out = []
     for ev in events:
         ts = ev.get("ts")
         if not ts:
-            # FF بدون ساعت دقیق
-            if ev.get("all_day_hint"):
-                day_events.append(ev)
+            continue
+        # all_day_hint از FF بدون ساعت واقعی — رد (قبلاً هر روز نویز می‌داد)
+        if ev.get("all_day_hint") and ev.get("source") == "forexfactory":
             continue
         try:
-            d = datetime.fromtimestamp(ts, TEHRAN).strftime("%Y-%m-%d")
+            d = datetime.fromtimestamp(int(ts), TEHRAN).strftime("%Y-%m-%d")
         except Exception:
             continue
-        if d == today or 0 <= ts - now <= 20 * 3600:
-            day_events.append(ev)
+        if d == day:
+            out.append(ev)
+    out.sort(key=lambda x: x.get("ts") or 0)
+    return out
+
+
+def format_daily_news_brief() -> str | None:
+    """خلاصهٔ اخبار همان روز ایران. اگر خبری نباشد None."""
+    today = iran_today()
+    day_events = _events_for_iran_day(today)
+    if not day_events:
+        return None
 
     lines = [f"📅 <b>اخبار امروز</b> · {today}", "────────────"]
-    if not day_events:
-        lines.append("خبر کلان مهمی در تقویم داخلی نیست (یا منبع در دسترس نبود).")
-    else:
-        for ev in day_events[:10]:
-            ts = ev.get("ts")
-            try:
-                tiran = datetime.fromtimestamp(ts, TEHRAN).strftime("%H:%M") if ts else "—"
-            except Exception:
-                tiran = "—"
-            title = ev.get("title") or "خبر"
-            aff = ev.get("affects") or _MACRO_AFFECTS.get("default") or []
-            aff_s = ", ".join(sorted({symbol_base(a) for a in aff[:6]})) or "بازار"
-            lines.append(f"• <b>{tiran}</b> · {title}\n  اثر محتمل: {aff_s}")
+    for ev in day_events[:10]:
+        ts = ev.get("ts")
+        try:
+            tiran = datetime.fromtimestamp(ts, TEHRAN).strftime("%H:%M") if ts else "—"
+        except Exception:
+            tiran = "—"
+        title = ev.get("title") or "خبر"
+        aff = ev.get("affects") or _MACRO_AFFECTS.get("default") or []
+        aff_s = ", ".join(sorted({symbol_base(a) for a in aff[:6]})) or "بازار"
+        lines.append(f"• <b>{tiran}</b> · {title}\n  اثر محتمل: {aff_s}")
 
-    # اثر تقریبی روی چند نماد کلیدی (۲۴س)
     lines.append("────────────")
     lines.append("<b>اثر بازار (۲۴س اخیر)</b>")
     watch = ["BTCUSDT", "ETHUSDT", "XAUTUSDT", "SOLUSDT", "XRPUSDT"]
@@ -590,12 +598,12 @@ def format_daily_news_brief() -> str:
         arrow = "🟢" if chg >= 0 else "🔴"
         lines.append(f"{arrow} {symbol_base(sym)}  {chg:+.2f}%")
     lines.append("────────────")
-    lines.append("فقط یک‌بار در روز · ساعت ۹ صبح ایران")
+    lines.append("یک‌بار در روز · فقط روزهایی که خبر هست")
     return "\n".join(lines)
 
 
 def maybe_send_daily_news() -> None:
-    """روزی یک‌بار از ساعت ۹ صبح ایران به بعد، فقط یک نوتیف اخبار."""
+    """ساعت ۹ صبح ایران به بعد؛ فقط اگر برای امروز خبر واقعی باشد."""
     global last_news_daily_day
     if not NEWS_ENABLED:
         return
@@ -607,6 +615,12 @@ def maybe_send_daily_news() -> None:
         return
     try:
         msg = format_daily_news_brief()
+        if not msg:
+            # روز بدون خبر — علامت بزن تا دوباره چک/اسپم نشود
+            last_news_daily_day = today
+            log.info("No macro news for %s — skip daily brief", today)
+            save_state()
+            return
         send_telegram_text(msg)
         last_news_daily_day = today
         log.info("Daily news brief sent for %s", today)
@@ -2818,15 +2832,8 @@ async def main() -> None:
     except Exception as e:
         log.warning("news calendar on start: %s", e)
     send_telegram_text(format_startup_message())
-    try:
-        near = [e for e in refresh_news_calendar() if e.get("ts") and e["ts"] > time.time()]
-        near = sorted(near, key=lambda x: x["ts"])[:5]
-        if near:
-            send_telegram_text(format_news_alert(near, prefix="📅 اخبار مهم پیش‌رو"))
-    except Exception as e:
-        log.debug("startup news: %s", e)
+    # اخبار فقط با maybe_send_daily_news (۹ صبح · فقط روز خبر) — نه هنگام استارت
     save_state()
-    # دکمه ساختار در پس‌زمینه
     asyncio.create_task(telegram_callback_loop())
     log.info("Structure callback loop started")
     last_scan_key = None
