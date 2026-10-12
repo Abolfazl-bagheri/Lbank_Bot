@@ -24,8 +24,12 @@ STATE_FILE = os.path.join(BASE_DIR, "bot_state.json")
 
 # ========================= VERSION / CHANGELOG =========================
 # هر بار اپدیت: BOT_VERSION را بالا ببر و یک خط در CHANGELOG[نسخه] اضافه کن.
-BOT_VERSION = "1.7.7"
+BOT_VERSION = "1.7.8"
 CHANGELOG = {
+    "1.7.8": [
+        "گپ با سطح ریسک: قوی/متوسط/ضعیف + فاصله تا مقاومت",
+        "دکمه 📐 ساختار — خط‌روند و مقاومت افقی درخواستی",
+    ],
     "1.7.7": [
         "علامت گپ: 📥از‌داخل‌باند / 🟠سواری‌UB / 🗡️کندل‌قوی",
         "اخبار: یک نوتیف روزانه ساعت ۹ صبح ایران + اثر روی ارزها",
@@ -1192,6 +1196,369 @@ def entry_quality_score(df: pd.DataFrame, side: str) -> dict:
         return {"score": 50, "flag": "🟡", "label": "خطا در امتیازدهی", "reasons": []}
 
 
+# ——— ساختار: خط‌روند + مقاومت افقی (سبک CATE) ———
+STRUCT_STRONG_PCT = 1.5    # فاصله تا مقاومت ≤ این → قوی
+STRUCT_MEDIUM_PCT = 4.0    # تا این → متوسط؛ بیشتر → ضعیف / کشف قیمت
+STRUCT_HZ_TOL = 0.012      # تلورانس هم‌تراز بودن سقف/کف برای افقی
+STRUCT_SWING_W = 3         # همسایه چپ/راست برای سوئینگ
+
+
+def _swing_highs(df: pd.DataFrame, w: int = STRUCT_SWING_W) -> list[dict]:
+    out = []
+    if df is None or len(df) < w * 2 + 3:
+        return out
+    hs = df["h"].astype(float).values
+    ts = df["ts"].astype(int).values if "ts" in df.columns else None
+    for i in range(w, len(df) - w):
+        h = float(hs[i])
+        if all(h >= float(hs[i + k]) for k in range(-w, w + 1) if k != 0):
+            out.append({
+                "i": i,
+                "h": h,
+                "ts": int(ts[i]) if ts is not None else i,
+            })
+    return out
+
+
+def analyze_structure(df: pd.DataFrame, price: float) -> dict:
+    """
+    نزدیک‌ترین مقاومت بالا + خط‌روند نزولی کاندید + سطح ریسک.
+    سریع روی همان df (بدون API اضافه).
+    """
+    empty = {
+        "risk": "weak",
+        "risk_fa": "ضعیف",
+        "risk_emoji": "⚪",
+        "res_price": None,
+        "res_dist_pct": None,
+        "res_kind": None,
+        "horizontals": [],
+        "tl": None,
+        "note": "بدون داده ساختار",
+    }
+    if df is None or len(df) < 30 or price is None or price <= 0:
+        return empty
+
+    try:
+        swings = _swing_highs(df)
+        above = [s for s in swings if s["h"] > price * 1.003]
+        horizontals = []
+        seen = set()
+        for s in sorted(above, key=lambda x: x["h"]):
+            lv = s["h"]
+            key = round(lv, 6)
+            if any(abs(key - x) / max(x, 1e-12) < 0.01 for x in seen):
+                continue
+            touches = 0
+            for _, row in df.iterrows():
+                h = float(row["h"])
+                l = float(row["l"])
+                if abs(h - lv) / lv <= STRUCT_HZ_TOL or abs(l - lv) / lv <= STRUCT_HZ_TOL:
+                    touches += 1
+            if touches >= 2:
+                seen.add(key)
+                horizontals.append({"price": lv, "touches": touches})
+            if len(horizontals) >= 5:
+                break
+
+        # خط‌روند نزولی: دو سوئینگ که امتدادشان نزدیک سقف اخیر باشد
+        tl = None
+        if len(swings) >= 2:
+            recent = max(swings, key=lambda s: s["ts"])
+            t3, h3 = recent["ts"], recent["h"]
+            best = None
+            for a in range(len(swings)):
+                for b in range(a + 1, len(swings)):
+                    ra, rb = swings[a], swings[b]
+                    if rb["ts"] >= t3 - 60 or ra["ts"] >= rb["ts"]:
+                        continue
+                    if rb["ts"] - ra["ts"] < 6 * 3600:
+                        continue
+                    slope = (rb["h"] - ra["h"]) / max(rb["ts"] - ra["ts"], 1)
+                    if slope >= 0:
+                        continue
+                    proj = ra["h"] + slope * (t3 - ra["ts"])
+                    if proj <= 0:
+                        continue
+                    err = abs(proj - h3) / h3 * 100.0
+                    if err > 3.5:
+                        continue
+                    now_ts = int(df.iloc[-1]["ts"]) if "ts" in df.columns else t3
+                    now_line = ra["h"] + slope * (now_ts - ra["ts"])
+                    if now_line <= price * 0.98:
+                        continue
+                    cand = {
+                        "err": err,
+                        "p1": ra,
+                        "p2": rb,
+                        "slope": slope,
+                        "line_now": now_line,
+                        "dist_pct": (now_line - price) / price * 100.0,
+                    }
+                    if best is None or cand["err"] < best["err"]:
+                        best = cand
+            tl = best
+
+        # نزدیک‌ترین مقاومت بالای قیمت
+        candidates = []
+        for hz in horizontals:
+            d = (hz["price"] - price) / price * 100.0
+            if d > 0:
+                candidates.append(("horizontal", hz["price"], d, hz.get("touches", 0)))
+        for s in above[:8]:
+            d = (s["h"] - price) / price * 100.0
+            candidates.append(("swing", s["h"], d, 1))
+        if tl and tl["line_now"] > price:
+            candidates.append(("trendline", tl["line_now"], tl["dist_pct"], 0))
+
+        candidates.sort(key=lambda x: x[2])
+        if not candidates:
+            # کشف قیمت — هیچ سقفی بالای سر
+            return {
+                "risk": "weak",
+                "risk_fa": "ضعیف",
+                "risk_emoji": "⚪",
+                "res_price": None,
+                "res_dist_pct": None,
+                "res_kind": None,
+                "horizontals": horizontals,
+                "tl": tl,
+                "note": "کشف قیمت — مقاومت تاریخی بالای سر نیست",
+            }
+
+        kind, res_px, dist, _ = candidates[0]
+        # تلاقی: هم خط و هم افقی نزدیک
+        confluence = False
+        if tl and horizontals:
+            for hz in horizontals:
+                if abs(tl["line_now"] - hz["price"]) / hz["price"] * 100.0 <= 2.0:
+                    if dist <= STRUCT_MEDIUM_PCT:
+                        confluence = True
+                        break
+
+        if confluence and dist <= STRUCT_STRONG_PCT + 0.5:
+            risk, risk_fa, risk_emoji = "strong", "قوی", "🟢"
+            note = "تلاقی خط‌روند + افقی"
+        elif dist <= STRUCT_STRONG_PCT:
+            risk, risk_fa, risk_emoji = "strong", "قوی", "🟢"
+            note = f"نزدیک مقاومت ({kind})"
+        elif dist <= STRUCT_MEDIUM_PCT:
+            risk, risk_fa, risk_emoji = "medium", "متوسط", "🟡"
+            note = f"فاصله تا مقاومت {dist:.1f}%"
+        else:
+            risk, risk_fa, risk_emoji = "weak", "ضعیف", "⚪"
+            note = f"مقاومت دور (+{dist:.1f}%) یا کشف قیمت"
+
+        return {
+            "risk": risk,
+            "risk_fa": risk_fa,
+            "risk_emoji": risk_emoji,
+            "res_price": float(res_px),
+            "res_dist_pct": float(dist),
+            "res_kind": kind,
+            "horizontals": horizontals,
+            "tl": tl,
+            "note": note,
+        }
+    except Exception as e:
+        log.debug("analyze_structure: %s", e)
+        return empty
+
+
+def structure_button_markup(symbol: str, tf: str) -> dict:
+    data = f"st:{symbol}:{tf}"
+    if len(data) > 64:
+        data = f"st:{symbol[:20]}:{tf}"
+    return {
+        "inline_keyboard": [
+            [{"text": "📐 ساختار / خط‌روند", "callback_data": data}]
+        ]
+    }
+
+
+def make_structure_chart(df: pd.DataFrame, symbol: str, tf: str, st: dict) -> bytes | None:
+    """چارت ساده با خط‌روند نزولی + مقاومت‌های افقی."""
+    try:
+        import matplotlib
+        matplotlib.use("Agg")
+        import matplotlib.pyplot as plt
+        import matplotlib.dates as mdates
+        from matplotlib.patches import Rectangle
+        from datetime import datetime as dtmod
+
+        if df is None or len(df) < 20:
+            return None
+        n = min(len(df), 120)
+        d = df.iloc[-n:].copy()
+        fig, ax = plt.subplots(figsize=(12, 6), facecolor="#0e1117")
+        ax.set_facecolor("#0e1117")
+
+        for _, row in d.iterrows():
+            try:
+                tsv = int(row["ts"])
+                t = dtmod.fromtimestamp(tsv, TEHRAN)
+            except Exception:
+                continue
+            o, h, l, c = float(row["o"]), float(row["h"]), float(row["l"]), float(row["c"])
+            color = "#26a69a" if c >= o else "#ef5350"
+            ax.plot([t, t], [l, h], color=color, lw=0.9, zorder=2)
+            bottom = min(o, c)
+            height = max(abs(c - o), (h - l) * 0.01)
+            ax.add_patch(Rectangle(
+                (mdates.date2num(t) - 0.3 * (PERIOD_SEC.get(tf, 3600) / 86400), bottom),
+                0.6 * (PERIOD_SEC.get(tf, 3600) / 86400),
+                height,
+                facecolor=color, edgecolor=color, zorder=3,
+            ))
+
+        # horizontals
+        for hz in (st.get("horizontals") or [])[:3]:
+            lv = hz["price"]
+            ax.axhline(lv, color="#ff9800", lw=1.3, alpha=0.9)
+            ax.text(
+                0.01, lv, f" HZ {lv:.6g}", transform=ax.get_yaxis_transform(),
+                color="#ffb74d", fontsize=8, va="bottom",
+            )
+
+        # trendline
+        tl = st.get("tl")
+        if tl and tl.get("p1") and tl.get("p2"):
+            p1, p2 = tl["p1"], tl["p2"]
+            slope = tl["slope"]
+            t0 = p1["ts"]
+            t1 = int(d.iloc[-1]["ts"]) + PERIOD_SEC.get(tf, 3600) * 4
+            xs = np.linspace(t0, t1, 40)
+            ys = p1["h"] + slope * (xs - t0)
+            xd = [dtmod.fromtimestamp(int(x), TEHRAN) for x in xs]
+            ax.plot(xd, ys, color="#42a5f5", lw=2.2, label="Descending TL", zorder=5)
+            ax.scatter(
+                [dtmod.fromtimestamp(p1["ts"], TEHRAN), dtmod.fromtimestamp(p2["ts"], TEHRAN)],
+                [p1["h"], p2["h"]],
+                c="#29b6f6", s=40, zorder=6, edgecolors="white", lw=0.6,
+            )
+
+        price = float(d.iloc[-1]["c"])
+        t_last = dtmod.fromtimestamp(int(d.iloc[-1]["ts"]), TEHRAN)
+        ax.scatter([t_last], [price], c="#fff", s=35, zorder=7)
+        res = st.get("res_price")
+        if res:
+            ax.axhline(res, color="#ffee58", lw=1.2, ls="--", alpha=0.85)
+            ax.annotate(
+                f"res {res:.6g} (+{st.get('res_dist_pct', 0):.1f}%)",
+                xy=(t_last, res), xytext=(-80, 10),
+                textcoords="offset points", color="#ffee58", fontsize=8,
+            )
+
+        ax.set_title(
+            f"{symbol} {tf} | risk={st.get('risk_fa', '?')} | {st.get('note', '')}",
+            color="white", fontsize=11,
+        )
+        ax.tick_params(colors="#aaa")
+        ax.xaxis.set_major_formatter(mdates.DateFormatter("%m/%d %H", tz=TEHRAN))
+        ax.grid(True, alpha=0.12, color="#888")
+        for sp in ax.spines.values():
+            sp.set_color("#333")
+        fig.autofmt_xdate(rotation=25)
+        plt.tight_layout()
+        buf = BytesIO()
+        fig.savefig(buf, format="png", dpi=120, facecolor=fig.get_facecolor())
+        plt.close(fig)
+        buf.seek(0)
+        return buf.read()
+    except Exception as e:
+        log.warning("make_structure_chart: %s", e)
+        return None
+
+
+def answer_callback_query(callback_id: str, text: str = "", show_alert: bool = False) -> None:
+    url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/answerCallbackQuery"
+    try:
+        requests.post(
+            url,
+            json={"callback_query_id": callback_id, "text": text, "show_alert": show_alert},
+            timeout=10,
+        )
+    except Exception as e:
+        log.debug("answerCallbackQuery: %s", e)
+
+
+async def handle_structure_request(symbol: str, tf: str, user_id=None, group_chat_id=None) -> None:
+    target = user_id or group_chat_id or CHAT_ID
+    try:
+        df, src = await fetch_klines(symbol, tf, size=120)
+        if df is None or len(df) < 30:
+            send_telegram_text(f"❌ دادهٔ کافی برای {symbol} {tf} نبود", chat_id=target)
+            return
+        price = float(df.iloc[-1]["c"])
+        fut = get_futures_last(symbol)
+        if fut:
+            price = float(fut)
+        st = analyze_structure(df, price)
+        img = make_structure_chart(df, symbol, tf, st)
+        cap = (
+            f"📐 <b>{symbol}</b> · {tf}\n"
+            f"{st.get('risk_emoji', '')} سطح: <b>{st.get('risk_fa', '?')}</b>\n"
+            f"{st.get('note', '')}\n"
+        )
+        if st.get("res_price") is not None:
+            cap += f"مقاومت: <code>{st['res_price']:.6g}</code> (+{st['res_dist_pct']:.1f}%)\n"
+        cap += f"src={src}"
+        if img:
+            send_telegram_photo(img, cap, chat_id=target)
+        else:
+            send_telegram_text(cap, chat_id=target)
+    except Exception as e:
+        log.warning("handle_structure: %s", e)
+        send_telegram_text(f"❌ خطا در ساختار: {e}", chat_id=target)
+
+
+async def telegram_callback_loop() -> None:
+    """دکمهٔ ساختار — نتیجه به پیوی کاربر (اگر ممکن) وگرنه گروه."""
+    offset = None
+    url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/getUpdates"
+    while True:
+        try:
+            params = {"timeout": 25, "allowed_updates": json.dumps(["callback_query"])}
+            if offset is not None:
+                params["offset"] = offset
+            r = await asyncio.to_thread(requests.get, url, params=params, timeout=35)
+            data = r.json() if r.status_code == 200 else {}
+            for upd in data.get("result") or []:
+                offset = upd["update_id"] + 1
+                cq = upd.get("callback_query")
+                if not cq:
+                    continue
+                cb_id = cq.get("id")
+                raw = (cq.get("data") or "").strip()
+                user = cq.get("from") or {}
+                user_id = user.get("id")
+                msg = cq.get("message") or {}
+                group_chat_id = (msg.get("chat") or {}).get("id")
+                answer_callback_query(cb_id, "در حال ترسیم ساختار…")
+                if not raw.startswith("st:"):
+                    continue
+                parts = raw.split(":")
+                if len(parts) != 3:
+                    continue
+                _, symbol, tf = parts
+                symbol = symbol.upper()
+                if tf not in TIMEFRAMES:
+                    if user_id:
+                        send_telegram_text(f"تایم‌فریم نامعتبر: {tf}", chat_id=user_id)
+                    continue
+                try:
+                    await handle_structure_request(
+                        symbol, tf, user_id=user_id, group_chat_id=group_chat_id
+                    )
+                except Exception as e:
+                    log.warning("st handle: %s", e)
+                    if user_id:
+                        send_telegram_text(f"❌ {e}", chat_id=user_id)
+        except Exception as e:
+            log.debug("telegram poll: %s", e)
+            await asyncio.sleep(3)
+
+
 def gap_context_flags(df: pd.DataFrame, side: str = "SELL") -> dict:
     """
     منشأ گپ + کندل قوی قبلی (الگوی LUMIA):
@@ -1383,6 +1750,8 @@ def check_signal(df: pd.DataFrame, symbol: str, tf: str):
         ladders = compute_sell_add_levels(df, float(fut), float(upper))
 
     ctx = gap_context_flags(df, side)
+    px_for_struct = float(fut) if fut else float(close)
+    st = analyze_structure(df, px_for_struct)
 
     return {
         "side": side,
@@ -1413,6 +1782,13 @@ def check_signal(df: pd.DataFrame, symbol: str, tf: str):
         "gap_inside": ctx.get("inside", False),
         "gap_ride": ctx.get("ride", False),
         "gap_strong": ctx.get("strong_prev", False),
+        "struct_risk": st.get("risk"),
+        "struct_risk_fa": st.get("risk_fa"),
+        "struct_risk_emoji": st.get("risk_emoji"),
+        "struct_res_price": st.get("res_price"),
+        "struct_res_dist_pct": st.get("res_dist_pct"),
+        "struct_res_kind": st.get("res_kind"),
+        "struct_note": st.get("note"),
     }
 
 
@@ -1486,7 +1862,7 @@ def compute_sell_add_levels(df: pd.DataFrame, entry: float, upper: float) -> dic
 
 
 def format_signal_message(sig: dict) -> str:
-    """خلاصه گپ + علامت منشأ/کندل‌قوی."""
+    """خلاصه گپ + ریسک ساختار + علامت منشأ."""
     emoji = "🔴" if sig["side"] == "SELL" else "🟢"
     side_fa = "سِل" if sig["side"] == "SELL" else "لانگ"
     pen = sig.get("diff_pct")
@@ -1496,11 +1872,22 @@ def format_signal_message(sig: dict) -> str:
     link = lbank_futures_link(symbol, sig["tf"])
     q_score = sig.get("q_score", 50)
     badge = inno_badge(symbol)
+    risk_e = sig.get("struct_risk_emoji") or "⚪"
+    risk_fa = sig.get("struct_risk_fa") or "—"
     lines = [
         f"{emoji} <b>{side_fa}</b> · "
         f'<a href="{link}"><b>{symbol}</b></a>{badge}',
         f"⏱ {sig['tf']} · 📏 {pen:.2f}% · Q{q_score}",
+        f"{risk_e} ورود: <b>{risk_fa}</b>",
     ]
+    if sig.get("struct_res_price") is not None:
+        kind = sig.get("struct_res_kind") or "res"
+        lines.append(
+            f"مقاومت: <code>{sig['struct_res_price']:.6g}</code> "
+            f"(+{sig.get('struct_res_dist_pct', 0):.1f}% · {kind})"
+        )
+    elif sig.get("struct_note"):
+        lines.append(sig["struct_note"])
     tags = sig.get("gap_tags") or []
     if tags:
         lines.append(" · ".join(tags))
@@ -1798,9 +2185,11 @@ async def process_symbol(symbol: str, tfs_to_check: list) -> None:
         if not sig:
             continue
         msg = format_signal_message(sig)
+        markup = structure_button_markup(symbol, tf)
         log.info(
-            "SIGNAL %s %s %s fut=%.6g src=%s",
+            "SIGNAL %s %s %s fut=%.6g src=%s risk=%s",
             sig["side"], symbol, tf, sig.get("fut_last") or 0, src,
+            sig.get("struct_risk"),
         )
         pending_signals.append({
             "symbol": symbol,
@@ -1817,11 +2206,11 @@ async def process_symbol(symbol: str, tfs_to_check: list) -> None:
         if SEND_CHART:
             img = make_chart(df, symbol, tf, sig["side"], sig)
             if img:
-                send_telegram_photo(img, msg)
+                send_telegram_photo(img, msg, reply_markup=markup)
             else:
-                send_telegram_text(msg)
+                send_telegram_text(msg, reply_markup=markup)
         else:
-            send_telegram_text(msg)
+            send_telegram_text(msg, reply_markup=markup)
         await asyncio.sleep(0.05)
 
 
@@ -2429,7 +2818,6 @@ async def main() -> None:
     except Exception as e:
         log.warning("news calendar on start: %s", e)
     send_telegram_text(format_startup_message())
-    # خلاصه اخبار نزدیک (اگر باشد)
     try:
         near = [e for e in refresh_news_calendar() if e.get("ts") and e["ts"] > time.time()]
         near = sorted(near, key=lambda x: x["ts"])[:5]
@@ -2437,7 +2825,10 @@ async def main() -> None:
             send_telegram_text(format_news_alert(near, prefix="📅 اخبار مهم پیش‌رو"))
     except Exception as e:
         log.debug("startup news: %s", e)
-    save_state()  # ثبت نسخه فعلی
+    save_state()
+    # دکمه ساختار در پس‌زمینه
+    asyncio.create_task(telegram_callback_loop())
+    log.info("Structure callback loop started")
     last_scan_key = None
     last_pre_key = None
     last_news_refresh = time.time()
