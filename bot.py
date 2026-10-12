@@ -24,8 +24,11 @@ STATE_FILE = os.path.join(BASE_DIR, "bot_state.json")
 
 # ========================= VERSION / CHANGELOG =========================
 # هر بار اپدیت: BOT_VERSION را بالا ببر و یک خط در CHANGELOG[نسخه] اضافه کن.
-BOT_VERSION = "1.8.0"
+BOT_VERSION = "1.8.1"
 CHANGELOG = {
+    "1.8.1": [
+        "ساختار روی TF بالاتر: 15m→1h/4h | 1h→4h/1d | 4h→1d/1w",
+    ],
     "1.8.0": [
         "احتمال گپ: سطح ریسک + فاصله مقاومت + دکمه 📐 ساختار per نماد",
     ],
@@ -203,12 +206,14 @@ GATE_INTERVAL = {
     "1h": "1h",
     "4h": "4h",
     "1d": "1d",
+    "1w": "7d",
 }
 BINGX_INTERVAL = {
     "15m": "15m",
     "1h": "1h",
     "4h": "4h",
     "1d": "1d",
+    "1w": "1w",
 }
 
 sent_signals: set = set()
@@ -1218,6 +1223,14 @@ STRUCT_STRONG_PCT = 1.5    # فاصله تا مقاومت ≤ این → قوی
 STRUCT_MEDIUM_PCT = 4.0    # تا این → متوسط؛ بیشتر → ضعیف / کشف قیمت
 STRUCT_HZ_TOL = 0.012      # تلورانس هم‌تراز بودن سقف/کف برای افقی
 STRUCT_SWING_W = 3         # همسایه چپ/راست برای سوئینگ
+# ساختار روی TF بالاتر از سیگنال
+# 15m->1h+4h | 1h->4h+1d | 4h->1d+1w | 1d->1w
+STRUCT_HTF = {
+    "15m": ["1h", "4h"],
+    "1h": ["4h", "1d"],
+    "4h": ["1d", "1w"],
+    "1d": ["1w"],
+}
 
 
 def _swing_highs(df: pd.DataFrame, w: int = STRUCT_SWING_W) -> list[dict]:
@@ -1382,6 +1395,63 @@ def analyze_structure(df: pd.DataFrame, price: float) -> dict:
         return empty
 
 
+
+async def fetch_klines_quiet(symbol: str, tf: str, size: int = 120):
+    """Klines for HTF structure — no blacklist."""
+    df = await asyncio.to_thread(fetch_klines_gate, symbol, tf, size)
+    if df is not None and len(df) >= 30:
+        return df, "gate_futures"
+    df = await asyncio.to_thread(fetch_klines_bingx, symbol, tf, size)
+    if df is not None and len(df) >= 30:
+        return df, "bingx_futures"
+    pair = futures_to_spot_pair(symbol)
+    kbar = TIMEFRAMES.get(tf)
+    if kbar:
+        df = await fetch_klines_ws(pair, kbar, size=size)
+        if df is not None and len(df) >= 30:
+            return df, "lbank_spot"
+    return None, None
+
+
+async def structure_for_signal(symbol: str, signal_tf: str, price: float):
+    """Structure on higher TFs than signal_tf."""
+    empty = {
+        "risk": "weak",
+        "risk_fa": "ضعیف",
+        "risk_emoji": "⚪",
+        "res_price": None,
+        "res_dist_pct": None,
+        "res_kind": None,
+        "horizontals": [],
+        "tl": None,
+        "note": "ساختار HTF در دسترس نبود",
+        "struct_tf": None,
+    }
+    htf_list = STRUCT_HTF.get(signal_tf) or ["4h", "1d"]
+    best = None
+    rank = {"strong": 0, "medium": 1, "weak": 2}
+    for htf in htf_list:
+        try:
+            df, src = await fetch_klines_quiet(symbol, htf, size=120)
+            if df is None or len(df) < 30:
+                continue
+            st = analyze_structure(df, price)
+            st["struct_tf"] = htf
+            st["struct_src"] = src
+            dist = st.get("res_dist_pct")
+            dist_key = float(dist) if dist is not None else 999.0
+            cand = (rank.get(st.get("risk"), 2), dist_key, st, df, htf)
+            if best is None or cand[0] < best[0] or (cand[0] == best[0] and cand[1] < best[1]):
+                best = cand
+        except Exception as e:
+            log.debug("structure_for_signal %s %s: %s", symbol, htf, e)
+    if best is None:
+        return empty, None, signal_tf
+    st, df, htf = best[2], best[3], best[4]
+    st["note"] = (st.get("note") or "") + f" · TF ساختار: {htf}"
+    return st, df, htf
+
+
 def structure_button_markup(symbol: str, tf: str) -> dict:
     data = f"st:{symbol}:{tf}"
     if len(data) > 64:
@@ -1500,26 +1570,33 @@ def answer_callback_query(callback_id: str, text: str = "", show_alert: bool = F
 
 
 async def handle_structure_request(symbol: str, tf: str, user_id=None, group_chat_id=None) -> None:
+    """tf = signal TF; chart drawn from higher TF."""
     target = user_id or group_chat_id or CHAT_ID
     try:
-        df, src = await fetch_klines(symbol, tf, size=120)
-        if df is None or len(df) < 30:
-            send_telegram_text(f"❌ دادهٔ کافی برای {symbol} {tf} نبود", chat_id=target)
-            return
-        price = float(df.iloc[-1]["c"])
         fut = get_futures_last(symbol)
-        if fut:
-            price = float(fut)
-        st = analyze_structure(df, price)
-        img = make_structure_chart(df, symbol, tf, st)
-        cap = (
-            f"📐 <b>{symbol}</b> · {tf}\n"
-            f"{st.get('risk_emoji', '')} سطح: <b>{st.get('risk_fa', '?')}</b>\n"
-            f"{st.get('note', '')}\n"
-        )
+        price = float(fut) if fut else 0.0
+        if price <= 0:
+            df0, _ = await fetch_klines_quiet(symbol, tf, size=50)
+            if df0 is not None and len(df0):
+                price = float(df0.iloc[-1]["c"])
+        st, df, st_tf = await structure_for_signal(symbol, tf, price)
+        if df is None or len(df) < 30:
+            send_telegram_text(
+                f"❌ داده ساختار HTF برای {symbol} (از {tf}) نبود", chat_id=target
+            )
+            return
+        img = make_structure_chart(df, symbol, st_tf or tf, st)
+        lines = [
+            f"📐 <b>{symbol}</b> · سیگنال {tf} → ساختار <b>{st_tf or '?'}</b>",
+            f"{st.get('risk_emoji', '')} سطح: <b>{st.get('risk_fa', '?')}</b>",
+            f"{st.get('note', '')}",
+        ]
         if st.get("res_price") is not None:
-            cap += f"مقاومت: <code>{st['res_price']:.6g}</code> (+{st['res_dist_pct']:.1f}%)\n"
-        cap += f"src={src}"
+            lines.append(
+                f"مقاومت: <code>{st['res_price']:.6g}</code> (+{st['res_dist_pct']:.1f}%)"
+            )
+        lines.append(f"src={st.get('struct_src', '?')}")
+        cap = "\n".join(lines)
         if img:
             send_telegram_photo(img, cap, chat_id=target)
         else:
@@ -1527,6 +1604,7 @@ async def handle_structure_request(symbol: str, tf: str, user_id=None, group_cha
     except Exception as e:
         log.warning("handle_structure: %s", e)
         send_telegram_text(f"❌ خطا در ساختار: {e}", chat_id=target)
+
 
 
 async def telegram_callback_loop() -> None:
@@ -1767,9 +1845,7 @@ def check_signal(df: pd.DataFrame, symbol: str, tf: str):
         ladders = compute_sell_add_levels(df, float(fut), float(upper))
 
     ctx = gap_context_flags(df, side)
-    px_for_struct = float(fut) if fut else float(close)
-    st = analyze_structure(df, px_for_struct)
-
+    # HTF structure filled later by structure_for_signal
     return {
         "side": side,
         "symbol": symbol,
@@ -1799,13 +1875,14 @@ def check_signal(df: pd.DataFrame, symbol: str, tf: str):
         "gap_inside": ctx.get("inside", False),
         "gap_ride": ctx.get("ride", False),
         "gap_strong": ctx.get("strong_prev", False),
-        "struct_risk": st.get("risk"),
-        "struct_risk_fa": st.get("risk_fa"),
-        "struct_risk_emoji": st.get("risk_emoji"),
-        "struct_res_price": st.get("res_price"),
-        "struct_res_dist_pct": st.get("res_dist_pct"),
-        "struct_res_kind": st.get("res_kind"),
-        "struct_note": st.get("note"),
+        "struct_risk": "weak",
+        "struct_risk_fa": "—",
+        "struct_risk_emoji": "⚪",
+        "struct_res_price": None,
+        "struct_res_dist_pct": None,
+        "struct_res_kind": None,
+        "struct_note": "",
+        "struct_tf": None,
     }
 
 
@@ -1895,7 +1972,8 @@ def format_signal_message(sig: dict) -> str:
         f"{emoji} <b>{side_fa}</b> · "
         f'<a href="{link}"><b>{symbol}</b></a>{badge}',
         f"⏱ {sig['tf']} · 📏 {pen:.2f}% · Q{q_score}",
-        f"{risk_e} ورود: <b>{risk_fa}</b>",
+        f"{risk_e} ورود: <b>{risk_fa}</b>"
+        + (f" · ساختار {sig['struct_tf']}" if sig.get("struct_tf") else ""),
     ]
     if sig.get("struct_res_price") is not None:
         kind = sig.get("struct_res_kind") or "res"
@@ -2201,6 +2279,19 @@ async def process_symbol(symbol: str, tfs_to_check: list) -> None:
         sig = check_signal(df, symbol, tf)
         if not sig:
             continue
+        try:
+            px = float(sig.get("fut_last") or sig["open"])
+            st, _, st_tf = await structure_for_signal(symbol, tf, px)
+            sig["struct_risk"] = st.get("risk")
+            sig["struct_risk_fa"] = st.get("risk_fa")
+            sig["struct_risk_emoji"] = st.get("risk_emoji")
+            sig["struct_res_price"] = st.get("res_price")
+            sig["struct_res_dist_pct"] = st.get("res_dist_pct")
+            sig["struct_res_kind"] = st.get("res_kind")
+            sig["struct_note"] = st.get("note")
+            sig["struct_tf"] = st_tf or st.get("struct_tf")
+        except Exception as e:
+            log.debug("HTF structure %s %s: %s", symbol, tf, e)
         msg = format_signal_message(sig)
         markup = structure_button_markup(symbol, tf)
         log.info(
@@ -2293,8 +2384,12 @@ async def pre_alert_cycle(tfs: list[str] | None = None) -> None:
                 if len(sent_pre_alerts) > 3000:
                     sent_pre_alerts.clear()
                 tags = gap_context_flags(df, "SELL").get("tags") or []
-                # ساختار سریع روی همان df (بدون API اضافه)
-                st = analyze_structure(df, fut if fut and fut > 0 else px)
+                try:
+                    st, _, _ = await structure_for_signal(
+                        symbol, tf, float(fut) if fut and fut > 0 else px
+                    )
+                except Exception:
+                    st = analyze_structure(df, fut if fut and fut > 0 else px)
                 async with lock:
                     found[tf].append((symbol, gap_pct, tags, st))
                 log.info(
