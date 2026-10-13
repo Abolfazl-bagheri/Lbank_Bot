@@ -24,8 +24,12 @@ STATE_FILE = os.path.join(BASE_DIR, "bot_state.json")
 
 # ========================= VERSION / CHANGELOG =========================
 # هر بار اپدیت: BOT_VERSION را بالا ببر و یک خط در CHANGELOG[نسخه] اضافه کن.
-BOT_VERSION = "1.9.0"
+BOT_VERSION = "1.9.1"
 CHANGELOG = {
+    "1.9.1": [
+        "اسکرین گپ+BB و خط‌روند جدا | احتمال‌گپ با چارت",
+        "زاویه فقط وضعیت گپ + چارت BB/EMA | حذف دکمه ساختار",
+    ],
     "1.9.0": [
         "۳ مدل خط HH↓ HH↑ LL↑ — قوی اگر قله را تاچ کند",
         "فیلتر شدوی یه‌ویی DOS | چارت ساختار روی سیگنال قوی | پیام خلاصه",
@@ -1465,16 +1469,6 @@ async def structure_for_signal(symbol: str, signal_tf: str, price: float):
     return st, df, htf
 
 
-def structure_button_markup(symbol: str, tf: str) -> dict:
-    data = f"st:{symbol}:{tf}"
-    if len(data) > 64:
-        data = f"st:{symbol[:20]}:{tf}"
-    return {
-        "inline_keyboard": [
-            [{"text": "📐 ساختار / خط‌روند", "callback_data": data}]
-        ]
-    }
-
 
 def make_structure_chart(df: pd.DataFrame, symbol: str, tf: str, st: dict) -> bytes | None:
     """چارت ساده با خط‌روند نزولی + مقاومت‌های افقی."""
@@ -1510,6 +1504,34 @@ def make_structure_chart(df: pd.DataFrame, symbol: str, tf: str, st: dict) -> by
                 height,
                 facecolor=color, edgecolor=color, zorder=3,
             ))
+
+        # Bollinger
+        try:
+            if "upper" not in d.columns or d["upper"].isna().all():
+                cser = d["c"].astype(float)
+                sma = cser.rolling(BB_PERIOD).mean()
+                std = cser.rolling(BB_PERIOD).std(ddof=0)
+                d = d.copy()
+                d["sma"] = sma
+                d["upper"] = sma + BB_STD * std
+                d["lower"] = sma - BB_STD * std
+            xs, uys, lys, mys = [], [], [], []
+            for _, row in d.iterrows():
+                if pd.isna(row.get("upper")):
+                    continue
+                try:
+                    xs.append(dtmod.fromtimestamp(int(row["ts"]), TEHRAN))
+                    uys.append(float(row["upper"]))
+                    lys.append(float(row["lower"]))
+                    mys.append(float(row["sma"]))
+                except Exception:
+                    continue
+            if xs:
+                ax.plot(xs, uys, color="#7e57c2", lw=1.2, alpha=0.85, label="UB")
+                ax.plot(xs, mys, color="#78909c", lw=1.0, alpha=0.7, label="SMA")
+                ax.plot(xs, lys, color="#7e57c2", lw=1.2, alpha=0.5, label="LB")
+        except Exception:
+            pass
 
         # horizontals
         for hz in (st.get("horizontals") or [])[:3]:
@@ -1574,101 +1596,84 @@ def make_structure_chart(df: pd.DataFrame, symbol: str, tf: str, st: dict) -> by
         return None
 
 
-def answer_callback_query(callback_id: str, text: str = "", show_alert: bool = False) -> None:
-    url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/answerCallbackQuery"
+def make_angle_chart(df: pd.DataFrame, symbol: str, tf: str, it: dict | None = None) -> bytes | None:
+    """چارت زاویه: کندل + BB + EMA5/10/20."""
     try:
-        requests.post(
-            url,
-            json={"callback_query_id": callback_id, "text": text, "show_alert": show_alert},
-            timeout=10,
-        )
+        import matplotlib
+        matplotlib.use("Agg")
+        import matplotlib.pyplot as plt
+        import matplotlib.dates as mdates
+        from matplotlib.patches import Rectangle
+        from datetime import datetime as dtmod
+        from io import BytesIO
+
+        if df is None or len(df) < 25:
+            return None
+        d = df.iloc[-min(len(df), 60):].copy()
+        cser = d["c"].astype(float)
+        d["ema5"] = cser.ewm(span=5, adjust=False).mean()
+        d["ema10"] = cser.ewm(span=10, adjust=False).mean()
+        d["ema20"] = cser.ewm(span=20, adjust=False).mean()
+        sma = cser.rolling(BB_PERIOD).mean()
+        std = cser.rolling(BB_PERIOD).std(ddof=0)
+        d["sma"] = sma
+        d["upper"] = sma + BB_STD * std
+        d["lower"] = sma - BB_STD * std
+
+        fig, ax = plt.subplots(figsize=(12, 6), facecolor="#0e1117")
+        ax.set_facecolor("#0e1117")
+        for _, row in d.iterrows():
+            try:
+                t = dtmod.fromtimestamp(int(row["ts"]), TEHRAN)
+            except Exception:
+                continue
+            o, h, l, c = float(row["o"]), float(row["h"]), float(row["l"]), float(row["c"])
+            color = "#26a69a" if c >= o else "#ef5350"
+            ax.plot([t, t], [l, h], color=color, lw=0.9, zorder=2)
+            bottom = min(o, c)
+            height = max(abs(c - o), (h - l) * 0.01)
+            ax.add_patch(Rectangle(
+                (mdates.date2num(t) - 0.3 * (PERIOD_SEC.get(tf, 3600) / 86400), bottom),
+                0.6 * (PERIOD_SEC.get(tf, 3600) / 86400),
+                height, facecolor=color, edgecolor=color, zorder=3,
+            ))
+        xs, uys, lys, e5, e10, e20 = [], [], [], [], [], []
+        for _, row in d.iterrows():
+            if pd.isna(row.get("upper")):
+                continue
+            try:
+                t = dtmod.fromtimestamp(int(row["ts"]), TEHRAN)
+            except Exception:
+                continue
+            xs.append(t)
+            uys.append(float(row["upper"]))
+            lys.append(float(row["lower"]))
+            e5.append(float(row["ema5"]))
+            e10.append(float(row["ema10"]))
+            e20.append(float(row["ema20"]))
+        if xs:
+            ax.plot(xs, uys, color="#7e57c2", lw=1.3, label="UB", zorder=4)
+            ax.plot(xs, lys, color="#7e57c2", lw=1.0, alpha=0.5, label="LB", zorder=4)
+            ax.plot(xs, e5, color="#ffca28", lw=1.2, label="EMA5", zorder=5)
+            ax.plot(xs, e10, color="#29b6f6", lw=1.2, label="EMA10", zorder=5)
+            ax.plot(xs, e20, color="#ef5350", lw=1.2, label="EMA20", zorder=5)
+        ax.set_title(f"{symbol} {tf} · Angle / BB", color="white", fontsize=12)
+        ax.tick_params(colors="#aaa")
+        ax.xaxis.set_major_formatter(mdates.DateFormatter("%m/%d %H:%M", tz=TEHRAN))
+        ax.legend(loc="upper left", facecolor="#1a1d24", labelcolor="white", fontsize=8)
+        ax.grid(True, alpha=0.12)
+        for s in ax.spines.values():
+            s.set_color("#333")
+        plt.tight_layout()
+        buf = BytesIO()
+        fig.savefig(buf, format="png", dpi=120, facecolor=fig.get_facecolor())
+        plt.close(fig)
+        buf.seek(0)
+        return buf.read()
     except Exception as e:
-        log.debug("answerCallbackQuery: %s", e)
+        log.debug("make_angle_chart: %s", e)
+        return None
 
-
-async def handle_structure_request(symbol: str, tf: str, user_id=None, group_chat_id=None) -> None:
-    """tf = signal TF; chart drawn from higher TF."""
-    target = user_id or group_chat_id or CHAT_ID
-    try:
-        fut = get_futures_last(symbol)
-        price = float(fut) if fut else 0.0
-        if price <= 0:
-            df0, _ = await fetch_klines_quiet(symbol, tf, size=50)
-            if df0 is not None and len(df0):
-                price = float(df0.iloc[-1]["c"])
-        st, df, st_tf = await structure_for_signal(symbol, tf, price)
-        if df is None or len(df) < 30:
-            send_telegram_text(
-                f"❌ داده ساختار HTF برای {symbol} (از {tf}) نبود", chat_id=target
-            )
-            return
-        img = make_structure_chart(df, symbol, st_tf or tf, st)
-        lines = [
-            f"📐 <b>{symbol}</b> · سیگنال {tf} → ساختار <b>{st_tf or '?'}</b>",
-            f"{st.get('risk_emoji', '')} سطح: <b>{st.get('risk_fa', '?')}</b>",
-            f"{st.get('note', '')}",
-        ]
-        if st.get("res_price") is not None:
-            lines.append(
-                f"مقاومت: <code>{st['res_price']:.6g}</code> (+{st['res_dist_pct']:.1f}%)"
-            )
-        lines.append(f"src={st.get('struct_src', '?')}")
-        cap = "\n".join(lines)
-        if img:
-            send_telegram_photo(img, cap, chat_id=target)
-        else:
-            send_telegram_text(cap, chat_id=target)
-    except Exception as e:
-        log.warning("handle_structure: %s", e)
-        send_telegram_text(f"❌ خطا در ساختار: {e}", chat_id=target)
-
-
-
-async def telegram_callback_loop() -> None:
-    """دکمهٔ ساختار — نتیجه به پیوی کاربر (اگر ممکن) وگرنه گروه."""
-    offset = None
-    url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/getUpdates"
-    while True:
-        try:
-            params = {"timeout": 25, "allowed_updates": json.dumps(["callback_query"])}
-            if offset is not None:
-                params["offset"] = offset
-            r = await asyncio.to_thread(requests.get, url, params=params, timeout=35)
-            data = r.json() if r.status_code == 200 else {}
-            for upd in data.get("result") or []:
-                offset = upd["update_id"] + 1
-                cq = upd.get("callback_query")
-                if not cq:
-                    continue
-                cb_id = cq.get("id")
-                raw = (cq.get("data") or "").strip()
-                user = cq.get("from") or {}
-                user_id = user.get("id")
-                msg = cq.get("message") or {}
-                group_chat_id = (msg.get("chat") or {}).get("id")
-                answer_callback_query(cb_id, "در حال ترسیم ساختار…")
-                if not raw.startswith("st:"):
-                    continue
-                parts = raw.split(":")
-                if len(parts) != 3:
-                    continue
-                _, symbol, tf = parts
-                symbol = symbol.upper()
-                if tf not in TIMEFRAMES:
-                    if user_id:
-                        send_telegram_text(f"تایم‌فریم نامعتبر: {tf}", chat_id=user_id)
-                    continue
-                try:
-                    await handle_structure_request(
-                        symbol, tf, user_id=user_id, group_chat_id=group_chat_id
-                    )
-                except Exception as e:
-                    log.warning("st handle: %s", e)
-                    if user_id:
-                        send_telegram_text(f"❌ {e}", chat_id=user_id)
-        except Exception as e:
-            log.debug("telegram poll: %s", e)
-            await asyncio.sleep(3)
 
 
 def gap_context_flags(df: pd.DataFrame, side: str = "SELL") -> dict:
@@ -2322,20 +2327,22 @@ async def process_symbol(symbol: str, tfs_to_check: list) -> None:
             "evaluated": False,
             "reported": False,
         })
-        img = None
-        if SEND_CHART and sig.get("struct_risk") == "strong":
-            st_df = sig.pop("_st_df", None)
-            st_obj = sig.pop("_st", None) or {}
-            st_tf = sig.get("struct_tf") or tf
-            if st_df is not None and len(st_df) >= 30:
-                img = make_structure_chart(st_df, symbol, st_tf, st_obj)
-            if img is None:
-                img = make_chart(df, symbol, tf, sig["side"], sig)
-        else:
-            sig.pop("_st_df", None)
-            sig.pop("_st", None)
-        if img:
-            send_telegram_photo(img, msg)
+        st_df = sig.pop("_st_df", None)
+        st_obj = sig.pop("_st", None) or {}
+        st_tf = sig.get("struct_tf") or tf
+        if SEND_CHART:
+            gap_img = make_chart(df, symbol, tf, sig["side"], sig)
+            if gap_img:
+                send_telegram_photo(gap_img, msg)
+            else:
+                send_telegram_text(msg)
+            if sig.get("struct_risk") == "strong" and st_df is not None and len(st_df) >= 30:
+                st_img = make_structure_chart(st_df, symbol, st_tf, st_obj)
+                if st_img:
+                    send_telegram_photo(
+                        st_img,
+                        f"📐 <b>{symbol}</b> · ساختار {st_tf} · {sig.get('struct_res_kind') or ''}",
+                    )
         else:
             send_telegram_text(msg)
         await asyncio.sleep(0.05)
@@ -2428,6 +2435,7 @@ async def pre_alert_cycle(tfs: list[str] | None = None) -> None:
             continue
         items.sort(key=lambda x: -x[1])
         lines = [f"🟣 <b>احتمال گپ · {tf}</b>"]
+        chart_jobs = []
         for item in items:
             if len(item) >= 4:
                 symbol, gap_pct, tags, st = item[0], item[1], item[2], item[3]
@@ -2442,7 +2450,47 @@ async def pre_alert_cycle(tfs: list[str] | None = None) -> None:
                 f'· <a href="{link}"><b>{symbol}</b></a>'
                 f" +{gap_pct:.1f}% {risk_e}{risk_fa}"
             )
+            chart_jobs.append((symbol, gap_pct, st))
         send_telegram_text("\n".join(lines))
+        for symbol, gap_pct, st in chart_jobs[:8]:
+            try:
+                df, src = await fetch_klines(symbol, tf, size=50)
+                if df is None or len(df) < BB_PERIOD + 2:
+                    continue
+                if "upper" not in df.columns or df["upper"].isna().all():
+                    cser = df["c"].astype(float)
+                    sma = cser.rolling(BB_PERIOD).mean()
+                    std = cser.rolling(BB_PERIOD).std(ddof=0)
+                    df = df.copy()
+                    df["sma"] = sma
+                    df["upper"] = sma + BB_STD * std
+                    df["lower"] = sma - BB_STD * std
+                img = make_chart(df, symbol, tf, "SELL", {
+                    "side": "SELL",
+                    "open": float(df.iloc[-1]["o"]),
+                    "upper": float(df.iloc[-1]["upper"]),
+                    "high": float(df.iloc[-1]["h"]),
+                })
+                if img:
+                    risk_e = (st or {}).get("risk_emoji") or ""
+                    send_telegram_photo(
+                        img,
+                        f"🟣 {symbol} · {tf} · +{gap_pct:.1f}% {risk_e}",
+                    )
+                if (st or {}).get("risk") == "strong":
+                    st2, st_df, st_tf = await structure_for_signal(
+                        symbol, tf, float(df.iloc[-1]["c"])
+                    )
+                    if st_df is not None and len(st_df) >= 30:
+                        st_img = make_structure_chart(st_df, symbol, st_tf or tf, st2)
+                        if st_img:
+                            send_telegram_photo(
+                                st_img,
+                                f"📐 {symbol} · ساختار {st_tf or tf}",
+                            )
+                await asyncio.sleep(0.15)
+            except Exception as e:
+                log.debug("pre chart %s: %s", symbol, e)
         total += len(items)
     log.info("PRE_ALERT done | sent=%d across %d TF msgs", total, sum(1 for t in tfs if found.get(t)))
 
@@ -2706,62 +2754,26 @@ def _df_has_sell_gap(df: pd.DataFrame) -> bool:
 
 
 def format_angle_batch(tf: str, items: list[dict]) -> str:
-    lines = [f"⚠️ <b>زاویه / جام</b> · {tf}"]
+    """فقط وضعیت پر شدن گپ."""
+    lines = [f"⚠️ <b>زاویه</b> · {tf}"]
     for it in items:
         sym = it["symbol"]
         link = lbank_futures_link(sym, tf)
-        ev = it.get("event") or "ready"
-        level = it.get("level") or "?"
         g1 = it.get("gap_1h")
         g4 = it.get("gap_4h")
-        parent_cup = it.get("parent_cup")
-
-        if ev == "bend":
-            tag = "نوک UB در حال <b>خم</b> — بزنگاه ورود"
-        elif ev == "watch":
-            tag = "واچ — نوک UB هنوز <b>تیز</b> (ورود نه)"
-        elif ev == "close2":
-            tag = "دیر — زاویه <b>دوم</b> بسته"
-        elif ev == "close1":
-            tag = "دیر — زاویه <b>اول</b> بسته"
-        elif it.get("cup_ta") or it.get("ub_bend"):
-            tag = "جام / خم UB — <b>ورود سِل</b>"
-        else:
-            tag = "آماده‌باش خنک‌شده"
-
-        gap_txt = []
+        parts = []
         if g1 is True:
-            gap_txt.append("۱س گپ✓")
+            parts.append("۱س پر✓")
         elif g1 is False:
-            gap_txt.append("۱س گپ✗")
+            parts.append("۱س پر✗")
         if g4 is True:
-            gap_txt.append("۴س گپ✓")
+            parts.append("۴س پر✓")
         elif g4 is False:
-            gap_txt.append("۴س گپ✗")
-        gap_line = " · ".join(gap_txt) if gap_txt else ""
-
-        scale = ""
-        if g1 and g4:
-            scale = "\n  📌 پله: مجاز (گپ ۱س+۴س) — اگر سقف جدید زد میانگین کم کن"
-        elif g1 or g4:
-            scale = "\n  📌 پله: فقط با احتیاط (یکی از گپ‌ها)"
-        else:
-            scale = "\n  📌 پله: نه — بدون گپ بالاتر اضافه نکن"
-
-        extra = ""
-        if parent_cup:
-            extra = "\n  ⬆ تایم بالاتر: جام در حال شکل"
-        if gap_line:
-            extra += f"\n  🔗 {gap_line}"
-
-        badge = inno_badge(sym)
-        nl = news_line_for_symbol(sym)
-        news_extra = f"\n  {nl}" if nl else ""
+            parts.append("۴س پر✗")
+        if not parts:
+            parts.append("گپ نامشخص")
         lines.append(
-            f'• <a href="{link}"><b>{sym}</b></a>{badge} [{level}] {tag}\n'
-            f'  ازسقف {it["from_high"]:.1f}% · +E10 {it["dist10"]:.1f}% · +E20 {it["dist20"]:.1f}%\n'
-            f'  🎯 هدف کلوز (زاویه۱) E10 <code>{it["ema10"]:.6g}</code>'
-            f"{extra}{scale}{news_extra}"
+            f'· <a href="{link}"><b>{sym}</b></a> · ' + " · ".join(parts)
         )
     return "\n".join(lines)
 
@@ -2867,6 +2879,18 @@ async def angle_alert_cycle(symbols: list[str], tfs: list[str] | None = None) ->
         if len(sent_angle_alerts) > 3000:
             sent_angle_alerts.clear()
         send_telegram_text(format_angle_batch(tf, items))
+        for it in items[:6]:
+            try:
+                sym = it["symbol"]
+                df, _ = await fetch_klines(sym, tf, size=50)
+                if df is None:
+                    continue
+                img = make_angle_chart(df, sym, tf, it)
+                if img:
+                    send_telegram_photo(img, f"⚠️ {sym} · {tf}")
+                await asyncio.sleep(0.12)
+            except Exception as e:
+                log.debug("angle chart: %s", e)
         await asyncio.sleep(0.3)
 
     if sent_n:
@@ -2957,8 +2981,6 @@ async def main() -> None:
     send_telegram_text(format_startup_message())
     # اخبار فقط با maybe_send_daily_news (۹ صبح · فقط روز خبر) — نه هنگام استارت
     save_state()
-    asyncio.create_task(telegram_callback_loop())
-    log.info("Structure callback loop started")
     last_scan_key = None
     last_pre_key = None
     last_news_refresh = time.time()
