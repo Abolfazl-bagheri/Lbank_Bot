@@ -2,9 +2,6 @@ name: LBank Bot
 
 on:
   workflow_dispatch:
-  # اختیاری: هر ۵ ساعت یک‌بار دوباره استارت (بعد از قطع شدن)
-  # schedule:
-  #   - cron: "0 */5 * * *"
 
 jobs:
   bot:
@@ -12,19 +9,16 @@ jobs:
     timeout-minutes: 360
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v5
+      - uses: actions/checkout@v5
 
-      - name: Restore bot state
-        uses: actions/cache@v5
+      - uses: actions/cache@v5
         with:
           path: bot_state.json
           key: bot-state-${{ github.run_id }}
           restore-keys: |
             bot-state-
 
-      - name: Setup Python
-        uses: actions/setup-python@v6
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 
@@ -35,8 +29,11 @@ jobs:
 
       - name: Run bot
         shell: pwsh
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          CHAT_ID: ${{ secrets.CHAT_ID }}
         run: |
           Set-Location $env:GITHUB_WORKSPACE
-          Write-Host "Starting bot..."
-          Select-String -Path "bot.py" -Pattern "BOT_VERSION" | ForEach-Object { $_.Line }
+          if (-not $env:TELEGRAM_TOKEN) { Write-Error "TELEGRAM_TOKEN secret missing"; exit 1 }
+          if (-not $env:CHAT_ID) { Write-Error "CHAT_ID secret missing"; exit 1 }
           python -u bot.py
