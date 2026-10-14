@@ -1,21 +1,21 @@
-name: Windows RDP + LBank Bot
+name: LBank Bot
 
 on:
   workflow_dispatch:
-  
-  schedule:
-    # هر ۶ ساعت (UTC) — در صورت نیاز ساعت‌ها را عوض کن
-    - cron: "0 0,6,12,18 * * *"
+  # اختیاری: هر ۵ ساعت یک‌بار دوباره استارت (بعد از قطع شدن)
+  # schedule:
+  #   - cron: "0 */5 * * *"
+
 jobs:
-  build:
+  bot:
     runs-on: windows-latest
     timeout-minutes: 360
 
     steps:
-      - name: Checkout bot code
+      - name: Checkout
         uses: actions/checkout@v5
 
-      - name: Restore bot state (from previous runs)
+      - name: Restore bot state
         uses: actions/cache@v5
         with:
           path: bot_state.json
@@ -24,7 +24,7 @@ jobs:
             bot-state-
 
       - name: Setup Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 
@@ -33,41 +33,10 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Enable RDP
+      - name: Run bot
+        shell: pwsh
         run: |
-          Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server' -Name "fDenyTSConnections" -Value 0
-          Enable-NetFirewallRule -DisplayGroup "Remote Desktop"
-          Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp' -Name "UserAuthentication" -Value 0
-
-      - name: Create Admin Account
-        env:
-          RDP_PASSWORD: ${{ secrets.RDP_PASSWORD }}
-        run: |
-          $pass = $env:RDP_PASSWORD
-          if (-not $pass) { $pass = "CHANGE_ME_NOW" }
-          $Password = ConvertTo-SecureString $pass -AsPlainText -Force
-          New-LocalUser -Name "NvDAdmin" -Password $Password -PasswordNeverExpires -ErrorAction SilentlyContinue
-          Add-LocalGroupMember -Group "Administrators" -Member "NvDAdmin" -ErrorAction SilentlyContinue
-          net user runneradmin $pass
-
-      - name: Tailscale
-        env:
-          TAILSCALE_AUTHKEY: ${{ secrets.TAILSCALE_AUTHKEY }}
-        run: |
-          Invoke-WebRequest "https://pkgs.tailscale.com/stable/tailscale-setup-latest-amd64.msi" -OutFile "C:\tailscale.msi"
-          Start-Process msiexec -ArgumentList "/i C:\tailscale.msi /quiet /norestart" -Wait
-          Start-Sleep -Seconds 5
-          & "C:\Program Files\Tailscale\tailscale.exe" up --authkey="$Env:TAILSCALE_AUTHKEY" --hostname="github-rdp-bot"
-          Start-Sleep -Seconds 8
-          $ts_ip = & "C:\Program Files\Tailscale\tailscale.exe" ip -4
-          Write-Host "RDP IP: $ts_ip"
-          Write-Host "User: NvDAdmin"
-      - name: Show bot version on disk
-        run: |
-          grep BOT_VERSION bot.py | head -3
-      - name: Run bot (~6h)
-        env:
-          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
-          CHAT_ID: ${{ secrets.CHAT_ID }}
-        run: |
+          Set-Location $env:GITHUB_WORKSPACE
+          Write-Host "Starting bot..."
+          Select-String -Path "bot.py" -Pattern "BOT_VERSION" | ForEach-Object { $_.Line }
           python -u bot.py
