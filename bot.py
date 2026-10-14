@@ -24,8 +24,11 @@ STATE_FILE = os.path.join(BASE_DIR, "bot_state.json")
 
 # ========================= VERSION / CHANGELOG =========================
 # هر بار اپدیت: BOT_VERSION را بالا ببر و یک خط در CHANGELOG[نسخه] اضافه کن.
-BOT_VERSION = "1.9.1"
+BOT_VERSION = "1.9.2"
 CHANGELOG = {
+    "1.9.2": [
+        "پیام زاویه: گپ 1h/4h ✅❌ + جام ✅ / UB باز 🟠",
+    ],
     "1.9.1": [
         "اسکرین گپ+BB و خط‌روند جدا | احتمال‌گپ با چارت",
         "زاویه فقط وضعیت گپ + چارت BB/EMA | حذف دکمه ساختار",
@@ -2754,7 +2757,7 @@ def _df_has_sell_gap(df: pd.DataFrame) -> bool:
 
 
 def format_angle_batch(tf: str, items: list[dict]) -> str:
-    """فقط وضعیت پر شدن گپ."""
+    """گپ ۱س/۴س + جام / UB باز — فقط فارسی + اموجی."""
     lines = [f"⚠️ <b>زاویه</b> · {tf}"]
     for it in items:
         sym = it["symbol"]
@@ -2762,20 +2765,40 @@ def format_angle_batch(tf: str, items: list[dict]) -> str:
         g1 = it.get("gap_1h")
         g4 = it.get("gap_4h")
         parts = []
+
         if g1 is True:
-            parts.append("۱س پر✓")
+            parts.append("گپ 1h ✅")
         elif g1 is False:
-            parts.append("۱س پر✗")
+            parts.append("گپ 1h ❌")
+
         if g4 is True:
-            parts.append("۴س پر✓")
+            parts.append("گپ 4h ✅")
         elif g4 is False:
-            parts.append("۴س پر✗")
+            parts.append("گپ 4h ❌")
+
+        # جام در حال شکل / خم UB  |  نوک تیز = UB باز (سواری)
+        has_cup = bool(
+            it.get("cup_ta")
+            or it.get("cup_forming")
+            or it.get("cup_ta_15m")
+            or it.get("parent_cup")
+            or it.get("ub_bend")
+            or it.get("event") == "bend"
+        )
+        ub_open = bool(it.get("watch_tip") or it.get("event") == "watch")
+        if ub_open:
+            parts.append("UB باز 🟠")
+        elif has_cup:
+            parts.append("جام ✅")
+
         if not parts:
-            parts.append("گپ نامشخص")
+            parts.append("بدون داده گپ")
+
         lines.append(
             f'· <a href="{link}"><b>{sym}</b></a> · ' + " · ".join(parts)
         )
     return "\n".join(lines)
+
 
 
 async def angle_alert_cycle(symbols: list[str], tfs: list[str] | None = None) -> int:
