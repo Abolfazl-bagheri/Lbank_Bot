@@ -24,7 +24,7 @@ STATE_FILE = os.path.join(BASE_DIR, "bot_state.json")
 
 # ========================= VERSION / CHANGELOG =========================
 # هر بار اپدیت: BOT_VERSION را بالا ببر و یک خط در CHANGELOG[نسخه] اضافه کن.
-BOT_VERSION = "1.9.2"
+BOT_VERSION = "1.9.3"
 CHANGELOG = {
     "1.9.2": [
         "پیام زاویه: گپ 1h/4h ✅❌ + جام ✅ / UB باز 🟠",
@@ -1301,9 +1301,10 @@ def is_erratic_wick_candle(row) -> bool:
 
 def analyze_structure(df: pd.DataFrame, price: float) -> dict:
     """
-    سه مدل خط که به قله اخیر میچسبند:
-      1) HH نزولی  2) HH صعودی  3) LL صعودی (مخفی)
-    قوی = امتداد خط با high کندل آخر ≤۲.۵٪ فاصله.
+    چند کاندید خط‌روند (حداکثر ۱ از هر نوع):
+      HH↓ | HH↑ | LL↑ مخفی
+    امتیاز: خطای امتداد تا قله + تاچ میانی سوئینگ.
+    قوی = بهترین err ≤ ۲.۵٪
     """
     empty = {
         "risk": "weak",
@@ -1314,101 +1315,133 @@ def analyze_structure(df: pd.DataFrame, price: float) -> dict:
         "res_kind": None,
         "horizontals": [],
         "tl": None,
+        "tls": [],
         "note": "بدون ساختار",
     }
-    if df is None or len(df) < 30 or price is None or price <= 0:
+    if df is None or len(df) < 40 or price is None or price <= 0:
         return empty
 
     try:
         peak_h = float(df.iloc[-1]["h"])
         peak_ts = int(df.iloc[-1]["ts"]) if "ts" in df.columns else len(df) - 1
-        min_span = 3 * 86400
+        min_span = 2 * 86400
 
         swings_h = _swing_highs(df)
         swings_l = _swing_lows(df)
-        candidates = []
+        raw = []
+
+        def mid_high_touches(ra, rb, slope):
+            n = 0
+            thirds = []
+            for s in swings_h:
+                if s["ts"] == ra["ts"] or s["ts"] == rb["ts"]:
+                    continue
+                y = ra["h"] + slope * (s["ts"] - ra["ts"])
+                if y <= 0:
+                    continue
+                if abs(s["h"] - y) / y * 100.0 <= 1.8:
+                    n += 1
+                    thirds.append(s)
+            return n, thirds
+
+        def mid_low_touches(ra, rb, slope):
+            n = 0
+            for s in swings_l:
+                if s["ts"] == ra["ts"] or s["ts"] == rb["ts"]:
+                    continue
+                y = ra["l"] + slope * (s["ts"] - ra["ts"])
+                if y <= 0:
+                    continue
+                if abs(s["l"] - y) / y * 100.0 <= 1.8:
+                    n += 1
+            return n
 
         for a in range(len(swings_h)):
             for b in range(a + 1, len(swings_h)):
                 ra, rb = swings_h[a], swings_h[b]
-                if rb["ts"] - ra["ts"] < min_span:
+                span = rb["ts"] - ra["ts"]
+                if span < min_span:
                     continue
                 if rb["ts"] >= peak_ts - 3600:
                     continue
-                slope = (rb["h"] - ra["h"]) / max(rb["ts"] - ra["ts"], 1)
+                slope = (rb["h"] - ra["h"]) / max(span, 1)
                 proj = ra["h"] + slope * (peak_ts - ra["ts"])
                 if proj <= 0:
                     continue
                 err = abs(proj - peak_h) / peak_h * 100.0
-                if err > 5.0:
+                if err > 4.5:
                     continue
                 kind = "HH↑" if slope > 0 else "HH↓"
-                candidates.append((err, kind, ra, rb, proj, slope))
+                n3, thirds = mid_high_touches(ra, rb, slope)
+                score = err - n3 * 0.75
+                raw.append({
+                    "kind": kind, "err": err, "n3": n3, "score": score,
+                    "p1": ra, "p2": rb, "slope": slope,
+                    "line_now": proj, "proj": proj, "thirds": thirds[:3],
+                })
 
         for a in range(len(swings_l)):
             for b in range(a + 1, len(swings_l)):
                 ra, rb = swings_l[a], swings_l[b]
-                if rb["ts"] - ra["ts"] < min_span:
+                span = rb["ts"] - ra["ts"]
+                if span < min_span:
                     continue
                 if rb["ts"] >= peak_ts - 3600:
                     continue
-                slope = (rb["l"] - ra["l"]) / max(rb["ts"] - ra["ts"], 1)
+                slope = (rb["l"] - ra["l"]) / max(span, 1)
                 if slope <= 0:
                     continue
                 proj = ra["l"] + slope * (peak_ts - ra["ts"])
                 if proj <= 0:
                     continue
                 err = abs(proj - peak_h) / peak_h * 100.0
-                if err > 5.0:
+                if err > 4.5:
                     continue
-                candidates.append((err, "LL↑", ra, rb, proj, slope))
+                n3 = mid_low_touches(ra, rb, slope)
+                score = err - n3 * 0.75
+                raw.append({
+                    "kind": "LL↑", "err": err, "n3": n3, "score": score,
+                    "p1": ra, "p2": rb, "slope": slope,
+                    "line_now": proj, "proj": proj, "thirds": [],
+                })
 
-        if not candidates:
-            above = [s for s in swings_h if s["h"] > price * 1.005]
-            if above:
-                nearest = min(above, key=lambda s: s["h"])
-                dist = (nearest["h"] - price) / price * 100.0
-                return {
-                    "risk": "weak" if dist > STRUCT_MEDIUM_PCT else "medium",
-                    "risk_fa": "ضعیف" if dist > STRUCT_MEDIUM_PCT else "متوسط",
-                    "risk_emoji": "⚪" if dist > STRUCT_MEDIUM_PCT else "🟡",
-                    "res_price": float(nearest["h"]),
-                    "res_dist_pct": float(dist),
-                    "res_kind": "swing",
-                    "horizontals": [],
-                    "tl": None,
-                    "note": f"بدون خط تاچ · سقف +{dist:.1f}%",
-                }
-            return {**empty, "note": "کشف قیمت — خطی به قله نچسبید"}
+        if not raw:
+            return {**empty, "note": "کشف قیمت — خط معتبری به قله نچسبید"}
 
-        candidates.sort(key=lambda x: x[0])
-        err, kind, ra, rb, proj, slope = candidates[0]
-        dist_now = (proj - price) / price * 100.0 if price > 0 else err
+        raw.sort(key=lambda x: x["score"])
+        tls = []
+        seen = set()
+        for c in raw:
+            if c["kind"] in seen:
+                continue
+            if any(abs(c["proj"] - p["proj"]) / max(abs(p["proj"]), 1e-12) < 0.01 for p in tls):
+                continue
+            seen.add(c["kind"])
+            tls.append(c)
+            if len(tls) >= 3:
+                break
 
+        best = tls[0]
+        err = best["err"]
         if err <= 2.5:
             risk, risk_fa, risk_emoji = "strong", "قوی", "🟢"
-            note = f"{kind} تاچ قله ({err:.1f}%)"
         elif err <= 4.0:
             risk, risk_fa, risk_emoji = "medium", "متوسط", "🟡"
-            note = f"{kind} نزدیک قله ({err:.1f}%)"
         else:
             risk, risk_fa, risk_emoji = "weak", "ضعیف", "⚪"
-            note = f"{kind} دور ({err:.1f}%)"
 
-        tl = {
-            "err": err, "kind": kind, "p1": ra, "p2": rb,
-            "slope": slope, "line_now": proj, "dist_pct": dist_now,
-        }
+        kinds = " · ".join(f"{t['kind']}({t['err']:.1f}%)" for t in tls)
         return {
             "risk": risk,
             "risk_fa": risk_fa,
             "risk_emoji": risk_emoji,
-            "res_price": float(proj),
+            "res_price": float(best["proj"]),
             "res_dist_pct": float(err),
-            "res_kind": kind,
+            "res_kind": best["kind"],
             "horizontals": [],
-            "tl": tl,
-            "note": note,
+            "tl": best,
+            "tls": tls,
+            "note": f"{len(tls)} خط: {kinds}",
         }
     except Exception as e:
         log.debug("analyze_structure: %s", e)
@@ -1444,6 +1477,7 @@ async def structure_for_signal(symbol: str, signal_tf: str, price: float):
         "res_kind": None,
         "horizontals": [],
         "tl": None,
+        "tls": [],
         "note": "ساختار HTF در دسترس نبود",
         "struct_tf": None,
     }
@@ -1545,25 +1579,30 @@ def make_structure_chart(df: pd.DataFrame, symbol: str, tf: str, st: dict) -> by
                 color="#ffb74d", fontsize=8, va="bottom",
             )
 
-        # trendline (HH or LL)
-        tl = st.get("tl")
-        if tl and tl.get("p1") and tl.get("p2"):
+                # multi trendlines (v3)
+        lines = st.get("tls") or ([] if not st.get("tl") else [st["tl"]])
+        colors = {"HH↓": "#42a5f5", "HH↑": "#66bb6a", "LL↑": "#ce93d8"}
+        t1 = int(d.iloc[-1]["ts"]) + PERIOD_SEC.get(tf, 3600) * 4
+        for tl in lines[:3]:
+            if not tl.get("p1") or not tl.get("p2"):
+                continue
             p1, p2 = tl["p1"], tl["p2"]
             slope = tl["slope"]
             kind = tl.get("kind") or ""
             y1 = float(p1.get("h", p1.get("l", 0)))
             y2 = float(p2.get("h", p2.get("l", 0)))
             t0 = p1["ts"]
-            t1 = int(d.iloc[-1]["ts"]) + PERIOD_SEC.get(tf, 3600) * 4
-            xs = np.linspace(t0, t1, 40)
+            xs = np.linspace(t0, t1, 50)
             ys = y1 + slope * (xs - t0)
             xd = [dtmod.fromtimestamp(int(x), TEHRAN) for x in xs]
-            col = "#ce93d8" if "LL" in kind else "#42a5f5"
-            ax.plot(xd, ys, color=col, lw=2.2, label=f"TL {kind}", zorder=5)
+            col = colors.get(kind, "#42a5f5")
+            err = tl.get("err")
+            lab = f"{kind}" + (f" {err:.1f}%" if err is not None else "")
+            ax.plot(xd, ys, color=col, lw=2.2, label=lab, zorder=5)
             ax.scatter(
                 [dtmod.fromtimestamp(p1["ts"], TEHRAN), dtmod.fromtimestamp(p2["ts"], TEHRAN)],
                 [y1, y2],
-                c="#29b6f6", s=40, zorder=6, edgecolors="white", lw=0.6,
+                c=col, s=42, zorder=6, edgecolors="white", lw=0.6,
             )
 
         price = float(d.iloc[-1]["c"])
@@ -2339,12 +2378,13 @@ async def process_symbol(symbol: str, tfs_to_check: list) -> None:
                 send_telegram_photo(gap_img, msg)
             else:
                 send_telegram_text(msg)
-            if sig.get("struct_risk") == "strong" and st_df is not None and len(st_df) >= 30:
+            if sig.get("struct_risk") in ("strong", "medium") and st_df is not None and len(st_df) >= 30:
                 st_img = make_structure_chart(st_df, symbol, st_tf, st_obj)
                 if st_img:
+                    note = (st_obj or {}).get("note") or sig.get("struct_res_kind") or ""
                     send_telegram_photo(
                         st_img,
-                        f"📐 <b>{symbol}</b> · ساختار {st_tf} · {sig.get('struct_res_kind') or ''}",
+                        f"📐 <b>{symbol}</b> · {st_tf} · {note}",
                     )
         else:
             send_telegram_text(msg)
