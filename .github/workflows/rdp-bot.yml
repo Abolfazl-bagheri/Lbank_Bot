@@ -1,39 +1,68 @@
 name: LBank Bot
 
+# دستی + هر ۶ ساعت خودکار (UTC)
 on:
   workflow_dispatch:
+  schedule:
+    # هر ۶ ساعت: 00:00, 06:00, 12:00, 18:00 به وقت UTC
+    # ≈ 03:30 / 09:30 / 15:30 / 21:30 ایران
+    - cron: "0 */6 * * *"
 
 jobs:
-  bot:
+  build:
     runs-on: windows-latest
     timeout-minutes: 360
 
     steps:
-      - uses: actions/checkout@v5
+      - name: Checkout bot code
+        uses: actions/checkout@v5
 
-      - uses: actions/cache@v5
+      - name: Restore bot state
+        uses: actions/cache@v5
         with:
           path: bot_state.json
           key: bot-state-${{ github.run_id }}
           restore-keys: |
             bot-state-
 
-      - uses: actions/setup-python@v6
+      - name: Setup Python
+        uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          if (Test-Path requirements.txt) {
+            pip install -r requirements.txt
+          } else {
+            pip install numpy pandas requests websockets matplotlib
+          }
 
-      - name: Run bot
-        shell: pwsh
+      - name: Run bot until job timeout (~6h)
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           CHAT_ID: ${{ secrets.CHAT_ID }}
+        shell: pwsh
         run: |
           Set-Location $env:GITHUB_WORKSPACE
-          if (-not $env:TELEGRAM_TOKEN) { Write-Error "TELEGRAM_TOKEN secret missing"; exit 1 }
-          if (-not $env:CHAT_ID) { Write-Error "CHAT_ID secret missing"; exit 1 }
+          Write-Host "Starting bot from: $(Get-Location)"
+          if (Test-Path bot.py) {
+            Select-String -Path "bot.py" -Pattern "BOT_VERSION" | ForEach-Object { $_.Line }
+          } else {
+            Write-Host "ERROR: bot.py not found"
+            Get-ChildItem
+            exit 1
+          }
+          $tok = $env:TELEGRAM_TOKEN
+          $cid = $env:CHAT_ID
+          if (-not $tok -or $tok.Length -lt 20) {
+            Write-Host "ERROR: TELEGRAM_TOKEN secret missing or short"
+            exit 1
+          }
+          if (-not $cid) {
+            Write-Host "ERROR: CHAT_ID secret missing"
+            exit 1
+          }
+          Write-Host "Token length OK, Chat ID present"
           python -u bot.py
