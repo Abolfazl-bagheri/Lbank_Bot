@@ -24,8 +24,12 @@ STATE_FILE = os.path.join(BASE_DIR, "bot_state.json")
 
 # ========================= VERSION / CHANGELOG =========================
 # هر بار اپدیت: BOT_VERSION را بالا ببر و یک خط در CHANGELOG[نسخه] اضافه کن.
-BOT_VERSION = "1.9.5"
+BOT_VERSION = "1.9.6"
 CHANGELOG = {
+    "1.9.6": [
+        "کانال منظم نزولی + clone سقف/کف روی سیگنال و احتمال‌گپ",
+        "احتمال‌گپ با قیمت فیوچرز (نه فقط اسپات) | چارت ساختار همیشه اگر کانال/خط باشد",
+    ],
     "1.9.5": [
         "زاویه موقتاً خاموش (ANGLE_ENABLED=False) — شلوغی کمتر",
         "شات گپ/BB حذف شد؛ فقط چارت خط‌روند (ساختار) ارسال می‌شود",
@@ -1359,12 +1363,145 @@ def is_erratic_wick_candle(row) -> bool:
     return False
 
 
+def _dominant_swings(swings: list, kind: str, min_sep_sec: int = 10 * 3600) -> list:
+    """فقط سایه‌های غالب با فاصلهٔ زمانی مناسب (درس WIF/DOGE)."""
+    if not swings:
+        return []
+    out = []
+    for s in swings:
+        price = s.get("h") if kind == "h" else s.get("l")
+        if price is None:
+            continue
+        if out and s["ts"] - out[-1]["ts"] < min_sep_sec:
+            prev = out[-1].get("h") if kind == "h" else out[-1].get("l")
+            if kind == "h" and price > prev:
+                out[-1] = s
+            elif kind == "l" and price < prev:
+                out[-1] = s
+            continue
+        out.append(s)
+    return out
+
+
+def detect_desc_channel(df: pd.DataFrame, price: float) -> dict | None:
+    """
+    کانال نزولی منظم: سقف‌های اخیر نزولی + کف‌های اخیر نزولی با شیب مشابه (clone).
+    اگر قلهٔ فعلی نزدیک سقف کانال باشد → risk قوی‌تر.
+    """
+    if df is None or len(df) < 40 or not price or price <= 0:
+        return None
+    try:
+        # پنجرهٔ اخیر (~۱۲۰ کندل)
+        d = df.iloc[-min(len(df), 160):].copy()
+        sh = _dominant_swings(_swing_highs(d, w=2), "h", min_sep_sec=8 * 3600)
+        sl = _dominant_swings(_swing_lows(d, w=2), "l", min_sep_sec=8 * 3600)
+        if len(sh) < 3 or len(sl) < 3:
+            return None
+        last_ts = int(d.iloc[-1]["ts"])
+        peak_h = float(d.iloc[-1]["h"])
+        # فقط سوئینگ‌های چند روز اخیر
+        max_age = 5 * 86400
+        sh = [x for x in sh if last_ts - x["ts"] <= max_age]
+        sl = [x for x in sl if last_ts - x["ts"] <= max_age]
+        if len(sh) < 3 or len(sl) < 3:
+            return None
+
+        def best_desc(pts, key, min_pts=3, max_pts=5):
+            best = None
+            n = len(pts)
+            for L in range(min_pts, min(max_pts, n) + 1):
+                for s in range(0, n - L + 1):
+                    seg = pts[s:s + L]
+                    # تقریباً نزولی
+                    desc = sum(1 for i in range(L - 1) if seg[i + 1][key] < seg[i][key] * 0.998)
+                    if desc < L - 1:
+                        continue
+                    xs = np.array([p["ts"] for p in seg], dtype=float)
+                    ys = np.array([p[key] for p in seg], dtype=float)
+                    m, b = np.polyfit(xs, ys, 1)
+                    if m >= 0:
+                        continue
+                    res = float(np.mean(np.abs(ys - (m * xs + b)) / np.maximum(np.abs(m * xs + b), 1e-15) * 100))
+                    if res > 1.2:
+                        continue
+                    age = (last_ts - seg[-1]["ts"]) / 3600
+                    sc = res + 0.02 * age
+                    if best is None or sc < best["sc"]:
+                        best = {"pts": seg, "m": m, "b": b, "res": res, "sc": sc, "key": key}
+            return best
+
+        uh = best_desc(sh, "h")
+        ul = best_desc(sl, "l")
+        if not uh or not ul:
+            return None
+        # شیب‌ها باید هم‌جهت و نسبتاً مشابه باشند (clone)
+        ratio = min(abs(uh["m"]), abs(ul["m"])) / max(abs(uh["m"]), abs(ul["m"]))
+        if ratio < 0.25:
+            return None
+        uy = uh["m"] * last_ts + uh["b"]
+        ly = ul["m"] * last_ts + ul["b"]
+        if uy <= ly or (uy - ly) / price < 0.008:
+            return None
+        # فاصله قله تا سقف کانال
+        err = abs(uy - peak_h) / peak_h * 100.0
+        pos = (price - ly) / (uy - ly)
+        if err <= 2.0 and pos >= 0.55:
+            risk, risk_fa, risk_emoji = "strong", "قوی", "🟢"
+        elif err <= 4.0 and pos >= 0.35:
+            risk, risk_fa, risk_emoji = "medium", "متوسط", "🟡"
+        else:
+            risk, risk_fa, risk_emoji = "weak", "ضعیف", "⚪"
+
+        p1h, p2h = uh["pts"][0], uh["pts"][-1]
+        p1l, p2l = ul["pts"][0], ul["pts"][-1]
+        upper_tl = {
+            "kind": "CH↑",
+            "err": err,
+            "n3": max(0, len(uh["pts"]) - 2),
+            "score": err,
+            "p1": {"ts": p1h["ts"], "h": p1h["h"], "l": p1h.get("l", p1h["h"])},
+            "p2": {"ts": p2h["ts"], "h": p2h["h"], "l": p2h.get("l", p2h["h"])},
+            "slope": uh["m"],
+            "line_now": uy,
+            "proj": uy,
+            "thirds": [{"ts": p["ts"], "h": p["h"]} for p in uh["pts"][1:-1][:3]],
+        }
+        lower_tl = {
+            "kind": "CH↓",
+            "err": ul["res"],
+            "n3": max(0, len(ul["pts"]) - 2),
+            "score": ul["res"],
+            "p1": {"ts": p1l["ts"], "h": p1l.get("h", p1l["l"]), "l": p1l["l"]},
+            "p2": {"ts": p2l["ts"], "h": p2l.get("h", p2l["l"]), "l": p2l["l"]},
+            "slope": ul["m"],
+            "line_now": ly,
+            "proj": ly,
+            "thirds": [{"ts": p["ts"], "l": p["l"]} for p in ul["pts"][1:-1][:3]],
+        }
+        return {
+            "risk": risk,
+            "risk_fa": risk_fa,
+            "risk_emoji": risk_emoji,
+            "res_price": float(uy),
+            "res_dist_pct": float(err),
+            "res_kind": "CH↓",
+            "horizontals": [],
+            "tl": upper_tl,
+            "tls": [upper_tl, lower_tl],
+            "channel": True,
+            "channel_pos": float(pos),
+            "note": f"کانال نزولی clone · سقف err={err:.1f}% · pos={pos:.0%}",
+        }
+    except Exception as e:
+        log.debug("detect_desc_channel: %s", e)
+        return None
+
+
 def analyze_structure(df: pd.DataFrame, price: float) -> dict:
     """
-    چند کاندید خط‌روند (حداکثر ۱ از هر نوع):
-      HH↓ | HH↑ | LL↑ مخفی
-    امتیاز: خطای امتداد تا قله + تاچ میانی سوئینگ.
-    قوی = بهترین err ≤ ۲.۵٪
+    اولویت ۱: کانال نزولی منظم (سقف+کف clone)
+    اولویت ۲: چند کاندید خط‌روند HH↓ | HH↑ | LL↑ مخفی
+    قوی = بهترین err ≤ ۲.۵٪ یا برخورد به سقف کانال
     """
     empty = {
         "risk": "weak",
@@ -1376,15 +1513,22 @@ def analyze_structure(df: pd.DataFrame, price: float) -> dict:
         "horizontals": [],
         "tl": None,
         "tls": [],
+        "channel": False,
         "note": "بدون ساختار",
     }
     if df is None or len(df) < 40 or price is None or price <= 0:
         return empty
 
     try:
+        # اول کانال اخیر
+        ch = detect_desc_channel(df, price)
+        if ch and ch.get("risk") in ("strong", "medium"):
+            return ch
+
         peak_h = float(df.iloc[-1]["h"])
         peak_ts = int(df.iloc[-1]["ts"]) if "ts" in df.columns else len(df) - 1
-        min_span = 2 * 86400
+        # برای تایم‌های کوتاه‌تر span کمتر (قبلاً ۲ روز خیلی سخت بود)
+        min_span = 12 * 3600
 
         swings_h = _swing_highs(df)
         swings_l = _swing_lows(df)
@@ -1466,6 +1610,9 @@ def analyze_structure(df: pd.DataFrame, price: float) -> dict:
                 })
 
         if not raw:
+            # اگر کانال ضعیف پیدا شده بود همان را برگردان
+            if ch:
+                return ch
             return {**empty, "note": "کشف قیمت — خط معتبری به قله نچسبید"}
 
         raw.sort(key=lambda x: x["score"])
@@ -1490,6 +1637,12 @@ def analyze_structure(df: pd.DataFrame, price: float) -> dict:
         else:
             risk, risk_fa, risk_emoji = "weak", "ضعیف", "⚪"
 
+        # اگر کانال هم بود و بهتر/مساوی بود ترجیح با کانال
+        if ch and ch.get("risk") == "strong" and risk != "strong":
+            return ch
+        if ch and ch.get("res_dist_pct", 99) < err:
+            return ch
+
         kinds = " · ".join(f"{t['kind']}({t['err']:.1f}%)" for t in tls)
         return {
             "risk": risk,
@@ -1501,29 +1654,12 @@ def analyze_structure(df: pd.DataFrame, price: float) -> dict:
             "horizontals": [],
             "tl": best,
             "tls": tls,
+            "channel": False,
             "note": f"{len(tls)} خط: {kinds}",
         }
     except Exception as e:
         log.debug("analyze_structure: %s", e)
         return empty
-
-
-
-async def fetch_klines_quiet(symbol: str, tf: str, size: int = 120):
-    """Klines for HTF structure — no blacklist."""
-    df = await asyncio.to_thread(fetch_klines_gate, symbol, tf, size)
-    if df is not None and len(df) >= 30:
-        return df, "gate_futures"
-    df = await asyncio.to_thread(fetch_klines_bingx, symbol, tf, size)
-    if df is not None and len(df) >= 30:
-        return df, "bingx_futures"
-    pair = futures_to_spot_pair(symbol)
-    kbar = TIMEFRAMES.get(tf)
-    if kbar:
-        df = await fetch_klines_ws(pair, kbar, size=size)
-        if df is not None and len(df) >= 30:
-            return df, "lbank_spot"
-    return None, None
 
 
 async def structure_for_signal(symbol: str, signal_tf: str, price: float):
@@ -1641,7 +1777,7 @@ def make_structure_chart(df: pd.DataFrame, symbol: str, tf: str, st: dict) -> by
 
                 # multi trendlines (v3)
         lines = st.get("tls") or ([] if not st.get("tl") else [st["tl"]])
-        colors = {"HH↓": "#42a5f5", "HH↑": "#66bb6a", "LL↑": "#ce93d8"}
+        colors = {"HH↓": "#42a5f5", "HH↑": "#66bb6a", "LL↑": "#ce93d8", "CH↑": "#ffca28", "CH↓": "#26c6da"}
         t1 = int(d.iloc[-1]["ts"]) + PERIOD_SEC.get(tf, 3600) * 4
         for tl in lines[:3]:
             if not tl.get("p1") or not tl.get("p2"):
@@ -1664,6 +1800,29 @@ def make_structure_chart(df: pd.DataFrame, symbol: str, tf: str, st: dict) -> by
                 [y1, y2],
                 c=col, s=42, zorder=6, edgecolors="white", lw=0.6,
             )
+            for th in (tl.get("thirds") or [])[:3]:
+                try:
+                    ty = float(th.get("h", th.get("l", 0)))
+                    ax.scatter(
+                        [dtmod.fromtimestamp(int(th["ts"]), TEHRAN)], [ty],
+                        c=col, s=28, zorder=6, alpha=0.8,
+                    )
+                except Exception:
+                    pass
+
+        # پر کردن کانال اگر دو خط CH باشد
+        if st.get("channel") and len(lines) >= 2:
+            try:
+                u = next((x for x in lines if x.get("kind") == "CH↑"), lines[0])
+                lo = next((x for x in lines if x.get("kind") == "CH↓"), lines[1])
+                t0 = min(u["p1"]["ts"], lo["p1"]["ts"])
+                xs = np.linspace(t0, t1, 60)
+                yu = u["p1"].get("h", u["p1"].get("l", 0)) + u["slope"] * (xs - u["p1"]["ts"])
+                yl = lo["p1"].get("l", lo["p1"].get("h", 0)) + lo["slope"] * (xs - lo["p1"]["ts"])
+                xd = [dtmod.fromtimestamp(int(x), TEHRAN) for x in xs]
+                ax.fill_between(xd, yl, yu, color="#42a5f5", alpha=0.10, zorder=1)
+            except Exception:
+                pass
 
         price = float(d.iloc[-1]["c"])
         t_last = dtmod.fromtimestamp(int(d.iloc[-1]["ts"]), TEHRAN)
@@ -2432,16 +2591,21 @@ async def process_symbol(symbol: str, tfs_to_check: list) -> None:
         st_df = sig.pop("_st_df", None)
         st_obj = sig.pop("_st", None) or {}
         st_tf = sig.get("struct_tf") or tf
-        # فقط متن + چارت خط‌روند (شات گپ/BB حذف شد)
+        # فقط متن + چارت خط‌روند/کانال (شات گپ/BB حذف شد)
         send_telegram_text(msg)
-        if SEND_CHART and st_df is not None and len(st_df) >= 30:
+        if SEND_CHART and st_df is not None and len(st_df) >= 30 and (
+            (st_obj or {}).get("channel")
+            or (st_obj or {}).get("tls")
+            or (st_obj or {}).get("tl")
+        ):
             try:
                 st_img = make_structure_chart(st_df, symbol, st_tf, st_obj)
                 if st_img:
                     note = (st_obj or {}).get("note") or sig.get("struct_res_kind") or ""
+                    ch = "📐 کانال" if (st_obj or {}).get("channel") else "📐"
                     send_telegram_photo(
                         st_img,
-                        f"📐 <b>{symbol}</b> · {st_tf} · {note}",
+                        f"{ch} <b>{symbol}</b> · {st_tf} · {note}",
                     )
             except Exception as e:
                 log.debug("structure chart send: %s", e)
@@ -2500,9 +2664,11 @@ async def pre_alert_cycle(tfs: list[str] | None = None) -> None:
                             "PRE_SKIP_DRIFT %s %s | src=%s close=%.6g fut=%.6g drift=%.1f%%",
                             symbol, tf, src, px, fut, drift,
                         )
-                if px <= ub:
+                # قیمت فیوچرز اولویت دارد (اسپات گاهی زیر UB است ولی فیوچرز گپ دارد)
+                check_px = float(fut) if fut and fut > 0 else px
+                if check_px <= ub:
                     return
-                gap_pct = (px - ub) / px * 100.0
+                gap_pct = (check_px - ub) / check_px * 100.0
                 if gap_pct < PRE_ALERT_MIN_PCT:
                     return
 
@@ -2557,20 +2723,22 @@ async def pre_alert_cycle(tfs: list[str] | None = None) -> None:
             try:
                 if not SEND_CHART:
                     continue
-                if (st or {}).get("risk") not in ("strong", "medium"):
-                    continue
-                df, _ = await fetch_klines(symbol, tf, size=50)
+                df, _ = await fetch_klines(symbol, tf, size=80)
                 if df is None or len(df) < 30:
                     continue
                 px = float(df.iloc[-1]["c"])
                 st2, st_df, st_tf = await structure_for_signal(symbol, tf, px)
+                st_use = st2 or st or {}
+                if not (st_use.get("channel") or st_use.get("tls") or st_use.get("tl")):
+                    continue
                 if st_df is not None and len(st_df) >= 30:
-                    st_img = make_structure_chart(st_df, symbol, st_tf or tf, st2 or st or {})
+                    st_img = make_structure_chart(st_df, symbol, st_tf or tf, st_use)
                     if st_img:
-                        risk_e = (st or {}).get("risk_emoji") or ""
+                        risk_e = st_use.get("risk_emoji") or ""
+                        tag = "کانال" if st_use.get("channel") else "خط‌روند"
                         send_telegram_photo(
                             st_img,
-                            f"📐 {symbol} · {st_tf or tf} · +{gap_pct:.1f}% {risk_e}",
+                            f"📐 {tag} · {symbol} · {st_tf or tf} · +{gap_pct:.1f}% {risk_e}",
                         )
                 await asyncio.sleep(0.15)
             except Exception as e:
