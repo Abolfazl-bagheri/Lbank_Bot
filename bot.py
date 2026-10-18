@@ -24,8 +24,12 @@ STATE_FILE = os.path.join(BASE_DIR, "bot_state.json")
 
 # ========================= VERSION / CHANGELOG =========================
 # هر بار اپدیت: BOT_VERSION را بالا ببر و یک خط در CHANGELOG[نسخه] اضافه کن.
-BOT_VERSION = "1.9.3"
+BOT_VERSION = "1.9.5"
 CHANGELOG = {
+    "1.9.5": [
+        "زاویه موقتاً خاموش (ANGLE_ENABLED=False) — شلوغی کمتر",
+        "شات گپ/BB حذف شد؛ فقط چارت خط‌روند (ساختار) ارسال می‌شود",
+    ],
     "1.9.2": [
         "پیام زاویه: گپ 1h/4h ✅❌ + جام ✅ / UB باز 🟠",
     ],
@@ -176,7 +180,8 @@ NOT_INNO_BASES = {
 }
 
 # ——— آماده‌باش بستن زاویه (جدا از گپ) ———
-ANGLE_ENABLED = True
+# موقتاً خاموش — شلوغی پیام؛ برای برگشت True کن
+ANGLE_ENABLED = False
 ANGLE_TFS = ["15m", "1h", "4h"]   # زنجیره: ۱۵م→۱س→۴س
 ANGLE_PARENT = {"15m": "1h", "1h": "4h", "4h": None}
 ANGLE_EMA = (5, 10, 20)           # همان پیش‌فرض ال‌بانک
@@ -649,10 +654,65 @@ def maybe_send_daily_news() -> None:
 
 
 def maybe_send_news_prealerts() -> None:
-    """غیرفعال به‌عنوان پیام جدا — فقط روی سیگنال با news_line علامت می‌خورد.
-    نوتیف اصلی اخبار = maybe_send_daily_news ساعت ۹.
-    """
-    return
+    """۴۵ دقیقه قبل و نزدیک لحظهٔ خبرهای مهم → پیام جدا در تلگرام."""
+    global sent_news_alerts
+    if not NEWS_ENABLED:
+        return
+    try:
+        # پنجره: از NEWS_PRE_ALERT_MIN قبل تا چند دقیقه بعد از شروع
+        events = news_upcoming(within_min=NEWS_PRE_ALERT_MIN + 5)
+        # رویدادهایی که همین الان در پنجره بلاک هستند هم اضافه
+        now = time.time()
+        for ev in refresh_news_calendar():
+            ts = ev.get("ts")
+            if not ts:
+                continue
+            if -5 * 60 <= ts - now <= NEWS_PRE_ALERT_MIN * 60:
+                if ev not in events:
+                    events.append(ev)
+        if not events:
+            return
+        # فقط با impact بالا یا تگ‌های مهم
+        important = []
+        for ev in events:
+            title = (ev.get("title") or "").lower()
+            tag = (ev.get("tag") or "").lower()
+            impact = str(ev.get("impact") or "").lower()
+            if impact in ("high", "3", "red", "★★★", "★★★★"):
+                important.append(ev)
+                continue
+            keys = ("cpi", "fomc", "nfp", "pce", "rate", "fed", "تورم", "بهره", "payroll", "beige")
+            if any(k in title or k in tag for k in keys):
+                important.append(ev)
+                continue
+            # اگر از builtin آمده و عنوان دارد
+            if ev.get("source") == "builtin" or tag in ("cpi", "fomc", "nfp", "pce"):
+                important.append(ev)
+        if not important:
+            # اگر impact مشخص نیست ولی در تقویم امروز با عنوان قوی است
+            important = [e for e in events if e.get("title")]
+        # dedupe by title+hour
+        to_send = []
+        for ev in important:
+            ts = int(ev.get("ts") or 0)
+            key = (ev.get("title", "")[:60], ts // 60)
+            if key in sent_news_alerts:
+                continue
+            # فقط وقتی کمتر از PRE_ALERT دقیقه مانده یا تا ۲۰ دقیقه بعد از خبر
+            if ts and not (-NEWS_BLOCK_AFTER_MIN * 60 <= ts - now <= NEWS_PRE_ALERT_MIN * 60):
+                continue
+            sent_news_alerts.add(key)
+            to_send.append(ev)
+        if not to_send:
+            return
+        if len(sent_news_alerts) > 200:
+            sent_news_alerts.clear()
+        msg = format_news_alert(to_send, prefix="🚨 خبر مهم نزدیک است")
+        send_telegram_text(msg)
+        log.info("NEWS prealert sent: %s", [e.get("title") for e in to_send])
+        save_state()
+    except Exception as e:
+        log.warning("news prealert: %s", e)
 
 
 def news_line_for_symbol(symbol: str) -> str:
@@ -2372,13 +2432,10 @@ async def process_symbol(symbol: str, tfs_to_check: list) -> None:
         st_df = sig.pop("_st_df", None)
         st_obj = sig.pop("_st", None) or {}
         st_tf = sig.get("struct_tf") or tf
-        if SEND_CHART:
-            gap_img = make_chart(df, symbol, tf, sig["side"], sig)
-            if gap_img:
-                send_telegram_photo(gap_img, msg)
-            else:
-                send_telegram_text(msg)
-            if sig.get("struct_risk") in ("strong", "medium") and st_df is not None and len(st_df) >= 30:
+        # فقط متن + چارت خط‌روند (شات گپ/BB حذف شد)
+        send_telegram_text(msg)
+        if SEND_CHART and st_df is not None and len(st_df) >= 30:
+            try:
                 st_img = make_structure_chart(st_df, symbol, st_tf, st_obj)
                 if st_img:
                     note = (st_obj or {}).get("note") or sig.get("struct_res_kind") or ""
@@ -2386,8 +2443,8 @@ async def process_symbol(symbol: str, tfs_to_check: list) -> None:
                         st_img,
                         f"📐 <b>{symbol}</b> · {st_tf} · {note}",
                     )
-        else:
-            send_telegram_text(msg)
+            except Exception as e:
+                log.debug("structure chart send: %s", e)
         await asyncio.sleep(0.05)
 
 
@@ -2495,42 +2552,26 @@ async def pre_alert_cycle(tfs: list[str] | None = None) -> None:
             )
             chart_jobs.append((symbol, gap_pct, st))
         send_telegram_text("\n".join(lines))
+        # فقط چارت خط‌روند برای احتمال‌گپ‌های قوی (شات گپ/BB حذف شد)
         for symbol, gap_pct, st in chart_jobs[:8]:
             try:
-                df, src = await fetch_klines(symbol, tf, size=50)
-                if df is None or len(df) < BB_PERIOD + 2:
+                if not SEND_CHART:
                     continue
-                if "upper" not in df.columns or df["upper"].isna().all():
-                    cser = df["c"].astype(float)
-                    sma = cser.rolling(BB_PERIOD).mean()
-                    std = cser.rolling(BB_PERIOD).std(ddof=0)
-                    df = df.copy()
-                    df["sma"] = sma
-                    df["upper"] = sma + BB_STD * std
-                    df["lower"] = sma - BB_STD * std
-                img = make_chart(df, symbol, tf, "SELL", {
-                    "side": "SELL",
-                    "open": float(df.iloc[-1]["o"]),
-                    "upper": float(df.iloc[-1]["upper"]),
-                    "high": float(df.iloc[-1]["h"]),
-                })
-                if img:
-                    risk_e = (st or {}).get("risk_emoji") or ""
-                    send_telegram_photo(
-                        img,
-                        f"🟣 {symbol} · {tf} · +{gap_pct:.1f}% {risk_e}",
-                    )
-                if (st or {}).get("risk") == "strong":
-                    st2, st_df, st_tf = await structure_for_signal(
-                        symbol, tf, float(df.iloc[-1]["c"])
-                    )
-                    if st_df is not None and len(st_df) >= 30:
-                        st_img = make_structure_chart(st_df, symbol, st_tf or tf, st2)
-                        if st_img:
-                            send_telegram_photo(
-                                st_img,
-                                f"📐 {symbol} · ساختار {st_tf or tf}",
-                            )
+                if (st or {}).get("risk") not in ("strong", "medium"):
+                    continue
+                df, _ = await fetch_klines(symbol, tf, size=50)
+                if df is None or len(df) < 30:
+                    continue
+                px = float(df.iloc[-1]["c"])
+                st2, st_df, st_tf = await structure_for_signal(symbol, tf, px)
+                if st_df is not None and len(st_df) >= 30:
+                    st_img = make_structure_chart(st_df, symbol, st_tf or tf, st2 or st or {})
+                    if st_img:
+                        risk_e = (st or {}).get("risk_emoji") or ""
+                        send_telegram_photo(
+                            st_img,
+                            f"📐 {symbol} · {st_tf or tf} · +{gap_pct:.1f}% {risk_e}",
+                        )
                 await asyncio.sleep(0.15)
             except Exception as e:
                 log.debug("pre chart %s: %s", symbol, e)
@@ -3051,6 +3092,7 @@ async def main() -> None:
         maybe_send_daily_report()
         try:
             maybe_send_daily_news()
+            maybe_send_news_prealerts()
             if time.time() - last_news_refresh > NEWS_REFRESH_SEC:
                 refresh_news_calendar(force=True)
                 last_news_refresh = time.time()
