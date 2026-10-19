@@ -24,8 +24,11 @@ STATE_FILE = os.path.join(BASE_DIR, "bot_state.json")
 
 # ========================= VERSION / CHANGELOG =========================
 # هر بار اپدیت: BOT_VERSION را بالا ببر و یک خط در CHANGELOG[نسخه] اضافه کن.
-BOT_VERSION = "1.10.1"
+BOT_VERSION = "1.10.2"
 CHANGELOG = {
+    "1.10.2": [
+        "خط‌روند اجباری نرم‌تر — چارت دیگر بدون خط نمی‌رود (fallback سقف‌های اخیر)",
+    ],
     "1.10.1": [
         "رفع گپ جعلی (مثل RAM): دیگر فیوچرز با مقیاس غلط با UB اسپات مقایسه نمی‌شود",
         "گپ فقط با همان منبع کندل (اسپات/گیت) سنجیده می‌شود؛ drift بالا = رد",
@@ -1432,122 +1435,214 @@ def _dominant_wick_swings(
     return out
 
 
-def _fit_desc_segment(pts: list[dict], key: str, last_ts: int, min_pts: int = 3, max_pts: int = 5):
-    """بهترین زنجیرهٔ نزولی اخیر از نقاط غالب — polyfit + residual."""
+def _fit_desc_segment(pts: list[dict], key: str, last_ts: int, min_pts: int = 2, max_pts: int = 6):
+    """زنجیره نزولی اخیر — نرم‌تر از قبل (۲ نقطه هم قبول)."""
     best = None
     n = len(pts)
     if n < min_pts:
         return None
     for L in range(min_pts, min(max_pts, n) + 1):
-        # ترجیح زنجیره‌های نزدیک به الان (از انتهای لیست)
-        for s in range(max(0, n - L - 4), n - L + 1):
+        for s in range(max(0, n - L - 6), n - L + 1):
             seg = pts[s:s + L]
-            desc = sum(1 for i in range(L - 1) if seg[i + 1][key] < seg[i][key] * 0.9985)
-            if desc < L - 1:
-                continue
+            # اکثر نقاط نزولی باشند (نه لزوما همه)
+            if L >= 3:
+                desc = sum(1 for i in range(L - 1) if seg[i + 1][key] <= seg[i][key] * 1.002)
+                if desc < max(1, L - 2):
+                    continue
+            else:
+                if seg[-1][key] > seg[0][key] * 1.005:
+                    continue
             xs = np.array([p["ts"] for p in seg], dtype=float)
             ys = np.array([p[key] for p in seg], dtype=float)
+            if abs(xs[-1] - xs[0]) < 1:
+                continue
             m, b = np.polyfit(xs, ys, 1)
-            if m >= 0:
+            if m > 1e-12:  # صعودی خالص رد
                 continue
             pred = m * xs + b
             res = float(np.mean(np.abs(ys - pred) / np.maximum(np.abs(pred), 1e-15) * 100.0))
-            if res > 1.15:
+            if res > 2.8:
                 continue
-            # نقطهٔ آخر نباید خیلی قدیمی باشد
             age_h = (last_ts - seg[-1]["ts"]) / 3600.0
-            if age_h > 96:
+            if age_h > 120:
                 continue
             span_h = (seg[-1]["ts"] - seg[0]["ts"]) / 3600.0
-            if span_h < 8:
+            if span_h < 3:
                 continue
-            sc = res + 0.015 * age_h - 0.05 * L
+            sc = res + 0.02 * age_h - 0.08 * L
             if best is None or sc < best["sc"]:
-                best = {
-                    "pts": seg, "m": float(m), "b": float(b), "res": res,
-                    "sc": sc, "key": key,
-                }
+                best = {"pts": seg, "m": float(m), "b": float(b), "res": res, "sc": sc, "key": key}
     return best
 
 
+def _simple_highs_line(df: pd.DataFrame) -> dict | None:
+    """
+    خط مقاومت اضطراری: ۲–۴ سقف اخیر (حتی اگر fractal کامل نباشد).
+    تقریباً همیشه برای چارت چیزی برمی‌گرداند.
+    """
+    if df is None or len(df) < 20:
+        return None
+    try:
+        d = df.iloc[-min(len(df), 150):].copy()
+        hs = d["h"].astype(float).values
+        ts = d["ts"].astype(int).values
+        last_ts = int(ts[-1])
+        peak_h = float(hs[-min(6, len(hs)):].max())
+        # local peaks با پنجره کوچک
+        peaks = []
+        w = 2
+        for i in range(w, len(d) - w):
+            if hs[i] >= max(hs[i - w:i + w + 1]) - 1e-15:
+                peaks.append({"i": i, "ts": int(ts[i]), "h": float(hs[i]), "l": float(d.iloc[i]["l"])})
+        if len(peaks) < 2:
+            # دو سقف مطلق در نیمه اخیر
+            mid = len(d) // 3
+            i1 = int(np.argmax(hs[: max(mid, 5)]))
+            i2 = mid + int(np.argmax(hs[mid:]))
+            if i2 <= i1:
+                i2 = len(d) - 2
+            peaks = [
+                {"i": i1, "ts": int(ts[i1]), "h": float(hs[i1]), "l": float(d.iloc[i1]["l"])},
+                {"i": i2, "ts": int(ts[i2]), "h": float(hs[i2]), "l": float(d.iloc[i2]["l"])},
+            ]
+        # آخرین ۳–۵ سقف نزدیک به قیمت فعلی
+        peaks = [p for p in peaks if last_ts - p["ts"] <= 10 * 86400]
+        if len(peaks) < 2:
+            return None
+        # ترجیح نزولی: از بین ترکیب‌های انتهایی
+        best = None
+        for L in range(2, min(5, len(peaks)) + 1):
+            seg = peaks[-L:]
+            xs = np.array([p["ts"] for p in seg], dtype=float)
+            ys = np.array([p["h"] for p in seg], dtype=float)
+            if abs(xs[-1] - xs[0]) < 60:
+                continue
+            m, b = np.polyfit(xs, ys, 1)
+            pred = m * xs + b
+            res = float(np.mean(np.abs(ys - pred) / np.maximum(np.abs(pred), 1e-15) * 100.0))
+            uy = float(m * last_ts + b)
+            err = abs(uy - peak_h) / max(peak_h, 1e-15) * 100.0
+            sc = res + 0.15 * max(0, m * 1e8) + 0.05 * err  # شیب صعودی جریمه
+            if best is None or sc < best["sc"]:
+                best = {
+                    "pts": seg, "m": float(m), "b": float(b), "res": res,
+                    "sc": sc, "uy": uy, "err": err, "peak_h": peak_h,
+                }
+        if not best:
+            return None
+        pts = best["pts"]
+        touches = [{"ts": p["ts"], "h": p["h"], "l": p.get("l", p["h"])} for p in pts]
+        err = best["err"]
+        if err <= 2.5 and best["m"] <= 0:
+            risk, risk_fa, risk_emoji = "strong", "قوی", "🟢"
+        elif err <= 5.0:
+            risk, risk_fa, risk_emoji = "medium", "متوسط", "🟡"
+        else:
+            risk, risk_fa, risk_emoji = "weak", "ضعیف", "⚪"
+        tl = {
+            "kind": "HH↓" if best["m"] <= 0 else "HH↑",
+            "err": float(err),
+            "n3": max(0, len(pts) - 2),
+            "score": float(err),
+            "p1": touches[0],
+            "p2": touches[-1],
+            "slope": best["m"],
+            "intercept": best["b"],
+            "line_now": float(best["uy"]),
+            "proj": float(best["uy"]),
+            "thirds": touches[1:-1],
+            "touches": touches,
+            "m": best["m"],
+            "b": best["b"],
+        }
+        return {
+            "risk": risk,
+            "risk_fa": risk_fa,
+            "risk_emoji": risk_emoji,
+            "res_price": float(best["uy"]),
+            "res_dist_pct": float(err),
+            "res_kind": tl["kind"],
+            "horizontals": [],
+            "tl": tl,
+            "tls": [tl],
+            "channel": False,
+            "note": f"خط سقف · {len(pts)} نقطه · err={err:.1f}%",
+        }
+    except Exception as e:
+        log.debug("_simple_highs_line: %s", e)
+        return None
+
+
 def detect_desc_channel(df: pd.DataFrame, price: float) -> dict | None:
-    """کانال نزولی منظم از سایه‌های غالب اخیر (clone سقف/کف)."""
-    if df is None or len(df) < 40 or not price or price <= 0:
+    """کانال نزولی از سایه‌های غالب (نرم‌تر)."""
+    if df is None or len(df) < 35 or not price or price <= 0:
         return None
     try:
         d = df.iloc[-min(len(df), 200):].copy()
         last_ts = int(d.iloc[-1]["ts"])
         peak_h = float(d["h"].astype(float).iloc[-min(12, len(d)):].max())
-        # سایهٔ غالب — جداسازی بر اساس طول کندل تقریبی
         span = max(1, last_ts - int(d.iloc[0]["ts"]))
         bar_sec = span / max(len(d) - 1, 1)
-        sep = int(max(6 * 3600, min(18 * 3600, bar_sec * 8)))
-        sh = _dominant_wick_swings(d, "h", left=3, right=3, min_sep_sec=sep)
-        sl = _dominant_wick_swings(d, "l", left=3, right=3, min_sep_sec=sep)
-        # فقط چند روز اخیر
-        max_age = int(7 * 86400)
+        sep = int(max(4 * 3600, min(16 * 3600, bar_sec * 6)))
+        sh = _dominant_wick_swings(d, "h", left=2, right=2, min_sep_sec=sep, min_protrude_pct=0.05)
+        sl = _dominant_wick_swings(d, "l", left=2, right=2, min_sep_sec=sep, min_protrude_pct=0.05)
+        max_age = int(10 * 86400)
         sh = [x for x in sh if last_ts - x["ts"] <= max_age]
         sl = [x for x in sl if last_ts - x["ts"] <= max_age]
-        if len(sh) < 3 or len(sl) < 3:
+        if len(sh) < 2 or len(sl) < 2:
             return None
-        uh = _fit_desc_segment(sh, "h", last_ts)
-        ul = _fit_desc_segment(sl, "l", last_ts)
+        uh = _fit_desc_segment(sh, "h", last_ts, min_pts=2, max_pts=6)
+        ul = _fit_desc_segment(sl, "l", last_ts, min_pts=2, max_pts=6)
         if not uh or not ul:
             return None
-        ratio = min(abs(uh["m"]), abs(ul["m"])) / max(abs(uh["m"]), abs(ul["m"]))
-        if ratio < 0.22:
+        ratio = min(abs(uh["m"]), abs(ul["m"])) / max(abs(uh["m"]), abs(ul["m"]), 1e-20)
+        if ratio < 0.15:
             return None
         uy = uh["m"] * last_ts + uh["b"]
         ly = ul["m"] * last_ts + ul["b"]
-        if uy <= ly or (uy - ly) / price < 0.006:
+        if uy <= ly:
+            return None
+        width = (uy - ly) / max(price, 1e-15)
+        if width < 0.005 or width > 0.55:
             return None
         err = abs(uy - peak_h) / max(peak_h, 1e-15) * 100.0
-        pos = (price - ly) / (uy - ly)
-        # اگر قله خیلی از سقف کانال دور است، کانال را دور بریز
-        if err > 5.0:
-            return None
-        if err <= 2.2 and pos >= 0.50:
+        pos = (price - ly) / max(uy - ly, 1e-15)
+        if err <= 2.5 and pos >= 0.45:
             risk, risk_fa, risk_emoji = "strong", "قوی", "🟢"
-        elif err <= 4.5 and pos >= 0.30:
+        elif err <= 5.0 and pos >= 0.25:
             risk, risk_fa, risk_emoji = "medium", "متوسط", "🟡"
         else:
             risk, risk_fa, risk_emoji = "weak", "ضعیف", "⚪"
-
-        def tl_from(fit, kind, err_v, use_key):
-            pts = fit["pts"]
-            touches = [{"ts": p["ts"], "h": p["h"], "l": p["l"]} for p in pts]
-            return {
-                "kind": kind,
-                "err": float(err_v),
-                "n3": max(0, len(pts) - 2),
-                "score": float(err_v),
-                "p1": touches[0],
-                "p2": touches[-1],
-                "slope": fit["m"],
-                "intercept": fit["b"],
-                "line_now": float(fit["m"] * last_ts + fit["b"]),
-                "proj": float(fit["m"] * last_ts + fit["b"]),
-                "thirds": touches[1:-1],
-                "touches": touches,
-                "m": fit["m"],
-                "b": fit["b"],
-            }
-
-        upper_tl = tl_from(uh, "CH↑", err, "h")
-        lower_tl = tl_from(ul, "CH↓", ul["res"], "l")
+        p1h, p2h = uh["pts"][0], uh["pts"][-1]
+        p1l, p2l = ul["pts"][0], ul["pts"][-1]
+        upper_tl = {
+            "kind": "CH↑", "err": float(err), "n3": max(0, len(uh["pts"]) - 2),
+            "score": float(err),
+            "p1": {"ts": p1h["ts"], "h": p1h["h"], "l": p1h.get("l", p1h["h"])},
+            "p2": {"ts": p2h["ts"], "h": p2h["h"], "l": p2h.get("l", p2h["h"])},
+            "slope": uh["m"], "intercept": uh["b"],
+            "line_now": float(uy), "proj": float(uy),
+            "thirds": [{"ts": p["ts"], "h": p["h"]} for p in uh["pts"][1:-1][:4]],
+            "touches": [{"ts": p["ts"], "h": p["h"]} for p in uh["pts"]],
+            "m": uh["m"], "b": uh["b"],
+        }
+        lower_tl = {
+            "kind": "CH↓", "err": float(ul["res"]), "n3": max(0, len(ul["pts"]) - 2),
+            "score": float(ul["res"]),
+            "p1": {"ts": p1l["ts"], "h": p1l.get("h", p1l["l"]), "l": p1l["l"]},
+            "p2": {"ts": p2l["ts"], "h": p2l.get("h", p2l["l"]), "l": p2l["l"]},
+            "slope": ul["m"], "intercept": ul["b"],
+            "line_now": float(ly), "proj": float(ly),
+            "thirds": [{"ts": p["ts"], "l": p["l"]} for p in ul["pts"][1:-1][:4]],
+            "touches": [{"ts": p["ts"], "l": p["l"]} for p in ul["pts"]],
+            "m": ul["m"], "b": ul["b"],
+        }
         return {
-            "risk": risk,
-            "risk_fa": risk_fa,
-            "risk_emoji": risk_emoji,
-            "res_price": float(uy),
-            "res_dist_pct": float(err),
-            "res_kind": "CH↓",
-            "horizontals": [],
-            "tl": upper_tl,
-            "tls": [upper_tl, lower_tl],
-            "channel": True,
-            "channel_pos": float(pos),
-            "note": f"کانال نزولی · سقف {err:.1f}% · pos={pos:.0%}",
+            "risk": risk, "risk_fa": risk_fa, "risk_emoji": risk_emoji,
+            "res_price": float(uy), "res_dist_pct": float(err), "res_kind": "CH↓",
+            "horizontals": [], "tl": upper_tl, "tls": [upper_tl, lower_tl],
+            "channel": True, "channel_pos": float(pos),
+            "note": f"کانال نزولی · سقف err={err:.1f}% · pos={pos:.0%}",
         }
     except Exception as e:
         log.debug("detect_desc_channel: %s", e)
@@ -1555,8 +1650,8 @@ def detect_desc_channel(df: pd.DataFrame, price: float) -> dict | None:
 
 
 def detect_desc_resistance(df: pd.DataFrame, price: float) -> dict | None:
-    """خط مقاومت نزولی از سایه‌های غالب اخیر (بدون کانال)."""
-    if df is None or len(df) < 30 or not price or price <= 0:
+    """مقاومت نزولی از سایه‌های غالب — در صورت شکست از خط ساده استفاده می‌کند."""
+    if df is None or len(df) < 25 or not price or price <= 0:
         return None
     try:
         d = df.iloc[-min(len(df), 200):].copy()
@@ -1564,88 +1659,60 @@ def detect_desc_resistance(df: pd.DataFrame, price: float) -> dict | None:
         peak_h = float(d["h"].astype(float).iloc[-min(8, len(d)):].max())
         span = max(1, last_ts - int(d.iloc[0]["ts"]))
         bar_sec = span / max(len(d) - 1, 1)
-        sep = int(max(6 * 3600, min(18 * 3600, bar_sec * 8)))
-        sh = _dominant_wick_swings(d, "h", left=3, right=3, min_sep_sec=sep)
-        sh = [x for x in sh if last_ts - x["ts"] <= 7 * 86400]
-        if len(sh) < 3:
-            return None
-        uh = _fit_desc_segment(sh, "h", last_ts, min_pts=3, max_pts=6)
-        if not uh:
-            return None
-        uy = uh["m"] * last_ts + uh["b"]
-        err = abs(uy - peak_h) / max(peak_h, 1e-15) * 100.0
-        if err > 5.0:
-            return None
-        if err <= 2.0:
-            risk, risk_fa, risk_emoji = "strong", "قوی", "🟢"
-        elif err <= 3.5:
-            risk, risk_fa, risk_emoji = "medium", "متوسط", "🟡"
-        else:
-            risk, risk_fa, risk_emoji = "weak", "ضعیف", "⚪"
-        pts = uh["pts"]
-        touches = [{"ts": p["ts"], "h": p["h"], "l": p["l"]} for p in pts]
-        tl = {
-            "kind": "HH↓",
-            "err": float(err),
-            "n3": max(0, len(pts) - 2),
-            "score": float(err),
-            "p1": touches[0],
-            "p2": touches[-1],
-            "slope": uh["m"],
-            "intercept": uh["b"],
-            "line_now": float(uy),
-            "proj": float(uy),
-            "thirds": touches[1:-1],
-            "touches": touches,
-            "m": uh["m"],
-            "b": uh["b"],
-        }
-        return {
-            "risk": risk,
-            "risk_fa": risk_fa,
-            "risk_emoji": risk_emoji,
-            "res_price": float(uy),
-            "res_dist_pct": float(err),
-            "res_kind": "HH↓",
-            "horizontals": [],
-            "tl": tl,
-            "tls": [tl],
-            "channel": False,
-            "note": f"مقاومت نزولی · {len(pts)} لمس · err={err:.1f}%",
-        }
+        sep = int(max(4 * 3600, min(16 * 3600, bar_sec * 6)))
+        sh = _dominant_wick_swings(d, "h", left=2, right=2, min_sep_sec=sep, min_protrude_pct=0.05)
+        sh = [x for x in sh if last_ts - x["ts"] <= 10 * 86400]
+        uh = _fit_desc_segment(sh, "h", last_ts, min_pts=2, max_pts=6) if len(sh) >= 2 else None
+        if uh:
+            uy = uh["m"] * last_ts + uh["b"]
+            err = abs(uy - peak_h) / max(peak_h, 1e-15) * 100.0
+            if err <= 6.0:
+                if err <= 2.5:
+                    risk, risk_fa, risk_emoji = "strong", "قوی", "🟢"
+                elif err <= 4.5:
+                    risk, risk_fa, risk_emoji = "medium", "متوسط", "🟡"
+                else:
+                    risk, risk_fa, risk_emoji = "weak", "ضعیف", "⚪"
+                pts = uh["pts"]
+                touches = [{"ts": p["ts"], "h": p["h"], "l": p.get("l", p["h"])} for p in pts]
+                tl = {
+                    "kind": "HH↓", "err": float(err), "n3": max(0, len(pts) - 2),
+                    "score": float(err), "p1": touches[0], "p2": touches[-1],
+                    "slope": uh["m"], "intercept": uh["b"],
+                    "line_now": float(uy), "proj": float(uy),
+                    "thirds": touches[1:-1], "touches": touches,
+                    "m": uh["m"], "b": uh["b"],
+                }
+                return {
+                    "risk": risk, "risk_fa": risk_fa, "risk_emoji": risk_emoji,
+                    "res_price": float(uy), "res_dist_pct": float(err), "res_kind": "HH↓",
+                    "horizontals": [], "tl": tl, "tls": [tl], "channel": False,
+                    "note": f"مقاومت نزولی · {len(pts)} لمس · err={err:.1f}%",
+                }
+        return _simple_highs_line(d)
     except Exception as e:
         log.debug("detect_desc_resistance: %s", e)
-        return None
+        return _simple_highs_line(df)
 
 
 def analyze_structure(df: pd.DataFrame, price: float) -> dict:
-    """
-    اولویت:
-      ۱) کانال نزولی clone از سایه‌های غالب اخیر
-      ۲) مقاومت نزولی (HH↓) از سایه‌های غالب اخیر
-    """
+    """اول کانال، بعد مقاومت؛ در نهایت خط ساده سقف تا چارت خالی نماند."""
     empty = {
-        "risk": "weak",
-        "risk_fa": "ضعیف",
-        "risk_emoji": "⚪",
-        "res_price": None,
-        "res_dist_pct": None,
-        "res_kind": None,
-        "horizontals": [],
-        "tl": None,
-        "tls": [],
-        "channel": False,
+        "risk": "weak", "risk_fa": "ضعیف", "risk_emoji": "⚪",
+        "res_price": None, "res_dist_pct": None, "res_kind": None,
+        "horizontals": [], "tl": None, "tls": [], "channel": False,
         "note": "بدون ساختار",
     }
-    if df is None or len(df) < 30 or price is None or price <= 0:
+    if df is None or len(df) < 20 or price is None or price <= 0:
         return empty
     try:
         ch = detect_desc_channel(df, price)
         res = detect_desc_resistance(df, price)
         rank = {"strong": 0, "medium": 1, "weak": 2}
-        candidates = [x for x in (ch, res) if x]
+        candidates = [x for x in (ch, res) if x and (x.get("tls") or x.get("tl"))]
         if not candidates:
-            return empty
+            simple = _simple_highs_line(df)
+            return simple if simple else empty
         candidates.sort(
             key=lambda x: (
                 rank.get(x.get("risk"), 9),
@@ -1656,8 +1723,7 @@ def analyze_structure(df: pd.DataFrame, price: float) -> dict:
         return candidates[0]
     except Exception as e:
         log.debug("analyze_structure: %s", e)
-        return empty
-
+        return _simple_highs_line(df) or empty
 
 
 async def structure_for_signal(symbol: str, signal_tf: str, price: float):
@@ -1776,6 +1842,16 @@ def make_structure_chart(df: pd.DataFrame, symbol: str, tf: str, st: dict) -> by
 
         # خط‌روند / کانال — رسم با m*t+b (polyfit واقعی) + همهٔ نقاط لمس
         lines = st.get("tls") or ([] if not st.get("tl") else [st["tl"]])
+        # اگر ساختار خالی بود روی همین df خط اضطراری بساز
+        if not lines:
+            try:
+                px0 = float(d.iloc[-1]["c"])
+                forced = analyze_structure(d, px0)
+                if forced:
+                    st = {**st, **forced}
+                    lines = forced.get("tls") or ([forced["tl"]] if forced.get("tl") else [])
+            except Exception:
+                pass
         colors = {
             "HH↓": "#ffca28", "HH↑": "#66bb6a", "LL↑": "#ce93d8",
             "CH↑": "#ffca28", "CH↓": "#26c6da",
@@ -1788,10 +1864,17 @@ def make_structure_chart(df: pd.DataFrame, symbol: str, tf: str, st: dict) -> by
             m = tl.get("m", tl.get("slope"))
             b = tl.get("b", tl.get("intercept"))
             p1, p2 = tl["p1"], tl["p2"]
+            if m is None or b is None:
+                y1 = float(p1.get("h", p1.get("l", 0)))
+                y2 = float(p2.get("h", p2.get("l", 0)))
+                dt = float(p2["ts"]) - float(p1["ts"])
+                if abs(dt) < 1:
+                    continue
+                m = (y2 - y1) / dt
+                b = y1 - float(m) * float(p1["ts"])
             if m is None:
                 continue
             if b is None:
-                # fallback: از p1 بساز
                 y1 = float(p1.get("h", p1.get("l", 0)))
                 b = y1 - float(m) * float(p1["ts"])
             t0 = int(p1["ts"])
@@ -2776,15 +2859,11 @@ async def pre_alert_cycle(tfs: list[str] | None = None) -> None:
                         st_use = analyze_structure(chart_df, px)
                     except Exception:
                         pass
-                # فقط ساختار معتبر (نه کانال ۱۰٪ پرت مثل RAM)
-                err = st_use.get("res_dist_pct")
-                risk = st_use.get("risk") or "weak"
-                if risk not in ("strong", "medium") or (err is not None and float(err) > 4.0):
-                    log.info(
-                        "PRE_SKIP_STRUCT_CHART %s %s risk=%s err=%s",
-                        symbol, tf, risk, err,
-                    )
-                    continue
+                if not (st_use.get("tls") or st_use.get("tl")):
+                    try:
+                        st_use = analyze_structure(chart_df, px) or st_use
+                    except Exception:
+                        pass
                 st_img = make_structure_chart(chart_df, symbol, chart_tf, st_use)
                 if st_img:
                     risk_e = st_use.get("risk_emoji") or ""
