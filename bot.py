@@ -24,8 +24,13 @@ STATE_FILE = os.path.join(BASE_DIR, "bot_state.json")
 
 # ========================= VERSION / CHANGELOG =========================
 # هر بار اپدیت: BOT_VERSION را بالا ببر و یک خط در CHANGELOG[نسخه] اضافه کن.
-BOT_VERSION = "1.10.0"
+BOT_VERSION = "1.10.1"
 CHANGELOG = {
+    "1.10.1": [
+        "رفع گپ جعلی (مثل RAM): دیگر فیوچرز با مقیاس غلط با UB اسپات مقایسه نمی‌شود",
+        "گپ فقط با همان منبع کندل (اسپات/گیت) سنجیده می‌شود؛ drift بالا = رد",
+        "چارت ساختار ضعیف (err>4٪) ارسال نمی‌شود",
+    ],
     "1.10.0": [
         "رفع باگ حیاتی: structure_for_signal تابع ناموجود صدا می‌زد → خط هرگز کشیده نمی‌شد",
         "حالا از fetch_klines واقعی استفاده می‌کند و خط‌روند/کانال روی چارت می‌آید",
@@ -1498,6 +1503,9 @@ def detect_desc_channel(df: pd.DataFrame, price: float) -> dict | None:
             return None
         err = abs(uy - peak_h) / max(peak_h, 1e-15) * 100.0
         pos = (price - ly) / (uy - ly)
+        # اگر قله خیلی از سقف کانال دور است، کانال را دور بریز
+        if err > 5.0:
+            return None
         if err <= 2.2 and pos >= 0.50:
             risk, risk_fa, risk_emoji = "strong", "قوی", "🟢"
         elif err <= 4.5 and pos >= 0.30:
@@ -2629,6 +2637,24 @@ async def process_symbol(symbol: str, tfs_to_check: list) -> None:
         await asyncio.sleep(0.05)
 
 
+
+def price_aligned_with_klines(symbol: str, kline_close: float, max_drift_pct: float = 8.0):
+    """
+    قیمتی که با کندل‌های BB هم‌مقیاس باشد.
+    اگر last فیوچرز با close اسپات اختلاف وحشتناک داشت (مثل RAM 8.6 در برابر 0.033)
+    فیوچرز را دور می‌ریزیم و فقط close کندل را برمی‌گردانیم.
+    """
+    if not kline_close or kline_close <= 0:
+        return kline_close, "kline", None
+    fut = get_futures_last(symbol)
+    if not fut or fut <= 0:
+        return kline_close, "kline", None
+    drift = abs(fut - kline_close) / kline_close * 100.0
+    if drift > max_drift_pct:
+        return kline_close, "kline_reject_fut", drift
+    return fut, "futures", drift
+
+
 async def pre_alert_cycle(tfs: list[str] | None = None) -> None:
     """چند دقیقه قبل از باز شدن کندل: اگر فیوچرز >۱٪ بالای UB باشد، احتمال گپ بفرست."""
     tfs = tfs or pre_alert_tfs_now()
@@ -2673,16 +2699,13 @@ async def pre_alert_cycle(tfs: list[str] | None = None) -> None:
                 if np.isnan(ub) or ub <= 0:
                     return
                 px = float(cur["c"])
-                fut = get_futures_last(symbol)
-                if fut and px > 0:
-                    drift = abs(fut - px) / px * 100.0
-                    if drift > 3.0:
-                        log.info(
-                            "PRE_SKIP_DRIFT %s %s | src=%s close=%.6g fut=%.6g drift=%.1f%%",
-                            symbol, tf, src, px, fut, drift,
-                        )
-                # قیمت فیوچرز اولویت دارد (اسپات گاهی زیر UB است ولی فیوچرز گپ دارد)
-                check_px = float(fut) if fut and fut > 0 else px
+                # حتماً با همان مقیاس کندل‌ها — فیوچرز ناهم‌مقیاس (مثل RAM) رد می‌شود
+                check_px, px_src, drift = price_aligned_with_klines(symbol, px, max_drift_pct=8.0)
+                if px_src == "kline_reject_fut":
+                    log.info(
+                        "PRE_SKIP_DRIFT %s %s | src=%s close=%.6g fut_drift=%.1f%% (فیوچرز هم‌مقیاس نیست)",
+                        symbol, tf, src, px, drift or 0,
+                    )
                 if check_px <= ub:
                     return
                 gap_pct = (check_px - ub) / check_px * 100.0
@@ -2753,6 +2776,15 @@ async def pre_alert_cycle(tfs: list[str] | None = None) -> None:
                         st_use = analyze_structure(chart_df, px)
                     except Exception:
                         pass
+                # فقط ساختار معتبر (نه کانال ۱۰٪ پرت مثل RAM)
+                err = st_use.get("res_dist_pct")
+                risk = st_use.get("risk") or "weak"
+                if risk not in ("strong", "medium") or (err is not None and float(err) > 4.0):
+                    log.info(
+                        "PRE_SKIP_STRUCT_CHART %s %s risk=%s err=%s",
+                        symbol, tf, risk, err,
+                    )
+                    continue
                 st_img = make_structure_chart(chart_df, symbol, chart_tf, st_use)
                 if st_img:
                     risk_e = st_use.get("risk_emoji") or ""
