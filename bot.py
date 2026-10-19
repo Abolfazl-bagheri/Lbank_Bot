@@ -24,8 +24,12 @@ STATE_FILE = os.path.join(BASE_DIR, "bot_state.json")
 
 # ========================= VERSION / CHANGELOG =========================
 # هر بار اپدیت: BOT_VERSION را بالا ببر و یک خط در CHANGELOG[نسخه] اضافه کن.
-BOT_VERSION = "1.9.7"
+BOT_VERSION = "1.9.8"
 CHANGELOG = {
+    "1.9.8": [
+        "فقط چارت خط‌روند/کانال — شات گپ و BB حذف کامل",
+        "اگر کانال دقیق باشد روی همان چارت رسم می‌شود",
+    ],
     "1.9.7": [
         "رفع قطع چارت: همیشه روی سیگنال و احتمال‌گپ عکس می‌فرستد (خط‌روند/کانال یا BB)",
     ],
@@ -1741,33 +1745,7 @@ def make_structure_chart(df: pd.DataFrame, symbol: str, tf: str, st: dict) -> by
                 facecolor=color, edgecolor=color, zorder=3,
             ))
 
-        # Bollinger
-        try:
-            if "upper" not in d.columns or d["upper"].isna().all():
-                cser = d["c"].astype(float)
-                sma = cser.rolling(BB_PERIOD).mean()
-                std = cser.rolling(BB_PERIOD).std(ddof=0)
-                d = d.copy()
-                d["sma"] = sma
-                d["upper"] = sma + BB_STD * std
-                d["lower"] = sma - BB_STD * std
-            xs, uys, lys, mys = [], [], [], []
-            for _, row in d.iterrows():
-                if pd.isna(row.get("upper")):
-                    continue
-                try:
-                    xs.append(dtmod.fromtimestamp(int(row["ts"]), TEHRAN))
-                    uys.append(float(row["upper"]))
-                    lys.append(float(row["lower"]))
-                    mys.append(float(row["sma"]))
-                except Exception:
-                    continue
-            if xs:
-                ax.plot(xs, uys, color="#7e57c2", lw=1.2, alpha=0.85, label="UB")
-                ax.plot(xs, mys, color="#78909c", lw=1.0, alpha=0.7, label="SMA")
-                ax.plot(xs, lys, color="#7e57c2", lw=1.2, alpha=0.5, label="LB")
-        except Exception:
-            pass
+        # BB حذف شد — فقط خط‌روند/کانال
 
         # horizontals
         for hz in (st.get("horizontals") or [])[:3]:
@@ -2594,33 +2572,32 @@ async def process_symbol(symbol: str, tfs_to_check: list) -> None:
         st_df = sig.pop("_st_df", None)
         st_obj = sig.pop("_st", None) or {}
         st_tf = sig.get("struct_tf") or tf
-        # متن + چارت (اولویت: خط‌روند/کانال؛ اگر نبود BB)
+        # متن + فقط چارت خط‌روند/کانال (بدون شات گپ/BB)
         send_telegram_text(msg)
         if SEND_CHART:
-            sent_photo = False
             try:
-                if st_df is not None and len(st_df) >= 30:
-                    st_img = make_structure_chart(st_df, symbol, st_tf, st_obj or {})
-                    if st_img:
-                        note = (st_obj or {}).get("note") or sig.get("struct_res_kind") or ""
-                        ch = "📐 کانال" if (st_obj or {}).get("channel") else "📐"
-                        send_telegram_photo(
-                            st_img,
-                            f"{ch} <b>{symbol}</b> · {st_tf} · {note}",
-                        )
-                        sent_photo = True
+                chart_df = st_df if st_df is not None and len(st_df) >= 30 else df
+                chart_tf = st_tf if st_df is not None and len(st_df) >= 30 else tf
+                chart_st = st_obj or {}
+                # اگر ساختار خالی بود روی همان df سیگنال دوباره تحلیل کن
+                if not (chart_st.get("tls") or chart_st.get("tl") or chart_st.get("channel")):
+                    try:
+                        px = float(chart_df.iloc[-1]["c"])
+                        chart_st = analyze_structure(chart_df, px)
+                    except Exception:
+                        pass
+                st_img = make_structure_chart(chart_df, symbol, chart_tf, chart_st)
+                if st_img:
+                    note = chart_st.get("note") or sig.get("struct_res_kind") or ""
+                    ch = "📐 کانال" if chart_st.get("channel") else "📐 خط‌روند"
+                    send_telegram_photo(
+                        st_img,
+                        f"{ch} <b>{symbol}</b> · {chart_tf} · {note}",
+                    )
+                else:
+                    log.warning("NO_CHART %s %s (structure chart failed)", symbol, tf)
             except Exception as e:
                 log.warning("structure chart send: %s", e)
-            if not sent_photo:
-                try:
-                    gap_img = make_chart(df, symbol, tf, sig["side"], sig)
-                    if gap_img:
-                        send_telegram_photo(gap_img, f"📊 <b>{symbol}</b> · {tf}")
-                        sent_photo = True
-                except Exception as e:
-                    log.warning("gap chart fallback: %s", e)
-            if not sent_photo:
-                log.warning("NO_CHART %s %s (structure+bb both failed)", symbol, tf)
         await asyncio.sleep(0.05)
 
 
@@ -2730,54 +2707,33 @@ async def pre_alert_cycle(tfs: list[str] | None = None) -> None:
             )
             chart_jobs.append((symbol, gap_pct, st))
         send_telegram_text("\n".join(lines))
-        # چارت احتمال‌گپ: خط‌روند/کانال؛ اگر نبود BB
+        # فقط چارت خط‌روند/کانال برای احتمال‌گپ (بدون BB)
         for symbol, gap_pct, st in chart_jobs[:8]:
             try:
                 if not SEND_CHART:
                     continue
-                df, src = await fetch_klines(symbol, tf, size=80)
-                if df is None or len(df) < 30:
+                df2, _ = await fetch_klines(symbol, tf, size=100)
+                if df2 is None or len(df2) < 30:
                     continue
-                if "upper" not in df.columns or df["upper"].isna().all():
-                    cser = df["c"].astype(float)
-                    sma = cser.rolling(BB_PERIOD).mean()
-                    std = cser.rolling(BB_PERIOD).std(ddof=0)
-                    df = df.copy()
-                    df["sma"] = sma
-                    df["upper"] = sma + BB_STD * std
-                    df["lower"] = sma - BB_STD * std
-                px = float(df.iloc[-1]["c"])
-                sent_photo = False
-                try:
-                    st2, st_df, st_tf = await structure_for_signal(symbol, tf, px)
-                    st_use = st2 or st or {}
-                    if st_df is not None and len(st_df) >= 30:
-                        st_img = make_structure_chart(st_df, symbol, st_tf or tf, st_use)
-                        if st_img:
-                            risk_e = st_use.get("risk_emoji") or ""
-                            tag = "کانال" if st_use.get("channel") else "خط‌روند"
-                            send_telegram_photo(
-                                st_img,
-                                f"📐 {tag} · {symbol} · {st_tf or tf} · +{gap_pct:.1f}% {risk_e}",
-                            )
-                            sent_photo = True
-                except Exception as e:
-                    log.warning("pre structure chart %s: %s", symbol, e)
-                if not sent_photo:
-                    img = make_chart(df, symbol, tf, "SELL", {
-                        "side": "SELL",
-                        "open": float(df.iloc[-1]["o"]),
-                        "upper": float(df.iloc[-1]["upper"]),
-                        "high": float(df.iloc[-1]["h"]),
-                    })
-                    if img:
-                        risk_e = (st or {}).get("risk_emoji") or ""
-                        send_telegram_photo(
-                            img,
-                            f"🟣 {symbol} · {tf} · +{gap_pct:.1f}% {risk_e}",
-                        )
-                        sent_photo = True
-                if not sent_photo:
+                px = float(df2.iloc[-1]["c"])
+                st2, st_df, st_tf = await structure_for_signal(symbol, tf, px)
+                st_use = st2 or st or {}
+                chart_df = st_df if st_df is not None and len(st_df) >= 30 else df2
+                chart_tf = st_tf or tf
+                if not (st_use.get("tls") or st_use.get("tl") or st_use.get("channel")):
+                    try:
+                        st_use = analyze_structure(chart_df, px)
+                    except Exception:
+                        pass
+                st_img = make_structure_chart(chart_df, symbol, chart_tf, st_use)
+                if st_img:
+                    risk_e = st_use.get("risk_emoji") or ""
+                    tag = "کانال" if st_use.get("channel") else "خط‌روند"
+                    send_telegram_photo(
+                        st_img,
+                        f"📐 {tag} · {symbol} · {chart_tf} · +{gap_pct:.1f}% {risk_e}",
+                    )
+                else:
                     log.warning("NO_CHART pre %s %s", symbol, tf)
                 await asyncio.sleep(0.15)
             except Exception as e:
