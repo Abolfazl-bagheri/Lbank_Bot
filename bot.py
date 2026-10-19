@@ -24,8 +24,12 @@ STATE_FILE = os.path.join(BASE_DIR, "bot_state.json")
 
 # ========================= VERSION / CHANGELOG =========================
 # هر بار اپدیت: BOT_VERSION را بالا ببر و یک خط در CHANGELOG[نسخه] اضافه کن.
-BOT_VERSION = "1.9.9"
+BOT_VERSION = "1.10.0"
 CHANGELOG = {
+    "1.10.0": [
+        "رفع باگ حیاتی: structure_for_signal تابع ناموجود صدا می‌زد → خط هرگز کشیده نمی‌شد",
+        "حالا از fetch_klines واقعی استفاده می‌کند و خط‌روند/کانال روی چارت می‌آید",
+    ],
     "1.9.9": [
         "خط‌روند/کانال با الگوریتم جدید: سایهٔ غالب اخیر (درس DOGE/WIF/LINK)",
         "رسم با polyfit واقعی + همهٔ نقاط لمس برچسب‌دار — دیگر خط قدیمی اشتباه نیست",
@@ -1649,7 +1653,7 @@ def analyze_structure(df: pd.DataFrame, price: float) -> dict:
 
 
 async def structure_for_signal(symbol: str, signal_tf: str, price: float):
-    """Structure on higher TFs than signal_tf."""
+    """Structure on signal TF + higher TFs. Uses real fetch_klines (not a missing helper)."""
     empty = {
         "risk": "weak",
         "risk_fa": "ضعیف",
@@ -1660,39 +1664,44 @@ async def structure_for_signal(symbol: str, signal_tf: str, price: float):
         "horizontals": [],
         "tl": None,
         "tls": [],
+        "channel": False,
         "note": "ساختار HTF در دسترس نبود",
         "struct_tf": None,
     }
-    # تایم خود سیگنال (۱س/۴س) + TFهای بالاتر — مثل آموزش دستی
+    # تایم خود سیگنال + بالاتر (فقط TFهای پشتیبانی‌شده)
     htf_list = []
-    if signal_tf in ("1h", "4h", "1d"):
+    if signal_tf in TIMEFRAMES:
         htf_list.append(signal_tf)
     for t in (STRUCT_HTF.get(signal_tf) or ["4h", "1d"]):
-        if t not in htf_list:
+        if t in TIMEFRAMES and t not in htf_list:
             htf_list.append(t)
+    # 1w فقط اگر در TIMEFRAMES باشد
     best = None
     rank = {"strong": 0, "medium": 1, "weak": 2}
     for htf in htf_list:
         try:
-            df, src = await fetch_klines_quiet(symbol, htf, size=200)
+            df, src = await fetch_klines(symbol, htf, size=200)
             if df is None or len(df) < 30:
+                log.debug("structure skip %s %s: no df", symbol, htf)
                 continue
             st = analyze_structure(df, price)
+            if not (st.get("tls") or st.get("tl") or st.get("channel")):
+                log.debug("structure empty %s %s: %s", symbol, htf, st.get("note"))
+                continue
             st["struct_tf"] = htf
             st["struct_src"] = src
             dist = st.get("res_dist_pct")
             dist_key = float(dist) if dist is not None else 999.0
-            # کانال را کمی ترجیح بده
-            ch_pen = 0 if st.get("channel") else 0.3
+            ch_pen = 0 if st.get("channel") else 0.25
             cand = (rank.get(st.get("risk"), 2) + ch_pen, dist_key, st, df, htf)
             if best is None or cand[0] < best[0] or (cand[0] == best[0] and cand[1] < best[1]):
                 best = cand
         except Exception as e:
-            log.debug("structure_for_signal %s %s: %s", symbol, htf, e)
+            log.warning("structure_for_signal %s %s: %s", symbol, htf, e)
     if best is None:
         return empty, None, signal_tf
     st, df, htf = best[2], best[3], best[4]
-    st["note"] = (st.get("note") or "") + f" · TF ساختار: {htf}"
+    st["note"] = (st.get("note") or "") + f" · TF:{htf}"
     return st, df, htf
 
 
