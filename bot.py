@@ -24,8 +24,12 @@ STATE_FILE = os.path.join(BASE_DIR, "bot_state.json")
 
 # ========================= VERSION / CHANGELOG =========================
 # هر بار اپدیت: BOT_VERSION را بالا ببر و یک خط در CHANGELOG[نسخه] اضافه کن.
-BOT_VERSION = "1.11.0"
+BOT_VERSION = "1.11.1"
 CHANGELOG = {
+    "1.11.1": [
+        "خط استاتیک حمایت/مقاومت: کف گذشته≈سقف الان یا سقف گذشته≈کف الان",
+        "بک‌گراند چارت ساختار سفید",
+    ],
     "1.11.0": [
         "سیگنال = یک پیام: شات خط‌روند + کپشن (ارز / % تا UB-LB / سل|لانگ / TF)",
         "حذف کیفیت ورود، تگ کندل، UBسواری، ازداخل‌باند از پیام سیگنال",
@@ -1701,8 +1705,88 @@ def detect_desc_resistance(df: pd.DataFrame, price: float) -> dict | None:
         return _simple_highs_line(df)
 
 
+
+def detect_static_sr(df: pd.DataFrame, tol_pct: float = 1.2, recent_bars: int = 12) -> list[dict]:
+    """
+    خط افقی استاتیک (فلipped S/R):
+      - RES←LOW : کف قوی گذشته ≈ سقف اخیر  → مقاومت افقی
+      - SUP←HIGH: سقف قوی گذشته ≈ کف اخیر  → حمایت افقی
+    فقط وقتی اختلاف نقاط ≤ tol_pct٪ باشد.
+    """
+    out: list[dict] = []
+    if df is None or len(df) < 30:
+        return out
+    try:
+        d = df.iloc[-min(len(df), 200):].copy().reset_index(drop=True)
+        hs = d["h"].astype(float).values
+        ls = d["l"].astype(float).values
+        ts = d["ts"].astype(int).values
+        w = 2
+        sh, sl = [], []
+        for i in range(w, len(d) - w):
+            if hs[i] >= max(hs[i - w: i + w + 1]) - 1e-15:
+                sh.append(i)
+            if ls[i] <= min(ls[i - w: i + w + 1]) + 1e-15:
+                sl.append(i)
+        recent_start = max(0, len(d) - recent_bars)
+        # past LOW ≈ current HIGH
+        now_highs = [i for i in sh if i >= recent_start] + ([len(d) - 1] if len(d) else [])
+        for i in now_highs:
+            hi = float(hs[i])
+            if hi <= 0:
+                continue
+            for j in sl:
+                if j >= i - 2:
+                    continue
+                lo = float(ls[j])
+                err = abs(hi - lo) / hi * 100.0
+                if err <= tol_pct:
+                    out.append({
+                        "kind": "RES←LOW",
+                        "price": float((hi + lo) / 2.0),
+                        "err": float(err),
+                        "past_ts": int(ts[j]),
+                        "now_ts": int(ts[i]),
+                        "past_p": lo,
+                        "now_p": hi,
+                    })
+        # past HIGH ≈ current LOW
+        now_lows = [i for i in sl if i >= recent_start] + ([len(d) - 1] if len(d) else [])
+        for i in now_lows:
+            lo = float(ls[i])
+            if lo <= 0:
+                continue
+            for j in sh:
+                if j >= i - 2:
+                    continue
+                hi = float(hs[j])
+                err = abs(hi - lo) / lo * 100.0
+                if err <= tol_pct:
+                    out.append({
+                        "kind": "SUP←HIGH",
+                        "price": float((hi + lo) / 2.0),
+                        "err": float(err),
+                        "past_ts": int(ts[j]),
+                        "now_ts": int(ts[i]),
+                        "past_p": hi,
+                        "now_p": lo,
+                    })
+        out.sort(key=lambda x: x["err"])
+        uniq = []
+        for m in out:
+            if any(abs(m["price"] - u["price"]) / max(m["price"], 1e-15) < 0.008 for u in uniq):
+                continue
+            uniq.append(m)
+            if len(uniq) >= 3:
+                break
+        return uniq
+    except Exception as e:
+        log.debug("detect_static_sr: %s", e)
+        return []
+
+
 def analyze_structure(df: pd.DataFrame, price: float) -> dict:
-    """اول کانال، بعد مقاومت؛ در نهایت خط ساده سقف تا چارت خالی نماند."""
+    """اول کانال، بعد مقاومت؛ + خط استاتیک افقی (کف↔سقف)."""
     empty = {
         "risk": "weak", "risk_fa": "ضعیف", "risk_emoji": "⚪",
         "res_price": None, "res_dist_pct": None, "res_kind": None,
@@ -1712,21 +1796,39 @@ def analyze_structure(df: pd.DataFrame, price: float) -> dict:
     if df is None or len(df) < 20 or price is None or price <= 0:
         return empty
     try:
+        statics = detect_static_sr(df, tol_pct=1.2, recent_bars=12)
         ch = detect_desc_channel(df, price)
         res = detect_desc_resistance(df, price)
         rank = {"strong": 0, "medium": 1, "weak": 2}
         candidates = [x for x in (ch, res) if x and (x.get("tls") or x.get("tl"))]
         if not candidates:
             simple = _simple_highs_line(df)
-            return simple if simple else empty
-        candidates.sort(
-            key=lambda x: (
-                rank.get(x.get("risk"), 9),
-                float(x.get("res_dist_pct") or 99),
-                0 if x.get("channel") else 1,
+            result = simple if simple else dict(empty)
+        else:
+            candidates.sort(
+                key=lambda x: (
+                    rank.get(x.get("risk"), 9),
+                    float(x.get("res_dist_pct") or 99),
+                    0 if x.get("channel") else 1,
+                )
             )
-        )
-        return candidates[0]
+            result = dict(candidates[0])
+        # همیشه استاتیک را بچسبان (حتی اگر ترندلاین نبود)
+        if statics:
+            result["horizontals"] = statics
+            kinds = " · ".join(f"{s['kind']}({s['err']:.1f}%)" for s in statics[:2])
+            note = result.get("note") or ""
+            result["note"] = (note + " · " if note and note != "بدون ساختار" else "") + f"استاتیک: {kinds}"
+            # اگر فقط استاتیک داریم
+            if not (result.get("tls") or result.get("tl")):
+                best = statics[0]
+                result["res_price"] = best["price"]
+                result["res_dist_pct"] = best["err"]
+                result["res_kind"] = best["kind"]
+                result["risk"] = "strong" if best["err"] <= 0.6 else ("medium" if best["err"] <= 1.2 else "weak")
+                result["risk_fa"] = {"strong": "قوی", "medium": "متوسط", "weak": "ضعیف"}[result["risk"]]
+                result["risk_emoji"] = {"strong": "🟢", "medium": "🟡", "weak": "⚪"}[result["risk"]]
+        return result
     except Exception as e:
         log.debug("analyze_structure: %s", e)
         return _simple_highs_line(df) or empty
@@ -1814,8 +1916,8 @@ def make_structure_chart(df: pd.DataFrame, symbol: str, tf: str, st: dict) -> by
                     d = d2.copy()
         except Exception:
             pass
-        fig, ax = plt.subplots(figsize=(13, 6.5), facecolor="#0e1117")
-        ax.set_facecolor("#0e1117")
+        fig, ax = plt.subplots(figsize=(13, 6.5), facecolor="#ffffff")
+        ax.set_facecolor("#ffffff")
 
         for _, row in d.iterrows():
             try:
@@ -1837,14 +1939,31 @@ def make_structure_chart(df: pd.DataFrame, symbol: str, tf: str, st: dict) -> by
 
         # BB حذف شد — فقط خط‌روند/کانال
 
-        # horizontals
+        # خط استاتیک افقی (حمایت/مقاومت flipped)
+        hz_colors = {"RES←LOW": "#e65100", "SUP←HIGH": "#1565c0", "HZ": "#f57c00"}
         for hz in (st.get("horizontals") or [])[:3]:
-            lv = hz["price"]
-            ax.axhline(lv, color="#ff9800", lw=1.3, alpha=0.9)
+            lv = float(hz.get("price") or 0)
+            if lv <= 0:
+                continue
+            kind = hz.get("kind") or "HZ"
+            col = hz_colors.get(kind, "#e65100")
+            ax.axhline(lv, color=col, lw=2.2, alpha=0.95, zorder=4)
             ax.text(
-                0.01, lv, f" HZ {lv:.6g}", transform=ax.get_yaxis_transform(),
-                color="#ffb74d", fontsize=8, va="bottom",
+                0.01, lv,
+                f" {kind} {lv:.6g}" + (f" ({hz['err']:.2f}%)" if hz.get("err") is not None else ""),
+                transform=ax.get_yaxis_transform(),
+                color=col, fontsize=9, va="bottom", fontweight="bold",
             )
+            # نقاط گذشته و فعلی
+            try:
+                if hz.get("past_ts") and hz.get("past_p"):
+                    pt = dtmod.fromtimestamp(int(hz["past_ts"]), TEHRAN)
+                    ax.scatter([pt], [float(hz["past_p"])], c="#1976d2", s=65, zorder=7, edgecolors="#000", lw=0.6)
+                if hz.get("now_ts") and hz.get("now_p"):
+                    nt = dtmod.fromtimestamp(int(hz["now_ts"]), TEHRAN)
+                    ax.scatter([nt], [float(hz["now_p"])], c="#c62828", s=65, zorder=7, edgecolors="#000", lw=0.6)
+            except Exception:
+                pass
 
         # خط‌روند / کانال — رسم با m*t+b (polyfit واقعی) + همهٔ نقاط لمس
         lines = st.get("tls") or ([] if not st.get("tl") else [st["tl"]])
@@ -1859,8 +1978,8 @@ def make_structure_chart(df: pd.DataFrame, symbol: str, tf: str, st: dict) -> by
             except Exception:
                 pass
         colors = {
-            "HH↓": "#ffca28", "HH↑": "#66bb6a", "LL↑": "#ce93d8",
-            "CH↑": "#ffca28", "CH↓": "#26c6da",
+            "HH↓": "#f9a825", "HH↑": "#2e7d32", "LL↑": "#7b1fa2",
+            "CH↑": "#ef6c00", "CH↓": "#00838f",
         }
         t_end = int(d.iloc[-1]["ts"]) + PERIOD_SEC.get(tf, 3600) * 6
         for tl in lines[:3]:
@@ -1932,25 +2051,25 @@ def make_structure_chart(df: pd.DataFrame, symbol: str, tf: str, st: dict) -> by
 
         price = float(d.iloc[-1]["c"])
         t_last = dtmod.fromtimestamp(int(d.iloc[-1]["ts"]), TEHRAN)
-        ax.scatter([t_last], [price], c="#fff", s=35, zorder=7)
+        ax.scatter([t_last], [price], c="#111", s=40, zorder=7, edgecolors="#fff", lw=0.8)
         res = st.get("res_price")
         if res:
-            ax.axhline(res, color="#ffee58", lw=1.2, ls="--", alpha=0.85)
+            ax.axhline(res, color="#f9a825", lw=1.2, ls="--", alpha=0.85)
             ax.annotate(
                 f"res {res:.6g} (+{st.get('res_dist_pct', 0):.1f}%)",
                 xy=(t_last, res), xytext=(-80, 10),
-                textcoords="offset points", color="#ffee58", fontsize=8,
+                textcoords="offset points", color="#f57f17", fontsize=8,
             )
 
         ax.set_title(
             f"{symbol} {tf} | {st.get('risk', '?')} | {st.get('res_kind', '')} | err={st.get('res_dist_pct')}",
-            color="white", fontsize=11,
+            color="#111", fontsize=11,
         )
-        ax.tick_params(colors="#aaa")
+        ax.tick_params(colors="#333")
         ax.xaxis.set_major_formatter(mdates.DateFormatter("%m/%d %H", tz=TEHRAN))
-        ax.grid(True, alpha=0.12, color="#888")
+        ax.grid(True, alpha=0.25, color="#bbb")
         for sp in ax.spines.values():
-            sp.set_color("#333")
+            sp.set_color("#999")
         fig.autofmt_xdate(rotation=25)
         plt.tight_layout()
         buf = BytesIO()
