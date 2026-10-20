@@ -24,8 +24,13 @@ STATE_FILE = os.path.join(BASE_DIR, "bot_state.json")
 
 # ========================= VERSION / CHANGELOG =========================
 # هر بار اپدیت: BOT_VERSION را بالا ببر و یک خط در CHANGELOG[نسخه] اضافه کن.
-BOT_VERSION = "1.10.2"
+BOT_VERSION = "1.11.0"
 CHANGELOG = {
+    "1.11.0": [
+        "سیگنال = یک پیام: شات خط‌روند + کپشن (ارز / % تا UB-LB / سل|لانگ / TF)",
+        "حذف کیفیت ورود، تگ کندل، UBسواری، ازداخل‌باند از پیام سیگنال",
+        "گپ نزولی (لانگ) فعال | گزارش دور بدون duplicate",
+    ],
     "1.10.2": [
         "خط‌روند اجباری نرم‌تر — چارت دیگر بدون خط نمی‌رود (fallback سقف‌های اخیر)",
     ],
@@ -179,7 +184,7 @@ PRE_ALERT_MIN_PCT = 1.0  # فقط اگر اختلاف فیوچرز تا UB با�
 TOP_GAINERS = 30
 TOP_VOLUME = 50
 SEND_CHART = True
-ONLY_SELL = True
+ONLY_SELL = False
 ALWAYS_INCLUDE = ["BTCUSDT", "XAUTUSDT"]
 # نمادهایی که NO_KLINE شدند تا این مدت دوباره چک نشوند (ثانیه) — ۲۴ ساعت
 BLACKLIST_TTL_SEC = 24 * 3600
@@ -265,6 +270,7 @@ sent_angle_alerts: set = set()
 angle_alert_day: str | None = None
 angle_alert_count_today: int = 0
 pending_signals: list = []
+_last_cycle_report_key = None
 last_daily_report_day = None
 last_known_version: str | None = None
 futures_last_map: dict = {}
@@ -2221,18 +2227,7 @@ def check_signal(df: pd.DataFrame, symbol: str, tf: str):
     else:
         diff_pct = (exit_price - fut) / fut * 100.0 if fut else 0.0
 
-    quality = entry_quality_score(df, side)
-    log.info(
-        "QUALITY %s %s %s score=%s %s",
-        side, symbol, tf, quality.get("score"), quality.get("label"),
-    )
-
-    ladders = {}
-    if side == "SELL":
-        ladders = compute_sell_add_levels(df, float(fut), float(upper))
-
-    ctx = gap_context_flags(df, side)
-    # HTF structure filled later by structure_for_signal
+    # HTF structure later in process_symbol
     return {
         "side": side,
         "symbol": symbol,
@@ -2250,25 +2245,6 @@ def check_signal(df: pd.DataFrame, symbol: str, tf: str):
         "fut_last": fut,
         "candle_ts": candle_ts,
         "age_sec": age_sec,
-        "q_score": quality.get("score", 50),
-        "q_flag": quality.get("flag", "🟡"),
-        "q_label": quality.get("label", ""),
-        "q_reasons": quality.get("reasons") or [],
-        "add2": ladders.get("add2"),
-        "add3": ladders.get("add3"),
-        "add2_pct": ladders.get("add2_pct"),
-        "add3_pct": ladders.get("add3_pct"),
-        "gap_tags": ctx.get("tags") or [],
-        "gap_inside": ctx.get("inside", False),
-        "gap_ride": ctx.get("ride", False),
-        "gap_strong": ctx.get("strong_prev", False),
-        "struct_risk": "weak",
-        "struct_risk_fa": "—",
-        "struct_risk_emoji": "⚪",
-        "struct_res_price": None,
-        "struct_res_dist_pct": None,
-        "struct_res_kind": None,
-        "struct_note": "",
         "struct_tf": None,
     }
 
@@ -2343,30 +2319,22 @@ def compute_sell_add_levels(df: pd.DataFrame, entry: float, upper: float) -> dic
 
 
 def format_signal_message(sig: dict) -> str:
-    """خلاصه سیگنال."""
+    """کپشن سیگنال: فقط ارز / % تا باند / سل|لانگ / TF."""
     emoji = "🔴" if sig["side"] == "SELL" else "🟢"
     side_fa = "سِل" if sig["side"] == "SELL" else "لانگ"
     pen = sig.get("diff_pct")
     if pen is None:
-        pen = sig["upper_pen"] if sig["side"] == "SELL" else sig["lower_pen"]
+        pen = sig.get("upper_pen") if sig["side"] == "SELL" else sig.get("lower_pen")
+    if pen is None:
+        pen = 0.0
     symbol = sig["symbol"]
     link = lbank_futures_link(symbol, sig["tf"])
     badge = inno_badge(symbol)
-    risk_e = sig.get("struct_risk_emoji") or "⚪"
-    risk_fa = sig.get("struct_risk_fa") or "—"
-    st_tf = sig.get("struct_tf") or ""
-    kind = sig.get("struct_res_kind") or ""
-    lines = [
-        f'{emoji} <b>{side_fa}</b> · <a href="{link}"><b>{symbol}</b></a>{badge}',
-        f"⏱ {sig['tf']} · 📏 {pen:.2f}% · Q{sig.get('q_score', 50)}",
-        f"{risk_e} <b>{risk_fa}</b>"
-        + (f" · {kind}" if kind else "")
-        + (f" · {st_tf}" if st_tf else ""),
-    ]
-    tags = sig.get("gap_tags") or []
-    if tags:
-        lines.append(" · ".join(tags))
-    return "\n".join(lines)
+    # یک خط جمع‌وجور برای کپشن عکس
+    return (
+        f'{emoji} <b>{side_fa}</b> · <a href="{link}"><b>{symbol}</b></a>{badge}\n'
+        f'⏱ <b>{sig["tf"]}</b> · 📏 <b>{pen:.2f}%</b> تا {"UB" if sig["side"] == "SELL" else "LB"}'
+    )
 
 def score_signal(item: dict, close: float, high: float, low: float) -> dict:
     spot_open = float(item.get("open") or 0)
@@ -2670,11 +2638,10 @@ async def process_symbol(symbol: str, tfs_to_check: list) -> None:
             sig["_st_df"] = st_df
         except Exception as e:
             log.debug("HTF structure %s %s: %s", symbol, tf, e)
-        msg = format_signal_message(sig)
+        caption = format_signal_message(sig)
         log.info(
-            "SIGNAL %s %s %s fut=%.6g src=%s risk=%s",
+            "SIGNAL %s %s %s fut=%.6g src=%s",
             sig["side"], symbol, tf, sig.get("fut_last") or 0, src,
-            sig.get("struct_risk"),
         )
         pending_signals.append({
             "symbol": symbol,
@@ -2691,32 +2658,29 @@ async def process_symbol(symbol: str, tfs_to_check: list) -> None:
         st_df = sig.pop("_st_df", None)
         st_obj = sig.pop("_st", None) or {}
         st_tf = sig.get("struct_tf") or tf
-        # متن + فقط چارت خط‌روند/کانال (بدون شات گپ/BB)
-        send_telegram_text(msg)
+        # یک پیام: شات خط‌روند/کانال + کپشن خلاصه (بدون متن جدا)
+        sent = False
         if SEND_CHART:
             try:
                 chart_df = st_df if st_df is not None and len(st_df) >= 30 else df
                 chart_tf = st_tf if st_df is not None and len(st_df) >= 30 else tf
                 chart_st = st_obj or {}
-                # اگر ساختار خالی بود روی همان df سیگنال دوباره تحلیل کن
                 if not (chart_st.get("tls") or chart_st.get("tl") or chart_st.get("channel")):
                     try:
                         px = float(chart_df.iloc[-1]["c"])
-                        chart_st = analyze_structure(chart_df, px)
+                        chart_st = analyze_structure(chart_df, px) or {}
                     except Exception:
                         pass
                 st_img = make_structure_chart(chart_df, symbol, chart_tf, chart_st)
                 if st_img:
-                    note = chart_st.get("note") or sig.get("struct_res_kind") or ""
-                    ch = "📐 کانال" if chart_st.get("channel") else "📐 خط‌روند"
-                    send_telegram_photo(
-                        st_img,
-                        f"{ch} <b>{symbol}</b> · {chart_tf} · {note}",
-                    )
+                    send_telegram_photo(st_img, caption)
+                    sent = True
                 else:
                     log.warning("NO_CHART %s %s (structure chart failed)", symbol, tf)
             except Exception as e:
                 log.warning("structure chart send: %s", e)
+        if not sent:
+            send_telegram_text(caption)
         await asyncio.sleep(0.05)
 
 
@@ -2779,37 +2743,41 @@ async def pre_alert_cycle(tfs: list[str] | None = None) -> None:
                     return
                 cur = df.iloc[-1]
                 ub = float(cur["upper"])
+                lb = float(cur["lower"]) if "lower" in cur.index or "lower" in df.columns else float("nan")
                 if np.isnan(ub) or ub <= 0:
                     return
                 px = float(cur["c"])
-                # حتماً با همان مقیاس کندل‌ها — فیوچرز ناهم‌مقیاس (مثل RAM) رد می‌شود
                 check_px, px_src, drift = price_aligned_with_klines(symbol, px, max_drift_pct=8.0)
                 if px_src == "kline_reject_fut":
                     log.info(
-                        "PRE_SKIP_DRIFT %s %s | src=%s close=%.6g fut_drift=%.1f%% (فیوچرز هم‌مقیاس نیست)",
+                        "PRE_SKIP_DRIFT %s %s | src=%s close=%.6g fut_drift=%.1f%%",
                         symbol, tf, src, px, drift or 0,
                     )
-                if check_px <= ub:
-                    return
-                gap_pct = (check_px - ub) / check_px * 100.0
-                if gap_pct < PRE_ALERT_MIN_PCT:
+                side = None
+                gap_pct = 0.0
+                if check_px > ub:
+                    gap_pct = (check_px - ub) / check_px * 100.0
+                    if gap_pct >= PRE_ALERT_MIN_PCT:
+                        side = "SELL"
+                elif (not np.isnan(lb)) and lb > 0 and check_px < lb:
+                    gap_pct = (lb - check_px) / check_px * 100.0 if check_px > 0 else 0.0
+                    if gap_pct >= PRE_ALERT_MIN_PCT:
+                        side = "LONG"
+                if not side:
                     return
 
                 sent_pre_alerts.add(key)
                 if len(sent_pre_alerts) > 3000:
                     sent_pre_alerts.clear()
-                tags = gap_context_flags(df, "SELL").get("tags") or []
                 try:
-                    st, _, _ = await structure_for_signal(
-                        symbol, tf, float(fut) if fut and fut > 0 else px
-                    )
+                    st, _, _ = await structure_for_signal(symbol, tf, float(check_px))
                 except Exception:
-                    st = analyze_structure(df, fut if fut and fut > 0 else px)
+                    st = analyze_structure(df, float(check_px))
                 async with lock:
-                    found[tf].append((symbol, gap_pct, tags, st))
+                    found[tf].append((symbol, gap_pct, side, st or {}))
                 log.info(
-                    "PRE_ALERT %s %s src=%s px=%.6g ub=%.6g +%.2f%% left=%ds tags=%s risk=%s",
-                    symbol, tf, src, px, ub, gap_pct, secs_left, tags, st.get("risk"),
+                    "PRE_ALERT %s %s %s +%.2f%% left=%ds",
+                    side, symbol, tf, gap_pct, secs_left,
                 )
             except Exception as e:
                 log.warning("pre_alert %s %s: %s", symbol, tf, e)
@@ -2823,26 +2791,12 @@ async def pre_alert_cycle(tfs: list[str] | None = None) -> None:
         if not items:
             continue
         items.sort(key=lambda x: -x[1])
-        lines = [f"🟣 <b>احتمال گپ · {tf}</b>"]
-        chart_jobs = []
-        for item in items:
-            if len(item) >= 4:
-                symbol, gap_pct, tags, st = item[0], item[1], item[2], item[3]
-            elif len(item) >= 3:
-                symbol, gap_pct, tags, st = item[0], item[1], item[2], {}
-            else:
-                symbol, gap_pct, tags, st = item[0], item[1], [], {}
-            link = lbank_futures_link(symbol, tf)
-            risk_e = (st or {}).get("risk_emoji") or "⚪"
-            risk_fa = (st or {}).get("risk_fa") or "—"
-            lines.append(
-                f'· <a href="{link}"><b>{symbol}</b></a>'
-                f" +{gap_pct:.1f}% {risk_e}{risk_fa}"
-            )
-            chart_jobs.append((symbol, gap_pct, st))
-        send_telegram_text("\n".join(lines))
-        # فقط چارت خط‌روند/کانال برای احتمال‌گپ (بدون BB)
-        for symbol, gap_pct, st in chart_jobs[:8]:
+        # فقط شات + کپشن خلاصه برای هر مورد (بدون لیست متنی جدا)
+        for item in items[:8]:
+            symbol = item[0]
+            gap_pct = item[1]
+            side = item[2] if len(item) > 2 and item[2] in ("SELL", "LONG") else "SELL"
+            st = item[3] if len(item) > 3 else {}
             try:
                 if not SEND_CHART:
                     continue
@@ -2856,24 +2810,23 @@ async def pre_alert_cycle(tfs: list[str] | None = None) -> None:
                 chart_tf = st_tf or tf
                 if not (st_use.get("tls") or st_use.get("tl") or st_use.get("channel")):
                     try:
-                        st_use = analyze_structure(chart_df, px)
-                    except Exception:
-                        pass
-                if not (st_use.get("tls") or st_use.get("tl")):
-                    try:
-                        st_use = analyze_structure(chart_df, px) or st_use
+                        st_use = analyze_structure(chart_df, px) or {}
                     except Exception:
                         pass
                 st_img = make_structure_chart(chart_df, symbol, chart_tf, st_use)
+                emoji = "🔴" if side == "SELL" else "🟢"
+                side_fa = "سِل" if side == "SELL" else "لانگ"
+                band = "UB" if side == "SELL" else "LB"
+                link = lbank_futures_link(symbol, tf)
+                cap = (
+                    f'🟣 احتمال گپ · {emoji} <b>{side_fa}</b> · '
+                    f'<a href="{link}"><b>{symbol}</b></a>\n'
+                    f'⏱ <b>{tf}</b> · 📏 <b>{gap_pct:.1f}%</b> تا {band}'
+                )
                 if st_img:
-                    risk_e = st_use.get("risk_emoji") or ""
-                    tag = "کانال" if st_use.get("channel") else "خط‌روند"
-                    send_telegram_photo(
-                        st_img,
-                        f"📐 {tag} · {symbol} · {chart_tf} · +{gap_pct:.1f}% {risk_e}",
-                    )
+                    send_telegram_photo(st_img, cap)
                 else:
-                    log.warning("NO_CHART pre %s %s", symbol, tf)
+                    send_telegram_text(cap)
                 await asyncio.sleep(0.15)
             except Exception as e:
                 log.warning("pre chart %s: %s", symbol, e)
@@ -3340,27 +3293,22 @@ async def one_cycle(tfs: list | None = None) -> None:
     for x in evaluated:
         x["reported"] = True
 
-    sig_n = stats["signal_ok"]
+    sig_n = int(stats.get("signal_ok") or 0)
     tfs_label = ", ".join(tfs) if tfs else "—"
     clock = iran_now().strftime("%H:%M")
 
-    if sig_n == 0 and not evaluated:
-        # فقط ضربان — ربات زنده است، این دور چیزی نبود
-        send_telegram_text(f"⚪️ دور <b>{tfs_label}</b> · سیگنالی نبود · {clock}")
-    else:
-        parts = []
-        if sig_n > 0:
-            parts.append(
-                f"📊 دور <b>{tfs_label}</b>\n"
-                f"✅ سیگنال جدید: <b>{sig_n}</b>"
-            )
+    # گزارش دور فقط یک‌بار و فقط وقتی نتیجه کندل قبلی هست (بدون heartbeat خالی)
+    # کلید ضد-تکرار بر اساس TF + بازهٔ کندل
+    report_key = (tfs_label, tuple(sorted((x.get("symbol"), x.get("tf"), x.get("candle_ts")) for x in evaluated)))
+    global _last_cycle_report_key
+    if evaluated and report_key != _last_cycle_report_key:
         wr = format_winrate_report(evaluated)
         if wr:
-            if parts:
-                parts.append("┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄")
-            parts.append(wr)
-        if parts:
-            send_telegram_text("\n".join(parts))
+            send_telegram_text(wr)
+            _last_cycle_report_key = report_key
+            log.info("cycle report sent | evaluated=%d sig_n=%d", len(evaluated), sig_n)
+    elif sig_n == 0 and not evaluated:
+        log.info("دور %s · سیگنالی نبود · %s (بدون پیام تلگرام)", tfs_label, clock)
 
     for k in stats:
         stats[k] = 0
@@ -3409,12 +3357,13 @@ async def main() -> None:
             if scan_key == last_scan_key:
                 await asyncio.sleep(5)
                 continue
+            # قبل از شروع قفل کن تا دوبار پشت‌هم همان کندل اجرا نشود
+            last_scan_key = scan_key
             await asyncio.sleep(1)
             try:
                 await one_cycle(tfs)
             except Exception as e:
                 log.error("Cycle error: %s", e)
-            last_scan_key = scan_key
         else:
             pre_tfs = pre_alert_tfs_now()
             if pre_tfs:
