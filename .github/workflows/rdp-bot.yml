@@ -43,6 +43,10 @@ jobs:
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           CHAT_ID: ${{ secrets.CHAT_ID }}
+          AUTO_TRADE: ${{ secrets.AUTO_TRADE }}
+          AUTO_TRADE_DRY_RUN: ${{ secrets.AUTO_TRADE_DRY_RUN }}
+          LBANK_API_KEY: ${{ secrets.LBANK_API_KEY }}
+          LBANK_API_SECRET: ${{ secrets.LBANK_API_SECRET }}
         shell: pwsh
         run: |
           Set-Location $env:GITHUB_WORKSPACE
