@@ -27,7 +27,7 @@ STATE_FILE = os.path.join(BASE_DIR, "bot_state.json")
 
 # ========================= VERSION / CHANGELOG =========================
 # هر بار اپدیت: BOT_VERSION را بالا ببر و یک خط در CHANGELOG[نسخه] اضافه کن.
-BOT_VERSION = "1.12.1"
+BOT_VERSION = "1.12.2"
 CHANGELOG = {
     "1.12.0": [
         "اتوترید سِل: مارجین ۱ USDT · اهرم ۱۰ · تی‌پی ۳۰٪ روی مارجین · بدون استاپ",
@@ -299,6 +299,7 @@ angle_alert_day: str | None = None
 angle_alert_count_today: int = 0
 pending_signals: list = []
 _last_cycle_report_key = None
+reported_eval_ids: set = set()  # (symbol, tf, candle_ts) already in cycle report
 open_trades: list = []  # پوزیشن‌های اتوترید باز
 trade_history: list = []  # کلوزشده‌ها برای گزارش ساعتی
 _last_trade_report_ts = 0
@@ -850,6 +851,8 @@ def save_state() -> None:
             "open_trades": [t for t in open_trades if t.get("status") == "open"][-50:],
             "trade_history": trade_history[-200:],
             "last_trade_report_ts": _last_trade_report_ts,
+            "last_cycle_report_key": list(_last_cycle_report_key) if _last_cycle_report_key else None,
+            "reported_eval_ids": [list(x) for x in list(reported_eval_ids)[-800:]],
             "kline_blacklist": kline_blacklist,
             "last_known_version": BOT_VERSION,
             "sent_angle_alerts": list(sent_angle_alerts)[-400:],
@@ -881,11 +884,32 @@ def load_state() -> None:
         th = payload.get("trade_history") or []
         if isinstance(th, list):
             trade_history[:] = [t for t in th if isinstance(t, dict)]
-        global _last_trade_report_ts
+        global _last_trade_report_ts, _last_cycle_report_key, reported_eval_ids
         try:
             _last_trade_report_ts = int(payload.get("last_trade_report_ts") or 0)
         except Exception:
             _last_trade_report_ts = 0
+        try:
+            lck = payload.get("last_cycle_report_key")
+            if isinstance(lck, list) and len(lck) >= 1:
+                # (tfs_label, tuple of triples)
+                tfs_l = lck[0]
+                triples = lck[1] if len(lck) > 1 else []
+                if isinstance(triples, list):
+                    _last_cycle_report_key = (tfs_l, tuple(tuple(x) if isinstance(x, list) else x for x in triples))
+                else:
+                    _last_cycle_report_key = tuple(lck)
+            else:
+                _last_cycle_report_key = None
+        except Exception:
+            _last_cycle_report_key = None
+        try:
+            reported_eval_ids.clear()
+            for item in payload.get("reported_eval_ids") or []:
+                if isinstance(item, (list, tuple)) and len(item) >= 3:
+                    reported_eval_ids.add((str(item[0]), str(item[1]), int(item[2])))
+        except Exception:
+            pass
         bl = payload.get("kline_blacklist") or {}
         kline_blacklist.clear()
         for s, ts in bl.items():
@@ -3000,18 +3024,40 @@ def trade_report_stats() -> dict:
 
 
 def maybe_send_hourly_trade_report(force: bool = False) -> None:
+    """اولین گزارش ~۱۰ دقیقه بعد از استارت؛ بعد هر ۱ ساعت."""
     global _last_trade_report_ts
     if not AUTO_TRADE:
         return
     now = int(time.time())
+    FIRST_DELAY = 600
+    INTERVAL = 3600
     if not force:
         if _last_trade_report_ts == 0:
-            _last_trade_report_ts = now  # شروع تایمر از روشن شدن ربات
+            _last_trade_report_ts = now
+            log.info("AUTO_TRADE report timer armed (first in %ds)", FIRST_DELAY)
+            save_state()
             return
-        if (now - _last_trade_report_ts) < 3600:
+        elapsed = now - _last_trade_report_ts
+        # بعد از arm یا بعد از گزارش قبلی: حداقل FIRST_DELAY برای اول، INTERVAL برای بعدی
+        # اگر trade_history خالی و open خالی و هنوز در پنجرهٔ اول هستیم از arm
+        # ساده‌ترین قانون پایدار:
+        #   همیشه INTERVAL بین دو ارسال؛ ولی اولین arm فقط FIRST_DELAY صبر می‌کند
+        # با متغیر کمکی در state سخت است — از INTERVAL استفاده می‌کنیم برای همه
+        # و FIRST_DELAY فقط برای arm اولیه:
+        #   arm: _last=now
+        #   if elapsed < INTERVAL: return  → اولین بعد از ۱ ساعت می‌آید
+        # کاربر گزارش می‌خواست هر ۱ ساعت — INTERVAL=3600 کافی است
+        # برای اینکه زودتر بفهمد روشن است: FIRST_DELAY برای بار اول
+        # تشخیص بار اول: اگر در trade_history هیچ چیزی با key report_sent نباشد
+        # استفاده از: اگر elapsed >= FIRST_DELAY و _trade_reports_sent == 0
+        if not hasattr(maybe_send_hourly_trade_report, "_sent_count"):
+            maybe_send_hourly_trade_report._sent_count = 0
+        sent = maybe_send_hourly_trade_report._sent_count
+        need = FIRST_DELAY if sent == 0 else INTERVAL
+        if elapsed < need:
             return
+
     st = trade_report_stats()
-    # اگر هنوز هیچ معامله‌ای نبوده، هر ساعت یک خط کوتاه که فعاله
     mode = "DRY" if AUTO_TRADE_DRY_RUN or not LBANK_API_KEY else "LIVE"
     try:
         iran = datetime.now(TEHRAN).strftime("%H:%M")
@@ -3039,7 +3085,15 @@ def maybe_send_hourly_trade_report(force: bool = False) -> None:
         )
     send_telegram_text(msg)
     _last_trade_report_ts = now
-    log.info("HOURLY_TRADE_REPORT net=%.3f closed=%d open=%d", st["net_all"], st["closed_n"], st["open_n"])
+    if not hasattr(maybe_send_hourly_trade_report, "_sent_count"):
+        maybe_send_hourly_trade_report._sent_count = 0
+    maybe_send_hourly_trade_report._sent_count += 1
+    save_state()
+    log.info(
+        "HOURLY_TRADE_REPORT #%d net=%.3f closed=%d open=%d",
+        maybe_send_hourly_trade_report._sent_count, st["net_all"], st["closed_n"], st["open_n"],
+    )
+
 
 
 def manage_open_trades() -> None:
@@ -3770,16 +3824,33 @@ async def one_cycle(tfs: list | None = None) -> None:
     except Exception as e:
         log.error("Angle cycle error: %s", e)
 
-    evaluated = [x for x in pending_signals if x.get("evaluated") and not x.get("reported")]
+    # فقط مواردی که هنوز در گزارش دور نیامده‌اند
+    evaluated = []
+    for x in pending_signals:
+        if not x.get("evaluated"):
+            continue
+        if x.get("reported"):
+            continue
+        eid = (str(x.get("symbol")), str(x.get("tf")), int(x.get("candle_ts") or 0))
+        if eid in reported_eval_ids:
+            x["reported"] = True
+            continue
+        evaluated.append(x)
+
     for x in evaluated:
         x["reported"] = True
+        eid = (str(x.get("symbol")), str(x.get("tf")), int(x.get("candle_ts") or 0))
+        reported_eval_ids.add(eid)
+
+    if len(reported_eval_ids) > 2000:
+        # نگه داشتن آخرین‌ها
+        reported_eval_ids.clear()
 
     sig_n = int(stats.get("signal_ok") or 0)
     tfs_label = ", ".join(tfs) if tfs else "—"
     clock = iran_now().strftime("%H:%M")
 
-    # گزارش دور فقط یک‌بار و فقط وقتی نتیجه کندل قبلی هست (بدون heartbeat خالی)
-    # کلید ضد-تکرار بر اساس TF + بازهٔ کندل
+    # گزارش دور فقط یک‌بار برای این مجموعه سیگنال
     report_key = (tfs_label, tuple(sorted((x.get("symbol"), x.get("tf"), x.get("candle_ts")) for x in evaluated)))
     global _last_cycle_report_key
     if evaluated and report_key != _last_cycle_report_key:
@@ -3800,6 +3871,11 @@ async def one_cycle(tfs: list | None = None) -> None:
     ]
     save_state()
     maybe_send_daily_report()
+    try:
+        manage_open_trades()
+        maybe_send_hourly_trade_report()
+    except Exception as _te:
+        log.debug("auto-trade after cycle: %s", _te)
 
 
 async def main() -> None:
@@ -3814,12 +3890,26 @@ async def main() -> None:
     except Exception as e:
         log.warning("news calendar on start: %s", e)
     send_telegram_text(format_startup_message())
+    if AUTO_TRADE:
+        log.info(
+            "AUTO_TRADE enabled dry=%s key=%s",
+            AUTO_TRADE_DRY_RUN or not LBANK_API_KEY,
+            "yes" if LBANK_API_KEY else "no",
+        )
+        # تایمر گزارش را مسلح کن
+        maybe_send_hourly_trade_report(force=False)
     # اخبار فقط با maybe_send_daily_news (۹ صبح · فقط روز خبر) — نه هنگام استارت
     save_state()
     last_scan_key = None
     last_pre_key = None
     last_news_refresh = time.time()
     while True:
+        # اتوترید: مدیریت پوزیشن + گزارش ساعتی (حتی وقتی سر کندل نیست)
+        try:
+            manage_open_trades()
+            maybe_send_hourly_trade_report()
+        except Exception as _te:
+            log.debug("auto-trade loop: %s", _te)
         maybe_send_daily_report()
         try:
             maybe_send_daily_news()
