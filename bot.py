@@ -6,6 +6,9 @@ from __future__ import annotations
 
 import asyncio
 import json
+import hashlib
+import hmac
+import secrets
 import logging
 import os
 import time
@@ -24,8 +27,12 @@ STATE_FILE = os.path.join(BASE_DIR, "bot_state.json")
 
 # ========================= VERSION / CHANGELOG =========================
 # هر بار اپدیت: BOT_VERSION را بالا ببر و یک خط در CHANGELOG[نسخه] اضافه کن.
-BOT_VERSION = "1.11.1"
+BOT_VERSION = "1.12.1"
 CHANGELOG = {
+    "1.12.0": [
+        "اتوترید سِل: مارجین ۱ USDT · اهرم ۱۰ · تی‌پی ۳۰٪ روی مارجین · بدون استاپ",
+        "پیش‌فرض DRY_RUN=true تا کلید API و تست امن انجام شود",
+    ],
     "1.11.1": [
         "خط استاتیک حمایت/مقاومت: کف گذشته≈سقف الان یا سقف گذشته≈کف الان",
         "بک‌گراند چارت ساختار سفید",
@@ -189,6 +196,23 @@ TOP_GAINERS = 30
 TOP_VOLUME = 50
 SEND_CHART = True
 ONLY_SELL = False
+
+# ========================= AUTO TRADE (LBank Futures) =========================
+# کلیدها را فقط از env بگذار (هرگز داخل فایل هاردکد نکن)
+#   LBANK_API_KEY / LBANK_API_SECRET
+# یا در GitHub Secrets همین نام‌ها
+AUTO_TRADE = os.environ.get("AUTO_TRADE", "0").strip() in ("1", "true", "True", "yes")
+AUTO_TRADE_DRY_RUN = os.environ.get("AUTO_TRADE_DRY_RUN", "1").strip() not in ("0", "false", "False", "no")
+LBANK_API_KEY = os.environ.get("LBANK_API_KEY", "").strip()
+LBANK_API_SECRET = os.environ.get("LBANK_API_SECRET", "").strip()
+TRADE_MARGIN_USDT = float(os.environ.get("TRADE_MARGIN_USDT", "1"))   # مارجین به تتر
+TRADE_LEVERAGE = int(os.environ.get("TRADE_LEVERAGE", "10"))           # اهرم
+TRADE_TP_PCT = float(os.environ.get("TRADE_TP_PCT", "30"))             # سود روی مارجین ٪
+TRADE_ONLY_SELL = True   # طبق درخواست: فقط سِل
+TRADE_NO_SL = True       # بدون استاپ‌لاس
+# با اهرم ۱۰، تی‌پی ۳۰٪ مارجین ≈ ۳٪ حرکت قیمت به نفع سِل
+PERP_BASE = "https://lbkperp.lbank.com"
+
 ALWAYS_INCLUDE = ["BTCUSDT", "XAUTUSDT"]
 # نمادهایی که NO_KLINE شدند تا این مدت دوباره چک نشوند (ثانیه) — ۲۴ ساعت
 BLACKLIST_TTL_SEC = 24 * 3600
@@ -275,6 +299,9 @@ angle_alert_day: str | None = None
 angle_alert_count_today: int = 0
 pending_signals: list = []
 _last_cycle_report_key = None
+open_trades: list = []  # پوزیشن‌های اتوترید باز
+trade_history: list = []  # کلوزشده‌ها برای گزارش ساعتی
+_last_trade_report_ts = 0
 last_daily_report_day = None
 last_known_version: str | None = None
 futures_last_map: dict = {}
@@ -820,6 +847,9 @@ def save_state() -> None:
             "daily": daily,
             "last_daily_report_day": last_daily_report_day,
             "pending": pending_signals[-500:],
+            "open_trades": [t for t in open_trades if t.get("status") == "open"][-50:],
+            "trade_history": trade_history[-200:],
+            "last_trade_report_ts": _last_trade_report_ts,
             "kline_blacklist": kline_blacklist,
             "last_known_version": BOT_VERSION,
             "sent_angle_alerts": list(sent_angle_alerts)[-400:],
@@ -845,6 +875,17 @@ def load_state() -> None:
         last_daily_report_day = payload.get("last_daily_report_day")
         last_known_version = payload.get("last_known_version")
         pending_signals[:] = payload.get("pending") or []
+        ot = payload.get("open_trades") or []
+        if isinstance(ot, list):
+            open_trades[:] = [t for t in ot if isinstance(t, dict)]
+        th = payload.get("trade_history") or []
+        if isinstance(th, list):
+            trade_history[:] = [t for t in th if isinstance(t, dict)]
+        global _last_trade_report_ts
+        try:
+            _last_trade_report_ts = int(payload.get("last_trade_report_ts") or 0)
+        except Exception:
+            _last_trade_report_ts = 0
         bl = payload.get("kline_blacklist") or {}
         kline_blacklist.clear()
         for s, ts in bl.items():
@@ -879,6 +920,11 @@ def format_startup_message() -> str:
     prev = last_known_version
     is_update = prev is not None and prev != BOT_VERSION
     lines = [f"✅ ربات روشن شد — <b>v{BOT_VERSION}</b>"]
+    if AUTO_TRADE:
+        mode = "DRY_RUN (تست)" if AUTO_TRADE_DRY_RUN or not LBANK_API_KEY else "LIVE"
+        lines.append(
+            f"🤖 اتوترید سِل: {mode} · {TRADE_MARGIN_USDT}U · {TRADE_LEVERAGE}x · TP {TRADE_TP_PCT}% مارجین · بدون SL"
+        )
     if is_update:
         lines.append(f"📦 اپدیت از <code>v{prev}</code> → <code>v{BOT_VERSION}</code>")
         lines.append("━━━━━━━━━━━━━━━━")
@@ -2709,6 +2755,314 @@ async def fetch_klines(symbol: str, tf: str, size: int = 50):
     return None, None
 
 
+
+# ========================= LBank Futures Trade Client =========================
+def _perp_sign(params: dict) -> tuple[dict, dict]:
+    """امضای HmacSHA256 طبق داک قرارداد ال‌بانک."""
+    ts = str(int(time.time() * 1000))
+    echo = secrets.token_hex(16)  # 32 chars
+    payload = dict(params)
+    payload["api_key"] = LBANK_API_KEY
+    payload["timestamp"] = ts
+    payload["signature_method"] = "HmacSHA256"
+    payload["echostr"] = echo
+    # sort by key
+    items = sorted((k, str(v)) for k, v in payload.items() if v is not None and k != "sign")
+    query = "&".join(f"{k}={v}" for k, v in items)
+    md5_upper = hashlib.md5(query.encode("utf-8")).hexdigest().upper()
+    sign = hmac.new(
+        LBANK_API_SECRET.encode("utf-8"),
+        md5_upper.encode("utf-8"),
+        hashlib.sha256,
+    ).hexdigest().lower()
+    payload["sign"] = sign
+    headers = {
+        "Content-Type": "application/json",
+        "timestamp": ts,
+        "signature_method": "HmacSHA256",
+        "echostr": echo,
+    }
+    return payload, headers
+
+
+def _perp_post(path: str, params: dict) -> dict | None:
+    if not LBANK_API_KEY or not LBANK_API_SECRET:
+        log.warning("AUTO_TRADE: API key/secret missing")
+        return None
+    body, headers = _perp_sign(params)
+    url = PERP_BASE.rstrip("/") + path
+    try:
+        r = requests.post(url, json=body, headers=headers, timeout=15)
+        try:
+            data = r.json()
+        except Exception:
+            data = {"raw": r.text, "status_code": r.status_code}
+        log.info("PERP POST %s -> %s %s", path, r.status_code, str(data)[:300])
+        return data if isinstance(data, dict) else {"data": data}
+    except Exception as e:
+        log.warning("PERP POST %s error: %s", path, e)
+        return None
+
+
+def trade_qty_from_margin(symbol: str, price: float) -> float | None:
+    """حجم پایه از مارجین ۱ USDT و اهرم ۱۰ → notional = margin * leverage."""
+    if not price or price <= 0:
+        return None
+    notional = TRADE_MARGIN_USDT * TRADE_LEVERAGE  # e.g. 10 USDT
+    qty = notional / price
+    # گرد کردن ساده
+    if qty >= 1:
+        qty = float(f"{qty:.4f}")
+    elif qty >= 0.01:
+        qty = float(f"{qty:.6f}")
+    else:
+        qty = float(f"{qty:.8f}")
+    return qty if qty > 0 else None
+
+
+def tp_price_for_sell(entry: float) -> float:
+    """سِل: سود ۳۰٪ روی مارجین با اهرم L → حرکت قیمت ≈ TP/L."""
+    move = (TRADE_TP_PCT / 100.0) / max(TRADE_LEVERAGE, 1)
+    return entry * (1.0 - move)
+
+
+def open_sell_trade(symbol: str, entry_price: float, tf: str) -> dict | None:
+    """باز کردن سِل ۱ USDT @ 10x — یا DRY_RUN."""
+    if not AUTO_TRADE:
+        return None
+    if TRADE_ONLY_SELL is False:
+        pass
+    # جلوگیری از پوزیشن تکراری روی همان نماد
+    for t in open_trades:
+        if t.get("symbol") == symbol and t.get("status") == "open":
+            log.info("AUTO_TRADE skip duplicate open %s", symbol)
+            return None
+    qty = trade_qty_from_margin(symbol, entry_price)
+    if not qty:
+        log.warning("AUTO_TRADE bad qty %s px=%s", symbol, entry_price)
+        return None
+    tp = tp_price_for_sell(entry_price)
+    rec = {
+        "symbol": symbol,
+        "side": "SELL",
+        "tf": tf,
+        "entry": float(entry_price),
+        "qty": float(qty),
+        "margin": TRADE_MARGIN_USDT,
+        "leverage": TRADE_LEVERAGE,
+        "tp_price": float(tp),
+        "tp_pct_margin": TRADE_TP_PCT,
+        "opened_at": int(time.time()),
+        "status": "open",
+        "dry_run": AUTO_TRADE_DRY_RUN,
+        "order_id": None,
+    }
+    if AUTO_TRADE_DRY_RUN or not LBANK_API_KEY:
+        rec["order_id"] = f"DRY-{symbol}-{int(time.time())}"
+        open_trades.append(rec)
+        msg = (
+            f"🤖 <b>اتوترید سِل (DRY)</b>\n"
+            f"<b>{symbol}</b> · {tf}\n"
+            f"ورود ≈ <code>{entry_price:.6g}</code>\n"
+            f"حجم ≈ <code>{qty}</code> · مارجین {TRADE_MARGIN_USDT}U · اهرم {TRADE_LEVERAGE}x\n"
+            f"TP ≈ <code>{tp:.6g}</code> (۳۰٪ روی مارجین · ≈{TRADE_TP_PCT/TRADE_LEVERAGE:.1f}% قیمت)\n"
+            f"بدون استاپ‌لاس"
+        )
+        send_telegram_text(msg)
+        log.info("AUTO_TRADE DRY open SELL %s qty=%s entry=%s tp=%s", symbol, qty, entry_price, tp)
+        return rec
+
+    # Live: set leverage then market short (endpoint may need adjustment per LBank account API)
+    _perp_post("/cfd/openApi/v1/prv/setLeverage", {
+        "symbol": symbol.replace("USDT", "") + "USDT" if not symbol.endswith("USDT") else symbol,
+        "leverage": TRADE_LEVERAGE,
+        "productGroup": "SwapU",
+    })
+    # common place-order attempt — اگر ۴۰۴/خطا داد در لاگ می‌آید؛ DRY را برای تست نگه دار
+    sym = symbol.upper()
+    if not sym.endswith("USDT"):
+        sym = sym + "USDT"
+    data = _perp_post("/cfd/openApi/v1/prv/placeOrder", {
+        "symbol": sym,
+        "productGroup": "SwapU",
+        "side": "sell",
+        "orderType": "market",
+        "volume": qty,
+        "leverage": TRADE_LEVERAGE,
+        "positionSide": "short",
+    })
+    ok = False
+    oid = None
+    if isinstance(data, dict):
+        if data.get("result") in (True, "true", "True") or data.get("error_code") in (0, "0"):
+            ok = True
+            d = data.get("data") or {}
+            oid = d.get("orderId") or d.get("order_id") or d.get("id")
+        else:
+            log.warning("AUTO_TRADE live place failed: %s", data)
+            send_telegram_text(
+                f"⚠️ اتوترید زنده ناموفق برای <b>{symbol}</b>\n"
+                f"<code>{str(data)[:400]}</code>\n"
+                f"احتمالاً endpoint خصوصی فیوچرز ال‌بانک نیاز به تنظیم دارد — DRY_RUN را روشن نگه دار."
+            )
+            return None
+    if not ok:
+        return None
+    rec["order_id"] = oid or f"LIVE-{symbol}-{int(time.time())}"
+    rec["dry_run"] = False
+    open_trades.append(rec)
+    send_telegram_text(
+        f"🤖 <b>اتوترید سِل باز شد</b>\n"
+        f"<b>{symbol}</b> · qty={qty} · entry≈{entry_price:.6g}\n"
+        f"TP≈{tp:.6g} · اهرم {TRADE_LEVERAGE}x · مارجین {TRADE_MARGIN_USDT}U"
+    )
+    return rec
+
+
+def close_sell_trade(rec: dict, px: float, reason: str) -> None:
+    rec["status"] = "closed"
+    rec["closed_at"] = int(time.time())
+    rec["close_px"] = float(px)
+    rec["close_reason"] = reason
+    entry = float(rec["entry"])
+    lev = float(rec.get("leverage") or TRADE_LEVERAGE)
+    margin = float(rec.get("margin") or TRADE_MARGIN_USDT)
+    # ROI روی مارجین برای سِل
+    price_move_pct = (entry - px) / entry * 100.0 if entry else 0.0
+    margin_roi = price_move_pct * lev
+    pnl_usdt = margin * (margin_roi / 100.0)
+    rec["margin_roi"] = margin_roi
+    rec["pnl_usdt"] = pnl_usdt
+    trade_history.append(dict(rec))
+    if len(trade_history) > 500:
+        del trade_history[:-400]
+    tag = "DRY" if rec.get("dry_run") or not LBANK_API_KEY else "LIVE"
+    if rec.get("dry_run") or not LBANK_API_KEY:
+        send_telegram_text(
+            f"✅ <b>کلوز سِل ({tag})</b> {rec['symbol']}\n"
+            f"ورود {entry:.6g} → خروج {px:.6g}\n"
+            f"ROI مارجین ≈ <b>{margin_roi:.1f}%</b> · PnL ≈ <b>{pnl_usdt:+.3f}U</b> · {reason}"
+        )
+        log.info("AUTO_TRADE %s close %s roi=%.1f%% pnl=%.3fU", tag, rec["symbol"], margin_roi, pnl_usdt)
+        return
+    sym = rec["symbol"].upper()
+    data = _perp_post("/cfd/openApi/v1/prv/closePosition", {
+        "symbol": sym,
+        "productGroup": "SwapU",
+        "side": "buy",  # close short
+        "orderType": "market",
+        "volume": rec.get("qty"),
+        "positionSide": "short",
+    })
+    send_telegram_text(
+        f"✅ <b>کلوز سِل (LIVE)</b> {rec['symbol']}\n"
+        f"ورود {entry:.6g} → خروج {px:.6g}\n"
+        f"ROI مارجین ≈ <b>{margin_roi:.1f}%</b> · PnL ≈ <b>{pnl_usdt:+.3f}U</b> · {reason}\n"
+        f"<code>{str(data)[:200] if data else 'no resp'}</code>"
+    )
+
+
+
+def trade_report_stats() -> dict:
+    """جمع سود/ضرر فرضی از تاریخچه + شناور باز."""
+    closed = [t for t in trade_history if t.get("status") == "closed"]
+    wins = [t for t in closed if float(t.get("pnl_usdt") or 0) > 0]
+    losses = [t for t in closed if float(t.get("pnl_usdt") or 0) < 0]
+    profit = sum(float(t.get("pnl_usdt") or 0) for t in wins)
+    loss = sum(float(t.get("pnl_usdt") or 0) for t in losses)  # منفی
+    net_closed = profit + loss
+    # شناور باز
+    unreal = 0.0
+    open_n = 0
+    for rec in open_trades:
+        if rec.get("status") != "open" or rec.get("side") != "SELL":
+            continue
+        open_n += 1
+        px = get_futures_last(rec["symbol"])
+        if not px or px <= 0:
+            continue
+        entry = float(rec["entry"])
+        lev = float(rec.get("leverage") or TRADE_LEVERAGE)
+        margin = float(rec.get("margin") or TRADE_MARGIN_USDT)
+        price_move_pct = (entry - px) / entry * 100.0 if entry else 0.0
+        unreal += margin * (price_move_pct * lev / 100.0)
+    return {
+        "closed_n": len(closed),
+        "win_n": len(wins),
+        "loss_n": len(losses),
+        "profit": profit,
+        "loss": loss,
+        "net_closed": net_closed,
+        "open_n": open_n,
+        "unreal": unreal,
+        "net_all": net_closed + unreal,
+    }
+
+
+def maybe_send_hourly_trade_report(force: bool = False) -> None:
+    global _last_trade_report_ts
+    if not AUTO_TRADE:
+        return
+    now = int(time.time())
+    if not force:
+        if _last_trade_report_ts == 0:
+            _last_trade_report_ts = now  # شروع تایمر از روشن شدن ربات
+            return
+        if (now - _last_trade_report_ts) < 3600:
+            return
+    st = trade_report_stats()
+    # اگر هنوز هیچ معامله‌ای نبوده، هر ساعت یک خط کوتاه که فعاله
+    mode = "DRY" if AUTO_TRADE_DRY_RUN or not LBANK_API_KEY else "LIVE"
+    try:
+        iran = datetime.now(TEHRAN).strftime("%H:%M")
+    except Exception:
+        iran = datetime.utcnow().strftime("%H:%M UTC")
+    if st["closed_n"] == 0 and st["open_n"] == 0:
+        msg = (
+            f"📊 <b>گزارش ساعتی اتوترید ({mode})</b>\n"
+            f"تا این لحظه معامله‌ای ثبت نشده.\n"
+            f"⏰ {iran} ایران"
+        )
+    else:
+        msg = (
+            f"📊 <b>گزارش ساعتی اتوترید ({mode})</b>\n"
+            f"━━━━━━━━━━━━━━━━\n"
+            f"بسته‌شده: <b>{st['closed_n']}</b> "
+            f"(✅{st['win_n']} · ❌{st['loss_n']})\n"
+            f"سود تحقق‌یافته: <b>+{st['profit']:.3f}U</b>\n"
+            f"ضرر تحقق‌یافته: <b>{st['loss']:.3f}U</b>\n"
+            f"خالص بسته: <b>{st['net_closed']:+.3f}U</b>\n"
+            f"باز: <b>{st['open_n']}</b> · شناور: <b>{st['unreal']:+.3f}U</b>\n"
+            f"خالص کل تا الان: <b>{st['net_all']:+.3f}U</b>\n"
+            f"━━━━━━━━━━━━━━━━\n"
+            f"⏰ {iran} ایران"
+        )
+    send_telegram_text(msg)
+    _last_trade_report_ts = now
+    log.info("HOURLY_TRADE_REPORT net=%.3f closed=%d open=%d", st["net_all"], st["closed_n"], st["open_n"])
+
+
+def manage_open_trades() -> None:
+    """هر دور: اگر قیمت به TP سِل رسید کلوز کن (بدون استاپ)."""
+    if not AUTO_TRADE or not open_trades:
+        return
+    for rec in list(open_trades):
+        if rec.get("status") != "open":
+            continue
+        if rec.get("side") != "SELL":
+            continue
+        sym = rec["symbol"]
+        px = get_futures_last(sym)
+        if not px or px <= 0:
+            continue
+        tp = float(rec.get("tp_price") or 0)
+        if tp > 0 and px <= tp:
+            close_sell_trade(rec, px, "TP 30% مارجین")
+    # پاکسازی بسته‌شده‌های قدیمی از رم (state جدا ذخیره می‌شود)
+    open_trades[:] = [t for t in open_trades if t.get("status") == "open" or (int(time.time()) - int(t.get("closed_at") or 0) < 3600)]
+
+
+
 async def process_symbol(symbol: str, tfs_to_check: list) -> None:
     now = int(time.time())
     tfs_to_check = sorted(tfs_to_check, key=lambda x: TF_ORDER.get(x, 99))
@@ -2800,6 +3154,14 @@ async def process_symbol(symbol: str, tfs_to_check: list) -> None:
                 log.warning("structure chart send: %s", e)
         if not sent:
             send_telegram_text(caption)
+        # اتوترید: فقط سِل
+        try:
+            if AUTO_TRADE and sig.get("side") == "SELL":
+                entry = float(sig.get("fut_last") or sig.get("open") or 0)
+                if entry > 0:
+                    open_sell_trade(symbol, entry, tf)
+        except Exception as e:
+            log.warning("AUTO_TRADE open error %s: %s", symbol, e)
         await asyncio.sleep(0.05)
 
 
