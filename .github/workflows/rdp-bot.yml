@@ -38,7 +38,13 @@ jobs:
           } else {
             pip install numpy pandas requests websockets matplotlib
           }
-
+      - name: Restore bot state
+        uses: actions/cache@v4
+        with:
+          path: bot_state.json
+          key: bot-state-${{ github.run_id }}
+          restore-keys: |
+            bot-state-
       - name: Run bot until job timeout (~6h)
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
