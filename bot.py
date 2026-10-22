@@ -27,7 +27,7 @@ STATE_FILE = os.path.join(BASE_DIR, "bot_state.json")
 
 # ========================= VERSION / CHANGELOG =========================
 # هر بار اپدیت: BOT_VERSION را بالا ببر و یک خط در CHANGELOG[نسخه] اضافه کن.
-BOT_VERSION = "1.12.2"
+BOT_VERSION = "1.12.3"
 CHANGELOG = {
     "1.12.0": [
         "اتوترید سِل: مارجین ۱ USDT · اهرم ۱۰ · تی‌پی ۳۰٪ روی مارجین · بدون استاپ",
@@ -210,8 +210,11 @@ TRADE_LEVERAGE = int(os.environ.get("TRADE_LEVERAGE", "10"))           # اهر�
 TRADE_TP_PCT = float(os.environ.get("TRADE_TP_PCT", "30"))             # سود روی مارجین ٪
 TRADE_ONLY_SELL = True   # طبق درخواست: فقط سِل
 TRADE_NO_SL = True       # بدون استاپ‌لاس
+TRADE_AVG_DOWN = True    # در ضرر، با گپ سِل بعدی +۱U میانگین کن
+TRADE_MAX_ADDS = int(os.environ.get("TRADE_MAX_ADDS", "15"))  # سقف دفعات میانگین
 # با اهرم ۱۰، تی‌پی ۳۰٪ مارجین ≈ ۳٪ حرکت قیمت به نفع سِل
 PERP_BASE = "https://lbkperp.lbank.com"
+STATE_BAK = os.path.join(BASE_DIR, "bot_state.bak")
 
 ALWAYS_INCLUDE = ["BTCUSDT", "XAUTUSDT"]
 # نمادهایی که NO_KLINE شدند تا این مدت دوباره چک نشوند (ثانیه) — ۲۴ ساعت
@@ -860,8 +863,14 @@ def save_state() -> None:
             "angle_alert_count_today": angle_alert_count_today,
             "last_news_daily_day": last_news_daily_day,
         }
+        raw = json.dumps(payload, ensure_ascii=False, indent=2)
         with open(STATE_FILE, "w", encoding="utf-8") as f:
-            json.dump(payload, f, ensure_ascii=False, indent=2)
+            f.write(raw)
+        try:
+            with open(STATE_BAK, "w", encoding="utf-8") as f:
+                f.write(raw)
+        except Exception:
+            pass
     except Exception as e:
         log.warning("save_state error: %s", e)
 
@@ -869,11 +878,22 @@ def save_state() -> None:
 def load_state() -> None:
     global last_daily_report_day, last_known_version, last_news_daily_day
     global angle_alert_day, angle_alert_count_today
-    if not os.path.exists(STATE_FILE):
+    payload = None
+    for path_try in (STATE_FILE, STATE_BAK):
+        if not os.path.exists(path_try):
+            continue
+        try:
+            with open(path_try, "r", encoding="utf-8") as f:
+                payload = json.load(f)
+            if payload:
+                log.info("state loaded from %s", path_try)
+                break
+        except Exception as e:
+            log.warning("load_state %s: %s", path_try, e)
+            payload = None
+    if not payload:
         return
     try:
-        with open(STATE_FILE, "r", encoding="utf-8") as f:
-            payload = json.load(f)
         daily.update(payload.get("daily") or {})
         last_daily_report_day = payload.get("last_daily_report_day")
         last_known_version = payload.get("last_known_version")
@@ -2851,16 +2871,83 @@ def tp_price_for_sell(entry: float) -> float:
 
 
 def open_sell_trade(symbol: str, entry_price: float, tf: str) -> dict | None:
-    """باز کردن سِل ۱ USDT @ 10x — یا DRY_RUN."""
+    """سِل ۱U @ اهرم ۱۰. اگر پوزیشن باز در ضرر باشد → میانگین‌گیری (+۱U)."""
     if not AUTO_TRADE:
         return None
-    if TRADE_ONLY_SELL is False:
-        pass
-    # جلوگیری از پوزیشن تکراری روی همان نماد
+    entry_price = float(entry_price)
+    if entry_price <= 0:
+        return None
+
+    # پوزیشن باز هم‌نماد؟
+    existing = None
     for t in open_trades:
-        if t.get("symbol") == symbol and t.get("status") == "open":
+        if t.get("symbol") == symbol and t.get("status") == "open" and t.get("side") == "SELL":
+            existing = t
+            break
+
+    if existing is not None:
+        if not TRADE_AVG_DOWN:
             log.info("AUTO_TRADE skip duplicate open %s", symbol)
             return None
+        adds = int(existing.get("adds") or 0)
+        if adds >= TRADE_MAX_ADDS:
+            log.info("AUTO_TRADE max adds reached %s (%d)", symbol, adds)
+            return None
+        # فقط اگر در ضرر (برای سِل: قیمت فعلی بالاتر از میانگین ورود)
+        avg = float(existing.get("entry") or 0)
+        if avg > 0 and entry_price <= avg * 1.001:
+            # هنوز در سود یا سر‌به‌سر → میانگین نکن
+            log.info("AUTO_TRADE skip avg %s (not in loss entry=%.6g px=%.6g)", symbol, avg, entry_price)
+            return None
+        add_qty = trade_qty_from_margin(symbol, entry_price)
+        if not add_qty:
+            return None
+        old_qty = float(existing.get("qty") or 0)
+        old_margin = float(existing.get("margin") or TRADE_MARGIN_USDT)
+        new_qty = old_qty + add_qty
+        new_margin = old_margin + TRADE_MARGIN_USDT
+        # میانگین وزنی ورود
+        new_entry = (avg * old_qty + entry_price * add_qty) / new_qty if new_qty > 0 else entry_price
+        new_tp = tp_price_for_sell(new_entry)
+        existing["entry"] = float(new_entry)
+        existing["qty"] = float(new_qty)
+        existing["margin"] = float(new_margin)
+        existing["tp_price"] = float(new_tp)
+        existing["adds"] = adds + 1
+        existing["last_add_at"] = int(time.time())
+        existing["last_add_px"] = float(entry_price)
+        existing["tf"] = tf
+        legs = existing.get("legs") or []
+        legs.append({"px": entry_price, "qty": add_qty, "ts": int(time.time()), "tf": tf})
+        existing["legs"] = legs[-20:]
+        if not (AUTO_TRADE_DRY_RUN or not LBANK_API_KEY):
+            # تلاش سفارش واقعی اضافه
+            sym = symbol.upper()
+            _perp_post("/cfd/openApi/v1/prv/placeOrder", {
+                "symbol": sym,
+                "productGroup": "SwapU",
+                "side": "sell",
+                "orderType": "market",
+                "volume": add_qty,
+                "leverage": TRADE_LEVERAGE,
+                "positionSide": "short",
+            })
+        tag = "DRY" if existing.get("dry_run") or AUTO_TRADE_DRY_RUN or not LBANK_API_KEY else "LIVE"
+        send_telegram_text(
+            f"📉 <b>میانگین سِل ({tag})</b> {symbol}\n"
+            f"پله {existing['adds']}+۱ · این ورود <code>{entry_price:.6g}</code>\n"
+            f"میانگین جدید <code>{new_entry:.6g}</code> · مارجین کل <b>{new_margin:.0f}U</b>\n"
+            f"حجم کل ≈ <code>{new_qty}</code> · TP جدید <code>{new_tp:.6g}</code>\n"
+            f"(هدف همچنان ۳۰٪ سود روی مارجین کل)"
+        )
+        log.info(
+            "AUTO_TRADE AVG %s adds=%d entry=%.6g tp=%.6g margin=%.1f",
+            symbol, existing["adds"], new_entry, new_tp, new_margin,
+        )
+        save_state()
+        return existing
+
+    # پوزیشن جدید
     qty = trade_qty_from_margin(symbol, entry_price)
     if not qty:
         log.warning("AUTO_TRADE bad qty %s px=%s", symbol, entry_price)
@@ -2872,37 +2959,37 @@ def open_sell_trade(symbol: str, entry_price: float, tf: str) -> dict | None:
         "tf": tf,
         "entry": float(entry_price),
         "qty": float(qty),
-        "margin": TRADE_MARGIN_USDT,
+        "margin": float(TRADE_MARGIN_USDT),
         "leverage": TRADE_LEVERAGE,
         "tp_price": float(tp),
         "tp_pct_margin": TRADE_TP_PCT,
         "opened_at": int(time.time()),
         "status": "open",
-        "dry_run": AUTO_TRADE_DRY_RUN,
+        "dry_run": AUTO_TRADE_DRY_RUN or not LBANK_API_KEY,
         "order_id": None,
+        "adds": 0,
+        "legs": [{"px": entry_price, "qty": qty, "ts": int(time.time()), "tf": tf}],
     }
     if AUTO_TRADE_DRY_RUN or not LBANK_API_KEY:
         rec["order_id"] = f"DRY-{symbol}-{int(time.time())}"
         open_trades.append(rec)
-        msg = (
+        send_telegram_text(
             f"🤖 <b>اتوترید سِل (DRY)</b>\n"
             f"<b>{symbol}</b> · {tf}\n"
             f"ورود ≈ <code>{entry_price:.6g}</code>\n"
             f"حجم ≈ <code>{qty}</code> · مارجین {TRADE_MARGIN_USDT}U · اهرم {TRADE_LEVERAGE}x\n"
-            f"TP ≈ <code>{tp:.6g}</code> (۳۰٪ روی مارجین · ≈{TRADE_TP_PCT/TRADE_LEVERAGE:.1f}% قیمت)\n"
-            f"بدون استاپ‌لاس"
+            f"TP ≈ <code>{tp:.6g}</code> (۳۰٪ روی مارجین)\n"
+            f"میانگین در ضرر: روشن · بدون استاپ"
         )
-        send_telegram_text(msg)
         log.info("AUTO_TRADE DRY open SELL %s qty=%s entry=%s tp=%s", symbol, qty, entry_price, tp)
+        save_state()
         return rec
 
-    # Live: set leverage then market short (endpoint may need adjustment per LBank account API)
     _perp_post("/cfd/openApi/v1/prv/setLeverage", {
-        "symbol": symbol.replace("USDT", "") + "USDT" if not symbol.endswith("USDT") else symbol,
+        "symbol": symbol if symbol.endswith("USDT") else symbol + "USDT",
         "leverage": TRADE_LEVERAGE,
         "productGroup": "SwapU",
     })
-    # common place-order attempt — اگر ۴۰۴/خطا داد در لاگ می‌آید؛ DRY را برای تست نگه دار
     sym = symbol.upper()
     if not sym.endswith("USDT"):
         sym = sym + "USDT"
@@ -2926,8 +3013,7 @@ def open_sell_trade(symbol: str, entry_price: float, tf: str) -> dict | None:
             log.warning("AUTO_TRADE live place failed: %s", data)
             send_telegram_text(
                 f"⚠️ اتوترید زنده ناموفق برای <b>{symbol}</b>\n"
-                f"<code>{str(data)[:400]}</code>\n"
-                f"احتمالاً endpoint خصوصی فیوچرز ال‌بانک نیاز به تنظیم دارد — DRY_RUN را روشن نگه دار."
+                f"<code>{str(data)[:400]}</code>"
             )
             return None
     if not ok:
@@ -2940,7 +3026,9 @@ def open_sell_trade(symbol: str, entry_price: float, tf: str) -> dict | None:
         f"<b>{symbol}</b> · qty={qty} · entry≈{entry_price:.6g}\n"
         f"TP≈{tp:.6g} · اهرم {TRADE_LEVERAGE}x · مارجین {TRADE_MARGIN_USDT}U"
     )
+    save_state()
     return rec
+
 
 
 def close_sell_trade(rec: dict, px: float, reason: str) -> None:
@@ -2968,6 +3056,7 @@ def close_sell_trade(rec: dict, px: float, reason: str) -> None:
             f"ROI مارجین ≈ <b>{margin_roi:.1f}%</b> · PnL ≈ <b>{pnl_usdt:+.3f}U</b> · {reason}"
         )
         log.info("AUTO_TRADE %s close %s roi=%.1f%% pnl=%.3fU", tag, rec["symbol"], margin_roi, pnl_usdt)
+        save_state()
         return
     sym = rec["symbol"].upper()
     data = _perp_post("/cfd/openApi/v1/prv/closePosition", {
