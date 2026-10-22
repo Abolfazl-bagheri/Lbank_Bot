@@ -1,12 +1,10 @@
 name: LBank Bot
 
-# دستی + هر ۶ ساعت خودکار (UTC)
 on:
   workflow_dispatch:
   schedule:
-    # هر ۶ ساعت: 00:00, 06:00, 12:00, 18:00 به وقت UTC
-    # ≈ 03:30 / 09:30 / 15:30 / 21:30 ایران
-    - cron: "0 */6 * * *"
+    # هر ۵ ساعت تا قبل از تمام شدن timeout ۶ ساعته دوباره بالا بیاید
+    - cron: "0 */5 * * *"
 
 jobs:
   build:
@@ -15,18 +13,20 @@ jobs:
 
     steps:
       - name: Checkout bot code
-        uses: actions/checkout@v5
+        uses: actions/checkout@v4
 
       - name: Restore bot state
-        uses: actions/cache@v5
+        uses: actions/cache@v4
         with:
-          path: bot_state.json
+          path: |
+            bot_state.json
+            bot_state.bak
           key: bot-state-${{ github.run_id }}
           restore-keys: |
             bot-state-
 
       - name: Setup Python
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
@@ -38,19 +38,15 @@ jobs:
           } else {
             pip install numpy pandas requests websockets matplotlib
           }
-      - name: Restore bot state
-        uses: actions/cache@v4
-        with:
-          path: bot_state.json
-          key: bot-state-${{ github.run_id }}
-          restore-keys: |
-            bot-state-
+
       - name: Run bot until job timeout (~6h)
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           CHAT_ID: ${{ secrets.CHAT_ID }}
           AUTO_TRADE: ${{ secrets.AUTO_TRADE }}
           AUTO_TRADE_DRY_RUN: ${{ secrets.AUTO_TRADE_DRY_RUN }}
+          LBANK_API_KEY: ${{ secrets.LBANK_API_KEY }}
+          LBANK_API_SECRET: ${{ secrets.LBANK_API_SECRET }}
         shell: pwsh
         run: |
           Set-Location $env:GITHUB_WORKSPACE
@@ -73,4 +69,14 @@ jobs:
             exit 1
           }
           Write-Host "Token length OK, Chat ID present"
+          Write-Host "AUTO_TRADE=$env:AUTO_TRADE DRY_RUN=$env:AUTO_TRADE_DRY_RUN"
+          if (Test-Path bot_state.json) { Write-Host "state: present" } else { Write-Host "state: none yet" }
           python -u bot.py
+
+      - name: Keep state files for cache save
+        if: always()
+        shell: pwsh
+        run: |
+          if (-not (Test-Path bot_state.json)) { "{}" | Out-File -Encoding utf8 bot_state.json }
+          if (Test-Path bot_state.json) { Copy-Item bot_state.json bot_state.bak -Force }
+          Write-Host "state bytes:" (Get-Item bot_state.json).Length
