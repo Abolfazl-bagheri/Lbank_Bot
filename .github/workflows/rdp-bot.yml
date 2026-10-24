@@ -5,13 +5,12 @@ on:
   schedule:
     # هر ۵ ساعت تا قبل از تمام شدن timeout ۶ ساعته دوباره بالا بیاید
     - cron: "0 */5 * * *"
-permissions:
-  contents: write
 jobs:
   build:
     runs-on: windows-latest
     timeout-minutes: 360
-
+    permissions:
+     contents: write
     steps:
       - name: Checkout bot code
         uses: actions/checkout@v4
