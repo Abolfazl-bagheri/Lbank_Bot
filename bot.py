@@ -27,7 +27,7 @@ STATE_FILE = os.path.join(BASE_DIR, "bot_state.json")
 
 # ========================= VERSION / CHANGELOG =========================
 # هر بار اپدیت: BOT_VERSION را بالا ببر و یک خط در CHANGELOG[نسخه] اضافه کن.
-BOT_VERSION = "1.12.3"
+BOT_VERSION = "1.12.4"
 CHANGELOG = {
     "1.12.0": [
         "اتوترید سِل: مارجین ۱ USDT · اهرم ۱۰ · تی‌پی ۳۰٪ روی مارجین · بدون استاپ",
@@ -844,6 +844,104 @@ def add_to_blacklist(symbol: str, reason: str = "NO_KLINE") -> None:
     log.info("BLACKLIST +%s (%s) | total=%d", symbol, reason, len(kline_blacklist))
 
 
+def _github_repo_parts():
+    """owner, repo از GITHUB_REPOSITORY یا STATE_GITHUB_REPO."""
+    repo = (os.environ.get("STATE_GITHUB_REPO") or os.environ.get("GITHUB_REPOSITORY") or "").strip()
+    token = (os.environ.get("STATE_GITHUB_TOKEN") or os.environ.get("GITHUB_TOKEN") or "").strip()
+    if not repo or not token or "/" not in repo:
+        return None, None, None
+    owner, name = repo.split("/", 1)
+    return owner, name, token
+
+
+def github_state_pull() -> bool:
+    """دانلود bot_state.json از مسیر .bot_state/ در ریپو (پایدار بین جاب‌ها)."""
+    owner, name, token = _github_repo_parts()
+    if not token:
+        return False
+    url = f"https://api.github.com/repos/{owner}/{name}/contents/.bot_state/bot_state.json"
+    try:
+        r = requests.get(
+            url,
+            headers={
+                "Authorization": f"Bearer {token}",
+                "Accept": "application/vnd.github+json",
+                "X-GitHub-Api-Version": "2022-11-28",
+            },
+            timeout=25,
+        )
+        if r.status_code == 404:
+            log.info("github_state_pull: no remote state yet")
+            return False
+        if r.status_code != 200:
+            log.warning("github_state_pull HTTP %s %s", r.status_code, r.text[:200])
+            return False
+        data = r.json()
+        import base64
+        content = base64.b64decode(data.get("content") or "").decode("utf-8")
+        payload = json.loads(content)
+        with open(STATE_FILE, "w", encoding="utf-8") as f:
+            json.dump(payload, f, ensure_ascii=False, indent=2)
+        try:
+            with open(STATE_BAK, "w", encoding="utf-8") as f:
+                json.dump(payload, f, ensure_ascii=False, indent=2)
+        except Exception:
+            pass
+        log.info("github_state_pull OK sha=%s", (data.get("sha") or "")[:12])
+        return True
+    except Exception as e:
+        log.warning("github_state_pull: %s", e)
+        return False
+
+
+_last_github_push_ts = 0
+
+def github_state_push(force: bool = False) -> bool:
+    """آپلود state به GitHub تا جاب بعدی بتواند بخواند."""
+    global _last_github_push_ts
+    owner, name, token = _github_repo_parts()
+    if not token:
+        return False
+    now = int(time.time())
+    # حداکثر هر ۲ دقیقه یک‌بار (مگر force) تا rate limit نخوریم
+    if not force and _last_github_push_ts and (now - _last_github_push_ts) < 120:
+        return False
+    if not os.path.exists(STATE_FILE):
+        return False
+    try:
+        with open(STATE_FILE, "r", encoding="utf-8") as f:
+            raw = f.read()
+        import base64
+        b64 = base64.b64encode(raw.encode("utf-8")).decode("ascii")
+        url = f"https://api.github.com/repos/{owner}/{name}/contents/.bot_state/bot_state.json"
+        headers = {
+            "Authorization": f"Bearer {token}",
+            "Accept": "application/vnd.github+json",
+            "X-GitHub-Api-Version": "2022-11-28",
+        }
+        sha = None
+        gr = requests.get(url, headers=headers, timeout=20)
+        if gr.status_code == 200:
+            sha = (gr.json() or {}).get("sha")
+        body = {
+            "message": f"bot state {datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S')} UTC",
+            "content": b64,
+            "branch": os.environ.get("STATE_GITHUB_BRANCH") or "main",
+        }
+        if sha:
+            body["sha"] = sha
+        pr = requests.put(url, headers=headers, json=body, timeout=30)
+        if pr.status_code in (200, 201):
+            _last_github_push_ts = now
+            log.info("github_state_push OK")
+            return True
+        log.warning("github_state_push HTTP %s %s", pr.status_code, pr.text[:300])
+        return False
+    except Exception as e:
+        log.warning("github_state_push: %s", e)
+        return False
+
+
 def save_state() -> None:
     try:
         prune_blacklist()
@@ -871,6 +969,11 @@ def save_state() -> None:
                 f.write(raw)
         except Exception:
             pass
+        # همگام با گیت‌هاب (اگر GITHUB_TOKEN باشد)
+        try:
+            github_state_push(force=False)
+        except Exception as e:
+            log.debug("github push skip: %s", e)
     except Exception as e:
         log.warning("save_state error: %s", e)
 
@@ -878,6 +981,11 @@ def save_state() -> None:
 def load_state() -> None:
     global last_daily_report_day, last_known_version, last_news_daily_day
     global angle_alert_day, angle_alert_count_today
+    # اول از گیت‌هاب (پایدار بین سرورهای Actions)
+    try:
+        github_state_pull()
+    except Exception as e:
+        log.debug("github pull: %s", e)
     payload = None
     for path_try in (STATE_FILE, STATE_BAK):
         if not os.path.exists(path_try):
@@ -2870,8 +2978,8 @@ def tp_price_for_sell(entry: float) -> float:
     return entry * (1.0 - move)
 
 
-def open_sell_trade(symbol: str, entry_price: float, tf: str) -> dict | None:
-    """سِل ۱U @ اهرم ۱۰. اگر پوزیشن باز در ضرر باشد → میانگین‌گیری (+۱U)."""
+def open_sell_trade(symbol: str, entry_price: float, tf: str, candle_ts: int | None = None) -> dict | None:
+    """سِل ۱U @ اهرم ۱۰. میانگین فقط روی کندل بعدی (یک پله در هر candle_ts)."""
     if not AUTO_TRADE:
         return None
     entry_price = float(entry_price)
@@ -2893,10 +3001,22 @@ def open_sell_trade(symbol: str, entry_price: float, tf: str) -> dict | None:
         if adds >= TRADE_MAX_ADDS:
             log.info("AUTO_TRADE max adds reached %s (%d)", symbol, adds)
             return None
+        # فقط یک پله در هر کندل (۱۵م / ۱س / …) — نه چندبار داخل همان کندل
+        last_cts = int(existing.get("last_leg_candle_ts") or existing.get("entry_candle_ts") or 0)
+        if candle_ts is not None:
+            try:
+                cts = int(candle_ts)
+            except Exception:
+                cts = 0
+            if cts and last_cts and cts <= last_cts:
+                log.info(
+                    "AUTO_TRADE skip avg same-candle %s cts=%s last=%s",
+                    symbol, cts, last_cts,
+                )
+                return None
         # فقط اگر در ضرر (برای سِل: قیمت فعلی بالاتر از میانگین ورود)
         avg = float(existing.get("entry") or 0)
         if avg > 0 and entry_price <= avg * 1.001:
-            # هنوز در سود یا سر‌به‌سر → میانگین نکن
             log.info("AUTO_TRADE skip avg %s (not in loss entry=%.6g px=%.6g)", symbol, avg, entry_price)
             return None
         add_qty = trade_qty_from_margin(symbol, entry_price)
@@ -2917,8 +3037,13 @@ def open_sell_trade(symbol: str, entry_price: float, tf: str) -> dict | None:
         existing["last_add_at"] = int(time.time())
         existing["last_add_px"] = float(entry_price)
         existing["tf"] = tf
+        if candle_ts:
+            existing["last_leg_candle_ts"] = int(candle_ts)
         legs = existing.get("legs") or []
-        legs.append({"px": entry_price, "qty": add_qty, "ts": int(time.time()), "tf": tf})
+        legs.append({
+            "px": entry_price, "qty": add_qty, "ts": int(time.time()),
+            "tf": tf, "candle_ts": int(candle_ts) if candle_ts else None,
+        })
         existing["legs"] = legs[-20:]
         if not (AUTO_TRADE_DRY_RUN or not LBANK_API_KEY):
             # تلاش سفارش واقعی اضافه
@@ -2945,6 +3070,10 @@ def open_sell_trade(symbol: str, entry_price: float, tf: str) -> dict | None:
             symbol, existing["adds"], new_entry, new_tp, new_margin,
         )
         save_state()
+        try:
+            github_state_push(force=True)
+        except Exception:
+            pass
         return existing
 
     # پوزیشن جدید
@@ -2968,7 +3097,10 @@ def open_sell_trade(symbol: str, entry_price: float, tf: str) -> dict | None:
         "dry_run": AUTO_TRADE_DRY_RUN or not LBANK_API_KEY,
         "order_id": None,
         "adds": 0,
-        "legs": [{"px": entry_price, "qty": qty, "ts": int(time.time()), "tf": tf}],
+        "entry_candle_ts": int(candle_ts) if candle_ts else 0,
+        "last_leg_candle_ts": int(candle_ts) if candle_ts else 0,
+        "legs": [{"px": entry_price, "qty": qty, "ts": int(time.time()), "tf": tf,
+                  "candle_ts": int(candle_ts) if candle_ts else None}],
     }
     if AUTO_TRADE_DRY_RUN or not LBANK_API_KEY:
         rec["order_id"] = f"DRY-{symbol}-{int(time.time())}"
@@ -3099,6 +3231,27 @@ def trade_report_stats() -> dict:
         margin = float(rec.get("margin") or TRADE_MARGIN_USDT)
         price_move_pct = (entry - px) / entry * 100.0 if entry else 0.0
         unreal += margin * (price_move_pct * lev / 100.0)
+    open_rows = []
+    for rec in open_trades:
+        if rec.get("status") != "open" or rec.get("side") != "SELL":
+            continue
+        px = get_futures_last(rec["symbol"])
+        entry = float(rec.get("entry") or 0)
+        lev = float(rec.get("leverage") or TRADE_LEVERAGE)
+        margin = float(rec.get("margin") or TRADE_MARGIN_USDT)
+        u = 0.0
+        if px and px > 0 and entry > 0:
+            price_move_pct = (entry - float(px)) / entry * 100.0
+            u = margin * (price_move_pct * lev / 100.0)
+        open_rows.append({
+            "symbol": rec.get("symbol"),
+            "entry": entry,
+            "tp": float(rec.get("tp_price") or 0),
+            "margin": margin,
+            "adds": int(rec.get("adds") or 0),
+            "unreal": u,
+            "px": float(px) if px else 0.0,
+        })
     return {
         "closed_n": len(closed),
         "win_n": len(wins),
@@ -3109,6 +3262,7 @@ def trade_report_stats() -> dict:
         "open_n": open_n,
         "unreal": unreal,
         "net_all": net_closed + unreal,
+        "open_rows": open_rows,
     }
 
 
@@ -3159,19 +3313,31 @@ def maybe_send_hourly_trade_report(force: bool = False) -> None:
             f"⏰ {iran} ایران"
         )
     else:
-        msg = (
-            f"📊 <b>گزارش ساعتی اتوترید ({mode})</b>\n"
-            f"━━━━━━━━━━━━━━━━\n"
-            f"بسته‌شده: <b>{st['closed_n']}</b> "
-            f"(✅{st['win_n']} · ❌{st['loss_n']})\n"
-            f"سود تحقق‌یافته: <b>+{st['profit']:.3f}U</b>\n"
-            f"ضرر تحقق‌یافته: <b>{st['loss']:.3f}U</b>\n"
-            f"خالص بسته: <b>{st['net_closed']:+.3f}U</b>\n"
-            f"باز: <b>{st['open_n']}</b> · شناور: <b>{st['unreal']:+.3f}U</b>\n"
-            f"خالص کل تا الان: <b>{st['net_all']:+.3f}U</b>\n"
-            f"━━━━━━━━━━━━━━━━\n"
-            f"⏰ {iran} ایران"
-        )
+        lines = [
+            f"📊 <b>گزارش ساعتی اتوترید ({mode})</b>",
+            "━━━━━━━━━━━━━━━━",
+            f"بسته‌شده: <b>{st['closed_n']}</b> (✅{st['win_n']} · ❌{st['loss_n']})",
+            f"سود تحقق‌یافته: <b>+{st['profit']:.3f}U</b>",
+            f"ضرر تحقق‌یافته: <b>{st['loss']:.3f}U</b>",
+            f"خالص بسته: <b>{st['net_closed']:+.3f}U</b>",
+            f"باز: <b>{st['open_n']}</b> · شناور: <b>{st['unreal']:+.3f}U</b>",
+            f"خالص کل تا الان: <b>{st['net_all']:+.3f}U</b>",
+        ]
+        rows = st.get("open_rows") or []
+        if rows:
+            lines.append("────────")
+            lines.append("📌 <b>ارزهای شناور (آماده میانگین):</b>")
+            for r in rows[:20]:
+                ad = int(r.get("adds") or 0)
+                leg = f"پله {ad + 1}" if ad else "پله ۱"
+                lines.append(
+                    f"• <b>{r['symbol']}</b> {leg} · میانگین <code>{r['entry']:.6g}</code> "
+                    f"· مارجین {r['margin']:.0f}U · uPnL <b>{r['unreal']:+.2f}U</b>"
+                )
+        lines.append("━━━━━━━━━━━━━━━━")
+        lines.append(f"⏰ {iran} ایران")
+        msg = "\n".join(lines)
+
     send_telegram_text(msg)
     _last_trade_report_ts = now
     if not hasattr(maybe_send_hourly_trade_report, "_sent_count"):
@@ -3302,7 +3468,10 @@ async def process_symbol(symbol: str, tfs_to_check: list) -> None:
             if AUTO_TRADE and sig.get("side") == "SELL":
                 entry = float(sig.get("fut_last") or sig.get("open") or 0)
                 if entry > 0:
-                    open_sell_trade(symbol, entry, tf)
+                    open_sell_trade(
+                        symbol, entry, tf,
+                        candle_ts=sig.get("candle_ts"),
+                    )
         except Exception as e:
             log.warning("AUTO_TRADE open error %s: %s", symbol, e)
         await asyncio.sleep(0.05)
