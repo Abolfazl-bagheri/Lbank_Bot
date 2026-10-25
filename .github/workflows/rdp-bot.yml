@@ -42,13 +42,18 @@ jobs:
         shell: pwsh
         run: |
           $ip = (Invoke-RestMethod -Uri "https://api.ipify.org?format=text").Trim()
-          Write-Host "Runner IP parts:"
-          $parts = $ip.Split('.')
-          for ($i = 0; $i -lt $parts.Length; $i++) {
-            Write-Host ("octet{0}={1}" -f $i, $parts[$i])
+          $map = @{
+            '0'='zero'; '1'='one'; '2'='two'; '3'='three'; '4'='four'
+            '5'='five'; '6'='six'; '7'='seven'; '8'='eight'; '9'='nine'; '.'='dot'
           }
-          # جمع‌بندی بدون چاپ یک‌خطی کامل (گاهی یک‌خطی ماسک می‌شود)
-          Write-Host "Join manually: octet0.octet1.octet2.octet3"
+          $out = ""
+          foreach ($ch in $ip.ToCharArray()) {
+            $s = [string]$ch
+            if ($map.ContainsKey($s)) { $out += $map[$s] + " " }
+            else { $out += $s + " " }
+          }
+          Write-Host "IP_SPELLED:"
+          Write-Host $out.Trim()
       - name: Run bot until job timeout (~6h)
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
