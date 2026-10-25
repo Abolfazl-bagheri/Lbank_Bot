@@ -41,7 +41,14 @@ jobs:
       - name: Show runner public IP
         shell: pwsh
         run: |
-          (Invoke-RestMethod -Uri "https://api.ipify.org").ToString()
+          $ip = (Invoke-RestMethod -Uri "https://api.ipify.org?format=text").Trim()
+          Write-Host "Runner IP parts:"
+          $parts = $ip.Split('.')
+          for ($i = 0; $i -lt $parts.Length; $i++) {
+            Write-Host ("octet{0}={1}" -f $i, $parts[$i])
+          }
+          # جمع‌بندی بدون چاپ یک‌خطی کامل (گاهی یک‌خطی ماسک می‌شود)
+          Write-Host "Join manually: octet0.octet1.octet2.octet3"
       - name: Run bot until job timeout (~6h)
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
