@@ -38,7 +38,10 @@ jobs:
           } else {
             pip install numpy pandas requests websockets matplotlib
           }
-
+      - name: Show runner public IP
+        shell: pwsh
+        run: |
+          (Invoke-RestMethod -Uri "https://api.ipify.org").ToString()
       - name: Run bot until job timeout (~6h)
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
