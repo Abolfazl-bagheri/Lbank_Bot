@@ -38,28 +38,11 @@ jobs:
           } else {
             pip install numpy pandas requests websockets matplotlib
           }
-      - name: Show runner public IP
-        shell: pwsh
-        run: |
-          $ip = (Invoke-RestMethod -Uri "https://api.ipify.org?format=text").Trim()
-          $map = @{
-            '0'='zero'; '1'='one'; '2'='two'; '3'='three'; '4'='four'
-            '5'='five'; '6'='six'; '7'='seven'; '8'='eight'; '9'='nine'; '.'='dot'
-          }
-          $out = ""
-          foreach ($ch in $ip.ToCharArray()) {
-            $s = [string]$ch
-            if ($map.ContainsKey($s)) { $out += $map[$s] + " " }
-            else { $out += $s + " " }
-          }
-          Write-Host "IP_SPELLED:"
-          Write-Host $out.Trim()
       - name: Run bot until job timeout (~6h)
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           CHAT_ID: ${{ secrets.CHAT_ID }}
-          AUTO_TRADE: ${{ secrets.AUTO_TRADE }}
-          AUTO_TRADE_DRY_RUN: ${{ secrets.AUTO_TRADE_DRY_RUN }}
+          TRADE_MODE: ${{ secrets.TRADE_MODE }}
         
         shell: pwsh
         run: |
