@@ -27,8 +27,13 @@ STATE_FILE = os.path.join(BASE_DIR, "bot_state.json")
 
 # ========================= VERSION / CHANGELOG =========================
 # هر بار اپدیت: BOT_VERSION را بالا ببر و یک خط در CHANGELOG[نسخه] اضافه کن.
-BOT_VERSION = "1.12.4"
+BOT_VERSION = "1.13.0"
 CHANGELOG = {
+    "1.13.0": [
+        "معماری multi-agent: Scout→Filter→Analyst→Risk→Executor→Logger (پوشه agents/)",
+        "سیگنال از مسیر Filter+Analyst؛ TRADE_MODE=off|paper|live برای Executor",
+        "پیش‌فرض TRADE_MODE=off (فقط سیگنال)",
+    ],
     "1.12.0": [
         "اتوترید سِل: مارجین ۱ USDT · اهرم ۱۰ · تی‌پی ۳۰٪ روی مارجین · بدون استاپ",
         "پیش‌فرض DRY_RUN=true تا کلید API و تست امن انجام شود",
@@ -203,6 +208,10 @@ ONLY_SELL = False
 # یا در GitHub Secrets همین نام‌ها
 AUTO_TRADE = os.environ.get("AUTO_TRADE", "0").strip() in ("1", "true", "True", "yes")
 AUTO_TRADE_DRY_RUN = os.environ.get("AUTO_TRADE_DRY_RUN", "1").strip() not in ("0", "false", "False", "no")
+# off = فقط سیگنال | paper = شبیه‌سازی | live = API (نیاز VPS/IP)
+TRADE_MODE = os.environ.get("TRADE_MODE", "off").strip().lower()
+if TRADE_MODE not in ("off", "paper", "live"):
+    TRADE_MODE = "off"
 LBANK_API_KEY = os.environ.get("LBANK_API_KEY", "").strip()
 LBANK_API_SECRET = os.environ.get("LBANK_API_SECRET", "").strip()
 TRADE_MARGIN_USDT = float(os.environ.get("TRADE_MARGIN_USDT", "1"))   # مارجین به تتر
@@ -1072,10 +1081,13 @@ def format_startup_message() -> str:
     prev = last_known_version
     is_update = prev is not None and prev != BOT_VERSION
     lines = [f"✅ ربات روشن شد — <b>v{BOT_VERSION}</b>"]
-    if AUTO_TRADE:
-        mode = "DRY_RUN (تست)" if AUTO_TRADE_DRY_RUN or not LBANK_API_KEY else "LIVE"
+    lines.append(f"🧠 agents · TRADE_MODE=<code>{TRADE_MODE}</code>")
+    if AUTO_TRADE or TRADE_MODE in ("paper", "live"):
+        mode = TRADE_MODE
+        if mode == "off":
+            mode = "paper" if AUTO_TRADE_DRY_RUN or not LBANK_API_KEY else "live"
         lines.append(
-            f"🤖 اتوترید سِل: {mode} · {TRADE_MARGIN_USDT}U · {TRADE_LEVERAGE}x · TP {TRADE_TP_PCT}% مارجین · بدون SL"
+            f"🤖 exec: {mode} · {TRADE_MARGIN_USDT}U · {TRADE_LEVERAGE}x · TP {TRADE_TP_PCT}% مارجین"
         )
     if is_update:
         lines.append(f"📦 اپدیت از <code>v{prev}</code> → <code>v{BOT_VERSION}</code>")
@@ -3402,9 +3414,86 @@ async def process_symbol(symbol: str, tfs_to_check: list) -> None:
         if df is None or len(df) < BB_PERIOD + 2:
             continue
         evaluate_pending_for_df(symbol, tf, df)
-        sig = check_signal(df, symbol, tf)
-        if not sig:
-            continue
+
+        # ----- multi-agent: Filter → Analyst (سیگنال) → Risk/Executor (اختیاری) -----
+        try:
+            from agents.context import SignalContext
+            from agents.filter_agent import run_filter
+            from agents.analyst import run_analyst
+            from agents.risk import run_risk
+            from agents.executor import run_executor
+            from agents.logger_agent import run_logger
+        except ImportError:
+            # fallback اگر پوشه agents کنار bot نباشد
+            sig = check_signal(df, symbol, tf)
+            if not sig:
+                continue
+        else:
+            _fut = get_futures_last(symbol)
+            ctx = SignalContext(
+                symbol=symbol,
+                tf=tf,
+                df=df,
+                fut_last=float(_fut) if _fut else None,
+                kline_source=str(src or ""),
+            )
+            fd = run_filter(
+                ctx,
+                is_blacklisted=is_blacklisted,
+                is_erratic_row=is_erratic_wick_candle,
+                max_drift_pct=8.0,
+            )
+            ctx.filter_decision = fd
+            ctx.add(fd)
+            if not fd.ok:
+                run_logger(ctx, verbose=False)
+                continue
+
+            ad = run_analyst(ctx, check_signal_fn=check_signal)
+            ctx.analyst_decision = ad
+            ctx.add(ad)
+            if not ad.ok:
+                run_logger(ctx, verbose=False)
+                continue
+
+            sig = ctx.analysis
+            if not sig:
+                continue
+
+            # Risk + Executor فقط وقتی TRADE_MODE=paper|live (سیگنال همیشه می‌رود)
+            mode = TRADE_MODE
+            if mode == "off" and AUTO_TRADE:
+                mode = "paper" if AUTO_TRADE_DRY_RUN else "live"
+            if mode in ("paper", "live"):
+                rd = run_risk(
+                    ctx,
+                    only_sell=ONLY_SELL or TRADE_ONLY_SELL,
+                    open_trades=open_trades,
+                )
+                ctx.risk_decision = rd
+                ctx.add(rd)
+                if rd.ok:
+                    def _exec_open(c, plan):
+                        entry = float(plan.get("entry") or 0)
+                        if entry <= 0:
+                            return None
+                        return open_sell_trade(
+                            c.symbol, entry, c.tf,
+                            candle_ts=plan.get("candle_ts") or c.candle_ts,
+                        )
+                    ed = run_executor(
+                        ctx,
+                        mode=mode,
+                        paper_open_fn=_exec_open if mode == "paper" else None,
+                        live_open_fn=_exec_open if mode == "live" else None,
+                    )
+                    ctx.exec_decision = ed
+                    ctx.add(ed)
+                else:
+                    log.info("RISK_BLOCK %s %s | %s", symbol, tf, rd.reasons)
+
+            run_logger(ctx, verbose=False)
+
         try:
             px = float(sig.get("fut_last") or sig["open"])
             st, st_df, st_tf = await structure_for_signal(symbol, tf, px)
@@ -3463,17 +3552,6 @@ async def process_symbol(symbol: str, tfs_to_check: list) -> None:
                 log.warning("structure chart send: %s", e)
         if not sent:
             send_telegram_text(caption)
-        # اتوترید: فقط سِل
-        try:
-            if AUTO_TRADE and sig.get("side") == "SELL":
-                entry = float(sig.get("fut_last") or sig.get("open") or 0)
-                if entry > 0:
-                    open_sell_trade(
-                        symbol, entry, tf,
-                        candle_ts=sig.get("candle_ts"),
-                    )
-        except Exception as e:
-            log.warning("AUTO_TRADE open error %s: %s", symbol, e)
         await asyncio.sleep(0.05)
 
 
