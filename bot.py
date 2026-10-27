@@ -27,8 +27,12 @@ STATE_FILE = os.path.join(BASE_DIR, "bot_state.json")
 
 # ========================= VERSION / CHANGELOG =========================
 # هر بار اپدیت: BOT_VERSION را بالا ببر و یک خط در CHANGELOG[نسخه] اضافه کن.
-BOT_VERSION = "1.13.0"
+BOT_VERSION = "1.13.1"
 CHANGELOG = {
+    "1.13.1": [
+        "رفع: TRADE_MODE=paper بدون AUTO_TRADE هم ورود مجازی می‌زند",
+        "گزارش ساعتی و مدیریت پوزیشن با TRADE_MODE=paper",
+    ],
     "1.13.0": [
         "معماری multi-agent: Scout→Filter→Analyst→Risk→Executor→Logger (پوشه agents/)",
         "سیگنال از مسیر Filter+Analyst؛ TRADE_MODE=off|paper|live برای Executor",
@@ -2990,9 +2994,23 @@ def tp_price_for_sell(entry: float) -> float:
     return entry * (1.0 - move)
 
 
+def trading_enabled() -> bool:
+    """AUTO_TRADE یا TRADE_MODE=paper/live."""
+    return bool(AUTO_TRADE) or TRADE_MODE in ("paper", "live")
+
+
+def is_paper_mode() -> bool:
+    """پوزیشن مجازی؛ سفارش واقعی به ال‌بانک نرود."""
+    if TRADE_MODE == "paper":
+        return True
+    if TRADE_MODE == "live":
+        return False
+    return bool(AUTO_TRADE_DRY_RUN) or not LBANK_API_KEY
+
+
 def open_sell_trade(symbol: str, entry_price: float, tf: str, candle_ts: int | None = None) -> dict | None:
     """سِل ۱U @ اهرم ۱۰. میانگین فقط روی کندل بعدی (یک پله در هر candle_ts)."""
-    if not AUTO_TRADE:
+    if not trading_enabled():
         return None
     entry_price = float(entry_price)
     if entry_price <= 0:
@@ -3057,7 +3075,7 @@ def open_sell_trade(symbol: str, entry_price: float, tf: str, candle_ts: int | N
             "tf": tf, "candle_ts": int(candle_ts) if candle_ts else None,
         })
         existing["legs"] = legs[-20:]
-        if not (AUTO_TRADE_DRY_RUN or not LBANK_API_KEY):
+        if not is_paper_mode():
             # تلاش سفارش واقعی اضافه
             sym = symbol.upper()
             _perp_post("/cfd/openApi/v1/prv/placeOrder", {
@@ -3069,7 +3087,7 @@ def open_sell_trade(symbol: str, entry_price: float, tf: str, candle_ts: int | N
                 "leverage": TRADE_LEVERAGE,
                 "positionSide": "short",
             })
-        tag = "DRY" if existing.get("dry_run") or AUTO_TRADE_DRY_RUN or not LBANK_API_KEY else "LIVE"
+        tag = "PAPER" if existing.get("dry_run") or is_paper_mode() else "LIVE"
         send_telegram_text(
             f"📉 <b>میانگین سِل ({tag})</b> {symbol}\n"
             f"پله {existing['adds']}+۱ · این ورود <code>{entry_price:.6g}</code>\n"
@@ -3106,7 +3124,7 @@ def open_sell_trade(symbol: str, entry_price: float, tf: str, candle_ts: int | N
         "tp_pct_margin": TRADE_TP_PCT,
         "opened_at": int(time.time()),
         "status": "open",
-        "dry_run": AUTO_TRADE_DRY_RUN or not LBANK_API_KEY,
+        "dry_run": is_paper_mode(),
         "order_id": None,
         "adds": 0,
         "entry_candle_ts": int(candle_ts) if candle_ts else 0,
@@ -3114,18 +3132,18 @@ def open_sell_trade(symbol: str, entry_price: float, tf: str, candle_ts: int | N
         "legs": [{"px": entry_price, "qty": qty, "ts": int(time.time()), "tf": tf,
                   "candle_ts": int(candle_ts) if candle_ts else None}],
     }
-    if AUTO_TRADE_DRY_RUN or not LBANK_API_KEY:
-        rec["order_id"] = f"DRY-{symbol}-{int(time.time())}"
+    if is_paper_mode():
+        rec["order_id"] = f"PAPER-{symbol}-{int(time.time())}"
         open_trades.append(rec)
         send_telegram_text(
-            f"🤖 <b>اتوترید سِل (DRY)</b>\n"
+            f"🤖 <b>ورود مجازی PAPER سِل</b>\n"
             f"<b>{symbol}</b> · {tf}\n"
             f"ورود ≈ <code>{entry_price:.6g}</code>\n"
             f"حجم ≈ <code>{qty}</code> · مارجین {TRADE_MARGIN_USDT}U · اهرم {TRADE_LEVERAGE}x\n"
             f"TP ≈ <code>{tp:.6g}</code> (۳۰٪ روی مارجین)\n"
             f"میانگین در ضرر: روشن · بدون استاپ"
         )
-        log.info("AUTO_TRADE DRY open SELL %s qty=%s entry=%s tp=%s", symbol, qty, entry_price, tp)
+        log.info("AUTO_TRADE PAPER open SELL %s qty=%s entry=%s tp=%s", symbol, qty, entry_price, tp)
         save_state()
         return rec
 
@@ -3281,7 +3299,7 @@ def trade_report_stats() -> dict:
 def maybe_send_hourly_trade_report(force: bool = False) -> None:
     """اولین گزارش ~۱۰ دقیقه بعد از استارت؛ بعد هر ۱ ساعت."""
     global _last_trade_report_ts
-    if not AUTO_TRADE:
+    if not trading_enabled():
         return
     now = int(time.time())
     FIRST_DELAY = 600
@@ -3313,7 +3331,7 @@ def maybe_send_hourly_trade_report(force: bool = False) -> None:
             return
 
     st = trade_report_stats()
-    mode = "DRY" if AUTO_TRADE_DRY_RUN or not LBANK_API_KEY else "LIVE"
+    mode = "PAPER" if is_paper_mode() else "LIVE"
     try:
         iran = datetime.now(TEHRAN).strftime("%H:%M")
     except Exception:
@@ -3365,7 +3383,7 @@ def maybe_send_hourly_trade_report(force: bool = False) -> None:
 
 def manage_open_trades() -> None:
     """هر دور: اگر قیمت به TP سِل رسید کلوز کن (بدون استاپ)."""
-    if not AUTO_TRADE or not open_trades:
+    if not trading_enabled() or not open_trades:
         return
     for rec in list(open_trades):
         if rec.get("status") != "open":
