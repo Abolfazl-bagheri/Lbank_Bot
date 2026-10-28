@@ -14,7 +14,10 @@ jobs:
     steps:
       - name: Checkout bot code
         uses: actions/checkout@v4
-
+      - name: Check agents package
+        run: |
+          python -c "from agents.pipeline import run_pipeline_symbol; print('agents OK')"
+          Select-String -Path bot.py -Pattern "BOT_VERSION|run_filter|TRADE_MODE"
       - name: Restore bot state
         uses: actions/cache@v4
         with:
