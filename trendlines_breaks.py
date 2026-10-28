@@ -137,9 +137,9 @@ def render_trendline_chart(
     symbol: str,
     tf: str,
     gap_pct: float | None = None,
-    max_bars: int = 180,
+    max_bars: int = 120,
 ) -> bytes | None:
-    """Dark SolAtlas-style chart bytes (PNG)."""
+    """White chart: green/red candles, 1 solid RES + 1 solid SUP, rest dotted."""
     try:
         import matplotlib
         matplotlib.use("Agg")
@@ -158,84 +158,111 @@ def render_trendline_chart(
         c = plot["c"].astype(float).values
         lines = find_trendlines(plot, max_res=3, max_sup=2)
 
-        fig = plt.figure(figsize=(11.5, 5.8), dpi=140, facecolor="#0a0a0a")
-        ax = fig.add_axes([0.06, 0.10, 0.72, 0.82])
-        ax.set_facecolor("#0a0a0a")
+        # فقط یک خط اصلی پررنگ برای هر سمت
+        primary_res = next((x for x in lines if x["kind"] == "res" and x.get("side_ok") and not x.get("broken")), None)
+        if primary_res is None:
+            primary_res = next((x for x in lines if x["kind"] == "res"), None)
+        primary_sup = next((x for x in lines if x["kind"] == "sup" and x.get("side_ok") and not x.get("broken")), None)
+        if primary_sup is None:
+            primary_sup = next((x for x in lines if x["kind"] == "sup"), None)
+
+        fig = plt.figure(figsize=(11.2, 5.6), dpi=140, facecolor="#ffffff")
+        ax = fig.add_axes([0.07, 0.10, 0.70, 0.82])
+        ax.set_facecolor("#ffffff")
+
+        # عرض بدنه نسبت به تعداد کندل
+        body_w = max(0.35, min(0.7, 28.0 / max(n, 1)))
+        wick_w = max(0.6, body_w * 0.9)
+
         for i in range(n):
-            col = "#e8e8e8" if c[i] >= o[i] else "#e07a5f"
-            ax.plot([i, i], [l[i], h[i]], color=col, lw=0.85)
+            up = c[i] >= o[i]
+            col = "#26a69a" if up else "#ef5350"  # سبز صعود / قرمز نزول
+            # سایه
+            ax.plot([i, i], [l[i], h[i]], color=col, solid_capstyle="round", lw=wick_w, zorder=2)
+            # بدنه
             bot = min(o[i], c[i])
+            height = abs(c[i] - o[i])
+            if height < 1e-15:
+                height = (h[i] - l[i]) * 0.02 + 1e-15
             ax.add_patch(
-                Rectangle((i - 0.32, bot), 0.64, max(abs(c[i] - o[i]), 1e-12), facecolor=col, edgecolor=col, lw=0)
+                Rectangle(
+                    (i - body_w / 2, bot),
+                    body_w,
+                    height,
+                    facecolor=col,
+                    edgecolor=col,
+                    linewidth=0.4,
+                    zorder=3,
+                )
             )
 
         for L in lines:
             is_res = L["kind"] == "res"
-            primary = L["side_ok"] and L.get("broken") is None
+            is_primary = (is_res and L is primary_res) or ((not is_res) and L is primary_sup)
             if is_res:
-                col = "#e63946" if primary else "#9b2226"
-                ls = "-" if primary else "--"
-                lw = 2.0 if primary else 1.15
+                col = "#d32f2f"
             else:
-                col = "#52b788" if primary else "#2d6a4f"
-                ls = "-" if primary else "--"
-                lw = 2.1 if primary else 1.2
+                col = "#2e7d32"
+            if is_primary:
+                ls, lw = "-", 2.15
+            else:
+                ls, lw = ":", 1.15  # نقطه‌چین
             y0 = y_at(L["i0"], L["p0"], L["i1"], L["p1"], 0)
             y1 = y_at(L["i0"], L["p0"], L["i1"], L["p1"], n - 1)
-            ax.plot([0, n - 1], [y0, y1], color=col, lw=lw, ls=ls, solid_capstyle="round", zorder=4)
-            for ti in L["touches"]:
-                if 0 <= ti < n:
-                    ax.scatter(
-                        ti,
-                        y_at(L["i0"], L["p0"], L["i1"], L["p1"], ti),
-                        s=22,
-                        c=col,
-                        zorder=5,
-                        edgecolors="#111",
-                        lw=0.3,
-                    )
-            if L.get("broken") is not None:
+            ax.plot([0, n - 1], [y0, y1], color=col, lw=lw, ls=ls, solid_capstyle="round", zorder=4, alpha=0.95 if is_primary else 0.75)
+            if is_primary:
+                for ti in L["touches"]:
+                    if 0 <= ti < n:
+                        ax.scatter(
+                            ti,
+                            y_at(L["i0"], L["p0"], L["i1"], L["p1"], ti),
+                            s=18,
+                            c=col,
+                            zorder=5,
+                            edgecolors="#333",
+                            lw=0.3,
+                        )
+            if is_primary and L.get("broken") is not None:
                 bi = L["broken"]
                 ax.annotate(
                     "BREAK",
                     xy=(bi, c[bi]),
-                    xytext=(0, 9),
+                    xytext=(0, 8),
                     textcoords="offset points",
                     ha="center",
-                    color="#adb5bd",
+                    color="#555",
                     fontsize=7,
                     fontweight="bold",
                 )
-            if L.get("retest") is not None:
+            if is_primary and L.get("retest") is not None:
                 ri = L["retest"]
                 ax.annotate(
                     "RETEST",
                     xy=(ri, c[ri]),
-                    xytext=(0, -11),
+                    xytext=(0, -10),
                     textcoords="offset points",
                     ha="center",
-                    color="#ffd166",
+                    color="#f9a825",
                     fontsize=7,
                     fontweight="bold",
                 )
 
-        axp = fig.add_axes([0.80, 0.30, 0.18, 0.55])
-        axp.set_facecolor("#141414")
+        # پنل روشن
+        axp = fig.add_axes([0.80, 0.28, 0.18, 0.58])
+        axp.set_facecolor("#f7f7f7")
         axp.set_xticks([])
         axp.set_yticks([])
         for s in axp.spines.values():
-            s.set_color("#333")
-        ar = next((x for x in lines if x["kind"] == "res" and x["side_ok"] and not x.get("broken")), None)
-        asu = next((x for x in lines if x["kind"] == "sup" and x["side_ok"] and not x.get("broken")), None)
+            s.set_color("#cccccc")
         gp = f"{gap_pct:.2f}%" if gap_pct is not None else "—"
-        txt = [f"{symbol} {tf}", f"gap≈{gp}", ""]
-        if ar:
-            away = (ar["y_now"] - c[-1]) / c[-1] * 100
-            txt += ["RES", f"{ar['y_now']:.6g}", f"{ar['n_touch']}t {away:+.1f}%", ""]
-        if asu:
-            away = (c[-1] - asu["y_now"]) / c[-1] * 100
-            txt += ["SUP", f"{asu['y_now']:.6g}", f"{asu['n_touch']}t {away:+.1f}%", ""]
-        txt += ["3+ touch · z0.5", "WIP trendlines"]
+        txt = [f"{symbol}", f"{tf}", f"gap≈{gp}", ""]
+        if primary_res is not None:
+            away = (primary_res["y_now"] - c[-1]) / c[-1] * 100
+            txt += ["RES", f"{primary_res['y_now']:.6g}", f"{primary_res['n_touch']}t {away:+.1f}%", ""]
+        if primary_sup is not None:
+            away = (c[-1] - primary_sup["y_now"]) / c[-1] * 100
+            txt += ["SUP", f"{primary_sup['y_now']:.6g}", f"{primary_sup['n_touch']}t {away:+.1f}%", ""]
+        txt += ["1 solid / rest dotted", "WIP"]
         axp.text(
             0.08,
             0.96,
@@ -244,19 +271,23 @@ def render_trendline_chart(
             va="top",
             ha="left",
             fontsize=8,
-            color="#dee2e6",
+            color="#333333",
             family="monospace",
             linespacing=1.35,
         )
 
         ax.set_xlim(-1, n)
-        ax.tick_params(colors="#6c757d", labelsize=7)
+        # کمی پدینگ عمودی
+        ymin, ymax = float(np.nanmin(l)), float(np.nanmax(h))
+        pad = (ymax - ymin) * 0.04 + 1e-12
+        ax.set_ylim(ymin - pad, ymax + pad)
+        ax.tick_params(colors="#555555", labelsize=7)
         for s in ax.spines.values():
-            s.set_color("#212529")
-        ax.grid(True, color="#151515", lw=0.4)
-        ax.set_title(f"{symbol}  {tf}  ·  trendlines (beta)", color="#dee2e6", fontsize=11, loc="left")
+            s.set_color("#cccccc")
+        ax.grid(True, color="#eeeeee", lw=0.6)
+        ax.set_title(f"{symbol}  {tf}  ·  trendlines (beta)", color="#222222", fontsize=11, loc="left")
         buf = BytesIO()
-        fig.savefig(buf, format="png", facecolor="#0a0a0a")
+        fig.savefig(buf, format="png", facecolor="#ffffff")
         plt.close(fig)
         buf.seek(0)
         return buf.read()
