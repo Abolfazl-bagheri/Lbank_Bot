@@ -32,8 +32,11 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 STATE_FILE = os.path.join(BASE_DIR, "bot_state.json")
 STATE_BAK = os.path.join(BASE_DIR, "bot_state.bak")
 
-BOT_VERSION = "2.0.1"
+BOT_VERSION = "2.1.0"
 CHANGELOG = {
+    "2.1.0": [
+        "چارت احتمال‌گپ → استایل SolAtlas (خط‌روند شکست/بازتست) — هنوز ناقص",
+    ],
     "2.0.0": [
         "ربات خلوت: فقط ۶ agent + گپ + احتمال‌گپ + اتوترید",
         "سیگنال فقط متن؛ چارت فقط روی احتمال گپ (BB)",
@@ -497,42 +500,21 @@ def format_signal_message(sig: dict) -> str:
 
 
 def make_gap_chart(df: pd.DataFrame, symbol: str, tf: str, sig: dict | None = None) -> bytes | None:
+    """احتمال‌گپ: چارت SolAtlas-style از trendlines_breaks (WIP)."""
     try:
-        import matplotlib
-        matplotlib.use("Agg")
-        import matplotlib.pyplot as plt
-        from matplotlib.patches import Rectangle
-    except ImportError:
-        return None
-    try:
-        plot = df.tail(40).reset_index(drop=True)
-        n = len(plot)
-        if n < 8:
-            return None
-        o, h, l, c = plot["o"].astype(float).values, plot["h"].astype(float).values, plot["l"].astype(float).values, plot["c"].astype(float).values
-        upper, lower, sma = plot["upper"].astype(float).values, plot["lower"].astype(float).values, plot["sma"].astype(float).values
-        ub = float(upper[-1])
-        entry = float((sig or {}).get("fut_last") or (sig or {}).get("open") or o[-1])
-        gap_pct = (entry - ub) / entry * 100.0 if entry else 0.0
-        fig, ax = plt.subplots(figsize=(9.5, 4.6), dpi=130, facecolor="#ffffff")
-        x = np.arange(n)
-        ax.fill_between(x, lower, upper, color="#90caf9", alpha=0.25)
-        ax.plot(x, upper, color="#1976d2", lw=1.0)
-        ax.plot(x, lower, color="#1976d2", lw=1.0)
-        ax.plot(x, sma, color="#f9a825", lw=1.0)
-        for i in range(n):
-            color = "#26a69a" if c[i] >= o[i] else "#ef5350"
-            ax.plot([i, i], [l[i], h[i]], color=color, lw=1.0)
-            bot = min(o[i], c[i])
-            ax.add_patch(Rectangle((i - 0.3, bot), 0.6, max(abs(c[i] - o[i]), 1e-12), facecolor=color, edgecolor=color))
-        ax.axhline(ub, color="#1565c0", ls="--", lw=0.9)
-        ax.set_title(f"{symbol} {tf}  |  gap≈{gap_pct:.2f}%", fontsize=11)
-        ax.grid(True, color="#eeeeee", lw=0.6)
-        buf = BytesIO()
-        fig.savefig(buf, format="png", facecolor="#ffffff")
-        plt.close(fig)
-        buf.seek(0)
-        return buf.read()
+        try:
+            from trendlines_breaks import render_trendline_chart
+        except ImportError:
+            from agents.trendlines_breaks import render_trendline_chart
+        entry = float((sig or {}).get("fut_last") or (sig or {}).get("open") or df.iloc[-1]["c"])
+        ub = None
+        if "upper" in df.columns:
+            try:
+                ub = float(df.iloc[-1]["upper"])
+            except Exception:
+                ub = None
+        gap_pct = ((entry - ub) / entry * 100.0) if ub and entry and ub == ub else None
+        return render_trendline_chart(df, symbol, tf, gap_pct=gap_pct, max_bars=180)
     except Exception as e:
         log.debug("chart: %s", e)
         return None
@@ -830,7 +812,7 @@ async def pre_alert_cycle(tfs: list | None = None) -> None:
             if is_blacklisted(symbol):
                 continue
             try:
-                df, _ = await fetch_klines(symbol, tf, size=60)
+                df, _ = await fetch_klines(symbol, tf, size=150)
                 if df is None or len(df) < BB_PERIOD + 2:
                     continue
                 cur = df.iloc[-1]
