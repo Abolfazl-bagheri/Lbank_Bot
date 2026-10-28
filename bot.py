@@ -32,7 +32,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 STATE_FILE = os.path.join(BASE_DIR, "bot_state.json")
 STATE_BAK = os.path.join(BASE_DIR, "bot_state.bak")
 
-BOT_VERSION = "2.1.0"
+BOT_VERSION = "2.1.1"
 CHANGELOG = {
     "2.1.0": [
         "چارت احتمال‌گپ → استایل SolAtlas (خط‌روند شکست/بازتست) — هنوز ناقص",
@@ -94,6 +94,8 @@ trade_history: list = []
 pending_signals: list = []
 stats = {"checked": 0, "signal_ok": 0, "skip_age": 0, "skip_no_gap": 0, "skip_dup": 0}
 _last_trade_report_ts = 0
+_last_daily_report_date = ""
+PAPER_START_BALANCE = float(os.getenv("PAPER_START_BALANCE", "100"))
 _last_github_push_ts = 0
 last_known_version = None
 
@@ -199,6 +201,7 @@ def save_state() -> None:
             "pending": pending_signals[-300:],
             "kline_blacklist": kline_blacklist,
             "last_trade_report_ts": _last_trade_report_ts,
+            "last_daily_report_date": _last_daily_report_date,
             "last_known_version": BOT_VERSION,
         }
         raw = json.dumps(payload, ensure_ascii=False, indent=2)
@@ -215,7 +218,7 @@ def save_state() -> None:
 
 
 def load_state() -> None:
-    global last_known_version, _last_trade_report_ts
+    global last_known_version, _last_trade_report_ts, _last_daily_report_date
     try:
         github_state_pull()
     except Exception:
@@ -235,6 +238,7 @@ def load_state() -> None:
         kline_blacklist.clear()
         kline_blacklist.update(payload.get("kline_blacklist") or {})
         _last_trade_report_ts = int(payload.get("last_trade_report_ts") or 0)
+        _last_daily_report_date = str(payload.get("last_daily_report_date") or "")
         last_known_version = payload.get("last_known_version")
         log.info("State loaded open=%d hist=%d", len(open_trades), len(trade_history))
     except Exception as e:
@@ -499,6 +503,41 @@ def format_signal_message(sig: dict) -> str:
     )
 
 
+
+def detect_fake_break_watch(df: pd.DataFrame) -> str | None:
+    """حالت الف: اگر فیک‌بریک مقاومت اخیر → فقط هشدار watch SELL (بدون ورود)."""
+    try:
+        try:
+            from trendlines_breaks import find_trendlines, y_at
+        except ImportError:
+            from agents.trendlines_breaks import find_trendlines, y_at
+        lines = find_trendlines(df.tail(min(150, len(df))).reset_index(drop=True), max_res=2, max_sup=1)
+        c = df["c"].astype(float).values
+        n = len(df)
+        for L in lines:
+            if L.get("kind") != "res":
+                continue
+            bi = L.get("broken")
+            if bi is None:
+                continue
+            age = n - 1 - int(bi)
+            if age < 1 or age > 4:
+                continue
+            # بعد از break آیا کلوز دوباره زیر خط آمده؟
+            yb = y_at(L["i0"], L["p0"], L["i1"], L["p1"], bi)
+            reclaimed = False
+            for i in range(int(bi) + 1, n):
+                y = y_at(L["i0"], L["p0"], L["i1"], L["p1"], i)
+                if c[i] < y * 0.998:
+                    reclaimed = True
+                    break
+            if reclaimed:
+                return f"⚠️ FAKE BREAK مقاومت · watch SELL (age={age})"
+        return None
+    except Exception:
+        return None
+
+
 def make_gap_chart(df: pd.DataFrame, symbol: str, tf: str, sig: dict | None = None) -> bytes | None:
     """احتمال‌گپ: چارت SolAtlas-style از trendlines_breaks (WIP)."""
     try:
@@ -638,6 +677,7 @@ def open_sell_trade(symbol: str, entry_price: float, tf: str, candle_ts: int | N
 
 def close_trade_record(rec: dict, px: float, reason: str) -> None:
     rec["status"] = "closed"
+    rec["closed_at"] = int(time.time())
     rec["close_px"] = float(px)
     entry = float(rec["entry"])
     lev = float(rec.get("leverage") or TRADE_LEVERAGE)
@@ -668,6 +708,28 @@ def manage_open_trades() -> None:
     open_trades[:] = [t for t in open_trades if t.get("status") == "open"]
 
 
+def _sell_upnl(rec: dict, px: float) -> tuple[float, float]:
+    """(pnl_usdt, margin_roi_pct) for open SELL."""
+    entry = float(rec.get("entry") or 0)
+    lev = float(rec.get("leverage") or TRADE_LEVERAGE)
+    margin = float(rec.get("margin") or TRADE_MARGIN_USDT)
+    if entry <= 0 or px <= 0:
+        return 0.0, 0.0
+    margin_roi = ((entry - px) / entry * 100.0) * lev
+    pnl = margin * (margin_roi / 100.0)
+    return pnl, margin_roi
+
+
+def _closed_pnl_since(ts_from: int) -> tuple[float, float, float, int]:
+    closed = [
+        t for t in trade_history
+        if t.get("status") == "closed" and int(t.get("closed_at") or t.get("opened_at") or 0) >= ts_from
+    ]
+    profit = sum(float(t.get("pnl_usdt") or 0) for t in closed if float(t.get("pnl_usdt") or 0) > 0)
+    loss = sum(float(t.get("pnl_usdt") or 0) for t in closed if float(t.get("pnl_usdt") or 0) < 0)
+    return profit, loss, profit + loss, len(closed)
+
+
 def maybe_send_hourly_trade_report() -> None:
     global _last_trade_report_ts
     if not trading_enabled():
@@ -679,17 +741,86 @@ def maybe_send_hourly_trade_report() -> None:
     if now - _last_trade_report_ts < 3600:
         return
     _last_trade_report_ts = now
+
     closed = [t for t in trade_history if t.get("status") == "closed"]
     profit = sum(float(t.get("pnl_usdt") or 0) for t in closed if float(t.get("pnl_usdt") or 0) > 0)
     loss = sum(float(t.get("pnl_usdt") or 0) for t in closed if float(t.get("pnl_usdt") or 0) < 0)
+    net = profit + loss
+    mode = "PAPER" if is_paper_mode() else "LIVE"
+
+    open_upnl = 0.0
+    open_lines = []
+    for rec in open_trades[:15]:
+        if rec.get("status") != "open":
+            continue
+        sym = rec.get("symbol") or "?"
+        px = get_futures_last(sym) or 0.0
+        pnl, roi = _sell_upnl(rec, float(px)) if px else (0.0, 0.0)
+        open_upnl += pnl
+        pele = int(rec.get("adds") or 0) + 1
+        if pnl >= 0:
+            mark = f"🟢 <b>{pnl:+.2f}U</b> ({roi:+.1f}%)"
+        else:
+            mark = f"🔴 <b>{pnl:+.2f}U</b> ({roi:+.1f}%)"
+        open_lines.append(f"• {sym} · پله {pele} · {mark}")
+
     lines = [
-        f"📊 <b>گزارش PAPER/LIVE</b> · {iran_now().strftime('%H:%M')}",
-        f"بسته {len(closed)} · سود {profit:+.2f}U · ضرر {loss:+.2f}U · خالص {profit + loss:+.2f}U",
-        f"باز: {len(open_trades)}",
+        f"📊 <b>گزارش {mode}</b> · {iran_now().strftime('%H:%M')}",
+        f"بسته: {len(closed)}",
+        f"🟢 سود بسته: <b>{profit:+.2f}U</b>",
+        f"🔴 ضرر بسته: <b>{loss:+.2f}U</b>",
+        f"خالص بسته: <b>{net:+.2f}U</b>",
+        f"باز: {len(open_trades)} · uPnL: <b>{open_upnl:+.2f}U</b>",
     ]
-    for t in open_trades[:12]:
-        lines.append(f"• {t.get('symbol')} {float(t.get('entry') or 0):.6g} adds={t.get('adds', 0)}")
+    if open_lines:
+        lines.append("────────")
+        lines.extend(open_lines)
     send_telegram_text("\n".join(lines))
+    save_state()
+
+
+def maybe_send_daily_paper_report() -> None:
+    """گزارش پایان‌روز: موجودی کاغذی بر اساس ترید ۲۴ساعت."""
+    global _last_daily_report_date
+    if not trading_enabled():
+        return
+    from datetime import timedelta
+    now_ir = iran_now()
+    # پنجره ۲۳:۵۰–۲۳:۵۹
+    if not (now_ir.hour == 23 and now_ir.minute >= 50):
+        return
+    day_key = now_ir.strftime("%Y-%m-%d")
+    if _last_daily_report_date == day_key:
+        return
+    _last_daily_report_date = day_key
+
+    since = int(time.time()) - 24 * 3600
+    profit, loss, net, cnt = _closed_pnl_since(since)
+    open_upnl = 0.0
+    for rec in open_trades:
+        if rec.get("status") != "open":
+            continue
+        px = get_futures_last(rec.get("symbol") or "") or 0.0
+        if px:
+            pnl, _ = _sell_upnl(rec, float(px))
+            open_upnl += pnl
+    all_closed_net = sum(float(t.get("pnl_usdt") or 0) for t in trade_history if t.get("status") == "closed")
+    balance = PAPER_START_BALANCE + all_closed_net + open_upnl
+    mode = "PAPER" if is_paper_mode() else "LIVE"
+    send_telegram_text(
+        f"🌙 <b>گزارش روزانه {mode}</b>\n"
+        f"📅 {day_key}\n"
+        f"────────\n"
+        f"در ۲۴ ساعت گذشته:\n"
+        f"معاملات بسته: <b>{cnt}</b>\n"
+        f"🟢 سود: <b>{profit:+.2f}U</b>\n"
+        f"🔴 ضرر: <b>{loss:+.2f}U</b>\n"
+        f"خالص ۲۴س: <b>{net:+.2f}U</b>\n"
+        f"uPnL باز: <b>{open_upnl:+.2f}U</b>\n"
+        f"────────\n"
+        f"💼 موجودی کاغذی تقریبی: <b>{balance:.2f}U</b>\n"
+        f"(شروع {PAPER_START_BALANCE:.0f}U + بسته‌ها + باز)"
+    )
     save_state()
 
 
@@ -839,6 +970,9 @@ async def pre_alert_cycle(tfs: list | None = None) -> None:
                     f"اختلاف تا UB ≈ <b>{diff:.2f}%</b>\n"
                     f"<a href=\"{lbank_futures_url(symbol)}\">ال‌بانک</a>"
                 )
+                fake_note = detect_fake_break_watch(df)
+                if fake_note:
+                    cap = cap + chr(10) + fake_note
                 img = make_gap_chart(df, symbol, tf, {"fut_last": px})
                 if img:
                     send_telegram_photo(img, cap)
@@ -867,6 +1001,7 @@ async def one_cycle(tfs: list | None = None) -> None:
     await asyncio.gather(*[one(s) for s in symbols])
     manage_open_trades()
     maybe_send_hourly_trade_report()
+    maybe_send_daily_paper_report()
     for k in stats:
         stats[k] = 0
     save_state()
