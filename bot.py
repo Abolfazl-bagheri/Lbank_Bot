@@ -32,7 +32,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 STATE_FILE = os.path.join(BASE_DIR, "bot_state.json")
 STATE_BAK = os.path.join(BASE_DIR, "bot_state.bak")
 
-BOT_VERSION = "2.0.0"
+BOT_VERSION = "2.0.1"
 CHANGELOG = {
     "2.0.0": [
         "ربات خلوت: فقط ۶ agent + گپ + احتمال‌گپ + اتوترید",
@@ -48,8 +48,9 @@ CHAT_ID = os.environ.get("CHAT_ID", "").strip()
 TIMEFRAMES = {"15m": "15min", "1h": "1hr", "4h": "4hr"}
 TF_ORDER = {"15m": 0, "1h": 1, "4h": 2}
 PERIOD_SEC = {"15m": 900, "1h": 3600, "4h": 14400}
-OPEN_WINDOW_SEC = {"15m": 150, "1h": 180, "4h": 180}
-PRE_ALERT_BEFORE = {"15m": 180, "1h": 300, "4h": 1200}
+OPEN_WINDOW_SEC = {"15m": 180, "1h": 240, "4h": 300}
+PRE_ALERT_BEFORE = {"15m": 120, "1h": 180, "4h": 600}  # فقط اینقدر قبل از کندل
+SIGNAL_SCAN_SEC = {"15m": 90, "1h": 150, "4h": 180}  # چند ثانیه اول کندل برای اسکن سیگنال
 
 BB_PERIOD = 20
 BB_STD = 2.0
@@ -712,7 +713,14 @@ def maybe_send_hourly_trade_report() -> None:
 
 def timeframes_to_check_now() -> list:
     now = int(time.time())
-    out = [tf for tf, p in PERIOD_SEC.items() if tf in TIMEFRAMES and now % p < 45]
+    out = []
+    for tf, p in PERIOD_SEC.items():
+        if tf not in TIMEFRAMES:
+            continue
+        age = now % p
+        win = SIGNAL_SCAN_SEC.get(tf, 60)
+        if age < win:
+            out.append(tf)
     out.sort(key=lambda x: TF_ORDER.get(x, 99))
     return out
 
@@ -724,11 +732,19 @@ def seconds_until_next_candle() -> int:
 
 
 def pre_alert_tfs_now() -> list:
+    """فقط وقتی تا باز شدن کندل بعدی بین ۱۵ثانیه تا BEFORE مانده؛ بعد از باز شدن صفر."""
     now = int(time.time())
+    # اگر الان وقت سیگنال است، احتمال‌گپ نده
+    if timeframes_to_check_now():
+        return []
     out = []
     for tf, before in PRE_ALERT_BEFORE.items():
         p = PERIOD_SEC.get(tf)
-        if p and now - (now // p) * p >= (p - before):
+        if not p or tf not in TIMEFRAMES:
+            continue
+        remaining = p - (now % p)
+        # فقط داخل پنجره قبل از کندل
+        if 15 <= remaining <= before:
             out.append(tf)
     out.sort(key=lambda x: TF_ORDER.get(x, 99))
     return out
@@ -785,15 +801,16 @@ async def process_symbol(symbol: str, tfs_to_check: list) -> None:
                 continue
             mode = TRADE_MODE
             if mode == "off" and AUTO_TRADE:
-                mode = "paper" if AUTO_TRADE_DRY_RUN else "live"
+                mode = "paper" if is_paper_mode() else "live"
             if mode in ("paper", "live") and sig.get("side") == "SELL":
                 rd = run_risk(ctx, only_sell=True, open_trades=open_trades)
                 ctx.add(rd)
                 if rd.ok:
-                    def _open(c, plan):
-                        return open_sell_trade(c.symbol, float(plan.get("entry") or 0), c.tf, plan.get("candle_ts") or c.candle_ts)
-                    ed = run_executor(ctx, mode=mode, paper_open_fn=_open if mode == "paper" else None, live_open_fn=_open if mode == "live" else None)
-                    ctx.add(ed)
+                    entry = float(sig.get("fut_last") or sig.get("open") or 0)
+                    rec = open_sell_trade(symbol, entry, tf, sig.get("candle_ts"))
+                    log.info("EXEC %s %s entry=%s ok=%s", mode, symbol, entry, bool(rec))
+                else:
+                    log.info("RISK_BLOCK %s %s %s", symbol, tf, rd.reasons)
             run_logger(ctx)
 
         send_telegram_text(format_signal_message(sig))
