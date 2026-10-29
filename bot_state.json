@@ -120,23 +120,6 @@
       "order_id": "PAPER-MCDUSDT-1793271927"
     },
     {
-      "symbol": "HIMSUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 29.71,
-      "qty": 0.336587,
-      "margin": 1.0,
-      "leverage": 10,
-      "tp_price": 28.8187,
-      "tf": "15m",
-      "opened_at": 1793278868,
-      "adds": 0,
-      "entry_candle_ts": 1793278800,
-      "last_leg_candle_ts": 1793278800,
-      "dry_run": true,
-      "order_id": "PAPER-HIMSUSDT-1793278868"
-    },
-    {
       "symbol": "MAGMAUSDT",
       "side": "SELL",
       "status": "open",
@@ -1460,6 +1443,26 @@
       "closed_at": 1793310587,
       "close_px": 0.2594,
       "pnl_usdt": 0.3353204172876307
+    },
+    {
+      "symbol": "HIMSUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 29.71,
+      "qty": 0.336587,
+      "margin": 1.0,
+      "leverage": 10,
+      "tp_price": 28.8187,
+      "tf": "15m",
+      "opened_at": 1793278868,
+      "adds": 0,
+      "entry_candle_ts": 1793278800,
+      "last_leg_candle_ts": 1793278800,
+      "dry_run": true,
+      "order_id": "PAPER-HIMSUSDT-1793278868",
+      "closed_at": 1793315079,
+      "close_px": 28.79,
+      "pnl_usdt": 0.30966004712218165
     }
   ],
   "pending": [
@@ -2458,6 +2461,12 @@
       "tf": "1h",
       "candle_ts": 1793314800,
       "side": "SELL"
+    },
+    {
+      "symbol": "WMTUSDT",
+      "tf": "1h",
+      "candle_ts": 1793314800,
+      "side": "SELL"
     }
   ],
   "kline_blacklist": {
@@ -2498,7 +2507,8 @@
     "SIMOUSDT": 1793350197,
     "SKY1USDT": 1793351970,
     "GMESTOCKUSDT": 1793353780,
-    "STONKBROKERUSDT": 1793357380
+    "STONKBROKERUSDT": 1793357380,
+    "HOTUSDT": 1793358278
   },
   "last_trade_report_ts": 1793314201,
   "last_daily_report_date": "2026-10-29",
