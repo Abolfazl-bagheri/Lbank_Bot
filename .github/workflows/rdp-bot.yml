@@ -46,7 +46,7 @@ jobs:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           CHAT_ID: ${{ secrets.CHAT_ID }}
           TRADE_MODE: ${{ secrets.TRADE_MODE }}
-        
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         shell: pwsh
         run: |
           Set-Location $env:GITHUB_WORKSPACE
