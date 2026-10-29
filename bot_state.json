@@ -271,6 +271,23 @@
       "last_leg_candle_ts": 1793275200,
       "dry_run": true,
       "order_id": "PAPER-UAIUSDT-1793275384"
+    },
+    {
+      "symbol": "BLENDUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.05708,
+      "qty": 175.1927,
+      "margin": 1.0,
+      "leverage": 10,
+      "tp_price": 0.055367599999999996,
+      "tf": "4h",
+      "opened_at": 1793275393,
+      "adds": 0,
+      "entry_candle_ts": 1793275200,
+      "last_leg_candle_ts": 1793275200,
+      "dry_run": true,
+      "order_id": "PAPER-BLENDUSDT-1793275393"
     }
   ],
   "trade_history": [
@@ -607,6 +624,12 @@
     {
       "symbol": "PURRUSDT",
       "tf": "1h",
+      "candle_ts": 1793275200,
+      "side": "SELL"
+    },
+    {
+      "symbol": "UAIUSDT",
+      "tf": "4h",
       "candle_ts": 1793275200,
       "side": "SELL"
     }
