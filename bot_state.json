@@ -237,6 +237,23 @@
       "last_leg_candle_ts": 1793271600,
       "dry_run": true,
       "order_id": "PAPER-MCDUSDT-1793271927"
+    },
+    {
+      "symbol": "HUMAUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.02963,
+      "qty": 337.4958,
+      "margin": 1.0,
+      "leverage": 10,
+      "tp_price": 0.0287411,
+      "tf": "15m",
+      "opened_at": 1793272609,
+      "adds": 0,
+      "entry_candle_ts": 1793272500,
+      "last_leg_candle_ts": 1793272500,
+      "dry_run": true,
+      "order_id": "PAPER-HUMAUSDT-1793272609"
     }
   ],
   "trade_history": [
@@ -516,6 +533,12 @@
     },
     {
       "symbol": "PURRUSDT",
+      "tf": "15m",
+      "candle_ts": 1793272500,
+      "side": "SELL"
+    },
+    {
+      "symbol": "EPICUSDT",
       "tf": "15m",
       "candle_ts": 1793272500,
       "side": "SELL"
