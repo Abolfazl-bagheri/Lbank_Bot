@@ -50,6 +50,23 @@
       "last_leg_candle_ts": 1793265300,
       "dry_run": true,
       "order_id": "PAPER-ORCLUSDT-1793265480"
+    },
+    {
+      "symbol": "TAGUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.0008042,
+      "qty": 12434.7177,
+      "margin": 1.0,
+      "leverage": 10,
+      "tp_price": 0.000780074,
+      "tf": "15m",
+      "opened_at": 1793265486,
+      "adds": 0,
+      "entry_candle_ts": 1793265300,
+      "last_leg_candle_ts": 1793265300,
+      "dry_run": true,
+      "order_id": "PAPER-TAGUSDT-1793265486"
     }
   ],
   "trade_history": [
@@ -95,6 +112,12 @@
     },
     {
       "symbol": "LITEUSDT",
+      "tf": "15m",
+      "candle_ts": 1793265300,
+      "side": "SELL"
+    },
+    {
+      "symbol": "ORCLUSDT",
       "tf": "15m",
       "candle_ts": 1793265300,
       "side": "SELL"
