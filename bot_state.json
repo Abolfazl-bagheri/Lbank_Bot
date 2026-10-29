@@ -781,6 +781,23 @@
       "last_leg_candle_ts": 1793292300,
       "dry_run": true,
       "order_id": "PAPER-JCTUSDT-1793292590"
+    },
+    {
+      "symbol": "PARTIUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.04639,
+      "qty": 215.5637,
+      "margin": 1.0,
+      "leverage": 10,
+      "tp_price": 0.0449983,
+      "tf": "15m",
+      "opened_at": 1793293261,
+      "adds": 0,
+      "entry_candle_ts": 1793293200,
+      "last_leg_candle_ts": 1793293200,
+      "dry_run": true,
+      "order_id": "PAPER-PARTIUSDT-1793293261"
     }
   ],
   "trade_history": [
@@ -1878,6 +1895,12 @@
       "symbol": "JCTUSDT",
       "tf": "15m",
       "candle_ts": 1793292300,
+      "side": "SELL"
+    },
+    {
+      "symbol": "BULLAUSDT",
+      "tf": "15m",
+      "candle_ts": 1793293200,
       "side": "SELL"
     }
   ],
