@@ -390,6 +390,23 @@
       "last_leg_candle_ts": 1793279700,
       "dry_run": true,
       "order_id": "PAPER-HIMSUSDT-1793279857"
+    },
+    {
+      "symbol": "RVNUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.001444,
+      "qty": 6925.2078,
+      "margin": 1.0,
+      "leverage": 10,
+      "tp_price": 0.0014006799999999999,
+      "tf": "15m",
+      "opened_at": 1793279903,
+      "adds": 0,
+      "entry_candle_ts": 1793279700,
+      "last_leg_candle_ts": 1793279700,
+      "dry_run": true,
+      "order_id": "PAPER-RVNUSDT-1793279903"
     }
   ],
   "trade_history": [
@@ -888,6 +905,12 @@
       "tf": "15m",
       "candle_ts": 1793279700,
       "side": "SELL"
+    },
+    {
+      "symbol": "HIMSUSDT",
+      "tf": "15m",
+      "candle_ts": 1793279700,
+      "side": "SELL"
     }
   ],
   "kline_blacklist": {
@@ -916,7 +939,8 @@
     "BIANRENSHENGUSDT": 1793311457,
     "AINBSCUSDT": 1793315947,
     "NIULAIUSDT": 1793319588,
-    "SYNUSDT": 1793321281
+    "SYNUSDT": 1793321281,
+    "CANTONUSDT": 1793323080
   },
   "last_trade_report_ts": 1793278083,
   "last_daily_report_date": "",
