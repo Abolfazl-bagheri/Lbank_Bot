@@ -628,6 +628,23 @@
       "last_leg_candle_ts": 1793284200,
       "dry_run": true,
       "order_id": "PAPER-MUSEBOOKUSDT-1793284333"
+    },
+    {
+      "symbol": "VRTUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 251.92,
+      "qty": 0.039695,
+      "margin": 1.0,
+      "leverage": 10,
+      "tp_price": 244.36239999999998,
+      "tf": "15m",
+      "opened_at": 1793284376,
+      "adds": 0,
+      "entry_candle_ts": 1793284200,
+      "last_leg_candle_ts": 1793284200,
+      "dry_run": true,
+      "order_id": "PAPER-VRTUSDT-1793284376"
     }
   ],
   "trade_history": [
@@ -1505,6 +1522,12 @@
     },
     {
       "symbol": "FLEXUSDT",
+      "tf": "15m",
+      "candle_ts": 1793284200,
+      "side": "SELL"
+    },
+    {
+      "symbol": "GEVUSDT",
       "tf": "15m",
       "candle_ts": 1793284200,
       "side": "SELL"
