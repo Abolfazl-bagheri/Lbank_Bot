@@ -1,23 +1,6 @@
 {
   "open_trades": [
     {
-      "symbol": "PURRUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 11.389581248723415,
-      "qty": 5.267972,
-      "margin": 6.0,
-      "leverage": 10,
-      "tp_price": 11.047893811261712,
-      "tf": "15m",
-      "opened_at": 1793270724,
-      "adds": 5,
-      "entry_candle_ts": 1793270700,
-      "last_leg_candle_ts": 1793290500,
-      "dry_run": true,
-      "order_id": "PAPER-PURRUSDT-1793270724"
-    },
-    {
       "symbol": "SONICUSDT",
       "side": "SELL",
       "status": "open",
@@ -849,6 +832,23 @@
       "last_leg_candle_ts": 1793290500,
       "dry_run": true,
       "order_id": "PAPER-PUMPUSDT-1793290665"
+    },
+    {
+      "symbol": "ZECUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 1365.0,
+      "qty": 0.00732601,
+      "margin": 1.0,
+      "leverage": 10,
+      "tp_price": 1324.05,
+      "tf": "15m",
+      "opened_at": 1793290778,
+      "adds": 0,
+      "entry_candle_ts": 1793290500,
+      "last_leg_candle_ts": 1793290500,
+      "dry_run": true,
+      "order_id": "PAPER-ZECUSDT-1793290778"
     }
   ],
   "trade_history": [
@@ -2006,6 +2006,12 @@
     },
     {
       "symbol": "PUMPUSDT",
+      "tf": "15m",
+      "candle_ts": 1793290500,
+      "side": "SELL"
+    },
+    {
+      "symbol": "FLOKIUSDT",
       "tf": "15m",
       "candle_ts": 1793290500,
       "side": "SELL"
