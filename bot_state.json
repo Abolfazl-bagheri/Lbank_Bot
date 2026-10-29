@@ -531,16 +531,16 @@
       "symbol": "ONDSUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 6.961,
-      "qty": 1.4366,
-      "margin": 1.0,
+      "entry": 6.965996342865105,
+      "qty": 2.8711,
+      "margin": 2.0,
       "leverage": 10,
-      "tp_price": 6.7521700000000004,
+      "tp_price": 6.757016452579151,
       "tf": "15m",
       "opened_at": 1793282569,
-      "adds": 0,
+      "adds": 1,
       "entry_candle_ts": 1793282400,
-      "last_leg_candle_ts": 1793282400,
+      "last_leg_candle_ts": 1793283300,
       "dry_run": true,
       "order_id": "PAPER-ONDSUSDT-1793282569"
     },
@@ -1419,6 +1419,12 @@
     },
     {
       "symbol": "ASTSUSDT",
+      "tf": "15m",
+      "candle_ts": 1793283300,
+      "side": "SELL"
+    },
+    {
+      "symbol": "FLEXUSDT",
       "tf": "15m",
       "candle_ts": 1793283300,
       "side": "SELL"
