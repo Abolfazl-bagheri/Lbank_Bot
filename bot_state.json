@@ -69,23 +69,6 @@
       "order_id": "PAPER-PARTIUSDT-1793265511"
     },
     {
-      "symbol": "MAGMAUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.28581,
-      "qty": 34.9883,
-      "margin": 1.0,
-      "leverage": 10,
-      "tp_price": 0.2772357,
-      "tf": "15m",
-      "opened_at": 1793266227,
-      "adds": 0,
-      "entry_candle_ts": 1793266200,
-      "last_leg_candle_ts": 1793266200,
-      "dry_run": true,
-      "order_id": "PAPER-MAGMAUSDT-1793266227"
-    },
-    {
       "symbol": "BLENDUSDT",
       "side": "SELL",
       "status": "open",
@@ -177,6 +160,26 @@
       "closed_at": 1793267228,
       "close_px": 0.0007651,
       "pnl_usdt": 0.486197463317583
+    },
+    {
+      "symbol": "MAGMAUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.28581,
+      "qty": 34.9883,
+      "margin": 1.0,
+      "leverage": 10,
+      "tp_price": 0.2772357,
+      "tf": "15m",
+      "opened_at": 1793266227,
+      "adds": 0,
+      "entry_candle_ts": 1793266200,
+      "last_leg_candle_ts": 1793266200,
+      "dry_run": true,
+      "order_id": "PAPER-MAGMAUSDT-1793266227",
+      "closed_at": 1793268258,
+      "close_px": 0.27459,
+      "pnl_usdt": 0.392568489555999
     }
   ],
   "pending": [
@@ -245,6 +248,12 @@
       "tf": "15m",
       "candle_ts": 1793268000,
       "side": "SELL"
+    },
+    {
+      "symbol": "PIUSDT",
+      "tf": "1h",
+      "candle_ts": 1793268000,
+      "side": "SELL"
     }
   ],
   "kline_blacklist": {
@@ -269,7 +278,8 @@
     "PORUSDT": 1793304371,
     "TOADUSDT": 1793309541,
     "STONKBROKERUSDT": 1793310350,
-    "IBBETFUSDT": 1793310363
+    "IBBETFUSDT": 1793310363,
+    "BIANRENSHENGUSDT": 1793311457
   },
   "last_trade_report_ts": 1793266472,
   "last_daily_report_date": "",
