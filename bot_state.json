@@ -526,6 +526,23 @@
       "last_leg_candle_ts": 1793281500,
       "dry_run": true,
       "order_id": "PAPER-ASTSUSDT-1793281666"
+    },
+    {
+      "symbol": "GEVUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 887.45,
+      "qty": 0.011268,
+      "margin": 1.0,
+      "leverage": 10,
+      "tp_price": 860.8265,
+      "tf": "15m",
+      "opened_at": 1793281700,
+      "adds": 0,
+      "entry_candle_ts": 1793281500,
+      "last_leg_candle_ts": 1793281500,
+      "dry_run": true,
+      "order_id": "PAPER-GEVUSDT-1793281700"
     }
   ],
   "trade_history": [
@@ -1127,6 +1144,12 @@
     },
     {
       "symbol": "ASTSUSDT",
+      "tf": "15m",
+      "candle_ts": 1793281500,
+      "side": "SELL"
+    },
+    {
+      "symbol": "MRKUSDT",
       "tf": "15m",
       "candle_ts": 1793281500,
       "side": "SELL"
