@@ -20,7 +20,7 @@ import logging
 import os
 import secrets
 import time
-from datetime import datetime
+from datetime import datetime, timezone
 from io import BytesIO
 from zoneinfo import ZoneInfo
 
@@ -34,7 +34,7 @@ STATE_FILE = os.path.join(BASE_DIR, "bot_state.json")
 SIGNALS_FILE = os.path.join(BASE_DIR, "signals.json")
 STATE_BAK = os.path.join(BASE_DIR, "bot_state.bak")
 
-BOT_VERSION = "2.3.1"
+BOT_VERSION = "2.3.2"
 CHANGELOG = {
     "2.1.0": [
         "چارت احتمال‌گپ → استایل SolAtlas (خط‌روند شکست/بازتست) — هنوز ناقص",
@@ -191,7 +191,7 @@ def github_push_file(local_path: str, remote_path: str, force: bool = False) -> 
         if gr.status_code == 200:
             sha = (gr.json() or {}).get("sha")
         body = {
-            "message": f"bot {remote_path} {datetime.utcnow().strftime('%Y-%m-%d %H:%M UTC')}",
+            "message": f"bot {remote_path} {datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC')}",
             "content": b64,
             "branch": os.environ.get("STATE_GITHUB_BRANCH") or "main",
         }
@@ -351,7 +351,12 @@ def get_top_movers(n: int = TOP_GAINERS) -> list:
     gainers = df.nlargest(n, "change")["symbol"].tolist()
     volumes = df.nlargest(TOP_VOLUME, "vol")["symbol"].tolist()
     symbols = list(dict.fromkeys(gainers + volumes + ALWAYS_INCLUDE))
-    return [s for s in symbols if not is_blacklisted(s)]
+    out = [s for s in symbols if not is_blacklisted(s)]
+    log.info(
+        "Movers: gainers=%d volume=%d unique=%d sample=%s",
+        len(gainers), len(volumes), len(out), ",".join(out[:8]),
+    )
+    return out
 
 
 def get_futures_last(symbol: str):
@@ -456,39 +461,51 @@ def is_erratic_wick_candle(row) -> bool:
 
 def check_signal(df: pd.DataFrame, symbol: str, tf: str):
     if len(df) < BB_PERIOD + 2:
+        log.info("SKIP_SHORT %s %s bars=%s", symbol, tf, len(df) if df is not None else 0)
         return None
     cur = df.iloc[-1]
     open_p, high, low, close = float(cur["o"]), float(cur["h"]), float(cur["l"]), float(cur["c"])
     if is_erratic_wick_candle(cur):
         stats["skip_no_gap"] += 1
+        log.info("SKIP_WICK %s %s open=%.6g high=%.6g low=%.6g", symbol, tf, open_p, high, low)
         return None
     upper, lower = float(cur["upper"]), float(cur["lower"])
     if np.isnan(upper) or np.isnan(lower):
+        log.info("SKIP_BB_NAN %s %s", symbol, tf)
         return None
     stats["checked"] += 1
     candle_ts = int(cur["ts"])
     age_sec = int(time.time()) - candle_ts
-    if age_sec < 0 or age_sec > OPEN_WINDOW_SEC.get(tf, 120):
+    max_age = OPEN_WINDOW_SEC.get(tf, 120)
+    if age_sec < 0 or age_sec > max_age:
         stats["skip_age"] += 1
+        log.info(
+            "SKIP_AGE %s %s | age=%ss > window=%ss | open=%.6g upper=%.6g",
+            symbol, tf, age_sec, max_age, open_p, upper,
+        )
         return None
     upper_pen = (high - upper) / upper * 100.0 if upper > 0 else 0.0
     open_gap_pct = (open_p - upper) / open_p * 100.0 if open_p > 0 else 0.0
     side = None
-    # سیگنال نزدیک به احتمال‌گپ: open بالای UB کافی است (+ حداقل فاصله)
     if open_p > upper and open_gap_pct >= MIN_OPEN_GAP_PCT:
         side = "SELL"
     elif open_p > upper and upper_pen >= PENETRATION_PCT:
         side = "SELL"
     if not side or (ONLY_SELL and side != "SELL"):
         stats["skip_no_gap"] += 1
+        log.info(
+            "SKIP_NO_GAP %s %s | open=%.6g upper=%.6g gap=%.2f%% pen=%.2f%%",
+            symbol, tf, open_p, upper, open_gap_pct, upper_pen,
+        )
         return None
     fut = get_futures_last(symbol)
-    # اگر فیوچرز نبود از open استفاده کن؛ فقط وقتی فیوچرز خیلی زیر UB است رد کن
     if fut is not None and fut < upper * 0.995 and symbol not in ALWAYS_INCLUDE:
         stats["skip_no_gap"] += 1
+        log.info("SKIP_FUT_BELOW_UB %s %s | fut=%.6g upper=%.6g", symbol, tf, fut, upper)
         return None
     if fut is None:
         fut = open_p
+        log.info("FUT_FALLBACK %s %s use_open=%.6g", symbol, tf, open_p)
     key = (symbol, tf, candle_ts, side)
     if key in sent_signals:
         stats["skip_dup"] += 1
@@ -498,6 +515,10 @@ def check_signal(df: pd.DataFrame, symbol: str, tf: str):
         sent_signals.clear()
     stats["signal_ok"] += 1
     diff_pct = (fut - upper) / fut * 100.0 if fut else 0.0
+    log.info(
+        "SIGNAL_CANDIDATE SELL %s %s | age=%ss open=%.6g upper=%.6g fut=%.6g gap=%.2f%%",
+        symbol, tf, age_sec, open_p, upper, fut, diff_pct,
+    )
     return {
         "side": side, "symbol": symbol, "tf": tf, "open": open_p, "high": high, "low": low, "close": close,
         "upper": upper, "lower": lower, "diff_pct": diff_pct, "fut_last": fut, "candle_ts": candle_ts, "age_sec": age_sec,
@@ -971,9 +992,10 @@ async def process_symbol(symbol: str, tfs_to_check: list) -> None:
             await asyncio.sleep(0.7)
             df = None
         if df is None:
+            log.info("NO_KLINE %s %s", symbol, tf)
             continue
 
-
+        log.info("CHECK %s %s bars=%d", symbol, tf, len(df))
         sig = check_signal(df, symbol, tf)
         if not sig:
             continue
@@ -1010,7 +1032,7 @@ async def pre_alert_cycle(tfs: list | None = None) -> None:
     if not tfs:
         return
     symbols = get_top_movers(TOP_GAINERS)
-    log.info("PRE_ALERT %s n=%d", tfs, len(symbols))
+    log.info("PRE_ALERT TFs=%s n=%d iran=%s", ",".join(tfs), len(symbols), iran_now().strftime("%H:%M:%S"))
     for tf in tfs:
         for symbol in symbols:
             if is_blacklisted(symbol):
@@ -1018,25 +1040,31 @@ async def pre_alert_cycle(tfs: list | None = None) -> None:
             try:
                 df, _ = await fetch_klines(symbol, tf, size=150)
                 if df is None or len(df) < BB_PERIOD + 2:
+                    log.info("PRE_SKIP_NO_KLINE %s %s", symbol, tf)
                     continue
                 cur = df.iloc[-1]
                 upper = float(cur["upper"])
                 close = float(cur["c"])
                 fut = get_futures_last(symbol)
                 if not fut or upper <= 0:
+                    log.info("PRE_SKIP_NO_FUT %s %s", symbol, tf)
                     continue
                 px = fut if abs(fut - close) / close * 100 < 8 else close
                 if px <= upper:
+                    log.info("PRE_SKIP_BELOW_UB %s %s px=%.6g ub=%.6g", symbol, tf, px, upper)
                     continue
                 diff = (px - upper) / px * 100.0
                 if diff < 0.3:
+                    log.info("PRE_SKIP_SMALL_GAP %s %s diff=%.2f%%", symbol, tf, diff)
                     continue
                 period = PERIOD_SEC[tf]
                 next_open = (int(time.time()) // period + 1) * period
                 key = (symbol, tf, next_open)
                 if key in sent_pre_alerts:
+                    log.info("PRE_SKIP_DUP %s %s", symbol, tf)
                     continue
                 sent_pre_alerts.add(key)
+                log.info("PRE_ALERT_HIT %s %s diff=%.2f%% px=%.6g ub=%.6g", symbol, tf, diff, px, upper)
                 cap = (
                     f"⚠️ <b>احتمال گپ</b> · {tf}\n"
                     f"<a href=\"{tv_lbank_url(symbol)}\">{symbol}</a>\n"
@@ -1062,7 +1090,7 @@ async def one_cycle(tfs: list | None = None) -> None:
     if not tfs:
         return
     symbols = get_top_movers(TOP_GAINERS)
-    log.info("cycle %s n=%d", tfs, len(symbols))
+    log.info("cycle TFs=%s n=%d iran=%s", ",".join(tfs), len(symbols), iran_now().strftime("%H:%M:%S"))
     sem = asyncio.Semaphore(12)
 
     async def one(sym):
