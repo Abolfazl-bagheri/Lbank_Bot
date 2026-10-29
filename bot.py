@@ -12,10 +12,10 @@ from __future__ import annotations
 
 import asyncio
 import base64
-import base64
 import hashlib
 import hmac
 import json
+import re
 import logging
 import os
 import secrets
@@ -32,9 +32,10 @@ TEHRAN = ZoneInfo("Asia/Tehran")
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 STATE_FILE = os.path.join(BASE_DIR, "bot_state.json")
 SIGNALS_FILE = os.path.join(BASE_DIR, "signals.json")
+LIVE_TOPIC = os.environ.get("LIVE_TOPIC", "lbank-gap-b0b85cee29ce").strip()
 STATE_BAK = os.path.join(BASE_DIR, "bot_state.bak")
 
-BOT_VERSION = "2.3.2"
+BOT_VERSION = "2.3.3"
 CHANGELOG = {
     "2.1.0": [
         "چارت احتمال‌گپ → استایل SolAtlas (خط‌روند شکست/بازتست) — هنوز ناقص",
@@ -267,6 +268,21 @@ def load_state() -> None:
         log.warning("load_state: %s", e)
 
 
+def push_live(ev: dict) -> None:
+    """ارسال لحظه‌ای به ntfy برای داشبورد وب (جدا از تأخیر GitHub)."""
+    if not LIVE_TOPIC:
+        return
+    try:
+        requests.post(
+            f"https://ntfy.sh/{LIVE_TOPIC}",
+            data=json.dumps(ev, ensure_ascii=False).encode("utf-8"),
+            headers={"Content-Type": "application/json"},
+            timeout=5,
+        )
+    except Exception:
+        pass
+
+
 def send_telegram_text(text: str) -> bool:
     if not TELEGRAM_TOKEN or not CHAT_ID:
         return False
@@ -276,7 +292,16 @@ def send_telegram_text(text: str) -> bool:
             json={"chat_id": CHAT_ID, "text": text, "parse_mode": "HTML", "disable_web_page_preview": True},
             timeout=15,
         )
-        return r.status_code == 200
+        ok = r.status_code == 200
+        if not ok:
+            log.warning("tg text: %s", (r.text or "")[:180])
+        else:
+            try:
+                plain = re.sub(r"<[^>]+>", "", text or "")
+                push_live({"t": "log", "x": plain[:500], "ts": int(time.time())})
+            except Exception:
+                pass
+        return ok
     except Exception as e:
         log.warning("tg text: %s", e)
         return False
@@ -288,11 +313,20 @@ def send_telegram_photo(image_bytes: bytes, caption: str) -> bool:
     try:
         r = requests.post(
             f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendPhoto",
-            data={"chat_id": CHAT_ID, "caption": caption[:1024], "parse_mode": "HTML"},
+            data={"chat_id": CHAT_ID, "caption": (caption or "")[:1024], "parse_mode": "HTML"},
             files={"photo": ("chart.png", image_bytes, "image/png")},
             timeout=30,
         )
-        return r.status_code == 200
+        ok = r.status_code == 200
+        if not ok:
+            log.warning("tg photo: %s", (r.text or "")[:180])
+        else:
+            try:
+                plain = re.sub(r"<[^>]+>", "", caption or "")
+                push_live({"t": "log", "x": plain[:500], "ts": int(time.time())})
+            except Exception:
+                pass
+        return ok
     except Exception as e:
         log.warning("tg photo: %s", e)
         return False
@@ -1013,6 +1047,7 @@ async def process_symbol(symbol: str, tfs_to_check: list) -> None:
 
         send_telegram_text(format_signal_message(sig))
         log_signal_web("SELL", symbol, tf, float(sig.get("diff_pct") or 0))
+        push_live({"t": "sig", "kind": "SELL", "symbol": symbol, "tf": tf, "gap": round(float(sig.get("diff_pct") or 0), 2), "ts": int(time.time())})
         log.info("SIGNAL %s %s %s gap=%.2f%%", sig["side"], symbol, tf, float(sig.get("diff_pct") or 0))
 
         # هر سیگنال SELL → دقیقاً یک ورود paper/live (پله فقط اگر از قبل باز باشد)
@@ -1080,6 +1115,7 @@ async def pre_alert_cycle(tfs: list | None = None) -> None:
                 else:
                     send_telegram_text(cap)
                 log_signal_web("GAP", symbol, tf, diff)
+                push_live({"t": "sig", "kind": "GAP", "symbol": symbol, "tf": tf, "gap": round(float(diff), 2), "ts": int(time.time())})
                 await asyncio.sleep(0.12)
             except Exception as e:
                 log.debug("pre %s: %s", symbol, e)
