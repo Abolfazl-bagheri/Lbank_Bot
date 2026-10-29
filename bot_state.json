@@ -548,16 +548,16 @@
       "symbol": "PROVEUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.1993,
-      "qty": 50.1756,
-      "margin": 1.0,
+      "entry": 0.19969919880659726,
+      "qty": 100.1506,
+      "margin": 2.0,
       "leverage": 10,
-      "tp_price": 0.193321,
-      "tf": "1h",
+      "tp_price": 0.19370822284239933,
+      "tf": "15m",
       "opened_at": 1793282591,
-      "adds": 0,
+      "adds": 1,
       "entry_candle_ts": 1793282400,
-      "last_leg_candle_ts": 1793282400,
+      "last_leg_candle_ts": 1793283300,
       "dry_run": true,
       "order_id": "PAPER-PROVEUSDT-1793282591"
     },
@@ -1425,6 +1425,12 @@
     },
     {
       "symbol": "FLEXUSDT",
+      "tf": "15m",
+      "candle_ts": 1793283300,
+      "side": "SELL"
+    },
+    {
+      "symbol": "ONDSUSDT",
       "tf": "15m",
       "candle_ts": 1793283300,
       "side": "SELL"
