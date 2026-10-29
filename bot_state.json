@@ -409,23 +409,6 @@
       "order_id": "PAPER-SSPCUSDT-1793314125"
     },
     {
-      "symbol": "RUNEUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.6391,
-      "qty": 15.647,
-      "margin": 1.0,
-      "leverage": 10,
-      "tp_price": 0.619927,
-      "tf": "1h",
-      "opened_at": 1793314955,
-      "adds": 0,
-      "entry_candle_ts": 1793314800,
-      "last_leg_candle_ts": 1793314800,
-      "dry_run": true,
-      "order_id": "PAPER-RUNEUSDT-1793314955"
-    },
-    {
       "symbol": "WMTUSDT",
       "side": "SELL",
       "status": "open",
@@ -1463,6 +1446,26 @@
       "closed_at": 1793315079,
       "close_px": 28.79,
       "pnl_usdt": 0.30966004712218165
+    },
+    {
+      "symbol": "RUNEUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.6391,
+      "qty": 15.647,
+      "margin": 1.0,
+      "leverage": 10,
+      "tp_price": 0.619927,
+      "tf": "1h",
+      "opened_at": 1793314955,
+      "adds": 0,
+      "entry_candle_ts": 1793314800,
+      "last_leg_candle_ts": 1793314800,
+      "dry_run": true,
+      "order_id": "PAPER-RUNEUSDT-1793314955",
+      "closed_at": 1793317773,
+      "close_px": 0.6192,
+      "pnl_usdt": 0.31137537161633594
     }
   ],
   "pending": [
