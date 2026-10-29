@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LBank Signals Live</title>
+  <style>
+    :root { --bg:#0f1115; --card:#1a1d24; --txt:#e8eaed; --mut:#9aa0a6; --red:#ef5350; --green:#26a69a; --amber:#ffb74d; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: system-ui, Tahoma, sans-serif; background:var(--bg); color:var(--txt); }
+    header { padding:16px 20px; border-bottom:1px solid #2a2f3a; display:flex; flex-wrap:wrap; gap:12px; align-items:center; justify-content:space-between; }
+    h1 { margin:0; font-size:1.15rem; }
+    .badge { background:#2a2f3a; padding:4px 10px; border-radius:999px; font-size:.8rem; color:var(--mut); }
+    main { padding:16px; display:grid; gap:16px; max-width:1100px; margin:0 auto; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:10px; }
+    .card { background:var(--card); border-radius:12px; padding:14px; border:1px solid #2a2f3a; }
+    .card h3 { margin:0 0 6px; font-size:.75rem; color:var(--mut); font-weight:600; }
+    .card .v { font-size:1.25rem; font-weight:700; }
+    table { width:100%; border-collapse:collapse; font-size:.9rem; }
+    th, td { padding:8px 10px; text-align:right; border-bottom:1px solid #2a2f3a; }
+    th { color:var(--mut); font-weight:600; font-size:.75rem; }
+    .kind-SELL { color:var(--red); font-weight:700; }
+    .kind-GAP { color:var(--amber); font-weight:700; }
+    .kind-HEARTBEAT { color:var(--mut); }
+    .pos { color:var(--green); }
+    .neg { color:var(--red); }
+    footer { text-align:center; color:var(--mut); font-size:.75rem; padding:20px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>📡 LBank Gap · Live</h1>
+    <div>
+      <span class="badge" id="mode">—</span>
+      <span class="badge" id="ver">—</span>
+      <span class="badge" id="upd">—</span>
+    </div>
+  </header>
+  <main>
+    <section class="grid">
+      <div class="card"><h3>سود بسته</h3><div class="v pos" id="profit">0</div></div>
+      <div class="card"><h3>ضرر بسته</h3><div class="v neg" id="loss">0</div></div>
+      <div class="card"><h3>تعداد بسته</h3><div class="v" id="ccount">0</div></div>
+      <div class="card"><h3>پوزیشن باز</h3><div class="v" id="oopen">0</div></div>
+    </section>
+
+    <section class="card">
+      <h3 style="margin-bottom:10px;color:var(--txt);font-size:1rem;">سیگنال‌ها / احتمال گپ</h3>
+      <div style="overflow:auto;">
+        <table>
+          <thead><tr><th>نوع</th><th>نماد</th><th>TF</th><th>گپ٪</th><th>زمان</th></tr></thead>
+          <tbody id="sigs"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="card">
+      <h3 style="margin-bottom:10px;color:var(--txt);font-size:1rem;">پوزیشن‌های باز (PAPER)</h3>
+      <div style="overflow:auto;">
+        <table>
+          <thead><tr><th>نماد</th><th>ورود</th><th>TP</th><th>پله</th><th>uPnL</th></tr></thead>
+          <tbody id="trades"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+  <footer>هر ۲۰ ثانیه از <code>signals.json</code> ریپو خوانده می‌شود · ربات تلگرام همچنان کار می‌کند</footer>
+  <script>
+    // اگر Pages روی همین ریپو است:
+    const SIGNALS_URL = './signals.json';
+    // یا خام گیت‌هاب:
+    // const SIGNALS_URL = 'https://raw.githubusercontent.com/Abolfazl-bagheri/Lbank_Bot/main/signals.json';
+
+    function ago(ts) {
+      if (!ts) return '—';
+      const s = Math.max(0, Math.floor(Date.now()/1000 - ts));
+      if (s < 60) return s + 'ث';
+      if (s < 3600) return Math.floor(s/60) + 'د';
+      return Math.floor(s/3600) + 'س';
+    }
+    async function refresh() {
+      try {
+        const r = await fetch(SIGNALS_URL + '?t=' + Date.now(), { cache: 'no-store' });
+        if (!r.ok) throw new Error(r.status);
+        const d = await r.json();
+        document.getElementById('mode').textContent = d.mode || '—';
+        document.getElementById('ver').textContent = 'v' + (d.version || '?');
+        document.getElementById('upd').textContent = 'آپدیت ' + ago(d.updated_at);
+        const c = d.closed || {};
+        document.getElementById('profit').textContent = (c.profit >= 0 ? '+' : '') + (c.profit || 0).toFixed(2) + 'U';
+        document.getElementById('loss').textContent = (c.loss || 0).toFixed(2) + 'U';
+        document.getElementById('ccount').textContent = c.count || 0;
+        const trades = d.trades || [];
+        document.getElementById('oopen').textContent = trades.length;
+        const sigs = (d.signals || []).slice().reverse().slice(0, 80);
+        document.getElementById('sigs').innerHTML = sigs.map(s =>
+          `<tr><td class="kind-${s.kind}">${s.kind}</td><td>${s.symbol}</td><td>${s.tf}</td><td>${s.gap ?? '—'}</td><td>${ago(s.ts)}</td></tr>`
+        ).join('') || '<tr><td colspan="5">هنوز سیگنالی نیست</td></tr>';
+        document.getElementById('trades').innerHTML = trades.map(t => {
+          const pnl = Number(t.pnl || 0);
+          const cls = pnl >= 0 ? 'pos' : 'neg';
+          return `<tr><td>${t.symbol}</td><td>${t.entry}</td><td>${t.tp}</td><td>${(t.adds||0)+1}</td><td class="${cls}">${pnl>=0?'+':''}${pnl.toFixed(2)}U</td></tr>`;
+        }).join('') || '<tr><td colspan="5">پوزیشن باز نیست</td></tr>';
+      } catch (e) {
+        document.getElementById('upd').textContent = 'خطا در خواندن signals.json';
+      }
+    }
+    refresh();
+    setInterval(refresh, 20000);
+  </script>
+</body>
+</html>
