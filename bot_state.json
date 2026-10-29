@@ -21,16 +21,16 @@
       "symbol": "BEATUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.10199320730828766,
-      "qty": 294.1373,
-      "margin": 3.0,
+      "entry": 0.10448528355341849,
+      "qty": 382.8291,
+      "margin": 4.0,
       "leverage": 10,
-      "tp_price": 0.09893341108903903,
+      "tp_price": 0.10135072504681593,
       "tf": "15m",
       "opened_at": 1793268160,
-      "adds": 2,
+      "adds": 3,
       "entry_candle_ts": 1793268000,
-      "last_leg_candle_ts": 1793286900,
+      "last_leg_candle_ts": 1793287800,
       "dry_run": true,
       "order_id": "PAPER-BEATUSDT-1793268160"
     },
@@ -1772,6 +1772,12 @@
       "tf": "15m",
       "candle_ts": 1793286900,
       "side": "SELL"
+    },
+    {
+      "symbol": "PEPEUSDT",
+      "tf": "15m",
+      "candle_ts": 1793286900,
+      "side": "SELL"
     }
   ],
   "kline_blacklist": {
@@ -1803,9 +1809,11 @@
     "SYNUSDT": 1793321281,
     "CANTONUSDT": 1793323080,
     "RIOTUSDT": 1793324070,
-    "MASTOCKUSDT": 1793324980
+    "MASTOCKUSDT": 1793324980,
+    "AMCUSDT": 1793330335,
+    "SMRUSDT": 1793330340
   },
-  "last_trade_report_ts": 1793285368,
+  "last_trade_report_ts": 1793287142,
   "last_daily_report_date": "",
   "last_known_version": "2.3.3"
 }
