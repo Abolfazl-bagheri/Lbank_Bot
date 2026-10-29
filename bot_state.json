@@ -628,6 +628,23 @@
       "last_leg_candle_ts": 1793286000,
       "dry_run": true,
       "order_id": "PAPER-IDOLUSDT-1793286102"
+    },
+    {
+      "symbol": "ARIAUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.09012,
+      "qty": 110.9632,
+      "margin": 1.0,
+      "leverage": 10,
+      "tp_price": 0.0874164,
+      "tf": "15m",
+      "opened_at": 1793286109,
+      "adds": 0,
+      "entry_candle_ts": 1793286000,
+      "last_leg_candle_ts": 1793286000,
+      "dry_run": true,
+      "order_id": "PAPER-ARIAUSDT-1793286109"
     }
   ],
   "trade_history": [
@@ -1471,6 +1488,12 @@
       "symbol": "ONDSUSDT",
       "tf": "15m",
       "candle_ts": 1793284200,
+      "side": "SELL"
+    },
+    {
+      "symbol": "IDOLUSDT",
+      "tf": "15m",
+      "candle_ts": 1793286000,
       "side": "SELL"
     }
   ],
