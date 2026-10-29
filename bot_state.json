@@ -645,6 +645,23 @@
       "last_leg_candle_ts": 1793284200,
       "dry_run": true,
       "order_id": "PAPER-VRTUSDT-1793284376"
+    },
+    {
+      "symbol": "CYPHUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 3.29,
+      "qty": 3.0395,
+      "margin": 1.0,
+      "leverage": 10,
+      "tp_price": 3.1913,
+      "tf": "15m",
+      "opened_at": 1793285269,
+      "adds": 0,
+      "entry_candle_ts": 1793285100,
+      "last_leg_candle_ts": 1793285100,
+      "dry_run": true,
+      "order_id": "PAPER-CYPHUSDT-1793285269"
     }
   ],
   "trade_history": [
@@ -1546,6 +1563,12 @@
     },
     {
       "symbol": "CETUSUSDT",
+      "tf": "15m",
+      "candle_ts": 1793285100,
+      "side": "SELL"
+    },
+    {
+      "symbol": "PIUSDT",
       "tf": "15m",
       "candle_ts": 1793285100,
       "side": "SELL"
