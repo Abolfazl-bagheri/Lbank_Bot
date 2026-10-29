@@ -475,6 +475,23 @@
       "last_leg_candle_ts": 1793307600,
       "dry_run": true,
       "order_id": "PAPER-CMCSAUSDT-1793307811"
+    },
+    {
+      "symbol": "RIVNUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 11.94,
+      "qty": 0.837521,
+      "margin": 1.0,
+      "leverage": 10,
+      "tp_price": 11.5818,
+      "tf": "1h",
+      "opened_at": 1793307862,
+      "adds": 0,
+      "entry_candle_ts": 1793307600,
+      "last_leg_candle_ts": 1793307600,
+      "dry_run": true,
+      "order_id": "PAPER-RIVNUSDT-1793307862"
     }
   ],
   "trade_history": [
@@ -2224,6 +2241,12 @@
     },
     {
       "symbol": "GILDUSDT",
+      "tf": "1h",
+      "candle_ts": 1793307600,
+      "side": "SELL"
+    },
+    {
+      "symbol": "CMCSAUSDT",
       "tf": "1h",
       "candle_ts": 1793307600,
       "side": "SELL"
