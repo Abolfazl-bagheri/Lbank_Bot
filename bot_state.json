@@ -1,9 +1,10 @@
 {
-  "open_trades": [
+  "open_trades": [],
+  "trade_history": [
     {
       "symbol": "KATUSDT",
       "side": "SELL",
-      "status": "open",
+      "status": "closed",
       "entry": 0.004813331255642878,
       "qty": 4155.1265,
       "margin": 2.0,
@@ -15,10 +16,12 @@
       "entry_candle_ts": 1793259000,
       "last_leg_candle_ts": 1793259900,
       "dry_run": true,
-      "order_id": "PAPER-KATUSDT-1793259150"
+      "order_id": "PAPER-KATUSDT-1793259150",
+      "closed_at": 1793261027,
+      "close_px": 0.004561,
+      "pnl_usdt": 1.0484682738054198
     }
   ],
-  "trade_history": [],
   "pending": [
     {
       "symbol": "KATUSDT",
