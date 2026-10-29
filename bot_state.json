@@ -424,6 +424,23 @@
       "last_leg_candle_ts": 1793280600,
       "dry_run": true,
       "order_id": "PAPER-FLEXUSDT-1793280723"
+    },
+    {
+      "symbol": "TEMUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 76.14,
+      "qty": 0.131337,
+      "margin": 1.0,
+      "leverage": 10,
+      "tp_price": 73.8558,
+      "tf": "15m",
+      "opened_at": 1793280732,
+      "adds": 0,
+      "entry_candle_ts": 1793280600,
+      "last_leg_candle_ts": 1793280600,
+      "dry_run": true,
+      "order_id": "PAPER-TEMUSDT-1793280732"
     }
   ],
   "trade_history": [
@@ -933,6 +950,12 @@
       "symbol": "RVNUSDT",
       "tf": "15m",
       "candle_ts": 1793279700,
+      "side": "SELL"
+    },
+    {
+      "symbol": "FLEXUSDT",
+      "tf": "15m",
+      "candle_ts": 1793280600,
       "side": "SELL"
     }
   ],
