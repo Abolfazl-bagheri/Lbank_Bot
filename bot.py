@@ -31,9 +31,10 @@ import requests
 TEHRAN = ZoneInfo("Asia/Tehran")
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 STATE_FILE = os.path.join(BASE_DIR, "bot_state.json")
+SIGNALS_FILE = os.path.join(BASE_DIR, "signals.json")
 STATE_BAK = os.path.join(BASE_DIR, "bot_state.bak")
 
-BOT_VERSION = "2.2.1"
+BOT_VERSION = "2.3.0"
 CHANGELOG = {
     "2.1.0": [
         "چارت احتمال‌گپ → استایل SolAtlas (خط‌روند شکست/بازتست) — هنوز ناقص",
@@ -162,24 +163,24 @@ def github_state_pull() -> bool:
         return False
 
 
-def github_state_push(force: bool = False) -> bool:
+def github_push_file(local_path: str, remote_path: str, force: bool = False) -> bool:
+    """آپلود یک فایل JSON به ریشهٔ ریپو (برای bot_state و signals)."""
     global _last_github_push_ts
     now = int(time.time())
-    if not force and _last_github_push_ts and now - _last_github_push_ts < 45:
+    # rate-limit فقط برای state عادی؛ signals با force=True رد می‌شود
+    if not force and _last_github_push_ts and now - _last_github_push_ts < 30:
         return False
     owner, name, token = _github_repo_parts()
     if not token or not owner or not name:
-        log.warning("github_state_push skip: no token/repo (GITHUB_REPOSITORY + GITHUB_TOKEN)")
+        log.warning("github_push skip: no token/repo")
         return False
-    if not os.path.exists(STATE_FILE):
+    if not os.path.exists(local_path):
         return False
     try:
-        with open(STATE_FILE, "r", encoding="utf-8") as f:
+        with open(local_path, "r", encoding="utf-8") as f:
             raw = f.read()
         b64 = base64.b64encode(raw.encode("utf-8")).decode("ascii")
-        # همان مسیر pull
-        path = os.environ.get("STATE_GITHUB_PATH") or "bot_state.json"
-        url = f"https://api.github.com/repos/{owner}/{name}/contents/{path}"
+        url = f"https://api.github.com/repos/{owner}/{name}/contents/{remote_path}"
         headers = {
             "Authorization": f"Bearer {token}",
             "Accept": "application/vnd.github+json",
@@ -190,7 +191,7 @@ def github_state_push(force: bool = False) -> bool:
         if gr.status_code == 200:
             sha = (gr.json() or {}).get("sha")
         body = {
-            "message": f"bot state {datetime.utcnow().strftime('%Y-%m-%d %H:%M UTC')}",
+            "message": f"bot {remote_path} {datetime.utcnow().strftime('%Y-%m-%d %H:%M UTC')}",
             "content": b64,
             "branch": os.environ.get("STATE_GITHUB_BRANCH") or "main",
         }
@@ -199,13 +200,18 @@ def github_state_push(force: bool = False) -> bool:
         pr = requests.put(url, headers=headers, json=body, timeout=30)
         if pr.status_code in (200, 201):
             _last_github_push_ts = now
-            log.info("github_state_push OK path=%s bytes=%s", path, len(raw))
+            log.info("github_push OK %s (%s bytes)", remote_path, len(raw))
             return True
-        log.warning("github_state_push HTTP %s %s", pr.status_code, (pr.text or "")[:200])
+        log.warning("github_push HTTP %s %s %s", remote_path, pr.status_code, (pr.text or "")[:160])
         return False
     except Exception as e:
-        log.warning("github_state_push: %s", e)
+        log.warning("github_push %s: %s", remote_path, e)
         return False
+
+
+def github_state_push(force: bool = False) -> bool:
+    path = os.environ.get("STATE_GITHUB_PATH") or "bot_state.json"
+    return github_push_file(STATE_FILE, path, force=force)
 
 
 
@@ -508,6 +514,63 @@ def lbank_futures_url(symbol: str) -> str:
     return f"https://www.lbank.com/futures/{pair}"
 
 
+
+def log_signal_web(kind: str, symbol: str, tf: str, gap: float) -> None:
+    """برای داشبورد وب: signals.json را به‌روز و روی GitHub می‌نویسد."""
+    try:
+        data = {}
+        if os.path.exists(SIGNALS_FILE):
+            try:
+                with open(SIGNALS_FILE, "r", encoding="utf-8") as f:
+                    data = json.load(f) or {}
+            except Exception:
+                data = {}
+        sigs = list(data.get("signals") or [])[-199:]
+        sigs.append({
+            "kind": kind,
+            "symbol": symbol,
+            "tf": tf,
+            "gap": round(float(gap or 0), 2),
+            "ts": int(time.time()),
+        })
+        closed = [t for t in trade_history if t.get("status") == "closed"]
+        pnl_list = [float(t.get("pnl_usdt") or 0) for t in closed]
+        trades_out = []
+        for tr in open_trades:
+            if tr.get("status") != "open":
+                continue
+            px = get_futures_last(tr.get("symbol") or "") or float(tr.get("entry") or 0)
+            try:
+                upnl, _ = _sell_upnl(tr, float(px))
+            except Exception:
+                upnl = 0.0
+            trades_out.append({
+                "symbol": tr.get("symbol"),
+                "entry": tr.get("entry"),
+                "tp": tr.get("tp_price"),
+                "adds": int(tr.get("adds") or 0),
+                "margin": tr.get("margin"),
+                "pnl": round(float(upnl), 4),
+            })
+        payload = {
+            "mode": "PAPER" if is_paper_mode() else ("LIVE" if trading_enabled() else "OFF"),
+            "version": BOT_VERSION,
+            "updated_at": int(time.time()),
+            "signals": sigs,
+            "trades": trades_out,
+            "closed": {
+                "profit": round(sum(p for p in pnl_list if p > 0), 4),
+                "loss": round(sum(p for p in pnl_list if p < 0), 4),
+                "count": len(closed),
+            },
+        }
+        with open(SIGNALS_FILE, "w", encoding="utf-8") as f:
+            json.dump(payload, f, ensure_ascii=False, indent=2)
+        github_push_file(SIGNALS_FILE, "signals.json", force=True)
+    except Exception as e:
+        log.warning("log_signal_web: %s", e)
+
+
 def format_signal_message(sig: dict) -> str:
     sym = sig["symbol"]
     diff = float(sig.get("diff_pct") or 0)
@@ -793,6 +856,10 @@ def maybe_send_hourly_trade_report() -> None:
         lines.extend(open_lines)
     send_telegram_text("\n".join(lines))
     save_state()
+    try:
+        log_signal_web("HEARTBEAT", "—", "—", 0.0)
+    except Exception:
+        pass
 
 
 def maybe_send_daily_paper_report() -> None:
@@ -918,6 +985,7 @@ async def process_symbol(symbol: str, tfs_to_check: list) -> None:
             pass
 
         send_telegram_text(format_signal_message(sig))
+        log_signal_web("SELL", symbol, tf, float(sig.get("diff_pct") or 0))
         log.info("SIGNAL %s %s %s gap=%.2f%%", sig["side"], symbol, tf, float(sig.get("diff_pct") or 0))
 
         # هر سیگنال SELL → دقیقاً یک ورود paper/live (پله فقط اگر از قبل باز باشد)
@@ -978,6 +1046,7 @@ async def pre_alert_cycle(tfs: list | None = None) -> None:
                     send_telegram_photo(img, cap)
                 else:
                     send_telegram_text(cap)
+                log_signal_web("GAP", symbol, tf, diff)
                 await asyncio.sleep(0.12)
             except Exception as e:
                 log.debug("pre %s: %s", symbol, e)
