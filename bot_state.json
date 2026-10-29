@@ -118,6 +118,23 @@
       "last_leg_candle_ts": 1793268000,
       "dry_run": true,
       "order_id": "PAPER-BEATUSDT-1793268160"
+    },
+    {
+      "symbol": "PIUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.07928,
+      "qty": 126.1352,
+      "margin": 1.0,
+      "leverage": 10,
+      "tp_price": 0.0769016,
+      "tf": "15m",
+      "opened_at": 1793268180,
+      "adds": 0,
+      "entry_candle_ts": 1793268000,
+      "last_leg_candle_ts": 1793268000,
+      "dry_run": true,
+      "order_id": "PAPER-PIUSDT-1793268180"
     }
   ],
   "trade_history": [
@@ -213,6 +230,12 @@
     },
     {
       "symbol": "BLENDUSDT",
+      "tf": "1h",
+      "candle_ts": 1793268000,
+      "side": "SELL"
+    },
+    {
+      "symbol": "BEATUSDT",
       "tf": "1h",
       "candle_ts": 1793268000,
       "side": "SELL"
