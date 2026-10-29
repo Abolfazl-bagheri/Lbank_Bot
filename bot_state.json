@@ -254,6 +254,23 @@
       "last_leg_candle_ts": 1793275200,
       "dry_run": true,
       "order_id": "PAPER-APRUSDT-1793275361"
+    },
+    {
+      "symbol": "UAIUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.2681,
+      "qty": 37.2995,
+      "margin": 1.0,
+      "leverage": 10,
+      "tp_price": 0.260057,
+      "tf": "4h",
+      "opened_at": 1793275384,
+      "adds": 0,
+      "entry_candle_ts": 1793275200,
+      "last_leg_candle_ts": 1793275200,
+      "dry_run": true,
+      "order_id": "PAPER-UAIUSDT-1793275384"
     }
   ],
   "trade_history": [
@@ -583,6 +600,12 @@
     },
     {
       "symbol": "APRUSDT",
+      "tf": "1h",
+      "candle_ts": 1793275200,
+      "side": "SELL"
+    },
+    {
+      "symbol": "PURRUSDT",
       "tf": "1h",
       "candle_ts": 1793275200,
       "side": "SELL"
