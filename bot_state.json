@@ -242,16 +242,16 @@
       "symbol": "BASEDUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.05475,
-      "qty": 182.6484,
-      "margin": 1.0,
+      "entry": 0.05505331029535554,
+      "qty": 363.2842,
+      "margin": 2.0,
       "leverage": 10,
-      "tp_price": 0.0531075,
+      "tp_price": 0.05340171098649487,
       "tf": "15m",
       "opened_at": 1793277238,
-      "adds": 0,
+      "adds": 1,
       "entry_candle_ts": 1793277000,
-      "last_leg_candle_ts": 1793277000,
+      "last_leg_candle_ts": 1793277900,
       "dry_run": true,
       "order_id": "PAPER-BASEDUSDT-1793277238"
     },
@@ -664,6 +664,12 @@
     },
     {
       "symbol": "LITUSDT",
+      "tf": "15m",
+      "candle_ts": 1793277900,
+      "side": "SELL"
+    },
+    {
+      "symbol": "NESUSDT",
       "tf": "15m",
       "candle_ts": 1793277900,
       "side": "SELL"
