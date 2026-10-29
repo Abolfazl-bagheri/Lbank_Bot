@@ -34,7 +34,7 @@ STATE_FILE = os.path.join(BASE_DIR, "bot_state.json")
 SIGNALS_FILE = os.path.join(BASE_DIR, "signals.json")
 STATE_BAK = os.path.join(BASE_DIR, "bot_state.bak")
 
-BOT_VERSION = "2.3.0"
+BOT_VERSION = "2.3.1"
 CHANGELOG = {
     "2.1.0": [
         "چارت احتمال‌گپ → استایل SolAtlas (خط‌روند شکست/بازتست) — هنوز ناقص",
@@ -53,15 +53,15 @@ CHAT_ID = os.environ.get("CHAT_ID", "").strip()
 TIMEFRAMES = {"15m": "15min", "1h": "1hr", "4h": "4hr"}
 TF_ORDER = {"15m": 0, "1h": 1, "4h": 2}
 PERIOD_SEC = {"15m": 900, "1h": 3600, "4h": 14400}
-OPEN_WINDOW_SEC = {"15m": 240, "1h": 300, "4h": 360}
-PRE_ALERT_BEFORE = {"15m": 120, "1h": 180, "4h": 600}
-SIGNAL_SCAN_SEC = {"15m": 180, "1h": 240, "4h": 300}
+OPEN_WINDOW_SEC = {"15m": 300, "1h": 420, "4h": 480}
+PRE_ALERT_BEFORE = {"15m": 180, "1h": 360, "4h": 1200}  # 3m / 6m / 20m قبل از کندل
+SIGNAL_SCAN_SEC = {"15m": 240, "1h": 360, "4h": 420}
 
 BB_PERIOD = 20
 BB_STD = 2.0
 PENETRATION_PCT = 0.3
 MIN_OPEN_GAP_PCT = 0.3
-TOP_GAINERS = 50
+TOP_GAINERS = 60
 TOP_VOLUME = 30
 ALWAYS_INCLUDE = ["BTCUSDT", "XAUTUSDT"]
 ONLY_SELL = True
@@ -685,23 +685,29 @@ def _perp_post(path: str, params: dict) -> dict | None:
 
 def open_sell_trade(symbol: str, entry_price: float, tf: str, candle_ts: int | None = None) -> dict | None:
     if not trading_enabled():
+        log.info("PAPER_SKIP %s reason=trading_disabled", symbol)
         return None
     entry_price = float(entry_price)
     if entry_price <= 0:
+        log.info("PAPER_SKIP %s reason=bad_entry", symbol)
         return None
     existing = next((t for t in open_trades if t.get("symbol") == symbol and t.get("status") == "open" and t.get("side") == "SELL"), None)
     if existing is not None:
         if not TRADE_AVG_DOWN:
+            log.info("PAPER_SKIP %s reason=already_open_no_avg", symbol)
             return None
         adds = int(existing.get("adds") or 0)
         if adds >= TRADE_MAX_ADDS:
+            log.info("PAPER_SKIP %s reason=max_adds", symbol)
             return None
         last_cts = int(existing.get("last_leg_candle_ts") or 0)
         cts = int(candle_ts or 0)
         if cts and last_cts and cts <= last_cts:
+            log.info("PAPER_SKIP %s reason=same_candle_leg", symbol)
             return None
         avg = float(existing.get("entry") or 0)
         if avg > 0 and entry_price <= avg * 1.001:
+            log.info("PAPER_SKIP %s reason=price_not_higher_for_short_avg", symbol)
             return None
         add_qty = trade_qty_from_margin(symbol, entry_price)
         if not add_qty:
@@ -928,19 +934,18 @@ def seconds_until_next_candle() -> int:
 
 
 def pre_alert_tfs_now() -> list:
-    """فقط وقتی تا باز شدن کندل بعدی بین ۱۵ثانیه تا BEFORE مانده؛ بعد از باز شدن صفر."""
+    """چند دقیقه قبل از باز شدن هر TF (1h/4h زودتر). TFهایی که الان در پنجره سیگنال‌اند حذف می‌شوند."""
     now = int(time.time())
-    # اگر الان وقت سیگنال است، احتمال‌گپ نده
-    if timeframes_to_check_now():
-        return []
+    signal_now = set(timeframes_to_check_now())
     out = []
     for tf, before in PRE_ALERT_BEFORE.items():
+        if tf in signal_now:
+            continue
         p = PERIOD_SEC.get(tf)
         if not p or tf not in TIMEFRAMES:
             continue
         remaining = p - (now % p)
-        # فقط داخل پنجره قبل از کندل
-        if 15 <= remaining <= before:
+        if 10 <= remaining <= before:
             out.append(tf)
     out.sort(key=lambda x: TF_ORDER.get(x, 99))
     return out
@@ -1024,7 +1029,7 @@ async def pre_alert_cycle(tfs: list | None = None) -> None:
                 if px <= upper:
                     continue
                 diff = (px - upper) / px * 100.0
-                if diff < 1.0:
+                if diff < 0.3:
                     continue
                 period = PERIOD_SEC[tf]
                 next_open = (int(time.time()) // period + 1) * period
@@ -1058,7 +1063,7 @@ async def one_cycle(tfs: list | None = None) -> None:
         return
     symbols = get_top_movers(TOP_GAINERS)
     log.info("cycle %s n=%d", tfs, len(symbols))
-    sem = asyncio.Semaphore(6)
+    sem = asyncio.Semaphore(12)
 
     async def one(sym):
         async with sem:
@@ -1071,6 +1076,12 @@ async def one_cycle(tfs: list | None = None) -> None:
     manage_open_trades()
     maybe_send_hourly_trade_report()
     maybe_send_daily_paper_report()
+    log.info(
+        "STATS checked=%s signal=%s skip_age=%s skip_gap=%s skip_dup=%s open_trades=%s",
+        stats.get("checked", 0), stats.get("signal_ok", 0),
+        stats.get("skip_age", 0), stats.get("skip_no_gap", 0), stats.get("skip_dup", 0),
+        len(open_trades),
+    )
     for k in stats:
         stats[k] = 0
     save_state()
@@ -1082,13 +1093,14 @@ async def main() -> None:
         log.error("TELEGRAM_TOKEN / CHAT_ID missing")
         return
     send_telegram_text(format_startup_message())
+    mode_code = {"paper": 1, "live": 2}.get((TRADE_MODE or "off").lower(), 0)
     log.info(
-        "started v%s mode=%s trading=%s paper=%s auto=%s",
+        "started v%s mode_code=%s trading=%s is_paper=%s auto=%s",
         BOT_VERSION,
-        TRADE_MODE or "off",
-        trading_enabled(),
-        is_paper_mode(),
-        bool(AUTO_TRADE),
+        mode_code,
+        int(trading_enabled()),
+        int(is_paper_mode()),
+        int(bool(AUTO_TRADE)),
     )
     owner, name, token = _github_repo_parts()
     log.info(
@@ -1109,8 +1121,10 @@ async def main() -> None:
                 await asyncio.sleep(3)
             else:
                 wait = seconds_until_next_candle()
-                sleep_for = max(1, min(wait - 2, 60))
-                log.info("خواب %ds", sleep_for)
+                # نزدیک کندل زودتر بیدار شو؛ حداکثر ۳۰ث
+                sleep_for = max(1, min(wait - 3, 30))
+                pre2 = pre_alert_tfs_now()
+                log.info("sleep=%ds next_candle=%ds pre=%s", sleep_for, wait, ",".join(pre2) or "-")
                 await asyncio.sleep(sleep_for)
         except Exception as e:
             log.error("loop: %s", e)
