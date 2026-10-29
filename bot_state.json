@@ -327,16 +327,16 @@
       "symbol": "NESUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.1182,
-      "qty": 84.6024,
-      "margin": 1.0,
+      "entry": 0.11889587859303365,
+      "qty": 168.2144,
+      "margin": 2.0,
       "leverage": 10,
-      "tp_price": 0.11465399999999999,
+      "tp_price": 0.11532900223524263,
       "tf": "15m",
       "opened_at": 1793277260,
-      "adds": 0,
+      "adds": 1,
       "entry_candle_ts": 1793277000,
-      "last_leg_candle_ts": 1793277000,
+      "last_leg_candle_ts": 1793277900,
       "dry_run": true,
       "order_id": "PAPER-NESUSDT-1793277260"
     },
@@ -821,6 +821,12 @@
     },
     {
       "symbol": "LITUSDT",
+      "tf": "15m",
+      "candle_ts": 1793277900,
+      "side": "SELL"
+    },
+    {
+      "symbol": "BASEDUSDT",
       "tf": "15m",
       "candle_ts": 1793277900,
       "side": "SELL"
