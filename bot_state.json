@@ -764,6 +764,23 @@
       "last_leg_candle_ts": 1793288700,
       "dry_run": true,
       "order_id": "PAPER-BLESSUSDT-1793288835"
+    },
+    {
+      "symbol": "BONKUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 3.191e-06,
+      "qty": 3133813.8515,
+      "margin": 1.0,
+      "leverage": 10,
+      "tp_price": 3.09527e-06,
+      "tf": "15m",
+      "opened_at": 1793288841,
+      "adds": 0,
+      "entry_candle_ts": 1793288700,
+      "last_leg_candle_ts": 1793288700,
+      "dry_run": true,
+      "order_id": "PAPER-BONKUSDT-1793288841"
     }
   ],
   "trade_history": [
@@ -1795,6 +1812,12 @@
     },
     {
       "symbol": "FLOKIUSDT",
+      "tf": "15m",
+      "candle_ts": 1793288700,
+      "side": "SELL"
+    },
+    {
+      "symbol": "BLESSUSDT",
       "tf": "15m",
       "candle_ts": 1793288700,
       "side": "SELL"
