@@ -86,6 +86,15 @@ footer{text-align:center;color:var(--mut);font-size:12px;margin-top:30px}
 .mb{background:#0d0f17;border:1px solid var(--b);border-radius:22px;padding:18px;max-width:940px;width:100%;animation:up .4s both}
 .mb img,.mb canvas{width:100%;border-radius:12px;display:none;background:#05060a}
 @media(prefers-reduced-motion:reduce){.dr{stroke-dasharray:none}}
+.TRADE{background:rgba(45,226,166,.18);color:var(--grn)}.REPORT{background:rgba(255,255,255,.12);color:var(--ink)}
+.lcg{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px}
+.lv{background:rgba(255,255,255,.03);border:1px solid var(--b);border-radius:18px;padding:12px;animation:up .6s both}
+.lv canvas{width:100%;border-radius:10px;background:#05060a;display:block}
+.lh{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:8px}
+.bd{font-size:11px;padding:2px 10px;border-radius:99px;white-space:nowrap;background:var(--b);color:var(--mut)}
+.bd.ok{background:rgba(45,226,166,.18);color:var(--grn)}.bd.wt{background:rgba(255,181,71,.18);color:var(--amb);animation:bp 2s infinite}
+@keyframes bp{50%{opacity:.55}}
+.lf{font-size:12px;color:var(--mut);margin-top:8px;direction:ltr;display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap}
 @media(max-width:860px){.s3{grid-column:span 6}.s4,.s5,.s7,.s8{grid-column:span 12}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important}}
 </style>
@@ -119,7 +128,7 @@ footer{text-align:center;color:var(--mut);font-size:12px;margin-top:30px}
   </div>
 
   <div class="card s5">
-    <h2>🖥️ لاگ زنده‌ی ربات <span class="live">GITHUB</span></h2>
+    <h2>🖥️ لاگ زنده‌ی ربات <span class="live">LIVE</span></h2>
     <div class="term" id="term"></div>
   </div>
 
@@ -127,6 +136,7 @@ footer{text-align:center;color:var(--mut);font-size:12px;margin-top:30px}
   <div class="card s7"><h2>💼 پوزیشن‌های باز (PAPER)</h2>
     <div class="tw"><table><thead><tr><th>نماد</th><th>ورود</th><th>TP</th><th>پله</th><th>uPnL</th></tr></thead><tbody id="tr"></tbody></table></div>
   </div>
+  <div class="card s12"><h2>🎯 چارت زنده‌ی سیگنال‌ها و گپ‌ها <span class="live">LIVE</span></h2><div id="lc"></div></div>
   <div class="card s8"><h2>📈 منحنی سود و زیان (PAPER) <span class="live">EQUITY</span></h2><div id="eq"></div></div>
   <div class="card s4"><h2>🥧 سیگنال‌ها بر اساس تایم‌فریم</h2><div class="dw"><div class="donut" id="dn"></div><b id="dnt">0</b></div><div class="lg" id="dl"></div></div>
   <div class="card s12"><h2>🔥 داغ‌ترین نمادها (تعداد سیگنال · بیشترین گپ)</h2><div id="top"></div></div>
@@ -143,7 +153,7 @@ var DEMO={mode:"PAPER",signals:[
 {kind:"SELL",symbol:"SOLUSDT",tf:"1h",gap:0.91,ts:now-1500},{kind:"SELL",symbol:"DOGEUSDT",tf:"4h",gap:3.46,ts:now-5200},
 {kind:"GAP",symbol:"BTCUSDT",tf:"15m",gap:1.18,ts:now-7300},{kind:"SELL",symbol:"ARBUSDT",tf:"15m",gap:.62,ts:now-12400}],
 trades:[{symbol:"PEPEUSDT",entry:.00001284,tp:.00001245,adds:1,pnl:.34}],closed:{profit:3.4,loss:-1.1,count:9}};
-var S={d:DEMO,live:false,f:"all",t:null,seen:null,sound:false,runs:[],commits:[]};
+var S={d:DEMO,live:false,f:"all",t:null,seen:null,sound:false,runs:[],commits:[],ev:[]};
 var $=function(i){return document.getElementById(i)};
 function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
 function ago(ts){var s=Math.max(0,Math.floor(Date.now()/1000)-ts);return s<60?"لحظاتی پیش":s<3600?Math.floor(s/60)+" دقیقه پیش":s<86400?Math.floor(s/3600)+" ساعت پیش":Math.floor(s/86400)+" روز پیش"}
@@ -173,19 +183,46 @@ function render(){
  var tr=d.trades||[];$("tr").innerHTML=tr.length?tr.map(function(t){return '<tr><td class="n"><b>'+esc(t.symbol)+'</b></td><td class="n">'+px(t.entry)+'</td><td class="n">'+px(t.tp)+'</td><td>'+((t.adds||0)+1)+'</td><td class="n '+(t.pnl>=0?"up":"dn")+'"><b>'+sg(+t.pnl)+'U</b></td></tr>'}).join(""):'<tr><td colspan="5" class="emp">پوزیشن بازی نیست</td></tr>';
  var last=Math.max(sigs[0]?sigs[0].ts:0,S.runs[0]?S.runs[0].ts:0);
  $("hb").className="hb"+(S.live?"":" off");$("st").textContent=S.live?"زنده · آخرین فعالیت "+(last?ago(last):"—"):"حالت نمونه · signals.json پیدا نشد";
- charts();term();
+ charts();lcards();term();
 }
+function classify(x){return/سیگنال SELL/.test(x)?"SELL":/احتمال گپ/.test(x)?"GAP":/ورود|پله|کلوز|ناموفق/.test(x)?"TRADE":/گزارش/.test(x)?"REPORT":null}
+function ev(j){var T=(j.trades||[]).map(function(t){return t.symbol}),c=j.closed||{count:0,profit:0,loss:0},n=Math.floor(Date.now()/1000);
+ if(S.pv){T.forEach(function(x){if(S.pv.T.indexOf(x)<0){var t=j.trades.filter(function(y){return y.symbol===x})[0];S.ev.push({ts:n,tag:"TRADE",x:"ورود PAPER سِل "+x+" @ "+px(t.entry)+" · TP "+px(t.tp)})}});
+  S.pv.T.forEach(function(x){if(T.indexOf(x)<0)S.ev.push({ts:n,tag:"TRADE",x:"کلوز "+x})})}
+ if(!S.pv||n-S.pv.r>900){var up=(j.trades||[]).reduce(function(a,t){return a+(+t.pnl||0)},0);S.ev.push({ts:n,tag:"REPORT",x:"گزارش · باز "+T.length+" · uPnL "+sg(up)+"U · بسته "+c.count+" · خالص "+sg(c.profit+c.loss)+"U"});S.pv=S.pv||{};S.pv.r=n}
+ S.pv.T=T;S.ev=S.ev.slice(-30)}
 var lastTerm="";
-function term(){
- var L=[];
- S.runs.forEach(function(r){L.push({ts:r.ts,tag:"RUN",x:r.x})});S.commits.forEach(function(r){L.push({ts:r.ts,tag:"COMMIT",x:r.x})});
- (S.d.signals||[]).forEach(function(s){L.push({ts:s.ts,tag:s.kind,x:s.symbol+" "+s.tf+" gap="+(+s.gap).toFixed(2)+"%"})});
+function term(){var L=[],d=S.d;
+ if(d.log&&d.log.length)d.log.forEach(function(l){var g=classify(l.x);if(g)L.push({ts:l.ts,tag:g,x:l.x.replace(/\s*\n+\s*/g," · ").slice(0,120)})});
+ else{(d.signals||[]).forEach(function(s){L.push({ts:s.ts,tag:s.kind,x:(s.kind==="SELL"?"سیگنال SELL ":"احتمال گپ ")+s.symbol+" "+s.tf+" · اختلاف تا UB "+(+s.gap).toFixed(2)+"%"})});S.ev.forEach(function(e){L.push(e)})}
  L.sort(function(a,b){return a.ts-b.ts});L=L.slice(-14);
- if(!L.length)L=[{ts:Math.floor(Date.now()/1000),tag:"SYS",x:"منتظر داده از GitHub…"}];
- var key=L.map(function(l){return l.ts+l.tag}).join();if(key===lastTerm)return;
- var old=lastTerm.split(",").length;lastTerm=key;
- $("term").innerHTML=L.map(function(l,i){return '<div class="ln" style="animation-delay:'+(i>L.length-3?0:0)+'s"><span class="t">'+hm(l.ts)+'</span><span class="tg '+l.tag+'">'+l.tag+'</span>'+esc(l.x)+'</div>'}).join("")+'<div class="ln"><span class="t">'+hm(Math.floor(Date.now()/1000))+'</span><span class="tg SYS">SYS</span>polling GitHub <span class="cur"></span></div>';
-}
+ var key=L.map(function(l){return l.ts+l.tag+l.x.length}).join();if(key===lastTerm)return;lastTerm=key;
+ $("term").innerHTML=(L.length?L.map(function(l){return '<div class="ln"><span class="t">'+hm(l.ts)+'</span><span class="tg '+l.tag+'">'+l.tag+'</span>'+esc(l.x)+'</div>'}).join(""):'<div class="ln"><span class="t">--:--</span> منتظر سیگنال…</div>')+'<div class="ln"><span class="cur"></span></div>'}
+var CC={},lk="";
+function gate(sym,tf){var k=sym+"|"+tf,h=CC[k];if(h&&Date.now()-h.t<15000)return Promise.resolve(h.c);
+ return J("https://api.gateio.ws/api/v4/futures/usdt/candlesticks?contract="+sym.replace(/USDT$/,"_USDT")+"&interval="+tf+"&limit=80").then(function(a){
+  if(!a||a.length<22)throw 0;var cl=a.map(function(x){return+x.c});
+  var r=a.map(function(x,i){var w,m,sd,row=[+x.o,+x.h,+x.l,+x.c,0,0,0,+x.t];if(i>=19){w=cl.slice(i-19,i+1);m=w.reduce(function(p,q){return p+q})/20;sd=Math.sqrt(w.reduce(function(p,q){return p+(q-m)*(q-m)},0)/19);row[4]=m+2*sd;row[5]=m;row[6]=m-2*sd}return row}).slice(19);
+  CC[k]={t:Date.now(),c:r};return r})}
+function gstat(s,c){var i0=0,i;for(i=0;i<c.length;i++)if(c[i][7]<=s.ts)i0=i;
+ var ub=c[i0][4],st=s.kind==="GAP"?i0+1:i0;
+ if(c[0][7]>s.ts)return{old:true,ub:ub,d:(c[c.length-1][3]-ub)/c[c.length-1][3]*100};
+ if(st>=c.length)return{w:true,ub:ub};
+ for(i=st;i<c.length;i++)if(c[i][2]<=ub)return{filled:true,ub:ub,t:c[i][7]};
+ var l=c[c.length-1][3];return{filled:false,ub:ub,d:(l-ub)/l*100}}
+function lcards(){
+ var l=(S.d.signals||[]).slice().sort(function(a,b){return b.ts-a.ts}).slice(0,6),box=$("lc");
+ if(!l.length){box.innerHTML='<div class="emp">با اولین سیگنال، چارت زنده‌اش اینجا ظاهر می‌شود</div>';lk="";return}
+ var k=l.map(function(s){return s.symbol+s.tf+s.ts}).join();
+ if(k!==lk){lk=k;box.innerHTML='<div class="lcg">'+l.map(function(s,i){return '<div class="lv"><div class="lh"><div><span class="sym">'+esc(s.symbol)+'</span> <span class="tf" style="font-size:11px">'+esc(s.tf)+'</span><div class="lb">'+(s.kind==="GAP"?"⚠️ احتمال گپ":"🔴 SELL")+' · '+ago(s.ts)+'</div></div><span class="bd" id="bd'+i+'">در حال دریافت…</span></div><canvas id="lcv'+i+'" width="520" height="240"></canvas><div class="lf" id="lf'+i+'"></div></div>'}).join("")+'</div>'}
+ l.forEach(function(s,i){gate(s.symbol,s.tf).then(function(c){
+  var st=gstat(s,c),cv=$("lcv"+i),b=$("bd"+i),f=$("lf"+i);if(!cv)return;draw(cv,c.slice(-50),st.ub);
+  if(st.w){b.className="bd wt";b.textContent="⏳ منتظر باز شدن کندل"}
+  else if(st.filled){b.className="bd ok";b.textContent="✅ گپ پر شد · "+hm(st.t)}
+  else if(st.old){b.className="bd";b.textContent="سیگنال قدیمی‌تر از بازه‌ی چارت"}
+  else{b.className="bd wt";b.textContent="⏳ گپ هنوز پر نشده"}
+  f.innerHTML='<span>price '+px(c[c.length-1][3])+'</span><span>UB '+px(st.ub)+'</span><span>'+(st.filled||st.w?"":"فاصله تا UB "+st.d.toFixed(2)+"%")+'</span>'
+ }).catch(function(){var b=$("bd"+i);if(b){b.className="bd";b.textContent="چارت زنده در دسترس نیست"}})})}
 var DEQ=[0,.4,.2,.9,1.3,1.1,1.8,2.4,2.1,2.9,3.2,2.6,3.4,3.1,3.9,4.5,4.2];
 function charts(){
  var d=S.d,ss=d.signals||[],e=$("eq"),W=600,H=150;
@@ -205,16 +242,17 @@ function charts(){
 function demoC(){var p=100,cl=[],c=[],i;for(i=0;i<80;i++){var o=p;p=o*(1+Math.sin(i*1.3)*.004+Math.cos(i*2.7)*.003+(i>76?.012:0));c.push([o,Math.max(o,p)*1.003,Math.min(o,p)*.997,p]);cl.push(p)}
  for(i=20;i<80;i++){var w=cl.slice(i-19,i+1),mu=w.reduce(function(x,y){return x+y})/20,sd=Math.sqrt(w.reduce(function(x,y){return x+(y-mu)*(y-mu)},0)/19);c[i].push(mu+2*sd,mu,mu-2*sd)}
  return c.slice(20)}
-function draw(cv,c){var x=cv.getContext("2d"),W=cv.width,H=cv.height,mn=1e99,mx=-1e99,i;
+function draw(cv,c,ubm){var x=cv.getContext("2d"),W=cv.width,H=cv.height,mn=1e99,mx=-1e99,i;
  c.forEach(function(k){mn=Math.min(mn,k[2],k[6]);mx=Math.max(mx,k[1],k[4])});
  var r=mx-mn||1,Y=function(v){return H-14-(v-mn)/r*(H-28)},w=W/c.length;x.clearRect(0,0,W,H);
  x.beginPath();c.forEach(function(k,j){x[j?"lineTo":"moveTo"](j*w+w/2,Y(k[4]))});for(i=c.length-1;i>=0;i--)x.lineTo(i*w+w/2,Y(c[i][6]));x.closePath();x.fillStyle="rgba(139,123,255,.12)";x.fill();
  [4,5,6].forEach(function(q){x.beginPath();c.forEach(function(k,j){x[j?"lineTo":"moveTo"](j*w+w/2,Y(k[q]))});x.strokeStyle=q===5?"#8b92a8":"#ffb547";x.lineWidth=1.3;x.stroke()});
- c.forEach(function(k,j){var up=k[3]>=k[0],cx=j*w+w/2;x.strokeStyle=x.fillStyle=up?"#2de2a6":"#ff4d6d";x.beginPath();x.moveTo(cx,Y(k[1]));x.lineTo(cx,Y(k[2]));x.stroke();x.fillRect(cx-w*.3,Math.min(Y(k[0]),Y(k[3])),w*.6,Math.max(1,Math.abs(Y(k[0])-Y(k[3]))))})}
+ c.forEach(function(k,j){var up=k[3]>=k[0],cx=j*w+w/2;x.strokeStyle=x.fillStyle=up?"#2de2a6":"#ff4d6d";x.beginPath();x.moveTo(cx,Y(k[1]));x.lineTo(cx,Y(k[2]));x.stroke();x.fillRect(cx-w*.3,Math.min(Y(k[0]),Y(k[3])),w*.6,Math.max(1,Math.abs(Y(k[0])-Y(k[3]))))});
+ if(ubm){x.setLineDash([6,5]);x.strokeStyle="#fff";x.lineWidth=1;x.beginPath();x.moveTo(0,Y(ubm));x.lineTo(W,Y(ubm));x.stroke();x.setLineDash([])}}
 function openChart(i){var s=(S.list||[])[i];if(!s)return;$("md").className="md on";$("mt").textContent=s.symbol+" · "+s.tf+" · "+(s.kind==="GAP"?"احتمال گپ":"SELL");
  var im=$("mi"),cv=$("mc");im.style.display=cv.style.display="none";$("mn").textContent="";
  function cd(){var c=s.candles||(S.live?null:demoC());if(c){cv.style.display="block";draw(cv,c)}else $("mn").textContent="چارتی برای این سیگنال ذخیره نشده."}
- if(s.img){im.onload=function(){im.style.display="block"};im.onerror=cd;im.src=s.img}else cd()}
+ gate(s.symbol,s.tf).then(function(c){cv.style.display="block";draw(cv,c.slice(-60))}).catch(function(){if(s.img){im.onload=function(){im.style.display="block"};im.onerror=cd;im.src=s.img}else cd()})}
 $("feed").addEventListener("click",function(e){var b=e.target.closest(".cb");if(b)openChart(+b.dataset.i)});
 $("mx").onclick=function(){$("md").className="md"};$("md").onclick=function(e){if(e.target===this)this.className="md"};
 document.addEventListener("keydown",function(e){if(e.key==="Escape")$("md").className="md"});
@@ -224,10 +262,10 @@ function loadSignals(){
  .then(function(j){var first=S.seen===null,cur={};
   (j.signals||[]).forEach(function(s){var k=s.symbol+s.tf+s.ts;cur[k]=1;
    if(!first&&!S.seen[k]){S.fresh=true;ping(s)}});
-  S.d=j;S.live=true;S.seen=cur;S.fresh=!first;render();setTimeout(function(){S.fresh=false},3000)})
+  ev(j);S.d=j;S.live=true;S.seen=cur;S.fresh=!first;render();setTimeout(function(){S.fresh=false},3000)})
  .catch(function(){if(S.seen===null)S.seen={};render()});
 }
-function loadGit(){
+function loadGit(){return;
  J("https://api.github.com/repos/"+REPO+"/actions/runs?per_page=6").then(function(j){
   S.runs=(j.workflow_runs||[]).map(function(r){return{ts:Math.floor(new Date(r.updated_at)/1000),x:"#"+r.run_number+" "+r.name+" → "+(r.conclusion||r.status)}});render()}).catch(function(){});
  J("https://api.github.com/repos/"+REPO+"/commits?per_page=5").then(function(j){
@@ -243,7 +281,7 @@ $("fl").onclick=function(e){var b=e.target.closest(".chip");if(!b)return;
  if(b.dataset.f)S.f=b.dataset.f;if(b.dataset.t)S.t=S.t===b.dataset.t?null:b.dataset.t;
  document.querySelectorAll(".chip").forEach(function(x){x.setAttribute("aria-pressed",String(x.dataset.f?x.dataset.f===S.f:x.dataset.t===S.t))});render()};
 document.querySelectorAll(".card").forEach(function(c,i){c.style.animationDelay=i*.07+"s";c.onmousemove=function(e){var r=c.getBoundingClientRect();c.style.setProperty("--x",e.clientX-r.left+"px");c.style.setProperty("--y",e.clientY-r.top+"px")}});
-loadSignals();loadGit();setInterval(loadSignals,20000);setInterval(loadGit,90000);setInterval(render,30000);
+loadSignals();loadGit();setInterval(loadSignals,20000);setInterval(loadGit,90000);setInterval(render,30000);setInterval(lcards,20000);
 </script>
 </body>
 </html>
