@@ -12,6 +12,7 @@ from __future__ import annotations
 
 import asyncio
 import base64
+import base64
 import hashlib
 import hmac
 import json
@@ -32,7 +33,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 STATE_FILE = os.path.join(BASE_DIR, "bot_state.json")
 STATE_BAK = os.path.join(BASE_DIR, "bot_state.bak")
 
-BOT_VERSION = "2.2.0"
+BOT_VERSION = "2.2.1"
 CHANGELOG = {
     "2.1.0": [
         "چارت احتمال‌گپ → استایل SolAtlas (خط‌روند شکست/بازتست) — هنوز ناقص",
@@ -143,7 +144,8 @@ def github_state_pull() -> bool:
     owner, name, token = _github_repo_parts()
     if not token:
         return False
-    url = f"https://api.github.com/repos/{owner}/{name}/contents/.bot_state/bot_state.json"
+    path = os.environ.get("STATE_GITHUB_PATH") or "bot_state.json"
+    url = f"https://api.github.com/repos/{owner}/{name}/contents/{path}"
     headers = {"Authorization": f"Bearer {token}", "Accept": "application/vnd.github+json", "X-GitHub-Api-Version": "2022-11-28"}
     try:
         r = requests.get(url, headers=headers, timeout=20)
@@ -165,18 +167,19 @@ def github_state_push(force: bool = False) -> bool:
     now = int(time.time())
     if not force and _last_github_push_ts and now - _last_github_push_ts < 45:
         return False
-    repo, token = _github_repo_parts()
-    if not token or not repo:
-        log.warning("github_state_push skip: no token/repo (set GITHUB_TOKEN or STATE_GITHUB_TOKEN)")
+    owner, name, token = _github_repo_parts()
+    if not token or not owner or not name:
+        log.warning("github_state_push skip: no token/repo (GITHUB_REPOSITORY + GITHUB_TOKEN)")
         return False
     if not os.path.exists(STATE_FILE):
         return False
     try:
-        import base64
         with open(STATE_FILE, "r", encoding="utf-8") as f:
             raw = f.read()
         b64 = base64.b64encode(raw.encode("utf-8")).decode("ascii")
-        url = f"https://api.github.com/repos/{repo}/contents/bot_state.json"
+        # همان مسیر pull
+        path = os.environ.get("STATE_GITHUB_PATH") or "bot_state.json"
+        url = f"https://api.github.com/repos/{owner}/{name}/contents/{path}"
         headers = {
             "Authorization": f"Bearer {token}",
             "Accept": "application/vnd.github+json",
@@ -196,9 +199,9 @@ def github_state_push(force: bool = False) -> bool:
         pr = requests.put(url, headers=headers, json=body, timeout=30)
         if pr.status_code in (200, 201):
             _last_github_push_ts = now
-            log.info("github_state_push OK (%s bytes)", len(raw))
+            log.info("github_state_push OK path=%s bytes=%s", path, len(raw))
             return True
-        log.warning("github_state_push HTTP %s %s", pr.status_code, (pr.text or "")[:180])
+        log.warning("github_state_push HTTP %s %s", pr.status_code, (pr.text or "")[:200])
         return False
     except Exception as e:
         log.warning("github_state_push: %s", e)
@@ -1010,7 +1013,20 @@ async def main() -> None:
         log.error("TELEGRAM_TOKEN / CHAT_ID missing")
         return
     send_telegram_text(format_startup_message())
-    log.info("started v%s mode=%s trading=%s", BOT_VERSION, TRADE_MODE, trading_enabled())
+    log.info(
+        "started v%s mode=%s trading=%s paper=%s auto=%s",
+        BOT_VERSION,
+        TRADE_MODE or "off",
+        trading_enabled(),
+        is_paper_mode(),
+        bool(AUTO_TRADE),
+    )
+    owner, name, token = _github_repo_parts()
+    log.info(
+        "state_remote repo=%s token=%s",
+        f"{owner}/{name}" if owner and name else "NONE",
+        "YES" if token else "NO",
+    )
     save_state(force_remote=True)
     while True:
         try:
