@@ -1,23 +1,6 @@
 {
   "open_trades": [
     {
-      "symbol": "LLYUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 1348.9126134705084,
-      "qty": 0.02965352,
-      "margin": 4.0,
-      "leverage": 10,
-      "tp_price": 1308.445235066393,
-      "tf": "1h",
-      "opened_at": 1793270750,
-      "adds": 3,
-      "entry_candle_ts": 1793270700,
-      "last_leg_candle_ts": 1793282400,
-      "dry_run": true,
-      "order_id": "PAPER-LLYUSDT-1793270750"
-    },
-    {
       "symbol": "HYPEUSDT",
       "side": "SELL",
       "status": "open",
@@ -849,6 +832,23 @@
       "last_leg_candle_ts": 1793292300,
       "dry_run": true,
       "order_id": "PAPER-BULLAUSDT-1793292389"
+    },
+    {
+      "symbol": "JCTUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.006073,
+      "qty": 1646.6326,
+      "margin": 1.0,
+      "leverage": 10,
+      "tp_price": 0.00589081,
+      "tf": "15m",
+      "opened_at": 1793292448,
+      "adds": 0,
+      "entry_candle_ts": 1793292300,
+      "last_leg_candle_ts": 1793292300,
+      "dry_run": true,
+      "order_id": "PAPER-JCTUSDT-1793292448"
     }
   ],
   "trade_history": [
@@ -2020,6 +2020,12 @@
       "symbol": "ZECUSDT",
       "tf": "15m",
       "candle_ts": 1793290500,
+      "side": "SELL"
+    },
+    {
+      "symbol": "BULLAUSDT",
+      "tf": "15m",
+      "candle_ts": 1793292300,
       "side": "SELL"
     }
   ],
