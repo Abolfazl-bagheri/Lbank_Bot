@@ -798,6 +798,23 @@
       "last_leg_candle_ts": 1793293200,
       "dry_run": true,
       "order_id": "PAPER-BARDUSDT-1793293466"
+    },
+    {
+      "symbol": "PAIDUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.003816,
+      "qty": 2620.5451,
+      "margin": 1.0,
+      "leverage": 10,
+      "tp_price": 0.00370152,
+      "tf": "4h",
+      "opened_at": 1793304435,
+      "adds": 0,
+      "entry_candle_ts": 1793304000,
+      "last_leg_candle_ts": 1793304000,
+      "dry_run": true,
+      "order_id": "PAPER-PAIDUSDT-1793304435"
     }
   ],
   "trade_history": [
@@ -1955,6 +1972,12 @@
     },
     {
       "symbol": "PARTIUSDT",
+      "tf": "4h",
+      "candle_ts": 1793304000,
+      "side": "SELL"
+    },
+    {
+      "symbol": "HYPEUSDT",
       "tf": "4h",
       "candle_ts": 1793304000,
       "side": "SELL"
