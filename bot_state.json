@@ -1,23 +1,6 @@
 {
   "open_trades": [
     {
-      "symbol": "BEATUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.10324462029561683,
-      "qty": 290.5721,
-      "margin": 3.0,
-      "leverage": 10,
-      "tp_price": 0.10014728168674833,
-      "tf": "15m",
-      "opened_at": 1793268160,
-      "adds": 2,
-      "entry_candle_ts": 1793268000,
-      "last_leg_candle_ts": 1793287800,
-      "dry_run": true,
-      "order_id": "PAPER-BEATUSDT-1793268160"
-    },
-    {
       "symbol": "PIUSDT",
       "side": "SELL",
       "status": "open",
@@ -1191,6 +1174,26 @@
       "closed_at": 1793293383,
       "close_px": 0.08727,
       "pnl_usdt": 0.31624500665779015
+    },
+    {
+      "symbol": "BEATUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.10324462029561683,
+      "qty": 290.5721,
+      "margin": 3.0,
+      "leverage": 10,
+      "tp_price": 0.10014728168674833,
+      "tf": "15m",
+      "opened_at": 1793268160,
+      "adds": 2,
+      "entry_candle_ts": 1793268000,
+      "last_leg_candle_ts": 1793287800,
+      "dry_run": true,
+      "order_id": "PAPER-BEATUSDT-1793268160",
+      "closed_at": 1793304555,
+      "close_px": 0.09818,
+      "pnl_usdt": 1.4716370541483337
     }
   ],
   "pending": [
@@ -2033,6 +2036,12 @@
       "tf": "4h",
       "candle_ts": 1793304000,
       "side": "SELL"
+    },
+    {
+      "symbol": "GILDUSDT",
+      "tf": "4h",
+      "candle_ts": 1793304000,
+      "side": "SELL"
     }
   ],
   "kline_blacklist": {
@@ -2057,7 +2066,18 @@
     "MASTOCKUSDT": 1793325009,
     "AMCUSDT": 1793329508,
     "SPACE1USDT": 1793329612,
-    "SMRUSDT": 1793331277
+    "SMRUSDT": 1793331277,
+    "OROCHIUSDT": 1793347698,
+    "QUID1USDT": 1793347699,
+    "DODOUSDT": 1793347700,
+    "KOPNUSDT": 1793347719,
+    "CAPETHUSDT": 1793347733,
+    "1000WOJAKUSDT": 1793347738,
+    "1000SATSUSDT": 1793347739,
+    "NEXUSDT": 1793347740,
+    "NEIRO1USDT": 1793347745,
+    "B3USDT": 1793347751,
+    "CZUSDT": 1793347754
   },
   "last_trade_report_ts": 1793293519,
   "last_daily_report_date": "",
