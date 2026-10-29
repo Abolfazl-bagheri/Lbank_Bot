@@ -543,6 +543,23 @@
       "last_leg_candle_ts": 1793282400,
       "dry_run": true,
       "order_id": "PAPER-FLNCUSDT-1793282559"
+    },
+    {
+      "symbol": "ONDSUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 6.961,
+      "qty": 1.4366,
+      "margin": 1.0,
+      "leverage": 10,
+      "tp_price": 6.7521700000000004,
+      "tf": "15m",
+      "opened_at": 1793282569,
+      "adds": 0,
+      "entry_candle_ts": 1793282400,
+      "last_leg_candle_ts": 1793282400,
+      "dry_run": true,
+      "order_id": "PAPER-ONDSUSDT-1793282569"
     }
   ],
   "trade_history": [
@@ -1249,6 +1266,12 @@
     {
       "symbol": "MRKUSDT",
       "tf": "1h",
+      "candle_ts": 1793282400,
+      "side": "SELL"
+    },
+    {
+      "symbol": "FLNCUSDT",
+      "tf": "15m",
       "candle_ts": 1793282400,
       "side": "SELL"
     }
