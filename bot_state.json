@@ -458,6 +458,23 @@
       "last_leg_candle_ts": 1793307600,
       "dry_run": true,
       "order_id": "PAPER-SKDDUSDT-1793307794"
+    },
+    {
+      "symbol": "CMCSAUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 22.464,
+      "qty": 0.445157,
+      "margin": 1.0,
+      "leverage": 10,
+      "tp_price": 21.79008,
+      "tf": "1h",
+      "opened_at": 1793307811,
+      "adds": 0,
+      "entry_candle_ts": 1793307600,
+      "last_leg_candle_ts": 1793307600,
+      "dry_run": true,
+      "order_id": "PAPER-CMCSAUSDT-1793307811"
     }
   ],
   "trade_history": [
@@ -2201,6 +2218,12 @@
     },
     {
       "symbol": "SKDDUSDT",
+      "tf": "1h",
+      "candle_ts": 1793307600,
+      "side": "SELL"
+    },
+    {
+      "symbol": "GILDUSDT",
       "tf": "1h",
       "candle_ts": 1793307600,
       "side": "SELL"
