@@ -259,16 +259,16 @@
       "symbol": "LITUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 3.1822,
-      "qty": 3.1425,
-      "margin": 1.0,
+      "entry": 3.2003457443233643,
+      "qty": 6.2493,
+      "margin": 2.0,
       "leverage": 10,
-      "tp_price": 3.086734,
+      "tp_price": 3.1043353719936633,
       "tf": "15m",
       "opened_at": 1793278104,
-      "adds": 0,
+      "adds": 1,
       "entry_candle_ts": 1793277900,
-      "last_leg_candle_ts": 1793277900,
+      "last_leg_candle_ts": 1793278800,
       "dry_run": true,
       "order_id": "PAPER-LITUSDT-1793278104"
     },
@@ -711,6 +711,12 @@
     },
     {
       "symbol": "HIMSUSDT",
+      "tf": "15m",
+      "candle_ts": 1793278800,
+      "side": "SELL"
+    },
+    {
+      "symbol": "NESUSDT",
       "tf": "15m",
       "candle_ts": 1793278800,
       "side": "SELL"
