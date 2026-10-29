@@ -101,6 +101,23 @@
       "last_leg_candle_ts": 1793268000,
       "dry_run": true,
       "order_id": "PAPER-BLENDUSDT-1793268139"
+    },
+    {
+      "symbol": "BEATUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.09516,
+      "qty": 105.0862,
+      "margin": 1.0,
+      "leverage": 10,
+      "tp_price": 0.09230519999999999,
+      "tf": "1h",
+      "opened_at": 1793268160,
+      "adds": 0,
+      "entry_candle_ts": 1793268000,
+      "last_leg_candle_ts": 1793268000,
+      "dry_run": true,
+      "order_id": "PAPER-BEATUSDT-1793268160"
     }
   ],
   "trade_history": [
@@ -192,6 +209,12 @@
       "symbol": "MAGMAUSDT",
       "tf": "15m",
       "candle_ts": 1793266200,
+      "side": "SELL"
+    },
+    {
+      "symbol": "BLENDUSDT",
+      "tf": "1h",
+      "candle_ts": 1793268000,
       "side": "SELL"
     }
   ],
