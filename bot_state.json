@@ -52,23 +52,6 @@
       "order_id": "PAPER-ORCLUSDT-1793265480"
     },
     {
-      "symbol": "PARTIUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.03986,
-      "qty": 250.8781,
-      "margin": 1.0,
-      "leverage": 10,
-      "tp_price": 0.038664199999999996,
-      "tf": "15m",
-      "opened_at": 1793265511,
-      "adds": 0,
-      "entry_candle_ts": 1793265300,
-      "last_leg_candle_ts": 1793265300,
-      "dry_run": true,
-      "order_id": "PAPER-PARTIUSDT-1793265511"
-    },
-    {
       "symbol": "BEATUSDT",
       "side": "SELL",
       "status": "open",
@@ -336,6 +319,26 @@
       "closed_at": 1793268964,
       "close_px": 0.05463,
       "pnl_usdt": 0.38542766631467873
+    },
+    {
+      "symbol": "PARTIUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.03986,
+      "qty": 250.8781,
+      "margin": 1.0,
+      "leverage": 10,
+      "tp_price": 0.038664199999999996,
+      "tf": "15m",
+      "opened_at": 1793265511,
+      "adds": 0,
+      "entry_candle_ts": 1793265300,
+      "last_leg_candle_ts": 1793265300,
+      "dry_run": true,
+      "order_id": "PAPER-PARTIUSDT-1793265511",
+      "closed_at": 1793273636,
+      "close_px": 0.03866,
+      "pnl_usdt": 0.3010536879076768
     }
   ],
   "pending": [
@@ -553,6 +556,12 @@
       "symbol": "HYPEUSDT",
       "tf": "15m",
       "candle_ts": 1793272500,
+      "side": "SELL"
+    },
+    {
+      "symbol": "EPICUSDT",
+      "tf": "15m",
+      "candle_ts": 1793273400,
       "side": "SELL"
     }
   ],
