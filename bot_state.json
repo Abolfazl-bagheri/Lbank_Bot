@@ -305,6 +305,23 @@
       "last_leg_candle_ts": 1793278800,
       "dry_run": true,
       "order_id": "PAPER-GRIFFAINUSDT-1793278908"
+    },
+    {
+      "symbol": "MAGMAUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.28526,
+      "qty": 35.0557,
+      "margin": 1.0,
+      "leverage": 10,
+      "tp_price": 0.2767022,
+      "tf": "1h",
+      "opened_at": 1793278931,
+      "adds": 0,
+      "entry_candle_ts": 1793278800,
+      "last_leg_candle_ts": 1793278800,
+      "dry_run": true,
+      "order_id": "PAPER-MAGMAUSDT-1793278931"
     }
   ],
   "trade_history": [
@@ -752,6 +769,12 @@
     },
     {
       "symbol": "GRIFFAINUSDT",
+      "tf": "1h",
+      "candle_ts": 1793278800,
+      "side": "SELL"
+    },
+    {
+      "symbol": "LITUSDT",
       "tf": "1h",
       "candle_ts": 1793278800,
       "side": "SELL"
