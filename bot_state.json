@@ -832,6 +832,23 @@
       "last_leg_candle_ts": 1793304000,
       "dry_run": true,
       "order_id": "PAPER-UAIUSDT-1793304447"
+    },
+    {
+      "symbol": "GILDUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 168.29,
+      "qty": 0.059421,
+      "margin": 1.0,
+      "leverage": 10,
+      "tp_price": 163.2413,
+      "tf": "4h",
+      "opened_at": 1793304467,
+      "adds": 0,
+      "entry_candle_ts": 1793304000,
+      "last_leg_candle_ts": 1793304000,
+      "dry_run": true,
+      "order_id": "PAPER-GILDUSDT-1793304467"
     }
   ],
   "trade_history": [
@@ -2007,6 +2024,12 @@
     },
     {
       "symbol": "UAIUSDT",
+      "tf": "4h",
+      "candle_ts": 1793304000,
+      "side": "SELL"
+    },
+    {
+      "symbol": "LLYUSDT",
       "tf": "4h",
       "candle_ts": 1793304000,
       "side": "SELL"
