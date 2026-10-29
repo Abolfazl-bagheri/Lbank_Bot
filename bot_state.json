@@ -509,6 +509,23 @@
       "last_leg_candle_ts": 1793281500,
       "dry_run": true,
       "order_id": "PAPER-VKTXUSDT-1793281658"
+    },
+    {
+      "symbol": "ASTSUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 42.84,
+      "qty": 0.233427,
+      "margin": 1.0,
+      "leverage": 10,
+      "tp_price": 41.5548,
+      "tf": "15m",
+      "opened_at": 1793281666,
+      "adds": 0,
+      "entry_candle_ts": 1793281500,
+      "last_leg_candle_ts": 1793281500,
+      "dry_run": true,
+      "order_id": "PAPER-ASTSUSDT-1793281666"
     }
   ],
   "trade_history": [
@@ -1098,6 +1115,12 @@
     },
     {
       "symbol": "CVNAUSDT",
+      "tf": "15m",
+      "candle_ts": 1793281500,
+      "side": "SELL"
+    },
+    {
+      "symbol": "VKTXUSDT",
       "tf": "15m",
       "candle_ts": 1793281500,
       "side": "SELL"
