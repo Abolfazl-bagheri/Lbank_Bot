@@ -356,6 +356,23 @@
       "last_leg_candle_ts": 1793277900,
       "dry_run": true,
       "order_id": "PAPER-LITUSDT-1793278000"
+    },
+    {
+      "symbol": "ZROUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 1.7498,
+      "qty": 5.7149,
+      "margin": 1.0,
+      "leverage": 10,
+      "tp_price": 1.697306,
+      "tf": "15m",
+      "opened_at": 1793278056,
+      "adds": 0,
+      "entry_candle_ts": 1793277900,
+      "last_leg_candle_ts": 1793277900,
+      "dry_run": true,
+      "order_id": "PAPER-ZROUSDT-1793278056"
     }
   ],
   "trade_history": [
@@ -827,6 +844,12 @@
     },
     {
       "symbol": "BASEDUSDT",
+      "tf": "15m",
+      "candle_ts": 1793277900,
+      "side": "SELL"
+    },
+    {
+      "symbol": "NESUSDT",
       "tf": "15m",
       "candle_ts": 1793277900,
       "side": "SELL"
