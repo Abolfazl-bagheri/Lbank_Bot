@@ -67,6 +67,23 @@
       "last_leg_candle_ts": 1793265300,
       "dry_run": true,
       "order_id": "PAPER-TAGUSDT-1793265486"
+    },
+    {
+      "symbol": "PARTIUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.03986,
+      "qty": 250.8781,
+      "margin": 1.0,
+      "leverage": 10,
+      "tp_price": 0.038664199999999996,
+      "tf": "15m",
+      "opened_at": 1793265511,
+      "adds": 0,
+      "entry_candle_ts": 1793265300,
+      "last_leg_candle_ts": 1793265300,
+      "dry_run": true,
+      "order_id": "PAPER-PARTIUSDT-1793265511"
     }
   ],
   "trade_history": [
@@ -118,6 +135,12 @@
     },
     {
       "symbol": "ORCLUSDT",
+      "tf": "15m",
+      "candle_ts": 1793265300,
+      "side": "SELL"
+    },
+    {
+      "symbol": "TAGUSDT",
       "tf": "15m",
       "candle_ts": 1793265300,
       "side": "SELL"
