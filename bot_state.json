@@ -19,7 +19,14 @@
     }
   ],
   "trade_history": [],
-  "pending": [],
+  "pending": [
+    {
+      "symbol": "KATUSDT",
+      "tf": "15m",
+      "candle_ts": 1793259000,
+      "side": "SELL"
+    }
+  ],
   "kline_blacklist": {
     "GSTOCKUSDT": 1793301396,
     "QUID1USDT": 1793301397,
@@ -35,9 +42,11 @@
     "1000SATSUSDT": 1793301485,
     "NEXUSDT": 1793301489,
     "NEIRO1USDT": 1793301494,
-    "CZUSDT": 1793301505
+    "CZUSDT": 1793301505,
+    "DODOUSDT": 1793302396,
+    "APROUSDT": 1793302417
   },
-  "last_trade_report_ts": 1793258305,
+  "last_trade_report_ts": 1793259235,
   "last_daily_report_date": "",
   "last_known_version": "2.2.1"
 }
