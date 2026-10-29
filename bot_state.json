@@ -322,6 +322,23 @@
       "last_leg_candle_ts": 1793278800,
       "dry_run": true,
       "order_id": "PAPER-MAGMAUSDT-1793278931"
+    },
+    {
+      "symbol": "ZROUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 1.7879,
+      "qty": 5.5932,
+      "margin": 1.0,
+      "leverage": 10,
+      "tp_price": 1.7342629999999999,
+      "tf": "15m",
+      "opened_at": 1793278937,
+      "adds": 0,
+      "entry_candle_ts": 1793278800,
+      "last_leg_candle_ts": 1793278800,
+      "dry_run": true,
+      "order_id": "PAPER-ZROUSDT-1793278937"
     }
   ],
   "trade_history": [
@@ -775,6 +792,12 @@
     },
     {
       "symbol": "LITUSDT",
+      "tf": "1h",
+      "candle_ts": 1793278800,
+      "side": "SELL"
+    },
+    {
+      "symbol": "MAGMAUSDT",
       "tf": "1h",
       "candle_ts": 1793278800,
       "side": "SELL"
