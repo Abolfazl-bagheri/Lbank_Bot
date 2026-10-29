@@ -752,16 +752,16 @@
       "symbol": "BULLAUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.07293,
-      "qty": 137.1178,
-      "margin": 1.0,
+      "entry": 0.07333276331044618,
+      "qty": 272.7294,
+      "margin": 2.0,
       "leverage": 10,
-      "tp_price": 0.07074209999999999,
+      "tp_price": 0.07113278041113279,
       "tf": "15m",
       "opened_at": 1793292477,
-      "adds": 0,
+      "adds": 1,
       "entry_candle_ts": 1793292300,
-      "last_leg_candle_ts": 1793292300,
+      "last_leg_candle_ts": 1793293200,
       "dry_run": true,
       "order_id": "PAPER-BULLAUSDT-1793292477"
     },
@@ -1873,6 +1873,12 @@
       "tf": "15m",
       "candle_ts": 1793292300,
       "side": "SELL"
+    },
+    {
+      "symbol": "JCTUSDT",
+      "tf": "15m",
+      "candle_ts": 1793292300,
+      "side": "SELL"
     }
   ],
   "kline_blacklist": {
@@ -1909,7 +1915,7 @@
     "SPACE1USDT": 1793329612,
     "SMRUSDT": 1793331277
   },
-  "last_trade_report_ts": 1793291641,
+  "last_trade_report_ts": 1793292605,
   "last_daily_report_date": "",
   "last_known_version": "2.3.3"
 }
