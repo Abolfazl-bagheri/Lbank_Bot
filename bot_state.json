@@ -1,23 +1,6 @@
 {
   "open_trades": [
     {
-      "symbol": "ORCLUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 143.52,
-      "qty": 0.069677,
-      "margin": 1.0,
-      "leverage": 10,
-      "tp_price": 139.2144,
-      "tf": "15m",
-      "opened_at": 1793265480,
-      "adds": 0,
-      "entry_candle_ts": 1793265300,
-      "last_leg_candle_ts": 1793265300,
-      "dry_run": true,
-      "order_id": "PAPER-ORCLUSDT-1793265480"
-    },
-    {
       "symbol": "BEATUSDT",
       "side": "SELL",
       "status": "open",
@@ -1083,6 +1066,26 @@
       "closed_at": 1793291639,
       "close_px": 0.014394,
       "pnl_usdt": 0.6853038245000965
+    },
+    {
+      "symbol": "ORCLUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 143.52,
+      "qty": 0.069677,
+      "margin": 1.0,
+      "leverage": 10,
+      "tp_price": 139.2144,
+      "tf": "15m",
+      "opened_at": 1793265480,
+      "adds": 0,
+      "entry_candle_ts": 1793265300,
+      "last_leg_candle_ts": 1793265300,
+      "dry_run": true,
+      "order_id": "PAPER-ORCLUSDT-1793265480",
+      "closed_at": 1793292531,
+      "close_px": 138.3,
+      "pnl_usdt": 0.36371237458193967
     }
   ],
   "pending": [
@@ -1846,6 +1849,12 @@
       "symbol": "BONKUSDT",
       "tf": "15m",
       "candle_ts": 1793288700,
+      "side": "SELL"
+    },
+    {
+      "symbol": "BULLAUSDT",
+      "tf": "15m",
+      "candle_ts": 1793292300,
       "side": "SELL"
     }
   ],
