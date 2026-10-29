@@ -560,6 +560,23 @@
       "last_leg_candle_ts": 1793282400,
       "dry_run": true,
       "order_id": "PAPER-RDWUSDT-1793282729"
+    },
+    {
+      "symbol": "CYPHUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 3.218,
+      "qty": 3.1075,
+      "margin": 1.0,
+      "leverage": 10,
+      "tp_price": 3.12146,
+      "tf": "15m",
+      "opened_at": 1793283525,
+      "adds": 0,
+      "entry_candle_ts": 1793283300,
+      "last_leg_candle_ts": 1793283300,
+      "dry_run": true,
+      "order_id": "PAPER-CYPHUSDT-1793283525"
     }
   ],
   "trade_history": [
@@ -1335,6 +1352,12 @@
     },
     {
       "symbol": "FLEXUSDT",
+      "tf": "15m",
+      "candle_ts": 1793283300,
+      "side": "SELL"
+    },
+    {
+      "symbol": "ASTSUSDT",
       "tf": "15m",
       "candle_ts": 1793283300,
       "side": "SELL"
