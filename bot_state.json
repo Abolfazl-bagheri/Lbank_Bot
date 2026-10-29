@@ -1,23 +1,6 @@
 {
   "open_trades": [
     {
-      "symbol": "BEATUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.10448528355341849,
-      "qty": 382.8291,
-      "margin": 4.0,
-      "leverage": 10,
-      "tp_price": 0.10135072504681593,
-      "tf": "15m",
-      "opened_at": 1793268160,
-      "adds": 3,
-      "entry_candle_ts": 1793268000,
-      "last_leg_candle_ts": 1793287800,
-      "dry_run": true,
-      "order_id": "PAPER-BEATUSDT-1793268160"
-    },
-    {
       "symbol": "PIUSDT",
       "side": "SELL",
       "status": "open",
@@ -849,6 +832,23 @@
       "last_leg_candle_ts": 1793289600,
       "dry_run": true,
       "order_id": "PAPER-BOMEUSDT-1793290077"
+    },
+    {
+      "symbol": "TWTUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.4649,
+      "qty": 21.51,
+      "margin": 1.0,
+      "leverage": 10,
+      "tp_price": 0.450953,
+      "tf": "4h",
+      "opened_at": 1793290083,
+      "adds": 0,
+      "entry_candle_ts": 1793289600,
+      "last_leg_candle_ts": 1793289600,
+      "dry_run": true,
+      "order_id": "PAPER-TWTUSDT-1793290083"
     }
   ],
   "trade_history": [
@@ -1970,6 +1970,12 @@
     },
     {
       "symbol": "ZCSHUSDT",
+      "tf": "4h",
+      "candle_ts": 1793289600,
+      "side": "SELL"
+    },
+    {
+      "symbol": "BOMEUSDT",
       "tf": "4h",
       "candle_ts": 1793289600,
       "side": "SELL"
