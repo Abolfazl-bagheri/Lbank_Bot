@@ -35,7 +35,7 @@ SIGNALS_FILE = os.path.join(BASE_DIR, "signals.json")
 LIVE_TOPIC = os.environ.get("LIVE_TOPIC", "lbank-gap-b0b85cee29ce").strip()
 STATE_BAK = os.path.join(BASE_DIR, "bot_state.bak")
 
-BOT_VERSION = "2.3.3"
+BOT_VERSION = "2.3.4"
 CHANGELOG = {
     "2.1.0": [
         "چارت احتمال‌گپ → استایل SolAtlas (خط‌روند شکست/بازتست) — هنوز ناقص",
@@ -560,13 +560,14 @@ def check_signal(df: pd.DataFrame, symbol: str, tf: str):
 
 
 def tv_lbank_url(symbol: str) -> str:
-    return f"https://www.tradingview.com/chart/?symbol=LBANK%3A{symbol.upper()}.P"
+    s = (symbol or "").upper().replace("_", "").replace("-", "")
+    return f"https://www.tradingview.com/chart/?symbol=LBANK%3A{s}.P"
 
 
 def lbank_futures_url(symbol: str) -> str:
-    s = symbol.lower()
-    pair = s[:-4] + "_usdt" if s.endswith("usdt") else s
-    return f"https://www.lbank.com/futures/{pair}"
+    # فرمت درست: btcusdt نه btc_usdt
+    s = (symbol or "").lower().replace("_", "").replace("-", "")
+    return f"https://www.lbank.com/futures/{s}"
 
 
 
@@ -773,7 +774,7 @@ def open_sell_trade(symbol: str, entry_price: float, tf: str, candle_ts: int | N
         new_entry = (avg * old_qty + entry_price * add_qty) / new_qty
         existing.update({"entry": new_entry, "qty": new_qty, "margin": new_margin, "tp_price": tp_price_for_sell(new_entry),
                          "adds": adds + 1, "last_leg_candle_ts": cts or last_cts, "tf": tf})
-        send_telegram_text(f"📉 <b>پله PAPER</b> {symbol}\nمیانگین ≈ <code>{new_entry:.6g}</code> · {new_margin}U")
+        log.info("PAPER_ADD %s avg=%.6g margin=%s adds=%s", symbol, new_entry, new_margin, adds + 1)
         save_state(force_remote=True)
         return existing
 
@@ -791,11 +792,8 @@ def open_sell_trade(symbol: str, entry_price: float, tf: str, candle_ts: int | N
     if is_paper_mode():
         rec["order_id"] = f"PAPER-{symbol}-{int(time.time())}"
         open_trades.append(rec)
-        send_telegram_text(
-            f"🤖 <b>ورود مجازی PAPER سِل</b>\n<b>{symbol}</b> · {tf}\n"
-            f"ورود ≈ <code>{entry_price:.6g}</code>\nمارجین {TRADE_MARGIN_USDT}U · {TRADE_LEVERAGE}x\nTP ≈ <code>{tp:.6g}</code>"
-        )
-        save_state()
+        log.info("PAPER_OPEN %s %s entry=%.6g tp=%.6g", symbol, tf, entry_price, tp)
+        save_state(force_remote=True)
         return rec
 
     _perp_post("/cfd/openApi/v1/prv/setLeverage", {"symbol": symbol.upper(), "productGroup": "SwapU", "leverage": TRADE_LEVERAGE, "positionSide": "short"})
