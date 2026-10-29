@@ -290,23 +290,6 @@
       "order_id": "PAPER-GEVUSDT-1793281799"
     },
     {
-      "symbol": "FLNCUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 6.181,
-      "qty": 1.6179,
-      "margin": 1.0,
-      "leverage": 10,
-      "tp_price": 5.99557,
-      "tf": "15m",
-      "opened_at": 1793282545,
-      "adds": 0,
-      "entry_candle_ts": 1793282400,
-      "last_leg_candle_ts": 1793282400,
-      "dry_run": true,
-      "order_id": "PAPER-FLNCUSDT-1793282545"
-    },
-    {
       "symbol": "PROVEUSDT",
       "side": "SELL",
       "status": "open",
@@ -475,23 +458,6 @@
       "last_leg_candle_ts": 1793304000,
       "dry_run": true,
       "order_id": "PAPER-PARTIUSDT-1793293261"
-    },
-    {
-      "symbol": "PAIDUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.003816,
-      "qty": 2620.5451,
-      "margin": 1.0,
-      "leverage": 10,
-      "tp_price": 0.00370152,
-      "tf": "4h",
-      "opened_at": 1793304435,
-      "adds": 0,
-      "entry_candle_ts": 1793304000,
-      "last_leg_candle_ts": 1793304000,
-      "dry_run": true,
-      "order_id": "PAPER-PAIDUSDT-1793304435"
     },
     {
       "symbol": "UAIUSDT",
@@ -1282,6 +1248,46 @@
       "closed_at": 1793305209,
       "close_px": 163.8,
       "pnl_usdt": 0.37320011754334376
+    },
+    {
+      "symbol": "PAIDUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.003816,
+      "qty": 2620.5451,
+      "margin": 1.0,
+      "leverage": 10,
+      "tp_price": 0.00370152,
+      "tf": "4h",
+      "opened_at": 1793304435,
+      "adds": 0,
+      "entry_candle_ts": 1793304000,
+      "last_leg_candle_ts": 1793304000,
+      "dry_run": true,
+      "order_id": "PAPER-PAIDUSDT-1793304435",
+      "closed_at": 1793305212,
+      "close_px": 0.003576,
+      "pnl_usdt": 0.6289308176100623
+    },
+    {
+      "symbol": "FLNCUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 6.181,
+      "qty": 1.6179,
+      "margin": 1.0,
+      "leverage": 10,
+      "tp_price": 5.99557,
+      "tf": "15m",
+      "opened_at": 1793282545,
+      "adds": 0,
+      "entry_candle_ts": 1793282400,
+      "last_leg_candle_ts": 1793282400,
+      "dry_run": true,
+      "order_id": "PAPER-FLNCUSDT-1793282545",
+      "closed_at": 1793307025,
+      "close_px": 5.95,
+      "pnl_usdt": 0.3737259343148356
     }
   ],
   "pending": [
@@ -2154,7 +2160,6 @@
     "GSTOCKUSDT": 1793301396,
     "FIGHT1USDT": 1793301402,
     "MANCERUSDT": 1793301434,
-    "SIMOUSDT": 1793301439,
     "STXSTOCKUSDT": 1793301443,
     "AI1USDT": 1793301465,
     "OFCUSDT": 1793301474,
@@ -2183,9 +2188,13 @@
     "NEXUSDT": 1793347740,
     "NEIRO1USDT": 1793347745,
     "B3USDT": 1793347751,
-    "CZUSDT": 1793347754
+    "CZUSDT": 1793347754,
+    "LIGHT1USDT": 1793350176,
+    "CRWDUSDT": 1793350186,
+    "BTCDOMUSDT": 1793350188,
+    "SIMOUSDT": 1793350197
   },
   "last_trade_report_ts": 1793304576,
-  "last_daily_report_date": "",
+  "last_daily_report_date": "2026-10-29",
   "last_known_version": "2.3.3"
 }
