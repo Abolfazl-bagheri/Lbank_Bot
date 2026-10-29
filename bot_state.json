@@ -203,6 +203,23 @@
       "last_leg_candle_ts": 1793271600,
       "dry_run": true,
       "order_id": "PAPER-MRNAUSDT-1793271806"
+    },
+    {
+      "symbol": "EPICUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.1028,
+      "qty": 97.2763,
+      "margin": 1.0,
+      "leverage": 10,
+      "tp_price": 0.099716,
+      "tf": "15m",
+      "opened_at": 1793271843,
+      "adds": 0,
+      "entry_candle_ts": 1793271600,
+      "last_leg_candle_ts": 1793271600,
+      "dry_run": true,
+      "order_id": "PAPER-EPICUSDT-1793271843"
     }
   ],
   "trade_history": [
@@ -422,6 +439,12 @@
     },
     {
       "symbol": "INITUSDT",
+      "tf": "1h",
+      "candle_ts": 1793271600,
+      "side": "SELL"
+    },
+    {
+      "symbol": "PURRUSDT",
       "tf": "1h",
       "candle_ts": 1793271600,
       "side": "SELL"
