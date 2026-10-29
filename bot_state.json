@@ -560,6 +560,23 @@
       "last_leg_candle_ts": 1793304900,
       "dry_run": true,
       "order_id": "PAPER-SOXSUSDT-1793305127"
+    },
+    {
+      "symbol": "SQQQUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 39.28,
+      "qty": 0.254582,
+      "margin": 1.0,
+      "leverage": 10,
+      "tp_price": 38.1016,
+      "tf": "15m",
+      "opened_at": 1793305144,
+      "adds": 0,
+      "entry_candle_ts": 1793304900,
+      "last_leg_candle_ts": 1793304900,
+      "dry_run": true,
+      "order_id": "PAPER-SQQQUSDT-1793305144"
     }
   ],
   "trade_history": [
@@ -2109,6 +2126,12 @@
       "symbol": "GILDUSDT",
       "tf": "4h",
       "candle_ts": 1793304000,
+      "side": "SELL"
+    },
+    {
+      "symbol": "SOXSUSDT",
+      "tf": "15m",
+      "candle_ts": 1793304900,
       "side": "SELL"
     }
   ],
