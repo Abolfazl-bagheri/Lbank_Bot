@@ -392,36 +392,19 @@
       "order_id": "PAPER-TEMUSDT-1793280848"
     },
     {
-      "symbol": "AAOIUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 81.88,
-      "qty": 0.12213,
-      "margin": 1.0,
-      "leverage": 10,
-      "tp_price": 79.4236,
-      "tf": "15m",
-      "opened_at": 1793280854,
-      "adds": 0,
-      "entry_candle_ts": 1793280600,
-      "last_leg_candle_ts": 1793280600,
-      "dry_run": true,
-      "order_id": "PAPER-AAOIUSDT-1793280854"
-    },
-    {
       "symbol": "CVNAUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 67.4,
-      "qty": 0.148368,
-      "margin": 1.0,
+      "entry": 67.9701361441238,
+      "qty": 0.29424700000000004,
+      "margin": 2.0,
       "leverage": 10,
-      "tp_price": 65.378,
+      "tp_price": 65.93103205980009,
       "tf": "15m",
       "opened_at": 1793281748,
-      "adds": 0,
+      "adds": 1,
       "entry_candle_ts": 1793281500,
-      "last_leg_candle_ts": 1793281500,
+      "last_leg_candle_ts": 1793282400,
       "dry_run": true,
       "order_id": "PAPER-CVNAUSDT-1793281748"
     },
@@ -677,6 +660,26 @@
       "closed_at": 1793281843,
       "close_px": 905.47,
       "pnl_usdt": 0.6988186954288647
+    },
+    {
+      "symbol": "AAOIUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 81.88,
+      "qty": 0.12213,
+      "margin": 1.0,
+      "leverage": 10,
+      "tp_price": 79.4236,
+      "tf": "15m",
+      "opened_at": 1793280854,
+      "adds": 0,
+      "entry_candle_ts": 1793280600,
+      "last_leg_candle_ts": 1793280600,
+      "dry_run": true,
+      "order_id": "PAPER-AAOIUSDT-1793280854",
+      "closed_at": 1793281846,
+      "close_px": 77.4,
+      "pnl_usdt": 0.5471421592574487
     }
   ],
   "pending": [
@@ -1108,7 +1111,7 @@
     "RIOTUSDT": 1793324068,
     "MASTOCKUSDT": 1793325009
   },
-  "last_trade_report_ts": 1793280883,
+  "last_trade_report_ts": 1793281847,
   "last_daily_report_date": "",
   "last_known_version": "2.3.3"
 }
