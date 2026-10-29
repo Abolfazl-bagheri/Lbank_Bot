@@ -1,7 +1,7 @@
 {
   "mode": "PAPER",
   "version": "2.3.0",
-  "updated_at": 1793261105,
+  "updated_at": 1793261683,
   "signals": [
     {
       "kind": "GAP",
@@ -37,9 +37,25 @@
       "tf": "4h",
       "gap": 0.11,
       "ts": 1793261105
+    },
+    {
+      "kind": "GAP",
+      "symbol": "BLENDUSDT",
+      "tf": "15m",
+      "gap": 1.17,
+      "ts": 1793261683
     }
   ],
-  "trades": [],
+  "trades": [
+    {
+      "symbol": "MSFTUSDT",
+      "entry": 552.32,
+      "tp": 535.7504,
+      "adds": 0,
+      "margin": 1.0,
+      "pnl": 0.0158
+    }
+  ],
   "closed": {
     "profit": 1.0485,
     "loss": 0,
