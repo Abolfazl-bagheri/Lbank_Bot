@@ -429,16 +429,16 @@
       "symbol": "ASTSUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 42.72,
-      "qty": 0.234082,
-      "margin": 1.0,
+      "entry": 43.33113176561328,
+      "qty": 0.46156200000000003,
+      "margin": 2.0,
       "leverage": 10,
-      "tp_price": 41.438399999999994,
+      "tp_price": 42.031197812644876,
       "tf": "15m",
       "opened_at": 1793281772,
-      "adds": 0,
+      "adds": 1,
       "entry_candle_ts": 1793281500,
-      "last_leg_candle_ts": 1793281500,
+      "last_leg_candle_ts": 1793282400,
       "dry_run": true,
       "order_id": "PAPER-ASTSUSDT-1793281772"
     },
@@ -1110,6 +1110,12 @@
     },
     {
       "symbol": "HYPEUSDT",
+      "tf": "1h",
+      "candle_ts": 1793282400,
+      "side": "SELL"
+    },
+    {
+      "symbol": "CVNAUSDT",
       "tf": "1h",
       "candle_ts": 1793282400,
       "side": "SELL"
