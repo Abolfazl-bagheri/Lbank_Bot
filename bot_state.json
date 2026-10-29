@@ -679,6 +679,23 @@
       "last_leg_candle_ts": 1793286000,
       "dry_run": true,
       "order_id": "PAPER-CASHCATUSDT-1793286211"
+    },
+    {
+      "symbol": "PEPEUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 5.0371e-06,
+      "qty": 1985269.3018,
+      "margin": 1.0,
+      "leverage": 10,
+      "tp_price": 4.885987e-06,
+      "tf": "15m",
+      "opened_at": 1793286268,
+      "adds": 0,
+      "entry_candle_ts": 1793286000,
+      "last_leg_candle_ts": 1793286000,
+      "dry_run": true,
+      "order_id": "PAPER-PEPEUSDT-1793286268"
     }
   ],
   "trade_history": [
@@ -1604,6 +1621,12 @@
     },
     {
       "symbol": "PROVEUSDT",
+      "tf": "1h",
+      "candle_ts": 1793286000,
+      "side": "SELL"
+    },
+    {
+      "symbol": "VRTUSDT",
       "tf": "1h",
       "candle_ts": 1793286000,
       "side": "SELL"
