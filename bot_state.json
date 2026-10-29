@@ -441,6 +441,23 @@
       "last_leg_candle_ts": 1793280600,
       "dry_run": true,
       "order_id": "PAPER-TEMUSDT-1793280732"
+    },
+    {
+      "symbol": "PYTHUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.07431,
+      "qty": 134.5714,
+      "margin": 1.0,
+      "leverage": 10,
+      "tp_price": 0.0720807,
+      "tf": "15m",
+      "opened_at": 1793280743,
+      "adds": 0,
+      "entry_candle_ts": 1793280600,
+      "last_leg_candle_ts": 1793280600,
+      "dry_run": true,
+      "order_id": "PAPER-PYTHUSDT-1793280743"
     }
   ],
   "trade_history": [
@@ -954,6 +971,12 @@
     },
     {
       "symbol": "FLEXUSDT",
+      "tf": "15m",
+      "candle_ts": 1793280600,
+      "side": "SELL"
+    },
+    {
+      "symbol": "TEMUSDT",
       "tf": "15m",
       "candle_ts": 1793280600,
       "side": "SELL"
