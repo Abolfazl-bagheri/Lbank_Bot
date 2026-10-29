@@ -713,6 +713,23 @@
       "last_leg_candle_ts": 1793285100,
       "dry_run": true,
       "order_id": "PAPER-FLOKIUSDT-1793285314"
+    },
+    {
+      "symbol": "BONKUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 3.122e-06,
+      "qty": 3203074.952,
+      "margin": 1.0,
+      "leverage": 10,
+      "tp_price": 3.0283399999999997e-06,
+      "tf": "15m",
+      "opened_at": 1793285321,
+      "adds": 0,
+      "entry_candle_ts": 1793285100,
+      "last_leg_candle_ts": 1793285100,
+      "dry_run": true,
+      "order_id": "PAPER-BONKUSDT-1793285321"
     }
   ],
   "trade_history": [
@@ -1644,6 +1661,12 @@
     },
     {
       "symbol": "PEPEUSDT",
+      "tf": "15m",
+      "candle_ts": 1793285100,
+      "side": "SELL"
+    },
+    {
+      "symbol": "FLOKIUSDT",
       "tf": "15m",
       "candle_ts": 1793285100,
       "side": "SELL"
