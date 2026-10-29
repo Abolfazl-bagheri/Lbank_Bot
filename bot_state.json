@@ -118,6 +118,23 @@
       "last_leg_candle_ts": 1793270700,
       "dry_run": true,
       "order_id": "PAPER-PURRUSDT-1793270724"
+    },
+    {
+      "symbol": "SONICUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.02223,
+      "qty": 449.8426,
+      "margin": 1.0,
+      "leverage": 10,
+      "tp_price": 0.021563099999999998,
+      "tf": "15m",
+      "opened_at": 1793270743,
+      "adds": 0,
+      "entry_candle_ts": 1793270700,
+      "last_leg_candle_ts": 1793270700,
+      "dry_run": true,
+      "order_id": "PAPER-SONICUSDT-1793270743"
     }
   ],
   "trade_history": [
@@ -285,6 +302,12 @@
       "symbol": "PIUSDT",
       "tf": "15m",
       "candle_ts": 1793269800,
+      "side": "SELL"
+    },
+    {
+      "symbol": "PURRUSDT",
+      "tf": "15m",
+      "candle_ts": 1793270700,
       "side": "SELL"
     }
   ],
