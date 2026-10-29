@@ -237,6 +237,23 @@
       "last_leg_candle_ts": 1793277000,
       "dry_run": true,
       "order_id": "PAPER-NESUSDT-1793277224"
+    },
+    {
+      "symbol": "BASEDUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.05475,
+      "qty": 182.6484,
+      "margin": 1.0,
+      "leverage": 10,
+      "tp_price": 0.0531075,
+      "tf": "15m",
+      "opened_at": 1793277238,
+      "adds": 0,
+      "entry_candle_ts": 1793277000,
+      "last_leg_candle_ts": 1793277000,
+      "dry_run": true,
+      "order_id": "PAPER-BASEDUSDT-1793277238"
     }
   ],
   "trade_history": [
@@ -608,6 +625,12 @@
       "symbol": "APRUSDT",
       "tf": "15m",
       "candle_ts": 1793274300,
+      "side": "SELL"
+    },
+    {
+      "symbol": "NESUSDT",
+      "tf": "15m",
+      "candle_ts": 1793277000,
       "side": "SELL"
     }
   ],
