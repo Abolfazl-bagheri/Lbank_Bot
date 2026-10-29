@@ -32,7 +32,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 STATE_FILE = os.path.join(BASE_DIR, "bot_state.json")
 STATE_BAK = os.path.join(BASE_DIR, "bot_state.bak")
 
-BOT_VERSION = "2.1.1"
+BOT_VERSION = "2.2.0"
 CHANGELOG = {
     "2.1.0": [
         "چارت احتمال‌گپ → استایل SolAtlas (خط‌روند شکست/بازتست) — هنوز ناقص",
@@ -51,14 +51,14 @@ CHAT_ID = os.environ.get("CHAT_ID", "").strip()
 TIMEFRAMES = {"15m": "15min", "1h": "1hr", "4h": "4hr"}
 TF_ORDER = {"15m": 0, "1h": 1, "4h": 2}
 PERIOD_SEC = {"15m": 900, "1h": 3600, "4h": 14400}
-OPEN_WINDOW_SEC = {"15m": 180, "1h": 240, "4h": 300}
-PRE_ALERT_BEFORE = {"15m": 120, "1h": 180, "4h": 600}  # فقط اینقدر قبل از کندل
-SIGNAL_SCAN_SEC = {"15m": 90, "1h": 150, "4h": 180}  # چند ثانیه اول کندل برای اسکن سیگنال
+OPEN_WINDOW_SEC = {"15m": 240, "1h": 300, "4h": 360}
+PRE_ALERT_BEFORE = {"15m": 120, "1h": 180, "4h": 600}
+SIGNAL_SCAN_SEC = {"15m": 180, "1h": 240, "4h": 300}
 
 BB_PERIOD = 20
 BB_STD = 2.0
-PENETRATION_PCT = 0.5
-MIN_OPEN_GAP_PCT = 0.5
+PENETRATION_PCT = 0.3
+MIN_OPEN_GAP_PCT = 0.3
 TOP_GAINERS = 50
 TOP_VOLUME = 30
 ALWAYS_INCLUDE = ["BTCUSDT", "XAUTUSDT"]
@@ -162,38 +162,51 @@ def github_state_pull() -> bool:
 
 def github_state_push(force: bool = False) -> bool:
     global _last_github_push_ts
-    owner, name, token = _github_repo_parts()
-    if not token or not os.path.exists(STATE_FILE):
-        return False
     now = int(time.time())
-    if not force and _last_github_push_ts and (now - _last_github_push_ts) < 120:
+    if not force and _last_github_push_ts and now - _last_github_push_ts < 45:
+        return False
+    repo, token = _github_repo_parts()
+    if not token or not repo:
+        log.warning("github_state_push skip: no token/repo (set GITHUB_TOKEN or STATE_GITHUB_TOKEN)")
+        return False
+    if not os.path.exists(STATE_FILE):
         return False
     try:
+        import base64
         with open(STATE_FILE, "r", encoding="utf-8") as f:
             raw = f.read()
         b64 = base64.b64encode(raw.encode("utf-8")).decode("ascii")
-        url = f"https://api.github.com/repos/{owner}/{name}/contents/.bot_state/bot_state.json"
-        headers = {"Authorization": f"Bearer {token}", "Accept": "application/vnd.github+json", "X-GitHub-Api-Version": "2022-11-28"}
+        url = f"https://api.github.com/repos/{repo}/contents/bot_state.json"
+        headers = {
+            "Authorization": f"Bearer {token}",
+            "Accept": "application/vnd.github+json",
+            "X-GitHub-Api-Version": "2022-11-28",
+        }
         sha = None
         gr = requests.get(url, headers=headers, timeout=20)
         if gr.status_code == 200:
             sha = (gr.json() or {}).get("sha")
-        body = {"message": f"bot state {datetime.utcnow().strftime('%Y-%m-%d %H:%M UTC')}", "content": b64, "branch": os.environ.get("STATE_GITHUB_BRANCH") or "main"}
+        body = {
+            "message": f"bot state {datetime.utcnow().strftime('%Y-%m-%d %H:%M UTC')}",
+            "content": b64,
+            "branch": os.environ.get("STATE_GITHUB_BRANCH") or "main",
+        }
         if sha:
             body["sha"] = sha
         pr = requests.put(url, headers=headers, json=body, timeout=30)
         if pr.status_code in (200, 201):
             _last_github_push_ts = now
-            log.info("github_state_push OK")
+            log.info("github_state_push OK (%s bytes)", len(raw))
             return True
-        log.warning("github_state_push HTTP %s", pr.status_code)
+        log.warning("github_state_push HTTP %s %s", pr.status_code, (pr.text or "")[:180])
         return False
     except Exception as e:
         log.warning("github_state_push: %s", e)
         return False
 
 
-def save_state() -> None:
+
+def save_state(force_remote: bool = False) -> None:
     try:
         payload = {
             "open_trades": [t for t in open_trades if t.get("status") == "open"][-50:],
@@ -212,7 +225,7 @@ def save_state() -> None:
                 f.write(raw)
         except Exception:
             pass
-        github_state_push(force=False)
+        github_state_push(force=force_remote)
     except Exception as e:
         log.warning("save_state: %s", e)
 
@@ -240,7 +253,7 @@ def load_state() -> None:
         _last_trade_report_ts = int(payload.get("last_trade_report_ts") or 0)
         _last_daily_report_date = str(payload.get("last_daily_report_date") or "")
         last_known_version = payload.get("last_known_version")
-        log.info("State loaded open=%d hist=%d", len(open_trades), len(trade_history))
+        log.info("State loaded open=%d hist=%d file=%s", len(open_trades), len(trade_history), path)
     except Exception as e:
         log.warning("load_state: %s", e)
 
@@ -280,7 +293,7 @@ def format_startup_message() -> str:
     global last_known_version
     lines = [f"✅ ربات روشن شد — <b>v{BOT_VERSION}</b>", f"🧠 agents · TRADE_MODE=<code>{TRADE_MODE}</code>"]
     if trading_enabled():
-        lines.append(f"🤖 exec: {'PAPER' if is_paper_mode() else 'LIVE'} · {TRADE_MARGIN_USDT}U · {TRADE_LEVERAGE}x")
+        lines.append(f"🤖 exec: {'PAPER' if is_paper_mode() else 'LIVE'} · {TRADE_MARGIN_USDT}U · {TRADE_LEVERAGE}x · گزارش هر ۱۵د")
     if last_known_version and last_known_version != BOT_VERSION:
         lines.append(f"📦 {last_known_version} → {BOT_VERSION}")
         for item in CHANGELOG.get(BOT_VERSION) or []:
@@ -450,23 +463,23 @@ def check_signal(df: pd.DataFrame, symbol: str, tf: str):
         stats["skip_age"] += 1
         return None
     upper_pen = (high - upper) / upper * 100.0 if upper > 0 else 0.0
+    open_gap_pct = (open_p - upper) / open_p * 100.0 if open_p > 0 else 0.0
     side = None
-    if open_p > upper and upper_pen >= PENETRATION_PCT:
-        open_gap_pct = (open_p - upper) / open_p * 100.0 if open_p > 0 else 0.0
-        if open_gap_pct < MIN_OPEN_GAP_PCT and symbol not in ALWAYS_INCLUDE:
-            stats["skip_no_gap"] += 1
-            return None
-        if close < upper:
-            stats["skip_no_gap"] += 1
-            return None
+    # سیگنال نزدیک به احتمال‌گپ: open بالای UB کافی است (+ حداقل فاصله)
+    if open_p > upper and open_gap_pct >= MIN_OPEN_GAP_PCT:
+        side = "SELL"
+    elif open_p > upper and upper_pen >= PENETRATION_PCT:
         side = "SELL"
     if not side or (ONLY_SELL and side != "SELL"):
         stats["skip_no_gap"] += 1
         return None
     fut = get_futures_last(symbol)
-    if fut is None or fut <= upper:
+    # اگر فیوچرز نبود از open استفاده کن؛ فقط وقتی فیوچرز خیلی زیر UB است رد کن
+    if fut is not None and fut < upper * 0.995 and symbol not in ALWAYS_INCLUDE:
         stats["skip_no_gap"] += 1
         return None
+    if fut is None:
+        fut = open_p
     key = (symbol, tf, candle_ts, side)
     if key in sent_signals:
         stats["skip_dup"] += 1
@@ -634,7 +647,7 @@ def open_sell_trade(symbol: str, entry_price: float, tf: str, candle_ts: int | N
         existing.update({"entry": new_entry, "qty": new_qty, "margin": new_margin, "tp_price": tp_price_for_sell(new_entry),
                          "adds": adds + 1, "last_leg_candle_ts": cts or last_cts, "tf": tf})
         send_telegram_text(f"📉 <b>پله PAPER</b> {symbol}\nمیانگین ≈ <code>{new_entry:.6g}</code> · {new_margin}U")
-        save_state()
+        save_state(force_remote=True)
         return existing
 
     qty = trade_qty_from_margin(symbol, entry_price)
@@ -738,7 +751,7 @@ def maybe_send_hourly_trade_report() -> None:
     if _last_trade_report_ts == 0:
         _last_trade_report_ts = now
         return
-    if now - _last_trade_report_ts < 3600:
+    if now - _last_trade_report_ts < 900:
         return
     _last_trade_report_ts = now
 
@@ -885,49 +898,33 @@ async def process_symbol(symbol: str, tfs_to_check: list) -> None:
         if df is None:
             continue
 
+
+        sig = check_signal(df, symbol, tf)
+        if not sig:
+            continue
+
+        # لاگ اختیاری agents (فیلتر سخت را برای ورود paper دور می‌زنیم)
         try:
             from agents.context import SignalContext
-            from agents.filter_agent import run_filter
-            from agents.analyst import run_analyst
-            from agents.risk import run_risk
-            from agents.executor import run_executor
             from agents.logger_agent import run_logger
-        except ImportError:
-            sig = check_signal(df, symbol, tf)
-            if not sig:
-                continue
-        else:
             fut = get_futures_last(symbol)
             ctx = SignalContext(symbol=symbol, tf=tf, df=df, fut_last=float(fut) if fut else None)
-            fd = run_filter(ctx, is_blacklisted=is_blacklisted, is_erratic_row=is_erratic_wick_candle)
-            ctx.add(fd)
-            if not fd.ok:
-                run_logger(ctx)
-                continue
-            ad = run_analyst(ctx, check_signal_fn=check_signal)
-            ctx.add(ad)
-            if not ad.ok:
-                run_logger(ctx)
-                continue
-            sig = ctx.analysis
-            if not sig:
-                continue
-            mode = TRADE_MODE
-            if mode == "off" and AUTO_TRADE:
-                mode = "paper" if is_paper_mode() else "live"
-            if mode in ("paper", "live") and sig.get("side") == "SELL":
-                rd = run_risk(ctx, only_sell=True, open_trades=open_trades)
-                ctx.add(rd)
-                if rd.ok:
-                    entry = float(sig.get("fut_last") or sig.get("open") or 0)
-                    rec = open_sell_trade(symbol, entry, tf, sig.get("candle_ts"))
-                    log.info("EXEC %s %s entry=%s ok=%s", mode, symbol, entry, bool(rec))
-                else:
-                    log.info("RISK_BLOCK %s %s %s", symbol, tf, rd.reasons)
+            ctx.analysis = sig
             run_logger(ctx)
+        except Exception:
+            pass
 
         send_telegram_text(format_signal_message(sig))
-        log.info("SIGNAL %s %s %s", sig["side"], symbol, tf)
+        log.info("SIGNAL %s %s %s gap=%.2f%%", sig["side"], symbol, tf, float(sig.get("diff_pct") or 0))
+
+        # هر سیگنال SELL → دقیقاً یک ورود paper/live (پله فقط اگر از قبل باز باشد)
+        if trading_enabled() and sig.get("side") == "SELL":
+            entry = float(sig.get("fut_last") or sig.get("open") or 0)
+            if entry > 0:
+                rec = open_sell_trade(symbol, entry, tf, sig.get("candle_ts"))
+                log.info("PAPER_ENTRY %s %s entry=%s ok=%s", symbol, tf, entry, bool(rec))
+                save_state(force_remote=True)
+
         pending_signals.append({"symbol": symbol, "tf": tf, "candle_ts": sig["candle_ts"], "side": sig["side"]})
         await asyncio.sleep(0.05)
 
@@ -1013,8 +1010,8 @@ async def main() -> None:
         log.error("TELEGRAM_TOKEN / CHAT_ID missing")
         return
     send_telegram_text(format_startup_message())
-    log.info("started v%s mode=%s", BOT_VERSION, TRADE_MODE)
-    save_state()
+    log.info("started v%s mode=%s trading=%s", BOT_VERSION, TRADE_MODE, trading_enabled())
+    save_state(force_remote=True)
     while True:
         try:
             pre = pre_alert_tfs_now()
