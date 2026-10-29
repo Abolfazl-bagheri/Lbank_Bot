@@ -764,6 +764,23 @@
       "last_leg_candle_ts": 1793285100,
       "dry_run": true,
       "order_id": "PAPER-BTCUSDT-1793285356"
+    },
+    {
+      "symbol": "SOMIUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.1929,
+      "qty": 51.8403,
+      "margin": 1.0,
+      "leverage": 10,
+      "tp_price": 0.18711299999999997,
+      "tf": "15m",
+      "opened_at": 1793287981,
+      "adds": 0,
+      "entry_candle_ts": 1793287800,
+      "last_leg_candle_ts": 1793287800,
+      "dry_run": true,
+      "order_id": "PAPER-SOMIUSDT-1793287981"
     }
   ],
   "trade_history": [
@@ -1777,6 +1794,12 @@
       "symbol": "PEPEUSDT",
       "tf": "15m",
       "candle_ts": 1793286900,
+      "side": "SELL"
+    },
+    {
+      "symbol": "BEATUSDT",
+      "tf": "15m",
+      "candle_ts": 1793287800,
       "side": "SELL"
     }
   ],
