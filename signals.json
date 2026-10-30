@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.4.0",
-  "updated_at": 1793358291,
+  "updated_at": 1793359143,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "SHLDUSDT",
-      "tf": "15m",
-      "gap": 1.6,
-      "ts": 1793322870
-    },
     {
       "kind": "GAP",
       "symbol": "GEUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 0.2,
       "ts": 1793358291
+    },
+    {
+      "kind": "SELL",
+      "symbol": "MUSEBOOKUSDT",
+      "tf": "15m",
+      "gap": 0.74,
+      "ts": 1793359143
     }
   ],
   "trades": [
@@ -1411,7 +1411,7 @@
       "tp": 0.004427097097221225,
       "adds": 3,
       "margin": 40.0,
-      "pnl": -17.5109
+      "pnl": -11.5205
     },
     {
       "symbol": "MAGMAUSDT",
@@ -1419,7 +1419,7 @@
       "tp": 0.3543061129041031,
       "adds": 3,
       "margin": 40.0,
-      "pnl": -29.6521
+      "pnl": -29.52
     },
     {
       "symbol": "SOPHUSDT",
@@ -1427,7 +1427,7 @@
       "tp": 0.001672125,
       "adds": 0,
       "margin": 10.0,
-      "pnl": 0.3499
+      "pnl": 1.3994
     },
     {
       "symbol": "PUNDIXUSDT",
@@ -1435,7 +1435,15 @@
       "tp": 0.10909275,
       "adds": 0,
       "margin": 10.0,
-      "pnl": 1.2512
+      "pnl": -3.6107
+    },
+    {
+      "symbol": "BEATUSDT",
+      "entry": 0.10674,
+      "tp": 0.1040715,
+      "adds": 0,
+      "margin": 10.0,
+      "pnl": 6.9702
     }
   ],
   "closed": {
