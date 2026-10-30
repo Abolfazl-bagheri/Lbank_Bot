@@ -543,6 +543,23 @@
       "last_leg_candle_ts": 1793343600,
       "dry_run": true,
       "order_id": "PAPER-ALPINEUSDT-1793342941"
+    },
+    {
+      "symbol": "EVAAUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 1.2737,
+      "qty": 7.8511,
+      "margin": 1.0,
+      "leverage": 10,
+      "tp_price": 1.235489,
+      "tf": "1h",
+      "opened_at": 1793343684,
+      "adds": 0,
+      "entry_candle_ts": 1793343600,
+      "last_leg_candle_ts": 1793343600,
+      "dry_run": true,
+      "order_id": "PAPER-EVAAUSDT-1793343684"
     }
   ],
   "trade_history": [
@@ -2907,6 +2924,12 @@
     {
       "symbol": "BEAMXUSDT",
       "tf": "1h",
+      "candle_ts": 1793343600,
+      "side": "SELL"
+    },
+    {
+      "symbol": "ALPINEUSDT",
+      "tf": "15m",
       "candle_ts": 1793343600,
       "side": "SELL"
     }
