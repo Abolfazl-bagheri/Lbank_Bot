@@ -52,23 +52,6 @@
       "order_id": "PAPER-SOPHUSDT-1793347255"
     },
     {
-      "symbol": "PUNDIXUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.11102841624986366,
-      "qty": 3602.6813,
-      "margin": 20.0,
-      "leverage": 20,
-      "tp_price": 0.10825270584361707,
-      "tf": "4h",
-      "opened_at": 1793358126,
-      "adds": 1,
-      "entry_candle_ts": 1793358000,
-      "last_leg_candle_ts": 1793361600,
-      "dry_run": true,
-      "order_id": "PAPER-PUNDIXUSDT-1793358126"
-    },
-    {
       "symbol": "MUSEBOOKUSDT",
       "side": "SELL",
       "status": "open",
@@ -237,6 +220,26 @@
       "closed_at": 1793368084,
       "close_px": 26.41,
       "pnl_usdt": 5.020302694721298
+    },
+    {
+      "symbol": "PUNDIXUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.11102841624986366,
+      "qty": 3602.6813,
+      "margin": 20.0,
+      "leverage": 20,
+      "tp_price": 0.10825270584361707,
+      "tf": "4h",
+      "opened_at": 1793358126,
+      "adds": 1,
+      "entry_candle_ts": 1793358000,
+      "last_leg_candle_ts": 1793361600,
+      "dry_run": true,
+      "order_id": "PAPER-PUNDIXUSDT-1793358126",
+      "closed_at": 1793374317,
+      "close_px": 0.10775,
+      "pnl_usdt": 11.811088946763896
     }
   ],
   "pending": [
@@ -364,6 +367,12 @@
       "symbol": "ORDERUSDT",
       "tf": "15m",
       "candle_ts": 1793373300,
+      "side": "SELL"
+    },
+    {
+      "symbol": "BIRBUSDT",
+      "tf": "15m",
+      "candle_ts": 1793374200,
       "side": "SELL"
     }
   ],
