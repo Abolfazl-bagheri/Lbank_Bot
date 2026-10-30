@@ -118,6 +118,23 @@
       "last_leg_candle_ts": 1793373300,
       "dry_run": true,
       "order_id": "PAPER-BIRBUSDT-1793373393"
+    },
+    {
+      "symbol": "ORDERUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.03647,
+      "qty": 5483.9594,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.03555825,
+      "tf": "15m",
+      "opened_at": 1793373418,
+      "adds": 0,
+      "entry_candle_ts": 1793373300,
+      "last_leg_candle_ts": 1793373300,
+      "dry_run": true,
+      "order_id": "PAPER-ORDERUSDT-1793373418"
     }
   ],
   "trade_history": [
@@ -335,6 +352,12 @@
       "symbol": "SOPHUSDT",
       "tf": "15m",
       "candle_ts": 1793371500,
+      "side": "SELL"
+    },
+    {
+      "symbol": "BIRBUSDT",
+      "tf": "15m",
+      "candle_ts": 1793373300,
       "side": "SELL"
     }
   ],
