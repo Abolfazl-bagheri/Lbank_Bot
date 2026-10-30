@@ -324,23 +324,6 @@
       "order_id": "PAPER-RIVNUSDT-1793307862"
     },
     {
-      "symbol": "TRXUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.35186436197332516,
-      "qty": 56.8401,
-      "margin": 2.0,
-      "leverage": 10,
-      "tp_price": 0.3413084311141254,
-      "tf": "15m",
-      "opened_at": 1793308719,
-      "adds": 1,
-      "entry_candle_ts": 1793308500,
-      "last_leg_candle_ts": 1793311200,
-      "dry_run": true,
-      "order_id": "PAPER-TRXUSDT-1793308719"
-    },
-    {
       "symbol": "SSPCUSDT",
       "side": "SELL",
       "status": "open",
@@ -1719,6 +1702,26 @@
       "closed_at": 1793336797,
       "close_px": 0.002535,
       "pnl_usdt": 1.27666896077082
+    },
+    {
+      "symbol": "TRXUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.35186436197332516,
+      "qty": 56.8401,
+      "margin": 2.0,
+      "leverage": 10,
+      "tp_price": 0.3413084311141254,
+      "tf": "15m",
+      "opened_at": 1793308719,
+      "adds": 1,
+      "entry_candle_ts": 1793308500,
+      "last_leg_candle_ts": 1793311200,
+      "dry_run": true,
+      "order_id": "PAPER-TRXUSDT-1793308719",
+      "closed_at": 1793340312,
+      "close_px": 0.33656,
+      "pnl_usdt": 0.8699012248637646
     }
   ],
   "pending": [
@@ -2927,6 +2930,12 @@
       "tf": "1h",
       "candle_ts": 1793340000,
       "side": "SELL"
+    },
+    {
+      "symbol": "BIRBUSDT",
+      "tf": "1h",
+      "candle_ts": 1793340000,
+      "side": "SELL"
     }
   ],
   "kline_blacklist": {
@@ -2972,7 +2981,9 @@
     "USOUSDT": 1793369060,
     "AMCUSDT": 1793372804,
     "LONGXIAUSDT": 1793378075,
-    "NIULAIUSDT": 1793379952
+    "NIULAIUSDT": 1793379952,
+    "AINBSCUSDT": 1793383465,
+    "FIGHT1USDT": 1793383469
   },
   "last_trade_report_ts": 1793336800,
   "last_daily_report_date": "2026-10-29",
