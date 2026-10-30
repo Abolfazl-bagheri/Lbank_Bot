@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.4.0",
-  "updated_at": 1793374264,
+  "updated_at": 1793374324,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "UAIUSDT",
-      "tf": "15m",
-      "gap": 0.33,
-      "ts": 1793330043
-    },
     {
       "kind": "GAP",
       "symbol": "NESUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 0.74,
       "ts": 1793374264
+    },
+    {
+      "kind": "HEARTBEAT",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793374324
     }
   ],
   "trades": [
@@ -1430,14 +1430,6 @@
       "pnl": 13.7897
     },
     {
-      "symbol": "PUNDIXUSDT",
-      "entry": 0.11102841624986366,
-      "tp": 0.10825270584361707,
-      "adds": 1,
-      "margin": 20.0,
-      "pnl": 11.8111
-    },
-    {
       "symbol": "MUSEBOOKUSDT",
       "entry": 1.3274484001423374e-05,
       "tp": 1.294262190138779e-05,
@@ -1447,32 +1439,32 @@
     },
     {
       "symbol": "IDOLUSDT",
-      "entry": 0.017313330240348153,
-      "tp": 0.01688049698433945,
-      "adds": 9,
-      "margin": 100.0,
+      "entry": 0.017382763012611747,
+      "tp": 0.016948193937296453,
+      "adds": 10,
+      "margin": 110.0,
       "pnl": -91.9141
     },
     {
       "symbol": "BIRBUSDT",
-      "entry": 0.09585,
-      "tp": 0.09345375,
-      "adds": 0,
-      "margin": 10.0,
+      "entry": 0.09392718564959773,
+      "tp": 0.09157900600835779,
+      "adds": 1,
+      "margin": 20.0,
       "pnl": 7.8665
     },
     {
       "symbol": "ORDERUSDT",
-      "entry": 0.03647,
-      "tp": 0.03555825,
-      "adds": 0,
-      "margin": 10.0,
+      "entry": 0.0364799972588018,
+      "tp": 0.035567997327331756,
+      "adds": 1,
+      "margin": 20.0,
       "pnl": -0.1097
     }
   ],
   "closed": {
-    "profit": 34.0315,
+    "profit": 45.8426,
     "loss": 0,
-    "count": 5
+    "count": 6
   }
 }
