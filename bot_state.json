@@ -477,23 +477,6 @@
       "order_id": "PAPER-POPMARTUSDT-1793325901"
     },
     {
-      "symbol": "IDOLUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.014991,
-      "qty": 667.0669,
-      "margin": 1.0,
-      "leverage": 10,
-      "tp_price": 0.01454127,
-      "tf": "15m",
-      "opened_at": 1793328502,
-      "adds": 0,
-      "entry_candle_ts": 1793328300,
-      "last_leg_candle_ts": 1793328300,
-      "dry_run": true,
-      "order_id": "PAPER-IDOLUSDT-1793328502"
-    },
-    {
       "symbol": "XPLUSDT",
       "side": "SELL",
       "status": "open",
@@ -1628,6 +1611,26 @@
       "closed_at": 1793328588,
       "close_px": 0.13763,
       "pnl_usdt": 0.4310644510880909
+    },
+    {
+      "symbol": "IDOLUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.014991,
+      "qty": 667.0669,
+      "margin": 1.0,
+      "leverage": 10,
+      "tp_price": 0.01454127,
+      "tf": "15m",
+      "opened_at": 1793328502,
+      "adds": 0,
+      "entry_candle_ts": 1793328300,
+      "last_leg_candle_ts": 1793328300,
+      "dry_run": true,
+      "order_id": "PAPER-IDOLUSDT-1793328502",
+      "closed_at": 1793329444,
+      "close_px": 0.014512,
+      "pnl_usdt": 0.3195250483623509
     }
   ],
   "pending": [
@@ -2749,6 +2752,12 @@
     },
     {
       "symbol": "POPMARTUSDT",
+      "tf": "1h",
+      "candle_ts": 1793329200,
+      "side": "SELL"
+    },
+    {
+      "symbol": "MEITUANUSDT",
       "tf": "1h",
       "candle_ts": 1793329200,
       "side": "SELL"
