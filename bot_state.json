@@ -52,40 +52,6 @@
       "order_id": "PAPER-SOPHUSDT-1793347255"
     },
     {
-      "symbol": "ALPINEUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.35709596756533135,
-      "qty": 1120.1471000000001,
-      "margin": 20.0,
-      "leverage": 20,
-      "tp_price": 0.3481685683761981,
-      "tf": "1h",
-      "opened_at": 1793350986,
-      "adds": 1,
-      "entry_candle_ts": 1793350800,
-      "last_leg_candle_ts": 1793354400,
-      "dry_run": true,
-      "order_id": "PAPER-ALPINEUSDT-1793350986"
-    },
-    {
-      "symbol": "EVAAUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 1.3629,
-      "qty": 146.7459,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 1.3288275,
-      "tf": "1h",
-      "opened_at": 1793354595,
-      "adds": 0,
-      "entry_candle_ts": 1793354400,
-      "last_leg_candle_ts": 1793354400,
-      "dry_run": true,
-      "order_id": "PAPER-EVAAUSDT-1793354595"
-    },
-    {
       "symbol": "PUNDIXUSDT",
       "side": "SELL",
       "status": "open",
@@ -101,9 +67,67 @@
       "last_leg_candle_ts": 1793358000,
       "dry_run": true,
       "order_id": "PAPER-PUNDIXUSDT-1793358126"
+    },
+    {
+      "symbol": "BEATUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.10674,
+      "qty": 1873.7118,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.1040715,
+      "tf": "1h",
+      "opened_at": 1793358293,
+      "adds": 0,
+      "entry_candle_ts": 1793358000,
+      "last_leg_candle_ts": 1793358000,
+      "dry_run": true,
+      "order_id": "PAPER-BEATUSDT-1793358293"
     }
   ],
-  "trade_history": [],
+  "trade_history": [
+    {
+      "symbol": "ALPINEUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.35709596756533135,
+      "qty": 1120.1471000000001,
+      "margin": 20.0,
+      "leverage": 20,
+      "tp_price": 0.3481685683761981,
+      "tf": "1h",
+      "opened_at": 1793350986,
+      "adds": 1,
+      "entry_candle_ts": 1793350800,
+      "last_leg_candle_ts": 1793354400,
+      "dry_run": true,
+      "order_id": "PAPER-ALPINEUSDT-1793350986",
+      "closed_at": 1793358234,
+      "close_px": 0.3469,
+      "pnl_usdt": 11.420983143379793
+    },
+    {
+      "symbol": "EVAAUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 1.3629,
+      "qty": 146.7459,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 1.3288275,
+      "tf": "1h",
+      "opened_at": 1793354595,
+      "adds": 0,
+      "entry_candle_ts": 1793354400,
+      "last_leg_candle_ts": 1793354400,
+      "dry_run": true,
+      "order_id": "PAPER-EVAAUSDT-1793354595",
+      "closed_at": 1793358235,
+      "close_px": 1.3259,
+      "pnl_usdt": 5.429598649937621
+    }
+  ],
   "pending": [
     {
       "symbol": "BEAMXUSDT",
@@ -204,7 +228,7 @@
     "CRWDUSDT": 1793397926,
     "SKY1USDT": 1793398016
   },
-  "last_trade_report_ts": 1793354740,
+  "last_trade_report_ts": 1793358236,
   "last_daily_report_date": "2026-10-29",
   "last_known_version": "2.4.0",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
