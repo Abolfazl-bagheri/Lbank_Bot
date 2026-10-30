@@ -1,0 +1,36 @@
+name: Chart Lab
+on:
+  workflow_dispatch:
+    inputs:
+      symbol:
+        description: "Symbol, e.g. SHLDUSDT"
+        required: true
+        default: "SHLDUSDT"
+      tf:
+        description: "15m / 1h / 4h"
+        required: true
+        default: "1h"
+permissions:
+  contents: write
+jobs:
+  lab:
+    runs-on: ubuntu-latest
+    env:
+      SYMBOL: ${{ inputs.symbol }}
+      TF: ${{ inputs.tf }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install requests pandas numpy matplotlib websockets
+      - run: |
+          mkdir -p lab/out
+          python lab/chart_lab.py "$SYMBOL" "$TF"
+      - name: Commit results
+        run: |
+          git config user.name "chart-lab"
+          git config user.email "chart-lab@users.noreply.github.com"
+          git add lab/out
+          git commit -m "chart lab $SYMBOL $TF" || exit 0
+          for i in 1 2 3; do git pull --rebase origin main && git push && break || sleep 3; done
