@@ -1,23 +1,6 @@
 {
   "open_trades": [
     {
-      "symbol": "PIUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.07928,
-      "qty": 126.1352,
-      "margin": 1.0,
-      "leverage": 10,
-      "tp_price": 0.0769016,
-      "tf": "15m",
-      "opened_at": 1793268180,
-      "adds": 0,
-      "entry_candle_ts": 1793268000,
-      "last_leg_candle_ts": 1793268000,
-      "dry_run": true,
-      "order_id": "PAPER-PIUSDT-1793268180"
-    },
-    {
       "symbol": "PURRUSDT",
       "side": "SELL",
       "status": "open",
@@ -1500,6 +1483,26 @@
       "closed_at": 1793317773,
       "close_px": 0.6192,
       "pnl_usdt": 0.31137537161633594
+    },
+    {
+      "symbol": "PIUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.07928,
+      "qty": 126.1352,
+      "margin": 1.0,
+      "leverage": 10,
+      "tp_price": 0.0769016,
+      "tf": "15m",
+      "opened_at": 1793268180,
+      "adds": 0,
+      "entry_candle_ts": 1793268000,
+      "last_leg_candle_ts": 1793268000,
+      "dry_run": true,
+      "order_id": "PAPER-PIUSDT-1793268180",
+      "closed_at": 1793321404,
+      "close_px": 0.07644,
+      "pnl_usdt": 0.3582240161453089
     }
   ],
   "pending": [
@@ -2510,6 +2513,12 @@
       "tf": "15m",
       "candle_ts": 1793321100,
       "side": "SELL"
+    },
+    {
+      "symbol": "ABBVUSDT",
+      "tf": "15m",
+      "candle_ts": 1793321100,
+      "side": "SELL"
     }
   ],
   "kline_blacklist": {
@@ -2551,7 +2560,8 @@
     "SKY1USDT": 1793351970,
     "GMESTOCKUSDT": 1793353780,
     "STONKBROKERUSDT": 1793357380,
-    "HOTUSDT": 1793358278
+    "HOTUSDT": 1793358278,
+    "CVXSTOCKUSDT": 1793364604
   },
   "last_trade_report_ts": 1793317776,
   "last_daily_report_date": "2026-10-29",
