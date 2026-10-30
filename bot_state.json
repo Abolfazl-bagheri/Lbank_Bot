@@ -35,23 +35,6 @@
       "order_id": "PAPER-MAGMAUSDT-1793347238"
     },
     {
-      "symbol": "SOPHUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.0018170566726348255,
-      "qty": 550340.5672999999,
-      "margin": 50.0,
-      "leverage": 20,
-      "tp_price": 0.0017716302558189547,
-      "tf": "15m",
-      "opened_at": 1793347255,
-      "adds": 4,
-      "entry_candle_ts": 1793347200,
-      "last_leg_candle_ts": 1793373300,
-      "dry_run": true,
-      "order_id": "PAPER-SOPHUSDT-1793347255"
-    },
-    {
       "symbol": "MUSEBOOKUSDT",
       "side": "SELL",
       "status": "open",
@@ -240,6 +223,26 @@
       "closed_at": 1793374317,
       "close_px": 0.10775,
       "pnl_usdt": 11.811088946763896
+    },
+    {
+      "symbol": "SOPHUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.0018170566726348255,
+      "qty": 550340.5672999999,
+      "margin": 50.0,
+      "leverage": 20,
+      "tp_price": 0.0017716302558189547,
+      "tf": "15m",
+      "opened_at": 1793347255,
+      "adds": 4,
+      "entry_candle_ts": 1793347200,
+      "last_leg_candle_ts": 1793373300,
+      "dry_run": true,
+      "order_id": "PAPER-SOPHUSDT-1793347255",
+      "closed_at": 1793374383,
+      "close_px": 0.00175,
+      "pnl_usdt": 36.90400725784179
     }
   ],
   "pending": [
@@ -428,7 +431,7 @@
     "CVXSTOCKUSDT": 1793413084,
     "COPSTOCKUSDT": 1793413150
   },
-  "last_trade_report_ts": 1793372752,
+  "last_trade_report_ts": 1793374323,
   "last_daily_report_date": "2026-10-29",
   "last_known_version": "2.4.0",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
