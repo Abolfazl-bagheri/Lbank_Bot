@@ -2,6 +2,7 @@
 Input: pandas DataFrame with columns o,h,l,c (optional: upper,lower for Bollinger)."""
 import io
 import numpy as np
+import pandas as pd
 
 DEFAULTS = dict(sw=3, touches=3, tol=0.5, brk=0.3, per_side=1, lb=250,
                 retest=1, rt_bars=15, keep=3, horizon=24, wick_tol=2.0, max_age=0.4)
@@ -9,6 +10,17 @@ DEFAULTS = dict(sw=3, touches=3, tol=0.5, brk=0.3, per_side=1, lb=250,
 
 def line_y(L, i):
     return L["y0"] + L["sl"] * (i - L["a"])
+
+
+def _clean(df):
+    """Numeric, no NaN, consistent wicks. Keeps row count (indices stay valid)."""
+    d = df.copy()
+    for k in ("o", "h", "l", "c"):
+        d[k] = pd.to_numeric(d[k], errors="coerce")
+    d[["o", "h", "l", "c"]] = d[["o", "h", "l", "c"]].ffill().bfill()
+    d["h"] = d[["o", "h", "l", "c"]].max(axis=1)
+    d["l"] = d[["o", "h", "l", "c"]].min(axis=1)
+    return d
 
 
 def _pivots(arr, sw, s0, high):
@@ -28,6 +40,7 @@ def _pivots(arr, sw, s0, high):
 def find_lines(df, auto=True, **kw):
     """Core engine -> (lines, info). auto: scale tol/brk to the symbol's own volatility."""
     P = {**DEFAULTS, **kw}
+    df = _clean(df)
     h, l, c = (df[k].to_numpy(float) for k in ("h", "l", "c"))
     if auto:
         med = float(np.nanmedian(((h - l) / c * 100)[-P["lb"]:]))
@@ -113,15 +126,21 @@ def render_chart(df, lines, info, symbol, tf, note=""):
     matplotlib.use("Agg")
     import matplotlib.pyplot as plt
     s0, n = info["s0"], info["n"]
-    d = df.iloc[s0:].reset_index(drop=True)
+    d = _clean(df).iloc[s0:].reset_index(drop=True)
     o, h, l, c = (d[k].to_numpy(float) for k in ("o", "h", "l", "c"))
     xs, BG = np.arange(len(d)), "#0b0d13"
     fig, ax = plt.subplots(figsize=(10, 5.6), dpi=130)
     fig.patch.set_facecolor(BG)
     ax.set_facecolor(BG)
-    col = np.where(c >= o, "#2de2a6", "#ff5b73")
+    flat = np.isclose(h, l, rtol=1e-9) & np.isclose(o, c, rtol=1e-9)   # bars with no trades
+    col = np.where(flat, "#6b7385", np.where(c >= o, "#2de2a6", "#ff5b73"))
+    vis = (h.max() - l.min()) or 1.0
     ax.vlines(xs, l, h, colors=col, linewidth=0.9)
-    ax.bar(xs, np.maximum(np.abs(c - o), (h.max() - l.min()) * 0.0008), bottom=np.minimum(o, c), width=0.7, color=col)
+    ax.bar(xs, np.maximum(np.abs(c - o), vis * 0.004), bottom=np.minimum(o, c) - np.where(np.abs(c - o) < vis * 0.004, vis * 0.002, 0),
+           width=0.7, color=col)
+    nflat = int(flat.sum())
+    if nflat > 0.3 * len(d):
+        note += f" · {nflat}/{len(d)} flat bars (illiquid, low confidence)"
     if {"upper", "lower"} <= set(d.columns):
         ax.plot(xs, d["upper"], color="#8b7bff", lw=0.7, alpha=0.45)
         ax.plot(xs, d["lower"], color="#8b7bff", lw=0.7, alpha=0.45)
