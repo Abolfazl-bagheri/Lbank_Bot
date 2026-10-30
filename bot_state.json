@@ -543,6 +543,23 @@
       "last_leg_candle_ts": 1793336400,
       "dry_run": true,
       "order_id": "PAPER-BIRBUSDT-1793336686"
+    },
+    {
+      "symbol": "SOMIUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.195,
+      "qty": 51.2821,
+      "margin": 1.0,
+      "leverage": 10,
+      "tp_price": 0.18915,
+      "tf": "15m",
+      "opened_at": 1793343862,
+      "adds": 0,
+      "entry_candle_ts": 1793343600,
+      "last_leg_candle_ts": 1793343600,
+      "dry_run": true,
+      "order_id": "PAPER-SOMIUSDT-1793343862"
     }
   ],
   "trade_history": [
@@ -2939,6 +2956,12 @@
       "tf": "1h",
       "candle_ts": 1793340000,
       "side": "SELL"
+    },
+    {
+      "symbol": "BEAMXUSDT",
+      "tf": "1h",
+      "candle_ts": 1793343600,
+      "side": "SELL"
     }
   ],
   "kline_blacklist": {
@@ -2986,7 +3009,8 @@
     "LONGXIAUSDT": 1793378075,
     "NIULAIUSDT": 1793379952,
     "AINBSCUSDT": 1793383465,
-    "FIGHT1USDT": 1793383469
+    "FIGHT1USDT": 1793383469,
+    "QUACKAIUSDT": 1793387051
   },
   "last_trade_report_ts": 1793340315,
   "last_daily_report_date": "2026-10-29",
