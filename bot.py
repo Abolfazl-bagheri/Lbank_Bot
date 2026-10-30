@@ -35,7 +35,7 @@ SIGNALS_FILE = os.path.join(BASE_DIR, "signals.json")
 LIVE_TOPIC = os.environ.get("LIVE_TOPIC", "lbank-gap-b0b85cee29ce").strip()
 STATE_BAK = os.path.join(BASE_DIR, "bot_state.bak")
 
-BOT_VERSION = "2.3.5"
+BOT_VERSION = "2.4.0"
 CHANGELOG = {
     "2.1.0": [
         "چارت احتمال‌گپ → استایل SolAtlas (خط‌روند شکست/بازتست) — هنوز ناقص",
@@ -74,11 +74,11 @@ AUTO_TRADE = os.environ.get("AUTO_TRADE", "0").strip() in ("1", "true", "True", 
 AUTO_TRADE_DRY_RUN = os.environ.get("AUTO_TRADE_DRY_RUN", "1").strip() not in ("0", "false", "False", "no")
 LBANK_API_KEY = os.environ.get("LBANK_API_KEY", "").strip()
 LBANK_API_SECRET = os.environ.get("LBANK_API_SECRET", "").strip()
-TRADE_MARGIN_USDT = float(os.environ.get("TRADE_MARGIN_USDT", "1"))
-TRADE_LEVERAGE = int(os.environ.get("TRADE_LEVERAGE", "10"))
-TRADE_TP_PCT = float(os.environ.get("TRADE_TP_PCT", "30"))
+TRADE_MARGIN_USDT = float(os.environ.get("TRADE_MARGIN_USDT", "10"))
+TRADE_LEVERAGE = int(os.environ.get("TRADE_LEVERAGE", "20"))
+TRADE_TP_PCT = float(os.environ.get("TRADE_TP_PCT", "50"))  # 50% سود مارجین → کلوز
 TRADE_AVG_DOWN = True
-TRADE_MAX_ADDS = int(os.environ.get("TRADE_MAX_ADDS", "15"))
+TRADE_MAX_ADDS = int(os.environ.get("TRADE_MAX_ADDS", "50"))
 
 FUTURES_TICKERS_URL = "https://lbkperp.lbank.com/cfd/openApi/v1/pub/marketData?productGroup=SwapU"
 PERP_BASE = "https://lbkperp.lbank.com"
@@ -98,7 +98,8 @@ pending_signals: list = []
 stats = {"checked": 0, "signal_ok": 0, "skip_age": 0, "skip_no_gap": 0, "skip_dup": 0}
 _last_trade_report_ts = 0
 _last_daily_report_date = ""
-PAPER_START_BALANCE = float(os.getenv("PAPER_START_BALANCE", "100"))
+PAPER_START_BALANCE = float(os.getenv("PAPER_START_BALANCE", "1000"))
+PAPER_STRATEGY_TAG = "v2_1000_10u_20x_tp50"  # برای ریست یک‌باره
 _last_github_push_ts = 0
 last_known_version = None
 
@@ -226,6 +227,7 @@ def save_state(force_remote: bool = False) -> None:
             "last_trade_report_ts": _last_trade_report_ts,
             "last_daily_report_date": _last_daily_report_date,
             "last_known_version": BOT_VERSION,
+            "paper_strategy_tag": PAPER_STRATEGY_TAG,
         }
         raw = json.dumps(payload, ensure_ascii=False, indent=2)
         with open(STATE_FILE, "w", encoding="utf-8") as f:
@@ -264,6 +266,13 @@ def load_state() -> None:
         _last_daily_report_date = str(payload.get("last_daily_report_date") or "")
         last_known_version = payload.get("last_known_version")
         log.info("State loaded open=%d hist=%d file=%s", len(open_trades), len(trade_history), path)
+        # ریست یک‌باره برای استراتژی جدید paper
+        tag = str(payload.get("paper_strategy_tag") or "")
+        if tag != PAPER_STRATEGY_TAG:
+            log.info("PAPER_RESET strategy %s -> %s (clear trades)", tag or "none", PAPER_STRATEGY_TAG)
+            open_trades.clear()
+            trade_history.clear()
+            pending_signals.clear()
     except Exception as e:
         log.warning("load_state: %s", e)
 
@@ -760,9 +769,7 @@ def open_sell_trade(symbol: str, entry_price: float, tf: str, candle_ts: int | N
             log.info("PAPER_SKIP %s reason=same_candle_leg", symbol)
             return None
         avg = float(existing.get("entry") or 0)
-        if avg > 0 and entry_price <= avg * 1.001:
-            log.info("PAPER_SKIP %s reason=price_not_higher_for_short_avg", symbol)
-            return None
+        # پله بدون شرط گپ/جهت قیمت — فقط کندل جدید
         add_qty = trade_qty_from_margin(symbol, entry_price)
         if not add_qty:
             return None
@@ -832,16 +839,56 @@ def close_trade_record(rec: dict, px: float, reason: str) -> None:
 def manage_open_trades() -> None:
     if not trading_enabled() or not open_trades:
         return
+    now = int(time.time())
     for rec in list(open_trades):
         if rec.get("status") != "open" or rec.get("side") != "SELL":
             continue
-        px = get_futures_last(rec["symbol"])
+        sym = rec.get("symbol") or ""
+        px = get_futures_last(sym)
         if not px:
             continue
+        # کلوز فقط با رسیدن به ۵۰٪ سود مارجین (بدون استاپ)
         tp = float(rec.get("tp_price") or 0)
         if tp > 0 and px <= tp:
-            close_trade_record(rec, px, "TP")
-    open_trades[:] = [t for t in open_trades if t.get("status") == "open"]
+            close_trade_record(rec, px, "TP50")
+            continue
+        # اگر در ضرر است → در کندل بعدی همان TF یک پله ۱۰U بدون شرط گپ
+        if not TRADE_AVG_DOWN or not is_paper_mode():
+            continue
+        pnl, _ = _sell_upnl(rec, float(px))
+        if pnl >= 0:
+            continue
+        tf = rec.get("tf") or "15m"
+        period = PERIOD_SEC.get(tf, 900)
+        candle_open = (now // period) * period
+        last_leg = int(rec.get("last_leg_candle_ts") or 0)
+        if candle_open <= last_leg:
+            continue
+        adds = int(rec.get("adds") or 0)
+        if adds >= TRADE_MAX_ADDS:
+            continue
+        add_qty = trade_qty_from_margin(sym, float(px))
+        if not add_qty:
+            continue
+        old_qty = float(rec.get("qty") or 0)
+        new_qty = old_qty + add_qty
+        new_margin = float(rec.get("margin") or TRADE_MARGIN_USDT) + TRADE_MARGIN_USDT
+        avg = float(rec.get("entry") or 0)
+        new_entry = (avg * old_qty + float(px) * add_qty) / new_qty if new_qty else float(px)
+        rec.update({
+            "entry": new_entry,
+            "qty": new_qty,
+            "margin": new_margin,
+            "tp_price": tp_price_for_sell(new_entry),
+            "adds": adds + 1,
+            "last_leg_candle_ts": candle_open,
+        })
+        log.info(
+            "PAPER_AVG_LOSS %s tf=%s px=%.6g avg=%.6g pelea=%s margin=%.0f",
+            sym, tf, px, new_entry, adds + 1, new_margin,
+        )
+        save_state(force_remote=True)
+    open_trades[:] = [x for x in open_trades if x.get("status") == "open"]
 
 
 def _sell_upnl(rec: dict, px: float) -> tuple[float, float]:
@@ -903,9 +950,8 @@ def maybe_send_hourly_trade_report() -> None:
     lines = [
         f"📊 <b>گزارش {mode}</b> · {iran_now().strftime('%H:%M')}",
         f"بسته: {len(closed)}",
-        f"🟢 سود بسته: <b>{profit:+.2f}U</b>",
-        f"🔴 ضرر بسته: <b>{loss:+.2f}U</b>",
-        f"خالص بسته: <b>{net:+.2f}U</b>",
+        f"🟢 سود بسته (TP): <b>{profit:+.2f}U</b>",
+        f"خالص بسته‌شده: <b>{profit:+.2f}U</b>",
         f"باز: {len(open_trades)} · uPnL: <b>{open_upnl:+.2f}U</b>",
     ]
     if open_lines:
@@ -953,9 +999,8 @@ def maybe_send_daily_paper_report() -> None:
         f"────────\n"
         f"در ۲۴ ساعت گذشته:\n"
         f"معاملات بسته: <b>{cnt}</b>\n"
-        f"🟢 سود: <b>{profit:+.2f}U</b>\n"
-        f"🔴 ضرر: <b>{loss:+.2f}U</b>\n"
-        f"خالص ۲۴س: <b>{net:+.2f}U</b>\n"
+        f"🟢 سود TP: <b>{profit:+.2f}U</b>\n"
+        f"خالص ۲۴س: <b>{profit:+.2f}U</b>\n"
         f"uPnL باز: <b>{open_upnl:+.2f}U</b>\n"
         f"────────\n"
         f"💼 موجودی کاغذی تقریبی: <b>{balance:.2f}U</b>\n"
