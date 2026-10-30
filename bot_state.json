@@ -458,6 +458,23 @@
       "last_leg_candle_ts": 1793324700,
       "dry_run": true,
       "order_id": "PAPER-DOODUSDT-1793324897"
+    },
+    {
+      "symbol": "MEITUANUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 9.19,
+      "qty": 1.0881,
+      "margin": 1.0,
+      "leverage": 10,
+      "tp_price": 8.914299999999999,
+      "tf": "15m",
+      "opened_at": 1793324917,
+      "adds": 0,
+      "entry_candle_ts": 1793324700,
+      "last_leg_candle_ts": 1793324700,
+      "dry_run": true,
+      "order_id": "PAPER-MEITUANUSDT-1793324917"
     }
   ],
   "trade_history": [
@@ -2559,6 +2576,12 @@
       "symbol": "TMFUSDT",
       "tf": "1h",
       "candle_ts": 1793322000,
+      "side": "SELL"
+    },
+    {
+      "symbol": "DOODUSDT",
+      "tf": "15m",
+      "candle_ts": 1793324700,
       "side": "SELL"
     }
   ],
