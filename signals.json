@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.4.0",
-  "updated_at": 1793360600,
+  "updated_at": 1793360963,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "UNITREEUSDT",
-      "tf": "15m",
-      "gap": 2.45,
-      "ts": 1793324654
-    },
     {
       "kind": "GAP",
       "symbol": "MEITUANUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "4h",
       "gap": 1.22,
       "ts": 1793360600
+    },
+    {
+      "kind": "HEARTBEAT",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793360963
     }
   ],
   "trades": [
@@ -1411,7 +1411,7 @@
       "tp": 0.004427097097221225,
       "adds": 3,
       "margin": 40.0,
-      "pnl": -32.663
+      "pnl": -33.0154
     },
     {
       "symbol": "MAGMAUSDT",
@@ -1419,7 +1419,7 @@
       "tp": 0.3543061129041031,
       "adds": 3,
       "margin": 40.0,
-      "pnl": -22.7394
+      "pnl": -22.2991
     },
     {
       "symbol": "SOPHUSDT",
@@ -1427,7 +1427,7 @@
       "tp": 0.001672125,
       "adds": 0,
       "margin": 10.0,
-      "pnl": -3.4985
+      "pnl": -2.3324
     },
     {
       "symbol": "PUNDIXUSDT",
@@ -1435,20 +1435,12 @@
       "tp": 0.10909275,
       "adds": 0,
       "margin": 10.0,
-      "pnl": -9.6881
-    },
-    {
-      "symbol": "BEATUSDT",
-      "entry": 0.10674,
-      "tp": 0.1040715,
-      "adds": 0,
-      "margin": 10.0,
-      "pnl": 6.2207
+      "pnl": -4.3972
     }
   ],
   "closed": {
-    "profit": 16.8506,
+    "profit": 23.4086,
     "loss": 0,
-    "count": 2
+    "count": 3
   }
 }
