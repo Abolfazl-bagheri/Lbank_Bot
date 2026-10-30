@@ -86,23 +86,6 @@
       "order_id": "PAPER-ORDERUSDT-1793373418"
     },
     {
-      "symbol": "EDGEXUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.368,
-      "qty": 543.4783,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.3588,
-      "tf": "15m",
-      "opened_at": 1793377928,
-      "adds": 0,
-      "entry_candle_ts": 1793377800,
-      "last_leg_candle_ts": 1793377800,
-      "dry_run": true,
-      "order_id": "PAPER-EDGEXUSDT-1793377928"
-    },
-    {
       "symbol": "SOPHUSDT",
       "side": "SELL",
       "status": "open",
@@ -280,6 +263,26 @@
       "closed_at": 1793376383,
       "close_px": 1.285e-05,
       "pnl_usdt": 57.55939006594479
+    },
+    {
+      "symbol": "EDGEXUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.368,
+      "qty": 543.4783,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.3588,
+      "tf": "15m",
+      "opened_at": 1793377928,
+      "adds": 0,
+      "entry_candle_ts": 1793377800,
+      "last_leg_candle_ts": 1793377800,
+      "dry_run": true,
+      "order_id": "PAPER-EDGEXUSDT-1793377928",
+      "closed_at": 1793378847,
+      "close_px": 0.3558,
+      "pnl_usdt": 6.63043478260869
     }
   ],
   "pending": [
@@ -459,6 +462,12 @@
     },
     {
       "symbol": "IDOLUSDT",
+      "tf": "15m",
+      "candle_ts": 1793378700,
+      "side": "SELL"
+    },
+    {
+      "symbol": "SOPHUSDT",
       "tf": "15m",
       "candle_ts": 1793378700,
       "side": "SELL"
