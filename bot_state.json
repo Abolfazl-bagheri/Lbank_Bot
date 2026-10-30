@@ -120,23 +120,6 @@
       "order_id": "PAPER-MAGMAUSDT-1793278931"
     },
     {
-      "symbol": "FLEXUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 92.06693086011136,
-      "qty": 0.434467,
-      "margin": 4.0,
-      "leverage": 10,
-      "tp_price": 89.30492293430801,
-      "tf": "15m",
-      "opened_at": 1793280803,
-      "adds": 3,
-      "entry_candle_ts": 1793280600,
-      "last_leg_candle_ts": 1793286000,
-      "dry_run": true,
-      "order_id": "PAPER-FLEXUSDT-1793280803"
-    },
-    {
       "symbol": "MRKUSDT",
       "side": "SELL",
       "status": "open",
@@ -1554,6 +1537,26 @@
       "closed_at": 1793321404,
       "close_px": 0.07644,
       "pnl_usdt": 0.3582240161453089
+    },
+    {
+      "symbol": "FLEXUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 92.06693086011136,
+      "qty": 0.434467,
+      "margin": 4.0,
+      "leverage": 10,
+      "tp_price": 89.30492293430801,
+      "tf": "15m",
+      "opened_at": 1793280803,
+      "adds": 3,
+      "entry_candle_ts": 1793280600,
+      "last_leg_candle_ts": 1793286000,
+      "dry_run": true,
+      "order_id": "PAPER-FLEXUSDT-1793280803",
+      "closed_at": 1793324973,
+      "close_px": 88.67,
+      "pnl_usdt": 1.4758527642341983
     }
   ],
   "pending": [
@@ -2606,6 +2609,12 @@
       "tf": "15m",
       "candle_ts": 1793324700,
       "side": "SELL"
+    },
+    {
+      "symbol": "UVXYUSDT",
+      "tf": "15m",
+      "candle_ts": 1793324700,
+      "side": "SELL"
     }
   ],
   "kline_blacklist": {
@@ -2649,7 +2658,9 @@
     "STONKBROKERUSDT": 1793357380,
     "HOTUSDT": 1793358278,
     "CVXSTOCKUSDT": 1793364604,
-    "HK1810USDT": 1793368132
+    "HK1810USDT": 1793368132,
+    "XTIUSDT": 1793368148,
+    "XBRUSDT": 1793368162
   },
   "last_trade_report_ts": 1793322348,
   "last_daily_report_date": "2026-10-29",
