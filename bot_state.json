@@ -494,23 +494,6 @@
       "order_id": "PAPER-RUNEUSDT-1793329295"
     },
     {
-      "symbol": "PAIDUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.003536,
-      "qty": 2828.0543,
-      "margin": 1.0,
-      "leverage": 10,
-      "tp_price": 0.00342992,
-      "tf": "15m",
-      "opened_at": 1793331175,
-      "adds": 0,
-      "entry_candle_ts": 1793331000,
-      "last_leg_candle_ts": 1793331000,
-      "dry_run": true,
-      "order_id": "PAPER-PAIDUSDT-1793331175"
-    },
-    {
       "symbol": "BEAMXUSDT",
       "side": "SELL",
       "status": "open",
@@ -1705,6 +1688,26 @@
       "closed_at": 1793338419,
       "close_px": 0.34059,
       "pnl_usdt": 0.6408356850973081
+    },
+    {
+      "symbol": "PAIDUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.003536,
+      "qty": 2828.0543,
+      "margin": 1.0,
+      "leverage": 10,
+      "tp_price": 0.00342992,
+      "tf": "15m",
+      "opened_at": 1793331175,
+      "adds": 0,
+      "entry_candle_ts": 1793331000,
+      "last_leg_candle_ts": 1793331000,
+      "dry_run": true,
+      "order_id": "PAPER-PAIDUSDT-1793331175",
+      "closed_at": 1793339294,
+      "close_px": 0.003402,
+      "pnl_usdt": 0.37895927601809953
     }
   ],
   "pending": [
@@ -2870,6 +2873,12 @@
       "symbol": "MAGMAUSDT",
       "tf": "15m",
       "candle_ts": 1793338200,
+      "side": "SELL"
+    },
+    {
+      "symbol": "MAGMAUSDT",
+      "tf": "15m",
+      "candle_ts": 1793339100,
       "side": "SELL"
     }
   ],
