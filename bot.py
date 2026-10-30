@@ -35,7 +35,7 @@ SIGNALS_FILE = os.path.join(BASE_DIR, "signals.json")
 LIVE_TOPIC = os.environ.get("LIVE_TOPIC", "lbank-gap-b0b85cee29ce").strip()
 STATE_BAK = os.path.join(BASE_DIR, "bot_state.bak")
 
-BOT_VERSION = "2.3.4"
+BOT_VERSION = "2.3.5"
 CHANGELOG = {
     "2.1.0": [
         "چارت احتمال‌گپ → استایل SolAtlas (خط‌روند شکست/بازتست) — هنوز ناقص",
@@ -61,7 +61,7 @@ SIGNAL_SCAN_SEC = {"15m": 240, "1h": 360, "4h": 420}
 BB_PERIOD = 20
 BB_STD = 2.0
 PENETRATION_PCT = 0.3
-MIN_OPEN_GAP_PCT = 0.3
+MIN_OPEN_GAP_PCT = 1.0
 TOP_GAINERS = 60
 TOP_VOLUME = 30
 ALWAYS_INCLUDE = ["BTCUSDT", "XAUTUSDT"]
@@ -522,8 +522,6 @@ def check_signal(df: pd.DataFrame, symbol: str, tf: str):
     open_gap_pct = (open_p - upper) / open_p * 100.0 if open_p > 0 else 0.0
     side = None
     if open_p > upper and open_gap_pct >= MIN_OPEN_GAP_PCT:
-        side = "SELL"
-    elif open_p > upper and upper_pen >= PENETRATION_PCT:
         side = "SELL"
     if not side or (ONLY_SELL and side != "SELL"):
         stats["skip_no_gap"] += 1
@@ -1087,7 +1085,7 @@ async def pre_alert_cycle(tfs: list | None = None) -> None:
                     log.info("PRE_SKIP_BELOW_UB %s %s px=%.6g ub=%.6g", symbol, tf, px, upper)
                     continue
                 diff = (px - upper) / px * 100.0
-                if diff < 0.3:
+                if diff < MIN_OPEN_GAP_PCT:
                     log.info("PRE_SKIP_SMALL_GAP %s %s diff=%.2f%%", symbol, tf, diff)
                     continue
                 period = PERIOD_SEC[tf]
