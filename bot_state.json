@@ -101,6 +101,23 @@
       "last_leg_candle_ts": 1793377800,
       "dry_run": true,
       "order_id": "PAPER-EDGEXUSDT-1793377928"
+    },
+    {
+      "symbol": "SOPHUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.001978,
+      "qty": 101112.2346,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.00192855,
+      "tf": "15m",
+      "opened_at": 1793378797,
+      "adds": 0,
+      "entry_candle_ts": 1793378700,
+      "last_leg_candle_ts": 1793378700,
+      "dry_run": true,
+      "order_id": "PAPER-SOPHUSDT-1793378797"
     }
   ],
   "trade_history": [
@@ -438,6 +455,12 @@
       "symbol": "EDGEXUSDT",
       "tf": "15m",
       "candle_ts": 1793377800,
+      "side": "SELL"
+    },
+    {
+      "symbol": "IDOLUSDT",
+      "tf": "15m",
+      "candle_ts": 1793378700,
       "side": "SELL"
     }
   ],
