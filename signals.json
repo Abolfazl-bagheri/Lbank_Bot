@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.4.0",
-  "updated_at": 1793359791,
+  "updated_at": 1793359995,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "SHLDUSDT",
-      "tf": "15m",
-      "gap": 1.7,
-      "ts": 1793323756
-    },
     {
       "kind": "GAP",
       "symbol": "GEUSDT",
@@ -1390,18 +1383,25 @@
       "ts": 1793358291
     },
     {
-      "kind": "GAP",
-      "symbol": "PUNDIXUSDT",
+      "kind": "SELL",
+      "symbol": "MUSEBOOKUSDT",
       "tf": "15m",
-      "gap": 1.16,
-      "ts": 1793359700
+      "gap": 0.74,
+      "ts": 1793359143
     },
     {
-      "kind": "GAP",
-      "symbol": "PEPEUSDT",
+      "kind": "HEARTBEAT",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793359165
+    },
+    {
+      "kind": "SELL",
+      "symbol": "MUSEBOOKUSDT",
       "tf": "15m",
-      "gap": 1.03,
-      "ts": 1793359791
+      "gap": 0.03,
+      "ts": 1793359995
     }
   ],
   "trades": [
@@ -1411,7 +1411,7 @@
       "tp": 0.004427097097221225,
       "adds": 3,
       "margin": 40.0,
-      "pnl": -18.3918
+      "pnl": -32.1344
     },
     {
       "symbol": "MAGMAUSDT",
@@ -1419,7 +1419,7 @@
       "tp": 0.3543061129041031,
       "adds": 3,
       "margin": 40.0,
-      "pnl": -31.2371
+      "pnl": -28.2431
     },
     {
       "symbol": "SOPHUSDT",
@@ -1427,7 +1427,7 @@
       "tp": 0.001672125,
       "adds": 0,
       "margin": 10.0,
-      "pnl": -0.1166
+      "pnl": -0.6997
     },
     {
       "symbol": "PUNDIXUSDT",
@@ -1435,20 +1435,20 @@
       "tp": 0.10909275,
       "adds": 0,
       "margin": 10.0,
-      "pnl": -4.2363
+      "pnl": -6.0774
     },
     {
-      "symbol": "BEATUSDT",
-      "entry": 0.10674,
-      "tp": 0.1040715,
+      "symbol": "MUSEBOOKUSDT",
+      "entry": 1.299e-05,
+      "tp": 1.2665249999999999e-05,
       "adds": 0,
       "margin": 10.0,
-      "pnl": 5.6773
+      "pnl": -1.3857
     }
   ],
   "closed": {
-    "profit": 16.8506,
+    "profit": 23.8208,
     "loss": 0,
-    "count": 2
+    "count": 3
   }
 }
