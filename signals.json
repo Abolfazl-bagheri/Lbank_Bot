@@ -1,8 +1,15 @@
 {
   "mode": "PAPER",
   "version": "2.4.0",
-  "updated_at": 1793360420,
+  "updated_at": 1793360429,
   "signals": [
+    {
+      "kind": "GAP",
+      "symbol": "MRKUSDT",
+      "tf": "15m",
+      "gap": 0.31,
+      "ts": 1793323786
+    },
     {
       "kind": "GAP",
       "symbol": "APRUSDT",
@@ -1369,39 +1376,32 @@
       "ts": 1793358291
     },
     {
-      "kind": "SELL",
-      "symbol": "MUSEBOOKUSDT",
+      "kind": "GAP",
+      "symbol": "PUNDIXUSDT",
       "tf": "15m",
-      "gap": 0.74,
-      "ts": 1793359143
+      "gap": 1.16,
+      "ts": 1793359700
     },
     {
-      "kind": "HEARTBEAT",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1793359165
-    },
-    {
-      "kind": "SELL",
-      "symbol": "MUSEBOOKUSDT",
+      "kind": "GAP",
+      "symbol": "PEPEUSDT",
       "tf": "15m",
-      "gap": 0.03,
-      "ts": 1793359995
-    },
-    {
-      "kind": "HEARTBEAT",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1793360073
+      "gap": 1.03,
+      "ts": 1793359791
     },
     {
       "kind": "GAP",
       "symbol": "BEAMXUSDT",
       "tf": "4h",
-      "gap": 11.05,
-      "ts": 1793360420
+      "gap": 11.13,
+      "ts": 1793360412
+    },
+    {
+      "kind": "GAP",
+      "symbol": "MAGMAUSDT",
+      "tf": "4h",
+      "gap": 9.93,
+      "ts": 1793360429
     }
   ],
   "trades": [
@@ -1411,7 +1411,7 @@
       "tp": 0.004427097097221225,
       "adds": 3,
       "margin": 40.0,
-      "pnl": -32.1344
+      "pnl": -32.663
     },
     {
       "symbol": "MAGMAUSDT",
@@ -1427,7 +1427,7 @@
       "tp": 0.001672125,
       "adds": 0,
       "margin": 10.0,
-      "pnl": -3.3819
+      "pnl": -3.4985
     },
     {
       "symbol": "PUNDIXUSDT",
@@ -1435,20 +1435,20 @@
       "tp": 0.10909275,
       "adds": 0,
       "margin": 10.0,
-      "pnl": -9.706
+      "pnl": -9.6881
     },
     {
-      "symbol": "MUSEBOOKUSDT",
-      "entry": 1.303484464902186e-05,
-      "tp": 1.2708973532796313e-05,
-      "adds": 1,
-      "margin": 20.0,
-      "pnl": -5.375
+      "symbol": "BEATUSDT",
+      "entry": 0.10674,
+      "tp": 0.1040715,
+      "adds": 0,
+      "margin": 10.0,
+      "pnl": 6.2207
     }
   ],
   "closed": {
-    "profit": 23.8208,
+    "profit": 16.8506,
     "loss": 0,
-    "count": 3
+    "count": 2
   }
 }
