@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.4.0",
-  "updated_at": 1793354593,
+  "updated_at": 1793354740,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "ABBVUSDT",
-      "tf": "15m",
-      "gap": -0.1,
-      "ts": 1793321364
-    },
     {
       "kind": "HEARTBEAT",
       "symbol": "—",
@@ -1402,23 +1395,30 @@
       "tf": "1h",
       "gap": -0.21,
       "ts": 1793354593
+    },
+    {
+      "kind": "HEARTBEAT",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793354740
     }
   ],
   "trades": [
     {
       "symbol": "BEAMXUSDT",
-      "entry": 0.004449573336304224,
-      "tp": 0.004338334002896619,
-      "adds": 1,
-      "margin": 20.0,
+      "entry": 0.004505284648158696,
+      "tp": 0.004392652531954729,
+      "adds": 2,
+      "margin": 30.0,
       "pnl": -15.4106
     },
     {
       "symbol": "MAGMAUSDT",
-      "entry": 0.3514874536983378,
-      "tp": 0.34270026735587933,
-      "adds": 1,
-      "margin": 20.0,
+      "entry": 0.3588711460274789,
+      "tp": 0.3498993673767919,
+      "adds": 2,
+      "margin": 30.0,
       "pnl": -26.3139
     },
     {
@@ -1431,11 +1431,19 @@
     },
     {
       "symbol": "ALPINEUSDT",
-      "entry": 0.3559,
-      "tp": 0.3470025,
+      "entry": 0.35709596756533135,
+      "tp": 0.3481685683761981,
+      "adds": 1,
+      "margin": 20.0,
+      "pnl": -1.3487
+    },
+    {
+      "symbol": "EVAAUSDT",
+      "entry": 1.3629,
+      "tp": 1.3288275,
       "adds": 0,
       "margin": 10.0,
-      "pnl": -1.3487
+      "pnl": 0.0
     }
   ],
   "closed": {
