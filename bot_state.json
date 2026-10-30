@@ -55,18 +55,35 @@
       "symbol": "PUNDIXUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.11189,
-      "qty": 1787.4698,
-      "margin": 10.0,
+      "entry": 0.11102841624986366,
+      "qty": 3602.6813,
+      "margin": 20.0,
       "leverage": 20,
-      "tp_price": 0.10909275,
-      "tf": "1h",
+      "tp_price": 0.10825270584361707,
+      "tf": "4h",
       "opened_at": 1793358126,
-      "adds": 0,
+      "adds": 1,
       "entry_candle_ts": 1793358000,
-      "last_leg_candle_ts": 1793358000,
+      "last_leg_candle_ts": 1793361600,
       "dry_run": true,
       "order_id": "PAPER-PUNDIXUSDT-1793358126"
+    },
+    {
+      "symbol": "MUSEBOOKUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 1.303484464902186e-05,
+      "qty": 30686978.692199998,
+      "margin": 20.0,
+      "leverage": 20,
+      "tp_price": 1.2708973532796313e-05,
+      "tf": "15m",
+      "opened_at": 1793359145,
+      "adds": 1,
+      "entry_candle_ts": 1793358900,
+      "last_leg_candle_ts": 1793359800,
+      "dry_run": true,
+      "order_id": "PAPER-MUSEBOOKUSDT-1793359145"
     }
   ],
   "trade_history": [
@@ -126,9 +143,9 @@
       "last_leg_candle_ts": 1793358000,
       "dry_run": true,
       "order_id": "PAPER-BEATUSDT-1793358293",
-      "closed_at": 1793360959,
-      "close_px": 0.10324,
-      "pnl_usdt": 6.557991380925619
+      "closed_at": 1793359163,
+      "close_px": 0.10302,
+      "pnl_usdt": 6.970207982012368
     }
   ],
   "pending": [
@@ -185,6 +202,18 @@
       "tf": "1h",
       "candle_ts": 1793358000,
       "side": "SELL"
+    },
+    {
+      "symbol": "MUSEBOOKUSDT",
+      "tf": "15m",
+      "candle_ts": 1793358900,
+      "side": "SELL"
+    },
+    {
+      "symbol": "MUSEBOOKUSDT",
+      "tf": "15m",
+      "candle_ts": 1793359800,
+      "side": "SELL"
     }
   ],
   "kline_blacklist": {
@@ -234,10 +263,9 @@
     "NEIRO1USDT": 1793394358,
     "CZUSDT": 1793394367,
     "CRWDUSDT": 1793397926,
-    "SKY1USDT": 1793398016,
-    "HOTUSDT": 1793404159
+    "SKY1USDT": 1793398016
   },
-  "last_trade_report_ts": 1793358236,
+  "last_trade_report_ts": 1793360070,
   "last_daily_report_date": "2026-10-29",
   "last_known_version": "2.4.0",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
