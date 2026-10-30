@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.4.0",
-  "updated_at": 1793347236,
+  "updated_at": 1793347253,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "ABBVUSDT",
-      "tf": "4h",
-      "gap": 0.37,
-      "ts": 1793317505
-    },
     {
       "kind": "GAP",
       "symbol": "XLVUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "4h",
       "gap": 4.0,
       "ts": 1793347236
+    },
+    {
+      "kind": "SELL",
+      "symbol": "SOPHUSDT",
+      "tf": "4h",
+      "gap": 3.37,
+      "ts": 1793347253
     }
   ],
   "trades": [
@@ -1409,6 +1409,14 @@
       "symbol": "BEAMXUSDT",
       "entry": 0.004293,
       "tp": 0.004185675,
+      "adds": 0,
+      "margin": 10.0,
+      "pnl": 0.0
+    },
+    {
+      "symbol": "MAGMAUSDT",
+      "entry": 0.33725,
+      "tp": 0.32881875,
       "adds": 0,
       "margin": 10.0,
       "pnl": 0.0
