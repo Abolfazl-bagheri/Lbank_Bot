@@ -528,23 +528,6 @@
       "order_id": "PAPER-PAIDUSDT-1793331175"
     },
     {
-      "symbol": "CLAUDIAUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.002906,
-      "qty": 3441.1562,
-      "margin": 1.0,
-      "leverage": 10,
-      "tp_price": 0.00281882,
-      "tf": "15m",
-      "opened_at": 1793334793,
-      "adds": 0,
-      "entry_candle_ts": 1793334600,
-      "last_leg_candle_ts": 1793334600,
-      "dry_run": true,
-      "order_id": "PAPER-CLAUDIAUSDT-1793334793"
-    },
-    {
       "symbol": "BEAMXUSDT",
       "side": "SELL",
       "status": "open",
@@ -1716,6 +1699,26 @@
       "closed_at": 1793329444,
       "close_px": 0.014512,
       "pnl_usdt": 0.3195250483623509
+    },
+    {
+      "symbol": "CLAUDIAUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.002906,
+      "qty": 3441.1562,
+      "margin": 1.0,
+      "leverage": 10,
+      "tp_price": 0.00281882,
+      "tf": "15m",
+      "opened_at": 1793334793,
+      "adds": 0,
+      "entry_candle_ts": 1793334600,
+      "last_leg_candle_ts": 1793334600,
+      "dry_run": true,
+      "order_id": "PAPER-CLAUDIAUSDT-1793334793",
+      "closed_at": 1793336797,
+      "close_px": 0.002535,
+      "pnl_usdt": 1.27666896077082
     }
   ],
   "pending": [
@@ -2900,6 +2903,12 @@
       "tf": "1h",
       "candle_ts": 1793336400,
       "side": "SELL"
+    },
+    {
+      "symbol": "BIRBUSDT",
+      "tf": "1h",
+      "candle_ts": 1793336400,
+      "side": "SELL"
     }
   ],
   "kline_blacklist": {
@@ -2946,7 +2955,8 @@
     "MASTOCKUSDT": 1793369010,
     "USOUSDT": 1793369060,
     "AMCUSDT": 1793372804,
-    "LONGXIAUSDT": 1793378075
+    "LONGXIAUSDT": 1793378075,
+    "NIULAIUSDT": 1793379952
   },
   "last_trade_report_ts": 1793334899,
   "last_daily_report_date": "2026-10-29",
