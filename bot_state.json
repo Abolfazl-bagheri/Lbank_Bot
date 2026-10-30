@@ -101,23 +101,6 @@
       "last_leg_candle_ts": 1793367900,
       "dry_run": true,
       "order_id": "PAPER-IDOLUSDT-1793362611"
-    },
-    {
-      "symbol": "VKTXUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 27.09,
-      "qty": 7.3828,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 26.41275,
-      "tf": "15m",
-      "opened_at": 1793367197,
-      "adds": 0,
-      "entry_candle_ts": 1793367000,
-      "last_leg_candle_ts": 1793367000,
-      "dry_run": true,
-      "order_id": "PAPER-VKTXUSDT-1793367197"
     }
   ],
   "trade_history": [
@@ -200,6 +183,26 @@
       "closed_at": 1793363663,
       "close_px": 0.3453,
       "pnl_usdt": 5.190409026798299
+    },
+    {
+      "symbol": "VKTXUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 27.09,
+      "qty": 7.3828,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 26.41275,
+      "tf": "15m",
+      "opened_at": 1793367197,
+      "adds": 0,
+      "entry_candle_ts": 1793367000,
+      "last_leg_candle_ts": 1793367000,
+      "dry_run": true,
+      "order_id": "PAPER-VKTXUSDT-1793367197",
+      "closed_at": 1793368084,
+      "close_px": 26.41,
+      "pnl_usdt": 5.020302694721298
     }
   ],
   "pending": [
@@ -363,7 +366,7 @@
     "HOTUSDT": 1793405225,
     "LWLGUSDT": 1793411218
   },
-  "last_trade_report_ts": 1793367114,
+  "last_trade_report_ts": 1793368024,
   "last_daily_report_date": "2026-10-29",
   "last_known_version": "2.4.0",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
