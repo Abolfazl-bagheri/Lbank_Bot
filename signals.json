@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.3.4",
-  "updated_at": 1793324915,
+  "updated_at": 1793324937,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "HYPEUSDT",
-      "tf": "1h",
-      "gap": 0.97,
-      "ts": 1793292902
-    },
     {
       "kind": "GAP",
       "symbol": "PARTIUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 0.71,
       "ts": 1793324914
+    },
+    {
+      "kind": "SELL",
+      "symbol": "UVXYUSDT",
+      "tf": "15m",
+      "gap": 0.61,
+      "ts": 1793324936
     }
   ],
   "trades": [
@@ -1411,7 +1411,7 @@
       "tp": 10.931883453501401,
       "adds": 4,
       "margin": 5.0,
-      "pnl": 0.0443
+      "pnl": 0.133
     },
     {
       "symbol": "LLYUSDT",
@@ -1419,7 +1419,7 @@
       "tp": 1316.7730688803153,
       "adds": 3,
       "margin": 4.0,
-      "pnl": -1.1707
+      "pnl": -1.194
     },
     {
       "symbol": "HYPEUSDT",
@@ -1427,7 +1427,7 @@
       "tp": 85.84025683846066,
       "adds": 5,
       "margin": 6.0,
-      "pnl": -0.4928
+      "pnl": -0.5369
     },
     {
       "symbol": "MRNAUSDT",
@@ -1435,7 +1435,7 @@
       "tp": 211.7413,
       "adds": 0,
       "margin": 1.0,
-      "pnl": -0.0302
+      "pnl": -0.0348
     },
     {
       "symbol": "EPICUSDT",
@@ -1459,7 +1459,7 @@
       "tp": 0.2767022,
       "adds": 0,
       "margin": 1.0,
-      "pnl": -0.0526
+      "pnl": -0.054
     },
     {
       "symbol": "FLEXUSDT",
@@ -1475,7 +1475,7 @@
       "tp": 143.97505210544284,
       "adds": 1,
       "margin": 2.0,
-      "pnl": -0.0421
+      "pnl": -0.038
     },
     {
       "symbol": "CVNAUSDT",
@@ -1491,7 +1491,7 @@
       "tp": 26.069609436251785,
       "adds": 3,
       "margin": 4.0,
-      "pnl": 0.5148
+      "pnl": 0.5297
     },
     {
       "symbol": "GEUSDT",
@@ -1507,7 +1507,7 @@
       "tp": 0.010289759999999998,
       "adds": 0,
       "margin": 1.0,
-      "pnl": -1.6591
+      "pnl": -1.661
     },
     {
       "symbol": "PARTIUSDT",
@@ -1515,7 +1515,7 @@
       "tp": 0.04903215102596817,
       "adds": 2,
       "margin": 3.0,
-      "pnl": -4.5944
+      "pnl": -4.5588
     },
     {
       "symbol": "GILDUSDT",
@@ -1539,7 +1539,7 @@
       "tp": 38.38147721102432,
       "adds": 2,
       "margin": 3.0,
-      "pnl": -0.8806
+      "pnl": -0.8882
     },
     {
       "symbol": "SKDDUSDT",
@@ -1547,7 +1547,7 @@
       "tp": 8.356039577034071,
       "adds": 3,
       "margin": 4.0,
-      "pnl": -1.9712
+      "pnl": -1.9898
     },
     {
       "symbol": "CMCSAUSDT",
@@ -1571,7 +1571,7 @@
       "tp": 0.3413084311141254,
       "adds": 1,
       "margin": 2.0,
-      "pnl": -0.1453
+      "pnl": -0.1811
     },
     {
       "symbol": "JSTUSDT",
@@ -1579,7 +1579,7 @@
       "tp": 0.1395151,
       "adds": 0,
       "margin": 1.0,
-      "pnl": 0.2267
+      "pnl": 0.2232
     },
     {
       "symbol": "SSPCUSDT",
@@ -1587,7 +1587,7 @@
       "tp": 8.947685027904617,
       "adds": 1,
       "margin": 2.0,
-      "pnl": -0.0685
+      "pnl": -0.0837
     },
     {
       "symbol": "WMTUSDT",
@@ -1603,7 +1603,7 @@
       "tp": 29.2552,
       "adds": 0,
       "margin": 1.0,
-      "pnl": 0.0696
+      "pnl": 0.0763
     },
     {
       "symbol": "ABBVUSDT",
@@ -1611,7 +1611,7 @@
       "tp": 286.053,
       "adds": 0,
       "margin": 1.0,
-      "pnl": -0.0207
+      "pnl": -0.019
     },
     {
       "symbol": "DOODUSDT",
@@ -1619,7 +1619,15 @@
       "tp": 0.00180032,
       "adds": 0,
       "margin": 1.0,
-      "pnl": -0.0216
+      "pnl": 0.0162
+    },
+    {
+      "symbol": "MEITUANUSDT",
+      "entry": 9.19,
+      "tp": 8.914299999999999,
+      "adds": 0,
+      "margin": 1.0,
+      "pnl": -0.0218
     }
   ],
   "closed": {
