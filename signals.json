@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.4.0",
-  "updated_at": 1793359143,
+  "updated_at": 1793359165,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "GEUSDT",
-      "tf": "15m",
-      "gap": 0.68,
-      "ts": 1793322896
-    },
     {
       "kind": "GAP",
       "symbol": "SHLDUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 0.74,
       "ts": 1793359143
+    },
+    {
+      "kind": "HEARTBEAT",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793359165
     }
   ],
   "trades": [
@@ -1438,17 +1438,17 @@
       "pnl": -3.6107
     },
     {
-      "symbol": "BEATUSDT",
-      "entry": 0.10674,
-      "tp": 0.1040715,
+      "symbol": "MUSEBOOKUSDT",
+      "entry": 1.299e-05,
+      "tp": 1.2665249999999999e-05,
       "adds": 0,
       "margin": 10.0,
-      "pnl": 6.9702
+      "pnl": 0.0
     }
   ],
   "closed": {
-    "profit": 16.8506,
+    "profit": 23.8208,
     "loss": 0,
-    "count": 2
+    "count": 3
   }
 }
