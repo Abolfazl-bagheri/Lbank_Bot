@@ -50,23 +50,6 @@
       "last_leg_candle_ts": 1793361600,
       "dry_run": true,
       "order_id": "PAPER-SOPHUSDT-1793347255"
-    },
-    {
-      "symbol": "PUNDIXUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.11189,
-      "qty": 1787.4698,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.10909275,
-      "tf": "1h",
-      "opened_at": 1793358126,
-      "adds": 0,
-      "entry_candle_ts": 1793358000,
-      "last_leg_candle_ts": 1793358000,
-      "dry_run": true,
-      "order_id": "PAPER-PUNDIXUSDT-1793358126"
     }
   ],
   "trade_history": [
@@ -129,6 +112,26 @@
       "closed_at": 1793360959,
       "close_px": 0.10324,
       "pnl_usdt": 6.557991380925619
+    },
+    {
+      "symbol": "PUNDIXUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.11189,
+      "qty": 1787.4698,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.10909275,
+      "tf": "1h",
+      "opened_at": 1793358126,
+      "adds": 0,
+      "entry_candle_ts": 1793358000,
+      "last_leg_candle_ts": 1793358000,
+      "dry_run": true,
+      "order_id": "PAPER-PUNDIXUSDT-1793358126",
+      "closed_at": 1793365427,
+      "close_px": 0.10895,
+      "pnl_usdt": 5.255161319152737
     }
   ],
   "pending": [
@@ -237,7 +240,7 @@
     "SKY1USDT": 1793398016,
     "HOTUSDT": 1793404159
   },
-  "last_trade_report_ts": 1793363628,
+  "last_trade_report_ts": 1793365427,
   "last_daily_report_date": "2026-10-29",
   "last_known_version": "2.4.0",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
