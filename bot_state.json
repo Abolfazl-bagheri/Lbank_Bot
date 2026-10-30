@@ -16,10 +16,34 @@
       "last_leg_candle_ts": 1793347200,
       "dry_run": true,
       "order_id": "PAPER-BEAMXUSDT-1793347231"
+    },
+    {
+      "symbol": "MAGMAUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.33725,
+      "qty": 593.0319,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.32881875,
+      "tf": "4h",
+      "opened_at": 1793347238,
+      "adds": 0,
+      "entry_candle_ts": 1793347200,
+      "last_leg_candle_ts": 1793347200,
+      "dry_run": true,
+      "order_id": "PAPER-MAGMAUSDT-1793347238"
     }
   ],
   "trade_history": [],
-  "pending": [],
+  "pending": [
+    {
+      "symbol": "BEAMXUSDT",
+      "tf": "1h",
+      "candle_ts": 1793347200,
+      "side": "SELL"
+    }
+  ],
   "kline_blacklist": {
     "GSTOCKUSDT": 1793301396,
     "MANCERUSDT": 1793301434,
