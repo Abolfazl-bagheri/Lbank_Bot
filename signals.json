@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.4.0",
-  "updated_at": 1793358124,
+  "updated_at": 1793358237,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "SKDDUSDT",
-      "tf": "15m",
-      "gap": 0.49,
-      "ts": 1793322750
-    },
     {
       "kind": "GAP",
       "symbol": "SQQQUSDT",
@@ -1402,23 +1395,30 @@
       "tf": "1h",
       "gap": 1.36,
       "ts": 1793358124
+    },
+    {
+      "kind": "HEARTBEAT",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793358237
     }
   ],
   "trades": [
     {
       "symbol": "BEAMXUSDT",
-      "entry": 0.004505284648158696,
-      "tp": 0.004392652531954729,
-      "adds": 2,
-      "margin": 30.0,
+      "entry": 0.004540612407406384,
+      "tp": 0.004427097097221225,
+      "adds": 3,
+      "margin": 40.0,
       "pnl": -19.2727
     },
     {
       "symbol": "MAGMAUSDT",
-      "entry": 0.3588711460274789,
-      "tp": 0.3498993673767919,
-      "adds": 2,
-      "margin": 30.0,
+      "entry": 0.36339088502984934,
+      "tp": 0.3543061129041031,
+      "adds": 3,
+      "margin": 40.0,
       "pnl": -31.4133
     },
     {
@@ -1430,25 +1430,17 @@
       "pnl": -0.2332
     },
     {
-      "symbol": "ALPINEUSDT",
-      "entry": 0.35709596756533135,
-      "tp": 0.3481685683761981,
-      "adds": 1,
-      "margin": 20.0,
-      "pnl": 11.421
-    },
-    {
-      "symbol": "EVAAUSDT",
-      "entry": 1.3629,
-      "tp": 1.3288275,
+      "symbol": "PUNDIXUSDT",
+      "entry": 0.11189,
+      "tp": 0.10909275,
       "adds": 0,
       "margin": 10.0,
-      "pnl": 5.4296
+      "pnl": 0.0
     }
   ],
   "closed": {
-    "profit": 0,
+    "profit": 16.8506,
     "loss": 0,
-    "count": 0
+    "count": 2
   }
 }
