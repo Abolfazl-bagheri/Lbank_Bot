@@ -412,16 +412,16 @@
       "symbol": "DOODUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.0019416513415572946,
-      "qty": 20601.021,
-      "margin": 4.0,
+      "entry": 0.0019080361931887151,
+      "qty": 15722.9722,
+      "margin": 3.0,
       "leverage": 10,
-      "tp_price": 0.0018834018013105757,
+      "tp_price": 0.0018507951073930536,
       "tf": "1h",
       "opened_at": 1793324897,
-      "adds": 3,
+      "adds": 2,
       "entry_candle_ts": 1793324700,
-      "last_leg_candle_ts": 1793336400,
+      "last_leg_candle_ts": 1793329200,
       "dry_run": true,
       "order_id": "PAPER-DOODUSDT-1793324897"
     },
@@ -497,16 +497,16 @@
       "symbol": "RUNEUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.6771976687490477,
-      "qty": 29.5335,
-      "margin": 2.0,
+      "entry": 0.6621,
+      "qty": 15.1035,
+      "margin": 1.0,
       "leverage": 10,
-      "tp_price": 0.6568817386865763,
+      "tp_price": 0.6422370000000001,
       "tf": "1h",
       "opened_at": 1793329295,
-      "adds": 1,
+      "adds": 0,
       "entry_candle_ts": 1793329200,
-      "last_leg_candle_ts": 1793336400,
+      "last_leg_candle_ts": 1793329200,
       "dry_run": true,
       "order_id": "PAPER-RUNEUSDT-1793329295"
     },
@@ -531,16 +531,16 @@
       "symbol": "BEAMXUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.0036035779688955365,
-      "qty": 5550.039500000001,
-      "margin": 2.0,
+      "entry": 0.003565,
+      "qty": 2805.0491,
+      "margin": 1.0,
       "leverage": 10,
-      "tp_price": 0.00349547062982867,
+      "tp_price": 0.00345805,
       "tf": "15m",
       "opened_at": 1793334818,
-      "adds": 1,
+      "adds": 0,
       "entry_candle_ts": 1793334600,
-      "last_leg_candle_ts": 1793336400,
+      "last_leg_candle_ts": 1793334600,
       "dry_run": true,
       "order_id": "PAPER-BEAMXUSDT-1793334818"
     },
@@ -560,23 +560,6 @@
       "last_leg_candle_ts": 1793334600,
       "dry_run": true,
       "order_id": "PAPER-SOLVUSDT-1793334840"
-    },
-    {
-      "symbol": "BIRBUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.07377,
-      "qty": 135.5565,
-      "margin": 1.0,
-      "leverage": 10,
-      "tp_price": 0.0715569,
-      "tf": "1h",
-      "opened_at": 1793336686,
-      "adds": 0,
-      "entry_candle_ts": 1793336400,
-      "last_leg_candle_ts": 1793336400,
-      "dry_run": true,
-      "order_id": "PAPER-BIRBUSDT-1793336686"
     }
   ],
   "trade_history": [
@@ -1716,9 +1699,9 @@
       "last_leg_candle_ts": 1793334600,
       "dry_run": true,
       "order_id": "PAPER-CLAUDIAUSDT-1793334793",
-      "closed_at": 1793336797,
-      "close_px": 0.002535,
-      "pnl_usdt": 1.27666896077082
+      "closed_at": 1793337525,
+      "close_px": 0.002595,
+      "pnl_usdt": 1.0701995870612528
     }
   ],
   "pending": [
@@ -2879,41 +2862,10 @@
       "tf": "15m",
       "candle_ts": 1793334600,
       "side": "SELL"
-    },
-    {
-      "symbol": "RUNEUSDT",
-      "tf": "1h",
-      "candle_ts": 1793336400,
-      "side": "SELL"
-    },
-    {
-      "symbol": "DOODUSDT",
-      "tf": "1h",
-      "candle_ts": 1793336400,
-      "side": "SELL"
-    },
-    {
-      "symbol": "BEAMXUSDT",
-      "tf": "15m",
-      "candle_ts": 1793336400,
-      "side": "SELL"
-    },
-    {
-      "symbol": "BEAMXUSDT",
-      "tf": "1h",
-      "candle_ts": 1793336400,
-      "side": "SELL"
-    },
-    {
-      "symbol": "BIRBUSDT",
-      "tf": "1h",
-      "candle_ts": 1793336400,
-      "side": "SELL"
     }
   ],
   "kline_blacklist": {
     "GSTOCKUSDT": 1793301396,
-    "FIGHT1USDT": 1793301402,
     "MANCERUSDT": 1793301434,
     "STXSTOCKUSDT": 1793301443,
     "AI1USDT": 1793301465,
@@ -2956,7 +2908,7 @@
     "USOUSDT": 1793369060,
     "AMCUSDT": 1793372804,
     "LONGXIAUSDT": 1793378075,
-    "NIULAIUSDT": 1793379952
+    "FIGHT1USDT": 1793380711
   },
   "last_trade_report_ts": 1793334899,
   "last_daily_report_date": "2026-10-29",
