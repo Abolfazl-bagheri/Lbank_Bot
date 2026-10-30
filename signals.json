@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.4.0",
-  "updated_at": 1793360963,
+  "updated_at": 1793361335,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "MEITUANUSDT",
-      "tf": "15m",
-      "gap": 0.91,
-      "ts": 1793324714
-    },
-    {
-      "kind": "SELL",
-      "symbol": "DOODUSDT",
-      "tf": "15m",
-      "gap": -0.45,
-      "ts": 1793324895
-    },
     {
       "kind": "SELL",
       "symbol": "MEITUANUSDT",
@@ -1341,25 +1327,39 @@
       "ts": 1793358291
     },
     {
-      "kind": "GAP",
-      "symbol": "PUNDIXUSDT",
+      "kind": "SELL",
+      "symbol": "MUSEBOOKUSDT",
       "tf": "15m",
-      "gap": 1.16,
-      "ts": 1793359700
+      "gap": 0.74,
+      "ts": 1793359143
     },
     {
-      "kind": "GAP",
-      "symbol": "PEPEUSDT",
+      "kind": "HEARTBEAT",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793359165
+    },
+    {
+      "kind": "SELL",
+      "symbol": "MUSEBOOKUSDT",
       "tf": "15m",
-      "gap": 1.03,
-      "ts": 1793359791
+      "gap": 0.03,
+      "ts": 1793359995
+    },
+    {
+      "kind": "HEARTBEAT",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793360073
     },
     {
       "kind": "GAP",
       "symbol": "BEAMXUSDT",
       "tf": "4h",
-      "gap": 11.13,
-      "ts": 1793360412
+      "gap": 11.05,
+      "ts": 1793360420
     },
     {
       "kind": "GAP",
@@ -1372,36 +1372,36 @@
       "kind": "GAP",
       "symbol": "SOPHUSDT",
       "tf": "4h",
-      "gap": 4.38,
-      "ts": 1793360440
+      "gap": 4.32,
+      "ts": 1793360438
     },
     {
       "kind": "GAP",
       "symbol": "ALPINEUSDT",
       "tf": "4h",
-      "gap": 3.86,
-      "ts": 1793360446
+      "gap": 3.8,
+      "ts": 1793360461
     },
     {
       "kind": "GAP",
       "symbol": "PUNDIXUSDT",
       "tf": "4h",
-      "gap": 5.39,
-      "ts": 1793360454
+      "gap": 5.74,
+      "ts": 1793360467
     },
     {
       "kind": "GAP",
       "symbol": "GILDUSDT",
       "tf": "4h",
-      "gap": 1.22,
-      "ts": 1793360600
+      "gap": 1.54,
+      "ts": 1793360531
     },
     {
-      "kind": "HEARTBEAT",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1793360963
+      "kind": "GAP",
+      "symbol": "PUNDIXUSDT",
+      "tf": "1h",
+      "gap": 2.35,
+      "ts": 1793361335
     }
   ],
   "trades": [
@@ -1411,7 +1411,7 @@
       "tp": 0.004427097097221225,
       "adds": 3,
       "margin": 40.0,
-      "pnl": -33.0154
+      "pnl": -30.5488
     },
     {
       "symbol": "MAGMAUSDT",
@@ -1419,7 +1419,7 @@
       "tp": 0.3543061129041031,
       "adds": 3,
       "margin": 40.0,
-      "pnl": -22.2991
+      "pnl": -25.6013
     },
     {
       "symbol": "SOPHUSDT",
@@ -1427,7 +1427,7 @@
       "tp": 0.001672125,
       "adds": 0,
       "margin": 10.0,
-      "pnl": -2.3324
+      "pnl": -2.0991
     },
     {
       "symbol": "PUNDIXUSDT",
@@ -1435,11 +1435,19 @@
       "tp": 0.10909275,
       "adds": 0,
       "margin": 10.0,
-      "pnl": -4.3972
+      "pnl": -2.5382
+    },
+    {
+      "symbol": "MUSEBOOKUSDT",
+      "entry": 1.303484464902186e-05,
+      "tp": 1.2708973532796313e-05,
+      "adds": 1,
+      "margin": 20.0,
+      "pnl": -5.375
     }
   ],
   "closed": {
-    "profit": 23.4086,
+    "profit": 23.8208,
     "loss": 0,
     "count": 3
   }
