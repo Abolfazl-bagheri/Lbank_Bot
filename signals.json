@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.4.0",
-  "updated_at": 1793350984,
+  "updated_at": 1793351170,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "GILDUSDT",
-      "tf": "4h",
-      "gap": 1.1,
-      "ts": 1793318699
-    },
     {
       "kind": "GAP",
       "symbol": "WMTUSDT",
@@ -1402,15 +1395,22 @@
       "tf": "1h",
       "gap": 2.29,
       "ts": 1793350984
+    },
+    {
+      "kind": "HEARTBEAT",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793351170
     }
   ],
   "trades": [
     {
       "symbol": "BEAMXUSDT",
-      "entry": 0.004293,
-      "tp": 0.004185675,
-      "adds": 0,
-      "margin": 10.0,
+      "entry": 0.004449573336304224,
+      "tp": 0.004338334002896619,
+      "adds": 1,
+      "margin": 20.0,
       "pnl": -15.1409
     },
     {
@@ -1428,6 +1428,14 @@
       "adds": 0,
       "margin": 10.0,
       "pnl": -0.9329
+    },
+    {
+      "symbol": "ALPINEUSDT",
+      "entry": 0.3559,
+      "tp": 0.3470025,
+      "adds": 0,
+      "margin": 10.0,
+      "pnl": 0.0
     }
   ],
   "closed": {
