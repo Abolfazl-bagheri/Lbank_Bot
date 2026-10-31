@@ -101,6 +101,23 @@
       "last_leg_candle_ts": 1793429100,
       "dry_run": true,
       "order_id": "PAPER-MAGMAUSDT-1793428333"
+    },
+    {
+      "symbol": "RSRUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.001562,
+      "qty": 128040.9731,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.00152295,
+      "tf": "15m",
+      "opened_at": 1793431055,
+      "adds": 0,
+      "entry_candle_ts": 1793430900,
+      "last_leg_candle_ts": 1793430900,
+      "dry_run": true,
+      "order_id": "PAPER-RSRUSDT-1793431055"
     }
   ],
   "trade_history": [
@@ -1017,7 +1034,7 @@
     "LWLGUSDT": 1793464452,
     "PORTALUSDT": 1793471666
   },
-  "last_trade_report_ts": 1793428399,
+  "last_trade_report_ts": 1793429371,
   "last_daily_report_date": "2026-10-29",
   "last_known_version": "2.4.0",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
