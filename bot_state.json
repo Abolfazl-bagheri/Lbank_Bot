@@ -52,23 +52,6 @@
       "order_id": "PAPER-ESPORTSUSDT-1793440963"
     },
     {
-      "symbol": "ZCATUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.04426,
-      "qty": 4518.7528,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.0431535,
-      "tf": "15m",
-      "opened_at": 1793447314,
-      "adds": 0,
-      "entry_candle_ts": 1793447100,
-      "last_leg_candle_ts": 1793447100,
-      "dry_run": true,
-      "order_id": "PAPER-ZCATUSDT-1793447314"
-    },
-    {
       "symbol": "COWUSDT",
       "side": "SELL",
       "status": "open",
@@ -777,6 +760,26 @@
       "closed_at": 1793459202,
       "close_px": 0.13,
       "pnl_usdt": 29.809814932258575
+    },
+    {
+      "symbol": "ZCATUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.04426,
+      "qty": 4518.7528,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0431535,
+      "tf": "15m",
+      "opened_at": 1793447314,
+      "adds": 0,
+      "entry_candle_ts": 1793447100,
+      "last_leg_candle_ts": 1793447100,
+      "dry_run": true,
+      "order_id": "PAPER-ZCATUSDT-1793447314",
+      "closed_at": 1793459206,
+      "close_px": 0.04228,
+      "pnl_usdt": 8.94713059195663
     }
   ],
   "pending": [
@@ -1309,7 +1312,7 @@
     "GSTOCKUSDT": 1793498719,
     "AXLUSDT": 1793502358
   },
-  "last_trade_report_ts": 1793455604,
+  "last_trade_report_ts": 1793459208,
   "last_daily_report_date": "2026-10-29",
   "last_known_version": "2.4.1",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
