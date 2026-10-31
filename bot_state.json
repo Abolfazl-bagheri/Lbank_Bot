@@ -1,23 +1,6 @@
 {
   "open_trades": [
     {
-      "symbol": "BEAMXUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.004595142160153336,
-      "qty": 348193.7979,
-      "margin": 80.0,
-      "leverage": 20,
-      "tp_price": 0.004480263606149502,
-      "tf": "4h",
-      "opened_at": 1793347231,
-      "adds": 7,
-      "entry_candle_ts": 1793347200,
-      "last_leg_candle_ts": 1793404800,
-      "dry_run": true,
-      "order_id": "PAPER-BEAMXUSDT-1793347231"
-    },
-    {
       "symbol": "IDOLUSDT",
       "side": "SELL",
       "status": "open",
@@ -33,23 +16,6 @@
       "last_leg_candle_ts": 1793411100,
       "dry_run": true,
       "order_id": "PAPER-IDOLUSDT-1793362611"
-    },
-    {
-      "symbol": "ACEUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.1441,
-      "qty": 1387.9251,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.1404975,
-      "tf": "1h",
-      "opened_at": 1793405020,
-      "adds": 0,
-      "entry_candle_ts": 1793404800,
-      "last_leg_candle_ts": 1793404800,
-      "dry_run": true,
-      "order_id": "PAPER-ACEUSDT-1793405020"
     },
     {
       "symbol": "WETUSDT",
@@ -349,6 +315,46 @@
       "closed_at": 1793408722,
       "close_px": 0.002066,
       "pnl_usdt": 101.672719699046
+    },
+    {
+      "symbol": "ACEUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.1441,
+      "qty": 1387.9251,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.1404975,
+      "tf": "1h",
+      "opened_at": 1793405020,
+      "adds": 0,
+      "entry_candle_ts": 1793404800,
+      "last_leg_candle_ts": 1793404800,
+      "dry_run": true,
+      "order_id": "PAPER-ACEUSDT-1793405020",
+      "closed_at": 1793411165,
+      "close_px": 0.14038,
+      "pnl_usdt": 5.163081193615547
+    },
+    {
+      "symbol": "BEAMXUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.004595142160153336,
+      "qty": 348193.7979,
+      "margin": 80.0,
+      "leverage": 20,
+      "tp_price": 0.004480263606149502,
+      "tf": "4h",
+      "opened_at": 1793347231,
+      "adds": 7,
+      "entry_candle_ts": 1793347200,
+      "last_leg_candle_ts": 1793404800,
+      "dry_run": true,
+      "order_id": "PAPER-BEAMXUSDT-1793347231",
+      "closed_at": 1793411225,
+      "close_px": 0.00448,
+      "pnl_usdt": 40.09178602630882
     }
   ],
   "pending": [
