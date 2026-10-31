@@ -101,6 +101,23 @@
       "last_leg_candle_ts": 1793455200,
       "dry_run": true,
       "order_id": "PAPER-COWUSDT-1793455413"
+    },
+    {
+      "symbol": "FFUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.09803,
+      "qty": 2040.1918,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.09557925,
+      "tf": "15m",
+      "opened_at": 1793455465,
+      "adds": 0,
+      "entry_candle_ts": 1793455200,
+      "last_leg_candle_ts": 1793455200,
+      "dry_run": true,
+      "order_id": "PAPER-FFUSDT-1793455465"
     }
   ],
   "trade_history": [
@@ -1155,6 +1172,12 @@
     {
       "symbol": "COWUSDT",
       "tf": "15m",
+      "candle_ts": 1793455200,
+      "side": "SELL"
+    },
+    {
+      "symbol": "COWUSDT",
+      "tf": "1h",
       "candle_ts": 1793455200,
       "side": "SELL"
     }
