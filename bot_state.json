@@ -18,23 +18,6 @@
       "order_id": "PAPER-IDOLUSDT-1793362611"
     },
     {
-      "symbol": "XPINUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.0008571989451796404,
-      "qty": 1866544.5273999998,
-      "margin": 80.0,
-      "leverage": 20,
-      "tp_price": 0.0008357689715501493,
-      "tf": "1h",
-      "opened_at": 1793413881,
-      "adds": 7,
-      "entry_candle_ts": 1793413800,
-      "last_leg_candle_ts": 1793422800,
-      "dry_run": true,
-      "order_id": "PAPER-XPINUSDT-1793413881"
-    },
-    {
       "symbol": "COLLECTUSDT",
       "side": "SELL",
       "status": "open",
@@ -540,6 +523,26 @@
       "closed_at": 1793421058,
       "close_px": 0.005065,
       "pnl_usdt": 7.084364882879434
+    },
+    {
+      "symbol": "XPINUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.0008571989451796404,
+      "qty": 1866544.5273999998,
+      "margin": 80.0,
+      "leverage": 20,
+      "tp_price": 0.0008357689715501493,
+      "tf": "1h",
+      "opened_at": 1793413881,
+      "adds": 7,
+      "entry_candle_ts": 1793413800,
+      "last_leg_candle_ts": 1793422800,
+      "dry_run": true,
+      "order_id": "PAPER-XPINUSDT-1793413881",
+      "closed_at": 1793423829,
+      "close_px": 0.0008282,
+      "pnl_usdt": 54.12782242481775
     }
   ],
   "pending": [
