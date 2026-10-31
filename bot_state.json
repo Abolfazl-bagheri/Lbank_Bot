@@ -101,23 +101,6 @@
       "last_leg_candle_ts": 1793430900,
       "dry_run": true,
       "order_id": "PAPER-MAGMAUSDT-1793428333"
-    },
-    {
-      "symbol": "RSRUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.001562,
-      "qty": 128040.9731,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.00152295,
-      "tf": "15m",
-      "opened_at": 1793431055,
-      "adds": 0,
-      "entry_candle_ts": 1793430900,
-      "last_leg_candle_ts": 1793430900,
-      "dry_run": true,
-      "order_id": "PAPER-RSRUSDT-1793431055"
     }
   ],
   "trade_history": [
@@ -620,6 +603,26 @@
       "closed_at": 1793429369,
       "close_px": 0.0005568,
       "pnl_usdt": 6.465067778936398
+    },
+    {
+      "symbol": "RSRUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.001562,
+      "qty": 128040.9731,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.00152295,
+      "tf": "15m",
+      "opened_at": 1793431055,
+      "adds": 0,
+      "entry_candle_ts": 1793430900,
+      "last_leg_candle_ts": 1793430900,
+      "dry_run": true,
+      "order_id": "PAPER-RSRUSDT-1793431055",
+      "closed_at": 1793432025,
+      "close_px": 0.001449,
+      "pnl_usdt": 14.46862996158771
     }
   ],
   "pending": [
