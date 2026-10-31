@@ -135,6 +135,23 @@
       "last_leg_candle_ts": 1793458800,
       "dry_run": true,
       "order_id": "PAPER-REDUSDT-1793459042"
+    },
+    {
+      "symbol": "HYPERUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.0645,
+      "qty": 3100.7752,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0628875,
+      "tf": "1h",
+      "opened_at": 1793459088,
+      "adds": 0,
+      "entry_candle_ts": 1793458800,
+      "last_leg_candle_ts": 1793458800,
+      "dry_run": true,
+      "order_id": "PAPER-HYPERUSDT-1793459088"
     }
   ],
   "trade_history": [
@@ -1212,6 +1229,12 @@
     },
     {
       "symbol": "COWUSDT",
+      "tf": "1h",
+      "candle_ts": 1793458800,
+      "side": "SELL"
+    },
+    {
+      "symbol": "REDUSDT",
       "tf": "1h",
       "candle_ts": 1793458800,
       "side": "SELL"
