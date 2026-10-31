@@ -1,8 +1,36 @@
 {
   "mode": "PAPER",
   "version": "2.4.0",
-  "updated_at": 1793405104,
+  "updated_at": 1793405973,
   "signals": [
+    {
+      "kind": "GAP",
+      "symbol": "OKTAUSDT",
+      "tf": "15m",
+      "gap": 0.46,
+      "ts": 1793344542
+    },
+    {
+      "kind": "GAP",
+      "symbol": "ALPINEUSDT",
+      "tf": "15m",
+      "gap": 8.94,
+      "ts": 1793345259
+    },
+    {
+      "kind": "GAP",
+      "symbol": "VKTXUSDT",
+      "tf": "15m",
+      "gap": 0.62,
+      "ts": 1793345342
+    },
+    {
+      "kind": "GAP",
+      "symbol": "RIVNUSDT",
+      "tf": "15m",
+      "gap": 0.66,
+      "ts": 1793345358
+    },
     {
       "kind": "GAP",
       "symbol": "CMCSAUSDT",
@@ -1327,115 +1355,87 @@
       "ts": 1793402384
     },
     {
-      "kind": "HEARTBEAT",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1793403098
-    },
-    {
       "kind": "GAP",
       "symbol": "IDOLUSDT",
       "tf": "4h",
-      "gap": 6.75,
-      "ts": 1793403640
-    },
-    {
-      "kind": "GAP",
-      "symbol": "SOPHUSDT",
-      "tf": "4h",
-      "gap": 7.36,
-      "ts": 1793403646
+      "gap": 6.0,
+      "ts": 1793403625
     },
     {
       "kind": "GAP",
       "symbol": "WOOUSDT",
       "tf": "4h",
-      "gap": 3.08,
-      "ts": 1793403664
-    },
-    {
-      "kind": "GAP",
-      "symbol": "BILLUSDT",
-      "tf": "1h",
-      "gap": 1.95,
-      "ts": 1793404653
-    },
-    {
-      "kind": "GAP",
-      "symbol": "PNUTUSDT",
-      "tf": "1h",
-      "gap": 1.17,
-      "ts": 1793404668
-    },
-    {
-      "kind": "GAP",
-      "symbol": "POPCATUSDT",
-      "tf": "1h",
-      "gap": 2.05,
-      "ts": 1793404682
-    },
-    {
-      "kind": "GAP",
-      "symbol": "ACEUSDT",
-      "tf": "1h",
-      "gap": 2.98,
-      "ts": 1793404705
-    },
-    {
-      "kind": "SELL",
-      "symbol": "SOPHUSDT",
-      "tf": "4h",
-      "gap": 1.91,
-      "ts": 1793404943
-    },
-    {
-      "kind": "SELL",
-      "symbol": "ACEUSDT",
-      "tf": "1h",
-      "gap": 1.95,
-      "ts": 1793405018
+      "gap": 3.0,
+      "ts": 1793403668
     },
     {
       "kind": "HEARTBEAT",
       "symbol": "—",
       "tf": "—",
       "gap": 0.0,
-      "ts": 1793405104
+      "ts": 1793404059
+    },
+    {
+      "kind": "SELL",
+      "symbol": "SOPHUSDT",
+      "tf": "4h",
+      "gap": 1.47,
+      "ts": 1793404830
+    },
+    {
+      "kind": "SELL",
+      "symbol": "ACEUSDT",
+      "tf": "1h",
+      "gap": 1.3,
+      "ts": 1793404953
+    },
+    {
+      "kind": "HEARTBEAT",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793405057
+    },
+    {
+      "kind": "HEARTBEAT",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793405973
     }
   ],
   "trades": [
     {
       "symbol": "BEAMXUSDT",
-      "entry": 0.004595142160153336,
-      "tp": 0.004480263606149502,
+      "entry": 0.004595019911377781,
+      "tp": 0.004480144413593337,
       "adds": 7,
       "margin": 80.0,
-      "pnl": -18.0566
+      "pnl": -18.796
     },
     {
       "symbol": "IDOLUSDT",
-      "entry": 0.02001272721375441,
-      "tp": 0.01951240903341055,
-      "adds": 27,
-      "margin": 280.0,
-      "pnl": -1053.3261
+      "entry": 0.020229267834138195,
+      "tp": 0.019723536138284738,
+      "adds": 29,
+      "margin": 300.0,
+      "pnl": -924.7192
     },
     {
       "symbol": "SOPHUSDT",
-      "entry": 0.0021661063279642926,
-      "tp": 0.0021119536697651853,
-      "adds": 10,
-      "margin": 110.0,
-      "pnl": -10.0485
+      "entry": 0.0021713748295719105,
+      "tp": 0.002117090458832613,
+      "adds": 11,
+      "margin": 120.0,
+      "pnl": -15.0598
     },
     {
       "symbol": "ACEUSDT",
-      "entry": 0.1441,
-      "tp": 0.1404975,
+      "entry": 0.14312,
+      "tp": 0.139542,
       "adds": 0,
       "margin": 10.0,
-      "pnl": 0.0
+      "pnl": -6.4841
     }
   ],
   "closed": {
