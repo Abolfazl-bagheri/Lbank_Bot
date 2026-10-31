@@ -35,23 +35,6 @@
       "order_id": "PAPER-ESPORTSUSDT-1793440963"
     },
     {
-      "symbol": "FRONGUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.0025054411126318103,
-      "qty": 638610.1002,
-      "margin": 80.0,
-      "leverage": 20,
-      "tp_price": 0.002442805084816015,
-      "tf": "1h",
-      "opened_at": 1793467122,
-      "adds": 7,
-      "entry_candle_ts": 1793466900,
-      "last_leg_candle_ts": 1793474100,
-      "dry_run": true,
-      "order_id": "PAPER-FRONGUSDT-1793467122"
-    },
-    {
       "symbol": "ANSEMUSDT",
       "side": "SELL",
       "status": "open",
@@ -906,6 +889,26 @@
       "closed_at": 1793473591,
       "close_px": 0.004374,
       "pnl_usdt": 6.631299734748009
+    },
+    {
+      "symbol": "FRONGUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.0025054411126318103,
+      "qty": 638610.1002,
+      "margin": 80.0,
+      "leverage": 20,
+      "tp_price": 0.002442805084816015,
+      "tf": "1h",
+      "opened_at": 1793467122,
+      "adds": 7,
+      "entry_candle_ts": 1793466900,
+      "last_leg_candle_ts": 1793474100,
+      "dry_run": true,
+      "order_id": "PAPER-FRONGUSDT-1793467122",
+      "closed_at": 1793476155,
+      "close_px": 0.0024,
+      "pnl_usdt": 67.33575950371545
     }
   ],
   "pending": [
@@ -1514,6 +1517,15 @@
       "open": 1.411,
       "reported": true,
       "filled": false
+    },
+    {
+      "symbol": "EVAAUSDT",
+      "tf": "15m",
+      "candle_ts": 1793475900,
+      "side": "SELL",
+      "upper": 1.4174320145357042,
+      "open": 1.44,
+      "reported": false
     }
   ],
   "kline_blacklist": {
