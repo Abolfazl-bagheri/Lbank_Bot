@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.5.0",
-  "updated_at": 1793469805,
+  "updated_at": 1793469809,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "WETUSDT",
-      "tf": "4h",
-      "gap": 4.84,
-      "ts": 1793419235
-    },
     {
       "kind": "SELL",
       "symbol": "SWARMSUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 0.68,
       "ts": 1793469805
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793469809
     }
   ],
   "trades": [
@@ -1428,6 +1428,14 @@
       "adds": 2,
       "margin": 30.0,
       "pnl": -8.3333
+    },
+    {
+      "symbol": "ANSEMUSDT",
+      "entry": 0.05251,
+      "tp": 0.05119725,
+      "adds": 0,
+      "margin": 10.0,
+      "pnl": 0.0
     }
   ],
   "closed": {
