@@ -38,16 +38,16 @@
       "symbol": "FRONGUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.00244897959184673,
-      "qty": 163333.3333,
-      "margin": 20.0,
+      "entry": 0.0024657534246665413,
+      "qty": 243333.3333,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.0023877551020505617,
-      "tf": "15m",
+      "tp_price": 0.0024041095890498776,
+      "tf": "1h",
       "opened_at": 1793467122,
-      "adds": 1,
+      "adds": 2,
       "entry_candle_ts": 1793466900,
-      "last_leg_candle_ts": 1793468700,
+      "last_leg_candle_ts": 1793469600,
       "dry_run": true,
       "order_id": "PAPER-FRONGUSDT-1793467122"
     }
@@ -1390,7 +1390,8 @@
       "side": "SELL",
       "upper": 0.002176587414889449,
       "open": 0.00223,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "PROVEUSDT",
@@ -1399,7 +1400,8 @@
       "side": "SELL",
       "upper": 0.22324696588895562,
       "open": 0.2263,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "FRONGUSDT",
@@ -1474,7 +1476,7 @@
     "NIULAIUSDT": 1793506838,
     "DODOUSDT": 1793508698
   },
-  "last_trade_report_ts": 1793466452,
+  "last_trade_report_ts": 1793469115,
   "last_daily_report_date": "2026-10-29",
   "last_known_version": "2.5.0",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
