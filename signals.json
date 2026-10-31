@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.4.0",
-  "updated_at": 1793419320,
+  "updated_at": 1793419377,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "BLESSUSDT",
-      "tf": "1h",
-      "gap": 1.01,
-      "ts": 1793365336
-    },
     {
       "kind": "HEARTBEAT",
       "symbol": "—",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 1.12,
       "ts": 1793419320
+    },
+    {
+      "kind": "SELL",
+      "symbol": "BLESSUSDT",
+      "tf": "15m",
+      "gap": 2.11,
+      "ts": 1793419377
     }
   ],
   "trades": [
@@ -1449,6 +1449,14 @@
       "symbol": "BEAMXUSDT",
       "entry": 0.005251,
       "tp": 0.0051197249999999994,
+      "adds": 0,
+      "margin": 10.0,
+      "pnl": 0.0
+    },
+    {
+      "symbol": "SWARMSUSDT",
+      "entry": 0.006329,
+      "tp": 0.006170775,
       "adds": 0,
       "margin": 10.0,
       "pnl": 0.0
