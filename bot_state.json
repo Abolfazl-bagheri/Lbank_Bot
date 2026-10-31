@@ -84,6 +84,23 @@
       "last_leg_candle_ts": 1793415600,
       "dry_run": true,
       "order_id": "PAPER-COLLECTUSDT-1793415900"
+    },
+    {
+      "symbol": "SWARMSUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.0066,
+      "qty": 30303.0303,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.006435,
+      "tf": "15m",
+      "opened_at": 1793416526,
+      "adds": 0,
+      "entry_candle_ts": 1793416500,
+      "last_leg_candle_ts": 1793416500,
+      "dry_run": true,
+      "order_id": "PAPER-SWARMSUSDT-1793416526"
     }
   ],
   "trade_history": [
@@ -697,6 +714,12 @@
       "symbol": "COLLECTUSDT",
       "tf": "1h",
       "candle_ts": 1793415600,
+      "side": "SELL"
+    },
+    {
+      "symbol": "XPINUSDT",
+      "tf": "15m",
+      "candle_ts": 1793416500,
       "side": "SELL"
     }
   ],
