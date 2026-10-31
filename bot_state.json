@@ -35,23 +35,6 @@
       "order_id": "PAPER-IDOLUSDT-1793362611"
     },
     {
-      "symbol": "SOPHUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.0021713748295719105,
-      "qty": 1105290.5132,
-      "margin": 120.0,
-      "leverage": 20,
-      "tp_price": 0.002117090458832613,
-      "tf": "4h",
-      "opened_at": 1793378797,
-      "adds": 11,
-      "entry_candle_ts": 1793378700,
-      "last_leg_candle_ts": 1793404800,
-      "dry_run": true,
-      "order_id": "PAPER-SOPHUSDT-1793378797"
-    },
-    {
       "symbol": "ACEUSDT",
       "side": "SELL",
       "status": "open",
@@ -72,16 +55,16 @@
       "symbol": "WETUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.058555968986738594,
-      "qty": 6831.0713,
-      "margin": 20.0,
+      "entry": 0.06047299726892858,
+      "qty": 9921.7837,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.057092069762070125,
+      "tp_price": 0.05896117233720537,
       "tf": "15m",
       "opened_at": 1793407713,
-      "adds": 1,
+      "adds": 2,
       "entry_candle_ts": 1793407500,
-      "last_leg_candle_ts": 1793409300,
+      "last_leg_candle_ts": 1793410200,
       "dry_run": true,
       "order_id": "PAPER-WETUSDT-1793407713"
     }
@@ -346,6 +329,26 @@
       "closed_at": 1793399657,
       "close_px": 0.09273,
       "pnl_usdt": 31.41897537895285
+    },
+    {
+      "symbol": "SOPHUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.0021713748295719105,
+      "qty": 1105290.5132,
+      "margin": 120.0,
+      "leverage": 20,
+      "tp_price": 0.002117090458832613,
+      "tf": "4h",
+      "opened_at": 1793378797,
+      "adds": 11,
+      "entry_candle_ts": 1793378700,
+      "last_leg_candle_ts": 1793404800,
+      "dry_run": true,
+      "order_id": "PAPER-SOPHUSDT-1793378797",
+      "closed_at": 1793410454,
+      "close_px": 0.00211,
+      "pnl_usdt": 67.83701688281327
     }
   ],
   "pending": [
