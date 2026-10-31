@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.4.0",
-  "updated_at": 1793431122,
+  "updated_at": 1793432028,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "CMCSAUSDT",
-      "tf": "1h",
-      "gap": 1.25,
-      "ts": 1793375743
-    },
     {
       "kind": "GAP",
       "symbol": "KNCUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1793431122
+    },
+    {
+      "kind": "HEARTBEAT",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793432028
     }
   ],
   "trades": [
@@ -1411,7 +1411,7 @@
       "tp": 0.021113180924754754,
       "adds": 50,
       "margin": 510.0,
-      "pnl": -795.7889
+      "pnl": -657.7763
     },
     {
       "symbol": "COLLECTUSDT",
@@ -1419,7 +1419,7 @@
       "tp": 0.024633993943656163,
       "adds": 4,
       "margin": 50.0,
-      "pnl": -20.3583
+      "pnl": -15.6088
     },
     {
       "symbol": "SWARMSUSDT",
@@ -1427,7 +1427,7 @@
       "tp": 0.006433358558944248,
       "adds": 3,
       "margin": 40.0,
-      "pnl": -49.1863
+      "pnl": -47.2464
     },
     {
       "symbol": "BULLAUSDT",
@@ -1435,7 +1435,7 @@
       "tp": 0.08290425,
       "adds": 0,
       "margin": 10.0,
-      "pnl": 1.8817
+      "pnl": 1.1996
     },
     {
       "symbol": "BUSDT",
@@ -1443,7 +1443,7 @@
       "tp": 0.12986641328453466,
       "adds": 1,
       "margin": 20.0,
-      "pnl": -2.1132
+      "pnl": -1.0021
     },
     {
       "symbol": "MAGMAUSDT",
@@ -1451,20 +1451,12 @@
       "tp": 0.40451248241018967,
       "adds": 2,
       "margin": 30.0,
-      "pnl": -13.2404
-    },
-    {
-      "symbol": "RSRUSDT",
-      "entry": 0.001562,
-      "tp": 0.00152295,
-      "adds": 0,
-      "margin": 10.0,
-      "pnl": 0.0
+      "pnl": 6.3409
     }
   ],
   "closed": {
-    "profit": 538.0396,
+    "profit": 552.5082,
     "loss": 0,
-    "count": 25
+    "count": 26
   }
 }
