@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.4.0",
-  "updated_at": 1793420970,
+  "updated_at": 1793421061,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "IDOLUSDT",
-      "tf": "15m",
-      "gap": 1.32,
-      "ts": 1793367751
-    },
     {
       "kind": "GAP",
       "symbol": "CVNAUSDT",
@@ -1402,16 +1395,23 @@
       "tf": "15m",
       "gap": 1.88,
       "ts": 1793420970
+    },
+    {
+      "kind": "HEARTBEAT",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793421061
     }
   ],
   "trades": [
     {
       "symbol": "IDOLUSDT",
-      "entry": 0.02131541157387001,
-      "tp": 0.020782526284523258,
-      "adds": 44,
-      "margin": 450.0,
-      "pnl": -1112.8237
+      "entry": 0.021364070854614597,
+      "tp": 0.02082996908324923,
+      "adds": 45,
+      "margin": 460.0,
+      "pnl": -1053.2893
     },
     {
       "symbol": "XPINUSDT",
@@ -1419,7 +1419,7 @@
       "tp": 0.000835421768100382,
       "adds": 6,
       "margin": 70.0,
-      "pnl": -42.7383
+      "pnl": -61.6916
     },
     {
       "symbol": "COLLECTUSDT",
@@ -1427,7 +1427,7 @@
       "tp": 0.024321350571179436,
       "adds": 1,
       "margin": 20.0,
-      "pnl": -9.7018
+      "pnl": -10.1828
     },
     {
       "symbol": "LYNUSDT",
@@ -1435,15 +1435,7 @@
       "tp": 0.014003542755569484,
       "adds": 2,
       "margin": 30.0,
-      "pnl": 5.122
-    },
-    {
-      "symbol": "BEAMXUSDT",
-      "entry": 0.005251,
-      "tp": 0.0051197249999999994,
-      "adds": 0,
-      "margin": 10.0,
-      "pnl": 6.475
+      "pnl": 4.2865
     },
     {
       "symbol": "SWARMSUSDT",
@@ -1451,20 +1443,20 @@
       "tp": 0.006170775,
       "adds": 0,
       "margin": 10.0,
-      "pnl": -10.9022
+      "pnl": -12.261
     },
     {
       "symbol": "BLESSUSDT",
-      "entry": 0.010535,
-      "tp": 0.010271625,
-      "adds": 0,
-      "margin": 10.0,
-      "pnl": -3.3412
+      "entry": 0.010608483834602715,
+      "tp": 0.010343271738737647,
+      "adds": 1,
+      "margin": 20.0,
+      "pnl": -2.8097
     }
   ],
   "closed": {
-    "profit": 442.1586,
+    "profit": 449.243,
     "loss": 0,
-    "count": 20
+    "count": 21
   }
 }
