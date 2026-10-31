@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.4.1",
-  "updated_at": 1793455464,
+  "updated_at": 1793455467,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "PNUTUSDT",
-      "tf": "1h",
-      "gap": 1.17,
-      "ts": 1793404668
-    },
     {
       "kind": "GAP",
       "symbol": "POPCATUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 1.32,
       "ts": 1793455464
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793455467
     }
   ],
   "trades": [
@@ -1449,6 +1449,14 @@
       "symbol": "COWUSDT",
       "entry": 0.1421,
       "tp": 0.1385475,
+      "adds": 0,
+      "margin": 10.0,
+      "pnl": 0.0
+    },
+    {
+      "symbol": "FFUSDT",
+      "entry": 0.09803,
+      "tp": 0.09557925,
       "adds": 0,
       "margin": 10.0,
       "pnl": 0.0
