@@ -35,23 +35,6 @@
       "order_id": "PAPER-BUSDT-1793426721"
     },
     {
-      "symbol": "MAGMAUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.41539939857352665,
-      "qty": 2407.3217000000004,
-      "margin": 50.0,
-      "leverage": 20,
-      "tp_price": 0.4050144136091885,
-      "tf": "15m",
-      "opened_at": 1793428333,
-      "adds": 4,
-      "entry_candle_ts": 1793428200,
-      "last_leg_candle_ts": 1793434500,
-      "dry_run": true,
-      "order_id": "PAPER-MAGMAUSDT-1793428333"
-    },
-    {
       "symbol": "AIOTUSDT",
       "side": "SELL",
       "status": "open",
@@ -649,6 +632,26 @@
       "closed_at": 1793437341,
       "close_px": 0.006374,
       "pnl_usdt": 36.158299191164446
+    },
+    {
+      "symbol": "MAGMAUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.41539939857352665,
+      "qty": 2407.3217000000004,
+      "margin": 50.0,
+      "leverage": 20,
+      "tp_price": 0.4050144136091885,
+      "tf": "15m",
+      "opened_at": 1793428333,
+      "adds": 4,
+      "entry_candle_ts": 1793428200,
+      "last_leg_candle_ts": 1793434500,
+      "dry_run": true,
+      "order_id": "PAPER-MAGMAUSDT-1793428333",
+      "closed_at": 1793437533,
+      "close_px": 0.40478,
+      "pnl_usdt": 25.56430897587594
     }
   ],
   "pending": [
