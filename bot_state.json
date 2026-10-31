@@ -67,6 +67,23 @@
       "last_leg_candle_ts": 1793465100,
       "dry_run": true,
       "order_id": "PAPER-HYPERUSDT-1793459088"
+    },
+    {
+      "symbol": "GUNUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.00222,
+      "qty": 90090.0901,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0021645,
+      "tf": "1h",
+      "opened_at": 1793466331,
+      "adds": 0,
+      "entry_candle_ts": 1793466000,
+      "last_leg_candle_ts": 1793466000,
+      "dry_run": true,
+      "order_id": "PAPER-GUNUSDT-1793466331"
     }
   ],
   "trade_history": [
@@ -934,7 +951,9 @@
       "symbol": "BIRBUSDT",
       "tf": "1h",
       "candle_ts": 1793376000,
-      "side": "SELL"
+      "side": "SELL",
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "MAGMAUSDT",
@@ -994,7 +1013,9 @@
       "symbol": "ACEUSDT",
       "tf": "1h",
       "candle_ts": 1793404800,
-      "side": "SELL"
+      "side": "SELL",
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "WETUSDT",
@@ -1018,7 +1039,9 @@
       "symbol": "WETUSDT",
       "tf": "1h",
       "candle_ts": 1793412000,
-      "side": "SELL"
+      "side": "SELL",
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "XPINUSDT",
@@ -1042,25 +1065,33 @@
       "symbol": "WETUSDT",
       "tf": "1h",
       "candle_ts": 1793415600,
-      "side": "SELL"
+      "side": "SELL",
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "XPINUSDT",
       "tf": "1h",
       "candle_ts": 1793415600,
-      "side": "SELL"
+      "side": "SELL",
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "SLPUSDT",
       "tf": "1h",
       "candle_ts": 1793415600,
-      "side": "SELL"
+      "side": "SELL",
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "COLLECTUSDT",
       "tf": "1h",
       "candle_ts": 1793415600,
-      "side": "SELL"
+      "side": "SELL",
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "XPINUSDT",
@@ -1090,7 +1121,9 @@
       "symbol": "XPINUSDT",
       "tf": "1h",
       "candle_ts": 1793419200,
-      "side": "SELL"
+      "side": "SELL",
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "WETUSDT",
@@ -1102,7 +1135,9 @@
       "symbol": "SWARMSUSDT",
       "tf": "1h",
       "candle_ts": 1793419200,
-      "side": "SELL"
+      "side": "SELL",
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "BLESSUSDT",
@@ -1114,13 +1149,17 @@
       "symbol": "BULLAUSDT",
       "tf": "1h",
       "candle_ts": 1793426400,
-      "side": "SELL"
+      "side": "SELL",
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "BUSDT",
       "tf": "1h",
       "candle_ts": 1793426400,
-      "side": "SELL"
+      "side": "SELL",
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "MAGMAUSDT",
@@ -1150,7 +1189,9 @@
       "symbol": "AIOTUSDT",
       "tf": "1h",
       "candle_ts": 1793437200,
-      "side": "SELL"
+      "side": "SELL",
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "AIOTUSDT",
@@ -1164,19 +1205,25 @@
       "symbol": "AIOTUSDT",
       "tf": "1h",
       "candle_ts": 1793440800,
-      "side": "SELL"
+      "side": "SELL",
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "UAIUSDT",
       "tf": "1h",
       "candle_ts": 1793440800,
-      "side": "SELL"
+      "side": "SELL",
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ESPORTSUSDT",
       "tf": "1h",
       "candle_ts": 1793440800,
-      "side": "SELL"
+      "side": "SELL",
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "UAIUSDT",
@@ -1214,13 +1261,17 @@
       "symbol": "AIOTUSDT",
       "tf": "1h",
       "candle_ts": 1793444400,
-      "side": "SELL"
+      "side": "SELL",
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ESPORTSUSDT",
       "tf": "1h",
       "candle_ts": 1793444400,
-      "side": "SELL"
+      "side": "SELL",
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ZCATUSDT",
@@ -1242,7 +1293,9 @@
       "symbol": "COWUSDT",
       "tf": "1h",
       "candle_ts": 1793455200,
-      "side": "SELL"
+      "side": "SELL",
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "FFUSDT",
@@ -1256,25 +1309,33 @@
       "symbol": "FFUSDT",
       "tf": "1h",
       "candle_ts": 1793455200,
-      "side": "SELL"
+      "side": "SELL",
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "COWUSDT",
       "tf": "1h",
       "candle_ts": 1793458800,
-      "side": "SELL"
+      "side": "SELL",
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "REDUSDT",
       "tf": "1h",
       "candle_ts": 1793458800,
-      "side": "SELL"
+      "side": "SELL",
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "HYPERUSDT",
       "tf": "1h",
       "candle_ts": 1793458800,
-      "side": "SELL"
+      "side": "SELL",
+      "reported": true,
+      "filled": true
     }
   ],
   "kline_blacklist": {
@@ -1339,7 +1400,7 @@
     "NIULAIUSDT": 1793506838,
     "DODOUSDT": 1793508698
   },
-  "last_trade_report_ts": 1793463650,
+  "last_trade_report_ts": 1793465526,
   "last_daily_report_date": "2026-10-29",
   "last_known_version": "2.5.0",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
