@@ -38,16 +38,16 @@
       "symbol": "FRONGUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.0024973732661177834,
-      "qty": 480504.8633,
-      "margin": 60.0,
+      "entry": 0.0025005807477026395,
+      "qty": 559869.9427,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 0.0024349389344648386,
+      "tp_price": 0.0024380662290100735,
       "tf": "1h",
       "opened_at": 1793467122,
-      "adds": 5,
+      "adds": 6,
       "entry_candle_ts": 1793466900,
-      "last_leg_candle_ts": 1793472300,
+      "last_leg_candle_ts": 1793473200,
       "dry_run": true,
       "order_id": "PAPER-FRONGUSDT-1793467122"
     },
@@ -1437,7 +1437,8 @@
       "side": "SELL",
       "upper": 0.002364778023139373,
       "open": 0.002469,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "ANSEMUSDT",
@@ -1446,7 +1447,8 @@
       "side": "SELL",
       "upper": 0.052152397022406,
       "open": 0.0535,
-      "reported": false
+      "reported": true,
+      "filled": false
     }
   ],
   "kline_blacklist": {
@@ -1477,7 +1479,6 @@
     "CVXSTOCKUSDT": 1793413084,
     "COPSTOCKUSDT": 1793413150,
     "OXYUSDT": 1793417641,
-    "ARROWUSDT": 1793421171,
     "QUACKAIUSDT": 1793434591,
     "HK0700USDT": 1793434646,
     "OROCHIUSDT": 1793439241,
@@ -1512,7 +1513,7 @@
     "DODOUSDT": 1793508698,
     "HAJIMIUSDT": 1793513117
   },
-  "last_trade_report_ts": 1793471782,
+  "last_trade_report_ts": 1793472709,
   "last_daily_report_date": "2026-10-29",
   "last_known_version": "2.5.0",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
