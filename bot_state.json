@@ -52,21 +52,21 @@
       "order_id": "PAPER-SWARMSUSDT-1793419321"
     },
     {
-      "symbol": "BLESSUSDT",
+      "symbol": "BULLAUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.010625269269774048,
-      "qty": 56469.1572,
-      "margin": 30.0,
+      "entry": 0.08503,
+      "qty": 2352.111,
+      "margin": 10.0,
       "leverage": 20,
-      "tp_price": 0.010359637538029697,
-      "tf": "15m",
-      "opened_at": 1793419379,
-      "adds": 2,
-      "entry_candle_ts": 1793419200,
-      "last_leg_candle_ts": 1793421900,
+      "tp_price": 0.08290425,
+      "tf": "1h",
+      "opened_at": 1793426712,
+      "adds": 0,
+      "entry_candle_ts": 1793426400,
+      "last_leg_candle_ts": 1793426400,
       "dry_run": true,
-      "order_id": "PAPER-BLESSUSDT-1793419379"
+      "order_id": "PAPER-BULLAUSDT-1793426712"
     }
   ],
   "trade_history": [
@@ -529,6 +529,26 @@
       "closed_at": 1793426689,
       "close_px": 0.01403,
       "pnl_usdt": 25.649760529311212
+    },
+    {
+      "symbol": "BLESSUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.010625269269774048,
+      "qty": 56469.1572,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 0.010359637538029697,
+      "tf": "15m",
+      "opened_at": 1793419379,
+      "adds": 2,
+      "entry_candle_ts": 1793419200,
+      "last_leg_candle_ts": 1793421900,
+      "dry_run": true,
+      "order_id": "PAPER-BLESSUSDT-1793419379",
+      "closed_at": 1793426691,
+      "close_px": 0.010349,
+      "pnl_usdt": 15.600692806531917
     }
   ],
   "pending": [
@@ -912,7 +932,7 @@
     "AXLUSDT": 1793453698,
     "LWLGUSDT": 1793464452
   },
-  "last_trade_report_ts": 1793424881,
+  "last_trade_report_ts": 1793426691,
   "last_daily_report_date": "2026-10-29",
   "last_known_version": "2.4.0",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
