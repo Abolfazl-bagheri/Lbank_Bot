@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.4.0",
-  "updated_at": 1793440961,
+  "updated_at": 1793441016,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "ACNUSDT",
-      "tf": "1h",
-      "gap": 1.26,
-      "ts": 1793379319
-    },
     {
       "kind": "GAP",
       "symbol": "CMCSAUSDT",
@@ -1402,16 +1395,23 @@
       "tf": "1h",
       "gap": 0.73,
       "ts": 1793440961
+    },
+    {
+      "kind": "SELL",
+      "symbol": "UAIUSDT",
+      "tf": "15m",
+      "gap": 1.37,
+      "ts": 1793441016
     }
   ],
   "trades": [
     {
       "symbol": "COLLECTUSDT",
-      "entry": 0.025357221778651965,
-      "tp": 0.024723291234185665,
-      "adds": 6,
-      "margin": 70.0,
-      "pnl": -2.9139
+      "entry": 0.025363807063128463,
+      "tp": 0.02472971188655025,
+      "adds": 7,
+      "margin": 80.0,
+      "pnl": -4.1756
     },
     {
       "symbol": "BUSDT",
@@ -1419,7 +1419,7 @@
       "tp": 0.1306187603694843,
       "adds": 3,
       "margin": 40.0,
-      "pnl": 10.9158
+      "pnl": 15.5139
     },
     {
       "symbol": "AIOTUSDT",
@@ -1427,7 +1427,7 @@
       "tp": 0.08113979777433536,
       "adds": 3,
       "margin": 40.0,
-      "pnl": -33.2582
+      "pnl": -37.4879
     },
     {
       "symbol": "UAIUSDT",
@@ -1435,7 +1435,15 @@
       "tp": 0.2863575,
       "adds": 0,
       "margin": 10.0,
-      "pnl": 0.0
+      "pnl": -0.4767
+    },
+    {
+      "symbol": "ESPORTSUSDT",
+      "entry": 0.007492,
+      "tp": 0.0073047,
+      "adds": 0,
+      "margin": 10.0,
+      "pnl": -0.7742
     }
   ],
   "closed": {
