@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.4.0",
-  "updated_at": 1793417463,
+  "updated_at": 1793418024,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "PUNDIXUSDT",
-      "tf": "4h",
-      "gap": 0.02,
-      "ts": 1793361836
-    },
     {
       "kind": "SELL",
       "symbol": "BEAMXUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1793417463
+    },
+    {
+      "kind": "GAP",
+      "symbol": "WETUSDT",
+      "tf": "4h",
+      "gap": 9.3,
+      "ts": 1793418024
     }
   ],
   "trades": [
@@ -1411,7 +1411,7 @@
       "tp": 0.020615296350932153,
       "adds": 41,
       "margin": 420.0,
-      "pnl": -1086.9943
+      "pnl": -956.2899
     },
     {
       "symbol": "WETUSDT",
@@ -1419,7 +1419,7 @@
       "tp": 0.06042778068245242,
       "adds": 6,
       "margin": 70.0,
-      "pnl": -28.5251
+      "pnl": -45.9186
     },
     {
       "symbol": "XPINUSDT",
@@ -1427,7 +1427,7 @@
       "tp": 0.000830511372164653,
       "adds": 4,
       "margin": 50.0,
-      "pnl": -31.4549
+      "pnl": -22.1805
     },
     {
       "symbol": "COLLECTUSDT",
@@ -1435,15 +1435,7 @@
       "tp": 0.024297,
       "adds": 0,
       "margin": 10.0,
-      "pnl": 0.7223
-    },
-    {
-      "symbol": "SWARMSUSDT",
-      "entry": 0.0066,
-      "tp": 0.006435,
-      "adds": 0,
-      "margin": 10.0,
-      "pnl": 2.9091
+      "pnl": 0.0
     },
     {
       "symbol": "LYNUSDT",
@@ -1451,12 +1443,12 @@
       "tp": 0.013942254545493154,
       "adds": 1,
       "margin": 20.0,
-      "pnl": -1.6854
+      "pnl": -2.5246
     }
   ],
   "closed": {
-    "profit": 395.8828,
+    "profit": 401.1555,
     "loss": 0,
-    "count": 18
+    "count": 19
   }
 }
