@@ -1,8 +1,15 @@
 {
   "mode": "PAPER",
   "version": "2.4.0",
-  "updated_at": 1793422485,
+  "updated_at": 1793422492,
   "signals": [
+    {
+      "kind": "GAP",
+      "symbol": "IDOLUSDT",
+      "tf": "1h",
+      "gap": 2.27,
+      "ts": 1793368475
+    },
     {
       "kind": "GAP",
       "symbol": "BEAMXUSDT",
@@ -1379,39 +1386,32 @@
       "kind": "GAP",
       "symbol": "BULLAUSDT",
       "tf": "15m",
-      "gap": 1.65,
-      "ts": 1793421773
+      "gap": 1.79,
+      "ts": 1793421882
     },
     {
       "kind": "HEARTBEAT",
       "symbol": "—",
       "tf": "—",
       "gap": 0.0,
-      "ts": 1793421962
+      "ts": 1793422215
     },
     {
       "kind": "GAP",
       "symbol": "XPINUSDT",
       "tf": "1h",
-      "gap": 1.01,
-      "ts": 1793422475
-    },
-    {
-      "kind": "GAP",
-      "symbol": "SWARMSUSDT",
-      "tf": "1h",
-      "gap": 4.83,
-      "ts": 1793422485
+      "gap": 1.02,
+      "ts": 1793422492
     }
   ],
   "trades": [
     {
       "symbol": "IDOLUSDT",
-      "entry": 0.021418071042664084,
-      "tp": 0.020882619266597482,
+      "entry": 0.021419808395689126,
+      "tp": 0.020884313185796897,
       "adds": 46,
       "margin": 470.0,
-      "pnl": -1478.1225
+      "pnl": -1477.2402
     },
     {
       "symbol": "XPINUSDT",
@@ -1419,7 +1419,7 @@
       "tp": 0.000835421768100382,
       "adds": 6,
       "margin": 70.0,
-      "pnl": -6.7924
+      "pnl": -7.9361
     },
     {
       "symbol": "COLLECTUSDT",
@@ -1435,7 +1435,7 @@
       "tp": 0.014003542755569484,
       "adds": 2,
       "margin": 30.0,
-      "pnl": -1.9798
+      "pnl": -1.5621
     },
     {
       "symbol": "SWARMSUSDT",
@@ -1443,15 +1443,15 @@
       "tp": 0.006170775,
       "adds": 0,
       "margin": 10.0,
-      "pnl": -10.8706
+      "pnl": -10.9338
     },
     {
       "symbol": "BLESSUSDT",
-      "entry": 0.010610988040242207,
-      "tp": 0.010345713339236152,
+      "entry": 0.010625269269774048,
+      "tp": 0.010359637538029697,
       "adds": 2,
       "margin": 30.0,
-      "pnl": -1.8101
+      "pnl": -1.0012
     }
   ],
   "closed": {
