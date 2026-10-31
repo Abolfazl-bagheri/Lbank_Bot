@@ -101,6 +101,23 @@
       "last_leg_candle_ts": 1793419200,
       "dry_run": true,
       "order_id": "PAPER-BEAMXUSDT-1793419206"
+    },
+    {
+      "symbol": "SWARMSUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.006329,
+      "qty": 31600.5688,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.006170775,
+      "tf": "1h",
+      "opened_at": 1793419321,
+      "adds": 0,
+      "entry_candle_ts": 1793419200,
+      "last_leg_candle_ts": 1793419200,
+      "dry_run": true,
+      "order_id": "PAPER-SWARMSUSDT-1793419321"
     }
   ],
   "trade_history": [
@@ -783,6 +800,12 @@
     {
       "symbol": "XPINUSDT",
       "tf": "1h",
+      "candle_ts": 1793419200,
+      "side": "SELL"
+    },
+    {
+      "symbol": "WETUSDT",
+      "tf": "4h",
       "candle_ts": 1793419200,
       "side": "SELL"
     }
