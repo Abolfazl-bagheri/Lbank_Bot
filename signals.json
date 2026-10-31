@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.4.0",
-  "updated_at": 1793416524,
+  "updated_at": 1793416546,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "PUNDIXUSDT",
-      "tf": "4h",
-      "gap": 5.74,
-      "ts": 1793360467
-    },
     {
       "kind": "GAP",
       "symbol": "GILDUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 2.3,
       "ts": 1793416524
+    },
+    {
+      "kind": "SELL",
+      "symbol": "LYNUSDT",
+      "tf": "15m",
+      "gap": 1.5,
+      "ts": 1793416546
     }
   ],
   "trades": [
@@ -1444,6 +1444,14 @@
       "adds": 0,
       "margin": 10.0,
       "pnl": -0.2408
+    },
+    {
+      "symbol": "SWARMSUSDT",
+      "entry": 0.0066,
+      "tp": 0.006435,
+      "adds": 0,
+      "margin": 10.0,
+      "pnl": 0.0
     }
   ],
   "closed": {
