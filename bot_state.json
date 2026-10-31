@@ -84,6 +84,23 @@
       "last_leg_candle_ts": 1793466000,
       "dry_run": true,
       "order_id": "PAPER-GUNUSDT-1793466331"
+    },
+    {
+      "symbol": "PROVEUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.2263,
+      "qty": 883.7826,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.2206425,
+      "tf": "1h",
+      "opened_at": 1793466341,
+      "adds": 0,
+      "entry_candle_ts": 1793466000,
+      "last_leg_candle_ts": 1793466000,
+      "dry_run": true,
+      "order_id": "PAPER-PROVEUSDT-1793466341"
     }
   ],
   "trade_history": [
@@ -1336,6 +1353,15 @@
       "side": "SELL",
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "GUNUSDT",
+      "tf": "1h",
+      "candle_ts": 1793466000,
+      "side": "SELL",
+      "upper": 0.002176587414889449,
+      "open": 0.00223,
+      "reported": false
     }
   ],
   "kline_blacklist": {
