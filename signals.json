@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.4.0",
-  "updated_at": 1793428338,
+  "updated_at": 1793428401,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "FLOKIUSDT",
-      "tf": "15m",
-      "gap": 1.12,
-      "ts": 1793374171
-    },
     {
       "kind": "SELL",
       "symbol": "BIRBUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 1.62,
       "ts": 1793428338
+    },
+    {
+      "kind": "HEARTBEAT",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793428401
     }
   ],
   "trades": [
@@ -1449,6 +1449,14 @@
       "symbol": "MAGMAUSDT",
       "entry": 0.40156,
       "tp": 0.39152099999999995,
+      "adds": 0,
+      "margin": 10.0,
+      "pnl": 0.0
+    },
+    {
+      "symbol": "SLPUSDT",
+      "entry": 0.0005754,
+      "tp": 0.000561015,
       "adds": 0,
       "margin": 10.0,
       "pnl": 0.0
