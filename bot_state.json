@@ -69,23 +69,6 @@
       "order_id": "PAPER-COLLECTUSDT-1793415900"
     },
     {
-      "symbol": "SWARMSUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.0066,
-      "qty": 30303.0303,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.006435,
-      "tf": "15m",
-      "opened_at": 1793416526,
-      "adds": 0,
-      "entry_candle_ts": 1793416500,
-      "last_leg_candle_ts": 1793416500,
-      "dry_run": true,
-      "order_id": "PAPER-SWARMSUSDT-1793416526"
-    },
-    {
       "symbol": "LYNUSDT",
       "side": "SELL",
       "status": "open",
@@ -463,6 +446,26 @@
       "closed_at": 1793417460,
       "close_px": 0.0005244,
       "pnl_usdt": 6.172611347255601
+    },
+    {
+      "symbol": "SWARMSUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.0066,
+      "qty": 30303.0303,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.006435,
+      "tf": "15m",
+      "opened_at": 1793416526,
+      "adds": 0,
+      "entry_candle_ts": 1793416500,
+      "last_leg_candle_ts": 1793416500,
+      "dry_run": true,
+      "order_id": "PAPER-SWARMSUSDT-1793416526",
+      "closed_at": 1793417526,
+      "close_px": 0.006426,
+      "pnl_usdt": 5.272727272727263
     }
   ],
   "pending": [
@@ -816,7 +819,7 @@
     "SPORTFUNUSDT": 1793453443,
     "AXLUSDT": 1793453698
   },
-  "last_trade_report_ts": 1793415939,
+  "last_trade_report_ts": 1793417462,
   "last_daily_report_date": "2026-10-29",
   "last_known_version": "2.4.0",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
