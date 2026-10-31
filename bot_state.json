@@ -21,16 +21,16 @@
       "symbol": "IDOLUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.019896065736048484,
-      "qty": 271410.44239999994,
-      "margin": 270.0,
+      "entry": 0.020022856428744986,
+      "qty": 279680.37539999996,
+      "margin": 280.0,
       "leverage": 20,
-      "tp_price": 0.01939866409264727,
+      "tp_price": 0.019522285018026362,
       "tf": "15m",
       "opened_at": 1793362611,
-      "adds": 26,
+      "adds": 27,
       "entry_candle_ts": 1793362500,
-      "last_leg_candle_ts": 1793403000,
+      "last_leg_candle_ts": 1793403900,
       "dry_run": true,
       "order_id": "PAPER-IDOLUSDT-1793362611"
     },
@@ -38,18 +38,35 @@
       "symbol": "SOPHUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.0021661063279642926,
-      "qty": 1015647.2797999999,
-      "margin": 110.0,
+      "entry": 0.0021713748295719105,
+      "qty": 1105290.5132,
+      "margin": 120.0,
       "leverage": 20,
-      "tp_price": 0.0021119536697651853,
+      "tp_price": 0.002117090458832613,
       "tf": "4h",
       "opened_at": 1793378797,
-      "adds": 10,
+      "adds": 11,
       "entry_candle_ts": 1793378700,
       "last_leg_candle_ts": 1793404800,
       "dry_run": true,
       "order_id": "PAPER-SOPHUSDT-1793378797"
+    },
+    {
+      "symbol": "ACEUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.14312,
+      "qty": 1397.4287,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.139542,
+      "tf": "1h",
+      "opened_at": 1793404955,
+      "adds": 0,
+      "entry_candle_ts": 1793404800,
+      "last_leg_candle_ts": 1793404800,
+      "dry_run": true,
+      "order_id": "PAPER-ACEUSDT-1793404955"
     }
   ],
   "trade_history": [
@@ -506,6 +523,12 @@
       "tf": "15m",
       "candle_ts": 1793392200,
       "side": "SELL"
+    },
+    {
+      "symbol": "SOPHUSDT",
+      "tf": "4h",
+      "candle_ts": 1793404800,
+      "side": "SELL"
     }
   ],
   "kline_blacklist": {
@@ -565,7 +588,7 @@
     "BARUSDT": 1793444715,
     "SXTUSDT": 1793445574
   },
-  "last_trade_report_ts": 1793403097,
+  "last_trade_report_ts": 1793404058,
   "last_daily_report_date": "2026-10-29",
   "last_known_version": "2.4.0",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
