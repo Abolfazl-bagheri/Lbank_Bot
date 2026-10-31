@@ -18,23 +18,6 @@
       "order_id": "PAPER-IDOLUSDT-1793362611"
     },
     {
-      "symbol": "WETUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.062111734151576774,
-      "qty": 25760.027899999997,
-      "margin": 80.0,
-      "leverage": 20,
-      "tp_price": 0.060558940797787356,
-      "tf": "4h",
-      "opened_at": 1793407520,
-      "adds": 7,
-      "entry_candle_ts": 1793407500,
-      "last_leg_candle_ts": 1793419200,
-      "dry_run": true,
-      "order_id": "PAPER-WETUSDT-1793407520"
-    },
-    {
       "symbol": "XPINUSDT",
       "side": "SELL",
       "status": "open",
@@ -517,6 +500,26 @@
       "closed_at": 1793417526,
       "close_px": 0.006426,
       "pnl_usdt": 5.272727272727263
+    },
+    {
+      "symbol": "WETUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.062111734151576774,
+      "qty": 25760.027899999997,
+      "margin": 80.0,
+      "leverage": 20,
+      "tp_price": 0.060558940797787356,
+      "tf": "4h",
+      "opened_at": 1793407520,
+      "adds": 7,
+      "entry_candle_ts": 1793407500,
+      "last_leg_candle_ts": 1793419200,
+      "dry_run": true,
+      "order_id": "PAPER-WETUSDT-1793407520",
+      "closed_at": 1793420285,
+      "close_px": 0.06052,
+      "pnl_usdt": 41.00311603452774
     }
   ],
   "pending": [
