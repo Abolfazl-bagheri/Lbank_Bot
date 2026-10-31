@@ -18,23 +18,6 @@
       "order_id": "PAPER-COLLECTUSDT-1793415900"
     },
     {
-      "symbol": "AIOTUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.08622704339862082,
-      "qty": 18555.663399999998,
-      "margin": 80.0,
-      "leverage": 20,
-      "tp_price": 0.0840713673136553,
-      "tf": "1h",
-      "opened_at": 1793437217,
-      "adds": 7,
-      "entry_candle_ts": 1793437200,
-      "last_leg_candle_ts": 1793458800,
-      "dry_run": true,
-      "order_id": "PAPER-AIOTUSDT-1793437217"
-    },
-    {
       "symbol": "ESPORTSUSDT",
       "side": "SELL",
       "status": "open",
@@ -780,6 +763,26 @@
       "closed_at": 1793459206,
       "close_px": 0.04228,
       "pnl_usdt": 8.94713059195663
+    },
+    {
+      "symbol": "AIOTUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.08622704339862082,
+      "qty": 18555.663399999998,
+      "margin": 80.0,
+      "leverage": 20,
+      "tp_price": 0.0840713673136553,
+      "tf": "1h",
+      "opened_at": 1793437217,
+      "adds": 7,
+      "entry_candle_ts": 1793437200,
+      "last_leg_candle_ts": 1793458800,
+      "dry_run": true,
+      "order_id": "PAPER-AIOTUSDT-1793437217",
+      "closed_at": 1793463639,
+      "close_px": 0.08397,
+      "pnl_usdt": 41.8809377598475
     }
   ],
   "pending": [
@@ -1147,7 +1150,9 @@
       "symbol": "AIOTUSDT",
       "tf": "15m",
       "candle_ts": 1793439000,
-      "side": "SELL"
+      "side": "SELL",
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "AIOTUSDT",
@@ -1171,25 +1176,33 @@
       "symbol": "UAIUSDT",
       "tf": "15m",
       "candle_ts": 1793440800,
-      "side": "SELL"
+      "side": "SELL",
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "UAIUSDT",
       "tf": "15m",
       "candle_ts": 1793441700,
-      "side": "SELL"
+      "side": "SELL",
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "ESPORTSUSDT",
       "tf": "15m",
       "candle_ts": 1793442600,
-      "side": "SELL"
+      "side": "SELL",
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "ESPORTSUSDT",
       "tf": "15m",
       "candle_ts": 1793443500,
-      "side": "SELL"
+      "side": "SELL",
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "AIOTUSDT",
@@ -1207,13 +1220,17 @@
       "symbol": "ZCATUSDT",
       "tf": "15m",
       "candle_ts": 1793447100,
-      "side": "SELL"
+      "side": "SELL",
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "COWUSDT",
       "tf": "15m",
       "candle_ts": 1793455200,
-      "side": "SELL"
+      "side": "SELL",
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "COWUSDT",
@@ -1225,7 +1242,9 @@
       "symbol": "FFUSDT",
       "tf": "15m",
       "candle_ts": 1793455200,
-      "side": "SELL"
+      "side": "SELL",
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "FFUSDT",
@@ -1270,7 +1289,6 @@
     "MASTOCKUSDT": 1793369010,
     "AMCUSDT": 1793372804,
     "EURUSDT": 1793385188,
-    "NIULAIUSDT": 1793387893,
     "LIGHT1USDT": 1793394311,
     "CRWDUSDT": 1793397926,
     "SKY1USDT": 1793398016,
@@ -1310,7 +1328,10 @@
     "STONKBROKERUSDT": 1793495167,
     "HOTUSDT": 1793495185,
     "GSTOCKUSDT": 1793498719,
-    "AXLUSDT": 1793502358
+    "AXLUSDT": 1793502358,
+    "WOTAMALAILEUSDT": 1793506829,
+    "AI1USDT": 1793506832,
+    "NIULAIUSDT": 1793506838
   },
   "last_trade_report_ts": 1793459208,
   "last_daily_report_date": "2026-10-29",
