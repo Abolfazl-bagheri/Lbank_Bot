@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.5.0",
-  "updated_at": 1793484380,
+  "updated_at": 1793484522,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "MAGMAUSDT",
-      "tf": "15m",
-      "gap": 1.91,
-      "ts": 1793430738
-    },
     {
       "kind": "GAP",
       "symbol": "RSRUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1793484380
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793484522
     }
   ],
   "trades": [
@@ -1423,19 +1423,11 @@
     },
     {
       "symbol": "ANSEMUSDT",
-      "entry": 0.05285478002083599,
-      "tp": 0.05153341052031509,
-      "adds": 4,
-      "margin": 50.0,
+      "entry": 0.05288721684603829,
+      "tp": 0.05156503642488733,
+      "adds": 5,
+      "margin": 60.0,
       "pnl": -3.6935
-    },
-    {
-      "symbol": "EVAAUSDT",
-      "entry": 1.4367,
-      "tp": 1.4007825,
-      "adds": 0,
-      "margin": 10.0,
-      "pnl": 7.1274
     },
     {
       "symbol": "ZZZUSDT",
@@ -1455,8 +1447,8 @@
     }
   ],
   "closed": {
-    "profit": 1980.0152,
+    "profit": 1987.1426,
     "loss": 0,
-    "count": 42
+    "count": 43
   }
 }
