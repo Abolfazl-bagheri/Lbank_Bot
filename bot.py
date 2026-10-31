@@ -35,7 +35,7 @@ SIGNALS_FILE = os.path.join(BASE_DIR, "signals.json")
 LIVE_TOPIC = os.environ.get("LIVE_TOPIC", "lbank-gap-b0b85cee29ce").strip()
 STATE_BAK = os.path.join(BASE_DIR, "bot_state.bak")
 
-BOT_VERSION = "2.4.0"
+BOT_VERSION = "2.4.1"
 CHANGELOG = {
     "2.1.0": [
         "چارت احتمال‌گپ → استایل SolAtlas (خط‌روند شکست/بازتست) — هنوز ناقص",
@@ -78,7 +78,9 @@ TRADE_MARGIN_USDT = float(os.environ.get("TRADE_MARGIN_USDT", "10"))
 TRADE_LEVERAGE = int(os.environ.get("TRADE_LEVERAGE", "20"))
 TRADE_TP_PCT = float(os.environ.get("TRADE_TP_PCT", "50"))  # 50% سود مارجین → کلوز
 TRADE_AVG_DOWN = True
-TRADE_MAX_ADDS = int(os.environ.get("TRADE_MAX_ADDS", "50"))
+TRADE_MAX_ADDS = int(os.environ.get("TRADE_MAX_ADDS", "20"))  # سقف کل پله
+AVG_LEG_PERIOD_SEC = 900  # فقط یک پله در هر کندل ۱۵ دقیقه
+
 
 FUTURES_TICKERS_URL = "https://lbkperp.lbank.com/cfd/openApi/v1/pub/marketData?productGroup=SwapU"
 PERP_BASE = "https://lbkperp.lbank.com"
@@ -290,6 +292,38 @@ def push_live(ev: dict) -> None:
         )
     except Exception:
         pass
+
+
+def push_positions_live() -> None:
+    """اسنپ‌شات پوزیشن‌های باز برای صفحه وب (ntfy + signals.json)."""
+    try:
+        rows = []
+        for tr in open_trades:
+            if tr.get("status") != "open":
+                continue
+            px = get_futures_last(tr.get("symbol") or "") or float(tr.get("entry") or 0)
+            try:
+                upnl, roi = _sell_upnl(tr, float(px))
+            except Exception:
+                upnl, roi = 0.0, 0.0
+            rows.append({
+                "symbol": tr.get("symbol"),
+                "side": tr.get("side"),
+                "entry": tr.get("entry"),
+                "tp": tr.get("tp_price"),
+                "adds": int(tr.get("adds") or 0),
+                "pele": int(tr.get("adds") or 0) + 1,
+                "margin": tr.get("margin"),
+                "px": px,
+                "pnl": round(float(upnl), 4),
+                "roi": round(float(roi), 2),
+                "tf": tr.get("tf"),
+            })
+        push_live({"t": "pos", "positions": rows, "n": len(rows), "ts": int(time.time())})
+        # به‌روز کردن trades داخل signals.json بدون سیگنال جعلی
+        log_signal_web("POS", "—", "—", 0.0)
+    except Exception as e:
+        log.debug("push_positions: %s", e)
 
 
 def send_telegram_text(text: str) -> bool:
@@ -778,7 +812,9 @@ def open_sell_trade(symbol: str, entry_price: float, tf: str, candle_ts: int | N
         new_margin = float(existing.get("margin") or TRADE_MARGIN_USDT) + TRADE_MARGIN_USDT
         new_entry = (avg * old_qty + entry_price * add_qty) / new_qty
         existing.update({"entry": new_entry, "qty": new_qty, "margin": new_margin, "tp_price": tp_price_for_sell(new_entry),
-                         "adds": adds + 1, "last_leg_candle_ts": cts or last_cts, "tf": tf})
+                         "adds": adds + 1,
+                         "last_leg_candle_ts": (int(cts or last_cts or time.time()) // AVG_LEG_PERIOD_SEC) * AVG_LEG_PERIOD_SEC,
+                         "tf": tf})
         log.info("PAPER_ADD %s avg=%.6g margin=%s adds=%s", symbol, new_entry, new_margin, adds + 1)
         save_state(force_remote=True)
         return existing
@@ -791,7 +827,8 @@ def open_sell_trade(symbol: str, entry_price: float, tf: str, candle_ts: int | N
         "symbol": symbol, "side": "SELL", "status": "open", "entry": entry_price, "qty": qty,
         "margin": TRADE_MARGIN_USDT, "leverage": TRADE_LEVERAGE, "tp_price": tp, "tf": tf,
         "opened_at": int(time.time()), "adds": 0,
-        "entry_candle_ts": int(candle_ts or 0), "last_leg_candle_ts": int(candle_ts or 0),
+        "entry_candle_ts": int(candle_ts or 0),
+        "last_leg_candle_ts": (int(candle_ts or time.time()) // AVG_LEG_PERIOD_SEC) * AVG_LEG_PERIOD_SEC,
         "dry_run": is_paper_mode(),
     }
     if is_paper_mode():
@@ -799,6 +836,10 @@ def open_sell_trade(symbol: str, entry_price: float, tf: str, candle_ts: int | N
         open_trades.append(rec)
         log.info("PAPER_OPEN %s %s entry=%.6g tp=%.6g", symbol, tf, entry_price, tp)
         save_state(force_remote=True)
+        try:
+            push_positions_live()
+        except Exception:
+            pass
         return rec
 
     _perp_post("/cfd/openApi/v1/prv/setLeverage", {"symbol": symbol.upper(), "productGroup": "SwapU", "leverage": TRADE_LEVERAGE, "positionSide": "short"})
@@ -858,12 +899,13 @@ def manage_open_trades() -> None:
         pnl, _ = _sell_upnl(rec, float(px))
         if pnl >= 0:
             continue
-        tf = rec.get("tf") or "15m"
-        period = PERIOD_SEC.get(tf, 900)
+        # پله فقط یک‌بار در هر کندل ۱۵دقیقه (نه هر کندل 1h/4h)
+        period = AVG_LEG_PERIOD_SEC
         candle_open = (now // period) * period
         last_leg = int(rec.get("last_leg_candle_ts") or 0)
         if candle_open <= last_leg:
             continue
+        tf = rec.get("tf") or "15m"
         adds = int(rec.get("adds") or 0)
         if adds >= TRADE_MAX_ADDS:
             continue
@@ -1086,10 +1128,9 @@ async def process_symbol(symbol: str, tfs_to_check: list) -> None:
         except Exception:
             pass
 
-        send_telegram_text(format_signal_message(sig))
+        # سیگنال متنی قطع — فقط لاگ + paper + وب داخلی
         log_signal_web("SELL", symbol, tf, float(sig.get("diff_pct") or 0))
-        push_live({"t": "sig", "kind": "SELL", "symbol": symbol, "tf": tf, "gap": round(float(sig.get("diff_pct") or 0), 2), "ts": int(time.time())})
-        log.info("SIGNAL %s %s %s gap=%.2f%%", sig["side"], symbol, tf, float(sig.get("diff_pct") or 0))
+        log.info("SIGNAL_SILENT %s %s %s gap=%.2f%%", sig["side"], symbol, tf, float(sig.get("diff_pct") or 0))
 
         # هر سیگنال SELL → دقیقاً یک ورود paper/live (پله فقط اگر از قبل باز باشد)
         if trading_enabled() and sig.get("side") == "SELL":
@@ -1179,6 +1220,7 @@ async def one_cycle(tfs: list | None = None) -> None:
 
     await asyncio.gather(*[one(s) for s in symbols])
     manage_open_trades()
+    push_positions_live()
     maybe_send_hourly_trade_report()
     maybe_send_daily_paper_report()
     log.info(
