@@ -101,6 +101,23 @@
       "last_leg_candle_ts": 1793421900,
       "dry_run": true,
       "order_id": "PAPER-BLESSUSDT-1793419379"
+    },
+    {
+      "symbol": "AIOUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.03173,
+      "qty": 6303.1831,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.03093675,
+      "tf": "1h",
+      "opened_at": 1793422998,
+      "adds": 0,
+      "entry_candle_ts": 1793422800,
+      "last_leg_candle_ts": 1793422800,
+      "dry_run": true,
+      "order_id": "PAPER-AIOUSDT-1793422998"
     }
   ],
   "trade_history": [
@@ -842,6 +859,12 @@
       "symbol": "BLESSUSDT",
       "tf": "15m",
       "candle_ts": 1793419200,
+      "side": "SELL"
+    },
+    {
+      "symbol": "SWARMSUSDT",
+      "tf": "1h",
+      "candle_ts": 1793422800,
       "side": "SELL"
     }
   ],
