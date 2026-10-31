@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.4.0",
-  "updated_at": 1793414708,
+  "updated_at": 1793414743,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "BEATUSDT",
-      "tf": "15m",
-      "gap": 1.09,
-      "ts": 1793355240
-    },
     {
       "kind": "GAP",
       "symbol": "BLURUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 1.64,
       "ts": 1793414708
+    },
+    {
+      "kind": "SELL",
+      "symbol": "EVAAUSDT",
+      "tf": "15m",
+      "gap": 1.99,
+      "ts": 1793414743
     }
   ],
   "trades": [
@@ -1423,10 +1423,10 @@
     },
     {
       "symbol": "XPINUSDT",
-      "entry": 0.0008196,
-      "tp": 0.0007991099999999999,
-      "adds": 0,
-      "margin": 10.0,
+      "entry": 0.0008281596619380086,
+      "tp": 0.0008074556703895584,
+      "adds": 1,
+      "margin": 20.0,
       "pnl": -4.2216
     }
   ],
