@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.5.0",
-  "updated_at": 1793466343,
+  "updated_at": 1793466450,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "SLPUSDT",
-      "tf": "1h",
-      "gap": 1.3,
-      "ts": 1793415862
-    },
     {
       "kind": "SELL",
       "symbol": "COLLECTUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1793466343
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793466450
     }
   ],
   "trades": [
@@ -1415,19 +1415,11 @@
     },
     {
       "symbol": "ESPORTSUSDT",
-      "entry": 0.008187136205412022,
-      "tp": 0.007982457800276722,
-      "adds": 10,
-      "margin": 110.0,
+      "entry": 0.008228521506586138,
+      "tp": 0.008022808468921484,
+      "adds": 11,
+      "margin": 120.0,
       "pnl": -141.3071
-    },
-    {
-      "symbol": "REDUSDT",
-      "entry": 0.14573557463226086,
-      "tp": 0.14209218526645434,
-      "adds": 1,
-      "margin": 20.0,
-      "pnl": 10.802
     },
     {
       "symbol": "HYPERUSDT",
@@ -1455,8 +1447,8 @@
     }
   ],
   "closed": {
-    "profit": 1828.8195,
+    "profit": 1839.6214,
     "loss": 0,
-    "count": 36
+    "count": 37
   }
 }
