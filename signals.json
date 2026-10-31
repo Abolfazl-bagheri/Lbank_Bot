@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.4.0",
-  "updated_at": 1793415898,
+  "updated_at": 1793415940,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "MUSEBOOKUSDT",
-      "tf": "15m",
-      "gap": 0.03,
-      "ts": 1793359995
-    },
     {
       "kind": "HEARTBEAT",
       "symbol": "—",
@@ -1402,15 +1395,22 @@
       "tf": "1h",
       "gap": 1.89,
       "ts": 1793415898
+    },
+    {
+      "kind": "HEARTBEAT",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793415940
     }
   ],
   "trades": [
     {
       "symbol": "IDOLUSDT",
-      "entry": 0.02092036480445388,
-      "tp": 0.020397355684342533,
-      "adds": 38,
-      "margin": 390.0,
+      "entry": 0.021008012565027535,
+      "tp": 0.020482812250901847,
+      "adds": 39,
+      "margin": 400.0,
       "pnl": -1562.4467
     },
     {
@@ -1430,25 +1430,25 @@
       "pnl": -12.3842
     },
     {
-      "symbol": "EVAAUSDT",
-      "entry": 1.2587,
-      "tp": 1.2272325,
-      "adds": 0,
-      "margin": 10.0,
-      "pnl": 5.9109
-    },
-    {
       "symbol": "SLPUSDT",
       "entry": 0.0005411,
       "tp": 0.0005275725,
       "adds": 0,
       "margin": 10.0,
       "pnl": 0.0
+    },
+    {
+      "symbol": "COLLECTUSDT",
+      "entry": 0.02492,
+      "tp": 0.024297,
+      "adds": 0,
+      "margin": 10.0,
+      "pnl": 0.0
     }
   ],
   "closed": {
-    "profit": 383.7993,
+    "profit": 389.7102,
     "loss": 0,
-    "count": 16
+    "count": 17
   }
 }
