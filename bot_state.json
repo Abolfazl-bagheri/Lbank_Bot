@@ -1,23 +1,6 @@
 {
   "open_trades": [
     {
-      "symbol": "IDOLUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.021654544538210006,
-      "qty": 471032.76589999994,
-      "margin": 510.0,
-      "leverage": 20,
-      "tp_price": 0.021113180924754754,
-      "tf": "15m",
-      "opened_at": 1793362611,
-      "adds": 50,
-      "entry_candle_ts": 1793362500,
-      "last_leg_candle_ts": 1793426400,
-      "dry_run": true,
-      "order_id": "PAPER-IDOLUSDT-1793362611"
-    },
-    {
       "symbol": "COLLECTUSDT",
       "side": "SELL",
       "status": "open",
@@ -643,6 +626,26 @@
       "closed_at": 1793435670,
       "close_px": 0.07604,
       "pnl_usdt": 66.4881749258158
+    },
+    {
+      "symbol": "IDOLUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.021654544538210006,
+      "qty": 471032.76589999994,
+      "margin": 510.0,
+      "leverage": 20,
+      "tp_price": 0.021113180924754754,
+      "tf": "15m",
+      "opened_at": 1793362611,
+      "adds": 50,
+      "entry_candle_ts": 1793362500,
+      "last_leg_candle_ts": 1793426400,
+      "dry_run": true,
+      "order_id": "PAPER-IDOLUSDT-1793362611",
+      "closed_at": 1793437337,
+      "close_px": 0.019493,
+      "pnl_usdt": 1018.1583016367869
     }
   ],
   "pending": [
@@ -998,6 +1001,12 @@
       "symbol": "RSRUSDT",
       "tf": "15m",
       "candle_ts": 1793430900,
+      "side": "SELL"
+    },
+    {
+      "symbol": "AIOTUSDT",
+      "tf": "1h",
+      "candle_ts": 1793437200,
       "side": "SELL"
     }
   ],
