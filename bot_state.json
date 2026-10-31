@@ -38,16 +38,16 @@
       "symbol": "ANSEMUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.052930277044977395,
-      "qty": 30228.445499999998,
-      "margin": 80.0,
+      "entry": 0.05294797656427245,
+      "qty": 33995.6333,
+      "margin": 90.0,
       "leverage": 20,
-      "tp_price": 0.05160702011885296,
+      "tp_price": 0.05162427715016564,
       "tf": "1h",
       "opened_at": 1793469807,
-      "adds": 7,
+      "adds": 8,
       "entry_candle_ts": 1793469600,
-      "last_leg_candle_ts": 1793485800,
+      "last_leg_candle_ts": 1793487600,
       "dry_run": true,
       "order_id": "PAPER-ANSEMUSDT-1793469807"
     },
@@ -1564,7 +1564,8 @@
       "side": "SELL",
       "upper": 0.009379900242195545,
       "open": 0.00953,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "LAUSDT",
@@ -1573,7 +1574,8 @@
       "side": "SELL",
       "upper": 0.0580454564071947,
       "open": 0.05904,
-      "reported": false
+      "reported": true,
+      "filled": false
     }
   ],
   "kline_blacklist": {
@@ -1640,7 +1642,7 @@
     "CZUSDT": 1793527710,
     "NEIRO1USDT": 1793527717
   },
-  "last_trade_report_ts": 1793484523,
+  "last_trade_report_ts": 1793486246,
   "last_daily_report_date": "2026-10-29",
   "last_known_version": "2.5.0",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
