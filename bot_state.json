@@ -101,23 +101,6 @@
       "last_leg_candle_ts": 1793429100,
       "dry_run": true,
       "order_id": "PAPER-MAGMAUSDT-1793428333"
-    },
-    {
-      "symbol": "SLPUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.0005754,
-      "qty": 347584.2892,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.000561015,
-      "tf": "15m",
-      "opened_at": 1793428340,
-      "adds": 0,
-      "entry_candle_ts": 1793428200,
-      "last_leg_candle_ts": 1793428200,
-      "dry_run": true,
-      "order_id": "PAPER-SLPUSDT-1793428340"
     }
   ],
   "trade_history": [
@@ -600,6 +583,26 @@
       "closed_at": 1793426691,
       "close_px": 0.010349,
       "pnl_usdt": 15.600692806531917
+    },
+    {
+      "symbol": "SLPUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.0005754,
+      "qty": 347584.2892,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.000561015,
+      "tf": "15m",
+      "opened_at": 1793428340,
+      "adds": 0,
+      "entry_candle_ts": 1793428200,
+      "last_leg_candle_ts": 1793428200,
+      "dry_run": true,
+      "order_id": "PAPER-SLPUSDT-1793428340",
+      "closed_at": 1793429369,
+      "close_px": 0.0005568,
+      "pnl_usdt": 6.465067778936398
     }
   ],
   "pending": [
@@ -943,6 +946,12 @@
       "symbol": "SLPUSDT",
       "tf": "15m",
       "candle_ts": 1793428200,
+      "side": "SELL"
+    },
+    {
+      "symbol": "MAGMAUSDT",
+      "tf": "15m",
+      "candle_ts": 1793429100,
       "side": "SELL"
     }
   ],
