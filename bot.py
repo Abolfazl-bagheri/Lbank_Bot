@@ -35,7 +35,7 @@ SIGNALS_FILE = os.path.join(BASE_DIR, "signals.json")
 LIVE_TOPIC = os.environ.get("LIVE_TOPIC", "lbank-gap-b0b85cee29ce").strip()
 STATE_BAK = os.path.join(BASE_DIR, "bot_state.bak")
 
-BOT_VERSION = "2.4.1"
+BOT_VERSION = "2.5.0"
 CHANGELOG = {
     "2.1.0": [
         "چارت احتمال‌گپ → استایل SolAtlas (خط‌روند شکست/بازتست) — هنوز ناقص",
@@ -1008,13 +1008,11 @@ def maybe_send_hourly_trade_report() -> None:
 
 
 def maybe_send_daily_paper_report() -> None:
-    """گزارش پایان‌روز: موجودی کاغذی بر اساس ترید ۲۴ساعت."""
+    """گزارش پایان‌روز + ریست موجودی paper به ۱۰۰۰."""
     global _last_daily_report_date
     if not trading_enabled():
         return
-    from datetime import timedelta
     now_ir = iran_now()
-    # پنجره ۲۳:۵۰–۲۳:۵۹
     if not (now_ir.hour == 23 and now_ir.minute >= 50):
         return
     day_key = now_ir.strftime("%Y-%m-%d")
@@ -1032,23 +1030,32 @@ def maybe_send_daily_paper_report() -> None:
         if px:
             pnl, _ = _sell_upnl(rec, float(px))
             open_upnl += pnl
-    all_closed_net = sum(float(t.get("pnl_usdt") or 0) for t in trade_history if t.get("status") == "closed")
-    balance = PAPER_START_BALANCE + all_closed_net + open_upnl
+    day_net = profit + open_upnl  # بدون شمارش «ضرر بسته» جدا
+    balance = PAPER_START_BALANCE + sum(float(x.get("pnl_usdt") or 0) for x in trade_history if x.get("status") == "closed") + open_upnl
     mode = "PAPER" if is_paper_mode() else "LIVE"
+    loss_line = ""
+    if day_net < 0 or open_upnl < 0:
+        loss_line = f"\n🔴 <b>امروز در ضرر:</b> day={day_net:+.2f}U · باز={open_upnl:+.2f}U"
     send_telegram_text(
         f"🌙 <b>گزارش روزانه {mode}</b>\n"
         f"📅 {day_key}\n"
         f"────────\n"
-        f"در ۲۴ ساعت گذشته:\n"
-        f"معاملات بسته: <b>{cnt}</b>\n"
+        f"معاملات بسته‌شده: <b>{cnt}</b>\n"
         f"🟢 سود TP: <b>{profit:+.2f}U</b>\n"
-        f"خالص ۲۴س: <b>{profit:+.2f}U</b>\n"
         f"uPnL باز: <b>{open_upnl:+.2f}U</b>\n"
+        f"خالص روز: <b>{day_net:+.2f}U</b>\n"
+        f"💼 موجودی قبل ریست: <b>{balance:.2f}U</b>"
+        f"{loss_line}\n"
         f"────────\n"
-        f"💼 موجودی کاغذی تقریبی: <b>{balance:.2f}U</b>\n"
-        f"(شروع {PAPER_START_BALANCE:.0f}U + بسته‌ها + باز)"
+        f"♻️ ریست شبانه paper → موجودی <b>{PAPER_START_BALANCE:.0f}U</b>"
     )
-    save_state()
+    # ریست کامل paper
+    if is_paper_mode():
+        open_trades.clear()
+        trade_history.clear()
+        log.info("PAPER_NIGHT_RESET balance -> %.0f", PAPER_START_BALANCE)
+    save_state(force_remote=True)
+
 
 
 def timeframes_to_check_now() -> list:
@@ -1140,7 +1147,13 @@ async def process_symbol(symbol: str, tfs_to_check: list) -> None:
                 log.info("PAPER_ENTRY %s %s entry=%s ok=%s", symbol, tf, entry, bool(rec))
                 save_state(force_remote=True)
 
-        pending_signals.append({"symbol": symbol, "tf": tf, "candle_ts": sig["candle_ts"], "side": sig["side"]})
+        pending_signals.append({
+            "symbol": symbol, "tf": tf, "candle_ts": sig["candle_ts"], "side": sig["side"],
+            "upper": float(sig.get("upper") or 0), "open": float(sig.get("open") or 0),
+            "reported": False,
+        })
+        # جمع برای پیام دسته‌ای انتهای دور
+        cycle_batch.setdefault(tf, []).append(sig)
         await asyncio.sleep(0.05)
 
 
@@ -1203,12 +1216,105 @@ async def pre_alert_cycle(tfs: list | None = None) -> None:
                 log.debug("pre %s: %s", symbol, e)
 
 
+
+async def report_previous_gaps(tfs: list) -> None:
+    """گزارش نتیجه گپ کندل قبلی برای هر TF."""
+    if not pending_signals:
+        return
+    now = int(time.time())
+    lines_by_tf = {tf: [] for tf in tfs}
+    for item in pending_signals:
+        if item.get("reported"):
+            continue
+        tf = item.get("tf")
+        if tf not in tfs:
+            continue
+        period = PERIOD_SEC.get(tf, 900)
+        cts = int(item.get("candle_ts") or 0)
+        # فقط بعد از تمام شدن آن کندل
+        if now < cts + period:
+            continue
+        symbol = item.get("symbol") or ""
+        try:
+            df, _ = await fetch_klines(symbol, tf, size=30)
+            if df is None or len(df) < 2:
+                continue
+            # کندل همان ts
+            row = None
+            for _, r in df.iterrows():
+                if int(r["ts"]) == cts:
+                    row = r
+                    break
+            if row is None:
+                # نزدیک‌ترین قبلی
+                for _, r in df.iloc[::-1].iterrows():
+                    if int(r["ts"]) <= cts:
+                        row = r
+                        break
+            if row is None:
+                continue
+            upper = float(item.get("upper") or row.get("upper") or 0)
+            low = float(row["l"])
+            close = float(row["c"])
+            # سِل: گپ پر شد اگر low یا close به UB رسید/زیر
+            filled = upper > 0 and (low <= upper * 1.001 or close <= upper * 1.001)
+            mark = "✅" if filled else "❌"
+            lines_by_tf.setdefault(tf, []).append(
+                f"{mark} {symbol} {item.get('side')} close={close:.6g}"
+            )
+            item["reported"] = True
+            item["filled"] = filled
+        except Exception as e:
+            log.debug("gap report %s: %s", symbol, e)
+    for tf, lines in lines_by_tf.items():
+        if not lines:
+            continue
+        ok = sum(1 for x in lines if x.startswith("✅"))
+        msg = (
+            f"📈 <b>گزارش گپ قبلی · {tf}</b>\n"
+            f"پر شد {ok}/{len(lines)} ({(100*ok/len(lines)):.0f}%)\n"
+            + "\n".join(lines[:25])
+        )
+        send_telegram_text(msg)
+    # پاک کردن گزارش‌شده‌های خیلی قدیمی
+    cutoff = now - 3 * 86400
+    pending_signals[:] = [x for x in pending_signals if not x.get("reported") or int(x.get("candle_ts") or 0) > cutoff]
+
+
+def flush_cycle_signals() -> None:
+    """همه سیگنال‌های یک دور در یک پیام به‌ازای هر TF."""
+    global cycle_batch
+    if not cycle_batch:
+        return
+    for tf, sigs in cycle_batch.items():
+        if not sigs:
+            continue
+        lines = [f"🔴 <b>سیگنال‌های {tf}</b> · {len(sigs)} مورد"]
+        for s in sigs[:40]:
+            sym = s["symbol"]
+            gap = float(s.get("diff_pct") or 0)
+            lines.append(
+                f"• <a href=\"{tv_lbank_url(sym)}\">{sym}</a> · {gap:.2f}%"
+            )
+        send_telegram_text("\n".join(lines))
+    cycle_batch = {}
+
+
 async def one_cycle(tfs: list | None = None) -> None:
+    global cycle_batch
     tfs = tfs or timeframes_to_check_now()
     if not tfs:
         return
+    cycle_batch = {}
     symbols = get_top_movers(TOP_GAINERS)
     log.info("cycle TFs=%s n=%d iran=%s", ",".join(tfs), len(symbols), iran_now().strftime("%H:%M:%S"))
+
+    # اول گزارش گپ کندل قبلی همین TFها
+    try:
+        await report_previous_gaps(tfs)
+    except Exception as e:
+        log.warning("gap report: %s", e)
+
     sem = asyncio.Semaphore(12)
 
     async def one(sym):
@@ -1219,6 +1325,7 @@ async def one_cycle(tfs: list | None = None) -> None:
                 log.warning("%s: %s", sym, e)
 
     await asyncio.gather(*[one(s) for s in symbols])
+    flush_cycle_signals()
     manage_open_trades()
     push_positions_live()
     maybe_send_hourly_trade_report()
