@@ -84,6 +84,23 @@
       "last_leg_candle_ts": 1793447100,
       "dry_run": true,
       "order_id": "PAPER-ZCATUSDT-1793447314"
+    },
+    {
+      "symbol": "COWUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.1421,
+      "qty": 1407.4595,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.1385475,
+      "tf": "15m",
+      "opened_at": 1793455413,
+      "adds": 0,
+      "entry_candle_ts": 1793455200,
+      "last_leg_candle_ts": 1793455200,
+      "dry_run": true,
+      "order_id": "PAPER-COWUSDT-1793455413"
     }
   ],
   "trade_history": [
@@ -1137,7 +1154,6 @@
     }
   ],
   "kline_blacklist": {
-    "GSTOCKUSDT": 1793301396,
     "STXSTOCKUSDT": 1793301443,
     "OFCUSDT": 1793301474,
     "APROUSDT": 1793302417,
@@ -1155,7 +1171,6 @@
     "MASTOCKUSDT": 1793369010,
     "AMCUSDT": 1793372804,
     "EURUSDT": 1793385188,
-    "SANTOSUSDT": 1793386176,
     "NIULAIUSDT": 1793387893,
     "LIGHT1USDT": 1793394311,
     "CRWDUSDT": 1793397926,
@@ -1180,7 +1195,6 @@
     "SAFE1USDT": 1793449863,
     "AI1USDT": 1793452630,
     "SPORTFUNUSDT": 1793453443,
-    "AXLUSDT": 1793453698,
     "LWLGUSDT": 1793464452,
     "PORTALUSDT": 1793471666,
     "AINBSCUSDT": 1793477881,
@@ -1199,7 +1213,7 @@
     "STONKBROKERUSDT": 1793495167,
     "HOTUSDT": 1793495185
   },
-  "last_trade_report_ts": 1793447392,
+  "last_trade_report_ts": 1793451990,
   "last_daily_report_date": "2026-10-29",
   "last_known_version": "2.4.1",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
