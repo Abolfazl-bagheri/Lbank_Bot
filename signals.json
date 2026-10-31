@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.4.0",
-  "updated_at": 1793426710,
+  "updated_at": 1793426719,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "BIRBUSDT",
-      "tf": "15m",
-      "gap": 6.91,
-      "ts": 1793373141
-    },
     {
       "kind": "GAP",
       "symbol": "VKTXUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": -0.23,
       "ts": 1793426710
+    },
+    {
+      "kind": "SELL",
+      "symbol": "BUSDT",
+      "tf": "1h",
+      "gap": 0.2,
+      "ts": 1793426719
     }
   ],
   "trades": [
@@ -1428,6 +1428,14 @@
       "adds": 2,
       "margin": 30.0,
       "pnl": -11.6477
+    },
+    {
+      "symbol": "BULLAUSDT",
+      "entry": 0.08503,
+      "tp": 0.08290425,
+      "adds": 0,
+      "margin": 10.0,
+      "pnl": 0.0
     }
   ],
   "closed": {
