@@ -50,6 +50,23 @@
       "last_leg_candle_ts": 1793469600,
       "dry_run": true,
       "order_id": "PAPER-FRONGUSDT-1793467122"
+    },
+    {
+      "symbol": "ANSEMUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.05251,
+      "qty": 3808.7983,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.05119725,
+      "tf": "1h",
+      "opened_at": 1793469807,
+      "adds": 0,
+      "entry_candle_ts": 1793469600,
+      "last_leg_candle_ts": 1793469600,
+      "dry_run": true,
+      "order_id": "PAPER-ANSEMUSDT-1793469807"
     }
   ],
   "trade_history": [
@@ -1412,6 +1429,15 @@
       "open": 0.002385,
       "reported": true,
       "filled": false
+    },
+    {
+      "symbol": "FRONGUSDT",
+      "tf": "1h",
+      "candle_ts": 1793469600,
+      "side": "SELL",
+      "upper": 0.002364778023139373,
+      "open": 0.002469,
+      "reported": false
     }
   ],
   "kline_blacklist": {
