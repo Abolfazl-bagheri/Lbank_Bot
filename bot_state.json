@@ -67,6 +67,23 @@
       "last_leg_candle_ts": 1793414700,
       "dry_run": true,
       "order_id": "PAPER-EVAAUSDT-1793414745"
+    },
+    {
+      "symbol": "SLPUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.0005411,
+      "qty": 369617.4459,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0005275725,
+      "tf": "1h",
+      "opened_at": 1793415864,
+      "adds": 0,
+      "entry_candle_ts": 1793415600,
+      "last_leg_candle_ts": 1793415600,
+      "dry_run": true,
+      "order_id": "PAPER-SLPUSDT-1793415864"
     }
   ],
   "trade_history": [
@@ -640,6 +657,12 @@
     },
     {
       "symbol": "WETUSDT",
+      "tf": "1h",
+      "candle_ts": 1793415600,
+      "side": "SELL"
+    },
+    {
+      "symbol": "XPINUSDT",
       "tf": "1h",
       "candle_ts": 1793415600,
       "side": "SELL"
