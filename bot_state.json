@@ -84,6 +84,23 @@
       "last_leg_candle_ts": 1793484000,
       "dry_run": true,
       "order_id": "PAPER-ZZZUSDT-1793484361"
+    },
+    {
+      "symbol": "LAUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.05912,
+      "qty": 3382.9499,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.057642,
+      "tf": "1h",
+      "opened_at": 1793484378,
+      "adds": 0,
+      "entry_candle_ts": 1793484000,
+      "last_leg_candle_ts": 1793484000,
+      "dry_run": true,
+      "order_id": "PAPER-LAUSDT-1793484378"
     }
   ],
   "trade_history": [
@@ -1536,6 +1553,15 @@
       "open": 1.44,
       "reported": true,
       "filled": false
+    },
+    {
+      "symbol": "ZZZUSDT",
+      "tf": "1h",
+      "candle_ts": 1793484000,
+      "side": "SELL",
+      "upper": 0.009379900242195545,
+      "open": 0.00953,
+      "reported": false
     }
   ],
   "kline_blacklist": {
