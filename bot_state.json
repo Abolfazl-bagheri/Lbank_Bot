@@ -67,6 +67,23 @@
       "last_leg_candle_ts": 1793426400,
       "dry_run": true,
       "order_id": "PAPER-BULLAUSDT-1793426712"
+    },
+    {
+      "symbol": "BUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.1325,
+      "qty": 1509.434,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.1291875,
+      "tf": "1h",
+      "opened_at": 1793426721,
+      "adds": 0,
+      "entry_candle_ts": 1793426400,
+      "last_leg_candle_ts": 1793426400,
+      "dry_run": true,
+      "order_id": "PAPER-BUSDT-1793426721"
     }
   ],
   "trade_history": [
@@ -868,6 +885,12 @@
       "symbol": "BLESSUSDT",
       "tf": "15m",
       "candle_ts": 1793419200,
+      "side": "SELL"
+    },
+    {
+      "symbol": "BULLAUSDT",
+      "tf": "1h",
+      "candle_ts": 1793426400,
       "side": "SELL"
     }
   ],
