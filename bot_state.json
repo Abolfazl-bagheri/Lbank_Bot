@@ -52,23 +52,6 @@
       "order_id": "PAPER-XPINUSDT-1793413881"
     },
     {
-      "symbol": "EVAAUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 1.2587,
-      "qty": 158.8941,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 1.2272325,
-      "tf": "15m",
-      "opened_at": 1793414745,
-      "adds": 0,
-      "entry_candle_ts": 1793414700,
-      "last_leg_candle_ts": 1793414700,
-      "dry_run": true,
-      "order_id": "PAPER-EVAAUSDT-1793414745"
-    },
-    {
       "symbol": "SLPUSDT",
       "side": "SELL",
       "status": "open",
@@ -423,6 +406,26 @@
       "closed_at": 1793411225,
       "close_px": 0.00448,
       "pnl_usdt": 40.09178602630882
+    },
+    {
+      "symbol": "EVAAUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 1.2587,
+      "qty": 158.8941,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 1.2272325,
+      "tf": "15m",
+      "opened_at": 1793414745,
+      "adds": 0,
+      "entry_candle_ts": 1793414700,
+      "last_leg_candle_ts": 1793414700,
+      "dry_run": true,
+      "order_id": "PAPER-EVAAUSDT-1793414745",
+      "closed_at": 1793415938,
+      "close_px": 1.2215,
+      "pnl_usdt": 5.910860411535696
     }
   ],
   "pending": [
@@ -758,7 +761,7 @@
     "SPORTFUNUSDT": 1793453443,
     "AXLUSDT": 1793453698
   },
-  "last_trade_report_ts": 1793414771,
+  "last_trade_report_ts": 1793415939,
   "last_daily_report_date": "2026-10-29",
   "last_known_version": "2.4.0",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
