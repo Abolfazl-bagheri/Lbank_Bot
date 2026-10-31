@@ -35,23 +35,6 @@
       "order_id": "PAPER-ESPORTSUSDT-1793440963"
     },
     {
-      "symbol": "FFUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.09803,
-      "qty": 2040.1918,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.09557925,
-      "tf": "15m",
-      "opened_at": 1793455465,
-      "adds": 0,
-      "entry_candle_ts": 1793455200,
-      "last_leg_candle_ts": 1793455200,
-      "dry_run": true,
-      "order_id": "PAPER-FFUSDT-1793455465"
-    },
-    {
       "symbol": "REDUSDT",
       "side": "SELL",
       "status": "open",
@@ -72,16 +55,16 @@
       "symbol": "HYPERUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.06636921340270507,
-      "qty": 6026.8908,
-      "margin": 20.0,
+      "entry": 0.06726779944033863,
+      "qty": 8919.5723,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.06470998306763745,
+      "tp_price": 0.06558610445433016,
       "tf": "1h",
       "opened_at": 1793459088,
-      "adds": 1,
+      "adds": 2,
       "entry_candle_ts": 1793458800,
-      "last_leg_candle_ts": 1793463300,
+      "last_leg_candle_ts": 1793464200,
       "dry_run": true,
       "order_id": "PAPER-HYPERUSDT-1793459088"
     }
@@ -786,6 +769,26 @@
       "closed_at": 1793463644,
       "close_px": 0.1344,
       "pnl_usdt": 24.300311507003617
+    },
+    {
+      "symbol": "FFUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.09803,
+      "qty": 2040.1918,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.09557925,
+      "tf": "15m",
+      "opened_at": 1793455465,
+      "adds": 0,
+      "entry_candle_ts": 1793455200,
+      "last_leg_candle_ts": 1793455200,
+      "dry_run": true,
+      "order_id": "PAPER-FFUSDT-1793455465",
+      "closed_at": 1793464544,
+      "close_px": 0.09357,
+      "pnl_usdt": 9.09925533000103
     }
   ],
   "pending": [
