@@ -143,7 +143,7 @@ footer{text-align:center;color:var(--mut);font-size:12px;margin-top:30px}
   <div class="card s4"><h2>🥧 سیگنال‌ها بر اساس تایم‌فریم</h2><div class="dw"><div class="donut" id="dn"></div><b id="dnt">0</b></div><div class="lg" id="dl"></div></div>
   <div class="card s12"><h2>🔥 داغ‌ترین نمادها (تعداد سیگنال · بیشترین گپ)</h2><div id="top"></div></div>
 </section>
-<footer>هر ۲۰ ثانیه سیگنال‌ها و هر ۹۰ ثانیه لاگ GitHub تازه می‌شود · فقط نمایش اطلاعات است، توصیه‌ی مالی نیست</footer>
+<footer>رویدادها لحظه‌ای از ntfy می‌آیند و هر ۲۰ ثانیه signals.json هم چک می‌شود · فقط نمایش اطلاعات است، توصیه‌ی مالی نیست</footer>
 </div>
 
 <div class="md" id="md"><div class="mb"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px"><h2 id="mt" style="margin:0"></h2><button class="pill" id="mx">✕ بستن</button></div><img id="mi" alt="chart"><canvas id="mc" width="900" height="400"></canvas><div class="emp" id="mn"></div><div class="lb" style="margin-top:8px">باند بولینگر (۲۰، ۲) روی کندل‌های اخیر · نارنجی = UB / LB</div></div></div>
@@ -161,7 +161,7 @@ var $=function(i){return document.getElementById(i)};
 function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
 function ago(ts){var s=Math.max(0,Math.floor(Date.now()/1000)-ts);return s<60?"لحظاتی پیش":s<3600?Math.floor(s/60)+" دقیقه پیش":s<86400?Math.floor(s/3600)+" ساعت پیش":Math.floor(s/86400)+" روز پیش"}
 function tv(s){return "https://www.tradingview.com/chart/?symbol=LBANK%3A"+s+".P"}
-function lbk(s){return "https://www.lbank.com/futures/"+s.toLowerCase().replace(/usdt$/,"_usdt")}
+function lbk(s){return "https://www.lbank.com/futures/"+s.toLowerCase()}
 function sg(n){return(n>=0?"+":"")+n.toFixed(2)}
 function px(n){n=+n;return n>=1?n.toFixed(4):n.toPrecision(4)}
 function hm(ts){var d=new Date(ts*1000);return d.toTimeString().slice(0,8)}
