@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.4.1",
-  "updated_at": 1793459087,
+  "updated_at": 1793459090,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "SONICUSDT",
-      "tf": "1h",
-      "gap": 1.43,
-      "ts": 1793408472
-    },
     {
       "kind": "GAP",
       "symbol": "GUNUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 1.6,
       "ts": 1793459087
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793459090
     }
   ],
   "trades": [
@@ -1465,6 +1465,14 @@
       "symbol": "REDUSDT",
       "entry": 0.1443,
       "tp": 0.1406925,
+      "adds": 0,
+      "margin": 10.0,
+      "pnl": 0.0
+    },
+    {
+      "symbol": "HYPERUSDT",
+      "entry": 0.0645,
+      "tp": 0.0628875,
       "adds": 0,
       "margin": 10.0,
       "pnl": 0.0
