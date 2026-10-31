@@ -67,6 +67,23 @@
       "last_leg_candle_ts": 1793471400,
       "dry_run": true,
       "order_id": "PAPER-ANSEMUSDT-1793469807"
+    },
+    {
+      "symbol": "REZUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.004524,
+      "qty": 44208.6649,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0044109,
+      "tf": "1h",
+      "opened_at": 1793473402,
+      "adds": 0,
+      "entry_candle_ts": 1793473200,
+      "last_leg_candle_ts": 1793473200,
+      "dry_run": true,
+      "order_id": "PAPER-REZUSDT-1793473402"
     }
   ],
   "trade_history": [
@@ -1449,6 +1466,15 @@
       "open": 0.0535,
       "reported": true,
       "filled": false
+    },
+    {
+      "symbol": "FRONGUSDT",
+      "tf": "1h",
+      "candle_ts": 1793473200,
+      "side": "SELL",
+      "upper": 0.0024450444316152908,
+      "open": 0.002498,
+      "reported": false
     }
   ],
   "kline_blacklist": {
