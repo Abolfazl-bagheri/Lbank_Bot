@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.5.0",
-  "updated_at": 1793466339,
+  "updated_at": 1793466343,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "XPINUSDT",
-      "tf": "1h",
-      "gap": 2.57,
-      "ts": 1793415830
-    },
     {
       "kind": "SELL",
       "symbol": "SLPUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 1.35,
       "ts": 1793466339
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793466343
     }
   ],
   "trades": [
@@ -1441,6 +1441,14 @@
       "symbol": "GUNUSDT",
       "entry": 0.00222,
       "tp": 0.0021645,
+      "adds": 0,
+      "margin": 10.0,
+      "pnl": 0.0
+    },
+    {
+      "symbol": "PROVEUSDT",
+      "entry": 0.2263,
+      "tp": 0.2206425,
       "adds": 0,
       "margin": 10.0,
       "pnl": 0.0
