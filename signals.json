@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.5.0",
-  "updated_at": 1793484377,
+  "updated_at": 1793484380,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "SLPUSDT",
-      "tf": "1h",
-      "gap": 1.04,
-      "ts": 1793430407
-    },
     {
       "kind": "GAP",
       "symbol": "MAGMAUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 1.82,
       "ts": 1793484377
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793484380
     }
   ],
   "trades": [
@@ -1441,6 +1441,14 @@
       "symbol": "ZZZUSDT",
       "entry": 0.00953,
       "tp": 0.00929175,
+      "adds": 0,
+      "margin": 10.0,
+      "pnl": 0.0
+    },
+    {
+      "symbol": "LAUSDT",
+      "entry": 0.05912,
+      "tp": 0.057642,
       "adds": 0,
       "margin": 10.0,
       "pnl": 0.0
