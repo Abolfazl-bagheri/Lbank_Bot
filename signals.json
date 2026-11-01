@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.2",
-  "updated_at": 1793567966,
+  "updated_at": 1793567971,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "IDOLUSDT",
-      "tf": "15m",
-      "gap": 2.56,
-      "ts": 1793529078
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,13 +1395,34 @@
       "tf": "15m",
       "gap": 1.98,
       "ts": 1793567966
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793567971
     }
   ],
-  "trades": [],
+  "trades": [
+    {
+      "symbol": "AEONUSDT",
+      "side": "SELL",
+      "entry": 0.0268,
+      "tp": 0.02613,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.0268,
+      "pnl": 0.0,
+      "tf": "15m"
+    }
+  ],
   "start": 1000.0,
   "realized": 0,
   "closed_n": 0,
-  "open_upnl": 0,
+  "open_upnl": 0.0,
   "equity": 1000.0,
   "lev": 20,
   "margin_leg": 10.0,
