@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.2",
-  "updated_at": 1793550878,
+  "updated_at": 1793550885,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1793522166
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 1.92,
       "ts": 1793550878
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793550885
     }
   ],
   "trades": [
@@ -1456,6 +1456,19 @@
       "px": 1.1147,
       "pnl": 0.827,
       "tf": "1h"
+    },
+    {
+      "symbol": "LYNUSDT",
+      "side": "SELL",
+      "entry": 0.01641,
+      "tp": 0.01599975,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.01641,
+      "pnl": 0.0,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
