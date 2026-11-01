@@ -18,30 +18,6 @@
       "order_id": "PAPER-ESPORTSUSDT-1793440963"
     },
     {
-      "symbol": "BEAMXUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.005828803382981995,
-      "qty": 171561.79989999998,
-      "margin": 50.0,
-      "leverage": 20,
-      "tp_price": 0.005683083298407445,
-      "tf": "1h",
-      "opened_at": 1793513141,
-      "adds": 3,
-      "entry_candle_ts": 1793512800,
-      "last_leg_candle_ts": 1793520000,
-      "dry_run": true,
-      "order_id": "PAPER-BEAMXUSDT-1793513141",
-      "last_leg_margin": 20.0,
-      "steps": [
-        {
-          "px": 0.005911,
-          "ts": 1793520338
-        }
-      ]
-    },
-    {
       "symbol": "ZEREBROUSDT",
       "side": "SELL",
       "status": "open",
@@ -1104,6 +1080,33 @@
       "closed_at": 1793519470,
       "close_px": 0.01001,
       "pnl_usdt": 88.97369543025084
+    },
+    {
+      "symbol": "BEAMXUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.005828803382981995,
+      "qty": 171561.79989999998,
+      "margin": 50.0,
+      "leverage": 20,
+      "tp_price": 0.005683083298407445,
+      "tf": "1h",
+      "opened_at": 1793513141,
+      "adds": 3,
+      "entry_candle_ts": 1793512800,
+      "last_leg_candle_ts": 1793520000,
+      "dry_run": true,
+      "order_id": "PAPER-BEAMXUSDT-1793513141",
+      "last_leg_margin": 20.0,
+      "steps": [
+        {
+          "px": 0.005911,
+          "ts": 1793520338
+        }
+      ],
+      "closed_at": 1793522020,
+      "close_px": 0.005678,
+      "pnl_usdt": 25.872099824517385
     }
   ],
   "pending": [
@@ -1907,6 +1910,16 @@
       "upper": 0.01225805675389918,
       "open": 0.013,
       "reported": false
+    },
+    {
+      "symbol": "FORMUSDT",
+      "tf": "15m",
+      "candle_ts": 1793520900,
+      "side": "SELL",
+      "upper": 0.21059487684984549,
+      "open": 0.2139,
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [],
@@ -1971,7 +1984,8 @@
     "AI1USDT": 1793551943,
     "GSTOCKUSDT": 1793552840,
     "HAJIMIUSDT": 1793558243,
-    "LONGXIAUSDT": 1793558277
+    "LONGXIAUSDT": 1793558277,
+    "PIPEDOGUSDT": 1793564407
   },
   "last_trade_report_ts": 1793520452,
   "last_daily_report_date": "2026-10-29",
