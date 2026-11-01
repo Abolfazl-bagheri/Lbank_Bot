@@ -83,6 +83,31 @@
       "last_leg_candle_ts": 1793523600,
       "dry_run": true,
       "order_id": "PAPER-PROMUSDT-1793523903"
+    },
+    {
+      "symbol": "SUPERUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.17493,
+      "qty": 1143.3145,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.17055675,
+      "tf": "1h",
+      "opened_at": 1793523944,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.17493,
+          "ts": 1793523944
+        }
+      ],
+      "entry_candle_ts": 1793523600,
+      "last_leg_candle_ts": 1793523600,
+      "dry_run": true,
+      "order_id": "PAPER-SUPERUSDT-1793523944"
     }
   ],
   "trade_history": [
@@ -1947,6 +1972,15 @@
       "open": 0.2139,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "PROMUSDT",
+      "tf": "1h",
+      "candle_ts": 1793523600,
+      "side": "SELL",
+      "upper": 5.946921426728792,
+      "open": 6.106,
+      "reported": false
     }
   ],
   "paper_days": [],
