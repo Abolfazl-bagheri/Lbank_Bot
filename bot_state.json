@@ -1,9 +1,10 @@
 {
-  "open_trades": [
+  "open_trades": [],
+  "trade_history": [
     {
       "symbol": "AEONUSDT",
       "side": "SELL",
-      "status": "open",
+      "status": "closed",
       "entry": 0.0268,
       "qty": 7462.6866,
       "margin": 10.0,
@@ -23,10 +24,12 @@
       "entry_candle_ts": 1793567700,
       "last_leg_candle_ts": 1793567700,
       "dry_run": true,
-      "order_id": "PAPER-AEONUSDT-1793567968"
+      "order_id": "PAPER-AEONUSDT-1793567968",
+      "closed_at": 1793570691,
+      "close_px": 0.0259,
+      "pnl_usdt": 6.716417910447773
     }
   ],
-  "trade_history": [],
   "pending": [
     {
       "symbol": "BEAMXUSDT",
@@ -1078,7 +1081,8 @@
       "side": "SELL",
       "upper": 0.016589339345667628,
       "open": 0.01721,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "STARUSDT",
@@ -1087,7 +1091,8 @@
       "side": "SELL",
       "upper": 0.03768476415956888,
       "open": 0.03847,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ARIAUSDT",
@@ -1106,6 +1111,16 @@
       "side": "SELL",
       "upper": 0.0020119904443328842,
       "open": 0.002068,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "AEONUSDT",
+      "tf": "15m",
+      "candle_ts": 1793567700,
+      "side": "SELL",
+      "upper": 0.02626856680909044,
+      "open": 0.02668,
       "reported": true,
       "filled": true
     }
@@ -1161,7 +1176,6 @@
     "BIANRENSHENGUSDT": 1793549283,
     "AI1USDT": 1793551943,
     "LONGXIAUSDT": 1793558277,
-    "FLOCK1USDT": 1793568744,
     "NEIRO1USDT": 1793571468,
     "1000WOJAKUSDT": 1793571470,
     "1000SATSUSDT": 1793571471,
@@ -1178,9 +1192,11 @@
     "APROUSDT": 1793604906,
     "TOADUSDT": 1793604936,
     "FIGHT1USDT": 1793605790,
-    "PIPEDOGUSDT": 1793608506
+    "PIPEDOGUSDT": 1793608506,
+    "BIO1USDT": 1793611218,
+    "FLOCK1USDT": 1793612968
   },
-  "last_trade_report_ts": 1793566256,
+  "last_trade_report_ts": 1793569816,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
