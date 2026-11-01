@@ -21,16 +21,16 @@
       "symbol": "ZZZUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.01048035856110137,
-      "qty": 114499.89930000002,
-      "margin": 60.0,
+      "entry": 0.010522140556031241,
+      "qty": 133052.77500000002,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 0.010218349597073836,
+      "tp_price": 0.01025908704213046,
       "tf": "1h",
       "opened_at": 1793494991,
-      "adds": 5,
+      "adds": 6,
       "entry_candle_ts": 1793494800,
-      "last_leg_candle_ts": 1793505600,
+      "last_leg_candle_ts": 1793508300,
       "dry_run": true,
       "order_id": "PAPER-ZZZUSDT-1793494991"
     }
@@ -1759,7 +1759,8 @@
       "side": "SELL",
       "upper": 0.011070717041221792,
       "open": 0.01159,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ESPORTSUSDT",
@@ -1786,7 +1787,6 @@
     "APROUSDT": 1793302417,
     "PORUSDT": 1793304371,
     "IBBETFUSDT": 1793310363,
-    "BIANRENSHENGUSDT": 1793311457,
     "CANTONUSDT": 1793322198,
     "RIOTUSDT": 1793324068,
     "SMRUSDT": 1793331277,
@@ -1818,11 +1818,8 @@
     "CAPETHUSDT": 1793483293,
     "TOADUSDT": 1793485166,
     "FIGHT1USDT": 1793487917,
-    "GSTOCKUSDT": 1793498719,
     "AXLUSDT": 1793502358,
     "WOTAMALAILEUSDT": 1793506829,
-    "AI1USDT": 1793506832,
-    "NIULAIUSDT": 1793506838,
     "DODOUSDT": 1793508698,
     "HAJIMIUSDT": 1793513117,
     "ARROWUSDT": 1793516639,
@@ -1842,9 +1839,12 @@
     "UP2USDT": 1793540926,
     "OROCHIUSDT": 1793541034,
     "STONKBROKERUSDT": 1793541846,
-    "QUACKAIUSDT": 1793545678
+    "QUACKAIUSDT": 1793545678,
+    "BIANRENSHENGUSDT": 1793549283,
+    "NIULAIUSDT": 1793551933,
+    "AI1USDT": 1793551943
   },
-  "last_trade_report_ts": 1793505145,
+  "last_trade_report_ts": 1793506096,
   "last_daily_report_date": "2026-10-29",
   "last_known_version": "2.5.1",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
