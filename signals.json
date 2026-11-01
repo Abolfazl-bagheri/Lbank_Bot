@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.5.1",
-  "updated_at": 1793516639,
+  "updated_at": 1793516642,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "FRONGUSDT",
-      "tf": "15m",
-      "gap": 3.16,
-      "ts": 1793467699
-    },
     {
       "kind": "GAP",
       "symbol": "RAREUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 1.4,
       "ts": 1793516639
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793516642
     }
   ],
   "trades": [
@@ -1454,6 +1454,19 @@
       "margin": 10.0,
       "lev": 20,
       "px": 0.005897,
+      "pnl": 0.0,
+      "tf": "1h"
+    },
+    {
+      "symbol": "ZEREBROUSDT",
+      "side": "SELL",
+      "entry": 0.026633,
+      "tp": 0.025967175,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.026633,
       "pnl": 0.0,
       "tf": "1h"
     }
