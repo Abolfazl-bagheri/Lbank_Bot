@@ -77,24 +77,30 @@
       "symbol": "MOVRUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 1.1242,
-      "qty": 177.9043,
-      "margin": 10.0,
+      "entry": 1.1162385755679565,
+      "qty": 537.5195,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 1.096095,
+      "tp_price": 1.0883326111787575,
       "tf": "1h",
       "opened_at": 1793541912,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        1.115
+      ],
       "steps": [
         {
           "px": 1.1242,
           "ts": 1793541912
+        },
+        {
+          "px": 1.1123,
+          "ts": 1793543925
         }
       ],
       "entry_candle_ts": 1793541600,
-      "last_leg_candle_ts": 1793541600,
+      "last_leg_candle_ts": 1793543925,
       "dry_run": true,
       "order_id": "PAPER-MOVRUSDT-1793541912"
     }
