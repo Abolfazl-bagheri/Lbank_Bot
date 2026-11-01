@@ -134,31 +134,6 @@
       "last_leg_candle_ts": 1793532766,
       "dry_run": true,
       "order_id": "PAPER-AVAAIUSDT-1793531182"
-    },
-    {
-      "symbol": "APRUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.06757,
-      "qty": 2959.8934,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.06588075,
-      "tf": "1h",
-      "opened_at": 1793534603,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.06757,
-          "ts": 1793534603
-        }
-      ],
-      "entry_candle_ts": 1793534400,
-      "last_leg_candle_ts": 1793534400,
-      "dry_run": true,
-      "order_id": "PAPER-APRUSDT-1793534603"
     }
   ],
   "trade_history": [
@@ -1317,9 +1292,9 @@
       "last_leg_candle_ts": 1793523600,
       "dry_run": true,
       "order_id": "PAPER-FORMUSDT-1793521039",
-      "closed_at": 1793535467,
-      "close_px": 0.2073,
-      "pnl_usdt": 15.046510232970029
+      "closed_at": 1793535617,
+      "close_px": 0.207,
+      "pnl_usdt": 15.89304205607723
     }
   ],
   "pending": [
@@ -2124,8 +2099,7 @@
       "side": "SELL",
       "upper": 0.01225805675389918,
       "open": 0.013,
-      "reported": true,
-      "filled": true
+      "reported": false
     },
     {
       "symbol": "FORMUSDT",
@@ -2234,8 +2208,7 @@
       "side": "SELL",
       "upper": 0.17986308069005344,
       "open": 0.18242,
-      "reported": true,
-      "filled": true
+      "reported": false
     },
     {
       "symbol": "FONEUSDT",
@@ -2244,8 +2217,7 @@
       "side": "SELL",
       "upper": 0.00198907436253152,
       "open": 0.002109,
-      "reported": true,
-      "filled": false
+      "reported": false
     },
     {
       "symbol": "AVAAIUSDT",
@@ -2254,43 +2226,6 @@
       "side": "SELL",
       "upper": 0.0070799275119848345,
       "open": 0.007179,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "APRUSDT",
-      "tf": "1h",
-      "candle_ts": 1793534400,
-      "side": "SELL",
-      "upper": 0.06561701230415372,
-      "open": 0.06643,
-      "reported": false
-    },
-    {
-      "symbol": "FONEUSDT",
-      "tf": "1h",
-      "candle_ts": 1793534400,
-      "side": "SELL",
-      "upper": 0.0021121956646300865,
-      "open": 0.002172,
-      "reported": false
-    },
-    {
-      "symbol": "APRUSDT",
-      "tf": "4h",
-      "candle_ts": 1793534400,
-      "side": "SELL",
-      "upper": 0.06490757851448181,
-      "open": 0.06643,
-      "reported": false
-    },
-    {
-      "symbol": "FONEUSDT",
-      "tf": "4h",
-      "candle_ts": 1793534400,
-      "side": "SELL",
-      "upper": 0.002111055291139554,
-      "open": 0.002172,
       "reported": false
     }
   ],
@@ -2358,10 +2293,9 @@
     "1000SATSUSDT": 1793571471,
     "CZUSDT": 1793571475,
     "AINBSCUSDT": 1793575002,
-    "UBIKUSDT": 1793577941,
-    "NEXUSDT": 1793578039
+    "UBIKUSDT": 1793578777
   },
-  "last_trade_report_ts": 1793534871,
+  "last_trade_report_ts": 1793532780,
   "last_daily_report_date": "2026-10-29",
   "last_known_version": "2.6.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
