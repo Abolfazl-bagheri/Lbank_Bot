@@ -163,31 +163,6 @@
       "last_leg_candle_ts": 1793538000,
       "dry_run": true,
       "order_id": "PAPER-APRUSDT-1793534603"
-    },
-    {
-      "symbol": "INITUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.199,
-      "qty": 1005.0251,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.194025,
-      "tf": "1h",
-      "opened_at": 1793538305,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.199,
-          "ts": 1793538305
-        }
-      ],
-      "entry_candle_ts": 1793538000,
-      "last_leg_candle_ts": 1793538000,
-      "dry_run": true,
-      "order_id": "PAPER-INITUSDT-1793538305"
     }
   ],
   "trade_history": [
@@ -1349,6 +1324,34 @@
       "closed_at": 1793535467,
       "close_px": 0.2073,
       "pnl_usdt": 15.046510232970029
+    },
+    {
+      "symbol": "INITUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.199,
+      "qty": 1005.0251,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.194025,
+      "tf": "1h",
+      "opened_at": 1793538305,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.199,
+          "ts": 1793538305
+        }
+      ],
+      "entry_candle_ts": 1793538000,
+      "last_leg_candle_ts": 1793538000,
+      "dry_run": true,
+      "order_id": "PAPER-INITUSDT-1793538305",
+      "closed_at": 1793539082,
+      "close_px": 0.18984,
+      "pnl_usdt": 9.20603015075377
     }
   ],
   "pending": [
@@ -2387,7 +2390,6 @@
     "QUID1USDT": 1793527676,
     "GALUSDT": 1793533749,
     "SYNUSDT": 1793537208,
-    "MANCERUSDT": 1793538338,
     "HOTUSDT": 1793539007,
     "UP2USDT": 1793540926,
     "OROCHIUSDT": 1793541034,
@@ -2408,7 +2410,8 @@
     "CZUSDT": 1793571475,
     "AINBSCUSDT": 1793575002,
     "UBIKUSDT": 1793577941,
-    "NEXUSDT": 1793578039
+    "NEXUSDT": 1793578039,
+    "MANCERUSDT": 1793582250
   },
   "last_trade_report_ts": 1793538460,
   "last_daily_report_date": "2026-10-29",
