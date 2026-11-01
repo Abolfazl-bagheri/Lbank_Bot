@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.5.1",
-  "updated_at": 1793513139,
+  "updated_at": 1793513143,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "RSRUSDT",
-      "tf": "15m",
-      "gap": 3.25,
-      "ts": 1793462289
-    },
     {
       "kind": "GAP",
       "symbol": "RSRUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 1.22,
       "ts": 1793513139
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793513143
     }
   ],
   "trades": [
@@ -1429,6 +1429,19 @@
       "lev": 20,
       "px": 0.01054,
       "pnl": -1.6201,
+      "tf": "1h"
+    },
+    {
+      "symbol": "BEAMXUSDT",
+      "side": "SELL",
+      "entry": 0.005423,
+      "tp": 0.005287425,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.005423,
+      "pnl": 0.0,
       "tf": "1h"
     }
   ],
