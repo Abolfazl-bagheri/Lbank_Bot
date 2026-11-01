@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.2",
-  "updated_at": 1793562544,
+  "updated_at": 1793562554,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "LYNUSDT",
-      "tf": "1h",
-      "gap": 2.29,
-      "ts": 1793526899
-    },
     {
       "kind": "GAP",
       "symbol": "FONEUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 1.18,
       "ts": 1793562544
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793562554
     }
   ],
   "trades": [
@@ -1507,6 +1507,19 @@
       "lev": 20,
       "px": 0.08855,
       "pnl": 4.4822,
+      "tf": "15m"
+    },
+    {
+      "symbol": "CLAUDIAUSDT",
+      "side": "SELL",
+      "entry": 0.002036,
+      "tp": 0.0019851,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.002036,
+      "pnl": 0.0,
       "tf": "15m"
     }
   ],
