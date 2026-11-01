@@ -128,6 +128,31 @@
       "last_leg_candle_ts": 1793550600,
       "dry_run": true,
       "order_id": "PAPER-LYNUSDT-1793550880"
+    },
+    {
+      "symbol": "HOTUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.0003734,
+      "qty": 535618.6395,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.000364065,
+      "tf": "15m",
+      "opened_at": 1793550898,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.0003734,
+          "ts": 1793550898
+        }
+      ],
+      "entry_candle_ts": 1793550600,
+      "last_leg_candle_ts": 1793550600,
+      "dry_run": true,
+      "order_id": "PAPER-HOTUSDT-1793550898"
     }
   ],
   "trade_history": [
@@ -2477,6 +2502,15 @@
       "side": "SELL",
       "upper": 0.07816528525099108,
       "open": 0.07982,
+      "reported": false
+    },
+    {
+      "symbol": "LYNUSDT",
+      "tf": "15m",
+      "candle_ts": 1793550600,
+      "side": "SELL",
+      "upper": 0.016094780223376653,
+      "open": 0.01632,
       "reported": false
     }
   ],
