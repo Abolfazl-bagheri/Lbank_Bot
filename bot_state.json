@@ -33,6 +33,23 @@
       "last_leg_candle_ts": 1793516400,
       "dry_run": true,
       "order_id": "PAPER-BEAMXUSDT-1793513141"
+    },
+    {
+      "symbol": "ZEREBROUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.026784,
+      "qty": 7467.1446,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0261144,
+      "tf": "1h",
+      "opened_at": 1793516805,
+      "adds": 0,
+      "entry_candle_ts": 1793516400,
+      "last_leg_candle_ts": 1793516400,
+      "dry_run": true,
+      "order_id": "PAPER-ZEREBROUSDT-1793516805"
     }
   ],
   "trade_history": [
@@ -1055,26 +1072,6 @@
       "closed_at": 1793519470,
       "close_px": 0.01001,
       "pnl_usdt": 88.97369543025084
-    },
-    {
-      "symbol": "ZEREBROUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.026784,
-      "qty": 7467.1446,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.0261144,
-      "tf": "1h",
-      "opened_at": 1793516805,
-      "adds": 0,
-      "entry_candle_ts": 1793516400,
-      "last_leg_candle_ts": 1793516400,
-      "dry_run": true,
-      "order_id": "PAPER-ZEREBROUSDT-1793516805",
-      "closed_at": 1793519473,
-      "close_px": 0.025794,
-      "pnl_usdt": 7.392473118279554
     }
   ],
   "pending": [
@@ -1819,7 +1816,8 @@
       "side": "SELL",
       "upper": 0.010827496522843595,
       "open": 0.01159,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "BEAMXUSDT",
@@ -1838,7 +1836,8 @@
       "side": "SELL",
       "upper": 0.005744734306817219,
       "open": 0.005816,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "ZEREBROUSDT",
@@ -1847,9 +1846,11 @@
       "side": "SELL",
       "upper": 0.02629859900291495,
       "open": 0.026696,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
+  "paper_days": [],
   "kline_blacklist": {
     "STXSTOCKUSDT": 1793301443,
     "OFCUSDT": 1793301474,
@@ -1913,8 +1914,8 @@
     "HAJIMIUSDT": 1793558243,
     "LONGXIAUSDT": 1793558277
   },
-  "last_trade_report_ts": 1793519475,
+  "last_trade_report_ts": 1793516906,
   "last_daily_report_date": "2026-10-29",
-  "last_known_version": "2.6.0",
+  "last_known_version": "2.6.1",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
