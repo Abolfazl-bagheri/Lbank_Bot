@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.5.1",
-  "updated_at": 1793516804,
+  "updated_at": 1793516807,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "4USDT",
-      "tf": "1h",
-      "gap": 1.9,
-      "ts": 1793465911
-    },
     {
       "kind": "SELL",
       "symbol": "GUNUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 1.81,
       "ts": 1793516804
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793516807
     }
   ],
   "trades": [
@@ -1442,6 +1442,19 @@
       "lev": 20,
       "px": 0.006135,
       "pnl": -37.3735,
+      "tf": "1h"
+    },
+    {
+      "symbol": "ZEREBROUSDT",
+      "side": "SELL",
+      "entry": 0.026784,
+      "tp": 0.0261144,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.026784,
+      "pnl": 0.0,
       "tf": "1h"
     }
   ],
