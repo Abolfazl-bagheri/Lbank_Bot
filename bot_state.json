@@ -58,6 +58,31 @@
       "last_leg_candle_ts": 1793520900,
       "dry_run": true,
       "order_id": "PAPER-FORMUSDT-1793521039"
+    },
+    {
+      "symbol": "PROMUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 5.928,
+      "qty": 33.7382,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 5.7798,
+      "tf": "1h",
+      "opened_at": 1793523903,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 5.928,
+          "ts": 1793523903
+        }
+      ],
+      "entry_candle_ts": 1793523600,
+      "last_leg_candle_ts": 1793523600,
+      "dry_run": true,
+      "order_id": "PAPER-PROMUSDT-1793523903"
     }
   ],
   "trade_history": [
@@ -1891,7 +1916,8 @@
       "side": "SELL",
       "upper": 0.012829757597021403,
       "open": 0.013,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "BEAMXUSDT",
@@ -1900,7 +1926,8 @@
       "side": "SELL",
       "upper": 0.005810446306203682,
       "open": 0.005892,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ESPORTSUSDT",
