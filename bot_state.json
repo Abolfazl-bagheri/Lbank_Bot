@@ -67,6 +67,23 @@
       "last_leg_candle_ts": 1793516400,
       "dry_run": true,
       "order_id": "PAPER-BEAMXUSDT-1793516598"
+    },
+    {
+      "symbol": "ZEREBROUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.026633,
+      "qty": 7509.4807,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.025967175,
+      "tf": "1h",
+      "opened_at": 1793516641,
+      "adds": 0,
+      "entry_candle_ts": 1793516400,
+      "last_leg_candle_ts": 1793516400,
+      "dry_run": true,
+      "order_id": "PAPER-ZEREBROUSDT-1793516641"
     }
   ],
   "trade_history": [
@@ -1894,6 +1911,15 @@
       "open": 0.005775,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "BEAMXUSDT",
+      "tf": "1h",
+      "candle_ts": 1793516400,
+      "side": "SELL",
+      "upper": 0.005747371657578693,
+      "open": 0.005816,
+      "reported": false
     }
   ],
   "kline_blacklist": {
