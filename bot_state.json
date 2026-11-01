@@ -18,23 +18,6 @@
       "order_id": "PAPER-ESPORTSUSDT-1793440963"
     },
     {
-      "symbol": "ZZZUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.010530521916511836,
-      "qty": 170931.6988,
-      "margin": 90.0,
-      "leverage": 20,
-      "tp_price": 0.01026725886859904,
-      "tf": "1h",
-      "opened_at": 1793494991,
-      "adds": 8,
-      "entry_candle_ts": 1793494800,
-      "last_leg_candle_ts": 1793512800,
-      "dry_run": true,
-      "order_id": "PAPER-ZZZUSDT-1793494991"
-    },
-    {
       "symbol": "BEAMXUSDT",
       "side": "SELL",
       "status": "open",
@@ -1069,6 +1052,26 @@
       "closed_at": 1793502544,
       "close_px": 0.05708,
       "pnl_usdt": 6.5740426973907296
+    },
+    {
+      "symbol": "ZZZUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.010530521916511836,
+      "qty": 170931.6988,
+      "margin": 90.0,
+      "leverage": 20,
+      "tp_price": 0.01026725886859904,
+      "tf": "1h",
+      "opened_at": 1793494991,
+      "adds": 8,
+      "entry_candle_ts": 1793494800,
+      "last_leg_candle_ts": 1793512800,
+      "dry_run": true,
+      "order_id": "PAPER-ZZZUSDT-1793494991",
+      "closed_at": 1793519470,
+      "close_px": 0.01001,
+      "pnl_usdt": 88.97369543025084
     }
   ],
   "pending": [
