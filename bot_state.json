@@ -101,6 +101,23 @@
       "last_leg_candle_ts": 1793517300,
       "dry_run": true,
       "order_id": "PAPER-EVAAUSDT-1793517487"
+    },
+    {
+      "symbol": "BEATUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.10204,
+      "qty": 1960.0157,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.09948900000000001,
+      "tf": "15m",
+      "opened_at": 1793517523,
+      "adds": 0,
+      "entry_candle_ts": 1793517300,
+      "last_leg_candle_ts": 1793517300,
+      "dry_run": true,
+      "order_id": "PAPER-BEATUSDT-1793517523"
     }
   ],
   "trade_history": [
@@ -1945,6 +1962,15 @@
       "side": "SELL",
       "upper": 0.026260528110903528,
       "open": 0.026696,
+      "reported": false
+    },
+    {
+      "symbol": "EVAAUSDT",
+      "tf": "15m",
+      "candle_ts": 1793517300,
+      "side": "SELL",
+      "upper": 1.583125046812122,
+      "open": 1.6618,
       "reported": false
     }
   ],
