@@ -50,24 +50,30 @@
       "symbol": "SUPERUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.17493,
-      "qty": 1143.3145,
-      "margin": 10.0,
+      "entry": 0.1761192768263635,
+      "qty": 3406.7821,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.17055675,
+      "tp_price": 0.1717162949057044,
       "tf": "1h",
       "opened_at": 1793523944,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.1771
+      ],
       "steps": [
         {
           "px": 0.17493,
           "ts": 1793523944
+        },
+        {
+          "px": 0.17672,
+          "ts": 1793528435
         }
       ],
       "entry_candle_ts": 1793523600,
-      "last_leg_candle_ts": 1793523600,
+      "last_leg_candle_ts": 1793528435,
       "dry_run": true,
       "order_id": "PAPER-SUPERUSDT-1793523944"
     },
@@ -2065,6 +2071,15 @@
       "open": 0.001795,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "FONEUSDT",
+      "tf": "1h",
+      "candle_ts": 1793527200,
+      "side": "SELL",
+      "upper": 0.001772223188852606,
+      "open": 0.001827,
+      "reported": false
     }
   ],
   "paper_days": [],
@@ -2110,11 +2125,6 @@
     "AINBSCUSDT": 1793524035,
     "BEMUSDT": 1793527592,
     "QUID1USDT": 1793527676,
-    "NEXUSDT": 1793527696,
-    "1000SATSUSDT": 1793527701,
-    "1000WOJAKUSDT": 1793527715,
-    "CZUSDT": 1793527710,
-    "NEIRO1USDT": 1793527717,
     "UBIKUSDT": 1793532812,
     "GALUSDT": 1793533749,
     "SYNUSDT": 1793537208,
@@ -2132,9 +2142,13 @@
     "LONGXIAUSDT": 1793558277,
     "PIPEDOGUSDT": 1793564407,
     "BIO1USDT": 1793567274,
-    "FLOCK1USDT": 1793568744
+    "FLOCK1USDT": 1793568744,
+    "NEIRO1USDT": 1793571468,
+    "1000WOJAKUSDT": 1793571470,
+    "1000SATSUSDT": 1793571471,
+    "CZUSDT": 1793571475
   },
-  "last_trade_report_ts": 1793526614,
+  "last_trade_report_ts": 1793527676,
   "last_daily_report_date": "2026-10-29",
   "last_known_version": "2.6.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
