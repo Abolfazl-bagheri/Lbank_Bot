@@ -50,17 +50,18 @@
       "symbol": "SUPERUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.1761192768263635,
-      "qty": 3406.7821,
-      "margin": 30.0,
+      "entry": 0.17795100388033602,
+      "qty": 7867.3341,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 0.1717162949057044,
+      "tp_price": 0.1735022287833276,
       "tf": "1h",
       "opened_at": 1793523944,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [
-        0.1771
+        0.1771,
+        0.18
       ],
       "steps": [
         {
@@ -70,10 +71,14 @@
         {
           "px": 0.17672,
           "ts": 1793528435
+        },
+        {
+          "px": 0.17935,
+          "ts": 1793529165
         }
       ],
       "entry_candle_ts": 1793523600,
-      "last_leg_candle_ts": 1793528435,
+      "last_leg_candle_ts": 1793529165,
       "dry_run": true,
       "order_id": "PAPER-SUPERUSDT-1793523944"
     },
@@ -2104,6 +2109,15 @@
       "side": "SELL",
       "upper": 0.001772223188852606,
       "open": 0.001827,
+      "reported": false
+    },
+    {
+      "symbol": "IDOLUSDT",
+      "tf": "15m",
+      "candle_ts": 1793529000,
+      "side": "SELL",
+      "upper": 0.021796421486178396,
+      "open": 0.022301,
       "reported": false
     }
   ],
