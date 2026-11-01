@@ -35,23 +35,6 @@
       "order_id": "PAPER-ESPORTSUSDT-1793440963"
     },
     {
-      "symbol": "ZZZUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.00958486677364089,
-      "qty": 83464.9057,
-      "margin": 40.0,
-      "leverage": 20,
-      "tp_price": 0.009345245104299868,
-      "tf": "1h",
-      "opened_at": 1793484361,
-      "adds": 3,
-      "entry_candle_ts": 1793484000,
-      "last_leg_candle_ts": 1793487600,
-      "dry_run": true,
-      "order_id": "PAPER-ZZZUSDT-1793484361"
-    },
-    {
       "symbol": "LAUSDT",
       "side": "SELL",
       "status": "open",
@@ -966,6 +949,26 @@
       "closed_at": 1793490550,
       "close_px": 0.0504,
       "pnl_usdt": 97.28874733844356
+    },
+    {
+      "symbol": "ZZZUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.00958486677364089,
+      "qty": 83464.9057,
+      "margin": 40.0,
+      "leverage": 20,
+      "tp_price": 0.009345245104299868,
+      "tf": "1h",
+      "opened_at": 1793484361,
+      "adds": 3,
+      "entry_candle_ts": 1793484000,
+      "last_leg_candle_ts": 1793487600,
+      "dry_run": true,
+      "order_id": "PAPER-ZZZUSDT-1793484361",
+      "closed_at": 1793494242,
+      "close_px": 0.00934,
+      "pnl_usdt": 20.43778213500414
     }
   ],
   "pending": [
@@ -1699,7 +1702,7 @@
     "GALUSDT": 1793533749,
     "SYNUSDT": 1793537208
   },
-  "last_trade_report_ts": 1793493108,
+  "last_trade_report_ts": 1793494019,
   "last_daily_report_date": "2026-10-29",
   "last_known_version": "2.5.0",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
