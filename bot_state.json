@@ -58,53 +58,6 @@
       "order_id": "PAPER-SUPERUSDT-1793523944"
     },
     {
-      "symbol": "FONEUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.0021331911920790107,
-      "qty": 5906643.5521,
-      "margin": 630.0,
-      "leverage": 20,
-      "tp_price": 0.0020798614122770356,
-      "tf": "1h",
-      "opened_at": 1793524579,
-      "adds": 5,
-      "last_leg_margin": 320.0,
-      "used_res_levels": [
-        0.002234
-      ],
-      "steps": [
-        {
-          "px": 0.00171,
-          "ts": 1793524579
-        },
-        {
-          "px": 0.00179,
-          "ts": 1793525478
-        },
-        {
-          "px": 0.0018,
-          "ts": 1793527510
-        },
-        {
-          "px": 0.00222,
-          "ts": 1793529977
-        },
-        {
-          "px": 0.00209,
-          "ts": 1793531152
-        },
-        {
-          "px": 0.00223,
-          "ts": 1793532756
-        }
-      ],
-      "entry_candle_ts": 1793524500,
-      "last_leg_candle_ts": 1793532756,
-      "dry_run": true,
-      "order_id": "PAPER-FONEUSDT-1793524579"
-    },
-    {
       "symbol": "AVAAIUSDT",
       "side": "SELL",
       "status": "open",
@@ -1402,6 +1355,56 @@
       "closed_at": 1793539082,
       "close_px": 0.18984,
       "pnl_usdt": 9.20603015075377
+    },
+    {
+      "symbol": "FONEUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.0021331911920790107,
+      "qty": 5906643.5521,
+      "margin": 630.0,
+      "leverage": 20,
+      "tp_price": 0.0020798614122770356,
+      "tf": "1h",
+      "opened_at": 1793524579,
+      "adds": 5,
+      "last_leg_margin": 320.0,
+      "used_res_levels": [
+        0.002234
+      ],
+      "steps": [
+        {
+          "px": 0.00171,
+          "ts": 1793524579
+        },
+        {
+          "px": 0.00179,
+          "ts": 1793525478
+        },
+        {
+          "px": 0.0018,
+          "ts": 1793527510
+        },
+        {
+          "px": 0.00222,
+          "ts": 1793529977
+        },
+        {
+          "px": 0.00209,
+          "ts": 1793531152
+        },
+        {
+          "px": 0.00223,
+          "ts": 1793532756
+        }
+      ],
+      "entry_candle_ts": 1793524500,
+      "last_leg_candle_ts": 1793532756,
+      "dry_run": true,
+      "order_id": "PAPER-FONEUSDT-1793524579",
+      "closed_at": 1793539994,
+      "close_px": 0.00204,
+      "pnl_usdt": 550.4471538020682
     }
   ],
   "pending": [
@@ -2411,6 +2414,15 @@
       "side": "SELL",
       "upper": 0.014888647981399172,
       "open": 0.01515,
+      "reported": false
+    },
+    {
+      "symbol": "ZZZUSDT",
+      "tf": "15m",
+      "candle_ts": 1793539800,
+      "side": "SELL",
+      "upper": 0.010560855694438645,
+      "open": 0.01069,
       "reported": false
     }
   ],
