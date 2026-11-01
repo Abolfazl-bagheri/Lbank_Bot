@@ -103,6 +103,31 @@
       "last_leg_candle_ts": 1793543925,
       "dry_run": true,
       "order_id": "PAPER-MOVRUSDT-1793541912"
+    },
+    {
+      "symbol": "LYNUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.01641,
+      "qty": 12187.6904,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.01599975,
+      "tf": "15m",
+      "opened_at": 1793550880,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.01641,
+          "ts": 1793550880
+        }
+      ],
+      "entry_candle_ts": 1793550600,
+      "last_leg_candle_ts": 1793550600,
+      "dry_run": true,
+      "order_id": "PAPER-LYNUSDT-1793550880"
     }
   ],
   "trade_history": [
@@ -2520,7 +2545,7 @@
     "BEMUSDT": 1793589720,
     "GALUSDT": 1793591485
   },
-  "last_trade_report_ts": 1793548299,
+  "last_trade_report_ts": 1793550045,
   "last_daily_report_date": "2026-10-29",
   "last_known_version": "2.6.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
