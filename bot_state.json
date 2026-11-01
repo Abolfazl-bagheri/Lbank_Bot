@@ -89,35 +89,6 @@
       "order_id": "PAPER-AVAAIUSDT-1793531182"
     },
     {
-      "symbol": "APRUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.07185001435898591,
-      "qty": 8350.729,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.07005376400001126,
-      "tf": "1h",
-      "opened_at": 1793534603,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.06757,
-          "ts": 1793534603
-        },
-        {
-          "px": 0.0742,
-          "ts": 1793538289
-        }
-      ],
-      "entry_candle_ts": 1793534400,
-      "last_leg_candle_ts": 1793538000,
-      "dry_run": true,
-      "order_id": "PAPER-APRUSDT-1793534603"
-    },
-    {
       "symbol": "ZZZUSDT",
       "side": "SELL",
       "status": "open",
@@ -1433,6 +1404,38 @@
       "closed_at": 1793542096,
       "close_px": 0.0007904,
       "pnl_usdt": 6.060606060606062
+    },
+    {
+      "symbol": "APRUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.07185001435898591,
+      "qty": 8350.729,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 0.07005376400001126,
+      "tf": "1h",
+      "opened_at": 1793534603,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.06757,
+          "ts": 1793534603
+        },
+        {
+          "px": 0.0742,
+          "ts": 1793538289
+        }
+      ],
+      "entry_candle_ts": 1793534400,
+      "last_leg_candle_ts": 1793538000,
+      "dry_run": true,
+      "order_id": "PAPER-APRUSDT-1793534603",
+      "closed_at": 1793542655,
+      "close_px": 0.06873,
+      "pnl_usdt": 26.054394450617473
     }
   ],
   "pending": [
@@ -2511,9 +2514,7 @@
     "QUID1USDT": 1793527676,
     "GALUSDT": 1793533749,
     "SYNUSDT": 1793537208,
-    "UP2USDT": 1793540926,
     "OROCHIUSDT": 1793541034,
-    "STONKBROKERUSDT": 1793541846,
     "QUACKAIUSDT": 1793545678,
     "BIANRENSHENGUSDT": 1793549283,
     "NIULAIUSDT": 1793551933,
@@ -2531,9 +2532,11 @@
     "AINBSCUSDT": 1793575002,
     "UBIKUSDT": 1793577941,
     "NEXUSDT": 1793578039,
-    "MANCERUSDT": 1793582250
+    "MANCERUSDT": 1793582250,
+    "STONKBROKERUSDT": 1793585799,
+    "TRUMPSOLUSDT": 1793585853
   },
-  "last_trade_report_ts": 1793541035,
+  "last_trade_report_ts": 1793542107,
   "last_daily_report_date": "2026-10-29",
   "last_known_version": "2.6.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
