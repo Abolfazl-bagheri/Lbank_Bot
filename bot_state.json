@@ -38,16 +38,16 @@
       "symbol": "ZZZUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.010089008451559025,
-      "qty": 59470.660800000005,
-      "margin": 30.0,
+      "entry": 0.010275774320898254,
+      "qty": 77853.01370000001,
+      "margin": 40.0,
       "leverage": 20,
-      "tp_price": 0.009836783240270049,
+      "tp_price": 0.010018879962875798,
       "tf": "1h",
       "opened_at": 1793494991,
-      "adds": 2,
+      "adds": 3,
       "entry_candle_ts": 1793494800,
-      "last_leg_candle_ts": 1793498400,
+      "last_leg_candle_ts": 1793502000,
       "dry_run": true,
       "order_id": "PAPER-ZZZUSDT-1793494991"
     },
@@ -1720,7 +1720,8 @@
       "side": "SELL",
       "upper": 0.05796662354073948,
       "open": 0.05876,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "AEONUSDT",
@@ -1729,7 +1730,8 @@
       "side": "SELL",
       "upper": 0.025803860669266394,
       "open": 0.02658,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "kline_blacklist": {
@@ -1759,7 +1761,6 @@
     "CVXSTOCKUSDT": 1793413084,
     "COPSTOCKUSDT": 1793413150,
     "OXYUSDT": 1793417641,
-    "QUACKAIUSDT": 1793434591,
     "HK0700USDT": 1793434646,
     "LONGXIAUSDT": 1793441916,
     "BARUSDT": 1793444715,
@@ -1772,7 +1773,6 @@
     "CAPETHUSDT": 1793483293,
     "TOADUSDT": 1793485166,
     "FIGHT1USDT": 1793487917,
-    "B3USDT": 1793487945,
     "GSTOCKUSDT": 1793498719,
     "AXLUSDT": 1793502358,
     "WOTAMALAILEUSDT": 1793506829,
@@ -1798,8 +1798,8 @@
     "OROCHIUSDT": 1793541034,
     "STONKBROKERUSDT": 1793541846
   },
-  "last_trade_report_ts": 1793498694,
+  "last_trade_report_ts": 1793496943,
   "last_daily_report_date": "2026-10-29",
-  "last_known_version": "2.5.0",
+  "last_known_version": "2.5.1",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
