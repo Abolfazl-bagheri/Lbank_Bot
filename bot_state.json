@@ -167,24 +167,30 @@
       "symbol": "STARUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.03845,
-      "qty": 5201.5605,
-      "margin": 10.0,
+      "entry": 0.0382628791175019,
+      "qty": 15680.9946,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.037488749999999994,
+      "tp_price": 0.03730630713956435,
       "tf": "15m",
       "opened_at": 1793552539,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.03832
+      ],
       "steps": [
         {
           "px": 0.03845,
           "ts": 1793552539
+        },
+        {
+          "px": 0.03817,
+          "ts": 1793562607
         }
       ],
       "entry_candle_ts": 1793552400,
-      "last_leg_candle_ts": 1793552400,
+      "last_leg_candle_ts": 1793562607,
       "dry_run": true,
       "order_id": "PAPER-STARUSDT-1793552539"
     },
