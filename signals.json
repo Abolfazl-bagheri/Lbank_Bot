@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.5.1",
-  "updated_at": 1793509426,
+  "updated_at": 1793509430,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "RSRUSDT",
-      "tf": "15m",
-      "gap": 6.68,
-      "ts": 1793460452
-    },
     {
       "kind": "GAP",
       "symbol": "HYPERUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 1.82,
       "ts": 1793509426
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793509430
     }
   ],
   "trades": [
@@ -1441,6 +1441,19 @@
       "margin": 10.0,
       "lev": 20,
       "px": 0.004441,
+      "pnl": 0.0,
+      "tf": "15m"
+    },
+    {
+      "symbol": "JCTUSDT",
+      "side": "SELL",
+      "entry": 0.00545,
+      "tp": 0.00531375,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.00545,
       "pnl": 0.0,
       "tf": "15m"
     }
