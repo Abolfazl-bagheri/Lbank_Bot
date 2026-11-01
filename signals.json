@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.5.1",
-  "updated_at": 1793517485,
+  "updated_at": 1793517488,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "LITUSDT",
-      "tf": "1h",
-      "gap": 1.06,
-      "ts": 1793469392
-    },
     {
       "kind": "SELL",
       "symbol": "FRONGUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 3.52,
       "ts": 1793517485
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793517488
     }
   ],
   "trades": [
@@ -1469,6 +1469,19 @@
       "px": 0.02628,
       "pnl": 2.6508,
       "tf": "1h"
+    },
+    {
+      "symbol": "EVAAUSDT",
+      "side": "SELL",
+      "entry": 1.6409,
+      "tp": 1.5998775,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 1.6409,
+      "pnl": 0.0,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
