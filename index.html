@@ -129,7 +129,7 @@ s.r u:last-child{animation:ri .45s ease both}
 @keyframes ro{to{transform:translateY(-100%);opacity:0}}@keyframes ri{from{transform:translateY(100%);opacity:0}}
 .toast{position:fixed;bottom:calc(18px + env(safe-area-inset-bottom,0px));left:50%;transform:translate(-50%,30px);opacity:0;background:#141824;border:1px solid var(--b);border-radius:14px;padding:10px 18px;transition:.35s;z-index:20;pointer-events:none}.toast.on{opacity:1;transform:translate(-50%,0)}
 .pgrid .pcard{order:0}
-#pcs.stale .pcard{opacity:.42;filter:grayscale(.5)}.live.stale{background:rgba(255,181,71,.2);color:var(--amb)}
+#pcs.stale .pcard{border-top-color:var(--amb)}.live.stale{background:rgba(255,181,71,.2);color:var(--amb)}
 .rng.pp{background:linear-gradient(90deg,rgba(255,255,255,.14),#2de2a6)}
 .fh{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:12px}.fh h2{margin:0}
 @media(max-width:560px){.pcard{padding:10px;border-radius:16px}.ph{margin-bottom:8px}.pn{font-size:16px}.kv{gap:6px}.kv span{font-size:10px}.kv b{font-size:12.5px}.rng{margin:12px 4px 6px}.rl{font-size:10px}.eqv{font-size:34px}.mg{grid-template-columns:repeat(2,1fr);gap:8px}.mg div{padding:6px 10px}.mg b{font-size:14px}.sg{padding:10px 12px}}
@@ -281,7 +281,7 @@ function agoS(ts){var s=Math.max(0,now()-ts);return s<60?s+" ثانیه پیش":
 function hdr(){var ok=S.lvOn||gok;$("hb").className="hb"+(ok?"":" off");
  setT($("st"),S.last?"آخرین رویداد ربات: "+agoS(S.last)+(gok?" · Gate ✓":""):gok?"قیمت Gate زنده · منتظر رویداد ربات":"در حال اتصال…");
  $("mode").textContent=mode()+(S.d.version?" · v"+S.d.version:"");
- var st=false;if(Array.isArray(S.pos)){var pa=now()-S.posTs;st=pa>180;$("posLive").textContent=st?"STALE":"LIVE";$("posLive").className=st?"live stale":"live";setT($("posAge"),agoS(S.posTs))}
+ var st=false;if(Array.isArray(S.pos)){var pa=now()-S.posTs;st=pa>Math.min(1800,Math.max(180,3*(S.pint||0)));$("posLive").textContent=st?"STALE":"LIVE";$("posLive").className=st?"live stale":"live";setT($("posAge"),agoS(S.posTs))}
  $("pcs").className=st?"stale":""}
 function ensure(){S.sig.slice(0,MAXN*2).forEach(function(s){if(now()-s.ts<40*PER[s.tf]&&S.st[s.key]!=="filled")loadC(s.symbol,s.tf)});actList().forEach(function(s){gsub(s.symbol,s.tf)})}
 function dirty(){if(!tm)tm=setTimeout(function(){tm=0;renderAll()},150)}
@@ -311,10 +311,10 @@ function onEv(v,hist){
   var rs=v.reset===true||(P.length===0&&+v.start===1000&&(v.realized==null||+v.realized===0||+v.closed_n===0));
   if(v.start!=null||v.realized!=null||v.lev!=null||v.closed_n!=null||v.mode!=null)S.ex={start:v.start,lev:v.lev,realized:rs?0:v.realized,closed_n:rs?0:v.closed_n,mode:v.mode};
   if(rs){S.d.trades=[];S.d.closed={profit:0,loss:0,count:0}}
-  S.pos=P;S.posTs=v.ts||now();dirty()}}
+  var tt=hist?(v._t||now()):now();if(S.posT0!=null&&tt>S.posT0){var dd=tt-S.posT0;S.pint=S.pint?S.pint*.7+dd*.3:dd}S.posT0=tt;S.pos=P;S.posTs=tt;dirty()}}
 function sse(){if(!window.EventSource)return;var t0=Date.now()/1000,es=new EventSource("https://ntfy.sh/"+LIVE_TOPIC+"/sse?since=12h");
  es.onmessage=function(e){var m,v;try{m=JSON.parse(e.data)}catch(x){return}if(m.event!=="message")return;try{v=JSON.parse(m.message)}catch(x){return}
-  v.ts=v.ts||m.time;S.lvOn=true;S.last=Math.max(S.last,m.time||now());onEv(v,m.time<t0-3)}}
+  v.ts=v.ts||m.time;v._t=m.time||now();S.lvOn=true;S.last=Math.max(S.last,m.time||now());onEv(v,m.time<t0-3)}}
 function boot(){J("signals.json").catch(function(){return J("https://raw.githubusercontent.com/"+REPO+"/main/signals.json")}).then(function(j){S.d=j;(j.signals||[]).forEach(function(s){addSig(s,true)})}).catch(function(){}).then(function(){S.ready=1;dirty()})}
 function draw(cv,c,ubm){var x=cv.getContext("2d"),W=cv.width,H=cv.height,mn=1e99,mx=-1e99,i;
  c.forEach(function(k){mn=Math.min(mn,k[2],k[6]);mx=Math.max(mx,k[1],k[4])});
