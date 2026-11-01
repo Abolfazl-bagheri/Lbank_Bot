@@ -188,6 +188,31 @@
       "last_leg_candle_ts": 1793539800,
       "dry_run": true,
       "order_id": "PAPER-TAGUSDT-1793539883"
+    },
+    {
+      "symbol": "ZZZUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.01072,
+      "qty": 18656.7164,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.010452,
+      "tf": "15m",
+      "opened_at": 1793539904,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.01072,
+          "ts": 1793539904
+        }
+      ],
+      "entry_candle_ts": 1793539800,
+      "last_leg_candle_ts": 1793539800,
+      "dry_run": true,
+      "order_id": "PAPER-ZZZUSDT-1793539904"
     }
   ],
   "trade_history": [
@@ -2377,6 +2402,15 @@
       "side": "SELL",
       "upper": 0.000803268974371323,
       "open": 0.0008133,
+      "reported": false
+    },
+    {
+      "symbol": "ESPORTSUSDT",
+      "tf": "15m",
+      "candle_ts": 1793539800,
+      "side": "SELL",
+      "upper": 0.014888647981399172,
+      "open": 0.01515,
       "reported": false
     }
   ],
