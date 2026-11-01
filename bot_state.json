@@ -38,24 +38,28 @@
       "symbol": "FORMUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.2133,
-      "qty": 937.6465,
-      "margin": 10.0,
+      "entry": 0.2126322898757933,
+      "qty": 2821.7727,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.20796749999999997,
-      "tf": "15m",
+      "tp_price": 0.20731648262889846,
+      "tf": "1h",
       "opened_at": 1793521039,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 0.2133,
           "ts": 1793521039
+        },
+        {
+          "px": 0.2123,
+          "ts": 1793523970
         }
       ],
       "entry_candle_ts": 1793520900,
-      "last_leg_candle_ts": 1793520900,
+      "last_leg_candle_ts": 1793523600,
       "dry_run": true,
       "order_id": "PAPER-FORMUSDT-1793521039"
     },
@@ -1980,6 +1984,15 @@
       "side": "SELL",
       "upper": 5.946921426728792,
       "open": 6.106,
+      "reported": false
+    },
+    {
+      "symbol": "SUPERUSDT",
+      "tf": "1h",
+      "candle_ts": 1793523600,
+      "side": "SELL",
+      "upper": 0.17384163398023045,
+      "open": 0.17608,
       "reported": false
     }
   ],
