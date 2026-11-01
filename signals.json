@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.5.1",
-  "updated_at": 1793516596,
+  "updated_at": 1793516599,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "ZCATUSDT",
-      "tf": "15m",
-      "gap": 1.4,
-      "ts": 1793467657
-    },
     {
       "kind": "GAP",
       "symbol": "ANSEMUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 2.54,
       "ts": 1793516596
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793516599
     }
   ],
   "trades": [
@@ -1443,6 +1443,19 @@
       "px": 0.006004,
       "pnl": -103.7706,
       "tf": "15m"
+    },
+    {
+      "symbol": "BEAMXUSDT",
+      "side": "SELL",
+      "entry": 0.005897,
+      "tp": 0.005749575,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.005897,
+      "pnl": 0.0,
+      "tf": "1h"
     }
   ],
   "start": 1000.0,
