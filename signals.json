@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.2",
-  "updated_at": 1793569817,
+  "updated_at": 1793570694,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "STANDARDUSDT",
-      "tf": "15m",
-      "gap": 1.42,
-      "ts": 1793529813
-    },
     {
       "kind": "SELL",
       "symbol": "FONEUSDT",
@@ -1402,34 +1395,27 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1793569817
-    }
-  ],
-  "trades": [
+    },
     {
-      "symbol": "AEONUSDT",
-      "side": "SELL",
-      "entry": 0.0268,
-      "tp": 0.02613,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.0262,
-      "pnl": 4.4776,
-      "tf": "15m"
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793570694
     }
   ],
+  "trades": [],
   "start": 1000.0,
-  "realized": 0,
-  "closed_n": 0,
-  "open_upnl": 4.4776,
-  "equity": 1004.4776,
+  "realized": 6.7164,
+  "closed_n": 1,
+  "open_upnl": 0,
+  "equity": 1006.7164,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 0,
+    "profit": 6.7164,
     "loss": 0,
-    "count": 0
+    "count": 1
   }
 }
