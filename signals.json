@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.5.1",
-  "updated_at": 1793504419,
+  "updated_at": 1793505143,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "FFUSDT",
-      "tf": "15m",
-      "gap": 3.02,
-      "ts": 1793456100
-    },
     {
       "kind": "GAP",
       "symbol": "COWUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "4h",
       "gap": 4.88,
       "ts": 1793504419
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793505143
     }
   ],
   "trades": [
@@ -1414,29 +1414,29 @@
       "pele": 21,
       "margin": 210.0,
       "lev": 20,
-      "px": 0.010057,
-      "pnl": -660.3331,
+      "px": 0.010774,
+      "pnl": -1006.8439,
       "tf": "1h"
     },
     {
       "symbol": "ZZZUSDT",
       "side": "SELL",
-      "entry": 0.010275774320898254,
-      "tp": 0.010018879962875798,
-      "adds": 3,
-      "pele": 4,
-      "margin": 40.0,
+      "entry": 0.010394833439851961,
+      "tp": 0.010134962603855662,
+      "adds": 4,
+      "pele": 5,
+      "margin": 50.0,
       "lev": 20,
-      "px": 0.01112,
-      "pnl": -65.7255,
+      "px": 0.0109,
+      "pnl": -48.5979,
       "tf": "1h"
     }
   ],
   "start": 1000.0,
   "realized": 2299.1501,
   "closed_n": 50,
-  "open_upnl": -726.0586,
-  "equity": 2573.0915,
+  "open_upnl": -1055.4418,
+  "equity": 2243.7083,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
