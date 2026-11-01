@@ -134,35 +134,6 @@
       "order_id": "PAPER-FONEUSDT-1793524579"
     },
     {
-      "symbol": "IDOLUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.023212138223667373,
-      "qty": 25848.5451,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.02263183476807569,
-      "tf": "15m",
-      "opened_at": 1793529080,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.022369,
-          "ts": 1793529080
-        },
-        {
-          "px": 0.023658,
-          "ts": 1793529990
-        }
-      ],
-      "entry_candle_ts": 1793529000,
-      "last_leg_candle_ts": 1793529900,
-      "dry_run": true,
-      "order_id": "PAPER-IDOLUSDT-1793529080"
-    },
-    {
       "symbol": "AVAAIUSDT",
       "side": "SELL",
       "status": "open",
@@ -1289,6 +1260,38 @@
       "closed_at": 1793525570,
       "close_px": 5.767,
       "pnl_usdt": 5.431848852901471
+    },
+    {
+      "symbol": "IDOLUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.023212138223667373,
+      "qty": 25848.5451,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 0.02263183476807569,
+      "tf": "15m",
+      "opened_at": 1793529080,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.022369,
+          "ts": 1793529080
+        },
+        {
+          "px": 0.023658,
+          "ts": 1793529990
+        }
+      ],
+      "entry_candle_ts": 1793529000,
+      "last_leg_candle_ts": 1793529900,
+      "dry_run": true,
+      "order_id": "PAPER-IDOLUSDT-1793529080",
+      "closed_at": 1793532935,
+      "close_px": 0.021569,
+      "pnl_usdt": 42.47273235669453
     }
   ],
   "pending": [
@@ -2289,7 +2292,7 @@
     "CZUSDT": 1793571475,
     "AINBSCUSDT": 1793575002
   },
-  "last_trade_report_ts": 1793531323,
+  "last_trade_report_ts": 1793532780,
   "last_daily_report_date": "2026-10-29",
   "last_known_version": "2.6.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
