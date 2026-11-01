@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.2",
-  "updated_at": 1793550897,
+  "updated_at": 1793550904,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "APRUSDT",
-      "tf": "15m",
-      "gap": 1.13,
-      "ts": 1793522646
-    },
     {
       "kind": "GAP",
       "symbol": "DNAUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 0.65,
       "ts": 1793550897
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793550904
     }
   ],
   "trades": [
@@ -1467,6 +1467,19 @@
       "margin": 10.0,
       "lev": 20,
       "px": 0.01641,
+      "pnl": 0.0,
+      "tf": "15m"
+    },
+    {
+      "symbol": "HOTUSDT",
+      "side": "SELL",
+      "entry": 0.0003734,
+      "tp": 0.000364065,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.0003734,
       "pnl": 0.0,
       "tf": "15m"
     }
