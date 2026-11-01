@@ -21,35 +21,52 @@
       "symbol": "ZZZUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.010530521916511836,
-      "qty": 170931.6988,
-      "margin": 90.0,
+      "entry": 0.010564059542128525,
+      "qty": 189321.15930000003,
+      "margin": 100.0,
       "leverage": 20,
-      "tp_price": 0.01026725886859904,
+      "tp_price": 0.010299958053575312,
       "tf": "1h",
       "opened_at": 1793494991,
-      "adds": 8,
+      "adds": 9,
       "entry_candle_ts": 1793494800,
-      "last_leg_candle_ts": 1793512800,
+      "last_leg_candle_ts": 1793513700,
       "dry_run": true,
       "order_id": "PAPER-ZZZUSDT-1793494991"
+    },
+    {
+      "symbol": "JCTUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.005550876610609121,
+      "qty": 180151.7257,
+      "margin": 50.0,
+      "leverage": 20,
+      "tp_price": 0.005412104695343893,
+      "tf": "15m",
+      "opened_at": 1793509428,
+      "adds": 4,
+      "entry_candle_ts": 1793509200,
+      "last_leg_candle_ts": 1793512800,
+      "dry_run": true,
+      "order_id": "PAPER-JCTUSDT-1793509428"
     },
     {
       "symbol": "BEAMXUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.005423,
-      "qty": 36879.9557,
+      "entry": 0.005419,
+      "qty": 36907.1784,
       "margin": 10.0,
       "leverage": 20,
-      "tp_price": 0.005287425,
+      "tp_price": 0.005283525,
       "tf": "1h",
-      "opened_at": 1793513141,
+      "opened_at": 1793512987,
       "adds": 0,
       "entry_candle_ts": 1793512800,
       "last_leg_candle_ts": 1793512800,
       "dry_run": true,
-      "order_id": "PAPER-BEAMXUSDT-1793513141"
+      "order_id": "PAPER-BEAMXUSDT-1793512987"
     }
   ],
   "trade_history": [
@@ -1052,6 +1069,26 @@
       "closed_at": 1793502544,
       "close_px": 0.05708,
       "pnl_usdt": 6.5740426973907296
+    },
+    {
+      "symbol": "REZUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.004441,
+      "qty": 45034.902,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.004329975,
+      "tf": "15m",
+      "opened_at": 1793509332,
+      "adds": 0,
+      "entry_candle_ts": 1793509200,
+      "last_leg_candle_ts": 1793509200,
+      "dry_run": true,
+      "order_id": "PAPER-REZUSDT-1793509332",
+      "closed_at": 1793510404,
+      "close_px": 0.004294,
+      "pnl_usdt": 6.620130601215922
     }
   ],
   "pending": [
@@ -1799,11 +1836,31 @@
       "reported": false
     },
     {
+      "symbol": "REZUSDT",
+      "tf": "15m",
+      "candle_ts": 1793509200,
+      "side": "SELL",
+      "upper": 0.004384964714332465,
+      "open": 0.004445,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "JCTUSDT",
+      "tf": "15m",
+      "candle_ts": 1793509200,
+      "side": "SELL",
+      "upper": 0.00535100545843089,
+      "open": 0.005424,
+      "reported": true,
+      "filled": true
+    },
+    {
       "symbol": "BEAMXUSDT",
       "tf": "1h",
       "candle_ts": 1793512800,
       "side": "SELL",
-      "upper": 0.005357063873713778,
+      "upper": 0.005342579066115028,
       "open": 0.005413,
       "reported": false
     }
@@ -1848,7 +1905,6 @@
     "AXLUSDT": 1793502358,
     "WOTAMALAILEUSDT": 1793506829,
     "DODOUSDT": 1793508698,
-    "HAJIMIUSDT": 1793513117,
     "ARROWUSDT": 1793516639,
     "AINBSCUSDT": 1793524035,
     "BEMUSDT": 1793527592,
@@ -1870,9 +1926,10 @@
     "BIANRENSHENGUSDT": 1793549283,
     "NIULAIUSDT": 1793551933,
     "AI1USDT": 1793551943,
-    "GSTOCKUSDT": 1793552840
+    "GSTOCKUSDT": 1793552634,
+    "HAJIMIUSDT": 1793557199
   },
-  "last_trade_report_ts": 1793509688,
+  "last_trade_report_ts": 1793512275,
   "last_daily_report_date": "2026-10-29",
   "last_known_version": "2.5.1",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
