@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.2",
-  "updated_at": 1793538263,
+  "updated_at": 1793538270,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "BONERUSDT",
-      "tf": "15m",
-      "gap": 5.11,
-      "ts": 1793510027
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 3.43,
       "ts": 1793538263
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793538270
     }
   ],
   "trades": [
@@ -1455,6 +1455,19 @@
       "lev": 20,
       "px": 0.006987,
       "pnl": 2.38,
+      "tf": "1h"
+    },
+    {
+      "symbol": "APRUSDT",
+      "side": "SELL",
+      "entry": 0.07362,
+      "tp": 0.07177950000000001,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.07362,
+      "pnl": 0.0,
       "tf": "1h"
     }
   ],
