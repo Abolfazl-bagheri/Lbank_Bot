@@ -166,24 +166,30 @@
       "symbol": "AVAAIUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.0071,
-      "qty": 28169.0141,
-      "margin": 10.0,
+      "entry": 0.007014825485324677,
+      "qty": 85533.13279999999,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.0069225,
+      "tp_price": 0.0068394548481915595,
       "tf": "1h",
       "opened_at": 1793531182,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.006987
+      ],
       "steps": [
         {
           "px": 0.0071,
           "ts": 1793531182
+        },
+        {
+          "px": 0.006973,
+          "ts": 1793532766
         }
       ],
       "entry_candle_ts": 1793530800,
-      "last_leg_candle_ts": 1793530800,
+      "last_leg_candle_ts": 1793532766,
       "dry_run": true,
       "order_id": "PAPER-AVAAIUSDT-1793531182"
     }
