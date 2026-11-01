@@ -134,6 +134,31 @@
       "last_leg_candle_ts": 1793532766,
       "dry_run": true,
       "order_id": "PAPER-AVAAIUSDT-1793531182"
+    },
+    {
+      "symbol": "APRUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.07362,
+      "qty": 2716.6531,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.07177950000000001,
+      "tf": "1h",
+      "opened_at": 1793538264,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.07362,
+          "ts": 1793538264
+        }
+      ],
+      "entry_candle_ts": 1793538000,
+      "last_leg_candle_ts": 1793538000,
+      "dry_run": true,
+      "order_id": "PAPER-APRUSDT-1793538264"
     }
   ],
   "trade_history": [
@@ -2208,7 +2233,8 @@
       "side": "SELL",
       "upper": 0.17986308069005344,
       "open": 0.18242,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "FONEUSDT",
@@ -2217,7 +2243,8 @@
       "side": "SELL",
       "upper": 0.00198907436253152,
       "open": 0.002109,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "AVAAIUSDT",
@@ -2226,7 +2253,8 @@
       "side": "SELL",
       "upper": 0.0070799275119848345,
       "open": 0.007179,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [],
@@ -2295,7 +2323,7 @@
     "AINBSCUSDT": 1793575002,
     "UBIKUSDT": 1793578777
   },
-  "last_trade_report_ts": 1793532780,
+  "last_trade_report_ts": 1793536572,
   "last_daily_report_date": "2026-10-29",
   "last_known_version": "2.6.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
