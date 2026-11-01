@@ -207,6 +207,31 @@
       "last_leg_candle_ts": 1793561400,
       "dry_run": true,
       "order_id": "PAPER-ARIAUSDT-1793561639"
+    },
+    {
+      "symbol": "CLAUDIAUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.002036,
+      "qty": 98231.8271,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0019851,
+      "tf": "15m",
+      "opened_at": 1793562546,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.002036,
+          "ts": 1793562546
+        }
+      ],
+      "entry_candle_ts": 1793562300,
+      "last_leg_candle_ts": 1793562300,
+      "dry_run": true,
+      "order_id": "PAPER-CLAUDIAUSDT-1793562546"
     }
   ],
   "trade_history": [
@@ -2617,6 +2642,16 @@
       "upper": 0.03768476415956888,
       "open": 0.03847,
       "reported": false
+    },
+    {
+      "symbol": "ARIAUSDT",
+      "tf": "15m",
+      "candle_ts": 1793561400,
+      "side": "SELL",
+      "upper": 0.0893479939256394,
+      "open": 0.09052,
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [],
@@ -2652,7 +2687,6 @@
     "LWLGUSDT": 1793464452,
     "PORTALUSDT": 1793471666,
     "CAPETHUSDT": 1793483293,
-    "FIGHT1USDT": 1793487917,
     "AXLUSDT": 1793502358,
     "DODOUSDT": 1793508698,
     "ARROWUSDT": 1793516639,
@@ -2661,7 +2695,6 @@
     "QUACKAIUSDT": 1793545678,
     "BIANRENSHENGUSDT": 1793549283,
     "AI1USDT": 1793551943,
-    "HAJIMIUSDT": 1793558243,
     "LONGXIAUSDT": 1793558277,
     "PIPEDOGUSDT": 1793564407,
     "BIO1USDT": 1793567274,
@@ -2678,9 +2711,11 @@
     "UP2USDT": 1793587113,
     "BEMUSDT": 1793589720,
     "GALUSDT": 1793591485,
-    "GSTOCKUSDT": 1793596922
+    "GSTOCKUSDT": 1793596922,
+    "APROUSDT": 1793604906,
+    "TOADUSDT": 1793604936
   },
-  "last_trade_report_ts": 1793553754,
+  "last_trade_report_ts": 1793561749,
   "last_daily_report_date": "2026-10-29",
   "last_known_version": "2.6.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
