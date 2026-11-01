@@ -163,6 +163,31 @@
       "last_leg_candle_ts": 1793532766,
       "dry_run": true,
       "order_id": "PAPER-AVAAIUSDT-1793531182"
+    },
+    {
+      "symbol": "APRUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.06757,
+      "qty": 2959.8934,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.06588075,
+      "tf": "1h",
+      "opened_at": 1793534603,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.06757,
+          "ts": 1793534603
+        }
+      ],
+      "entry_candle_ts": 1793534400,
+      "last_leg_candle_ts": 1793534400,
+      "dry_run": true,
+      "order_id": "PAPER-APRUSDT-1793534603"
     }
   ],
   "trade_history": [
@@ -2096,7 +2121,8 @@
       "side": "SELL",
       "upper": 0.01225805675389918,
       "open": 0.013,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "FORMUSDT",
@@ -2205,7 +2231,8 @@
       "side": "SELL",
       "upper": 0.17986308069005344,
       "open": 0.18242,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "FONEUSDT",
@@ -2214,7 +2241,8 @@
       "side": "SELL",
       "upper": 0.00198907436253152,
       "open": 0.002109,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "AVAAIUSDT",
@@ -2223,7 +2251,8 @@
       "side": "SELL",
       "upper": 0.0070799275119848345,
       "open": 0.007179,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [],
@@ -2268,7 +2297,6 @@
     "ARROWUSDT": 1793516639,
     "BEMUSDT": 1793527592,
     "QUID1USDT": 1793527676,
-    "UBIKUSDT": 1793532812,
     "GALUSDT": 1793533749,
     "SYNUSDT": 1793537208,
     "MANCERUSDT": 1793538338,
