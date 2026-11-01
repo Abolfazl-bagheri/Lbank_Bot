@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.2",
-  "updated_at": 1793541869,
+  "updated_at": 1793541876,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "BIGTIMEUSDT",
-      "tf": "1h",
-      "gap": 1.72,
-      "ts": 1793516175
-    },
     {
       "kind": "GAP",
       "symbol": "SUPERUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 0.68,
       "ts": 1793541869
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793541876
     }
   ],
   "trades": [
@@ -1447,11 +1447,11 @@
     {
       "symbol": "APRUSDT",
       "side": "SELL",
-      "entry": 0.07362,
-      "tp": 0.07177950000000001,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
+      "entry": 0.07317197420436697,
+      "tp": 0.0713426748492578,
+      "adds": 1,
+      "pele": 2,
+      "margin": 30.0,
       "lev": 20,
       "px": 0.07295,
       "pnl": 1.8202,
