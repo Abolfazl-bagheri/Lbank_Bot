@@ -108,24 +108,28 @@
       "symbol": "LYNUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.01641,
-      "qty": 12187.6904,
-      "margin": 10.0,
+      "entry": 0.016876603925266305,
+      "qty": 35552.1764,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.01599975,
+      "tp_price": 0.016454688827134648,
       "tf": "15m",
       "opened_at": 1793550880,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 0.01641,
           "ts": 1793550880
+        },
+        {
+          "px": 0.01712,
+          "ts": 1793552524
         }
       ],
       "entry_candle_ts": 1793550600,
-      "last_leg_candle_ts": 1793550600,
+      "last_leg_candle_ts": 1793552400,
       "dry_run": true,
       "order_id": "PAPER-LYNUSDT-1793550880"
     },
@@ -2493,7 +2497,8 @@
       "side": "SELL",
       "upper": 0.017064367309206588,
       "open": 0.01725,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "MELANIAUSDT",
@@ -2502,7 +2507,8 @@
       "side": "SELL",
       "upper": 0.07816528525099108,
       "open": 0.07982,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "LYNUSDT",
@@ -2511,7 +2517,18 @@
       "side": "SELL",
       "upper": 0.016094780223376653,
       "open": 0.01632,
-      "reported": false
+      "reported": true,
+      "filled": false
+    },
+    {
+      "symbol": "HOTUSDT",
+      "tf": "15m",
+      "candle_ts": 1793550600,
+      "side": "SELL",
+      "upper": 0.00037096740250216624,
+      "open": 0.0003763,
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [],
@@ -2558,7 +2575,6 @@
     "OROCHIUSDT": 1793541034,
     "QUACKAIUSDT": 1793545678,
     "BIANRENSHENGUSDT": 1793549283,
-    "NIULAIUSDT": 1793551933,
     "AI1USDT": 1793551943,
     "GSTOCKUSDT": 1793552840,
     "HAJIMIUSDT": 1793558243,
@@ -2579,7 +2595,7 @@
     "BEMUSDT": 1793589720,
     "GALUSDT": 1793591485
   },
-  "last_trade_report_ts": 1793550045,
+  "last_trade_report_ts": 1793551984,
   "last_daily_report_date": "2026-10-29",
   "last_known_version": "2.6.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
