@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
-  "version": "2.5.0",
-  "updated_at": 1793498764,
+  "version": "2.5.1",
+  "updated_at": 1793500048,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "FFUSDT",
-      "tf": "1h",
-      "gap": 2.43,
-      "ts": 1793455107
-    },
     {
       "kind": "SELL",
       "symbol": "COWUSDT",
@@ -1402,50 +1395,90 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1793498764
+    },
+    {
+      "kind": "GAP",
+      "symbol": "ZZZUSDT",
+      "tf": "15m",
+      "gap": 1.97,
+      "ts": 1793500048
     }
   ],
   "trades": [
     {
       "symbol": "COLLECTUSDT",
+      "side": "SELL",
       "entry": 0.02541969878555463,
       "tp": 0.024784206315915762,
       "adds": 12,
+      "pele": 13,
       "margin": 130.0,
-      "pnl": 42.928
+      "lev": 20,
+      "px": 0.02473,
+      "pnl": 70.5444,
+      "tf": "1h"
     },
     {
       "symbol": "ESPORTSUSDT",
+      "side": "SELL",
       "entry": 0.008690638886114743,
       "tp": 0.008473372913961875,
       "adds": 20,
+      "pele": 21,
       "margin": 210.0,
-      "pnl": -119.5443
+      "lev": 20,
+      "px": 0.008735,
+      "pnl": -21.4388,
+      "tf": "1h"
     },
     {
       "symbol": "ZZZUSDT",
+      "side": "SELL",
       "entry": 0.010089008451559025,
       "tp": 0.009836783240270049,
       "adds": 2,
+      "pele": 3,
       "margin": 30.0,
-      "pnl": -3.0325
+      "lev": 20,
+      "px": 0.01086,
+      "pnl": -45.8514,
+      "tf": "1h"
     },
     {
       "symbol": "AEONUSDT",
+      "side": "SELL",
       "entry": 0.026690636704469726,
       "tp": 0.026023370786857982,
       "adds": 1,
+      "pele": 2,
       "margin": 20.0,
-      "pnl": 2.857
+      "lev": 20,
+      "px": 0.0262,
+      "pnl": 7.3529,
+      "tf": "1h"
     },
     {
       "symbol": "APRUSDT",
+      "side": "SELL",
       "entry": 0.05902,
       "tp": 0.0575445,
       "adds": 0,
+      "pele": 1,
       "margin": 10.0,
-      "pnl": 0.5761
+      "lev": 20,
+      "px": 0.05759,
+      "pnl": 4.8458,
+      "tf": "1h"
     }
   ],
+  "start": 1000.0,
+  "realized": 2150.3829,
+  "closed_n": 47,
+  "open_upnl": 15.4529,
+  "equity": 3165.8358,
+  "lev": 20,
+  "margin_leg": 10.0,
+  "tp_pct": 50.0,
   "closed": {
     "profit": 2150.3829,
     "loss": 0,
