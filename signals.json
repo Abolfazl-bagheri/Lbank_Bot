@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.5.1",
-  "updated_at": 1793512985,
+  "updated_at": 1793512989,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "BONERUSDT",
-      "tf": "15m",
-      "gap": 2.49,
-      "ts": 1793465099
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 1.41,
       "ts": 1793512985
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793512989
     }
   ],
   "trades": [
@@ -1443,6 +1443,19 @@
       "px": 0.005575,
       "pnl": -4.3459,
       "tf": "15m"
+    },
+    {
+      "symbol": "BEAMXUSDT",
+      "side": "SELL",
+      "entry": 0.005419,
+      "tp": 0.005283525,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.005419,
+      "pnl": 0.0,
+      "tf": "1h"
     }
   ],
   "start": 1000.0,
