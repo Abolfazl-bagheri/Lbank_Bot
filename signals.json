@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.2",
-  "updated_at": 1793523901,
+  "updated_at": 1793523908,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "ZZZUSDT",
-      "tf": "1h",
-      "gap": 1.84,
-      "ts": 1793483781
-    },
     {
       "kind": "GAP",
       "symbol": "LAUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": -0.32,
       "ts": 1793523901
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793523908
     }
   ],
   "trades": [
@@ -1443,6 +1443,19 @@
       "px": 0.2123,
       "pnl": 0.9376,
       "tf": "15m"
+    },
+    {
+      "symbol": "PROMUSDT",
+      "side": "SELL",
+      "entry": 5.928,
+      "tp": 5.7798,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 5.928,
+      "pnl": 0.0,
+      "tf": "1h"
     }
   ],
   "start": 1000.0,
