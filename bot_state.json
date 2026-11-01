@@ -1,5 +1,31 @@
 {
-  "open_trades": [],
+  "open_trades": [
+    {
+      "symbol": "AEONUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.0268,
+      "qty": 7462.6866,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.02613,
+      "tf": "15m",
+      "opened_at": 1793567968,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.0268,
+          "ts": 1793567968
+        }
+      ],
+      "entry_candle_ts": 1793567700,
+      "last_leg_candle_ts": 1793567700,
+      "dry_run": true,
+      "order_id": "PAPER-AEONUSDT-1793567968"
+    }
+  ],
   "trade_history": [],
   "pending": [
     {
@@ -1135,8 +1161,6 @@
     "BIANRENSHENGUSDT": 1793549283,
     "AI1USDT": 1793551943,
     "LONGXIAUSDT": 1793558277,
-    "PIPEDOGUSDT": 1793564407,
-    "BIO1USDT": 1793567274,
     "FLOCK1USDT": 1793568744,
     "NEIRO1USDT": 1793571468,
     "1000WOJAKUSDT": 1793571470,
@@ -1153,9 +1177,10 @@
     "GSTOCKUSDT": 1793596922,
     "APROUSDT": 1793604906,
     "TOADUSDT": 1793604936,
-    "FIGHT1USDT": 1793605790
+    "FIGHT1USDT": 1793605790,
+    "PIPEDOGUSDT": 1793608506
   },
-  "last_trade_report_ts": 1793564515,
+  "last_trade_report_ts": 1793566256,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
