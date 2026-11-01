@@ -21,18 +21,25 @@
       "symbol": "BEAMXUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.005775263974983289,
-      "qty": 103891.355,
-      "margin": 30.0,
+      "entry": 0.005828803382981995,
+      "qty": 171561.79989999998,
+      "margin": 50.0,
       "leverage": 20,
-      "tp_price": 0.005630882375608707,
+      "tp_price": 0.005683083298407445,
       "tf": "1h",
       "opened_at": 1793513141,
-      "adds": 2,
+      "adds": 3,
       "entry_candle_ts": 1793512800,
-      "last_leg_candle_ts": 1793516400,
+      "last_leg_candle_ts": 1793520000,
       "dry_run": true,
-      "order_id": "PAPER-BEAMXUSDT-1793513141"
+      "order_id": "PAPER-BEAMXUSDT-1793513141",
+      "last_leg_margin": 20.0,
+      "steps": [
+        {
+          "px": 0.005911,
+          "ts": 1793520338
+        }
+      ]
     },
     {
       "symbol": "ZEREBROUSDT",
@@ -1848,6 +1855,15 @@
       "open": 0.026696,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "ESPORTSUSDT",
+      "tf": "1h",
+      "candle_ts": 1793520000,
+      "side": "SELL",
+      "upper": 0.012829757597021403,
+      "open": 0.013,
+      "reported": false
     }
   ],
   "paper_days": [],
