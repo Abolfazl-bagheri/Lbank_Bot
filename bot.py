@@ -35,7 +35,7 @@ SIGNALS_FILE = os.path.join(BASE_DIR, "signals.json")
 LIVE_TOPIC = os.environ.get("LIVE_TOPIC", "lbank-gap-b0b85cee29ce").strip()
 STATE_BAK = os.path.join(BASE_DIR, "bot_state.bak")
 
-BOT_VERSION = "2.5.1"
+BOT_VERSION = "2.6.0"
 CHANGELOG = {
     "2.1.0": [
         "چارت احتمال‌گپ → استایل SolAtlas (خط‌روند شکست/بازتست) — هنوز ناقص",
@@ -78,8 +78,9 @@ TRADE_MARGIN_USDT = float(os.environ.get("TRADE_MARGIN_USDT", "10"))
 TRADE_LEVERAGE = int(os.environ.get("TRADE_LEVERAGE", "20"))
 TRADE_TP_PCT = float(os.environ.get("TRADE_TP_PCT", "50"))  # 50% سود مارجین → کلوز
 TRADE_AVG_DOWN = True
-TRADE_MAX_ADDS = int(os.environ.get("TRADE_MAX_ADDS", "20"))  # سقف کل پله
-AVG_LEG_PERIOD_SEC = 900  # فقط یک پله در هر کندل ۱۵ دقیقه
+TRADE_MAX_ADDS = int(os.environ.get("TRADE_MAX_ADDS", "5"))  # سقف پله (با دبل حجم)
+AVG_LEG_PERIOD_SEC = 900
+RES_TOUCH_PCT = 0.4  # فاصله مجاز تا سقف برای پله (%)
 
 
 FUTURES_TICKERS_URL = "https://lbkperp.lbank.com/cfd/openApi/v1/pub/marketData?productGroup=SwapU"
@@ -819,6 +820,63 @@ def _perp_post(path: str, params: dict) -> dict | None:
         return None
 
 
+
+def _qty_from_margin(price: float, margin: float) -> float | None:
+    if price <= 0 or margin <= 0:
+        return None
+    qty = (margin * TRADE_LEVERAGE) / price
+    if qty >= 1:
+        qty = float(f"{qty:.4f}")
+    elif qty >= 0.01:
+        qty = float(f"{qty:.6f}")
+    else:
+        qty = float(f"{qty:.8f}")
+    return qty if qty > 0 else None
+
+
+def find_resistance_levels(symbol: str, px: float, tf: str = "1h") -> list:
+    """سقف‌های سوئینگ از Gate؛ فقط بالای قیمت فعلی."""
+    try:
+        contract = symbol[:-4] + "_USDT" if symbol.endswith("USDT") and "_" not in symbol else symbol
+        interval = GATE_INTERVAL.get(tf, "1h")
+        url = f"https://api.gateio.ws/api/v4/futures/usdt/candlesticks?contract={contract}&interval={interval}&limit=120"
+        r = requests.get(url, timeout=12)
+        if r.status_code != 200:
+            return []
+        data = r.json() or []
+        highs = [float(x["h"]) for x in data]
+        if len(highs) < 20:
+            return []
+        sw = 3
+        piv = []
+        for i in range(sw, len(highs) - sw):
+            v = highs[i]
+            if all(highs[i - k] < v for k in range(1, sw + 1)) and all(highs[i + k] <= v for k in range(1, sw + 1)):
+                piv.append(v)
+        # خوشه‌بندی
+        piv = sorted(piv, reverse=True)
+        levels = []
+        for p0 in piv:
+            if p0 <= px * 1.001:
+                continue
+            hit = False
+            for L in levels:
+                if abs(p0 - L) / L * 100 <= 1.0:
+                    hit = True
+                    break
+            if not hit:
+                levels.append(p0)
+        # سقف ۲۴س
+        day_hi = max(highs[-min(96, len(highs)):]) if highs else 0
+        if day_hi > px * 1.002 and all(abs(day_hi - L) / L * 100 > 0.5 for L in levels):
+            levels.append(day_hi)
+        levels = sorted(levels)
+        return levels[:6]
+    except Exception as e:
+        log.debug("res levels %s: %s", symbol, e)
+        return []
+
+
 def open_sell_trade(symbol: str, entry_price: float, tf: str, candle_ts: int | None = None) -> dict | None:
     if not trading_enabled():
         log.info("PAPER_SKIP %s reason=trading_disabled", symbol)
@@ -842,20 +900,30 @@ def open_sell_trade(symbol: str, entry_price: float, tf: str, candle_ts: int | N
             log.info("PAPER_SKIP %s reason=same_candle_leg", symbol)
             return None
         avg = float(existing.get("entry") or 0)
-        # پله بدون شرط گپ/جهت قیمت — فقط کندل جدید
-        add_qty = trade_qty_from_margin(symbol, entry_price)
+        # پله با گپ مجدد: حجم آخرین پله × ۲
+        last_m = float(existing.get("last_leg_margin") or TRADE_MARGIN_USDT)
+        leg_m = last_m * 2.0
+        add_qty = _qty_from_margin(entry_price, leg_m)
         if not add_qty:
             return None
         old_qty = float(existing.get("qty") or 0)
         new_qty = old_qty + add_qty
-        new_margin = float(existing.get("margin") or TRADE_MARGIN_USDT) + TRADE_MARGIN_USDT
+        new_margin = float(existing.get("margin") or TRADE_MARGIN_USDT) + leg_m
         new_entry = (avg * old_qty + entry_price * add_qty) / new_qty
-        existing.update({"entry": new_entry, "qty": new_qty, "margin": new_margin, "tp_price": tp_price_for_sell(new_entry),
-                         "adds": adds + 1,
-                         "last_leg_candle_ts": (int(cts or last_cts or time.time()) // AVG_LEG_PERIOD_SEC) * AVG_LEG_PERIOD_SEC,
-                         "tf": tf})
-        log.info("PAPER_ADD %s avg=%.6g margin=%s adds=%s", symbol, new_entry, new_margin, adds + 1)
+        existing.update({
+            "entry": new_entry, "qty": new_qty, "margin": new_margin,
+            "tp_price": tp_price_for_sell(new_entry),
+            "adds": adds + 1,
+            "last_leg_margin": leg_m,
+            "last_leg_candle_ts": (int(cts or last_cts or time.time()) // AVG_LEG_PERIOD_SEC) * AVG_LEG_PERIOD_SEC,
+            "tf": tf,
+        })
+        log.info("PAPER_ADD_GAP %s avg=%.6g leg=%.0fU total_m=%.0f adds=%s", symbol, new_entry, leg_m, new_margin, adds + 1)
         save_state(force_remote=True)
+        try:
+            push_positions_live()
+        except Exception:
+            pass
         return existing
 
     qty = trade_qty_from_margin(symbol, entry_price)
@@ -866,6 +934,8 @@ def open_sell_trade(symbol: str, entry_price: float, tf: str, candle_ts: int | N
         "symbol": symbol, "side": "SELL", "status": "open", "entry": entry_price, "qty": qty,
         "margin": TRADE_MARGIN_USDT, "leverage": TRADE_LEVERAGE, "tp_price": tp, "tf": tf,
         "opened_at": int(time.time()), "adds": 0,
+        "last_leg_margin": TRADE_MARGIN_USDT,
+        "used_res_levels": [],
         "entry_candle_ts": int(candle_ts or 0),
         "last_leg_candle_ts": (int(candle_ts or time.time()) // AVG_LEG_PERIOD_SEC) * AVG_LEG_PERIOD_SEC,
         "dry_run": is_paper_mode(),
@@ -919,7 +989,6 @@ def close_trade_record(rec: dict, px: float, reason: str) -> None:
 def manage_open_trades() -> None:
     if not trading_enabled() or not open_trades:
         return
-    now = int(time.time())
     for rec in list(open_trades):
         if rec.get("status") != "open" or rec.get("side") != "SELL":
             continue
@@ -927,49 +996,68 @@ def manage_open_trades() -> None:
         px = get_futures_last(sym)
         if not px:
             continue
-        # کلوز فقط با رسیدن به ۵۰٪ سود مارجین (بدون استاپ)
+        # کلوز فقط با ۵۰٪ سود مارجین
         tp = float(rec.get("tp_price") or 0)
         if tp > 0 and px <= tp:
             close_trade_record(rec, px, "TP50")
             continue
-        # اگر در ضرر است → در کندل بعدی همان TF یک پله ۱۰U بدون شرط گپ
         if not TRADE_AVG_DOWN or not is_paper_mode():
             continue
-        pnl, _ = _sell_upnl(rec, float(px))
-        if pnl >= 0:
-            continue
-        # پله فقط یک‌بار در هر کندل ۱۵دقیقه (نه هر کندل 1h/4h)
-        period = AVG_LEG_PERIOD_SEC
-        candle_open = (now // period) * period
-        last_leg = int(rec.get("last_leg_candle_ts") or 0)
-        if candle_open <= last_leg:
-            continue
-        tf = rec.get("tf") or "15m"
         adds = int(rec.get("adds") or 0)
         if adds >= TRADE_MAX_ADDS:
             continue
-        add_qty = trade_qty_from_margin(sym, float(px))
+        # پله فقط روی لمس سقف مقاومت (نه هر کندل)
+        levels = find_resistance_levels(sym, float(px), rec.get("tf") or "1h")
+        if not levels:
+            continue
+        used = [float(x) for x in (rec.get("used_res_levels") or [])]
+        hit = None
+        for lv in levels:
+            if any(abs(lv - u) / u * 100 < 0.5 for u in used if u > 0):
+                continue
+            dist = abs(float(px) - lv) / lv * 100.0
+            if dist <= RES_TOUCH_PCT:
+                hit = lv
+                break
+        if hit is None:
+            continue
+        last_m = float(rec.get("last_leg_margin") or TRADE_MARGIN_USDT)
+        leg_m = last_m * 2.0
+        add_qty = _qty_from_margin(float(px), leg_m)
         if not add_qty:
             continue
         old_qty = float(rec.get("qty") or 0)
         new_qty = old_qty + add_qty
-        new_margin = float(rec.get("margin") or TRADE_MARGIN_USDT) + TRADE_MARGIN_USDT
         avg = float(rec.get("entry") or 0)
         new_entry = (avg * old_qty + float(px) * add_qty) / new_qty if new_qty else float(px)
+        new_margin = float(rec.get("margin") or TRADE_MARGIN_USDT) + leg_m
+        used.append(float(hit))
         rec.update({
             "entry": new_entry,
             "qty": new_qty,
             "margin": new_margin,
             "tp_price": tp_price_for_sell(new_entry),
             "adds": adds + 1,
-            "last_leg_candle_ts": candle_open,
+            "last_leg_margin": leg_m,
+            "used_res_levels": used[-10:],
+            "last_leg_candle_ts": int(time.time()),
         })
         log.info(
-            "PAPER_AVG_LOSS %s tf=%s px=%.6g avg=%.6g pelea=%s margin=%.0f",
-            sym, tf, px, new_entry, adds + 1, new_margin,
+            "PAPER_ADD_RES %s px=%.6g res=%.6g leg=%.0fU avg=%.6g adds=%s",
+            sym, px, hit, leg_m, new_entry, adds + 1,
+        )
+        send_telegram_text(
+            f"📉 <b>پله سقف</b> {sym}\n"
+            f"مقاومت ≈ <code>{hit:.6g}</code> · پله <b>{leg_m:.0f}U</b>\n"
+            f"میانگین ≈ <code>{new_entry:.6g}</code> · کل مارجین {new_margin:.0f}U"
         )
         save_state(force_remote=True)
+        try:
+            push_positions_live()
+        except Exception:
+            pass
     open_trades[:] = [x for x in open_trades if x.get("status") == "open"]
+
 
 
 def _sell_upnl(rec: dict, px: float) -> tuple[float, float]:
