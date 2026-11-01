@@ -1,23 +1,6 @@
 {
   "open_trades": [
     {
-      "symbol": "COLLECTUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.02541969878555463,
-      "qty": 102282.8801,
-      "margin": 130.0,
-      "leverage": 20,
-      "tp_price": 0.024784206315915762,
-      "tf": "1h",
-      "opened_at": 1793415900,
-      "adds": 12,
-      "entry_candle_ts": 1793415600,
-      "last_leg_candle_ts": 1793493900,
-      "dry_run": true,
-      "order_id": "PAPER-COLLECTUSDT-1793415900"
-    },
-    {
       "symbol": "ESPORTSUSDT",
       "side": "SELL",
       "status": "open",
@@ -1026,6 +1009,26 @@
       "closed_at": 1793498688,
       "close_px": 0.02341,
       "pnl_usdt": 10.307205503212984
+    },
+    {
+      "symbol": "COLLECTUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.02541969878555463,
+      "qty": 102282.8801,
+      "margin": 130.0,
+      "leverage": 20,
+      "tp_price": 0.024784206315915762,
+      "tf": "1h",
+      "opened_at": 1793415900,
+      "adds": 12,
+      "entry_candle_ts": 1793415600,
+      "last_leg_candle_ts": 1793493900,
+      "dry_run": true,
+      "order_id": "PAPER-COLLECTUSDT-1793415900",
+      "closed_at": 1793502541,
+      "close_px": 0.02416,
+      "pnl_usdt": 128.84561969330872
     }
   ],
   "pending": [
@@ -1732,6 +1735,15 @@
       "open": 0.02658,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "ZZZUSDT",
+      "tf": "1h",
+      "candle_ts": 1793502000,
+      "side": "SELL",
+      "upper": 0.010540830978337887,
+      "open": 0.01076,
+      "reported": false
     }
   ],
   "kline_blacklist": {
@@ -1796,7 +1808,8 @@
     "HOTUSDT": 1793539007,
     "UP2USDT": 1793540926,
     "OROCHIUSDT": 1793541034,
-    "STONKBROKERUSDT": 1793541846
+    "STONKBROKERUSDT": 1793541846,
+    "QUACKAIUSDT": 1793545678
   },
   "last_trade_report_ts": 1793496943,
   "last_daily_report_date": "2026-10-29",
