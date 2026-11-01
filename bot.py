@@ -35,7 +35,7 @@ SIGNALS_FILE = os.path.join(BASE_DIR, "signals.json")
 LIVE_TOPIC = os.environ.get("LIVE_TOPIC", "lbank-gap-b0b85cee29ce").strip()
 STATE_BAK = os.path.join(BASE_DIR, "bot_state.bak")
 
-BOT_VERSION = "2.6.0"
+BOT_VERSION = "2.6.1"
 CHANGELOG = {
     "2.1.0": [
         "چارت احتمال‌گپ → استایل SolAtlas (خط‌روند شکست/بازتست) — هنوز ناقص",
@@ -99,6 +99,10 @@ open_trades: list = []
 trade_history: list = []
 pending_signals: list = []
 stats = {"checked": 0, "signal_ok": 0, "skip_age": 0, "skip_no_gap": 0, "skip_dup": 0}
+cycle_no = 0
+_last_rep_ts = 0
+cycle_counters = {"entries": 0, "adds": 0, "closes": 0, "errs": 0, "gaps": 0, "src_gate": 0, "src_spot": 0, "src_none": 0}
+paper_days: list = []
 _last_trade_report_ts = 0
 _last_daily_report_date = ""
 PAPER_START_BALANCE = float(os.getenv("PAPER_START_BALANCE", "1000"))
@@ -226,6 +230,7 @@ def save_state(force_remote: bool = False) -> None:
             "open_trades": [t for t in open_trades if t.get("status") == "open"][-50:],
             "trade_history": trade_history[-200:],
             "pending": pending_signals[-300:],
+            "paper_days": paper_days[-30:],
             "kline_blacklist": kline_blacklist,
             "last_trade_report_ts": _last_trade_report_ts,
             "last_daily_report_date": _last_daily_report_date,
@@ -263,6 +268,8 @@ def load_state() -> None:
         trade_history.extend(payload.get("trade_history") or [])
         pending_signals.clear()
         pending_signals.extend(payload.get("pending") or [])
+        paper_days.clear()
+        paper_days.extend(payload.get("paper_days") or [])
         kline_blacklist.clear()
         kline_blacklist.update(payload.get("kline_blacklist") or {})
         _last_trade_report_ts = int(payload.get("last_trade_report_ts") or 0)
@@ -295,7 +302,47 @@ def push_live(ev: dict) -> None:
         pass
 
 
+def push_days_live() -> None:
+    try:
+        push_live({"t": "days", "days": paper_days[-14:], "ts": int(time.time())})
+    except Exception:
+        pass
+
+
+def push_cycle_rep(ms: int, scanned: int) -> None:
+    global cycle_no, _last_rep_ts, cycle_counters
+    now = int(time.time())
+    if _last_rep_ts and now - _last_rep_ts < 10:
+        return
+    _last_rep_ts = now
+    cycle_no += 1
+    try:
+        push_live({
+            "t": "rep",
+            "ts": now,
+            "cycle": cycle_no,
+            "ms": int(ms),
+            "scanned": int(scanned),
+            "gaps": int(cycle_counters.get("gaps", 0)),
+            "entries": int(cycle_counters.get("entries", 0)),
+            "adds": int(cycle_counters.get("adds", 0)),
+            "closes": int(cycle_counters.get("closes", 0)),
+            "errs": int(cycle_counters.get("errs", 0)),
+            "ver": BOT_VERSION,
+            "src": {
+                "gate": int(cycle_counters.get("src_gate", 0)),
+                "spot": int(cycle_counters.get("src_spot", 0)),
+                "none": int(cycle_counters.get("src_none", 0)),
+            },
+        })
+    except Exception:
+        pass
+    for k in list(cycle_counters.keys()):
+        cycle_counters[k] = 0
+
+
 def push_positions_live() -> None:
+
     """اسنپ‌شات پوزیشن‌های باز برای صفحه وب (ntfy + signals.json)."""
     try:
         rows = []
@@ -309,6 +356,22 @@ def push_positions_live() -> None:
             except Exception:
                 upnl, roi = 0.0, 0.0
             open_upnl += float(upnl)
+            steps = tr.get("steps") or []
+            if not steps and tr.get("entry"):
+                steps = [{"px": float(tr.get("entry")), "ts": int(tr.get("opened_at") or tr.get("opened_ts") or 0)}]
+            # next resistance hint
+            nxt = None
+            try:
+                levels = find_resistance_levels(tr.get("symbol") or "", float(px), tr.get("tf") or "1h")
+                used = [float(x) for x in (tr.get("used_res_levels") or [])]
+                for lv in levels:
+                    if any(abs(lv - u) / max(u, 1e-12) * 100 < 0.5 for u in used):
+                        continue
+                    if lv > float(px):
+                        nxt = float(lv)
+                        break
+            except Exception:
+                nxt = None
             rows.append({
                 "symbol": tr.get("symbol"),
                 "side": tr.get("side") or "SELL",
@@ -322,6 +385,9 @@ def push_positions_live() -> None:
                 "pnl": round(float(upnl), 4),
                 "roi": round(float(roi), 2),
                 "tf": tr.get("tf"),
+                "opened_ts": int(tr.get("opened_at") or tr.get("opened_ts") or 0),
+                "steps": steps[-12:],
+                "next": nxt,
             })
         closed = [x for x in trade_history if x.get("status") == "closed"]
         realized = sum(float(x.get("pnl_usdt") or 0) for x in closed)
@@ -538,12 +604,16 @@ async def fetch_klines_spot_ws(symbol: str, tf: str, size: int = 80) -> pd.DataF
 
 
 async def fetch_klines(symbol: str, tf: str, size: int = 80):
+    global cycle_counters
     df = await fetch_klines_spot_ws(symbol, tf, size)
     if df is not None and len(df) >= BB_PERIOD + 2:
+        cycle_counters["src_spot"] = cycle_counters.get("src_spot", 0) + 1
         return df, "spot_ws"
     df = fetch_klines_gate(symbol, tf, size)
     if df is not None and len(df) >= BB_PERIOD + 2:
+        cycle_counters["src_gate"] = cycle_counters.get("src_gate", 0) + 1
         return df, "gate_futures"
+    cycle_counters["src_none"] = cycle_counters.get("src_none", 0) + 1
     return None, None
 
 
@@ -918,6 +988,10 @@ def open_sell_trade(symbol: str, entry_price: float, tf: str, candle_ts: int | N
             "last_leg_candle_ts": (int(cts or last_cts or time.time()) // AVG_LEG_PERIOD_SEC) * AVG_LEG_PERIOD_SEC,
             "tf": tf,
         })
+        st = list(existing.get("steps") or [])
+        st.append({"px": float(entry_price), "ts": int(time.time())})
+        existing["steps"] = st[-20:]
+        cycle_counters["adds"] = cycle_counters.get("adds", 0) + 1
         log.info("PAPER_ADD_GAP %s avg=%.6g leg=%.0fU total_m=%.0f adds=%s", symbol, new_entry, leg_m, new_margin, adds + 1)
         save_state(force_remote=True)
         try:
@@ -936,6 +1010,7 @@ def open_sell_trade(symbol: str, entry_price: float, tf: str, candle_ts: int | N
         "opened_at": int(time.time()), "adds": 0,
         "last_leg_margin": TRADE_MARGIN_USDT,
         "used_res_levels": [],
+        "steps": [{"px": float(entry_price), "ts": int(time.time())}],
         "entry_candle_ts": int(candle_ts or 0),
         "last_leg_candle_ts": (int(candle_ts or time.time()) // AVG_LEG_PERIOD_SEC) * AVG_LEG_PERIOD_SEC,
         "dry_run": is_paper_mode(),
@@ -943,6 +1018,7 @@ def open_sell_trade(symbol: str, entry_price: float, tf: str, candle_ts: int | N
     if is_paper_mode():
         rec["order_id"] = f"PAPER-{symbol}-{int(time.time())}"
         open_trades.append(rec)
+        cycle_counters["entries"] = cycle_counters.get("entries", 0) + 1
         log.info("PAPER_OPEN %s %s entry=%.6g tp=%.6g", symbol, tf, entry_price, tp)
         save_state(force_remote=True)
         try:
@@ -969,6 +1045,7 @@ def open_sell_trade(symbol: str, entry_price: float, tf: str, candle_ts: int | N
 
 
 def close_trade_record(rec: dict, px: float, reason: str) -> None:
+    global cycle_counters
     rec["status"] = "closed"
     rec["closed_at"] = int(time.time())
     rec["close_px"] = float(px)
@@ -979,11 +1056,31 @@ def close_trade_record(rec: dict, px: float, reason: str) -> None:
     pnl = margin * (margin_roi / 100.0)
     rec["pnl_usdt"] = pnl
     trade_history.append(dict(rec))
+    cycle_counters["closes"] = cycle_counters.get("closes", 0) + 1
+    opened = int(rec.get("opened_at") or rec.get("opened_ts") or rec["closed_at"])
+    dur = max(0, int(rec["closed_at"]) - opened)
+    try:
+        push_live({
+            "t": "close",
+            "ts": int(rec["closed_at"]),
+            "symbol": rec.get("symbol"),
+            "entry": entry,
+            "exit": float(px),
+            "pnl": round(float(pnl), 4),
+            "roi": round(float(margin_roi), 2),
+            "steps": int(rec.get("adds") or 0) + 1,
+            "dur": dur,
+            "why": str(reason or "TP")[:20],
+        })
+    except Exception:
+        pass
+    mode = "PAPER" if rec.get("dry_run") else "LIVE"
     send_telegram_text(
-        f"✅ <b>کلوز {'PAPER' if rec.get('dry_run') else 'LIVE'}</b> {rec['symbol']}\n"
+        f"✅ <b>کلوز {mode}</b> {rec['symbol']}\n"
         f"{entry:.6g} → {px:.6g}\nROI ≈ <b>{margin_roi:.1f}%</b> · PnL <b>{pnl:+.3f}U</b> · {reason}"
     )
     save_state()
+
 
 
 def manage_open_trades() -> None:
@@ -1042,6 +1139,10 @@ def manage_open_trades() -> None:
             "used_res_levels": used[-10:],
             "last_leg_candle_ts": int(time.time()),
         })
+        st = list(rec.get("steps") or [])
+        st.append({"px": float(px), "ts": int(time.time())})
+        rec["steps"] = st[-20:]
+        cycle_counters["adds"] = cycle_counters.get("adds", 0) + 1
         log.info(
             "PAPER_ADD_RES %s px=%.6g res=%.6g leg=%.0fU avg=%.6g adds=%s",
             sym, px, hit, leg_m, new_entry, adds + 1,
@@ -1176,7 +1277,21 @@ def maybe_send_daily_paper_report() -> None:
         f"────────\n"
         f"♻️ ریست شبانه paper → موجودی <b>{PAPER_START_BALANCE:.0f}U</b>"
     )
-    # ریست کامل paper
+    # ذخیره روز قبل از ریست
+    try:
+        day_from = int(time.time()) - 24 * 3600
+        paper_days.append({
+            "from": day_from,
+            "to": int(time.time()),
+            "start": float(PAPER_START_BALANCE),
+            "realized": round(float(profit), 4),
+            "unrealized_closed": 0,
+            "trades": int(cnt),
+        })
+        paper_days[:] = paper_days[-30:]
+        push_days_live()
+    except Exception as e:
+        log.debug("paper_days: %s", e)
     if is_paper_mode():
         open_trades.clear()
         trade_history.clear()
@@ -1281,6 +1396,7 @@ async def process_symbol(symbol: str, tfs_to_check: list) -> None:
         })
         # جمع برای پیام دسته‌ای انتهای دور
         cycle_batch.setdefault(tf, []).append(sig)
+        cycle_counters["gaps"] = cycle_counters.get("gaps", 0) + 1
         await asyncio.sleep(0.05)
 
 
@@ -1433,13 +1549,14 @@ async def one_cycle(tfs: list | None = None) -> None:
     if not tfs:
         return
     cycle_batch = {}
+    t0 = time.time()
     symbols = get_top_movers(TOP_GAINERS)
     log.info("cycle TFs=%s n=%d iran=%s", ",".join(tfs), len(symbols), iran_now().strftime("%H:%M:%S"))
 
-    # اول گزارش گپ کندل قبلی همین TFها
     try:
         await report_previous_gaps(tfs)
     except Exception as e:
+        cycle_counters["errs"] = cycle_counters.get("errs", 0) + 1
         log.warning("gap report: %s", e)
 
     sem = asyncio.Semaphore(12)
@@ -1449,6 +1566,7 @@ async def one_cycle(tfs: list | None = None) -> None:
             try:
                 await process_symbol(sym, tfs)
             except Exception as e:
+                cycle_counters["errs"] = cycle_counters.get("errs", 0) + 1
                 log.warning("%s: %s", sym, e)
 
     await asyncio.gather(*[one(s) for s in symbols])
@@ -1457,15 +1575,18 @@ async def one_cycle(tfs: list | None = None) -> None:
     push_positions_live()
     maybe_send_hourly_trade_report()
     maybe_send_daily_paper_report()
+    ms = int((time.time() - t0) * 1000)
+    push_cycle_rep(ms, len(symbols))
     log.info(
-        "STATS checked=%s signal=%s skip_age=%s skip_gap=%s skip_dup=%s open_trades=%s",
+        "STATS checked=%s signal=%s skip_age=%s skip_gap=%s skip_dup=%s open_trades=%s ms=%s",
         stats.get("checked", 0), stats.get("signal_ok", 0),
         stats.get("skip_age", 0), stats.get("skip_no_gap", 0), stats.get("skip_dup", 0),
-        len(open_trades),
+        len(open_trades), ms,
     )
     for k in stats:
         stats[k] = 0
     save_state()
+
 
 
 async def main() -> None:
@@ -1490,6 +1611,11 @@ async def main() -> None:
         "YES" if token else "NO",
     )
     save_state(force_remote=True)
+    try:
+        push_days_live()
+        push_positions_live()
+    except Exception:
+        pass
     while True:
         try:
             pre = pre_alert_tfs_now()
