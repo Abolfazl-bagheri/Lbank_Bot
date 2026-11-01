@@ -4,16 +4,16 @@
       "symbol": "COLLECTUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.025417176940985546,
-      "qty": 94424.3339,
-      "margin": 120.0,
+      "entry": 0.02541969878555463,
+      "qty": 102282.8801,
+      "margin": 130.0,
       "leverage": 20,
-      "tp_price": 0.024781747517460907,
+      "tp_price": 0.024784206315915762,
       "tf": "1h",
       "opened_at": 1793415900,
-      "adds": 11,
+      "adds": 12,
       "entry_candle_ts": 1793415600,
-      "last_leg_candle_ts": 1793493000,
+      "last_leg_candle_ts": 1793493900,
       "dry_run": true,
       "order_id": "PAPER-COLLECTUSDT-1793415900"
     },
@@ -1622,6 +1622,15 @@
       "open": 0.05904,
       "reported": true,
       "filled": false
+    },
+    {
+      "symbol": "BMTUSDT",
+      "tf": "15m",
+      "candle_ts": 1793493900,
+      "side": "SELL",
+      "upper": 0.023558599632669375,
+      "open": 0.02396,
+      "reported": false
     }
   ],
   "kline_blacklist": {
@@ -1687,7 +1696,8 @@
     "CZUSDT": 1793527710,
     "NEIRO1USDT": 1793527717,
     "UBIKUSDT": 1793532812,
-    "GALUSDT": 1793533749
+    "GALUSDT": 1793533749,
+    "SYNUSDT": 1793537208
   },
   "last_trade_report_ts": 1793493108,
   "last_daily_report_date": "2026-10-29",
