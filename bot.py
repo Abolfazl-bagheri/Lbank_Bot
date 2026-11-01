@@ -35,7 +35,7 @@ SIGNALS_FILE = os.path.join(BASE_DIR, "signals.json")
 LIVE_TOPIC = os.environ.get("LIVE_TOPIC", "lbank-gap-b0b85cee29ce").strip()
 STATE_BAK = os.path.join(BASE_DIR, "bot_state.bak")
 
-BOT_VERSION = "2.6.1"
+BOT_VERSION = "2.6.2"
 CHANGELOG = {
     "2.1.0": [
         "چارت احتمال‌گپ → استایل SolAtlas (خط‌روند شکست/بازتست) — هنوز ناقص",
@@ -87,6 +87,7 @@ FUTURES_TICKERS_URL = "https://lbkperp.lbank.com/cfd/openApi/v1/pub/marketData?p
 PERP_BASE = "https://lbkperp.lbank.com"
 SPOT_WS = "wss://www.lbkex.net/ws/V2/"
 GATE_INTERVAL = {"15m": "15m", "1h": "1h", "4h": "4h"}
+MEXC_INTERVAL = {"15m": "Min15", "1h": "Min60", "4h": "Min240"}
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s | %(levelname)s | %(message)s", datefmt="%H:%M:%S")
 log = logging.getLogger("bot")
@@ -332,6 +333,7 @@ def push_cycle_rep(ms: int, scanned: int) -> None:
             "src": {
                 "gate": int(cycle_counters.get("src_gate", 0)),
                 "spot": int(cycle_counters.get("src_spot", 0)),
+                "mexc": int(cycle_counters.get("src_mexc", 0)),
                 "none": int(cycle_counters.get("src_none", 0)),
             },
         })
@@ -573,6 +575,67 @@ def fetch_klines_gate(symbol: str, tf: str, size: int = 80) -> pd.DataFrame | No
         return None
 
 
+
+def fetch_klines_mexc(symbol: str, tf: str, size: int = 80) -> pd.DataFrame | None:
+    """فیوچرز MEXC — معمولاً کندل خالی کمتری از Gate برای شت‌کوین دارد."""
+    interval = MEXC_INTERVAL.get(tf)
+    if not interval:
+        return None
+    contract = symbol.upper()
+    if contract.endswith("USDT") and "_" not in contract:
+        contract = contract[:-4] + "_USDT"
+    url = f"https://contract.mexc.com/api/v1/contract/kline/{contract}?interval={interval}&limit={size}"
+    try:
+        r = requests.get(url, timeout=12, headers={"User-Agent": "Mozilla/5.0"})
+        if r.status_code != 200:
+            return None
+        j = r.json()
+        if not isinstance(j, dict) or not j.get("success"):
+            return None
+        d = j.get("data") or {}
+        times = d.get("time") or []
+        if not times:
+            return None
+        rows = []
+        for i in range(len(times)):
+            rows.append({
+                "ts": int(times[i]),
+                "o": float(d["open"][i]),
+                "h": float(d["high"][i]),
+                "l": float(d["low"][i]),
+                "c": float(d["close"][i]),
+                "v": float((d.get("vol") or [0] * len(times))[i] or 0),
+            })
+        return _df_from_ohlc_rows(rows)
+    except Exception:
+        return None
+
+
+def _flat_ratio(df: pd.DataFrame) -> float:
+    if df is None or len(df) == 0:
+        return 1.0
+    flat = ((df["h"] == df["l"]) & (df["o"] == df["c"])).sum()
+    return float(flat) / float(len(df))
+
+
+def densify_ohlc(df: pd.DataFrame) -> pd.DataFrame:
+    """حذف کندل‌های کاملاً flat برای رندر چارت (سیگنال روی df اصلی می‌ماند)."""
+    if df is None or len(df) < 10:
+        return df
+    mask = ~((df["h"] == df["l"]) & (df["o"] == df["c"]))
+    d2 = df.loc[mask].copy().reset_index(drop=True)
+    if len(d2) < BB_PERIOD + 2:
+        return df
+    # BB را دوباره حساب کن اگر ستون‌ها بودند
+    if "c" in d2.columns:
+        s = d2["c"].rolling(BB_PERIOD).mean()
+        sd = d2["c"].rolling(BB_PERIOD).std(ddof=1)
+        d2["sma"] = s
+        d2["upper"] = s + BB_STD * sd
+        d2["lower"] = s - BB_STD * sd
+    return d2
+
+
 async def fetch_klines_spot_ws(symbol: str, tf: str, size: int = 80) -> pd.DataFrame | None:
     pair = symbol.lower()
     if pair.endswith("usdt") and "_" not in pair:
@@ -604,17 +667,41 @@ async def fetch_klines_spot_ws(symbol: str, tf: str, size: int = 80) -> pd.DataF
 
 
 async def fetch_klines(symbol: str, tf: str, size: int = 80):
+    """بهترین منبع از نظر تعداد کندل واقعی (کمترین flat)."""
     global cycle_counters
-    df = await fetch_klines_spot_ws(symbol, tf, size)
-    if df is not None and len(df) >= BB_PERIOD + 2:
+    candidates = []
+    try:
+        df_s = await fetch_klines_spot_ws(symbol, tf, size)
+        if df_s is not None and len(df_s) >= BB_PERIOD + 2:
+            candidates.append(("spot_ws", df_s, _flat_ratio(df_s)))
+    except Exception:
+        pass
+    try:
+        df_g = fetch_klines_gate(symbol, tf, size)
+        if df_g is not None and len(df_g) >= BB_PERIOD + 2:
+            candidates.append(("gate_futures", df_g, _flat_ratio(df_g)))
+    except Exception:
+        pass
+    try:
+        df_m = fetch_klines_mexc(symbol, tf, size)
+        if df_m is not None and len(df_m) >= BB_PERIOD + 2:
+            candidates.append(("mexc_futures", df_m, _flat_ratio(df_m)))
+    except Exception:
+        pass
+    if not candidates:
+        cycle_counters["src_none"] = cycle_counters.get("src_none", 0) + 1
+        return None, None
+    candidates.sort(key=lambda x: (x[2], -len(x[1])))
+    name, df, fr = candidates[0]
+    if name.startswith("spot"):
         cycle_counters["src_spot"] = cycle_counters.get("src_spot", 0) + 1
-        return df, "spot_ws"
-    df = fetch_klines_gate(symbol, tf, size)
-    if df is not None and len(df) >= BB_PERIOD + 2:
+    elif name.startswith("gate"):
         cycle_counters["src_gate"] = cycle_counters.get("src_gate", 0) + 1
-        return df, "gate_futures"
-    cycle_counters["src_none"] = cycle_counters.get("src_none", 0) + 1
-    return None, None
+    elif name.startswith("mexc"):
+        cycle_counters["src_mexc"] = cycle_counters.get("src_mexc", 0) + 1
+    if fr > 0.25:
+        log.info("KLINE_FLAT %s %s src=%s flat=%.0f%% n=%d", symbol, tf, name, fr * 100, len(df))
+    return df, name
 
 
 def is_erratic_wick_candle(row) -> bool:
@@ -825,21 +912,26 @@ def detect_fake_break_watch(df: pd.DataFrame) -> str | None:
 
 
 def make_gap_chart(df: pd.DataFrame, symbol: str, tf: str, sig: dict | None = None) -> bytes | None:
-    """احتمال‌گپ: چارت SolAtlas-style از trendlines_breaks (WIP)."""
+    """احتمال‌گپ: چارت SolAtlas-style؛ کندل flat برای نمایش حذف می‌شود."""
     try:
         try:
             from trendlines_breaks import render_trendline_chart
         except ImportError:
             from agents.trendlines_breaks import render_trendline_chart
-        entry = float((sig or {}).get("fut_last") or (sig or {}).get("open") or df.iloc[-1]["c"])
+        plot_df = densify_ohlc(df)
+        fr = _flat_ratio(df)
+        if fr > 0.45 and _flat_ratio(plot_df) > 0.35:
+            log.info("CHART_SKIP %s %s flat=%.0f%%", symbol, tf, fr * 100)
+            return None
+        entry = float((sig or {}).get("fut_last") or (sig or {}).get("open") or plot_df.iloc[-1]["c"])
         ub = None
-        if "upper" in df.columns:
+        if "upper" in plot_df.columns:
             try:
-                ub = float(df.iloc[-1]["upper"])
+                ub = float(plot_df.iloc[-1]["upper"])
             except Exception:
                 ub = None
         gap_pct = ((entry - ub) / entry * 100.0) if ub and entry and ub == ub else None
-        return render_trendline_chart(df, symbol, tf, gap_pct=gap_pct, max_bars=180)
+        return render_trendline_chart(plot_df, symbol, tf, gap_pct=gap_pct, max_bars=180)
     except Exception as e:
         log.debug("chart: %s", e)
         return None
