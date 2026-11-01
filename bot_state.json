@@ -86,15 +86,15 @@
       "symbol": "FONEUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.0017837412587433125,
-      "qty": 784867.1958999999,
-      "margin": 70.0,
+      "entry": 0.001992577096852479,
+      "qty": 1505587.9165999999,
+      "margin": 150.0,
       "leverage": 20,
-      "tp_price": 0.0017391477272747297,
-      "tf": "1h",
+      "tp_price": 0.0019427626694311668,
+      "tf": "15m",
       "opened_at": 1793524579,
-      "adds": 2,
-      "last_leg_margin": 40.0,
+      "adds": 3,
+      "last_leg_margin": 80.0,
       "used_res_levels": [],
       "steps": [
         {
@@ -108,10 +108,14 @@
         {
           "px": 0.0018,
           "ts": 1793527510
+        },
+        {
+          "px": 0.00222,
+          "ts": 1793529977
         }
       ],
       "entry_candle_ts": 1793524500,
-      "last_leg_candle_ts": 1793527200,
+      "last_leg_candle_ts": 1793529900,
       "dry_run": true,
       "order_id": "PAPER-FONEUSDT-1793524579"
     },
@@ -2118,7 +2122,8 @@
       "side": "SELL",
       "upper": 0.021796421486178396,
       "open": 0.022301,
-      "reported": false
+      "reported": true,
+      "filled": false
     }
   ],
   "paper_days": [],
@@ -2187,7 +2192,7 @@
     "1000SATSUSDT": 1793571471,
     "CZUSDT": 1793571475
   },
-  "last_trade_report_ts": 1793527676,
+  "last_trade_report_ts": 1793529180,
   "last_daily_report_date": "2026-10-29",
   "last_known_version": "2.6.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
