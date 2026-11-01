@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.2",
-  "updated_at": 1793541851,
+  "updated_at": 1793541858,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "KITEUSDT",
-      "tf": "1h",
-      "gap": 2.31,
-      "ts": 1793516097
-    },
     {
       "kind": "GAP",
       "symbol": "YFIUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": -0.39,
       "ts": 1793541851
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793541858
     }
   ],
   "trades": [
@@ -1455,6 +1455,19 @@
       "lev": 20,
       "px": 0.07295,
       "pnl": 1.8202,
+      "tf": "1h"
+    },
+    {
+      "symbol": "TAGUSDT",
+      "side": "SELL",
+      "entry": 0.0007917,
+      "tp": 0.0007719075,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.0007917,
+      "pnl": 0.0,
       "tf": "1h"
     }
   ],
