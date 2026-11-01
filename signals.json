@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.2",
-  "updated_at": 1793545448,
+  "updated_at": 1793545455,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "YFIUSDT",
-      "tf": "15m",
-      "gap": 1.07,
-      "ts": 1793518177
-    },
     {
       "kind": "GAP",
       "symbol": "ESPORTSUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 1.56,
       "ts": 1793545448
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793545455
     }
   ],
   "trades": [
@@ -1455,6 +1455,19 @@
       "lev": 20,
       "px": 1.1163,
       "pnl": -0.033,
+      "tf": "1h"
+    },
+    {
+      "symbol": "MELANIAUSDT",
+      "side": "SELL",
+      "entry": 0.0794,
+      "tp": 0.077415,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.0794,
+      "pnl": 0.0,
       "tf": "1h"
     }
   ],
