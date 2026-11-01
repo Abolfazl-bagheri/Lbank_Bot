@@ -18,51 +18,6 @@
       "order_id": "PAPER-ESPORTSUSDT-1793440963"
     },
     {
-      "symbol": "SUPERUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.1806830443585674,
-      "qty": 34314.2326,
-      "margin": 310.0,
-      "leverage": 20,
-      "tp_price": 0.17616596824960323,
-      "tf": "1h",
-      "opened_at": 1793523944,
-      "adds": 4,
-      "last_leg_margin": 160.0,
-      "used_res_levels": [
-        0.1771,
-        0.18,
-        0.1816
-      ],
-      "steps": [
-        {
-          "px": 0.17493,
-          "ts": 1793523944
-        },
-        {
-          "px": 0.17672,
-          "ts": 1793528435
-        },
-        {
-          "px": 0.17935,
-          "ts": 1793529165
-        },
-        {
-          "px": 0.18207,
-          "ts": 1793531140
-        },
-        {
-          "px": 0.18121,
-          "ts": 1793538441
-        }
-      ],
-      "entry_candle_ts": 1793523600,
-      "last_leg_candle_ts": 1793538441,
-      "dry_run": true,
-      "order_id": "PAPER-SUPERUSDT-1793523944"
-    },
-    {
       "symbol": "AVAAIUSDT",
       "side": "SELL",
       "status": "open",
@@ -1413,6 +1368,54 @@
       "closed_at": 1793542893,
       "close_px": 0.06987,
       "pnl_usdt": 27.075728708464194
+    },
+    {
+      "symbol": "SUPERUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.1806830443585674,
+      "qty": 34314.2326,
+      "margin": 310.0,
+      "leverage": 20,
+      "tp_price": 0.17616596824960323,
+      "tf": "1h",
+      "opened_at": 1793523944,
+      "adds": 4,
+      "last_leg_margin": 160.0,
+      "used_res_levels": [
+        0.1771,
+        0.18,
+        0.1816
+      ],
+      "steps": [
+        {
+          "px": 0.17493,
+          "ts": 1793523944
+        },
+        {
+          "px": 0.17672,
+          "ts": 1793528435
+        },
+        {
+          "px": 0.17935,
+          "ts": 1793529165
+        },
+        {
+          "px": 0.18207,
+          "ts": 1793531140
+        },
+        {
+          "px": 0.18121,
+          "ts": 1793538441
+        }
+      ],
+      "entry_candle_ts": 1793523600,
+      "last_leg_candle_ts": 1793538441,
+      "dry_run": true,
+      "order_id": "PAPER-SUPERUSDT-1793523944",
+      "closed_at": 1793543920,
+      "close_px": 0.17598,
+      "pnl_usdt": 161.38135776178243
     }
   ],
   "pending": [
@@ -2459,7 +2462,8 @@
     "UBIKUSDT": 1793578777,
     "MANCERUSDT": 1793582484,
     "STONKBROKERUSDT": 1793586042,
-    "TRUMPSOLUSDT": 1793586070
+    "TRUMPSOLUSDT": 1793586070,
+    "UP2USDT": 1793587113
   },
   "last_trade_report_ts": 1793542057,
   "last_daily_report_date": "2026-10-29",
