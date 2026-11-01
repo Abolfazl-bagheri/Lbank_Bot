@@ -133,6 +133,11 @@ s.r u:last-child{animation:ri .45s ease both}
 .rng.pp{background:linear-gradient(90deg,rgba(255,255,255,.14),#2de2a6)}
 .fh{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:12px}.fh h2{margin:0}
 @media(max-width:560px){.pcard{padding:10px;border-radius:16px}.ph{margin-bottom:8px}.pn{font-size:16px}.kv{gap:6px}.kv span{font-size:10px}.kv b{font-size:12.5px}.rng{margin:12px 4px 6px}.rl{font-size:10px}.eqv{font-size:34px}.mg{grid-template-columns:repeat(2,1fr);gap:8px}.mg div{padding:6px 10px}.mg b{font-size:14px}.sg{padding:10px 12px}}
+.bd.bad{background:rgba(255,77,109,.18);color:var(--red)}
+.lad{display:flex;flex-wrap:wrap;gap:5px;margin-top:10px}
+.stp{font-size:10.5px;padding:1px 7px;border-radius:7px;background:rgba(255,255,255,.06);border:1px solid var(--b);direction:ltr;display:inline-block}
+.stp.nx{color:var(--amb);border-color:rgba(255,181,71,.4)}
+details summary{cursor:pointer;font-weight:700}
 </style>
 </head>
 <body>
@@ -152,16 +157,27 @@ s.r u:last-child{animation:ri .45s ease both}
     <div class="mg"><div><span>موجودی تحقق‌یافته</span><b id="m0"></b></div><div><span>PnL شناور</span><b id="m1"></b></div><div><span>مارجین درگیر</span><b id="m2"></b></div><div><span>مارجین آزاد</span><b id="m3"></b></div><div><span>پوزیشن باز</span><b id="m4"></b></div><div><span>خالص بسته‌شده</span><b id="m5"></b></div></div>
     <div class="alrt" id="alrt" style="display:none"></div></div>
   <div class="card s12"><h2>💼 پوزیشن‌های باز <span class="live" id="posLive" style="display:none">LIVE</span> <span class="lb" id="posAge"></span></h2><div id="pcs"></div></div>
+  <div class="card s12"><h2>🫀 ربات و گزارش دور <span id="hbs" class="bd wt">منتظر</span></h2><div class="lb" id="hbt"></div>
+    <div class="mg"><div><span>دور</span><b id="rk0"></b></div><div><span>مدت</span><b id="rk1"></b></div><div><span>نماد بررسی‌شده</span><b id="rk2"></b></div><div><span>گپ</span><b id="rk3"></b></div><div><span>ورود</span><b id="rk4"></b></div><div><span>پله</span><b id="rk5"></b></div><div><span>بسته</span><b id="rk6"></b></div><div><span>خطا</span><b id="rk7"></b></div></div>
+    <div class="lb" id="rps" style="margin:8px 0"></div>
+    <div class="tw"><table><thead><tr><th>دور</th><th>ساعت</th><th>مدت</th><th>نماد</th><th>گپ</th><th>ورود</th><th>پله</th><th>بسته</th><th>خطا</th></tr></thead><tbody id="rpb"></tbody></table></div></div>
+  <div class="card s12"><h2>📒 معاملات بسته (از آخرین ریست)</h2>
+    <div class="mg"><div><span>تعداد</span><b id="jt0"></b></div><div><span>نرخ برد</span><b id="jt1"></b></div><div><span>خالص PnL</span><b id="jt2"></b></div><div><span>بهترین</span><b id="jt3" class="up"></b></div><div><span>بدترین</span><b id="jt4" class="dn"></b></div></div>
+    <div class="tw" style="margin-top:10px"><table><thead><tr><th>نماد</th><th>ورود → خروج</th><th>PnL</th><th>ROI</th><th>پله</th><th>مدت</th><th>دلیل</th></tr></thead><tbody id="jb"></tbody></table></div></div>
+  <div class="card s12"><h2>🗓️ تاریخچه‌ی روزها</h2><div class="lb" id="dsum"></div><div id="dchart"></div>
+    <div class="tw"><table><thead><tr><th>روز</th><th>سود / زیان</th><th>معامله</th><th>موجودی پایان</th></tr></thead><tbody id="db"></tbody></table></div></div>
   <div class="card s12"><div class="fh"><h2>📡 گپ‌های فعال <span class="live">LIVE</span></h2><div class="chips" id="fl" style="margin:0"><button class="chip" data-f="all" aria-pressed="true">همه</button><button class="chip" data-f="GAP" aria-pressed="false">فقط GAP</button><button class="chip" data-f="SELL" aria-pressed="false">فقط SELL</button></div></div><div class="feed" id="feed"></div></div>
   <div class="card s12"><h2>🎯 چارت زنده · فقط گپ‌های پرنشده <span class="live">LIVE</span></h2><div id="lc"></div></div>
+  <div class="card s12"><details><summary>📊 آمار گپ‌ها (از مشاهده‌ی همین صفحه · نمونه‌ی محدود)</summary>
+    <div class="tw" style="margin-top:10px"><table><thead><tr><th>تایم‌فریم</th><th>گپ بررسی‌شده</th><th>پرشده</th><th>نرخ پر شدن</th><th>میانگین زمان پر شدن</th></tr></thead><tbody id="gsb"></tbody></table></div></details></div>
 </section>
 <footer>اتصال لحظه‌ای: ntfy برای رویدادهای ربات و Gate WebSocket برای قیمت و کندل · بدون رفرش دوره‌ای · فقط نمایش اطلاعات است، توصیه‌ی مالی نیست</footer>
 </div>
 <div class="toast" id="toast"></div>
 <script>
-var REPO="Abolfazl-bagheri/Lbank_Bot",LIVE_TOPIC="lbank-gap-b0b85cee29ce",START=1000,LEV=20,MMR=.005,GW={warn:60,bad:30},PER={"15m":900,"1h":3600,"4h":14400},MAXN=8;
+var REPO="Abolfazl-bagheri/Lbank_Bot",LIVE_TOPIC="lbank-gap-b0b85cee29ce",START=1000,LEV=20,MMR=.005,GW={warn:60,bad:30},PER={"15m":900,"1h":3600,"4h":14400},MAXF=12,MAXC=8,QN=0,QQ=[];
 var $=function(i){return document.getElementById(i)};
-var S={f:"all",sig:[],pos:null,posTs:0,ex:null,d:{trades:[],closed:{profit:0,loss:0,count:0},mode:"PAPER"},st:{},ev:{},ready:0,sound:false,lvOn:false,last:0,fresh:{}},PXS={},CAN={},PC={},SUB={},AC,SWR=null,T0=document.title,gw=null,gok=0,tm=0,fk="",lk="",tkk="";
+var S={reps:[],cl:[],days:[],resetAt:0,ver:null,srcn:null,lt:{},f:"all",sig:[],pos:null,posTs:0,ex:null,d:{trades:[],closed:{profit:0,loss:0,count:0},mode:"PAPER"},st:{},ev:{},ready:0,sound:false,lvOn:false,last:0,fresh:{}},PXS={},CAN={},PC={},SUB={},AC,SWR=null,T0=document.title,gw=null,gok=0,tm=0,fk="",lk="",tkk="",rk="",jk="",dk="",gk=0;
 function now(){return Math.floor(Date.now()/1000)}
 function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
 function ago(ts){var s=Math.max(0,now()-ts);return s<60?"لحظاتی پیش":s<3600?Math.floor(s/60)+" دقیقه پیش":s<86400?Math.floor(s/3600)+" ساعت پیش":Math.floor(s/86400)+" روز پیش"}
@@ -184,22 +200,26 @@ function toast(m){var t=$("toast");t.textContent=m;t.className="toast on";clearT
 function okSig(s){return s&&(s.kind==="GAP"||s.kind==="SELL")&&/^[A-Z0-9]{2,20}USDT$/.test(s.symbol||"")&&PER[s.tf]&&isFinite(+s.gap)&&+s.gap>0&&isFinite(+s.ts)&&+s.ts>0}
 function addSig(s,hist){s.symbol=String(s.symbol||"").toUpperCase();if(!okSig(s))return false;s.gap=+s.gap;s.ts=+s.ts;s.px=(s.px!=null&&isFinite(+s.px)&&+s.px>0)?+s.px:null;s.key=s.symbol+s.tf+s.ts;
  if(now()-s.ts>40*PER[s.tf]||S.sig.some(function(x){return x.key===s.key}))return false;
- S.sig.push(s);S.sig.sort(function(a,b){return b.ts-a.ts});S.sig=S.sig.slice(0,40);
+ S.sig.push(s);S.sig.sort(function(a,b){return b.ts-a.ts});S.sig=S.sig.slice(0,80);
  if(!hist&&S.ready){S.fresh[s.key]=1;ping(s);setTimeout(function(){delete S.fresh[s.key]},4000)}return true}
 function active(s){var st=S.st[s.key];if(st==="filled"||st==="old")return false;if(st==="act")return true;return now()-s.ts<3*PER[s.tf]}
-function actList(){return S.sig.filter(active).filter(function(s){return S.f==='all'||s.kind===S.f}).slice(0,MAXN)}
+function score(s){var e=S.ev[s.key];return e?e.d:-1e9+s.ts/1e6}
+function actList(){var by={};S.sig.filter(active).filter(function(s){return S.f==='all'||s.kind===S.f}).forEach(function(s){var b=by[s.symbol];if(!b)by[s.symbol]={s:s,n:1};else{b.n++;if(score(s)>score(b.s))b.s=s}});
+ return Object.keys(by).map(function(k){by[k].s.n=by[k].n;return by[k].s}).sort(function(a,b){return score(b)-score(a)}).slice(0,MAXF)}
 /* ---------- کندل زنده از Gate ---------- */
 function bbFill(r,i0){for(var i=Math.max(19,i0);i<r.length;i++){var w=r.slice(i-19,i+1).map(function(x){return x[3]}),m=w.reduce(function(a,b){return a+b})/20,sd=Math.sqrt(w.reduce(function(a,b){return a+(b-m)*(b-m)},0)/19);r[i][4]=m+2*sd;r[i][5]=m;r[i][6]=m-2*sd}}
-function loadC(sym,tf){var k=sym+"|"+tf;if(CAN[k])return;CAN[k]={rows:null,err:0};
+function loadC(sym,tf){var k=sym+"|"+tf;if(CAN[k])return;CAN[k]={rows:null,err:0};QQ.push([sym,tf]);pump()}
+function pump(){while(QN<6&&QQ.length){var q=QQ.shift();QN++;fetchC(q[0],q[1])}}
+function fetchC(sym,tf){var k=sym+"|"+tf;
  J("https://api.gateio.ws/api/v4/futures/usdt/candlesticks?contract="+ct(sym)+"&interval="+tf+"&limit=100").then(function(a){
-  if(!a||a.length<25)throw 0;var r=a.map(function(x){return[+x.o,+x.h,+x.l,+x.c,0,0,0,+x.t]});bbFill(r,0);CAN[k].rows=r;gsub(sym,tf);dirty()}).catch(function(){CAN[k].err=1;dirty()})}
+  if(!a||a.length<25)throw 0;var r=a.map(function(x){return[+x.o,+x.h,+x.l,+x.c,0,0,0,+x.t]});bbFill(r,0);CAN[k].rows=r;gsub(sym,tf);dirty()}).catch(function(){CAN[k].err=1;dirty()}).then(function(){QN--;pump()})}
 function view(s){var c=CAN[s.symbol+"|"+s.tf];return c&&c.rows?c.rows.slice(19):null}
 function gstat(s,c){var i0=0,i,ub;for(i=0;i<c.length;i++)if(c[i][7]<=s.ts)i0=i;ub=c[i0][4];var st=s.kind==="GAP"?i0+1:i0;
  if(c[0][7]>s.ts)return{old:true,ub:ub};if(st>=c.length)return{w:true,ub:ub};
  for(i=st;i<c.length;i++)if(c[i][2]<=ub)return{filled:true,ub:ub,t:c[i][7]};return{filled:false,ub:ub}}
-function evalAll(){S.sig.slice(0,MAXN*2).forEach(function(s){var c=CAN[s.symbol+"|"+s.tf];if(!c)return;if(c.err){if(!S.st[s.key])S.st[s.key]="unk";return}
+function evalAll(){S.sig.slice(0,60).forEach(function(s){var c=CAN[s.symbol+"|"+s.tf];if(!c)return;if(c.err){if(!S.st[s.key])S.st[s.key]="unk";return}
  var v=view(s);if(!v)return;var g=gstat(s,v),l=v[v.length-1],was=S.st[s.key];
- S.st[s.key]=g.filled?"filled":g.old?"old":"act";S.ev[s.key]={ub:g.ub,w:g.w,px:l[3],d:(l[3]-g.ub)/l[3]*100};
+ S.st[s.key]=g.filled?"filled":g.old?"old":"act";S.ev[s.key]={ub:g.ub,w:g.w,px:l[3],d:(l[3]-g.ub)/l[3]*100,ft:g.t};
  if(g.filled&&was==="act"){toast("✅ گپ پر شد · "+s.symbol+" "+s.tf);notify("✅ گپ پر شد",s.symbol+" "+s.tf)}})}
 /* ---------- اتصال زنده Gate (قیمت + کندل) ---------- */
 function gsub(sym,tf){if(!gw||gw.readyState!==1)return;var c=ct(sym),t=now();
@@ -238,9 +258,9 @@ function wallet(){var pl=plist(),c=S.d.closed||{profit:0,loss:0,count:0},ex=S.ex
  if(LV&&pct<GW.warn&&nt>0){a.style.display="";a.className="alrt "+(pct<GW.bad?"bad":"warn");a.textContent=(pct<GW.bad?"🚨 خطر لیکوئید! ":"⚠️ ضرر شناور بالاست. ")+"فقط "+pct.toFixed(0)+"٪ از بافر باقی مانده و مارجین آزاد "+f2(free)+" U است."}else a.style.display="none";
  if(LV&&pct<GW.bad&&nt>0){if(!S.dg){S.dg=1;notify("🚨 نزدیک لیکوئید","بافر "+pct.toFixed(0)+"٪")}}else if(pct>GW.bad+10)S.dg=0}
 function cardHtml(t){var i="pc_"+t.symbol,kv=[["اندازه","size"],["قیمت ورود","entry"],["قیمت الان","px"],["لیکوئید (تخمینی)","liq"],["مارجین","margin"],["TP","tp"]];
- return '<div class="pcard" id="'+i+'"><div class="ph"><div><span class="sym">'+esc(t.symbol)+'</span> <span class="c2" id="'+i+'_side"></span> <span class="c2" id="'+i+'_pele"></span></div><div class="pn" id="'+i+'_pn"><b id="'+i+'_pnl"></b><small id="'+i+'_roi"></small></div></div><div class="kv">'+
+ return '<div class="pcard" id="'+i+'"><div class="ph"><div><span class="sym">'+esc(t.symbol)+'</span> <span class="c2" id="'+i+'_side"></span> <span class="c2" id="'+i+'_pele"></span> <span class="c2" id="'+i+'_age" style="display:none"></span></div><div class="pn" id="'+i+'_pn"><b id="'+i+'_pnl"></b><small id="'+i+'_roi"></small></div></div><div class="kv">'+
   kv.map(function(x){return '<div><span id="'+i+'_'+x[1]+'l">'+x[0]+'</span><b id="'+i+'_'+x[1]+'"'+(x[1]==="liq"?' class="dn"':x[1]==="tp"?' class="up"':'')+'></b></div>'}).join("")+
-  '</div><div class="rng" id="'+i+'_rng"><i id="'+i+'_re"></i><i class="p" id="'+i+'_rp"></i></div><div class="rl"><span class="up" id="'+i+'_dtp"></span><span class="dn" id="'+i+'_dlq"></span></div></div>'}
+  '</div><div class="lad" id="'+i+'_lad" style="display:none"><span id="'+i+'_stp"></span><span class="stp nx" id="'+i+'_nxt" style="display:none"></span></div><div class="rng" id="'+i+'_rng"><i id="'+i+'_re"></i><i class="p" id="'+i+'_rp"></i></div><div class="rl"><span class="up" id="'+i+'_dtp"></span><span class="dn" id="'+i+'_dlq"></span></div></div>'}
 function fill(t,k){var i="pc_"+t.symbol,q=function(x){return $(i+"_"+x)},e=+t.entry,tp=+t.tp,m=+t.margin||0,lv=+t.lev||lev0(),sho=tp<e,p=k.px!=null?k.px:e,PA=mode()!=="LIVE",
   dtp=Math.abs(p-tp)/p*100,prog=Math.max(0,Math.min(1,(tp-e)?(p-e)/(tp-e):0)),lq=t.liq!=null?+t.liq:(sho?e*(1+1/lv-MMR):e*(1-1/lv+MMR)),sp=(lq-tp)||1,
   xp=Math.max(0,Math.min(1,(p-tp)/sp)),xe=Math.max(0,Math.min(1,(e-tp)/sp)),dlq=Math.abs(lq-p)/p*100;
@@ -252,7 +272,44 @@ function fill(t,k){var i="pc_"+t.symbol,q=function(x){return $(i+"_"+x)},e=+t.en
  if(PA){q("liql").textContent="فاصله تا TP";setT(q("liq"),dtp.toFixed(2)+"٪");q("liq").className="up";q("rp").style.left=(prog*100).toFixed(1)+"%";
   setT(q("dtp"),"پیشرفت تا TP · "+(prog*100).toFixed(0)+"٪");q("dlq").className="";setT(q("dlq"),"TP · "+dtp.toFixed(2)+"٪ مانده")}
  else{q("liql").textContent="لیکوئید (تخمینی)";setT(q("liq"),px(lq));q("liq").className="dn";q("re").style.left=(xe*100).toFixed(1)+"%";q("rp").style.left=(xp*100).toFixed(1)+"%";
-  setT(q("dtp"),"TP · "+dtp.toFixed(2)+"٪ مانده");q("dlq").className="dn";setT(q("dlq"),dlq.toFixed(2)+"٪ تا لیکوئید")}}
+  setT(q("dtp"),"TP · "+dtp.toFixed(2)+"٪ مانده");q("dlq").className="dn";setT(q("dlq"),dlq.toFixed(2)+"٪ تا لیکوئید")}
+ ladder(t,q,p)}
+/* ---------- گزارش دور، ژورنال، روزها، آمار گپ، نردبان ---------- */
+function dur(s){s=Math.max(0,Math.round(s));return s<60?s+"ث":s<3600?Math.floor(s/60)+"د":s<86400?Math.floor(s/3600)+"س "+Math.floor(s%3600/60)+"د":Math.floor(s/86400)+" روز"}
+function evt(t,b){toast(t+(b?" · "+b:""));notify(t,b||"")}
+function normDays(a){return a.map(function(d){var st=+d.start||1000,en=d.end!=null?+d.end:st+(+d.realized||0)+(+d.unrealized_closed||0);return{from:+d.from||0,to:+d.to||0,start:st,end:en,pnl:en-st,trades:+d.trades||0}}).filter(function(d){return d.to>0}).sort(function(a,b){return a.to-b.to}).slice(-60)}
+function ladder(t,q,p){var lad=q("lad"),sg0=JSON.stringify(t.steps||null),has=Array.isArray(t.steps)&&t.steps.length,nx=t.next!=null&&isFinite(+t.next);
+ lad.style.display=(has||nx)?"":"none";var sp=q("stp");
+ if(sp._s!==sg0){sp._s=sg0;sp.innerHTML=has?t.steps.map(function(x,i){var pp=x.px!=null?x.px:x.p;return '<span class="stp">#'+(i+1)+' '+px(pp)+(x.ts?' · '+agoS(x.ts):'')+'</span>'}).join(" "):""}
+ var n=q("nxt");n.style.display=nx?"":"none";if(nx){var d=(+t.next-p)/p*100;setT(n,"پله‌ی بعدی "+px(t.next)+" ("+(d>=0?"+":"")+d.toFixed(2)+"٪)")}
+ var a=q("age");if(t.opened_ts>0){a.style.display="";a.textContent="⏱ "+dur(now()-t.opened_ts)}else a.style.display="none"}
+function posAges(){(S.pos||[]).forEach(function(t){var e=$("pc_"+t.symbol+"_age");if(!e)return;if(t.opened_ts>0){e.style.display="";e.textContent="⏱ "+dur(now()-t.opened_ts)}else e.style.display="none"})}
+function botCard(){var r=S.reps[0],L=S.lt,age=function(k){return L[k]?agoS(L[k]):"—"},last=Math.max(L.pos||0,L.sig||0,L.rep||0,L.close||0,S.last||0),ag=last?now()-last:null,
+ st=ag==null?["منتظر","wt"]:ag<180?["زنده","ok"]:ag<900?["ساکت","wt"]:["قطع","bad"];
+ $("hbs").textContent=st[0];$("hbs").className="bd "+st[1];
+ $("hbt").textContent="نسخه "+(S.ver||"—")+" · pos: "+age("pos")+" · rep: "+age("rep")+" · sig: "+age("sig")+" · close: "+age("close");
+ var sr=S.srcn;$("rps").textContent=sr?"منبع داده‌ی نمادها: Gate "+(sr.gate||0)+" · اسپات "+(sr.spot||0)+" · بدون داده "+(sr.none||0):"";
+ if(r){var V=["#"+(r.cycle!=null?r.cycle:"—"),r.ms!=null?(r.ms/1000).toFixed(1)+" ث":"—",r.scanned,r.gaps,r.entries,r.adds,r.closes,r.errs];
+  V.forEach(function(v,i){setT($("rk"+i),v==null?"—":String(v))});$("rk7").className=(+r.errs>0)?"dn":""}
+ var key=S.reps.map(function(x){return x.ts+":"+x.cycle}).join();if(key===rk)return;rk=key;
+ var c=function(v){return v!=null?v:"—"};
+ $("rpb").innerHTML=S.reps.length?S.reps.slice(0,10).map(function(x){return '<tr><td class="n">#'+c(x.cycle)+'</td><td>'+hm(x.ts)+'</td><td class="n">'+(x.ms!=null?(x.ms/1000).toFixed(1)+"ث":"—")+'</td><td class="n">'+c(x.scanned)+'</td><td class="n">'+c(x.gaps)+'</td><td class="n">'+c(x.entries)+'</td><td class="n">'+c(x.adds)+'</td><td class="n">'+c(x.closes)+'</td><td class="n '+(+x.errs>0?"dn":"")+'">'+c(x.errs)+'</td></tr>'}).join(""):'<tr><td colspan="9" class="emp">منتظر رویداد rep از ربات (گزارش هر دور)</td></tr>'}
+function journal(){var C=S.cl,key=C.map(function(x){return x.ts+x.symbol}).join();if(key===jk)return;jk=key;
+ var n=C.length,w=C.filter(function(x){return x.pnl>0}).length,net=C.reduce(function(a,x){return a+x.pnl},0),best=n?Math.max.apply(null,C.map(function(x){return x.pnl})):0,worst=n?Math.min.apply(null,C.map(function(x){return x.pnl})):0;
+ [String(n),n?(w/n*100).toFixed(0)+"٪":"—",(net>=0?"+":"")+f2(net)+" U",(best>=0?"+":"")+f2(best),f2(worst)].forEach(function(v,i){setT($("jt"+i),v)});$("jt2").className=net>=0?"up":"dn";
+ $("jb").innerHTML=n?C.slice(0,15).map(function(x){var ro=x.roi!=null?+x.roi:null;return '<tr><td class="n"><b>'+esc(x.symbol)+'</b></td><td class="n">'+px(x.entry)+' → '+px(x.exit)+'</td><td class="n '+(x.pnl>=0?"up":"dn")+'"><b>'+sg(x.pnl)+'U</b></td><td class="n '+(ro!=null&&ro<0?"dn":"up")+'">'+(ro==null?"—":(ro>=0?"+":"")+ro.toFixed(1)+"%")+'</td><td>'+(x.steps!=null?x.steps:"—")+'</td><td>'+(x.dur!=null?dur(x.dur):"—")+'</td><td>'+esc(x.why||"—")+'</td></tr>'}).join(""):'<tr><td colspan="7" class="emp">هنوز معامله‌ی بسته‌ای ثبت نشده (رویداد close)</td></tr>'}
+function daysCard(){var D=S.days.slice(-14),k=D.map(function(d){return d.to+":"+d.pnl}).join();if(k===dk)return;dk=k;
+ if(!D.length){$("dchart").innerHTML='<div class="emp">منتظر داده‌ی روزها از ربات (paper_days)</div>';$("dsum").textContent="";$("db").innerHTML="";return}
+ var W=600,H=150,mx=Math.max.apply(null,D.map(function(d){return Math.abs(d.pnl)}).concat(1)),bw=W/D.length,z=H/2,tot=0,win=0;
+ D.forEach(function(d){tot+=d.pnl;if(d.pnl>0)win++});
+ var bars=D.map(function(d,i){var h=Math.abs(d.pnl)/mx*(H/2-14),y=d.pnl>=0?z-h:z;return '<rect x="'+(i*bw+bw*.15).toFixed(1)+'" y="'+y.toFixed(1)+'" width="'+(bw*.7).toFixed(1)+'" height="'+Math.max(1,h).toFixed(1)+'" rx="4" fill="'+(d.pnl>=0?"#2de2a6":"#ff4d6d")+'"/><text x="'+(i*bw+bw/2).toFixed(1)+'" y="'+(d.pnl>=0?y-3:y+h+11).toFixed(1)+'" font-size="9" fill="#8b92a8" text-anchor="middle">'+(d.pnl>=0?"+":"")+d.pnl.toFixed(1)+'</text>'}).join("");
+ $("dchart").innerHTML='<svg viewBox="0 0 '+W+' '+H+'" width="100%" height="170" style="direction:ltr"><line x1="0" x2="'+W+'" y1="'+z+'" y2="'+z+'" stroke="rgba(255,255,255,.15)" stroke-dasharray="4 4"/>'+bars+'</svg>';
+ $("dsum").textContent="مجموع "+D.length+" روز: "+(tot>=0?"+":"")+f2(tot)+" U · روز سودده: "+win+" از "+D.length;
+ $("db").innerHTML=D.slice(-7).reverse().map(function(d){return '<tr><td>'+new Date(d.to*1000).toLocaleDateString("fa-IR",{month:"2-digit",day:"2-digit"})+'</td><td class="n '+(d.pnl>=0?"up":"dn")+'"><b>'+sg(d.pnl)+' U</b></td><td class="n">'+d.trades+'</td><td class="n">'+f2(d.end)+'</td></tr>'}).join("")}
+function gapStats(){if(now()-gk<5)return;gk=now();var T={"15m":[0,0,0,0],"1h":[0,0,0,0],"4h":[0,0,0,0]};
+ S.sig.forEach(function(s){var st=S.st[s.key];if(st!=="filled"&&st!=="act")return;var a=T[s.tf];a[0]++;if(st==="filled"){a[1]++;var e=S.ev[s.key];if(e&&e.ft){a[2]+=Math.max(0,e.ft-s.ts);a[3]++}}});
+ $("gsb").innerHTML=Object.keys(T).map(function(k){var a=T[k];return '<tr><td class="n">'+k+'</td><td>'+a[0]+'</td><td>'+a[1]+'</td><td>'+(a[0]?(a[1]/a[0]*100).toFixed(0)+"٪":"—")+'</td><td>'+(a[3]?dur(a[2]/a[3]):"—")+'</td></tr>'}).join("")}
+function botAges(){botCard()}
 function posCards(){var pl=plist(),lv=Array.isArray(S.pos),box=$("pcs");
  $("posLive").style.display=lv?"":"none";
  if(!pl.length){if(box._n!==0){box.innerHTML='<div class="emp">پوزیشن بازی نیست</div>';box._n=0;PC={}}return}
@@ -261,15 +318,15 @@ function posCards(){var pl=plist(),lv=Array.isArray(S.pos),box=$("pcs");
  rows.forEach(function(r,i){var t=r[0];seen[t.symbol]=1;gsub(t.symbol);if(!PC[t.symbol]){g.insertAdjacentHTML("beforeend",cardHtml(t));PC[t.symbol]=1}$("pc_"+t.symbol).style.order=i;fill(t,r[1])});
  Object.keys(PC).forEach(function(k){if(!seen[k]){var e=$("pc_"+k);if(e)e.remove();delete PC[k]}})}
 /* ---------- گپ‌های فعال + چارت زنده ---------- */
-function feed(){var L=actList(),k=L.map(function(s){return s.key}).join();
- if(k!==fk){fk=k;$("feed").innerHTML=L.length?L.map(function(s){var g=s.kind==="GAP";return '<article class="sg'+(g?" gap":"")+(S.fresh[s.key]?" new":"")+'"><div><span class="sym">'+esc(s.symbol)+'</span><div class="m"><span>'+(g?"⚠️ احتمال گپ":"🔴 SELL")+'</span><span class="tf">'+s.tf+'</span><span id="fa_'+s.key+'"></span><a href="'+tvu(s.symbol)+'" target="_blank" rel="noopener">TV</a><a href="'+lbu(s.symbol)+'" target="_blank" rel="noopener">LBank</a></div></div><div class="pc" style="color:'+(g?"var(--amb)":"var(--red)")+'">'+s.gap.toFixed(2)+'%</div><div class="bar"><b style="width:'+Math.min(100,s.gap*22)+'%"></b></div><div class="m" style="grid-column:1/-1">فاصله تا UB الان: <b id="fd_'+s.key+'" style="direction:ltr"></b> <span id="fs_'+s.key+'"></span></div></article>'}).join(""):'<div class="emp">هیچ گپ فعالی نیست</div>'}
- L.forEach(function(s){var e=S.ev[s.key],bp=botPx(s);setT($("fa_"+s.key),ago(s.ts));var unk=S.st[s.key]==="unk";
+function feed(){var L=actList(),k=L.map(function(s){return s.key+s.n}).sort().join();
+ if(k!==fk){fk=k;$("feed").innerHTML=L.length?L.map(function(s){var g=s.kind==="GAP";return '<article class="sg'+(g?" gap":"")+(S.fresh[s.key]?" new":"")+'" id="fr_'+s.key+'"><div><span class="sym">'+esc(s.symbol)+'</span><div class="m"><span>'+(g?"⚠️ احتمال گپ":"🔴 SELL")+'</span><span class="tf">'+s.tf+'</span>'+(s.n>1?'<span class="c2">×'+s.n+' تکرار</span>':'')+'<span id="fa_'+s.key+'"></span><a href="'+tvu(s.symbol)+'" target="_blank" rel="noopener">TV</a><a href="'+lbu(s.symbol)+'" target="_blank" rel="noopener">LBank</a></div></div><div class="pc" style="color:'+(g?"var(--amb)":"var(--red)")+'">'+s.gap.toFixed(2)+'%</div><div class="bar"><b style="width:'+Math.min(100,s.gap*22)+'%"></b></div><div class="m" style="grid-column:1/-1">فاصله تا UB الان: <b id="fd_'+s.key+'" style="direction:ltr"></b> <span id="fs_'+s.key+'"></span></div></article>'}).join(""):'<div class="emp">هیچ گپ فعالی نیست</div>'}
+ L.forEach(function(s,i){var r=$("fr_"+s.key);if(r)r.style.order=i;var e=S.ev[s.key],bp=botPx(s);setT($("fa_"+s.key),ago(s.ts));var unk=S.st[s.key]==="unk";
   setT($("fd_"+s.key),e?(e.d>=0?"+":"")+e.d.toFixed(2)+"٪":unk?"—":"…");var f=$("fs_"+s.key);
   if(f)f.textContent=e?(e.w?"⏳ منتظر کندل":"⏳ پرنشده"):(unk?"(چارت Gate موجود نیست"+(bp!=null?" · قیمت bot "+px(bp):"")+")":"")})}
-function lcards(){var L=actList().slice(0,6),k=L.map(function(s){return s.key}).join(),box=$("lc");
+function lcards(){var L=actList().slice(0,MAXC),k=L.map(function(s){return s.key+s.n}).sort().join(),box=$("lc");
  if(!L.length){if(lk!=="-"){lk="-";box.innerHTML='<div class="emp">همه‌ی گپ‌ها پر شده‌اند یا فعالی نیست</div>'}return}
- if(k!==lk){lk=k;box.innerHTML='<div class="lcg">'+L.map(function(s){return '<div class="lv"><div class="lh"><div><span class="sym">'+esc(s.symbol)+'</span> <span class="tf" style="font-size:11px">'+s.tf+'</span><div class="lb">'+(s.kind==="GAP"?"⚠️ احتمال گپ":"🔴 SELL")+'</div></div><span class="bd" id="lb_'+s.key+'">در حال دریافت…</span></div><canvas id="lcv_'+s.key+'" width="520" height="240"></canvas><div class="lf"><span id="lp_'+s.key+'"></span><span id="lu_'+s.key+'"></span><span id="ld_'+s.key+'"></span></div></div>'}).join("")+'</div>'}
- L.forEach(function(s){var c=CAN[s.symbol+"|"+s.tf],b=$("lb_"+s.key);if(!b)return;
+ if(k!==lk){lk=k;box.innerHTML='<div class="lcg">'+L.map(function(s){return '<div class="lv" id="lv_'+s.key+'"><div class="lh"><div><span class="sym">'+esc(s.symbol)+'</span> <span class="tf" style="font-size:11px">'+s.tf+'</span>'+(s.n>1?' <span class="c2">×'+s.n+'</span>':'')+'<div class="lb">'+(s.kind==="GAP"?"⚠️ احتمال گپ":"🔴 SELL")+'</div></div><span class="bd" id="lb_'+s.key+'">در حال دریافت…</span></div><canvas id="lcv_'+s.key+'" width="520" height="240"></canvas><div class="lf"><span id="lp_'+s.key+'"></span><span id="lu_'+s.key+'"></span><span id="ld_'+s.key+'"></span></div></div>'}).join("")+'</div>'}
+ L.forEach(function(s,i){var lvx=$("lv_"+s.key);if(lvx)lvx.style.order=i;var c=CAN[s.symbol+"|"+s.tf],b=$("lb_"+s.key);if(!b)return;
   if(c&&c.err){b.className="bd";b.textContent="چارت Gate موجود نیست";var bp=botPx(s),cx=$("lcv_"+s.key);if(cx)cx.style.display="none";setT($("lp_"+s.key),bp!=null?"قیمت bot "+px(bp):"قیمت bot —");setT($("lu_"+s.key),"");setT($("ld_"+s.key),"");return}
   var v=view(s),e=S.ev[s.key];if(!v||!e)return;draw($("lcv_"+s.key),v.slice(-50),e.ub);
   b.className="bd wt";b.textContent=e.w?"⏳ منتظر باز شدن کندل":"⏳ گپ هنوز پر نشده";
@@ -283,9 +340,9 @@ function hdr(){var ok=S.lvOn||gok;$("hb").className="hb"+(ok?"":" off");
  $("mode").textContent=mode()+(S.d.version?" · v"+S.d.version:"");
  var st=false;if(Array.isArray(S.pos)){var pa=now()-S.posTs;st=pa>Math.min(1800,Math.max(180,3*(S.pint||0)));$("posLive").textContent=st?"STALE":"LIVE";$("posLive").className=st?"live stale":"live";setT($("posAge"),agoS(S.posTs))}
  $("pcs").className=st?"stale":""}
-function ensure(){S.sig.slice(0,MAXN*2).forEach(function(s){if(now()-s.ts<40*PER[s.tf]&&S.st[s.key]!=="filled")loadC(s.symbol,s.tf)});actList().forEach(function(s){gsub(s.symbol,s.tf)})}
+function ensure(){S.sig.slice(0,60).forEach(function(s){if(now()-s.ts<40*PER[s.tf]&&S.st[s.key]!=="filled")loadC(s.symbol,s.tf)});S.sig.slice(0,60).forEach(function(s){if(S.st[s.key]!=="filled"&&S.st[s.key]!=="old")gsub(s.symbol,s.tf)})}
 function dirty(){if(!tm)tm=setTimeout(function(){tm=0;renderAll()},150)}
-function renderAll(){ensure();evalAll();hdr();wallet();posCards();feed();lcards();tkr()}
+function renderAll(){ensure();evalAll();hdr();wallet();posCards();botCard();journal();daysCard();feed();lcards();tkr();gapStats()}
 /* ---------- اعلان ---------- */
 function ping(s){if(!S.sound)return;
  try{var a=AC||new (window.AudioContext||window.webkitAudioContext)(),o=a.createOscillator(),g=a.createGain();o.frequency.value=s.kind==="SELL"?440:660;o.connect(g);g.connect(a.destination);g.gain.setValueAtTime(.15,a.currentTime);g.gain.exponentialRampToValueAtTime(.001,a.currentTime+.5);o.start();o.stop(a.currentTime+.5)}catch(e){}
@@ -302,20 +359,29 @@ $("bell").onclick=function(){var b=this;S.sound=!S.sound;
  var go=function(p){if(p==="granted")notify("✅ اعلان فعال شد","تست موفق بود");else alert("اعلان مسدود است. ویندوز: قفل کنار آدرس ← Notifications ← Allow، و Focus Assist / Do Not Disturb را خاموش کن.")};
  if(Notification.permission==="default")Notification.requestPermission().then(go);else go(Notification.permission)};
 /* ---------- رویدادهای ربات (ntfy) ---------- */
-function onEv(v,hist){
+function onEv(v,hist){if(v.t)S.lt[v.t]=Math.max(S.lt[v.t]||0,hist?(v._t||0):now());if(v.ver)S.ver=v.ver;if(v.src&&typeof v.src==="object")S.srcn=v.src;
  if(v.t==="sig"){if(addSig({kind:v.kind,symbol:v.symbol,tf:v.tf,gap:v.gap,ts:v.ts,px:v.px!=null?v.px:(v.price!=null?v.price:v.fut_last)},hist))dirty()}
  else if(v.t==="pos"&&Array.isArray(v.positions)){
   var P=v.positions.filter(function(p){return p&&/^[A-Z0-9]{2,20}USDT$/.test(String(p.symbol).toUpperCase())&&isFinite(+p.entry)&&isFinite(+p.tp)});
-  P.forEach(function(p){p.symbol=String(p.symbol).toUpperCase();if(p.px!=null&&isFinite(+p.px))setBot(p.symbol,+p.px)});
+  P.forEach(function(p){p.symbol=String(p.symbol).toUpperCase();if(p.px!=null&&isFinite(+p.px))setBot(p.symbol,+p.px);if(p.opened_ts>1e12)p.opened_ts=p.opened_ts/1000;if(Array.isArray(p.steps))p.steps.forEach(function(x){if(x&&x.ts>1e12)x.ts=x.ts/1000})});
+  if(!hist&&S.ready&&Array.isArray(S.pos)){var op={};S.pos.forEach(function(x){op[x.symbol]=+x.pele||0});P.forEach(function(x){var b=op[x.symbol];if(b==null)evt("🟢 ورود جدید",x.symbol+" @ "+px(x.entry));else if((+x.pele||0)>b)evt("➕ پله "+(+x.pele)+" · "+x.symbol,"میانگین ورود "+px(x.entry))})}
   /* ریست شبانه paper: پوزیشن خالی + start=1000 + (بدون سود تحقق‌یافته) یا reset:true */
   var rs=v.reset===true||(P.length===0&&+v.start===1000&&(v.realized==null||+v.realized===0||+v.closed_n===0));
   if(v.start!=null||v.realized!=null||v.lev!=null||v.closed_n!=null||v.mode!=null)S.ex={start:v.start,lev:v.lev,realized:rs?0:v.realized,closed_n:rs?0:v.closed_n,mode:v.mode};
-  if(rs){S.d.trades=[];S.d.closed={profit:0,loss:0,count:0}}
-  var tt=hist?(v._t||now()):now();if(S.posT0!=null&&tt>S.posT0){var dd=tt-S.posT0;S.pint=S.pint?S.pint*.7+dd*.3:dd}S.posT0=tt;S.pos=P;S.posTs=tt;dirty()}}
+  if(rs){S.d.trades=[];S.d.closed={profit:0,loss:0,count:0};S.cl=[];S.resetAt=hist?(v._t||0):now()}
+  var tt=hist?(v._t||now()):now();if(S.posT0!=null&&tt>S.posT0){var dd=tt-S.posT0;S.pint=S.pint?S.pint*.7+dd*.3:dd}S.posT0=tt;S.pos=P;S.posTs=tt;dirty()}
+ else if(v.t==="rep"){var ts=+v.ts;if(!(ts>1e9&&ts<4e9))ts=v._t||now();
+  var r={ts:ts,cycle:v.cycle,ms:v.ms,scanned:v.scanned,gaps:v.gaps,entries:v.entries,adds:v.adds,closes:v.closes,errs:v.errs};
+  if(!S.reps.some(function(x){return x.ts===r.ts&&x.cycle===r.cycle})){S.reps.push(r);S.reps.sort(function(a,b){return b.ts-a.ts});S.reps=S.reps.slice(0,20)}dirty()}
+ else if(v.t==="close"&&/^[A-Z0-9]{2,20}USDT$/.test(String(v.symbol).toUpperCase())&&isFinite(+v.pnl)){var ts2=+v.ts;if(!(ts2>1e9&&ts2<4e9))ts2=v._t||now();if(ts2<S.resetAt)return;
+  var sy=String(v.symbol).toUpperCase(),k2=sy+"|"+ts2;
+  if(!S.cl.some(function(x){return x.ts+"|"===ts2+"|"&&x.symbol===sy})){S.cl.push({symbol:sy,ts:ts2,entry:v.entry,exit:v.exit,pnl:+v.pnl,roi:v.roi,steps:v.steps,dur:v.dur,why:v.why});S.cl.sort(function(a,b){return b.ts-a.ts});S.cl=S.cl.slice(0,60);
+   if(!hist&&S.ready)evt((String(v.why).toUpperCase()==="TP"?"✅ TP · ":"🔒 بسته شد · ")+sy,sg(+v.pnl)+" U")}dirty()}
+ else if(v.t==="days"&&Array.isArray(v.days)){S.days=normDays(v.days);dirty()}}
 function sse(){if(!window.EventSource)return;var t0=Date.now()/1000,es=new EventSource("https://ntfy.sh/"+LIVE_TOPIC+"/sse?since=12h");
  es.onmessage=function(e){var m,v;try{m=JSON.parse(e.data)}catch(x){return}if(m.event!=="message")return;try{v=JSON.parse(m.message)}catch(x){return}
   v.ts=v.ts||m.time;v._t=m.time||now();S.lvOn=true;S.last=Math.max(S.last,m.time||now());onEv(v,m.time<t0-3)}}
-function boot(){J("signals.json").catch(function(){return J("https://raw.githubusercontent.com/"+REPO+"/main/signals.json")}).then(function(j){S.d=j;(j.signals||[]).forEach(function(s){addSig(s,true)})}).catch(function(){}).then(function(){S.ready=1;dirty()})}
+function boot(){J("signals.json").catch(function(){return J("https://raw.githubusercontent.com/"+REPO+"/main/signals.json")}).then(function(j){S.d=j;if(Array.isArray(j.days))S.days=normDays(j.days);(j.signals||[]).forEach(function(s){addSig(s,true)})}).catch(function(){}).then(function(){S.ready=1;dirty()})}
 function draw(cv,c,ubm){var x=cv.getContext("2d"),W=cv.width,H=cv.height,mn=1e99,mx=-1e99,i;
  c.forEach(function(k){mn=Math.min(mn,k[2],k[6]);mx=Math.max(mx,k[1],k[4])});
  var r=mx-mn||1,Y=function(v){return H-14-(v-mn)/r*(H-28)},w=W/c.length;x.clearRect(0,0,W,H);
@@ -325,7 +391,7 @@ function draw(cv,c,ubm){var x=cv.getContext("2d"),W=cv.width,H=cv.height,mn=1e99
  if(ubm){x.setLineDash([6,5]);x.strokeStyle="#fff";x.lineWidth=1;x.beginPath();x.moveTo(0,Y(ubm));x.lineTo(W,Y(ubm));x.stroke();x.setLineDash([])}}
 
 $("fl").onclick=function(e){var b=e.target&&e.target.closest?e.target.closest(".chip"):null;if(!b)return;S.f=b.dataset.f;[].forEach.call(this.children,function(x){x.setAttribute("aria-pressed",String(x.dataset.f===S.f))});fk="";lk="";tkk="";dirty()};
-boot();sse();wsConnect();dirty();setInterval(function(){hdr();actList().forEach(function(s){setT($("fa_"+s.key),ago(s.ts))})},1000);
+boot();sse();wsConnect();dirty();setInterval(function(){hdr();botAges();posAges();actList().forEach(function(s){setT($("fa_"+s.key),ago(s.ts))})},1000);
 </script>
 </body>
 </html>
