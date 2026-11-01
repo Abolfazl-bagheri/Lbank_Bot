@@ -2562,7 +2562,8 @@
       "side": "SELL",
       "upper": 0.016951174821184748,
       "open": 0.01714,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "STARUSDT",
@@ -2571,7 +2572,8 @@
       "side": "SELL",
       "upper": 0.03801390214571815,
       "open": 0.03847,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "LYNUSDT",
@@ -2580,6 +2582,15 @@
       "side": "SELL",
       "upper": 0.016589339345667628,
       "open": 0.01721,
+      "reported": false
+    },
+    {
+      "symbol": "STARUSDT",
+      "tf": "1h",
+      "candle_ts": 1793552400,
+      "side": "SELL",
+      "upper": 0.03768476415956888,
+      "open": 0.03847,
       "reported": false
     }
   ],
@@ -2628,7 +2639,6 @@
     "QUACKAIUSDT": 1793545678,
     "BIANRENSHENGUSDT": 1793549283,
     "AI1USDT": 1793551943,
-    "GSTOCKUSDT": 1793552840,
     "HAJIMIUSDT": 1793558243,
     "LONGXIAUSDT": 1793558277,
     "PIPEDOGUSDT": 1793564407,
@@ -2645,9 +2655,10 @@
     "TRUMPSOLUSDT": 1793586070,
     "UP2USDT": 1793587113,
     "BEMUSDT": 1793589720,
-    "GALUSDT": 1793591485
+    "GALUSDT": 1793591485,
+    "GSTOCKUSDT": 1793596922
   },
-  "last_trade_report_ts": 1793551984,
+  "last_trade_report_ts": 1793553754,
   "last_daily_report_date": "2026-10-29",
   "last_known_version": "2.6.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
