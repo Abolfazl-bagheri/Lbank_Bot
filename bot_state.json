@@ -4,11 +4,11 @@
       "symbol": "COLLECTUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.02541551337204195,
-      "qty": 94430.5144,
+      "entry": 0.025417176940985546,
+      "qty": 94424.3339,
       "margin": 120.0,
       "leverage": 20,
-      "tp_price": 0.0247801255377409,
+      "tp_price": 0.024781747517460907,
       "tf": "1h",
       "opened_at": 1793415900,
       "adds": 11,
@@ -55,11 +55,11 @@
       "symbol": "LAUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.059575265607930125,
-      "qty": 20142.587600000003,
+      "entry": 0.05955733807326363,
+      "qty": 20148.650700000002,
       "margin": 60.0,
       "leverage": 20,
-      "tp_price": 0.05808588396773187,
+      "tp_price": 0.05806840462143204,
       "tf": "1h",
       "opened_at": 1793484378,
       "adds": 5,
@@ -67,6 +67,23 @@
       "last_leg_candle_ts": 1793490300,
       "dry_run": true,
       "order_id": "PAPER-LAUSDT-1793484378"
+    },
+    {
+      "symbol": "BMTUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.02389,
+      "qty": 8371.7036,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.02329275,
+      "tf": "15m",
+      "opened_at": 1793493993,
+      "adds": 0,
+      "entry_candle_ts": 1793493900,
+      "last_leg_candle_ts": 1793493900,
+      "dry_run": true,
+      "order_id": "PAPER-BMTUSDT-1793493993"
     }
   ],
   "trade_history": [
@@ -934,11 +951,11 @@
       "symbol": "ANSEMUSDT",
       "side": "SELL",
       "status": "closed",
-      "entry": 0.052985932439115715,
-      "qty": 37745.8677,
+      "entry": 0.05297703467039396,
+      "qty": 37752.2073,
       "margin": 100.0,
       "leverage": 20,
-      "tp_price": 0.05166128412813782,
+      "tp_price": 0.05165260880363411,
       "tf": "1h",
       "opened_at": 1793469807,
       "adds": 9,
@@ -946,9 +963,9 @@
       "last_leg_candle_ts": 1793488500,
       "dry_run": true,
       "order_id": "PAPER-ANSEMUSDT-1793469807",
-      "closed_at": 1793490633,
-      "close_px": 0.05029,
-      "pnl_usdt": 101.76030938828966
+      "closed_at": 1793490550,
+      "close_px": 0.0504,
+      "pnl_usdt": 97.28874733844356
     }
   ],
   "pending": [
@@ -962,19 +979,25 @@
       "symbol": "MAGMAUSDT",
       "tf": "4h",
       "candle_ts": 1793347200,
-      "side": "SELL"
+      "side": "SELL",
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "SOPHUSDT",
       "tf": "4h",
       "candle_ts": 1793347200,
-      "side": "SELL"
+      "side": "SELL",
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "BEAMXUSDT",
       "tf": "4h",
       "candle_ts": 1793347200,
-      "side": "SELL"
+      "side": "SELL",
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "MAGMAUSDT",
@@ -1022,31 +1045,41 @@
       "symbol": "PUNDIXUSDT",
       "tf": "4h",
       "candle_ts": 1793361600,
-      "side": "SELL"
+      "side": "SELL",
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "BEAMXUSDT",
       "tf": "4h",
       "candle_ts": 1793361600,
-      "side": "SELL"
+      "side": "SELL",
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "SOPHUSDT",
       "tf": "4h",
       "candle_ts": 1793361600,
-      "side": "SELL"
+      "side": "SELL",
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "MAGMAUSDT",
       "tf": "4h",
       "candle_ts": 1793361600,
-      "side": "SELL"
+      "side": "SELL",
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "ALPINEUSDT",
       "tf": "4h",
       "candle_ts": 1793361600,
-      "side": "SELL"
+      "side": "SELL",
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "IDOLUSDT",
@@ -1102,19 +1135,25 @@
       "symbol": "MAGMAUSDT",
       "tf": "4h",
       "candle_ts": 1793376000,
-      "side": "SELL"
+      "side": "SELL",
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "BIRBUSDT",
       "tf": "4h",
       "candle_ts": 1793376000,
-      "side": "SELL"
+      "side": "SELL",
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "BEAMXUSDT",
       "tf": "4h",
       "candle_ts": 1793376000,
-      "side": "SELL"
+      "side": "SELL",
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "IDOLUSDT",
@@ -1150,7 +1189,9 @@
       "symbol": "SOPHUSDT",
       "tf": "4h",
       "candle_ts": 1793404800,
-      "side": "SELL"
+      "side": "SELL",
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ACEUSDT",
@@ -1272,7 +1313,9 @@
       "symbol": "WETUSDT",
       "tf": "4h",
       "candle_ts": 1793419200,
-      "side": "SELL"
+      "side": "SELL",
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "SWARMSUSDT",
@@ -1588,7 +1631,6 @@
     "PORUSDT": 1793304371,
     "IBBETFUSDT": 1793310363,
     "BIANRENSHENGUSDT": 1793311457,
-    "SYNUSDT": 1793321387,
     "CANTONUSDT": 1793322198,
     "RIOTUSDT": 1793324068,
     "SMRUSDT": 1793331277,
@@ -1644,10 +1686,10 @@
     "1000WOJAKUSDT": 1793527715,
     "CZUSDT": 1793527710,
     "NEIRO1USDT": 1793527717,
-    "UBIKUSDT": 1793533001,
-    "GALUSDT": 1793533831
+    "UBIKUSDT": 1793532812,
+    "GALUSDT": 1793533749
   },
-  "last_trade_report_ts": 1793492462,
+  "last_trade_report_ts": 1793493108,
   "last_daily_report_date": "2026-10-29",
   "last_known_version": "2.5.0",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
