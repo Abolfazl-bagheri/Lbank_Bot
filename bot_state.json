@@ -103,6 +103,31 @@
       "last_leg_candle_ts": 1793543925,
       "dry_run": true,
       "order_id": "PAPER-MOVRUSDT-1793541912"
+    },
+    {
+      "symbol": "MELANIAUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.0794,
+      "qty": 2518.8917,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.077415,
+      "tf": "1h",
+      "opened_at": 1793545450,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.0794,
+          "ts": 1793545450
+        }
+      ],
+      "entry_candle_ts": 1793545200,
+      "last_leg_candle_ts": 1793545200,
+      "dry_run": true,
+      "order_id": "PAPER-MELANIAUSDT-1793545450"
     }
   ],
   "trade_history": [
@@ -2407,6 +2432,15 @@
       "open": 1.128,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "ESPORTSUSDT",
+      "tf": "1h",
+      "candle_ts": 1793545200,
+      "side": "SELL",
+      "upper": 0.017064367309206588,
+      "open": 0.01725,
+      "reported": false
     }
   ],
   "paper_days": [],
