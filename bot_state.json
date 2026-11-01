@@ -52,24 +52,30 @@
       "symbol": "ZZZUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.01072,
-      "qty": 18656.7164,
-      "margin": 10.0,
+      "entry": 0.010686614761749057,
+      "qty": 56145.0013,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.010452,
+      "tp_price": 0.01041944939270533,
       "tf": "15m",
       "opened_at": 1793539904,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.0107
+      ],
       "steps": [
         {
           "px": 0.01072,
           "ts": 1793539904
+        },
+        {
+          "px": 0.01067,
+          "ts": 1793544612
         }
       ],
       "entry_candle_ts": 1793539800,
-      "last_leg_candle_ts": 1793539800,
+      "last_leg_candle_ts": 1793544612,
       "dry_run": true,
       "order_id": "PAPER-ZZZUSDT-1793539904"
     },
