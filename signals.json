@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.2",
-  "updated_at": 1793561637,
+  "updated_at": 1793561646,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "FONEUSDT",
-      "tf": "15m",
-      "gap": 1.78,
-      "ts": 1793526138
-    },
     {
       "kind": "GAP",
       "symbol": "IDOLUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 1.36,
       "ts": 1793561637
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793561646
     }
   ],
   "trades": [
@@ -1494,6 +1494,19 @@
       "lev": 20,
       "px": 0.03801,
       "pnl": 2.2887,
+      "tf": "15m"
+    },
+    {
+      "symbol": "ARIAUSDT",
+      "side": "SELL",
+      "entry": 0.09058,
+      "tp": 0.08831549999999999,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.09058,
+      "pnl": 0.0,
       "tf": "15m"
     }
   ],
