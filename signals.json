@@ -1,50 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.5.1",
-  "updated_at": 1793509689,
+  "updated_at": 1793510027,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "HYPERUSDT",
-      "tf": "15m",
-      "gap": 1.83,
-      "ts": 1793459657
-    },
-    {
-      "kind": "GAP",
-      "symbol": "RSRUSDT",
-      "tf": "15m",
-      "gap": 6.68,
-      "ts": 1793460452
-    },
-    {
-      "kind": "GAP",
-      "symbol": "HYPERUSDT",
-      "tf": "15m",
-      "gap": 2.61,
-      "ts": 1793460477
-    },
-    {
-      "kind": "GAP",
-      "symbol": "SIRENUSDT",
-      "tf": "15m",
-      "gap": 1.12,
-      "ts": 1793460500
-    },
-    {
-      "kind": "GAP",
-      "symbol": "ESPORTSUSDT",
-      "tf": "4h",
-      "gap": 1.6,
-      "ts": 1793461230
-    },
-    {
-      "kind": "GAP",
-      "symbol": "UAIUSDT",
-      "tf": "4h",
-      "gap": 4.85,
-      "ts": 1793461258
-    },
     {
       "kind": "GAP",
       "symbol": "RUNEUSDT",
@@ -1372,36 +1330,78 @@
       "kind": "GAP",
       "symbol": "ESPORTSUSDT",
       "tf": "1h",
-      "gap": 3.19,
-      "ts": 1793508880
+      "gap": 3.46,
+      "ts": 1793508886
     },
     {
       "kind": "GAP",
       "symbol": "ZAMAUSDT",
       "tf": "1h",
-      "gap": 2.24,
-      "ts": 1793508943
+      "gap": 2.1,
+      "ts": 1793508916
     },
     {
       "kind": "GAP",
       "symbol": "REZUSDT",
       "tf": "1h",
-      "gap": 1.77,
-      "ts": 1793508975
+      "gap": 1.59,
+      "ts": 1793508925
+    },
+    {
+      "kind": "SELL",
+      "symbol": "REZUSDT",
+      "tf": "15m",
+      "gap": 1.26,
+      "ts": 1793509330
     },
     {
       "kind": "POS",
       "symbol": "—",
       "tf": "—",
       "gap": 0.0,
-      "ts": 1793509687
+      "ts": 1793509334
+    },
+    {
+      "kind": "SELL",
+      "symbol": "JCTUSDT",
+      "tf": "15m",
+      "gap": 1.82,
+      "ts": 1793509426
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793509430
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793509466
     },
     {
       "kind": "HEARTBEAT",
       "symbol": "—",
       "tf": "—",
       "gap": 0.0,
-      "ts": 1793509689
+      "ts": 1793509468
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793509562
+    },
+    {
+      "kind": "GAP",
+      "symbol": "BONERUSDT",
+      "tf": "15m",
+      "gap": 5.11,
+      "ts": 1793510027
     }
   ],
   "trades": [
@@ -1414,29 +1414,55 @@
       "pele": 21,
       "margin": 210.0,
       "lev": 20,
-      "px": 0.011647,
-      "pnl": -1428.7461,
+      "px": 0.011422,
+      "pnl": -1320.0084,
       "tf": "1h"
     },
     {
       "symbol": "ZZZUSDT",
       "side": "SELL",
-      "entry": 0.01052933835450805,
-      "tp": 0.01026610489564535,
+      "entry": 0.01054647263637191,
+      "tp": 0.010282810820462611,
       "adds": 7,
       "pele": 8,
       "margin": 80.0,
       "lev": 20,
-      "px": 0.01058,
-      "pnl": -7.6984,
+      "px": 0.01075,
+      "pnl": -30.877,
       "tf": "1h"
+    },
+    {
+      "symbol": "REZUSDT",
+      "side": "SELL",
+      "entry": 0.004441,
+      "tp": 0.004329975,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.004309,
+      "pnl": 5.9446,
+      "tf": "15m"
+    },
+    {
+      "symbol": "JCTUSDT",
+      "side": "SELL",
+      "entry": 0.00545,
+      "tp": 0.00531375,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.005444,
+      "pnl": 0.2202,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
   "realized": 2299.1501,
   "closed_n": 50,
-  "open_upnl": -1436.4445,
-  "equity": 1862.7056,
+  "open_upnl": -1344.7206,
+  "equity": 1954.4295,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
