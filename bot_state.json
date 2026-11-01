@@ -84,6 +84,23 @@
       "last_leg_candle_ts": 1793497500,
       "dry_run": true,
       "order_id": "PAPER-AEONUSDT-1793497561"
+    },
+    {
+      "symbol": "APRUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.05902,
+      "qty": 3388.6818,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0575445,
+      "tf": "1h",
+      "opened_at": 1793498583,
+      "adds": 0,
+      "entry_candle_ts": 1793498400,
+      "last_leg_candle_ts": 1793498400,
+      "dry_run": true,
+      "order_id": "PAPER-APRUSDT-1793498583"
     }
   ],
   "trade_history": [
@@ -1680,7 +1697,18 @@
       "side": "SELL",
       "upper": 0.009860050123817793,
       "open": 0.00999,
-      "reported": false
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "AEONUSDT",
+      "tf": "15m",
+      "candle_ts": 1793497500,
+      "side": "SELL",
+      "upper": 0.02664353583743149,
+      "open": 0.02733,
+      "reported": true,
+      "filled": true
     }
   ],
   "kline_blacklist": {
@@ -1712,7 +1740,6 @@
     "OXYUSDT": 1793417641,
     "QUACKAIUSDT": 1793434591,
     "HK0700USDT": 1793434646,
-    "OROCHIUSDT": 1793439241,
     "LONGXIAUSDT": 1793441916,
     "BARUSDT": 1793444715,
     "SXTUSDT": 1793445574,
@@ -1723,10 +1750,8 @@
     "PORTALUSDT": 1793471666,
     "CAPETHUSDT": 1793483293,
     "TOADUSDT": 1793485166,
-    "UP2USDT": 1793487913,
     "FIGHT1USDT": 1793487917,
     "B3USDT": 1793487945,
-    "STONKBROKERUSDT": 1793495167,
     "GSTOCKUSDT": 1793498719,
     "AXLUSDT": 1793502358,
     "WOTAMALAILEUSDT": 1793506829,
@@ -1747,7 +1772,9 @@
     "GALUSDT": 1793533749,
     "SYNUSDT": 1793537208,
     "MANCERUSDT": 1793538338,
-    "HOTUSDT": 1793539007
+    "HOTUSDT": 1793539007,
+    "UP2USDT": 1793540926,
+    "OROCHIUSDT": 1793541034
   },
   "last_trade_report_ts": 1793496943,
   "last_daily_report_date": "2026-10-29",
