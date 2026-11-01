@@ -97,24 +97,28 @@
       "symbol": "APRUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.07362,
-      "qty": 2716.6531,
-      "margin": 10.0,
+      "entry": 0.07317197420436697,
+      "qty": 8199.8608,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.07177950000000001,
+      "tp_price": 0.0713426748492578,
       "tf": "1h",
       "opened_at": 1793538264,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 0.07362,
           "ts": 1793538264
+        },
+        {
+          "px": 0.07295,
+          "ts": 1793541871
         }
       ],
       "entry_candle_ts": 1793538000,
-      "last_leg_candle_ts": 1793538000,
+      "last_leg_candle_ts": 1793541600,
       "dry_run": true,
       "order_id": "PAPER-APRUSDT-1793538264"
     },
@@ -2336,6 +2340,15 @@
       "open": 0.20062,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "TAGUSDT",
+      "tf": "1h",
+      "candle_ts": 1793541600,
+      "side": "SELL",
+      "upper": 0.000794821543026425,
+      "open": 0.000803,
+      "reported": false
     }
   ],
   "paper_days": [],
