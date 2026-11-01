@@ -21,11 +21,11 @@
       "symbol": "ZZZUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.01054647263637191,
-      "qty": 151709.49140000003,
+      "entry": 0.01052933835450805,
+      "qty": 151956.3667,
       "margin": 80.0,
       "leverage": 20,
-      "tp_price": 0.010282810820462611,
+      "tp_price": 0.01026610489564535,
       "tf": "1h",
       "opened_at": 1793494991,
       "adds": 7,
@@ -33,40 +33,6 @@
       "last_leg_candle_ts": 1793509200,
       "dry_run": true,
       "order_id": "PAPER-ZZZUSDT-1793494991"
-    },
-    {
-      "symbol": "REZUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.004441,
-      "qty": 45034.902,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.004329975,
-      "tf": "15m",
-      "opened_at": 1793509332,
-      "adds": 0,
-      "entry_candle_ts": 1793509200,
-      "last_leg_candle_ts": 1793509200,
-      "dry_run": true,
-      "order_id": "PAPER-REZUSDT-1793509332"
-    },
-    {
-      "symbol": "JCTUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.00545,
-      "qty": 36697.2477,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.00531375,
-      "tf": "15m",
-      "opened_at": 1793509428,
-      "adds": 0,
-      "entry_candle_ts": 1793509200,
-      "last_leg_candle_ts": 1793509200,
-      "dry_run": true,
-      "order_id": "PAPER-JCTUSDT-1793509428"
     }
   ],
   "trade_history": [
@@ -1814,24 +1780,6 @@
       "upper": 0.010827496522843595,
       "open": 0.01159,
       "reported": false
-    },
-    {
-      "symbol": "REZUSDT",
-      "tf": "15m",
-      "candle_ts": 1793509200,
-      "side": "SELL",
-      "upper": 0.004384964714332465,
-      "open": 0.004445,
-      "reported": false
-    },
-    {
-      "symbol": "JCTUSDT",
-      "tf": "15m",
-      "candle_ts": 1793509200,
-      "side": "SELL",
-      "upper": 0.00535100545843089,
-      "open": 0.005424,
-      "reported": false
     }
   ],
   "kline_blacklist": {
@@ -1896,9 +1844,9 @@
     "BIANRENSHENGUSDT": 1793549283,
     "NIULAIUSDT": 1793551933,
     "AI1USDT": 1793551943,
-    "GSTOCKUSDT": 1793552634
+    "GSTOCKUSDT": 1793552840
   },
-  "last_trade_report_ts": 1793506096,
+  "last_trade_report_ts": 1793508772,
   "last_daily_report_date": "2026-10-29",
   "last_known_version": "2.5.1",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
