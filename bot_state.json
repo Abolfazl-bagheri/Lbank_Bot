@@ -50,15 +50,15 @@
       "symbol": "SUPERUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.17795100388033602,
-      "qty": 7867.3341,
-      "margin": 70.0,
+      "entry": 0.18012432593904965,
+      "qty": 16655.163,
+      "margin": 150.0,
       "leverage": 20,
-      "tp_price": 0.1735022287833276,
+      "tp_price": 0.1756212177905734,
       "tf": "1h",
       "opened_at": 1793523944,
-      "adds": 2,
-      "last_leg_margin": 40.0,
+      "adds": 3,
+      "last_leg_margin": 80.0,
       "used_res_levels": [
         0.1771,
         0.18
@@ -75,10 +75,14 @@
         {
           "px": 0.17935,
           "ts": 1793529165
+        },
+        {
+          "px": 0.18207,
+          "ts": 1793531140
         }
       ],
       "entry_candle_ts": 1793523600,
-      "last_leg_candle_ts": 1793529165,
+      "last_leg_candle_ts": 1793530800,
       "dry_run": true,
       "order_id": "PAPER-SUPERUSDT-1793523944"
     },
@@ -2117,7 +2121,8 @@
       "side": "SELL",
       "upper": 0.001772223188852606,
       "open": 0.001827,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "IDOLUSDT",
@@ -2136,7 +2141,18 @@
       "side": "SELL",
       "upper": 0.0021129079866934034,
       "open": 0.002188,
-      "reported": false
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "IDOLUSDT",
+      "tf": "15m",
+      "candle_ts": 1793529900,
+      "side": "SELL",
+      "upper": 0.022994784440722817,
+      "open": 0.023607,
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [],
@@ -2179,7 +2195,6 @@
     "AXLUSDT": 1793502358,
     "DODOUSDT": 1793508698,
     "ARROWUSDT": 1793516639,
-    "AINBSCUSDT": 1793524035,
     "BEMUSDT": 1793527592,
     "QUID1USDT": 1793527676,
     "UBIKUSDT": 1793532812,
@@ -2205,7 +2220,7 @@
     "1000SATSUSDT": 1793571471,
     "CZUSDT": 1793571475
   },
-  "last_trade_report_ts": 1793529180,
+  "last_trade_report_ts": 1793530083,
   "last_daily_report_date": "2026-10-29",
   "last_known_version": "2.6.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
