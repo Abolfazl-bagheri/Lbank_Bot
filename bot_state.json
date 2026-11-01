@@ -47,31 +47,6 @@
       "order_id": "PAPER-FORMUSDT-1793521039"
     },
     {
-      "symbol": "PROMUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 5.928,
-      "qty": 33.7382,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 5.7798,
-      "tf": "1h",
-      "opened_at": 1793523903,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 5.928,
-          "ts": 1793523903
-        }
-      ],
-      "entry_candle_ts": 1793523600,
-      "last_leg_candle_ts": 1793523600,
-      "dry_run": true,
-      "order_id": "PAPER-PROMUSDT-1793523903"
-    },
-    {
       "symbol": "SUPERUSDT",
       "side": "SELL",
       "status": "open",
@@ -100,15 +75,15 @@
       "symbol": "FONEUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.0017625143954016834,
-      "qty": 340422.7515,
-      "margin": 30.0,
+      "entry": 0.0017837412587433125,
+      "qty": 784867.1958999999,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 0.0017184515355166412,
-      "tf": "15m",
+      "tp_price": 0.0017391477272747297,
+      "tf": "1h",
       "opened_at": 1793524579,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [],
       "steps": [
         {
@@ -118,10 +93,14 @@
         {
           "px": 0.00179,
           "ts": 1793525478
+        },
+        {
+          "px": 0.0018,
+          "ts": 1793527510
         }
       ],
       "entry_candle_ts": 1793524500,
-      "last_leg_candle_ts": 1793525400,
+      "last_leg_candle_ts": 1793527200,
       "dry_run": true,
       "order_id": "PAPER-FONEUSDT-1793524579"
     }
@@ -1193,6 +1172,34 @@
       "closed_at": 1793525566,
       "close_px": 0.026056,
       "pnl_usdt": 5.43608124253285
+    },
+    {
+      "symbol": "PROMUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 5.928,
+      "qty": 33.7382,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 5.7798,
+      "tf": "1h",
+      "opened_at": 1793523903,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 5.928,
+          "ts": 1793523903
+        }
+      ],
+      "entry_candle_ts": 1793523600,
+      "last_leg_candle_ts": 1793523600,
+      "dry_run": true,
+      "order_id": "PAPER-PROMUSDT-1793523903",
+      "closed_at": 1793525570,
+      "close_px": 5.767,
+      "pnl_usdt": 5.431848852901471
     }
   ],
   "pending": [
@@ -2016,7 +2023,8 @@
       "side": "SELL",
       "upper": 5.946921426728792,
       "open": 6.106,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "SUPERUSDT",
@@ -2025,7 +2033,8 @@
       "side": "SELL",
       "upper": 0.17384163398023045,
       "open": 0.17608,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "FORMUSDT",
@@ -2034,7 +2043,8 @@
       "side": "SELL",
       "upper": 0.21152738642378513,
       "open": 0.2161,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "FONEUSDT",
@@ -2053,7 +2063,8 @@
       "side": "SELL",
       "upper": 0.0017554182158499429,
       "open": 0.001795,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [],
@@ -2123,7 +2134,7 @@
     "BIO1USDT": 1793567274,
     "FLOCK1USDT": 1793568744
   },
-  "last_trade_report_ts": 1793524086,
+  "last_trade_report_ts": 1793526614,
   "last_daily_report_date": "2026-10-29",
   "last_known_version": "2.6.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
