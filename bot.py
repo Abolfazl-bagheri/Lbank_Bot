@@ -35,7 +35,7 @@ SIGNALS_FILE = os.path.join(BASE_DIR, "signals.json")
 LIVE_TOPIC = os.environ.get("LIVE_TOPIC", "lbank-gap-b0b85cee29ce").strip()
 STATE_BAK = os.path.join(BASE_DIR, "bot_state.bak")
 
-BOT_VERSION = "2.5.0"
+BOT_VERSION = "2.5.1"
 CHANGELOG = {
     "2.1.0": [
         "چارت احتمال‌گپ → استایل SolAtlas (خط‌روند شکست/بازتست) — هنوز ناقص",
@@ -298,6 +298,7 @@ def push_positions_live() -> None:
     """اسنپ‌شات پوزیشن‌های باز برای صفحه وب (ntfy + signals.json)."""
     try:
         rows = []
+        open_upnl = 0.0
         for tr in open_trades:
             if tr.get("status") != "open":
                 continue
@@ -306,21 +307,41 @@ def push_positions_live() -> None:
                 upnl, roi = _sell_upnl(tr, float(px))
             except Exception:
                 upnl, roi = 0.0, 0.0
+            open_upnl += float(upnl)
             rows.append({
                 "symbol": tr.get("symbol"),
-                "side": tr.get("side"),
+                "side": tr.get("side") or "SELL",
                 "entry": tr.get("entry"),
                 "tp": tr.get("tp_price"),
                 "adds": int(tr.get("adds") or 0),
                 "pele": int(tr.get("adds") or 0) + 1,
-                "margin": tr.get("margin"),
+                "margin": float(tr.get("margin") or TRADE_MARGIN_USDT),
+                "lev": int(tr.get("leverage") or TRADE_LEVERAGE),
                 "px": px,
                 "pnl": round(float(upnl), 4),
                 "roi": round(float(roi), 2),
                 "tf": tr.get("tf"),
             })
-        push_live({"t": "pos", "positions": rows, "n": len(rows), "ts": int(time.time())})
-        # به‌روز کردن trades داخل signals.json بدون سیگنال جعلی
+        closed = [x for x in trade_history if x.get("status") == "closed"]
+        realized = sum(float(x.get("pnl_usdt") or 0) for x in closed)
+        mode = "PAPER" if is_paper_mode() else ("LIVE" if trading_enabled() else "OFF")
+        ev = {
+            "t": "pos",
+            "positions": rows,
+            "n": len(rows),
+            "start": float(PAPER_START_BALANCE),
+            "realized": round(float(realized), 4),
+            "closed_n": len(closed),
+            "open_upnl": round(float(open_upnl), 4),
+            "equity": round(float(PAPER_START_BALANCE) + float(realized) + float(open_upnl), 4),
+            "lev": int(TRADE_LEVERAGE),
+            "margin_leg": float(TRADE_MARGIN_USDT),
+            "tp_pct": float(TRADE_TP_PCT),
+            "mode": mode,
+            "version": BOT_VERSION,
+            "ts": int(time.time()),
+        }
+        push_live(ev)
         log_signal_web("POS", "—", "—", 0.0)
     except Exception as e:
         log.debug("push_positions: %s", e)
@@ -643,21 +664,39 @@ def log_signal_web(kind: str, symbol: str, tf: str, gap: float) -> None:
                 upnl = 0.0
             trades_out.append({
                 "symbol": tr.get("symbol"),
+                "side": tr.get("side") or "SELL",
                 "entry": tr.get("entry"),
                 "tp": tr.get("tp_price"),
                 "adds": int(tr.get("adds") or 0),
-                "margin": tr.get("margin"),
+                "pele": int(tr.get("adds") or 0) + 1,
+                "margin": float(tr.get("margin") or TRADE_MARGIN_USDT),
+                "lev": int(tr.get("leverage") or TRADE_LEVERAGE),
+                "px": px,
                 "pnl": round(float(upnl), 4),
+                "tf": tr.get("tf"),
             })
+        profit = round(sum(p for p in pnl_list if p > 0), 4)
+        loss = round(sum(p for p in pnl_list if p < 0), 4)
+        realized = round(sum(pnl_list), 4)
+        open_upnl = round(sum(float(x.get("pnl") or 0) for x in trades_out), 4)
+        mode = "PAPER" if is_paper_mode() else ("LIVE" if trading_enabled() else "OFF")
         payload = {
-            "mode": "PAPER" if is_paper_mode() else ("LIVE" if trading_enabled() else "OFF"),
+            "mode": mode,
             "version": BOT_VERSION,
             "updated_at": int(time.time()),
             "signals": sigs,
             "trades": trades_out,
+            "start": float(PAPER_START_BALANCE),
+            "realized": realized,
+            "closed_n": len(closed),
+            "open_upnl": open_upnl,
+            "equity": round(float(PAPER_START_BALANCE) + realized + open_upnl, 4),
+            "lev": int(TRADE_LEVERAGE),
+            "margin_leg": float(TRADE_MARGIN_USDT),
+            "tp_pct": float(TRADE_TP_PCT),
             "closed": {
-                "profit": round(sum(p for p in pnl_list if p > 0), 4),
-                "loss": round(sum(p for p in pnl_list if p < 0), 4),
+                "profit": profit,
+                "loss": loss,
                 "count": len(closed),
             },
         }
