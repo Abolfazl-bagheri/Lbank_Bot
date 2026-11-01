@@ -18,6 +18,23 @@
       "order_id": "PAPER-ESPORTSUSDT-1793440963"
     },
     {
+      "symbol": "ZEREBROUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.026784,
+      "qty": 7467.1446,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0261144,
+      "tf": "1h",
+      "opened_at": 1793516805,
+      "adds": 0,
+      "entry_candle_ts": 1793516400,
+      "last_leg_candle_ts": 1793516400,
+      "dry_run": true,
+      "order_id": "PAPER-ZEREBROUSDT-1793516805"
+    },
+    {
       "symbol": "FORMUSDT",
       "side": "SELL",
       "status": "open",
@@ -1090,26 +1107,6 @@
       "closed_at": 1793522020,
       "close_px": 0.005678,
       "pnl_usdt": 25.872099824517385
-    },
-    {
-      "symbol": "ZEREBROUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.026784,
-      "qty": 7467.1446,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.0261144,
-      "tf": "1h",
-      "opened_at": 1793516805,
-      "adds": 0,
-      "entry_candle_ts": 1793516400,
-      "last_leg_candle_ts": 1793516400,
-      "dry_run": true,
-      "order_id": "PAPER-ZEREBROUSDT-1793516805",
-      "closed_at": 1793522023,
-      "close_px": 0.026092,
-      "pnl_usdt": 5.167264038231767
     }
   ],
   "pending": [
@@ -1990,8 +1987,8 @@
     "LONGXIAUSDT": 1793558277,
     "PIPEDOGUSDT": 1793564407
   },
-  "last_trade_report_ts": 1793522028,
+  "last_trade_report_ts": 1793520452,
   "last_daily_report_date": "2026-10-29",
-  "last_known_version": "2.6.1",
+  "last_known_version": "2.6.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
