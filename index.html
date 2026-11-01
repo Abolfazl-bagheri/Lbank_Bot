@@ -138,6 +138,11 @@ s.r u:last-child{animation:ri .45s ease both}
 .stp{font-size:10.5px;padding:1px 7px;border-radius:7px;background:rgba(255,255,255,.06);border:1px solid var(--b);direction:ltr;display:inline-block}
 .stp.nx{color:var(--amb);border-color:rgba(255,181,71,.4)}
 details summary{cursor:pointer;font-weight:700}
+body{font-variant-numeric:tabular-nums}
+.eqv{line-height:1.3;min-height:1.3em;white-space:nowrap}
+#eqd,#gnote,#hbt{min-height:3.3em}
+#st{display:inline-block;min-width:24ch;text-align:right;white-space:nowrap}
+.pill{white-space:nowrap}
 </style>
 </head>
 <body>
@@ -157,6 +162,8 @@ details summary{cursor:pointer;font-weight:700}
     <div class="mg"><div><span>موجودی تحقق‌یافته</span><b id="m0"></b></div><div><span>PnL شناور</span><b id="m1"></b></div><div><span>مارجین درگیر</span><b id="m2"></b></div><div><span>مارجین آزاد</span><b id="m3"></b></div><div><span>پوزیشن باز</span><b id="m4"></b></div><div><span>خالص بسته‌شده</span><b id="m5"></b></div></div>
     <div class="alrt" id="alrt" style="display:none"></div></div>
   <div class="card s12"><h2>💼 پوزیشن‌های باز <span class="live" id="posLive" style="display:none">LIVE</span> <span class="lb" id="posAge"></span></h2><div id="pcs"></div></div>
+  <div class="card s12"><div class="fh"><h2>📡 گپ‌های فعال <span class="live">LIVE</span></h2><div class="chips" id="fl" style="margin:0"><button class="chip" data-f="all" aria-pressed="true">همه</button><button class="chip" data-f="GAP" aria-pressed="false">فقط GAP</button><button class="chip" data-f="SELL" aria-pressed="false">فقط SELL</button></div></div><div class="feed" id="feed"></div></div>
+  <div class="card s12"><h2>🎯 چارت زنده · فقط گپ‌های پرنشده <span class="live">LIVE</span></h2><div id="lc"></div></div>
   <div class="card s12"><h2>🫀 ربات و گزارش دور <span id="hbs" class="bd wt">منتظر</span></h2><div class="lb" id="hbt"></div>
     <div class="mg"><div><span>دور</span><b id="rk0"></b></div><div><span>مدت</span><b id="rk1"></b></div><div><span>نماد بررسی‌شده</span><b id="rk2"></b></div><div><span>گپ</span><b id="rk3"></b></div><div><span>ورود</span><b id="rk4"></b></div><div><span>پله</span><b id="rk5"></b></div><div><span>بسته</span><b id="rk6"></b></div><div><span>خطا</span><b id="rk7"></b></div></div>
     <div class="lb" id="rps" style="margin:8px 0"></div>
@@ -166,8 +173,6 @@ details summary{cursor:pointer;font-weight:700}
     <div class="tw" style="margin-top:10px"><table><thead><tr><th>نماد</th><th>ورود → خروج</th><th>PnL</th><th>ROI</th><th>پله</th><th>مدت</th><th>دلیل</th></tr></thead><tbody id="jb"></tbody></table></div></div>
   <div class="card s12"><h2>🗓️ تاریخچه‌ی روزها</h2><div class="lb" id="dsum"></div><div id="dchart"></div>
     <div class="tw"><table><thead><tr><th>روز</th><th>سود / زیان</th><th>معامله</th><th>موجودی پایان</th></tr></thead><tbody id="db"></tbody></table></div></div>
-  <div class="card s12"><div class="fh"><h2>📡 گپ‌های فعال <span class="live">LIVE</span></h2><div class="chips" id="fl" style="margin:0"><button class="chip" data-f="all" aria-pressed="true">همه</button><button class="chip" data-f="GAP" aria-pressed="false">فقط GAP</button><button class="chip" data-f="SELL" aria-pressed="false">فقط SELL</button></div></div><div class="feed" id="feed"></div></div>
-  <div class="card s12"><h2>🎯 چارت زنده · فقط گپ‌های پرنشده <span class="live">LIVE</span></h2><div id="lc"></div></div>
   <div class="card s12"><details><summary>📊 آمار گپ‌ها (از مشاهده‌ی همین صفحه · نمونه‌ی محدود)</summary>
     <div class="tw" style="margin-top:10px"><table><thead><tr><th>تایم‌فریم</th><th>گپ بررسی‌شده</th><th>پرشده</th><th>نرخ پر شدن</th><th>میانگین زمان پر شدن</th></tr></thead><tbody id="gsb"></tbody></table></div></details></div>
 </section>
