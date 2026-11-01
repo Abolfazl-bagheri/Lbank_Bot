@@ -77,17 +77,18 @@
       "symbol": "MOVRUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 1.1162385755679565,
-      "qty": 537.5195,
-      "margin": 30.0,
+      "entry": 1.1031888193232031,
+      "qty": 1269.0484000000001,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 1.0883326111787575,
+      "tp_price": 1.075609098840123,
       "tf": "1h",
       "opened_at": 1793541912,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [
-        1.115
+        1.115,
+        1.095
       ],
       "steps": [
         {
@@ -97,10 +98,14 @@
         {
           "px": 1.1123,
           "ts": 1793543925
+        },
+        {
+          "px": 1.0936,
+          "ts": 1793562595
         }
       ],
       "entry_candle_ts": 1793541600,
-      "last_leg_candle_ts": 1793543925,
+      "last_leg_candle_ts": 1793562595,
       "dry_run": true,
       "order_id": "PAPER-MOVRUSDT-1793541912"
     },
@@ -2652,6 +2657,15 @@
       "open": 0.09052,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "CLAUDIAUSDT",
+      "tf": "15m",
+      "candle_ts": 1793562300,
+      "side": "SELL",
+      "upper": 0.0020119904443328842,
+      "open": 0.002068,
+      "reported": false
     }
   ],
   "paper_days": [],
@@ -2713,7 +2727,8 @@
     "GALUSDT": 1793591485,
     "GSTOCKUSDT": 1793596922,
     "APROUSDT": 1793604906,
-    "TOADUSDT": 1793604936
+    "TOADUSDT": 1793604936,
+    "FIGHT1USDT": 1793605790
   },
   "last_trade_report_ts": 1793561749,
   "last_daily_report_date": "2026-10-29",
