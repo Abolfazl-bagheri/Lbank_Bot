@@ -33,6 +33,23 @@
       "last_leg_candle_ts": 1793508300,
       "dry_run": true,
       "order_id": "PAPER-ZZZUSDT-1793494991"
+    },
+    {
+      "symbol": "REZUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.004441,
+      "qty": 45034.902,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.004329975,
+      "tf": "15m",
+      "opened_at": 1793509332,
+      "adds": 0,
+      "entry_candle_ts": 1793509200,
+      "last_leg_candle_ts": 1793509200,
+      "dry_run": true,
+      "order_id": "PAPER-REZUSDT-1793509332"
     }
   ],
   "trade_history": [
@@ -1769,7 +1786,8 @@
       "side": "SELL",
       "upper": 0.011182924769070842,
       "open": 0.01159,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ESPORTSUSDT",
