@@ -57,6 +57,31 @@
       "last_leg_candle_ts": 1793516400,
       "dry_run": true,
       "order_id": "PAPER-ZEREBROUSDT-1793516805"
+    },
+    {
+      "symbol": "FORMUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.2133,
+      "qty": 937.6465,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.20796749999999997,
+      "tf": "15m",
+      "opened_at": 1793521039,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.2133,
+          "ts": 1793521039
+        }
+      ],
+      "entry_candle_ts": 1793520900,
+      "last_leg_candle_ts": 1793520900,
+      "dry_run": true,
+      "order_id": "PAPER-FORMUSDT-1793521039"
     }
   ],
   "trade_history": [
@@ -1873,6 +1898,15 @@
       "upper": 0.005810446306203682,
       "open": 0.005892,
       "reported": false
+    },
+    {
+      "symbol": "ESPORTSUSDT",
+      "tf": "4h",
+      "candle_ts": 1793520000,
+      "side": "SELL",
+      "upper": 0.01225805675389918,
+      "open": 0.013,
+      "reported": false
     }
   ],
   "paper_days": [],
@@ -1939,7 +1973,7 @@
     "HAJIMIUSDT": 1793558243,
     "LONGXIAUSDT": 1793558277
   },
-  "last_trade_report_ts": 1793516906,
+  "last_trade_report_ts": 1793520452,
   "last_daily_report_date": "2026-10-29",
   "last_known_version": "2.6.1",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
