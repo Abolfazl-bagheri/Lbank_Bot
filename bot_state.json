@@ -159,6 +159,31 @@
       "last_leg_candle_ts": 1793538000,
       "dry_run": true,
       "order_id": "PAPER-APRUSDT-1793538264"
+    },
+    {
+      "symbol": "INITUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.20097,
+      "qty": 995.1734,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.19594575,
+      "tf": "1h",
+      "opened_at": 1793538282,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.20097,
+          "ts": 1793538282
+        }
+      ],
+      "entry_candle_ts": 1793538000,
+      "last_leg_candle_ts": 1793538000,
+      "dry_run": true,
+      "order_id": "PAPER-INITUSDT-1793538282"
     }
   ],
   "trade_history": [
@@ -2255,6 +2280,15 @@
       "open": 0.007179,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "APRUSDT",
+      "tf": "1h",
+      "candle_ts": 1793538000,
+      "side": "SELL",
+      "upper": 0.07109471017888727,
+      "open": 0.0741,
+      "reported": false
     }
   ],
   "paper_days": [],
