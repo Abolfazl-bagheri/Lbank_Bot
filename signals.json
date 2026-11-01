@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.2",
-  "updated_at": 1793539911,
+  "updated_at": 1793540004,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "KITEUSDT",
-      "tf": "1h",
-      "gap": 2.31,
-      "ts": 1793516097
-    },
     {
       "kind": "GAP",
       "symbol": "YFIUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1793539911
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793540004
     }
   ],
   "trades": [
@@ -1429,19 +1429,6 @@
       "lev": 20,
       "px": 0.18065,
       "pnl": -8.7552,
-      "tf": "1h"
-    },
-    {
-      "symbol": "FONEUSDT",
-      "side": "SELL",
-      "entry": 0.0021331911920790107,
-      "tp": 0.0020798614122770356,
-      "adds": 5,
-      "pele": 6,
-      "margin": 630.0,
-      "lev": 20,
-      "px": 0.00204,
-      "pnl": 550.4472,
       "tf": "1h"
     },
     {
@@ -1498,16 +1485,16 @@
     }
   ],
   "start": 1000.0,
-  "realized": 2491.5891,
-  "closed_n": 57,
-  "open_upnl": -2566.6991,
-  "equity": 924.89,
+  "realized": 3042.0362,
+  "closed_n": 58,
+  "open_upnl": -3117.1463,
+  "equity": 924.8899,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 2491.5891,
+    "profit": 3042.0362,
     "loss": 0,
-    "count": 57
+    "count": 58
   }
 }
