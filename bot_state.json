@@ -155,6 +155,31 @@
       "last_leg_candle_ts": 1793529900,
       "dry_run": true,
       "order_id": "PAPER-IDOLUSDT-1793529080"
+    },
+    {
+      "symbol": "AVAAIUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.0071,
+      "qty": 28169.0141,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0069225,
+      "tf": "1h",
+      "opened_at": 1793531182,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.0071,
+          "ts": 1793531182
+        }
+      ],
+      "entry_candle_ts": 1793530800,
+      "last_leg_candle_ts": 1793530800,
+      "dry_run": true,
+      "order_id": "PAPER-AVAAIUSDT-1793531182"
     }
   ],
   "trade_history": [
@@ -2165,6 +2190,15 @@
       "side": "SELL",
       "upper": 0.17986308069005344,
       "open": 0.18242,
+      "reported": false
+    },
+    {
+      "symbol": "FONEUSDT",
+      "tf": "1h",
+      "candle_ts": 1793530800,
+      "side": "SELL",
+      "upper": 0.00198907436253152,
+      "open": 0.002109,
       "reported": false
     }
   ],
