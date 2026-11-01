@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.2",
-  "updated_at": 1793568073,
+  "updated_at": 1793568468,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1793529178
-    },
     {
       "kind": "HEARTBEAT",
       "symbol": "—",
@@ -1402,6 +1395,13 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1793568073
+    },
+    {
+      "kind": "GAP",
+      "symbol": "AEONUSDT",
+      "tf": "15m",
+      "gap": 2.26,
+      "ts": 1793568468
     }
   ],
   "trades": [
@@ -1414,16 +1414,16 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.0268,
-      "pnl": 0.0,
+      "px": 0.0269,
+      "pnl": -0.7463,
       "tf": "15m"
     }
   ],
   "start": 1000.0,
   "realized": 0,
   "closed_n": 0,
-  "open_upnl": 0.0,
-  "equity": 1000.0,
+  "open_upnl": -0.7463,
+  "equity": 999.2537,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
