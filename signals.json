@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.2",
-  "updated_at": 1793538304,
+  "updated_at": 1793538311,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "YFIUSDT",
-      "tf": "1h",
-      "gap": 1.09,
-      "ts": 1793512589
-    },
     {
       "kind": "GAP",
       "symbol": "AVAXUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 0.73,
       "ts": 1793538304
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793538311
     }
   ],
   "trades": [
@@ -1468,6 +1468,19 @@
       "lev": 20,
       "px": 0.0742,
       "pnl": -19.6241,
+      "tf": "1h"
+    },
+    {
+      "symbol": "INITUSDT",
+      "side": "SELL",
+      "entry": 0.199,
+      "tp": 0.194025,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.199,
+      "pnl": 0.0,
       "tf": "1h"
     }
   ],
