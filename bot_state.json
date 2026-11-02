@@ -4,17 +4,18 @@
       "symbol": "MINIMAXUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 21.515466150773303,
-      "qty": 27.886899999999997,
-      "margin": 30.0,
+      "entry": 21.665835961608103,
+      "qty": 64.61779999999999,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 20.97757949700397,
+      "tp_price": 21.1241900625679,
       "tf": "1h",
       "opened_at": 1793585106,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [
-        21.68
+        21.68,
+        21.81
       ],
       "steps": [
         {
@@ -24,10 +25,14 @@
         {
           "px": 21.63,
           "ts": 1793603141
+        },
+        {
+          "px": 21.78,
+          "ts": 1793627265
         }
       ],
       "entry_candle_ts": 1793584800,
-      "last_leg_candle_ts": 1793603141,
+      "last_leg_candle_ts": 1793627265,
       "dry_run": true,
       "order_id": "PAPER-MINIMAXUSDT-1793585106"
     },
@@ -1969,6 +1974,15 @@
       "open": 0.03383,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "CASHCATUSDT",
+      "tf": "15m",
+      "candle_ts": 1793627100,
+      "side": "SELL",
+      "upper": 0.10493565644589777,
+      "open": 0.10631,
+      "reported": false
     }
   ],
   "paper_days": [
