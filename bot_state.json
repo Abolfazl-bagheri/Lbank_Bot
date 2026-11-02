@@ -171,6 +171,31 @@
       "last_leg_candle_ts": 1793610000,
       "dry_run": true,
       "order_id": "PAPER-CATUSDT-1793610204"
+    },
+    {
+      "symbol": "ARIAUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.1212,
+      "qty": 1650.165,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.11817,
+      "tf": "15m",
+      "opened_at": 1793610217,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.1212,
+          "ts": 1793610217
+        }
+      ],
+      "entry_candle_ts": 1793610000,
+      "last_leg_candle_ts": 1793610000,
+      "dry_run": true,
+      "order_id": "PAPER-ARIAUSDT-1793610217"
     }
   ],
   "trade_history": [
@@ -1714,6 +1739,15 @@
       "side": "SELL",
       "upper": 6.593883216395261,
       "open": 6.671,
+      "reported": false
+    },
+    {
+      "symbol": "CATUSDT",
+      "tf": "15m",
+      "candle_ts": 1793610000,
+      "side": "SELL",
+      "upper": 1.8510141834832387e-06,
+      "open": 1.949e-06,
       "reported": false
     }
   ],
