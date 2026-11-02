@@ -147,6 +147,31 @@
       "last_leg_candle_ts": 1793631600,
       "dry_run": true,
       "order_id": "PAPER-DKNGUSDT-1793631942"
+    },
+    {
+      "symbol": "BTRUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.04895,
+      "qty": 4085.8018,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.04772625,
+      "tf": "1h",
+      "opened_at": 1793635416,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.04895,
+          "ts": 1793635416
+        }
+      ],
+      "entry_candle_ts": 1793635200,
+      "last_leg_candle_ts": 1793635200,
+      "dry_run": true,
+      "order_id": "PAPER-BTRUSDT-1793635416"
     }
   ],
   "trade_history": [
@@ -827,38 +852,6 @@
       "tf": "15m",
       "candle_ts": 1793375100,
       "side": "SELL"
-    },
-    {
-      "symbol": "BIRBUSDT",
-      "tf": "1h",
-      "candle_ts": 1793376000,
-      "side": "SELL",
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "MAGMAUSDT",
-      "tf": "4h",
-      "candle_ts": 1793376000,
-      "side": "SELL",
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "BIRBUSDT",
-      "tf": "4h",
-      "candle_ts": 1793376000,
-      "side": "SELL",
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "BEAMXUSDT",
-      "tf": "4h",
-      "candle_ts": 1793376000,
-      "side": "SELL",
-      "reported": true,
-      "filled": true
     },
     {
       "symbol": "IDOLUSDT",
@@ -1905,7 +1898,8 @@
       "side": "SELL",
       "upper": 0.019919202686661884,
       "open": 0.02064,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "YOFCUSDT",
@@ -1914,7 +1908,8 @@
       "side": "SELL",
       "upper": 13.521821868684347,
       "open": 13.736,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CSOPSAMSUNG2LUSDT",
@@ -1923,7 +1918,8 @@
       "side": "SELL",
       "upper": 6.593883216395261,
       "open": 6.671,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "CATUSDT",
@@ -2012,7 +2008,8 @@
       "side": "SELL",
       "upper": 77.48324005274003,
       "open": 78.7,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CVNAUSDT",
@@ -2021,7 +2018,8 @@
       "side": "SELL",
       "upper": 71.43636973351792,
       "open": 72.37,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "DKNGUSDT",
@@ -2030,7 +2028,8 @@
       "side": "SELL",
       "upper": 21.56088585937963,
       "open": 21.796,
-      "reported": false
+      "reported": true,
+      "filled": false
     }
   ],
   "paper_days": [
@@ -2063,7 +2062,6 @@
     "SXTUSDT": 1793445574,
     "SAFE1USDT": 1793449863,
     "PORTALUSDT": 1793471666,
-    "CAPETHUSDT": 1793483293,
     "AXLUSDT": 1793502358,
     "DODOUSDT": 1793508698,
     "ARROWUSDT": 1793516639,
@@ -2111,7 +2109,7 @@
     "LIGHT1USDT": 1793677919,
     "LWLGUSDT": 1793677923
   },
-  "last_trade_report_ts": 1793632094,
+  "last_trade_report_ts": 1793634783,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
