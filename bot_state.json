@@ -1,42 +1,6 @@
 {
   "open_trades": [
     {
-      "symbol": "TAKEUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.07091802044132924,
-      "qty": 19741.1037,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 0.069145069930296,
-      "tf": "1h",
-      "opened_at": 1793585089,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [
-        0.07177,
-        0.07073
-      ],
-      "steps": [
-        {
-          "px": 0.07119,
-          "ts": 1793585089
-        },
-        {
-          "px": 0.07161,
-          "ts": 1793587999
-        },
-        {
-          "px": 0.07051,
-          "ts": 1793593341
-        }
-      ],
-      "entry_candle_ts": 1793584800,
-      "last_leg_candle_ts": 1793593341,
-      "dry_run": true,
-      "order_id": "PAPER-TAKEUSDT-1793585089"
-    },
-    {
       "symbol": "MINIMAXUSDT",
       "side": "SELL",
       "status": "open",
@@ -182,31 +146,6 @@
       "last_leg_candle_ts": 1793596077,
       "dry_run": true,
       "order_id": "PAPER-YOFCUSDT-1793595910"
-    },
-    {
-      "symbol": "STORJUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.02124,
-      "qty": 9416.1959,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.020708999999999998,
-      "tf": "15m",
-      "opened_at": 1793596800,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.02124,
-          "ts": 1793596800
-        }
-      ],
-      "entry_candle_ts": 1793596500,
-      "last_leg_candle_ts": 1793596500,
-      "dry_run": true,
-      "order_id": "PAPER-STORJUSDT-1793596800"
     }
   ],
   "trade_history": [
@@ -355,6 +294,73 @@
       "closed_at": 1793600467,
       "close_px": 90.26,
       "pnl_usdt": 6.121791429491986
+    },
+    {
+      "symbol": "STORJUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.02124,
+      "qty": 9416.1959,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.020708999999999998,
+      "tf": "15m",
+      "opened_at": 1793596800,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.02124,
+          "ts": 1793596800
+        }
+      ],
+      "entry_candle_ts": 1793596500,
+      "last_leg_candle_ts": 1793596500,
+      "dry_run": true,
+      "order_id": "PAPER-STORJUSDT-1793596800",
+      "closed_at": 1793600480,
+      "close_px": 0.02054,
+      "pnl_usdt": 6.59133709981167
+    },
+    {
+      "symbol": "TAKEUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.07091802044132924,
+      "qty": 19741.1037,
+      "margin": 70.0,
+      "leverage": 20,
+      "tp_price": 0.069145069930296,
+      "tf": "1h",
+      "opened_at": 1793585089,
+      "adds": 2,
+      "last_leg_margin": 40.0,
+      "used_res_levels": [
+        0.07177,
+        0.07073
+      ],
+      "steps": [
+        {
+          "px": 0.07119,
+          "ts": 1793585089
+        },
+        {
+          "px": 0.07161,
+          "ts": 1793587999
+        },
+        {
+          "px": 0.07051,
+          "ts": 1793593341
+        }
+      ],
+      "entry_candle_ts": 1793584800,
+      "last_leg_candle_ts": 1793593341,
+      "dry_run": true,
+      "order_id": "PAPER-TAKEUSDT-1793585089",
+      "closed_at": 1793601318,
+      "close_px": 0.06898,
+      "pnl_usdt": 38.2586626216618
     }
   ],
   "pending": [
@@ -1641,7 +1647,7 @@
     "AEHRUSDT": 1793636530,
     "GSTOCKUSDT": 1793640941
   },
-  "last_trade_report_ts": 1793599566,
+  "last_trade_report_ts": 1793600487,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
