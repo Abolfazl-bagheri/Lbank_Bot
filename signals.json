@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.2",
-  "updated_at": 1793631940,
+  "updated_at": 1793631950,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "CSOPSAMSUNG2LUSDT",
-      "tf": "4h",
-      "gap": 4.51,
-      "ts": 1793592802
-    },
     {
       "kind": "GAP",
       "symbol": "KORUUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 0.64,
       "ts": 1793631940
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793631950
     }
   ],
   "trades": [
@@ -1480,6 +1480,19 @@
       "margin": 10.0,
       "lev": 20,
       "px": 72.79,
+      "pnl": 0.0,
+      "tf": "1h"
+    },
+    {
+      "symbol": "DKNGUSDT",
+      "side": "SELL",
+      "entry": 21.7,
+      "tp": 21.1575,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 21.7,
       "pnl": 0.0,
       "tf": "1h"
     }
