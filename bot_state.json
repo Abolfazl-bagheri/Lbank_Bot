@@ -207,37 +207,6 @@
       "order_id": "PAPER-GEUSDT-1793631997"
     },
     {
-      "symbol": "MPWRUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 1300.7540632296418,
-      "qty": 0.461271,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 1268.2352116489008,
-      "tf": "15m",
-      "opened_at": 1793633534,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        1302.8
-      ],
-      "steps": [
-        {
-          "px": 1306.5,
-          "ts": 1793633534
-        },
-        {
-          "px": 1297.9,
-          "ts": 1793636255
-        }
-      ],
-      "entry_candle_ts": 1793633400,
-      "last_leg_candle_ts": 1793636255,
-      "dry_run": true,
-      "order_id": "PAPER-MPWRUSDT-1793633534"
-    },
-    {
       "symbol": "ARIAUSDT",
       "side": "SELL",
       "status": "open",
@@ -1142,6 +1111,40 @@
       "closed_at": 1793643464,
       "close_px": 0.001578,
       "pnl_usdt": 26.71047142318773
+    },
+    {
+      "symbol": "MPWRUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 1300.7540632296418,
+      "qty": 0.461271,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 1268.2352116489008,
+      "tf": "15m",
+      "opened_at": 1793633534,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        1302.8
+      ],
+      "steps": [
+        {
+          "px": 1306.5,
+          "ts": 1793633534
+        },
+        {
+          "px": 1297.9,
+          "ts": 1793636255
+        }
+      ],
+      "entry_candle_ts": 1793633400,
+      "last_leg_candle_ts": 1793636255,
+      "dry_run": true,
+      "order_id": "PAPER-MPWRUSDT-1793633534",
+      "closed_at": 1793649081,
+      "close_px": 1253.9,
+      "pnl_usdt": 21.612416007361663
     }
   ],
   "pending": [
