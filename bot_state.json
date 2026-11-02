@@ -226,6 +226,31 @@
       "last_leg_candle_ts": 1793635200,
       "dry_run": true,
       "order_id": "PAPER-ARIAUSDT-1793635461"
+    },
+    {
+      "symbol": "AEONUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.0263,
+      "qty": 7604.5627,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0256425,
+      "tf": "4h",
+      "opened_at": 1793635500,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.0263,
+          "ts": 1793635500
+        }
+      ],
+      "entry_candle_ts": 1793635200,
+      "last_leg_candle_ts": 1793635200,
+      "dry_run": true,
+      "order_id": "PAPER-AEONUSDT-1793635500"
     }
   ],
   "trade_history": [
@@ -2119,6 +2144,15 @@
       "side": "SELL",
       "upper": 77.08339891271756,
       "open": 79.07,
+      "reported": false
+    },
+    {
+      "symbol": "BTRUSDT",
+      "tf": "4h",
+      "candle_ts": 1793635200,
+      "side": "SELL",
+      "upper": 0.04832949626570762,
+      "open": 0.04913,
       "reported": false
     }
   ],
