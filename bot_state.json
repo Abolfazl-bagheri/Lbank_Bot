@@ -172,31 +172,6 @@
       "order_id": "PAPER-GEUSDT-1793631997"
     },
     {
-      "symbol": "ARIAUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.1166,
-      "qty": 1715.2659,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.113685,
-      "tf": "4h",
-      "opened_at": 1793635447,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.1166,
-          "ts": 1793635447
-        }
-      ],
-      "entry_candle_ts": 1793635200,
-      "last_leg_candle_ts": 1793635200,
-      "dry_run": true,
-      "order_id": "PAPER-ARIAUSDT-1793635447"
-    },
-    {
       "symbol": "CCLUSDT",
       "side": "SELL",
       "status": "open",
@@ -1212,6 +1187,34 @@
       "closed_at": 1793658118,
       "close_px": 0.03415,
       "pnl_usdt": 18.774201122921216
+    },
+    {
+      "symbol": "ARIAUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.1166,
+      "qty": 1715.2659,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.113685,
+      "tf": "4h",
+      "opened_at": 1793635447,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.1166,
+          "ts": 1793635447
+        }
+      ],
+      "entry_candle_ts": 1793635200,
+      "last_leg_candle_ts": 1793635200,
+      "dry_run": true,
+      "order_id": "PAPER-ARIAUSDT-1793635447",
+      "closed_at": 1793659911,
+      "close_px": 0.11338,
+      "pnl_usdt": 5.523156089193827
     }
   ],
   "pending": [
@@ -2777,7 +2780,7 @@
     "AEHRUSDT": 1793697560,
     "FIGHT1USDT": 1793700356
   },
-  "last_trade_report_ts": 1793657194,
+  "last_trade_report_ts": 1793659052,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.4",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
