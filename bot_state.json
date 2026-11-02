@@ -182,6 +182,31 @@
       "last_leg_candle_ts": 1793625300,
       "dry_run": true,
       "order_id": "PAPER-AGTUSDT-1793625517"
+    },
+    {
+      "symbol": "CASHCATUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.1056,
+      "qty": 1893.9394,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.10296,
+      "tf": "15m",
+      "opened_at": 1793627179,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.1056,
+          "ts": 1793627179
+        }
+      ],
+      "entry_candle_ts": 1793627100,
+      "last_leg_candle_ts": 1793627100,
+      "dry_run": true,
+      "order_id": "PAPER-CASHCATUSDT-1793627179"
     }
   ],
   "trade_history": [
@@ -1934,6 +1959,16 @@
       "open": 0.1463,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "AGTUSDT",
+      "tf": "15m",
+      "candle_ts": 1793625300,
+      "side": "SELL",
+      "upper": 0.03284904086633186,
+      "open": 0.03383,
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -2010,9 +2045,11 @@
     "1000SATSUSDT": 1793668149,
     "1000WOJAKUSDT": 1793668140,
     "NEIRO1USDT": 1793668148,
-    "CZUSDT": 1793668158
+    "CZUSDT": 1793668158,
+    "KOPNUSDT": 1793668799,
+    "MARRIOTTUSDT": 1793669573
   },
-  "last_trade_report_ts": 1793616674,
+  "last_trade_report_ts": 1793626558,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
