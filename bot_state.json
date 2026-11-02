@@ -4,24 +4,30 @@
       "symbol": "TAKEUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.07119,
-      "qty": 2809.3833,
-      "margin": 10.0,
+      "entry": 0.07146945044232622,
+      "qty": 8395.1953,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.06941025,
+      "tp_price": 0.06968271418126806,
       "tf": "1h",
       "opened_at": 1793585089,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.07177
+      ],
       "steps": [
         {
           "px": 0.07119,
           "ts": 1793585089
+        },
+        {
+          "px": 0.07161,
+          "ts": 1793587999
         }
       ],
       "entry_candle_ts": 1793584800,
-      "last_leg_candle_ts": 1793584800,
+      "last_leg_candle_ts": 1793587999,
       "dry_run": true,
       "order_id": "PAPER-TAKEUSDT-1793585089"
     },
@@ -1364,7 +1370,6 @@
     "LONGXIAUSDT": 1793558277,
     "MANCERUSDT": 1793582484,
     "STONKBROKERUSDT": 1793586042,
-    "UP2USDT": 1793587113,
     "BEMUSDT": 1793589720,
     "GALUSDT": 1793591485,
     "GSTOCKUSDT": 1793596922,
@@ -1381,9 +1386,10 @@
     "1000WOJAKUSDT": 1793619485,
     "NEIRO1USDT": 1793619487,
     "UBIKUSDT": 1793622954,
-    "TRUMPSOLUSDT": 1793630182
+    "TRUMPSOLUSDT": 1793630182,
+    "UP2USDT": 1793631162
   },
-  "last_trade_report_ts": 1793585290,
+  "last_trade_report_ts": 1793587035,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
