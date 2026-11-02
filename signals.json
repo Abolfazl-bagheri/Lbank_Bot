@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.2",
-  "updated_at": 1793595444,
+  "updated_at": 1793595449,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "STARUSDT",
-      "tf": "15m",
-      "gap": 1.13,
-      "ts": 1793552538
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1793552546
-    },
     {
       "kind": "SELL",
       "symbol": "LYNUSDT",
@@ -1362,46 +1348,60 @@
       "ts": 1793595084
     },
     {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793595356
+    },
+    {
       "kind": "GAP",
-      "symbol": "HAEDALUSDT",
+      "symbol": "CSOPSKHYNIX2LUSDT",
       "tf": "1h",
-      "gap": 3.93,
-      "ts": 1793595346
+      "gap": 2.59,
+      "ts": 1793595401
+    },
+    {
+      "kind": "GAP",
+      "symbol": "ZHONGJIUSDT",
+      "tf": "1h",
+      "gap": 2.08,
+      "ts": 1793595407
+    },
+    {
+      "kind": "GAP",
+      "symbol": "CSOPSAMSUNG2LUSDT",
+      "tf": "1h",
+      "gap": 2.8,
+      "ts": 1793595413
     },
     {
       "kind": "GAP",
       "symbol": "KORUUSDT",
       "tf": "1h",
-      "gap": 1.66,
-      "ts": 1793595353
+      "gap": 2.04,
+      "ts": 1793595418
     },
     {
       "kind": "GAP",
-      "symbol": "RAMUSDT",
+      "symbol": "HAEDALUSDT",
       "tf": "1h",
-      "gap": 1.03,
-      "ts": 1793595391
+      "gap": 3.63,
+      "ts": 1793595428
     },
     {
       "kind": "GAP",
-      "symbol": "SKHYNIXUSDT",
+      "symbol": "MINIMAXUSDT",
       "tf": "1h",
-      "gap": 1.2,
-      "ts": 1793595401
+      "gap": 1.45,
+      "ts": 1793595443
     },
     {
       "kind": "GAP",
-      "symbol": "VICRUSDT",
+      "symbol": "SKUUUSDT",
       "tf": "1h",
-      "gap": 1.24,
-      "ts": 1793595435
-    },
-    {
-      "kind": "GAP",
-      "symbol": "SAMSUNGUSDT",
-      "tf": "1h",
-      "gap": 1.42,
-      "ts": 1793595444
+      "gap": 1.76,
+      "ts": 1793595449
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 3,
       "margin": 70.0,
       "lev": 20,
-      "px": 0.07124,
-      "pnl": -6.3562,
+      "px": 0.07121,
+      "pnl": -5.764,
       "tf": "1h"
     },
     {
@@ -1427,8 +1427,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 22.3,
-      "pnl": -9.488,
+      "px": 22.33,
+      "pnl": -9.7698,
       "tf": "1h"
     },
     {
@@ -1440,8 +1440,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 171.49,
-      "pnl": -1.5988,
+      "px": 171.66,
+      "pnl": -1.7986,
       "tf": "1h"
     },
     {
@@ -1456,19 +1456,32 @@
       "px": 17.42,
       "pnl": 2.2582,
       "tf": "1h"
+    },
+    {
+      "symbol": "PIEVERSEUSDT",
+      "side": "SELL",
+      "entry": 1.1028,
+      "tp": 1.07523,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 1.0681,
+      "pnl": 6.2931,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
-  "realized": 39.3741,
-  "closed_n": 3,
-  "open_upnl": -15.1848,
-  "equity": 1024.1893,
+  "realized": 33.2987,
+  "closed_n": 2,
+  "open_upnl": -8.7811,
+  "equity": 1024.5176,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 39.3741,
+    "profit": 33.2987,
     "loss": 0,
-    "count": 3
+    "count": 2
   }
 }
