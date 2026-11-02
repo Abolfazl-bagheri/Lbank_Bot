@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.2",
-  "updated_at": 1793582381,
+  "updated_at": 1793582387,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "FONEUSDT",
-      "tf": "4h",
-      "gap": 5.51,
-      "ts": 1793533854
-    },
     {
       "kind": "GAP",
       "symbol": "APRUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 0.59,
       "ts": 1793582381
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793582387
     }
   ],
   "trades": [
@@ -1416,6 +1416,19 @@
       "lev": 20,
       "px": 140.95,
       "pnl": -0.7263,
+      "tf": "15m"
+    },
+    {
+      "symbol": "SKUUUSDT",
+      "side": "SELL",
+      "entry": 18.786,
+      "tp": 18.31635,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 18.786,
+      "pnl": 0.0,
       "tf": "15m"
     }
   ],
