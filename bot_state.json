@@ -263,31 +263,6 @@
       "order_id": "PAPER-ARIAUSDT-1793635447"
     },
     {
-      "symbol": "TSLLUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 11.94,
-      "qty": 16.7504,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 11.641499999999999,
-      "tf": "1h",
-      "opened_at": 1793635511,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 11.94,
-          "ts": 1793635511
-        }
-      ],
-      "entry_candle_ts": 1793635200,
-      "last_leg_candle_ts": 1793635200,
-      "dry_run": true,
-      "order_id": "PAPER-TSLLUSDT-1793635511"
-    },
-    {
       "symbol": "CCLUSDT",
       "side": "SELL",
       "status": "open",
@@ -378,24 +353,28 @@
       "symbol": "NOMUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.001692,
-      "qty": 118203.3097,
-      "margin": 10.0,
+      "entry": 0.0016515215311021382,
+      "qty": 363301.3489,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.0016496999999999998,
-      "tf": "15m",
+      "tp_price": 0.0016102334928245847,
+      "tf": "1h",
       "opened_at": 1793641607,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 0.001692,
           "ts": 1793641607
+        },
+        {
+          "px": 0.001632,
+          "ts": 1793642673
         }
       ],
       "entry_candle_ts": 1793641500,
-      "last_leg_candle_ts": 1793641500,
+      "last_leg_candle_ts": 1793642400,
       "dry_run": true,
       "order_id": "PAPER-NOMUSDT-1793641607"
     }
@@ -1132,6 +1111,34 @@
       "closed_at": 1793641706,
       "close_px": 13.27,
       "pnl_usdt": 5.425219941348988
+    },
+    {
+      "symbol": "TSLLUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 11.94,
+      "qty": 16.7504,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 11.641499999999999,
+      "tf": "1h",
+      "opened_at": 1793635511,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 11.94,
+          "ts": 1793635511
+        }
+      ],
+      "entry_candle_ts": 1793635200,
+      "last_leg_candle_ts": 1793635200,
+      "dry_run": true,
+      "order_id": "PAPER-TSLLUSDT-1793635511",
+      "closed_at": 1793641710,
+      "close_px": 11.64,
+      "pnl_usdt": 5.025125628140685
     }
   ],
   "pending": [
@@ -2672,7 +2679,7 @@
     "AINBSCUSDT": 1793679450,
     "FIGUSDT": 1793683258
   },
-  "last_trade_report_ts": 1793640776,
+  "last_trade_report_ts": 1793641724,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
