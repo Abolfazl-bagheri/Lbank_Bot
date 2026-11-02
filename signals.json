@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.2",
-  "updated_at": 1793642789,
+  "updated_at": 1793642985,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "HAEDALUSDT",
-      "tf": "4h",
-      "gap": 1.27,
-      "ts": 1793605264
-    },
     {
       "kind": "GAP",
       "symbol": "CASHCATUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1793642789
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793642985
     }
   ],
   "trades": [
@@ -1471,19 +1471,6 @@
       "tf": "4h"
     },
     {
-      "symbol": "BTRUSDT",
-      "side": "SELL",
-      "entry": 0.048150185360077355,
-      "tp": 0.04694643072607542,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
-      "lev": 20,
-      "px": 0.04654,
-      "pnl": 20.0645,
-      "tf": "1h"
-    },
-    {
       "symbol": "RIVNUSDT",
       "side": "SELL",
       "entry": 13.59,
@@ -1538,11 +1525,11 @@
     {
       "symbol": "AMZNUSDT",
       "side": "SELL",
-      "entry": 253.44,
-      "tp": 247.10399999999998,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
+      "entry": 251.7141486658436,
+      "tp": 245.4212949491975,
+      "adds": 1,
+      "pele": 2,
+      "margin": 30.0,
       "lev": 20,
       "px": 250.86,
       "pnl": 2.036,
@@ -1563,16 +1550,16 @@
     }
   ],
   "start": 1000.0,
-  "realized": 330.7009,
-  "closed_n": 20,
-  "open_upnl": -34.4726,
+  "realized": 350.7654,
+  "closed_n": 21,
+  "open_upnl": -54.5371,
   "equity": 1296.2283,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 330.7009,
+    "profit": 350.7654,
     "loss": 0,
-    "count": 20
+    "count": 21
   }
 }
