@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.2",
-  "updated_at": 1793585087,
+  "updated_at": 1793585091,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1793538270
-    },
     {
       "kind": "SELL",
       "symbol": "INITUSDT",
@@ -1402,13 +1395,34 @@
       "tf": "1h",
       "gap": 1.2,
       "ts": 1793585087
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793585091
     }
   ],
-  "trades": [],
+  "trades": [
+    {
+      "symbol": "TAKEUSDT",
+      "side": "SELL",
+      "entry": 0.07119,
+      "tp": 0.06941025,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.07119,
+      "pnl": 0.0,
+      "tf": "1h"
+    }
+  ],
   "start": 1000.0,
   "realized": 33.2987,
   "closed_n": 2,
-  "open_upnl": 0,
+  "open_upnl": 0.0,
   "equity": 1033.2987,
   "lev": 20,
   "margin_leg": 10.0,
