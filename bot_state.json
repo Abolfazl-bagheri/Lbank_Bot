@@ -123,31 +123,6 @@
       "order_id": "PAPER-YOFCUSDT-1793595910"
     },
     {
-      "symbol": "LYNUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.02019,
-      "qty": 9905.894,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.019685249999999998,
-      "tf": "4h",
-      "opened_at": 1793606812,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.02019,
-          "ts": 1793606812
-        }
-      ],
-      "entry_candle_ts": 1793606400,
-      "last_leg_candle_ts": 1793606400,
-      "dry_run": true,
-      "order_id": "PAPER-LYNUSDT-1793606812"
-    },
-    {
       "symbol": "CSOPSAMSUNG2LUSDT",
       "side": "SELL",
       "status": "open",
@@ -171,6 +146,31 @@
       "last_leg_candle_ts": 1793606400,
       "dry_run": true,
       "order_id": "PAPER-CSOPSAMSUNG2LUSDT-1793606840"
+    },
+    {
+      "symbol": "CATUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 1.94e-06,
+      "qty": 103092783.5052,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 1.8915e-06,
+      "tf": "15m",
+      "opened_at": 1793610204,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 1.94e-06,
+          "ts": 1793610204
+        }
+      ],
+      "entry_candle_ts": 1793610000,
+      "last_leg_candle_ts": 1793610000,
+      "dry_run": true,
+      "order_id": "PAPER-CATUSDT-1793610204"
     }
   ],
   "trade_history": [
@@ -458,6 +458,34 @@
       "closed_at": 1793608581,
       "close_px": 0.03825,
       "pnl_usdt": 18.439861435342998
+    },
+    {
+      "symbol": "LYNUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.02019,
+      "qty": 9905.894,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.019685249999999998,
+      "tf": "4h",
+      "opened_at": 1793606812,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.02019,
+          "ts": 1793606812
+        }
+      ],
+      "entry_candle_ts": 1793606400,
+      "last_leg_candle_ts": 1793606400,
+      "dry_run": true,
+      "order_id": "PAPER-LYNUSDT-1793606812",
+      "closed_at": 1793608583,
+      "close_px": 0.01945,
+      "pnl_usdt": 7.3303615651312635
     }
   ],
   "pending": [
@@ -1767,7 +1795,7 @@
     "NEXUSDT": 1793650160,
     "1000000BABYDOGEUSDT": 1793650165
   },
-  "last_trade_report_ts": 1793606979,
+  "last_trade_report_ts": 1793608590,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
