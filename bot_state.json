@@ -1,79 +1,29 @@
 {
   "open_trades": [
     {
-      "symbol": "HANMIUSDT",
+      "symbol": "TAKEUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 140.44,
-      "qty": 1.4241,
+      "entry": 0.07119,
+      "qty": 2809.3833,
       "margin": 10.0,
       "leverage": 20,
-      "tp_price": 136.929,
-      "tf": "15m",
-      "opened_at": 1793578679,
+      "tp_price": 0.06941025,
+      "tf": "1h",
+      "opened_at": 1793585089,
       "adds": 0,
       "last_leg_margin": 10.0,
       "used_res_levels": [],
       "steps": [
         {
-          "px": 140.44,
-          "ts": 1793578679
+          "px": 0.07119,
+          "ts": 1793585089
         }
       ],
-      "entry_candle_ts": 1793578500,
-      "last_leg_candle_ts": 1793578500,
+      "entry_candle_ts": 1793584800,
+      "last_leg_candle_ts": 1793584800,
       "dry_run": true,
-      "order_id": "PAPER-HANMIUSDT-1793578679"
-    },
-    {
-      "symbol": "SKUUUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 18.786,
-      "qty": 10.6462,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 18.31635,
-      "tf": "15m",
-      "opened_at": 1793582383,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 18.786,
-          "ts": 1793582383
-        }
-      ],
-      "entry_candle_ts": 1793582100,
-      "last_leg_candle_ts": 1793582100,
-      "dry_run": true,
-      "order_id": "PAPER-SKUUUSDT-1793582383"
-    },
-    {
-      "symbol": "KORUUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 11.64,
-      "qty": 17.1821,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 11.349,
-      "tf": "15m",
-      "opened_at": 1793582396,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 11.64,
-          "ts": 1793582396
-        }
-      ],
-      "entry_candle_ts": 1793582100,
-      "last_leg_candle_ts": 1793582100,
-      "dry_run": true,
-      "order_id": "PAPER-KORUUSDT-1793582396"
+      "order_id": "PAPER-TAKEUSDT-1793585089"
     }
   ],
   "trade_history": [
@@ -104,6 +54,40 @@
       "closed_at": 1793570691,
       "close_px": 0.0259,
       "pnl_usdt": 6.716417910447773
+    },
+    {
+      "symbol": "XDPUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.018960000000000005,
+      "qty": 31645.5696,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 0.018486000000000002,
+      "tf": "15m",
+      "opened_at": 1793578801,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.019
+      ],
+      "steps": [
+        {
+          "px": 0.01896,
+          "ts": 1793578801
+        },
+        {
+          "px": 0.01896,
+          "ts": 1793578909
+        }
+      ],
+      "entry_candle_ts": 1793578500,
+      "last_leg_candle_ts": 1793578909,
+      "dry_run": true,
+      "order_id": "PAPER-XDPUSDT-1793578801",
+      "closed_at": 1793579814,
+      "close_px": 0.01812,
+      "pnl_usdt": 26.58227848101277
     }
   ],
   "pending": [
@@ -908,8 +892,7 @@
       "side": "SELL",
       "upper": 0.01225805675389918,
       "open": 0.013,
-      "reported": true,
-      "filled": true
+      "reported": false
     },
     {
       "symbol": "FORMUSDT",
@@ -1202,32 +1185,14 @@
       "filled": true
     },
     {
-      "symbol": "HANMIUSDT",
+      "symbol": "XDPUSDT",
       "tf": "15m",
       "candle_ts": 1793578500,
       "side": "SELL",
-      "upper": 138.07157209278463,
-      "open": 140.05,
+      "upper": 0.018606948788368896,
+      "open": 0.01884,
       "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "SKUUUSDT",
-      "tf": "15m",
-      "candle_ts": 1793582100,
-      "side": "SELL",
-      "upper": 18.67590269283395,
-      "open": 18.878,
-      "reported": false
-    },
-    {
-      "symbol": "KORUUSDT",
-      "tf": "15m",
-      "candle_ts": 1793582100,
-      "side": "SELL",
-      "upper": 11.49234341376325,
-      "open": 11.693,
-      "reported": false
+      "filled": true
     }
   ],
   "paper_days": [
@@ -1293,20 +1258,15 @@
     "PIPEDOGUSDT": 1793608506,
     "BIO1USDT": 1793611218,
     "FLOCK1USDT": 1793612968,
-    "CZUSDT": 1793615720,
-    "1000SATSUSDT": 1793615747,
-    "1000WOJAKUSDT": 1793615749,
-    "NEIRO1USDT": 1793615753,
-    "AINBSCUSDT": 1793618406,
-    "CYBERLEEKUSDT": 1793618410,
-    "NIULAIUSDT": 1793621161,
-    "HOTUSDT": 1793621172,
-    "SPORTFUNUSDT": 1793621205,
-    "HAJIMIUSDT": 1793621221,
-    "NEXUSDT": 1793621271,
-    "UBIKUSDT": 1793622837
+    "AINBSCUSDT": 1793619396,
+    "CYBERLEEKUSDT": 1793619403,
+    "CZUSDT": 1793619450,
+    "1000SATSUSDT": 1793619484,
+    "1000WOJAKUSDT": 1793619485,
+    "NEIRO1USDT": 1793619487,
+    "UBIKUSDT": 1793622954
   },
-  "last_trade_report_ts": 1793582496,
+  "last_trade_report_ts": 1793584366,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
