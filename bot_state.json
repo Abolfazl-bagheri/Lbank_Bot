@@ -226,31 +226,6 @@
       "last_leg_candle_ts": 1793596500,
       "dry_run": true,
       "order_id": "PAPER-STORJUSDT-1793596800"
-    },
-    {
-      "symbol": "BIRBUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.08724,
-      "qty": 2292.5264,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.085059,
-      "tf": "15m",
-      "opened_at": 1793597674,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.08724,
-          "ts": 1793597674
-        }
-      ],
-      "entry_candle_ts": 1793597400,
-      "last_leg_candle_ts": 1793597400,
-      "dry_run": true,
-      "order_id": "PAPER-BIRBUSDT-1793597674"
     }
   ],
   "trade_history": [
@@ -343,6 +318,34 @@
       "closed_at": 1793596073,
       "close_px": 1.0651,
       "pnl_usdt": 6.8371418208197445
+    },
+    {
+      "symbol": "BIRBUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.08724,
+      "qty": 2292.5264,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.085059,
+      "tf": "15m",
+      "opened_at": 1793597674,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.08724,
+          "ts": 1793597674
+        }
+      ],
+      "entry_candle_ts": 1793597400,
+      "last_leg_candle_ts": 1793597400,
+      "dry_run": true,
+      "order_id": "PAPER-BIRBUSDT-1793597674",
+      "closed_at": 1793599556,
+      "close_px": 0.0847,
+      "pnl_usdt": 5.823016964695096
     }
   ],
   "pending": [
@@ -1548,6 +1551,15 @@
       "open": 0.08926,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "HAEDALUSDT",
+      "tf": "1h",
+      "candle_ts": 1793599200,
+      "side": "SELL",
+      "upper": 0.02734043002608365,
+      "open": 0.02767,
+      "reported": false
     }
   ],
   "paper_days": [
