@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.2",
-  "updated_at": 1793595801,
+  "updated_at": 1793595808,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "LYNUSDT",
-      "tf": "1h",
-      "gap": 3.1,
-      "ts": 1793552567
-    },
     {
       "kind": "SELL",
       "symbol": "STARUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 0.05,
       "ts": 1793595801
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793595808
     }
   ],
   "trades": [
@@ -1455,6 +1455,19 @@
       "lev": 20,
       "px": 17.41,
       "pnl": 2.6014,
+      "tf": "1h"
+    },
+    {
+      "symbol": "ZHONGJIUSDT",
+      "side": "SELL",
+      "entry": 93.15,
+      "tp": 90.82125,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 93.15,
+      "pnl": 0.0,
       "tf": "1h"
     }
   ],
