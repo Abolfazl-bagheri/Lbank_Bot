@@ -118,31 +118,6 @@
       "order_id": "PAPER-POPMARTUSDT-1793585203"
     },
     {
-      "symbol": "ZHONGJIUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 93.11,
-      "qty": 2.148,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 90.78224999999999,
-      "tf": "1h",
-      "opened_at": 1793595862,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 93.11,
-          "ts": 1793595862
-        }
-      ],
-      "entry_candle_ts": 1793595600,
-      "last_leg_candle_ts": 1793595600,
-      "dry_run": true,
-      "order_id": "PAPER-ZHONGJIUSDT-1793595862"
-    },
-    {
       "symbol": "HAEDALUSDT",
       "side": "SELL",
       "status": "open",
@@ -346,6 +321,34 @@
       "closed_at": 1793599556,
       "close_px": 0.0847,
       "pnl_usdt": 5.823016964695096
+    },
+    {
+      "symbol": "ZHONGJIUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 93.11,
+      "qty": 2.148,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 90.78224999999999,
+      "tf": "1h",
+      "opened_at": 1793595862,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 93.11,
+          "ts": 1793595862
+        }
+      ],
+      "entry_candle_ts": 1793595600,
+      "last_leg_candle_ts": 1793595600,
+      "dry_run": true,
+      "order_id": "PAPER-ZHONGJIUSDT-1793595862",
+      "closed_at": 1793600467,
+      "close_px": 90.26,
+      "pnl_usdt": 6.121791429491986
     }
   ],
   "pending": [
@@ -1595,7 +1598,6 @@
     "CVXSTOCKUSDT": 1793413084,
     "COPSTOCKUSDT": 1793413150,
     "OXYUSDT": 1793417641,
-    "HK0700USDT": 1793434646,
     "BARUSDT": 1793444715,
     "SXTUSDT": 1793445574,
     "SAFE1USDT": 1793449863,
@@ -1633,7 +1635,7 @@
     "AEHRUSDT": 1793636530,
     "GSTOCKUSDT": 1793640941
   },
-  "last_trade_report_ts": 1793597791,
+  "last_trade_report_ts": 1793599566,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
