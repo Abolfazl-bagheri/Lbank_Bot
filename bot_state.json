@@ -1,29 +1,29 @@
 {
   "open_trades": [
     {
-      "symbol": "HANMIUSDT",
+      "symbol": "XDPUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 140.44,
-      "qty": 1.4241,
+      "entry": 0.01896,
+      "qty": 10548.5232,
       "margin": 10.0,
       "leverage": 20,
-      "tp_price": 136.929,
+      "tp_price": 0.018486000000000002,
       "tf": "15m",
-      "opened_at": 1793578679,
+      "opened_at": 1793578801,
       "adds": 0,
       "last_leg_margin": 10.0,
       "used_res_levels": [],
       "steps": [
         {
-          "px": 140.44,
-          "ts": 1793578679
+          "px": 0.01896,
+          "ts": 1793578801
         }
       ],
       "entry_candle_ts": 1793578500,
       "last_leg_candle_ts": 1793578500,
       "dry_run": true,
-      "order_id": "PAPER-HANMIUSDT-1793578679"
+      "order_id": "PAPER-XDPUSDT-1793578801"
     }
   ],
   "trade_history": [
@@ -858,8 +858,7 @@
       "side": "SELL",
       "upper": 0.01225805675389918,
       "open": 0.013,
-      "reported": true,
-      "filled": true
+      "reported": false
     },
     {
       "symbol": "FORMUSDT",
@@ -1217,19 +1216,14 @@
     "PIPEDOGUSDT": 1793608506,
     "BIO1USDT": 1793611218,
     "FLOCK1USDT": 1793612968,
-    "CZUSDT": 1793615720,
-    "1000SATSUSDT": 1793615747,
-    "1000WOJAKUSDT": 1793615749,
-    "NEIRO1USDT": 1793615753,
-    "AINBSCUSDT": 1793618406,
-    "CYBERLEEKUSDT": 1793618410,
-    "NIULAIUSDT": 1793621161,
-    "HOTUSDT": 1793621172,
-    "SPORTFUNUSDT": 1793621205,
-    "HAJIMIUSDT": 1793621221,
-    "NEXUSDT": 1793621271
+    "AINBSCUSDT": 1793619396,
+    "CYBERLEEKUSDT": 1793619403,
+    "CZUSDT": 1793619450,
+    "1000SATSUSDT": 1793619484,
+    "1000WOJAKUSDT": 1793619485,
+    "NEIRO1USDT": 1793619487
   },
-  "last_trade_report_ts": 1793578088,
+  "last_trade_report_ts": 1793576290,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
