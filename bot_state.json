@@ -153,29 +153,29 @@
       "order_id": "PAPER-CSOPSAMSUNG2LUSDT-1793606840"
     },
     {
-      "symbol": "ARIAUSDT",
+      "symbol": "CLAUDIAUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.1212,
-      "qty": 1650.165,
+      "entry": 0.002349,
+      "qty": 85142.6139,
       "margin": 10.0,
       "leverage": 20,
-      "tp_price": 0.11817,
-      "tf": "15m",
-      "opened_at": 1793610217,
+      "tp_price": 0.002290275,
+      "tf": "1h",
+      "opened_at": 1793613865,
       "adds": 0,
       "last_leg_margin": 10.0,
       "used_res_levels": [],
       "steps": [
         {
-          "px": 0.1212,
-          "ts": 1793610217
+          "px": 0.002349,
+          "ts": 1793613865
         }
       ],
-      "entry_candle_ts": 1793610000,
-      "last_leg_candle_ts": 1793610000,
+      "entry_candle_ts": 1793613600,
+      "last_leg_candle_ts": 1793613600,
       "dry_run": true,
-      "order_id": "PAPER-ARIAUSDT-1793610217"
+      "order_id": "PAPER-CLAUDIAUSDT-1793613865"
     }
   ],
   "trade_history": [
@@ -575,6 +575,34 @@
       "closed_at": 1793612167,
       "close_px": 0.002206,
       "pnl_usdt": 9.499136442141612
+    },
+    {
+      "symbol": "ARIAUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.1212,
+      "qty": 1650.165,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.11817,
+      "tf": "15m",
+      "opened_at": 1793610217,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.1212,
+          "ts": 1793610217
+        }
+      ],
+      "entry_candle_ts": 1793610000,
+      "last_leg_candle_ts": 1793610000,
+      "dry_run": true,
+      "order_id": "PAPER-ARIAUSDT-1793610217",
+      "closed_at": 1793612985,
+      "close_px": 0.11817,
+      "pnl_usdt": 5.000000000000008
     }
   ],
   "pending": [
@@ -1832,7 +1860,8 @@
       "side": "SELL",
       "upper": 1.8306174207560413e-06,
       "open": 1.949e-06,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CLAUDIAUSDT",
@@ -1841,7 +1870,8 @@
       "side": "SELL",
       "upper": 0.0021167004555729244,
       "open": 0.002208,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ARIAUSDT",
@@ -1850,7 +1880,8 @@
       "side": "SELL",
       "upper": 0.11036811667714423,
       "open": 0.12108,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "STORJUSDT",
@@ -1859,7 +1890,8 @@
       "side": "SELL",
       "upper": 0.02166013728952748,
       "open": 0.02196,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
