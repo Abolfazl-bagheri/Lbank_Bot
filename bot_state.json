@@ -271,31 +271,6 @@
       "order_id": "PAPER-ARIAUSDT-1793635447"
     },
     {
-      "symbol": "AEONUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.0265,
-      "qty": 7547.1698,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.0258375,
-      "tf": "4h",
-      "opened_at": 1793635466,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.0265,
-          "ts": 1793635466
-        }
-      ],
-      "entry_candle_ts": 1793635200,
-      "last_leg_candle_ts": 1793635200,
-      "dry_run": true,
-      "order_id": "PAPER-AEONUSDT-1793635466"
-    },
-    {
       "symbol": "TSLLUSDT",
       "side": "SELL",
       "status": "open",
@@ -324,24 +299,30 @@
       "symbol": "BTRUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.04828,
-      "qty": 4142.5021,
-      "margin": 10.0,
+      "entry": 0.047958935994555515,
+      "qty": 12510.7029,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.047073000000000004,
+      "tp_price": 0.046759962594691624,
       "tf": "1h",
       "opened_at": 1793635539,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.04787
+      ],
       "steps": [
         {
           "px": 0.04828,
           "ts": 1793635539
+        },
+        {
+          "px": 0.0478,
+          "ts": 1793636447
         }
       ],
       "entry_candle_ts": 1793635200,
-      "last_leg_candle_ts": 1793635200,
+      "last_leg_candle_ts": 1793636447,
       "dry_run": true,
       "order_id": "PAPER-BTRUSDT-1793635539"
     },
@@ -1069,6 +1050,34 @@
       "closed_at": 1793635837,
       "close_px": 13.14,
       "pnl_usdt": 123.01685193116815
+    },
+    {
+      "symbol": "AEONUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.0265,
+      "qty": 7547.1698,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0258375,
+      "tf": "4h",
+      "opened_at": 1793635466,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.0265,
+          "ts": 1793635466
+        }
+      ],
+      "entry_candle_ts": 1793635200,
+      "last_leg_candle_ts": 1793635200,
+      "dry_run": true,
+      "order_id": "PAPER-AEONUSDT-1793635466",
+      "closed_at": 1793636270,
+      "close_px": 0.0257,
+      "pnl_usdt": 6.0377358490565936
     }
   ],
   "pending": [
