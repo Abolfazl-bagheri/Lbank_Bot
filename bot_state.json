@@ -287,24 +287,30 @@
       "symbol": "AGTUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.03512,
-      "qty": 5694.7608,
-      "margin": 10.0,
+      "entry": 0.035253080712498365,
+      "qty": 17019.7891,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.034241999999999995,
+      "tp_price": 0.034371753694685904,
       "tf": "1h",
       "opened_at": 1793653411,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.03544
+      ],
       "steps": [
         {
           "px": 0.03512,
           "ts": 1793653411
+        },
+        {
+          "px": 0.03532,
+          "ts": 1793654430
         }
       ],
       "entry_candle_ts": 1793653200,
-      "last_leg_candle_ts": 1793653200,
+      "last_leg_candle_ts": 1793654430,
       "dry_run": true,
       "order_id": "PAPER-AGTUSDT-1793653411"
     }
