@@ -91,17 +91,18 @@
       "symbol": "YOFCUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 13.75,
-      "qty": 101.8182,
-      "margin": 70.0,
+      "entry": 13.70185293801967,
+      "qty": 218.94850000000002,
+      "margin": 150.0,
       "leverage": 20,
-      "tp_price": 13.40625,
+      "tp_price": 13.359306614569178,
       "tf": "4h",
       "opened_at": 1793595910,
-      "adds": 2,
-      "last_leg_margin": 40.0,
+      "adds": 3,
+      "last_leg_margin": 80.0,
       "used_res_levels": [
-        13.779
+        13.779,
+        13.696
       ],
       "steps": [
         {
@@ -115,10 +116,14 @@
         {
           "px": 13.75,
           "ts": 1793606825
+        },
+        {
+          "px": 13.66,
+          "ts": 1793612975
         }
       ],
       "entry_candle_ts": 1793595600,
-      "last_leg_candle_ts": 1793606400,
+      "last_leg_candle_ts": 1793612975,
       "dry_run": true,
       "order_id": "PAPER-YOFCUSDT-1793595910"
     },
@@ -1934,7 +1939,7 @@
     "NEXUSDT": 1793650160,
     "1000000BABYDOGEUSDT": 1793650165
   },
-  "last_trade_report_ts": 1793610449,
+  "last_trade_report_ts": 1793612176,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
