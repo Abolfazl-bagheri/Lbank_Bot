@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.2",
-  "updated_at": 1793635855,
+  "updated_at": 1793635877,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "STORJUSDT",
-      "tf": "1h",
-      "gap": 1.28,
-      "ts": 1793610275
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1395,13 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1793635855
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793635877
     }
   ],
   "trades": [
@@ -1592,9 +1592,9 @@
       "side": "SELL",
       "entry": 82.98,
       "tp": 80.9055,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
+      "adds": 1,
+      "pele": 2,
+      "margin": 30.0,
       "lev": 20,
       "px": 82.98,
       "pnl": 0.0,
