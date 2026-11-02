@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.2",
-  "updated_at": 1793633532,
+  "updated_at": 1793633541,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "BIRBUSDT",
-      "tf": "1h",
-      "gap": 2.24,
-      "ts": 1793598908
-    },
     {
       "kind": "GAP",
       "symbol": "HK1810USDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 2.29,
       "ts": 1793633532
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793633541
     }
   ],
   "trades": [
@@ -1495,6 +1495,19 @@
       "px": 316.65,
       "pnl": -0.7354,
       "tf": "1h"
+    },
+    {
+      "symbol": "MPWRUSDT",
+      "side": "SELL",
+      "entry": 1306.5,
+      "tp": 1273.8374999999999,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 1306.5,
+      "pnl": 0.0,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
