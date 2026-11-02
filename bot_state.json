@@ -166,6 +166,31 @@
       "last_leg_candle_ts": 1793595600,
       "dry_run": true,
       "order_id": "PAPER-HAEDALUSDT-1793595817"
+    },
+    {
+      "symbol": "YOFCUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 13.75,
+      "qty": 14.5455,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 13.40625,
+      "tf": "1h",
+      "opened_at": 1793595847,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 13.75,
+          "ts": 1793595847
+        }
+      ],
+      "entry_candle_ts": 1793595600,
+      "last_leg_candle_ts": 1793595600,
+      "dry_run": true,
+      "order_id": "PAPER-YOFCUSDT-1793595847"
     }
   ],
   "trade_history": [
@@ -1421,6 +1446,15 @@
       "side": "SELL",
       "upper": 93.10138998811559,
       "open": 94.15,
+      "reported": false
+    },
+    {
+      "symbol": "HAEDALUSDT",
+      "tf": "1h",
+      "candle_ts": 1793595600,
+      "side": "SELL",
+      "upper": 0.026777752259203612,
+      "open": 0.02717,
       "reported": false
     }
   ],
