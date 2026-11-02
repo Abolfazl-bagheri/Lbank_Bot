@@ -88,41 +88,6 @@
       "order_id": "PAPER-POPMARTUSDT-1793585203"
     },
     {
-      "symbol": "HAEDALUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.027464420353374222,
-      "qty": 50975.042700000005,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 0.026777809844539865,
-      "tf": "1h",
-      "opened_at": 1793595879,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [
-        0.0275
-      ],
-      "steps": [
-        {
-          "px": 0.02718,
-          "ts": 1793595879
-        },
-        {
-          "px": 0.02774,
-          "ts": 1793599378
-        },
-        {
-          "px": 0.0274,
-          "ts": 1793600470
-        }
-      ],
-      "entry_candle_ts": 1793595600,
-      "last_leg_candle_ts": 1793600470,
-      "dry_run": true,
-      "order_id": "PAPER-HAEDALUSDT-1793595879"
-    },
-    {
       "symbol": "YOFCUSDT",
       "side": "SELL",
       "status": "open",
@@ -157,24 +122,30 @@
       "symbol": "STARUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.04002,
-      "qty": 4997.5012,
-      "margin": 10.0,
+      "entry": 0.03946281472564931,
+      "qty": 15204.1866,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.0390195,
+      "tp_price": 0.03847624435750808,
       "tf": "15m",
       "opened_at": 1793602959,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.03934
+      ],
       "steps": [
         {
           "px": 0.04002,
           "ts": 1793602959
+        },
+        {
+          "px": 0.03919,
+          "ts": 1793604952
         }
       ],
       "entry_candle_ts": 1793602800,
-      "last_leg_candle_ts": 1793602800,
+      "last_leg_candle_ts": 1793604952,
       "dry_run": true,
       "order_id": "PAPER-STARUSDT-1793602959"
     }
@@ -392,6 +363,44 @@
       "closed_at": 1793601318,
       "close_px": 0.06898,
       "pnl_usdt": 38.2586626216618
+    },
+    {
+      "symbol": "HAEDALUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.027464420353374222,
+      "qty": 50975.042700000005,
+      "margin": 70.0,
+      "leverage": 20,
+      "tp_price": 0.026777809844539865,
+      "tf": "1h",
+      "opened_at": 1793595879,
+      "adds": 2,
+      "last_leg_margin": 40.0,
+      "used_res_levels": [
+        0.0275
+      ],
+      "steps": [
+        {
+          "px": 0.02718,
+          "ts": 1793595879
+        },
+        {
+          "px": 0.02774,
+          "ts": 1793599378
+        },
+        {
+          "px": 0.0274,
+          "ts": 1793600470
+        }
+      ],
+      "entry_candle_ts": 1793595600,
+      "last_leg_candle_ts": 1793600470,
+      "dry_run": true,
+      "order_id": "PAPER-HAEDALUSDT-1793595879",
+      "closed_at": 1793603151,
+      "close_px": 0.02658,
+      "pnl_usdt": 45.08336527014269
     }
   ],
   "pending": [
@@ -1615,7 +1624,8 @@
       "side": "SELL",
       "upper": 0.03938110844809572,
       "open": 0.04001,
-      "reported": false
+      "reported": true,
+      "filled": false
     }
   ],
   "paper_days": [
@@ -1688,7 +1698,7 @@
     "GSTOCKUSDT": 1793640941,
     "PORUSDT": 1793645476
   },
-  "last_trade_report_ts": 1793602292,
+  "last_trade_report_ts": 1793604099,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
