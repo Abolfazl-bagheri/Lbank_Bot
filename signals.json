@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.2",
-  "updated_at": 1793635432,
+  "updated_at": 1793635441,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1793595919
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 1.0,
       "ts": 1793635432
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793635441
     }
   ],
   "trades": [
@@ -1480,6 +1480,19 @@
       "margin": 10.0,
       "lev": 20,
       "px": 0.04895,
+      "pnl": 0.0,
+      "tf": "1h"
+    },
+    {
+      "symbol": "RIVNUSDT",
+      "side": "SELL",
+      "entry": 13.59,
+      "tp": 13.25025,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 13.59,
       "pnl": 0.0,
       "tf": "1h"
     }
