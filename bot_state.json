@@ -139,16 +139,18 @@
       "symbol": "DKNGUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 21.953307965035656,
-      "qty": 27.3307,
-      "margin": 30.0,
+      "entry": 22.0027625757721,
+      "qty": 63.6283,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 21.404475265909763,
+      "tp_price": 21.452693511377795,
       "tf": "4h",
       "opened_at": 1793631969,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
+      "adds": 2,
+      "last_leg_margin": 40.0,
+      "used_res_levels": [
+        22.123
+      ],
       "steps": [
         {
           "px": 21.92,
@@ -157,10 +159,14 @@
         {
           "px": 21.97,
           "ts": 1793635599
+        },
+        {
+          "px": 22.04,
+          "ts": 1793638059
         }
       ],
       "entry_candle_ts": 1793631600,
-      "last_leg_candle_ts": 1793635200,
+      "last_leg_candle_ts": 1793638059,
       "dry_run": true,
       "order_id": "PAPER-DKNGUSDT-1793631969"
     },
@@ -2566,7 +2572,6 @@
     "QUID1USDT": 1793527676,
     "SYNUSDT": 1793537208,
     "QUACKAIUSDT": 1793545678,
-    "BIANRENSHENGUSDT": 1793549283,
     "LONGXIAUSDT": 1793558277,
     "MANCERUSDT": 1793582484,
     "STONKBROKERUSDT": 1793586042,
@@ -2612,7 +2617,7 @@
     "XPSTOCKUSDT": 1793678976,
     "AINBSCUSDT": 1793679450
   },
-  "last_trade_report_ts": 1793635890,
+  "last_trade_report_ts": 1793637192,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
