@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.2",
-  "updated_at": 1793585201,
+  "updated_at": 1793585208,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "ESPORTSUSDT",
-      "tf": "15m",
-      "gap": 2.44,
-      "ts": 1793538742
-    },
     {
       "kind": "GAP",
       "symbol": "ZZZUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 0.64,
       "ts": 1793585201
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793585208
     }
   ],
   "trades": [
@@ -1441,6 +1441,19 @@
       "margin": 10.0,
       "lev": 20,
       "px": 170.13,
+      "pnl": 0.0,
+      "tf": "1h"
+    },
+    {
+      "symbol": "POPMARTUSDT",
+      "side": "SELL",
+      "entry": 17.66,
+      "tp": 17.2185,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 17.66,
       "pnl": 0.0,
       "tf": "1h"
     }
