@@ -284,37 +284,6 @@
       "order_id": "PAPER-PDDUSDT-1793635671"
     },
     {
-      "symbol": "AGTUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.035253080712498365,
-      "qty": 17019.7891,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.034371753694685904,
-      "tf": "1h",
-      "opened_at": 1793653411,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        0.03544
-      ],
-      "steps": [
-        {
-          "px": 0.03512,
-          "ts": 1793653411
-        },
-        {
-          "px": 0.03532,
-          "ts": 1793654430
-        }
-      ],
-      "entry_candle_ts": 1793653200,
-      "last_leg_candle_ts": 1793654430,
-      "dry_run": true,
-      "order_id": "PAPER-AGTUSDT-1793653411"
-    },
-    {
       "symbol": "ICNTUSDT",
       "side": "SELL",
       "status": "open",
@@ -1209,6 +1178,40 @@
       "closed_at": 1793654410,
       "close_px": 78.35,
       "pnl_usdt": 85.20173042605103
+    },
+    {
+      "symbol": "AGTUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.035253080712498365,
+      "qty": 17019.7891,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 0.034371753694685904,
+      "tf": "1h",
+      "opened_at": 1793653411,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.03544
+      ],
+      "steps": [
+        {
+          "px": 0.03512,
+          "ts": 1793653411
+        },
+        {
+          "px": 0.03532,
+          "ts": 1793654430
+        }
+      ],
+      "entry_candle_ts": 1793653200,
+      "last_leg_candle_ts": 1793654430,
+      "dry_run": true,
+      "order_id": "PAPER-AGTUSDT-1793653411",
+      "closed_at": 1793658118,
+      "close_px": 0.03415,
+      "pnl_usdt": 18.774201122921216
     }
   ],
   "pending": [
@@ -2688,6 +2691,15 @@
       "open": 0.035165,
       "reported": true,
       "filled": false
+    },
+    {
+      "symbol": "ICNTUSDT",
+      "tf": "1h",
+      "candle_ts": 1793656800,
+      "side": "SELL",
+      "upper": 0.18843527508157212,
+      "open": 0.1917,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -2762,9 +2774,10 @@
     "GSTOCKUSDT": 1793688424,
     "WUXIBIOUSDT": 1793694108,
     "PORUSDT": 1793694114,
-    "AEHRUSDT": 1793697560
+    "AEHRUSDT": 1793697560,
+    "FIGHT1USDT": 1793700356
   },
-  "last_trade_report_ts": 1793655495,
+  "last_trade_report_ts": 1793657194,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.4",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
