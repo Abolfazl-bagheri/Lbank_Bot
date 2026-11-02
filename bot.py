@@ -35,7 +35,7 @@ SIGNALS_FILE = os.path.join(BASE_DIR, "signals.json")
 LIVE_TOPIC = os.environ.get("LIVE_TOPIC", "lbank-gap-b0b85cee29ce").strip()
 STATE_BAK = os.path.join(BASE_DIR, "bot_state.bak")
 
-BOT_VERSION = "2.6.2"
+BOT_VERSION = "2.6.3"
 CHANGELOG = {
     "2.1.0": [
         "چارت احتمال‌گپ → استایل SolAtlas (خط‌روند شکست/بازتست) — هنوز ناقص",
@@ -912,26 +912,67 @@ def detect_fake_break_watch(df: pd.DataFrame) -> str | None:
 
 
 def make_gap_chart(df: pd.DataFrame, symbol: str, tf: str, sig: dict | None = None) -> bytes | None:
-    """احتمال‌گپ: چارت SolAtlas-style؛ کندل flat برای نمایش حذف می‌شود."""
+    """چارت گپ + باند بولینگر + سقف‌های پله (مقاومت)."""
     try:
-        try:
-            from trendlines_breaks import render_trendline_chart
-        except ImportError:
-            from agents.trendlines_breaks import render_trendline_chart
+        import matplotlib
+        matplotlib.use("Agg")
+        import matplotlib.pyplot as plt
+        from io import BytesIO
+
         plot_df = densify_ohlc(df)
         fr = _flat_ratio(df)
         if fr > 0.45 and _flat_ratio(plot_df) > 0.35:
             log.info("CHART_SKIP %s %s flat=%.0f%%", symbol, tf, fr * 100)
             return None
-        entry = float((sig or {}).get("fut_last") or (sig or {}).get("open") or plot_df.iloc[-1]["c"])
-        ub = None
+        plot_df = plot_df.tail(80).reset_index(drop=True)
+        o = plot_df["o"].to_numpy(float)
+        h = plot_df["h"].to_numpy(float)
+        l = plot_df["l"].to_numpy(float)
+        c = plot_df["c"].to_numpy(float)
+        xs = list(range(len(plot_df)))
+        entry = float((sig or {}).get("fut_last") or (sig or {}).get("open") or c[-1])
+        ub = float(plot_df.iloc[-1]["upper"]) if "upper" in plot_df.columns else None
+        lb = float(plot_df.iloc[-1]["lower"]) if "lower" in plot_df.columns else None
+
+        fig, ax = plt.subplots(figsize=(10, 5.2), dpi=120)
+        fig.patch.set_facecolor("#ffffff")
+        ax.set_facecolor("#ffffff")
+        for i in xs:
+            col = "#16a34a" if c[i] >= o[i] else "#dc2626"
+            ax.vlines(i, l[i], h[i], colors=col, linewidth=1.0)
+            ax.add_patch(plt.Rectangle((i - 0.3, min(o[i], c[i])), 0.6, max(abs(c[i] - o[i]), (h.max() - l.min()) * 0.001),
+                                       facecolor=col, edgecolor=col))
         if "upper" in plot_df.columns:
-            try:
-                ub = float(plot_df.iloc[-1]["upper"])
-            except Exception:
-                ub = None
-        gap_pct = ((entry - ub) / entry * 100.0) if ub and entry and ub == ub else None
-        return render_trendline_chart(plot_df, symbol, tf, gap_pct=gap_pct, max_bars=180)
+            ax.plot(xs, plot_df["upper"], color="#7c3aed", lw=1.0, alpha=0.7, label="UB")
+            ax.plot(xs, plot_df["lower"], color="#7c3aed", lw=1.0, alpha=0.5, label="LB")
+            ax.plot(xs, plot_df["sma"], color="#64748b", lw=0.8, alpha=0.6)
+        if ub:
+            ax.axhline(ub, color="#7c3aed", ls="--", lw=1.0, alpha=0.8)
+            ax.text(len(xs) - 1, ub, f"  UB {ub:.6g}", color="#7c3aed", fontsize=8, va="bottom")
+        # سقف‌های پله
+        try:
+            levels = find_resistance_levels(symbol, entry, tf if tf in ("15m", "1h", "4h") else "1h")
+        except Exception:
+            levels = []
+        colors = ["#f59e0b", "#ea580c", "#b45309"]
+        for j, lv in enumerate(levels[:3]):
+            ax.axhline(lv, color=colors[j % 3], ls="-", lw=1.3, alpha=0.9)
+            dist = (lv - entry) / entry * 100 if entry else 0
+            ax.text(0.5, lv, f"  سقف{j+1} {lv:.6g} ({dist:+.2f}%)", color=colors[j % 3], fontsize=8, va="bottom")
+        ax.axhline(entry, color="#0ea5e9", ls=":", lw=1.0, alpha=0.8)
+        ax.text(len(xs) - 1, entry, f"  px {entry:.6g}", color="#0ea5e9", fontsize=8, va="top")
+        gap = ""
+        if ub and entry:
+            gap = f" · gap≈{(entry - ub) / entry * 100:.2f}%"
+        ax.set_title(f"{symbol} · {tf} · سقف پله{gap}", fontsize=11, loc="left")
+        ax.set_xlim(-1, len(xs) + 2)
+        ax.grid(True, alpha=0.2)
+        ax.tick_params(labelsize=8)
+        fig.tight_layout()
+        buf = BytesIO()
+        fig.savefig(buf, format="png", facecolor="#ffffff")
+        plt.close(fig)
+        return buf.getvalue()
     except Exception as e:
         log.debug("chart: %s", e)
         return None
@@ -1333,7 +1374,8 @@ def maybe_send_daily_paper_report() -> None:
     if not trading_enabled():
         return
     now_ir = iran_now()
-    if not (now_ir.hour == 23 and now_ir.minute >= 50):
+    # ریست هم‌زمان با باز شدن کندل روزانه (۰۳:۳۰ ایران)
+    if not (now_ir.hour == 3 and 30 <= now_ir.minute <= 44):
         return
     day_key = now_ir.strftime("%Y-%m-%d")
     if _last_daily_report_date == day_key:
