@@ -37,31 +37,6 @@
       "order_id": "PAPER-MINIMAXUSDT-1793585106"
     },
     {
-      "symbol": "TSEMUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 170.13,
-      "qty": 1.1756,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 165.87675,
-      "tf": "1h",
-      "opened_at": 1793585186,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 170.13,
-          "ts": 1793585186
-        }
-      ],
-      "entry_candle_ts": 1793584800,
-      "last_leg_candle_ts": 1793584800,
-      "dry_run": true,
-      "order_id": "PAPER-TSEMUSDT-1793585186"
-    },
-    {
       "symbol": "POPMARTUSDT",
       "side": "SELL",
       "status": "open",
@@ -698,6 +673,34 @@
       "closed_at": 1793628466,
       "close_px": 0.03122,
       "pnl_usdt": 15.539143279172801
+    },
+    {
+      "symbol": "TSEMUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 170.13,
+      "qty": 1.1756,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 165.87675,
+      "tf": "1h",
+      "opened_at": 1793585186,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 170.13,
+          "ts": 1793585186
+        }
+      ],
+      "entry_candle_ts": 1793584800,
+      "last_leg_candle_ts": 1793584800,
+      "dry_run": true,
+      "order_id": "PAPER-TSEMUSDT-1793585186",
+      "closed_at": 1793629053,
+      "close_px": 165.47,
+      "pnl_usdt": 5.478163757126899
     }
   ],
   "pending": [
@@ -2067,7 +2070,7 @@
     "KOPNUSDT": 1793668799,
     "MARRIOTTUSDT": 1793669573
   },
-  "last_trade_report_ts": 1793626558,
+  "last_trade_report_ts": 1793628476,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
