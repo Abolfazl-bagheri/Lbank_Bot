@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.2",
-  "updated_at": 1793611800,
+  "updated_at": 1793612174,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1793585091
-    },
     {
       "kind": "SELL",
       "symbol": "MINIMAXUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 1.65,
       "ts": 1793611800
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793612174
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 21.59,
-      "pnl": -2.0785,
+      "px": 21.58,
+      "pnl": -1.7997,
       "tf": "1h"
     },
     {
@@ -1427,8 +1427,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 171.96,
-      "pnl": -2.1513,
+      "px": 171.91,
+      "pnl": -2.0925,
       "tf": "1h"
     },
     {
@@ -1453,8 +1453,8 @@
       "pele": 3,
       "margin": 70.0,
       "lev": 20,
-      "px": 13.46,
-      "pnl": 29.5273,
+      "px": 13.55,
+      "pnl": 20.3636,
       "tf": "4h"
     },
     {
@@ -1466,8 +1466,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 6.704,
-      "pnl": -1.4726,
+      "px": 6.703,
+      "pnl": -1.4425,
       "tf": "4h"
     },
     {
@@ -1479,35 +1479,22 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.11672,
-      "pnl": 7.3927,
+      "px": 0.12025,
+      "pnl": 1.5677,
       "tf": "15m"
-    },
-    {
-      "symbol": "CLAUDIAUSDT",
-      "side": "SELL",
-      "entry": 0.002316,
-      "tp": 0.0022581,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.002193,
-      "pnl": 10.6218,
-      "tf": "1h"
     }
   ],
   "start": 1000.0,
-  "realized": 181.5999,
-  "closed_n": 12,
-  "open_upnl": 43.7545,
-  "equity": 1225.3544,
+  "realized": 191.099,
+  "closed_n": 13,
+  "open_upnl": 18.5117,
+  "equity": 1209.6107,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 181.5999,
+    "profit": 191.099,
     "loss": 0,
-    "count": 12
+    "count": 13
   }
 }
