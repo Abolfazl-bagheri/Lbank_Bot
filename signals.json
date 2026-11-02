@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.2",
-  "updated_at": 1793599387,
+  "updated_at": 1793599565,
   "signals": [
-    {
-      "kind": "HEARTBEAT",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1793566257
-    },
     {
       "kind": "GAP",
       "symbol": "CYSUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1793599387
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793599565
     }
   ],
   "trades": [
@@ -1508,32 +1508,19 @@
       "px": 0.02114,
       "pnl": 0.9416,
       "tf": "15m"
-    },
-    {
-      "symbol": "BIRBUSDT",
-      "side": "SELL",
-      "entry": 0.08724,
-      "tp": 0.085059,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.0847,
-      "pnl": 5.823,
-      "tf": "15m"
     }
   ],
   "start": 1000.0,
-  "realized": 40.1358,
-  "closed_n": 3,
-  "open_upnl": 10.0725,
-  "equity": 1050.2083,
+  "realized": 45.9589,
+  "closed_n": 4,
+  "open_upnl": 4.2495,
+  "equity": 1050.2084,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 40.1358,
+    "profit": 45.9589,
     "loss": 0,
-    "count": 3
+    "count": 4
   }
 }
