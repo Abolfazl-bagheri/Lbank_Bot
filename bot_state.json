@@ -270,24 +270,30 @@
       "symbol": "AMZNUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 253.44,
-      "qty": 0.789141,
-      "margin": 10.0,
+      "entry": 251.7141486658436,
+      "qty": 2.383641,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 247.10399999999998,
+      "tp_price": 245.4212949491975,
       "tf": "4h",
       "opened_at": 1793635665,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        251.29
+      ],
       "steps": [
         {
           "px": 253.44,
           "ts": 1793635665
+        },
+        {
+          "px": 250.86,
+          "ts": 1793642973
         }
       ],
       "entry_candle_ts": 1793635200,
-      "last_leg_candle_ts": 1793635200,
+      "last_leg_candle_ts": 1793642973,
       "dry_run": true,
       "order_id": "PAPER-AMZNUSDT-1793635665"
     },
