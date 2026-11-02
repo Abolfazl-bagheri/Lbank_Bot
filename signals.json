@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.2",
-  "updated_at": 1793630805,
+  "updated_at": 1793630812,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "KORUUSDT",
-      "tf": "4h",
-      "gap": 1.57,
-      "ts": 1793592808
-    },
     {
       "kind": "GAP",
       "symbol": "MINIMAXUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 1.7,
       "ts": 1793630805
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793630812
     }
   ],
   "trades": [
@@ -1443,6 +1443,19 @@
       "px": 13.54,
       "pnl": 35.4375,
       "tf": "4h"
+    },
+    {
+      "symbol": "CVNAUSDT",
+      "side": "SELL",
+      "entry": 72.42,
+      "tp": 70.6095,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 72.42,
+      "pnl": 0.0,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
