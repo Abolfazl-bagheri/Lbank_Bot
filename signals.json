@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.2",
-  "updated_at": 1793578800,
+  "updated_at": 1793578804,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1793531146
-    },
     {
       "kind": "SELL",
       "symbol": "FONEUSDT",
@@ -1402,13 +1395,34 @@
       "tf": "15m",
       "gap": 1.86,
       "ts": 1793578800
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793578804
     }
   ],
-  "trades": [],
+  "trades": [
+    {
+      "symbol": "XDPUSDT",
+      "side": "SELL",
+      "entry": 0.01896,
+      "tp": 0.018486000000000002,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.01896,
+      "pnl": 0.0,
+      "tf": "15m"
+    }
+  ],
   "start": 1000.0,
   "realized": 6.7164,
   "closed_n": 1,
-  "open_upnl": 0,
+  "open_upnl": 0.0,
   "equity": 1006.7164,
   "lev": 20,
   "margin_leg": 10.0,
