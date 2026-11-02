@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.2",
-  "updated_at": 1793578677,
+  "updated_at": 1793578681,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "AVAAIUSDT",
-      "tf": "1h",
-      "gap": 0.28,
-      "ts": 1793531180
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,13 +1395,34 @@
       "tf": "15m",
       "gap": 1.69,
       "ts": 1793578677
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793578681
     }
   ],
-  "trades": [],
+  "trades": [
+    {
+      "symbol": "HANMIUSDT",
+      "side": "SELL",
+      "entry": 140.44,
+      "tp": 136.929,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 140.44,
+      "pnl": 0.0,
+      "tf": "15m"
+    }
+  ],
   "start": 1000.0,
   "realized": 6.7164,
   "closed_n": 1,
-  "open_upnl": 0,
+  "open_upnl": 0.0,
   "equity": 1006.7164,
   "lev": 20,
   "margin_leg": 10.0,
