@@ -104,17 +104,18 @@
       "symbol": "TEMUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 79.62503111065611,
-      "qty": 17.5824,
-      "margin": 70.0,
+      "entry": 80.64022901809834,
+      "qty": 37.2023,
+      "margin": 150.0,
       "leverage": 20,
-      "tp_price": 77.6344053328897,
+      "tp_price": 78.62422329264588,
       "tf": "4h",
       "opened_at": 1793631925,
-      "adds": 2,
-      "last_leg_margin": 40.0,
+      "adds": 3,
+      "last_leg_margin": 80.0,
       "used_res_levels": [
-        80.4
+        80.4,
+        81.73
       ],
       "steps": [
         {
@@ -128,10 +129,14 @@
         {
           "px": 80.19,
           "ts": 1793637161
+        },
+        {
+          "px": 81.55,
+          "ts": 1793640062
         }
       ],
       "entry_candle_ts": 1793631600,
-      "last_leg_candle_ts": 1793637161,
+      "last_leg_candle_ts": 1793640062,
       "dry_run": true,
       "order_id": "PAPER-TEMUSDT-1793631925"
     },
@@ -2418,7 +2423,8 @@
       "side": "SELL",
       "upper": 13.454684297076312,
       "open": 13.622,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ARIAUSDT",
@@ -2463,7 +2469,8 @@
       "side": "SELL",
       "upper": 11.763549063392123,
       "open": 11.93,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "BTRUSDT",
@@ -2472,7 +2479,8 @@
       "side": "SELL",
       "upper": 0.048245322810547026,
       "open": 0.04913,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CCLUSDT",
@@ -2615,9 +2623,10 @@
     "EWZSUSDT": 1793678937,
     "BIDUUSDT": 1793678955,
     "XPSTOCKUSDT": 1793678976,
-    "AINBSCUSDT": 1793679450
+    "AINBSCUSDT": 1793679450,
+    "FIGUSDT": 1793683258
   },
-  "last_trade_report_ts": 1793637192,
+  "last_trade_report_ts": 1793639300,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
