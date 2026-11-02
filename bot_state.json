@@ -24,6 +24,31 @@
       "last_leg_candle_ts": 1793584800,
       "dry_run": true,
       "order_id": "PAPER-TAKEUSDT-1793585089"
+    },
+    {
+      "symbol": "MINIMAXUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 21.29,
+      "qty": 9.3941,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 20.757749999999998,
+      "tf": "1h",
+      "opened_at": 1793585106,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 21.29,
+          "ts": 1793585106
+        }
+      ],
+      "entry_candle_ts": 1793584800,
+      "last_leg_candle_ts": 1793584800,
+      "dry_run": true,
+      "order_id": "PAPER-MINIMAXUSDT-1793585106"
     }
   ],
   "trade_history": [
@@ -1193,6 +1218,15 @@
       "open": 0.01884,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "TAKEUSDT",
+      "tf": "1h",
+      "candle_ts": 1793584800,
+      "side": "SELL",
+      "upper": 0.07033670824264608,
+      "open": 0.07124,
+      "reported": false
     }
   ],
   "paper_days": [
