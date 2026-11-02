@@ -1,37 +1,5 @@
 {
-  "open_trades": [
-    {
-      "symbol": "XDPUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.018960000000000005,
-      "qty": 31645.5696,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.018486000000000002,
-      "tf": "15m",
-      "opened_at": 1793578801,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        0.019
-      ],
-      "steps": [
-        {
-          "px": 0.01896,
-          "ts": 1793578801
-        },
-        {
-          "px": 0.01896,
-          "ts": 1793578909
-        }
-      ],
-      "entry_candle_ts": 1793578500,
-      "last_leg_candle_ts": 1793578909,
-      "dry_run": true,
-      "order_id": "PAPER-XDPUSDT-1793578801"
-    }
-  ],
+  "open_trades": [],
   "trade_history": [
     {
       "symbol": "AEONUSDT",
@@ -60,6 +28,40 @@
       "closed_at": 1793570691,
       "close_px": 0.0259,
       "pnl_usdt": 6.716417910447773
+    },
+    {
+      "symbol": "XDPUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.018960000000000005,
+      "qty": 31645.5696,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 0.018486000000000002,
+      "tf": "15m",
+      "opened_at": 1793578801,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.019
+      ],
+      "steps": [
+        {
+          "px": 0.01896,
+          "ts": 1793578801
+        },
+        {
+          "px": 0.01896,
+          "ts": 1793578909
+        }
+      ],
+      "entry_candle_ts": 1793578500,
+      "last_leg_candle_ts": 1793578909,
+      "dry_run": true,
+      "order_id": "PAPER-XDPUSDT-1793578801",
+      "closed_at": 1793579814,
+      "close_px": 0.01812,
+      "pnl_usdt": 26.58227848101277
     }
   ],
   "pending": [
@@ -1163,7 +1165,8 @@
       "side": "SELL",
       "upper": 0.018606948788368896,
       "open": 0.01884,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -1217,7 +1220,6 @@
     "BIANRENSHENGUSDT": 1793549283,
     "AI1USDT": 1793551943,
     "LONGXIAUSDT": 1793558277,
-    "UBIKUSDT": 1793578777,
     "MANCERUSDT": 1793582484,
     "STONKBROKERUSDT": 1793586042,
     "TRUMPSOLUSDT": 1793586070,
@@ -1236,9 +1238,10 @@
     "CZUSDT": 1793619450,
     "1000SATSUSDT": 1793619484,
     "1000WOJAKUSDT": 1793619485,
-    "NEIRO1USDT": 1793619487
+    "NEIRO1USDT": 1793619487,
+    "UBIKUSDT": 1793622954
   },
-  "last_trade_report_ts": 1793576290,
+  "last_trade_report_ts": 1793578917,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
