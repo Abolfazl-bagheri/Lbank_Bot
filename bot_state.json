@@ -197,6 +197,31 @@
       "last_leg_candle_ts": 1793596077,
       "dry_run": true,
       "order_id": "PAPER-YOFCUSDT-1793595910"
+    },
+    {
+      "symbol": "STORJUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.02124,
+      "qty": 9416.1959,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.020708999999999998,
+      "tf": "15m",
+      "opened_at": 1793596800,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.02124,
+          "ts": 1793596800
+        }
+      ],
+      "entry_candle_ts": 1793596500,
+      "last_leg_candle_ts": 1793596500,
+      "dry_run": true,
+      "order_id": "PAPER-STORJUSDT-1793596800"
     }
   ],
   "trade_history": [
@@ -1544,7 +1569,7 @@
     "BEMUSDT": 1793633776,
     "AEHRUSDT": 1793636530
   },
-  "last_trade_report_ts": 1793591493,
+  "last_trade_report_ts": 1793596094,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
