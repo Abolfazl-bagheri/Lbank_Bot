@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.2",
-  "updated_at": 1793631864,
+  "updated_at": 1793631871,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "HK1810USDT",
-      "tf": "1h",
-      "gap": 1.05,
-      "ts": 1793592538
-    },
     {
       "kind": "GAP",
       "symbol": "YOFCUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 1.5,
       "ts": 1793631864
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793631871
     }
   ],
   "trades": [
@@ -1456,6 +1456,19 @@
       "px": 6.495,
       "pnl": 18.0286,
       "tf": "4h"
+    },
+    {
+      "symbol": "TEMUSDT",
+      "side": "SELL",
+      "entry": 78.66,
+      "tp": 76.6935,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 78.66,
+      "pnl": 0.0,
+      "tf": "1h"
     }
   ],
   "start": 1000.0,
