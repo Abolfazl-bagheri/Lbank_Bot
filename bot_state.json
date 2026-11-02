@@ -123,37 +123,6 @@
       "order_id": "PAPER-YOFCUSDT-1793595910"
     },
     {
-      "symbol": "STARUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.03946281472564931,
-      "qty": 15204.1866,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.03847624435750808,
-      "tf": "15m",
-      "opened_at": 1793602959,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        0.03934
-      ],
-      "steps": [
-        {
-          "px": 0.04002,
-          "ts": 1793602959
-        },
-        {
-          "px": 0.03919,
-          "ts": 1793604952
-        }
-      ],
-      "entry_candle_ts": 1793602800,
-      "last_leg_candle_ts": 1793604952,
-      "dry_run": true,
-      "order_id": "PAPER-STARUSDT-1793602959"
-    },
-    {
       "symbol": "LYNUSDT",
       "side": "SELL",
       "status": "open",
@@ -455,6 +424,40 @@
       "closed_at": 1793603151,
       "close_px": 0.02658,
       "pnl_usdt": 45.08336527014269
+    },
+    {
+      "symbol": "STARUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.03946281472564931,
+      "qty": 15204.1866,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 0.03847624435750808,
+      "tf": "15m",
+      "opened_at": 1793602959,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.03934
+      ],
+      "steps": [
+        {
+          "px": 0.04002,
+          "ts": 1793602959
+        },
+        {
+          "px": 0.03919,
+          "ts": 1793604952
+        }
+      ],
+      "entry_candle_ts": 1793602800,
+      "last_leg_candle_ts": 1793604952,
+      "dry_run": true,
+      "order_id": "PAPER-STARUSDT-1793602959",
+      "closed_at": 1793608581,
+      "close_px": 0.03825,
+      "pnl_usdt": 18.439861435342998
     }
   ],
   "pending": [
@@ -1675,6 +1678,15 @@
       "upper": 13.521821868684347,
       "open": 13.736,
       "reported": false
+    },
+    {
+      "symbol": "CSOPSAMSUNG2LUSDT",
+      "tf": "4h",
+      "candle_ts": 1793606400,
+      "side": "SELL",
+      "upper": 6.593883216395261,
+      "open": 6.671,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -1744,9 +1756,18 @@
     "BEMUSDT": 1793633776,
     "AEHRUSDT": 1793636530,
     "GSTOCKUSDT": 1793640941,
-    "PORUSDT": 1793645476
+    "PORUSDT": 1793645476,
+    "NIULAIUSDT": 1793650101,
+    "HK1810USDT": 1793650107,
+    "WUXIBIOUSDT": 1793650110,
+    "HK0992USDT": 1793650114,
+    "FIGHT1USDT": 1793650142,
+    "SMRUSDT": 1793650143,
+    "HOTUSDT": 1793650159,
+    "NEXUSDT": 1793650160,
+    "1000000BABYDOGEUSDT": 1793650165
   },
-  "last_trade_report_ts": 1793605797,
+  "last_trade_report_ts": 1793606979,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
