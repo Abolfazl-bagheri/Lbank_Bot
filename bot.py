@@ -35,8 +35,17 @@ SIGNALS_FILE = os.path.join(BASE_DIR, "signals.json")
 LIVE_TOPIC = os.environ.get("LIVE_TOPIC", "lbank-gap-b0b85cee29ce").strip()
 STATE_BAK = os.path.join(BASE_DIR, "bot_state.bak")
 
-BOT_VERSION = "2.6.3"
+BOT_VERSION = "2.6.4"
 CHANGELOG = {
+    "2.6.4": [
+        "خط‌روند داینامیک دوباره روی چارت احتمال‌گپ",
+        "احتمال‌گپ چند TF برای یک نماد در یک پیام",
+        "گزارش paper فقط وب/ntfy — نه تلگرام",
+        "ریست paper ساعت ۰۳:۳۰ ایران",
+    ],
+    "2.6.3": [
+        "سقف پله روی چارت + ریست ۰۳:۳۰",
+    ],
     "2.1.0": [
         "چارت احتمال‌گپ → استایل SolAtlas (خط‌روند شکست/بازتست) — هنوز ناقص",
     ],
@@ -912,70 +921,94 @@ def detect_fake_break_watch(df: pd.DataFrame) -> str | None:
 
 
 def make_gap_chart(df: pd.DataFrame, symbol: str, tf: str, sig: dict | None = None) -> bytes | None:
-    """چارت گپ + باند بولینگر + سقف‌های پله (مقاومت)."""
+    """چارت: خط‌روند داینامیک + UB + سقف پله."""
     try:
-        import matplotlib
-        matplotlib.use("Agg")
-        import matplotlib.pyplot as plt
-        from io import BytesIO
-
         plot_df = densify_ohlc(df)
         fr = _flat_ratio(df)
         if fr > 0.45 and _flat_ratio(plot_df) > 0.35:
             log.info("CHART_SKIP %s %s flat=%.0f%%", symbol, tf, fr * 100)
             return None
+        entry = float((sig or {}).get("fut_last") or (sig or {}).get("open") or plot_df.iloc[-1]["c"])
+        ub = None
+        if "upper" in plot_df.columns:
+            try:
+                ub = float(plot_df.iloc[-1]["upper"])
+            except Exception:
+                ub = None
+        gap_pct = ((entry - ub) / entry * 100.0) if ub and entry and ub == ub else None
+        # اول موتور SolAtlas / trendlines
+        img = None
+        try:
+            try:
+                from trendlines_breaks import render_trendline_chart
+            except ImportError:
+                from agents.trendlines_breaks import render_trendline_chart
+            img = render_trendline_chart(plot_df, symbol, tf, gap_pct=gap_pct, max_bars=180)
+        except Exception as e:
+            log.debug("trendlines render: %s", e)
+        if img:
+            return img
+        # فالبک matplotlib با خط‌روند ساده + سقف
+        import matplotlib
+        matplotlib.use("Agg")
+        import matplotlib.pyplot as plt
+        from io import BytesIO
         plot_df = plot_df.tail(80).reset_index(drop=True)
         o = plot_df["o"].to_numpy(float)
         h = plot_df["h"].to_numpy(float)
         l = plot_df["l"].to_numpy(float)
         c = plot_df["c"].to_numpy(float)
-        xs = list(range(len(plot_df)))
-        entry = float((sig or {}).get("fut_last") or (sig or {}).get("open") or c[-1])
-        ub = float(plot_df.iloc[-1]["upper"]) if "upper" in plot_df.columns else None
-        lb = float(plot_df.iloc[-1]["lower"]) if "lower" in plot_df.columns else None
-
+        xs = np.arange(len(plot_df))
         fig, ax = plt.subplots(figsize=(10, 5.2), dpi=120)
-        fig.patch.set_facecolor("#ffffff")
-        ax.set_facecolor("#ffffff")
+        fig.patch.set_facecolor("#0b0d13")
+        ax.set_facecolor("#0b0d13")
         for i in xs:
-            col = "#16a34a" if c[i] >= o[i] else "#dc2626"
+            col = "#2de2a6" if c[i] >= o[i] else "#ff5b73"
             ax.vlines(i, l[i], h[i], colors=col, linewidth=1.0)
-            ax.add_patch(plt.Rectangle((i - 0.3, min(o[i], c[i])), 0.6, max(abs(c[i] - o[i]), (h.max() - l.min()) * 0.001),
-                                       facecolor=col, edgecolor=col))
+            ax.add_patch(plt.Rectangle((i - 0.3, min(o[i], c[i])), 0.6, max(abs(c[i] - o[i]), (h.max() - l.min()) * 0.001), facecolor=col, edgecolor=col))
         if "upper" in plot_df.columns:
-            ax.plot(xs, plot_df["upper"], color="#7c3aed", lw=1.0, alpha=0.7, label="UB")
-            ax.plot(xs, plot_df["lower"], color="#7c3aed", lw=1.0, alpha=0.5, label="LB")
-            ax.plot(xs, plot_df["sma"], color="#64748b", lw=0.8, alpha=0.6)
-        if ub:
-            ax.axhline(ub, color="#7c3aed", ls="--", lw=1.0, alpha=0.8)
-            ax.text(len(xs) - 1, ub, f"  UB {ub:.6g}", color="#7c3aed", fontsize=8, va="bottom")
-        # سقف‌های پله
+            ax.plot(xs, plot_df["upper"], color="#8b7bff", lw=0.9, alpha=0.7)
+            ax.plot(xs, plot_df["lower"], color="#8b7bff", lw=0.9, alpha=0.5)
+        # خط‌روند داینامیک از سوئینگ
+        def _piv(arr, high=True, sw=3):
+            out = []
+            for i in range(sw, len(arr) - sw):
+                v = arr[i]
+                if high and all(arr[i - k] < v for k in range(1, sw + 1)) and all(arr[i + k] <= v for k in range(1, sw + 1)):
+                    out.append(i)
+                if not high and all(arr[i - k] > v for k in range(1, sw + 1)) and all(arr[i + k] >= v for k in range(1, sw + 1)):
+                    out.append(i)
+            return out
+        ph, pl_ = _piv(h, True), _piv(l, False)
+        if len(ph) >= 2:
+            a, b = ph[-2], ph[-1]
+            ax.plot([a, b, len(xs) - 1], [h[a], h[b], h[b] + (h[b] - h[a]) / max(b - a, 1) * (len(xs) - 1 - b)], color="#ffb547", lw=1.8)
+        if len(pl_) >= 2:
+            a, b = pl_[-2], pl_[-1]
+            ax.plot([a, b, len(xs) - 1], [l[a], l[b], l[b] + (l[b] - l[a]) / max(b - a, 1) * (len(xs) - 1 - b)], color="#38d9ff", lw=1.8)
         try:
             levels = find_resistance_levels(symbol, entry, tf if tf in ("15m", "1h", "4h") else "1h")
         except Exception:
             levels = []
-        colors = ["#f59e0b", "#ea580c", "#b45309"]
         for j, lv in enumerate(levels[:3]):
-            ax.axhline(lv, color=colors[j % 3], ls="-", lw=1.3, alpha=0.9)
-            dist = (lv - entry) / entry * 100 if entry else 0
-            ax.text(0.5, lv, f"  سقف{j+1} {lv:.6g} ({dist:+.2f}%)", color=colors[j % 3], fontsize=8, va="bottom")
-        ax.axhline(entry, color="#0ea5e9", ls=":", lw=1.0, alpha=0.8)
-        ax.text(len(xs) - 1, entry, f"  px {entry:.6g}", color="#0ea5e9", fontsize=8, va="top")
-        gap = ""
-        if ub and entry:
-            gap = f" · gap≈{(entry - ub) / entry * 100:.2f}%"
-        ax.set_title(f"{symbol} · {tf} · سقف پله{gap}", fontsize=11, loc="left")
+            ax.axhline(lv, color="#f59e0b", ls="--", lw=1.1, alpha=0.85)
+            ax.text(1, lv, f" سقف{j+1} {lv:.6g}", color="#f59e0b", fontsize=8, va="bottom")
+        if ub:
+            ax.axhline(ub, color="#8b7bff", ls=":", lw=1.0)
+        ax.set_title(f"{symbol} · {tf} · trend+res" + (f" · gap≈{gap_pct:.2f}%" if gap_pct is not None else ""), color="#eef0f8", fontsize=11, loc="left")
+        ax.tick_params(colors="#8b92a8", labelsize=8)
         ax.set_xlim(-1, len(xs) + 2)
-        ax.grid(True, alpha=0.2)
-        ax.tick_params(labelsize=8)
+        for s in ax.spines.values():
+            s.set_visible(False)
         fig.tight_layout()
         buf = BytesIO()
-        fig.savefig(buf, format="png", facecolor="#ffffff")
+        fig.savefig(buf, format="png", facecolor="#0b0d13")
         plt.close(fig)
         return buf.getvalue()
     except Exception as e:
         log.debug("chart: %s", e)
         return None
+
 
 
 def trade_qty_from_margin(symbol: str, price: float) -> float | None:
@@ -1360,7 +1393,7 @@ def maybe_send_hourly_trade_report() -> None:
     if open_lines:
         lines.append("────────")
         lines.extend(open_lines)
-    send_telegram_text("\n".join(lines))
+    push_live({"t": "log", "x": " | ".join(lines)[:500], "ts": int(time.time())})  # فقط وب، نه تلگرام
     save_state()
     try:
         log_signal_web("HEARTBEAT", "—", "—", 0.0)
@@ -1535,11 +1568,13 @@ async def process_symbol(symbol: str, tfs_to_check: list) -> None:
 
 
 async def pre_alert_cycle(tfs: list | None = None) -> None:
+    """احتمال گپ؛ چند TF یک نماد → یک پیام."""
     tfs = tfs or pre_alert_tfs_now()
     if not tfs:
         return
     symbols = get_top_movers(TOP_GAINERS)
     log.info("PRE_ALERT TFs=%s n=%d iran=%s", ",".join(tfs), len(symbols), iran_now().strftime("%H:%M:%S"))
+    hits: dict = {}  # symbol -> list of dicts
     for tf in tfs:
         for symbol in symbols:
             if is_blacklisted(symbol):
@@ -1547,50 +1582,54 @@ async def pre_alert_cycle(tfs: list | None = None) -> None:
             try:
                 df, _ = await fetch_klines(symbol, tf, size=150)
                 if df is None or len(df) < BB_PERIOD + 2:
-                    log.info("PRE_SKIP_NO_KLINE %s %s", symbol, tf)
                     continue
                 cur = df.iloc[-1]
                 upper = float(cur["upper"])
                 close = float(cur["c"])
                 fut = get_futures_last(symbol)
                 if not fut or upper <= 0:
-                    log.info("PRE_SKIP_NO_FUT %s %s", symbol, tf)
                     continue
                 px = fut if abs(fut - close) / close * 100 < 8 else close
                 if px <= upper:
-                    log.info("PRE_SKIP_BELOW_UB %s %s px=%.6g ub=%.6g", symbol, tf, px, upper)
                     continue
                 diff = (px - upper) / px * 100.0
                 if diff < MIN_OPEN_GAP_PCT:
-                    log.info("PRE_SKIP_SMALL_GAP %s %s diff=%.2f%%", symbol, tf, diff)
                     continue
                 period = PERIOD_SEC[tf]
                 next_open = (int(time.time()) // period + 1) * period
                 key = (symbol, tf, next_open)
                 if key in sent_pre_alerts:
-                    log.info("PRE_SKIP_DUP %s %s", symbol, tf)
                     continue
                 sent_pre_alerts.add(key)
-                log.info("PRE_ALERT_HIT %s %s diff=%.2f%% px=%.6g ub=%.6g", symbol, tf, diff, px, upper)
-                cap = (
-                    f"⚠️ <b>احتمال گپ</b> · {tf}\n"
-                    f"<a href=\"{tv_lbank_url(symbol)}\">{symbol}</a>\n"
-                    f"اختلاف تا UB ≈ <b>{diff:.2f}%</b>\n"
-                    f"<a href=\"{lbank_futures_url(symbol)}\">ال‌بانک</a>"
-                )
-                fake_note = detect_fake_break_watch(df)
-                if fake_note:
-                    cap = cap + chr(10) + fake_note
-                img = make_gap_chart(df, symbol, tf, {"fut_last": px})
-                if img:
-                    send_telegram_photo(img, cap)
-                else:
-                    send_telegram_text(cap)
-                log_signal_web("GAP", symbol, tf, diff)
-                push_live({"t": "sig", "kind": "GAP", "symbol": symbol, "tf": tf, "gap": round(float(diff), 2), "ts": int(time.time())})
-                await asyncio.sleep(0.12)
+                hits.setdefault(symbol, []).append({
+                    "tf": tf, "diff": diff, "px": px, "upper": upper, "df": df, "next_open": next_open,
+                })
             except Exception as e:
-                log.debug("pre %s: %s", symbol, e)
+                log.debug("pre %s %s: %s", symbol, tf, e)
+    # ارسال یک‌جا
+    for symbol, items in hits.items():
+        # جلوگیری از تکرار خیلی نزدیک برای همان نماد
+        bucket = (symbol, int(time.time()) // 600)  # هر ۱۰ دقیقه یک‌بار
+        if bucket in sent_pre_alerts:
+            continue
+        sent_pre_alerts.add(bucket)
+        items.sort(key=lambda x: TF_ORDER.get(x["tf"], 99))
+        lines = [f"⚠️ <b>احتمال گپ</b> · <a href=\"{tv_lbank_url(symbol)}\">{symbol}</a>"]
+        for it in items:
+            lines.append(f"• <b>{it['tf']}</b> · اختلاف تا UB ≈ <b>{it['diff']:.2f}%</b>")
+            log.info("PRE_ALERT_HIT %s %s diff=%.2f%%", symbol, it["tf"], it["diff"])
+            log_signal_web("GAP", symbol, it["tf"], it["diff"])
+            push_live({"t": "sig", "kind": "GAP", "symbol": symbol, "tf": it["tf"], "gap": round(float(it["diff"]), 2), "ts": int(time.time())})
+        lines.append(f"<a href=\"{lbank_futures_url(symbol)}\">ال‌بانک</a>")
+        cap = "\n".join(lines)
+        # چارت از بالاترین TF
+        best = sorted(items, key=lambda x: -TF_ORDER.get(x["tf"], 0))[0]
+        img = make_gap_chart(best["df"], symbol, best["tf"], {"fut_last": best["px"]})
+        if img:
+            send_telegram_photo(img, cap)
+        else:
+            send_telegram_text(cap)
+        await asyncio.sleep(0.15)
 
 
 
