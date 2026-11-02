@@ -317,6 +317,31 @@
       "last_leg_candle_ts": 1793635863,
       "dry_run": true,
       "order_id": "PAPER-PDDUSDT-1793635671"
+    },
+    {
+      "symbol": "AGTUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.03512,
+      "qty": 5694.7608,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.034241999999999995,
+      "tf": "1h",
+      "opened_at": 1793653411,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.03512,
+          "ts": 1793653411
+        }
+      ],
+      "entry_candle_ts": 1793653200,
+      "last_leg_candle_ts": 1793653200,
+      "dry_run": true,
+      "order_id": "PAPER-AGTUSDT-1793653411"
     }
   ],
   "trade_history": [
@@ -2662,15 +2687,9 @@
     "UP2USDT": 1793631162,
     "BEMUSDT": 1793633776,
     "AEHRUSDT": 1793636530,
-    "PORUSDT": 1793645476,
     "NIULAIUSDT": 1793650101,
-    "HK1810USDT": 1793650107,
-    "WUXIBIOUSDT": 1793650110,
-    "HK0992USDT": 1793650114,
     "FIGHT1USDT": 1793650142,
     "SMRUSDT": 1793650143,
-    "HOTUSDT": 1793650159,
-    "NEXUSDT": 1793650160,
     "1000000BABYDOGEUSDT": 1793650165,
     "TOADUSDT": 1793657184,
     "CRWDUSDT": 1793658035,
@@ -2694,9 +2713,11 @@
     "XPSTOCKUSDT": 1793678976,
     "AINBSCUSDT": 1793679450,
     "FIGUSDT": 1793683258,
-    "GSTOCKUSDT": 1793688424
+    "GSTOCKUSDT": 1793688424,
+    "WUXIBIOUSDT": 1793694108,
+    "PORUSDT": 1793694114
   },
-  "last_trade_report_ts": 1793649095,
+  "last_trade_report_ts": 1793651891,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.4",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
