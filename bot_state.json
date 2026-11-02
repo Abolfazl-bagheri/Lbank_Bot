@@ -193,24 +193,30 @@
       "symbol": "MPWRUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 1306.5,
-      "qty": 0.153081,
-      "margin": 10.0,
+      "entry": 1300.7540632296418,
+      "qty": 0.461271,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 1273.8374999999999,
+      "tp_price": 1268.2352116489008,
       "tf": "15m",
       "opened_at": 1793633534,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        1302.8
+      ],
       "steps": [
         {
           "px": 1306.5,
           "ts": 1793633534
+        },
+        {
+          "px": 1297.9,
+          "ts": 1793636255
         }
       ],
       "entry_candle_ts": 1793633400,
-      "last_leg_candle_ts": 1793633400,
+      "last_leg_candle_ts": 1793636255,
       "dry_run": true,
       "order_id": "PAPER-MPWRUSDT-1793633534"
     },
@@ -2555,7 +2561,6 @@
     "PIPEDOGUSDT": 1793608506,
     "BIO1USDT": 1793611218,
     "FLOCK1USDT": 1793612968,
-    "AINBSCUSDT": 1793619396,
     "UBIKUSDT": 1793622954,
     "TRUMPSOLUSDT": 1793630182,
     "UP2USDT": 1793631162,
@@ -2591,9 +2596,10 @@
     "CAPETHUSDT": 1793678996,
     "EWZSUSDT": 1793678937,
     "BIDUUSDT": 1793678955,
-    "XPSTOCKUSDT": 1793678976
+    "XPSTOCKUSDT": 1793678976,
+    "AINBSCUSDT": 1793679450
   },
-  "last_trade_report_ts": 1793633634,
+  "last_trade_report_ts": 1793635890,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
