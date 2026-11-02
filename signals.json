@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.2",
-  "updated_at": 1793627177,
+  "updated_at": 1793627186,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "SKHYUSDT",
-      "tf": "4h",
-      "gap": 1.29,
-      "ts": 1793591101
-    },
     {
       "kind": "SELL",
       "symbol": "PIEVERSEUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 0.63,
       "ts": 1793627177
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793627186
     }
   ],
   "trades": [
@@ -1481,6 +1481,19 @@
       "lev": 20,
       "px": 0.03452,
       "pnl": -3.9586,
+      "tf": "15m"
+    },
+    {
+      "symbol": "CASHCATUSDT",
+      "side": "SELL",
+      "entry": 0.1056,
+      "tp": 0.10296,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.1056,
+      "pnl": 0.0,
       "tf": "15m"
     }
   ],
