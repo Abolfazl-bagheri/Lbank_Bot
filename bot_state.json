@@ -71,15 +71,15 @@
       "symbol": "TEMUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 79.62734615333572,
-      "qty": 7.5351,
-      "margin": 30.0,
+      "entry": 79.15246197858363,
+      "qty": 17.6874,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 77.63666249950232,
-      "tf": "1h",
+      "tp_price": 77.17365042911904,
+      "tf": "4h",
       "opened_at": 1793631865,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [
         80.38
       ],
@@ -91,10 +91,14 @@
         {
           "px": 80.12,
           "ts": 1793634767
+        },
+        {
+          "px": 78.8,
+          "ts": 1793635476
         }
       ],
       "entry_candle_ts": 1793631600,
-      "last_leg_candle_ts": 1793634767,
+      "last_leg_candle_ts": 1793635200,
       "dry_run": true,
       "order_id": "PAPER-TEMUSDT-1793631865"
     },
@@ -2097,6 +2101,15 @@
       "side": "SELL",
       "upper": 13.454684297076312,
       "open": 13.622,
+      "reported": false
+    },
+    {
+      "symbol": "ARIAUSDT",
+      "tf": "4h",
+      "candle_ts": 1793635200,
+      "side": "SELL",
+      "upper": 0.11378100333377827,
+      "open": 0.11641,
       "reported": false
     }
   ],
