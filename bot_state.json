@@ -176,6 +176,31 @@
       "last_leg_candle_ts": 1793613600,
       "dry_run": true,
       "order_id": "PAPER-CLAUDIAUSDT-1793613865"
+    },
+    {
+      "symbol": "REDUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.1451,
+      "qty": 1378.3598,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.1414725,
+      "tf": "1h",
+      "opened_at": 1793613903,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.1451,
+          "ts": 1793613903
+        }
+      ],
+      "entry_candle_ts": 1793613600,
+      "last_leg_candle_ts": 1793613600,
+      "dry_run": true,
+      "order_id": "PAPER-REDUSDT-1793613903"
     }
   ],
   "trade_history": [
@@ -1892,6 +1917,15 @@
       "open": 0.02196,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "CLAUDIAUSDT",
+      "tf": "1h",
+      "candle_ts": 1793613600,
+      "side": "SELL",
+      "upper": 0.002213702324359983,
+      "open": 0.002266,
+      "reported": false
     }
   ],
   "paper_days": [
