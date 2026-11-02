@@ -131,24 +131,30 @@
       "symbol": "CSOPSAMSUNG2LUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 6.655,
-      "qty": 30.0526,
-      "margin": 10.0,
+      "entry": 6.696205370355902,
+      "qty": 89.60300000000001,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 6.488625,
+      "tp_price": 6.5288002360970046,
       "tf": "4h",
       "opened_at": 1793606840,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        6.738
+      ],
       "steps": [
         {
           "px": 6.655,
           "ts": 1793606840
+        },
+        {
+          "px": 6.717,
+          "ts": 1793614840
         }
       ],
       "entry_candle_ts": 1793606400,
-      "last_leg_candle_ts": 1793606400,
+      "last_leg_candle_ts": 1793614840,
       "dry_run": true,
       "order_id": "PAPER-CSOPSAMSUNG2LUSDT-1793606840"
     },
@@ -1926,6 +1932,15 @@
       "upper": 0.002213702324359983,
       "open": 0.002266,
       "reported": false
+    },
+    {
+      "symbol": "REDUSDT",
+      "tf": "1h",
+      "candle_ts": 1793613600,
+      "side": "SELL",
+      "upper": 0.14327460525017252,
+      "open": 0.1463,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -1951,7 +1966,6 @@
     "AMCUSDT": 1793372804,
     "EURUSDT": 1793385188,
     "LIGHT1USDT": 1793394311,
-    "CRWDUSDT": 1793397926,
     "SKY1USDT": 1793398016,
     "USOUSDT": 1793413065,
     "XTIUSDT": 1793413071,
@@ -2003,9 +2017,11 @@
     "SMRUSDT": 1793650143,
     "HOTUSDT": 1793650159,
     "NEXUSDT": 1793650160,
-    "1000000BABYDOGEUSDT": 1793650165
+    "1000000BABYDOGEUSDT": 1793650165,
+    "TOADUSDT": 1793657184,
+    "CRWDUSDT": 1793658035
   },
-  "last_trade_report_ts": 1793612176,
+  "last_trade_report_ts": 1793614063,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
