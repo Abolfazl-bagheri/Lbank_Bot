@@ -171,24 +171,30 @@
       "symbol": "YOFCUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 13.75,
-      "qty": 14.5455,
-      "margin": 10.0,
+      "entry": 13.750000000000002,
+      "qty": 43.6364,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 13.40625,
+      "tp_price": 13.406250000000002,
       "tf": "1h",
       "opened_at": 1793595910,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        13.779
+      ],
       "steps": [
         {
           "px": 13.75,
           "ts": 1793595910
+        },
+        {
+          "px": 13.75,
+          "ts": 1793596077
         }
       ],
       "entry_candle_ts": 1793595600,
-      "last_leg_candle_ts": 1793595600,
+      "last_leg_candle_ts": 1793596077,
       "dry_run": true,
       "order_id": "PAPER-YOFCUSDT-1793595910"
     }
