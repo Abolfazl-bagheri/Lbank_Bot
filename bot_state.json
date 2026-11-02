@@ -341,24 +341,30 @@
       "symbol": "AMZNUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 253.61,
-      "qty": 0.788612,
-      "margin": 10.0,
+      "entry": 251.803588079966,
+      "qty": 2.382812,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 247.26975000000002,
+      "tp_price": 245.50849837796684,
       "tf": "4h",
       "opened_at": 1793635647,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        251.29
+      ],
       "steps": [
         {
           "px": 253.61,
           "ts": 1793635647
+        },
+        {
+          "px": 250.91,
+          "ts": 1793640945
         }
       ],
       "entry_candle_ts": 1793635200,
-      "last_leg_candle_ts": 1793635200,
+      "last_leg_candle_ts": 1793640945,
       "dry_run": true,
       "order_id": "PAPER-AMZNUSDT-1793635647"
     },
@@ -2629,7 +2635,7 @@
     "AINBSCUSDT": 1793679450,
     "FIGUSDT": 1793683258
   },
-  "last_trade_report_ts": 1793639300,
+  "last_trade_report_ts": 1793640776,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
