@@ -4,24 +4,30 @@
       "symbol": "XDPUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.01896,
-      "qty": 10548.5232,
-      "margin": 10.0,
+      "entry": 0.018960000000000005,
+      "qty": 31645.5696,
+      "margin": 30.0,
       "leverage": 20,
       "tp_price": 0.018486000000000002,
       "tf": "15m",
       "opened_at": 1793578801,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.019
+      ],
       "steps": [
         {
           "px": 0.01896,
           "ts": 1793578801
+        },
+        {
+          "px": 0.01896,
+          "ts": 1793578909
         }
       ],
       "entry_candle_ts": 1793578500,
-      "last_leg_candle_ts": 1793578500,
+      "last_leg_candle_ts": 1793578909,
       "dry_run": true,
       "order_id": "PAPER-XDPUSDT-1793578801"
     }
@@ -1149,6 +1155,15 @@
       "open": 0.02668,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "XDPUSDT",
+      "tf": "15m",
+      "candle_ts": 1793578500,
+      "side": "SELL",
+      "upper": 0.018606948788368896,
+      "open": 0.01884,
+      "reported": false
     }
   ],
   "paper_days": [
