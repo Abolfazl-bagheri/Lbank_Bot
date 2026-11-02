@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.2",
-  "updated_at": 1793629964,
+  "updated_at": 1793630128,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "HK1810USDT",
-      "tf": "1h",
-      "gap": 1.05,
-      "ts": 1793592538
-    },
     {
       "kind": "GAP",
       "symbol": "YOFCUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1793629964
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793630128
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 3,
       "margin": 70.0,
       "lev": 20,
-      "px": 21.71,
-      "pnl": -2.8538,
+      "px": 21.76,
+      "pnl": -6.0847,
       "tf": "1h"
     },
     {
@@ -1440,35 +1440,22 @@
       "pele": 4,
       "margin": 150.0,
       "lev": 20,
-      "px": 13.71,
-      "pnl": -1.7838,
-      "tf": "4h"
-    },
-    {
-      "symbol": "CSOPSAMSUNG2LUSDT",
-      "side": "SELL",
-      "entry": 6.696205370355902,
-      "tp": 6.5288002360970046,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
-      "lev": 20,
-      "px": 6.573,
-      "pnl": 11.0396,
+      "px": 13.49,
+      "pnl": 46.3849,
       "tf": "4h"
     }
   ],
   "start": 1000.0,
-  "realized": 244.4253,
-  "closed_n": 19,
-  "open_upnl": 9.0034,
-  "equity": 1253.4287,
+  "realized": 264.8732,
+  "closed_n": 20,
+  "open_upnl": 42.9016,
+  "equity": 1307.7748,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 244.4253,
+    "profit": 264.8732,
     "loss": 0,
-    "count": 19
+    "count": 20
   }
 }
