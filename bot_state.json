@@ -394,23 +394,29 @@
       "side": "SELL",
       "status": "open",
       "entry": 82.98,
-      "qty": 2.4102,
-      "margin": 10.0,
+      "qty": 7.230600000000001,
+      "margin": 30.0,
       "leverage": 20,
       "tp_price": 80.9055,
       "tf": "4h",
       "opened_at": 1793635671,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        83.08
+      ],
       "steps": [
         {
           "px": 82.98,
           "ts": 1793635671
+        },
+        {
+          "px": 82.98,
+          "ts": 1793635863
         }
       ],
       "entry_candle_ts": 1793635200,
-      "last_leg_candle_ts": 1793635200,
+      "last_leg_candle_ts": 1793635863,
       "dry_run": true,
       "order_id": "PAPER-PDDUSDT-1793635671"
     }
