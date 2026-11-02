@@ -101,46 +101,6 @@
       "order_id": "PAPER-CVNAUSDT-1793630807"
     },
     {
-      "symbol": "TEMUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 80.64022901809834,
-      "qty": 37.2023,
-      "margin": 150.0,
-      "leverage": 20,
-      "tp_price": 78.62422329264588,
-      "tf": "4h",
-      "opened_at": 1793631925,
-      "adds": 3,
-      "last_leg_margin": 80.0,
-      "used_res_levels": [
-        80.4,
-        81.73
-      ],
-      "steps": [
-        {
-          "px": 77.49,
-          "ts": 1793631925
-        },
-        {
-          "px": 79.6,
-          "ts": 1793635484
-        },
-        {
-          "px": 80.19,
-          "ts": 1793637161
-        },
-        {
-          "px": 81.55,
-          "ts": 1793640062
-        }
-      ],
-      "entry_candle_ts": 1793631600,
-      "last_leg_candle_ts": 1793640062,
-      "dry_run": true,
-      "order_id": "PAPER-TEMUSDT-1793631925"
-    },
-    {
       "symbol": "DKNGUSDT",
       "side": "SELL",
       "status": "open",
@@ -1170,6 +1130,49 @@
       "closed_at": 1793649081,
       "close_px": 1253.9,
       "pnl_usdt": 21.612416007361663
+    },
+    {
+      "symbol": "TEMUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 80.64022901809834,
+      "qty": 37.2023,
+      "margin": 150.0,
+      "leverage": 20,
+      "tp_price": 78.62422329264588,
+      "tf": "4h",
+      "opened_at": 1793631925,
+      "adds": 3,
+      "last_leg_margin": 80.0,
+      "used_res_levels": [
+        80.4,
+        81.73
+      ],
+      "steps": [
+        {
+          "px": 77.49,
+          "ts": 1793631925
+        },
+        {
+          "px": 79.6,
+          "ts": 1793635484
+        },
+        {
+          "px": 80.19,
+          "ts": 1793637161
+        },
+        {
+          "px": 81.55,
+          "ts": 1793640062
+        }
+      ],
+      "entry_candle_ts": 1793631600,
+      "last_leg_candle_ts": 1793640062,
+      "dry_run": true,
+      "order_id": "PAPER-TEMUSDT-1793631925",
+      "closed_at": 1793654410,
+      "close_px": 78.35,
+      "pnl_usdt": 85.20173042605103
     }
   ],
   "pending": [
@@ -2639,6 +2642,15 @@
       "open": 0.001645,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "AGTUSDT",
+      "tf": "1h",
+      "candle_ts": 1793653200,
+      "side": "SELL",
+      "upper": 0.03454913760230663,
+      "open": 0.035165,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -2666,7 +2678,6 @@
     "CVXSTOCKUSDT": 1793413084,
     "COPSTOCKUSDT": 1793413150,
     "OXYUSDT": 1793417641,
-    "SXTUSDT": 1793445574,
     "SAFE1USDT": 1793449863,
     "PORTALUSDT": 1793471666,
     "AXLUSDT": 1793502358,
@@ -2686,7 +2697,6 @@
     "TRUMPSOLUSDT": 1793630182,
     "UP2USDT": 1793631162,
     "BEMUSDT": 1793633776,
-    "AEHRUSDT": 1793636530,
     "NIULAIUSDT": 1793650101,
     "FIGHT1USDT": 1793650142,
     "SMRUSDT": 1793650143,
@@ -2715,9 +2725,10 @@
     "FIGUSDT": 1793683258,
     "GSTOCKUSDT": 1793688424,
     "WUXIBIOUSDT": 1793694108,
-    "PORUSDT": 1793694114
+    "PORUSDT": 1793694114,
+    "AEHRUSDT": 1793697560
   },
-  "last_trade_report_ts": 1793651891,
+  "last_trade_report_ts": 1793653626,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.4",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
