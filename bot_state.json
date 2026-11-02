@@ -91,15 +91,15 @@
       "symbol": "YOFCUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 13.750000000000002,
-      "qty": 43.6364,
-      "margin": 30.0,
+      "entry": 13.75,
+      "qty": 101.8182,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 13.406250000000002,
-      "tf": "1h",
+      "tp_price": 13.40625,
+      "tf": "4h",
       "opened_at": 1793595910,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [
         13.779
       ],
@@ -111,10 +111,14 @@
         {
           "px": 13.75,
           "ts": 1793596077
+        },
+        {
+          "px": 13.75,
+          "ts": 1793606825
         }
       ],
       "entry_candle_ts": 1793595600,
-      "last_leg_candle_ts": 1793596077,
+      "last_leg_candle_ts": 1793606400,
       "dry_run": true,
       "order_id": "PAPER-YOFCUSDT-1793595910"
     },
@@ -1628,6 +1632,15 @@
       "open": 0.04001,
       "reported": true,
       "filled": false
+    },
+    {
+      "symbol": "LYNUSDT",
+      "tf": "4h",
+      "candle_ts": 1793606400,
+      "side": "SELL",
+      "upper": 0.019919202686661884,
+      "open": 0.02064,
+      "reported": false
     }
   ],
   "paper_days": [
