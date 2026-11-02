@@ -162,6 +162,31 @@
       "last_leg_candle_ts": 1793631600,
       "dry_run": true,
       "order_id": "PAPER-TEMUSDT-1793631865"
+    },
+    {
+      "symbol": "CVNAUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 72.79,
+      "qty": 2.7476,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 70.97025000000001,
+      "tf": "1h",
+      "opened_at": 1793631893,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 72.79,
+          "ts": 1793631893
+        }
+      ],
+      "entry_candle_ts": 1793631600,
+      "last_leg_candle_ts": 1793631600,
+      "dry_run": true,
+      "order_id": "PAPER-CVNAUSDT-1793631893"
     }
   ],
   "trade_history": [
@@ -1942,6 +1967,15 @@
       "open": 0.1463,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "TEMUSDT",
+      "tf": "1h",
+      "candle_ts": 1793631600,
+      "side": "SELL",
+      "upper": 77.48324005274003,
+      "open": 78.7,
+      "reported": false
     }
   ],
   "paper_days": [
