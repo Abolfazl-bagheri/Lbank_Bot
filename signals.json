@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.2",
-  "updated_at": 1793613902,
+  "updated_at": 1793613910,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1793587028
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 1.26,
       "ts": 1793613902
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793613910
     }
   ],
   "trades": [
@@ -1480,6 +1480,19 @@
       "margin": 10.0,
       "lev": 20,
       "px": 0.002349,
+      "pnl": 0.0,
+      "tf": "1h"
+    },
+    {
+      "symbol": "REDUSDT",
+      "side": "SELL",
+      "entry": 0.1451,
+      "tp": 0.1414725,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.1451,
       "pnl": 0.0,
       "tf": "1h"
     }
