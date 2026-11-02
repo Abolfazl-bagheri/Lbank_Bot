@@ -238,31 +238,6 @@
       "order_id": "PAPER-MPWRUSDT-1793633534"
     },
     {
-      "symbol": "RIVNUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 13.64,
-      "qty": 14.6628,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 13.299,
-      "tf": "1h",
-      "opened_at": 1793635424,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 13.64,
-          "ts": 1793635424
-        }
-      ],
-      "entry_candle_ts": 1793635200,
-      "last_leg_candle_ts": 1793635200,
-      "dry_run": true,
-      "order_id": "PAPER-RIVNUSDT-1793635424"
-    },
-    {
       "symbol": "ARIAUSDT",
       "side": "SELL",
       "status": "open",
@@ -1129,6 +1104,34 @@
       "closed_at": 1793640760,
       "close_px": 0.04551,
       "pnl_usdt": 30.63791066799555
+    },
+    {
+      "symbol": "RIVNUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 13.64,
+      "qty": 14.6628,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 13.299,
+      "tf": "1h",
+      "opened_at": 1793635424,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 13.64,
+          "ts": 1793635424
+        }
+      ],
+      "entry_candle_ts": 1793635200,
+      "last_leg_candle_ts": 1793635200,
+      "dry_run": true,
+      "order_id": "PAPER-RIVNUSDT-1793635424",
+      "closed_at": 1793641706,
+      "close_px": 13.27,
+      "pnl_usdt": 5.425219941348988
     }
   ],
   "pending": [
@@ -2577,6 +2580,15 @@
       "side": "SELL",
       "upper": 81.88431914237066,
       "open": 82.86,
+      "reported": false
+    },
+    {
+      "symbol": "NOMUSDT",
+      "tf": "15m",
+      "candle_ts": 1793641500,
+      "side": "SELL",
+      "upper": 0.0016484310551534895,
+      "open": 0.001675,
       "reported": false
     }
   ],
