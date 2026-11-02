@@ -177,6 +177,31 @@
       "last_leg_candle_ts": 1793606400,
       "dry_run": true,
       "order_id": "PAPER-LYNUSDT-1793606812"
+    },
+    {
+      "symbol": "CSOPSAMSUNG2LUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 6.655,
+      "qty": 30.0526,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 6.488625,
+      "tf": "4h",
+      "opened_at": 1793606840,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 6.655,
+          "ts": 1793606840
+        }
+      ],
+      "entry_candle_ts": 1793606400,
+      "last_leg_candle_ts": 1793606400,
+      "dry_run": true,
+      "order_id": "PAPER-CSOPSAMSUNG2LUSDT-1793606840"
     }
   ],
   "trade_history": [
@@ -1640,6 +1665,15 @@
       "side": "SELL",
       "upper": 0.019919202686661884,
       "open": 0.02064,
+      "reported": false
+    },
+    {
+      "symbol": "YOFCUSDT",
+      "tf": "4h",
+      "candle_ts": 1793606400,
+      "side": "SELL",
+      "upper": 13.521821868684347,
+      "open": 13.736,
       "reported": false
     }
   ],
