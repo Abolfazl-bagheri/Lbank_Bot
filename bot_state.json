@@ -157,31 +157,6 @@
       "last_leg_candle_ts": 1793614840,
       "dry_run": true,
       "order_id": "PAPER-CSOPSAMSUNG2LUSDT-1793606840"
-    },
-    {
-      "symbol": "REDUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.1451,
-      "qty": 1378.3598,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.1414725,
-      "tf": "1h",
-      "opened_at": 1793613903,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.1451,
-          "ts": 1793613903
-        }
-      ],
-      "entry_candle_ts": 1793613600,
-      "last_leg_candle_ts": 1793613600,
-      "dry_run": true,
-      "order_id": "PAPER-REDUSDT-1793613903"
     }
   ],
   "trade_history": [
@@ -637,6 +612,34 @@
       "closed_at": 1793615732,
       "close_px": 0.002268,
       "pnl_usdt": 6.896551724137925
+    },
+    {
+      "symbol": "REDUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.1451,
+      "qty": 1378.3598,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.1414725,
+      "tf": "1h",
+      "opened_at": 1793613903,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.1451,
+          "ts": 1793613903
+        }
+      ],
+      "entry_candle_ts": 1793613600,
+      "last_leg_candle_ts": 1793613600,
+      "dry_run": true,
+      "order_id": "PAPER-REDUSDT-1793613903",
+      "closed_at": 1793624963,
+      "close_px": 0.1351,
+      "pnl_usdt": 13.78359751895246
     }
   ],
   "pending": [
@@ -687,46 +690,6 @@
       "tf": "15m",
       "candle_ts": 1793359800,
       "side": "SELL"
-    },
-    {
-      "symbol": "PUNDIXUSDT",
-      "tf": "4h",
-      "candle_ts": 1793361600,
-      "side": "SELL",
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "BEAMXUSDT",
-      "tf": "4h",
-      "candle_ts": 1793361600,
-      "side": "SELL",
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "SOPHUSDT",
-      "tf": "4h",
-      "candle_ts": 1793361600,
-      "side": "SELL",
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "MAGMAUSDT",
-      "tf": "4h",
-      "candle_ts": 1793361600,
-      "side": "SELL",
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "ALPINEUSDT",
-      "tf": "4h",
-      "candle_ts": 1793361600,
-      "side": "SELL",
-      "reported": true,
-      "filled": true
     },
     {
       "symbol": "IDOLUSDT",
@@ -1934,7 +1897,8 @@
       "side": "SELL",
       "upper": 0.002213702324359983,
       "open": 0.002266,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "REDUSDT",
@@ -1943,7 +1907,8 @@
       "side": "SELL",
       "upper": 0.14327460525017252,
       "open": 0.1463,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -1971,7 +1936,6 @@
     "USOUSDT": 1793413065,
     "XTIUSDT": 1793413071,
     "XBRUSDT": 1793413074,
-    "SIMOUSDT": 1793413082,
     "CVXSTOCKUSDT": 1793413084,
     "COPSTOCKUSDT": 1793413150,
     "OXYUSDT": 1793417641,
@@ -1997,11 +1961,6 @@
     "BIO1USDT": 1793611218,
     "FLOCK1USDT": 1793612968,
     "AINBSCUSDT": 1793619396,
-    "CYBERLEEKUSDT": 1793619403,
-    "CZUSDT": 1793619450,
-    "1000SATSUSDT": 1793619484,
-    "1000WOJAKUSDT": 1793619485,
-    "NEIRO1USDT": 1793619487,
     "UBIKUSDT": 1793622954,
     "TRUMPSOLUSDT": 1793630182,
     "UP2USDT": 1793631162,
@@ -2021,7 +1980,12 @@
     "TOADUSDT": 1793657184,
     "CRWDUSDT": 1793658035,
     "GALUSDT": 1793658927,
-    "OFCUSDT": 1793659840
+    "OFCUSDT": 1793659840,
+    "CYBERLEEKUSDT": 1793668025,
+    "1000SATSUSDT": 1793668149,
+    "1000WOJAKUSDT": 1793668140,
+    "NEIRO1USDT": 1793668148,
+    "CZUSDT": 1793668158
   },
   "last_trade_report_ts": 1793616674,
   "last_daily_report_date": "2026-11-01",
