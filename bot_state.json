@@ -1,5 +1,31 @@
 {
-  "open_trades": [],
+  "open_trades": [
+    {
+      "symbol": "HANMIUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 140.44,
+      "qty": 1.4241,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 136.929,
+      "tf": "15m",
+      "opened_at": 1793578679,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 140.44,
+          "ts": 1793578679
+        }
+      ],
+      "entry_candle_ts": 1793578500,
+      "last_leg_candle_ts": 1793578500,
+      "dry_run": true,
+      "order_id": "PAPER-HANMIUSDT-1793578679"
+    }
+  ],
   "trade_history": [
     {
       "symbol": "AEONUSDT",
@@ -832,7 +858,8 @@
       "side": "SELL",
       "upper": 0.01225805675389918,
       "open": 0.013,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "FORMUSDT",
@@ -1176,11 +1203,6 @@
     "BIANRENSHENGUSDT": 1793549283,
     "AI1USDT": 1793551943,
     "LONGXIAUSDT": 1793558277,
-    "NEIRO1USDT": 1793571468,
-    "1000WOJAKUSDT": 1793571470,
-    "1000SATSUSDT": 1793571471,
-    "CZUSDT": 1793571475,
-    "AINBSCUSDT": 1793575002,
     "UBIKUSDT": 1793578777,
     "MANCERUSDT": 1793582484,
     "STONKBROKERUSDT": 1793586042,
@@ -1194,9 +1216,20 @@
     "FIGHT1USDT": 1793605790,
     "PIPEDOGUSDT": 1793608506,
     "BIO1USDT": 1793611218,
-    "FLOCK1USDT": 1793612968
+    "FLOCK1USDT": 1793612968,
+    "CZUSDT": 1793615720,
+    "1000SATSUSDT": 1793615747,
+    "1000WOJAKUSDT": 1793615749,
+    "NEIRO1USDT": 1793615753,
+    "AINBSCUSDT": 1793618406,
+    "CYBERLEEKUSDT": 1793618410,
+    "NIULAIUSDT": 1793621161,
+    "HOTUSDT": 1793621172,
+    "SPORTFUNUSDT": 1793621205,
+    "HAJIMIUSDT": 1793621221,
+    "NEXUSDT": 1793621271
   },
-  "last_trade_report_ts": 1793569816,
+  "last_trade_report_ts": 1793578088,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
