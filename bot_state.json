@@ -159,31 +159,6 @@
       "order_id": "PAPER-CSOPSAMSUNG2LUSDT-1793606840"
     },
     {
-      "symbol": "CLAUDIAUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.002349,
-      "qty": 85142.6139,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.002290275,
-      "tf": "1h",
-      "opened_at": 1793613865,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.002349,
-          "ts": 1793613865
-        }
-      ],
-      "entry_candle_ts": 1793613600,
-      "last_leg_candle_ts": 1793613600,
-      "dry_run": true,
-      "order_id": "PAPER-CLAUDIAUSDT-1793613865"
-    },
-    {
       "symbol": "REDUSDT",
       "side": "SELL",
       "status": "open",
@@ -634,6 +609,34 @@
       "closed_at": 1793612985,
       "close_px": 0.11817,
       "pnl_usdt": 5.000000000000008
+    },
+    {
+      "symbol": "CLAUDIAUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.002349,
+      "qty": 85142.6139,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.002290275,
+      "tf": "1h",
+      "opened_at": 1793613865,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.002349,
+          "ts": 1793613865
+        }
+      ],
+      "entry_candle_ts": 1793613600,
+      "last_leg_candle_ts": 1793613600,
+      "dry_run": true,
+      "order_id": "PAPER-CLAUDIAUSDT-1793613865",
+      "closed_at": 1793615732,
+      "close_px": 0.002268,
+      "pnl_usdt": 6.896551724137925
     }
   ],
   "pending": [
@@ -1991,7 +1994,6 @@
     "LONGXIAUSDT": 1793558277,
     "MANCERUSDT": 1793582484,
     "STONKBROKERUSDT": 1793586042,
-    "GALUSDT": 1793591485,
     "APROUSDT": 1793604906,
     "PIPEDOGUSDT": 1793608506,
     "BIO1USDT": 1793611218,
@@ -2019,7 +2021,8 @@
     "NEXUSDT": 1793650160,
     "1000000BABYDOGEUSDT": 1793650165,
     "TOADUSDT": 1793657184,
-    "CRWDUSDT": 1793658035
+    "CRWDUSDT": 1793658035,
+    "GALUSDT": 1793658927
   },
   "last_trade_report_ts": 1793614063,
   "last_daily_report_date": "2026-11-01",
