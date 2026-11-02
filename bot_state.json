@@ -280,6 +280,31 @@
       "last_leg_candle_ts": 1793635200,
       "dry_run": true,
       "order_id": "PAPER-TSLLUSDT-1793635539"
+    },
+    {
+      "symbol": "CCLUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 30.299,
+      "qty": 6.6009,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 29.541525,
+      "tf": "4h",
+      "opened_at": 1793635595,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 30.299,
+          "ts": 1793635595
+        }
+      ],
+      "entry_candle_ts": 1793635200,
+      "last_leg_candle_ts": 1793635200,
+      "dry_run": true,
+      "order_id": "PAPER-CCLUSDT-1793635595"
     }
   ],
   "trade_history": [
@@ -2209,6 +2234,15 @@
       "side": "SELL",
       "upper": 11.773588963009136,
       "open": 11.93,
+      "reported": false
+    },
+    {
+      "symbol": "DKNGUSDT",
+      "tf": "4h",
+      "candle_ts": 1793635200,
+      "side": "SELL",
+      "upper": 21.721695811156,
+      "open": 22.023,
       "reported": false
     }
   ],
