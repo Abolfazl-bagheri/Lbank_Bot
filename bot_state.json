@@ -49,6 +49,31 @@
       "last_leg_candle_ts": 1793582100,
       "dry_run": true,
       "order_id": "PAPER-SKUUUSDT-1793582383"
+    },
+    {
+      "symbol": "KORUUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 11.64,
+      "qty": 17.1821,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 11.349,
+      "tf": "15m",
+      "opened_at": 1793582396,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 11.64,
+          "ts": 1793582396
+        }
+      ],
+      "entry_candle_ts": 1793582100,
+      "last_leg_candle_ts": 1793582100,
+      "dry_run": true,
+      "order_id": "PAPER-KORUUSDT-1793582396"
     }
   ],
   "trade_history": [
@@ -1185,6 +1210,15 @@
       "open": 140.05,
       "reported": true,
       "filled": false
+    },
+    {
+      "symbol": "SKUUUSDT",
+      "tf": "15m",
+      "candle_ts": 1793582100,
+      "side": "SELL",
+      "upper": 18.67590269283395,
+      "open": 18.878,
+      "reported": false
     }
   ],
   "paper_days": [
