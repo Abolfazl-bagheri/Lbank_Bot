@@ -4,24 +4,30 @@
       "symbol": "MINIMAXUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 21.29,
-      "qty": 9.3941,
-      "margin": 10.0,
+      "entry": 21.515466150773303,
+      "qty": 27.886899999999997,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 20.757749999999998,
+      "tp_price": 20.97757949700397,
       "tf": "1h",
       "opened_at": 1793585106,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        21.68
+      ],
       "steps": [
         {
           "px": 21.29,
           "ts": 1793585106
+        },
+        {
+          "px": 21.63,
+          "ts": 1793603141
         }
       ],
       "entry_candle_ts": 1793584800,
-      "last_leg_candle_ts": 1793584800,
+      "last_leg_candle_ts": 1793603141,
       "dry_run": true,
       "order_id": "PAPER-MINIMAXUSDT-1793585106"
     },
@@ -1601,6 +1607,15 @@
       "open": 0.02767,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "STARUSDT",
+      "tf": "15m",
+      "candle_ts": 1793602800,
+      "side": "SELL",
+      "upper": 0.03938110844809572,
+      "open": 0.04001,
+      "reported": false
     }
   ],
   "paper_days": [
