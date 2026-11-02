@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.2",
-  "updated_at": 1793615339,
+  "updated_at": 1793615740,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "CSOPSKHYNIX2LUSDT",
-      "tf": "1h",
-      "gap": 1.54,
-      "ts": 1793588108
-    },
     {
       "kind": "GAP",
       "symbol": "KORUUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 1.32,
       "ts": 1793615339
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793615740
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 21.56,
-      "pnl": -1.2419,
+      "px": 21.55,
+      "pnl": -0.963,
       "tf": "1h"
     },
     {
@@ -1427,8 +1427,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 171.33,
-      "pnl": -1.4107,
+      "px": 171.16,
+      "pnl": -1.2108,
       "tf": "1h"
     },
     {
@@ -1440,8 +1440,8 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 17.43,
-      "pnl": 1.9151,
+      "px": 17.44,
+      "pnl": 1.572,
       "tf": "1h"
     },
     {
@@ -1466,22 +1466,9 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 6.678,
-      "pnl": 1.6313,
+      "px": 6.65,
+      "pnl": 4.1401,
       "tf": "4h"
-    },
-    {
-      "symbol": "CLAUDIAUSDT",
-      "side": "SELL",
-      "entry": 0.002349,
-      "tp": 0.002290275,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.002272,
-      "pnl": 6.556,
-      "tf": "1h"
     },
     {
       "symbol": "REDUSDT",
@@ -1492,22 +1479,22 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.1459,
-      "pnl": -1.1027,
+      "px": 0.146,
+      "pnl": -1.2405,
       "tf": "1h"
     }
   ],
   "start": 1000.0,
-  "realized": 196.099,
-  "closed_n": 14,
-  "open_upnl": 33.0266,
-  "equity": 1229.1256,
+  "realized": 202.9956,
+  "closed_n": 15,
+  "open_upnl": 28.9773,
+  "equity": 1231.9729,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 196.099,
+    "profit": 202.9956,
     "loss": 0,
-    "count": 14
+    "count": 15
   }
 }
