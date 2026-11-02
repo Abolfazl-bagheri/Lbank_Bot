@@ -121,16 +121,18 @@
       "symbol": "HAEDALUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.027550786846064164,
-      "qty": 21777.9624,
-      "margin": 30.0,
+      "entry": 0.027464420353374222,
+      "qty": 50975.042700000005,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 0.02686201717491256,
+      "tp_price": 0.026777809844539865,
       "tf": "1h",
       "opened_at": 1793595879,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
+      "adds": 2,
+      "last_leg_margin": 40.0,
+      "used_res_levels": [
+        0.0275
+      ],
       "steps": [
         {
           "px": 0.02718,
@@ -139,10 +141,14 @@
         {
           "px": 0.02774,
           "ts": 1793599378
+        },
+        {
+          "px": 0.0274,
+          "ts": 1793600470
         }
       ],
       "entry_candle_ts": 1793595600,
-      "last_leg_candle_ts": 1793599200,
+      "last_leg_candle_ts": 1793600470,
       "dry_run": true,
       "order_id": "PAPER-HAEDALUSDT-1793595879"
     },
