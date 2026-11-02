@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.2",
-  "updated_at": 1793610215,
+  "updated_at": 1793610224,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "ZCATUSDT",
-      "tf": "15m",
-      "gap": 1.33,
-      "ts": 1793583841
-    },
     {
       "kind": "GAP",
       "symbol": "LYTEUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 6.75,
       "ts": 1793610215
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793610224
     }
   ],
   "trades": [
@@ -1480,6 +1480,19 @@
       "margin": 10.0,
       "lev": 20,
       "px": 1.94e-06,
+      "pnl": 0.0,
+      "tf": "15m"
+    },
+    {
+      "symbol": "ARIAUSDT",
+      "side": "SELL",
+      "entry": 0.1212,
+      "tp": 0.11817,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.1212,
       "pnl": 0.0,
       "tf": "15m"
     }
