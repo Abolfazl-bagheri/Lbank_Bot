@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.2",
-  "updated_at": 1793624252,
+  "updated_at": 1793624970,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "SOPHUSDT",
-      "tf": "15m",
-      "gap": 1.12,
-      "ts": 1793590041
-    },
     {
       "kind": "GAP",
       "symbol": "CASHCATUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 1.02,
       "ts": 1793624252
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793624970
     }
   ],
   "trades": [
@@ -1427,8 +1427,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 171.73,
-      "pnl": -1.8809,
+      "px": 168.68,
+      "pnl": 1.7046,
       "tf": "1h"
     },
     {
@@ -1440,8 +1440,8 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 17.41,
-      "pnl": 2.6014,
+      "px": 17.42,
+      "pnl": 2.2582,
       "tf": "1h"
     },
     {
@@ -1466,35 +1466,22 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 6.581,
-      "pnl": 10.3227,
+      "px": 6.56,
+      "pnl": 12.2044,
       "tf": "4h"
-    },
-    {
-      "symbol": "REDUSDT",
-      "side": "SELL",
-      "entry": 0.1451,
-      "tp": 0.1414725,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.1348,
-      "pnl": 14.1971,
-      "tf": "1h"
     }
   ],
   "start": 1000.0,
-  "realized": 202.9956,
-  "closed_n": 15,
-  "open_upnl": -28.1021,
-  "equity": 1174.8935,
+  "realized": 216.7792,
+  "closed_n": 16,
+  "open_upnl": -37.1752,
+  "equity": 1179.604,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 202.9956,
+    "profit": 216.7792,
     "loss": 0,
-    "count": 15
+    "count": 16
   }
 }
