@@ -79,24 +79,30 @@
       "symbol": "POPMARTUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 17.66,
-      "qty": 11.325,
-      "margin": 10.0,
+      "entry": 17.485811706762643,
+      "qty": 34.3135,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 17.2185,
+      "tp_price": 17.048666414093578,
       "tf": "1h",
       "opened_at": 1793585203,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        17.468
+      ],
       "steps": [
         {
           "px": 17.66,
           "ts": 1793585203
+        },
+        {
+          "px": 17.4,
+          "ts": 1793587022
         }
       ],
       "entry_candle_ts": 1793584800,
-      "last_leg_candle_ts": 1793584800,
+      "last_leg_candle_ts": 1793587022,
       "dry_run": true,
       "order_id": "PAPER-POPMARTUSDT-1793585203"
     }
@@ -1295,6 +1301,15 @@
       "upper": 169.03816938351395,
       "open": 170.86,
       "reported": false
+    },
+    {
+      "symbol": "POPMARTUSDT",
+      "tf": "1h",
+      "candle_ts": 1793584800,
+      "side": "SELL",
+      "upper": 17.546540483183723,
+      "open": 17.751,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -1349,7 +1364,6 @@
     "LONGXIAUSDT": 1793558277,
     "MANCERUSDT": 1793582484,
     "STONKBROKERUSDT": 1793586042,
-    "TRUMPSOLUSDT": 1793586070,
     "UP2USDT": 1793587113,
     "BEMUSDT": 1793589720,
     "GALUSDT": 1793591485,
@@ -1366,9 +1380,10 @@
     "1000SATSUSDT": 1793619484,
     "1000WOJAKUSDT": 1793619485,
     "NEIRO1USDT": 1793619487,
-    "UBIKUSDT": 1793622954
+    "UBIKUSDT": 1793622954,
+    "TRUMPSOLUSDT": 1793630182
   },
-  "last_trade_report_ts": 1793584366,
+  "last_trade_report_ts": 1793585290,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
