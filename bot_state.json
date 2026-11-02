@@ -148,31 +148,6 @@
       "order_id": "PAPER-CSOPSAMSUNG2LUSDT-1793606840"
     },
     {
-      "symbol": "CATUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 1.94e-06,
-      "qty": 103092783.5052,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 1.8915e-06,
-      "tf": "15m",
-      "opened_at": 1793610204,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 1.94e-06,
-          "ts": 1793610204
-        }
-      ],
-      "entry_candle_ts": 1793610000,
-      "last_leg_candle_ts": 1793610000,
-      "dry_run": true,
-      "order_id": "PAPER-CATUSDT-1793610204"
-    },
-    {
       "symbol": "ARIAUSDT",
       "side": "SELL",
       "status": "open",
@@ -561,6 +536,34 @@
       "closed_at": 1793608583,
       "close_px": 0.01945,
       "pnl_usdt": 7.3303615651312635
+    },
+    {
+      "symbol": "CATUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 1.94e-06,
+      "qty": 103092783.5052,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 1.8915e-06,
+      "tf": "15m",
+      "opened_at": 1793610204,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 1.94e-06,
+          "ts": 1793610204
+        }
+      ],
+      "entry_candle_ts": 1793610000,
+      "last_leg_candle_ts": 1793610000,
+      "dry_run": true,
+      "order_id": "PAPER-CATUSDT-1793610204",
+      "closed_at": 1793611226,
+      "close_px": 1.867e-06,
+      "pnl_usdt": 7.525773195876287
     }
   ],
   "pending": [
@@ -1798,7 +1801,8 @@
       "side": "SELL",
       "upper": 1.8510141834832387e-06,
       "open": 1.949e-06,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ARIAUSDT",
@@ -1807,7 +1811,8 @@
       "side": "SELL",
       "upper": 0.11302073063965369,
       "open": 0.12108,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "CATUSDT",
@@ -1834,6 +1839,15 @@
       "side": "SELL",
       "upper": 0.11036811667714423,
       "open": 0.12108,
+      "reported": false
+    },
+    {
+      "symbol": "STORJUSDT",
+      "tf": "1h",
+      "candle_ts": 1793610000,
+      "side": "SELL",
+      "upper": 0.02166013728952748,
+      "open": 0.02196,
       "reported": false
     }
   ],
@@ -1915,7 +1929,7 @@
     "NEXUSDT": 1793650160,
     "1000000BABYDOGEUSDT": 1793650165
   },
-  "last_trade_report_ts": 1793608590,
+  "last_trade_report_ts": 1793610449,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
