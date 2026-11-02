@@ -68,46 +68,6 @@
       "order_id": "PAPER-POPMARTUSDT-1793585203"
     },
     {
-      "symbol": "YOFCUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 13.70185293801967,
-      "qty": 218.94850000000002,
-      "margin": 150.0,
-      "leverage": 20,
-      "tp_price": 13.359306614569178,
-      "tf": "4h",
-      "opened_at": 1793595910,
-      "adds": 3,
-      "last_leg_margin": 80.0,
-      "used_res_levels": [
-        13.779,
-        13.696
-      ],
-      "steps": [
-        {
-          "px": 13.75,
-          "ts": 1793595910
-        },
-        {
-          "px": 13.75,
-          "ts": 1793596077
-        },
-        {
-          "px": 13.75,
-          "ts": 1793606825
-        },
-        {
-          "px": 13.66,
-          "ts": 1793612975
-        }
-      ],
-      "entry_candle_ts": 1793595600,
-      "last_leg_candle_ts": 1793612975,
-      "dry_run": true,
-      "order_id": "PAPER-YOFCUSDT-1793595910"
-    },
-    {
       "symbol": "CVNAUSDT",
       "side": "SELL",
       "status": "open",
@@ -1048,6 +1008,49 @@
       "closed_at": 1793630123,
       "close_px": 6.468,
       "pnl_usdt": 20.447882739633478
+    },
+    {
+      "symbol": "YOFCUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 13.70185293801967,
+      "qty": 218.94850000000002,
+      "margin": 150.0,
+      "leverage": 20,
+      "tp_price": 13.359306614569178,
+      "tf": "4h",
+      "opened_at": 1793595910,
+      "adds": 3,
+      "last_leg_margin": 80.0,
+      "used_res_levels": [
+        13.779,
+        13.696
+      ],
+      "steps": [
+        {
+          "px": 13.75,
+          "ts": 1793595910
+        },
+        {
+          "px": 13.75,
+          "ts": 1793596077
+        },
+        {
+          "px": 13.75,
+          "ts": 1793606825
+        },
+        {
+          "px": 13.66,
+          "ts": 1793612975
+        }
+      ],
+      "entry_candle_ts": 1793595600,
+      "last_leg_candle_ts": 1793612975,
+      "dry_run": true,
+      "order_id": "PAPER-YOFCUSDT-1793595910",
+      "closed_at": 1793635837,
+      "close_px": 13.14,
+      "pnl_usdt": 123.01685193116815
     }
   ],
   "pending": [
@@ -2485,6 +2488,15 @@
       "upper": 250.12838833477755,
       "open": 253.39,
       "reported": false
+    },
+    {
+      "symbol": "PDDUSDT",
+      "tf": "4h",
+      "candle_ts": 1793635200,
+      "side": "SELL",
+      "upper": 81.88431914237066,
+      "open": 82.86,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -2563,7 +2575,11 @@
     "LWLGUSDT": 1793675941,
     "LIGHT1USDT": 1793676789,
     "AMCUSDT": 1793676804,
-    "ONSEMIUSDT": 1793676808
+    "ONSEMIUSDT": 1793676808,
+    "CAPETHUSDT": 1793678996,
+    "EWZSUSDT": 1793678937,
+    "BIDUUSDT": 1793678955,
+    "XPSTOCKUSDT": 1793678976
   },
   "last_trade_report_ts": 1793633634,
   "last_daily_report_date": "2026-11-01",
