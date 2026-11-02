@@ -141,6 +141,31 @@
       "last_leg_candle_ts": 1793595600,
       "dry_run": true,
       "order_id": "PAPER-ZHONGJIUSDT-1793595803"
+    },
+    {
+      "symbol": "HAEDALUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.02715,
+      "qty": 7366.4825,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.026471249999999998,
+      "tf": "1h",
+      "opened_at": 1793595817,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.02715,
+          "ts": 1793595817
+        }
+      ],
+      "entry_candle_ts": 1793595600,
+      "last_leg_candle_ts": 1793595600,
+      "dry_run": true,
+      "order_id": "PAPER-HAEDALUSDT-1793595817"
     }
   ],
   "trade_history": [
@@ -1388,6 +1413,15 @@
       "open": 1.0864,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "ZHONGJIUSDT",
+      "tf": "1h",
+      "candle_ts": 1793595600,
+      "side": "SELL",
+      "upper": 93.10138998811559,
+      "open": 94.15,
+      "reported": false
     }
   ],
   "paper_days": [
