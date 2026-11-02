@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.2",
-  "updated_at": 1793635645,
+  "updated_at": 1793635659,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "CATUSDT",
-      "tf": "1h",
-      "gap": 5.64,
-      "ts": 1793610239
-    },
     {
       "kind": "SELL",
       "symbol": "CLAUDIAUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "4h",
       "gap": 1.37,
       "ts": 1793635645
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793635659
     }
   ],
   "trades": [
@@ -1584,6 +1584,19 @@
       "margin": 10.0,
       "lev": 20,
       "px": 30.374,
+      "pnl": 0.0,
+      "tf": "4h"
+    },
+    {
+      "symbol": "AMZNUSDT",
+      "side": "SELL",
+      "entry": 253.61,
+      "tp": 247.26975000000002,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 253.61,
       "pnl": 0.0,
       "tf": "4h"
     }
