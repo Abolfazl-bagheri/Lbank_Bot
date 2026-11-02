@@ -146,24 +146,28 @@
       "symbol": "HAEDALUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.02718,
-      "qty": 7358.3517,
-      "margin": 10.0,
+      "entry": 0.027550786846064164,
+      "qty": 21777.9624,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.0265005,
+      "tp_price": 0.02686201717491256,
       "tf": "1h",
       "opened_at": 1793595879,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 0.02718,
           "ts": 1793595879
+        },
+        {
+          "px": 0.02774,
+          "ts": 1793599378
         }
       ],
       "entry_candle_ts": 1793595600,
-      "last_leg_candle_ts": 1793595600,
+      "last_leg_candle_ts": 1793599200,
       "dry_run": true,
       "order_id": "PAPER-HAEDALUSDT-1793595879"
     },
@@ -1502,7 +1506,8 @@
       "side": "SELL",
       "upper": 92.9430166041063,
       "open": 94.15,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "HAEDALUSDT",
@@ -1511,7 +1516,8 @@
       "side": "SELL",
       "upper": 0.026735856156814085,
       "open": 0.02717,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "YOFCUSDT",
@@ -1520,7 +1526,8 @@
       "side": "SELL",
       "upper": 13.538751124982387,
       "open": 13.748,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "STORJUSDT",
@@ -1529,6 +1536,16 @@
       "side": "SELL",
       "upper": 0.021122024692940757,
       "open": 0.02145,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "BIRBUSDT",
+      "tf": "15m",
+      "candle_ts": 1793597400,
+      "side": "SELL",
+      "upper": 0.0874325348679743,
+      "open": 0.08926,
       "reported": true,
       "filled": true
     }
@@ -1601,9 +1618,10 @@
     "TRUMPSOLUSDT": 1793630182,
     "UP2USDT": 1793631162,
     "BEMUSDT": 1793633776,
-    "AEHRUSDT": 1793636530
+    "AEHRUSDT": 1793636530,
+    "GSTOCKUSDT": 1793640941
   },
-  "last_trade_report_ts": 1793596094,
+  "last_trade_report_ts": 1793597791,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
