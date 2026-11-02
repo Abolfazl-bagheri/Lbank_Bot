@@ -71,24 +71,30 @@
       "symbol": "TEMUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 78.66,
-      "qty": 2.5426,
-      "margin": 10.0,
+      "entry": 79.62734615333572,
+      "qty": 7.5351,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 76.6935,
+      "tp_price": 77.63666249950232,
       "tf": "1h",
       "opened_at": 1793631865,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        80.38
+      ],
       "steps": [
         {
           "px": 78.66,
           "ts": 1793631865
+        },
+        {
+          "px": 80.12,
+          "ts": 1793634767
         }
       ],
       "entry_candle_ts": 1793631600,
-      "last_leg_candle_ts": 1793631600,
+      "last_leg_candle_ts": 1793634767,
       "dry_run": true,
       "order_id": "PAPER-TEMUSDT-1793631865"
     },
