@@ -185,6 +185,31 @@
       "last_leg_candle_ts": 1793631600,
       "dry_run": true,
       "order_id": "PAPER-DKNGUSDT-1793631969"
+    },
+    {
+      "symbol": "GEUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 315.49,
+      "qty": 0.633935,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 307.60275,
+      "tf": "1h",
+      "opened_at": 1793631997,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 315.49,
+          "ts": 1793631997
+        }
+      ],
+      "entry_candle_ts": 1793631600,
+      "last_leg_candle_ts": 1793631600,
+      "dry_run": true,
+      "order_id": "PAPER-GEUSDT-1793631997"
     }
   ],
   "trade_history": [
@@ -2101,6 +2126,15 @@
       "side": "SELL",
       "upper": 71.43636973351792,
       "open": 72.37,
+      "reported": false
+    },
+    {
+      "symbol": "DKNGUSDT",
+      "tf": "1h",
+      "candle_ts": 1793631600,
+      "side": "SELL",
+      "upper": 21.56088585937963,
+      "open": 21.796,
       "reported": false
     }
   ],
