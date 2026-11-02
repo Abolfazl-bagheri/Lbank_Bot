@@ -146,6 +146,31 @@
       "last_leg_candle_ts": 1793596077,
       "dry_run": true,
       "order_id": "PAPER-YOFCUSDT-1793595910"
+    },
+    {
+      "symbol": "STARUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.04002,
+      "qty": 4997.5012,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0390195,
+      "tf": "15m",
+      "opened_at": 1793602959,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.04002,
+          "ts": 1793602959
+        }
+      ],
+      "entry_candle_ts": 1793602800,
+      "last_leg_candle_ts": 1793602800,
+      "dry_run": true,
+      "order_id": "PAPER-STARUSDT-1793602959"
     }
   ],
   "trade_history": [
@@ -1574,7 +1599,8 @@
       "side": "SELL",
       "upper": 0.02734043002608365,
       "open": 0.02767,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -1590,7 +1616,6 @@
   "kline_blacklist": {
     "STXSTOCKUSDT": 1793301443,
     "OFCUSDT": 1793301474,
-    "PORUSDT": 1793304371,
     "IBBETFUSDT": 1793310363,
     "CANTONUSDT": 1793322198,
     "RIOTUSDT": 1793324068,
@@ -1645,9 +1670,10 @@
     "UP2USDT": 1793631162,
     "BEMUSDT": 1793633776,
     "AEHRUSDT": 1793636530,
-    "GSTOCKUSDT": 1793640941
+    "GSTOCKUSDT": 1793640941,
+    "PORUSDT": 1793645476
   },
-  "last_trade_report_ts": 1793600487,
+  "last_trade_report_ts": 1793602292,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
