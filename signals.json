@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.2",
-  "updated_at": 1793636267,
+  "updated_at": 1793636284,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "ARGUSUSDT",
-      "tf": "15m",
-      "gap": 2.25,
-      "ts": 1793610788
-    },
     {
       "kind": "GAP",
       "symbol": "REDUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1793636267
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793636284
     }
   ],
   "trades": [
@@ -1523,19 +1523,6 @@
       "tf": "4h"
     },
     {
-      "symbol": "AEONUSDT",
-      "side": "SELL",
-      "entry": 0.0265,
-      "tp": 0.0258375,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.0257,
-      "pnl": 6.0377,
-      "tf": "4h"
-    },
-    {
       "symbol": "TSLLUSDT",
       "side": "SELL",
       "entry": 11.94,
@@ -1602,16 +1589,16 @@
     }
   ],
   "start": 1000.0,
-  "realized": 387.89,
-  "closed_n": 21,
-  "open_upnl": 22.1238,
+  "realized": 393.9277,
+  "closed_n": 22,
+  "open_upnl": 16.0861,
   "equity": 1410.0138,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 387.89,
+    "profit": 393.9277,
     "loss": 0,
-    "count": 21
+    "count": 22
   }
 }
