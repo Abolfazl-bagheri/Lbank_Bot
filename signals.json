@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.4",
-  "updated_at": 1793661763,
+  "updated_at": 1793661773,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "CCLUSDT",
-      "tf": "4h",
-      "gap": 2.21,
-      "ts": 1793634109
-    },
     {
       "kind": "GAP",
       "symbol": "AMZNUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1793661763
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793661773
     }
   ],
   "trades": [
@@ -1521,32 +1521,19 @@
       "px": 0.1924,
       "pnl": -0.8351,
       "tf": "1h"
-    },
-    {
-      "symbol": "GPROUSDT",
-      "side": "SELL",
-      "entry": 1.065,
-      "tp": 1.0383749999999998,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 1.029,
-      "pnl": 6.7606,
-      "tf": "15m"
     }
   ],
   "start": 1000.0,
-  "realized": 592.838,
-  "closed_n": 30,
-  "open_upnl": 61.9168,
-  "equity": 1654.7548,
+  "realized": 599.5985,
+  "closed_n": 31,
+  "open_upnl": 55.1562,
+  "equity": 1654.7547,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 592.838,
+    "profit": 599.5985,
     "loss": 0,
-    "count": 30
+    "count": 31
   }
 }
