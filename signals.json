@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.2",
-  "updated_at": 1793631923,
+  "updated_at": 1793631930,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "HK1810USDT",
-      "tf": "1h",
-      "gap": 1.05,
-      "ts": 1793595506
-    },
     {
       "kind": "GAP",
       "symbol": "SECZUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 0.01,
       "ts": 1793631923
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793631930
     }
   ],
   "trades": [
@@ -1456,6 +1456,19 @@
       "px": 72.82,
       "pnl": -1.1047,
       "tf": "15m"
+    },
+    {
+      "symbol": "TEMUSDT",
+      "side": "SELL",
+      "entry": 77.49,
+      "tp": 75.55274999999999,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 77.49,
+      "pnl": 0.0,
+      "tf": "1h"
     }
   ],
   "start": 1000.0,
