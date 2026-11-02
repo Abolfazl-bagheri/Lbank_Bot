@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.2",
-  "updated_at": 1793613864,
+  "updated_at": 1793613872,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "SOPHUSDT",
-      "tf": "15m",
-      "gap": 1.33,
-      "ts": 1793586455
-    },
     {
       "kind": "GAP",
       "symbol": "BIRBUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 5.76,
       "ts": 1793613864
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793613872
     }
   ],
   "trades": [
@@ -1469,6 +1469,19 @@
       "px": 6.7,
       "pnl": -1.3524,
       "tf": "4h"
+    },
+    {
+      "symbol": "CLAUDIAUSDT",
+      "side": "SELL",
+      "entry": 0.002349,
+      "tp": 0.002290275,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.002349,
+      "pnl": 0.0,
+      "tf": "1h"
     }
   ],
   "start": 1000.0,
