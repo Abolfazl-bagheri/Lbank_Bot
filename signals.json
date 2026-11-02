@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.2",
-  "updated_at": 1793631967,
+  "updated_at": 1793631975,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "LYTEUSDT",
-      "tf": "1h",
-      "gap": 1.45,
-      "ts": 1793595587
-    },
     {
       "kind": "GAP",
       "symbol": "SKHYUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 1.64,
       "ts": 1793631967
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793631975
     }
   ],
   "trades": [
@@ -1467,6 +1467,19 @@
       "margin": 10.0,
       "lev": 20,
       "px": 77.49,
+      "pnl": 0.0,
+      "tf": "1h"
+    },
+    {
+      "symbol": "DKNGUSDT",
+      "side": "SELL",
+      "entry": 21.92,
+      "tp": 21.372,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 21.92,
       "pnl": 0.0,
       "tf": "1h"
     }
