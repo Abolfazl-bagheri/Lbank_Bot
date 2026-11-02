@@ -148,6 +148,31 @@
       "last_leg_candle_ts": 1793604952,
       "dry_run": true,
       "order_id": "PAPER-STARUSDT-1793602959"
+    },
+    {
+      "symbol": "LYNUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.02019,
+      "qty": 9905.894,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.019685249999999998,
+      "tf": "4h",
+      "opened_at": 1793606812,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.02019,
+          "ts": 1793606812
+        }
+      ],
+      "entry_candle_ts": 1793606400,
+      "last_leg_candle_ts": 1793606400,
+      "dry_run": true,
+      "order_id": "PAPER-LYNUSDT-1793606812"
     }
   ],
   "trade_history": [
@@ -409,30 +434,6 @@
       "tf": "1h",
       "candle_ts": 1793347200,
       "side": "SELL"
-    },
-    {
-      "symbol": "MAGMAUSDT",
-      "tf": "4h",
-      "candle_ts": 1793347200,
-      "side": "SELL",
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "SOPHUSDT",
-      "tf": "4h",
-      "candle_ts": 1793347200,
-      "side": "SELL",
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "BEAMXUSDT",
-      "tf": "4h",
-      "candle_ts": 1793347200,
-      "side": "SELL",
-      "reported": true,
-      "filled": true
     },
     {
       "symbol": "MAGMAUSDT",
@@ -1205,7 +1206,8 @@
       "side": "SELL",
       "upper": 0.01225805675389918,
       "open": 0.013,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "FORMUSDT",
@@ -1680,7 +1682,6 @@
     "GALUSDT": 1793591485,
     "APROUSDT": 1793604906,
     "TOADUSDT": 1793604936,
-    "FIGHT1USDT": 1793605790,
     "PIPEDOGUSDT": 1793608506,
     "BIO1USDT": 1793611218,
     "FLOCK1USDT": 1793612968,
@@ -1698,7 +1699,7 @@
     "GSTOCKUSDT": 1793640941,
     "PORUSDT": 1793645476
   },
-  "last_trade_report_ts": 1793604099,
+  "last_trade_report_ts": 1793605797,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
