@@ -282,6 +282,31 @@
       "last_leg_candle_ts": 1793656800,
       "dry_run": true,
       "order_id": "PAPER-ICNTUSDT-1793656971"
+    },
+    {
+      "symbol": "GPROUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 1.065,
+      "qty": 187.7934,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 1.0383749999999998,
+      "tf": "15m",
+      "opened_at": 1793660588,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 1.065,
+          "ts": 1793660588
+        }
+      ],
+      "entry_candle_ts": 1793660400,
+      "last_leg_candle_ts": 1793660400,
+      "dry_run": true,
+      "order_id": "PAPER-GPROUSDT-1793660588"
     }
   ],
   "trade_history": [
@@ -2702,7 +2727,8 @@
       "side": "SELL",
       "upper": 0.18843527508157212,
       "open": 0.1917,
-      "reported": false
+      "reported": true,
+      "filled": false
     }
   ],
   "paper_days": [
