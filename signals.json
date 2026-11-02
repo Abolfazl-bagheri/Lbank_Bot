@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.2",
-  "updated_at": 1793631891,
+  "updated_at": 1793631900,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "CSOPSKHYNIX2LUSDT",
-      "tf": "4h",
-      "gap": 2.25,
-      "ts": 1793592787
-    },
     {
       "kind": "GAP",
       "symbol": "ZHONGJIUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 1.86,
       "ts": 1793631891
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793631900
     }
   ],
   "trades": [
@@ -1467,6 +1467,19 @@
       "margin": 10.0,
       "lev": 20,
       "px": 78.66,
+      "pnl": 0.0,
+      "tf": "1h"
+    },
+    {
+      "symbol": "CVNAUSDT",
+      "side": "SELL",
+      "entry": 72.79,
+      "tp": 70.97025000000001,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 72.79,
       "pnl": 0.0,
       "tf": "1h"
     }
