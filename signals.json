@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.2",
-  "updated_at": 1793582395,
+  "updated_at": 1793582400,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "LYNUSDT",
-      "tf": "4h",
-      "gap": 2.19,
-      "ts": 1793533897
-    },
     {
       "kind": "GAP",
       "symbol": "DNAUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 1.27,
       "ts": 1793582395
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793582400
     }
   ],
   "trades": [
@@ -1428,6 +1428,19 @@
       "margin": 10.0,
       "lev": 20,
       "px": 18.786,
+      "pnl": 0.0,
+      "tf": "15m"
+    },
+    {
+      "symbol": "KORUUSDT",
+      "side": "SELL",
+      "entry": 11.64,
+      "tp": 11.349,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 11.64,
       "pnl": 0.0,
       "tf": "15m"
     }
