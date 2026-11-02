@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.2",
-  "updated_at": 1793635555,
+  "updated_at": 1793635568,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "CLAUDIAUSDT",
-      "tf": "1h",
-      "gap": 10.76,
-      "ts": 1793609693
-    },
     {
       "kind": "GAP",
       "symbol": "CATUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "4h",
       "gap": 1.57,
       "ts": 1793635555
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793635568
     }
   ],
   "trades": [
@@ -1573,6 +1573,19 @@
       "px": 0.04828,
       "pnl": 0.0,
       "tf": "1h"
+    },
+    {
+      "symbol": "CCLUSDT",
+      "side": "SELL",
+      "entry": 30.374,
+      "tp": 29.614649999999997,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 30.374,
+      "pnl": 0.0,
+      "tf": "4h"
     }
   ],
   "start": 1000.0,
