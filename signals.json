@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.4",
-  "updated_at": 1793662696,
+  "updated_at": 1793662708,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "BABAUSDT",
-      "tf": "4h",
-      "gap": 1.24,
-      "ts": 1793634125
-    },
-    {
-      "kind": "GAP",
-      "symbol": "STMUSDT",
-      "tf": "4h",
-      "gap": 1.4,
-      "ts": 1793634133
-    },
     {
       "kind": "GAP",
       "symbol": "TSLLUSDT",
@@ -1334,74 +1320,88 @@
       "ts": 1793660390
     },
     {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1793660491
-    },
-    {
       "kind": "SELL",
       "symbol": "GPROUSDT",
       "tf": "15m",
-      "gap": 1.86,
-      "ts": 1793660677
+      "gap": 3.79,
+      "ts": 1793660586
     },
     {
       "kind": "POS",
       "symbol": "—",
       "tf": "—",
       "gap": 0.0,
-      "ts": 1793660689
+      "ts": 1793660598
     },
     {
       "kind": "SELL",
       "symbol": "GPROUSDT",
       "tf": "1h",
-      "gap": 1.62,
-      "ts": 1793660714
+      "gap": 3.76,
+      "ts": 1793660621
     },
     {
       "kind": "POS",
       "symbol": "—",
       "tf": "—",
       "gap": 0.0,
-      "ts": 1793660934
+      "ts": 1793660823
     },
     {
       "kind": "HEARTBEAT",
       "symbol": "—",
       "tf": "—",
       "gap": 0.0,
-      "ts": 1793660936
+      "ts": 1793660825
     },
     {
       "kind": "GAP",
       "symbol": "EVAAUSDT",
       "tf": "15m",
-      "gap": 2.27,
-      "ts": 1793661635
+      "gap": 1.99,
+      "ts": 1793661451
     },
     {
       "kind": "GAP",
       "symbol": "GPROUSDT",
       "tf": "15m",
-      "gap": 2.01,
-      "ts": 1793661643
+      "gap": 2.2,
+      "ts": 1793661455
     },
     {
       "kind": "POS",
       "symbol": "—",
       "tf": "—",
       "gap": 0.0,
-      "ts": 1793662694
+      "ts": 1793661763
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793661773
     },
     {
       "kind": "HEARTBEAT",
       "symbol": "—",
       "tf": "—",
       "gap": 0.0,
-      "ts": 1793662696
+      "ts": 1793661776
+    },
+    {
+      "kind": "GAP",
+      "symbol": "NOMUSDT",
+      "tf": "15m",
+      "gap": 1.05,
+      "ts": 1793662419
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793662708
     }
   ],
   "trades": [
@@ -1440,8 +1440,8 @@
       "pele": 3,
       "margin": 70.0,
       "lev": 20,
-      "px": 71.91,
-      "pnl": 12.5889,
+      "px": 71.96,
+      "pnl": 11.6243,
       "tf": "4h"
     },
     {
@@ -1466,8 +1466,8 @@
       "pele": 3,
       "margin": 70.0,
       "lev": 20,
-      "px": 317.43,
-      "pnl": -6.2865,
+      "px": 317.34,
+      "pnl": -5.8878,
       "tf": "1h"
     },
     {
@@ -1492,8 +1492,8 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 247.26,
-      "pnl": 10.8265,
+      "px": 247.21,
+      "pnl": 10.9456,
       "tf": "4h"
     },
     {
@@ -1512,41 +1512,28 @@
     {
       "symbol": "ICNTUSDT",
       "side": "SELL",
-      "entry": 0.1916,
-      "tp": 0.18680999999999998,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
+      "entry": 0.1921325920857895,
+      "tp": 0.18732927728364476,
+      "adds": 1,
+      "pele": 2,
+      "margin": 30.0,
       "lev": 20,
-      "px": 0.193,
-      "pnl": -1.4614,
+      "px": 0.1929,
+      "pnl": -2.3965,
       "tf": "1h"
-    },
-    {
-      "symbol": "GPROUSDT",
-      "side": "SELL",
-      "entry": 1.054,
-      "tp": 1.02765,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 1.05,
-      "pnl": 0.759,
-      "tf": "15m"
     }
   ],
   "start": 1000.0,
-  "realized": 592.838,
-  "closed_n": 30,
-  "open_upnl": 59.0414,
-  "equity": 1651.8794,
+  "realized": 599.5985,
+  "closed_n": 31,
+  "open_upnl": 56.9005,
+  "equity": 1656.499,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 592.838,
+    "profit": 599.5985,
     "loss": 0,
-    "count": 30
+    "count": 31
   }
 }
