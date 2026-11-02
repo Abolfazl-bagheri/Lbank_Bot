@@ -171,56 +171,6 @@
       "last_leg_candle_ts": 1793610000,
       "dry_run": true,
       "order_id": "PAPER-ARIAUSDT-1793610217"
-    },
-    {
-      "symbol": "CLAUDIAUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.002316,
-      "qty": 86355.7858,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.0022581,
-      "tf": "1h",
-      "opened_at": 1793610246,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.002316,
-          "ts": 1793610246
-        }
-      ],
-      "entry_candle_ts": 1793610000,
-      "last_leg_candle_ts": 1793610000,
-      "dry_run": true,
-      "order_id": "PAPER-CLAUDIAUSDT-1793610246"
-    },
-    {
-      "symbol": "STORJUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.02194,
-      "qty": 9115.7703,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.0213915,
-      "tf": "1h",
-      "opened_at": 1793610277,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.02194,
-          "ts": 1793610277
-        }
-      ],
-      "entry_candle_ts": 1793610000,
-      "last_leg_candle_ts": 1793610000,
-      "dry_run": true,
-      "order_id": "PAPER-STORJUSDT-1793610277"
     }
   ],
   "trade_history": [
@@ -564,6 +514,62 @@
       "closed_at": 1793611226,
       "close_px": 1.867e-06,
       "pnl_usdt": 7.525773195876287
+    },
+    {
+      "symbol": "STORJUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.02194,
+      "qty": 9115.7703,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0213915,
+      "tf": "1h",
+      "opened_at": 1793610277,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.02194,
+          "ts": 1793610277
+        }
+      ],
+      "entry_candle_ts": 1793610000,
+      "last_leg_candle_ts": 1793610000,
+      "dry_run": true,
+      "order_id": "PAPER-STORJUSDT-1793610277",
+      "closed_at": 1793611230,
+      "close_px": 0.02125,
+      "pnl_usdt": 6.289881494986322
+    },
+    {
+      "symbol": "CLAUDIAUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.002316,
+      "qty": 86355.7858,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0022581,
+      "tf": "1h",
+      "opened_at": 1793610246,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.002316,
+          "ts": 1793610246
+        }
+      ],
+      "entry_candle_ts": 1793610000,
+      "last_leg_candle_ts": 1793610000,
+      "dry_run": true,
+      "order_id": "PAPER-CLAUDIAUSDT-1793610246",
+      "closed_at": 1793612167,
+      "close_px": 0.002206,
+      "pnl_usdt": 9.499136442141612
     }
   ],
   "pending": [
@@ -1902,7 +1908,6 @@
     "STONKBROKERUSDT": 1793586042,
     "GALUSDT": 1793591485,
     "APROUSDT": 1793604906,
-    "TOADUSDT": 1793604936,
     "PIPEDOGUSDT": 1793608506,
     "BIO1USDT": 1793611218,
     "FLOCK1USDT": 1793612968,
