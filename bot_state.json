@@ -111,6 +111,31 @@
       "last_leg_candle_ts": 1793587022,
       "dry_run": true,
       "order_id": "PAPER-POPMARTUSDT-1793585203"
+    },
+    {
+      "symbol": "PIEVERSEUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 1.1028,
+      "qty": 181.3565,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 1.07523,
+      "tf": "15m",
+      "opened_at": 1793591400,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 1.1028,
+          "ts": 1793591400
+        }
+      ],
+      "entry_candle_ts": 1793591100,
+      "last_leg_candle_ts": 1793591100,
+      "dry_run": true,
+      "order_id": "PAPER-PIEVERSEUSDT-1793591400"
     }
   ],
   "trade_history": [
@@ -1288,7 +1313,8 @@
       "side": "SELL",
       "upper": 0.07033670824264608,
       "open": 0.07124,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "MINIMAXUSDT",
@@ -1297,7 +1323,8 @@
       "side": "SELL",
       "upper": 21.113178778695996,
       "open": 21.42,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "TSEMUSDT",
@@ -1306,7 +1333,8 @@
       "side": "SELL",
       "upper": 169.03816938351395,
       "open": 170.86,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "POPMARTUSDT",
@@ -1315,7 +1343,8 @@
       "side": "SELL",
       "upper": 17.546540483183723,
       "open": 17.751,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -1348,7 +1377,6 @@
     "XTIUSDT": 1793413071,
     "XBRUSDT": 1793413074,
     "SIMOUSDT": 1793413082,
-    "HK1810USDT": 1793413083,
     "CVXSTOCKUSDT": 1793413084,
     "COPSTOCKUSDT": 1793413150,
     "OXYUSDT": 1793417641,
@@ -1370,7 +1398,6 @@
     "LONGXIAUSDT": 1793558277,
     "MANCERUSDT": 1793582484,
     "STONKBROKERUSDT": 1793586042,
-    "BEMUSDT": 1793589720,
     "GALUSDT": 1793591485,
     "GSTOCKUSDT": 1793596922,
     "APROUSDT": 1793604906,
@@ -1387,9 +1414,10 @@
     "NEIRO1USDT": 1793619487,
     "UBIKUSDT": 1793622954,
     "TRUMPSOLUSDT": 1793630182,
-    "UP2USDT": 1793631162
+    "UP2USDT": 1793631162,
+    "BEMUSDT": 1793633776
   },
-  "last_trade_report_ts": 1793587035,
+  "last_trade_report_ts": 1793589750,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
