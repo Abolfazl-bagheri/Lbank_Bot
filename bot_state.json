@@ -613,17 +613,18 @@
       "symbol": "BASUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.015537553595188172,
-      "qty": 38616.1178,
-      "margin": 30.0,
+      "entry": 0.015415956273276476,
+      "qty": 90814.99549999999,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 0.015149114755308467,
+      "tp_price": 0.015030557366444564,
       "tf": "1h",
       "opened_at": 1793718411,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [
-        0.015547
+        0.015547,
+        0.015368
       ],
       "steps": [
         {
@@ -633,10 +634,14 @@
         {
           "px": 0.015508,
           "ts": 1793721037
+        },
+        {
+          "px": 0.015326,
+          "ts": 1793739174
         }
       ],
       "entry_candle_ts": 1793718000,
-      "last_leg_candle_ts": 1793721037,
+      "last_leg_candle_ts": 1793739174,
       "dry_run": true,
       "order_id": "PAPER-BASUSDT-1793718411"
     },
