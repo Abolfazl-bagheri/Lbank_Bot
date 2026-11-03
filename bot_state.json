@@ -300,24 +300,28 @@
       "symbol": "BOMEUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.0006295,
-      "qty": 317712.4702,
-      "margin": 10.0,
+      "entry": 0.0006374494869770194,
+      "qty": 941251.0516,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.0006137625,
+      "tp_price": 0.0006215132498025938,
       "tf": "1h",
       "opened_at": 1793710984,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 0.0006295,
           "ts": 1793710984
+        },
+        {
+          "px": 0.0006415,
+          "ts": 1793714610
         }
       ],
       "entry_candle_ts": 1793710800,
-      "last_leg_candle_ts": 1793710800,
+      "last_leg_candle_ts": 1793714400,
       "dry_run": true,
       "order_id": "PAPER-BOMEUSDT-1793710984"
     },
@@ -2003,38 +2007,6 @@
     },
     {
       "symbol": "COWUSDT",
-      "tf": "15m",
-      "candle_ts": 1793455200,
-      "side": "SELL",
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "COWUSDT",
-      "tf": "1h",
-      "candle_ts": 1793455200,
-      "side": "SELL",
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "FFUSDT",
-      "tf": "15m",
-      "candle_ts": 1793455200,
-      "side": "SELL",
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "FFUSDT",
-      "tf": "1h",
-      "candle_ts": 1793455200,
-      "side": "SELL",
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "COWUSDT",
       "tf": "1h",
       "candle_ts": 1793458800,
       "side": "SELL",
@@ -3243,7 +3215,8 @@
       "side": "SELL",
       "upper": 0.0006212395170121466,
       "open": 0.0006314,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "AGTUSDT",
@@ -3262,7 +3235,8 @@
       "side": "SELL",
       "upper": 0.026313522071471637,
       "open": 0.02732,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "AGTUSDT",
@@ -3271,7 +3245,8 @@
       "side": "SELL",
       "upper": 0.05340825311010008,
       "open": 0.055259,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ZROUSDT",
@@ -3280,7 +3255,8 @@
       "side": "SELL",
       "upper": 1.8175571520139957,
       "open": 1.842,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "BUSDT",
@@ -3289,7 +3265,8 @@
       "side": "SELL",
       "upper": 0.1297079182886298,
       "open": 0.1318,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "PUMPUSDT",
@@ -3298,7 +3275,8 @@
       "side": "SELL",
       "upper": 0.0042167178489080775,
       "open": 0.004277,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "LITUSDT",
@@ -3307,7 +3285,8 @@
       "side": "SELL",
       "upper": 3.2050530070894836,
       "open": 3.245,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "SAGAUSDT",
@@ -3316,7 +3295,8 @@
       "side": "SELL",
       "upper": 0.0167128423908094,
       "open": 0.01695,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "BMTUSDT",
@@ -3325,6 +3305,16 @@
       "side": "SELL",
       "upper": 0.026859147569406175,
       "open": 0.02721,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "IDOLUSDT",
+      "tf": "15m",
+      "candle_ts": 1793713500,
+      "side": "SELL",
+      "upper": 0.02061336317882498,
+      "open": 0.021364,
       "reported": true,
       "filled": true
     }
@@ -3373,7 +3363,6 @@
     "BEMUSDT": 1793633776,
     "NIULAIUSDT": 1793650101,
     "SMRUSDT": 1793650143,
-    "1000000BABYDOGEUSDT": 1793650165,
     "TOADUSDT": 1793657184,
     "CRWDUSDT": 1793658035,
     "GALUSDT": 1793658927,
