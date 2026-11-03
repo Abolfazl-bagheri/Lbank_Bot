@@ -279,35 +279,6 @@
       "order_id": "PAPER-AXISUSDT-1793689496"
     },
     {
-      "symbol": "AGTUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.05449408515198487,
-      "qty": 11010.3693,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.053131733023185246,
-      "tf": "15m",
-      "opened_at": 1793710193,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.05225,
-          "ts": 1793710193
-        },
-        {
-          "px": 0.05569,
-          "ts": 1793711010
-        }
-      ],
-      "entry_candle_ts": 1793709900,
-      "last_leg_candle_ts": 1793710800,
-      "dry_run": true,
-      "order_id": "PAPER-AGTUSDT-1793710193"
-    },
-    {
       "symbol": "ZROUSDT",
       "side": "SELL",
       "status": "open",
@@ -550,17 +521,18 @@
       "symbol": "DRIFTUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.01308332653581834,
-      "qty": 45859.8964,
-      "margin": 30.0,
+      "entry": 0.013273612812525433,
+      "qty": 105472.41500000001,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 0.012756243372422881,
+      "tp_price": 0.012941772492212298,
       "tf": "1h",
       "opened_at": 1793714798,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [
-        0.01314
+        0.01314,
+        0.01344
       ],
       "steps": [
         {
@@ -570,10 +542,14 @@
         {
           "px": 0.01309,
           "ts": 1793715716
+        },
+        {
+          "px": 0.01342,
+          "ts": 1793717540
         }
       ],
       "entry_candle_ts": 1793714400,
-      "last_leg_candle_ts": 1793715716,
+      "last_leg_candle_ts": 1793717540,
       "dry_run": true,
       "order_id": "PAPER-DRIFTUSDT-1793714798"
     }
@@ -1920,6 +1896,38 @@
       "closed_at": 1793716490,
       "close_px": 0.0006231,
       "pnl_usdt": 36.45268950545831
+    },
+    {
+      "symbol": "AGTUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.05449408515198487,
+      "qty": 11010.3693,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 0.053131733023185246,
+      "tf": "15m",
+      "opened_at": 1793710193,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.05225,
+          "ts": 1793710193
+        },
+        {
+          "px": 0.05569,
+          "ts": 1793711010
+        }
+      ],
+      "entry_candle_ts": 1793709900,
+      "last_leg_candle_ts": 1793710800,
+      "dry_run": true,
+      "order_id": "PAPER-AGTUSDT-1793710193",
+      "closed_at": 1793717532,
+      "close_px": 0.05252,
+      "pnl_usdt": 21.73540647370203
     }
   ],
   "pending": [
