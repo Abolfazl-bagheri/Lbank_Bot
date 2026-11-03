@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.7",
-  "updated_at": 1793743502,
+  "updated_at": 1793743524,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "FLUIDUSDT",
-      "tf": "4h",
-      "gap": 2.34,
-      "ts": 1793720761
-    },
     {
       "kind": "GAP",
       "symbol": "FOXAUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 0.82,
       "ts": 1793743502
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793743524
     }
   ],
   "trades": [
@@ -1675,6 +1675,19 @@
       "margin": 10.0,
       "lev": 20,
       "px": 34.05,
+      "pnl": 0.0,
+      "tf": "1h"
+    },
+    {
+      "symbol": "OUSTUSDT",
+      "side": "SELL",
+      "entry": 31.31,
+      "tp": 30.52725,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 31.31,
       "pnl": 0.0,
       "tf": "1h"
     }
