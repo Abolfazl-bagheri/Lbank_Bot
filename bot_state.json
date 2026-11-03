@@ -4,18 +4,17 @@
       "symbol": "POPMARTUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 17.64708178921309,
-      "qty": 79.3332,
-      "margin": 70.0,
+      "entry": 17.485811706762643,
+      "qty": 34.3135,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 17.205904744482762,
+      "tp_price": 17.048666414093578,
       "tf": "1h",
       "opened_at": 1793585203,
-      "adds": 2,
-      "last_leg_margin": 40.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [
-        17.468,
-        17.793
+        17.468
       ],
       "steps": [
         {
@@ -25,14 +24,10 @@
         {
           "px": 17.4,
           "ts": 1793587022
-        },
-        {
-          "px": 17.77,
-          "ts": 1793671562
         }
       ],
       "entry_candle_ts": 1793584800,
-      "last_leg_candle_ts": 1793671562,
+      "last_leg_candle_ts": 1793587022,
       "dry_run": true,
       "order_id": "PAPER-POPMARTUSDT-1793585203"
     },
@@ -231,82 +226,76 @@
       "symbol": "ICNTUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.1921325920857895,
-      "qty": 3122.8434,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.18732927728364476,
-      "tf": "1h",
-      "opened_at": 1793656971,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        0.1926
-      ],
-      "steps": [
-        {
-          "px": 0.1916,
-          "ts": 1793656971
-        },
-        {
-          "px": 0.1924,
-          "ts": 1793661752
-        }
-      ],
-      "entry_candle_ts": 1793656800,
-      "last_leg_candle_ts": 1793661752,
-      "dry_run": true,
-      "order_id": "PAPER-ICNTUSDT-1793656971"
-    },
-    {
-      "symbol": "ESPORTSUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.014818,
-      "qty": 13497.0981,
+      "entry": 0.1916,
+      "qty": 1043.8413,
       "margin": 10.0,
       "leverage": 20,
-      "tp_price": 0.01444755,
-      "tf": "15m",
-      "opened_at": 1793665136,
+      "tp_price": 0.18680999999999998,
+      "tf": "1h",
+      "opened_at": 1793656971,
       "adds": 0,
       "last_leg_margin": 10.0,
       "used_res_levels": [],
       "steps": [
         {
-          "px": 0.014818,
-          "ts": 1793665136
+          "px": 0.1916,
+          "ts": 1793656971
         }
       ],
-      "entry_candle_ts": 1793664900,
-      "last_leg_candle_ts": 1793664900,
+      "entry_candle_ts": 1793656800,
+      "last_leg_candle_ts": 1793656800,
       "dry_run": true,
-      "order_id": "PAPER-ESPORTSUSDT-1793665136"
+      "order_id": "PAPER-ICNTUSDT-1793656971"
+    },
+    {
+      "symbol": "GPROUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 1.054,
+      "qty": 189.7533,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 1.02765,
+      "tf": "15m",
+      "opened_at": 1793660679,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 1.054,
+          "ts": 1793660679
+        }
+      ],
+      "entry_candle_ts": 1793660400,
+      "last_leg_candle_ts": 1793660400,
+      "dry_run": true,
+      "order_id": "PAPER-GPROUSDT-1793660679"
     },
     {
       "symbol": "CLAUDIAUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.002327,
-      "qty": 85947.572,
+      "entry": 0.002299,
+      "qty": 86994.3454,
       "margin": 10.0,
       "leverage": 20,
-      "tp_price": 0.002268825,
+      "tp_price": 0.002241525,
       "tf": "15m",
-      "opened_at": 1793671356,
+      "opened_at": 1793671431,
       "adds": 0,
       "last_leg_margin": 10.0,
       "used_res_levels": [],
       "steps": [
         {
-          "px": 0.002327,
-          "ts": 1793671356
+          "px": 0.002299,
+          "ts": 1793671431
         }
       ],
       "entry_candle_ts": 1793671200,
       "last_leg_candle_ts": 1793671200,
       "dry_run": true,
-      "order_id": "PAPER-CLAUDIAUSDT-1793671356"
+      "order_id": "PAPER-CLAUDIAUSDT-1793671431"
     }
   ],
   "trade_history": [
@@ -1242,34 +1231,6 @@
       "pnl_usdt": 5.523156089193827
     },
     {
-      "symbol": "GPROUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 1.065,
-      "qty": 187.7934,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 1.0383749999999998,
-      "tf": "15m",
-      "opened_at": 1793660588,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 1.065,
-          "ts": 1793660588
-        }
-      ],
-      "entry_candle_ts": 1793660400,
-      "last_leg_candle_ts": 1793660400,
-      "dry_run": true,
-      "order_id": "PAPER-GPROUSDT-1793660588",
-      "closed_at": 1793661765,
-      "close_px": 1.029,
-      "pnl_usdt": 6.760563380281697
-    },
-    {
       "symbol": "MINIMAXUSDT",
       "side": "SELL",
       "status": "closed",
@@ -1304,9 +1265,9 @@
       "last_leg_candle_ts": 1793627265,
       "dry_run": true,
       "order_id": "PAPER-MINIMAXUSDT-1793585106",
-      "closed_at": 1793669804,
-      "close_px": 20.72,
-      "pnl_usdt": 61.11789771683758
+      "closed_at": 1793671717,
+      "close_px": 21.01,
+      "pnl_usdt": 42.378717713839485
     }
   ],
   "pending": [
@@ -2778,28 +2739,18 @@
       "tf": "15m",
       "candle_ts": 1793660400,
       "side": "SELL",
-      "upper": 1.024653376373072,
+      "upper": 1.0344273416736383,
       "open": 1.0634,
       "reported": true,
-      "filled": false
+      "filled": true
     },
     {
       "symbol": "GPROUSDT",
       "tf": "1h",
       "candle_ts": 1793660400,
       "side": "SELL",
-      "upper": 1.0249745923699414,
+      "upper": 1.0368737867077356,
       "open": 1.0634,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "ESPORTSUSDT",
-      "tf": "15m",
-      "candle_ts": 1793664900,
-      "side": "SELL",
-      "upper": 0.014659343811461273,
-      "open": 0.01486,
       "reported": true,
       "filled": true
     },
@@ -2808,7 +2759,7 @@
       "tf": "15m",
       "candle_ts": 1793671200,
       "side": "SELL",
-      "upper": 0.002274931294421872,
+      "upper": 0.0022641760408000245,
       "open": 0.002336,
       "reported": false
     }
@@ -2881,14 +2832,14 @@
     "PORUSDT": 1793694114,
     "AEHRUSDT": 1793697560,
     "FIGHT1USDT": 1793700356,
-    "CYBERLEEKUSDT": 1793712127,
-    "CZUSDT": 1793712180,
-    "NEIRO1USDT": 1793712190,
-    "1000SATSUSDT": 1793712195,
-    "1000WOJAKUSDT": 1793712196,
-    "MARRIOTTUSDT": 1793712981
+    "CYBERLEEKUSDT": 1793714763,
+    "MARRIOTTUSDT": 1793714834,
+    "CZUSDT": 1793714857,
+    "1000SATSUSDT": 1793714909,
+    "1000WOJAKUSDT": 1793714911,
+    "NEIRO1USDT": 1793714916
   },
-  "last_trade_report_ts": 1793670787,
+  "last_trade_report_ts": 1793668055,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.4",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
