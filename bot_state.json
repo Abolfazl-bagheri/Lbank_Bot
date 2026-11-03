@@ -45,16 +45,18 @@
       "symbol": "CVNAUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 72.56248903792928,
-      "qty": 19.293799999999997,
-      "margin": 70.0,
+      "entry": 72.45435420415163,
+      "qty": 41.405499999999996,
+      "margin": 150.0,
       "leverage": 20,
-      "tp_price": 70.74842681198105,
+      "tp_price": 70.64299534904784,
       "tf": "4h",
       "opened_at": 1793630807,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [],
+      "adds": 3,
+      "last_leg_margin": 80.0,
+      "used_res_levels": [
+        72.61
+      ],
       "steps": [
         {
           "px": 72.42,
@@ -67,10 +69,14 @@
         {
           "px": 72.47,
           "ts": 1793635620
+        },
+        {
+          "px": 72.36,
+          "ts": 1793714889
         }
       ],
       "entry_candle_ts": 1793630700,
-      "last_leg_candle_ts": 1793635200,
+      "last_leg_candle_ts": 1793714889,
       "dry_run": true,
       "order_id": "PAPER-CVNAUSDT-1793630807"
     },
@@ -3431,6 +3437,15 @@
       "side": "SELL",
       "upper": 0.04201895165871213,
       "open": 0.04249,
+      "reported": false
+    },
+    {
+      "symbol": "DRIFTUSDT",
+      "tf": "1h",
+      "candle_ts": 1793714400,
+      "side": "SELL",
+      "upper": 0.012933499119135912,
+      "open": 0.01309,
       "reported": false
     }
   ],
