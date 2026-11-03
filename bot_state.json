@@ -354,24 +354,28 @@
       "symbol": "BUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.13169,
-      "qty": 1518.7182,
-      "margin": 10.0,
+      "entry": 0.1340486860375805,
+      "qty": 4475.9857,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.12839775,
+      "tp_price": 0.13069746888664097,
       "tf": "1h",
       "opened_at": 1793711121,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 0.13169,
           "ts": 1793711121
+        },
+        {
+          "px": 0.13526,
+          "ts": 1793714646
         }
       ],
       "entry_candle_ts": 1793710800,
-      "last_leg_candle_ts": 1793710800,
+      "last_leg_candle_ts": 1793714400,
       "dry_run": true,
       "order_id": "PAPER-BUSDT-1793711121"
     },
@@ -3317,6 +3321,15 @@
       "open": 0.021364,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "BOMEUSDT",
+      "tf": "1h",
+      "candle_ts": 1793714400,
+      "side": "SELL",
+      "upper": 0.0006320692446168633,
+      "open": 0.0006415,
+      "reported": false
     }
   ],
   "paper_days": [
