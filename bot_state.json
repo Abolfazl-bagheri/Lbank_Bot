@@ -395,6 +395,31 @@
       "last_leg_candle_ts": 1793710800,
       "dry_run": true,
       "order_id": "PAPER-BUSDT-1793711121"
+    },
+    {
+      "symbol": "PUMPUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.004262,
+      "qty": 46926.3257,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.00415545,
+      "tf": "1h",
+      "opened_at": 1793711160,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.004262,
+          "ts": 1793711160
+        }
+      ],
+      "entry_candle_ts": 1793710800,
+      "last_leg_candle_ts": 1793710800,
+      "dry_run": true,
+      "order_id": "PAPER-PUMPUSDT-1793711160"
     }
   ],
   "trade_history": [
@@ -3159,6 +3184,15 @@
       "side": "SELL",
       "upper": 1.8175571520139957,
       "open": 1.842,
+      "reported": false
+    },
+    {
+      "symbol": "BUSDT",
+      "tf": "1h",
+      "candle_ts": 1793710800,
+      "side": "SELL",
+      "upper": 0.1297079182886298,
+      "open": 0.1318,
       "reported": false
     }
   ],
