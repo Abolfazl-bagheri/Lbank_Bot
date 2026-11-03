@@ -264,46 +264,6 @@
       "order_id": "PAPER-CLAUDIAUSDT-1793671431"
     },
     {
-      "symbol": "BMTUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.023590623731460408,
-      "qty": 127169.16820000001,
-      "margin": 150.0,
-      "leverage": 20,
-      "tp_price": 0.0230008581381739,
-      "tf": "1h",
-      "opened_at": 1793682329,
-      "adds": 3,
-      "last_leg_margin": 80.0,
-      "used_res_levels": [
-        0.02336,
-        0.02375
-      ],
-      "steps": [
-        {
-          "px": 0.02345,
-          "ts": 1793682329
-        },
-        {
-          "px": 0.02329,
-          "ts": 1793684845
-        },
-        {
-          "px": 0.02364,
-          "ts": 1793685902
-        },
-        {
-          "px": 0.02366,
-          "ts": 1793687582
-        }
-      ],
-      "entry_candle_ts": 1793682000,
-      "last_leg_candle_ts": 1793687582,
-      "dry_run": true,
-      "order_id": "PAPER-BMTUSDT-1793682329"
-    },
-    {
       "symbol": "RUNEUSDT",
       "side": "SELL",
       "status": "open",
@@ -1507,6 +1467,49 @@
       "closed_at": 1793688492,
       "close_px": 0.02127,
       "pnl_usdt": 16.549154361810547
+    },
+    {
+      "symbol": "BMTUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.023590623731460408,
+      "qty": 127169.16820000001,
+      "margin": 150.0,
+      "leverage": 20,
+      "tp_price": 0.0230008581381739,
+      "tf": "1h",
+      "opened_at": 1793682329,
+      "adds": 3,
+      "last_leg_margin": 80.0,
+      "used_res_levels": [
+        0.02336,
+        0.02375
+      ],
+      "steps": [
+        {
+          "px": 0.02345,
+          "ts": 1793682329
+        },
+        {
+          "px": 0.02329,
+          "ts": 1793684845
+        },
+        {
+          "px": 0.02364,
+          "ts": 1793685902
+        },
+        {
+          "px": 0.02366,
+          "ts": 1793687582
+        }
+      ],
+      "entry_candle_ts": 1793682000,
+      "last_leg_candle_ts": 1793687582,
+      "dry_run": true,
+      "order_id": "PAPER-BMTUSDT-1793682329",
+      "closed_at": 1793689576,
+      "close_px": 0.02294,
+      "pnl_usdt": 82.7392788168723
     }
   ],
   "pending": [
@@ -2998,6 +3001,15 @@
       "side": "SELL",
       "upper": 0.045887355315573204,
       "open": 0.04637,
+      "reported": false
+    },
+    {
+      "symbol": "AXISUSDT",
+      "tf": "1h",
+      "candle_ts": 1793689200,
+      "side": "SELL",
+      "upper": 0.1300852020499605,
+      "open": 0.1315,
       "reported": false
     }
   ],
