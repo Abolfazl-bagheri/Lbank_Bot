@@ -490,6 +490,31 @@
       "last_leg_candle_ts": 1793713500,
       "dry_run": true,
       "order_id": "PAPER-IDOLUSDT-1793713732"
+    },
+    {
+      "symbol": "CHIPUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.0428,
+      "qty": 4672.8972,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.041729999999999996,
+      "tf": "1h",
+      "opened_at": 1793714674,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.0428,
+          "ts": 1793714674
+        }
+      ],
+      "entry_candle_ts": 1793714400,
+      "last_leg_candle_ts": 1793714400,
+      "dry_run": true,
+      "order_id": "PAPER-CHIPUSDT-1793714674"
     }
   ],
   "trade_history": [
@@ -3329,6 +3354,15 @@
       "side": "SELL",
       "upper": 0.0006320692446168633,
       "open": 0.0006415,
+      "reported": false
+    },
+    {
+      "symbol": "BUSDT",
+      "tf": "1h",
+      "candle_ts": 1793714400,
+      "side": "SELL",
+      "upper": 0.1324949785801425,
+      "open": 0.135,
       "reported": false
     }
   ],
