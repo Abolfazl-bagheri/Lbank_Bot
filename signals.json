@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.5",
-  "updated_at": 1793718409,
+  "updated_at": 1793718430,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "CLAUDIAUSDT",
-      "tf": "1h",
-      "gap": 1.58,
-      "ts": 1793692914
-    },
     {
       "kind": "GAP",
       "symbol": "BEATUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 0.55,
       "ts": 1793718409
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793718430
     }
   ],
   "trades": [
@@ -1675,6 +1675,19 @@
       "margin": 10.0,
       "lev": 20,
       "px": 60.72,
+      "pnl": 0.0,
+      "tf": "1h"
+    },
+    {
+      "symbol": "BASUSDT",
+      "side": "SELL",
+      "entry": 0.015597,
+      "tp": 0.015207074999999999,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.015597,
       "pnl": 0.0,
       "tf": "1h"
     }
