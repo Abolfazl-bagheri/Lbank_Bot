@@ -277,6 +277,31 @@
       "last_leg_candle_ts": 1793664900,
       "dry_run": true,
       "order_id": "PAPER-ESPORTSUSDT-1793665136"
+    },
+    {
+      "symbol": "CLAUDIAUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.002327,
+      "qty": 85947.572,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.002268825,
+      "tf": "15m",
+      "opened_at": 1793671356,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.002327,
+          "ts": 1793671356
+        }
+      ],
+      "entry_candle_ts": 1793671200,
+      "last_leg_candle_ts": 1793671200,
+      "dry_run": true,
+      "order_id": "PAPER-CLAUDIAUSDT-1793671356"
     }
   ],
   "trade_history": [
@@ -1417,14 +1442,6 @@
       "tf": "15m",
       "candle_ts": 1793411100,
       "side": "SELL"
-    },
-    {
-      "symbol": "WETUSDT",
-      "tf": "1h",
-      "candle_ts": 1793412000,
-      "side": "SELL",
-      "reported": true,
-      "filled": false
     },
     {
       "symbol": "XPINUSDT",
@@ -2857,7 +2874,7 @@
     "1000WOJAKUSDT": 1793712196,
     "MARRIOTTUSDT": 1793712981
   },
-  "last_trade_report_ts": 1793669014,
+  "last_trade_report_ts": 1793670787,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.4",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
