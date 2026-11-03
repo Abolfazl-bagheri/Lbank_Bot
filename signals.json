@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.5",
-  "updated_at": 1793716509,
+  "updated_at": 1793716532,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "BMTUSDT",
-      "tf": "1h",
-      "gap": 2.71,
-      "ts": 1793685441
-    },
     {
       "kind": "GAP",
       "symbol": "BMTUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1793716509
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793716532
     }
   ],
   "trades": [
@@ -1577,11 +1577,11 @@
     {
       "symbol": "SAGAUSDT",
       "side": "SELL",
-      "entry": 0.01691,
-      "tp": 0.016487250000000002,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
+      "entry": 0.016969893742671004,
+      "tp": 0.01654564639910423,
+      "adds": 1,
+      "pele": 2,
+      "margin": 30.0,
       "lev": 20,
       "px": 0.017,
       "pnl": -1.0645,
