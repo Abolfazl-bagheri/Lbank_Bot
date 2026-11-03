@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.5",
-  "updated_at": 1793711009,
+  "updated_at": 1793711024,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "AGTUSDT",
-      "tf": "15m",
-      "gap": 2.51,
-      "ts": 1793674217
-    },
     {
       "kind": "GAP",
       "symbol": "PIEVERSEUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 2.93,
       "ts": 1793711009
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793711024
     }
   ],
   "trades": [
@@ -1512,11 +1512,11 @@
     {
       "symbol": "AGTUSDT",
       "side": "SELL",
-      "entry": 0.05225,
-      "tp": 0.050943749999999996,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
+      "entry": 0.05449408515198487,
+      "tp": 0.053131733023185246,
+      "adds": 1,
+      "pele": 2,
+      "margin": 30.0,
       "lev": 20,
       "px": 0.05569,
       "pnl": -13.1675,
