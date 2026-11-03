@@ -280,24 +280,30 @@
       "symbol": "MEGAUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.04618,
-      "qty": 4330.8792,
-      "margin": 10.0,
+      "entry": 0.045999648513927696,
+      "qty": 13043.578000000001,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.045025499999999996,
+      "tp_price": 0.0448496573010795,
       "tf": "15m",
       "opened_at": 1793688452,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.04602
+      ],
       "steps": [
         {
           "px": 0.04618,
           "ts": 1793688452
+        },
+        {
+          "px": 0.04591,
+          "ts": 1793696865
         }
       ],
       "entry_candle_ts": 1793688300,
-      "last_leg_candle_ts": 1793688300,
+      "last_leg_candle_ts": 1793696865,
       "dry_run": true,
       "order_id": "PAPER-MEGAUSDT-1793688452"
     },
