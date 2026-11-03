@@ -368,17 +368,18 @@
       "symbol": "LITUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 3.2395490780785154,
-      "qty": 185.211,
-      "margin": 30.0,
+      "entry": 3.291182066537825,
+      "qty": 425.3791,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 3.1585603511265523,
+      "tp_price": 3.2089025148743793,
       "tf": "1h",
       "opened_at": 1793711183,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [
-        3.257
+        3.257,
+        3.335
       ],
       "steps": [
         {
@@ -388,10 +389,14 @@
         {
           "px": 3.2449,
           "ts": 1793712965
+        },
+        {
+          "px": 3.331,
+          "ts": 1793738238
         }
       ],
       "entry_candle_ts": 1793710800,
-      "last_leg_candle_ts": 1793712965,
+      "last_leg_candle_ts": 1793738238,
       "dry_run": true,
       "order_id": "PAPER-LITUSDT-1793711183"
     },
@@ -3772,7 +3777,6 @@
     "COPSTOCKUSDT": 1793413150,
     "OXYUSDT": 1793417641,
     "SAFE1USDT": 1793449863,
-    "PORTALUSDT": 1793471666,
     "AXLUSDT": 1793502358,
     "DODOUSDT": 1793508698,
     "ARROWUSDT": 1793516639,
@@ -3809,9 +3813,7 @@
     "MARRIOTTUSDT": 1793714834,
     "FUTUUSDT": 1793718431,
     "LIGHT1USDT": 1793726282,
-    "HOTUSDT": 1793736319,
     "OROCHIUSDT": 1793736424,
-    "NEXUSDT": 1793736464,
     "AEHRUSDT": 1793742487,
     "QUACKAIUSDT": 1793743546,
     "FLOCK1USDT": 1793751668,
@@ -3829,7 +3831,7 @@
     "AMCUSDT": 1793772630,
     "IRENONUSDT": 1793776197
   },
-  "last_trade_report_ts": 1793733063,
+  "last_trade_report_ts": 1793737245,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.7",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
