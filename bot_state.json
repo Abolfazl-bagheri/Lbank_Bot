@@ -157,31 +157,6 @@
       "order_id": "PAPER-GEUSDT-1793631997"
     },
     {
-      "symbol": "CCLUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 30.374,
-      "qty": 6.5846,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 29.614649999999997,
-      "tf": "4h",
-      "opened_at": 1793635557,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 30.374,
-          "ts": 1793635557
-        }
-      ],
-      "entry_candle_ts": 1793635200,
-      "last_leg_candle_ts": 1793635200,
-      "dry_run": true,
-      "order_id": "PAPER-CCLUSDT-1793635557"
-    },
-    {
       "symbol": "PDDUSDT",
       "side": "SELL",
       "status": "open",
@@ -2140,6 +2115,34 @@
       "closed_at": 1793719356,
       "close_px": 0.04171,
       "pnl_usdt": 5.093457943925237
+    },
+    {
+      "symbol": "CCLUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 30.374,
+      "qty": 6.5846,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 29.614649999999997,
+      "tf": "4h",
+      "opened_at": 1793635557,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 30.374,
+          "ts": 1793635557
+        }
+      ],
+      "entry_candle_ts": 1793635200,
+      "last_leg_candle_ts": 1793635200,
+      "dry_run": true,
+      "order_id": "PAPER-CCLUSDT-1793635557",
+      "closed_at": 1793720176,
+      "close_px": 29.538,
+      "pnl_usdt": 5.504707973925058
     }
   ],
   "pending": [
@@ -3764,6 +3767,15 @@
       "side": "SELL",
       "upper": 0.03586227474358252,
       "open": 0.03719,
+      "reported": false
+    },
+    {
+      "symbol": "TAUSDT",
+      "tf": "15m",
+      "candle_ts": 1793719800,
+      "side": "SELL",
+      "upper": 0.06612119522340507,
+      "open": 0.06714,
       "reported": false
     }
   ],
