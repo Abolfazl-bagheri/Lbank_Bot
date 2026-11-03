@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.7",
-  "updated_at": 1793739824,
+  "updated_at": 1793739844,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "MYXUSDT",
-      "tf": "1h",
-      "gap": 1.85,
-      "ts": 1793718069
-    },
     {
       "kind": "GAP",
       "symbol": "MRNAUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 3.74,
       "ts": 1793739824
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793739844
     }
   ],
   "trades": [
@@ -1651,6 +1651,19 @@
       "px": 0.06998,
       "pnl": -8.2615,
       "tf": "15m"
+    },
+    {
+      "symbol": "CLANKERUSDT",
+      "side": "SELL",
+      "entry": 13.89,
+      "tp": 13.54275,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 13.89,
+      "pnl": 0.0,
+      "tf": "1h"
     }
   ],
   "start": 1000.0,
