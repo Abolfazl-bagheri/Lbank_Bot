@@ -202,37 +202,6 @@
       "order_id": "PAPER-PDDUSDT-1793635671"
     },
     {
-      "symbol": "GPROUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 1.0665910098110374,
-      "qty": 562.5399,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 1.0399262345657614,
-      "tf": "15m",
-      "opened_at": 1793660679,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        1.0771
-      ],
-      "steps": [
-        {
-          "px": 1.054,
-          "ts": 1793660679
-        },
-        {
-          "px": 1.073,
-          "ts": 1793671740
-        }
-      ],
-      "entry_candle_ts": 1793660400,
-      "last_leg_candle_ts": 1793671740,
-      "dry_run": true,
-      "order_id": "PAPER-GPROUSDT-1793660679"
-    },
-    {
       "symbol": "CLAUDIAUSDT",
       "side": "SELL",
       "status": "open",
@@ -1514,6 +1483,40 @@
       "closed_at": 1793690333,
       "close_px": 0.5705,
       "pnl_usdt": 5.522413499232996
+    },
+    {
+      "symbol": "GPROUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 1.0665910098110374,
+      "qty": 562.5399,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 1.0399262345657614,
+      "tf": "15m",
+      "opened_at": 1793660679,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        1.0771
+      ],
+      "steps": [
+        {
+          "px": 1.054,
+          "ts": 1793660679
+        },
+        {
+          "px": 1.073,
+          "ts": 1793671740
+        }
+      ],
+      "entry_candle_ts": 1793660400,
+      "last_leg_candle_ts": 1793671740,
+      "dry_run": true,
+      "order_id": "PAPER-GPROUSDT-1793660679",
+      "closed_at": 1793696861,
+      "close_px": 1.019,
+      "pnl_usdt": 26.771841900000044
     }
   ],
   "pending": [
@@ -3018,6 +3021,15 @@
       "side": "SELL",
       "upper": 0.0026064809855760127,
       "open": 0.002687,
+      "reported": false
+    },
+    {
+      "symbol": "AXISUSDT",
+      "tf": "1h",
+      "candle_ts": 1793696400,
+      "side": "SELL",
+      "upper": 0.13519998479301915,
+      "open": 0.1366,
       "reported": false
     }
   ],
