@@ -515,6 +515,31 @@
       "last_leg_candle_ts": 1793714400,
       "dry_run": true,
       "order_id": "PAPER-CHIPUSDT-1793714674"
+    },
+    {
+      "symbol": "NIGHTUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.0424,
+      "qty": 4716.9811,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.04134,
+      "tf": "1h",
+      "opened_at": 1793714760,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.0424,
+          "ts": 1793714760
+        }
+      ],
+      "entry_candle_ts": 1793714400,
+      "last_leg_candle_ts": 1793714400,
+      "dry_run": true,
+      "order_id": "PAPER-NIGHTUSDT-1793714760"
     }
   ],
   "trade_history": [
@@ -3363,6 +3388,15 @@
       "side": "SELL",
       "upper": 0.1324949785801425,
       "open": 0.135,
+      "reported": false
+    },
+    {
+      "symbol": "CHIPUSDT",
+      "tf": "1h",
+      "candle_ts": 1793714400,
+      "side": "SELL",
+      "upper": 0.04233023331849968,
+      "open": 0.04278,
       "reported": false
     }
   ],
