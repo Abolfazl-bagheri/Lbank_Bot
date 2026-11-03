@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.4",
-  "updated_at": 1793671354,
+  "updated_at": 1793671365,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "CCLUSDT",
-      "tf": "4h",
-      "gap": 1.57,
-      "ts": 1793635555
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 2.24,
       "ts": 1793671354
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793671365
     }
   ],
   "trades": [
@@ -1520,6 +1520,19 @@
       "lev": 20,
       "px": 0.014766,
       "pnl": 0.7018,
+      "tf": "15m"
+    },
+    {
+      "symbol": "CLAUDIAUSDT",
+      "side": "SELL",
+      "entry": 0.002327,
+      "tp": 0.002268825,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.002327,
+      "pnl": 0.0,
       "tf": "15m"
     }
   ],
