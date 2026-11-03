@@ -35,7 +35,7 @@ SIGNALS_FILE = os.path.join(BASE_DIR, "signals.json")
 LIVE_TOPIC = os.environ.get("LIVE_TOPIC", "lbank-gap-b0b85cee29ce").strip()
 STATE_BAK = os.path.join(BASE_DIR, "bot_state.bak")
 
-BOT_VERSION = "2.6.6"
+BOT_VERSION = "2.6.7"
 CHANGELOG = {
     "2.6.5": [
         "چارت اجباری: خط‌روند داینامیک + سقف پله با هم",
@@ -1273,13 +1273,17 @@ def close_trade_record(rec: dict, px: float, reason: str) -> None:
             "t": "close",
             "ts": int(rec["closed_at"]),
             "symbol": rec.get("symbol"),
+            "side": rec.get("side") or "SELL",
             "entry": entry,
             "exit": float(px),
             "pnl": round(float(pnl), 4),
             "roi": round(float(margin_roi), 2),
+            "margin": round(float(margin), 4),
+            "lev": int(lev),
             "steps": int(rec.get("adds") or 0) + 1,
             "dur": dur,
-            "why": str(reason or "TP")[:20],
+            "tf": rec.get("tf"),
+            "why": str(reason or "TP")[:24],
         })
     except Exception:
         pass
@@ -1437,12 +1441,11 @@ def maybe_send_hourly_trade_report() -> None:
 
 
 def maybe_send_daily_paper_report() -> None:
-    """گزارش پایان‌روز + ریست موجودی paper به ۱۰۰۰."""
+    """۰۳:۳۰ ایران: بستن mark-to-market بازها + ذخیره روز + ریست paper."""
     global _last_daily_report_date
     if not trading_enabled():
         return
     now_ir = iran_now()
-    # ریست هم‌زمان با باز شدن کندل روزانه (۰۳:۳۰ ایران)
     if not (now_ir.hour == 3 and 30 <= now_ir.minute <= 44):
         return
     day_key = now_ir.strftime("%Y-%m-%d")
@@ -1452,34 +1455,58 @@ def maybe_send_daily_paper_report() -> None:
 
     since = int(time.time()) - 24 * 3600
     profit, loss, net, cnt = _closed_pnl_since(since)
-    open_upnl = 0.0
-    for rec in open_trades:
+
+    # بستن همه پوزیشن‌های باز با قیمت لحظه‌ای (برای تاریخچه و صفحه وب)
+    reset_pnls = []
+    reset_rows = []
+    for rec in list(open_trades):
         if rec.get("status") != "open":
             continue
-        px = get_futures_last(rec.get("symbol") or "") or 0.0
-        if px:
-            pnl, _ = _sell_upnl(rec, float(px))
-            open_upnl += pnl
-    day_net = profit + open_upnl  # بدون شمارش «ضرر بسته» جدا
-    balance = PAPER_START_BALANCE + sum(float(x.get("pnl_usdt") or 0) for x in trade_history if x.get("status") == "closed") + open_upnl
-    mode = "PAPER" if is_paper_mode() else "LIVE"
-    loss_line = ""
-    if day_net < 0 or open_upnl < 0:
-        loss_line = f"\n🔴 <b>امروز در ضرر:</b> day={day_net:+.2f}U · باز={open_upnl:+.2f}U"
-    send_telegram_text(
-        f"🌙 <b>گزارش روزانه {mode}</b>\n"
-        f"📅 {day_key}\n"
-        f"────────\n"
-        f"معاملات بسته‌شده: <b>{cnt}</b>\n"
-        f"🟢 سود TP: <b>{profit:+.2f}U</b>\n"
-        f"uPnL باز: <b>{open_upnl:+.2f}U</b>\n"
-        f"خالص روز: <b>{day_net:+.2f}U</b>\n"
-        f"💼 موجودی قبل ریست: <b>{balance:.2f}U</b>"
-        f"{loss_line}\n"
-        f"────────\n"
-        f"♻️ ریست شبانه paper → موجودی <b>{PAPER_START_BALANCE:.0f}U</b>"
+        sym = rec.get("symbol") or ""
+        px = get_futures_last(sym) or float(rec.get("entry") or 0)
+        if not px:
+            continue
+        pnl_before, roi_before = _sell_upnl(rec, float(px))
+        close_trade_record(rec, float(px), "NIGHT_RESET")
+        reset_pnls.append(float(pnl_before))
+        reset_rows.append({
+            "symbol": sym,
+            "entry": float(rec.get("entry") or 0),
+            "exit": float(px),
+            "pnl": round(float(pnl_before), 4),
+            "roi": round(float(roi_before), 2),
+            "steps": int(rec.get("adds") or 0) + 1,
+            "tf": rec.get("tf"),
+            "why": "NIGHT_RESET",
+        })
+
+    unrealized_closed = sum(reset_pnls)
+    open_trades[:] = [x for x in open_trades if x.get("status") == "open"]
+    day_net = float(profit) + float(unrealized_closed)
+    balance = PAPER_START_BALANCE + sum(
+        float(x.get("pnl_usdt") or 0) for x in trade_history if x.get("status") == "closed"
     )
-    # ذخیره روز قبل از ریست
+    mode = "PAPER" if is_paper_mode() else "LIVE"
+
+    # ntfy: خلاصه ریست برای صفحه
+    try:
+        push_live({
+            "t": "reset",
+            "ts": int(time.time()),
+            "day": day_key,
+            "mode": mode,
+            "start": float(PAPER_START_BALANCE),
+            "tp_profit": round(float(profit), 4),
+            "tp_trades": int(cnt),
+            "reset_pnl": round(float(unrealized_closed), 4),
+            "reset_trades": len(reset_rows),
+            "net": round(float(day_net), 4),
+            "balance_before": round(float(balance), 4),
+            "closes": reset_rows[:40],
+        })
+    except Exception:
+        pass
+
     try:
         day_from = int(time.time()) - 24 * 3600
         paper_days.append({
@@ -1487,17 +1514,27 @@ def maybe_send_daily_paper_report() -> None:
             "to": int(time.time()),
             "start": float(PAPER_START_BALANCE),
             "realized": round(float(profit), 4),
-            "unrealized_closed": 0,
-            "trades": int(cnt),
+            "unrealized_closed": round(float(unrealized_closed), 4),
+            "net": round(float(day_net), 4),
+            "trades": int(cnt) + len(reset_rows),
+            "tp_trades": int(cnt),
+            "reset_trades": len(reset_rows),
         })
         paper_days[:] = paper_days[-30:]
         push_days_live()
     except Exception as e:
         log.debug("paper_days: %s", e)
+
     if is_paper_mode():
         open_trades.clear()
-        trade_history.clear()
-        log.info("PAPER_NIGHT_RESET balance -> %.0f", PAPER_START_BALANCE)
+        # history را نگه می‌داریم تا صفحه وب کلوزها را ببیند؛ فقط کوتاه می‌کنیم
+        if len(trade_history) > 400:
+            del trade_history[:-400]
+        log.info(
+            "PAPER_NIGHT_RESET day=%s tp=%+.2f (%d) reset=%+.2f (%d) net=%+.2f",
+            day_key, profit, cnt, unrealized_closed, len(reset_rows), day_net,
+        )
+    push_positions_live()
     save_state(force_remote=True)
 
 
