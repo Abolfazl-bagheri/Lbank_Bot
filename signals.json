@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.5",
-  "updated_at": 1793719351,
+  "updated_at": 1793719375,
   "signals": [
-    {
-      "kind": "HEARTBEAT",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1793695753
-    },
     {
       "kind": "GAP",
       "symbol": "AXISUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1793719351
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793719375
     }
   ],
   "trades": [
@@ -1575,26 +1575,13 @@
       "tf": "1h"
     },
     {
-      "symbol": "CHIPUSDT",
-      "side": "SELL",
-      "entry": 0.0428,
-      "tp": 0.041729999999999996,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.04171,
-      "pnl": 5.0935,
-      "tf": "1h"
-    },
-    {
       "symbol": "NIGHTUSDT",
       "side": "SELL",
-      "entry": 0.04222631164266468,
-      "tp": 0.041170653851598064,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
+      "entry": 0.04268184635881001,
+      "tp": 0.04161480019983976,
+      "adds": 2,
+      "pele": 3,
+      "margin": 70.0,
       "lev": 20,
       "px": 0.04303,
       "pnl": -11.4197,
@@ -1680,16 +1667,16 @@
     }
   ],
   "start": 1000.0,
-  "realized": 929.4016,
-  "closed_n": 44,
-  "open_upnl": -36.6352,
-  "equity": 1892.7664,
+  "realized": 934.495,
+  "closed_n": 45,
+  "open_upnl": -41.7287,
+  "equity": 1892.7663,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 929.4016,
+    "profit": 934.495,
     "loss": 0,
-    "count": 44
+    "count": 45
   }
 }
