@@ -357,6 +357,31 @@
       "last_leg_candle_ts": 1793682000,
       "dry_run": true,
       "order_id": "PAPER-BMTUSDT-1793682329"
+    },
+    {
+      "symbol": "ICNTUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.2046,
+      "qty": 977.5171,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.199485,
+      "tf": "15m",
+      "opened_at": 1793683005,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.2046,
+          "ts": 1793683005
+        }
+      ],
+      "entry_candle_ts": 1793682900,
+      "last_leg_candle_ts": 1793682900,
+      "dry_run": true,
+      "order_id": "PAPER-ICNTUSDT-1793683005"
     }
   ],
   "trade_history": [
@@ -2821,6 +2846,15 @@
       "upper": 0.02144802050752271,
       "open": 0.02168,
       "reported": false
+    },
+    {
+      "symbol": "BMTUSDT",
+      "tf": "1h",
+      "candle_ts": 1793682000,
+      "side": "SELL",
+      "upper": 0.02294555478738375,
+      "open": 0.02339,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -2876,7 +2910,6 @@
     "OFCUSDT": 1793659840,
     "KOPNUSDT": 1793668799,
     "LWLGUSDT": 1793675941,
-    "LIGHT1USDT": 1793676789,
     "ONSEMIUSDT": 1793676808,
     "EWZSUSDT": 1793678937,
     "BIDUUSDT": 1793678955,
@@ -2898,7 +2931,7 @@
     "AMCUSDT": 1793724441,
     "CAPETHUSDT": 1793724461
   },
-  "last_trade_report_ts": 1793681287,
+  "last_trade_report_ts": 1793682423,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.5",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
