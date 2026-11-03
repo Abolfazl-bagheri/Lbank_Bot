@@ -1,8 +1,50 @@
 {
   "mode": "PAPER",
   "version": "2.6.5",
-  "updated_at": 1793685806,
+  "updated_at": 1793685874,
   "signals": [
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793641901
+    },
+    {
+      "kind": "GAP",
+      "symbol": "TEMUSDT",
+      "tf": "1h",
+      "gap": 1.18,
+      "ts": 1793642063
+    },
+    {
+      "kind": "GAP",
+      "symbol": "NOMUSDT",
+      "tf": "1h",
+      "gap": 4.42,
+      "ts": 1793642079
+    },
+    {
+      "kind": "GAP",
+      "symbol": "SOXSUSDT",
+      "tf": "1h",
+      "gap": 2.53,
+      "ts": 1793642090
+    },
+    {
+      "kind": "GAP",
+      "symbol": "GRVTUSDT",
+      "tf": "1h",
+      "gap": 1.95,
+      "ts": 1793642121
+    },
+    {
+      "kind": "GAP",
+      "symbol": "TWLOUSDT",
+      "tf": "1h",
+      "gap": 1.43,
+      "ts": 1793642127
+    },
     {
       "kind": "GAP",
       "symbol": "NOMUSDT",
@@ -1331,77 +1373,35 @@
       "symbol": "—",
       "tf": "—",
       "gap": 0.0,
-      "ts": 1793684703
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1793684853
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1793684861
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1793685013
+      "ts": 1793684933
     },
     {
       "kind": "HEARTBEAT",
       "symbol": "—",
       "tf": "—",
       "gap": 0.0,
-      "ts": 1793685015
+      "ts": 1793684935
     },
     {
       "kind": "GAP",
       "symbol": "CLAUDIAUSDT",
       "tf": "1h",
-      "gap": 2.73,
-      "ts": 1793685423
+      "gap": 2.67,
+      "ts": 1793685434
     },
     {
       "kind": "GAP",
       "symbol": "PIEVERSEUSDT",
       "tf": "1h",
-      "gap": 1.51,
-      "ts": 1793685432
-    },
-    {
-      "kind": "GAP",
-      "symbol": "IRYSUSDT",
-      "tf": "1h",
-      "gap": 2.54,
-      "ts": 1793685437
+      "gap": 1.46,
+      "ts": 1793685440
     },
     {
       "kind": "GAP",
       "symbol": "BMTUSDT",
       "tf": "1h",
-      "gap": 2.71,
-      "ts": 1793685441
-    },
-    {
-      "kind": "GAP",
-      "symbol": "BMTUSDT",
-      "tf": "1h",
-      "gap": 2.11,
-      "ts": 1793685802
-    },
-    {
-      "kind": "GAP",
-      "symbol": "AXISUSDT",
-      "tf": "1h",
-      "gap": 1.15,
-      "ts": 1793685806
+      "gap": 2.23,
+      "ts": 1793685874
     }
   ],
   "trades": [
@@ -1538,22 +1538,22 @@
     {
       "symbol": "BMTUSDT",
       "side": "SELL",
-      "entry": 0.023343090183613135,
-      "tp": 0.022759512929022806,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
+      "entry": 0.02345,
+      "tp": 0.02286375,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
       "lev": 20,
       "px": 0.02399,
-      "pnl": -16.6279,
+      "pnl": -4.6055,
       "tf": "1h"
     }
   ],
   "start": 1000.0,
   "realized": 662.791,
   "closed_n": 34,
-  "open_upnl": -8.7062,
-  "equity": 1654.0848,
+  "open_upnl": 3.3162,
+  "equity": 1666.1072,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
