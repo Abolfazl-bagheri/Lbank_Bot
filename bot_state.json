@@ -552,6 +552,31 @@
       "last_leg_candle_ts": 1793717540,
       "dry_run": true,
       "order_id": "PAPER-DRIFTUSDT-1793714798"
+    },
+    {
+      "symbol": "RUNEUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.6128,
+      "qty": 326.3708,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.59748,
+      "tf": "15m",
+      "opened_at": 1793718219,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.6128,
+          "ts": 1793718219
+        }
+      ],
+      "entry_candle_ts": 1793718000,
+      "last_leg_candle_ts": 1793718000,
+      "dry_run": true,
+      "order_id": "PAPER-RUNEUSDT-1793718219"
     }
   ],
   "trade_history": [
@@ -2142,30 +2167,6 @@
       "side": "SELL"
     },
     {
-      "symbol": "COWUSDT",
-      "tf": "1h",
-      "candle_ts": 1793458800,
-      "side": "SELL",
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "REDUSDT",
-      "tf": "1h",
-      "candle_ts": 1793458800,
-      "side": "SELL",
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "HYPERUSDT",
-      "tf": "1h",
-      "candle_ts": 1793458800,
-      "side": "SELL",
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "GUNUSDT",
       "tf": "1h",
       "candle_ts": 1793466000,
@@ -3461,7 +3462,8 @@
       "side": "SELL",
       "upper": 0.0006320692446168633,
       "open": 0.0006415,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "BUSDT",
@@ -3470,7 +3472,8 @@
       "side": "SELL",
       "upper": 0.1324949785801425,
       "open": 0.135,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CHIPUSDT",
@@ -3479,7 +3482,8 @@
       "side": "SELL",
       "upper": 0.04233023331849968,
       "open": 0.04278,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "NIGHTUSDT",
@@ -3488,7 +3492,8 @@
       "side": "SELL",
       "upper": 0.04201895165871213,
       "open": 0.04249,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "DRIFTUSDT",
@@ -3497,7 +3502,8 @@
       "side": "SELL",
       "upper": 0.012933499119135912,
       "open": 0.01309,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -3514,7 +3520,6 @@
     "STXSTOCKUSDT": 1793301443,
     "IBBETFUSDT": 1793310363,
     "CANTONUSDT": 1793322198,
-    "RIOTUSDT": 1793324068,
     "BTCDOMUSDT": 1793350188,
     "GMESTOCKUSDT": 1793353780,
     "EURUSDT": 1793385188,
@@ -3580,7 +3585,7 @@
     "CZUSDT": 1793758880,
     "OSCRUSDT": 1793760691
   },
-  "last_trade_report_ts": 1793716553,
+  "last_trade_report_ts": 1793717573,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.5",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
