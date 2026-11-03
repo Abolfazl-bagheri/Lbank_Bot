@@ -711,17 +711,18 @@
       "symbol": "SMCIUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 34.04999999999999,
-      "qty": 17.621100000000002,
-      "margin": 30.0,
+      "entry": 34.35648881450433,
+      "qty": 40.7492,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 33.19874999999999,
+      "tp_price": 33.49757659414172,
       "tf": "1h",
       "opened_at": 1793743474,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [
-        34.11
+        34.11,
+        34.67
       ],
       "steps": [
         {
@@ -731,10 +732,14 @@
         {
           "px": 34.05,
           "ts": 1793743661
+        },
+        {
+          "px": 34.59,
+          "ts": 1793748182
         }
       ],
       "entry_candle_ts": 1793743200,
-      "last_leg_candle_ts": 1793743661,
+      "last_leg_candle_ts": 1793748182,
       "dry_run": true,
       "order_id": "PAPER-SMCIUSDT-1793743474"
     },
@@ -4077,6 +4082,15 @@
       "upper": 0.2560033092323581,
       "open": 0.25899,
       "reported": false
+    },
+    {
+      "symbol": "CATEUSDT",
+      "tf": "1h",
+      "candle_ts": 1793746800,
+      "side": "SELL",
+      "upper": 0.040289962058326315,
+      "open": 0.041236,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -4159,7 +4173,7 @@
     "SIMOUSDT": 1793785920,
     "QUACKAIUSDT": 1793787693
   },
-  "last_trade_report_ts": 1793746427,
+  "last_trade_report_ts": 1793747392,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.7",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
