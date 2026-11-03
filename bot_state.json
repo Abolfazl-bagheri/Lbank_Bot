@@ -370,6 +370,31 @@
       "last_leg_candle_ts": 1793710800,
       "dry_run": true,
       "order_id": "PAPER-ZROUSDT-1793711093"
+    },
+    {
+      "symbol": "BUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.13169,
+      "qty": 1518.7182,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.12839775,
+      "tf": "1h",
+      "opened_at": 1793711121,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.13169,
+          "ts": 1793711121
+        }
+      ],
+      "entry_candle_ts": 1793710800,
+      "last_leg_candle_ts": 1793710800,
+      "dry_run": true,
+      "order_id": "PAPER-BUSDT-1793711121"
     }
   ],
   "trade_history": [
@@ -3125,6 +3150,15 @@
       "side": "SELL",
       "upper": 0.05340825311010008,
       "open": 0.055259,
+      "reported": false
+    },
+    {
+      "symbol": "ZROUSDT",
+      "tf": "1h",
+      "candle_ts": 1793710800,
+      "side": "SELL",
+      "upper": 1.8175571520139957,
+      "open": 1.842,
       "reported": false
     }
   ],
