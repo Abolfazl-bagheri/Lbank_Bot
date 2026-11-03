@@ -433,24 +433,30 @@
       "symbol": "SAGAUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.01691,
-      "qty": 11827.3211,
-      "margin": 10.0,
+      "entry": 0.016969893742671004,
+      "qty": 35356.7329,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.016487250000000002,
+      "tp_price": 0.01654564639910423,
       "tf": "1h",
       "opened_at": 1793711209,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.01705
+      ],
       "steps": [
         {
           "px": 0.01691,
           "ts": 1793711209
+        },
+        {
+          "px": 0.017,
+          "ts": 1793716514
         }
       ],
       "entry_candle_ts": 1793710800,
-      "last_leg_candle_ts": 1793710800,
+      "last_leg_candle_ts": 1793716514,
       "dry_run": true,
       "order_id": "PAPER-SAGAUSDT-1793711209"
     },
