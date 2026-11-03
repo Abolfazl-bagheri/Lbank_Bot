@@ -287,17 +287,18 @@
       "symbol": "ZROUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 1.8733812446745237,
-      "qty": 320.2765,
-      "margin": 30.0,
+      "entry": 1.8682385383035596,
+      "qty": 749.3689999999999,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 1.8265467135576605,
+      "tp_price": 1.8215325748459705,
       "tf": "1h",
       "opened_at": 1793711093,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [
-        1.89
+        1.89,
+        1.868
       ],
       "steps": [
         {
@@ -307,10 +308,14 @@
         {
           "px": 1.8867,
           "ts": 1793716493
+        },
+        {
+          "px": 1.8644,
+          "ts": 1793719333
         }
       ],
       "entry_candle_ts": 1793710800,
-      "last_leg_candle_ts": 1793716493,
+      "last_leg_candle_ts": 1793719333,
       "dry_run": true,
       "order_id": "PAPER-ZROUSDT-1793711093"
     },
@@ -3636,7 +3641,8 @@
       "side": "SELL",
       "upper": 0.6046022476171773,
       "open": 0.6118,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "SHAZUSDT",
@@ -3645,7 +3651,8 @@
       "side": "SELL",
       "upper": 23.24703857637358,
       "open": 23.57,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "DRIFTUSDT",
@@ -3772,7 +3779,7 @@
     "CZUSDT": 1793758880,
     "OSCRUSDT": 1793760691
   },
-  "last_trade_report_ts": 1793717573,
+  "last_trade_report_ts": 1793718635,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.5",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
