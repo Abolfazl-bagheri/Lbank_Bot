@@ -568,24 +568,30 @@
       "symbol": "DRIFTUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.01307,
-      "qty": 15302.2188,
-      "margin": 10.0,
+      "entry": 0.01308332653581834,
+      "qty": 45859.8964,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.01274325,
+      "tp_price": 0.012756243372422881,
       "tf": "1h",
       "opened_at": 1793714798,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.01314
+      ],
       "steps": [
         {
           "px": 0.01307,
           "ts": 1793714798
+        },
+        {
+          "px": 0.01309,
+          "ts": 1793715716
         }
       ],
       "entry_candle_ts": 1793714400,
-      "last_leg_candle_ts": 1793714400,
+      "last_leg_candle_ts": 1793715716,
       "dry_run": true,
       "order_id": "PAPER-DRIFTUSDT-1793714798"
     }
