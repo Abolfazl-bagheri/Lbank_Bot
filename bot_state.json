@@ -290,29 +290,29 @@
       "order_id": "PAPER-ICNTUSDT-1793656971"
     },
     {
-      "symbol": "GPROUSDT",
+      "symbol": "ESPORTSUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 1.065,
-      "qty": 187.7934,
+      "entry": 0.014818,
+      "qty": 13497.0981,
       "margin": 10.0,
       "leverage": 20,
-      "tp_price": 1.0383749999999998,
+      "tp_price": 0.01444755,
       "tf": "15m",
-      "opened_at": 1793660588,
+      "opened_at": 1793665136,
       "adds": 0,
       "last_leg_margin": 10.0,
       "used_res_levels": [],
       "steps": [
         {
-          "px": 1.065,
-          "ts": 1793660588
+          "px": 0.014818,
+          "ts": 1793665136
         }
       ],
-      "entry_candle_ts": 1793660400,
-      "last_leg_candle_ts": 1793660400,
+      "entry_candle_ts": 1793664900,
+      "last_leg_candle_ts": 1793664900,
       "dry_run": true,
-      "order_id": "PAPER-GPROUSDT-1793660588"
+      "order_id": "PAPER-ESPORTSUSDT-1793665136"
     }
   ],
   "trade_history": [
@@ -1246,6 +1246,34 @@
       "closed_at": 1793659911,
       "close_px": 0.11338,
       "pnl_usdt": 5.523156089193827
+    },
+    {
+      "symbol": "GPROUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 1.065,
+      "qty": 187.7934,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 1.0383749999999998,
+      "tf": "15m",
+      "opened_at": 1793660588,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 1.065,
+          "ts": 1793660588
+        }
+      ],
+      "entry_candle_ts": 1793660400,
+      "last_leg_candle_ts": 1793660400,
+      "dry_run": true,
+      "order_id": "PAPER-GPROUSDT-1793660588",
+      "closed_at": 1793661765,
+      "close_px": 1.029,
+      "pnl_usdt": 6.760563380281697
     }
   ],
   "pending": [
@@ -1368,22 +1396,6 @@
       "tf": "15m",
       "candle_ts": 1793392200,
       "side": "SELL"
-    },
-    {
-      "symbol": "SOPHUSDT",
-      "tf": "4h",
-      "candle_ts": 1793404800,
-      "side": "SELL",
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "ACEUSDT",
-      "tf": "1h",
-      "candle_ts": 1793404800,
-      "side": "SELL",
-      "reported": true,
-      "filled": false
     },
     {
       "symbol": "WETUSDT",
@@ -2831,7 +2843,7 @@
     "AEHRUSDT": 1793697560,
     "FIGHT1USDT": 1793700356
   },
-  "last_trade_report_ts": 1793660825,
+  "last_trade_report_ts": 1793662709,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.4",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
