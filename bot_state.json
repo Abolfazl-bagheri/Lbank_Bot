@@ -284,31 +284,6 @@
       "order_id": "PAPER-CLAUDIAUSDT-1793671431"
     },
     {
-      "symbol": "AGTUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.04286,
-      "qty": 4666.3556,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.0417885,
-      "tf": "1h",
-      "opened_at": 1793675073,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.04286,
-          "ts": 1793675073
-        }
-      ],
-      "entry_candle_ts": 1793674800,
-      "last_leg_candle_ts": 1793674800,
-      "dry_run": true,
-      "order_id": "PAPER-AGTUSDT-1793675073"
-    },
-    {
       "symbol": "IRYSUSDT",
       "side": "SELL",
       "status": "open",
@@ -1388,6 +1363,34 @@
       "closed_at": 1793677030,
       "close_px": 0.1842,
       "pnl_usdt": 15.8095321558604
+    },
+    {
+      "symbol": "AGTUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.04286,
+      "qty": 4666.3556,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0417885,
+      "tf": "1h",
+      "opened_at": 1793675073,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.04286,
+          "ts": 1793675073
+        }
+      ],
+      "entry_candle_ts": 1793674800,
+      "last_leg_candle_ts": 1793674800,
+      "dry_run": true,
+      "order_id": "PAPER-AGTUSDT-1793675073",
+      "closed_at": 1793683265,
+      "close_px": 0.04147,
+      "pnl_usdt": 6.486234251049941
     }
   ],
   "pending": [
@@ -2855,6 +2858,15 @@
       "upper": 0.02294555478738375,
       "open": 0.02339,
       "reported": false
+    },
+    {
+      "symbol": "ICNTUSDT",
+      "tf": "15m",
+      "candle_ts": 1793682900,
+      "side": "SELL",
+      "upper": 0.20033116792249248,
+      "open": 0.2036,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -2929,7 +2941,8 @@
     "NEIRO1USDT": 1793714916,
     "FUTUUSDT": 1793718431,
     "AMCUSDT": 1793724441,
-    "CAPETHUSDT": 1793724461
+    "CAPETHUSDT": 1793724461,
+    "LIGHT1USDT": 1793726282
   },
   "last_trade_report_ts": 1793682423,
   "last_daily_report_date": "2026-11-01",
