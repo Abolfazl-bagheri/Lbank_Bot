@@ -231,24 +231,30 @@
       "symbol": "CLAUDIAUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.002299,
-      "qty": 86994.3454,
-      "margin": 10.0,
+      "entry": 0.0024820750382418986,
+      "qty": 241733.22350000002,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.002241525,
+      "tp_price": 0.0024200231622858513,
       "tf": "15m",
       "opened_at": 1793671431,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.002592
+      ],
       "steps": [
         {
           "px": 0.002299,
           "ts": 1793671431
+        },
+        {
+          "px": 0.002585,
+          "ts": 1793686814
         }
       ],
       "entry_candle_ts": 1793671200,
-      "last_leg_candle_ts": 1793671200,
+      "last_leg_candle_ts": 1793686814,
       "dry_run": true,
       "order_id": "PAPER-CLAUDIAUSDT-1793671431"
     },
@@ -2962,7 +2968,7 @@
     "CAPETHUSDT": 1793724461,
     "LIGHT1USDT": 1793726282
   },
-  "last_trade_report_ts": 1793685015,
+  "last_trade_report_ts": 1793686067,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.5",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
