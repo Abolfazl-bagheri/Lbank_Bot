@@ -156,6 +156,22 @@ body{font-variant-numeric:tabular-nums}
 .bento>.card{display:none}
 body[data-tab=ov] .bento>.card[data-tab=ov],body[data-tab=gp] .bento>.card[data-tab=gp],body[data-tab=rp] .bento>.card[data-tab=rp],body[data-tab=hs] .bento>.card[data-tab=hs]{display:block}
 @media(max-width:700px){.tabs{position:fixed;top:auto;bottom:0;left:0;right:0;margin:0;padding:8px 10px calc(8px + env(safe-area-inset-bottom,0px));background:rgba(10,12,18,.94);border-top:1px solid var(--b);justify-content:space-around}.tabs button{flex:1;padding:8px 4px;font-size:11.5px}.wrap{padding-bottom:88px}.toast{bottom:calc(80px + env(safe-area-inset-bottom,0px))}}
+.rhero{margin-bottom:6px}.rh{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:12px}.rt{font-weight:800;font-size:16px}
+.rbig{display:flex;align-items:baseline;justify-content:space-between;gap:10px;padding:14px 18px;border-radius:18px;background:linear-gradient(135deg,rgba(139,123,255,.18),rgba(56,217,255,.07));border:1px solid var(--b);margin-bottom:12px}
+.rbig span{color:var(--mut);font-size:12px}.rbig b{font-size:clamp(26px,6vw,38px);font-weight:900;direction:ltr}
+.rtiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(92px,1fr));gap:8px;margin-bottom:10px}
+.rtiles div{background:rgba(255,255,255,.04);border:1px solid var(--b);border-radius:14px;padding:8px 10px}.rtiles span{display:block;font-size:11px;color:var(--mut)}.rtiles b{font-size:15px;direction:ltr;display:block;text-align:right}
+.rr{display:flex;align-items:center;gap:8px;padding:9px 2px;border-top:1px solid var(--b)}.rr b{direction:ltr}.rr .sp{flex:1}.rr small{color:var(--mut);direction:ltr;min-width:54px;text-align:left}
+.rsec{margin:18px 0 4px;font-size:12px;color:var(--mut);letter-spacing:.4px}
+.tl{display:grid;grid-template-columns:34px 1fr auto;gap:12px;align-items:center;padding:10px 0;border-top:1px solid var(--b)}
+.ti{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font-style:normal;background:rgba(255,255,255,.06)}
+.ti.ok{background:rgba(45,226,166,.16)}.ti.wt{background:rgba(255,181,71,.16)}.ti.bad{background:rgba(255,77,109,.16)}.ti.in{background:rgba(56,217,255,.14)}
+.tc{min-width:0}.tc small{display:block;color:var(--mut);font-size:11.5px;direction:ltr;text-align:right}
+.tv{text-align:left;direction:ltr;font-weight:800}.tv small{display:block;font-weight:400;color:var(--mut);font-size:11px}
+.tgn{white-space:pre-wrap;color:var(--mut);font-size:12.5px}
+.rsec2{margin-top:14px;color:var(--mut);font-size:12.5px}.rsec2 .rr{color:var(--ink)}
+.xb{display:flex;height:10px;border-radius:8px;overflow:hidden;margin-top:14px;background:var(--b)}.xb i{display:block;height:100%}
+#xl span{display:inline-flex;align-items:center;gap:5px;margin-inline-end:12px;font-size:11.5px;color:var(--mut)}#xl i{display:inline-block;width:8px;height:8px;border-radius:50%}
 </style>
 </head>
 <body data-tab="ov">
@@ -173,16 +189,18 @@ body[data-tab=ov] .bento>.card[data-tab=ov],body[data-tab=gp] .bento>.card[data-
 <div class="tabs" id="tabs"><button data-t="ov" aria-selected="true">📊 نمای کلی<i id="tb_ov" style="display:none"></i></button><button data-t="gp" aria-selected="false">📡 گپ‌ها<i id="tb_gp" style="display:none"></i></button><button data-t="rp" aria-selected="false">📨 گزارش‌ها</button><button data-t="hs" aria-selected="false">📒 تاریخچه</button></div>
 <section class="bento">
   <div class="card s12" data-tab="ov"><div class="wal"><div><div class="lb">💰 موجودی فعلی (Equity) · شروع ۱۰۰۰ تتر</div><div class="eqv" id="eqv">—</div><div class="lb" id="eqd"></div></div><div><div id="gwrap"><div style="display:flex;justify-content:space-between"><span class="lb">فاصله تا لیکوئید</span><b id="gpct" style="direction:ltr"></b></div><div class="gz"><i id="gi" style="left:100%"></i></div></div><div class="lb" id="gnote"></div></div></div>
-    <div class="mg"><div><span>موجودی تحقق‌یافته</span><b id="m0"></b></div><div><span>PnL شناور</span><b id="m1"></b></div><div><span>مارجین درگیر</span><b id="m2"></b></div><div><span>مارجین آزاد</span><b id="m3"></b></div><div><span>پوزیشن باز</span><b id="m4"></b></div><div><span>خالص بسته‌شده</span><b id="m5"></b></div></div>
+    <div class="mg"><div><span>موجودی تحقق‌یافته</span><b id="m0"></b></div><div><span>PnL شناور</span><b id="m1"></b></div><div><span>مارجین درگیر</span><b id="m2"></b></div><div><span>مارجین آزاد</span><b id="m3"></b></div><div><span>پوزیشن باز</span><b id="m4"></b></div><div><span>خالص بسته‌شده</span><b id="m5"></b></div><div><span>درگیری مارجین</span><b id="m6"></b></div><div><span>بزرگ‌ترین پوزیشن</span><b id="m7"></b></div></div><div class="xb" id="xb"></div><div class="lf" id="xl" style="margin-top:8px;justify-content:flex-start"></div>
     <div class="alrt" id="alrt" style="display:none"></div></div>
-  <div class="card s12" id="c_pos" data-tab="ov"><h2>💼 پوزیشن‌های باز <span class="live" id="posLive" style="display:none">LIVE</span> <span class="lb" id="posAge"></span><button class="ctog" data-c="pos">▾</button></h2><div id="pcs"></div></div>
+  <div class="card s12" id="c_pos" data-tab="ov"><h2>💼 پوزیشن‌های باز <span class="live" id="posLive" style="display:none">LIVE</span> <span class="lb" id="posAge"></span><span class="bd wt" id="stkn" style="display:none"></span><button class="ctog" data-c="pos">▾</button></h2><div id="pcs"></div></div>
   <div class="card s12" id="c_feed" data-tab="gp"><div class="fh"><h2>📡 گپ‌های فعال <span class="live">LIVE</span><button class="ctog" data-c="feed">▾</button></h2><div class="chips" id="fl" style="margin:0"><button class="chip" data-f="all" aria-pressed="true">همه</button><button class="chip" data-f="GAP" aria-pressed="false">فقط GAP</button><button class="chip" data-f="SELL" aria-pressed="false">فقط SELL</button></div></div><div class="feed" id="feed"></div></div>
   <div class="card s12" id="c_lc" data-tab="gp"><h2>🎯 چارت زنده · فقط گپ‌های پرنشده <span class="live">LIVE</span><button class="ctog" data-c="lc">▾</button></h2><div id="lc"></div></div>
   <div class="card s12" id="c_bot" data-tab="rp"><h2>📨 گزارش‌های ربات (همان متن تلگرام) <span id="hbs" class="bd wt">منتظر</span><button class="ctog" data-c="bot">▾</button></h2><div class="lb" id="hbt"></div><div class="lb" id="rps" style="margin:6px 0 12px"></div><div id="tgl"></div></div>
   <div class="card s12" id="c_jr" data-tab="hs"><h2>📒 معاملات بسته (از آخرین ریست)<button class="ctog" data-c="jr">▾</button></h2>
     <div class="mg"><div><span>تعداد</span><b id="jt0"></b></div><div><span>نرخ برد</span><b id="jt1"></b></div><div><span>خالص PnL</span><b id="jt2"></b></div><div><span>میانگین هر معامله</span><b id="jt3"></b></div><div><span>بیشترین پله</span><b id="jt4"></b></div><div><span>بدترین شناور فعلی</span><b id="jt5"></b></div><div id="jw6" style="display:none"><span>بیشترین افت قبل از TP</span><b id="jt6" class="dn"></b></div></div>
     <div class="tw" style="margin-top:10px"><table><thead><tr><th>نماد</th><th>ورود → خروج</th><th>PnL</th><th>ROI</th><th>پله</th><th>مدت</th><th>دلیل</th></tr></thead><tbody id="jb"></tbody></table></div></div>
-  <div class="card s12" id="c_days" data-tab="hs"><h2>🗓️ تاریخچه‌ی روزها<button class="ctog" data-c="days">▾</button></h2><div class="lb" id="dsum"></div><div id="dchart"></div>
+  <div class="card s12" id="c_st" data-tab="hs"><h2>🪜 عمق پله‌ها <span class="lb" id="sts"></span><button class="ctog" data-c="st">▾</button></h2><div id="stb"></div></div>
+  <div class="card s12" id="c_lb" data-tab="hs"><h2>🏆 نمادها <button class="ctog" data-c="lb">▾</button></h2><div class="tw"><table><thead><tr><th>نماد</th><th>معامله</th><th>سود کل</th><th>میانگین پله</th><th>بیشترین پله</th></tr></thead><tbody id="lbb"></tbody></table></div></div>
+  <div class="card s12" id="c_days" data-tab="hs"><h2>🗓️ تاریخچه‌ی روزها<button class="ctog" data-c="days">▾</button></h2><div class="lb" id="dsum"></div><div class="mg" id="dst" style="margin:10px 0"></div><div id="dchart"></div>
     <div class="tw"><table><thead><tr><th>روز</th><th>سود / زیان</th><th>معامله</th><th>موجودی پایان</th></tr></thead><tbody id="db"></tbody></table></div></div>
   <div class="card s12" data-tab="gp"><details id="gsd"><summary>📊 آمار گپ‌ها (از مشاهده‌ی همین صفحه · نمونه‌ی محدود)</summary>
     <div class="tw" style="margin-top:10px"><table><thead><tr><th>تایم‌فریم</th><th>گپ بررسی‌شده</th><th>پرشده</th><th>نرخ پر شدن</th><th>میانگین زمان پر شدن</th></tr></thead><tbody id="gsb"></tbody></table></div></details></div>
@@ -193,7 +211,7 @@ body[data-tab=ov] .bento>.card[data-tab=ov],body[data-tab=gp] .bento>.card[data-
 <script>
 var REPO="Abolfazl-bagheri/Lbank_Bot",LIVE_TOPIC="lbank-gap-b0b85cee29ce",START=1000,LEV=20,MMR=.005,GW={warn:60,bad:30},PER={"15m":900,"1h":3600,"4h":14400},MAXF=12,MAXC=8,QN=0,QQ=[];
 var $=function(i){return document.getElementById(i)};
-var S={tg:[],ep0:null,lastEq:null,lastN:0,tab:"ov",col:{},reps:[],cl:[],days:[],resetAt:0,ver:null,srcn:null,lt:{},f:"all",sig:[],pos:null,posTs:0,ex:null,d:{trades:[],closed:{profit:0,loss:0,count:0},mode:"PAPER"},st:{},ev:{},ready:0,sound:false,lvOn:false,last:0,fresh:{}},PXS={},CAN={},PC={},SUB={},AC,SWR=null,T0=document.title,gw=null,gok=0,tm=0,fk="",lk="",tkk="",jk="",dk="",gk=0,tk="";
+var S={cla:[],fs:{},stk:{},tg:[],ep0:null,lastEq:null,lastN:0,tab:"ov",col:{},reps:[],cl:[],days:[],resetAt:0,ver:null,srcn:null,lt:{},f:"all",sig:[],pos:null,posTs:0,ex:null,d:{trades:[],closed:{profit:0,loss:0,count:0},mode:"PAPER"},st:{},ev:{},ready:0,sound:false,lvOn:false,last:0,fresh:{}},PXS={},CAN={},PC={},SUB={},AC,SWR=null,T0=document.title,gw=null,gok=0,tm=0,fk="",lk="",tkk="",jk="",dk="",gk=0,tk="",xk="",sk="",lbk="";
 function now(){return Math.floor(Date.now()/1000)}
 function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
 function ago(ts){var s=Math.max(0,now()-ts);return s<60?"لحظاتی پیش":s<3600?Math.floor(s/60)+" دقیقه پیش":s<86400?Math.floor(s/3600)+" ساعت پیش":Math.floor(s/86400)+" روز پیش"}
@@ -270,11 +288,11 @@ function wallet(){var pl=plist(),c=S.d.closed||{profit:0,loss:0,count:0},ex=S.ex
  $("gnote").textContent=LV?(sh!=null?"با رشد حدود "+sh.toFixed(1)+"٪ هم‌زمان قیمت همه‌ی پوزیشن‌ها حساب لیکوئید می‌شود (تخمین)":"پوزیشن بازی نیست؛ ریسک لیکوئید صفر"):"حالت PAPER · لیکوئید شبیه‌سازی نمی‌شود؛ فقط PnL و فاصله تا TP مهم است";
  setT($("m0"),f2(bal)+" U");setT($("m1"),(upl>=0?"+":"")+f2(upl)+" U");$("m1").className=upl>=0?"up":"dn";setT($("m2"),f2(mu)+" U");setT($("m3"),f2(free)+" U");$("m3").className=free<0?"dn":"";
  setT($("m4"),String(pl.length));setT($("m5"),(real>=0?"+":"")+f2(real)+" U ("+cn+")");$("m5").className=real>=0?"up":"dn";
- var a=$("alrt");
+ margShare(pl,mu,eq);var a=$("alrt");
  if(LV&&pct<GW.warn&&nt>0){a.style.display="";a.className="alrt "+(pct<GW.bad?"bad":"warn");a.textContent=(pct<GW.bad?"🚨 خطر لیکوئید! ":"⚠️ ضرر شناور بالاست. ")+"فقط "+pct.toFixed(0)+"٪ از بافر باقی مانده و مارجین آزاد "+f2(free)+" U است."}else a.style.display="none";
  if(LV&&pct<GW.bad&&nt>0){if(!S.dg){S.dg=1;notify("🚨 نزدیک لیکوئید","بافر "+pct.toFixed(0)+"٪")}}else if(pct>GW.bad+10)S.dg=0}
 function cardHtml(t){var i="pc_"+t.symbol,kv=[["اندازه","size"],["قیمت ورود","entry"],["قیمت الان","px"],["لیکوئید (تخمینی)","liq"],["مارجین","margin"],["TP","tp"]];
- return '<div class="pcard" id="'+i+'"><div class="ph"><div><span class="sym">'+esc(t.symbol)+'</span> <span class="c2" id="'+i+'_side"></span> <span class="c2" id="'+i+'_pele"></span> <span class="c2" id="'+i+'_age" style="display:none"></span></div><div class="pn" id="'+i+'_pn"><b id="'+i+'_pnl"></b><small id="'+i+'_roi"></small></div></div><div class="kv">'+
+ return '<div class="pcard" id="'+i+'"><div class="ph"><div><span class="sym">'+esc(t.symbol)+'</span> <span class="c2" id="'+i+'_side"></span> <span class="c2" id="'+i+'_pele"></span> <span class="c2" id="'+i+'_age" style="display:none"></span> <span class="c2" id="'+i+'_stk" style="display:none"></span></div><div class="pn" id="'+i+'_pn"><b id="'+i+'_pnl"></b><small id="'+i+'_roi"></small></div></div><div class="kv">'+
   kv.map(function(x){return '<div><span id="'+i+'_'+x[1]+'l">'+x[0]+'</span><b id="'+i+'_'+x[1]+'"'+(x[1]==="liq"?' class="dn"':x[1]==="tp"?' class="up"':'')+'></b></div>'}).join("")+
   '</div><div class="lad" id="'+i+'_lad" style="display:none"><span id="'+i+'_stp"></span><span class="stp nx" id="'+i+'_nxt" style="display:none"></span></div><div class="rng" id="'+i+'_rng"><i id="'+i+'_re"></i><i class="p" id="'+i+'_rp"></i></div><div class="rl"><span class="up" id="'+i+'_dtp"></span><span class="dn" id="'+i+'_dlq"></span></div></div>'}
 function fill(t,k){var i="pc_"+t.symbol,q=function(x){return $(i+"_"+x)},e=+t.entry,tp=+t.tp,m=+t.margin||0,lv=+t.lev||lev0(),sho=tp<e,p=k.px!=null?k.px:e,PA=mode()!=="LIVE",
@@ -298,8 +316,12 @@ function ladder(t,q,p){var lad=q("lad"),sg0=JSON.stringify(t.steps||null),has=Ar
  lad.style.display=(has||nx)?"":"none";var sp=q("stp");
  if(sp._s!==sg0){sp._s=sg0;sp.innerHTML=has?t.steps.map(function(x,i){var pp=x.px!=null?x.px:x.p;return '<span class="stp">#'+(i+1)+' '+px(pp)+(x.ts?' · '+agoS(x.ts):'')+'</span>'}).join(" "):""}
  var n=q("nxt");n.style.display=nx?"":"none";if(nx){var d=(+t.next-p)/p*100;setT(n,"پله‌ی بعدی "+px(t.next)+" ("+(d>=0?"+":"")+d.toFixed(2)+"٪)")}
- var a=q("age");if(t.opened_ts>0){a.style.display="";a.textContent="⏱ "+dur(now()-t.opened_ts)}else a.style.display="none"}
-function posAges(){(S.pos||[]).forEach(function(t){var e=$("pc_"+t.symbol+"_age");if(!e)return;if(t.opened_ts>0){e.style.display="";e.textContent="⏱ "+dur(now()-t.opened_ts)}else e.style.display="none"})}
+}
+function posAges(){var n=0;(S.pos||[]).forEach(function(t){var e=$("pc_"+t.symbol+"_age"),c=$("pc_"+t.symbol+"_stk");if(!e)return;var st=stuckInfo(t);
+  if(t.opened_ts>0||st.age!=null){e.style.display="";e.textContent="⏱ "+dur(st.age!=null?st.age:0)}else e.style.display="none";
+  if(c){c.style.display=st.stuck?"":"none";if(st.stuck){c.className="c2 bd wt";c.textContent="⏳ گیرکرده · "+(st.prog*100).toFixed(0)+"٪ تا TP"}}
+  if(st.stuck)n++;var k=S.stk[t.symbol];if(k==null)S.stk[t.symbol]=st.stuck?1:0;else if(st.stuck&&k===0){S.stk[t.symbol]=1;evt("⏳ پوزیشن گیرکرده",t.symbol+" · "+dur(st.age)+" · "+(st.prog*100).toFixed(0)+"٪ تا TP")}else if(!st.stuck)S.stk[t.symbol]=0});
+ var sn=$("stkn");sn.style.display=n?"":"none";sn.textContent="⏳ "+n+" گیرکرده"}
 function botCard(){var L=S.lt,age=function(k){return L[k]?agoS(L[k]):"—"},last=Math.max(L.pos||0,L.sig||0,L.rep||0,L.close||0,L.report||0,S.last||0),ag=last?now()-last:null,
  st=ag==null?["منتظر","wt"]:ag<180?["زنده","ok"]:ag<900?["ساکت","wt"]:["قطع","bad"];
  $("hbs").textContent=st[0];$("hbs").className="bd "+st[1];
@@ -312,19 +334,21 @@ function journal(){var C=S.cl,key=C.map(function(x){return x.ts+x.symbol}).join(
  $("jw6").style.display=maes.length?"":"none";if(maes.length)setT($("jt6"),Math.min.apply(null,maes).toFixed(1)+"%");
  $("jb").innerHTML=n?C.slice(0,15).map(function(x){var ro=x.roi!=null?+x.roi:null;return '<tr><td class="n"><b>'+esc(x.symbol)+'</b></td><td class="n">'+px(x.entry)+' → '+px(x.exit)+'</td><td class="n '+(x.pnl>=0?"up":"dn")+'"><b>'+sg(x.pnl)+'U</b></td><td class="n '+(ro!=null&&ro<0?"dn":"up")+'">'+(ro==null?"—":(ro>=0?"+":"")+ro.toFixed(1)+"%")+'</td><td>'+(x.steps!=null?x.steps:"—")+'</td><td>'+(x.dur!=null?dur(x.dur):"—")+'</td><td>'+esc(x.why||"—")+'</td></tr>'}).join(""):'<tr><td colspan="7" class="emp">هنوز معامله‌ی بسته‌ای ثبت نشده (رویداد close)</td></tr>'}
 function daysCard(){var D=S.days.slice(-14),k=D.map(function(d){return d.to+":"+d.pnl}).join();if(k===dk)return;dk=k;
- if(!D.length){$("dchart").innerHTML='<div class="emp">منتظر داده‌ی روزها از ربات (paper_days)</div>';$("dsum").textContent="";$("db").innerHTML="";return}
+ if(!D.length){$("dchart").innerHTML='<div class="emp">منتظر داده‌ی روزها از ربات (paper_days)</div>';$("dsum").textContent="";$("dst").innerHTML="";$("db").innerHTML="";return}
  var W=600,H=150,mx=Math.max.apply(null,D.map(function(d){return Math.abs(d.pnl)}).concat(1)),bw=W/D.length,z=H/2,tot=0,win=0;
  D.forEach(function(d){tot+=d.pnl;if(d.pnl>0)win++});
  var bars=D.map(function(d,i){var h=Math.abs(d.pnl)/mx*(H/2-14),y=d.pnl>=0?z-h:z;return '<rect x="'+(i*bw+bw*.15).toFixed(1)+'" y="'+y.toFixed(1)+'" width="'+(bw*.7).toFixed(1)+'" height="'+Math.max(1,h).toFixed(1)+'" rx="4" fill="'+(d.pnl>=0?"#2de2a6":"#ff4d6d")+'"/><text x="'+(i*bw+bw/2).toFixed(1)+'" y="'+(d.pnl>=0?y-3:y+h+11).toFixed(1)+'" font-size="9" fill="#8b92a8" text-anchor="middle">'+(d.pnl>=0?"+":"")+d.pnl.toFixed(1)+'</text>'}).join("");
  $("dchart").innerHTML='<svg viewBox="0 0 '+W+' '+H+'" width="100%" height="170" style="direction:ltr"><line x1="0" x2="'+W+'" y1="'+z+'" y2="'+z+'" stroke="rgba(255,255,255,.15)" stroke-dasharray="4 4"/>'+bars+'</svg>';
  $("dsum").textContent="مجموع "+D.length+" روز: "+(tot>=0?"+":"")+f2(tot)+" U · روز سودده: "+win+" از "+D.length+" · منبع: ربات "+D.filter(function(x){return x.src!=="page"}).length+" / بازسازی صفحه "+D.filter(function(x){return x.src==="page"}).length;
+ var bs=D.reduce(function(a,x){return x.pnl>a.pnl?x:a},D[0]),ws=D.reduce(function(a,x){return x.pnl<a.pnl?x:a},D[0]),dl=function(x){return new Date(x.to*1000).toLocaleDateString("fa-IR",{month:"2-digit",day:"2-digit"})};
+ $("dst").innerHTML=[["بهترین روز",dl(bs)+" · "+sg(bs.pnl)+" U",bs.pnl>=0?"up":"dn"],["بدترین روز",dl(ws)+" · "+sg(ws.pnl)+" U",ws.pnl>=0?"up":"dn"],["میانگین روز",sg(tot/D.length)+" U",tot>=0?"up":"dn"],["روزهای سودده",Math.round(win/D.length*100)+"٪",""]].map(function(x){return '<div><span>'+x[0]+'</span><b class="'+x[2]+'">'+x[1]+'</b></div>'}).join("");
  $("db").innerHTML=D.slice(-7).reverse().map(function(d){return '<tr><td>'+(d.src==="page"?"≈ ":"")+new Date(d.to*1000).toLocaleDateString("fa-IR",{month:"2-digit",day:"2-digit"})+'</td><td class="n '+(d.pnl>=0?"up":"dn")+'"><b>'+sg(d.pnl)+' U</b></td><td class="n">'+d.trades+'</td><td class="n">'+f2(d.end)+'</td></tr>'}).join("")}
 function gapStats(){if(now()-gk<5)return;gk=now();var T={"15m":[0,0,0,0],"1h":[0,0,0,0],"4h":[0,0,0,0]};
  S.sig.forEach(function(s){var st=S.st[s.key];if(st!=="filled"&&st!=="act")return;var a=T[s.tf];a[0]++;if(st==="filled"){a[1]++;var e=S.ev[s.key];if(e&&e.ft){a[2]+=Math.max(0,e.ft-s.ts);a[3]++}}});
  $("gsb").innerHTML=Object.keys(T).map(function(k){var a=T[k];return '<tr><td class="n">'+k+'</td><td>'+a[0]+'</td><td>'+a[1]+'</td><td>'+(a[0]?(a[1]/a[0]*100).toFixed(0)+"٪":"—")+'</td><td>'+(a[3]?dur(a[2]/a[3]):"—")+'</td></tr>'}).join("")}
 function botAges(){botCard()}
 /* ---------- نقدشوندگی، فاندینگ/حجم، منحنی موجودی، شبیه‌ساز، بخش‌های جمع‌شونده ---------- */
-var FD={},CARDS=["pos","feed","lc","bot","jr","days"];
+var FD={},CARDS=["pos","feed","lc","bot","jr","st","lb","days"];
 function fdSet(sym,x){var o=FD[sym]||(FD[sym]={}),fr=x.funding_rate!=null?+x.funding_rate:NaN,vq=+(x.volume_24h_quote!=null?x.volume_24h_quote:x.volume_24h_settle!=null?x.volume_24h_settle:x.volume_24h_usd!=null?x.volume_24h_usd:NaN);if(isFinite(fr))o.fr=fr;if(isFinite(vq))o.vq=vq}
 function fmtV(n){return n>=1e9?(n/1e9).toFixed(2)+"B":n>=1e6?(n/1e6).toFixed(2)+"M":n>=1e3?(n/1e3).toFixed(1)+"K":n.toFixed(0)}
 function fdTxt(sym){var o=FD[sym];if(!o)return"";var a=[];if(o.fr!=null)a.push("FR "+(o.fr>=0?"+":"")+(o.fr*100).toFixed(4)+"٪");if(o.vq!=null)a.push("حجم ۲۴س "+fmtV(o.vq));return a.join(" · ")}
@@ -334,12 +358,8 @@ function liqfd(s,a,b){var q=liq(s),qe=$(a+s.key),fe=$(b+s.key);if(qe){if(q){qe.s
 function applyCols(){CARDS.forEach(function(k){var e=$("c_"+k);if(e)e.className="card s12"+(S.col[k]?" col":"")});var d=$("gsd");if(d&&S.col.gs!=null)d.open=!S.col.gs}
 function saveCols(){try{localStorage.setItem("lbg_col",JSON.stringify(S.col))}catch(e){}}
 /* ---------- گزارش تلگرام، تاریخچه‌ی روزها (تجمعی)، تب‌ها ---------- */
+function addTg(text,ts){text=String(text==null?"":text).trim().slice(0,3500);if(!text)return false;var k=ts+"|"+text.length+text.slice(0,30);if(S.tg.some(function(x){return x.k===k}))return false;S.tg.push({k:k,ts:ts,text:text});S.tg.sort(function(a,b){return b.ts-a.ts});S.tg=S.tg.slice(0,40);return true}
 var TGRE=/گزارش|کلوز|TP|بسته شد|ورود|پله|PAPER|Paper/,TABS=["ov","gp","rp","hs"];
-function tgHtml(t){return esc(t).replace(/&lt;(\/?)(b|i|u|code)&gt;/g,"<$1$2>")}
-function addTg(text,ts){text=String(text==null?"":text).trim().slice(0,3500);if(!text)return false;var k=ts+"|"+text.length+text.slice(0,30);if(S.tg.some(function(x){return x.k===k}))return false;
- S.tg.push({k:k,ts:ts,text:text});S.tg.sort(function(a,b){return b.ts-a.ts});S.tg=S.tg.slice(0,30);return true}
-function tgCard(){var T=S.tg,key=T.length?T[0].k+T.length:"-";if(key===tk)return;tk=key;
- $("tgl").innerHTML=T.length?T.slice(0,15).map(function(x){var d=new Date(x.ts*1000);return '<div class="tgb"><div class="tgt">'+hm(x.ts)+' · '+d.toLocaleDateString("fa-IR",{month:"2-digit",day:"2-digit"})+'</div><div class="tgm">'+tgHtml(x.text)+'</div></div>'}).join(""):'<div class="emp">منتظر گزارش از ربات… (رویداد report با متن همان پیام تلگرام)</div>'}
 function mergeDays(arr,src){normDays(arr).forEach(function(d){d.src=src||"bot";var i=-1;S.days.forEach(function(e,j){if(Math.abs(e.to-d.to)<7200)i=j});
  if(i<0)S.days.push(d);else if(d.src==="bot"||S.days[i].src==="page")S.days[i]=d});
  S.days.sort(function(a,b){return a.to-b.to});S.days=S.days.slice(-60);try{localStorage.setItem("lbg_days",JSON.stringify(S.days))}catch(e){}}
@@ -347,13 +367,72 @@ function worstOpen(){var w=null;plist().forEach(function(t){var k=calc(t);if(w==
 function setTab(t){if(TABS.indexOf(t)<0)t="ov";S.tab=t;if(document.body)document.body.setAttribute("data-tab",t);
  [].forEach.call($("tabs").children,function(b){b.setAttribute("aria-selected",String(b.dataset.t===t))});try{localStorage.setItem("lbg_tab",t)}catch(e){}}
 function badges(){[["tb_gp",actList().length],["tb_ov",plist().length]].forEach(function(x){var e=$(x[0]);e.textContent=x[1];e.style.display=x[1]?"":"none"})}
+/* ---------- گزارش تلگرام (پارس‌شده و شیک) ---------- */
+function tgPlain(t){return String(t).replace(/<a [^>]*>([^<]*)<\/a>/g,"$1").replace(/<\/?(b|i|u|code)>/g,"")}
+function nm(s){return s==null?null:parseFloat(s)}
+function parseTg(raw){var t=tgPlain(raw),o={type:"note",t:t},g=function(re){var m=t.match(re);return m?m[1]:null},SY=/\b([A-Z0-9]{2,20}USDT)\b/;
+ if(/گزارش روزانه/.test(t)){o.type="daily";o.mode=g(/گزارش روزانه\s+(\w+)/);o.date=g(/📅\s*([\d-]+)/);o.n=nm(g(/معاملات بسته:\s*(\d+)/));o.profit=nm(g(/سود:\s*([+-]?[\d.]+)U/));o.loss=nm(g(/ضرر:\s*([+-]?[\d.]+)U/));o.net=nm(g(/خالص[^:\n]*:\s*([+-]?[\d.]+)U/));o.upnl=nm(g(/uPnL باز:\s*([+-]?[\d.]+)U/));o.bal=nm(g(/موجودی[^:\n]*:\s*([\d.]+)U/));o.start=nm(g(/شروع\s*([\d.]+)U/))}
+ else if(/گزارش/.test(t)&&/خالص بسته/.test(t)){o.type="rep";o.mode=g(/گزارش\s+(\w+)/);o.time=g(/(\d{1,2}:\d{2})/);o.n=nm(g(/^بسته:\s*(\d+)/m));o.profit=nm(g(/سود بسته:\s*([+-]?[\d.]+)U/));o.loss=nm(g(/ضرر بسته:\s*([+-]?[\d.]+)U/));o.net=nm(g(/خالص بسته:\s*([+-]?[\d.]+)U/));
+  var m=t.match(/باز:\s*(\d+)\s*·\s*uPnL:\s*([+-]?[\d.]+)U/);if(m){o.open=+m[1];o.upnl=+m[2]}
+  o.rows=[];t.split("\n").forEach(function(l){var r=l.trim().match(/^•\s*(\S+)\s*·\s*پله\s*(\d+)\s*·\s*\S*\s*([+-]?[\d.]+)U\s*\(([+-]?[\d.]+)%\)/);if(r)o.rows.push({s:r[1],p:+r[2],pnl:+r[3],roi:+r[4]})});if(o.net==null)o.type="note"}
+ else if(/کلوز/.test(t)){o.type="close";o.s=g(/کلوز\s+\w+\s+([A-Z0-9]+USDT)/);var a=t.match(/([\d.e+-]+)\s*→\s*([\d.e+-]+)/);if(a){o.a=a[1];o.b=a[2]}o.roi=nm(g(/ROI\s*≈\s*([+-]?[\d.]+)%/));o.pnl=nm(g(/PnL\s*([+-]?[\d.]+)U/));var w=t.split("·");o.why=w.length>1?w[w.length-1].trim():"";if(o.pnl==null)o.type="note"}
+ else if(/ناموفق/.test(t)){o.type="warn";o.s=g(SY)}
+ else if(/پله\s+(PAPER|LIVE)/.test(t)){o.type="step";o.s=g(SY);o.avg=g(/میانگین\s*≈\s*([\d.e+-]+)/);o.m=g(/·\s*([\d.]+)U/)}
+ else if(/ورود\s+(مجازی|LIVE)|LIVE\s+سِل/.test(t)){o.type="entry";o.s=g(SY);o.tf=g(/·\s*(15m|1h|4h)/);o.e=g(/ورود\s*≈\s*([\d.e+-]+)/);var mm=t.match(/([\d.]+)U\s*·\s*(\d+)x/);if(mm){o.m=mm[1];o.lv=mm[2]}o.tp=g(/TP\s*≈\s*([\d.e+-]+)/)}
+ return o}
+function cls(n){return n==null?"":n>=0?"up":"dn"}
+function s2(n){return n==null?"—":(n>=0?"+":"")+n.toFixed(2)}
+function tile(l,v,c){return '<div><span>'+l+'</span><b class="'+c+'">'+v+'</b></div>'}
+function prow(r){return '<div class="rr"><b>'+esc(r.s)+'</b><span class="c2">پله '+r.p+'</span><span class="sp"></span><span class="'+cls(r.pnl)+'"><b>'+s2(r.pnl)+' U</b></span><small>'+(r.roi>=0?"+":"")+r.roi.toFixed(1)+'%</small></div>'}
+function tgHero(x){var o=x.p,d=new Date(x.ts*1000).toLocaleDateString("fa-IR",{month:"2-digit",day:"2-digit"});
+ if(o.type==="daily")return '<div class="rhero"><div class="rh"><span class="rt">🌙 گزارش روزانه '+esc(o.mode||"")+'</span><span class="c2">'+esc(o.date||d)+'</span></div><div class="rbig"><span>موجودی کاغذی'+(o.start!=null?' · شروع '+f2(o.start)+' U':'')+'</span><b>'+(o.bal!=null?f2(o.bal)+' U':'—')+'</b></div><div class="rtiles">'+tile("خالص ۲۴ ساعت",s2(o.net)+" U",cls(o.net))+tile("سود",s2(o.profit),"up")+tile("ضرر",s2(o.loss),"dn")+tile("معامله بسته",o.n==null?"—":o.n,"")+tile("uPnL باز",s2(o.upnl),cls(o.upnl))+'</div></div>';
+ var R=o.rows||[],h='<div class="rhero"><div class="rh"><span class="rt">📊 گزارش '+esc(o.mode||"")+'</span><span class="c2">'+esc(o.time||hm(x.ts))+'</span><span class="lb">'+d+'</span></div><div class="rbig"><span>خالص بسته‌شده</span><b class="'+cls(o.net)+'">'+s2(o.net)+' U</b></div><div class="rtiles">'+tile("سود بسته",s2(o.profit),"up")+tile("ضرر بسته",s2(o.loss),"dn")+tile("معامله بسته",o.n==null?"—":o.n,"")+tile("پوزیشن باز",o.open==null?"—":o.open,"")+tile("uPnL باز",s2(o.upnl),cls(o.upnl))+'</div>';
+ if(R.length){h+=R.slice(0,6).map(prow).join("");if(R.length>6)h+='<details class="rsec2"><summary>+'+(R.length-6)+' پوزیشن دیگر</summary>'+R.slice(6).map(prow).join("")+'</details>'}
+ return h+'</div>'}
+function trow(ic,k,t,sub,val,vc,sub2){return '<div class="tl"><i class="ti '+k+'">'+ic+'</i><div class="tc">'+t+'<small>'+sub+'</small></div><div class="tv '+vc+'">'+val+'<small>'+sub2+'</small></div></div>'}
+function tgRow(x){var o=x.p,tm=hm(x.ts),S_=esc(o.s||"");
+ if(o.type==="close")return trow("✅","ok",'<b>'+S_+'</b> <span class="c2">'+esc(o.why||"")+'</span>',esc(o.a||"")+' → '+esc(o.b||""),s2(o.pnl)+' U',cls(o.pnl),(o.roi!=null?(o.roi>=0?"+":"")+o.roi.toFixed(1)+"% · ":"")+tm);
+ if(o.type==="entry")return trow("🟢","in",'<b>'+S_+'</b> <span class="c2">'+esc(o.tf||"")+'</span>','ورود '+esc(o.e||"—")+' · TP '+esc(o.tp||"—"),o.m?esc(o.m)+'U · '+esc(o.lv||"")+'x':"","",tm);
+ if(o.type==="step")return trow("➕","wt",'<b>'+S_+'</b> <span class="c2">پله</span>','میانگین '+esc(o.avg||"—"),o.m?esc(o.m)+' U':"","",tm);
+ if(o.type==="warn")return trow("⚠️","bad",'<b>'+S_+'</b>',esc(o.t.split("\n")[0]),"","",tm);
+ return trow("💬","",'<span class="tgn">'+esc(o.t.split("\n")[0].slice(0,90))+'</span>',"","","",tm)}
+function tgMini(x){var o=x.p;if(o.type==="daily")return '<div class="rr"><span>🌙 '+esc(o.date||"")+'</span><span class="sp"></span><span class="'+cls(o.net)+'"><b>'+s2(o.net)+' U</b></span><small>'+(o.bal!=null?f2(o.bal):"")+'</small></div>';
+ return '<div class="rr"><span>'+esc(o.time||hm(x.ts))+'</span><span class="sp"></span><span class="'+cls(o.net)+'"><b>'+s2(o.net)+' U</b></span><small>باز '+(o.open==null?"—":o.open)+'</small></div>'}
+function tgCard(){var T=S.tg,key=T.length?T[0].k+T.length:"-";if(key===tk)return;tk=key;
+ if(!T.length){$("tgl").innerHTML='<div class="emp">منتظر گزارش از ربات… (رویداد report با متن همان پیام تلگرام)</div>';return}
+ T.forEach(function(x){if(!x.p)x.p=parseTg(x.text)});
+ var reps=T.filter(function(x){return x.p.type==="rep"||x.p.type==="daily"}),evs=T.filter(function(x){return x.p.type!=="rep"&&x.p.type!=="daily"}),h="";
+ if(reps.length)h+=tgHero(reps[0]);
+ if(evs.length)h+='<div class="rsec">آخرین رویدادها</div>'+evs.slice(0,12).map(tgRow).join("");
+ if(reps.length>1)h+='<details class="rsec2"><summary>گزارش‌های قبلی ('+(reps.length-1)+')</summary>'+reps.slice(1,13).map(tgMini).join("")+'</details>';
+ $("tgl").innerHTML=h}
+/* ---------- عمق پله‌ها، لیدربورد، گیرکرده، سهم مارجین ---------- */
+var STUCK_H=6,XC=["#8b7bff","#38d9ff","#2de2a6","#ffb547","#ff4d6d","#f78fb3"];
+function arch(c){var k=c.symbol+"|"+c.ts;if(S.cla.some(function(x){return x.symbol+"|"+x.ts===k}))return;S.cla.push({symbol:c.symbol,ts:c.ts,pnl:c.pnl,steps:+c.steps||1,dur:c.dur!=null?+c.dur:null});S.cla.sort(function(a,b){return b.ts-a.ts});S.cla=S.cla.slice(0,600);try{localStorage.setItem("lbg_cl",JSON.stringify(S.cla))}catch(e){}}
+function stepsCard(){var A=S.cla,key=A.length+":"+(A[0]?A[0].ts:0);if(key===sk)return;sk=key;
+ if(!A.length){$("stb").innerHTML='<div class="emp">هنوز معامله‌ی بسته‌ای ثبت نشده</div>';$("sts").textContent="";return}
+ var G={};A.forEach(function(x){var g=Math.min(5,Math.max(1,x.steps)),o=G[g]||(G[g]={n:0,pnl:0,d:0,dn:0});o.n++;o.pnl+=x.pnl;if(x.dur!=null){o.d+=x.dur;o.dn++}});
+ var mx=Math.max.apply(null,Object.keys(G).map(function(k){return G[k].n})),avg=A.reduce(function(a,x){return a+x.steps},0)/A.length;
+ $("sts").textContent="میانگین "+avg.toFixed(1)+" پله · از "+A.length+" معامله (ثبت‌شده در این مرورگر)";
+ $("stb").innerHTML=[1,2,3,4,5].filter(function(g){return G[g]}).map(function(g){var o=G[g];return '<div class="hr"><span style="width:62px">'+(g===5?"۵+":g)+' پله</span><div class="hb2"><b style="width:'+(o.n/mx*100).toFixed(0)+'%"></b></div><span class="lb" style="direction:ltr;min-width:150px;text-align:left">×'+o.n+' · '+(o.dn?dur(o.d/o.dn):"—")+' · '+sg(o.pnl/o.n)+'U</span></div>'}).join("")}
+function lbCard(){var A=S.cla,key=A.length+":"+(A[0]?A[0].ts:0);if(key===lbk)return;lbk=key;
+ var M={};A.forEach(function(x){var o=M[x.symbol]||(M[x.symbol]={n:0,pnl:0,st:0,mx:0});o.n++;o.pnl+=x.pnl;o.st+=x.steps;o.mx=Math.max(o.mx,x.steps)});
+ var R=Object.keys(M).map(function(k){return[k,M[k]]}).sort(function(a,b){return b[1].pnl-a[1].pnl}).slice(0,8);
+ $("lbb").innerHTML=R.length?R.map(function(r){var o=r[1],av=o.st/o.n;return '<tr><td class="n"><b>'+esc(r[0])+'</b></td><td>'+o.n+'</td><td class="n '+(o.pnl>=0?"up":"dn")+'"><b>'+sg(o.pnl)+' U</b></td><td class="n">'+av.toFixed(1)+(av>=3?' ⚠️':'')+'</td><td class="n">'+o.mx+'</td></tr>'}).join(""):'<tr><td colspan="5" class="emp">—</td></tr>'}
+function stuckInfo(t){var a0=t.opened_ts>0?t.opened_ts:S.fs[t.symbol],k=calc(t),e=+t.entry,tp=+t.tp,p=k.px!=null?k.px:e,prog=(tp-e)?Math.max(0,Math.min(1,(p-e)/(tp-e))):0,age=a0?now()-a0:null;
+ return{age:age,prog:prog,stuck:age!=null&&age>STUCK_H*3600&&prog<.5}}
+function margShare(pl,mu,eq){var arr=pl.map(function(t){return{s:t.symbol,m:+t.margin||0}}).sort(function(a,b){return b.m-a.m}),top=arr[0];
+ setT($("m6"),eq>0?(mu/eq*100).toFixed(1)+"٪":"—");setT($("m7"),top&&mu>0?top.s+" "+(top.m/mu*100).toFixed(0)+"٪":"—");$("m7").className=top&&mu>0&&arr.length>1&&top.m/mu>.5?"dn":"";
+ var key=arr.map(function(x){return x.s+":"+x.m}).join();if(key===xk)return;xk=key;
+ $("xb").innerHTML=mu>0?arr.map(function(x,i){return '<i style="width:'+(x.m/mu*100).toFixed(2)+'%;background:'+XC[i%XC.length]+'" title="'+esc(x.s)+'"></i>'}).join(""):"";
+ $("xl").innerHTML=mu>0?arr.slice(0,6).map(function(x,i){return '<span><i style="background:'+XC[i%XC.length]+'"></i>'+esc(x.s)+' '+(x.m/mu*100).toFixed(0)+'٪</span>'}).join(" ")+(arr.length>6?' <span>+'+(arr.length-6)+'</span>':""):""}
 function posCards(){var pl=plist(),lv=Array.isArray(S.pos),box=$("pcs");
  $("posLive").style.display=lv?"":"none";
  if(!pl.length){if(box._n!==0){box.innerHTML='<div class="emp">پوزیشن بازی نیست</div>';box._n=0;PC={}}return}
  if(box._n!==1){box.innerHTML='<div class="pgrid" id="pg"></div>';PC={};box._n=1}
  var g=$("pg"),rows=pl.map(function(t){return[t,calc(t)]}).sort(function(a,b){return a[1].pnl-b[1].pnl}),seen={};
  rows.forEach(function(r,i){var t=r[0];seen[t.symbol]=1;gsub(t.symbol);if(!PC[t.symbol]){g.insertAdjacentHTML("beforeend",cardHtml(t));PC[t.symbol]=1}$("pc_"+t.symbol).style.order=i;fill(t,r[1])});
- Object.keys(PC).forEach(function(k){if(!seen[k]){var e=$("pc_"+k);if(e)e.remove();delete PC[k]}})}
+ Object.keys(PC).forEach(function(k){if(!seen[k]){var e=$("pc_"+k);if(e)e.remove();delete PC[k]}});posAges()}
 /* ---------- گپ‌های فعال + چارت زنده ---------- */
 function feed(){var L=actList(),k=L.map(function(s){return s.key+s.n}).sort().join();
  if(k!==fk){fk=k;$("feed").innerHTML=L.length?L.map(function(s){var g=s.kind==="GAP";return '<article class="sg'+(g?" gap":"")+(S.fresh[s.key]?" new":"")+'" id="fr_'+s.key+'"><div><span class="sym">'+esc(s.symbol)+'</span><div class="m"><span>'+(g?"⚠️ احتمال گپ":"🔴 SELL")+'</span><span class="tf">'+s.tf+'</span>'+(s.n>1?'<span class="c2">×'+s.n+' تکرار</span>':'')+'<span id="fa_'+s.key+'"></span><span id="fq_'+s.key+'" class="bd" style="display:none"></span><span id="fx_'+s.key+'"></span><a href="'+tvu(s.symbol)+'" target="_blank" rel="noopener">TV</a><a href="'+lbu(s.symbol)+'" target="_blank" rel="noopener">LBank</a></div></div><div class="pc" style="color:'+(g?"var(--amb)":"var(--red)")+'">'+s.gap.toFixed(2)+'%</div><div class="bar"><b style="width:'+Math.min(100,s.gap*22)+'%"></b></div><div class="m" style="grid-column:1/-1">فاصله تا UB الان: <b id="fd_'+s.key+'" style="direction:ltr"></b> <span id="fs_'+s.key+'"></span></div></article>'}).join(""):'<div class="emp">هیچ گپ فعالی نیست</div>'}
@@ -379,7 +458,7 @@ function hdr(){var ok=S.lvOn||gok;$("hb").className="hb"+(ok?"":" off");
  $("pcs").className=st?"stale":""}
 function ensure(){S.sig.slice(0,60).forEach(function(s){if(now()-s.ts<40*PER[s.tf]&&S.st[s.key]!=="filled")loadC(s.symbol,s.tf)});S.sig.slice(0,60).forEach(function(s){if(S.st[s.key]!=="filled"&&S.st[s.key]!=="old")gsub(s.symbol,s.tf)})}
 function dirty(){if(!tm)tm=setTimeout(function(){tm=0;renderAll()},150)}
-function renderAll(){ensure();evalAll();hdr();wallet();posCards();worstOpen();botCard();tgCard();badges();journal();daysCard();feed();lcards();tkr();gapStats()}
+function renderAll(){ensure();evalAll();hdr();wallet();posCards();worstOpen();botCard();tgCard();badges();stepsCard();lbCard();journal();daysCard();feed();lcards();tkr();gapStats()}
 /* ---------- اعلان ---------- */
 function ping(s){if(!S.sound)return;
  try{var a=AC||new (window.AudioContext||window.webkitAudioContext)(),o=a.createOscillator(),g=a.createGain();o.frequency.value=s.kind==="SELL"?440:660;o.connect(g);g.connect(a.destination);g.gain.setValueAtTime(.15,a.currentTime);g.gain.exponentialRampToValueAtTime(.001,a.currentTime+.5);o.start();o.stop(a.currentTime+.5)}catch(e){}
@@ -410,13 +489,14 @@ function onEv(v,hist){if(v.t)S.lt[v.t]=Math.max(S.lt[v.t]||0,hist?(v._t||0):now(
   var stv=v.start!=null?+v.start:START,rl=rs?0:(v.realized!=null?+v.realized:0),eq2=stv+rl+P.reduce(function(a,x){return a+(+x.pnl||0)},0);
   if(rs){if(S.lastEq!=null&&S.ep0!=null&&tt-S.ep0>600)mergeDays([{from:S.ep0,to:tt,start:stv,end:S.lastEq,trades:S.lastN||0}],"page");S.ep0=tt;S.lastEq=null;S.lastN=0}
   else if(isFinite(eq2)){if(S.ep0==null)S.ep0=tt;S.lastEq=eq2;S.lastN=+v.closed_n||0}
+  P.forEach(function(x){if(S.fs[x.symbol]==null)S.fs[x.symbol]=tt});Object.keys(S.fs).forEach(function(k){if(!P.some(function(x){return x.symbol===k}))delete S.fs[k]});
   S.pos=P;S.posTs=tt;dirty()}
  else if(v.t==="rep"){dirty()}
  else if(v.t==="report"||(v.t==="log"&&TGRE.test(String(v.x))&&!/احتمال گپ/.test(String(v.x)))){var tx=v.t==="report"?v.text:v.x,ts3=+v.ts;if(!(ts3>1e9&&ts3<4e9))ts3=v._t||now();S.lt.report=Math.max(S.lt.report||0,hist?(v._t||0):now());
   if(addTg(tx,ts3)&&!hist&&S.ready)toast("📨 گزارش جدید از ربات");dirty()}
  else if(v.t==="close"&&/^[A-Z0-9]{2,20}USDT$/.test(String(v.symbol).toUpperCase())&&isFinite(+v.pnl)){var ts2=+v.ts;if(!(ts2>1e9&&ts2<4e9))ts2=v._t||now();if(ts2<S.resetAt)return;
   var sy=String(v.symbol).toUpperCase(),k2=sy+"|"+ts2;
-  if(!S.cl.some(function(x){return x.ts+"|"===ts2+"|"&&x.symbol===sy})){S.cl.push({symbol:sy,ts:ts2,entry:v.entry,exit:v.exit,pnl:+v.pnl,roi:v.roi,steps:v.steps,dur:v.dur,why:v.why,mae:v.mae});S.cl.sort(function(a,b){return b.ts-a.ts});S.cl=S.cl.slice(0,60);
+  if(!S.cl.some(function(x){return x.ts+"|"===ts2+"|"&&x.symbol===sy})){S.cl.push({symbol:sy,ts:ts2,entry:v.entry,exit:v.exit,pnl:+v.pnl,roi:v.roi,steps:v.steps,dur:v.dur,why:v.why,mae:v.mae});S.cl.sort(function(a,b){return b.ts-a.ts});S.cl=S.cl.slice(0,60);arch({symbol:sy,ts:ts2,pnl:+v.pnl,steps:v.steps,dur:v.dur});
    if(!hist&&S.ready)evt((String(v.why).toUpperCase()==="TP"?"✅ TP · ":"🔒 بسته شد · ")+sy,sg(+v.pnl)+" U")}dirty()}
  else if(v.t==="days"&&Array.isArray(v.days)){mergeDays(v.days,"bot");dirty()}}
 function sse(){if(!window.EventSource)return;var t0=Date.now()/1000,es=new EventSource("https://ntfy.sh/"+LIVE_TOPIC+"/sse?since=12h");
@@ -439,7 +519,7 @@ $("gsd").addEventListener("toggle",function(){S.col.gs=this.open?0:1;saveCols()}
 var DP=null;if(window.addEventListener)window.addEventListener("beforeinstallprompt",function(e){e.preventDefault();DP=e;$("inst").style.display=""});
 $("inst").onclick=function(){if(DP){DP.prompt();DP=null;this.style.display="none"}};
 try{S.days=JSON.parse(localStorage.getItem("lbg_days")||"[]")}catch(e){S.days=[]}
-var t0=null;try{t0=localStorage.getItem("lbg_tab")}catch(e){}setTab(t0||"ov");
+var t0=null;try{t0=localStorage.getItem("lbg_tab")}catch(e){}setTab(t0||"ov");try{S.cla=JSON.parse(localStorage.getItem("lbg_cl")||"[]")}catch(e){S.cla=[]}
 $("tabs").onclick=function(e){var b=e.target&&e.target.closest?e.target.closest("button"):null;if(b&&b.dataset.t)setTab(b.dataset.t)};
 boot();sse();wsConnect();dirty();setInterval(function(){hdr();botAges();posAges();actList().forEach(function(s){setT($("fa_"+s.key),ago(s.ts))})},1000);
 </script>
