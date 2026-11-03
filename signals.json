@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.7",
-  "updated_at": 1793747160,
+  "updated_at": 1793747184,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "FOXAUSDT",
-      "tf": "1h",
-      "gap": 2.48,
-      "ts": 1793721987
-    },
     {
       "kind": "GAP",
       "symbol": "MRNAUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 1.49,
       "ts": 1793747160
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793747184
     }
   ],
   "trades": [
@@ -1714,6 +1714,19 @@
       "margin": 10.0,
       "lev": 20,
       "px": 0.2572,
+      "pnl": 0.0,
+      "tf": "1h"
+    },
+    {
+      "symbol": "CATEUSDT",
+      "side": "SELL",
+      "entry": 0.0409,
+      "tp": 0.039877499999999996,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.0409,
       "pnl": 0.0,
       "tf": "1h"
     }
