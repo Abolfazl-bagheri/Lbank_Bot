@@ -420,6 +420,31 @@
       "last_leg_candle_ts": 1793710800,
       "dry_run": true,
       "order_id": "PAPER-PUMPUSDT-1793711160"
+    },
+    {
+      "symbol": "LITUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 3.2289,
+      "qty": 61.9406,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 3.1481774999999996,
+      "tf": "1h",
+      "opened_at": 1793711183,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 3.2289,
+          "ts": 1793711183
+        }
+      ],
+      "entry_candle_ts": 1793710800,
+      "last_leg_candle_ts": 1793710800,
+      "dry_run": true,
+      "order_id": "PAPER-LITUSDT-1793711183"
     }
   ],
   "trade_history": [
@@ -3194,6 +3219,15 @@
       "upper": 0.1297079182886298,
       "open": 0.1318,
       "reported": false
+    },
+    {
+      "symbol": "PUMPUSDT",
+      "tf": "1h",
+      "candle_ts": 1793710800,
+      "side": "SELL",
+      "upper": 0.0042167178489080775,
+      "open": 0.004277,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -3273,7 +3307,8 @@
     "AEHRUSDT": 1793742487,
     "QUACKAIUSDT": 1793743546,
     "FLOCK1USDT": 1793751668,
-    "O1USDT": 1793752630
+    "O1USDT": 1793752630,
+    "KNTQUSDT": 1793754378
   },
   "last_trade_report_ts": 1793709448,
   "last_daily_report_date": "2026-11-01",
