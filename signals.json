@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.5",
-  "updated_at": 1793710982,
+  "updated_at": 1793710995,
   "signals": [
-    {
-      "kind": "HEARTBEAT",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1793671763
-    },
     {
       "kind": "GAP",
       "symbol": "CASHCATUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 1.31,
       "ts": 1793710982
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793710995
     }
   ],
   "trades": [
@@ -1534,6 +1534,19 @@
       "px": 0.02732,
       "pnl": 0.0,
       "tf": "15m"
+    },
+    {
+      "symbol": "BOMEUSDT",
+      "side": "SELL",
+      "entry": 0.0006295,
+      "tp": 0.0006137625,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.0006295,
+      "pnl": 0.0,
+      "tf": "1h"
     }
   ],
   "start": 1000.0,
