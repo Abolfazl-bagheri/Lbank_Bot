@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.5",
-  "updated_at": 1793713730,
+  "updated_at": 1793713747,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1793680491
-    },
     {
       "kind": "GAP",
       "symbol": "IRYSUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 2.41,
       "ts": 1793713730
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793713747
     }
   ],
   "trades": [
@@ -1599,6 +1599,19 @@
       "px": 0.01687,
       "pnl": 0.4731,
       "tf": "1h"
+    },
+    {
+      "symbol": "IDOLUSDT",
+      "side": "SELL",
+      "entry": 0.021123,
+      "tp": 0.020594925,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.021123,
+      "pnl": 0.0,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
