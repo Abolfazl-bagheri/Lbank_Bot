@@ -237,52 +237,33 @@
       "order_id": "PAPER-CLAUDIAUSDT-1793671431"
     },
     {
-      "symbol": "RUNEUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.5839,
-      "qty": 342.5244,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.5693024999999999,
-      "tf": "15m",
-      "opened_at": 1793687674,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.5839,
-          "ts": 1793687674
-        }
-      ],
-      "entry_candle_ts": 1793687400,
-      "last_leg_candle_ts": 1793687400,
-      "dry_run": true,
-      "order_id": "PAPER-RUNEUSDT-1793687674"
-    },
-    {
       "symbol": "MEGAUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.04622,
-      "qty": 4327.1311,
-      "margin": 10.0,
+      "entry": 0.04602626147235248,
+      "qty": 13036.036,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.04506449999999999,
+      "tp_price": 0.04487560493554367,
       "tf": "15m",
       "opened_at": 1793688418,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.04602
+      ],
       "steps": [
         {
           "px": 0.04622,
           "ts": 1793688418
+        },
+        {
+          "px": 0.04593,
+          "ts": 1793697536
         }
       ],
       "entry_candle_ts": 1793688300,
-      "last_leg_candle_ts": 1793688300,
+      "last_leg_candle_ts": 1793697536,
       "dry_run": true,
       "order_id": "PAPER-MEGAUSDT-1793688418"
     },
@@ -1523,6 +1504,34 @@
       "closed_at": 1793697532,
       "close_px": 1.024,
       "pnl_usdt": 23.959142399999976
+    },
+    {
+      "symbol": "RUNEUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.5839,
+      "qty": 342.5244,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.5693024999999999,
+      "tf": "15m",
+      "opened_at": 1793687674,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.5839,
+          "ts": 1793687674
+        }
+      ],
+      "entry_candle_ts": 1793687400,
+      "last_leg_candle_ts": 1793687400,
+      "dry_run": true,
+      "order_id": "PAPER-RUNEUSDT-1793687674",
+      "closed_at": 1793697535,
+      "close_px": 0.5688,
+      "pnl_usdt": 5.172118513444084
     }
   ],
   "pending": [
