@@ -35,7 +35,7 @@ SIGNALS_FILE = os.path.join(BASE_DIR, "signals.json")
 LIVE_TOPIC = os.environ.get("LIVE_TOPIC", "lbank-gap-b0b85cee29ce").strip()
 STATE_BAK = os.path.join(BASE_DIR, "bot_state.bak")
 
-BOT_VERSION = "2.6.5"
+BOT_VERSION = "2.6.6"
 CHANGELOG = {
     "2.6.5": [
         "چارت اجباری: خط‌روند داینامیک + سقف پله با هم",
@@ -925,7 +925,7 @@ def detect_fake_break_watch(df: pd.DataFrame) -> str | None:
 
 
 def make_gap_chart(df: pd.DataFrame, symbol: str, tf: str, sig: dict | None = None) -> bytes | None:
-    """همیشه یک چارت واحد: کندل + BB + خط‌روند داینامیک + سقف پله."""
+    """چارت سفید: فقط کندل واقعی + BB + خط‌روند + سقف (بدون نوار خالی/flat)."""
     try:
         import matplotlib
         matplotlib.use("Agg")
@@ -935,17 +935,30 @@ def make_gap_chart(df: pd.DataFrame, symbol: str, tf: str, sig: dict | None = No
 
         if df is None or len(df) < 30:
             return None
-        # اگر flat زیاد بود تمیز کن؛ وگرنه داده خام (چارت FN خراب نشود)
-        fr = _flat_ratio(df)
-        plot_df = densify_ohlc(df) if fr > 0.2 else df.copy()
+
+        raw = df.copy().reset_index(drop=True)
+        # حذف کندل بدون دامنه واقعی (منبع مشکل FOXA/CLSK)
+        o0 = raw["o"].astype(float)
+        h0 = raw["h"].astype(float)
+        l0 = raw["l"].astype(float)
+        c0 = raw["c"].astype(float)
+        rng0 = (h0 - l0)
+        flat = (rng0 <= 0) | ((h0 == l0) & (o0 == c0))
+        # نسبی: دامنه خیلی کوچک نسبت به قیمت
+        mid = c0.replace(0, np.nan).abs()
+        tiny = rng0 <= (mid * 0.00015)  # <0.015%
+        keep = ~(flat | tiny.fillna(False))
+        plot_df = raw.loc[keep].copy().reset_index(drop=True)
         if len(plot_df) < 25:
-            plot_df = df.copy()
-        plot_df = plot_df.tail(70).reset_index(drop=True)
-        # BB اگر نیست
-        if "upper" not in plot_df.columns or plot_df["upper"].isna().all():
-            s = plot_df["c"].astype(float).rolling(BB_PERIOD).mean()
-            sd = plot_df["c"].astype(float).rolling(BB_PERIOD).std(ddof=1)
-            plot_df["sma"], plot_df["upper"], plot_df["lower"] = s, s + BB_STD * sd, s - BB_STD * sd
+            plot_df = raw.tail(60).copy().reset_index(drop=True)
+        else:
+            plot_df = plot_df.tail(70).reset_index(drop=True)
+
+        s = plot_df["c"].astype(float).rolling(BB_PERIOD).mean()
+        sd = plot_df["c"].astype(float).rolling(BB_PERIOD).std(ddof=1)
+        plot_df["sma"] = s
+        plot_df["upper"] = s + BB_STD * sd
+        plot_df["lower"] = s - BB_STD * sd
 
         o = plot_df["o"].to_numpy(float)
         h = plot_df["h"].to_numpy(float)
@@ -958,26 +971,24 @@ def make_gap_chart(df: pd.DataFrame, symbol: str, tf: str, sig: dict | None = No
         gap_pct = ((entry - ub) / entry * 100.0) if ub and entry > 0 else None
 
         fig, ax = plt.subplots(figsize=(11, 5.4), dpi=130)
-        fig.patch.set_facecolor("#0b0d13")
-        ax.set_facecolor("#0b0d13")
-        rng = float(h.max() - l.min()) or 1.0
-        body_min = rng * 0.003
+        fig.patch.set_facecolor("#ffffff")
+        ax.set_facecolor("#ffffff")
+        yspan = float(np.nanmax(h) - np.nanmin(l)) or abs(entry) * 0.02
+        body_min = yspan * 0.004
+
         for i in range(n):
             up = c[i] >= o[i]
-            col = "#2de2a6" if up else "#ff5b73"
-            ax.vlines(i, l[i], h[i], colors=col, linewidth=1.1, zorder=2)
+            col = "#16a34a" if up else "#dc2626"
+            ax.vlines(i, l[i], h[i], colors=col, linewidth=1.15, zorder=2)
             y0, y1 = min(o[i], c[i]), max(o[i], c[i])
             if y1 - y0 < body_min:
                 y1 = y0 + body_min
             ax.add_patch(Rectangle((i - 0.32, y0), 0.64, y1 - y0, facecolor=col, edgecolor=col, zorder=3))
 
-        # BB
-        if "upper" in plot_df.columns:
-            ax.plot(xs, plot_df["upper"], color="#8b7bff", lw=1.0, alpha=0.75, zorder=1)
-            ax.plot(xs, plot_df["lower"], color="#8b7bff", lw=1.0, alpha=0.55, zorder=1)
-            ax.fill_between(xs, plot_df["lower"], plot_df["upper"], color="#8b7bff", alpha=0.06, zorder=0)
+        ax.plot(xs, plot_df["upper"], color="#7c3aed", lw=1.05, alpha=0.8, zorder=1)
+        ax.plot(xs, plot_df["lower"], color="#7c3aed", lw=1.05, alpha=0.55, zorder=1)
+        ax.fill_between(xs, plot_df["lower"], plot_df["upper"], color="#7c3aed", alpha=0.07, zorder=0)
 
-        # سوئینگ → خط‌روند داینامیک
         def pivots(arr, high=True, sw=3):
             out = []
             for i in range(sw, len(arr) - sw):
@@ -991,55 +1002,50 @@ def make_gap_chart(df: pd.DataFrame, symbol: str, tf: str, sig: dict | None = No
             return out
 
         ph, pl_ = pivots(h, True), pivots(l, False)
-        # مقاومت داینامیک (سقف‌ها)
         if len(ph) >= 2:
-            for a, b in ((ph[-2], ph[-1]), (ph[-3], ph[-1]) if len(ph) >= 3 else (None, None)):
-                if a is None:
-                    continue
-                if b - a < 2:
-                    continue
+            a, b = ph[-2], ph[-1]
+            if b - a >= 2:
                 slope = (h[b] - h[a]) / (b - a)
                 y_end = h[b] + slope * (n - 1 - b)
-                ax.plot([a, n - 1], [h[a], y_end], color="#ffb547", lw=2.0, solid_capstyle="round", zorder=4)
-                ax.scatter([a, b], [h[a], h[b]], s=28, color="#ffb547", zorder=5)
-                break
-        # حمایت داینامیک (کف‌ها)
+                ax.plot([a, n - 1], [h[a], y_end], color="#ea580c", lw=2.0, zorder=4)
+                ax.scatter([a, b], [h[a], h[b]], s=32, color="#ea580c", zorder=5, edgecolors="#9a3412", linewidths=0.5)
         if len(pl_) >= 2:
             a, b = pl_[-2], pl_[-1]
             if b - a >= 2:
                 slope = (l[b] - l[a]) / (b - a)
                 y_end = l[b] + slope * (n - 1 - b)
-                ax.plot([a, n - 1], [l[a], y_end], color="#38d9ff", lw=2.0, solid_capstyle="round", zorder=4)
-                ax.scatter([a, b], [l[a], l[b]], s=28, color="#38d9ff", zorder=5)
+                ax.plot([a, n - 1], [l[a], y_end], color="#0284c7", lw=2.0, zorder=4)
+                ax.scatter([a, b], [l[a], l[b]], s=32, color="#0284c7", zorder=5, edgecolors="#075985", linewidths=0.5)
 
-        # سقف‌های افقی پله
         try:
             levels = find_resistance_levels(symbol, entry, tf if tf in ("15m", "1h", "4h") else "1h")
         except Exception:
             levels = []
         for j, lv in enumerate(levels[:3]):
-            ax.axhline(lv, color="#f59e0b", ls="--", lw=1.2, alpha=0.9, zorder=3)
+            ax.axhline(lv, color="#d97706", ls="--", lw=1.15, alpha=0.9, zorder=3)
             dist = (lv - entry) / entry * 100 if entry else 0
-            ax.text(n - 1, lv, f"  سقف{j+1} {lv:.6g} ({dist:+.1f}%)", color="#f59e0b", fontsize=8, va="bottom", zorder=6)
+            ax.text(n - 1, lv, f"  سقف{j+1} {lv:.6g} ({dist:+.1f}%)", color="#b45309", fontsize=8, va="bottom", zorder=6)
 
         if ub and ub == ub:
-            ax.axhline(ub, color="#c4b5fd", ls=":", lw=1.1, alpha=0.9)
-            ax.text(0, ub, f"UB {ub:.6g}  ", color="#c4b5fd", fontsize=8, va="bottom", ha="left")
-        ax.axhline(entry, color="#38bdf8", ls=":", lw=0.9, alpha=0.7)
-        ax.text(n - 1, entry, f"  px {entry:.6g}", color="#38bdf8", fontsize=8, va="top")
+            ax.axhline(ub, color="#6d28d9", ls=":", lw=1.15, alpha=0.95)
+            ax.text(0.2, ub, f"UB {ub:.6g}", color="#6d28d9", fontsize=8, va="bottom")
+        ax.axhline(entry, color="#0369a1", ls=":", lw=0.95, alpha=0.8)
+        ax.text(n - 1, entry, f"  px {entry:.6g}", color="#0369a1", fontsize=8, va="top")
 
         title = f"{symbol} · {tf} · روند+سقف"
-        if gap_pct is not None:
+        if gap_pct is not None and gap_pct > 0:
             title += f" · gap≈{gap_pct:.2f}%"
-        ax.set_title(title, color="#eef0f8", fontsize=11, loc="left")
+        elif gap_pct is not None:
+            title += f" · زیر UB ({gap_pct:.2f}%)"
+        ax.set_title(title, color="#0f172a", fontsize=11, loc="left")
         ax.set_xlim(-1, n + 3)
-        ax.tick_params(colors="#8b92a8", labelsize=8)
-        ax.grid(color="#ffffff", alpha=0.06)
-        for s in ax.spines.values():
-            s.set_visible(False)
+        ax.tick_params(colors="#334155", labelsize=8)
+        ax.grid(color="#94a3b8", alpha=0.25)
+        for s_ in ax.spines.values():
+            s_.set_color("#cbd5e1")
         fig.tight_layout()
         buf = BytesIO()
-        fig.savefig(buf, format="png", facecolor="#0b0d13")
+        fig.savefig(buf, format="png", facecolor="#ffffff")
         plt.close(fig)
         return buf.getvalue()
     except Exception as e:
