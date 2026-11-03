@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.7",
-  "updated_at": 1793743435,
+  "updated_at": 1793743455,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "BOTUSDT",
-      "tf": "4h",
-      "gap": 4.09,
-      "ts": 1793720743
-    },
     {
       "kind": "GAP",
       "symbol": "BUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 1.49,
       "ts": 1793743435
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793743455
     }
   ],
   "trades": [
@@ -1651,6 +1651,19 @@
       "px": 195.2,
       "pnl": 0.0,
       "tf": "15m"
+    },
+    {
+      "symbol": "AMDUSDT",
+      "side": "SELL",
+      "entry": 523.27,
+      "tp": 510.18825,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 523.27,
+      "pnl": 0.0,
+      "tf": "1h"
     }
   ],
   "start": 1000.0,
