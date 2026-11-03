@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.7",
-  "updated_at": 1793739191,
+  "updated_at": 1793739211,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "TEMUSDT",
-      "tf": "1h",
-      "gap": 1.17,
-      "ts": 1793718044
-    },
     {
       "kind": "GAP",
       "symbol": "API3USDT",
@@ -1402,6 +1395,13 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1793739191
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793739211
     }
   ],
   "trades": [
@@ -1642,11 +1642,11 @@
     {
       "symbol": "TAUSDT",
       "side": "SELL",
-      "entry": 0.06682,
-      "tp": 0.0651495,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
+      "entry": 0.0690295216693621,
+      "tp": 0.06730378362762805,
+      "adds": 1,
+      "pele": 2,
+      "margin": 30.0,
       "lev": 20,
       "px": 0.07019,
       "pnl": -10.0868,
