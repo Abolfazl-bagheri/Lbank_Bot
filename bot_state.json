@@ -502,17 +502,18 @@
       "symbol": "SHAZUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 23.55,
-      "qty": 25.4777,
-      "margin": 30.0,
+      "entry": 23.967238530398145,
+      "qty": 58.4131,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 22.96125,
+      "tp_price": 23.36805756713819,
       "tf": "15m",
       "opened_at": 1793718266,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [
-        23.59
+        23.59,
+        24.34
       ],
       "steps": [
         {
@@ -522,10 +523,14 @@
         {
           "px": 23.55,
           "ts": 1793718593
+        },
+        {
+          "px": 24.29,
+          "ts": 1793735429
         }
       ],
       "entry_candle_ts": 1793718000,
-      "last_leg_candle_ts": 1793718593,
+      "last_leg_candle_ts": 1793735429,
       "dry_run": true,
       "order_id": "PAPER-SHAZUSDT-1793718266"
     },
@@ -2381,16 +2386,6 @@
       "tf": "15m",
       "candle_ts": 1793430900,
       "side": "SELL"
-    },
-    {
-      "symbol": "EVAAUSDT",
-      "tf": "15m",
-      "candle_ts": 1793475900,
-      "side": "SELL",
-      "upper": 1.4171255842242387,
-      "open": 1.44,
-      "reported": true,
-      "filled": false
     },
     {
       "symbol": "ZZZUSDT",
