@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.5",
-  "updated_at": 1793689506,
+  "updated_at": 1793689586,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "ARIAUSDT",
-      "tf": "4h",
-      "gap": 6.43,
-      "ts": 1793648421
-    },
     {
       "kind": "GAP",
       "symbol": "TEMUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1793689506
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793689586
     }
   ],
   "trades": [
@@ -1510,19 +1510,6 @@
       "tf": "15m"
     },
     {
-      "symbol": "BMTUSDT",
-      "side": "SELL",
-      "entry": 0.023590623731460408,
-      "tp": 0.0230008581381739,
-      "adds": 3,
-      "pele": 4,
-      "margin": 150.0,
-      "lev": 20,
-      "px": 0.02294,
-      "pnl": 82.7393,
-      "tf": "1h"
-    },
-    {
       "symbol": "RUNEUSDT",
       "side": "SELL",
       "entry": 0.5839,
@@ -1563,16 +1550,16 @@
     }
   ],
   "start": 1000.0,
-  "realized": 694.7655,
-  "closed_n": 36,
-  "open_upnl": 82.5104,
+  "realized": 777.5048,
+  "closed_n": 37,
+  "open_upnl": -0.2289,
   "equity": 1777.2759,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 694.7655,
+    "profit": 777.5048,
     "loss": 0,
-    "count": 36
+    "count": 37
   }
 }
