@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.5",
-  "updated_at": 1793718560,
+  "updated_at": 1793718591,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "CLAUDIAUSDT",
-      "tf": "4h",
-      "gap": 4.54,
-      "ts": 1793693075
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1395,13 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1793718560
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793718591
     }
   ],
   "trades": [
@@ -1575,19 +1575,6 @@
       "tf": "1h"
     },
     {
-      "symbol": "IDOLUSDT",
-      "side": "SELL",
-      "entry": 0.021123,
-      "tp": 0.020594925,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.019896,
-      "pnl": 11.6177,
-      "tf": "15m"
-    },
-    {
       "symbol": "CHIPUSDT",
       "side": "SELL",
       "entry": 0.0428,
@@ -1631,9 +1618,9 @@
       "side": "SELL",
       "entry": 0.6128,
       "tp": 0.59748,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
+      "adds": 1,
+      "pele": 2,
+      "margin": 30.0,
       "lev": 20,
       "px": 0.6128,
       "pnl": 0.0,
@@ -1693,16 +1680,16 @@
     }
   ],
   "start": 1000.0,
-  "realized": 917.7839,
-  "closed_n": 43,
-  "open_upnl": -82.3389,
+  "realized": 929.4016,
+  "closed_n": 44,
+  "open_upnl": -93.9566,
   "equity": 1835.445,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 917.7839,
+    "profit": 929.4016,
     "loss": 0,
-    "count": 43
+    "count": 44
   }
 }
