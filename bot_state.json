@@ -316,6 +316,31 @@
       "last_leg_candle_ts": 1793710800,
       "dry_run": true,
       "order_id": "PAPER-BMTUSDT-1793710965"
+    },
+    {
+      "symbol": "BOMEUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.0006295,
+      "qty": 317712.4702,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0006137625,
+      "tf": "1h",
+      "opened_at": 1793710984,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.0006295,
+          "ts": 1793710984
+        }
+      ],
+      "entry_candle_ts": 1793710800,
+      "last_leg_candle_ts": 1793710800,
+      "dry_run": true,
+      "order_id": "PAPER-BOMEUSDT-1793710984"
     }
   ],
   "trade_history": [
@@ -3027,6 +3052,15 @@
       "open": 0.053111,
       "reported": true,
       "filled": false
+    },
+    {
+      "symbol": "BMTUSDT",
+      "tf": "15m",
+      "candle_ts": 1793710800,
+      "side": "SELL",
+      "upper": 0.02605404000489277,
+      "open": 0.02727,
+      "reported": false
     }
   ],
   "paper_days": [
