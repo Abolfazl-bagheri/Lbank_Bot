@@ -166,37 +166,6 @@
       "order_id": "PAPER-CCLUSDT-1793635557"
     },
     {
-      "symbol": "AMZNUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 251.803588079966,
-      "qty": 2.382812,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 245.50849837796684,
-      "tf": "4h",
-      "opened_at": 1793635647,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        251.29
-      ],
-      "steps": [
-        {
-          "px": 253.61,
-          "ts": 1793635647
-        },
-        {
-          "px": 250.91,
-          "ts": 1793640945
-        }
-      ],
-      "entry_candle_ts": 1793635200,
-      "last_leg_candle_ts": 1793640945,
-      "dry_run": true,
-      "order_id": "PAPER-AMZNUSDT-1793635647"
-    },
-    {
       "symbol": "PDDUSDT",
       "side": "SELL",
       "status": "open",
@@ -1404,6 +1373,40 @@
       "closed_at": 1793684143,
       "close_px": 0.1992,
       "pnl_usdt": 5.2785923753665855
+    },
+    {
+      "symbol": "AMZNUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 251.803588079966,
+      "qty": 2.382812,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 245.50849837796684,
+      "tf": "4h",
+      "opened_at": 1793635647,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        251.29
+      ],
+      "steps": [
+        {
+          "px": 253.61,
+          "ts": 1793635647
+        },
+        {
+          "px": 250.91,
+          "ts": 1793640945
+        }
+      ],
+      "entry_candle_ts": 1793635200,
+      "last_leg_candle_ts": 1793640945,
+      "dry_run": true,
+      "order_id": "PAPER-AMZNUSDT-1793635647",
+      "closed_at": 1793686002,
+      "close_px": 245.36,
+      "pnl_usdt": 15.353843356480725
     }
   ],
   "pending": [
@@ -2867,6 +2870,15 @@
       "open": 0.2036,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "BMTUSDT",
+      "tf": "1h",
+      "candle_ts": 1793685600,
+      "side": "SELL",
+      "upper": 0.023530767415344257,
+      "open": 0.02379,
+      "reported": false
     }
   ],
   "paper_days": [
