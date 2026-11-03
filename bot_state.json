@@ -318,15 +318,15 @@
       "symbol": "BMTUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.023343090183613135,
-      "qty": 25703.5377,
-      "margin": 30.0,
+      "entry": 0.0235118330902792,
+      "qty": 59544.4852,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 0.022759512929022806,
+      "tp_price": 0.02292403726302222,
       "tf": "1h",
       "opened_at": 1793682329,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [
         0.02336
       ],
@@ -338,10 +338,14 @@
         {
           "px": 0.02329,
           "ts": 1793684845
+        },
+        {
+          "px": 0.02364,
+          "ts": 1793685902
         }
       ],
       "entry_candle_ts": 1793682000,
-      "last_leg_candle_ts": 1793684845,
+      "last_leg_candle_ts": 1793685600,
       "dry_run": true,
       "order_id": "PAPER-BMTUSDT-1793682329"
     }
@@ -1596,22 +1600,6 @@
       "side": "SELL"
     },
     {
-      "symbol": "BULLAUSDT",
-      "tf": "1h",
-      "candle_ts": 1793426400,
-      "side": "SELL",
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "BUSDT",
-      "tf": "1h",
-      "candle_ts": 1793426400,
-      "side": "SELL",
-      "reported": true,
-      "filled": false
-    },
-    {
       "symbol": "MAGMAUSDT",
       "tf": "15m",
       "candle_ts": 1793428200,
@@ -2863,7 +2851,8 @@
       "side": "SELL",
       "upper": 0.02144802050752271,
       "open": 0.02168,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "BMTUSDT",
@@ -2872,7 +2861,8 @@
       "side": "SELL",
       "upper": 0.02294555478738375,
       "open": 0.02339,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ICNTUSDT",
@@ -2960,7 +2950,7 @@
     "CAPETHUSDT": 1793724461,
     "LIGHT1USDT": 1793726282
   },
-  "last_trade_report_ts": 1793683982,
+  "last_trade_report_ts": 1793685015,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.5",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
