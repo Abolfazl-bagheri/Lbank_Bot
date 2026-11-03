@@ -762,6 +762,31 @@
       "last_leg_candle_ts": 1793743200,
       "dry_run": true,
       "order_id": "PAPER-OUSTUSDT-1793743504"
+    },
+    {
+      "symbol": "ANSEMUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.04499,
+      "qty": 4445.4323,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.04386525,
+      "tf": "1h",
+      "opened_at": 1793747063,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.04499,
+          "ts": 1793747063
+        }
+      ],
+      "entry_candle_ts": 1793746800,
+      "last_leg_candle_ts": 1793746800,
+      "dry_run": true,
+      "order_id": "PAPER-ANSEMUSDT-1793747063"
     }
   ],
   "trade_history": [
@@ -3942,7 +3967,8 @@
       "side": "SELL",
       "upper": 13.863646910708392,
       "open": 14.05,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ANETUSDT",
@@ -3951,7 +3977,8 @@
       "side": "SELL",
       "upper": 186.74970538097085,
       "open": 193.49,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "AMDUSDT",
@@ -3960,7 +3987,8 @@
       "side": "SELL",
       "upper": 515.494359321854,
       "open": 523.02,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "SMCIUSDT",
@@ -3969,7 +3997,8 @@
       "side": "SELL",
       "upper": 33.473109884532455,
       "open": 34.05,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "OUSTUSDT",
@@ -3978,7 +4007,8 @@
       "side": "SELL",
       "upper": 31.053586356459796,
       "open": 31.52,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -4061,7 +4091,7 @@
     "SIMOUSDT": 1793785920,
     "QUACKAIUSDT": 1793787693
   },
-  "last_trade_report_ts": 1793743704,
+  "last_trade_report_ts": 1793746427,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.7",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
