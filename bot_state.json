@@ -458,46 +458,6 @@
       "order_id": "PAPER-NIGHTUSDT-1793714760"
     },
     {
-      "symbol": "DRIFTUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.013393399241590285,
-      "qty": 223990.9335,
-      "margin": 150.0,
-      "leverage": 20,
-      "tp_price": 0.013058564260550527,
-      "tf": "1h",
-      "opened_at": 1793714798,
-      "adds": 3,
-      "last_leg_margin": 80.0,
-      "used_res_levels": [
-        0.01314,
-        0.01344
-      ],
-      "steps": [
-        {
-          "px": 0.01307,
-          "ts": 1793714798
-        },
-        {
-          "px": 0.01309,
-          "ts": 1793715716
-        },
-        {
-          "px": 0.01342,
-          "ts": 1793717540
-        },
-        {
-          "px": 0.0135,
-          "ts": 1793718296
-        }
-      ],
-      "entry_candle_ts": 1793714400,
-      "last_leg_candle_ts": 1793718000,
-      "dry_run": true,
-      "order_id": "PAPER-DRIFTUSDT-1793714798"
-    },
-    {
       "symbol": "RUNEUSDT",
       "side": "SELL",
       "status": "open",
@@ -588,24 +548,28 @@
       "symbol": "HUTUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 60.72,
-      "qty": 3.2938,
-      "margin": 10.0,
+      "entry": 62.383562004179716,
+      "qty": 9.617899999999999,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 59.202,
-      "tf": "1h",
+      "tp_price": 60.823972954075224,
+      "tf": "15m",
       "opened_at": 1793718371,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 60.72,
           "ts": 1793718371
+        },
+        {
+          "px": 63.25,
+          "ts": 1793720927
         }
       ],
       "entry_candle_ts": 1793718000,
-      "last_leg_candle_ts": 1793718000,
+      "last_leg_candle_ts": 1793720700,
       "dry_run": true,
       "order_id": "PAPER-HUTUSDT-1793718371"
     },
@@ -2143,6 +2107,49 @@
       "closed_at": 1793720176,
       "close_px": 29.538,
       "pnl_usdt": 5.504707973925058
+    },
+    {
+      "symbol": "DRIFTUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.013393399241590285,
+      "qty": 223990.9335,
+      "margin": 150.0,
+      "leverage": 20,
+      "tp_price": 0.013058564260550527,
+      "tf": "1h",
+      "opened_at": 1793714798,
+      "adds": 3,
+      "last_leg_margin": 80.0,
+      "used_res_levels": [
+        0.01314,
+        0.01344
+      ],
+      "steps": [
+        {
+          "px": 0.01307,
+          "ts": 1793714798
+        },
+        {
+          "px": 0.01309,
+          "ts": 1793715716
+        },
+        {
+          "px": 0.01342,
+          "ts": 1793717540
+        },
+        {
+          "px": 0.0135,
+          "ts": 1793718296
+        }
+      ],
+      "entry_candle_ts": 1793714400,
+      "last_leg_candle_ts": 1793718000,
+      "dry_run": true,
+      "order_id": "PAPER-DRIFTUSDT-1793714798",
+      "closed_at": 1793720185,
+      "close_px": 0.01301,
+      "pnl_usdt": 85.87795405957606
     }
   ],
   "pending": [
@@ -3767,7 +3774,8 @@
       "side": "SELL",
       "upper": 0.03586227474358252,
       "open": 0.03719,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "TAUSDT",
@@ -3776,7 +3784,8 @@
       "side": "SELL",
       "upper": 0.06612119522340507,
       "open": 0.06714,
-      "reported": false
+      "reported": true,
+      "filled": false
     }
   ],
   "paper_days": [
@@ -3858,7 +3867,7 @@
     "CZUSDT": 1793758880,
     "OSCRUSDT": 1793760691
   },
-  "last_trade_report_ts": 1793718635,
+  "last_trade_report_ts": 1793720208,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.5",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
