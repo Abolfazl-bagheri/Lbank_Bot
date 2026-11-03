@@ -447,45 +447,21 @@
       "order_id": "PAPER-SAGAUSDT-1793711209"
     },
     {
-      "symbol": "CHIPUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.0428,
-      "qty": 4672.8972,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.041729999999999996,
-      "tf": "1h",
-      "opened_at": 1793714674,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.0428,
-          "ts": 1793714674
-        }
-      ],
-      "entry_candle_ts": 1793714400,
-      "last_leg_candle_ts": 1793714400,
-      "dry_run": true,
-      "order_id": "PAPER-CHIPUSDT-1793714674"
-    },
-    {
       "symbol": "NIGHTUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.04222631164266468,
-      "qty": 14209.150099999999,
-      "margin": 30.0,
+      "entry": 0.04268184635881001,
+      "qty": 32800.8303,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 0.041170653851598064,
+      "tp_price": 0.04161480019983976,
       "tf": "1h",
       "opened_at": 1793714760,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [
-        0.04223
+        0.04223,
+        0.04312
       ],
       "steps": [
         {
@@ -495,10 +471,14 @@
         {
           "px": 0.04214,
           "ts": 1793715696
+        },
+        {
+          "px": 0.04303,
+          "ts": 1793719357
         }
       ],
       "entry_candle_ts": 1793714400,
-      "last_leg_candle_ts": 1793715696,
+      "last_leg_candle_ts": 1793719357,
       "dry_run": true,
       "order_id": "PAPER-NIGHTUSDT-1793714760"
     },
@@ -2082,6 +2062,34 @@
       "closed_at": 1793718569,
       "close_px": 0.019896,
       "pnl_usdt": 11.617667944894182
+    },
+    {
+      "symbol": "CHIPUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.0428,
+      "qty": 4672.8972,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.041729999999999996,
+      "tf": "1h",
+      "opened_at": 1793714674,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.0428,
+          "ts": 1793714674
+        }
+      ],
+      "entry_candle_ts": 1793714400,
+      "last_leg_candle_ts": 1793714400,
+      "dry_run": true,
+      "order_id": "PAPER-CHIPUSDT-1793714674",
+      "closed_at": 1793719356,
+      "close_px": 0.04171,
+      "pnl_usdt": 5.093457943925237
     }
   ],
   "pending": [
