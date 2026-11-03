@@ -333,6 +333,31 @@
       "last_leg_candle_ts": 1793687582,
       "dry_run": true,
       "order_id": "PAPER-BMTUSDT-1793682329"
+    },
+    {
+      "symbol": "RUNEUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.5839,
+      "qty": 342.5244,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.5693024999999999,
+      "tf": "15m",
+      "opened_at": 1793687674,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.5839,
+          "ts": 1793687674
+        }
+      ],
+      "entry_candle_ts": 1793687400,
+      "last_leg_candle_ts": 1793687400,
+      "dry_run": true,
+      "order_id": "PAPER-RUNEUSDT-1793687674"
     }
   ],
   "trade_history": [
@@ -2978,7 +3003,7 @@
     "CAPETHUSDT": 1793724461,
     "LIGHT1USDT": 1793726282
   },
-  "last_trade_report_ts": 1793686067,
+  "last_trade_report_ts": 1793687599,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.5",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
