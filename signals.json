@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.5",
-  "updated_at": 1793714758,
+  "updated_at": 1793714777,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1793683277
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 0.9,
       "ts": 1793714758
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793714777
     }
   ],
   "trades": [
@@ -1623,6 +1623,19 @@
       "margin": 10.0,
       "lev": 20,
       "px": 0.0428,
+      "pnl": 0.0,
+      "tf": "1h"
+    },
+    {
+      "symbol": "NIGHTUSDT",
+      "side": "SELL",
+      "entry": 0.0424,
+      "tp": 0.04134,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.0424,
       "pnl": 0.0,
       "tf": "1h"
     }
