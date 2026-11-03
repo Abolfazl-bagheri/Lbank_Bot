@@ -193,41 +193,6 @@
       "order_id": "PAPER-PDDUSDT-1793635671"
     },
     {
-      "symbol": "CLAUDIAUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.0026257933006875135,
-      "qty": 533172.2035000001,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 0.002560148468170326,
-      "tf": "4h",
-      "opened_at": 1793671431,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [
-        0.002592
-      ],
-      "steps": [
-        {
-          "px": 0.002299,
-          "ts": 1793671431
-        },
-        {
-          "px": 0.002585,
-          "ts": 1793686814
-        },
-        {
-          "px": 0.002745,
-          "ts": 1793693077
-        }
-      ],
-      "entry_candle_ts": 1793671200,
-      "last_leg_candle_ts": 1793692800,
-      "dry_run": true,
-      "order_id": "PAPER-CLAUDIAUSDT-1793671431"
-    },
-    {
       "symbol": "AXISUSDT",
       "side": "SELL",
       "status": "open",
@@ -2241,6 +2206,44 @@
       "closed_at": 1793721056,
       "close_px": 0.03564,
       "pnl_usdt": 8.952023586169952
+    },
+    {
+      "symbol": "CLAUDIAUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.0026257933006875135,
+      "qty": 533172.2035000001,
+      "margin": 70.0,
+      "leverage": 20,
+      "tp_price": 0.002560148468170326,
+      "tf": "4h",
+      "opened_at": 1793671431,
+      "adds": 2,
+      "last_leg_margin": 40.0,
+      "used_res_levels": [
+        0.002592
+      ],
+      "steps": [
+        {
+          "px": 0.002299,
+          "ts": 1793671431
+        },
+        {
+          "px": 0.002585,
+          "ts": 1793686814
+        },
+        {
+          "px": 0.002745,
+          "ts": 1793693077
+        }
+      ],
+      "entry_candle_ts": 1793671200,
+      "last_leg_candle_ts": 1793692800,
+      "dry_run": true,
+      "order_id": "PAPER-CLAUDIAUSDT-1793671431",
+      "closed_at": 1793742742,
+      "close_px": 0.002433,
+      "pnl_usdt": 102.79202894296675
     }
   ],
   "pending": [
@@ -3884,7 +3887,6 @@
     "FUTUUSDT": 1793718431,
     "LIGHT1USDT": 1793726282,
     "OROCHIUSDT": 1793736424,
-    "AEHRUSDT": 1793742487,
     "QUACKAIUSDT": 1793743546,
     "FLOCK1USDT": 1793751668,
     "O1USDT": 1793752630,
@@ -3900,9 +3902,11 @@
     "AI1USDT": 1793772586,
     "AMCUSDT": 1793772630,
     "IRENONUSDT": 1793776197,
-    "ONSEMIUSDT": 1793784100
+    "ONSEMIUSDT": 1793784100,
+    "AEHRUSDT": 1793785881,
+    "SIMOUSDT": 1793785920
   },
-  "last_trade_report_ts": 1793739230,
+  "last_trade_report_ts": 1793741004,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.7",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
