@@ -442,31 +442,6 @@
       "order_id": "PAPER-SAGAUSDT-1793711209"
     },
     {
-      "symbol": "IDOLUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.021123,
-      "qty": 9468.352,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.020594925,
-      "tf": "15m",
-      "opened_at": 1793713732,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.021123,
-          "ts": 1793713732
-        }
-      ],
-      "entry_candle_ts": 1793713500,
-      "last_leg_candle_ts": 1793713500,
-      "dry_run": true,
-      "order_id": "PAPER-IDOLUSDT-1793713732"
-    },
-    {
       "symbol": "CHIPUSDT",
       "side": "SELL",
       "status": "open",
@@ -567,23 +542,29 @@
       "side": "SELL",
       "status": "open",
       "entry": 0.6128,
-      "qty": 326.3708,
-      "margin": 10.0,
+      "qty": 979.1123,
+      "margin": 30.0,
       "leverage": 20,
       "tp_price": 0.59748,
       "tf": "15m",
       "opened_at": 1793718219,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.6145
+      ],
       "steps": [
         {
           "px": 0.6128,
           "ts": 1793718219
+        },
+        {
+          "px": 0.6128,
+          "ts": 1793718572
         }
       ],
       "entry_candle_ts": 1793718000,
-      "last_leg_candle_ts": 1793718000,
+      "last_leg_candle_ts": 1793718572,
       "dry_run": true,
       "order_id": "PAPER-RUNEUSDT-1793718219"
     },
@@ -2062,6 +2043,34 @@
       "closed_at": 1793717532,
       "close_px": 0.05252,
       "pnl_usdt": 21.73540647370203
+    },
+    {
+      "symbol": "IDOLUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.021123,
+      "qty": 9468.352,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.020594925,
+      "tf": "15m",
+      "opened_at": 1793713732,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.021123,
+          "ts": 1793713732
+        }
+      ],
+      "entry_candle_ts": 1793713500,
+      "last_leg_candle_ts": 1793713500,
+      "dry_run": true,
+      "order_id": "PAPER-IDOLUSDT-1793713732",
+      "closed_at": 1793718569,
+      "close_px": 0.019896,
+      "pnl_usdt": 11.617667944894182
     }
   ],
   "pending": [
