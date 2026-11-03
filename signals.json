@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.5",
-  "updated_at": 1793718217,
+  "updated_at": 1793718235,
   "signals": [
-    {
-      "kind": "HEARTBEAT",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1793691180
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 1.34,
       "ts": 1793718217
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793718235
     }
   ],
   "trades": [
@@ -1625,6 +1625,19 @@
       "px": 0.0135,
       "pnl": -23.8776,
       "tf": "1h"
+    },
+    {
+      "symbol": "RUNEUSDT",
+      "side": "SELL",
+      "entry": 0.6128,
+      "tp": 0.59748,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.6128,
+      "pnl": 0.0,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
