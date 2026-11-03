@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.5",
-  "updated_at": 1793711092,
+  "updated_at": 1793711105,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "ERAUSDT",
-      "tf": "1h",
-      "gap": 1.02,
-      "ts": 1793674866
-    },
     {
       "kind": "SELL",
       "symbol": "AGTUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 1.61,
       "ts": 1793711092
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793711105
     }
   ],
   "trades": [
@@ -1545,6 +1545,19 @@
       "margin": 10.0,
       "lev": 20,
       "px": 0.0006295,
+      "pnl": 0.0,
+      "tf": "1h"
+    },
+    {
+      "symbol": "ZROUSDT",
+      "side": "SELL",
+      "entry": 1.8473,
+      "tp": 1.8011175,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 1.8473,
       "pnl": 0.0,
       "tf": "1h"
     }
