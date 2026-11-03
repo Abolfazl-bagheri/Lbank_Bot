@@ -271,24 +271,28 @@
       "symbol": "AGTUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.05225,
-      "qty": 3827.7512,
-      "margin": 10.0,
+      "entry": 0.05449408515198487,
+      "qty": 11010.3693,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.050943749999999996,
+      "tp_price": 0.053131733023185246,
       "tf": "15m",
       "opened_at": 1793710193,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 0.05225,
           "ts": 1793710193
+        },
+        {
+          "px": 0.05569,
+          "ts": 1793711010
         }
       ],
       "entry_candle_ts": 1793709900,
-      "last_leg_candle_ts": 1793709900,
+      "last_leg_candle_ts": 1793710800,
       "dry_run": true,
       "order_id": "PAPER-AGTUSDT-1793710193"
     },
@@ -3060,6 +3064,15 @@
       "side": "SELL",
       "upper": 0.02605404000489277,
       "open": 0.02727,
+      "reported": false
+    },
+    {
+      "symbol": "BOMEUSDT",
+      "tf": "1h",
+      "candle_ts": 1793710800,
+      "side": "SELL",
+      "upper": 0.0006212395170121466,
+      "open": 0.0006314,
       "reported": false
     }
   ],
