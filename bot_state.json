@@ -675,6 +675,31 @@
       "last_leg_candle_ts": 1793743200,
       "dry_run": true,
       "order_id": "PAPER-ANETUSDT-1793743314"
+    },
+    {
+      "symbol": "AMDUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 523.27,
+      "qty": 0.382212,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 510.18825,
+      "tf": "1h",
+      "opened_at": 1793743437,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 523.27,
+          "ts": 1793743437
+        }
+      ],
+      "entry_candle_ts": 1793743200,
+      "last_leg_candle_ts": 1793743200,
+      "dry_run": true,
+      "order_id": "PAPER-AMDUSDT-1793743437"
     }
   ],
   "trade_history": [
@@ -3854,6 +3879,15 @@
       "side": "SELL",
       "upper": 13.863646910708392,
       "open": 14.05,
+      "reported": false
+    },
+    {
+      "symbol": "ANETUSDT",
+      "tf": "1h",
+      "candle_ts": 1793743200,
+      "side": "SELL",
+      "upper": 186.74970538097085,
+      "open": 193.49,
       "reported": false
     }
   ],
