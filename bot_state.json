@@ -180,17 +180,18 @@
       "symbol": "PDDUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 82.98,
-      "qty": 7.230600000000001,
-      "margin": 30.0,
+      "entry": 81.86603276982181,
+      "qty": 17.101100000000002,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 80.9055,
+      "tp_price": 79.81938195057627,
       "tf": "4h",
       "opened_at": 1793635671,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [
-        83.08
+        83.08,
+        81.16
       ],
       "steps": [
         {
@@ -200,10 +201,14 @@
         {
           "px": 82.98,
           "ts": 1793635863
+        },
+        {
+          "px": 81.05,
+          "ts": 1793717513
         }
       ],
       "entry_candle_ts": 1793635200,
-      "last_leg_candle_ts": 1793635863,
+      "last_leg_candle_ts": 1793717513,
       "dry_run": true,
       "order_id": "PAPER-PDDUSDT-1793635671"
     },
@@ -3564,9 +3569,10 @@
     "1000WOJAKUSDT": 1793758830,
     "1000SATSUSDT": 1793758874,
     "NEIRO1USDT": 1793758876,
-    "CZUSDT": 1793758880
+    "CZUSDT": 1793758880,
+    "OSCRUSDT": 1793760691
   },
-  "last_trade_report_ts": 1793714988,
+  "last_trade_report_ts": 1793716553,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.5",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
