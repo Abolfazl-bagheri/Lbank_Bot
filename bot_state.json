@@ -306,16 +306,18 @@
       "symbol": "BOMEUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.0006374494869770194,
-      "qty": 941251.0516,
-      "margin": 30.0,
+      "entry": 0.0006397577797895499,
+      "qty": 2188328.2145000002,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 0.0006215132498025938,
+      "tp_price": 0.0006237638352948111,
       "tf": "1h",
       "opened_at": 1793710984,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
+      "adds": 2,
+      "last_leg_margin": 40.0,
+      "used_res_levels": [
+        0.0006429
+      ],
       "steps": [
         {
           "px": 0.0006295,
@@ -324,10 +326,14 @@
         {
           "px": 0.0006415,
           "ts": 1793714610
+        },
+        {
+          "px": 0.0006415,
+          "ts": 1793714921
         }
       ],
       "entry_candle_ts": 1793710800,
-      "last_leg_candle_ts": 1793714400,
+      "last_leg_candle_ts": 1793714921,
       "dry_run": true,
       "order_id": "PAPER-BOMEUSDT-1793710984"
     },
