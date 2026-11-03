@@ -540,6 +540,31 @@
       "last_leg_candle_ts": 1793714400,
       "dry_run": true,
       "order_id": "PAPER-NIGHTUSDT-1793714760"
+    },
+    {
+      "symbol": "DRIFTUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.01307,
+      "qty": 15302.2188,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.01274325,
+      "tf": "1h",
+      "opened_at": 1793714798,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.01307,
+          "ts": 1793714798
+        }
+      ],
+      "entry_candle_ts": 1793714400,
+      "last_leg_candle_ts": 1793714400,
+      "dry_run": true,
+      "order_id": "PAPER-DRIFTUSDT-1793714798"
     }
   ],
   "trade_history": [
@@ -3397,6 +3422,15 @@
       "side": "SELL",
       "upper": 0.04233023331849968,
       "open": 0.04278,
+      "reported": false
+    },
+    {
+      "symbol": "NIGHTUSDT",
+      "tf": "1h",
+      "candle_ts": 1793714400,
+      "side": "SELL",
+      "upper": 0.04201895165871213,
+      "open": 0.04249,
       "reported": false
     }
   ],
