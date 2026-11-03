@@ -725,6 +725,31 @@
       "last_leg_candle_ts": 1793743200,
       "dry_run": true,
       "order_id": "PAPER-SMCIUSDT-1793743474"
+    },
+    {
+      "symbol": "OUSTUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 31.31,
+      "qty": 6.3877,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 30.52725,
+      "tf": "1h",
+      "opened_at": 1793743504,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 31.31,
+          "ts": 1793743504
+        }
+      ],
+      "entry_candle_ts": 1793743200,
+      "last_leg_candle_ts": 1793743200,
+      "dry_run": true,
+      "order_id": "PAPER-OUSTUSDT-1793743504"
     }
   ],
   "trade_history": [
@@ -3922,6 +3947,15 @@
       "side": "SELL",
       "upper": 515.494359321854,
       "open": 523.02,
+      "reported": false
+    },
+    {
+      "symbol": "SMCIUSDT",
+      "tf": "1h",
+      "candle_ts": 1793743200,
+      "side": "SELL",
+      "upper": 33.473109884532455,
+      "open": 34.05,
       "reported": false
     }
   ],
