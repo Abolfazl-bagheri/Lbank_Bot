@@ -656,6 +656,31 @@
       "last_leg_candle_ts": 1793718000,
       "dry_run": true,
       "order_id": "PAPER-HUTUSDT-1793718371"
+    },
+    {
+      "symbol": "BASUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.015597,
+      "qty": 12822.9788,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.015207074999999999,
+      "tf": "1h",
+      "opened_at": 1793718411,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.015597,
+          "ts": 1793718411
+        }
+      ],
+      "entry_candle_ts": 1793718000,
+      "last_leg_candle_ts": 1793718000,
+      "dry_run": true,
+      "order_id": "PAPER-BASUSDT-1793718411"
     }
   ],
   "trade_history": [
@@ -3627,6 +3652,15 @@
       "side": "SELL",
       "upper": 23.003995487386643,
       "open": 23.57,
+      "reported": false
+    },
+    {
+      "symbol": "HUTUSDT",
+      "tf": "1h",
+      "candle_ts": 1793718000,
+      "side": "SELL",
+      "upper": 59.045048090832815,
+      "open": 61.53,
       "reported": false
     }
   ],
