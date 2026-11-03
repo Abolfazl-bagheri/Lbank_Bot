@@ -303,41 +303,6 @@
       "order_id": "PAPER-AGTUSDT-1793710193"
     },
     {
-      "symbol": "BOMEUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.0006397577797895499,
-      "qty": 2188328.2145000002,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 0.0006237638352948111,
-      "tf": "1h",
-      "opened_at": 1793710984,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [
-        0.0006429
-      ],
-      "steps": [
-        {
-          "px": 0.0006295,
-          "ts": 1793710984
-        },
-        {
-          "px": 0.0006415,
-          "ts": 1793714610
-        },
-        {
-          "px": 0.0006415,
-          "ts": 1793714921
-        }
-      ],
-      "entry_candle_ts": 1793710800,
-      "last_leg_candle_ts": 1793714921,
-      "dry_run": true,
-      "order_id": "PAPER-BOMEUSDT-1793710984"
-    },
-    {
       "symbol": "ZROUSDT",
       "side": "SELL",
       "status": "open",
@@ -1900,6 +1865,44 @@
       "closed_at": 1793712959,
       "close_px": 0.02641,
       "pnl_usdt": 17.707441611048
+    },
+    {
+      "symbol": "BOMEUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.0006397577797895499,
+      "qty": 2188328.2145000002,
+      "margin": 70.0,
+      "leverage": 20,
+      "tp_price": 0.0006237638352948111,
+      "tf": "1h",
+      "opened_at": 1793710984,
+      "adds": 2,
+      "last_leg_margin": 40.0,
+      "used_res_levels": [
+        0.0006429
+      ],
+      "steps": [
+        {
+          "px": 0.0006295,
+          "ts": 1793710984
+        },
+        {
+          "px": 0.0006415,
+          "ts": 1793714610
+        },
+        {
+          "px": 0.0006415,
+          "ts": 1793714921
+        }
+      ],
+      "entry_candle_ts": 1793710800,
+      "last_leg_candle_ts": 1793714921,
+      "dry_run": true,
+      "order_id": "PAPER-BOMEUSDT-1793710984",
+      "closed_at": 1793716490,
+      "close_px": 0.0006231,
+      "pnl_usdt": 36.45268950545831
     }
   ],
   "pending": [
