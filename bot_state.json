@@ -256,24 +256,30 @@
       "symbol": "GPROUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 1.054,
-      "qty": 189.7533,
-      "margin": 10.0,
+      "entry": 1.0665910098110374,
+      "qty": 562.5399,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 1.02765,
+      "tp_price": 1.0399262345657614,
       "tf": "15m",
       "opened_at": 1793660679,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        1.0771
+      ],
       "steps": [
         {
           "px": 1.054,
           "ts": 1793660679
+        },
+        {
+          "px": 1.073,
+          "ts": 1793671740
         }
       ],
       "entry_candle_ts": 1793660400,
-      "last_leg_candle_ts": 1793660400,
+      "last_leg_candle_ts": 1793671740,
       "dry_run": true,
       "order_id": "PAPER-GPROUSDT-1793660679"
     },
