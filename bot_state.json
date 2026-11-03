@@ -406,24 +406,30 @@
       "symbol": "LITUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 3.2289,
-      "qty": 61.9406,
-      "margin": 10.0,
+      "entry": 3.2395490780785154,
+      "qty": 185.211,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 3.1481774999999996,
+      "tp_price": 3.1585603511265523,
       "tf": "1h",
       "opened_at": 1793711183,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        3.257
+      ],
       "steps": [
         {
           "px": 3.2289,
           "ts": 1793711183
+        },
+        {
+          "px": 3.2449,
+          "ts": 1793712965
         }
       ],
       "entry_candle_ts": 1793710800,
-      "last_leg_candle_ts": 1793710800,
+      "last_leg_candle_ts": 1793712965,
       "dry_run": true,
       "order_id": "PAPER-LITUSDT-1793711183"
     },
