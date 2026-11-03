@@ -267,17 +267,18 @@
       "symbol": "BMTUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.02368104853441391,
-      "qty": 59119.0038,
-      "margin": 70.0,
+      "entry": 0.02347086964937509,
+      "qty": 127818.01629999999,
+      "margin": 150.0,
       "leverage": 20,
-      "tp_price": 0.02308902232105356,
+      "tp_price": 0.02288409790814071,
       "tf": "1h",
       "opened_at": 1793682329,
-      "adds": 2,
-      "last_leg_margin": 40.0,
+      "adds": 3,
+      "last_leg_margin": 80.0,
       "used_res_levels": [
-        0.02375
+        0.02375,
+        0.02336
       ],
       "steps": [
         {
@@ -291,10 +292,14 @@
         {
           "px": 0.02372,
           "ts": 1793686007
+        },
+        {
+          "px": 0.02329,
+          "ts": 1793688536
         }
       ],
       "entry_candle_ts": 1793682000,
-      "last_leg_candle_ts": 1793686007,
+      "last_leg_candle_ts": 1793688536,
       "dry_run": true,
       "order_id": "PAPER-BMTUSDT-1793682329"
     },
