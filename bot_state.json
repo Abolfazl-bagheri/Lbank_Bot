@@ -332,18 +332,19 @@
       "symbol": "PUMPUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.004221865036896167,
-      "qty": 331607.0002,
-      "margin": 70.0,
+      "entry": 0.0042610823156353245,
+      "qty": 704046.4787999999,
+      "margin": 150.0,
       "leverage": 20,
-      "tp_price": 0.004116318410973763,
+      "tp_price": 0.004154555257744441,
       "tf": "1h",
       "opened_at": 1793711160,
-      "adds": 2,
-      "last_leg_margin": 40.0,
+      "adds": 3,
+      "last_leg_margin": 80.0,
       "used_res_levels": [
         0.004251,
-        0.004208
+        0.004208,
+        0.004301
       ],
       "steps": [
         {
@@ -357,10 +358,14 @@
         {
           "px": 0.004202,
           "ts": 1793714947
+        },
+        {
+          "px": 0.004296,
+          "ts": 1793739128
         }
       ],
       "entry_candle_ts": 1793710800,
-      "last_leg_candle_ts": 1793714947,
+      "last_leg_candle_ts": 1793739128,
       "dry_run": true,
       "order_id": "PAPER-PUMPUSDT-1793711160"
     },
@@ -3836,7 +3841,7 @@
     "AMCUSDT": 1793772630,
     "IRENONUSDT": 1793776197
   },
-  "last_trade_report_ts": 1793737245,
+  "last_trade_report_ts": 1793738302,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.7",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
