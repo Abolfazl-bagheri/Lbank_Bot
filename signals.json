@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.5",
-  "updated_at": 1793689495,
+  "updated_at": 1793689506,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1793648110
-    },
     {
       "kind": "GAP",
       "symbol": "ARIAUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": -0.37,
       "ts": 1793689495
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793689506
     }
   ],
   "trades": [
@@ -1547,6 +1547,19 @@
       "px": 0.04653,
       "pnl": -1.3414,
       "tf": "15m"
+    },
+    {
+      "symbol": "AXISUSDT",
+      "side": "SELL",
+      "entry": 0.1296,
+      "tp": 0.12636,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.1296,
+      "pnl": 0.0,
+      "tf": "1h"
     }
   ],
   "start": 1000.0,
