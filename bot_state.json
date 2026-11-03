@@ -282,31 +282,6 @@
       "last_leg_candle_ts": 1793671200,
       "dry_run": true,
       "order_id": "PAPER-CLAUDIAUSDT-1793671431"
-    },
-    {
-      "symbol": "AGTUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.04286,
-      "qty": 4666.3556,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.0417885,
-      "tf": "1h",
-      "opened_at": 1793675073,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.04286,
-          "ts": 1793675073
-        }
-      ],
-      "entry_candle_ts": 1793674800,
-      "last_leg_candle_ts": 1793674800,
-      "dry_run": true,
-      "order_id": "PAPER-AGTUSDT-1793675073"
     }
   ],
   "trade_history": [
@@ -1313,6 +1288,34 @@
       "closed_at": 1793677030,
       "close_px": 0.1842,
       "pnl_usdt": 15.8095321558604
+    },
+    {
+      "symbol": "AGTUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.04286,
+      "qty": 4666.3556,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0417885,
+      "tf": "1h",
+      "opened_at": 1793675073,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.04286,
+          "ts": 1793675073
+        }
+      ],
+      "entry_candle_ts": 1793674800,
+      "last_leg_candle_ts": 1793674800,
+      "dry_run": true,
+      "order_id": "PAPER-AGTUSDT-1793675073",
+      "closed_at": 1793677034,
+      "close_px": 0.04151,
+      "pnl_usdt": 6.29958002799815
     }
   ],
   "pending": [
@@ -1495,30 +1498,6 @@
       "tf": "15m",
       "candle_ts": 1793419200,
       "side": "SELL"
-    },
-    {
-      "symbol": "XPINUSDT",
-      "tf": "1h",
-      "candle_ts": 1793419200,
-      "side": "SELL",
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "WETUSDT",
-      "tf": "4h",
-      "candle_ts": 1793419200,
-      "side": "SELL",
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "SWARMSUSDT",
-      "tf": "1h",
-      "candle_ts": 1793419200,
-      "side": "SELL",
-      "reported": true,
-      "filled": false
     },
     {
       "symbol": "BLESSUSDT",
@@ -2840,10 +2819,7 @@
     "OFCUSDT": 1793659840,
     "KOPNUSDT": 1793668799,
     "LWLGUSDT": 1793675941,
-    "LIGHT1USDT": 1793676789,
-    "AMCUSDT": 1793676804,
     "ONSEMIUSDT": 1793676808,
-    "CAPETHUSDT": 1793678996,
     "EWZSUSDT": 1793678937,
     "BIDUUSDT": 1793678955,
     "XPSTOCKUSDT": 1793678976,
@@ -2860,10 +2836,13 @@
     "1000SATSUSDT": 1793714909,
     "1000WOJAKUSDT": 1793714911,
     "NEIRO1USDT": 1793714916,
-    "FUTUUSDT": 1793718431
+    "FUTUUSDT": 1793718431,
+    "AMCUSDT": 1793721002,
+    "LIGHT1USDT": 1793721047,
+    "CAPETHUSDT": 1793722847
   },
-  "last_trade_report_ts": 1793675312,
+  "last_trade_report_ts": 1793680652,
   "last_daily_report_date": "2026-11-01",
-  "last_known_version": "2.6.5",
+  "last_known_version": "2.6.4",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
