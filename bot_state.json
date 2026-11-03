@@ -395,17 +395,18 @@
       "symbol": "PUMPUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.0042486457778503715,
-      "qty": 141221.4695,
-      "margin": 30.0,
+      "entry": 0.004221865036896167,
+      "qty": 331607.0002,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 0.004142429633404112,
+      "tp_price": 0.004116318410973763,
       "tf": "1h",
       "opened_at": 1793711160,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [
-        0.004251
+        0.004251,
+        0.004208
       ],
       "steps": [
         {
@@ -415,10 +416,14 @@
         {
           "px": 0.004242,
           "ts": 1793712134
+        },
+        {
+          "px": 0.004202,
+          "ts": 1793714947
         }
       ],
       "entry_candle_ts": 1793710800,
-      "last_leg_candle_ts": 1793712134,
+      "last_leg_candle_ts": 1793714947,
       "dry_run": true,
       "order_id": "PAPER-PUMPUSDT-1793711160"
     },
