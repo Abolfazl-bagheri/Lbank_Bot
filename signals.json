@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.5",
-  "updated_at": 1793688416,
+  "updated_at": 1793688427,
   "signals": [
-    {
-      "kind": "HEARTBEAT",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1793645446
-    },
     {
       "kind": "GAP",
       "symbol": "SKDDUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 0.72,
       "ts": 1793688416
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793688427
     }
   ],
   "trades": [
@@ -1546,6 +1546,19 @@
       "lev": 20,
       "px": 0.5805,
       "pnl": 1.1646,
+      "tf": "15m"
+    },
+    {
+      "symbol": "MEGAUSDT",
+      "side": "SELL",
+      "entry": 0.04622,
+      "tp": 0.04506449999999999,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.04622,
+      "pnl": 0.0,
       "tf": "15m"
     }
   ],
