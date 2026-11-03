@@ -345,6 +345,31 @@
       "last_leg_candle_ts": 1793710800,
       "dry_run": true,
       "order_id": "PAPER-BOMEUSDT-1793710984"
+    },
+    {
+      "symbol": "ZROUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 1.8473,
+      "qty": 108.2661,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 1.8011175,
+      "tf": "1h",
+      "opened_at": 1793711093,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 1.8473,
+          "ts": 1793711093
+        }
+      ],
+      "entry_candle_ts": 1793710800,
+      "last_leg_candle_ts": 1793710800,
+      "dry_run": true,
+      "order_id": "PAPER-ZROUSDT-1793711093"
     }
   ],
   "trade_history": [
@@ -3091,6 +3116,15 @@
       "side": "SELL",
       "upper": 0.026313522071471637,
       "open": 0.02732,
+      "reported": false
+    },
+    {
+      "symbol": "AGTUSDT",
+      "tf": "1h",
+      "candle_ts": 1793710800,
+      "side": "SELL",
+      "upper": 0.05340825311010008,
+      "open": 0.055259,
       "reported": false
     }
   ],
