@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.4",
-  "updated_at": 1793675071,
+  "updated_at": 1793675084,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "CCLUSDT",
-      "tf": "4h",
-      "gap": 1.57,
-      "ts": 1793635555
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 2.63,
       "ts": 1793675071
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793675084
     }
   ],
   "trades": [
@@ -1534,6 +1534,19 @@
       "px": 0.00244,
       "pnl": -12.2662,
       "tf": "15m"
+    },
+    {
+      "symbol": "AGTUSDT",
+      "side": "SELL",
+      "entry": 0.04286,
+      "tp": 0.0417885,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.04286,
+      "pnl": 0.0,
+      "tf": "1h"
     }
   ],
   "start": 1000.0,
