@@ -266,6 +266,31 @@
       "last_leg_candle_ts": 1793694780,
       "dry_run": true,
       "order_id": "PAPER-AXISUSDT-1793689496"
+    },
+    {
+      "symbol": "AGTUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.05225,
+      "qty": 3827.7512,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.050943749999999996,
+      "tf": "15m",
+      "opened_at": 1793710193,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.05225,
+          "ts": 1793710193
+        }
+      ],
+      "entry_candle_ts": 1793709900,
+      "last_leg_candle_ts": 1793709900,
+      "dry_run": true,
+      "order_id": "PAPER-AGTUSDT-1793710193"
     }
   ],
   "trade_history": [
@@ -1754,14 +1779,6 @@
       "side": "SELL"
     },
     {
-      "symbol": "ZCATUSDT",
-      "tf": "15m",
-      "candle_ts": 1793447100,
-      "side": "SELL",
-      "reported": true,
-      "filled": false
-    },
-    {
       "symbol": "COWUSDT",
       "tf": "15m",
       "candle_ts": 1793455200,
@@ -3052,9 +3069,11 @@
     "OROCHIUSDT": 1793736424,
     "NEXUSDT": 1793736464,
     "AEHRUSDT": 1793742487,
-    "QUACKAIUSDT": 1793743546
+    "QUACKAIUSDT": 1793743546,
+    "FLOCK1USDT": 1793751668,
+    "O1USDT": 1793752630
   },
-  "last_trade_report_ts": 1793705608,
+  "last_trade_report_ts": 1793709448,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.5",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
