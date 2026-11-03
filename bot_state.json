@@ -457,6 +457,31 @@
       "last_leg_candle_ts": 1793710800,
       "dry_run": true,
       "order_id": "PAPER-SAGAUSDT-1793711209"
+    },
+    {
+      "symbol": "IDOLUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.021123,
+      "qty": 9468.352,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.020594925,
+      "tf": "15m",
+      "opened_at": 1793713732,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.021123,
+          "ts": 1793713732
+        }
+      ],
+      "entry_candle_ts": 1793713500,
+      "last_leg_candle_ts": 1793713500,
+      "dry_run": true,
+      "order_id": "PAPER-IDOLUSDT-1793713732"
     }
   ],
   "trade_history": [
@@ -3384,7 +3409,7 @@
     "O1USDT": 1793752630,
     "KNTQUSDT": 1793754378
   },
-  "last_trade_report_ts": 1793711361,
+  "last_trade_report_ts": 1793712995,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.5",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
