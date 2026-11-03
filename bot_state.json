@@ -277,42 +277,6 @@
       "order_id": "PAPER-BMTUSDT-1793682329"
     },
     {
-      "symbol": "MEGAUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.04560880303218527,
-      "qty": 30695.828700000002,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 0.04446858295638064,
-      "tf": "15m",
-      "opened_at": 1793688452,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [
-        0.04602,
-        0.04546
-      ],
-      "steps": [
-        {
-          "px": 0.04618,
-          "ts": 1793688452
-        },
-        {
-          "px": 0.04591,
-          "ts": 1793696865
-        },
-        {
-          "px": 0.04532,
-          "ts": 1793700393
-        }
-      ],
-      "entry_candle_ts": 1793688300,
-      "last_leg_candle_ts": 1793700393,
-      "dry_run": true,
-      "order_id": "PAPER-MEGAUSDT-1793688452"
-    },
-    {
       "symbol": "AXISUSDT",
       "side": "SELL",
       "status": "open",
@@ -1534,6 +1498,45 @@
       "closed_at": 1793696861,
       "close_px": 1.019,
       "pnl_usdt": 26.771841900000044
+    },
+    {
+      "symbol": "MEGAUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.04560880303218527,
+      "qty": 30695.828700000002,
+      "margin": 70.0,
+      "leverage": 20,
+      "tp_price": 0.04446858295638064,
+      "tf": "15m",
+      "opened_at": 1793688452,
+      "adds": 2,
+      "last_leg_margin": 40.0,
+      "used_res_levels": [
+        0.04602,
+        0.04546
+      ],
+      "steps": [
+        {
+          "px": 0.04618,
+          "ts": 1793688452
+        },
+        {
+          "px": 0.04591,
+          "ts": 1793696865
+        },
+        {
+          "px": 0.04532,
+          "ts": 1793700393
+        }
+      ],
+      "entry_candle_ts": 1793688300,
+      "last_leg_candle_ts": 1793700393,
+      "dry_run": true,
+      "order_id": "PAPER-MEGAUSDT-1793688452",
+      "closed_at": 1793701134,
+      "close_px": 0.0444,
+      "pnl_usdt": 37.1052106731487
     }
   ],
   "pending": [
@@ -1746,14 +1749,6 @@
       "tf": "15m",
       "candle_ts": 1793430900,
       "side": "SELL"
-    },
-    {
-      "symbol": "UAIUSDT",
-      "tf": "15m",
-      "candle_ts": 1793441700,
-      "side": "SELL",
-      "reported": true,
-      "filled": false
     },
     {
       "symbol": "ESPORTSUSDT",
@@ -3089,7 +3084,7 @@
     "AEHRUSDT": 1793742466,
     "QUACKAIUSDT": 1793743557
   },
-  "last_trade_report_ts": 1793699447,
+  "last_trade_report_ts": 1793700411,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.5",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
