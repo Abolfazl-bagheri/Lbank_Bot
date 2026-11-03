@@ -231,17 +231,18 @@
       "symbol": "AXISUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.13289101064742706,
-      "qty": 4514.9781,
-      "margin": 30.0,
+      "entry": 0.1322078089666283,
+      "qty": 10589.3896,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 0.1295687353812414,
+      "tp_price": 0.1289026137424626,
       "tf": "1h",
       "opened_at": 1793689496,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [
-        0.1349
+        0.1349,
+        0.1319
       ],
       "steps": [
         {
@@ -251,10 +252,14 @@
         {
           "px": 0.1346,
           "ts": 1793694780
+        },
+        {
+          "px": 0.1317,
+          "ts": 1793724637
         }
       ],
       "entry_candle_ts": 1793689200,
-      "last_leg_candle_ts": 1793694780,
+      "last_leg_candle_ts": 1793724637,
       "dry_run": true,
       "order_id": "PAPER-AXISUSDT-1793689496"
     },
@@ -3892,7 +3897,7 @@
     "OSCRUSDT": 1793760691,
     "RIOTUSDT": 1793764210
   },
-  "last_trade_report_ts": 1793722834,
+  "last_trade_report_ts": 1793723759,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.5",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
