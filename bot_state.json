@@ -297,35 +297,6 @@
       "order_id": "PAPER-AGTUSDT-1793710193"
     },
     {
-      "symbol": "BMTUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.0272131246942974,
-      "qty": 22048.184699999998,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.026532796576939962,
-      "tf": "15m",
-      "opened_at": 1793710965,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.02732,
-          "ts": 1793710965
-        },
-        {
-          "px": 0.02716,
-          "ts": 1793712002
-        }
-      ],
-      "entry_candle_ts": 1793710800,
-      "last_leg_candle_ts": 1793711700,
-      "dry_run": true,
-      "order_id": "PAPER-BMTUSDT-1793710965"
-    },
-    {
       "symbol": "BOMEUSDT",
       "side": "SELL",
       "status": "open",
@@ -1754,6 +1725,38 @@
       "closed_at": 1793701278,
       "close_px": 0.04446,
       "pnl_usdt": 35.25227797234739
+    },
+    {
+      "symbol": "BMTUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.0272131246942974,
+      "qty": 22048.184699999998,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 0.026532796576939962,
+      "tf": "15m",
+      "opened_at": 1793710965,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.02732,
+          "ts": 1793710965
+        },
+        {
+          "px": 0.02716,
+          "ts": 1793712002
+        }
+      ],
+      "entry_candle_ts": 1793710800,
+      "last_leg_candle_ts": 1793711700,
+      "dry_run": true,
+      "order_id": "PAPER-BMTUSDT-1793710965",
+      "closed_at": 1793712959,
+      "close_px": 0.02641,
+      "pnl_usdt": 17.707441611048
     }
   ],
   "pending": [
@@ -3291,7 +3294,8 @@
       "side": "SELL",
       "upper": 0.026859147569406175,
       "open": 0.02721,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
