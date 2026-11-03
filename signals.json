@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.5",
-  "updated_at": 1793696785,
+  "updated_at": 1793696872,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "GRVTUSDT",
-      "tf": "4h",
-      "gap": 3.09,
-      "ts": 1793650466
-    },
     {
       "kind": "GAP",
       "symbol": "SOXSUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1793696785
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793696872
     }
   ],
   "trades": [
@@ -1484,19 +1484,6 @@
       "tf": "4h"
     },
     {
-      "symbol": "GPROUSDT",
-      "side": "SELL",
-      "entry": 1.0665910098110374,
-      "tp": 1.0399262345657614,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
-      "lev": 20,
-      "px": 1.019,
-      "pnl": 26.7718,
-      "tf": "15m"
-    },
-    {
       "symbol": "CLAUDIAUSDT",
       "side": "SELL",
       "entry": 0.0026517229400293955,
@@ -1525,11 +1512,11 @@
     {
       "symbol": "MEGAUSDT",
       "side": "SELL",
-      "entry": 0.04618,
-      "tp": 0.045025499999999996,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
+      "entry": 0.045999648513927696,
+      "tp": 0.0448496573010795,
+      "adds": 1,
+      "pele": 2,
+      "margin": 30.0,
       "lev": 20,
       "px": 0.04591,
       "pnl": 1.1693,
@@ -1550,16 +1537,16 @@
     }
   ],
   "start": 1000.0,
-  "realized": 702.9595,
-  "closed_n": 37,
-  "open_upnl": -24.008,
-  "equity": 1678.9515,
+  "realized": 729.7314,
+  "closed_n": 38,
+  "open_upnl": -50.7798,
+  "equity": 1678.9516,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 702.9595,
+    "profit": 729.7314,
     "loss": 0,
-    "count": 37
+    "count": 38
   }
 }
