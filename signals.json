@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.5",
-  "updated_at": 1793718369,
+  "updated_at": 1793718389,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "PIEVERSEUSDT",
-      "tf": "4h",
-      "gap": 1.94,
-      "ts": 1793692457
-    },
     {
       "kind": "GAP",
       "symbol": "BEATUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 2.76,
       "ts": 1793718369
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793718389
     }
   ],
   "trades": [
@@ -1662,6 +1662,19 @@
       "margin": 10.0,
       "lev": 20,
       "px": 0.005592,
+      "pnl": 0.0,
+      "tf": "1h"
+    },
+    {
+      "symbol": "HUTUSDT",
+      "side": "SELL",
+      "entry": 60.72,
+      "tp": 59.202,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 60.72,
       "pnl": 0.0,
       "tf": "1h"
     }
