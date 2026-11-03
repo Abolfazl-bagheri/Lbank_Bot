@@ -291,6 +291,31 @@
       "last_leg_candle_ts": 1793709900,
       "dry_run": true,
       "order_id": "PAPER-AGTUSDT-1793710193"
+    },
+    {
+      "symbol": "BMTUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.02732,
+      "qty": 7320.6442,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.026637,
+      "tf": "15m",
+      "opened_at": 1793710965,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.02732,
+          "ts": 1793710965
+        }
+      ],
+      "entry_candle_ts": 1793710800,
+      "last_leg_candle_ts": 1793710800,
+      "dry_run": true,
+      "order_id": "PAPER-BMTUSDT-1793710965"
     }
   ],
   "trade_history": [
@@ -2992,6 +3017,16 @@
       "upper": 0.002620473790114484,
       "open": 0.002687,
       "reported": false
+    },
+    {
+      "symbol": "AGTUSDT",
+      "tf": "15m",
+      "candle_ts": 1793709900,
+      "side": "SELL",
+      "upper": 0.048888982427013394,
+      "open": 0.053111,
+      "reported": true,
+      "filled": false
     }
   ],
   "paper_days": [
