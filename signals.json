@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.5",
-  "updated_at": 1793685920,
+  "updated_at": 1793686015,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "SOXSUSDT",
-      "tf": "1h",
-      "gap": 2.53,
-      "ts": 1793642090
-    },
     {
       "kind": "GAP",
       "symbol": "GRVTUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1793685920
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793686015
     }
   ],
   "trades": [
@@ -1471,19 +1471,6 @@
       "tf": "4h"
     },
     {
-      "symbol": "AMZNUSDT",
-      "side": "SELL",
-      "entry": 251.803588079966,
-      "tp": 245.50849837796684,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
-      "lev": 20,
-      "px": 245.36,
-      "pnl": 15.3538,
-      "tf": "4h"
-    },
-    {
       "symbol": "PDDUSDT",
       "side": "SELL",
       "entry": 82.98,
@@ -1538,11 +1525,11 @@
     {
       "symbol": "BMTUSDT",
       "side": "SELL",
-      "entry": 0.023629311809997024,
-      "tp": 0.0230385790147471,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
+      "entry": 0.02368104853441391,
+      "tp": 0.02308902232105356,
+      "adds": 2,
+      "pele": 3,
+      "margin": 70.0,
       "lev": 20,
       "px": 0.02372,
       "pnl": -2.3028,
@@ -1550,16 +1537,16 @@
     }
   ],
   "start": 1000.0,
-  "realized": 662.791,
-  "closed_n": 34,
-  "open_upnl": 7.2287,
-  "equity": 1670.0197,
+  "realized": 678.1449,
+  "closed_n": 35,
+  "open_upnl": -8.1251,
+  "equity": 1670.0198,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 662.791,
+    "profit": 678.1449,
     "loss": 0,
-    "count": 34
+    "count": 35
   }
 }
