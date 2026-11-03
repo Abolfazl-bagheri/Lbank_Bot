@@ -338,31 +338,6 @@
       "last_leg_candle_ts": 1793682000,
       "dry_run": true,
       "order_id": "PAPER-BMTUSDT-1793682329"
-    },
-    {
-      "symbol": "ICNTUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.2046,
-      "qty": 977.5171,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.199485,
-      "tf": "15m",
-      "opened_at": 1793683005,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.2046,
-          "ts": 1793683005
-        }
-      ],
-      "entry_candle_ts": 1793682900,
-      "last_leg_candle_ts": 1793682900,
-      "dry_run": true,
-      "order_id": "PAPER-ICNTUSDT-1793683005"
     }
   ],
   "trade_history": [
@@ -1397,6 +1372,34 @@
       "closed_at": 1793683265,
       "close_px": 0.04147,
       "pnl_usdt": 6.486234251049941
+    },
+    {
+      "symbol": "ICNTUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.2046,
+      "qty": 977.5171,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.199485,
+      "tf": "15m",
+      "opened_at": 1793683005,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.2046,
+          "ts": 1793683005
+        }
+      ],
+      "entry_candle_ts": 1793682900,
+      "last_leg_candle_ts": 1793682900,
+      "dry_run": true,
+      "order_id": "PAPER-ICNTUSDT-1793683005",
+      "closed_at": 1793684143,
+      "close_px": 0.1992,
+      "pnl_usdt": 5.2785923753665855
     }
   ],
   "pending": [
@@ -2872,7 +2875,8 @@
       "side": "SELL",
       "upper": 0.20033116792249248,
       "open": 0.2036,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -2950,7 +2954,7 @@
     "CAPETHUSDT": 1793724461,
     "LIGHT1USDT": 1793726282
   },
-  "last_trade_report_ts": 1793682423,
+  "last_trade_report_ts": 1793683982,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.5",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
