@@ -577,24 +577,30 @@
       "symbol": "BASUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.015597,
-      "qty": 12822.9788,
-      "margin": 10.0,
+      "entry": 0.015537553595188172,
+      "qty": 38616.1178,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.015207074999999999,
+      "tp_price": 0.015149114755308467,
       "tf": "1h",
       "opened_at": 1793718411,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.015547
+      ],
       "steps": [
         {
           "px": 0.015597,
           "ts": 1793718411
+        },
+        {
+          "px": 0.015508,
+          "ts": 1793721037
         }
       ],
       "entry_candle_ts": 1793718000,
-      "last_leg_candle_ts": 1793718000,
+      "last_leg_candle_ts": 1793721037,
       "dry_run": true,
       "order_id": "PAPER-BASUSDT-1793718411"
     },
@@ -3786,6 +3792,15 @@
       "open": 0.06714,
       "reported": true,
       "filled": false
+    },
+    {
+      "symbol": "HUTUSDT",
+      "tf": "15m",
+      "candle_ts": 1793720700,
+      "side": "SELL",
+      "upper": 62.87657624857238,
+      "open": 63.58,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -3865,7 +3880,8 @@
     "1000SATSUSDT": 1793758874,
     "NEIRO1USDT": 1793758876,
     "CZUSDT": 1793758880,
-    "OSCRUSDT": 1793760691
+    "OSCRUSDT": 1793760691,
+    "RIOTUSDT": 1793764210
   },
   "last_trade_report_ts": 1793720208,
   "last_daily_report_date": "2026-11-01",
