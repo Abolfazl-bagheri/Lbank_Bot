@@ -502,18 +502,17 @@
       "symbol": "SHAZUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 23.686546536435817,
-      "qty": 59.1053,
-      "margin": 70.0,
+      "entry": 23.55,
+      "qty": 25.4777,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 23.09438287302492,
+      "tp_price": 22.96125,
       "tf": "15m",
       "opened_at": 1793718266,
-      "adds": 2,
-      "last_leg_margin": 40.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [
-        23.59,
-        23.85
+        23.59
       ],
       "steps": [
         {
@@ -523,14 +522,10 @@
         {
           "px": 23.55,
           "ts": 1793718593
-        },
-        {
-          "px": 23.79,
-          "ts": 1793727425
         }
       ],
       "entry_candle_ts": 1793718000,
-      "last_leg_candle_ts": 1793727425,
+      "last_leg_candle_ts": 1793718593,
       "dry_run": true,
       "order_id": "PAPER-SHAZUSDT-1793718266"
     },
@@ -3683,7 +3678,8 @@
       "side": "SELL",
       "upper": 0.013261174265241617,
       "open": 0.0135,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "HOMEUSDT",
@@ -3692,7 +3688,8 @@
       "side": "SELL",
       "upper": 0.005534361021841127,
       "open": 0.005609,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "SHAZUSDT",
@@ -3701,7 +3698,8 @@
       "side": "SELL",
       "upper": 23.003995487386643,
       "open": 23.57,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "HUTUSDT",
@@ -3710,7 +3708,8 @@
       "side": "SELL",
       "upper": 59.045048090832815,
       "open": 61.53,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "BASUSDT",
@@ -3719,7 +3718,8 @@
       "side": "SELL",
       "upper": 0.015510935816135815,
       "open": 0.015674,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "AIOUSDT",
@@ -3813,7 +3813,6 @@
     "FIGHT1USDT": 1793700356,
     "MARRIOTTUSDT": 1793714834,
     "FUTUUSDT": 1793718431,
-    "AMCUSDT": 1793724441,
     "LIGHT1USDT": 1793726282,
     "HOTUSDT": 1793736319,
     "OROCHIUSDT": 1793736424,
@@ -3830,12 +3829,13 @@
     "CZUSDT": 1793758880,
     "OSCRUSDT": 1793760691,
     "RIOTUSDT": 1793764210,
-    "CAPETHUSDT": 1793769717,
-    "AI1USDT": 1793776938,
-    "IRENONUSDT": 1793776956
+    "CAPETHUSDT": 1793771554,
+    "AI1USDT": 1793772586,
+    "AMCUSDT": 1793772630,
+    "IRENONUSDT": 1793776197
   },
-  "last_trade_report_ts": 1793733810,
+  "last_trade_report_ts": 1793733063,
   "last_daily_report_date": "2026-11-01",
-  "last_known_version": "2.6.6",
+  "last_known_version": "2.6.5",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
