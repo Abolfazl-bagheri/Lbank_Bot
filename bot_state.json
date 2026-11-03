@@ -512,19 +512,20 @@
       "symbol": "SHAZUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 24.048469684107413,
-      "qty": 124.7481,
-      "margin": 150.0,
+      "entry": 24.243888374901168,
+      "qty": 255.7346,
+      "margin": 310.0,
       "leverage": 20,
-      "tp_price": 23.44725794200473,
+      "tp_price": 23.63779116552864,
       "tf": "15m",
       "opened_at": 1793718266,
-      "adds": 3,
-      "last_leg_margin": 80.0,
+      "adds": 4,
+      "last_leg_margin": 160.0,
       "used_res_levels": [
         23.59,
         24.34,
-        24.16
+        24.16,
+        24.49
       ],
       "steps": [
         {
@@ -542,10 +543,14 @@
         {
           "px": 24.12,
           "ts": 1793738261
+        },
+        {
+          "px": 24.43,
+          "ts": 1793740941
         }
       ],
       "entry_candle_ts": 1793718000,
-      "last_leg_candle_ts": 1793738261,
+      "last_leg_candle_ts": 1793740941,
       "dry_run": true,
       "order_id": "PAPER-SHAZUSDT-1793718266"
     },
@@ -3802,6 +3807,15 @@
       "open": 63.58,
       "reported": true,
       "filled": false
+    },
+    {
+      "symbol": "CLANKERUSDT",
+      "tf": "1h",
+      "candle_ts": 1793739600,
+      "side": "SELL",
+      "upper": 13.370854421964278,
+      "open": 13.82,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -3852,7 +3866,6 @@
     "OFCUSDT": 1793659840,
     "KOPNUSDT": 1793668799,
     "LWLGUSDT": 1793675941,
-    "ONSEMIUSDT": 1793676808,
     "EWZSUSDT": 1793678937,
     "BIDUUSDT": 1793678955,
     "XPSTOCKUSDT": 1793678976,
@@ -3881,7 +3894,8 @@
     "CAPETHUSDT": 1793771554,
     "AI1USDT": 1793772586,
     "AMCUSDT": 1793772630,
-    "IRENONUSDT": 1793776197
+    "IRENONUSDT": 1793776197,
+    "ONSEMIUSDT": 1793784100
   },
   "last_trade_report_ts": 1793739230,
   "last_daily_report_date": "2026-11-01",
