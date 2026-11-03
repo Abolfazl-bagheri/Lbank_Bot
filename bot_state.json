@@ -680,24 +680,30 @@
       "symbol": "AMDUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 523.27,
-      "qty": 0.382212,
-      "margin": 10.0,
+      "entry": 520.6836246182737,
+      "qty": 1.152331,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 510.18825,
+      "tp_price": 507.66653400281683,
       "tf": "1h",
       "opened_at": 1793743437,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        521.05
+      ],
       "steps": [
         {
           "px": 523.27,
           "ts": 1793743437
+        },
+        {
+          "px": 519.4,
+          "ts": 1793745445
         }
       ],
       "entry_candle_ts": 1793743200,
-      "last_leg_candle_ts": 1793743200,
+      "last_leg_candle_ts": 1793745445,
       "dry_run": true,
       "order_id": "PAPER-AMDUSDT-1793743437"
     },
@@ -3926,7 +3932,8 @@
       "side": "SELL",
       "upper": 190.62904067096062,
       "open": 193.49,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "CLANKERUSDT",
@@ -4035,7 +4042,6 @@
     "FUTUUSDT": 1793718431,
     "LIGHT1USDT": 1793726282,
     "OROCHIUSDT": 1793736424,
-    "QUACKAIUSDT": 1793743546,
     "FLOCK1USDT": 1793751668,
     "O1USDT": 1793752630,
     "KNTQUSDT": 1793754378,
@@ -4052,9 +4058,10 @@
     "IRENONUSDT": 1793776197,
     "ONSEMIUSDT": 1793784100,
     "AEHRUSDT": 1793785881,
-    "SIMOUSDT": 1793785920
+    "SIMOUSDT": 1793785920,
+    "QUACKAIUSDT": 1793787693
   },
-  "last_trade_report_ts": 1793742772,
+  "last_trade_report_ts": 1793743704,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.7",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
