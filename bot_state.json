@@ -502,17 +502,18 @@
       "symbol": "SHAZUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 23.55,
-      "qty": 25.4777,
-      "margin": 30.0,
+      "entry": 23.686546536435817,
+      "qty": 59.1053,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 22.96125,
+      "tp_price": 23.09438287302492,
       "tf": "15m",
       "opened_at": 1793718266,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [
-        23.59
+        23.59,
+        23.85
       ],
       "steps": [
         {
@@ -522,10 +523,14 @@
         {
           "px": 23.55,
           "ts": 1793718593
+        },
+        {
+          "px": 23.79,
+          "ts": 1793727425
         }
       ],
       "entry_candle_ts": 1793718000,
-      "last_leg_candle_ts": 1793718593,
+      "last_leg_candle_ts": 1793727425,
       "dry_run": true,
       "order_id": "PAPER-SHAZUSDT-1793718266"
     },
@@ -2383,36 +2388,6 @@
       "side": "SELL"
     },
     {
-      "symbol": "GUNUSDT",
-      "tf": "1h",
-      "candle_ts": 1793466000,
-      "side": "SELL",
-      "upper": 0.002176587414889449,
-      "open": 0.00223,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "PROVEUSDT",
-      "tf": "1h",
-      "candle_ts": 1793466000,
-      "side": "SELL",
-      "upper": 0.22324696588895562,
-      "open": 0.2263,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "FRONGUSDT",
-      "tf": "15m",
-      "candle_ts": 1793466900,
-      "side": "SELL",
-      "upper": 0.002328138663369295,
-      "open": 0.002385,
-      "reported": true,
-      "filled": false
-    },
-    {
       "symbol": "FRONGUSDT",
       "tf": "1h",
       "candle_ts": 1793469600,
@@ -3879,7 +3854,6 @@
     "MARRIOTTUSDT": 1793714834,
     "FUTUUSDT": 1793718431,
     "AMCUSDT": 1793724441,
-    "CAPETHUSDT": 1793724461,
     "LIGHT1USDT": 1793726282,
     "HOTUSDT": 1793736319,
     "OROCHIUSDT": 1793736424,
@@ -3895,9 +3869,10 @@
     "NEIRO1USDT": 1793758876,
     "CZUSDT": 1793758880,
     "OSCRUSDT": 1793760691,
-    "RIOTUSDT": 1793764210
+    "RIOTUSDT": 1793764210,
+    "CAPETHUSDT": 1793769717
   },
-  "last_trade_report_ts": 1793723759,
+  "last_trade_report_ts": 1793726566,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.5",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
