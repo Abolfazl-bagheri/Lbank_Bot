@@ -537,24 +537,30 @@
       "symbol": "NIGHTUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.0424,
-      "qty": 4716.9811,
-      "margin": 10.0,
+      "entry": 0.04222631164266468,
+      "qty": 14209.150099999999,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.04134,
+      "tp_price": 0.041170653851598064,
       "tf": "1h",
       "opened_at": 1793714760,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.04223
+      ],
       "steps": [
         {
           "px": 0.0424,
           "ts": 1793714760
+        },
+        {
+          "px": 0.04214,
+          "ts": 1793715696
         }
       ],
       "entry_candle_ts": 1793714400,
-      "last_leg_candle_ts": 1793714400,
+      "last_leg_candle_ts": 1793715696,
       "dry_run": true,
       "order_id": "PAPER-NIGHTUSDT-1793714760"
     },
@@ -3520,12 +3526,7 @@
     "WUXIBIOUSDT": 1793694108,
     "PORUSDT": 1793694114,
     "FIGHT1USDT": 1793700356,
-    "CYBERLEEKUSDT": 1793714763,
     "MARRIOTTUSDT": 1793714834,
-    "CZUSDT": 1793714857,
-    "1000SATSUSDT": 1793714909,
-    "1000WOJAKUSDT": 1793714911,
-    "NEIRO1USDT": 1793714916,
     "FUTUUSDT": 1793718431,
     "AMCUSDT": 1793724441,
     "CAPETHUSDT": 1793724461,
@@ -3537,9 +3538,14 @@
     "QUACKAIUSDT": 1793743546,
     "FLOCK1USDT": 1793751668,
     "O1USDT": 1793752630,
-    "KNTQUSDT": 1793754378
+    "KNTQUSDT": 1793754378,
+    "CYBERLEEKUSDT": 1793758800,
+    "1000WOJAKUSDT": 1793758830,
+    "1000SATSUSDT": 1793758874,
+    "NEIRO1USDT": 1793758876,
+    "CZUSDT": 1793758880
   },
-  "last_trade_report_ts": 1793712995,
+  "last_trade_report_ts": 1793714988,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.5",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
