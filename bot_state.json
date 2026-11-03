@@ -300,24 +300,28 @@
       "symbol": "BMTUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.02732,
-      "qty": 7320.6442,
-      "margin": 10.0,
+      "entry": 0.0272131246942974,
+      "qty": 22048.184699999998,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.026637,
+      "tp_price": 0.026532796576939962,
       "tf": "15m",
       "opened_at": 1793710965,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 0.02732,
           "ts": 1793710965
+        },
+        {
+          "px": 0.02716,
+          "ts": 1793712002
         }
       ],
       "entry_candle_ts": 1793710800,
-      "last_leg_candle_ts": 1793710800,
+      "last_leg_candle_ts": 1793711700,
       "dry_run": true,
       "order_id": "PAPER-BMTUSDT-1793710965"
     },
@@ -3189,7 +3193,8 @@
       "side": "SELL",
       "upper": 0.02605404000489277,
       "open": 0.02727,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "BOMEUSDT",
@@ -3207,7 +3212,8 @@
       "side": "SELL",
       "upper": 0.05405665922374185,
       "open": 0.055259,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "BMTUSDT",
@@ -3261,6 +3267,15 @@
       "side": "SELL",
       "upper": 3.2050530070894836,
       "open": 3.245,
+      "reported": false
+    },
+    {
+      "symbol": "SAGAUSDT",
+      "tf": "1h",
+      "candle_ts": 1793710800,
+      "side": "SELL",
+      "upper": 0.0167128423908094,
+      "open": 0.01695,
       "reported": false
     }
   ],
@@ -3344,7 +3359,7 @@
     "O1USDT": 1793752630,
     "KNTQUSDT": 1793754378
   },
-  "last_trade_report_ts": 1793709448,
+  "last_trade_report_ts": 1793711361,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.5",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
