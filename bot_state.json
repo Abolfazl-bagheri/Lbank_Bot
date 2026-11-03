@@ -119,18 +119,19 @@
       "symbol": "GEUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 316.01099696742955,
-      "qty": 4.430235,
-      "margin": 70.0,
+      "entry": 318.1997808822305,
+      "qty": 9.428035,
+      "margin": 150.0,
       "leverage": 20,
-      "tp_price": 308.1107220432438,
+      "tp_price": 310.24478636017477,
       "tf": "1h",
       "opened_at": 1793631997,
-      "adds": 2,
-      "last_leg_margin": 40.0,
+      "adds": 3,
+      "last_leg_margin": 80.0,
       "used_res_levels": [
         315.49,
-        318.27
+        318.27,
+        321.11
       ],
       "steps": [
         {
@@ -144,10 +145,14 @@
         {
           "px": 317.02,
           "ts": 1793654414
+        },
+        {
+          "px": 320.14,
+          "ts": 1793718541
         }
       ],
       "entry_candle_ts": 1793631600,
-      "last_leg_candle_ts": 1793654414,
+      "last_leg_candle_ts": 1793718541,
       "dry_run": true,
       "order_id": "PAPER-GEUSDT-1793631997"
     },
@@ -3661,6 +3666,15 @@
       "side": "SELL",
       "upper": 59.045048090832815,
       "open": 61.53,
+      "reported": false
+    },
+    {
+      "symbol": "BASUSDT",
+      "tf": "1h",
+      "candle_ts": 1793718000,
+      "side": "SELL",
+      "upper": 0.015510935816135815,
+      "open": 0.015674,
       "reported": false
     }
   ],
