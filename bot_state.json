@@ -445,6 +445,31 @@
       "last_leg_candle_ts": 1793710800,
       "dry_run": true,
       "order_id": "PAPER-LITUSDT-1793711183"
+    },
+    {
+      "symbol": "SAGAUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.01691,
+      "qty": 11827.3211,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.016487250000000002,
+      "tf": "1h",
+      "opened_at": 1793711209,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.01691,
+          "ts": 1793711209
+        }
+      ],
+      "entry_candle_ts": 1793710800,
+      "last_leg_candle_ts": 1793710800,
+      "dry_run": true,
+      "order_id": "PAPER-SAGAUSDT-1793711209"
     }
   ],
   "trade_history": [
@@ -3227,6 +3252,15 @@
       "side": "SELL",
       "upper": 0.0042167178489080775,
       "open": 0.004277,
+      "reported": false
+    },
+    {
+      "symbol": "LITUSDT",
+      "tf": "1h",
+      "candle_ts": 1793710800,
+      "side": "SELL",
+      "upper": 3.2050530070894836,
+      "open": 3.245,
       "reported": false
     }
   ],
