@@ -787,6 +787,31 @@
       "last_leg_candle_ts": 1793746800,
       "dry_run": true,
       "order_id": "PAPER-ANSEMUSDT-1793747063"
+    },
+    {
+      "symbol": "CARDSUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.2572,
+      "qty": 777.605,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.25077,
+      "tf": "1h",
+      "opened_at": 1793747094,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.2572,
+          "ts": 1793747094
+        }
+      ],
+      "entry_candle_ts": 1793746800,
+      "last_leg_candle_ts": 1793746800,
+      "dry_run": true,
+      "order_id": "PAPER-CARDSUSDT-1793747094"
     }
   ],
   "trade_history": [
@@ -4009,6 +4034,15 @@
       "open": 31.52,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "ANSEMUSDT",
+      "tf": "1h",
+      "candle_ts": 1793746800,
+      "side": "SELL",
+      "upper": 0.04452008939211084,
+      "open": 0.0452,
+      "reported": false
     }
   ],
   "paper_days": [
