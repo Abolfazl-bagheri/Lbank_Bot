@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.5",
-  "updated_at": 1793718264,
+  "updated_at": 1793718288,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "CLAUDIAUSDT",
-      "tf": "4h",
-      "gap": 8.89,
-      "ts": 1793691850
-    },
     {
       "kind": "GAP",
       "symbol": "MEGAUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 1.29,
       "ts": 1793718264
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793718288
     }
   ],
   "trades": [
@@ -1636,6 +1636,19 @@
       "margin": 10.0,
       "lev": 20,
       "px": 0.6128,
+      "pnl": 0.0,
+      "tf": "15m"
+    },
+    {
+      "symbol": "SHAZUSDT",
+      "side": "SELL",
+      "entry": 23.55,
+      "tp": 22.96125,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 23.55,
       "pnl": 0.0,
       "tf": "15m"
     }
