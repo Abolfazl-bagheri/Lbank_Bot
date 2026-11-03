@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.5",
-  "updated_at": 1793720093,
+  "updated_at": 1793720207,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1793700392
-    },
     {
       "kind": "HEARTBEAT",
       "symbol": "—",
@@ -1402,6 +1395,13 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1793720093
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793720207
     }
   ],
   "trades": [
@@ -1456,19 +1456,6 @@
       "px": 321.19,
       "pnl": -28.1919,
       "tf": "1h"
-    },
-    {
-      "symbol": "CCLUSDT",
-      "side": "SELL",
-      "entry": 30.374,
-      "tp": 29.614649999999997,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 29.538,
-      "pnl": 5.5047,
-      "tf": "4h"
     },
     {
       "symbol": "PDDUSDT",
@@ -1588,19 +1575,6 @@
       "tf": "1h"
     },
     {
-      "symbol": "DRIFTUSDT",
-      "side": "SELL",
-      "entry": 0.013393399241590285,
-      "tp": 0.013058564260550527,
-      "adds": 3,
-      "pele": 4,
-      "margin": 150.0,
-      "lev": 20,
-      "px": 0.01301,
-      "pnl": 85.878,
-      "tf": "1h"
-    },
-    {
       "symbol": "RUNEUSDT",
       "side": "SELL",
       "entry": 0.6128,
@@ -1693,16 +1667,16 @@
     }
   ],
   "start": 1000.0,
-  "realized": 934.495,
-  "closed_n": 45,
-  "open_upnl": 51.1572,
+  "realized": 1025.8777,
+  "closed_n": 47,
+  "open_upnl": -40.2255,
   "equity": 1985.6522,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 934.495,
+    "profit": 1025.8777,
     "loss": 0,
-    "count": 45
+    "count": 47
   }
 }
