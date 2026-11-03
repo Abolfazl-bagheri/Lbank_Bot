@@ -306,24 +306,30 @@
       "symbol": "ZROUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 1.8473,
-      "qty": 108.2661,
-      "margin": 10.0,
+      "entry": 1.8733812446745237,
+      "qty": 320.2765,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 1.8011175,
+      "tp_price": 1.8265467135576605,
       "tf": "1h",
       "opened_at": 1793711093,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        1.89
+      ],
       "steps": [
         {
           "px": 1.8473,
           "ts": 1793711093
+        },
+        {
+          "px": 1.8867,
+          "ts": 1793716493
         }
       ],
       "entry_candle_ts": 1793710800,
-      "last_leg_candle_ts": 1793710800,
+      "last_leg_candle_ts": 1793716493,
       "dry_run": true,
       "order_id": "PAPER-ZROUSDT-1793711093"
     },
