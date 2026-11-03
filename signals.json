@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.7",
-  "updated_at": 1793743313,
+  "updated_at": 1793743332,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1793720207
-    },
     {
       "kind": "HEARTBEAT",
       "symbol": "—",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 2.34,
       "ts": 1793743313
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793743332
     }
   ],
   "trades": [
@@ -1638,6 +1638,19 @@
       "px": 14.04,
       "pnl": -2.1598,
       "tf": "1h"
+    },
+    {
+      "symbol": "ANETUSDT",
+      "side": "SELL",
+      "entry": 195.2,
+      "tp": 190.32,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 195.2,
+      "pnl": 0.0,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
