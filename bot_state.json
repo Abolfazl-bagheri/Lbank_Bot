@@ -652,31 +652,6 @@
       "order_id": "PAPER-CLANKERUSDT-1793739826"
     },
     {
-      "symbol": "ANETUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 195.2,
-      "qty": 1.0246,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 190.32,
-      "tf": "15m",
-      "opened_at": 1793743314,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 195.2,
-          "ts": 1793743314
-        }
-      ],
-      "entry_candle_ts": 1793743200,
-      "last_leg_candle_ts": 1793743200,
-      "dry_run": true,
-      "order_id": "PAPER-ANETUSDT-1793743314"
-    },
-    {
       "symbol": "AMDUSDT",
       "side": "SELL",
       "status": "open",
@@ -2449,6 +2424,34 @@
       "closed_at": 1793742746,
       "close_px": 0.13065,
       "pnl_usdt": 15.212470057159766
+    },
+    {
+      "symbol": "ANETUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 195.2,
+      "qty": 1.0246,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 190.32,
+      "tf": "15m",
+      "opened_at": 1793743314,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 195.2,
+          "ts": 1793743314
+        }
+      ],
+      "entry_candle_ts": 1793743200,
+      "last_leg_candle_ts": 1793743200,
+      "dry_run": true,
+      "order_id": "PAPER-ANETUSDT-1793743314",
+      "closed_at": 1793749894,
+      "close_px": 190.2,
+      "pnl_usdt": 5.1229508196721305
     }
   ],
   "pending": [
@@ -4179,7 +4182,7 @@
     "SIMOUSDT": 1793785920,
     "QUACKAIUSDT": 1793787693
   },
-  "last_trade_report_ts": 1793747392,
+  "last_trade_report_ts": 1793749094,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.7",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
