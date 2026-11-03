@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.5",
-  "updated_at": 1793717529,
+  "updated_at": 1793717556,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1793687589
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1395,13 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1793717529
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793717556
     }
   ],
   "trades": [
@@ -1510,19 +1510,6 @@
       "tf": "1h"
     },
     {
-      "symbol": "AGTUSDT",
-      "side": "SELL",
-      "entry": 0.05449408515198487,
-      "tp": 0.053131733023185246,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
-      "lev": 20,
-      "px": 0.05252,
-      "pnl": 21.7354,
-      "tf": "15m"
-    },
-    {
       "symbol": "ZROUSDT",
       "side": "SELL",
       "entry": 1.8733812446745237,
@@ -1629,11 +1616,11 @@
     {
       "symbol": "DRIFTUSDT",
       "side": "SELL",
-      "entry": 0.01308332653581834,
-      "tp": 0.012756243372422881,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
+      "entry": 0.013273612812525433,
+      "tp": 0.012941772492212298,
+      "adds": 2,
+      "pele": 3,
+      "margin": 70.0,
       "lev": 20,
       "px": 0.01342,
       "pnl": -15.4398,
@@ -1641,16 +1628,16 @@
     }
   ],
   "start": 1000.0,
-  "realized": 896.0485,
-  "closed_n": 42,
-  "open_upnl": -20.0691,
+  "realized": 917.7839,
+  "closed_n": 43,
+  "open_upnl": -41.8045,
   "equity": 1875.9794,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 896.0485,
+    "profit": 917.7839,
     "loss": 0,
-    "count": 42
+    "count": 43
   }
 }
