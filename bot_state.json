@@ -573,23 +573,29 @@
       "side": "SELL",
       "status": "open",
       "entry": 23.55,
-      "qty": 8.4926,
-      "margin": 10.0,
+      "qty": 25.4777,
+      "margin": 30.0,
       "leverage": 20,
       "tp_price": 22.96125,
       "tf": "15m",
       "opened_at": 1793718266,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        23.59
+      ],
       "steps": [
         {
           "px": 23.55,
           "ts": 1793718266
+        },
+        {
+          "px": 23.55,
+          "ts": 1793718593
         }
       ],
       "entry_candle_ts": 1793718000,
-      "last_leg_candle_ts": 1793718000,
+      "last_leg_candle_ts": 1793718593,
       "dry_run": true,
       "order_id": "PAPER-SHAZUSDT-1793718266"
     },
