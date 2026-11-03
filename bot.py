@@ -35,8 +35,12 @@ SIGNALS_FILE = os.path.join(BASE_DIR, "signals.json")
 LIVE_TOPIC = os.environ.get("LIVE_TOPIC", "lbank-gap-b0b85cee29ce").strip()
 STATE_BAK = os.path.join(BASE_DIR, "bot_state.bak")
 
-BOT_VERSION = "2.6.4"
+BOT_VERSION = "2.6.5"
 CHANGELOG = {
+    "2.6.5": [
+        "چارت اجباری: خط‌روند داینامیک + سقف پله با هم",
+        "کلوز و پله‌سقف دیگر در تلگرام نیست (فقط وب/ntfy)",
+    ],
     "2.6.4": [
         "خط‌روند داینامیک دوباره روی چارت احتمال‌گپ",
         "احتمال‌گپ چند TF برای یک نماد در یک پیام",
@@ -921,83 +925,116 @@ def detect_fake_break_watch(df: pd.DataFrame) -> str | None:
 
 
 def make_gap_chart(df: pd.DataFrame, symbol: str, tf: str, sig: dict | None = None) -> bytes | None:
-    """چارت: خط‌روند داینامیک + UB + سقف پله."""
+    """همیشه یک چارت واحد: کندل + BB + خط‌روند داینامیک + سقف پله."""
     try:
-        plot_df = densify_ohlc(df)
-        fr = _flat_ratio(df)
-        if fr > 0.45 and _flat_ratio(plot_df) > 0.35:
-            log.info("CHART_SKIP %s %s flat=%.0f%%", symbol, tf, fr * 100)
-            return None
-        entry = float((sig or {}).get("fut_last") or (sig or {}).get("open") or plot_df.iloc[-1]["c"])
-        ub = None
-        if "upper" in plot_df.columns:
-            try:
-                ub = float(plot_df.iloc[-1]["upper"])
-            except Exception:
-                ub = None
-        gap_pct = ((entry - ub) / entry * 100.0) if ub and entry and ub == ub else None
-        # اول موتور SolAtlas / trendlines
-        img = None
-        try:
-            try:
-                from trendlines_breaks import render_trendline_chart
-            except ImportError:
-                from agents.trendlines_breaks import render_trendline_chart
-            img = render_trendline_chart(plot_df, symbol, tf, gap_pct=gap_pct, max_bars=180)
-        except Exception as e:
-            log.debug("trendlines render: %s", e)
-        if img:
-            return img
-        # فالبک matplotlib با خط‌روند ساده + سقف
         import matplotlib
         matplotlib.use("Agg")
         import matplotlib.pyplot as plt
+        from matplotlib.patches import Rectangle
         from io import BytesIO
-        plot_df = plot_df.tail(80).reset_index(drop=True)
+
+        if df is None or len(df) < 30:
+            return None
+        # اگر flat زیاد بود تمیز کن؛ وگرنه داده خام (چارت FN خراب نشود)
+        fr = _flat_ratio(df)
+        plot_df = densify_ohlc(df) if fr > 0.2 else df.copy()
+        if len(plot_df) < 25:
+            plot_df = df.copy()
+        plot_df = plot_df.tail(70).reset_index(drop=True)
+        # BB اگر نیست
+        if "upper" not in plot_df.columns or plot_df["upper"].isna().all():
+            s = plot_df["c"].astype(float).rolling(BB_PERIOD).mean()
+            sd = plot_df["c"].astype(float).rolling(BB_PERIOD).std(ddof=1)
+            plot_df["sma"], plot_df["upper"], plot_df["lower"] = s, s + BB_STD * sd, s - BB_STD * sd
+
         o = plot_df["o"].to_numpy(float)
         h = plot_df["h"].to_numpy(float)
         l = plot_df["l"].to_numpy(float)
         c = plot_df["c"].to_numpy(float)
-        xs = np.arange(len(plot_df))
-        fig, ax = plt.subplots(figsize=(10, 5.2), dpi=120)
+        n = len(plot_df)
+        xs = np.arange(n)
+        entry = float((sig or {}).get("fut_last") or (sig or {}).get("open") or c[-1])
+        ub = float(plot_df["upper"].iloc[-1]) if plot_df["upper"].notna().iloc[-1] else None
+        gap_pct = ((entry - ub) / entry * 100.0) if ub and entry > 0 else None
+
+        fig, ax = plt.subplots(figsize=(11, 5.4), dpi=130)
         fig.patch.set_facecolor("#0b0d13")
         ax.set_facecolor("#0b0d13")
-        for i in xs:
-            col = "#2de2a6" if c[i] >= o[i] else "#ff5b73"
-            ax.vlines(i, l[i], h[i], colors=col, linewidth=1.0)
-            ax.add_patch(plt.Rectangle((i - 0.3, min(o[i], c[i])), 0.6, max(abs(c[i] - o[i]), (h.max() - l.min()) * 0.001), facecolor=col, edgecolor=col))
+        rng = float(h.max() - l.min()) or 1.0
+        body_min = rng * 0.003
+        for i in range(n):
+            up = c[i] >= o[i]
+            col = "#2de2a6" if up else "#ff5b73"
+            ax.vlines(i, l[i], h[i], colors=col, linewidth=1.1, zorder=2)
+            y0, y1 = min(o[i], c[i]), max(o[i], c[i])
+            if y1 - y0 < body_min:
+                y1 = y0 + body_min
+            ax.add_patch(Rectangle((i - 0.32, y0), 0.64, y1 - y0, facecolor=col, edgecolor=col, zorder=3))
+
+        # BB
         if "upper" in plot_df.columns:
-            ax.plot(xs, plot_df["upper"], color="#8b7bff", lw=0.9, alpha=0.7)
-            ax.plot(xs, plot_df["lower"], color="#8b7bff", lw=0.9, alpha=0.5)
-        # خط‌روند داینامیک از سوئینگ
-        def _piv(arr, high=True, sw=3):
+            ax.plot(xs, plot_df["upper"], color="#8b7bff", lw=1.0, alpha=0.75, zorder=1)
+            ax.plot(xs, plot_df["lower"], color="#8b7bff", lw=1.0, alpha=0.55, zorder=1)
+            ax.fill_between(xs, plot_df["lower"], plot_df["upper"], color="#8b7bff", alpha=0.06, zorder=0)
+
+        # سوئینگ → خط‌روند داینامیک
+        def pivots(arr, high=True, sw=3):
             out = []
             for i in range(sw, len(arr) - sw):
                 v = arr[i]
-                if high and all(arr[i - k] < v for k in range(1, sw + 1)) and all(arr[i + k] <= v for k in range(1, sw + 1)):
-                    out.append(i)
-                if not high and all(arr[i - k] > v for k in range(1, sw + 1)) and all(arr[i + k] >= v for k in range(1, sw + 1)):
-                    out.append(i)
+                if high:
+                    if all(arr[i - k] < v for k in range(1, sw + 1)) and all(arr[i + k] <= v for k in range(1, sw + 1)):
+                        out.append(i)
+                else:
+                    if all(arr[i - k] > v for k in range(1, sw + 1)) and all(arr[i + k] >= v for k in range(1, sw + 1)):
+                        out.append(i)
             return out
-        ph, pl_ = _piv(h, True), _piv(l, False)
+
+        ph, pl_ = pivots(h, True), pivots(l, False)
+        # مقاومت داینامیک (سقف‌ها)
         if len(ph) >= 2:
-            a, b = ph[-2], ph[-1]
-            ax.plot([a, b, len(xs) - 1], [h[a], h[b], h[b] + (h[b] - h[a]) / max(b - a, 1) * (len(xs) - 1 - b)], color="#ffb547", lw=1.8)
+            for a, b in ((ph[-2], ph[-1]), (ph[-3], ph[-1]) if len(ph) >= 3 else (None, None)):
+                if a is None:
+                    continue
+                if b - a < 2:
+                    continue
+                slope = (h[b] - h[a]) / (b - a)
+                y_end = h[b] + slope * (n - 1 - b)
+                ax.plot([a, n - 1], [h[a], y_end], color="#ffb547", lw=2.0, solid_capstyle="round", zorder=4)
+                ax.scatter([a, b], [h[a], h[b]], s=28, color="#ffb547", zorder=5)
+                break
+        # حمایت داینامیک (کف‌ها)
         if len(pl_) >= 2:
             a, b = pl_[-2], pl_[-1]
-            ax.plot([a, b, len(xs) - 1], [l[a], l[b], l[b] + (l[b] - l[a]) / max(b - a, 1) * (len(xs) - 1 - b)], color="#38d9ff", lw=1.8)
+            if b - a >= 2:
+                slope = (l[b] - l[a]) / (b - a)
+                y_end = l[b] + slope * (n - 1 - b)
+                ax.plot([a, n - 1], [l[a], y_end], color="#38d9ff", lw=2.0, solid_capstyle="round", zorder=4)
+                ax.scatter([a, b], [l[a], l[b]], s=28, color="#38d9ff", zorder=5)
+
+        # سقف‌های افقی پله
         try:
             levels = find_resistance_levels(symbol, entry, tf if tf in ("15m", "1h", "4h") else "1h")
         except Exception:
             levels = []
         for j, lv in enumerate(levels[:3]):
-            ax.axhline(lv, color="#f59e0b", ls="--", lw=1.1, alpha=0.85)
-            ax.text(1, lv, f" سقف{j+1} {lv:.6g}", color="#f59e0b", fontsize=8, va="bottom")
-        if ub:
-            ax.axhline(ub, color="#8b7bff", ls=":", lw=1.0)
-        ax.set_title(f"{symbol} · {tf} · trend+res" + (f" · gap≈{gap_pct:.2f}%" if gap_pct is not None else ""), color="#eef0f8", fontsize=11, loc="left")
+            ax.axhline(lv, color="#f59e0b", ls="--", lw=1.2, alpha=0.9, zorder=3)
+            dist = (lv - entry) / entry * 100 if entry else 0
+            ax.text(n - 1, lv, f"  سقف{j+1} {lv:.6g} ({dist:+.1f}%)", color="#f59e0b", fontsize=8, va="bottom", zorder=6)
+
+        if ub and ub == ub:
+            ax.axhline(ub, color="#c4b5fd", ls=":", lw=1.1, alpha=0.9)
+            ax.text(0, ub, f"UB {ub:.6g}  ", color="#c4b5fd", fontsize=8, va="bottom", ha="left")
+        ax.axhline(entry, color="#38bdf8", ls=":", lw=0.9, alpha=0.7)
+        ax.text(n - 1, entry, f"  px {entry:.6g}", color="#38bdf8", fontsize=8, va="top")
+
+        title = f"{symbol} · {tf} · روند+سقف"
+        if gap_pct is not None:
+            title += f" · gap≈{gap_pct:.2f}%"
+        ax.set_title(title, color="#eef0f8", fontsize=11, loc="left")
+        ax.set_xlim(-1, n + 3)
         ax.tick_params(colors="#8b92a8", labelsize=8)
-        ax.set_xlim(-1, len(xs) + 2)
+        ax.grid(color="#ffffff", alpha=0.06)
         for s in ax.spines.values():
             s.set_visible(False)
         fig.tight_layout()
@@ -1006,7 +1043,7 @@ def make_gap_chart(df: pd.DataFrame, symbol: str, tf: str, sig: dict | None = No
         plt.close(fig)
         return buf.getvalue()
     except Exception as e:
-        log.debug("chart: %s", e)
+        log.warning("chart fail %s %s: %s", symbol, tf, e)
         return None
 
 
@@ -1240,11 +1277,7 @@ def close_trade_record(rec: dict, px: float, reason: str) -> None:
         })
     except Exception:
         pass
-    mode = "PAPER" if rec.get("dry_run") else "LIVE"
-    send_telegram_text(
-        f"✅ <b>کلوز {mode}</b> {rec['symbol']}\n"
-        f"{entry:.6g} → {px:.6g}\nROI ≈ <b>{margin_roi:.1f}%</b> · PnL <b>{pnl:+.3f}U</b> · {reason}"
-    )
+    # کلوز فقط وب/ntfy — تلگرام نه
     save_state()
 
 
@@ -1313,11 +1346,7 @@ def manage_open_trades() -> None:
             "PAPER_ADD_RES %s px=%.6g res=%.6g leg=%.0fU avg=%.6g adds=%s",
             sym, px, hit, leg_m, new_entry, adds + 1,
         )
-        send_telegram_text(
-            f"📉 <b>پله سقف</b> {sym}\n"
-            f"مقاومت ≈ <code>{hit:.6g}</code> · پله <b>{leg_m:.0f}U</b>\n"
-            f"میانگین ≈ <code>{new_entry:.6g}</code> · کل مارجین {new_margin:.0f}U"
-        )
+        # پله سقف فقط لاگ + pos وب
         save_state(force_remote=True)
         try:
             push_positions_live()
