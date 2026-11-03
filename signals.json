@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.5",
-  "updated_at": 1793714673,
+  "updated_at": 1793714690,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1793683014
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 1.1,
       "ts": 1793714673
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793714690
     }
   ],
   "trades": [
@@ -1612,6 +1612,19 @@
       "px": 0.020625,
       "pnl": 4.7152,
       "tf": "15m"
+    },
+    {
+      "symbol": "CHIPUSDT",
+      "side": "SELL",
+      "entry": 0.0428,
+      "tp": 0.041729999999999996,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.0428,
+      "pnl": 0.0,
+      "tf": "1h"
     }
   ],
   "start": 1000.0,
