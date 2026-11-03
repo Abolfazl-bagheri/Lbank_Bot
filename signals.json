@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.7",
-  "updated_at": 1793747061,
+  "updated_at": 1793747084,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "COINUSDT",
-      "tf": "1h",
-      "gap": 3.33,
-      "ts": 1793721971
-    },
     {
       "kind": "GAP",
       "symbol": "ALCHUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 1.04,
       "ts": 1793747061
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793747084
     }
   ],
   "trades": [
@@ -1689,6 +1689,19 @@
       "lev": 20,
       "px": 31.46,
       "pnl": -0.9582,
+      "tf": "1h"
+    },
+    {
+      "symbol": "ANSEMUSDT",
+      "side": "SELL",
+      "entry": 0.04499,
+      "tp": 0.04386525,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.04499,
+      "pnl": 0.0,
       "tf": "1h"
     }
   ],
