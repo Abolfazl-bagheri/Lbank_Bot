@@ -700,6 +700,31 @@
       "last_leg_candle_ts": 1793743200,
       "dry_run": true,
       "order_id": "PAPER-AMDUSDT-1793743437"
+    },
+    {
+      "symbol": "SMCIUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 34.05,
+      "qty": 5.8737,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 33.19875,
+      "tf": "1h",
+      "opened_at": 1793743474,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 34.05,
+          "ts": 1793743474
+        }
+      ],
+      "entry_candle_ts": 1793743200,
+      "last_leg_candle_ts": 1793743200,
+      "dry_run": true,
+      "order_id": "PAPER-SMCIUSDT-1793743474"
     }
   ],
   "trade_history": [
@@ -3888,6 +3913,15 @@
       "side": "SELL",
       "upper": 186.74970538097085,
       "open": 193.49,
+      "reported": false
+    },
+    {
+      "symbol": "AMDUSDT",
+      "tf": "1h",
+      "candle_ts": 1793743200,
+      "side": "SELL",
+      "upper": 515.494359321854,
+      "open": 523.02,
       "reported": false
     }
   ],
