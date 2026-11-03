@@ -231,24 +231,30 @@
       "symbol": "ICNTUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.1916,
-      "qty": 1043.8413,
-      "margin": 10.0,
+      "entry": 0.18918487391253777,
+      "qty": 3171.5009,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.18680999999999998,
+      "tp_price": 0.18445525206472432,
       "tf": "1h",
       "opened_at": 1793656971,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.1882
+      ],
       "steps": [
         {
           "px": 0.1916,
           "ts": 1793656971
+        },
+        {
+          "px": 0.188,
+          "ts": 1793675286
         }
       ],
       "entry_candle_ts": 1793656800,
-      "last_leg_candle_ts": 1793656800,
+      "last_leg_candle_ts": 1793675286,
       "dry_run": true,
       "order_id": "PAPER-ICNTUSDT-1793656971"
     },
@@ -2767,6 +2773,15 @@
       "open": 0.002336,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "AGTUSDT",
+      "tf": "1h",
+      "candle_ts": 1793674800,
+      "side": "SELL",
+      "upper": 0.04173257660970005,
+      "open": 0.042767,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -2841,7 +2856,8 @@
     "CZUSDT": 1793714857,
     "1000SATSUSDT": 1793714909,
     "1000WOJAKUSDT": 1793714911,
-    "NEIRO1USDT": 1793714916
+    "NEIRO1USDT": 1793714916,
+    "FUTUUSDT": 1793718431
   },
   "last_trade_report_ts": 1793671763,
   "last_daily_report_date": "2026-11-01",
