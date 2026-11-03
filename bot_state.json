@@ -577,6 +577,31 @@
       "last_leg_candle_ts": 1793718000,
       "dry_run": true,
       "order_id": "PAPER-RUNEUSDT-1793718219"
+    },
+    {
+      "symbol": "SHAZUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 23.55,
+      "qty": 8.4926,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 22.96125,
+      "tf": "15m",
+      "opened_at": 1793718266,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 23.55,
+          "ts": 1793718266
+        }
+      ],
+      "entry_candle_ts": 1793718000,
+      "last_leg_candle_ts": 1793718000,
+      "dry_run": true,
+      "order_id": "PAPER-SHAZUSDT-1793718266"
     }
   ],
   "trade_history": [
@@ -3504,6 +3529,15 @@
       "open": 0.01309,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "RUNEUSDT",
+      "tf": "15m",
+      "candle_ts": 1793718000,
+      "side": "SELL",
+      "upper": 0.6046022476171773,
+      "open": 0.6118,
+      "reported": false
     }
   ],
   "paper_days": [
