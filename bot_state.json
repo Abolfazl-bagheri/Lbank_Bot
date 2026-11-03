@@ -812,6 +812,31 @@
       "last_leg_candle_ts": 1793746800,
       "dry_run": true,
       "order_id": "PAPER-CARDSUSDT-1793747094"
+    },
+    {
+      "symbol": "CATEUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.0409,
+      "qty": 4889.9756,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.039877499999999996,
+      "tf": "1h",
+      "opened_at": 1793747162,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.0409,
+          "ts": 1793747162
+        }
+      ],
+      "entry_candle_ts": 1793746800,
+      "last_leg_candle_ts": 1793746800,
+      "dry_run": true,
+      "order_id": "PAPER-CATEUSDT-1793747162"
     }
   ],
   "trade_history": [
@@ -4042,6 +4067,15 @@
       "side": "SELL",
       "upper": 0.04452008939211084,
       "open": 0.0452,
+      "reported": false
+    },
+    {
+      "symbol": "CARDSUSDT",
+      "tf": "1h",
+      "candle_ts": 1793746800,
+      "side": "SELL",
+      "upper": 0.2560033092323581,
+      "open": 0.25899,
       "reported": false
     }
   ],
