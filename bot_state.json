@@ -675,6 +675,31 @@
       "last_leg_candle_ts": 1793739194,
       "dry_run": true,
       "order_id": "PAPER-TAUSDT-1793720074"
+    },
+    {
+      "symbol": "CLANKERUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 13.89,
+      "qty": 14.3988,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 13.54275,
+      "tf": "1h",
+      "opened_at": 1793739826,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 13.89,
+          "ts": 1793739826
+        }
+      ],
+      "entry_candle_ts": 1793739600,
+      "last_leg_candle_ts": 1793739600,
+      "dry_run": true,
+      "order_id": "PAPER-CLANKERUSDT-1793739826"
     }
   ],
   "trade_history": [
@@ -3858,7 +3883,7 @@
     "AMCUSDT": 1793772630,
     "IRENONUSDT": 1793776197
   },
-  "last_trade_report_ts": 1793738302,
+  "last_trade_report_ts": 1793739230,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.7",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
