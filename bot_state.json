@@ -705,24 +705,30 @@
       "symbol": "SMCIUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 34.05,
-      "qty": 5.8737,
-      "margin": 10.0,
+      "entry": 34.04999999999999,
+      "qty": 17.621100000000002,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 33.19875,
+      "tp_price": 33.19874999999999,
       "tf": "1h",
       "opened_at": 1793743474,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        34.11
+      ],
       "steps": [
         {
           "px": 34.05,
           "ts": 1793743474
+        },
+        {
+          "px": 34.05,
+          "ts": 1793743661
         }
       ],
       "entry_candle_ts": 1793743200,
-      "last_leg_candle_ts": 1793743200,
+      "last_leg_candle_ts": 1793743661,
       "dry_run": true,
       "order_id": "PAPER-SMCIUSDT-1793743474"
     },
@@ -3956,6 +3962,15 @@
       "side": "SELL",
       "upper": 33.473109884532455,
       "open": 34.05,
+      "reported": false
+    },
+    {
+      "symbol": "OUSTUSDT",
+      "tf": "1h",
+      "candle_ts": 1793743200,
+      "side": "SELL",
+      "upper": 31.053586356459796,
+      "open": 31.52,
       "reported": false
     }
   ],
