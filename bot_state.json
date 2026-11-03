@@ -772,24 +772,30 @@
       "symbol": "ANSEMUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.04499,
-      "qty": 4445.4323,
-      "margin": 10.0,
+      "entry": 0.04580914103264112,
+      "qty": 13097.8225,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.04386525,
+      "tp_price": 0.04466391250682509,
       "tf": "1h",
       "opened_at": 1793747063,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.0463
+      ],
       "steps": [
         {
           "px": 0.04499,
           "ts": 1793747063
+        },
+        {
+          "px": 0.04623,
+          "ts": 1793749045
         }
       ],
       "entry_candle_ts": 1793746800,
-      "last_leg_candle_ts": 1793746800,
+      "last_leg_candle_ts": 1793749045,
       "dry_run": true,
       "order_id": "PAPER-ANSEMUSDT-1793747063"
     },
