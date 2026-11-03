@@ -394,17 +394,18 @@
       "symbol": "SAGAUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.016969893742671004,
-      "qty": 35356.7329,
-      "margin": 30.0,
+      "entry": 0.01729659668001587,
+      "qty": 80940.7785,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 0.01654564639910423,
+      "tp_price": 0.016864181763015473,
       "tf": "1h",
       "opened_at": 1793711209,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [
-        0.01705
+        0.01705,
+        0.01762
       ],
       "steps": [
         {
@@ -414,10 +415,14 @@
         {
           "px": 0.017,
           "ts": 1793716514
+        },
+        {
+          "px": 0.01755,
+          "ts": 1793723715
         }
       ],
       "entry_candle_ts": 1793710800,
-      "last_leg_candle_ts": 1793716514,
+      "last_leg_candle_ts": 1793723715,
       "dry_run": true,
       "order_id": "PAPER-SAGAUSDT-1793711209"
     },
@@ -603,31 +608,6 @@
       "last_leg_candle_ts": 1793721037,
       "dry_run": true,
       "order_id": "PAPER-BASUSDT-1793718411"
-    },
-    {
-      "symbol": "AIOUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.03731,
-      "qty": 5360.4932,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.03637725,
-      "tf": "15m",
-      "opened_at": 1793720035,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.03731,
-          "ts": 1793720035
-        }
-      ],
-      "entry_candle_ts": 1793719800,
-      "last_leg_candle_ts": 1793719800,
-      "dry_run": true,
-      "order_id": "PAPER-AIOUSDT-1793720035"
     },
     {
       "symbol": "TAUSDT",
@@ -2156,6 +2136,34 @@
       "closed_at": 1793720185,
       "close_px": 0.01301,
       "pnl_usdt": 85.87795405957606
+    },
+    {
+      "symbol": "AIOUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.03731,
+      "qty": 5360.4932,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.03637725,
+      "tf": "15m",
+      "opened_at": 1793720035,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.03731,
+          "ts": 1793720035
+        }
+      ],
+      "entry_candle_ts": 1793719800,
+      "last_leg_candle_ts": 1793719800,
+      "dry_run": true,
+      "order_id": "PAPER-AIOUSDT-1793720035",
+      "closed_at": 1793721056,
+      "close_px": 0.03564,
+      "pnl_usdt": 8.952023586169952
     }
   ],
   "pending": [
@@ -3800,7 +3808,8 @@
       "side": "SELL",
       "upper": 62.87657624857238,
       "open": 63.58,
-      "reported": false
+      "reported": true,
+      "filled": false
     }
   ],
   "paper_days": [
@@ -3883,7 +3892,7 @@
     "OSCRUSDT": 1793760691,
     "RIOTUSDT": 1793764210
   },
-  "last_trade_report_ts": 1793720208,
+  "last_trade_report_ts": 1793722834,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.5",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
