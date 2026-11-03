@@ -521,15 +521,15 @@
       "symbol": "DRIFTUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.013273612812525433,
-      "qty": 105472.41500000001,
-      "margin": 70.0,
+      "entry": 0.013393399241590285,
+      "qty": 223990.9335,
+      "margin": 150.0,
       "leverage": 20,
-      "tp_price": 0.012941772492212298,
+      "tp_price": 0.013058564260550527,
       "tf": "1h",
       "opened_at": 1793714798,
-      "adds": 2,
-      "last_leg_margin": 40.0,
+      "adds": 3,
+      "last_leg_margin": 80.0,
       "used_res_levels": [
         0.01314,
         0.01344
@@ -546,10 +546,14 @@
         {
           "px": 0.01342,
           "ts": 1793717540
+        },
+        {
+          "px": 0.0135,
+          "ts": 1793718296
         }
       ],
       "entry_candle_ts": 1793714400,
-      "last_leg_candle_ts": 1793717540,
+      "last_leg_candle_ts": 1793718000,
       "dry_run": true,
       "order_id": "PAPER-DRIFTUSDT-1793714798"
     },
@@ -3537,6 +3541,15 @@
       "side": "SELL",
       "upper": 0.6046022476171773,
       "open": 0.6118,
+      "reported": false
+    },
+    {
+      "symbol": "SHAZUSDT",
+      "tf": "15m",
+      "candle_ts": 1793718000,
+      "side": "SELL",
+      "upper": 23.24703857637358,
+      "open": 23.57,
       "reported": false
     }
   ],
