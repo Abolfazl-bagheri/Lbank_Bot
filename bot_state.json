@@ -287,24 +287,30 @@
       "symbol": "IRYSUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.02184,
-      "qty": 9157.5092,
-      "margin": 10.0,
+      "entry": 0.02187330791515211,
+      "qty": 27430.6933,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.021293999999999997,
+      "tp_price": 0.021326475217273305,
       "tf": "1h",
       "opened_at": 1793682312,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.02196
+      ],
       "steps": [
         {
           "px": 0.02184,
           "ts": 1793682312
+        },
+        {
+          "px": 0.02189,
+          "ts": 1793683268
         }
       ],
       "entry_candle_ts": 1793682000,
-      "last_leg_candle_ts": 1793682000,
+      "last_leg_candle_ts": 1793683268,
       "dry_run": true,
       "order_id": "PAPER-IRYSUSDT-1793682312"
     },
