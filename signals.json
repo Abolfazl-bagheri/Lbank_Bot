@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.4",
-  "updated_at": 1793665134,
+  "updated_at": 1793665146,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "BTRUSDT",
-      "tf": "1h",
-      "gap": 3.9,
-      "ts": 1793634933
-    },
     {
       "kind": "GAP",
       "symbol": "XNYUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 1.07,
       "ts": 1793665134
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793665146
     }
   ],
   "trades": [
@@ -1521,6 +1521,19 @@
       "px": 0.1893,
       "pnl": 8.8457,
       "tf": "1h"
+    },
+    {
+      "symbol": "ESPORTSUSDT",
+      "side": "SELL",
+      "entry": 0.014818,
+      "tp": 0.01444755,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.014818,
+      "pnl": 0.0,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
