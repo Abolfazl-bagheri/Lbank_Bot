@@ -435,6 +435,31 @@
       "last_leg_candle_ts": 1793805300,
       "dry_run": true,
       "order_id": "PAPER-CLANKERUSDT-1793805585"
+    },
+    {
+      "symbol": "CARDSUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.2841,
+      "qty": 703.9775,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.2769975,
+      "tf": "15m",
+      "opened_at": 1793806322,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.2841,
+          "ts": 1793806322
+        }
+      ],
+      "entry_candle_ts": 1793806200,
+      "last_leg_candle_ts": 1793806200,
+      "dry_run": true,
+      "order_id": "PAPER-CARDSUSDT-1793806322"
     }
   ],
   "trade_history": [
@@ -5136,7 +5161,8 @@
       "side": "SELL",
       "upper": 2.9624293640594384,
       "open": 3.052,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ANSEMUSDT",
@@ -5145,7 +5171,8 @@
       "side": "SELL",
       "upper": 0.04941516140953538,
       "open": 0.05,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "STONKUSDT",
@@ -5154,7 +5181,8 @@
       "side": "SELL",
       "upper": 0.13285799379186888,
       "open": 0.13498,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CLANKERUSDT",
@@ -5163,7 +5191,8 @@
       "side": "SELL",
       "upper": 17.907897791070305,
       "open": 18.48,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
