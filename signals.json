@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.8",
-  "updated_at": 1793808585,
+  "updated_at": 1793808608,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "SHAZUSDT",
-      "tf": "15m",
-      "gap": 1.45,
-      "ts": 1793803497
-    },
     {
       "kind": "GAP",
       "symbol": "PAYPUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1793808585
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793808608
     }
   ],
   "trades": [
@@ -1562,19 +1562,6 @@
       "tf": "15m"
     },
     {
-      "symbol": "YOFCUSDT",
-      "side": "SELL",
-      "entry": 14.61,
-      "tp": 14.24475,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 14.24,
-      "pnl": 5.065,
-      "tf": "15m"
-    },
-    {
       "symbol": "CLANKERUSDT",
       "side": "SELL",
       "entry": 18.52,
@@ -1670,9 +1657,9 @@
       "side": "SELL",
       "entry": 32.52,
       "tp": 31.707,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
+      "adds": 1,
+      "pele": 2,
+      "margin": 30.0,
       "lev": 20,
       "px": 32.52,
       "pnl": 0.0,
@@ -1680,16 +1667,16 @@
     }
   ],
   "start": 1000.0,
-  "realized": 1941.5243,
-  "closed_n": 94,
-  "open_upnl": -206.0851,
-  "equity": 2735.4392,
+  "realized": 1946.5894,
+  "closed_n": 95,
+  "open_upnl": -211.1501,
+  "equity": 2735.4393,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 2257.7153,
+    "profit": 2262.7803,
     "loss": -316.1909,
-    "count": 94
+    "count": 95
   }
 }
