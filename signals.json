@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.7",
-  "updated_at": 1793751581,
+  "updated_at": 1793751731,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "SAGAUSDT",
-      "tf": "1h",
-      "gap": 1.54,
-      "ts": 1793725097
-    },
     {
       "kind": "GAP",
       "symbol": "KITEUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1793751581
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793751731
     }
   ],
   "trades": [
@@ -1642,14 +1642,14 @@
     {
       "symbol": "AMDUSDT",
       "side": "SELL",
-      "entry": 520.6836246182737,
-      "tp": 507.66653400281683,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
+      "entry": 517.0685801344472,
+      "tp": 504.141865631086,
+      "adds": 2,
+      "pele": 3,
+      "margin": 70.0,
       "lev": 20,
       "px": 514.39,
-      "pnl": 7.2523,
+      "pnl": 7.2524,
       "tf": "1h"
     },
     {
@@ -1734,8 +1734,8 @@
   "start": 1000.0,
   "realized": 1157.9571,
   "closed_n": 51,
-  "open_upnl": 43.4914,
-  "equity": 2201.4485,
+  "open_upnl": 43.4915,
+  "equity": 2201.4486,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
