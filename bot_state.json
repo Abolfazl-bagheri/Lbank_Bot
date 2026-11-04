@@ -351,6 +351,31 @@
       "last_leg_candle_ts": 1793835240,
       "dry_run": true,
       "order_id": "PAPER-CHILLGUYUSDT-1793830771"
+    },
+    {
+      "symbol": "CLAUDIAUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.00283,
+      "qty": 70671.3781,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.00275925,
+      "tf": "15m",
+      "opened_at": 1793836029,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.00283,
+          "ts": 1793836029
+        }
+      ],
+      "entry_candle_ts": 1793835900,
+      "last_leg_candle_ts": 1793835900,
+      "dry_run": true,
+      "order_id": "PAPER-CLAUDIAUSDT-1793836029"
     }
   ],
   "trade_history": [
@@ -6193,7 +6218,7 @@
     "UBIKUSDT": 1793873993,
     "OFCUSDT": 1793874002
   },
-  "last_trade_report_ts": 1793833526,
+  "last_trade_report_ts": 1793835258,
   "last_known_version": "2.6.8",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
