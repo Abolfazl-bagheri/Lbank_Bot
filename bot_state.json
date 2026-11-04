@@ -144,24 +144,30 @@
       "symbol": "BKNGUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 169.16,
-      "qty": 1.1823,
-      "margin": 10.0,
+      "entry": 169.479697192249,
+      "qty": 3.5401999999999996,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 164.93099999999998,
+      "tp_price": 165.24270476244277,
       "tf": "1h",
       "opened_at": 1793804627,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        170.08
+      ],
       "steps": [
         {
           "px": 169.16,
           "ts": 1793804627
+        },
+        {
+          "px": 169.64,
+          "ts": 1793806581
         }
       ],
       "entry_candle_ts": 1793804400,
-      "last_leg_candle_ts": 1793804400,
+      "last_leg_candle_ts": 1793806581,
       "dry_run": true,
       "order_id": "PAPER-BKNGUSDT-1793804627"
     },
