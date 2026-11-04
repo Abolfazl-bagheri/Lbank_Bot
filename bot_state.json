@@ -286,24 +286,30 @@
       "symbol": "USUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.005077,
-      "qty": 39393.3425,
-      "margin": 10.0,
+      "entry": 0.004995687359348243,
+      "qty": 120103.5927,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.004950075,
+      "tp_price": 0.004870795175364537,
       "tf": "4h",
       "opened_at": 1793822868,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.004965
+      ],
       "steps": [
         {
           "px": 0.005077,
           "ts": 1793822868
+        },
+        {
+          "px": 0.004956,
+          "ts": 1793830714
         }
       ],
       "entry_candle_ts": 1793822400,
-      "last_leg_candle_ts": 1793822400,
+      "last_leg_candle_ts": 1793830714,
       "dry_run": true,
       "order_id": "PAPER-USUSDT-1793822868"
     },
@@ -6034,6 +6040,15 @@
       "side": "SELL",
       "upper": 0.1442536529743099,
       "open": 0.14589,
+      "reported": false
+    },
+    {
+      "symbol": "CHILLGUYUSDT",
+      "tf": "15m",
+      "candle_ts": 1793830500,
+      "side": "SELL",
+      "upper": 0.009439353443907804,
+      "open": 0.009539,
       "reported": false
     }
   ],
