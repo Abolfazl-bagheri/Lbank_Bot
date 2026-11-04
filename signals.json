@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.8",
-  "updated_at": 1793800982,
+  "updated_at": 1793801075,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1793768833
-    },
     {
       "kind": "HEARTBEAT",
       "symbol": "—",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 1.42,
       "ts": 1793800982
+    },
+    {
+      "kind": "SELL",
+      "symbol": "ARXUSDT",
+      "tf": "1h",
+      "gap": 0.72,
+      "ts": 1793801075
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 3,
       "margin": 70.0,
       "lev": 20,
-      "px": 0.07488,
-      "pnl": -7.6705,
+      "px": 0.07508,
+      "pnl": -11.4303,
       "tf": "1h"
     },
     {
@@ -1427,16 +1427,16 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.00879,
-      "pnl": 2.2497,
+      "px": 0.0088,
+      "pnl": 2.0247,
       "tf": "1h"
     }
   ],
   "start": 1000.0,
   "realized": 1839.2701,
   "closed_n": 88,
-  "open_upnl": -5.4208,
-  "equity": 2833.8493,
+  "open_upnl": -9.4056,
+  "equity": 2829.8645,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
