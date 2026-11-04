@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.8",
-  "updated_at": 1793797499,
+  "updated_at": 1793797514,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "SKDDUSDT",
-      "tf": "4h",
-      "gap": 3.22,
-      "ts": 1793764020
-    },
     {
       "kind": "GAP",
       "symbol": "SHEINUSDT",
@@ -1362,46 +1355,53 @@
       "ts": 1793796564
     },
     {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793796625
+    },
+    {
+      "kind": "GAP",
+      "symbol": "ZZZUSDT",
+      "tf": "1h",
+      "gap": 4.82,
+      "ts": 1793797025
+    },
+    {
       "kind": "GAP",
       "symbol": "JCTUSDT",
       "tf": "1h",
-      "gap": 2.75,
-      "ts": 1793797164
+      "gap": 2.87,
+      "ts": 1793797044
+    },
+    {
+      "kind": "GAP",
+      "symbol": "SSPCUSDT",
+      "tf": "15m",
+      "gap": 3.09,
+      "ts": 1793797409
+    },
+    {
+      "kind": "GAP",
+      "symbol": "SOXSUSDT",
+      "tf": "15m",
+      "gap": 1.38,
+      "ts": 1793797413
+    },
+    {
+      "kind": "GAP",
+      "symbol": "ZZZUSDT",
+      "tf": "1h",
+      "gap": 1.32,
+      "ts": 1793797418
     },
     {
       "kind": "SELL",
-      "symbol": "SSPCUSDT",
-      "tf": "15m",
-      "gap": 2.04,
-      "ts": 1793797377
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1793797383
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1793797494
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1793797497
-    },
-    {
-      "kind": "HEARTBEAT",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1793797499
+      "symbol": "ZZZUSDT",
+      "tf": "1h",
+      "gap": 1.36,
+      "ts": 1793797514
     }
   ],
   "trades": [
@@ -1414,35 +1414,35 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 0.07433,
-      "pnl": -6.376,
+      "px": 0.0743,
+      "pnl": -6.1312,
       "tf": "1h"
     },
     {
-      "symbol": "SSPCUSDT",
+      "symbol": "MUSEBOOKUSDT",
       "side": "SELL",
-      "entry": 10.244,
-      "tp": 9.9879,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
+      "entry": 1.208e-05,
+      "tp": 1.1778e-05,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
       "lev": 20,
-      "px": 10.244,
-      "pnl": 0.0,
+      "px": 1.171e-05,
+      "pnl": 6.1258,
       "tf": "15m"
     }
   ],
   "start": 1000.0,
-  "realized": 1833.6758,
-  "closed_n": 87,
-  "open_upnl": -6.376,
-  "equity": 2827.2998,
+  "realized": 1827.8811,
+  "closed_n": 86,
+  "open_upnl": -0.0054,
+  "equity": 2827.8757,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 2149.8668,
+    "profit": 2144.0721,
     "loss": -316.1909,
-    "count": 87
+    "count": 86
   }
 }
