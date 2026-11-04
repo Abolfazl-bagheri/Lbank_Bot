@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.8",
-  "updated_at": 1793826998,
+  "updated_at": 1793827008,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "STANDARDUSDT",
-      "tf": "4h",
-      "gap": 1.67,
-      "ts": 1793807002
-    },
     {
       "kind": "GAP",
       "symbol": "MSTUUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 3.21,
       "ts": 1793826998
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793827008
     }
   ],
   "trades": [
@@ -1447,15 +1447,15 @@
     {
       "symbol": "APPUSDT",
       "side": "SELL",
-      "entry": 272.5519355322554,
-      "tp": 265.738137143949,
-      "adds": 4,
-      "pele": 5,
-      "margin": 310.0,
+      "entry": 292.3018334131674,
+      "tp": 284.99428757783824,
+      "adds": 5,
+      "pele": 6,
+      "margin": 630.0,
       "lev": 20,
       "px": 314.37,
-      "pnl": -951.2756,
-      "tf": "1h"
+      "pnl": -951.2732,
+      "tf": "15m"
     },
     {
       "symbol": "DKNGUSDT",
@@ -1526,8 +1526,8 @@
   "start": 1000.0,
   "realized": 2312.2074,
   "closed_n": 108,
-  "open_upnl": -2935.1393,
-  "equity": 377.0681,
+  "open_upnl": -2935.1369,
+  "equity": 377.0705,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
