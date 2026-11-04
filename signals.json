@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.8",
-  "updated_at": 1793805543,
+  "updated_at": 1793805556,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "ARXUSDT",
-      "tf": "15m",
-      "gap": 1.76,
-      "ts": 1793789226
-    },
     {
       "kind": "GAP",
       "symbol": "BEAMXUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 1.47,
       "ts": 1793805543
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793805556
     }
   ],
   "trades": [
@@ -1571,6 +1571,19 @@
       "margin": 10.0,
       "lev": 20,
       "px": 3.044,
+      "pnl": 0.0,
+      "tf": "15m"
+    },
+    {
+      "symbol": "ANSEMUSDT",
+      "side": "SELL",
+      "entry": 0.05015,
+      "tp": 0.04889625,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.05015,
       "pnl": 0.0,
       "tf": "15m"
     }
