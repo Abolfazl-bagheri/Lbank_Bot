@@ -79,17 +79,18 @@
       "symbol": "RIVNUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 14.23323319471758,
-      "qty": 42.1549,
-      "margin": 30.0,
+      "entry": 14.104808154588593,
+      "qty": 99.257,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 13.877402364849639,
+      "tp_price": 13.752187950723878,
       "tf": "15m",
       "opened_at": 1793802868,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [
-        14.301
+        14.301,
+        14.048
       ],
       "steps": [
         {
@@ -99,10 +100,14 @@
         {
           "px": 14.26,
           "ts": 1793803759
+        },
+        {
+          "px": 14.01,
+          "ts": 1793823020
         }
       ],
       "entry_candle_ts": 1793802600,
-      "last_leg_candle_ts": 1793803759,
+      "last_leg_candle_ts": 1793823020,
       "dry_run": true,
       "order_id": "PAPER-RIVNUSDT-1793802868"
     },
@@ -5880,6 +5885,15 @@
       "upper": 0.08380309864370095,
       "open": 0.0884,
       "reported": false
+    },
+    {
+      "symbol": "USUSDT",
+      "tf": "4h",
+      "candle_ts": 1793822400,
+      "side": "SELL",
+      "upper": 0.005032756147265602,
+      "open": 0.005131,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -5973,7 +5987,12 @@
     "METEORAUSDT": 1793852241,
     "AMCUSDT": 1793853303,
     "BEMUSDT": 1793855863,
-    "AINBSCUSDT": 1793861206
+    "AINBSCUSDT": 1793861206,
+    "WUXIBIOUSDT": 1793866147,
+    "O1USDT": 1793866200,
+    "NEXUSDT": 1793866196,
+    "HOTUSDT": 1793866206,
+    "1000000BABYDOGEUSDT": 1793866218
   },
   "last_trade_report_ts": 1793818198,
   "last_known_version": "2.6.8",
