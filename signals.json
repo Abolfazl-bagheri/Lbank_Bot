@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.8",
-  "updated_at": 1793802866,
+  "updated_at": 1793802874,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "BIRBUSDT",
-      "tf": "1h",
-      "gap": 1.28,
-      "ts": 1793772038
-    },
     {
       "kind": "GAP",
       "symbol": "CASHCATUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 2.29,
       "ts": 1793802866
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793802874
     }
   ],
   "trades": [
@@ -1468,6 +1468,19 @@
       "lev": 20,
       "px": 0.003178,
       "pnl": -0.8215,
+      "tf": "15m"
+    },
+    {
+      "symbol": "RIVNUSDT",
+      "side": "SELL",
+      "entry": 14.18,
+      "tp": 13.8255,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 14.18,
+      "pnl": 0.0,
       "tf": "15m"
     }
   ],
