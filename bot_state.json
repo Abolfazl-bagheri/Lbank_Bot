@@ -216,6 +216,31 @@
       "last_leg_candle_ts": 1793803500,
       "dry_run": true,
       "order_id": "PAPER-APPUSDT-1793803630"
+    },
+    {
+      "symbol": "HIMSUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 28.35,
+      "qty": 7.0547,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 27.64125,
+      "tf": "15m",
+      "opened_at": 1793803664,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 28.35,
+          "ts": 1793803664
+        }
+      ],
+      "entry_candle_ts": 1793803500,
+      "last_leg_candle_ts": 1793803500,
+      "dry_run": true,
+      "order_id": "PAPER-HIMSUSDT-1793803664"
     }
   ],
   "trade_history": [
@@ -4816,6 +4841,15 @@
       "side": "SELL",
       "upper": 0.00936142106854377,
       "open": 0.009739,
+      "reported": false
+    },
+    {
+      "symbol": "APPUSDT",
+      "tf": "15m",
+      "candle_ts": 1793803500,
+      "side": "SELL",
+      "upper": 258.6023113941218,
+      "open": 261.6,
       "reported": false
     }
   ],
