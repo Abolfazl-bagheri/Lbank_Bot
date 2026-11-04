@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.7",
-  "updated_at": 1793754411,
+  "updated_at": 1793754436,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "HUTUSDT",
-      "tf": "1h",
-      "gap": 1.98,
-      "ts": 1793725815
-    },
     {
       "kind": "GAP",
       "symbol": "CLSKUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1793754411
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793754436
     }
   ],
   "trades": [
@@ -1562,19 +1562,6 @@
       "tf": "1h"
     },
     {
-      "symbol": "HUTUSDT",
-      "side": "SELL",
-      "entry": 63.744277606612414,
-      "tp": 62.150670666447105,
-      "adds": 3,
-      "pele": 4,
-      "margin": 150.0,
-      "lev": 20,
-      "px": 61.86,
-      "pnl": 88.6798,
-      "tf": "15m"
-    },
-    {
       "symbol": "BASUSDT",
       "side": "SELL",
       "entry": 0.015415956273276476,
@@ -1653,19 +1640,6 @@
       "tf": "1h"
     },
     {
-      "symbol": "ANSEMUSDT",
-      "side": "SELL",
-      "entry": 0.04580914103264112,
-      "tp": 0.04466391250682509,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
-      "lev": 20,
-      "px": 0.04453,
-      "pnl": 16.754,
-      "tf": "1h"
-    },
-    {
       "symbol": "CARDSUSDT",
       "side": "SELL",
       "entry": 0.2572,
@@ -1676,19 +1650,6 @@
       "lev": 20,
       "px": 0.2578,
       "pnl": -0.4666,
-      "tf": "1h"
-    },
-    {
-      "symbol": "CATEUSDT",
-      "side": "SELL",
-      "entry": 0.0409,
-      "tp": 0.039877499999999996,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.03861,
-      "pnl": 11.198,
       "tf": "1h"
     },
     {
@@ -1706,16 +1667,16 @@
     }
   ],
   "start": 1000.0,
-  "realized": 1476.2065,
-  "closed_n": 53,
-  "open_upnl": 124.4493,
+  "realized": 1592.8383,
+  "closed_n": 56,
+  "open_upnl": 7.8175,
   "equity": 2600.6558,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 1476.2065,
+    "profit": 1592.8383,
     "loss": 0,
-    "count": 53
+    "count": 56
   }
 }
