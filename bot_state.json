@@ -448,16 +448,18 @@
       "symbol": "ANSEMUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.04865579446462488,
-      "qty": 12331.522,
-      "margin": 30.0,
+      "entry": 0.04797104559671528,
+      "qty": 29184.2711,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 0.04743939960300926,
+      "tp_price": 0.046771769456797396,
       "tf": "1h",
       "opened_at": 1793780338,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
+      "adds": 2,
+      "last_leg_margin": 40.0,
+      "used_res_levels": [
+        0.0476
+      ],
       "steps": [
         {
           "px": 0.0468,
@@ -466,10 +468,14 @@
         {
           "px": 0.04964,
           "ts": 1793783030
+        },
+        {
+          "px": 0.04747,
+          "ts": 1793784166
         }
       ],
       "entry_candle_ts": 1793780100,
-      "last_leg_candle_ts": 1793782800,
+      "last_leg_candle_ts": 1793784166,
       "dry_run": true,
       "order_id": "PAPER-ANSEMUSDT-1793780338"
     },
@@ -2939,16 +2945,6 @@
     {
       "symbol": "FONEUSDT",
       "tf": "15m",
-      "candle_ts": 1793524500,
-      "side": "SELL",
-      "upper": 0.0017005197351033813,
-      "open": 0.001735,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "FONEUSDT",
-      "tf": "15m",
       "candle_ts": 1793525400,
       "side": "SELL",
       "upper": 0.0017554182158499429,
@@ -4385,7 +4381,7 @@
     "FLOCK1USDT": 1793821836,
     "ARROWUSDT": 1793826332
   },
-  "last_trade_report_ts": 1793780460,
+  "last_trade_report_ts": 1793783290,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.7",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
