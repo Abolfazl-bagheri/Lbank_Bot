@@ -4,18 +4,19 @@
       "symbol": "ELSAUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.07626691823392684,
-      "qty": 39335.5346,
-      "margin": 150.0,
+      "entry": 0.07796149169126534,
+      "qty": 79526.4414,
+      "margin": 310.0,
       "leverage": 20,
-      "tp_price": 0.07436024527807866,
+      "tp_price": 0.07601245439898371,
       "tf": "4h",
       "opened_at": 1793786767,
-      "adds": 3,
-      "last_leg_margin": 80.0,
+      "adds": 4,
+      "last_leg_margin": 160.0,
       "used_res_levels": [
         0.074,
-        0.07534
+        0.07534,
+        0.07981
       ],
       "steps": [
         {
@@ -33,10 +34,14 @@
         {
           "px": 0.07791,
           "ts": 1793808218
+        },
+        {
+          "px": 0.07962,
+          "ts": 1793812086
         }
       ],
       "entry_candle_ts": 1793786400,
-      "last_leg_candle_ts": 1793808000,
+      "last_leg_candle_ts": 1793812086,
       "dry_run": true,
       "order_id": "PAPER-ELSAUSDT-1793786767"
     },
@@ -5707,6 +5712,15 @@
       "side": "SELL",
       "upper": 0.12838305473612832,
       "open": 0.13009,
+      "reported": false
+    },
+    {
+      "symbol": "ZZZUSDT",
+      "tf": "1h",
+      "candle_ts": 1793811600,
+      "side": "SELL",
+      "upper": 0.009565991655942657,
+      "open": 0.00974,
       "reported": false
     }
   ],
