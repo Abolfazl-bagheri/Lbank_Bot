@@ -421,6 +421,31 @@
       "last_leg_candle_ts": 1793805300,
       "dry_run": true,
       "order_id": "PAPER-STONKUSDT-1793805565"
+    },
+    {
+      "symbol": "CLANKERUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 18.66,
+      "qty": 10.7181,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 18.1935,
+      "tf": "15m",
+      "opened_at": 1793805585,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 18.66,
+          "ts": 1793805585
+        }
+      ],
+      "entry_candle_ts": 1793805300,
+      "last_leg_candle_ts": 1793805300,
+      "dry_run": true,
+      "order_id": "PAPER-CLANKERUSDT-1793805585"
     }
   ],
   "trade_history": [
@@ -5097,6 +5122,15 @@
       "side": "SELL",
       "upper": 0.04941516140953538,
       "open": 0.05,
+      "reported": false
+    },
+    {
+      "symbol": "STONKUSDT",
+      "tf": "15m",
+      "candle_ts": 1793805300,
+      "side": "SELL",
+      "upper": 0.13285799379186888,
+      "open": 0.13498,
       "reported": false
     }
   ],
