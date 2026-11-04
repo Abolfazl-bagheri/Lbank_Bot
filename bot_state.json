@@ -164,15 +164,15 @@
       "symbol": "APPUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 260.97,
-      "qty": 2.299072,
-      "margin": 30.0,
+      "entry": 266.0768150355065,
+      "qty": 5.261571999999999,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 254.44575000000003,
-      "tf": "15m",
+      "tp_price": 259.4248946596189,
+      "tf": "1h",
       "opened_at": 1793803630,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [
         262.0
       ],
@@ -184,10 +184,14 @@
         {
           "px": 260.97,
           "ts": 1793803771
+        },
+        {
+          "px": 270.04,
+          "ts": 1793808314
         }
       ],
       "entry_candle_ts": 1793803500,
-      "last_leg_candle_ts": 1793803771,
+      "last_leg_candle_ts": 1793808000,
       "dry_run": true,
       "order_id": "PAPER-APPUSDT-1793803630"
     },
@@ -5509,6 +5513,15 @@
       "side": "SELL",
       "upper": 166.91715532508064,
       "open": 171.17,
+      "reported": false
+    },
+    {
+      "symbol": "FOLKSUSDT",
+      "tf": "4h",
+      "candle_ts": 1793808000,
+      "side": "SELL",
+      "upper": 2.4286550772093762,
+      "open": 2.479,
       "reported": false
     }
   ],
