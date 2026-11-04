@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.8",
-  "updated_at": 1793804581,
+  "updated_at": 1793804590,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "CLANKERUSDT",
-      "tf": "4h",
-      "gap": 2.44,
-      "ts": 1793778361
-    },
     {
       "kind": "GAP",
       "symbol": "BMTUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 2.85,
       "ts": 1793804581
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793804590
     }
   ],
   "trades": [
@@ -1482,6 +1482,19 @@
       "px": 261.84,
       "pnl": -0.9054,
       "tf": "15m"
+    },
+    {
+      "symbol": "ARXUSDT",
+      "side": "SELL",
+      "entry": 0.2664,
+      "tp": 0.25974,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.2664,
+      "pnl": 0.0,
+      "tf": "1h"
     }
   ],
   "start": 1000.0,
