@@ -112,51 +112,6 @@
       "order_id": "PAPER-RIVNUSDT-1793802868"
     },
     {
-      "symbol": "APPUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 272.5519355322554,
-      "qty": 22.747872,
-      "margin": 310.0,
-      "leverage": 20,
-      "tp_price": 265.738137143949,
-      "tf": "1h",
-      "opened_at": 1793803630,
-      "adds": 4,
-      "last_leg_margin": 160.0,
-      "used_res_levels": [
-        262.0,
-        273.9,
-        276.0
-      ],
-      "steps": [
-        {
-          "px": 260.97,
-          "ts": 1793803630
-        },
-        {
-          "px": 260.97,
-          "ts": 1793803771
-        },
-        {
-          "px": 270.04,
-          "ts": 1793808314
-        },
-        {
-          "px": 273.21,
-          "ts": 1793812670
-        },
-        {
-          "px": 275.15,
-          "ts": 1793816234
-        }
-      ],
-      "entry_candle_ts": 1793803500,
-      "last_leg_candle_ts": 1793816234,
-      "dry_run": true,
-      "order_id": "PAPER-APPUSDT-1793803630"
-    },
-    {
       "symbol": "DKNGUSDT",
       "side": "SELL",
       "status": "open",
@@ -4041,6 +3996,56 @@
       "pnl_usdt": 45.83185518998612,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "APPUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 272.5519355322554,
+      "qty": 22.747872,
+      "margin": 310.0,
+      "leverage": 20,
+      "tp_price": 265.738137143949,
+      "tf": "1h",
+      "opened_at": 1793803630,
+      "adds": 4,
+      "last_leg_margin": 160.0,
+      "used_res_levels": [
+        262.0,
+        273.9,
+        276.0
+      ],
+      "steps": [
+        {
+          "px": 260.97,
+          "ts": 1793803630
+        },
+        {
+          "px": 260.97,
+          "ts": 1793803771
+        },
+        {
+          "px": 270.04,
+          "ts": 1793808314
+        },
+        {
+          "px": 273.21,
+          "ts": 1793812670
+        },
+        {
+          "px": 275.15,
+          "ts": 1793816234
+        }
+      ],
+      "entry_candle_ts": 1793803500,
+      "last_leg_candle_ts": 1793816234,
+      "dry_run": true,
+      "order_id": "PAPER-APPUSDT-1793803630",
+      "closed_at": 1793826407,
+      "close_px": 261.59,
+      "pnl_usdt": 249.36164979808206,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -5929,6 +5934,15 @@
       "open": 0.09526,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "ELSAUSDT",
+      "tf": "1h",
+      "candle_ts": 1793826000,
+      "side": "SELL",
+      "upper": 0.09331590463550968,
+      "open": 0.09452,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -6026,7 +6040,9 @@
     "O1USDT": 1793866200,
     "NEXUSDT": 1793866196,
     "HOTUSDT": 1793866206,
-    "1000000BABYDOGEUSDT": 1793866218
+    "1000000BABYDOGEUSDT": 1793866218,
+    "MANCERUSDT": 1793869603,
+    "BBXUSDT": 1793869605
   },
   "last_trade_report_ts": 1793825469,
   "last_known_version": "2.6.8",
