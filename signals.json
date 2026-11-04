@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.8",
-  "updated_at": 1793808380,
+  "updated_at": 1793808394,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1793802017
-    },
     {
       "kind": "GAP",
       "symbol": "CLANKERUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "4h",
       "gap": 1.92,
       "ts": 1793808380
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793808394
     }
   ],
   "trades": [
@@ -1623,6 +1623,19 @@
       "margin": 10.0,
       "lev": 20,
       "px": 2.472,
+      "pnl": 0.0,
+      "tf": "4h"
+    },
+    {
+      "symbol": "ATHUSDT",
+      "side": "SELL",
+      "entry": 0.005474,
+      "tp": 0.00533715,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.005474,
       "pnl": 0.0,
       "tf": "4h"
     }
