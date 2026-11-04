@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.8",
-  "updated_at": 1793786734,
+  "updated_at": 1793786740,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1793747084
-    },
     {
       "kind": "SELL",
       "symbol": "CARDSUSDT",
@@ -1402,13 +1395,34 @@
       "tf": "1h",
       "gap": 1.17,
       "ts": 1793786734
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793786740
     }
   ],
-  "trades": [],
+  "trades": [
+    {
+      "symbol": "FOLKSUSDT",
+      "side": "SELL",
+      "entry": 2.423,
+      "tp": 2.362425,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 2.423,
+      "pnl": 0.0,
+      "tf": "1h"
+    }
+  ],
   "start": 1000.0,
   "realized": 1787.6668,
   "closed_n": 81,
-  "open_upnl": 0,
+  "open_upnl": 0.0,
   "equity": 2787.6668,
   "lev": 20,
   "margin_leg": 10.0,
