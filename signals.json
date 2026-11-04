@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.8",
-  "updated_at": 1793801941,
+  "updated_at": 1793801947,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "CASHCATUSDT",
-      "tf": "15m",
-      "gap": 1.94,
-      "ts": 1793768622
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 1.21,
       "ts": 1793801941
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793801947
     }
   ],
   "trades": [
@@ -1430,6 +1430,19 @@
       "px": 0.00896,
       "pnl": -0.8969,
       "tf": "1h"
+    },
+    {
+      "symbol": "AKEUSDT",
+      "side": "SELL",
+      "entry": 0.003196,
+      "tp": 0.0031161,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.003196,
+      "pnl": 0.0,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
