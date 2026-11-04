@@ -1,31 +1,6 @@
 {
   "open_trades": [
     {
-      "symbol": "FOLKSUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 2.423,
-      "qty": 82.5423,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 2.362425,
-      "tf": "1h",
-      "opened_at": 1793786737,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 2.423,
-          "ts": 1793786737
-        }
-      ],
-      "entry_candle_ts": 1793786400,
-      "last_leg_candle_ts": 1793786400,
-      "dry_run": true,
-      "order_id": "PAPER-FOLKSUSDT-1793786737"
-    },
-    {
       "symbol": "ZZZUSDT",
       "side": "SELL",
       "status": "open",
@@ -2888,6 +2863,36 @@
       "pnl_usdt": 6.262571269749217,
       "close_reason": "NIGHT_RESET",
       "why": "NIGHT_RESET"
+    },
+    {
+      "symbol": "FOLKSUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 2.423,
+      "qty": 82.5423,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 2.362425,
+      "tf": "1h",
+      "opened_at": 1793786737,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 2.423,
+          "ts": 1793786737
+        }
+      ],
+      "entry_candle_ts": 1793786400,
+      "last_leg_candle_ts": 1793786400,
+      "dry_run": true,
+      "order_id": "PAPER-FOLKSUSDT-1793786737",
+      "closed_at": 1793787599,
+      "close_px": 2.353,
+      "pnl_usdt": 5.7779612051176095,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -4455,6 +4460,15 @@
       "upper": 0.008444256868963326,
       "open": 0.00854,
       "reported": false
+    },
+    {
+      "symbol": "ELSAUSDT",
+      "tf": "1h",
+      "candle_ts": 1793786400,
+      "side": "SELL",
+      "upper": 0.07290544189723842,
+      "open": 0.07371,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -4550,7 +4564,8 @@
     "FLOCK1USDT": 1793821836,
     "ARROWUSDT": 1793826332,
     "OFCUSDT": 1793829105,
-    "UBIKUSDT": 1793829115
+    "UBIKUSDT": 1793829115,
+    "AEHRUSDT": 1793830009
   },
   "last_trade_report_ts": 1793785985,
   "last_known_version": "2.6.8",
