@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.8",
-  "updated_at": 1793786749,
+  "updated_at": 1793786758,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1793747116
-    },
     {
       "kind": "SELL",
       "symbol": "CATEUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 4.04,
       "ts": 1793786749
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793786758
     }
   ],
   "trades": [
@@ -1415,6 +1415,19 @@
       "margin": 10.0,
       "lev": 20,
       "px": 2.423,
+      "pnl": 0.0,
+      "tf": "1h"
+    },
+    {
+      "symbol": "ZZZUSDT",
+      "side": "SELL",
+      "entry": 0.0088,
+      "tp": 0.00858,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.0088,
       "pnl": 0.0,
       "tf": "1h"
     }
