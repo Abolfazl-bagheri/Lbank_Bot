@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.8",
-  "updated_at": 1793830780,
+  "updated_at": 1793830852,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "IDOLUSDT",
-      "tf": "1h",
-      "gap": 1.44,
-      "ts": 1793807965
-    },
     {
       "kind": "GAP",
       "symbol": "YOFCUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1793830780
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793830852
     }
   ],
   "trades": [
@@ -1471,19 +1471,6 @@
       "tf": "1h"
     },
     {
-      "symbol": "CLANKERUSDT",
-      "side": "SELL",
-      "entry": 21.43160544363481,
-      "tp": 20.895815307543938,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
-      "lev": 20,
-      "px": 19.92,
-      "pnl": 42.319,
-      "tf": "4h"
-    },
-    {
       "symbol": "STANDARDUSDT",
       "side": "SELL",
       "entry": 0.22573917362822093,
@@ -1550,16 +1537,16 @@
     }
   ],
   "start": 1000.0,
-  "realized": 2561.569,
-  "closed_n": 109,
-  "open_upnl": -4743.4191,
+  "realized": 2603.888,
+  "closed_n": 110,
+  "open_upnl": -4785.7381,
   "equity": -1181.8501,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 2877.7599,
+    "profit": 2920.0789,
     "loss": -316.1909,
-    "count": 109
+    "count": 110
   }
 }
