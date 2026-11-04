@@ -4,11 +4,11 @@
       "symbol": "ELSAUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.07447197470973231,
-      "qty": 18799.0181,
+      "entry": 0.07441025674695735,
+      "qty": 18814.610500000003,
       "margin": 70.0,
       "leverage": 20,
-      "tp_price": 0.072610175341989,
+      "tp_price": 0.07255000032828342,
       "tf": "1h",
       "opened_at": 1793786767,
       "adds": 2,
@@ -27,12 +27,12 @@
           "ts": 1793795699
         },
         {
-          "px": 0.07518,
-          "ts": 1793799136
+          "px": 0.07507,
+          "ts": 1793799250
         }
       ],
       "entry_candle_ts": 1793786400,
-      "last_leg_candle_ts": 1793799136,
+      "last_leg_candle_ts": 1793799250,
       "dry_run": true,
       "order_id": "PAPER-ELSAUSDT-1793786767"
     },
@@ -40,82 +40,51 @@
       "symbol": "ZZZUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.00889,
-      "qty": 22497.1879,
+      "entry": 0.00892,
+      "qty": 22421.5247,
       "margin": 10.0,
       "leverage": 20,
-      "tp_price": 0.00866775,
+      "tp_price": 0.008697,
       "tf": "1h",
-      "opened_at": 1793797516,
+      "opened_at": 1793797551,
       "adds": 0,
       "last_leg_margin": 10.0,
       "used_res_levels": [],
       "steps": [
         {
-          "px": 0.00889,
-          "ts": 1793797516
+          "px": 0.00892,
+          "ts": 1793797551
         }
       ],
       "entry_candle_ts": 1793797200,
       "last_leg_candle_ts": 1793797200,
       "dry_run": true,
-      "order_id": "PAPER-ZZZUSDT-1793797516"
+      "order_id": "PAPER-ZZZUSDT-1793797551"
     },
     {
-      "symbol": "ARXUSDT",
+      "symbol": "AKEUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.24649796745996827,
-      "qty": 2434.0972,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.24033551827346905,
-      "tf": "1h",
-      "opened_at": 1793801076,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        0.2477
-      ],
-      "steps": [
-        {
-          "px": 0.2455,
-          "ts": 1793801076
-        },
-        {
-          "px": 0.247,
-          "ts": 1793801851
-        }
-      ],
-      "entry_candle_ts": 1793800800,
-      "last_leg_candle_ts": 1793801851,
-      "dry_run": true,
-      "order_id": "PAPER-ARXUSDT-1793801076"
-    },
-    {
-      "symbol": "CATUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 1.764e-06,
-      "qty": 113378684.8073,
+      "entry": 0.003196,
+      "qty": 62578.2228,
       "margin": 10.0,
       "leverage": 20,
-      "tp_price": 1.7198999999999998e-06,
+      "tp_price": 0.0031161,
       "tf": "15m",
-      "opened_at": 1793801824,
+      "opened_at": 1793801943,
       "adds": 0,
       "last_leg_margin": 10.0,
       "used_res_levels": [],
       "steps": [
         {
-          "px": 1.764e-06,
-          "ts": 1793801824
+          "px": 0.003196,
+          "ts": 1793801943
         }
       ],
       "entry_candle_ts": 1793801700,
       "last_leg_candle_ts": 1793801700,
       "dry_run": true,
-      "order_id": "PAPER-CATUSDT-1793801824"
+      "order_id": "PAPER-AKEUSDT-1793801943"
     }
   ],
   "trade_history": [
@@ -3105,9 +3074,9 @@
       "last_leg_candle_ts": 1793792700,
       "dry_run": true,
       "order_id": "PAPER-MUSEBOOKUSDT-1793792873",
-      "closed_at": 1793797652,
-      "close_px": 1.171e-05,
-      "pnl_usdt": 6.125827814569535,
+      "closed_at": 1793797487,
+      "close_px": 1.173e-05,
+      "pnl_usdt": 5.794701986754969,
       "close_reason": "TP50",
       "why": "TP50"
     },
@@ -3115,29 +3084,39 @@
       "symbol": "SSPCUSDT",
       "side": "SELL",
       "status": "closed",
-      "entry": 10.298,
-      "qty": 19.4212,
-      "margin": 10.0,
+      "entry": 10.300338117597548,
+      "qty": 135.9178,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 10.04055,
+      "tp_price": 10.042829664657608,
       "tf": "15m",
-      "opened_at": 1793798193,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "opened_at": 1793797379,
+      "adds": 2,
+      "last_leg_margin": 40.0,
+      "used_res_levels": [
+        10.27
+      ],
       "steps": [
         {
-          "px": 10.298,
-          "ts": 1793798193
+          "px": 10.244,
+          "ts": 1793797379
+        },
+        {
+          "px": 10.244,
+          "ts": 1793797490
+        },
+        {
+          "px": 10.343,
+          "ts": 1793798339
         }
       ],
-      "entry_candle_ts": 1793798100,
+      "entry_candle_ts": 1793797200,
       "last_leg_candle_ts": 1793798100,
       "dry_run": true,
-      "order_id": "PAPER-SSPCUSDT-1793798193",
-      "closed_at": 1793799142,
-      "close_px": 10.027,
-      "pnl_usdt": 5.263157894736858,
+      "order_id": "PAPER-SSPCUSDT-1793797379",
+      "closed_at": 1793800243,
+      "close_px": 9.99,
+      "pnl_usdt": 42.18049540473756,
       "close_reason": "TP50",
       "why": "TP50"
     }
@@ -4651,14 +4630,23 @@
       "filled": true
     },
     {
+      "symbol": "SSPCUSDT",
+      "tf": "15m",
+      "candle_ts": 1793797200,
+      "side": "SELL",
+      "upper": 10.035079590878613,
+      "open": 10.27,
+      "reported": true,
+      "filled": false
+    },
+    {
       "symbol": "ZZZUSDT",
       "tf": "1h",
       "candle_ts": 1793797200,
       "side": "SELL",
       "upper": 0.008768970543071566,
       "open": 0.00893,
-      "reported": true,
-      "filled": true
+      "reported": false
     },
     {
       "symbol": "SSPCUSDT",
@@ -4669,24 +4657,6 @@
       "open": 10.27,
       "reported": true,
       "filled": false
-    },
-    {
-      "symbol": "ARXUSDT",
-      "tf": "1h",
-      "candle_ts": 1793800800,
-      "side": "SELL",
-      "upper": 0.24374189567185203,
-      "open": 0.2465,
-      "reported": false
-    },
-    {
-      "symbol": "CATUSDT",
-      "tf": "15m",
-      "candle_ts": 1793801700,
-      "side": "SELL",
-      "upper": 1.7433623626426974e-06,
-      "open": 1.762e-06,
-      "reported": false
     }
   ],
   "paper_days": [
@@ -4781,10 +4751,11 @@
     "AEHRUSDT": 1793830009,
     "STONKBROKERUSDT": 1793836099,
     "CAPETHUSDT": 1793838855,
-    "DRVUSDT": 1793842313,
-    "QUACKAIUSDT": 1793843367
+    "O1USDT": 1793840683,
+    "DRVUSDT": 1793842410,
+    "QUACKAIUSDT": 1793843418
   },
-  "last_trade_report_ts": 1793801222,
+  "last_trade_report_ts": 1793800250,
   "last_known_version": "2.6.8",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
