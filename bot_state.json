@@ -270,17 +270,18 @@
       "symbol": "BKNGUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 171.3348345999927,
-      "qty": 8.1711,
-      "margin": 70.0,
+      "entry": 171.5347185961542,
+      "qty": 17.4891,
+      "margin": 150.0,
       "leverage": 20,
-      "tp_price": 167.05146373499286,
+      "tp_price": 167.24635063125032,
       "tf": "1h",
       "opened_at": 1793804738,
-      "adds": 2,
-      "last_leg_margin": 40.0,
+      "adds": 3,
+      "last_leg_margin": 80.0,
       "used_res_levels": [
-        170.08
+        170.08,
+        172.22
       ],
       "steps": [
         {
@@ -294,10 +295,14 @@
         {
           "px": 172.52,
           "ts": 1793808259
+        },
+        {
+          "px": 171.71,
+          "ts": 1793809935
         }
       ],
       "entry_candle_ts": 1793804400,
-      "last_leg_candle_ts": 1793808000,
+      "last_leg_candle_ts": 1793809935,
       "dry_run": true,
       "order_id": "PAPER-BKNGUSDT-1793804738"
     },
@@ -4075,26 +4080,6 @@
       "tf": "15m",
       "candle_ts": 1793430900,
       "side": "SELL"
-    },
-    {
-      "symbol": "LYNUSDT",
-      "tf": "15m",
-      "candle_ts": 1793550600,
-      "side": "SELL",
-      "upper": 0.016094780223376653,
-      "open": 0.01632,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "HOTUSDT",
-      "tf": "15m",
-      "candle_ts": 1793550600,
-      "side": "SELL",
-      "upper": 0.00037096740250216624,
-      "open": 0.0003763,
-      "reported": true,
-      "filled": true
     },
     {
       "symbol": "LYNUSDT",
