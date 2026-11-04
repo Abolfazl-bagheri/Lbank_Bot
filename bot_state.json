@@ -462,6 +462,31 @@
       "last_leg_candle_ts": 1793768400,
       "dry_run": true,
       "order_id": "PAPER-CASHCATUSDT-1793768624"
+    },
+    {
+      "symbol": "ANSEMUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.0468,
+      "qty": 4273.5043,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.04563,
+      "tf": "15m",
+      "opened_at": 1793780338,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.0468,
+          "ts": 1793780338
+        }
+      ],
+      "entry_candle_ts": 1793780100,
+      "last_leg_candle_ts": 1793780100,
+      "dry_run": true,
+      "order_id": "PAPER-ANSEMUSDT-1793780338"
     }
   ],
   "trade_history": [
@@ -2874,66 +2899,6 @@
       "side": "SELL"
     },
     {
-      "symbol": "BEAMXUSDT",
-      "tf": "1h",
-      "candle_ts": 1793516400,
-      "side": "SELL",
-      "upper": 0.005744734306817219,
-      "open": 0.005816,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "ZEREBROUSDT",
-      "tf": "1h",
-      "candle_ts": 1793516400,
-      "side": "SELL",
-      "upper": 0.02629859900291495,
-      "open": 0.026696,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "ESPORTSUSDT",
-      "tf": "1h",
-      "candle_ts": 1793520000,
-      "side": "SELL",
-      "upper": 0.012829757597021403,
-      "open": 0.013,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "BEAMXUSDT",
-      "tf": "1h",
-      "candle_ts": 1793520000,
-      "side": "SELL",
-      "upper": 0.005810446306203682,
-      "open": 0.005892,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "ESPORTSUSDT",
-      "tf": "4h",
-      "candle_ts": 1793520000,
-      "side": "SELL",
-      "upper": 0.01225805675389918,
-      "open": 0.013,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "FORMUSDT",
-      "tf": "15m",
-      "candle_ts": 1793520900,
-      "side": "SELL",
-      "upper": 0.21059487684984549,
-      "open": 0.2139,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "PROMUSDT",
       "tf": "1h",
       "candle_ts": 1793523600,
@@ -4352,17 +4317,14 @@
     "XPSTOCKUSDT": 1793678976,
     "FIGUSDT": 1793683258,
     "GSTOCKUSDT": 1793688424,
-    "WUXIBIOUSDT": 1793694108,
     "PORUSDT": 1793694114,
     "FIGHT1USDT": 1793700356,
     "MARRIOTTUSDT": 1793714834,
     "FUTUUSDT": 1793718431,
     "LIGHT1USDT": 1793726282,
     "OROCHIUSDT": 1793736424,
-    "FLOCK1USDT": 1793751668,
     "CYBERLEEKUSDT": 1793758800,
     "CAPETHUSDT": 1793771554,
-    "AI1USDT": 1793772586,
     "AMCUSDT": 1793772630,
     "IRENONUSDT": 1793776197,
     "ONSEMIUSDT": 1793784100,
@@ -4382,9 +4344,12 @@
     "RIOTUSDT": 1793808427,
     "HOTUSDT": 1793808578,
     "NEXUSDT": 1793808585,
-    "1000000BABYDOGEUSDT": 1793808612
+    "1000000BABYDOGEUSDT": 1793808612,
+    "AI1USDT": 1793821025,
+    "WUXIBIOUSDT": 1793821810,
+    "FLOCK1USDT": 1793821836
   },
-  "last_trade_report_ts": 1793773360,
+  "last_trade_report_ts": 1793777904,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.7",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
