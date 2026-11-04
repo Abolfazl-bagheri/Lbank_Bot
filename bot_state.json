@@ -26,31 +26,6 @@
       "order_id": "PAPER-ELSAUSDT-1793786767"
     },
     {
-      "symbol": "FRONGUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.00231,
-      "qty": 86580.0866,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.00225225,
-      "tf": "15m",
-      "opened_at": 1793792836,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.00231,
-          "ts": 1793792836
-        }
-      ],
-      "entry_candle_ts": 1793792700,
-      "last_leg_candle_ts": 1793792700,
-      "dry_run": true,
-      "order_id": "PAPER-FRONGUSDT-1793792836"
-    },
-    {
       "symbol": "MUSEBOOKUSDT",
       "side": "SELL",
       "status": "open",
@@ -2978,6 +2953,36 @@
       "pnl_usdt": 5.2424031547204555,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "FRONGUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.00231,
+      "qty": 86580.0866,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.00225225,
+      "tf": "15m",
+      "opened_at": 1793792836,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.00231,
+          "ts": 1793792836
+        }
+      ],
+      "entry_candle_ts": 1793792700,
+      "last_leg_candle_ts": 1793792700,
+      "dry_run": true,
+      "order_id": "PAPER-FRONGUSDT-1793792836",
+      "closed_at": 1793794771,
+      "close_px": 0.00221,
+      "pnl_usdt": 8.658008658008644,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -4512,7 +4517,18 @@
       "side": "SELL",
       "upper": 0.002271433715298531,
       "open": 0.002321,
-      "reported": false
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "MUSEBOOKUSDT",
+      "tf": "15m",
+      "candle_ts": 1793792700,
+      "side": "SELL",
+      "upper": 1.2035438226417042e-05,
+      "open": 1.218e-05,
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -4608,7 +4624,8 @@
     "ARROWUSDT": 1793826332,
     "OFCUSDT": 1793829105,
     "UBIKUSDT": 1793829115,
-    "AEHRUSDT": 1793830009
+    "AEHRUSDT": 1793830009,
+    "STONKBROKERUSDT": 1793836099
   },
   "last_trade_report_ts": 1793792069,
   "last_known_version": "2.6.8",
