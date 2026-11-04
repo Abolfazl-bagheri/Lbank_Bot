@@ -1,8 +1,29 @@
 {
   "mode": "PAPER",
   "version": "2.6.8",
-  "updated_at": 1793798249,
+  "updated_at": 1793798337,
   "signals": [
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793765069
+    },
+    {
+      "kind": "SELL",
+      "symbol": "BMTUSDT",
+      "tf": "4h",
+      "gap": 3.07,
+      "ts": 1793765081
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793765093
+    },
     {
       "kind": "SELL",
       "symbol": "SHEINUSDT",
@@ -1306,102 +1327,81 @@
       "ts": 1793796564
     },
     {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1793796625
-    },
-    {
-      "kind": "GAP",
-      "symbol": "ZZZUSDT",
-      "tf": "1h",
-      "gap": 4.82,
-      "ts": 1793797025
-    },
-    {
       "kind": "GAP",
       "symbol": "JCTUSDT",
       "tf": "1h",
-      "gap": 2.87,
-      "ts": 1793797044
-    },
-    {
-      "kind": "GAP",
-      "symbol": "SSPCUSDT",
-      "tf": "15m",
-      "gap": 3.09,
-      "ts": 1793797409
-    },
-    {
-      "kind": "GAP",
-      "symbol": "SOXSUSDT",
-      "tf": "15m",
-      "gap": 1.38,
-      "ts": 1793797413
-    },
-    {
-      "kind": "GAP",
-      "symbol": "ZZZUSDT",
-      "tf": "1h",
-      "gap": 1.32,
-      "ts": 1793797418
+      "gap": 2.75,
+      "ts": 1793797164
     },
     {
       "kind": "SELL",
-      "symbol": "ZZZUSDT",
-      "tf": "1h",
-      "gap": 1.36,
-      "ts": 1793797514
+      "symbol": "SSPCUSDT",
+      "tf": "15m",
+      "gap": 2.04,
+      "ts": 1793797377
     },
     {
       "kind": "POS",
       "symbol": "—",
       "tf": "—",
       "gap": 0.0,
-      "ts": 1793797520
+      "ts": 1793797383
     },
     {
       "kind": "POS",
       "symbol": "—",
       "tf": "—",
       "gap": 0.0,
-      "ts": 1793797656
+      "ts": 1793797494
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793797497
     },
     {
       "kind": "HEARTBEAT",
       "symbol": "—",
       "tf": "—",
       "gap": 0.0,
-      "ts": 1793797658
+      "ts": 1793797499
+    },
+    {
+      "kind": "SELL",
+      "symbol": "ZZZUSDT",
+      "tf": "1h",
+      "gap": 1.69,
+      "ts": 1793797549
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793797556
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793797630
     },
     {
       "kind": "GAP",
       "symbol": "SSPCUSDT",
       "tf": "15m",
       "gap": 2.34,
-      "ts": 1793798090
+      "ts": 1793798206
     },
     {
       "kind": "SELL",
       "symbol": "SSPCUSDT",
       "tf": "15m",
-      "gap": 1.35,
-      "ts": 1793798191
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1793798197
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1793798249
+      "gap": 1.78,
+      "ts": 1793798337
     }
   ],
   "trades": [
@@ -1414,47 +1414,47 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 0.07461,
-      "pnl": -8.6602,
-      "tf": "1h"
-    },
-    {
-      "symbol": "ZZZUSDT",
-      "side": "SELL",
-      "entry": 0.00889,
-      "tp": 0.00866775,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.00871,
-      "pnl": 4.0495,
+      "px": 0.07451,
+      "pnl": -7.8444,
       "tf": "1h"
     },
     {
       "symbol": "SSPCUSDT",
       "side": "SELL",
-      "entry": 10.298,
-      "tp": 10.04055,
+      "entry": 10.244,
+      "tp": 9.9879,
+      "adds": 1,
+      "pele": 2,
+      "margin": 30.0,
+      "lev": 20,
+      "px": 10.343,
+      "pnl": -5.7985,
+      "tf": "15m"
+    },
+    {
+      "symbol": "ZZZUSDT",
+      "side": "SELL",
+      "entry": 0.00892,
+      "tp": 0.008697,
       "adds": 0,
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 10.298,
-      "pnl": 0.0,
-      "tf": "15m"
+      "px": 0.00874,
+      "pnl": 4.0359,
+      "tf": "1h"
     }
   ],
   "start": 1000.0,
-  "realized": 1834.007,
+  "realized": 1833.6758,
   "closed_n": 87,
-  "open_upnl": -4.6107,
-  "equity": 2829.3963,
+  "open_upnl": -9.607,
+  "equity": 2824.0688,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 2150.1979,
+    "profit": 2149.8668,
     "loss": -316.1909,
     "count": 87
   }
