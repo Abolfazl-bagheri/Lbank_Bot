@@ -275,17 +275,18 @@
       "symbol": "STANDARDUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.22499571488902423,
-      "qty": 2666.7174,
-      "margin": 30.0,
+      "entry": 0.22573917362822093,
+      "qty": 6201.8478,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 0.2193708220167986,
+      "tp_price": 0.2200956942875154,
       "tf": "4h",
       "opened_at": 1793808425,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [
-        0.2292
+        0.2292,
+        0.2267
       ],
       "steps": [
         {
@@ -295,10 +296,14 @@
         {
           "px": 0.2285,
           "ts": 1793816249
+        },
+        {
+          "px": 0.2263,
+          "ts": 1793824506
         }
       ],
       "entry_candle_ts": 1793808000,
-      "last_leg_candle_ts": 1793816249,
+      "last_leg_candle_ts": 1793824506,
       "dry_run": true,
       "order_id": "PAPER-STANDARDUSDT-1793808425"
     },
@@ -5908,6 +5913,15 @@
       "side": "SELL",
       "upper": 0.005032756147265602,
       "open": 0.005131,
+      "reported": false
+    },
+    {
+      "symbol": "ELSAUSDT",
+      "tf": "15m",
+      "candle_ts": 1793824200,
+      "side": "SELL",
+      "upper": 0.09359908940696529,
+      "open": 0.09526,
       "reported": false
     }
   ],
