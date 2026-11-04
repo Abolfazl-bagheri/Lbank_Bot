@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.8",
-  "updated_at": 1793830769,
+  "updated_at": 1793830780,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "STONKUSDT",
-      "tf": "1h",
-      "gap": 2.64,
-      "ts": 1793807960
-    },
     {
       "kind": "GAP",
       "symbol": "IDOLUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 0.55,
       "ts": 1793830769
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793830780
     }
   ],
   "trades": [
@@ -1532,6 +1532,19 @@
       "margin": 10.0,
       "lev": 20,
       "px": 0.14559,
+      "pnl": 0.0,
+      "tf": "15m"
+    },
+    {
+      "symbol": "CHILLGUYUSDT",
+      "side": "SELL",
+      "entry": 0.00949,
+      "tp": 0.00925275,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.00949,
       "pnl": 0.0,
       "tf": "15m"
     }
