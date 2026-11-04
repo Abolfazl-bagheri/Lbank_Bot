@@ -329,23 +329,29 @@
       "side": "SELL",
       "status": "open",
       "entry": 3.044,
-      "qty": 65.703,
-      "margin": 10.0,
+      "qty": 197.109,
+      "margin": 30.0,
       "leverage": 20,
       "tp_price": 2.9678999999999998,
       "tf": "15m",
       "opened_at": 1793805527,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        3.052
+      ],
       "steps": [
         {
           "px": 3.044,
           "ts": 1793805527
+        },
+        {
+          "px": 3.044,
+          "ts": 1793805689
         }
       ],
       "entry_candle_ts": 1793805300,
-      "last_leg_candle_ts": 1793805300,
+      "last_leg_candle_ts": 1793805689,
       "dry_run": true,
       "order_id": "PAPER-CYPHUSDT-1793805527"
     },
