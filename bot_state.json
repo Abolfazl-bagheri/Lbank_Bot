@@ -393,6 +393,31 @@
       "last_leg_candle_ts": 1793816261,
       "dry_run": true,
       "order_id": "PAPER-MSTUUSDT-1793808450"
+    },
+    {
+      "symbol": "DGAIUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.833,
+      "qty": 240.096,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.812175,
+      "tf": "4h",
+      "opened_at": 1793822803,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.833,
+          "ts": 1793822803
+        }
+      ],
+      "entry_candle_ts": 1793822400,
+      "last_leg_candle_ts": 1793822400,
+      "dry_run": true,
+      "order_id": "PAPER-DGAIUSDT-1793822803"
     }
   ],
   "trade_history": [
@@ -4171,26 +4196,6 @@
       "side": "SELL"
     },
     {
-      "symbol": "ARIAUSDT",
-      "tf": "15m",
-      "candle_ts": 1793561400,
-      "side": "SELL",
-      "upper": 0.0893479939256394,
-      "open": 0.09052,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "CLAUDIAUSDT",
-      "tf": "15m",
-      "candle_ts": 1793562300,
-      "side": "SELL",
-      "upper": 0.0020119904443328842,
-      "open": 0.002068,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "AEONUSDT",
       "tf": "15m",
       "candle_ts": 1793567700,
@@ -5657,7 +5662,8 @@
       "side": "SELL",
       "upper": 0.26268740591961565,
       "open": 0.2788,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CLANKERUSDT",
@@ -5666,7 +5672,8 @@
       "side": "SELL",
       "upper": 18.029369794468717,
       "open": 18.59,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ELSAUSDT",
@@ -5675,7 +5682,8 @@
       "side": "SELL",
       "upper": 0.0759901401696473,
       "open": 0.0777,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "BKNGUSDT",
@@ -5694,7 +5702,8 @@
       "side": "SELL",
       "upper": 166.91715532508064,
       "open": 171.17,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "FOLKSUSDT",
@@ -5703,7 +5712,8 @@
       "side": "SELL",
       "upper": 2.4286550772093762,
       "open": 2.479,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "APPUSDT",
@@ -5722,7 +5732,8 @@
       "side": "SELL",
       "upper": 264.975616377953,
       "open": 270.2,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "RDDTUSDT",
@@ -5741,7 +5752,8 @@
       "side": "SELL",
       "upper": 0.005369025733672409,
       "open": 0.005467,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "FARTCOINUSDT",
@@ -5760,7 +5772,8 @@
       "side": "SELL",
       "upper": 0.21927838133242328,
       "open": 0.2225,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "MSTUUSDT",
@@ -5769,7 +5782,8 @@
       "side": "SELL",
       "upper": 32.07155603346675,
       "open": 32.53,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "RDDTUSDT",
@@ -5778,7 +5792,8 @@
       "side": "SELL",
       "upper": 102.04745397874369,
       "open": 104.0,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "FARTCOINUSDT",
@@ -5787,7 +5802,8 @@
       "side": "SELL",
       "upper": 0.12838305473612832,
       "open": 0.13009,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ZZZUSDT",
@@ -5882,7 +5898,6 @@
     "KOPNUSDT": 1793798527,
     "KNTQUSDT": 1793801068,
     "AI1USDT": 1793821025,
-    "WUXIBIOUSDT": 1793821810,
     "FLOCK1USDT": 1793821836,
     "ARROWUSDT": 1793826332,
     "OFCUSDT": 1793829105,
