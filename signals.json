@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.8",
-  "updated_at": 1793790534,
+  "updated_at": 1793791142,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "BMTUSDT",
-      "tf": "15m",
-      "gap": 1.29,
-      "ts": 1793751557
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 1.39,
       "ts": 1793790534
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793791142
     }
   ],
   "trades": [
@@ -1414,35 +1414,22 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.0728,
-      "pnl": 0.739,
+      "px": 0.07284,
+      "pnl": 0.6295,
       "tf": "1h"
-    },
-    {
-      "symbol": "BEAMXUSDT",
-      "side": "SELL",
-      "entry": 0.004311,
-      "tp": 0.004203225,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.004223,
-      "pnl": 4.0826,
-      "tf": "15m"
     }
   ],
   "start": 1000.0,
-  "realized": 1802.0812,
-  "closed_n": 83,
-  "open_upnl": 4.8216,
-  "equity": 2806.9028,
+  "realized": 1807.3236,
+  "closed_n": 84,
+  "open_upnl": 0.6295,
+  "equity": 2807.9531,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 2118.2721,
+    "profit": 2123.5145,
     "loss": -316.1909,
-    "count": 83
+    "count": 84
   }
 }
