@@ -178,35 +178,6 @@
       "order_id": "PAPER-RIVNUSDT-1793802868"
     },
     {
-      "symbol": "SXTUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.009721027474253142,
-      "qty": 61721.8707,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.009478001787396814,
-      "tf": "1h",
-      "opened_at": 1793803603,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.00986,
-          "ts": 1793803603
-        },
-        {
-          "px": 0.009653,
-          "ts": 1793804709
-        }
-      ],
-      "entry_candle_ts": 1793803500,
-      "last_leg_candle_ts": 1793804400,
-      "dry_run": true,
-      "order_id": "PAPER-SXTUSDT-1793803603"
-    },
-    {
       "symbol": "APPUSDT",
       "side": "SELL",
       "status": "open",
@@ -3470,6 +3441,40 @@
       "pnl_usdt": 5.263157894736858,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "SXTUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.009721027474253142,
+      "qty": 61721.8707,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 0.009478001787396814,
+      "tf": "1h",
+      "opened_at": 1793803603,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.00986,
+          "ts": 1793803603
+        },
+        {
+          "px": 0.009653,
+          "ts": 1793804709
+        }
+      ],
+      "entry_candle_ts": 1793803500,
+      "last_leg_candle_ts": 1793804400,
+      "dry_run": true,
+      "order_id": "PAPER-SXTUSDT-1793803603",
+      "closed_at": 1793805670,
+      "close_px": 0.009212,
+      "pnl_usdt": 31.418127904771744,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -5131,6 +5136,15 @@
       "side": "SELL",
       "upper": 0.13285799379186888,
       "open": 0.13498,
+      "reported": false
+    },
+    {
+      "symbol": "CLANKERUSDT",
+      "tf": "15m",
+      "candle_ts": 1793805300,
+      "side": "SELL",
+      "upper": 17.907897791070305,
+      "open": 18.48,
       "reported": false
     }
   ],
