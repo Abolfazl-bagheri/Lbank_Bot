@@ -332,37 +332,6 @@
       "order_id": "PAPER-STONKUSDT-1793805565"
     },
     {
-      "symbol": "CATEUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.04318794788298727,
-      "qty": 13892.7648,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.04210824918591259,
-      "tf": "15m",
-      "opened_at": 1793806352,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        0.04347
-      ],
-      "steps": [
-        {
-          "px": 0.04277,
-          "ts": 1793806352
-        },
-        {
-          "px": 0.0434,
-          "ts": 1793809229
-        }
-      ],
-      "entry_candle_ts": 1793806200,
-      "last_leg_candle_ts": 1793809229,
-      "dry_run": true,
-      "order_id": "PAPER-CATEUSDT-1793806352"
-    },
-    {
       "symbol": "CLANKERUSDT",
       "side": "SELL",
       "status": "open",
@@ -3868,6 +3837,42 @@
       "pnl_usdt": 7.441956882255388,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "CATEUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.04318794788298727,
+      "qty": 13892.7648,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 0.04210824918591259,
+      "tf": "15m",
+      "opened_at": 1793806352,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.04347
+      ],
+      "steps": [
+        {
+          "px": 0.04277,
+          "ts": 1793806352
+        },
+        {
+          "px": 0.0434,
+          "ts": 1793809229
+        }
+      ],
+      "entry_candle_ts": 1793806200,
+      "last_leg_candle_ts": 1793809229,
+      "dry_run": true,
+      "order_id": "PAPER-CATEUSDT-1793806352",
+      "closed_at": 1793810839,
+      "close_px": 0.04177,
+      "pnl_usdt": 19.69921636696934,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -5824,9 +5829,10 @@
     "OSCRUSDT": 1793850616,
     "SXTUSDT": 1793851456,
     "RIOTUSDT": 1793852211,
-    "METEORAUSDT": 1793852241
+    "METEORAUSDT": 1793852241,
+    "AMCUSDT": 1793853303
   },
-  "last_trade_report_ts": 1793808623,
+  "last_trade_report_ts": 1793809967,
   "last_known_version": "2.6.8",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
