@@ -466,6 +466,31 @@
       "last_leg_candle_ts": 1793782800,
       "dry_run": true,
       "order_id": "PAPER-ANSEMUSDT-1793780338"
+    },
+    {
+      "symbol": "ATHUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.005296,
+      "qty": 37764.3505,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0051636,
+      "tf": "1h",
+      "opened_at": 1793783146,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.005296,
+          "ts": 1793783146
+        }
+      ],
+      "entry_candle_ts": 1793782800,
+      "last_leg_candle_ts": 1793782800,
+      "dry_run": true,
+      "order_id": "PAPER-ATHUSDT-1793783146"
     }
   ],
   "trade_history": [
@@ -4251,6 +4276,15 @@
       "open": 0.0465,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "ANSEMUSDT",
+      "tf": "1h",
+      "candle_ts": 1793782800,
+      "side": "SELL",
+      "upper": 0.04748244378088166,
+      "open": 0.0482,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -4333,7 +4367,8 @@
     "1000000BABYDOGEUSDT": 1793808612,
     "AI1USDT": 1793821025,
     "WUXIBIOUSDT": 1793821810,
-    "FLOCK1USDT": 1793821836
+    "FLOCK1USDT": 1793821836,
+    "ARROWUSDT": 1793826332
   },
   "last_trade_report_ts": 1793780460,
   "last_daily_report_date": "2026-11-01",
