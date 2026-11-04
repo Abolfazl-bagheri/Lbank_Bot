@@ -55,6 +55,31 @@
       "last_leg_candle_ts": 1793797200,
       "dry_run": true,
       "order_id": "PAPER-ZZZUSDT-1793797516"
+    },
+    {
+      "symbol": "SSPCUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 10.298,
+      "qty": 19.4212,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 10.04055,
+      "tf": "15m",
+      "opened_at": 1793798193,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 10.298,
+          "ts": 1793798193
+        }
+      ],
+      "entry_candle_ts": 1793798100,
+      "last_leg_candle_ts": 1793798100,
+      "dry_run": true,
+      "order_id": "PAPER-SSPCUSDT-1793798193"
     }
   ],
   "trade_history": [
@@ -4656,7 +4681,6 @@
     "LWLGUSDT": 1793675941,
     "EWZSUSDT": 1793678937,
     "BIDUUSDT": 1793678955,
-    "XPSTOCKUSDT": 1793678976,
     "FIGUSDT": 1793683258,
     "GSTOCKUSDT": 1793688424,
     "PORUSDT": 1793694114,
@@ -4695,7 +4719,7 @@
     "STONKBROKERUSDT": 1793836099,
     "CAPETHUSDT": 1793838855
   },
-  "last_trade_report_ts": 1793795711,
+  "last_trade_report_ts": 1793797658,
   "last_known_version": "2.6.8",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
