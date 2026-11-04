@@ -177,17 +177,18 @@
       "symbol": "APPUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 266.0768150355065,
-      "qty": 5.261571999999999,
-      "margin": 70.0,
+      "entry": 269.83419514453846,
+      "qty": 11.117871999999998,
+      "margin": 150.0,
       "leverage": 20,
-      "tp_price": 259.4248946596189,
+      "tp_price": 263.088340265925,
       "tf": "1h",
       "opened_at": 1793803630,
-      "adds": 2,
-      "last_leg_margin": 40.0,
+      "adds": 3,
+      "last_leg_margin": 80.0,
       "used_res_levels": [
-        262.0
+        262.0,
+        273.9
       ],
       "steps": [
         {
@@ -201,10 +202,14 @@
         {
           "px": 270.04,
           "ts": 1793808314
+        },
+        {
+          "px": 273.21,
+          "ts": 1793812670
         }
       ],
       "entry_candle_ts": 1793803500,
-      "last_leg_candle_ts": 1793808000,
+      "last_leg_candle_ts": 1793812670,
       "dry_run": true,
       "order_id": "PAPER-APPUSDT-1793803630"
     },
@@ -5736,6 +5741,15 @@
       "upper": 0.009565991655942657,
       "open": 0.00974,
       "reported": false
+    },
+    {
+      "symbol": "ZZZUSDT",
+      "tf": "15m",
+      "candle_ts": 1793812500,
+      "side": "SELL",
+      "upper": 0.009743965146496907,
+      "open": 0.00986,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -5829,7 +5843,8 @@
     "SXTUSDT": 1793851456,
     "RIOTUSDT": 1793852211,
     "METEORAUSDT": 1793852241,
-    "AMCUSDT": 1793853303
+    "AMCUSDT": 1793853303,
+    "BEMUSDT": 1793855863
   },
   "last_trade_report_ts": 1793812133,
   "last_known_version": "2.6.8",
