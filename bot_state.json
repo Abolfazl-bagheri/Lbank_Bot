@@ -526,6 +526,31 @@
       "last_leg_candle_ts": 1793808000,
       "dry_run": true,
       "order_id": "PAPER-ATHUSDT-1793808382"
+    },
+    {
+      "symbol": "FARTCOINUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.1303,
+      "qty": 1534.9194,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.1270425,
+      "tf": "1h",
+      "opened_at": 1793808402,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.1303,
+          "ts": 1793808402
+        }
+      ],
+      "entry_candle_ts": 1793808000,
+      "last_leg_candle_ts": 1793808000,
+      "dry_run": true,
+      "order_id": "PAPER-FARTCOINUSDT-1793808402"
     }
   ],
   "trade_history": [
@@ -5578,6 +5603,15 @@
       "side": "SELL",
       "upper": 102.87210012503903,
       "open": 104.0,
+      "reported": false
+    },
+    {
+      "symbol": "ATHUSDT",
+      "tf": "4h",
+      "candle_ts": 1793808000,
+      "side": "SELL",
+      "upper": 0.005369025733672409,
+      "open": 0.005467,
       "reported": false
     }
   ],
