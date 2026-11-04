@@ -199,42 +199,6 @@
       "order_id": "PAPER-AXISUSDT-1793689496"
     },
     {
-      "symbol": "ZROUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 1.8682385383035596,
-      "qty": 749.3689999999999,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 1.8215325748459705,
-      "tf": "1h",
-      "opened_at": 1793711093,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [
-        1.89,
-        1.868
-      ],
-      "steps": [
-        {
-          "px": 1.8473,
-          "ts": 1793711093
-        },
-        {
-          "px": 1.8867,
-          "ts": 1793716493
-        },
-        {
-          "px": 1.8644,
-          "ts": 1793719333
-        }
-      ],
-      "entry_candle_ts": 1793710800,
-      "last_leg_candle_ts": 1793719333,
-      "dry_run": true,
-      "order_id": "PAPER-ZROUSDT-1793711093"
-    },
-    {
       "symbol": "PUMPUSDT",
       "side": "SELL",
       "status": "open",
@@ -2527,6 +2491,45 @@
       "closed_at": 1793755358,
       "close_px": 30.43,
       "pnl_usdt": 5.621207282018519
+    },
+    {
+      "symbol": "ZROUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 1.8682385383035596,
+      "qty": 749.3689999999999,
+      "margin": 70.0,
+      "leverage": 20,
+      "tp_price": 1.8215325748459705,
+      "tf": "1h",
+      "opened_at": 1793711093,
+      "adds": 2,
+      "last_leg_margin": 40.0,
+      "used_res_levels": [
+        1.89,
+        1.868
+      ],
+      "steps": [
+        {
+          "px": 1.8473,
+          "ts": 1793711093
+        },
+        {
+          "px": 1.8867,
+          "ts": 1793716493
+        },
+        {
+          "px": 1.8644,
+          "ts": 1793719333
+        }
+      ],
+      "entry_candle_ts": 1793710800,
+      "last_leg_candle_ts": 1793719333,
+      "dry_run": true,
+      "order_id": "PAPER-ZROUSDT-1793711093",
+      "closed_at": 1793759974,
+      "close_px": 1.8206,
+      "pnl_usdt": 35.6988426571825
     }
   ],
   "pending": [
@@ -4212,10 +4215,6 @@
     "FLOCK1USDT": 1793751668,
     "O1USDT": 1793752630,
     "CYBERLEEKUSDT": 1793758800,
-    "1000WOJAKUSDT": 1793758830,
-    "1000SATSUSDT": 1793758874,
-    "NEIRO1USDT": 1793758876,
-    "CZUSDT": 1793758880,
     "OSCRUSDT": 1793760691,
     "RIOTUSDT": 1793764210,
     "CAPETHUSDT": 1793771554,
@@ -4229,9 +4228,13 @@
     "POETUSDT": 1793794891,
     "KOPNUSDT": 1793798527,
     "DRVUSDT": 1793798529,
-    "KNTQUSDT": 1793801068
+    "KNTQUSDT": 1793801068,
+    "1000WOJAKUSDT": 1793803078,
+    "NEIRO1USDT": 1793803154,
+    "1000SATSUSDT": 1793803156,
+    "CZUSDT": 1793803169
   },
-  "last_trade_report_ts": 1793755373,
+  "last_trade_report_ts": 1793758028,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.7",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
