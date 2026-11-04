@@ -49,6 +49,31 @@
       "last_leg_candle_ts": 1793786400,
       "dry_run": true,
       "order_id": "PAPER-ELSAUSDT-1793786767"
+    },
+    {
+      "symbol": "BEAMXUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.004311,
+      "qty": 46392.9483,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.004203225,
+      "tf": "15m",
+      "opened_at": 1793789409,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.004311,
+          "ts": 1793789409
+        }
+      ],
+      "entry_candle_ts": 1793789100,
+      "last_leg_candle_ts": 1793789100,
+      "dry_run": true,
+      "order_id": "PAPER-BEAMXUSDT-1793789409"
     }
   ],
   "trade_history": [
@@ -3107,36 +3132,6 @@
       "side": "SELL"
     },
     {
-      "symbol": "IDOLUSDT",
-      "tf": "15m",
-      "candle_ts": 1793529000,
-      "side": "SELL",
-      "upper": 0.021796421486178396,
-      "open": 0.022301,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "FONEUSDT",
-      "tf": "15m",
-      "candle_ts": 1793529900,
-      "side": "SELL",
-      "upper": 0.0021129079866934034,
-      "open": 0.002188,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "IDOLUSDT",
-      "tf": "15m",
-      "candle_ts": 1793529900,
-      "side": "SELL",
-      "upper": 0.022994784440722817,
-      "open": 0.023607,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "SUPERUSDT",
       "tf": "1h",
       "candle_ts": 1793530800,
@@ -4567,7 +4562,7 @@
     "UBIKUSDT": 1793829115,
     "AEHRUSDT": 1793830009
   },
-  "last_trade_report_ts": 1793785985,
+  "last_trade_report_ts": 1793788519,
   "last_known_version": "2.6.8",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
