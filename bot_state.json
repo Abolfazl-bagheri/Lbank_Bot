@@ -364,24 +364,30 @@
       "symbol": "STANDARDUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.2183,
-      "qty": 916.1704,
-      "margin": 10.0,
+      "entry": 0.22499571488902423,
+      "qty": 2666.7174,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.2128425,
+      "tp_price": 0.2193708220167986,
       "tf": "4h",
       "opened_at": 1793808425,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.2292
+      ],
       "steps": [
         {
           "px": 0.2183,
           "ts": 1793808425
+        },
+        {
+          "px": 0.2285,
+          "ts": 1793816249
         }
       ],
       "entry_candle_ts": 1793808000,
-      "last_leg_candle_ts": 1793808000,
+      "last_leg_candle_ts": 1793816249,
       "dry_run": true,
       "order_id": "PAPER-STANDARDUSDT-1793808425"
     },
