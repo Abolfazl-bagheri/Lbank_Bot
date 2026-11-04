@@ -468,6 +468,31 @@
       "last_leg_candle_ts": 1793808000,
       "dry_run": true,
       "order_id": "PAPER-SXTUSDT-1793808174"
+    },
+    {
+      "symbol": "FOLKSUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 2.472,
+      "qty": 80.9061,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 2.4102,
+      "tf": "4h",
+      "opened_at": 1793808290,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 2.472,
+          "ts": 1793808290
+        }
+      ],
+      "entry_candle_ts": 1793808000,
+      "last_leg_candle_ts": 1793808000,
+      "dry_run": true,
+      "order_id": "PAPER-FOLKSUSDT-1793808290"
     }
   ],
   "trade_history": [
@@ -5474,6 +5499,15 @@
       "candle_ts": 1793808000,
       "side": "SELL",
       "upper": 169.11503313984213,
+      "open": 171.17,
+      "reported": false
+    },
+    {
+      "symbol": "BKNGUSDT",
+      "tf": "4h",
+      "candle_ts": 1793808000,
+      "side": "SELL",
+      "upper": 166.91715532508064,
       "open": 171.17,
       "reported": false
     }
