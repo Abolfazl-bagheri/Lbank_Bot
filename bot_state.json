@@ -62,31 +62,6 @@
       "order_id": "PAPER-ZZZUSDT-1793797551"
     },
     {
-      "symbol": "AKEUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.003196,
-      "qty": 62578.2228,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.0031161,
-      "tf": "15m",
-      "opened_at": 1793801943,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.003196,
-          "ts": 1793801943
-        }
-      ],
-      "entry_candle_ts": 1793801700,
-      "last_leg_candle_ts": 1793801700,
-      "dry_run": true,
-      "order_id": "PAPER-AKEUSDT-1793801943"
-    },
-    {
       "symbol": "RIVNUSDT",
       "side": "SELL",
       "status": "open",
@@ -3344,6 +3319,36 @@
       "pnl_usdt": 32.59547664522412,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "AKEUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.003196,
+      "qty": 62578.2228,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0031161,
+      "tf": "15m",
+      "opened_at": 1793801943,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.003196,
+          "ts": 1793801943
+        }
+      ],
+      "entry_candle_ts": 1793801700,
+      "last_leg_candle_ts": 1793801700,
+      "dry_run": true,
+      "order_id": "PAPER-AKEUSDT-1793801943",
+      "closed_at": 1793806576,
+      "close_px": 0.002942,
+      "pnl_usdt": 15.894868585732159,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -4966,6 +4971,15 @@
       "side": "SELL",
       "upper": 0.2801832837489031,
       "open": 0.2831,
+      "reported": false
+    },
+    {
+      "symbol": "CARDSUSDT",
+      "tf": "15m",
+      "candle_ts": 1793806200,
+      "side": "SELL",
+      "upper": 0.27794355805585313,
+      "open": 0.28322,
       "reported": false
     }
   ],
