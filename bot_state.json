@@ -4,24 +4,30 @@
       "symbol": "ELSAUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.07307,
-      "qty": 2737.1014,
-      "margin": 10.0,
+      "entry": 0.07354842859074552,
+      "qty": 8157.8901000000005,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.07124325,
+      "tp_price": 0.07170971787597688,
       "tf": "1h",
       "opened_at": 1793786767,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.074
+      ],
       "steps": [
         {
           "px": 0.07307,
           "ts": 1793786767
+        },
+        {
+          "px": 0.07379,
+          "ts": 1793795699
         }
       ],
       "entry_candle_ts": 1793786400,
-      "last_leg_candle_ts": 1793786400,
+      "last_leg_candle_ts": 1793795699,
       "dry_run": true,
       "order_id": "PAPER-ELSAUSDT-1793786767"
     },
@@ -4554,6 +4560,15 @@
       "open": 1.218e-05,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "JCTUSDT",
+      "tf": "15m",
+      "candle_ts": 1793795400,
+      "side": "SELL",
+      "upper": 0.00540319071555454,
+      "open": 0.005472,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -4649,7 +4664,8 @@
     "OFCUSDT": 1793829105,
     "UBIKUSDT": 1793829115,
     "AEHRUSDT": 1793830009,
-    "STONKBROKERUSDT": 1793836099
+    "STONKBROKERUSDT": 1793836099,
+    "CAPETHUSDT": 1793838855
   },
   "last_trade_report_ts": 1793794779,
   "last_known_version": "2.6.8",
