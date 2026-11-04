@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.8",
-  "updated_at": 1793801822,
+  "updated_at": 1793801829,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "CASHCATUSDT",
-      "tf": "15m",
-      "gap": 1.11,
-      "ts": 1793769566
-    },
     {
       "kind": "GAP",
       "symbol": "BULLAUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 1.17,
       "ts": 1793801822
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793801829
     }
   ],
   "trades": [
@@ -1443,6 +1443,19 @@
       "px": 0.247,
       "pnl": -1.222,
       "tf": "1h"
+    },
+    {
+      "symbol": "CATUSDT",
+      "side": "SELL",
+      "entry": 1.764e-06,
+      "tp": 1.7198999999999998e-06,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 1.764e-06,
+      "pnl": 0.0,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
