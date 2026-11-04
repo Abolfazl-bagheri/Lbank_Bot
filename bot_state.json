@@ -219,17 +219,18 @@
       "symbol": "RDDTUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 102.77068386357963,
-      "qty": 13.6226,
-      "margin": 70.0,
+      "entry": 103.57543190951651,
+      "qty": 28.964399999999998,
+      "margin": 150.0,
       "leverage": 20,
-      "tp_price": 100.20141676699014,
+      "tp_price": 100.98604611177859,
       "tf": "1h",
       "opened_at": 1793803712,
-      "adds": 2,
-      "last_leg_margin": 40.0,
+      "adds": 3,
+      "last_leg_margin": 80.0,
       "used_res_levels": [
-        101.86
+        101.86,
+        104.62
       ],
       "steps": [
         {
@@ -243,10 +244,14 @@
         {
           "px": 103.69,
           "ts": 1793808362
+        },
+        {
+          "px": 104.29,
+          "ts": 1793813698
         }
       ],
       "entry_candle_ts": 1793803500,
-      "last_leg_candle_ts": 1793808000,
+      "last_leg_candle_ts": 1793813698,
       "dry_run": true,
       "order_id": "PAPER-RDDTUSDT-1793803712"
     },
@@ -5764,7 +5769,8 @@
       "side": "SELL",
       "upper": 0.009743965146496907,
       "open": 0.00986,
-      "reported": false
+      "reported": true,
+      "filled": false
     }
   ],
   "paper_days": [
@@ -5861,7 +5867,7 @@
     "AMCUSDT": 1793853303,
     "BEMUSDT": 1793855863
   },
-  "last_trade_report_ts": 1793812133,
+  "last_trade_report_ts": 1793813556,
   "last_known_version": "2.6.8",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
