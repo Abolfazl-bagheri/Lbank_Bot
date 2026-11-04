@@ -439,31 +439,6 @@
       "order_id": "PAPER-USELESSUSDT-1793768597"
     },
     {
-      "symbol": "CASHCATUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.1135,
-      "qty": 1762.1145,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.1106625,
-      "tf": "15m",
-      "opened_at": 1793768624,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.1135,
-          "ts": 1793768624
-        }
-      ],
-      "entry_candle_ts": 1793768400,
-      "last_leg_candle_ts": 1793768400,
-      "dry_run": true,
-      "order_id": "PAPER-CASHCATUSDT-1793768624"
-    },
-    {
       "symbol": "ANSEMUSDT",
       "side": "SELL",
       "status": "open",
@@ -2685,6 +2660,34 @@
       "closed_at": 1793761657,
       "close_px": 3.1989,
       "pnl_usdt": 39.25486057623734
+    },
+    {
+      "symbol": "CASHCATUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.1135,
+      "qty": 1762.1145,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.1106625,
+      "tf": "15m",
+      "opened_at": 1793768624,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.1135,
+          "ts": 1793768624
+        }
+      ],
+      "entry_candle_ts": 1793768400,
+      "last_leg_candle_ts": 1793768400,
+      "dry_run": true,
+      "order_id": "PAPER-CASHCATUSDT-1793768624",
+      "closed_at": 1793780445,
+      "close_px": 0.1102,
+      "pnl_usdt": 5.814977973568277
     }
   ],
   "pending": [
@@ -4264,6 +4267,15 @@
       "open": 0.13445,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "ANSEMUSDT",
+      "tf": "15m",
+      "candle_ts": 1793780100,
+      "side": "SELL",
+      "upper": 0.04591220502697095,
+      "open": 0.0465,
+      "reported": false
     }
   ],
   "paper_days": [
