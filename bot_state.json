@@ -191,6 +191,31 @@
       "last_leg_candle_ts": 1793803500,
       "dry_run": true,
       "order_id": "PAPER-SXTUSDT-1793803603"
+    },
+    {
+      "symbol": "APPUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 260.97,
+      "qty": 0.766372,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 254.44575000000003,
+      "tf": "15m",
+      "opened_at": 1793803630,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 260.97,
+          "ts": 1793803630
+        }
+      ],
+      "entry_candle_ts": 1793803500,
+      "last_leg_candle_ts": 1793803500,
+      "dry_run": true,
+      "order_id": "PAPER-APPUSDT-1793803630"
     }
   ],
   "trade_history": [
@@ -4783,6 +4808,15 @@
       "open": 14.051,
       "reported": true,
       "filled": false
+    },
+    {
+      "symbol": "SXTUSDT",
+      "tf": "15m",
+      "candle_ts": 1793803500,
+      "side": "SELL",
+      "upper": 0.00936142106854377,
+      "open": 0.009739,
+      "reported": false
     }
   ],
   "paper_days": [
