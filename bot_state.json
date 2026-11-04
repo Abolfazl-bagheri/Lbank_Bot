@@ -247,35 +247,6 @@
       "order_id": "PAPER-BKNGUSDT-1793804738"
     },
     {
-      "symbol": "CLANKERUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 21.43160544363481,
-      "qty": 27.996,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 20.895815307543938,
-      "tf": "4h",
-      "opened_at": 1793808119,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 18.52,
-          "ts": 1793808119
-        },
-        {
-          "px": 23.26,
-          "ts": 1793822823
-        }
-      ],
-      "entry_candle_ts": 1793808000,
-      "last_leg_candle_ts": 1793822400,
-      "dry_run": true,
-      "order_id": "PAPER-CLANKERUSDT-1793808119"
-    },
-    {
       "symbol": "STANDARDUSDT",
       "side": "SELL",
       "status": "open",
@@ -4045,6 +4016,40 @@
       "pnl_usdt": 45.83185518998612,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "CLANKERUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 21.43160544363481,
+      "qty": 27.996,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 20.895815307543938,
+      "tf": "4h",
+      "opened_at": 1793808119,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 18.52,
+          "ts": 1793808119
+        },
+        {
+          "px": 23.26,
+          "ts": 1793822823
+        }
+      ],
+      "entry_candle_ts": 1793808000,
+      "last_leg_candle_ts": 1793822400,
+      "dry_run": true,
+      "order_id": "PAPER-CLANKERUSDT-1793808119",
+      "closed_at": 1793829991,
+      "close_px": 20.6,
+      "pnl_usdt": 23.281656033336333,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -5961,6 +5966,15 @@
       "upper": 308.3102933982927,
       "open": 324.2,
       "reported": false
+    },
+    {
+      "symbol": "ELSAUSDT",
+      "tf": "1h",
+      "candle_ts": 1793829600,
+      "side": "SELL",
+      "upper": 0.10497330717491737,
+      "open": 0.11078,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -6057,7 +6071,9 @@
     "MANCERUSDT": 1793870280,
     "ARROWUSDT": 1793871201,
     "BBXUSDT": 1793872237,
-    "TOADUSDT": 1793872239
+    "TOADUSDT": 1793872239,
+    "UBIKUSDT": 1793873127,
+    "OFCUSDT": 1793873172
   },
   "last_trade_report_ts": 1793829053,
   "last_known_version": "2.6.8",
