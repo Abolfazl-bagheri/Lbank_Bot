@@ -207,17 +207,18 @@
       "symbol": "RUNEUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.6128,
-      "qty": 979.1123,
-      "margin": 30.0,
+      "entry": 0.6272264180860913,
+      "qty": 2232.0489,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 0.59748,
+      "tp_price": 0.6115457576339389,
       "tf": "15m",
       "opened_at": 1793718219,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [
-        0.6145
+        0.6145,
+        0.6404
       ],
       "steps": [
         {
@@ -227,10 +228,14 @@
         {
           "px": 0.6128,
           "ts": 1793718572
+        },
+        {
+          "px": 0.6385,
+          "ts": 1793771577
         }
       ],
       "entry_candle_ts": 1793718000,
-      "last_leg_candle_ts": 1793718572,
+      "last_leg_candle_ts": 1793771577,
       "dry_run": true,
       "order_id": "PAPER-RUNEUSDT-1793718219"
     },
@@ -4276,7 +4281,8 @@
       "side": "SELL",
       "upper": 0.1324218950061689,
       "open": 0.13445,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CASHCATUSDT",
@@ -4285,7 +4291,8 @@
       "side": "SELL",
       "upper": 0.11130245623340396,
       "open": 0.11327,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "USELESSUSDT",
@@ -4337,7 +4344,6 @@
     "TRUMPSOLUSDT": 1793630182,
     "UP2USDT": 1793631162,
     "BEMUSDT": 1793633776,
-    "NIULAIUSDT": 1793650101,
     "SMRUSDT": 1793650143,
     "TOADUSDT": 1793657184,
     "CRWDUSDT": 1793658035,
@@ -4382,7 +4388,7 @@
     "NEXUSDT": 1793808585,
     "1000000BABYDOGEUSDT": 1793808612
   },
-  "last_trade_report_ts": 1793767111,
+  "last_trade_report_ts": 1793770646,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.7",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
