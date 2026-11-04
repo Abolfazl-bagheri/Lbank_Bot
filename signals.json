@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.8",
-  "updated_at": 1793804670,
+  "updated_at": 1793804680,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "BIRBUSDT",
-      "tf": "4h",
-      "gap": 3.45,
-      "ts": 1793778384
-    },
     {
       "kind": "GAP",
       "symbol": "COOKIEUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 1.62,
       "ts": 1793804670
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793804680
     }
   ],
   "trades": [
@@ -1506,6 +1506,19 @@
       "margin": 10.0,
       "lev": 20,
       "px": 169.16,
+      "pnl": 0.0,
+      "tf": "1h"
+    },
+    {
+      "symbol": "HIMSUSDT",
+      "side": "SELL",
+      "entry": 28.1,
+      "tp": 27.3975,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 28.1,
       "pnl": 0.0,
       "tf": "1h"
     }
