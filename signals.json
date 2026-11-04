@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.8",
-  "updated_at": 1793805596,
+  "updated_at": 1793805685,
   "signals": [
-    {
-      "kind": "HEARTBEAT",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1793789435
-    },
     {
       "kind": "GAP",
       "symbol": "ANSEMUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1793805596
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793805685
     }
   ],
   "trades": [
@@ -1484,19 +1484,6 @@
       "tf": "15m"
     },
     {
-      "symbol": "SXTUSDT",
-      "side": "SELL",
-      "entry": 0.009721027474253142,
-      "tp": 0.009478001787396814,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
-      "lev": 20,
-      "px": 0.009212,
-      "pnl": 31.4181,
-      "tf": "1h"
-    },
-    {
       "symbol": "APPUSDT",
       "side": "SELL",
       "entry": 260.97,
@@ -1525,11 +1512,11 @@
     {
       "symbol": "DKNGUSDT",
       "side": "SELL",
-      "entry": 23.27,
-      "tp": 22.68825,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
+      "entry": 23.343217784417625,
+      "tp": 22.759637339807185,
+      "adds": 1,
+      "pele": 2,
+      "margin": 30.0,
       "lev": 20,
       "px": 23.38,
       "pnl": -0.9454,
@@ -1615,16 +1602,16 @@
     }
   ],
   "start": 1000.0,
-  "realized": 1839.2701,
-  "closed_n": 88,
-  "open_upnl": -176.1649,
+  "realized": 1870.6882,
+  "closed_n": 89,
+  "open_upnl": -207.583,
   "equity": 2663.1052,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 2155.461,
+    "profit": 2186.8792,
     "loss": -316.1909,
-    "count": 88
+    "count": 89
   }
 }
