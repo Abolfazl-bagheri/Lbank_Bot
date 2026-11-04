@@ -396,6 +396,31 @@
       "last_leg_candle_ts": 1793805300,
       "dry_run": true,
       "order_id": "PAPER-ANSEMUSDT-1793805545"
+    },
+    {
+      "symbol": "STONKUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.134833,
+      "qty": 1483.3164,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.13146217500000001,
+      "tf": "15m",
+      "opened_at": 1793805565,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.134833,
+          "ts": 1793805565
+        }
+      ],
+      "entry_candle_ts": 1793805300,
+      "last_leg_candle_ts": 1793805300,
+      "dry_run": true,
+      "order_id": "PAPER-STONKUSDT-1793805565"
     }
   ],
   "trade_history": [
@@ -5063,6 +5088,15 @@
       "side": "SELL",
       "upper": 2.9624293640594384,
       "open": 3.052,
+      "reported": false
+    },
+    {
+      "symbol": "ANSEMUSDT",
+      "tf": "15m",
+      "candle_ts": 1793805300,
+      "side": "SELL",
+      "upper": 0.04941516140953538,
+      "open": 0.05,
       "reported": false
     }
   ],
