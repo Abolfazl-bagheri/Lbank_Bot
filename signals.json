@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.7",
-  "updated_at": 1793765168,
+  "updated_at": 1793765180,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "FOXAUSDT",
-      "tf": "4h",
-      "gap": 1.96,
-      "ts": 1793735820
-    },
     {
       "kind": "GAP",
       "symbol": "APPUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "4h",
       "gap": 1.25,
       "ts": 1793765168
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793765180
     }
   ],
   "trades": [
@@ -1538,15 +1538,15 @@
     {
       "symbol": "SHEINUSDT",
       "side": "SELL",
-      "entry": 4.86,
-      "tp": 4.7385,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
+      "entry": 4.866662094708479,
+      "tp": 4.744995542340767,
+      "adds": 1,
+      "pele": 2,
+      "margin": 30.0,
       "lev": 20,
       "px": 4.87,
       "pnl": -0.4115,
-      "tf": "1h"
+      "tf": "4h"
     }
   ],
   "start": 1000.0,
