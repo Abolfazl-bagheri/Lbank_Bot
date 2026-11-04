@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.8",
-  "updated_at": 1793794319,
+  "updated_at": 1793794776,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "BMTUSDT",
-      "tf": "1h",
-      "gap": 1.08,
-      "ts": 1793761206
-    },
     {
       "kind": "GAP",
       "symbol": "SHEINUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "4h",
       "gap": 1.62,
       "ts": 1793794319
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793794776
     }
   ],
   "trades": [
@@ -1414,22 +1414,9 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.07479,
-      "pnl": -4.7078,
+      "px": 0.0735,
+      "pnl": -1.177,
       "tf": "1h"
-    },
-    {
-      "symbol": "FRONGUSDT",
-      "side": "SELL",
-      "entry": 0.00231,
-      "tp": 0.00225225,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.00229,
-      "pnl": 1.7316,
-      "tf": "15m"
     },
     {
       "symbol": "MUSEBOOKUSDT",
@@ -1440,22 +1427,22 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 1.214e-05,
-      "pnl": -0.9934,
+      "px": 1.201e-05,
+      "pnl": 1.1589,
       "tf": "15m"
     }
   ],
   "start": 1000.0,
-  "realized": 1807.3236,
-  "closed_n": 84,
-  "open_upnl": -3.9696,
-  "equity": 2803.354,
+  "realized": 1815.9816,
+  "closed_n": 85,
+  "open_upnl": -0.0181,
+  "equity": 2815.9635,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 2123.5145,
+    "profit": 2132.1725,
     "loss": -316.1909,
-    "count": 84
+    "count": 85
   }
 }
