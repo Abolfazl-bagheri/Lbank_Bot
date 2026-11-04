@@ -79,45 +79,6 @@
       "order_id": "PAPER-ZZZUSDT-1793797516"
     },
     {
-      "symbol": "ARXUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.2680675714816922,
-      "qty": 11191.208200000001,
-      "margin": 150.0,
-      "leverage": 20,
-      "tp_price": 0.2613658821946499,
-      "tf": "1h",
-      "opened_at": 1793801076,
-      "adds": 3,
-      "last_leg_margin": 80.0,
-      "used_res_levels": [
-        0.2477
-      ],
-      "steps": [
-        {
-          "px": 0.2455,
-          "ts": 1793801076
-        },
-        {
-          "px": 0.247,
-          "ts": 1793801851
-        },
-        {
-          "px": 0.2656,
-          "ts": 1793804687
-        },
-        {
-          "px": 0.2785,
-          "ts": 1793808138
-        }
-      ],
-      "entry_candle_ts": 1793800800,
-      "last_leg_candle_ts": 1793808000,
-      "dry_run": true,
-      "order_id": "PAPER-ARXUSDT-1793801076"
-    },
-    {
       "symbol": "CATUSDT",
       "side": "SELL",
       "status": "open",
@@ -409,56 +370,6 @@
       "last_leg_candle_ts": 1793809059,
       "dry_run": true,
       "order_id": "PAPER-FOLKSUSDT-1793808290"
-    },
-    {
-      "symbol": "ATHUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.005474,
-      "qty": 36536.3537,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.00533715,
-      "tf": "4h",
-      "opened_at": 1793808382,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.005474,
-          "ts": 1793808382
-        }
-      ],
-      "entry_candle_ts": 1793808000,
-      "last_leg_candle_ts": 1793808000,
-      "dry_run": true,
-      "order_id": "PAPER-ATHUSDT-1793808382"
-    },
-    {
-      "symbol": "FARTCOINUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.1303,
-      "qty": 1534.9194,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.1270425,
-      "tf": "1h",
-      "opened_at": 1793808402,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.1303,
-          "ts": 1793808402
-        }
-      ],
-      "entry_candle_ts": 1793808000,
-      "last_leg_candle_ts": 1793808000,
-      "dry_run": true,
-      "order_id": "PAPER-FARTCOINUSDT-1793808402"
     },
     {
       "symbol": "STANDARDUSDT",
@@ -3899,6 +3810,110 @@
       "closed_at": 1793812118,
       "close_px": 0.130756,
       "pnl_usdt": 6.047480957925725,
+      "close_reason": "TP50",
+      "why": "TP50"
+    },
+    {
+      "symbol": "ATHUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.005474,
+      "qty": 36536.3537,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.00533715,
+      "tf": "4h",
+      "opened_at": 1793808382,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.005474,
+          "ts": 1793808382
+        }
+      ],
+      "entry_candle_ts": 1793808000,
+      "last_leg_candle_ts": 1793808000,
+      "dry_run": true,
+      "order_id": "PAPER-ATHUSDT-1793808382",
+      "closed_at": 1793812686,
+      "close_px": 0.00533,
+      "pnl_usdt": 5.261234928754113,
+      "close_reason": "TP50",
+      "why": "TP50"
+    },
+    {
+      "symbol": "FARTCOINUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.1303,
+      "qty": 1534.9194,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.1270425,
+      "tf": "1h",
+      "opened_at": 1793808402,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.1303,
+          "ts": 1793808402
+        }
+      ],
+      "entry_candle_ts": 1793808000,
+      "last_leg_candle_ts": 1793808000,
+      "dry_run": true,
+      "order_id": "PAPER-FARTCOINUSDT-1793808402",
+      "closed_at": 1793812686,
+      "close_px": 0.1265,
+      "pnl_usdt": 5.832693783576359,
+      "close_reason": "TP50",
+      "why": "TP50"
+    },
+    {
+      "symbol": "ARXUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.2680675714816922,
+      "qty": 11191.208200000001,
+      "margin": 150.0,
+      "leverage": 20,
+      "tp_price": 0.2613658821946499,
+      "tf": "1h",
+      "opened_at": 1793801076,
+      "adds": 3,
+      "last_leg_margin": 80.0,
+      "used_res_levels": [
+        0.2477
+      ],
+      "steps": [
+        {
+          "px": 0.2455,
+          "ts": 1793801076
+        },
+        {
+          "px": 0.247,
+          "ts": 1793801851
+        },
+        {
+          "px": 0.2656,
+          "ts": 1793804687
+        },
+        {
+          "px": 0.2785,
+          "ts": 1793808138
+        }
+      ],
+      "entry_candle_ts": 1793800800,
+      "last_leg_candle_ts": 1793808000,
+      "dry_run": true,
+      "order_id": "PAPER-ARXUSDT-1793801076",
+      "closed_at": 1793812833,
+      "close_px": 0.2591,
+      "pnl_usdt": 100.35795936217492,
       "close_reason": "TP50",
       "why": "TP50"
     }
