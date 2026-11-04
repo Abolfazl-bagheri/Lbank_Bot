@@ -49,6 +49,31 @@
       "last_leg_candle_ts": 1793792700,
       "dry_run": true,
       "order_id": "PAPER-MUSEBOOKUSDT-1793792873"
+    },
+    {
+      "symbol": "JCTUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.005496,
+      "qty": 36390.1019,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0053586,
+      "tf": "15m",
+      "opened_at": 1793795611,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.005496,
+          "ts": 1793795611
+        }
+      ],
+      "entry_candle_ts": 1793795400,
+      "last_leg_candle_ts": 1793795400,
+      "dry_run": true,
+      "order_id": "PAPER-JCTUSDT-1793795611"
     }
   ],
   "trade_history": [
@@ -4598,7 +4623,6 @@
     "LIGHT1USDT": 1793726282,
     "OROCHIUSDT": 1793736424,
     "CYBERLEEKUSDT": 1793758800,
-    "CAPETHUSDT": 1793771554,
     "AMCUSDT": 1793772630,
     "IRENONUSDT": 1793776197,
     "ONSEMIUSDT": 1793784100,
@@ -4627,7 +4651,7 @@
     "AEHRUSDT": 1793830009,
     "STONKBROKERUSDT": 1793836099
   },
-  "last_trade_report_ts": 1793792069,
+  "last_trade_report_ts": 1793794779,
   "last_known_version": "2.6.8",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
