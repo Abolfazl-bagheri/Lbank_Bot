@@ -308,42 +308,6 @@
       "order_id": "PAPER-STANDARDUSDT-1793808425"
     },
     {
-      "symbol": "MSTUUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 33.00033320918918,
-      "qty": 42.4238,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 32.17532487895945,
-      "tf": "4h",
-      "opened_at": 1793808450,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [
-        32.61,
-        33.44
-      ],
-      "steps": [
-        {
-          "px": 32.52,
-          "ts": 1793808450
-        },
-        {
-          "px": 32.52,
-          "ts": 1793808594
-        },
-        {
-          "px": 33.37,
-          "ts": 1793816261
-        }
-      ],
-      "entry_candle_ts": 1793808000,
-      "last_leg_candle_ts": 1793816261,
-      "dry_run": true,
-      "order_id": "PAPER-MSTUUSDT-1793808450"
-    },
-    {
       "symbol": "USUSDT",
       "side": "SELL",
       "status": "open",
@@ -4036,6 +4000,47 @@
       "pnl_usdt": 8.16326530612243,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "MSTUUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 33.00033320918918,
+      "qty": 42.4238,
+      "margin": 70.0,
+      "leverage": 20,
+      "tp_price": 32.17532487895945,
+      "tf": "4h",
+      "opened_at": 1793808450,
+      "adds": 2,
+      "last_leg_margin": 40.0,
+      "used_res_levels": [
+        32.61,
+        33.44
+      ],
+      "steps": [
+        {
+          "px": 32.52,
+          "ts": 1793808450
+        },
+        {
+          "px": 32.52,
+          "ts": 1793808594
+        },
+        {
+          "px": 33.37,
+          "ts": 1793816261
+        }
+      ],
+      "entry_candle_ts": 1793808000,
+      "last_leg_candle_ts": 1793816261,
+      "dry_run": true,
+      "order_id": "PAPER-MSTUUSDT-1793808450",
+      "closed_at": 1793825458,
+      "close_px": 31.92,
+      "pnl_usdt": 45.83185518998612,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -5922,7 +5927,8 @@
       "side": "SELL",
       "upper": 0.09359908940696529,
       "open": 0.09526,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -6023,7 +6029,7 @@
     "HOTUSDT": 1793866206,
     "1000000BABYDOGEUSDT": 1793866218
   },
-  "last_trade_report_ts": 1793823046,
+  "last_trade_report_ts": 1793824526,
   "last_known_version": "2.6.8",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
