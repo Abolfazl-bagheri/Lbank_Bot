@@ -164,6 +164,31 @@
       "last_leg_candle_ts": 1793803500,
       "dry_run": true,
       "order_id": "PAPER-APPUSDT-1793803802"
+    },
+    {
+      "symbol": "ARXUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.2664,
+      "qty": 750.7508,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.25974,
+      "tf": "1h",
+      "opened_at": 1793804583,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.2664,
+          "ts": 1793804583
+        }
+      ],
+      "entry_candle_ts": 1793804400,
+      "last_leg_candle_ts": 1793804400,
+      "dry_run": true,
+      "order_id": "PAPER-ARXUSDT-1793804583"
     }
   ],
   "trade_history": [
@@ -4764,6 +4789,15 @@
       "candle_ts": 1793804400,
       "side": "SELL",
       "upper": 0.009743182740595305,
+      "open": 0.009994,
+      "reported": false
+    },
+    {
+      "symbol": "SXTUSDT",
+      "tf": "1h",
+      "candle_ts": 1793804400,
+      "side": "SELL",
+      "upper": 0.009479403815565434,
       "open": 0.009994,
       "reported": false
     }
