@@ -55,6 +55,31 @@
       "last_leg_candle_ts": 1793792700,
       "dry_run": true,
       "order_id": "PAPER-MUSEBOOKUSDT-1793792873"
+    },
+    {
+      "symbol": "SSPCUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 10.244,
+      "qty": 19.5236,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 9.9879,
+      "tf": "15m",
+      "opened_at": 1793797379,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 10.244,
+          "ts": 1793797379
+        }
+      ],
+      "entry_candle_ts": 1793797200,
+      "last_leg_candle_ts": 1793797200,
+      "dry_run": true,
+      "order_id": "PAPER-SSPCUSDT-1793797379"
     }
   ],
   "trade_history": [
@@ -3233,26 +3258,6 @@
       "side": "SELL"
     },
     {
-      "symbol": "APRUSDT",
-      "tf": "1h",
-      "candle_ts": 1793538000,
-      "side": "SELL",
-      "upper": 0.07109471017888727,
-      "open": 0.0741,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "INITUSDT",
-      "tf": "1h",
-      "candle_ts": 1793538000,
-      "side": "SELL",
-      "upper": 0.19761281442810025,
-      "open": 0.20062,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "TAGUSDT",
       "tf": "1h",
       "candle_ts": 1793541600,
@@ -4516,7 +4521,8 @@
       "side": "SELL",
       "upper": 2.3947529096498887,
       "open": 2.433,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ZZZUSDT",
@@ -4525,7 +4531,8 @@
       "side": "SELL",
       "upper": 0.008444256868963326,
       "open": 0.00854,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ELSAUSDT",
@@ -4534,7 +4541,8 @@
       "side": "SELL",
       "upper": 0.07290544189723842,
       "open": 0.07371,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "BEAMXUSDT",
