@@ -310,15 +310,15 @@
       "symbol": "CLANKERUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 13.989641398220515,
-      "qty": 42.888799999999996,
-      "margin": 30.0,
+      "entry": 14.92864279361992,
+      "qty": 93.7794,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 13.639900363265001,
-      "tf": "1h",
+      "tp_price": 14.555426723779421,
+      "tf": "4h",
       "opened_at": 1793739826,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [],
       "steps": [
         {
@@ -328,10 +328,14 @@
         {
           "px": 14.04,
           "ts": 1793743347
+        },
+        {
+          "px": 15.72,
+          "ts": 1793765059
         }
       ],
       "entry_candle_ts": 1793739600,
-      "last_leg_candle_ts": 1793743200,
+      "last_leg_candle_ts": 1793764800,
       "dry_run": true,
       "order_id": "PAPER-CLANKERUSDT-1793739826"
     },
@@ -2796,36 +2800,6 @@
       "side": "SELL"
     },
     {
-      "symbol": "ESPORTSUSDT",
-      "tf": "15m",
-      "candle_ts": 1793505600,
-      "side": "SELL",
-      "upper": 0.011070717041221792,
-      "open": 0.01159,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "ESPORTSUSDT",
-      "tf": "1h",
-      "candle_ts": 1793505600,
-      "side": "SELL",
-      "upper": 0.011182924769070842,
-      "open": 0.01159,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "ESPORTSUSDT",
-      "tf": "4h",
-      "candle_ts": 1793505600,
-      "side": "SELL",
-      "upper": 0.010827496522843595,
-      "open": 0.01159,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "BEAMXUSDT",
       "tf": "1h",
       "candle_ts": 1793512800,
@@ -3792,7 +3766,8 @@
       "side": "SELL",
       "upper": 0.002620473790114484,
       "open": 0.002687,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "AGTUSDT",
@@ -4201,7 +4176,8 @@
       "side": "SELL",
       "upper": 4.791750169349532,
       "open": 4.849,
-      "reported": false
+      "reported": true,
+      "filled": false
     }
   ],
   "paper_days": [
@@ -4266,7 +4242,6 @@
     "FLOCK1USDT": 1793751668,
     "O1USDT": 1793752630,
     "CYBERLEEKUSDT": 1793758800,
-    "RIOTUSDT": 1793764210,
     "CAPETHUSDT": 1793771554,
     "AI1USDT": 1793772586,
     "AMCUSDT": 1793772630,
@@ -4286,7 +4261,7 @@
     "OSCRUSDT": 1793804847,
     "AINBSCUSDT": 1793805623
   },
-  "last_trade_report_ts": 1793761698,
+  "last_trade_report_ts": 1793763473,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.7",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
