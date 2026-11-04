@@ -501,6 +501,31 @@
       "last_leg_candle_ts": 1793808000,
       "dry_run": true,
       "order_id": "PAPER-FOLKSUSDT-1793808290"
+    },
+    {
+      "symbol": "ATHUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.005474,
+      "qty": 36536.3537,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.00533715,
+      "tf": "4h",
+      "opened_at": 1793808382,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.005474,
+          "ts": 1793808382
+        }
+      ],
+      "entry_candle_ts": 1793808000,
+      "last_leg_candle_ts": 1793808000,
+      "dry_run": true,
+      "order_id": "PAPER-ATHUSDT-1793808382"
     }
   ],
   "trade_history": [
@@ -5544,6 +5569,15 @@
       "side": "SELL",
       "upper": 264.975616377953,
       "open": 270.2,
+      "reported": false
+    },
+    {
+      "symbol": "RDDTUSDT",
+      "tf": "1h",
+      "candle_ts": 1793808000,
+      "side": "SELL",
+      "upper": 102.87210012503903,
+      "open": 104.0,
       "reported": false
     }
   ],
