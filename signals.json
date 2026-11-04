@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.7",
-  "updated_at": 1793783028,
+  "updated_at": 1793783041,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "CARDSUSDT",
-      "tf": "15m",
-      "gap": 7.43,
-      "ts": 1793744279
-    },
     {
       "kind": "GAP",
       "symbol": "ANSEMUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 4.35,
       "ts": 1793783028
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793783041
     }
   ],
   "trades": [
@@ -1564,15 +1564,15 @@
     {
       "symbol": "ANSEMUSDT",
       "side": "SELL",
-      "entry": 0.0468,
-      "tp": 0.04563,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
+      "entry": 0.04865579446462488,
+      "tp": 0.04743939960300926,
+      "adds": 1,
+      "pele": 2,
+      "margin": 30.0,
       "lev": 20,
       "px": 0.04964,
       "pnl": -12.1368,
-      "tf": "15m"
+      "tf": "1h"
     }
   ],
   "start": 1000.0,
