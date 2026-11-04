@@ -351,37 +351,6 @@
       "order_id": "PAPER-IDOLUSDT-1793808156"
     },
     {
-      "symbol": "FOLKSUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 2.4886106729081043,
-      "qty": 241.0983,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 2.4263954060854016,
-      "tf": "4h",
-      "opened_at": 1793808290,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        2.502
-      ],
-      "steps": [
-        {
-          "px": 2.472,
-          "ts": 1793808290
-        },
-        {
-          "px": 2.497,
-          "ts": 1793809059
-        }
-      ],
-      "entry_candle_ts": 1793808000,
-      "last_leg_candle_ts": 1793809059,
-      "dry_run": true,
-      "order_id": "PAPER-FOLKSUSDT-1793808290"
-    },
-    {
       "symbol": "STANDARDUSDT",
       "side": "SELL",
       "status": "open",
@@ -3924,6 +3893,42 @@
       "closed_at": 1793812833,
       "close_px": 0.2591,
       "pnl_usdt": 100.35795936217492,
+      "close_reason": "TP50",
+      "why": "TP50"
+    },
+    {
+      "symbol": "FOLKSUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 2.4886106729081043,
+      "qty": 241.0983,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 2.4263954060854016,
+      "tf": "4h",
+      "opened_at": 1793808290,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        2.502
+      ],
+      "steps": [
+        {
+          "px": 2.472,
+          "ts": 1793808290
+        },
+        {
+          "px": 2.497,
+          "ts": 1793809059
+        }
+      ],
+      "entry_candle_ts": 1793808000,
+      "last_leg_candle_ts": 1793809059,
+      "dry_run": true,
+      "order_id": "PAPER-FOLKSUSDT-1793808290",
+      "closed_at": 1793814436,
+      "close_px": 2.422,
+      "pnl_usdt": 16.05972528364959,
       "close_reason": "TP50",
       "why": "TP50"
     }
