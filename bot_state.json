@@ -551,6 +551,31 @@
       "last_leg_candle_ts": 1793808000,
       "dry_run": true,
       "order_id": "PAPER-FARTCOINUSDT-1793808402"
+    },
+    {
+      "symbol": "STANDARDUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.2183,
+      "qty": 916.1704,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.2128425,
+      "tf": "4h",
+      "opened_at": 1793808425,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.2183,
+          "ts": 1793808425
+        }
+      ],
+      "entry_candle_ts": 1793808000,
+      "last_leg_candle_ts": 1793808000,
+      "dry_run": true,
+      "order_id": "PAPER-STANDARDUSDT-1793808425"
     }
   ],
   "trade_history": [
@@ -5612,6 +5637,15 @@
       "side": "SELL",
       "upper": 0.005369025733672409,
       "open": 0.005467,
+      "reported": false
+    },
+    {
+      "symbol": "FARTCOINUSDT",
+      "tf": "1h",
+      "candle_ts": 1793808000,
+      "side": "SELL",
+      "upper": 0.12878209455848716,
+      "open": 0.13009,
       "reported": false
     }
   ],
