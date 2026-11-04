@@ -576,6 +576,31 @@
       "last_leg_candle_ts": 1793808000,
       "dry_run": true,
       "order_id": "PAPER-STANDARDUSDT-1793808425"
+    },
+    {
+      "symbol": "MSTUUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 32.52,
+      "qty": 6.1501,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 31.707,
+      "tf": "4h",
+      "opened_at": 1793808450,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 32.52,
+          "ts": 1793808450
+        }
+      ],
+      "entry_candle_ts": 1793808000,
+      "last_leg_candle_ts": 1793808000,
+      "dry_run": true,
+      "order_id": "PAPER-MSTUUSDT-1793808450"
     }
   ],
   "trade_history": [
@@ -5646,6 +5671,15 @@
       "side": "SELL",
       "upper": 0.12878209455848716,
       "open": 0.13009,
+      "reported": false
+    },
+    {
+      "symbol": "STANDARDUSDT",
+      "tf": "4h",
+      "candle_ts": 1793808000,
+      "side": "SELL",
+      "upper": 0.21927838133242328,
+      "open": 0.2225,
       "reported": false
     }
   ],
