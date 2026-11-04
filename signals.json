@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.8",
-  "updated_at": 1793830650,
+  "updated_at": 1793830661,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "SKRUSDT",
-      "tf": "1h",
-      "gap": 1.53,
-      "ts": 1793807987
-    },
     {
       "kind": "GAP",
       "symbol": "FARTCOINUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 0.75,
       "ts": 1793830650
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793830661
     }
   ],
   "trades": [
@@ -1519,6 +1519,19 @@
       "margin": 10.0,
       "lev": 20,
       "px": 0.14581,
+      "pnl": 0.0,
+      "tf": "15m"
+    },
+    {
+      "symbol": "CHILLGUYUSDT",
+      "side": "SELL",
+      "entry": 0.009511,
+      "tp": 0.009273225,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.009511,
       "pnl": 0.0,
       "tf": "15m"
     }
