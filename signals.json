@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.8",
-  "updated_at": 1793829897,
+  "updated_at": 1793830000,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "STONKUSDT",
-      "tf": "1h",
-      "gap": 2.64,
-      "ts": 1793807960
-    },
     {
       "kind": "GAP",
       "symbol": "IDOLUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 5.12,
       "ts": 1793829897
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793830000
     }
   ],
   "trades": [
@@ -1484,19 +1484,6 @@
       "tf": "1h"
     },
     {
-      "symbol": "CLANKERUSDT",
-      "side": "SELL",
-      "entry": 21.43160544363481,
-      "tp": 20.895815307543938,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
-      "lev": 20,
-      "px": 20.6,
-      "pnl": 23.2817,
-      "tf": "4h"
-    },
-    {
       "symbol": "STANDARDUSDT",
       "side": "SELL",
       "entry": 0.22573917362822093,
@@ -1524,16 +1511,16 @@
     }
   ],
   "start": 1000.0,
-  "realized": 2312.2074,
-  "closed_n": 108,
-  "open_upnl": -5863.5016,
-  "equity": -2551.2942,
+  "realized": 2335.489,
+  "closed_n": 109,
+  "open_upnl": -5886.7833,
+  "equity": -2551.2943,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 2628.3983,
+    "profit": 2651.6799,
     "loss": -316.1909,
-    "count": 108
+    "count": 109
   }
 }
