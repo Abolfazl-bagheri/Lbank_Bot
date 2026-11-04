@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.7",
-  "updated_at": 1793761514,
+  "updated_at": 1793761671,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "BONERUSDT",
-      "tf": "1h",
-      "gap": 3.35,
-      "ts": 1793732583
-    },
     {
       "kind": "GAP",
       "symbol": "SKRUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1793761514
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793761671
     }
   ],
   "trades": [
@@ -1471,19 +1471,6 @@
       "tf": "1h"
     },
     {
-      "symbol": "LITUSDT",
-      "side": "SELL",
-      "entry": 3.291182066537825,
-      "tp": 3.2089025148743793,
-      "adds": 2,
-      "pele": 3,
-      "margin": 70.0,
-      "lev": 20,
-      "px": 3.1989,
-      "pnl": 39.2549,
-      "tf": "1h"
-    },
-    {
       "symbol": "RUNEUSDT",
       "side": "SELL",
       "entry": 0.6128,
@@ -1499,11 +1486,11 @@
     {
       "symbol": "HOMEUSDT",
       "side": "SELL",
-      "entry": 0.005503302090817097,
-      "tp": 0.00536571953854667,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
+      "entry": 0.005438563290338451,
+      "tp": 0.00530259920807999,
+      "adds": 2,
+      "pele": 3,
+      "margin": 70.0,
       "lev": 20,
       "px": 0.005391,
       "pnl": 12.2438,
@@ -1563,16 +1550,16 @@
     }
   ],
   "start": 1000.0,
-  "realized": 1964.5747,
-  "closed_n": 65,
-  "open_upnl": 43.2543,
-  "equity": 3007.829,
+  "realized": 2003.8295,
+  "closed_n": 66,
+  "open_upnl": 3.9994,
+  "equity": 3007.8289,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 1964.5747,
+    "profit": 2003.8295,
     "loss": 0,
-    "count": 65
+    "count": 66
   }
 }
