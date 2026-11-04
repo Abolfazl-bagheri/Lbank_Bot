@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.8",
-  "updated_at": 1793805525,
+  "updated_at": 1793805536,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "SHAZUSDT",
-      "tf": "15m",
-      "gap": 1.08,
-      "ts": 1793789206
-    },
     {
       "kind": "GAP",
       "symbol": "TWSTUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 2.68,
       "ts": 1793805525
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793805536
     }
   ],
   "trades": [
@@ -1560,6 +1560,19 @@
       "px": 170.63,
       "pnl": -0.6468,
       "tf": "1h"
+    },
+    {
+      "symbol": "CYPHUSDT",
+      "side": "SELL",
+      "entry": 3.044,
+      "tp": 2.9678999999999998,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 3.044,
+      "pnl": 0.0,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
