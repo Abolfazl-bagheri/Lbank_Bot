@@ -35,7 +35,7 @@ SIGNALS_FILE = os.path.join(BASE_DIR, "signals.json")
 LIVE_TOPIC = os.environ.get("LIVE_TOPIC", "lbank-gap-b0b85cee29ce").strip()
 STATE_BAK = os.path.join(BASE_DIR, "bot_state.bak")
 
-BOT_VERSION = "2.6.7"
+BOT_VERSION = "2.6.8"
 CHANGELOG = {
     "2.6.5": [
         "چارت اجباری: خط‌روند داینامیک + سقف پله با هم",
@@ -117,6 +117,7 @@ cycle_no = 0
 _last_rep_ts = 0
 cycle_counters = {"entries": 0, "adds": 0, "closes": 0, "errs": 0, "gaps": 0, "src_gate": 0, "src_spot": 0, "src_none": 0}
 paper_days: list = []
+paper_session_start: int = 0  # epoch شروع روز paper بعد از ریست ۰۳:۳۰
 _last_trade_report_ts = 0
 _last_daily_report_date = ""
 PAPER_START_BALANCE = float(os.getenv("PAPER_START_BALANCE", "1000"))
@@ -245,6 +246,8 @@ def save_state(force_remote: bool = False) -> None:
             "trade_history": trade_history[-200:],
             "pending": pending_signals[-300:],
             "paper_days": paper_days[-30:],
+            "paper_session_start": int(paper_session_start or 0),
+            "last_daily_report_date": _last_daily_report_date,
             "kline_blacklist": kline_blacklist,
             "last_trade_report_ts": _last_trade_report_ts,
             "last_daily_report_date": _last_daily_report_date,
@@ -284,6 +287,11 @@ def load_state() -> None:
         pending_signals.extend(payload.get("pending") or [])
         paper_days.clear()
         paper_days.extend(payload.get("paper_days") or [])
+        global paper_session_start
+        paper_session_start = int(payload.get("paper_session_start") or 0)
+        if payload.get("last_daily_report_date"):
+            global _last_daily_report_date
+            _last_daily_report_date = str(payload.get("last_daily_report_date") or "")
         kline_blacklist.clear()
         kline_blacklist.update(payload.get("kline_blacklist") or {})
         _last_trade_report_ts = int(payload.get("last_trade_report_ts") or 0)
@@ -405,6 +413,9 @@ def push_positions_live() -> None:
                 "next": nxt,
             })
         closed = [x for x in trade_history if x.get("status") == "closed"]
+        sess = int(paper_session_start or 0)
+        if sess:
+            closed = [x for x in closed if int(x.get("closed_at") or 0) >= sess]
         realized = sum(float(x.get("pnl_usdt") or 0) for x in closed)
         mode = "PAPER" if is_paper_mode() else ("LIVE" if trading_enabled() else "OFF")
         ev = {
@@ -1264,6 +1275,8 @@ def close_trade_record(rec: dict, px: float, reason: str) -> None:
     margin_roi = ((entry - px) / entry * 100.0 if entry else 0.0) * lev
     pnl = margin * (margin_roi / 100.0)
     rec["pnl_usdt"] = pnl
+    rec["close_reason"] = str(reason or "TP")[:24]
+    rec["why"] = str(reason or "TP")[:24]
     trade_history.append(dict(rec))
     cycle_counters["closes"] = cycle_counters.get("closes", 0) + 1
     opened = int(rec.get("opened_at") or rec.get("opened_ts") or rec["closed_at"])
@@ -1440,23 +1453,48 @@ def maybe_send_hourly_trade_report() -> None:
         pass
 
 
-def maybe_send_daily_paper_report() -> None:
-    """۰۳:۳۰ ایران: بستن mark-to-market بازها + ذخیره روز + ریست paper."""
-    global _last_daily_report_date
+def maybe_send_daily_paper_report(force: bool = False) -> None:
+    """ریست paper از ۰۳:۳۰ ایران — اگر پنجره از دست رفت، اولین سیکل بعد از ۰۳:۳۰ جبران می‌کند."""
+    global _last_daily_report_date, paper_session_start
     if not trading_enabled():
         return
     now_ir = iran_now()
-    if not (now_ir.hour == 3 and 30 <= now_ir.minute <= 44):
-        return
     day_key = now_ir.strftime("%Y-%m-%d")
-    if _last_daily_report_date == day_key:
-        return
+    # بعد از ۰۳:۳۰ امروز و هنوز برای امروز ریست نشده
+    past_reset_clock = (now_ir.hour > 3) or (now_ir.hour == 3 and now_ir.minute >= 30)
+    if not force:
+        if not past_reset_clock:
+            return
+        if _last_daily_report_date == day_key:
+            return
+    else:
+        if _last_daily_report_date == day_key:
+            return
+
+    log.info("PAPER_NIGHT_RESET starting day=%s last=%s force=%s iran=%s",
+             day_key, _last_daily_report_date, force, now_ir.strftime("%H:%M:%S"))
     _last_daily_report_date = day_key
 
-    since = int(time.time()) - 24 * 3600
-    profit, loss, net, cnt = _closed_pnl_since(since)
+    sess = int(paper_session_start or 0)
+    since = sess if sess > 0 else int(time.time()) - 24 * 3600
+    # TPهای همان session
+    tp_closed = [
+        t for t in trade_history
+        if t.get("status") == "closed"
+        and int(t.get("closed_at") or 0) >= since
+        and "NIGHT_RESET" not in str(t.get("why") or "")
+    ]
+    # close_trade_record doesn't store why on rec - check reason field we should add
+    tp_closed = [
+        t for t in trade_history
+        if t.get("status") == "closed" and int(t.get("closed_at") or 0) >= since
+        and str(t.get("close_reason") or t.get("why") or "") != "NIGHT_RESET"
+    ]
+    profit = sum(float(t.get("pnl_usdt") or 0) for t in tp_closed if float(t.get("pnl_usdt") or 0) > 0)
+    loss_tp = sum(float(t.get("pnl_usdt") or 0) for t in tp_closed if float(t.get("pnl_usdt") or 0) < 0)
+    cnt = len(tp_closed)
 
-    # بستن همه پوزیشن‌های باز با قیمت لحظه‌ای (برای تاریخچه و صفحه وب)
+    refresh_futures_map()
     reset_pnls = []
     reset_rows = []
     for rec in list(open_trades):
@@ -1468,6 +1506,10 @@ def maybe_send_daily_paper_report() -> None:
             continue
         pnl_before, roi_before = _sell_upnl(rec, float(px))
         close_trade_record(rec, float(px), "NIGHT_RESET")
+        # stamp reason on last history item
+        if trade_history and trade_history[-1].get("symbol") == sym:
+            trade_history[-1]["close_reason"] = "NIGHT_RESET"
+            trade_history[-1]["why"] = "NIGHT_RESET"
         reset_pnls.append(float(pnl_before))
         reset_rows.append({
             "symbol": sym,
@@ -1482,13 +1524,32 @@ def maybe_send_daily_paper_report() -> None:
 
     unrealized_closed = sum(reset_pnls)
     open_trades[:] = [x for x in open_trades if x.get("status") == "open"]
-    day_net = float(profit) + float(unrealized_closed)
-    balance = PAPER_START_BALANCE + sum(
-        float(x.get("pnl_usdt") or 0) for x in trade_history if x.get("status") == "closed"
-    )
+    day_net = float(profit) + float(loss_tp) + float(unrealized_closed)
+    balance_before = float(PAPER_START_BALANCE) + float(profit) + float(loss_tp) + float(unrealized_closed)
     mode = "PAPER" if is_paper_mode() else "LIVE"
 
-    # ntfy: خلاصه ریست برای صفحه
+    # گزارش تلگرام — اجباری
+    lines = [
+        f"🌙 <b>ریست روزانه paper</b> · {day_key}",
+        f"⏰ {now_ir.strftime('%H:%M')} ایران",
+        "────────",
+        f"🟢 سود TP: <b>{profit:+.2f}U</b> ({cnt} معامله)",
+        f"🔴 ضرر TP: <b>{loss_tp:+.2f}U</b>",
+        f"📦 بستن بازها (ریست): <b>{unrealized_closed:+.2f}U</b> ({len(reset_rows)} پوزیشن)",
+        f"📊 <b>برایند روز: {day_net:+.2f}U</b>",
+        f"💼 قبل ریست ≈ <b>{balance_before:.2f}U</b>",
+        f"♻️ بعد ریست → <b>{PAPER_START_BALANCE:.0f}U</b>",
+    ]
+    if reset_rows:
+        lines.append("────────")
+        lines.append("<b>بسته با ریست:</b>")
+        for r in sorted(reset_rows, key=lambda x: x["pnl"])[:15]:
+            mark = "🟢" if r["pnl"] >= 0 else "🔴"
+            lines.append(f"{mark} {r['symbol']} {r['pnl']:+.2f}U · پله {r['steps']}")
+        if len(reset_rows) > 15:
+            lines.append(f"… و {len(reset_rows)-15} مورد دیگر")
+    send_telegram_text("\n".join(lines))
+
     try:
         push_live({
             "t": "reset",
@@ -1497,23 +1558,23 @@ def maybe_send_daily_paper_report() -> None:
             "mode": mode,
             "start": float(PAPER_START_BALANCE),
             "tp_profit": round(float(profit), 4),
+            "tp_loss": round(float(loss_tp), 4),
             "tp_trades": int(cnt),
             "reset_pnl": round(float(unrealized_closed), 4),
             "reset_trades": len(reset_rows),
             "net": round(float(day_net), 4),
-            "balance_before": round(float(balance), 4),
+            "balance_before": round(float(balance_before), 4),
             "closes": reset_rows[:40],
         })
     except Exception:
         pass
 
     try:
-        day_from = int(time.time()) - 24 * 3600
         paper_days.append({
-            "from": day_from,
+            "from": int(since),
             "to": int(time.time()),
             "start": float(PAPER_START_BALANCE),
-            "realized": round(float(profit), 4),
+            "realized": round(float(profit) + float(loss_tp), 4),
             "unrealized_closed": round(float(unrealized_closed), 4),
             "net": round(float(day_net), 4),
             "trades": int(cnt) + len(reset_rows),
@@ -1523,16 +1584,16 @@ def maybe_send_daily_paper_report() -> None:
         paper_days[:] = paper_days[-30:]
         push_days_live()
     except Exception as e:
-        log.debug("paper_days: %s", e)
+        log.warning("paper_days: %s", e)
 
     if is_paper_mode():
         open_trades.clear()
-        # history را نگه می‌داریم تا صفحه وب کلوزها را ببیند؛ فقط کوتاه می‌کنیم
-        if len(trade_history) > 400:
-            del trade_history[:-400]
+        paper_session_start = int(time.time())
+        if len(trade_history) > 500:
+            del trade_history[:-500]
         log.info(
-            "PAPER_NIGHT_RESET day=%s tp=%+.2f (%d) reset=%+.2f (%d) net=%+.2f",
-            day_key, profit, cnt, unrealized_closed, len(reset_rows), day_net,
+            "PAPER_NIGHT_RESET DONE day=%s tp=%+.2f/%+.2f reset=%+.2f net=%+.2f session=%s",
+            day_key, profit, loss_tp, unrealized_closed, day_net, paper_session_start,
         )
     push_positions_live()
     save_state(force_remote=True)
@@ -1840,6 +1901,10 @@ async def main() -> None:
         log.error("TELEGRAM_TOKEN / CHAT_ID missing")
         return
     send_telegram_text(format_startup_message())
+    try:
+        maybe_send_daily_paper_report(force=False)  # جبران ریست ازدست‌رفته
+    except Exception as e:
+        log.warning("startup reset check: %s", e)
     mode_code = {"paper": 1, "live": 2}.get((TRADE_MODE or "off").lower(), 0)
     log.info(
         "started v%s mode_code=%s trading=%s is_paper=%s auto=%s",
