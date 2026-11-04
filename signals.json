@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.7",
-  "updated_at": 1793785930,
+  "updated_at": 1793785952,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "ANSEMUSDT",
-      "tf": "15m",
-      "gap": 3.21,
-      "ts": 1793746135
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1395,13 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1793785930
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793785952
     }
   ],
   "trades": [
@@ -1510,19 +1510,6 @@
       "tf": "15m"
     },
     {
-      "symbol": "CLANKERUSDT",
-      "side": "SELL",
-      "entry": 14.92864279361992,
-      "tp": 14.555426723779421,
-      "adds": 2,
-      "pele": 3,
-      "margin": 70.0,
-      "lev": 20,
-      "px": 14.54,
-      "pnl": 36.4467,
-      "tf": "4h"
-    },
-    {
       "symbol": "BMTUSDT",
       "side": "SELL",
       "entry": 0.029299809221345202,
@@ -1564,11 +1551,11 @@
     {
       "symbol": "ANSEMUSDT",
       "side": "SELL",
-      "entry": 0.04797104559671528,
-      "tp": 0.046771769456797396,
-      "adds": 2,
-      "pele": 3,
-      "margin": 70.0,
+      "entry": 0.04799181340845644,
+      "tp": 0.046792018073245026,
+      "adds": 3,
+      "pele": 4,
+      "margin": 150.0,
       "lev": 20,
       "px": 0.04801,
       "pnl": -1.1369,
@@ -1589,16 +1576,16 @@
     }
   ],
   "start": 1000.0,
-  "realized": 2009.6445,
-  "closed_n": 67,
-  "open_upnl": -200.8984,
+  "realized": 2046.0912,
+  "closed_n": 68,
+  "open_upnl": -237.3451,
   "equity": 2808.7461,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 2009.6445,
+    "profit": 2046.0912,
     "loss": 0,
-    "count": 67
+    "count": 68
   }
 }
