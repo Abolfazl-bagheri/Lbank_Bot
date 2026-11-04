@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.8",
-  "updated_at": 1793823031,
+  "updated_at": 1793823045,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "MUBARAKUSDT",
-      "tf": "15m",
-      "gap": 1.14,
-      "ts": 1793806233
-    },
     {
       "kind": "GAP",
       "symbol": "SKRUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1793823031
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793823045
     }
   ],
   "trades": [
@@ -1471,19 +1471,6 @@
       "tf": "15m"
     },
     {
-      "symbol": "RDDTUSDT",
-      "side": "SELL",
-      "entry": 103.57543190951651,
-      "tp": 100.98604611177859,
-      "adds": 3,
-      "pele": 4,
-      "margin": 150.0,
-      "lev": 20,
-      "px": 100.88,
-      "pnl": 78.0716,
-      "tf": "1h"
-    },
-    {
       "symbol": "BKNGUSDT",
       "side": "SELL",
       "entry": 172.13931274692996,
@@ -1508,19 +1495,6 @@
       "px": 23.26,
       "pnl": -51.1878,
       "tf": "4h"
-    },
-    {
-      "symbol": "IDOLUSDT",
-      "side": "SELL",
-      "entry": 0.023493,
-      "tp": 0.022905675,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.022068,
-      "pnl": 12.1313,
-      "tf": "1h"
     },
     {
       "symbol": "STANDARDUSDT",
@@ -1576,16 +1550,16 @@
     }
   ],
   "start": 1000.0,
-  "realized": 2168.0094,
-  "closed_n": 104,
-  "open_upnl": -1225.5759,
-  "equity": 1942.4335,
+  "realized": 2258.2122,
+  "closed_n": 106,
+  "open_upnl": -1315.7788,
+  "equity": 1942.4334,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 2484.2003,
+    "profit": 2574.4032,
     "loss": -316.1909,
-    "count": 104
+    "count": 106
   }
 }
