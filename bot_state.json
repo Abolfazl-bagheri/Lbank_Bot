@@ -115,24 +115,28 @@
       "symbol": "SXTUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.009579,
-      "qty": 20879.0062,
-      "margin": 10.0,
+      "entry": 0.009808874922415885,
+      "qty": 61169.094800000006,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.009339525000000001,
+      "tp_price": 0.009563653049355489,
       "tf": "15m",
       "opened_at": 1793803768,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 0.009579,
           "ts": 1793803768
+        },
+        {
+          "px": 0.009928,
+          "ts": 1793804532
         }
       ],
       "entry_candle_ts": 1793803500,
-      "last_leg_candle_ts": 1793803500,
+      "last_leg_candle_ts": 1793804400,
       "dry_run": true,
       "order_id": "PAPER-SXTUSDT-1793803768"
     },
@@ -3408,26 +3412,6 @@
       "side": "SELL"
     },
     {
-      "symbol": "ESPORTSUSDT",
-      "tf": "1h",
-      "candle_ts": 1793545200,
-      "side": "SELL",
-      "upper": 0.017064367309206588,
-      "open": 0.01725,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "MELANIAUSDT",
-      "tf": "1h",
-      "candle_ts": 1793545200,
-      "side": "SELL",
-      "upper": 0.07816528525099108,
-      "open": 0.07982,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "LYNUSDT",
       "tf": "15m",
       "candle_ts": 1793550600,
@@ -4721,7 +4705,8 @@
       "side": "SELL",
       "upper": 0.008768970543071566,
       "open": 0.00893,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "SSPCUSDT",
@@ -4760,7 +4745,18 @@
       "side": "SELL",
       "upper": 0.009372616691221337,
       "open": 0.009739,
-      "reported": false
+      "reported": true,
+      "filled": false
+    },
+    {
+      "symbol": "APPUSDT",
+      "tf": "15m",
+      "candle_ts": 1793803500,
+      "side": "SELL",
+      "upper": 258.1620492314099,
+      "open": 261.6,
+      "reported": true,
+      "filled": false
     }
   ],
   "paper_days": [
@@ -4852,9 +4848,13 @@
     "CAPETHUSDT": 1793838855,
     "O1USDT": 1793840683,
     "DRVUSDT": 1793842410,
-    "QUACKAIUSDT": 1793843418
+    "QUACKAIUSDT": 1793843418,
+    "1000WOJAKUSDT": 1793847041,
+    "1000SATSUSDT": 1793847077,
+    "NEIRO1USDT": 1793847079,
+    "CZUSDT": 1793847088
   },
-  "last_trade_report_ts": 1793802902,
+  "last_trade_report_ts": 1793803899,
   "last_known_version": "2.6.8",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
