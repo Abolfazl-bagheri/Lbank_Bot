@@ -146,24 +146,30 @@
       "symbol": "RIVNUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 14.18,
-      "qty": 14.1044,
-      "margin": 10.0,
+      "entry": 14.23323319471758,
+      "qty": 42.1549,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 13.8255,
+      "tp_price": 13.877402364849639,
       "tf": "15m",
       "opened_at": 1793802868,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        14.301
+      ],
       "steps": [
         {
           "px": 14.18,
           "ts": 1793802868
+        },
+        {
+          "px": 14.26,
+          "ts": 1793803759
         }
       ],
       "entry_candle_ts": 1793802600,
-      "last_leg_candle_ts": 1793802600,
+      "last_leg_candle_ts": 1793803759,
       "dry_run": true,
       "order_id": "PAPER-RIVNUSDT-1793802868"
     },
@@ -4919,6 +4925,15 @@
       "upper": 22.987616395883304,
       "open": 23.289,
       "reported": false
+    },
+    {
+      "symbol": "RDDTUSDT",
+      "tf": "15m",
+      "candle_ts": 1793803500,
+      "side": "SELL",
+      "upper": 100.65247883287319,
+      "open": 101.76,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -5009,7 +5024,11 @@
     "STONKBROKERUSDT": 1793836099,
     "CAPETHUSDT": 1793838855,
     "DRVUSDT": 1793842313,
-    "QUACKAIUSDT": 1793843367
+    "QUACKAIUSDT": 1793843367,
+    "1000WOJAKUSDT": 1793846928,
+    "1000SATSUSDT": 1793846944,
+    "NEIRO1USDT": 1793846953,
+    "CZUSDT": 1793846954
   },
   "last_trade_report_ts": 1793802770,
   "last_known_version": "2.6.8",
