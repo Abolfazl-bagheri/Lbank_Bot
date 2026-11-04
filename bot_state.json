@@ -460,24 +460,30 @@
       "symbol": "ATHUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.005296,
-      "qty": 37764.3505,
-      "margin": 10.0,
+      "entry": 0.005251816458107568,
+      "qty": 114246.1861,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.0051636,
+      "tp_price": 0.005120521046654878,
       "tf": "1h",
       "opened_at": 1793783146,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.005238
+      ],
       "steps": [
         {
           "px": 0.005296,
           "ts": 1793783146
+        },
+        {
+          "px": 0.00523,
+          "ts": 1793785956
         }
       ],
       "entry_candle_ts": 1793782800,
-      "last_leg_candle_ts": 1793782800,
+      "last_leg_candle_ts": 1793785956,
       "dry_run": true,
       "order_id": "PAPER-ATHUSDT-1793783146"
     }
