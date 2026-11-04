@@ -257,6 +257,31 @@
       "last_leg_candle_ts": 1793806200,
       "dry_run": true,
       "order_id": "PAPER-CARDSUSDT-1793806494"
+    },
+    {
+      "symbol": "YOFCUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 14.6,
+      "qty": 13.6986,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 14.235,
+      "tf": "15m",
+      "opened_at": 1793807309,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 14.6,
+          "ts": 1793807309
+        }
+      ],
+      "entry_candle_ts": 1793807100,
+      "last_leg_candle_ts": 1793807100,
+      "dry_run": true,
+      "order_id": "PAPER-YOFCUSDT-1793807309"
     }
   ],
   "trade_history": [
@@ -4977,7 +5002,8 @@
       "side": "SELL",
       "upper": 0.2801832837489031,
       "open": 0.2831,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CARDSUSDT",
@@ -4986,7 +5012,8 @@
       "side": "SELL",
       "upper": 0.27794355805585313,
       "open": 0.28322,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -5061,7 +5088,6 @@
     "POETUSDT": 1793794891,
     "KOPNUSDT": 1793798527,
     "KNTQUSDT": 1793801068,
-    "OSCRUSDT": 1793804847,
     "AINBSCUSDT": 1793805623,
     "RIOTUSDT": 1793808427,
     "HOTUSDT": 1793808578,
