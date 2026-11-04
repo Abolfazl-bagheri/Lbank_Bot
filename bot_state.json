@@ -396,6 +396,31 @@
       "last_leg_candle_ts": 1793764800,
       "dry_run": true,
       "order_id": "PAPER-SHEINUSDT-1793761503"
+    },
+    {
+      "symbol": "USELESSUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.13452,
+      "qty": 1486.7678,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.131157,
+      "tf": "15m",
+      "opened_at": 1793768597,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.13452,
+          "ts": 1793768597
+        }
+      ],
+      "entry_candle_ts": 1793768400,
+      "last_leg_candle_ts": 1793768400,
+      "dry_run": true,
+      "order_id": "PAPER-USELESSUSDT-1793768597"
     }
   ],
   "trade_history": [
@@ -4204,6 +4229,15 @@
       "upper": 0.028217692098858094,
       "open": 0.02904,
       "reported": false
+    },
+    {
+      "symbol": "SHEINUSDT",
+      "tf": "4h",
+      "candle_ts": 1793764800,
+      "side": "SELL",
+      "upper": 4.809238234723951,
+      "open": 4.877,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -4286,9 +4320,12 @@
     "CZUSDT": 1793803169,
     "OSCRUSDT": 1793804847,
     "AINBSCUSDT": 1793805623,
-    "RIOTUSDT": 1793808353
+    "RIOTUSDT": 1793808427,
+    "HOTUSDT": 1793808578,
+    "NEXUSDT": 1793808585,
+    "1000000BABYDOGEUSDT": 1793808612
   },
-  "last_trade_report_ts": 1793763473,
+  "last_trade_report_ts": 1793767111,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.7",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
