@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.8",
-  "updated_at": 1793808312,
+  "updated_at": 1793808326,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1793801829
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 1.1,
       "ts": 1793808312
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793808326
     }
   ],
   "trades": [
@@ -1473,15 +1473,15 @@
     {
       "symbol": "APPUSDT",
       "side": "SELL",
-      "entry": 260.97,
-      "tp": 254.44575000000003,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
+      "entry": 266.0768150355065,
+      "tp": 259.4248946596189,
+      "adds": 2,
+      "pele": 3,
+      "margin": 70.0,
       "lev": 20,
       "px": 270.04,
-      "pnl": -20.853,
-      "tf": "15m"
+      "pnl": -20.8528,
+      "tf": "1h"
     },
     {
       "symbol": "DKNGUSDT",
@@ -1630,8 +1630,8 @@
   "start": 1000.0,
   "realized": 1941.5243,
   "closed_n": 94,
-  "open_upnl": -206.0853,
-  "equity": 2735.439,
+  "open_upnl": -206.0851,
+  "equity": 2735.4392,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
