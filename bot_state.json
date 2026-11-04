@@ -184,35 +184,6 @@
       "order_id": "PAPER-APPUSDT-1793803630"
     },
     {
-      "symbol": "HIMSUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 28.256512826067507,
-      "qty": 21.234099999999998,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 27.550100005415818,
-      "tf": "1h",
-      "opened_at": 1793803664,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 28.35,
-          "ts": 1793803664
-        },
-        {
-          "px": 28.21,
-          "ts": 1793804773
-        }
-      ],
-      "entry_candle_ts": 1793803500,
-      "last_leg_candle_ts": 1793804400,
-      "dry_run": true,
-      "order_id": "PAPER-HIMSUSDT-1793803664"
-    },
-    {
       "symbol": "DKNGUSDT",
       "side": "SELL",
       "status": "open",
@@ -278,24 +249,30 @@
       "symbol": "BKNGUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 170.08,
-      "qty": 1.1759,
-      "margin": 10.0,
+      "entry": 169.7797325976231,
+      "qty": 3.534,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 165.828,
+      "tp_price": 165.53523928268254,
       "tf": "1h",
       "opened_at": 1793804738,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        170.08
+      ],
       "steps": [
         {
           "px": 170.08,
           "ts": 1793804738
+        },
+        {
+          "px": 169.63,
+          "ts": 1793806432
         }
       ],
       "entry_candle_ts": 1793804400,
-      "last_leg_candle_ts": 1793804400,
+      "last_leg_candle_ts": 1793806432,
       "dry_run": true,
       "order_id": "PAPER-BKNGUSDT-1793804738"
     },
@@ -3546,6 +3523,40 @@
       "closed_at": 1793806427,
       "close_px": 0.003022,
       "pnl_usdt": 9.036334913112158,
+      "close_reason": "TP50",
+      "why": "TP50"
+    },
+    {
+      "symbol": "HIMSUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 28.256512826067507,
+      "qty": 21.234099999999998,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 27.550100005415818,
+      "tf": "1h",
+      "opened_at": 1793803664,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 28.35,
+          "ts": 1793803664
+        },
+        {
+          "px": 28.21,
+          "ts": 1793804773
+        }
+      ],
+      "entry_candle_ts": 1793803500,
+      "last_leg_candle_ts": 1793804400,
+      "dry_run": true,
+      "order_id": "PAPER-HIMSUSDT-1793803664",
+      "closed_at": 1793806430,
+      "close_px": 27.47,
+      "pnl_usdt": 16.70084693554809,
       "close_reason": "TP50",
       "why": "TP50"
     }
