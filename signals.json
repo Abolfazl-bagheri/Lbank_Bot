@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.8",
-  "updated_at": 1793797549,
+  "updated_at": 1793797556,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "SHEINUSDT",
-      "tf": "4h",
-      "gap": 2.85,
-      "ts": 1793764024
-    },
     {
       "kind": "GAP",
       "symbol": "SQQQUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 1.69,
       "ts": 1793797549
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793797556
     }
   ],
   "trades": [
@@ -1430,6 +1430,19 @@
       "px": 10.262,
       "pnl": -1.0543,
       "tf": "15m"
+    },
+    {
+      "symbol": "ZZZUSDT",
+      "side": "SELL",
+      "entry": 0.00892,
+      "tp": 0.008697,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.00892,
+      "pnl": 0.0,
+      "tf": "1h"
     }
   ],
   "start": 1000.0,
