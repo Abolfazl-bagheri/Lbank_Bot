@@ -383,31 +383,6 @@
       "order_id": "PAPER-CATEUSDT-1793806352"
     },
     {
-      "symbol": "YOFCUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 14.61,
-      "qty": 13.6893,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 14.24475,
-      "tf": "15m",
-      "opened_at": 1793807339,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 14.61,
-          "ts": 1793807339
-        }
-      ],
-      "entry_candle_ts": 1793807100,
-      "last_leg_candle_ts": 1793807100,
-      "dry_run": true,
-      "order_id": "PAPER-YOFCUSDT-1793807339"
-    },
-    {
       "symbol": "CLANKERUSDT",
       "side": "SELL",
       "status": "open",
@@ -587,23 +562,29 @@
       "side": "SELL",
       "status": "open",
       "entry": 32.52,
-      "qty": 6.1501,
-      "margin": 10.0,
+      "qty": 18.450200000000002,
+      "margin": 30.0,
       "leverage": 20,
       "tp_price": 31.707,
       "tf": "4h",
       "opened_at": 1793808450,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        32.61
+      ],
       "steps": [
         {
           "px": 32.52,
           "ts": 1793808450
+        },
+        {
+          "px": 32.52,
+          "ts": 1793808594
         }
       ],
       "entry_candle_ts": 1793808000,
-      "last_leg_candle_ts": 1793808000,
+      "last_leg_candle_ts": 1793808594,
       "dry_run": true,
       "order_id": "PAPER-MSTUUSDT-1793808450"
     }
@@ -3828,6 +3809,36 @@
       "closed_at": 1793806446,
       "close_px": 18.03,
       "pnl_usdt": 6.752411575562691,
+      "close_reason": "TP50",
+      "why": "TP50"
+    },
+    {
+      "symbol": "YOFCUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 14.61,
+      "qty": 13.6893,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 14.24475,
+      "tf": "15m",
+      "opened_at": 1793807339,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 14.61,
+          "ts": 1793807339
+        }
+      ],
+      "entry_candle_ts": 1793807100,
+      "last_leg_candle_ts": 1793807100,
+      "dry_run": true,
+      "order_id": "PAPER-YOFCUSDT-1793807339",
+      "closed_at": 1793808590,
+      "close_px": 14.24,
+      "pnl_usdt": 5.065023956194377,
       "close_reason": "TP50",
       "why": "TP50"
     }
