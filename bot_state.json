@@ -331,6 +331,31 @@
       "last_leg_candle_ts": 1793830500,
       "dry_run": true,
       "order_id": "PAPER-BATUSDT-1793830613"
+    },
+    {
+      "symbol": "CHILLGUYUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.009511,
+      "qty": 21028.283,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.009273225,
+      "tf": "15m",
+      "opened_at": 1793830652,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.009511,
+          "ts": 1793830652
+        }
+      ],
+      "entry_candle_ts": 1793830500,
+      "last_leg_candle_ts": 1793830500,
+      "dry_run": true,
+      "order_id": "PAPER-CHILLGUYUSDT-1793830652"
     }
   ],
   "trade_history": [
@@ -6000,6 +6025,15 @@
       "side": "SELL",
       "upper": 0.10497330717491737,
       "open": 0.11078,
+      "reported": false
+    },
+    {
+      "symbol": "BATUSDT",
+      "tf": "15m",
+      "candle_ts": 1793830500,
+      "side": "SELL",
+      "upper": 0.1442536529743099,
+      "open": 0.14589,
       "reported": false
     }
   ],
