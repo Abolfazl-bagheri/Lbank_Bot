@@ -343,24 +343,28 @@
       "symbol": "BMTUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.02722,
-      "qty": 7347.5386,
-      "margin": 10.0,
+      "entry": 0.028451497306134003,
+      "qty": 21088.521099999998,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.0265395,
-      "tf": "15m",
+      "tp_price": 0.02774020987348065,
+      "tf": "4h",
       "opened_at": 1793751558,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 0.02722,
           "ts": 1793751558
+        },
+        {
+          "px": 0.02911,
+          "ts": 1793765082
         }
       ],
       "entry_candle_ts": 1793751300,
-      "last_leg_candle_ts": 1793751300,
+      "last_leg_candle_ts": 1793764800,
       "dry_run": true,
       "order_id": "PAPER-BMTUSDT-1793751558"
     },
@@ -4178,6 +4182,15 @@
       "open": 4.849,
       "reported": true,
       "filled": false
+    },
+    {
+      "symbol": "CLANKERUSDT",
+      "tf": "4h",
+      "candle_ts": 1793764800,
+      "side": "SELL",
+      "upper": 15.280021109225881,
+      "open": 15.74,
+      "reported": false
     }
   ],
   "paper_days": [
