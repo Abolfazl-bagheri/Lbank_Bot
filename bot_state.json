@@ -199,17 +199,18 @@
       "symbol": "DKNGUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 23.343217784417625,
-      "qty": 25.7034,
-      "margin": 30.0,
+      "entry": 23.48926195058195,
+      "qty": 59.601699999999994,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 22.759637339807185,
+      "tp_price": 22.902030401817402,
       "tf": "15m",
       "opened_at": 1793803681,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [
-        23.447
+        23.447,
+        23.684
       ],
       "steps": [
         {
@@ -219,10 +220,14 @@
         {
           "px": 23.38,
           "ts": 1793805674
+        },
+        {
+          "px": 23.6,
+          "ts": 1793808571
         }
       ],
       "entry_candle_ts": 1793803500,
-      "last_leg_candle_ts": 1793805674,
+      "last_leg_candle_ts": 1793808571,
       "dry_run": true,
       "order_id": "PAPER-DKNGUSDT-1793803681"
     },
@@ -5698,6 +5703,15 @@
       "side": "SELL",
       "upper": 102.04745397874369,
       "open": 104.0,
+      "reported": false
+    },
+    {
+      "symbol": "FARTCOINUSDT",
+      "tf": "4h",
+      "candle_ts": 1793808000,
+      "side": "SELL",
+      "upper": 0.12838305473612832,
+      "open": 0.13009,
       "reported": false
     }
   ],
