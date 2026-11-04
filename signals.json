@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.7",
-  "updated_at": 1793768622,
+  "updated_at": 1793768636,
   "signals": [
-    {
-      "kind": "HEARTBEAT",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1793737245
-    },
     {
       "kind": "GAP",
       "symbol": "CLANKERUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 1.94,
       "ts": 1793768622
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793768636
     }
   ],
   "trades": [
@@ -1558,6 +1558,19 @@
       "margin": 10.0,
       "lev": 20,
       "px": 0.13452,
+      "pnl": 0.0,
+      "tf": "15m"
+    },
+    {
+      "symbol": "CASHCATUSDT",
+      "side": "SELL",
+      "entry": 0.1135,
+      "tp": 0.1106625,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.1135,
       "pnl": 0.0,
       "tf": "15m"
     }
