@@ -262,15 +262,15 @@
       "symbol": "APPUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 330.5247988312624,
-      "qty": 1.815292,
-      "margin": 30.0,
+      "entry": 331.91763684798,
+      "qty": 4.217892,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 322.2616788604808,
-      "tf": "15m",
+      "tp_price": 323.61969592678054,
+      "tf": "1h",
       "opened_at": 1793827093,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [],
       "steps": [
         {
@@ -280,10 +280,14 @@
         {
           "px": 338.38,
           "ts": 1793828063
+        },
+        {
+          "px": 332.97,
+          "ts": 1793833352
         }
       ],
       "entry_candle_ts": 1793826900,
-      "last_leg_candle_ts": 1793827800,
+      "last_leg_candle_ts": 1793833200,
       "dry_run": true,
       "order_id": "PAPER-APPUSDT-1793827093"
     },
@@ -6016,7 +6020,8 @@
       "side": "SELL",
       "upper": 0.09331590463550968,
       "open": 0.09452,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "APPUSDT",
@@ -6055,7 +6060,8 @@
       "side": "SELL",
       "upper": 0.14408954427632284,
       "open": 0.14589,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "CHILLGUYUSDT",
@@ -6064,7 +6070,8 @@
       "side": "SELL",
       "upper": 0.009437558227754586,
       "open": 0.009539,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -6166,7 +6173,7 @@
     "UBIKUSDT": 1793873993,
     "OFCUSDT": 1793874002
   },
-  "last_trade_report_ts": 1793828160,
+  "last_trade_report_ts": 1793832614,
   "last_known_version": "2.6.8",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
