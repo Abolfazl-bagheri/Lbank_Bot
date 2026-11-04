@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.8",
-  "updated_at": 1793806502,
+  "updated_at": 1793806590,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "FOLKSUSDT",
-      "tf": "1h",
-      "gap": 2.64,
-      "ts": 1793786484
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1395,13 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1793806502
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793806590
     }
   ],
   "trades": [
@@ -1430,19 +1430,6 @@
       "px": 0.00931,
       "pnl": -8.7444,
       "tf": "1h"
-    },
-    {
-      "symbol": "AKEUSDT",
-      "side": "SELL",
-      "entry": 0.003196,
-      "tp": 0.0031161,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.002942,
-      "pnl": 15.8949,
-      "tf": "15m"
     },
     {
       "symbol": "RIVNUSDT",
@@ -1486,11 +1473,11 @@
     {
       "symbol": "BKNGUSDT",
       "side": "SELL",
-      "entry": 169.16,
-      "tp": 164.93099999999998,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
+      "entry": 169.479697192249,
+      "tp": 165.24270476244277,
+      "adds": 1,
+      "pele": 2,
+      "margin": 30.0,
       "lev": 20,
       "px": 169.64,
       "pnl": -0.5675,
@@ -1537,16 +1524,16 @@
     }
   ],
   "start": 1000.0,
-  "realized": 1908.4518,
-  "closed_n": 89,
-  "open_upnl": -57.7064,
+  "realized": 1924.3467,
+  "closed_n": 90,
+  "open_upnl": -73.6013,
   "equity": 2850.7454,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 2224.6427,
+    "profit": 2240.5376,
     "loss": -316.1909,
-    "count": 89
+    "count": 90
   }
 }
