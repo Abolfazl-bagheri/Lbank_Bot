@@ -49,15 +49,15 @@
       "symbol": "ZZZUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.009357382256129424,
-      "qty": 64120.497,
-      "margin": 30.0,
+      "entry": 0.009751721881229351,
+      "qty": 143564.3898,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 0.009123447699726188,
-      "tf": "1h",
+      "tp_price": 0.009507928834198617,
+      "tf": "15m",
       "opened_at": 1793797516,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [],
       "steps": [
         {
@@ -67,10 +67,14 @@
         {
           "px": 0.00961,
           "ts": 1793811945
+        },
+        {
+          "px": 0.01007,
+          "ts": 1793812582
         }
       ],
       "entry_candle_ts": 1793797200,
-      "last_leg_candle_ts": 1793811600,
+      "last_leg_candle_ts": 1793812500,
       "dry_run": true,
       "order_id": "PAPER-ZZZUSDT-1793797516"
     },
@@ -319,31 +323,6 @@
       "last_leg_candle_ts": 1793809935,
       "dry_run": true,
       "order_id": "PAPER-BKNGUSDT-1793804738"
-    },
-    {
-      "symbol": "STONKUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.134833,
-      "qty": 1483.3164,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.13146217500000001,
-      "tf": "15m",
-      "opened_at": 1793805565,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.134833,
-          "ts": 1793805565
-        }
-      ],
-      "entry_candle_ts": 1793805300,
-      "last_leg_candle_ts": 1793805300,
-      "dry_run": true,
-      "order_id": "PAPER-STONKUSDT-1793805565"
     },
     {
       "symbol": "CLANKERUSDT",
@@ -3887,6 +3866,36 @@
       "pnl_usdt": 19.69921636696934,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "STONKUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.134833,
+      "qty": 1483.3164,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.13146217500000001,
+      "tf": "15m",
+      "opened_at": 1793805565,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.134833,
+          "ts": 1793805565
+        }
+      ],
+      "entry_candle_ts": 1793805300,
+      "last_leg_candle_ts": 1793805300,
+      "dry_run": true,
+      "order_id": "PAPER-STONKUSDT-1793805565",
+      "closed_at": 1793812118,
+      "close_px": 0.130756,
+      "pnl_usdt": 6.047480957925725,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -5778,7 +5787,6 @@
     "BIO1USDT": 1793611218,
     "TRUMPSOLUSDT": 1793630182,
     "UP2USDT": 1793631162,
-    "BEMUSDT": 1793633776,
     "SMRUSDT": 1793650143,
     "TOADUSDT": 1793657184,
     "CRWDUSDT": 1793658035,
@@ -5823,7 +5831,7 @@
     "METEORAUSDT": 1793852241,
     "AMCUSDT": 1793853303
   },
-  "last_trade_report_ts": 1793811015,
+  "last_trade_report_ts": 1793812133,
   "last_known_version": "2.6.8",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
