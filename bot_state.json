@@ -327,37 +327,6 @@
       "order_id": "PAPER-STONKUSDT-1793805565"
     },
     {
-      "symbol": "CARDSUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.2841,
-      "qty": 2111.9323999999997,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.2769975,
-      "tf": "15m",
-      "opened_at": 1793806322,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        0.28453
-      ],
-      "steps": [
-        {
-          "px": 0.2841,
-          "ts": 1793806322
-        },
-        {
-          "px": 0.2841,
-          "ts": 1793806447
-        }
-      ],
-      "entry_candle_ts": 1793806200,
-      "last_leg_candle_ts": 1793806447,
-      "dry_run": true,
-      "order_id": "PAPER-CARDSUSDT-1793806322"
-    },
-    {
       "symbol": "CATEUSDT",
       "side": "SELL",
       "status": "open",
@@ -3841,6 +3810,42 @@
       "pnl_usdt": 5.065023956194377,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "CARDSUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.2841,
+      "qty": 2111.9323999999997,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 0.2769975,
+      "tf": "15m",
+      "opened_at": 1793806322,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.28453
+      ],
+      "steps": [
+        {
+          "px": 0.2841,
+          "ts": 1793806322
+        },
+        {
+          "px": 0.2841,
+          "ts": 1793806447
+        }
+      ],
+      "entry_candle_ts": 1793806200,
+      "last_leg_candle_ts": 1793806447,
+      "dry_run": true,
+      "order_id": "PAPER-CARDSUSDT-1793806322",
+      "closed_at": 1793809054,
+      "close_px": 0.2745,
+      "pnl_usdt": 20.274551214361132,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -5799,10 +5804,6 @@
     "KOPNUSDT": 1793798527,
     "KNTQUSDT": 1793801068,
     "AINBSCUSDT": 1793805623,
-    "RIOTUSDT": 1793808427,
-    "HOTUSDT": 1793808578,
-    "NEXUSDT": 1793808585,
-    "1000000BABYDOGEUSDT": 1793808612,
     "AI1USDT": 1793821025,
     "WUXIBIOUSDT": 1793821810,
     "FLOCK1USDT": 1793821836,
@@ -5819,9 +5820,11 @@
     "NEIRO1USDT": 1793846953,
     "CZUSDT": 1793846954,
     "OSCRUSDT": 1793850616,
-    "SXTUSDT": 1793851456
+    "SXTUSDT": 1793851456,
+    "RIOTUSDT": 1793852211,
+    "METEORAUSDT": 1793852241
   },
-  "last_trade_report_ts": 1793807438,
+  "last_trade_report_ts": 1793808623,
   "last_known_version": "2.6.8",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
