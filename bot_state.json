@@ -402,52 +402,33 @@
       "order_id": "PAPER-IDOLUSDT-1793808156"
     },
     {
-      "symbol": "SXTUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.009648,
-      "qty": 20729.6849,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.0094068,
-      "tf": "1h",
-      "opened_at": 1793808174,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.009648,
-          "ts": 1793808174
-        }
-      ],
-      "entry_candle_ts": 1793808000,
-      "last_leg_candle_ts": 1793808000,
-      "dry_run": true,
-      "order_id": "PAPER-SXTUSDT-1793808174"
-    },
-    {
       "symbol": "FOLKSUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 2.472,
-      "qty": 80.9061,
-      "margin": 10.0,
+      "entry": 2.4886106729081043,
+      "qty": 241.0983,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 2.4102,
+      "tp_price": 2.4263954060854016,
       "tf": "4h",
       "opened_at": 1793808290,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        2.502
+      ],
       "steps": [
         {
           "px": 2.472,
           "ts": 1793808290
+        },
+        {
+          "px": 2.497,
+          "ts": 1793809059
         }
       ],
       "entry_candle_ts": 1793808000,
-      "last_leg_candle_ts": 1793808000,
+      "last_leg_candle_ts": 1793809059,
       "dry_run": true,
       "order_id": "PAPER-FOLKSUSDT-1793808290"
     },
@@ -3844,6 +3825,36 @@
       "closed_at": 1793809054,
       "close_px": 0.2745,
       "pnl_usdt": 20.274551214361132,
+      "close_reason": "TP50",
+      "why": "TP50"
+    },
+    {
+      "symbol": "SXTUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.009648,
+      "qty": 20729.6849,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0094068,
+      "tf": "1h",
+      "opened_at": 1793808174,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.009648,
+          "ts": 1793808174
+        }
+      ],
+      "entry_candle_ts": 1793808000,
+      "last_leg_candle_ts": 1793808000,
+      "dry_run": true,
+      "order_id": "PAPER-SXTUSDT-1793808174",
+      "closed_at": 1793809058,
+      "close_px": 0.009289,
+      "pnl_usdt": 7.441956882255388,
       "close_reason": "TP50",
       "why": "TP50"
     }
