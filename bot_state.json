@@ -318,23 +318,29 @@
       "side": "SELL",
       "status": "open",
       "entry": 0.14581,
-      "qty": 1371.648,
-      "margin": 10.0,
+      "qty": 4114.9441,
+      "margin": 30.0,
       "leverage": 20,
       "tp_price": 0.14216474999999998,
       "tf": "15m",
       "opened_at": 1793830613,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.14639
+      ],
       "steps": [
         {
           "px": 0.14581,
           "ts": 1793830613
+        },
+        {
+          "px": 0.14581,
+          "ts": 1793830725
         }
       ],
       "entry_candle_ts": 1793830500,
-      "last_leg_candle_ts": 1793830500,
+      "last_leg_candle_ts": 1793830725,
       "dry_run": true,
       "order_id": "PAPER-BATUSDT-1793830613"
     },
