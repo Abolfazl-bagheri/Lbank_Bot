@@ -1,31 +1,6 @@
 {
   "open_trades": [
     {
-      "symbol": "ZZZUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.0088,
-      "qty": 22727.2727,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.00858,
-      "tf": "1h",
-      "opened_at": 1793786751,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.0088,
-          "ts": 1793786751
-        }
-      ],
-      "entry_candle_ts": 1793786400,
-      "last_leg_candle_ts": 1793786400,
-      "dry_run": true,
-      "order_id": "PAPER-ZZZUSDT-1793786751"
-    },
-    {
       "symbol": "ELSAUSDT",
       "side": "SELL",
       "status": "open",
@@ -49,31 +24,6 @@
       "last_leg_candle_ts": 1793786400,
       "dry_run": true,
       "order_id": "PAPER-ELSAUSDT-1793786767"
-    },
-    {
-      "symbol": "BEAMXUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.004311,
-      "qty": 46392.9483,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.004203225,
-      "tf": "15m",
-      "opened_at": 1793789409,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.004311,
-          "ts": 1793789409
-        }
-      ],
-      "entry_candle_ts": 1793789100,
-      "last_leg_candle_ts": 1793789100,
-      "dry_run": true,
-      "order_id": "PAPER-BEAMXUSDT-1793789409"
     }
   ],
   "trade_history": [
@@ -2918,6 +2868,66 @@
       "pnl_usdt": 5.7779612051176095,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "ZZZUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.0088,
+      "qty": 22727.2727,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.00858,
+      "tf": "1h",
+      "opened_at": 1793786751,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.0088,
+          "ts": 1793786751
+        }
+      ],
+      "entry_candle_ts": 1793786400,
+      "last_leg_candle_ts": 1793786400,
+      "dry_run": true,
+      "order_id": "PAPER-ZZZUSDT-1793786751",
+      "closed_at": 1793789429,
+      "close_px": 0.00842,
+      "pnl_usdt": 8.636363636363638,
+      "close_reason": "TP50",
+      "why": "TP50"
+    },
+    {
+      "symbol": "BEAMXUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.004311,
+      "qty": 46392.9483,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.004203225,
+      "tf": "15m",
+      "opened_at": 1793789409,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.004311,
+          "ts": 1793789409
+        }
+      ],
+      "entry_candle_ts": 1793789100,
+      "last_leg_candle_ts": 1793789100,
+      "dry_run": true,
+      "order_id": "PAPER-BEAMXUSDT-1793789409",
+      "closed_at": 1793791137,
+      "close_px": 0.004198,
+      "pnl_usdt": 5.2424031547204555,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -3130,36 +3140,6 @@
       "tf": "15m",
       "candle_ts": 1793430900,
       "side": "SELL"
-    },
-    {
-      "symbol": "SUPERUSDT",
-      "tf": "1h",
-      "candle_ts": 1793530800,
-      "side": "SELL",
-      "upper": 0.17986308069005344,
-      "open": 0.18242,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "FONEUSDT",
-      "tf": "1h",
-      "candle_ts": 1793530800,
-      "side": "SELL",
-      "upper": 0.00198907436253152,
-      "open": 0.002109,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "AVAAIUSDT",
-      "tf": "1h",
-      "candle_ts": 1793530800,
-      "side": "SELL",
-      "upper": 0.0070799275119848345,
-      "open": 0.007179,
-      "reported": true,
-      "filled": true
     },
     {
       "symbol": "APRUSDT",
@@ -4464,6 +4444,16 @@
       "upper": 0.07290544189723842,
       "open": 0.07371,
       "reported": false
+    },
+    {
+      "symbol": "BEAMXUSDT",
+      "tf": "15m",
+      "candle_ts": 1793789100,
+      "side": "SELL",
+      "upper": 0.004304817768567717,
+      "open": 0.004361,
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -4562,7 +4552,7 @@
     "UBIKUSDT": 1793829115,
     "AEHRUSDT": 1793830009
   },
-  "last_trade_report_ts": 1793788519,
+  "last_trade_report_ts": 1793789434,
   "last_known_version": "2.6.8",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
