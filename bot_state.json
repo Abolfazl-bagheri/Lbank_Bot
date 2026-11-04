@@ -230,15 +230,15 @@
       "symbol": "RDDTUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 101.57,
-      "qty": 5.9073,
-      "margin": 30.0,
+      "entry": 102.77068386357963,
+      "qty": 13.6226,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 99.03075,
-      "tf": "15m",
+      "tp_price": 100.20141676699014,
+      "tf": "1h",
       "opened_at": 1793803712,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [
         101.86
       ],
@@ -250,10 +250,14 @@
         {
           "px": 101.57,
           "ts": 1793803783
+        },
+        {
+          "px": 103.69,
+          "ts": 1793808362
         }
       ],
       "entry_candle_ts": 1793803500,
-      "last_leg_candle_ts": 1793803783,
+      "last_leg_candle_ts": 1793808000,
       "dry_run": true,
       "order_id": "PAPER-RDDTUSDT-1793803712"
     },
@@ -5530,6 +5534,15 @@
       "candle_ts": 1793808000,
       "side": "SELL",
       "upper": 267.0665722140307,
+      "open": 270.2,
+      "reported": false
+    },
+    {
+      "symbol": "APPUSDT",
+      "tf": "4h",
+      "candle_ts": 1793808000,
+      "side": "SELL",
+      "upper": 264.975616377953,
       "open": 270.2,
       "reported": false
     }
