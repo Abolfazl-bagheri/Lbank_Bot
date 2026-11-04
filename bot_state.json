@@ -51,39 +51,6 @@
       "order_id": "PAPER-ELSAUSDT-1793786767"
     },
     {
-      "symbol": "ZZZUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.009751721881229351,
-      "qty": 143564.3898,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 0.009507928834198617,
-      "tf": "15m",
-      "opened_at": 1793797516,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.00889,
-          "ts": 1793797516
-        },
-        {
-          "px": 0.00961,
-          "ts": 1793811945
-        },
-        {
-          "px": 0.01007,
-          "ts": 1793812582
-        }
-      ],
-      "entry_candle_ts": 1793797200,
-      "last_leg_candle_ts": 1793812500,
-      "dry_run": true,
-      "order_id": "PAPER-ZZZUSDT-1793797516"
-    },
-    {
       "symbol": "CATUSDT",
       "side": "SELL",
       "status": "open",
@@ -3952,6 +3919,44 @@
       "pnl_usdt": 16.05972528364959,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "ZZZUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.009751721881229351,
+      "qty": 143564.3898,
+      "margin": 70.0,
+      "leverage": 20,
+      "tp_price": 0.009507928834198617,
+      "tf": "15m",
+      "opened_at": 1793797516,
+      "adds": 2,
+      "last_leg_margin": 40.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.00889,
+          "ts": 1793797516
+        },
+        {
+          "px": 0.00961,
+          "ts": 1793811945
+        },
+        {
+          "px": 0.01007,
+          "ts": 1793812582
+        }
+      ],
+      "entry_candle_ts": 1793797200,
+      "last_leg_candle_ts": 1793812500,
+      "dry_run": true,
+      "order_id": "PAPER-ZZZUSDT-1793797516",
+      "closed_at": 1793818182,
+      "close_px": 0.00947,
+      "pnl_usdt": 40.44522993219034,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -5876,7 +5881,6 @@
     "POETUSDT": 1793794891,
     "KOPNUSDT": 1793798527,
     "KNTQUSDT": 1793801068,
-    "AINBSCUSDT": 1793805623,
     "AI1USDT": 1793821025,
     "WUXIBIOUSDT": 1793821810,
     "FLOCK1USDT": 1793821836,
@@ -5897,9 +5901,10 @@
     "RIOTUSDT": 1793852211,
     "METEORAUSDT": 1793852241,
     "AMCUSDT": 1793853303,
-    "BEMUSDT": 1793855863
+    "BEMUSDT": 1793855863,
+    "AINBSCUSDT": 1793861206
   },
-  "last_trade_report_ts": 1793815604,
+  "last_trade_report_ts": 1793817151,
   "last_known_version": "2.6.8",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
