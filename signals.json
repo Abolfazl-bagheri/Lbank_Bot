@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.8",
-  "updated_at": 1793808289,
+  "updated_at": 1793808302,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "AKEUSDT",
-      "tf": "15m",
-      "gap": 1.78,
-      "ts": 1793801688
-    },
     {
       "kind": "SELL",
       "symbol": "CATUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "4h",
       "gap": 1.75,
       "ts": 1793808289
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793808302
     }
   ],
   "trades": [
@@ -1612,6 +1612,19 @@
       "px": 0.009648,
       "pnl": 0.0,
       "tf": "1h"
+    },
+    {
+      "symbol": "FOLKSUSDT",
+      "side": "SELL",
+      "entry": 2.472,
+      "tp": 2.4102,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 2.472,
+      "pnl": 0.0,
+      "tf": "4h"
     }
   ],
   "start": 1000.0,
