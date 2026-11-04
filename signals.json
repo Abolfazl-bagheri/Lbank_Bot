@@ -1,7 +1,7 @@
 {
   "mode": "PAPER",
   "version": "2.6.8",
-  "updated_at": 1793797630,
+  "updated_at": 1793797656,
   "signals": [
     {
       "kind": "POS",
@@ -1341,67 +1341,67 @@
       "ts": 1793796564
     },
     {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793796625
+    },
+    {
+      "kind": "GAP",
+      "symbol": "ZZZUSDT",
+      "tf": "1h",
+      "gap": 4.82,
+      "ts": 1793797025
+    },
+    {
       "kind": "GAP",
       "symbol": "JCTUSDT",
       "tf": "1h",
-      "gap": 2.75,
-      "ts": 1793797164
+      "gap": 2.87,
+      "ts": 1793797044
     },
     {
-      "kind": "SELL",
+      "kind": "GAP",
       "symbol": "SSPCUSDT",
       "tf": "15m",
-      "gap": 2.04,
-      "ts": 1793797377
+      "gap": 3.09,
+      "ts": 1793797409
     },
     {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1793797383
+      "kind": "GAP",
+      "symbol": "SOXSUSDT",
+      "tf": "15m",
+      "gap": 1.38,
+      "ts": 1793797413
     },
     {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1793797494
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1793797497
-    },
-    {
-      "kind": "HEARTBEAT",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1793797499
+      "kind": "GAP",
+      "symbol": "ZZZUSDT",
+      "tf": "1h",
+      "gap": 1.32,
+      "ts": 1793797418
     },
     {
       "kind": "SELL",
       "symbol": "ZZZUSDT",
       "tf": "1h",
-      "gap": 1.69,
-      "ts": 1793797549
+      "gap": 1.36,
+      "ts": 1793797514
     },
     {
       "kind": "POS",
       "symbol": "—",
       "tf": "—",
       "gap": 0.0,
-      "ts": 1793797556
+      "ts": 1793797520
     },
     {
       "kind": "POS",
       "symbol": "—",
       "tf": "—",
       "gap": 0.0,
-      "ts": 1793797630
+      "ts": 1793797656
     }
   ],
   "trades": [
@@ -1414,47 +1414,34 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 0.07411,
-      "pnl": -4.5812,
+      "px": 0.0743,
+      "pnl": -6.1312,
       "tf": "1h"
-    },
-    {
-      "symbol": "SSPCUSDT",
-      "side": "SELL",
-      "entry": 10.244,
-      "tp": 9.9879,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
-      "lev": 20,
-      "px": 10.262,
-      "pnl": -1.0543,
-      "tf": "15m"
     },
     {
       "symbol": "ZZZUSDT",
       "side": "SELL",
-      "entry": 0.00892,
-      "tp": 0.008697,
+      "entry": 0.00889,
+      "tp": 0.00866775,
       "adds": 0,
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.00892,
+      "px": 0.00889,
       "pnl": 0.0,
       "tf": "1h"
     }
   ],
   "start": 1000.0,
-  "realized": 1833.6758,
+  "realized": 1834.007,
   "closed_n": 87,
-  "open_upnl": -5.6355,
-  "equity": 2828.0403,
+  "open_upnl": -6.1312,
+  "equity": 2827.8758,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 2149.8668,
+    "profit": 2150.1979,
     "loss": -316.1909,
     "count": 87
   }
