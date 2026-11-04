@@ -32,35 +32,54 @@
       "order_id": "PAPER-ELSAUSDT-1793786767"
     },
     {
-      "symbol": "SSPCUSDT",
+      "symbol": "MUSEBOOKUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 10.244,
-      "qty": 58.57079999999999,
-      "margin": 30.0,
+      "entry": 1.208e-05,
+      "qty": 16556291.3907,
+      "margin": 10.0,
       "leverage": 20,
-      "tp_price": 9.9879,
+      "tp_price": 1.1778e-05,
       "tf": "15m",
-      "opened_at": 1793797379,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        10.27
-      ],
+      "opened_at": 1793792873,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
       "steps": [
         {
-          "px": 10.244,
-          "ts": 1793797379
-        },
+          "px": 1.208e-05,
+          "ts": 1793792873
+        }
+      ],
+      "entry_candle_ts": 1793792700,
+      "last_leg_candle_ts": 1793792700,
+      "dry_run": true,
+      "order_id": "PAPER-MUSEBOOKUSDT-1793792873"
+    },
+    {
+      "symbol": "ZZZUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.00889,
+      "qty": 22497.1879,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.00866775,
+      "tf": "1h",
+      "opened_at": 1793797516,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
         {
-          "px": 10.244,
-          "ts": 1793797490
+          "px": 0.00889,
+          "ts": 1793797516
         }
       ],
       "entry_candle_ts": 1793797200,
-      "last_leg_candle_ts": 1793797490,
+      "last_leg_candle_ts": 1793797200,
       "dry_run": true,
-      "order_id": "PAPER-SSPCUSDT-1793797379"
+      "order_id": "PAPER-ZZZUSDT-1793797516"
     }
   ],
   "trade_history": [
@@ -3025,36 +3044,6 @@
       "pnl_usdt": 11.899563318777293,
       "close_reason": "TP50",
       "why": "TP50"
-    },
-    {
-      "symbol": "MUSEBOOKUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 1.208e-05,
-      "qty": 16556291.3907,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 1.1778e-05,
-      "tf": "15m",
-      "opened_at": 1793792873,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 1.208e-05,
-          "ts": 1793792873
-        }
-      ],
-      "entry_candle_ts": 1793792700,
-      "last_leg_candle_ts": 1793792700,
-      "dry_run": true,
-      "order_id": "PAPER-MUSEBOOKUSDT-1793792873",
-      "closed_at": 1793797487,
-      "close_px": 1.173e-05,
-      "pnl_usdt": 5.794701986754969,
-      "close_reason": "TP50",
-      "why": "TP50"
     }
   ],
   "pending": [
@@ -4594,15 +4583,6 @@
       "open": 0.005472,
       "reported": true,
       "filled": true
-    },
-    {
-      "symbol": "SSPCUSDT",
-      "tf": "15m",
-      "candle_ts": 1793797200,
-      "side": "SELL",
-      "upper": 10.035079590878613,
-      "open": 10.27,
-      "reported": false
     }
   ],
   "paper_days": [
@@ -4699,8 +4679,7 @@
     "UBIKUSDT": 1793829115,
     "AEHRUSDT": 1793830009,
     "STONKBROKERUSDT": 1793836099,
-    "CAPETHUSDT": 1793838855,
-    "O1USDT": 1793840683
+    "CAPETHUSDT": 1793838855
   },
   "last_trade_report_ts": 1793795711,
   "last_known_version": "2.6.8",
