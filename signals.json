@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.8",
-  "updated_at": 1793808172,
+  "updated_at": 1793808185,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "ARXUSDT",
-      "tf": "1h",
-      "gap": 2.81,
-      "ts": 1793800624
-    },
     {
       "kind": "GAP",
       "symbol": "CLANKERUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 0.58,
       "ts": 1793808172
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793808185
     }
   ],
   "trades": [
@@ -1597,6 +1597,19 @@
       "margin": 10.0,
       "lev": 20,
       "px": 0.023493,
+      "pnl": 0.0,
+      "tf": "1h"
+    },
+    {
+      "symbol": "SXTUSDT",
+      "side": "SELL",
+      "entry": 0.009648,
+      "tp": 0.0094068,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.009648,
       "pnl": 0.0,
       "tf": "1h"
     }
