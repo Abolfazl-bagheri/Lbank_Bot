@@ -1,52 +1,6 @@
 {
   "open_trades": [
     {
-      "symbol": "POPMARTUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 17.673099307185684,
-      "qty": 350.81550000000004,
-      "margin": 310.0,
-      "leverage": 20,
-      "tp_price": 17.23127182450604,
-      "tf": "1h",
-      "opened_at": 1793585203,
-      "adds": 4,
-      "last_leg_margin": 160.0,
-      "used_res_levels": [
-        17.468,
-        17.793,
-        17.918,
-        17.649
-      ],
-      "steps": [
-        {
-          "px": 17.66,
-          "ts": 1793585203
-        },
-        {
-          "px": 17.4,
-          "ts": 1793587022
-        },
-        {
-          "px": 17.76,
-          "ts": 1793671721
-        },
-        {
-          "px": 17.87,
-          "ts": 1793687567
-        },
-        {
-          "px": 17.59,
-          "ts": 1793785917
-        }
-      ],
-      "entry_candle_ts": 1793584800,
-      "last_leg_candle_ts": 1793785917,
-      "dry_run": true,
-      "order_id": "PAPER-POPMARTUSDT-1793585203"
-    },
-    {
       "symbol": "DKNGUSDT",
       "side": "SELL",
       "status": "open",
@@ -2748,6 +2702,57 @@
       "closed_at": 1793785937,
       "close_px": 14.54,
       "pnl_usdt": 36.44670976389241
+    },
+    {
+      "symbol": "POPMARTUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 17.673099307185684,
+      "qty": 350.81550000000004,
+      "margin": 310.0,
+      "leverage": 20,
+      "tp_price": 17.23127182450604,
+      "tf": "1h",
+      "opened_at": 1793585203,
+      "adds": 4,
+      "last_leg_margin": 160.0,
+      "used_res_levels": [
+        17.468,
+        17.793,
+        17.918,
+        17.649
+      ],
+      "steps": [
+        {
+          "px": 17.66,
+          "ts": 1793585203
+        },
+        {
+          "px": 17.4,
+          "ts": 1793587022
+        },
+        {
+          "px": 17.76,
+          "ts": 1793671721
+        },
+        {
+          "px": 17.87,
+          "ts": 1793687567
+        },
+        {
+          "px": 17.59,
+          "ts": 1793785917
+        }
+      ],
+      "entry_candle_ts": 1793584800,
+      "last_leg_candle_ts": 1793785917,
+      "dry_run": true,
+      "order_id": "PAPER-POPMARTUSDT-1793585203",
+      "closed_at": 1793786674,
+      "close_px": 17.57,
+      "pnl_usdt": 36.168851509329734,
+      "close_reason": "NIGHT_RESET",
+      "why": "NIGHT_RESET"
     }
   ],
   "pending": [
@@ -4317,6 +4322,8 @@
       "trades": 19
     }
   ],
+  "paper_session_start": 0,
+  "last_daily_report_date": "2026-11-04",
   "kline_blacklist": {
     "STXSTOCKUSDT": 1793301443,
     "IBBETFUSDT": 1793310363,
@@ -4390,7 +4397,6 @@
     "UBIKUSDT": 1793829115
   },
   "last_trade_report_ts": 1793785985,
-  "last_daily_report_date": "2026-11-01",
-  "last_known_version": "2.6.7",
+  "last_known_version": "2.6.8",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
