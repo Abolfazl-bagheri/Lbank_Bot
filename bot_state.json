@@ -372,24 +372,28 @@
       "symbol": "SHEINUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 4.86,
-      "qty": 41.1523,
-      "margin": 10.0,
+      "entry": 4.866662094708479,
+      "qty": 123.28779999999999,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 4.7385,
-      "tf": "1h",
+      "tp_price": 4.744995542340767,
+      "tf": "4h",
       "opened_at": 1793761503,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 4.86,
           "ts": 1793761503
+        },
+        {
+          "px": 4.87,
+          "ts": 1793765169
         }
       ],
       "entry_candle_ts": 1793761200,
-      "last_leg_candle_ts": 1793761200,
+      "last_leg_candle_ts": 1793764800,
       "dry_run": true,
       "order_id": "PAPER-SHEINUSDT-1793761503"
     }
@@ -4191,6 +4195,15 @@
       "upper": 15.280021109225881,
       "open": 15.74,
       "reported": false
+    },
+    {
+      "symbol": "BMTUSDT",
+      "tf": "4h",
+      "candle_ts": 1793764800,
+      "side": "SELL",
+      "upper": 0.028217692098858094,
+      "open": 0.02904,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -4272,7 +4285,8 @@
     "1000SATSUSDT": 1793803156,
     "CZUSDT": 1793803169,
     "OSCRUSDT": 1793804847,
-    "AINBSCUSDT": 1793805623
+    "AINBSCUSDT": 1793805623,
+    "RIOTUSDT": 1793808353
   },
   "last_trade_report_ts": 1793763473,
   "last_daily_report_date": "2026-11-01",
