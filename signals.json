@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.8",
-  "updated_at": 1793822822,
+  "updated_at": 1793822833,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "MOOUSDT",
-      "tf": "15m",
-      "gap": 1.49,
-      "ts": 1793806211
-    },
     {
       "kind": "GAP",
       "symbol": "IDOLUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "4h",
       "gap": 8.31,
       "ts": 1793822822
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793822833
     }
   ],
   "trades": [
@@ -1499,15 +1499,15 @@
     {
       "symbol": "CLANKERUSDT",
       "side": "SELL",
-      "entry": 18.52,
-      "tp": 18.057,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
+      "entry": 21.43160544363481,
+      "tp": 20.895815307543938,
+      "adds": 1,
+      "pele": 2,
+      "margin": 30.0,
       "lev": 20,
       "px": 23.26,
-      "pnl": -51.1879,
-      "tf": "1h"
+      "pnl": -51.1878,
+      "tf": "4h"
     },
     {
       "symbol": "IDOLUSDT",
@@ -1565,8 +1565,8 @@
   "start": 1000.0,
   "realized": 2168.0094,
   "closed_n": 104,
-  "open_upnl": -1225.576,
-  "equity": 1942.4334,
+  "open_upnl": -1225.5759,
+  "equity": 1942.4335,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
