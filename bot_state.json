@@ -395,17 +395,18 @@
       "symbol": "MSTUUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 32.52,
-      "qty": 18.450200000000002,
-      "margin": 30.0,
+      "entry": 33.00033320918918,
+      "qty": 42.4238,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 31.707,
+      "tp_price": 32.17532487895945,
       "tf": "4h",
       "opened_at": 1793808450,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [
-        32.61
+        32.61,
+        33.44
       ],
       "steps": [
         {
@@ -415,10 +416,14 @@
         {
           "px": 32.52,
           "ts": 1793808594
+        },
+        {
+          "px": 33.37,
+          "ts": 1793816261
         }
       ],
       "entry_candle_ts": 1793808000,
-      "last_leg_candle_ts": 1793808594,
+      "last_leg_candle_ts": 1793816261,
       "dry_run": true,
       "order_id": "PAPER-MSTUUSDT-1793808450"
     }
