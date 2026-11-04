@@ -199,42 +199,6 @@
       "order_id": "PAPER-AXISUSDT-1793689496"
     },
     {
-      "symbol": "LITUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 3.291182066537825,
-      "qty": 425.3791,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 3.2089025148743793,
-      "tf": "1h",
-      "opened_at": 1793711183,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [
-        3.257,
-        3.335
-      ],
-      "steps": [
-        {
-          "px": 3.2289,
-          "ts": 1793711183
-        },
-        {
-          "px": 3.2449,
-          "ts": 1793712965
-        },
-        {
-          "px": 3.331,
-          "ts": 1793738238
-        }
-      ],
-      "entry_candle_ts": 1793710800,
-      "last_leg_candle_ts": 1793738238,
-      "dry_run": true,
-      "order_id": "PAPER-LITUSDT-1793711183"
-    },
-    {
       "symbol": "RUNEUSDT",
       "side": "SELL",
       "status": "open",
@@ -2564,6 +2528,45 @@
       "closed_at": 1793759980,
       "close_px": 0.2503,
       "pnl_usdt": 5.365474339035741
+    },
+    {
+      "symbol": "LITUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 3.291182066537825,
+      "qty": 425.3791,
+      "margin": 70.0,
+      "leverage": 20,
+      "tp_price": 3.2089025148743793,
+      "tf": "1h",
+      "opened_at": 1793711183,
+      "adds": 2,
+      "last_leg_margin": 40.0,
+      "used_res_levels": [
+        3.257,
+        3.335
+      ],
+      "steps": [
+        {
+          "px": 3.2289,
+          "ts": 1793711183
+        },
+        {
+          "px": 3.2449,
+          "ts": 1793712965
+        },
+        {
+          "px": 3.331,
+          "ts": 1793738238
+        }
+      ],
+      "entry_candle_ts": 1793710800,
+      "last_leg_candle_ts": 1793738238,
+      "dry_run": true,
+      "order_id": "PAPER-LITUSDT-1793711183",
+      "closed_at": 1793761657,
+      "close_px": 3.1989,
+      "pnl_usdt": 39.25486057623734
     }
   ],
   "pending": [
@@ -4175,6 +4178,15 @@
       "open": 0.1458,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "SHEINUSDT",
+      "tf": "1h",
+      "candle_ts": 1793761200,
+      "side": "SELL",
+      "upper": 4.791750169349532,
+      "open": 4.849,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -4256,7 +4268,8 @@
     "1000WOJAKUSDT": 1793803078,
     "NEIRO1USDT": 1793803154,
     "1000SATSUSDT": 1793803156,
-    "CZUSDT": 1793803169
+    "CZUSDT": 1793803169,
+    "OSCRUSDT": 1793804847
   },
   "last_trade_report_ts": 1793759992,
   "last_daily_report_date": "2026-11-01",
