@@ -36,23 +36,29 @@
       "side": "SELL",
       "status": "open",
       "entry": 10.244,
-      "qty": 19.5236,
-      "margin": 10.0,
+      "qty": 58.57079999999999,
+      "margin": 30.0,
       "leverage": 20,
       "tp_price": 9.9879,
       "tf": "15m",
       "opened_at": 1793797379,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        10.27
+      ],
       "steps": [
         {
           "px": 10.244,
           "ts": 1793797379
+        },
+        {
+          "px": 10.244,
+          "ts": 1793797490
         }
       ],
       "entry_candle_ts": 1793797200,
-      "last_leg_candle_ts": 1793797200,
+      "last_leg_candle_ts": 1793797490,
       "dry_run": true,
       "order_id": "PAPER-SSPCUSDT-1793797379"
     }
