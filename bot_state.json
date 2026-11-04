@@ -49,6 +49,31 @@
       "last_leg_candle_ts": 1793792700,
       "dry_run": true,
       "order_id": "PAPER-FRONGUSDT-1793792836"
+    },
+    {
+      "symbol": "MUSEBOOKUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 1.208e-05,
+      "qty": 16556291.3907,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 1.1778e-05,
+      "tf": "15m",
+      "opened_at": 1793792873,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 1.208e-05,
+          "ts": 1793792873
+        }
+      ],
+      "entry_candle_ts": 1793792700,
+      "last_leg_candle_ts": 1793792700,
+      "dry_run": true,
+      "order_id": "PAPER-MUSEBOOKUSDT-1793792873"
     }
   ],
   "trade_history": [
@@ -4479,6 +4504,15 @@
       "open": 0.004361,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "FRONGUSDT",
+      "tf": "15m",
+      "candle_ts": 1793792700,
+      "side": "SELL",
+      "upper": 0.002271433715298531,
+      "open": 0.002321,
+      "reported": false
     }
   ],
   "paper_days": [
