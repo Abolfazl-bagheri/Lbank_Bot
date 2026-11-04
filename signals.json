@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.8",
-  "updated_at": 1793786765,
+  "updated_at": 1793786772,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1793747184
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 0.23,
       "ts": 1793786765
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793786772
     }
   ],
   "trades": [
@@ -1428,6 +1428,19 @@
       "margin": 10.0,
       "lev": 20,
       "px": 0.0088,
+      "pnl": 0.0,
+      "tf": "1h"
+    },
+    {
+      "symbol": "ELSAUSDT",
+      "side": "SELL",
+      "entry": 0.07307,
+      "tp": 0.07124325,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.07307,
       "pnl": 0.0,
       "tf": "1h"
     }
