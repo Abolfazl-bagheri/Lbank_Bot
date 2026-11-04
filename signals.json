@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.8",
-  "updated_at": 1793787617,
+  "updated_at": 1793788329,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1793748205
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1395,13 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1793787617
+    },
+    {
+      "kind": "GAP",
+      "symbol": "CYPHUSDT",
+      "tf": "15m",
+      "gap": 1.3,
+      "ts": 1793788329
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.0088,
-      "pnl": 0.0,
+      "px": 0.00863,
+      "pnl": 3.8636,
       "tf": "1h"
     },
     {
@@ -1427,16 +1427,16 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.07397,
-      "pnl": -2.4634,
+      "px": 0.07209,
+      "pnl": 2.6824,
       "tf": "1h"
     }
   ],
   "start": 1000.0,
   "realized": 1793.4448,
   "closed_n": 82,
-  "open_upnl": -2.4634,
-  "equity": 2790.9814,
+  "open_upnl": 6.546,
+  "equity": 2799.9908,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
