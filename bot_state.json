@@ -277,68 +277,6 @@
       "order_id": "PAPER-BKNGUSDT-1793804738"
     },
     {
-      "symbol": "CYPHUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 3.044,
-      "qty": 197.109,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 2.9678999999999998,
-      "tf": "15m",
-      "opened_at": 1793805527,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        3.052
-      ],
-      "steps": [
-        {
-          "px": 3.044,
-          "ts": 1793805527
-        },
-        {
-          "px": 3.044,
-          "ts": 1793805689
-        }
-      ],
-      "entry_candle_ts": 1793805300,
-      "last_leg_candle_ts": 1793805689,
-      "dry_run": true,
-      "order_id": "PAPER-CYPHUSDT-1793805527"
-    },
-    {
-      "symbol": "ANSEMUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.05014999999999999,
-      "qty": 11964.1077,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.048896249999999995,
-      "tf": "15m",
-      "opened_at": 1793805545,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        0.0503
-      ],
-      "steps": [
-        {
-          "px": 0.05015,
-          "ts": 1793805545
-        },
-        {
-          "px": 0.05015,
-          "ts": 1793805703
-        }
-      ],
-      "entry_candle_ts": 1793805300,
-      "last_leg_candle_ts": 1793805703,
-      "dry_run": true,
-      "order_id": "PAPER-ANSEMUSDT-1793805545"
-    },
-    {
       "symbol": "STONKUSDT",
       "side": "SELL",
       "status": "open",
@@ -364,52 +302,33 @@
       "order_id": "PAPER-STONKUSDT-1793805565"
     },
     {
-      "symbol": "CLANKERUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 18.66,
-      "qty": 10.7181,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 18.1935,
-      "tf": "15m",
-      "opened_at": 1793805585,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 18.66,
-          "ts": 1793805585
-        }
-      ],
-      "entry_candle_ts": 1793805300,
-      "last_leg_candle_ts": 1793805300,
-      "dry_run": true,
-      "order_id": "PAPER-CLANKERUSDT-1793805585"
-    },
-    {
       "symbol": "CARDSUSDT",
       "side": "SELL",
       "status": "open",
       "entry": 0.2841,
-      "qty": 703.9775,
-      "margin": 10.0,
+      "qty": 2111.9323999999997,
+      "margin": 30.0,
       "leverage": 20,
       "tp_price": 0.2769975,
       "tf": "15m",
       "opened_at": 1793806322,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.28453
+      ],
       "steps": [
         {
           "px": 0.2841,
           "ts": 1793806322
+        },
+        {
+          "px": 0.2841,
+          "ts": 1793806447
         }
       ],
       "entry_candle_ts": 1793806200,
-      "last_leg_candle_ts": 1793806200,
+      "last_leg_candle_ts": 1793806447,
       "dry_run": true,
       "order_id": "PAPER-CARDSUSDT-1793806322"
     },
@@ -3557,6 +3476,108 @@
       "closed_at": 1793806430,
       "close_px": 27.47,
       "pnl_usdt": 16.70084693554809,
+      "close_reason": "TP50",
+      "why": "TP50"
+    },
+    {
+      "symbol": "CYPHUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 3.044,
+      "qty": 197.109,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 2.9678999999999998,
+      "tf": "15m",
+      "opened_at": 1793805527,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        3.052
+      ],
+      "steps": [
+        {
+          "px": 3.044,
+          "ts": 1793805527
+        },
+        {
+          "px": 3.044,
+          "ts": 1793805689
+        }
+      ],
+      "entry_candle_ts": 1793805300,
+      "last_leg_candle_ts": 1793805689,
+      "dry_run": true,
+      "order_id": "PAPER-CYPHUSDT-1793805527",
+      "closed_at": 1793806445,
+      "close_px": 2.949,
+      "pnl_usdt": 18.725361366622902,
+      "close_reason": "TP50",
+      "why": "TP50"
+    },
+    {
+      "symbol": "ANSEMUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.05014999999999999,
+      "qty": 11964.1077,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 0.048896249999999995,
+      "tf": "15m",
+      "opened_at": 1793805545,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.0503
+      ],
+      "steps": [
+        {
+          "px": 0.05015,
+          "ts": 1793805545
+        },
+        {
+          "px": 0.05015,
+          "ts": 1793805703
+        }
+      ],
+      "entry_candle_ts": 1793805300,
+      "last_leg_candle_ts": 1793805703,
+      "dry_run": true,
+      "order_id": "PAPER-ANSEMUSDT-1793805545",
+      "closed_at": 1793806445,
+      "close_px": 0.04851,
+      "pnl_usdt": 19.621136590229263,
+      "close_reason": "TP50",
+      "why": "TP50"
+    },
+    {
+      "symbol": "CLANKERUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 18.66,
+      "qty": 10.7181,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 18.1935,
+      "tf": "15m",
+      "opened_at": 1793805585,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 18.66,
+          "ts": 1793805585
+        }
+      ],
+      "entry_candle_ts": 1793805300,
+      "last_leg_candle_ts": 1793805300,
+      "dry_run": true,
+      "order_id": "PAPER-CLANKERUSDT-1793805585",
+      "closed_at": 1793806446,
+      "close_px": 18.03,
+      "pnl_usdt": 6.752411575562691,
       "close_reason": "TP50",
       "why": "TP50"
     }
