@@ -409,73 +409,33 @@
       "order_id": "PAPER-RUNEUSDT-1793718219"
     },
     {
-      "symbol": "SHAZUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 24.243888374901168,
-      "qty": 255.7346,
-      "margin": 310.0,
-      "leverage": 20,
-      "tp_price": 23.63779116552864,
-      "tf": "15m",
-      "opened_at": 1793718266,
-      "adds": 4,
-      "last_leg_margin": 160.0,
-      "used_res_levels": [
-        23.59,
-        24.34,
-        24.16,
-        24.49
-      ],
-      "steps": [
-        {
-          "px": 23.55,
-          "ts": 1793718266
-        },
-        {
-          "px": 23.55,
-          "ts": 1793718593
-        },
-        {
-          "px": 24.29,
-          "ts": 1793735429
-        },
-        {
-          "px": 24.12,
-          "ts": 1793738261
-        },
-        {
-          "px": 24.43,
-          "ts": 1793740941
-        }
-      ],
-      "entry_candle_ts": 1793718000,
-      "last_leg_candle_ts": 1793740941,
-      "dry_run": true,
-      "order_id": "PAPER-SHAZUSDT-1793718266"
-    },
-    {
       "symbol": "HOMEUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.005592,
-      "qty": 35765.3791,
-      "margin": 10.0,
+      "entry": 0.005503302090817097,
+      "qty": 109025.45240000001,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.0054522,
+      "tp_price": 0.00536571953854667,
       "tf": "1h",
       "opened_at": 1793718327,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.005476
+      ],
       "steps": [
         {
           "px": 0.005592,
           "ts": 1793718327
+        },
+        {
+          "px": 0.00546,
+          "ts": 1793754392
         }
       ],
       "entry_candle_ts": 1793718000,
-      "last_leg_candle_ts": 1793718000,
+      "last_leg_candle_ts": 1793754392,
       "dry_run": true,
       "order_id": "PAPER-HOMEUSDT-1793718327"
     },
@@ -2485,6 +2445,55 @@
       "closed_at": 1793754388,
       "close_px": 0.04143,
       "pnl_usdt": 41.06159999735488
+    },
+    {
+      "symbol": "SHAZUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 24.243888374901168,
+      "qty": 255.7346,
+      "margin": 310.0,
+      "leverage": 20,
+      "tp_price": 23.63779116552864,
+      "tf": "15m",
+      "opened_at": 1793718266,
+      "adds": 4,
+      "last_leg_margin": 160.0,
+      "used_res_levels": [
+        23.59,
+        24.34,
+        24.16,
+        24.49
+      ],
+      "steps": [
+        {
+          "px": 23.55,
+          "ts": 1793718266
+        },
+        {
+          "px": 23.55,
+          "ts": 1793718593
+        },
+        {
+          "px": 24.29,
+          "ts": 1793735429
+        },
+        {
+          "px": 24.12,
+          "ts": 1793738261
+        },
+        {
+          "px": 24.43,
+          "ts": 1793740941
+        }
+      ],
+      "entry_candle_ts": 1793718000,
+      "last_leg_candle_ts": 1793740941,
+      "dry_run": true,
+      "order_id": "PAPER-SHAZUSDT-1793718266",
+      "closed_at": 1793754391,
+      "close_px": 23.16,
+      "pnl_usdt": 277.1877110003661
     }
   ],
   "pending": [
