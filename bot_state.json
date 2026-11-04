@@ -44,24 +44,28 @@
       "symbol": "ZZZUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.00889,
-      "qty": 22497.1879,
-      "margin": 10.0,
+      "entry": 0.009357382256129424,
+      "qty": 64120.497,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.00866775,
+      "tp_price": 0.009123447699726188,
       "tf": "1h",
       "opened_at": 1793797516,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 0.00889,
           "ts": 1793797516
+        },
+        {
+          "px": 0.00961,
+          "ts": 1793811945
         }
       ],
       "entry_candle_ts": 1793797200,
-      "last_leg_candle_ts": 1793797200,
+      "last_leg_candle_ts": 1793811600,
       "dry_run": true,
       "order_id": "PAPER-ZZZUSDT-1793797516"
     },
@@ -4087,46 +4091,6 @@
       "side": "SELL"
     },
     {
-      "symbol": "LYNUSDT",
-      "tf": "15m",
-      "candle_ts": 1793552400,
-      "side": "SELL",
-      "upper": 0.016951174821184748,
-      "open": 0.01714,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "STARUSDT",
-      "tf": "15m",
-      "candle_ts": 1793552400,
-      "side": "SELL",
-      "upper": 0.03801390214571815,
-      "open": 0.03847,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "LYNUSDT",
-      "tf": "1h",
-      "candle_ts": 1793552400,
-      "side": "SELL",
-      "upper": 0.016589339345667628,
-      "open": 0.01721,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "STARUSDT",
-      "tf": "1h",
-      "candle_ts": 1793552400,
-      "side": "SELL",
-      "upper": 0.03768476415956888,
-      "open": 0.03847,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "ARIAUSDT",
       "tf": "15m",
       "candle_ts": 1793561400,
@@ -5573,7 +5537,8 @@
       "side": "SELL",
       "upper": 18.15149973529128,
       "open": 18.61,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ARXUSDT",
@@ -5582,7 +5547,8 @@
       "side": "SELL",
       "upper": 0.27296469558791214,
       "open": 0.2785,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "IDOLUSDT",
@@ -5591,7 +5557,8 @@
       "side": "SELL",
       "upper": 0.02319594678142412,
       "open": 0.023476,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "SXTUSDT",
@@ -5600,7 +5567,8 @@
       "side": "SELL",
       "upper": 0.00959218275689654,
       "open": 0.009702,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ARXUSDT",
@@ -5636,7 +5604,8 @@
       "side": "SELL",
       "upper": 169.11503313984213,
       "open": 171.17,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "BKNGUSDT",
@@ -5663,7 +5632,8 @@
       "side": "SELL",
       "upper": 267.0665722140307,
       "open": 270.2,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "APPUSDT",
@@ -5681,7 +5651,8 @@
       "side": "SELL",
       "upper": 102.87210012503903,
       "open": 104.0,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "ATHUSDT",
@@ -5699,7 +5670,8 @@
       "side": "SELL",
       "upper": 0.12878209455848716,
       "open": 0.13009,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "STANDARDUSDT",
@@ -5832,7 +5804,7 @@
     "METEORAUSDT": 1793852241,
     "AMCUSDT": 1793853303
   },
-  "last_trade_report_ts": 1793809967,
+  "last_trade_report_ts": 1793811015,
   "last_known_version": "2.6.8",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
