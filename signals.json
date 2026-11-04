@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.8",
-  "updated_at": 1793812681,
+  "updated_at": 1793812696,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "MRNAUSDT",
-      "tf": "1h",
-      "gap": 2.68,
-      "ts": 1793804641
-    },
     {
       "kind": "GAP",
       "symbol": "ZZZUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1793812681
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793812696
     }
   ],
   "trades": [
@@ -1562,32 +1562,6 @@
       "tf": "4h"
     },
     {
-      "symbol": "ATHUSDT",
-      "side": "SELL",
-      "entry": 0.005474,
-      "tp": 0.00533715,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.00533,
-      "pnl": 5.2612,
-      "tf": "4h"
-    },
-    {
-      "symbol": "FARTCOINUSDT",
-      "side": "SELL",
-      "entry": 0.1303,
-      "tp": 0.1270425,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.1265,
-      "pnl": 5.8327,
-      "tf": "1h"
-    },
-    {
       "symbol": "STANDARDUSDT",
       "side": "SELL",
       "entry": 0.2183,
@@ -1615,16 +1589,16 @@
     }
   ],
   "start": 1000.0,
-  "realized": 2000.0526,
-  "closed_n": 99,
-  "open_upnl": -217.0016,
+  "realized": 2011.1465,
+  "closed_n": 101,
+  "open_upnl": -228.0955,
   "equity": 2783.051,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 2316.2435,
+    "profit": 2327.3374,
     "loss": -316.1909,
-    "count": 99
+    "count": 101
   }
 }
