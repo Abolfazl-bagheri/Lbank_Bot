@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.8",
-  "updated_at": 1793805563,
+  "updated_at": 1793805576,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "BEAMXUSDT",
-      "tf": "15m",
-      "gap": 0.14,
-      "ts": 1793789398
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 1.46,
       "ts": 1793805563
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793805576
     }
   ],
   "trades": [
@@ -1584,6 +1584,19 @@
       "margin": 10.0,
       "lev": 20,
       "px": 0.05015,
+      "pnl": 0.0,
+      "tf": "15m"
+    },
+    {
+      "symbol": "STONKUSDT",
+      "side": "SELL",
+      "entry": 0.134833,
+      "tp": 0.13146217500000001,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.134833,
       "pnl": 0.0,
       "tf": "15m"
     }
