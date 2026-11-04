@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.8",
-  "updated_at": 1793812115,
+  "updated_at": 1793812132,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "ARXUSDT",
-      "tf": "1h",
-      "gap": 2.12,
-      "ts": 1793804613
-    },
     {
       "kind": "GAP",
       "symbol": "SXTUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1793812115
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793812132
     }
   ],
   "trades": [
@@ -1523,19 +1523,6 @@
       "tf": "1h"
     },
     {
-      "symbol": "STONKUSDT",
-      "side": "SELL",
-      "entry": 0.134833,
-      "tp": 0.13146217500000001,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.130756,
-      "pnl": 6.0475,
-      "tf": "15m"
-    },
-    {
       "symbol": "CLANKERUSDT",
       "side": "SELL",
       "entry": 18.52,
@@ -1628,16 +1615,16 @@
     }
   ],
   "start": 1000.0,
-  "realized": 1994.0051,
-  "closed_n": 98,
-  "open_upnl": -208.9699,
+  "realized": 2000.0526,
+  "closed_n": 99,
+  "open_upnl": -215.0174,
   "equity": 2785.0352,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 2310.196,
+    "profit": 2316.2435,
     "loss": -316.1909,
-    "count": 98
+    "count": 99
   }
 }
