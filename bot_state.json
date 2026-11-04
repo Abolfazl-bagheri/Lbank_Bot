@@ -306,6 +306,31 @@
       "last_leg_candle_ts": 1793822400,
       "dry_run": true,
       "order_id": "PAPER-USUSDT-1793822868"
+    },
+    {
+      "symbol": "BATUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.14581,
+      "qty": 1371.648,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.14216474999999998,
+      "tf": "15m",
+      "opened_at": 1793830613,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.14581,
+          "ts": 1793830613
+        }
+      ],
+      "entry_candle_ts": 1793830500,
+      "last_leg_candle_ts": 1793830500,
+      "dry_run": true,
+      "order_id": "PAPER-BATUSDT-1793830613"
     }
   ],
   "trade_history": [
@@ -5956,7 +5981,8 @@
       "side": "SELL",
       "upper": 0.10680411103342073,
       "open": 0.10875,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "APPUSDT",
@@ -6075,7 +6101,7 @@
     "UBIKUSDT": 1793873127,
     "OFCUSDT": 1793873172
   },
-  "last_trade_report_ts": 1793829053,
+  "last_trade_report_ts": 1793830002,
   "last_known_version": "2.6.8",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
