@@ -655,17 +655,18 @@
       "symbol": "AMDUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 520.6836246182737,
-      "qty": 1.152331,
-      "margin": 30.0,
+      "entry": 517.0685801344472,
+      "qty": 2.707531,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 507.66653400281683,
+      "tp_price": 504.141865631086,
       "tf": "1h",
       "opened_at": 1793743437,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [
-        521.05
+        521.05,
+        515.24
       ],
       "steps": [
         {
@@ -675,10 +676,14 @@
         {
           "px": 519.4,
           "ts": 1793745445
+        },
+        {
+          "px": 514.39,
+          "ts": 1793751709
         }
       ],
       "entry_candle_ts": 1793743200,
-      "last_leg_candle_ts": 1793745445,
+      "last_leg_candle_ts": 1793751709,
       "dry_run": true,
       "order_id": "PAPER-AMDUSDT-1793743437"
     },
@@ -4125,6 +4130,15 @@
       "upper": 0.040289962058326315,
       "open": 0.041236,
       "reported": false
+    },
+    {
+      "symbol": "BMTUSDT",
+      "tf": "15m",
+      "candle_ts": 1793751300,
+      "side": "SELL",
+      "upper": 0.02686831573359497,
+      "open": 0.02733,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -4205,7 +4219,8 @@
     "ONSEMIUSDT": 1793784100,
     "AEHRUSDT": 1793785881,
     "SIMOUSDT": 1793785920,
-    "QUACKAIUSDT": 1793787693
+    "QUACKAIUSDT": 1793787693,
+    "POETUSDT": 1793794891
   },
   "last_trade_report_ts": 1793749094,
   "last_daily_report_date": "2026-11-01",
