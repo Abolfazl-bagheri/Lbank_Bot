@@ -442,24 +442,28 @@
       "symbol": "ANSEMUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.0468,
-      "qty": 4273.5043,
-      "margin": 10.0,
+      "entry": 0.04865579446462488,
+      "qty": 12331.522,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.04563,
-      "tf": "15m",
+      "tp_price": 0.04743939960300926,
+      "tf": "1h",
       "opened_at": 1793780338,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 0.0468,
           "ts": 1793780338
+        },
+        {
+          "px": 0.04964,
+          "ts": 1793783030
         }
       ],
       "entry_candle_ts": 1793780100,
-      "last_leg_candle_ts": 1793780100,
+      "last_leg_candle_ts": 1793782800,
       "dry_run": true,
       "order_id": "PAPER-ANSEMUSDT-1793780338"
     }
@@ -2902,36 +2906,6 @@
       "side": "SELL"
     },
     {
-      "symbol": "PROMUSDT",
-      "tf": "1h",
-      "candle_ts": 1793523600,
-      "side": "SELL",
-      "upper": 5.946921426728792,
-      "open": 6.106,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "SUPERUSDT",
-      "tf": "1h",
-      "candle_ts": 1793523600,
-      "side": "SELL",
-      "upper": 0.17384163398023045,
-      "open": 0.17608,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "FORMUSDT",
-      "tf": "1h",
-      "candle_ts": 1793523600,
-      "side": "SELL",
-      "upper": 0.21152738642378513,
-      "open": 0.2161,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "FONEUSDT",
       "tf": "15m",
       "candle_ts": 1793524500,
@@ -4275,7 +4249,8 @@
       "side": "SELL",
       "upper": 0.04591220502697095,
       "open": 0.0465,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -4305,7 +4280,6 @@
     "SAFE1USDT": 1793449863,
     "AXLUSDT": 1793502358,
     "DODOUSDT": 1793508698,
-    "ARROWUSDT": 1793516639,
     "QUID1USDT": 1793527676,
     "SYNUSDT": 1793537208,
     "LONGXIAUSDT": 1793558277,
@@ -4361,7 +4335,7 @@
     "WUXIBIOUSDT": 1793821810,
     "FLOCK1USDT": 1793821836
   },
-  "last_trade_report_ts": 1793777904,
+  "last_trade_report_ts": 1793780460,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.7",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
