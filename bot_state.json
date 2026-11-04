@@ -162,18 +162,19 @@
       "symbol": "AXISUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.13897926921800238,
-      "qty": 21585.9532,
-      "margin": 150.0,
+      "entry": 0.13981108172196982,
+      "qty": 44345.5549,
+      "margin": 310.0,
       "leverage": 20,
-      "tp_price": 0.13550478748755232,
+      "tp_price": 0.13631580467892057,
       "tf": "1h",
       "opened_at": 1793689496,
-      "adds": 3,
-      "last_leg_margin": 80.0,
+      "adds": 4,
+      "last_leg_margin": 160.0,
       "used_res_levels": [
         0.1349,
-        0.1319
+        0.1319,
+        0.1409
       ],
       "steps": [
         {
@@ -191,10 +192,14 @@
         {
           "px": 0.1455,
           "ts": 1793757792
+        },
+        {
+          "px": 0.1406,
+          "ts": 1793763446
         }
       ],
       "entry_candle_ts": 1793689200,
-      "last_leg_candle_ts": 1793757600,
+      "last_leg_candle_ts": 1793763446,
       "dry_run": true,
       "order_id": "PAPER-AXISUSDT-1793689496"
     },
@@ -4249,7 +4254,6 @@
     "EWZSUSDT": 1793678937,
     "BIDUUSDT": 1793678955,
     "XPSTOCKUSDT": 1793678976,
-    "AINBSCUSDT": 1793679450,
     "FIGUSDT": 1793683258,
     "GSTOCKUSDT": 1793688424,
     "WUXIBIOUSDT": 1793694108,
@@ -4279,9 +4283,10 @@
     "NEIRO1USDT": 1793803154,
     "1000SATSUSDT": 1793803156,
     "CZUSDT": 1793803169,
-    "OSCRUSDT": 1793804847
+    "OSCRUSDT": 1793804847,
+    "AINBSCUSDT": 1793805623
   },
-  "last_trade_report_ts": 1793759992,
+  "last_trade_report_ts": 1793761698,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.7",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
