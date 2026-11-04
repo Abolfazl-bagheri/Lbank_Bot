@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.8",
-  "updated_at": 1793792701,
+  "updated_at": 1793792834,
   "signals": [
-    {
-      "kind": "HEARTBEAT",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1793755374
-    },
     {
       "kind": "GAP",
       "symbol": "BMTUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "4h",
       "gap": 1.01,
       "ts": 1793792701
+    },
+    {
+      "kind": "SELL",
+      "symbol": "FRONGUSDT",
+      "tf": "15m",
+      "gap": 1.67,
+      "ts": 1793792834
     }
   ],
   "trades": [
@@ -1414,16 +1414,16 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.07369,
-      "pnl": -1.697,
+      "px": 0.07438,
+      "pnl": -3.5856,
       "tf": "1h"
     }
   ],
   "start": 1000.0,
   "realized": 1807.3236,
   "closed_n": 84,
-  "open_upnl": -1.697,
-  "equity": 2805.6266,
+  "open_upnl": -3.5856,
+  "equity": 2803.738,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
