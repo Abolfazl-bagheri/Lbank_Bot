@@ -121,18 +121,19 @@
       "symbol": "PDDUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 81.86603276982181,
-      "qty": 17.101100000000002,
-      "margin": 70.0,
+      "entry": 80.89824040815886,
+      "qty": 37.083600000000004,
+      "margin": 150.0,
       "leverage": 20,
-      "tp_price": 79.81938195057627,
+      "tp_price": 78.87578439795489,
       "tf": "4h",
       "opened_at": 1793635671,
-      "adds": 2,
-      "last_leg_margin": 40.0,
+      "adds": 3,
+      "last_leg_margin": 80.0,
       "used_res_levels": [
         83.08,
-        81.16
+        81.16,
+        80.28
       ],
       "steps": [
         {
@@ -146,10 +147,14 @@
         {
           "px": 81.05,
           "ts": 1793717513
+        },
+        {
+          "px": 80.07,
+          "ts": 1793757991
         }
       ],
       "entry_candle_ts": 1793635200,
-      "last_leg_candle_ts": 1793717513,
+      "last_leg_candle_ts": 1793757991,
       "dry_run": true,
       "order_id": "PAPER-PDDUSDT-1793635671"
     },
@@ -4133,6 +4138,15 @@
       "open": 0.02733,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "AXISUSDT",
+      "tf": "1h",
+      "candle_ts": 1793757600,
+      "side": "SELL",
+      "upper": 0.1440766101153631,
+      "open": 0.1458,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -4214,7 +4228,8 @@
     "QUACKAIUSDT": 1793787693,
     "POETUSDT": 1793794891,
     "KOPNUSDT": 1793798527,
-    "DRVUSDT": 1793798529
+    "DRVUSDT": 1793798529,
+    "KNTQUSDT": 1793801068
   },
   "last_trade_report_ts": 1793755373,
   "last_daily_report_date": "2026-11-01",
