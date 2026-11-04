@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.8",
-  "updated_at": 1793803780,
+  "updated_at": 1793803792,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "COOKIEUSDT",
-      "tf": "4h",
-      "gap": 1.1,
-      "ts": 1793778389
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1395,13 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1793803780
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793803792
     }
   ],
   "trades": [
@@ -1540,9 +1540,9 @@
       "side": "SELL",
       "entry": 101.57,
       "tp": 99.03075,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
+      "adds": 1,
+      "pele": 2,
+      "margin": 30.0,
       "lev": 20,
       "px": 101.57,
       "pnl": 0.0,
