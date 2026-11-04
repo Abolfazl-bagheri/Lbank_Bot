@@ -322,39 +322,6 @@
       "order_id": "PAPER-TAUSDT-1793720074"
     },
     {
-      "symbol": "CLANKERUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 14.92864279361992,
-      "qty": 93.7794,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 14.555426723779421,
-      "tf": "4h",
-      "opened_at": 1793739826,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 13.89,
-          "ts": 1793739826
-        },
-        {
-          "px": 14.04,
-          "ts": 1793743347
-        },
-        {
-          "px": 15.72,
-          "ts": 1793765059
-        }
-      ],
-      "entry_candle_ts": 1793739600,
-      "last_leg_candle_ts": 1793764800,
-      "dry_run": true,
-      "order_id": "PAPER-CLANKERUSDT-1793739826"
-    },
-    {
       "symbol": "BMTUSDT",
       "side": "SELL",
       "status": "open",
@@ -453,17 +420,18 @@
       "symbol": "ANSEMUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.04797104559671528,
-      "qty": 29184.2711,
-      "margin": 70.0,
+      "entry": 0.04799181340845644,
+      "qty": 62510.6614,
+      "margin": 150.0,
       "leverage": 20,
-      "tp_price": 0.046771769456797396,
+      "tp_price": 0.046792018073245026,
       "tf": "1h",
       "opened_at": 1793780338,
-      "adds": 2,
-      "last_leg_margin": 40.0,
+      "adds": 3,
+      "last_leg_margin": 80.0,
       "used_res_levels": [
-        0.0476
+        0.0476,
+        0.0481
       ],
       "steps": [
         {
@@ -477,10 +445,14 @@
         {
           "px": 0.04747,
           "ts": 1793784166
+        },
+        {
+          "px": 0.04801,
+          "ts": 1793785940
         }
       ],
       "entry_candle_ts": 1793780100,
-      "last_leg_candle_ts": 1793784166,
+      "last_leg_candle_ts": 1793785940,
       "dry_run": true,
       "order_id": "PAPER-ANSEMUSDT-1793780338"
     },
@@ -2734,6 +2706,42 @@
       "closed_at": 1793780445,
       "close_px": 0.1102,
       "pnl_usdt": 5.814977973568277
+    },
+    {
+      "symbol": "CLANKERUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 14.92864279361992,
+      "qty": 93.7794,
+      "margin": 70.0,
+      "leverage": 20,
+      "tp_price": 14.555426723779421,
+      "tf": "4h",
+      "opened_at": 1793739826,
+      "adds": 2,
+      "last_leg_margin": 40.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 13.89,
+          "ts": 1793739826
+        },
+        {
+          "px": 14.04,
+          "ts": 1793743347
+        },
+        {
+          "px": 15.72,
+          "ts": 1793765059
+        }
+      ],
+      "entry_candle_ts": 1793739600,
+      "last_leg_candle_ts": 1793764800,
+      "dry_run": true,
+      "order_id": "PAPER-CLANKERUSDT-1793739826",
+      "closed_at": 1793785937,
+      "close_px": 14.54,
+      "pnl_usdt": 36.44670976389241
     }
   ],
   "pending": [
