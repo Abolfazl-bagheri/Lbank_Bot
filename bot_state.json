@@ -317,6 +317,31 @@
       "last_leg_candle_ts": 1793803783,
       "dry_run": true,
       "order_id": "PAPER-RDDTUSDT-1793803712"
+    },
+    {
+      "symbol": "BKNGUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 170.08,
+      "qty": 1.1759,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 165.828,
+      "tf": "1h",
+      "opened_at": 1793804738,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 170.08,
+          "ts": 1793804738
+        }
+      ],
+      "entry_candle_ts": 1793804400,
+      "last_leg_candle_ts": 1793804400,
+      "dry_run": true,
+      "order_id": "PAPER-BKNGUSDT-1793804738"
     }
   ],
   "trade_history": [
@@ -4943,6 +4968,15 @@
       "side": "SELL",
       "upper": 0.25914519212084197,
       "open": 0.2666,
+      "reported": false
+    },
+    {
+      "symbol": "SXTUSDT",
+      "tf": "1h",
+      "candle_ts": 1793804400,
+      "side": "SELL",
+      "upper": 0.00943726815231363,
+      "open": 0.009994,
       "reported": false
     }
   ],
