@@ -166,6 +166,31 @@
       "last_leg_candle_ts": 1793802600,
       "dry_run": true,
       "order_id": "PAPER-RIVNUSDT-1793802868"
+    },
+    {
+      "symbol": "SXTUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.00986,
+      "qty": 20283.9757,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0096135,
+      "tf": "15m",
+      "opened_at": 1793803603,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.00986,
+          "ts": 1793803603
+        }
+      ],
+      "entry_candle_ts": 1793803500,
+      "last_leg_candle_ts": 1793803500,
+      "dry_run": true,
+      "order_id": "PAPER-SXTUSDT-1793803603"
     }
   ],
   "trade_history": [
@@ -4748,6 +4773,16 @@
       "open": 0.0031902,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "RIVNUSDT",
+      "tf": "15m",
+      "candle_ts": 1793802600,
+      "side": "SELL",
+      "upper": 13.855970256888627,
+      "open": 14.051,
+      "reported": true,
+      "filled": false
     }
   ],
   "paper_days": [
@@ -4816,17 +4851,12 @@
     "LIGHT1USDT": 1793726282,
     "OROCHIUSDT": 1793736424,
     "CYBERLEEKUSDT": 1793758800,
-    "AMCUSDT": 1793772630,
     "IRENONUSDT": 1793776197,
     "ONSEMIUSDT": 1793784100,
     "SIMOUSDT": 1793785920,
     "POETUSDT": 1793794891,
     "KOPNUSDT": 1793798527,
     "KNTQUSDT": 1793801068,
-    "1000WOJAKUSDT": 1793803078,
-    "NEIRO1USDT": 1793803154,
-    "1000SATSUSDT": 1793803156,
-    "CZUSDT": 1793803169,
     "OSCRUSDT": 1793804847,
     "AINBSCUSDT": 1793805623,
     "RIOTUSDT": 1793808427,
