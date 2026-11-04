@@ -257,15 +257,15 @@
       "symbol": "BKNGUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 169.7797325976231,
-      "qty": 3.534,
-      "margin": 30.0,
+      "entry": 171.3348345999927,
+      "qty": 8.1711,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 165.53523928268254,
+      "tp_price": 167.05146373499286,
       "tf": "1h",
       "opened_at": 1793804738,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [
         170.08
       ],
@@ -277,10 +277,14 @@
         {
           "px": 169.63,
           "ts": 1793806432
+        },
+        {
+          "px": 172.52,
+          "ts": 1793808259
         }
       ],
       "entry_candle_ts": 1793804400,
-      "last_leg_candle_ts": 1793806432,
+      "last_leg_candle_ts": 1793808000,
       "dry_run": true,
       "order_id": "PAPER-BKNGUSDT-1793804738"
     },
@@ -5454,6 +5458,15 @@
       "upper": 18.029369794468717,
       "open": 18.59,
       "reported": false
+    },
+    {
+      "symbol": "ELSAUSDT",
+      "tf": "4h",
+      "candle_ts": 1793808000,
+      "side": "SELL",
+      "upper": 0.0759901401696473,
+      "open": 0.0777,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -5548,7 +5561,8 @@
     "1000SATSUSDT": 1793846944,
     "NEIRO1USDT": 1793846953,
     "CZUSDT": 1793846954,
-    "OSCRUSDT": 1793850616
+    "OSCRUSDT": 1793850616,
+    "SXTUSDT": 1793851456
   },
   "last_trade_report_ts": 1793807438,
   "last_known_version": "2.6.8",
