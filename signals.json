@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.8",
-  "updated_at": 1793806443,
+  "updated_at": 1793806456,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "BOTUSDT",
-      "tf": "4h",
-      "gap": 1.44,
-      "ts": 1793792691
-    },
     {
       "kind": "GAP",
       "symbol": "MEGAUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1793806443
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793806456
     }
   ],
   "trades": [
@@ -1523,32 +1523,6 @@
       "tf": "1h"
     },
     {
-      "symbol": "CYPHUSDT",
-      "side": "SELL",
-      "entry": 3.044,
-      "tp": 2.9678999999999998,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
-      "lev": 20,
-      "px": 2.949,
-      "pnl": 18.7254,
-      "tf": "15m"
-    },
-    {
-      "symbol": "ANSEMUSDT",
-      "side": "SELL",
-      "entry": 0.05014999999999999,
-      "tp": 0.048896249999999995,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
-      "lev": 20,
-      "px": 0.04851,
-      "pnl": 19.6211,
-      "tf": "15m"
-    },
-    {
       "symbol": "STONKUSDT",
       "side": "SELL",
       "entry": 0.134833,
@@ -1562,26 +1536,13 @@
       "tf": "15m"
     },
     {
-      "symbol": "CLANKERUSDT",
-      "side": "SELL",
-      "entry": 18.66,
-      "tp": 18.1935,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 18.03,
-      "pnl": 6.7524,
-      "tf": "15m"
-    },
-    {
       "symbol": "CARDSUSDT",
       "side": "SELL",
       "entry": 0.2841,
       "tp": 0.2769975,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
+      "adds": 1,
+      "pele": 2,
+      "margin": 30.0,
       "lev": 20,
       "px": 0.2841,
       "pnl": 0.0,
@@ -1602,16 +1563,16 @@
     }
   ],
   "start": 1000.0,
-  "realized": 1896.4254,
-  "closed_n": 91,
-  "open_upnl": -204.3079,
+  "realized": 1941.5243,
+  "closed_n": 94,
+  "open_upnl": -249.4068,
   "equity": 2692.1175,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 2212.6164,
+    "profit": 2257.7153,
     "loss": -316.1909,
-    "count": 91
+    "count": 94
   }
 }
