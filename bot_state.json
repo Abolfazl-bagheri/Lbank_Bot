@@ -85,6 +85,31 @@
       "last_leg_candle_ts": 1793800800,
       "dry_run": true,
       "order_id": "PAPER-ARXUSDT-1793801076"
+    },
+    {
+      "symbol": "CATUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 1.764e-06,
+      "qty": 113378684.8073,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 1.7198999999999998e-06,
+      "tf": "15m",
+      "opened_at": 1793801824,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 1.764e-06,
+          "ts": 1793801824
+        }
+      ],
+      "entry_candle_ts": 1793801700,
+      "last_leg_candle_ts": 1793801700,
+      "dry_run": true,
+      "order_id": "PAPER-CATUSDT-1793801824"
     }
   ],
   "trade_history": [
@@ -4638,6 +4663,15 @@
       "open": 10.27,
       "reported": true,
       "filled": false
+    },
+    {
+      "symbol": "ARXUSDT",
+      "tf": "1h",
+      "candle_ts": 1793800800,
+      "side": "SELL",
+      "upper": 0.24374189567185203,
+      "open": 0.2465,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -4735,7 +4769,7 @@
     "DRVUSDT": 1793842313,
     "QUACKAIUSDT": 1793843367
   },
-  "last_trade_report_ts": 1793800187,
+  "last_trade_report_ts": 1793801222,
   "last_known_version": "2.6.8",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
