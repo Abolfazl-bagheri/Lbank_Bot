@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.8",
-  "updated_at": 1793801075,
+  "updated_at": 1793801081,
   "signals": [
-    {
-      "kind": "HEARTBEAT",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1793768835
-    },
     {
       "kind": "GAP",
       "symbol": "FLUIDUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 0.72,
       "ts": 1793801075
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793801081
     }
   ],
   "trades": [
@@ -1429,6 +1429,19 @@
       "lev": 20,
       "px": 0.0088,
       "pnl": 2.0247,
+      "tf": "1h"
+    },
+    {
+      "symbol": "ARXUSDT",
+      "side": "SELL",
+      "entry": 0.2455,
+      "tp": 0.23936249999999998,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.2455,
+      "pnl": 0.0,
       "tf": "1h"
     }
   ],
