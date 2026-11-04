@@ -382,16 +382,18 @@
       "symbol": "SHEINUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 4.866662094708479,
-      "qty": 123.28779999999999,
-      "margin": 30.0,
+      "entry": 4.896998402179304,
+      "qty": 285.88939999999997,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 4.744995542340767,
+      "tp_price": 4.774573442124821,
       "tf": "4h",
       "opened_at": 1793761503,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
+      "adds": 2,
+      "last_leg_margin": 40.0,
+      "used_res_levels": [
+        4.925
+      ],
       "steps": [
         {
           "px": 4.86,
@@ -400,10 +402,14 @@
         {
           "px": 4.87,
           "ts": 1793765169
+        },
+        {
+          "px": 4.92,
+          "ts": 1793772445
         }
       ],
       "entry_candle_ts": 1793761200,
-      "last_leg_candle_ts": 1793764800,
+      "last_leg_candle_ts": 1793772445,
       "dry_run": true,
       "order_id": "PAPER-SHEINUSDT-1793761503"
     },
@@ -2870,16 +2876,6 @@
     {
       "symbol": "BEAMXUSDT",
       "tf": "1h",
-      "candle_ts": 1793512800,
-      "side": "SELL",
-      "upper": 0.005357063873713778,
-      "open": 0.005413,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "BEAMXUSDT",
-      "tf": "1h",
       "candle_ts": 1793516400,
       "side": "SELL",
       "upper": 0.005744734306817219,
@@ -4301,7 +4297,8 @@
       "side": "SELL",
       "upper": 0.13302001366439223,
       "open": 0.13445,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -4388,7 +4385,7 @@
     "NEXUSDT": 1793808585,
     "1000000BABYDOGEUSDT": 1793808612
   },
-  "last_trade_report_ts": 1793770646,
+  "last_trade_report_ts": 1793771608,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.7",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
