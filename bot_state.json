@@ -233,17 +233,18 @@
       "symbol": "HOMEUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.005503302090817097,
-      "qty": 109025.45240000001,
-      "margin": 30.0,
+      "entry": 0.005438563290338451,
+      "qty": 257420.92630000002,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 0.00536571953854667,
+      "tp_price": 0.00530259920807999,
       "tf": "1h",
       "opened_at": 1793718327,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [
-        0.005476
+        0.005476,
+        0.0054
       ],
       "steps": [
         {
@@ -253,10 +254,14 @@
         {
           "px": 0.00546,
           "ts": 1793754392
+        },
+        {
+          "px": 0.005391,
+          "ts": 1793761661
         }
       ],
       "entry_candle_ts": 1793718000,
-      "last_leg_candle_ts": 1793754392,
+      "last_leg_candle_ts": 1793761661,
       "dry_run": true,
       "order_id": "PAPER-HOMEUSDT-1793718327"
     },
