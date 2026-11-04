@@ -65,15 +65,15 @@
       "symbol": "ARXUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.25706254818683316,
-      "qty": 5446.1454,
-      "margin": 70.0,
+      "entry": 0.2680675714816922,
+      "qty": 11191.208200000001,
+      "margin": 150.0,
       "leverage": 20,
-      "tp_price": 0.25063598448216234,
+      "tp_price": 0.2613658821946499,
       "tf": "1h",
       "opened_at": 1793801076,
-      "adds": 2,
-      "last_leg_margin": 40.0,
+      "adds": 3,
+      "last_leg_margin": 80.0,
       "used_res_levels": [
         0.2477
       ],
@@ -89,10 +89,14 @@
         {
           "px": 0.2656,
           "ts": 1793804687
+        },
+        {
+          "px": 0.2785,
+          "ts": 1793808138
         }
       ],
       "entry_candle_ts": 1793800800,
-      "last_leg_candle_ts": 1793804400,
+      "last_leg_candle_ts": 1793808000,
       "dry_run": true,
       "order_id": "PAPER-ARXUSDT-1793801076"
     },
@@ -5342,6 +5346,15 @@
       "open": 14.424,
       "reported": true,
       "filled": false
+    },
+    {
+      "symbol": "CLANKERUSDT",
+      "tf": "1h",
+      "candle_ts": 1793808000,
+      "side": "SELL",
+      "upper": 18.15149973529128,
+      "open": 18.61,
+      "reported": false
     }
   ],
   "paper_days": [
