@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.7",
-  "updated_at": 1793761501,
+  "updated_at": 1793761514,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "CLSKUSDT",
-      "tf": "1h",
-      "gap": 1.16,
-      "ts": 1793732579
-    },
     {
       "kind": "GAP",
       "symbol": "BONERUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 1.4,
       "ts": 1793761501
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793761514
     }
   ],
   "trades": [
@@ -1547,6 +1547,19 @@
       "px": 0.02869,
       "pnl": -10.8009,
       "tf": "15m"
+    },
+    {
+      "symbol": "SHEINUSDT",
+      "side": "SELL",
+      "entry": 4.86,
+      "tp": 4.7385,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 4.86,
+      "pnl": 0.0,
+      "tf": "1h"
     }
   ],
   "start": 1000.0,
