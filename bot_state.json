@@ -4,19 +4,20 @@
       "symbol": "POPMARTUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 17.76260841119282,
-      "qty": 168.894,
-      "margin": 150.0,
+      "entry": 17.673099307185684,
+      "qty": 350.81550000000004,
+      "margin": 310.0,
       "leverage": 20,
-      "tp_price": 17.318543200913,
+      "tp_price": 17.23127182450604,
       "tf": "1h",
       "opened_at": 1793585203,
-      "adds": 3,
-      "last_leg_margin": 80.0,
+      "adds": 4,
+      "last_leg_margin": 160.0,
       "used_res_levels": [
         17.468,
         17.793,
-        17.918
+        17.918,
+        17.649
       ],
       "steps": [
         {
@@ -34,10 +35,14 @@
         {
           "px": 17.87,
           "ts": 1793687567
+        },
+        {
+          "px": 17.59,
+          "ts": 1793785917
         }
       ],
       "entry_candle_ts": 1793584800,
-      "last_leg_candle_ts": 1793687567,
+      "last_leg_candle_ts": 1793785917,
       "dry_run": true,
       "order_id": "PAPER-POPMARTUSDT-1793585203"
     },
@@ -2944,16 +2949,6 @@
     },
     {
       "symbol": "FONEUSDT",
-      "tf": "15m",
-      "candle_ts": 1793525400,
-      "side": "SELL",
-      "upper": 0.0017554182158499429,
-      "open": 0.001795,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "FONEUSDT",
       "tf": "1h",
       "candle_ts": 1793527200,
       "side": "SELL",
@@ -4333,7 +4328,6 @@
     "APROUSDT": 1793604906,
     "PIPEDOGUSDT": 1793608506,
     "BIO1USDT": 1793611218,
-    "UBIKUSDT": 1793622954,
     "TRUMPSOLUSDT": 1793630182,
     "UP2USDT": 1793631162,
     "BEMUSDT": 1793633776,
@@ -4341,7 +4335,6 @@
     "TOADUSDT": 1793657184,
     "CRWDUSDT": 1793658035,
     "GALUSDT": 1793658927,
-    "OFCUSDT": 1793659840,
     "LWLGUSDT": 1793675941,
     "EWZSUSDT": 1793678937,
     "BIDUUSDT": 1793678955,
@@ -4379,9 +4372,11 @@
     "AI1USDT": 1793821025,
     "WUXIBIOUSDT": 1793821810,
     "FLOCK1USDT": 1793821836,
-    "ARROWUSDT": 1793826332
+    "ARROWUSDT": 1793826332,
+    "OFCUSDT": 1793829105,
+    "UBIKUSDT": 1793829115
   },
-  "last_trade_report_ts": 1793783290,
+  "last_trade_report_ts": 1793784192,
   "last_daily_report_date": "2026-11-01",
   "last_known_version": "2.6.7",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
