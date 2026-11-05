@@ -35,7 +35,7 @@ SIGNALS_FILE = os.path.join(BASE_DIR, "signals.json")
 LIVE_TOPIC = os.environ.get("LIVE_TOPIC", "lbank-gap-b0b85cee29ce").strip()
 STATE_BAK = os.path.join(BASE_DIR, "bot_state.bak")
 
-BOT_VERSION = "2.7.0"
+BOT_VERSION = "2.7.2"
 CHANGELOG = {
     "2.7.0": ["احتمال‌گپ زودتر","سیگنال فقط دقایق اول کندل","بیدار شدن نزدیک کندل هر ۱۰ث"],
     "2.6.5": [
@@ -68,9 +68,9 @@ CHAT_ID = os.environ.get("CHAT_ID", "").strip()
 TIMEFRAMES = {"15m": "15min", "1h": "1hr", "4h": "4hr"}
 TF_ORDER = {"15m": 0, "1h": 1, "4h": 2}
 PERIOD_SEC = {"15m": 900, "1h": 3600, "4h": 14400}
-OPEN_WINDOW_SEC = {"15m": 90, "1h": 120, "4h": 180}
-PRE_ALERT_BEFORE = {"15m": 240, "1h": 600, "4h": 1500}  # 4m / 10m / 25m قبل
-SIGNAL_SCAN_SEC = {"15m": 100, "1h": 130, "4h": 200}
+OPEN_WINDOW_SEC = {"15m": 180, "1h": 210, "4h": 300}
+PRE_ALERT_BEFORE = {"15m": 180, "1h": 600, "4h": 1200}  # 3m / 10m / 20m قبل از کندل
+SIGNAL_SCAN_SEC = {"15m": 200, "1h": 240, "4h": 320}
 
 BB_PERIOD = 20
 BB_STD = 2.0
@@ -757,13 +757,21 @@ def check_signal(df: pd.DataFrame, symbol: str, tf: str):
         return None
     stats["checked"] += 1
     candle_ts = int(cur["ts"])
-    age_sec = int(time.time()) - candle_ts
-    max_age = OPEN_WINDOW_SEC.get(tf, 120)
-    if age_sec < 0 or age_sec > max_age:
+    now_ts = int(time.time())
+    age_sec = now_ts - candle_ts
+    period = PERIOD_SEC.get(tf, 900)
+    period_open = (now_ts // period) * period
+    age_period = now_ts - period_open
+    max_age = OPEN_WINDOW_SEC.get(tf, 180)
+    # اگر کندل API هنوز کندل قبلی است، age جعلی بزرگ می‌شود → با age دوره چک کن
+    if age_sec > max_age and 0 <= age_period <= max_age and candle_ts < period_open:
+        log.info("WAIT_CANDLE %s %s | api_ts=%s period_open=%s age_period=%ss", symbol, tf, candle_ts, period_open, age_period)
+        return None  # هنوز کندل جدید در API نیست؛ سیگنال نده نه اینکه SKIP_AGE دائمی
+    if age_sec < 0 or (age_sec > max_age and age_period > max_age):
         stats["skip_age"] += 1
         log.info(
-            "SKIP_AGE %s %s | age=%ss > window=%ss | open=%.6g upper=%.6g",
-            symbol, tf, age_sec, max_age, open_p, upper,
+            "SKIP_AGE %s %s | age=%ss period_age=%ss window=%ss | open=%.6g upper=%.6g",
+            symbol, tf, age_sec, age_period, max_age, open_p, upper,
         )
         return None
     upper_pen = (high - upper) / upper * 100.0 if upper > 0 else 0.0
@@ -1879,7 +1887,7 @@ async def one_cycle(tfs: list | None = None) -> None:
     t0 = time.time()
     # فقط TFهایی که هنوز داخل پنجره باز شدن کندل‌اند
     now_i = int(time.time())
-    tfs = [tf for tf in tfs if (now_i % PERIOD_SEC.get(tf, 900)) < OPEN_WINDOW_SEC.get(tf, 90)]
+    tfs = [tf for tf in tfs if (now_i % PERIOD_SEC.get(tf, 900)) < SIGNAL_SCAN_SEC.get(tf, OPEN_WINDOW_SEC.get(tf, 180))]
     if not tfs:
         log.info("cycle skipped — خارج پنجره باز شدن کندل")
         return
@@ -1887,13 +1895,7 @@ async def one_cycle(tfs: list | None = None) -> None:
     log.info("cycle TFs=%s n=%d iran=%s age15=%s", ",".join(tfs), len(symbols), iran_now().strftime("%H:%M:%S"), now_i % 900)
 
 
-    try:
-        await report_previous_gaps(tfs)
-    except Exception as e:
-        cycle_counters["errs"] = cycle_counters.get("errs", 0) + 1
-        log.warning("gap report: %s", e)
-
-    sem = asyncio.Semaphore(12)
+    sem = asyncio.Semaphore(16)
 
     async def one(sym):
         async with sem:
@@ -1903,8 +1905,14 @@ async def one_cycle(tfs: list | None = None) -> None:
                 cycle_counters["errs"] = cycle_counters.get("errs", 0) + 1
                 log.warning("%s: %s", sym, e)
 
+    # اول سیگنال — گزارش گپ قبلی بعداً تا پنجرهٔ زمانی نسوزد
     await asyncio.gather(*[one(s) for s in symbols])
     flush_cycle_signals()
+    try:
+        await report_previous_gaps(tfs)
+    except Exception as e:
+        cycle_counters["errs"] = cycle_counters.get("errs", 0) + 1
+        log.warning("gap report: %s", e)
     manage_open_trades()
     push_positions_live()
     maybe_send_hourly_trade_report()
