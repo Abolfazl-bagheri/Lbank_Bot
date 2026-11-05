@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1793890949,
+  "updated_at": 1793890962,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "SONYUSDT",
-      "tf": "4h",
-      "gap": 2.23,
-      "ts": 1793864652
-    },
     {
       "kind": "GAP",
       "symbol": "ARIAUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 1.28,
       "ts": 1793890949
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793890962
     }
   ],
   "trades": [
@@ -1547,6 +1547,19 @@
       "px": 18.59,
       "pnl": -9.3469,
       "tf": "15m"
+    },
+    {
+      "symbol": "SOXSUSDT",
+      "side": "SELL",
+      "entry": 71.43,
+      "tp": 69.64425,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 71.43,
+      "pnl": 0.0,
+      "tf": "1h"
     }
   ],
   "start": 1000.0,
