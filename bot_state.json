@@ -1,46 +1,6 @@
 {
   "open_trades": [
     {
-      "symbol": "LAOPUUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 39.8132875657914,
-      "qty": 75.3518,
-      "margin": 150.0,
-      "leverage": 20,
-      "tp_price": 38.817955376646616,
-      "tf": "1h",
-      "opened_at": 1793843206,
-      "adds": 3,
-      "last_leg_margin": 80.0,
-      "used_res_levels": [
-        39.7,
-        40.07
-      ],
-      "steps": [
-        {
-          "px": 39.08,
-          "ts": 1793843206
-        },
-        {
-          "px": 39.55,
-          "ts": 1793843421
-        },
-        {
-          "px": 39.92,
-          "ts": 1793844349
-        },
-        {
-          "px": 39.92,
-          "ts": 1793844475
-        }
-      ],
-      "entry_candle_ts": 1793843100,
-      "last_leg_candle_ts": 1793844475,
-      "dry_run": true,
-      "order_id": "PAPER-LAOPUUSDT-1793843206"
-    },
-    {
       "symbol": "HK1810USDT",
       "side": "SELL",
       "status": "open",
@@ -4654,9 +4614,54 @@
       "last_leg_candle_ts": 1793869200,
       "dry_run": true,
       "order_id": "PAPER-AIOUSDT-1793869380",
-      "closed_at": 1793872264,
-      "close_px": 0.04118,
-      "pnl_usdt": 5.387523629489613,
+      "closed_at": 1793872164,
+      "close_px": 0.04101,
+      "pnl_usdt": 6.190926275992465,
+      "close_reason": "TP50",
+      "why": "TP50"
+    },
+    {
+      "symbol": "LAOPUUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 39.8132875657914,
+      "qty": 75.3518,
+      "margin": 150.0,
+      "leverage": 20,
+      "tp_price": 38.817955376646616,
+      "tf": "1h",
+      "opened_at": 1793843206,
+      "adds": 3,
+      "last_leg_margin": 80.0,
+      "used_res_levels": [
+        39.7,
+        40.07
+      ],
+      "steps": [
+        {
+          "px": 39.08,
+          "ts": 1793843206
+        },
+        {
+          "px": 39.55,
+          "ts": 1793843421
+        },
+        {
+          "px": 39.92,
+          "ts": 1793844349
+        },
+        {
+          "px": 39.92,
+          "ts": 1793844475
+        }
+      ],
+      "entry_candle_ts": 1793843100,
+      "last_leg_candle_ts": 1793844475,
+      "dry_run": true,
+      "order_id": "PAPER-LAOPUUSDT-1793843206",
+      "closed_at": 1793873175,
+      "close_px": 38.61,
+      "pnl_usdt": 90.66979689654879,
       "close_reason": "TP50",
       "why": "TP50"
     }
@@ -4871,26 +4876,6 @@
       "tf": "15m",
       "candle_ts": 1793430900,
       "side": "SELL"
-    },
-    {
-      "symbol": "CLAUDIAUSDT",
-      "tf": "1h",
-      "candle_ts": 1793613600,
-      "side": "SELL",
-      "upper": 0.002213702324359983,
-      "open": 0.002266,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "REDUSDT",
-      "tf": "1h",
-      "candle_ts": 1793613600,
-      "side": "SELL",
-      "upper": 0.14327460525017252,
-      "open": 0.1463,
-      "reported": true,
-      "filled": true
     },
     {
       "symbol": "AGTUSDT",
@@ -6576,7 +6561,8 @@
       "side": "SELL",
       "upper": 0.04172744358814638,
       "open": 0.04226,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ACTUSDT",
@@ -6585,7 +6571,8 @@
       "side": "SELL",
       "upper": 0.009015490065423161,
       "open": 0.00911,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -6657,7 +6644,6 @@
     "MARRIOTTUSDT": 1793714834,
     "FUTUUSDT": 1793718431,
     "LIGHT1USDT": 1793726282,
-    "OROCHIUSDT": 1793736424,
     "IRENONUSDT": 1793776197,
     "ONSEMIUSDT": 1793784100,
     "SIMOUSDT": 1793785920,
@@ -6673,7 +6659,6 @@
     "WUXIBIOUSDT": 1793866147,
     "ARROWUSDT": 1793871201,
     "BBXUSDT": 1793872237,
-    "TOADUSDT": 1793872239,
     "UBIKUSDT": 1793873127,
     "OFCUSDT": 1793873172,
     "STONKBROKERUSDT": 1793880528,
@@ -6692,10 +6677,12 @@
     "CZUSDT": 1793901119,
     "AINBSCUSDT": 1793904563,
     "O1USDT": 1793911895,
-    "MANCERUSDT": 1793914576,
-    "PIPEDOGUSDT": 1793915458
+    "MANCERUSDT": 1793914388,
+    "FWDIUSDT": 1793915360,
+    "TOADUSDT": 1793916296,
+    "OROCHIUSDT": 1793916345
   },
-  "last_trade_report_ts": 1793871432,
-  "last_known_version": "2.6.9",
+  "last_trade_report_ts": 1793872172,
+  "last_known_version": "2.7.0",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
