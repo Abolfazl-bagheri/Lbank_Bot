@@ -74,6 +74,31 @@
       "last_leg_candle_ts": 1793869200,
       "dry_run": true,
       "order_id": "PAPER-ACTUSDT-1793869497"
+    },
+    {
+      "symbol": "AIOUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.04738,
+      "qty": 4221.1904,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0461955,
+      "tf": "15m",
+      "opened_at": 1793877334,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.04738,
+          "ts": 1793877334
+        }
+      ],
+      "entry_candle_ts": 1793877300,
+      "last_leg_candle_ts": 1793877300,
+      "dry_run": true,
+      "order_id": "PAPER-AIOUSDT-1793877334"
     }
   ],
   "trade_history": [
@@ -6561,7 +6586,8 @@
       "side": "SELL",
       "upper": 0.04172744358814638,
       "open": 0.04226,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ACTUSDT",
@@ -6570,7 +6596,8 @@
       "side": "SELL",
       "upper": 0.009015490065423161,
       "open": 0.00911,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -6680,7 +6707,7 @@
     "TOADUSDT": 1793916983,
     "OROCHIUSDT": 1793917021
   },
-  "last_trade_report_ts": 1793871432,
+  "last_trade_report_ts": 1793876744,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
