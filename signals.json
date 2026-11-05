@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1793880156,
+  "updated_at": 1793880167,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "LAOPUUSDT",
-      "tf": "1h",
-      "gap": 1.33,
-      "ts": 1793844195
-    },
     {
       "kind": "GAP",
       "symbol": "FRONGUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 0.64,
       "ts": 1793880156
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793880167
     }
   ],
   "trades": [
@@ -1473,15 +1473,15 @@
     {
       "symbol": "FRONGUSDT",
       "side": "SELL",
-      "entry": 0.00256,
-      "tp": 0.002496,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
+      "entry": 0.002546631853784793,
+      "tp": 0.002482966057440173,
+      "adds": 1,
+      "pele": 2,
+      "margin": 30.0,
       "lev": 20,
       "px": 0.00254,
       "pnl": 1.5625,
-      "tf": "15m"
+      "tf": "1h"
     },
     {
       "symbol": "CNPYUSDT",
