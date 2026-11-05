@@ -60,16 +60,18 @@
       "symbol": "SQQQUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 47.32263370312532,
-      "qty": 29.5842,
-      "margin": 70.0,
+      "entry": 48.86526689394446,
+      "qty": 61.393299999999996,
+      "margin": 150.0,
       "leverage": 20,
-      "tp_price": 46.13956786054719,
+      "tp_price": 47.643635221595844,
       "tf": "1h",
       "opened_at": 1793889928,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [],
+      "adds": 3,
+      "last_leg_margin": 80.0,
+      "used_res_levels": [
+        50.5
+      ],
       "steps": [
         {
           "px": 45.31,
@@ -82,10 +84,14 @@
         {
           "px": 48.56,
           "ts": 1793894605
+        },
+        {
+          "px": 50.3,
+          "ts": 1793916339
         }
       ],
       "entry_candle_ts": 1793889900,
-      "last_leg_candle_ts": 1793894400,
+      "last_leg_candle_ts": 1793916339,
       "dry_run": true,
       "order_id": "PAPER-SQQQUSDT-1793889928"
     },
@@ -5564,16 +5570,6 @@
       "side": "SELL"
     },
     {
-      "symbol": "ICNTUSDT",
-      "tf": "1h",
-      "candle_ts": 1793656800,
-      "side": "SELL",
-      "upper": 0.18843527508157212,
-      "open": 0.1917,
-      "reported": true,
-      "filled": false
-    },
-    {
       "symbol": "GPROUSDT",
       "tf": "15m",
       "candle_ts": 1793660400,
@@ -7508,7 +7504,18 @@
       "side": "SELL",
       "upper": 274.73712839538473,
       "open": 288.6,
-      "reported": false
+      "reported": true,
+      "filled": false
+    },
+    {
+      "symbol": "NETUSDT",
+      "tf": "15m",
+      "candle_ts": 1793915100,
+      "side": "SELL",
+      "upper": 280.99765335553394,
+      "open": 285.0,
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
