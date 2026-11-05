@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1793873714,
+  "updated_at": 1793873994,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "APPUSDT",
-      "tf": "4h",
-      "gap": 11.54,
-      "ts": 1793835782
-    },
     {
       "kind": "GAP",
       "symbol": "FLUIDUSDT",
@@ -1402,22 +1395,16 @@
       "tf": "15m",
       "gap": 1.03,
       "ts": 1793873714
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793873994
     }
   ],
   "trades": [
-    {
-      "symbol": "LAOPUUSDT",
-      "side": "SELL",
-      "entry": 39.8132875657914,
-      "tp": 38.817955376646616,
-      "adds": 3,
-      "pele": 4,
-      "margin": 150.0,
-      "lev": 20,
-      "px": 38.45,
-      "pnl": 102.7261,
-      "tf": "1h"
-    },
     {
       "symbol": "HK1810USDT",
       "side": "SELL",
@@ -1440,8 +1427,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.00475,
-      "pnl": -9.2511,
+      "px": 0.00473,
+      "pnl": -8.37,
       "tf": "15m"
     },
     {
@@ -1453,23 +1440,23 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.009021,
-      "pnl": 1.5182,
+      "px": 0.009029,
+      "pnl": 1.3421,
       "tf": "1h"
     }
   ],
   "start": 1000.0,
   "session_start": 1793837408,
-  "realized": 227.6865,
-  "closed_n": 11,
-  "open_upnl": 92.3941,
-  "equity": 1320.0806,
+  "realized": 331.9196,
+  "closed_n": 12,
+  "open_upnl": -9.627,
+  "equity": 1322.2926,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 227.6865,
+    "profit": 331.9196,
     "loss": 0,
-    "count": 11
+    "count": 12
   }
 }
