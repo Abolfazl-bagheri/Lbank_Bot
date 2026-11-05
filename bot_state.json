@@ -149,6 +149,31 @@
       "last_leg_candle_ts": 1793878200,
       "dry_run": true,
       "order_id": "PAPER-FRONGUSDT-1793878253"
+    },
+    {
+      "symbol": "CNPYUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.1743,
+      "qty": 1147.4469,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.1699425,
+      "tf": "15m",
+      "opened_at": 1793878273,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.1743,
+          "ts": 1793878273
+        }
+      ],
+      "entry_candle_ts": 1793878200,
+      "last_leg_candle_ts": 1793878200,
+      "dry_run": true,
+      "order_id": "PAPER-CNPYUSDT-1793878273"
     }
   ],
   "trade_history": [
@@ -6665,6 +6690,15 @@
       "side": "SELL",
       "upper": 0.28470724887051607,
       "open": 0.2911,
+      "reported": false
+    },
+    {
+      "symbol": "FRONGUSDT",
+      "tf": "15m",
+      "candle_ts": 1793878200,
+      "side": "SELL",
+      "upper": 0.002512038930441247,
+      "open": 0.002562,
       "reported": false
     }
   ],
