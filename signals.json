@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.9",
-  "updated_at": 1793867782,
+  "updated_at": 1793868722,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1793830734
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1395,13 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1793867782
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793868722
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 4,
       "margin": 150.0,
       "lev": 20,
-      "px": 39.2,
-      "pnl": 46.2123,
+      "px": 39.01,
+      "pnl": 60.5291,
       "tf": "1h"
     },
     {
@@ -1427,8 +1427,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 31.28,
-      "pnl": -3.2489,
+      "px": 31.21,
+      "pnl": -2.794,
       "tf": "1h"
     },
     {
@@ -1440,36 +1440,23 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.00485,
-      "pnl": -13.6564,
-      "tf": "15m"
-    },
-    {
-      "symbol": "MAGMAUSDT",
-      "side": "SELL",
-      "entry": 0.42675,
-      "tp": 0.41608125,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.42243,
-      "pnl": 2.0246,
+      "px": 0.00489,
+      "pnl": -15.4185,
       "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1793837408,
-  "realized": 185.8166,
-  "closed_n": 8,
-  "open_upnl": 31.3316,
-  "equity": 1217.1482,
+  "realized": 194.8055,
+  "closed_n": 9,
+  "open_upnl": 42.3166,
+  "equity": 1237.1221,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 185.8166,
+    "profit": 194.8055,
     "loss": 0,
-    "count": 8
+    "count": 9
   }
 }
