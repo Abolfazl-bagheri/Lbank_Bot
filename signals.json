@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.8",
-  "updated_at": 1793847868,
+  "updated_at": 1793847875,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "ELSAUSDT",
-      "tf": "1h",
-      "gap": 2.69,
-      "ts": 1793822695
-    },
     {
       "kind": "GAP",
       "symbol": "ELSAUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 0.59,
       "ts": 1793847868
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793847875
     }
   ],
   "trades": [
@@ -1456,6 +1456,19 @@
       "px": 21.95,
       "pnl": 1.2675,
       "tf": "15m"
+    },
+    {
+      "symbol": "LYNUSDT",
+      "side": "SELL",
+      "entry": 0.02191,
+      "tp": 0.02136225,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.02191,
+      "pnl": 0.0,
+      "tf": "1h"
     }
   ],
   "start": 1000.0,
