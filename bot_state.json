@@ -114,6 +114,31 @@
       "last_leg_candle_ts": 1793846700,
       "dry_run": true,
       "order_id": "PAPER-MINIMAXUSDT-1793846964"
+    },
+    {
+      "symbol": "LYNUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.02191,
+      "qty": 9128.2519,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.02136225,
+      "tf": "1h",
+      "opened_at": 1793847870,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.02191,
+          "ts": 1793847870
+        }
+      ],
+      "entry_candle_ts": 1793847600,
+      "last_leg_candle_ts": 1793847600,
+      "dry_run": true,
+      "order_id": "PAPER-LYNUSDT-1793847870"
     }
   ],
   "trade_history": [
@@ -6356,7 +6381,8 @@
       "side": "SELL",
       "upper": 39.27255836489384,
       "open": 39.75,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "HK1810USDT",
@@ -6365,7 +6391,8 @@
       "side": "SELL",
       "upper": 30.300007448132018,
       "open": 30.69,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "ARGUSUSDT",
@@ -6374,6 +6401,15 @@
       "side": "SELL",
       "upper": 0.0045214897897640615,
       "open": 0.00458,
+      "reported": false
+    },
+    {
+      "symbol": "MINIMAXUSDT",
+      "tf": "15m",
+      "candle_ts": 1793846700,
+      "side": "SELL",
+      "upper": 21.775513686819608,
+      "open": 22.06,
       "reported": false
     }
   ],
@@ -6458,10 +6494,6 @@
     "FLOCK1USDT": 1793821836,
     "AEHRUSDT": 1793830009,
     "QUACKAIUSDT": 1793843367,
-    "1000WOJAKUSDT": 1793846928,
-    "1000SATSUSDT": 1793846944,
-    "NEIRO1USDT": 1793846953,
-    "CZUSDT": 1793846954,
     "OSCRUSDT": 1793850616,
     "SXTUSDT": 1793851456,
     "RIOTUSDT": 1793852211,
