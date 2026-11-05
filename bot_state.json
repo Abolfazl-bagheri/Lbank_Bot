@@ -57,31 +57,6 @@
       "order_id": "PAPER-ACTUSDT-1793869497"
     },
     {
-      "symbol": "ZZZUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.00959,
-      "qty": 20855.0574,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.00935025,
-      "tf": "15m",
-      "opened_at": 1793879168,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.00959,
-          "ts": 1793879168
-        }
-      ],
-      "entry_candle_ts": 1793879100,
-      "last_leg_candle_ts": 1793879100,
-      "dry_run": true,
-      "order_id": "PAPER-ZZZUSDT-1793879168"
-    },
-    {
       "symbol": "ARIAUSDT",
       "side": "SELL",
       "status": "open",
@@ -215,15 +190,15 @@
       "symbol": "UVXYUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 19.10896575398559,
-      "qty": 73.264,
-      "margin": 70.0,
+      "entry": 19.781482781198875,
+      "qty": 151.6569,
+      "margin": 150.0,
       "leverage": 20,
-      "tp_price": 18.631241610135948,
+      "tp_price": 19.286945711668903,
       "tf": "15m",
       "opened_at": 1793889994,
-      "adds": 2,
-      "last_leg_margin": 40.0,
+      "adds": 3,
+      "last_leg_margin": 80.0,
       "used_res_levels": [],
       "steps": [
         {
@@ -237,10 +212,14 @@
         {
           "px": 19.76,
           "ts": 1793891729
+        },
+        {
+          "px": 20.41,
+          "ts": 1793892625
         }
       ],
       "entry_candle_ts": 1793889900,
-      "last_leg_candle_ts": 1793891700,
+      "last_leg_candle_ts": 1793892600,
       "dry_run": true,
       "order_id": "PAPER-UVXYUSDT-1793889994"
     },
@@ -5152,6 +5131,36 @@
       "closed_at": 1793892003,
       "close_px": 0.00436,
       "pnl_usdt": 7.929515418502185,
+      "close_reason": "TP50",
+      "why": "TP50"
+    },
+    {
+      "symbol": "ZZZUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.00959,
+      "qty": 20855.0574,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.00935025,
+      "tf": "15m",
+      "opened_at": 1793879168,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.00959,
+          "ts": 1793879168
+        }
+      ],
+      "entry_candle_ts": 1793879100,
+      "last_leg_candle_ts": 1793879100,
+      "dry_run": true,
+      "order_id": "PAPER-ZZZUSDT-1793879168",
+      "closed_at": 1793892006,
+      "close_px": 0.00928,
+      "pnl_usdt": 6.465067778936383,
       "close_reason": "TP50",
       "why": "TP50"
     }
