@@ -139,35 +139,6 @@
       "last_leg_candle_ts": 1793858400,
       "dry_run": true,
       "order_id": "PAPER-JCTUSDT-1793858598"
-    },
-    {
-      "symbol": "CARDSUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.3159909205695189,
-      "qty": 1898.7887,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.3080911475552809,
-      "tf": "15m",
-      "opened_at": 1793859585,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.3184,
-          "ts": 1793859585
-        },
-        {
-          "px": 0.3148,
-          "ts": 1793860416
-        }
-      ],
-      "entry_candle_ts": 1793859300,
-      "last_leg_candle_ts": 1793860200,
-      "dry_run": true,
-      "order_id": "PAPER-CARDSUSDT-1793859585"
     }
   ],
   "trade_history": [
@@ -4499,6 +4470,40 @@
       "pnl_usdt": 83.28448368213007,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "CARDSUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.3159909205695189,
+      "qty": 1898.7887,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 0.3080911475552809,
+      "tf": "15m",
+      "opened_at": 1793859585,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.3184,
+          "ts": 1793859585
+        },
+        {
+          "px": 0.3148,
+          "ts": 1793860416
+        }
+      ],
+      "entry_candle_ts": 1793859300,
+      "last_leg_candle_ts": 1793860200,
+      "dry_run": true,
+      "order_id": "PAPER-CARDSUSDT-1793859585",
+      "closed_at": 1793861404,
+      "close_px": 0.3038,
+      "pnl_usdt": 23.147982633577286,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -6475,7 +6480,8 @@
       "side": "SELL",
       "upper": 0.29362176147577984,
       "open": 0.3014,
-      "reported": false
+      "reported": true,
+      "filled": false
     }
   ],
   "paper_days": [
@@ -6562,7 +6568,6 @@
     "SXTUSDT": 1793851456,
     "METEORAUSDT": 1793852241,
     "AMCUSDT": 1793853303,
-    "AINBSCUSDT": 1793861206,
     "WUXIBIOUSDT": 1793866147,
     "O1USDT": 1793866200,
     "NEXUSDT": 1793866196,
@@ -6587,9 +6592,10 @@
     "1000SATSUSDT": 1793901110,
     "NEIRO1USDT": 1793901113,
     "1000WOJAKUSDT": 1793901114,
-    "CZUSDT": 1793901119
+    "CZUSDT": 1793901119,
+    "AINBSCUSDT": 1793904563
   },
-  "last_trade_report_ts": 1793858861,
+  "last_trade_report_ts": 1793860507,
   "last_known_version": "2.6.8",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
