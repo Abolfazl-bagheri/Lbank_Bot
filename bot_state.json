@@ -174,6 +174,31 @@
       "last_leg_candle_ts": 1793878200,
       "dry_run": true,
       "order_id": "PAPER-CNPYUSDT-1793878273"
+    },
+    {
+      "symbol": "ZZZUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.00959,
+      "qty": 20855.0574,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.00935025,
+      "tf": "15m",
+      "opened_at": 1793879168,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.00959,
+          "ts": 1793879168
+        }
+      ],
+      "entry_candle_ts": 1793879100,
+      "last_leg_candle_ts": 1793879100,
+      "dry_run": true,
+      "order_id": "PAPER-ZZZUSDT-1793879168"
     }
   ],
   "trade_history": [
@@ -6681,7 +6706,8 @@
       "side": "SELL",
       "upper": 0.04670020924004657,
       "open": 0.04727,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "XTZUSDT",
@@ -6699,6 +6725,15 @@
       "side": "SELL",
       "upper": 0.002512038930441247,
       "open": 0.002562,
+      "reported": false
+    },
+    {
+      "symbol": "CNPYUSDT",
+      "tf": "15m",
+      "candle_ts": 1793878200,
+      "side": "SELL",
+      "upper": 0.17164106324646236,
+      "open": 0.1745,
       "reported": false
     }
   ],
@@ -6809,7 +6844,7 @@
     "TOADUSDT": 1793916983,
     "OROCHIUSDT": 1793917021
   },
-  "last_trade_report_ts": 1793876744,
+  "last_trade_report_ts": 1793878511,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
