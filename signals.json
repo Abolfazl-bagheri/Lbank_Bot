@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1793880123,
+  "updated_at": 1793880135,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "HK1810USDT",
-      "tf": "1h",
-      "gap": 3.39,
-      "ts": 1793843804
-    },
     {
       "kind": "GAP",
       "symbol": "MEITUANUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 0.75,
       "ts": 1793880123
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793880135
     }
   ],
   "trades": [
@@ -1521,6 +1521,19 @@
       "px": 0.13818,
       "pnl": 0.0,
       "tf": "1h"
+    },
+    {
+      "symbol": "TRUTHUSDT",
+      "side": "SELL",
+      "entry": 0.019349,
+      "tp": 0.018865275,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.019349,
+      "pnl": 0.0,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
