@@ -203,6 +203,31 @@
       "last_leg_candle_ts": 1793879100,
       "dry_run": true,
       "order_id": "PAPER-ZZZUSDT-1793879168"
+    },
+    {
+      "symbol": "ARIAUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.13818,
+      "qty": 1447.3875,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.1347255,
+      "tf": "1h",
+      "opened_at": 1793880046,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.13818,
+          "ts": 1793880046
+        }
+      ],
+      "entry_candle_ts": 1793880000,
+      "last_leg_candle_ts": 1793880000,
+      "dry_run": true,
+      "order_id": "PAPER-ARIAUSDT-1793880046"
     }
   ],
   "trade_history": [
@@ -6720,7 +6745,8 @@
       "side": "SELL",
       "upper": 0.28470724887051607,
       "open": 0.2911,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "FRONGUSDT",
@@ -6729,7 +6755,8 @@
       "side": "SELL",
       "upper": 0.002512038930441247,
       "open": 0.002562,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "CNPYUSDT",
@@ -6738,7 +6765,8 @@
       "side": "SELL",
       "upper": 0.17164106324646236,
       "open": 0.1745,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ZZZUSDT",
@@ -6747,6 +6775,15 @@
       "side": "SELL",
       "upper": 0.009596259189728111,
       "open": 0.00977,
+      "reported": false
+    },
+    {
+      "symbol": "XTZUSDT",
+      "tf": "15m",
+      "candle_ts": 1793879100,
+      "side": "SELL",
+      "upper": 0.29242850120683117,
+      "open": 0.2984,
       "reported": false
     }
   ],
@@ -6857,7 +6894,7 @@
     "TOADUSDT": 1793916983,
     "OROCHIUSDT": 1793917021
   },
-  "last_trade_report_ts": 1793878511,
+  "last_trade_report_ts": 1793879491,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
