@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.8",
-  "updated_at": 1793846815,
+  "updated_at": 1793846821,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "OUSTUSDT",
-      "tf": "4h",
-      "gap": 2.04,
-      "ts": 1793822025
-    },
     {
       "kind": "GAP",
       "symbol": "BKNGUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 0.41,
       "ts": 1793846815
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793846821
     }
   ],
   "trades": [
@@ -1430,6 +1430,19 @@
       "px": 30.91,
       "pnl": -0.8447,
       "tf": "1h"
+    },
+    {
+      "symbol": "ARGUSUSDT",
+      "side": "SELL",
+      "entry": 0.00454,
+      "tp": 0.0044265,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.00454,
+      "pnl": 0.0,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
