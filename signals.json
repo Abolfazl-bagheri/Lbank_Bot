@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.8",
-  "updated_at": 1793842527,
+  "updated_at": 1793843084,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1793812849
-    },
     {
       "kind": "GAP",
       "symbol": "ZZZUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1793842527
+    },
+    {
+      "kind": "GAP",
+      "symbol": "FRONGUSDT",
+      "tf": "15m",
+      "gap": 2.62,
+      "ts": 1793843084
     }
   ],
   "trades": [
@@ -1414,16 +1414,16 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 10.31,
-      "pnl": 1.1572,
+      "px": 9.95,
+      "pnl": 8.1003,
       "tf": "15m"
     }
   ],
   "start": 1000.0,
   "realized": -3875.4021,
   "closed_n": 121,
-  "open_upnl": 1.1572,
-  "equity": -2874.2449,
+  "open_upnl": 8.1003,
+  "equity": -2867.3018,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
