@@ -76,66 +76,6 @@
       "order_id": "PAPER-ACTUSDT-1793869497"
     },
     {
-      "symbol": "FRONGUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.0025599327728137084,
-      "qty": 546889.3617,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 0.0024959344534933657,
-      "tf": "1h",
-      "opened_at": 1793878253,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [
-        0.002576
-      ],
-      "steps": [
-        {
-          "px": 0.00256,
-          "ts": 1793878253
-        },
-        {
-          "px": 0.00254,
-          "ts": 1793880157
-        },
-        {
-          "px": 0.00257,
-          "ts": 1793882079
-        }
-      ],
-      "entry_candle_ts": 1793878200,
-      "last_leg_candle_ts": 1793882079,
-      "dry_run": true,
-      "order_id": "PAPER-FRONGUSDT-1793878253"
-    },
-    {
-      "symbol": "CNPYUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.1743,
-      "qty": 1147.4469,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.1699425,
-      "tf": "15m",
-      "opened_at": 1793878273,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.1743,
-          "ts": 1793878273
-        }
-      ],
-      "entry_candle_ts": 1793878200,
-      "last_leg_candle_ts": 1793878200,
-      "dry_run": true,
-      "order_id": "PAPER-CNPYUSDT-1793878273"
-    },
-    {
       "symbol": "ZZZUSDT",
       "side": "SELL",
       "status": "open",
@@ -4871,6 +4811,76 @@
       "pnl_usdt": 15.276764956857123,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "CNPYUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.1743,
+      "qty": 1147.4469,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.1699425,
+      "tf": "15m",
+      "opened_at": 1793878273,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.1743,
+          "ts": 1793878273
+        }
+      ],
+      "entry_candle_ts": 1793878200,
+      "last_leg_candle_ts": 1793878200,
+      "dry_run": true,
+      "order_id": "PAPER-CNPYUSDT-1793878273",
+      "closed_at": 1793882089,
+      "close_px": 0.1694,
+      "pnl_usdt": 5.622489959839375,
+      "close_reason": "TP50",
+      "why": "TP50"
+    },
+    {
+      "symbol": "FRONGUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.0025599327728137084,
+      "qty": 546889.3617,
+      "margin": 70.0,
+      "leverage": 20,
+      "tp_price": 0.0024959344534933657,
+      "tf": "1h",
+      "opened_at": 1793878253,
+      "adds": 2,
+      "last_leg_margin": 40.0,
+      "used_res_levels": [
+        0.002576
+      ],
+      "steps": [
+        {
+          "px": 0.00256,
+          "ts": 1793878253
+        },
+        {
+          "px": 0.00254,
+          "ts": 1793880157
+        },
+        {
+          "px": 0.00257,
+          "ts": 1793882079
+        }
+      ],
+      "entry_candle_ts": 1793878200,
+      "last_leg_candle_ts": 1793882079,
+      "dry_run": true,
+      "order_id": "PAPER-FRONGUSDT-1793878253",
+      "closed_at": 1793882952,
+      "close_px": 0.00236,
+      "pnl_usdt": 109.34110649770604,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -7030,7 +7040,7 @@
     "AMCUSDT": 1793924216,
     "LIGHT1USDT": 1793925108
   },
-  "last_trade_report_ts": 1793880625,
+  "last_trade_report_ts": 1793882099,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
