@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1793891740,
+  "updated_at": 1793891762,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1793868722
-    },
-    {
-      "kind": "HEARTBEAT",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1793868723
-    },
     {
       "kind": "GAP",
       "symbol": "AIOUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1793891740
+    },
+    {
+      "kind": "SELL",
+      "symbol": "SSPCUSDT",
+      "tf": "15m",
+      "gap": 4.26,
+      "ts": 1793891750
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793891762
     }
   ],
   "trades": [
@@ -1499,15 +1499,15 @@
     {
       "symbol": "SSPCUSDT",
       "side": "SELL",
-      "entry": 10.876538290860443,
-      "tp": 10.604624833588932,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
+      "entry": 11.173453243094409,
+      "tp": 10.894116912017049,
+      "adds": 2,
+      "pele": 3,
+      "margin": 70.0,
       "lev": 20,
       "px": 11.407,
       "pnl": -29.2627,
-      "tf": "1h"
+      "tf": "15m"
     },
     {
       "symbol": "UVXYUSDT",
