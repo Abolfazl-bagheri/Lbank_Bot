@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1793907071,
+  "updated_at": 1793907082,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "CNPYUSDT",
-      "tf": "1h",
-      "gap": 1.95,
-      "ts": 1793879729
-    },
     {
       "kind": "GAP",
       "symbol": "AIOUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 0.27,
       "ts": 1793907071
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793907082
     }
   ],
   "trades": [
@@ -1482,6 +1482,19 @@
       "px": 50.58,
       "pnl": -8.7926,
       "tf": "1h"
+    },
+    {
+      "symbol": "CYBERUSDT",
+      "side": "SELL",
+      "entry": 0.2583,
+      "tp": 0.25184249999999997,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.2583,
+      "pnl": 0.0,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
