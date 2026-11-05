@@ -196,24 +196,28 @@
       "symbol": "SOXSUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 71.43,
-      "qty": 2.7999,
-      "margin": 10.0,
+      "entry": 75.99906976744187,
+      "qty": 7.8948,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 69.64425,
+      "tp_price": 74.09909302325582,
       "tf": "1h",
       "opened_at": 1793890951,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 71.43,
           "ts": 1793890951
+        },
+        {
+          "px": 78.51,
+          "ts": 1793894457
         }
       ],
       "entry_candle_ts": 1793890800,
-      "last_leg_candle_ts": 1793890800,
+      "last_leg_candle_ts": 1793894400,
       "dry_run": true,
       "order_id": "PAPER-SOXSUSDT-1793890951"
     }
@@ -7330,7 +7334,8 @@
       "side": "SELL",
       "upper": 19.99968145593024,
       "open": 20.35,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -7378,14 +7383,11 @@
     "USOUSDT": 1793413065,
     "XTIUSDT": 1793413071,
     "XBRUSDT": 1793413074,
-    "CVXSTOCKUSDT": 1793413084,
     "COPSTOCKUSDT": 1793413150,
-    "OXYUSDT": 1793417641,
     "SAFE1USDT": 1793449863,
     "AXLUSDT": 1793502358,
     "DODOUSDT": 1793508698,
     "SYNUSDT": 1793537208,
-    "LONGXIAUSDT": 1793558277,
     "APROUSDT": 1793604906,
     "BIO1USDT": 1793611218,
     "TRUMPSOLUSDT": 1793630182,
@@ -7393,7 +7395,6 @@
     "CRWDUSDT": 1793658035,
     "GALUSDT": 1793658927,
     "LWLGUSDT": 1793675941,
-    "EWZSUSDT": 1793678937,
     "BIDUUSDT": 1793678955,
     "FIGUSDT": 1793683258,
     "PORUSDT": 1793694114,
@@ -7443,9 +7444,10 @@
     "UP2USDT": 1793927026,
     "CYBERLEEKUSDT": 1793927052,
     "DRVUSDT": 1793929608,
-    "GSTOCKUSDT": 1793930663
+    "GSTOCKUSDT": 1793930663,
+    "GOLDUSDT": 1793936850
   },
-  "last_trade_report_ts": 1793891328,
+  "last_trade_report_ts": 1793892895,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
