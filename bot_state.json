@@ -99,6 +99,31 @@
       "last_leg_candle_ts": 1793877300,
       "dry_run": true,
       "order_id": "PAPER-AIOUSDT-1793877334"
+    },
+    {
+      "symbol": "XTZUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.2909,
+      "qty": 687.5215,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.2836275,
+      "tf": "15m",
+      "opened_at": 1793878230,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.2909,
+          "ts": 1793878230
+        }
+      ],
+      "entry_candle_ts": 1793878200,
+      "last_leg_candle_ts": 1793878200,
+      "dry_run": true,
+      "order_id": "PAPER-XTZUSDT-1793878230"
     }
   ],
   "trade_history": [
@@ -6598,6 +6623,15 @@
       "open": 0.00911,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "AIOUSDT",
+      "tf": "15m",
+      "candle_ts": 1793877300,
+      "side": "SELL",
+      "upper": 0.04670020924004657,
+      "open": 0.04727,
+      "reported": false
     }
   ],
   "paper_days": [
