@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.9",
-  "updated_at": 1793869344,
+  "updated_at": 1793869352,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "BATUSDT",
-      "tf": "15m",
-      "gap": 1.26,
-      "ts": 1793832311
-    },
     {
       "kind": "GAP",
       "symbol": "CFGUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 3.8,
       "ts": 1793869344
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793869352
     }
   ],
   "trades": [
@@ -1442,6 +1442,19 @@
       "lev": 20,
       "px": 0.00492,
       "pnl": -16.7401,
+      "tf": "15m"
+    },
+    {
+      "symbol": "ELSAUSDT",
+      "side": "SELL",
+      "entry": 0.11901,
+      "tp": 0.11603475,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.11901,
+      "pnl": 0.0,
       "tf": "15m"
     }
   ],
