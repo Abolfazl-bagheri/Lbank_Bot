@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.8",
-  "updated_at": 1793863131,
+  "updated_at": 1793863218,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "CCLUSDT",
-      "tf": "15m",
-      "gap": 1.18,
-      "ts": 1793828711
-    },
     {
       "kind": "SELL",
       "symbol": "ELSAUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1793863131
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793863218
     }
   ],
   "trades": [
@@ -1458,19 +1458,6 @@
       "tf": "1h"
     },
     {
-      "symbol": "JCTUSDT",
-      "side": "SELL",
-      "entry": 0.006827,
-      "tp": 0.006656324999999999,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.00587,
-      "pnl": 28.0357,
-      "tf": "1h"
-    },
-    {
       "symbol": "ICNTUSDT",
       "side": "SELL",
       "entry": 0.2461,
@@ -1498,16 +1485,16 @@
     }
   ],
   "start": 1000.0,
-  "realized": -3750.7054,
-  "closed_n": 125,
-  "open_upnl": 60.2311,
+  "realized": -3722.6697,
+  "closed_n": 126,
+  "open_upnl": 32.1954,
   "equity": -2690.4743,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 2918.888,
+    "profit": 2946.9237,
     "loss": -6669.5934,
-    "count": 125
+    "count": 126
   }
 }
