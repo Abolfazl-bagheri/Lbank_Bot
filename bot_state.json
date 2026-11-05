@@ -171,31 +171,6 @@
       "order_id": "PAPER-TRUTHUSDT-1793880125"
     },
     {
-      "symbol": "WENUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 7.925,
-      "qty": 25.2366,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 7.726875,
-      "tf": "1h",
-      "opened_at": 1793887337,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 7.925,
-          "ts": 1793887337
-        }
-      ],
-      "entry_candle_ts": 1793887200,
-      "last_leg_candle_ts": 1793887200,
-      "dry_run": true,
-      "order_id": "PAPER-WENUSDT-1793887337"
-    },
-    {
       "symbol": "LYNUSDT",
       "side": "SELL",
       "status": "open",
@@ -5010,6 +4985,36 @@
       "pnl_usdt": 17.45689655172411,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "WENUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 7.925,
+      "qty": 25.2366,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 7.726875,
+      "tf": "1h",
+      "opened_at": 1793887337,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 7.925,
+          "ts": 1793887337
+        }
+      ],
+      "entry_candle_ts": 1793887200,
+      "last_leg_candle_ts": 1793887200,
+      "dry_run": true,
+      "order_id": "PAPER-WENUSDT-1793887337",
+      "closed_at": 1793889306,
+      "close_px": 7.672,
+      "pnl_usdt": 6.384858044164041,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -7085,7 +7090,8 @@
       "side": "SELL",
       "upper": 0.020612405244380877,
       "open": 0.02094,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "FOGOUSDT",
@@ -7094,6 +7100,15 @@
       "side": "SELL",
       "upper": 0.002815201928515876,
       "open": 0.002845,
+      "reported": false
+    },
+    {
+      "symbol": "LYNUSDT",
+      "tf": "15m",
+      "candle_ts": 1793889000,
+      "side": "SELL",
+      "upper": 0.021287612636037734,
+      "open": 0.02169,
       "reported": false
     }
   ],
