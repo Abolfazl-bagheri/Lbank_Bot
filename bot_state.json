@@ -124,6 +124,31 @@
       "last_leg_candle_ts": 1793878200,
       "dry_run": true,
       "order_id": "PAPER-XTZUSDT-1793878230"
+    },
+    {
+      "symbol": "FRONGUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.00256,
+      "qty": 78125.0,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.002496,
+      "tf": "15m",
+      "opened_at": 1793878253,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.00256,
+          "ts": 1793878253
+        }
+      ],
+      "entry_candle_ts": 1793878200,
+      "last_leg_candle_ts": 1793878200,
+      "dry_run": true,
+      "order_id": "PAPER-FRONGUSDT-1793878253"
     }
   ],
   "trade_history": [
@@ -6631,6 +6656,15 @@
       "side": "SELL",
       "upper": 0.04670020924004657,
       "open": 0.04727,
+      "reported": false
+    },
+    {
+      "symbol": "XTZUSDT",
+      "tf": "15m",
+      "candle_ts": 1793878200,
+      "side": "SELL",
+      "upper": 0.28470724887051607,
+      "open": 0.2911,
       "reported": false
     }
   ],
