@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1793894543,
+  "updated_at": 1793894575,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "XTZUSDT",
-      "tf": "15m",
-      "gap": 4.77,
-      "ts": 1793878124
-    },
-    {
-      "kind": "GAP",
-      "symbol": "FRONGUSDT",
-      "tf": "15m",
-      "gap": 2.72,
-      "ts": 1793878128
-    },
     {
       "kind": "GAP",
       "symbol": "ACTUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "4h",
       "gap": 3.19,
       "ts": 1793894543
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793894563
+    },
+    {
+      "kind": "SELL",
+      "symbol": "SOXSUSDT",
+      "tf": "4h",
+      "gap": 5.2,
+      "ts": 1793894575
     }
   ],
   "trades": [
@@ -1434,15 +1434,15 @@
     {
       "symbol": "ARIAUSDT",
       "side": "SELL",
-      "entry": 0.1502759736602986,
-      "tp": 0.14651907431879113,
-      "adds": 3,
-      "pele": 4,
-      "margin": 150.0,
+      "entry": 0.1499418729842976,
+      "tp": 0.14619332615969016,
+      "adds": 4,
+      "pele": 5,
+      "margin": 310.0,
       "lev": 20,
       "px": 0.14963,
       "pnl": 12.8957,
-      "tf": "1h"
+      "tf": "4h"
     },
     {
       "symbol": "SQQQUSDT",
