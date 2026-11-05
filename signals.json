@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.8",
-  "updated_at": 1793846963,
+  "updated_at": 1793846969,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "APPUSDT",
-      "tf": "4h",
-      "gap": 1.95,
-      "ts": 1793822042
-    },
     {
       "kind": "GAP",
       "symbol": "INJUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 1.42,
       "ts": 1793846963
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793846969
     }
   ],
   "trades": [
@@ -1442,6 +1442,19 @@
       "lev": 20,
       "px": 0.0045,
       "pnl": 1.7621,
+      "tf": "15m"
+    },
+    {
+      "symbol": "MINIMAXUSDT",
+      "side": "SELL",
+      "entry": 22.09,
+      "tp": 21.53775,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 22.09,
+      "pnl": 0.0,
       "tf": "15m"
     }
   ],
