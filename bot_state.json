@@ -54,24 +54,30 @@
       "symbol": "ACTUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.00909,
-      "qty": 22002.2002,
-      "margin": 10.0,
+      "entry": 0.009063294160849472,
+      "qty": 66201.0952,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.00886275,
+      "tp_price": 0.008836711806828235,
       "tf": "1h",
       "opened_at": 1793869497,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.00907
+      ],
       "steps": [
         {
           "px": 0.00909,
           "ts": 1793869497
+        },
+        {
+          "px": 0.00905,
+          "ts": 1793885632
         }
       ],
       "entry_candle_ts": 1793869200,
-      "last_leg_candle_ts": 1793869200,
+      "last_leg_candle_ts": 1793885632,
       "dry_run": true,
       "order_id": "PAPER-ACTUSDT-1793869497"
     },
@@ -5099,16 +5105,6 @@
       "side": "SELL"
     },
     {
-      "symbol": "AGTUSDT",
-      "tf": "15m",
-      "candle_ts": 1793625300,
-      "side": "SELL",
-      "upper": 0.03284904086633186,
-      "open": 0.03383,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "CASHCATUSDT",
       "tf": "15m",
       "candle_ts": 1793627100,
@@ -6865,7 +6861,8 @@
       "side": "SELL",
       "upper": 0.13635272095390805,
       "open": 0.13794,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "AIOUSDT",
@@ -6874,7 +6871,8 @@
       "side": "SELL",
       "upper": 0.04847503325554509,
       "open": 0.05053,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "XTZUSDT",
@@ -6920,7 +6918,8 @@
       "side": "SELL",
       "upper": 0.0025237052354408515,
       "open": 0.002562,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "TRUTHUSDT",
@@ -6929,6 +6928,16 @@
       "side": "SELL",
       "upper": 0.019092547440021597,
       "open": 0.019351,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "ARIAUSDT",
+      "tf": "1h",
+      "candle_ts": 1793883600,
+      "side": "SELL",
+      "upper": 0.1401863729815841,
+      "open": 0.14291,
       "reported": false
     }
   ],
@@ -7015,7 +7024,6 @@
     "OFCUSDT": 1793873172,
     "B3USDT": 1793880575,
     "AI1USDT": 1793882848,
-    "GSTOCKUSDT": 1793882855,
     "DRVUSDT": 1793885679,
     "BEMUSDT": 1793901058,
     "RIOTUSDT": 1793901063,
@@ -7039,9 +7047,12 @@
     "STONKBROKERUSDT": 1793924211,
     "OSCRUSDT": 1793924212,
     "AMCUSDT": 1793924216,
-    "LIGHT1USDT": 1793925108
+    "LIGHT1USDT": 1793925108,
+    "CAPETHUSDT": 1793926972,
+    "UP2USDT": 1793927026,
+    "CYBERLEEKUSDT": 1793927052
   },
-  "last_trade_report_ts": 1793882099,
+  "last_trade_report_ts": 1793884030,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
