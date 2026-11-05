@@ -228,24 +228,28 @@
       "symbol": "SQQQUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 45.31,
-      "qty": 4.414,
-      "margin": 10.0,
+      "entry": 45.76767889425387,
+      "qty": 13.1097,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 44.17725,
+      "tp_price": 44.62348692189752,
       "tf": "15m",
       "opened_at": 1793889928,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 45.31,
           "ts": 1793889928
+        },
+        {
+          "px": 46.0,
+          "ts": 1793890858
         }
       ],
       "entry_candle_ts": 1793889900,
-      "last_leg_candle_ts": 1793889900,
+      "last_leg_candle_ts": 1793890800,
       "dry_run": true,
       "order_id": "PAPER-SQQQUSDT-1793889928"
     },
@@ -5304,16 +5308,6 @@
       "side": "SELL"
     },
     {
-      "symbol": "CVNAUSDT",
-      "tf": "15m",
-      "candle_ts": 1793630700,
-      "side": "SELL",
-      "upper": 71.18851321771803,
-      "open": 72.19,
-      "reported": true,
-      "filled": false
-    },
-    {
       "symbol": "TEMUSDT",
       "tf": "1h",
       "candle_ts": 1793631600,
@@ -7175,7 +7169,8 @@
       "side": "SELL",
       "upper": 0.002815201928515876,
       "open": 0.002845,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "LYNUSDT",
@@ -7184,7 +7179,8 @@
       "side": "SELL",
       "upper": 0.021287612636037734,
       "open": 0.02169,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "SQQQUSDT",
@@ -7202,6 +7198,15 @@
       "side": "SELL",
       "upper": 10.293792489851915,
       "open": 10.467,
+      "reported": false
+    },
+    {
+      "symbol": "UVXYUSDT",
+      "tf": "15m",
+      "candle_ts": 1793889900,
+      "side": "SELL",
+      "upper": 17.391234307316775,
+      "open": 17.69,
       "reported": false
     }
   ],
@@ -7317,7 +7322,7 @@
     "DRVUSDT": 1793929608,
     "GSTOCKUSDT": 1793930663
   },
-  "last_trade_report_ts": 1793889318,
+  "last_trade_report_ts": 1793890223,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
