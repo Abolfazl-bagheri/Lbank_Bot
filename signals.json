@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1793901635,
+  "updated_at": 1793901647,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "AIOUSDT",
-      "tf": "15m",
-      "gap": 2.1,
-      "ts": 1793879138
-    },
     {
       "kind": "GAP",
       "symbol": "XTZUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 2.89,
       "ts": 1793901635
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793901647
     }
   ],
   "trades": [
@@ -1473,14 +1473,14 @@
     {
       "symbol": "UVXYUSDT",
       "side": "SELL",
-      "entry": 20.3629496066173,
-      "tp": 19.853875866451865,
-      "adds": 4,
-      "pele": 5,
-      "margin": 310.0,
+      "entry": 21.367537959179522,
+      "tp": 20.833349510200033,
+      "adds": 5,
+      "pele": 6,
+      "margin": 630.0,
       "lev": 20,
       "px": 22.44,
-      "pnl": -632.409,
+      "pnl": -632.4089,
       "tf": "1h"
     },
     {
@@ -1527,8 +1527,8 @@
   "session_start": 1793837408,
   "realized": 594.3466,
   "closed_n": 23,
-  "open_upnl": -735.4464,
-  "equity": 858.9002,
+  "open_upnl": -735.4463,
+  "equity": 858.9003,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
