@@ -89,6 +89,31 @@
       "last_leg_candle_ts": 1793846700,
       "dry_run": true,
       "order_id": "PAPER-ARGUSUSDT-1793846817"
+    },
+    {
+      "symbol": "ELSAUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.11901,
+      "qty": 1680.531,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.11603475,
+      "tf": "15m",
+      "opened_at": 1793869346,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.11901,
+          "ts": 1793869346
+        }
+      ],
+      "entry_candle_ts": 1793869200,
+      "last_leg_candle_ts": 1793869200,
+      "dry_run": true,
+      "order_id": "PAPER-ELSAUSDT-1793869346"
     }
   ],
   "trade_history": [
@@ -4788,66 +4813,6 @@
       "side": "SELL"
     },
     {
-      "symbol": "CATUSDT",
-      "tf": "15m",
-      "candle_ts": 1793610000,
-      "side": "SELL",
-      "upper": 1.8510141834832387e-06,
-      "open": 1.949e-06,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "ARIAUSDT",
-      "tf": "15m",
-      "candle_ts": 1793610000,
-      "side": "SELL",
-      "upper": 0.11302073063965369,
-      "open": 0.12108,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "CATUSDT",
-      "tf": "1h",
-      "candle_ts": 1793610000,
-      "side": "SELL",
-      "upper": 1.8306174207560413e-06,
-      "open": 1.949e-06,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "CLAUDIAUSDT",
-      "tf": "1h",
-      "candle_ts": 1793610000,
-      "side": "SELL",
-      "upper": 0.0021167004555729244,
-      "open": 0.002208,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "ARIAUSDT",
-      "tf": "1h",
-      "candle_ts": 1793610000,
-      "side": "SELL",
-      "upper": 0.11036811667714423,
-      "open": 0.12108,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "STORJUSDT",
-      "tf": "1h",
-      "candle_ts": 1793610000,
-      "side": "SELL",
-      "upper": 0.02166013728952748,
-      "open": 0.02196,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "CLAUDIAUSDT",
       "tf": "1h",
       "candle_ts": 1793613600,
@@ -6491,7 +6456,8 @@
       "side": "SELL",
       "upper": 0.006493243730016757,
       "open": 0.006816,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CARDSUSDT",
@@ -6615,7 +6581,6 @@
     "AEHRUSDT": 1793830009,
     "QUACKAIUSDT": 1793843367,
     "OSCRUSDT": 1793850616,
-    "SXTUSDT": 1793851456,
     "METEORAUSDT": 1793852241,
     "AMCUSDT": 1793853303,
     "WUXIBIOUSDT": 1793866147,
@@ -6642,7 +6607,7 @@
     "AINBSCUSDT": 1793904563,
     "O1USDT": 1793911895
   },
-  "last_trade_report_ts": 1793867782,
+  "last_trade_report_ts": 1793868723,
   "last_known_version": "2.6.9",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
