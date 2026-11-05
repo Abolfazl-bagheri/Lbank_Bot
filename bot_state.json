@@ -79,16 +79,18 @@
       "symbol": "FRONGUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.002546631853784793,
-      "qty": 235605.315,
-      "margin": 30.0,
+      "entry": 0.0025599327728137084,
+      "qty": 546889.3617,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 0.002482966057440173,
+      "tp_price": 0.0024959344534933657,
       "tf": "1h",
       "opened_at": 1793878253,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
+      "adds": 2,
+      "last_leg_margin": 40.0,
+      "used_res_levels": [
+        0.002576
+      ],
       "steps": [
         {
           "px": 0.00256,
@@ -97,10 +99,14 @@
         {
           "px": 0.00254,
           "ts": 1793880157
+        },
+        {
+          "px": 0.00257,
+          "ts": 1793882079
         }
       ],
       "entry_candle_ts": 1793878200,
-      "last_leg_candle_ts": 1793880000,
+      "last_leg_candle_ts": 1793882079,
       "dry_run": true,
       "order_id": "PAPER-FRONGUSDT-1793878253"
     },
