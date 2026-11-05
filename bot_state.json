@@ -60,15 +60,15 @@
       "symbol": "ARIAUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.1502759736602986,
-      "qty": 19963.271099999998,
-      "margin": 150.0,
+      "entry": 0.1499418729842976,
+      "qty": 41349.356799999994,
+      "margin": 310.0,
       "leverage": 20,
-      "tp_price": 0.14651907431879113,
-      "tf": "1h",
+      "tp_price": 0.14619332615969016,
+      "tf": "4h",
       "opened_at": 1793880046,
-      "adds": 3,
-      "last_leg_margin": 80.0,
+      "adds": 4,
+      "last_leg_margin": 160.0,
       "used_res_levels": [],
       "steps": [
         {
@@ -86,10 +86,14 @@
         {
           "px": 0.15437,
           "ts": 1793890912
+        },
+        {
+          "px": 0.14963,
+          "ts": 1793894546
         }
       ],
       "entry_candle_ts": 1793880000,
-      "last_leg_candle_ts": 1793890800,
+      "last_leg_candle_ts": 1793894400,
       "dry_run": true,
       "order_id": "PAPER-ARIAUSDT-1793880046"
     },
@@ -7395,6 +7399,15 @@
       "side": "SELL",
       "upper": 19.920854970417416,
       "open": 20.74,
+      "reported": false
+    },
+    {
+      "symbol": "SSPCUSDT",
+      "tf": "1h",
+      "candle_ts": 1793894400,
+      "side": "SELL",
+      "upper": 11.111852727971796,
+      "open": 11.426,
       "reported": false
     }
   ],
