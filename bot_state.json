@@ -79,24 +79,28 @@
       "symbol": "AIOUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.04738,
-      "qty": 4221.1904,
-      "margin": 10.0,
+      "entry": 0.04956190940122596,
+      "qty": 12106.071100000001,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.0461955,
-      "tf": "15m",
+      "tp_price": 0.048322861666195316,
+      "tf": "1h",
       "opened_at": 1793877334,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 0.04738,
           "ts": 1793877334
+        },
+        {
+          "px": 0.05073,
+          "ts": 1793880069
         }
       ],
       "entry_candle_ts": 1793877300,
-      "last_leg_candle_ts": 1793877300,
+      "last_leg_candle_ts": 1793880000,
       "dry_run": true,
       "order_id": "PAPER-AIOUSDT-1793877334"
     },
@@ -6784,6 +6788,15 @@
       "side": "SELL",
       "upper": 0.29242850120683117,
       "open": 0.2984,
+      "reported": false
+    },
+    {
+      "symbol": "ARIAUSDT",
+      "tf": "1h",
+      "candle_ts": 1793880000,
+      "side": "SELL",
+      "upper": 0.13635272095390805,
+      "open": 0.13794,
       "reported": false
     }
   ],
