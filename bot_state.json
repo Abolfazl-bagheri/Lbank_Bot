@@ -91,37 +91,6 @@
       "order_id": "PAPER-ARGUSUSDT-1793846817"
     },
     {
-      "symbol": "LYNUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.021876641291038904,
-      "qty": 27426.5136,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.021329725258762932,
-      "tf": "1h",
-      "opened_at": 1793847870,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        0.0219
-      ],
-      "steps": [
-        {
-          "px": 0.02191,
-          "ts": 1793847870
-        },
-        {
-          "px": 0.02186,
-          "ts": 1793857925
-        }
-      ],
-      "entry_candle_ts": 1793847600,
-      "last_leg_candle_ts": 1793857925,
-      "dry_run": true,
-      "order_id": "PAPER-LYNUSDT-1793847870"
-    },
-    {
       "symbol": "XTZUSDT",
       "side": "SELL",
       "status": "open",
@@ -4494,6 +4463,42 @@
       "pnl_usdt": 9.778180172023525,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "LYNUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.021876641291038904,
+      "qty": 27426.5136,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 0.021329725258762932,
+      "tf": "1h",
+      "opened_at": 1793847870,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.0219
+      ],
+      "steps": [
+        {
+          "px": 0.02191,
+          "ts": 1793847870
+        },
+        {
+          "px": 0.02186,
+          "ts": 1793857925
+        }
+      ],
+      "entry_candle_ts": 1793847600,
+      "last_leg_candle_ts": 1793857925,
+      "dry_run": true,
+      "order_id": "PAPER-LYNUSDT-1793847870",
+      "closed_at": 1793860496,
+      "close_px": 0.01884,
+      "pnl_usdt": 83.28448368213007,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -6462,6 +6467,15 @@
       "open": 0.2912,
       "reported": true,
       "filled": false
+    },
+    {
+      "symbol": "CARDSUSDT",
+      "tf": "15m",
+      "candle_ts": 1793860200,
+      "side": "SELL",
+      "upper": 0.29362176147577984,
+      "open": 0.3014,
+      "reported": false
     }
   ],
   "paper_days": [
