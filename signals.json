@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.8",
-  "updated_at": 1793846707,
+  "updated_at": 1793846815,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "FOLKSUSDT",
-      "tf": "4h",
-      "gap": 2.59,
-      "ts": 1793822021
-    },
     {
       "kind": "GAP",
       "symbol": "OUSTUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 1.36,
       "ts": 1793846707
+    },
+    {
+      "kind": "SELL",
+      "symbol": "ARGUSUSDT",
+      "tf": "15m",
+      "gap": 0.41,
+      "ts": 1793846815
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 4,
       "margin": 150.0,
       "lev": 20,
-      "px": 39.63,
-      "pnl": 13.811,
+      "px": 39.58,
+      "pnl": 17.5786,
       "tf": "1h"
     },
     {
@@ -1427,16 +1427,16 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 31.02,
-      "pnl": -1.5595,
+      "px": 30.91,
+      "pnl": -0.8447,
       "tf": "1h"
     }
   ],
   "start": 1000.0,
   "realized": -3866.9161,
   "closed_n": 122,
-  "open_upnl": 12.2515,
-  "equity": -2854.6646,
+  "open_upnl": 16.7339,
+  "equity": -2850.1822,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
