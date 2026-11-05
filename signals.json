@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.8",
-  "updated_at": 1793844212,
+  "updated_at": 1793844348,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1793815602
-    },
     {
       "kind": "HEARTBEAT",
       "symbol": "—",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 1.24,
       "ts": 1793844212
+    },
+    {
+      "kind": "SELL",
+      "symbol": "LAOPUUSDT",
+      "tf": "1h",
+      "gap": 1.62,
+      "ts": 1793844348
     }
   ],
   "trades": [
@@ -1414,16 +1414,16 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 39.8,
-      "pnl": -6.2132,
+      "px": 39.92,
+      "pnl": -8.041,
       "tf": "15m"
     }
   ],
   "start": 1000.0,
   "realized": -3866.9161,
   "closed_n": 122,
-  "open_upnl": -6.2132,
-  "equity": -2873.1293,
+  "open_upnl": -8.041,
+  "equity": -2874.9571,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
