@@ -114,6 +114,31 @@
       "last_leg_candle_ts": 1793869200,
       "dry_run": true,
       "order_id": "PAPER-ELSAUSDT-1793869346"
+    },
+    {
+      "symbol": "AIOUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.04232,
+      "qty": 4725.8979,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.041262,
+      "tf": "1h",
+      "opened_at": 1793869380,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.04232,
+          "ts": 1793869380
+        }
+      ],
+      "entry_candle_ts": 1793869200,
+      "last_leg_candle_ts": 1793869200,
+      "dry_run": true,
+      "order_id": "PAPER-AIOUSDT-1793869380"
     }
   ],
   "trade_history": [
@@ -6498,6 +6523,15 @@
       "open": 0.4264,
       "reported": true,
       "filled": false
+    },
+    {
+      "symbol": "ELSAUSDT",
+      "tf": "15m",
+      "candle_ts": 1793869200,
+      "side": "SELL",
+      "upper": 0.1144876555525182,
+      "open": 0.11803,
+      "reported": false
     }
   ],
   "paper_days": [
