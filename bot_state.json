@@ -90,43 +90,6 @@
       "order_id": "PAPER-SQQQUSDT-1793889928"
     },
     {
-      "symbol": "SSPCUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 11.39747777624545,
-      "qty": 263.2161,
-      "margin": 150.0,
-      "leverage": 20,
-      "tp_price": 11.112540831839313,
-      "tf": "1h",
-      "opened_at": 1793889950,
-      "adds": 3,
-      "last_leg_margin": 80.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 10.777,
-          "ts": 1793889950
-        },
-        {
-          "px": 10.927,
-          "ts": 1793890971
-        },
-        {
-          "px": 11.407,
-          "ts": 1793891752
-        },
-        {
-          "px": 11.601,
-          "ts": 1793894515
-        }
-      ],
-      "entry_candle_ts": 1793889900,
-      "last_leg_candle_ts": 1793894400,
-      "dry_run": true,
-      "order_id": "PAPER-SSPCUSDT-1793889950"
-    },
-    {
       "symbol": "UVXYUSDT",
       "side": "SELL",
       "status": "open",
@@ -5247,6 +5210,48 @@
       "pnl_usdt": 329.6318201108572,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "SSPCUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 11.39747777624545,
+      "qty": 263.2161,
+      "margin": 150.0,
+      "leverage": 20,
+      "tp_price": 11.112540831839313,
+      "tf": "1h",
+      "opened_at": 1793889950,
+      "adds": 3,
+      "last_leg_margin": 80.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 10.777,
+          "ts": 1793889950
+        },
+        {
+          "px": 10.927,
+          "ts": 1793890971
+        },
+        {
+          "px": 11.407,
+          "ts": 1793891752
+        },
+        {
+          "px": 11.601,
+          "ts": 1793894515
+        }
+      ],
+      "entry_candle_ts": 1793889900,
+      "last_leg_candle_ts": 1793894400,
+      "dry_run": true,
+      "order_id": "PAPER-SSPCUSDT-1793889950",
+      "closed_at": 1793905590,
+      "close_px": 11.092,
+      "pnl_usdt": 80.40667827809888,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -7351,7 +7356,8 @@
       "side": "SELL",
       "upper": 21.79080353180393,
       "open": 22.12,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -7461,7 +7467,7 @@
     "NEIRO1USDT": 1793945071,
     "CZUSDT": 1793945085
   },
-  "last_trade_report_ts": 1793902132,
+  "last_trade_report_ts": 1793904551,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
