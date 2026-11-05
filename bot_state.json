@@ -199,24 +199,28 @@
       "symbol": "LYNUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.02118,
-      "qty": 9442.8706,
-      "margin": 10.0,
+      "entry": 0.021530410489046158,
+      "qty": 27867.559699999998,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.0206505,
+      "tp_price": 0.020992150226820005,
       "tf": "15m",
       "opened_at": 1793888134,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 0.02118,
           "ts": 1793888134
+        },
+        {
+          "px": 0.02171,
+          "ts": 1793889058
         }
       ],
       "entry_candle_ts": 1793888100,
-      "last_leg_candle_ts": 1793888100,
+      "last_leg_candle_ts": 1793889000,
       "dry_run": true,
       "order_id": "PAPER-LYNUSDT-1793888134"
     },
@@ -7081,6 +7085,15 @@
       "side": "SELL",
       "upper": 0.020612405244380877,
       "open": 0.02094,
+      "reported": false
+    },
+    {
+      "symbol": "FOGOUSDT",
+      "tf": "15m",
+      "candle_ts": 1793889000,
+      "side": "SELL",
+      "upper": 0.002815201928515876,
+      "open": 0.002845,
       "reported": false
     }
   ],
