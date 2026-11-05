@@ -374,6 +374,31 @@
       "last_leg_candle_ts": 1793835171,
       "dry_run": true,
       "order_id": "PAPER-CHILLGUYUSDT-1793830652"
+    },
+    {
+      "symbol": "MRNAUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 257.33,
+      "qty": 0.777212,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 250.89674999999997,
+      "tf": "4h",
+      "opened_at": 1793837244,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 257.33,
+          "ts": 1793837244
+        }
+      ],
+      "entry_candle_ts": 1793836800,
+      "last_leg_candle_ts": 1793836800,
+      "dry_run": true,
+      "order_id": "PAPER-MRNAUSDT-1793837244"
     }
   ],
   "trade_history": [
@@ -6088,6 +6113,15 @@
       "side": "SELL",
       "upper": 0.09787591113313797,
       "open": 0.1043,
+      "reported": false
+    },
+    {
+      "symbol": "APPUSDT",
+      "tf": "4h",
+      "candle_ts": 1793836800,
+      "side": "SELL",
+      "upper": 308.73718306816704,
+      "open": 327.1,
       "reported": false
     }
   ],
