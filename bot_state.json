@@ -1,46 +1,6 @@
 {
   "open_trades": [
     {
-      "symbol": "LAOPUUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 39.8132875657914,
-      "qty": 75.3518,
-      "margin": 150.0,
-      "leverage": 20,
-      "tp_price": 38.817955376646616,
-      "tf": "1h",
-      "opened_at": 1793843206,
-      "adds": 3,
-      "last_leg_margin": 80.0,
-      "used_res_levels": [
-        39.7,
-        40.07
-      ],
-      "steps": [
-        {
-          "px": 39.08,
-          "ts": 1793843206
-        },
-        {
-          "px": 39.55,
-          "ts": 1793843421
-        },
-        {
-          "px": 39.92,
-          "ts": 1793844349
-        },
-        {
-          "px": 39.92,
-          "ts": 1793844475
-        }
-      ],
-      "entry_candle_ts": 1793843100,
-      "last_leg_candle_ts": 1793844475,
-      "dry_run": true,
-      "order_id": "PAPER-LAOPUUSDT-1793843206"
-    },
-    {
       "symbol": "HK1810USDT",
       "side": "SELL",
       "status": "open",
@@ -4659,6 +4619,51 @@
       "pnl_usdt": 5.387523629489613,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "LAOPUUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 39.8132875657914,
+      "qty": 75.3518,
+      "margin": 150.0,
+      "leverage": 20,
+      "tp_price": 38.817955376646616,
+      "tf": "1h",
+      "opened_at": 1793843206,
+      "adds": 3,
+      "last_leg_margin": 80.0,
+      "used_res_levels": [
+        39.7,
+        40.07
+      ],
+      "steps": [
+        {
+          "px": 39.08,
+          "ts": 1793843206
+        },
+        {
+          "px": 39.55,
+          "ts": 1793843421
+        },
+        {
+          "px": 39.92,
+          "ts": 1793844349
+        },
+        {
+          "px": 39.92,
+          "ts": 1793844475
+        }
+      ],
+      "entry_candle_ts": 1793843100,
+      "last_leg_candle_ts": 1793844475,
+      "dry_run": true,
+      "order_id": "PAPER-LAOPUUSDT-1793843206",
+      "closed_at": 1793873987,
+      "close_px": 38.43,
+      "pnl_usdt": 104.23310786672802,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -4871,26 +4876,6 @@
       "tf": "15m",
       "candle_ts": 1793430900,
       "side": "SELL"
-    },
-    {
-      "symbol": "CLAUDIAUSDT",
-      "tf": "1h",
-      "candle_ts": 1793613600,
-      "side": "SELL",
-      "upper": 0.002213702324359983,
-      "open": 0.002266,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "REDUSDT",
-      "tf": "1h",
-      "candle_ts": 1793613600,
-      "side": "SELL",
-      "upper": 0.14327460525017252,
-      "open": 0.1463,
-      "reported": true,
-      "filled": true
     },
     {
       "symbol": "AGTUSDT",
@@ -6672,7 +6657,6 @@
     "WUXIBIOUSDT": 1793866147,
     "ARROWUSDT": 1793871201,
     "BBXUSDT": 1793872237,
-    "UBIKUSDT": 1793873127,
     "OFCUSDT": 1793873172,
     "STONKBROKERUSDT": 1793880528,
     "B3USDT": 1793880575,
@@ -6691,7 +6675,10 @@
     "AINBSCUSDT": 1793904563,
     "O1USDT": 1793911895,
     "MANCERUSDT": 1793914576,
-    "PIPEDOGUSDT": 1793915458
+    "PIPEDOGUSDT": 1793915458,
+    "UBIKUSDT": 1793916982,
+    "TOADUSDT": 1793916983,
+    "OROCHIUSDT": 1793917021
   },
   "last_trade_report_ts": 1793871432,
   "last_known_version": "2.7.2",
