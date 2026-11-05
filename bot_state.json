@@ -126,15 +126,15 @@
       "symbol": "SSPCUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 11.173453243094409,
-      "qty": 125.297,
-      "margin": 70.0,
+      "entry": 11.39747777624545,
+      "qty": 263.2161,
+      "margin": 150.0,
       "leverage": 20,
-      "tp_price": 10.894116912017049,
-      "tf": "15m",
+      "tp_price": 11.112540831839313,
+      "tf": "1h",
       "opened_at": 1793889950,
-      "adds": 2,
-      "last_leg_margin": 40.0,
+      "adds": 3,
+      "last_leg_margin": 80.0,
       "used_res_levels": [],
       "steps": [
         {
@@ -148,10 +148,14 @@
         {
           "px": 11.407,
           "ts": 1793891752
+        },
+        {
+          "px": 11.601,
+          "ts": 1793894515
         }
       ],
       "entry_candle_ts": 1793889900,
-      "last_leg_candle_ts": 1793891700,
+      "last_leg_candle_ts": 1793894400,
       "dry_run": true,
       "order_id": "PAPER-SSPCUSDT-1793889950"
     },
@@ -7382,6 +7386,15 @@
       "side": "SELL",
       "upper": 47.488959736000126,
       "open": 48.37,
+      "reported": false
+    },
+    {
+      "symbol": "UVXYUSDT",
+      "tf": "1h",
+      "candle_ts": 1793894400,
+      "side": "SELL",
+      "upper": 19.920854970417416,
+      "open": 20.74,
       "reported": false
     }
   ],
