@@ -282,24 +282,28 @@
       "symbol": "UVXYUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 17.76,
-      "qty": 11.2613,
-      "margin": 10.0,
+      "entry": 18.30484465284854,
+      "qty": 32.7782,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 17.316000000000003,
+      "tp_price": 17.847223536527327,
       "tf": "15m",
       "opened_at": 1793889994,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 17.76,
           "ts": 1793889994
+        },
+        {
+          "px": 18.59,
+          "ts": 1793890879
         }
       ],
       "entry_candle_ts": 1793889900,
-      "last_leg_candle_ts": 1793889900,
+      "last_leg_candle_ts": 1793890800,
       "dry_run": true,
       "order_id": "PAPER-UVXYUSDT-1793889994"
     }
@@ -7207,6 +7211,15 @@
       "side": "SELL",
       "upper": 17.391234307316775,
       "open": 17.69,
+      "reported": false
+    },
+    {
+      "symbol": "SQQQUSDT",
+      "tf": "15m",
+      "candle_ts": 1793890800,
+      "side": "SELL",
+      "upper": 45.56917117593362,
+      "open": 46.15,
       "reported": false
     }
   ],
