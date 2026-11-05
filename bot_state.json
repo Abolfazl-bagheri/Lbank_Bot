@@ -101,15 +101,15 @@
       "symbol": "SQQQUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 45.76767889425387,
-      "qty": 13.1097,
-      "margin": 30.0,
+      "entry": 47.32263370312532,
+      "qty": 29.5842,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 44.62348692189752,
-      "tf": "15m",
+      "tp_price": 46.13956786054719,
+      "tf": "1h",
       "opened_at": 1793889928,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [],
       "steps": [
         {
@@ -119,10 +119,14 @@
         {
           "px": 46.0,
           "ts": 1793890858
+        },
+        {
+          "px": 48.56,
+          "ts": 1793894605
         }
       ],
       "entry_candle_ts": 1793889900,
-      "last_leg_candle_ts": 1793890800,
+      "last_leg_candle_ts": 1793894400,
       "dry_run": true,
       "order_id": "PAPER-SQQQUSDT-1793889928"
     },
@@ -7451,6 +7455,24 @@
       "side": "SELL",
       "upper": 74.42375847203704,
       "open": 78.58,
+      "reported": false
+    },
+    {
+      "symbol": "SKDDUSDT",
+      "tf": "1h",
+      "candle_ts": 1793894400,
+      "side": "SELL",
+      "upper": 11.91671630848608,
+      "open": 12.1,
+      "reported": false
+    },
+    {
+      "symbol": "SQQQUSDT",
+      "tf": "1h",
+      "candle_ts": 1793894400,
+      "side": "SELL",
+      "upper": 47.461016750883815,
+      "open": 48.56,
       "reported": false
     }
   ],
