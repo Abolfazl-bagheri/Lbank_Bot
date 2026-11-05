@@ -35,7 +35,7 @@ SIGNALS_FILE = os.path.join(BASE_DIR, "signals.json")
 LIVE_TOPIC = os.environ.get("LIVE_TOPIC", "lbank-gap-b0b85cee29ce").strip()
 STATE_BAK = os.path.join(BASE_DIR, "bot_state.bak")
 
-BOT_VERSION = "2.6.8"
+BOT_VERSION = "2.6.9"
 CHANGELOG = {
     "2.6.5": [
         "چارت اجباری: خط‌روند داینامیک + سقف پله با هم",
@@ -834,6 +834,9 @@ def log_signal_web(kind: str, symbol: str, tf: str, gap: float) -> None:
             "ts": int(time.time()),
         })
         closed = [t for t in trade_history if t.get("status") == "closed"]
+        sess = int(paper_session_start or 0)
+        if sess:
+            closed = [t for t in closed if int(t.get("closed_at") or 0) >= sess]
         pnl_list = [float(t.get("pnl_usdt") or 0) for t in closed]
         trades_out = []
         for tr in open_trades:
@@ -869,6 +872,7 @@ def log_signal_web(kind: str, symbol: str, tf: str, gap: float) -> None:
             "signals": sigs,
             "trades": trades_out,
             "start": float(PAPER_START_BALANCE),
+            "session_start": int(paper_session_start or 0),
             "realized": realized,
             "closed_n": len(closed),
             "open_upnl": open_upnl,
