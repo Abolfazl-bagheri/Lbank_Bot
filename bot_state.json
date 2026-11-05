@@ -91,31 +91,6 @@
       "order_id": "PAPER-ARGUSUSDT-1793846817"
     },
     {
-      "symbol": "ELSAUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.11901,
-      "qty": 1680.531,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.11603475,
-      "tf": "15m",
-      "opened_at": 1793869346,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.11901,
-          "ts": 1793869346
-        }
-      ],
-      "entry_candle_ts": 1793869200,
-      "last_leg_candle_ts": 1793869200,
-      "dry_run": true,
-      "order_id": "PAPER-ELSAUSDT-1793869346"
-    },
-    {
       "symbol": "AIOUSDT",
       "side": "SELL",
       "status": "open",
@@ -4649,6 +4624,36 @@
       "pnl_usdt": 8.988869361452855,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "ELSAUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.11901,
+      "qty": 1680.531,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.11603475,
+      "tf": "15m",
+      "opened_at": 1793869346,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.11901,
+          "ts": 1793869346
+        }
+      ],
+      "entry_candle_ts": 1793869200,
+      "last_leg_candle_ts": 1793869200,
+      "dry_run": true,
+      "order_id": "PAPER-ELSAUSDT-1793869346",
+      "closed_at": 1793870422,
+      "close_px": 0.10265,
+      "pnl_usdt": 27.49348794218973,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -6556,7 +6561,8 @@
       "side": "SELL",
       "upper": 0.1144876555525182,
       "open": 0.11803,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "AIOUSDT",
@@ -6565,6 +6571,15 @@
       "side": "SELL",
       "upper": 0.04172744358814638,
       "open": 0.04226,
+      "reported": false
+    },
+    {
+      "symbol": "ACTUSDT",
+      "tf": "1h",
+      "candle_ts": 1793869200,
+      "side": "SELL",
+      "upper": 0.009015490065423161,
+      "open": 0.00911,
       "reported": false
     }
   ],
