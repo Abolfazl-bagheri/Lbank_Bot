@@ -220,6 +220,31 @@
       "last_leg_candle_ts": 1793908800,
       "dry_run": true,
       "order_id": "PAPER-CYBERUSDT-1793907074"
+    },
+    {
+      "symbol": "ARIAUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.15574,
+      "qty": 1284.1916,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.1518465,
+      "tf": "4h",
+      "opened_at": 1793908925,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.15574,
+          "ts": 1793908925
+        }
+      ],
+      "entry_candle_ts": 1793908800,
+      "last_leg_candle_ts": 1793908800,
+      "dry_run": true,
+      "order_id": "PAPER-ARIAUSDT-1793908925"
     }
   ],
   "trade_history": [
@@ -7423,6 +7448,15 @@
       "side": "SELL",
       "upper": 0.27172892063137805,
       "open": 0.2745,
+      "reported": false
+    },
+    {
+      "symbol": "CYBERUSDT",
+      "tf": "4h",
+      "candle_ts": 1793908800,
+      "side": "SELL",
+      "upper": 0.2704039772892884,
+      "open": 0.275,
       "reported": false
     }
   ],
