@@ -256,24 +256,28 @@
       "symbol": "NETUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 288.71,
-      "qty": 0.692737,
-      "margin": 10.0,
+      "entry": 286.3268552499908,
+      "qty": 2.095537,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 281.49224999999996,
+      "tp_price": 279.168683868741,
       "tf": "15m",
       "opened_at": 1793914225,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 288.71,
           "ts": 1793914225
+        },
+        {
+          "px": 285.15,
+          "ts": 1793915129
         }
       ],
       "entry_candle_ts": 1793914200,
-      "last_leg_candle_ts": 1793914200,
+      "last_leg_candle_ts": 1793915100,
       "dry_run": true,
       "order_id": "PAPER-NETUSDT-1793914225"
     }
@@ -7496,6 +7500,15 @@
       "upper": 0.15202156043814977,
       "open": 0.15525,
       "reported": false
+    },
+    {
+      "symbol": "NETUSDT",
+      "tf": "15m",
+      "candle_ts": 1793914200,
+      "side": "SELL",
+      "upper": 274.73712839538473,
+      "open": 288.6,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -7606,7 +7619,7 @@
     "CANTONUSDT": 1793952369,
     "BTCDOMUSDT": 1793955831
   },
-  "last_trade_report_ts": 1793912817,
+  "last_trade_report_ts": 1793914474,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
