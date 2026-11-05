@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.8",
-  "updated_at": 1793837242,
+  "updated_at": 1793837253,
   "signals": [
-    {
-      "kind": "HEARTBEAT",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1793809968
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1395,13 @@
       "tf": "4h",
       "gap": 1.15,
       "ts": 1793837242
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793837253
     }
   ],
   "trades": [
@@ -1534,6 +1534,19 @@
       "px": 0.009302,
       "pnl": 4.1798,
       "tf": "15m"
+    },
+    {
+      "symbol": "MRNAUSDT",
+      "side": "SELL",
+      "entry": 257.33,
+      "tp": 250.89674999999997,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 257.33,
+      "pnl": 0.0,
+      "tf": "4h"
     }
   ],
   "start": 1000.0,
