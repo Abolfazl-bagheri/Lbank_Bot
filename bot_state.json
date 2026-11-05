@@ -89,6 +89,31 @@
       "last_leg_candle_ts": 1793846700,
       "dry_run": true,
       "order_id": "PAPER-ARGUSUSDT-1793846817"
+    },
+    {
+      "symbol": "MINIMAXUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 22.09,
+      "qty": 9.0539,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 21.53775,
+      "tf": "15m",
+      "opened_at": 1793846964,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 22.09,
+          "ts": 1793846964
+        }
+      ],
+      "entry_candle_ts": 1793846700,
+      "last_leg_candle_ts": 1793846700,
+      "dry_run": true,
+      "order_id": "PAPER-MINIMAXUSDT-1793846964"
     }
   ],
   "trade_history": [
@@ -6341,6 +6366,15 @@
       "upper": 30.300007448132018,
       "open": 30.69,
       "reported": false
+    },
+    {
+      "symbol": "ARGUSUSDT",
+      "tf": "15m",
+      "candle_ts": 1793846700,
+      "side": "SELL",
+      "upper": 0.0045214897897640615,
+      "open": 0.00458,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -6454,7 +6488,7 @@
     "GSTOCKUSDT": 1793882855,
     "DRVUSDT": 1793885679
   },
-  "last_trade_report_ts": 1793845950,
+  "last_trade_report_ts": 1793846875,
   "last_known_version": "2.6.8",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
