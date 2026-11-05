@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1793877219,
+  "updated_at": 1793877332,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "STANDARDUSDT",
-      "tf": "4h",
-      "gap": 1.02,
-      "ts": 1793836386
-    },
     {
       "kind": "GAP",
       "symbol": "OUSTUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 2.4,
       "ts": 1793877219
+    },
+    {
+      "kind": "SELL",
+      "symbol": "AIOUSDT",
+      "tf": "15m",
+      "gap": 1.43,
+      "ts": 1793877332
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 31.23,
-      "pnl": -2.924,
+      "px": 31.25,
+      "pnl": -3.0539,
       "tf": "1h"
     },
     {
@@ -1440,8 +1440,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.00909,
-      "pnl": 0.0,
+      "px": 0.009101,
+      "pnl": -0.242,
       "tf": "1h"
     }
   ],
@@ -1449,8 +1449,8 @@
   "session_start": 1793837408,
   "realized": 331.9196,
   "closed_n": 12,
-  "open_upnl": -9.9725,
-  "equity": 1321.9471,
+  "open_upnl": -10.3444,
+  "equity": 1321.5752,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
