@@ -91,31 +91,6 @@
       "order_id": "PAPER-ARGUSUSDT-1793846817"
     },
     {
-      "symbol": "XTZUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.2714,
-      "qty": 736.9197,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.264615,
-      "tf": "1h",
-      "opened_at": 1793847913,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.2714,
-          "ts": 1793847913
-        }
-      ],
-      "entry_candle_ts": 1793847600,
-      "last_leg_candle_ts": 1793847600,
-      "dry_run": true,
-      "order_id": "PAPER-XTZUSDT-1793847913"
-    },
-    {
       "symbol": "ICNTUSDT",
       "side": "SELL",
       "status": "open",
@@ -4559,6 +4534,36 @@
       "pnl_usdt": 28.035740442361202,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "XTZUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.2714,
+      "qty": 736.9197,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.264615,
+      "tf": "1h",
+      "opened_at": 1793847913,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.2714,
+          "ts": 1793847913
+        }
+      ],
+      "entry_candle_ts": 1793847600,
+      "last_leg_candle_ts": 1793847600,
+      "dry_run": true,
+      "order_id": "PAPER-XTZUSDT-1793847913",
+      "closed_at": 1793864100,
+      "close_px": 0.2643,
+      "pnl_usdt": 5.23212969786293,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -6535,7 +6540,8 @@
       "side": "SELL",
       "upper": 0.24296395526566236,
       "open": 0.2464,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "MAGMAUSDT",
@@ -6544,7 +6550,8 @@
       "side": "SELL",
       "upper": 0.4198487078982623,
       "open": 0.4264,
-      "reported": false
+      "reported": true,
+      "filled": false
     }
   ],
   "paper_days": [
@@ -6658,7 +6665,7 @@
     "CZUSDT": 1793901119,
     "AINBSCUSDT": 1793904563
   },
-  "last_trade_report_ts": 1793861412,
+  "last_trade_report_ts": 1793863220,
   "last_known_version": "2.6.8",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
