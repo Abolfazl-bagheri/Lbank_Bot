@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.8",
-  "updated_at": 1793837992,
+  "updated_at": 1793838003,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "RDDTUSDT",
-      "tf": "4h",
-      "gap": 1.58,
-      "ts": 1793808474
-    },
     {
       "kind": "SELL",
       "symbol": "FARTCOINUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 1.37,
       "ts": 1793837992
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793838003
     }
   ],
   "trades": [
@@ -1546,6 +1546,19 @@
       "lev": 20,
       "px": 0.002743,
       "pnl": 6.1484,
+      "tf": "15m"
+    },
+    {
+      "symbol": "HYUNDAIUSDT",
+      "side": "SELL",
+      "entry": 228.11,
+      "tp": 222.40725,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 228.11,
+      "pnl": 0.0,
       "tf": "15m"
     }
   ],
