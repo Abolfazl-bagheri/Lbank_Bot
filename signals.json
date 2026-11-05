@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.8",
-  "updated_at": 1793844378,
+  "updated_at": 1793844383,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1793816258
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 1.56,
       "ts": 1793844378
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793844383
     }
   ],
   "trades": [
@@ -1416,6 +1416,19 @@
       "lev": 20,
       "px": 39.92,
       "pnl": -8.041,
+      "tf": "1h"
+    },
+    {
+      "symbol": "HK1810USDT",
+      "side": "SELL",
+      "entry": 30.78,
+      "tp": 30.0105,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 30.78,
+      "pnl": 0.0,
       "tf": "1h"
     }
   ],
