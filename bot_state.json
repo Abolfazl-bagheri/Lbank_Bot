@@ -170,6 +170,31 @@
       "last_leg_candle_ts": 1793858400,
       "dry_run": true,
       "order_id": "PAPER-JCTUSDT-1793858598"
+    },
+    {
+      "symbol": "CARDSUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.3184,
+      "qty": 628.1407,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.31044,
+      "tf": "15m",
+      "opened_at": 1793859585,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.3184,
+          "ts": 1793859585
+        }
+      ],
+      "entry_candle_ts": 1793859300,
+      "last_leg_candle_ts": 1793859300,
+      "dry_run": true,
+      "order_id": "PAPER-CARDSUSDT-1793859585"
     }
   ],
   "trade_history": [
@@ -6414,6 +6439,15 @@
       "open": 0.02215,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "JCTUSDT",
+      "tf": "1h",
+      "candle_ts": 1793858400,
+      "side": "SELL",
+      "upper": 0.006493243730016757,
+      "open": 0.006816,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -6527,7 +6561,7 @@
     "1000WOJAKUSDT": 1793901114,
     "CZUSDT": 1793901119
   },
-  "last_trade_report_ts": 1793857939,
+  "last_trade_report_ts": 1793858861,
   "last_known_version": "2.6.8",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
