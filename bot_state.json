@@ -89,31 +89,6 @@
       "last_leg_candle_ts": 1793846700,
       "dry_run": true,
       "order_id": "PAPER-ARGUSUSDT-1793846817"
-    },
-    {
-      "symbol": "MAGMAUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.42675,
-      "qty": 468.6585,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.41608125,
-      "tf": "15m",
-      "opened_at": 1793863124,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.42675,
-          "ts": 1793863124
-        }
-      ],
-      "entry_candle_ts": 1793862900,
-      "last_leg_candle_ts": 1793862900,
-      "dry_run": true,
-      "order_id": "PAPER-MAGMAUSDT-1793863124"
     }
   ],
   "trade_history": [
@@ -4569,6 +4544,36 @@
       "pnl_usdt": 10.72734660707031,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "MAGMAUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.42675,
+      "qty": 468.6585,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.41608125,
+      "tf": "15m",
+      "opened_at": 1793863124,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.42675,
+          "ts": 1793863124
+        }
+      ],
+      "entry_candle_ts": 1793862900,
+      "last_leg_candle_ts": 1793862900,
+      "dry_run": true,
+      "order_id": "PAPER-MAGMAUSDT-1793863124",
+      "closed_at": 1793868717,
+      "close_px": 0.40757,
+      "pnl_usdt": 8.988869361452855,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -6614,7 +6619,6 @@
     "METEORAUSDT": 1793852241,
     "AMCUSDT": 1793853303,
     "WUXIBIOUSDT": 1793866147,
-    "O1USDT": 1793866200,
     "MANCERUSDT": 1793870280,
     "ARROWUSDT": 1793871201,
     "BBXUSDT": 1793872237,
@@ -6635,9 +6639,10 @@
     "NEIRO1USDT": 1793901113,
     "1000WOJAKUSDT": 1793901114,
     "CZUSDT": 1793901119,
-    "AINBSCUSDT": 1793904563
+    "AINBSCUSDT": 1793904563,
+    "O1USDT": 1793911895
   },
-  "last_trade_report_ts": 1793866797,
-  "last_known_version": "2.6.8",
+  "last_trade_report_ts": 1793867782,
+  "last_known_version": "2.6.9",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
