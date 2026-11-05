@@ -288,7 +288,7 @@ function wallet(){var pl=plist(),c=S.d.closed||{profit:0,loss:0,count:0},ex=S.ex
  pl.forEach(function(t){var k=calc(t),lv=+t.lev||L0;upl+=k.pnl;mu+=+t.margin||0;nt+=(+t.margin||0)*lv});
  var bal=st+real,eq=bal+upl,mm=nt*MMR,free=eq-mu,buf=eq-mm,pct=Math.max(0,Math.min(100,buf/bal*100)),sh=nt>0?buf/nt*100:null,ch=eq-st;
  setT($("eqv"),f2(eq)+" USDT");$("eqv").className="eqv "+(ch>=0?"up":"dn");
- setT($("eqd"),(ch>=0?"+":"")+f2(ch)+" U ("+(ch>=0?"+":"")+(ch/st*100).toFixed(2)+"٪) نسبت به "+f2(st));
+ setT($("eqd"),(ch>=0?"+":"")+f2(ch)+" U ("+(ch>=0?"+":"")+(ch/st*100).toFixed(2)+"٪) نسبت به "+f2(st)+(ex.session_start?(" · ریست "+tehran(ex.session_start)):"")+(ex.closed_n!=null?(" · بسته امروز "+ex.closed_n):""));
  setT($("gpct"),pct.toFixed(0)+"٪");$("gi").style.left=pct+"%";
  var LV=mode()==="LIVE";$("gwrap").style.display=LV?"":"none";
  $("gnote").textContent=LV?(sh!=null?"با رشد حدود "+sh.toFixed(1)+"٪ هم‌زمان قیمت همه‌ی پوزیشن‌ها حساب لیکوئید می‌شود (تخمین)":"پوزیشن بازی نیست؛ ریسک لیکوئید صفر"):"حالت PAPER · لیکوئید شبیه‌سازی نمی‌شود؛ فقط PnL و فاصله تا TP مهم است";
@@ -436,7 +436,8 @@ function margShare(pl,mu,eq){var arr=pl.map(function(t){return{s:t.symbol,m:+t.m
  $("xb").innerHTML=mu>0?arr.map(function(x,i){return '<i style="width:'+(x.m/mu*100).toFixed(2)+'%;background:'+XC[i%XC.length]+'" title="'+esc(x.s)+'"></i>'}).join(""):"";
  $("xl").innerHTML=mu>0?arr.slice(0,6).map(function(x,i){return '<span><i style="background:'+XC[i%XC.length]+'"></i>'+esc(x.s)+' '+(x.m/mu*100).toFixed(0)+'٪</span>'}).join(" ")+(arr.length>6?' <span>+'+(arr.length-6)+'</span>':""):""}
 /* ---------- ریسک امروز، ریست، ساعت‌ها، مقایسه‌ی پیکربندی‌ها ---------- */
-function isForced(v){return v.forced===true||String(v.why||"").toUpperCase()==="RESET"}
+function tehran(ts){try{return new Date((+ts)*1000).toLocaleString("fa-IR",{timeZone:"Asia/Tehran",month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit"})}catch(e){return"—"}}
+function isForced(v){var w=String(v.why||v.close_reason||"").toUpperCase();return v.forced===true||w==="RESET"||w==="NIGHT_RESET"||w.indexOf("NIGHT")>=0||w.indexOf("RESET")>=0}
 function saveEps(){try{localStorage.setItem("lbg_eps",JSON.stringify(S.eps))}catch(e){}}
 function epUpd(t,eq,mu,n){var st=S.ex&&S.ex.start!=null?+S.ex.start:START;if(!isFinite(eq))return;
  if(!S.ep)S.ep={t0:t,pk:Math.max(eq,st),mn:eq,dd:0,ddp:0,mm:0,mmp:0,mo:0};var e=S.ep;
@@ -534,7 +535,7 @@ function onEv(v,hist){if(v.variant&&String(v.variant).toLowerCase()!=="main"){S.
   if(!hist&&S.ready&&Array.isArray(S.pos)){var op={};S.pos.forEach(function(x){op[x.symbol]=+x.pele||0});P.forEach(function(x){var b=op[x.symbol];if(b==null)evt("🟢 ورود جدید",x.symbol+" @ "+px(x.entry));else if((+x.pele||0)>b)evt("➕ پله "+(+x.pele)+" · "+x.symbol,"میانگین ورود "+px(x.entry))})}
   /* ریست شبانه paper: پوزیشن خالی + start=1000 + (بدون سود تحقق‌یافته) یا reset:true */
   var rs=v.reset===true||(P.length===0&&+v.start===1000&&(v.realized==null||+v.realized===0||+v.closed_n===0));
-  if(v.start!=null||v.realized!=null||v.lev!=null||v.closed_n!=null||v.mode!=null)S.ex={start:v.start,lev:v.lev,realized:rs?0:v.realized,closed_n:rs?0:v.closed_n,mode:v.mode};
+  if(v.start!=null||v.realized!=null||v.lev!=null||v.closed_n!=null||v.mode!=null||v.session_start!=null)S.ex={start:v.start!=null?v.start:(S.ex&&S.ex.start),lev:v.lev!=null?v.lev:(S.ex&&S.ex.lev),realized:rs?0:(v.realized!=null?v.realized:(S.ex&&S.ex.realized)),closed_n:rs?0:(v.closed_n!=null?v.closed_n:(S.ex&&S.ex.closed_n)),mode:v.mode||(S.ex&&S.ex.mode),session_start:v.session_start!=null?+v.session_start:((S.ex&&S.ex.session_start)||0),open_upnl:v.open_upnl,equity:v.equity};
   if(rs){S.d.trades=[];S.d.closed={profit:0,loss:0,count:0};S.cl=[];S.resetAt=hist?(v._t||0):now()}
   var tt=hist?(v._t||now()):now();if(S.posT0!=null&&tt>S.posT0){var dd=tt-S.posT0;S.pint=S.pint?S.pint*.7+dd*.3:dd}S.posT0=tt;
   var stv=v.start!=null?+v.start:START,rl=rs?0:(v.realized!=null?+v.realized:0),eq2=stv+rl+P.reduce(function(a,x){return a+(+x.pnl||0)},0);
@@ -551,11 +552,13 @@ function onEv(v,hist){if(v.variant&&String(v.variant).toLowerCase()!=="main"){S.
   if(!S.cl.some(function(x){return x.ts+"|"===ts2+"|"&&x.symbol===sy})){S.cl.push({symbol:sy,ts:ts2,entry:v.entry,exit:v.exit,pnl:+v.pnl,roi:v.roi,steps:v.steps,dur:v.dur,why:v.why,mae:v.mae,forced:isForced(v),fee:v.fee,funding:v.funding});S.cl.sort(function(a,b){return b.ts-a.ts});S.cl=S.cl.slice(0,60);arch({symbol:sy,ts:ts2,pnl:+v.pnl,steps:v.steps,dur:v.dur,forced:isForced(v)});
    if(!hist&&S.ready)evt((String(v.why).toUpperCase()==="TP"?"✅ TP · ":"🔒 بسته شد · ")+sy,sg(+v.pnl)+" U")}dirty()}
  else if(v.t==="days"&&Array.isArray(v.days)){mergeDays(v.days,"bot");dirty()}
- else if(v.t==="reset"){var rt=+v.ts;if(!(rt>1e9&&rt<4e9))rt=v._t||now();addRst({ts:rt,pnl:v.end!=null?+v.end-(v.start!=null?+v.start:START):(v.realized!=null?+v.realized:null),trades:v.trades,forced:v.forced,src:"bot"});dirty()}}
+ else if(v.t==="reset"){var rt=+v.ts;if(!(rt>1e9&&rt<4e9))rt=v._t||now();var net=v.net!=null?+v.net:(v.reset_pnl!=null&&v.tp_profit!=null?(+v.tp_profit+(v.tp_loss||0)+(+v.reset_pnl)):null);addRst({ts:rt,pnl:net,trades:(+v.tp_trades||0)+(+v.reset_trades||0),forced:v.reset_trades,src:"bot",tp_profit:v.tp_profit,tp_loss:v.tp_loss,reset_pnl:v.reset_pnl,reset_trades:v.reset_trades,day:v.day,balance_before:v.balance_before});if(v.start!=null)S.ex=Object.assign({},S.ex||{},{start:+v.start,realized:0,closed_n:0,session_start:rt});if(!hist&&S.ready)evt("🌙 ریست روزانه", (v.day||"")+" · برایند "+(net!=null?sg(net)+" U":"—"));dirty()}}
+function pollSig(){J("signals.json?t="+Date.now()).catch(function(){return J("https://raw.githubusercontent.com/"+REPO+"/main/signals.json?t="+Date.now())}).then(function(j){if(!j)return;S.d=j;S.ex={start:j.start!=null?+j.start:START,realized:j.realized!=null?+j.realized:0,closed_n:j.closed_n!=null?+j.closed_n:0,mode:j.mode,lev:j.lev,session_start:j.session_start!=null?+j.session_start:0,open_upnl:j.open_upnl,equity:j.equity};if(Array.isArray(j.days))mergeDays(j.days,"bot");dirty()}).catch(function(){})}
+setInterval(pollSig,45000);
 function sse(){if(!window.EventSource)return;var t0=Date.now()/1000,es=new EventSource("https://ntfy.sh/"+LIVE_TOPIC+"/sse?since=12h");
  es.onmessage=function(e){var m,v;try{m=JSON.parse(e.data)}catch(x){return}if(m.event!=="message")return;try{v=JSON.parse(m.message)}catch(x){return}
   v.ts=v.ts||m.time;v._t=m.time||now();S.lvOn=true;S.last=Math.max(S.last,m.time||now());onEv(v,m.time<t0-3)}}
-function boot(){J("https://api.gateio.ws/api/v4/futures/usdt/tickers").then(function(a){if(Array.isArray(a)){a.forEach(function(x){fdSet(String(x.contract).replace("_",""),x)});dirty()}}).catch(function(){});J("signals.json").catch(function(){return J("https://raw.githubusercontent.com/"+REPO+"/main/signals.json")}).then(function(j){S.d=j;if(Array.isArray(j.days))mergeDays(j.days,"bot");(j.signals||[]).forEach(function(s){addSig(s,true)})}).catch(function(){}).then(function(){S.ready=1;dirty()})}
+function boot(){J("https://api.gateio.ws/api/v4/futures/usdt/tickers").then(function(a){if(Array.isArray(a)){a.forEach(function(x){fdSet(String(x.contract).replace("_",""),x)});dirty()}}).catch(function(){});J("signals.json?t="+Date.now()).catch(function(){return J("https://raw.githubusercontent.com/"+REPO+"/main/signals.json?t="+Date.now())}).then(function(j){S.d=j;S.ex={start:j.start!=null?+j.start:START,realized:j.realized!=null?+j.realized:0,closed_n:j.closed_n!=null?+j.closed_n:0,mode:j.mode,lev:j.lev,session_start:j.session_start!=null?+j.session_start:0,open_upnl:j.open_upnl,equity:j.equity};if(Array.isArray(j.days))mergeDays(j.days,"bot");(j.signals||[]).forEach(function(s){addSig(s,true)})}).catch(function(){}).then(function(){S.ready=1;dirty()})
 function draw(cv,c,ubm){var x=cv.getContext("2d"),W=cv.width,H=cv.height,mn=1e99,mx=-1e99,i;
  c.forEach(function(k){mn=Math.min(mn,k[2],k[6]);mx=Math.max(mx,k[1],k[4])});
  var r=mx-mn||1,Y=function(v){return H-14-(v-mn)/r*(H-28)},w=W/c.length;x.clearRect(0,0,W,H);
