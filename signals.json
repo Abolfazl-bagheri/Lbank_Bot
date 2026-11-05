@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.8",
-  "updated_at": 1793863122,
+  "updated_at": 1793863131,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "APPUSDT",
-      "tf": "15m",
-      "gap": 3.29,
-      "ts": 1793828706
-    },
     {
       "kind": "GAP",
       "symbol": "CCLUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 1.62,
       "ts": 1793863122
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793863131
     }
   ],
   "trades": [
@@ -1480,6 +1480,19 @@
       "margin": 10.0,
       "lev": 20,
       "px": 0.2461,
+      "pnl": 0.0,
+      "tf": "15m"
+    },
+    {
+      "symbol": "MAGMAUSDT",
+      "side": "SELL",
+      "entry": 0.42675,
+      "tp": 0.41608125,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.42675,
       "pnl": 0.0,
       "tf": "15m"
     }
