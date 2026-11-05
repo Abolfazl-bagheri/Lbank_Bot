@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
-  "version": "2.7.0",
-  "updated_at": 1793873184,
+  "version": "2.7.2",
+  "updated_at": 1793873342,
   "signals": [
-    {
-      "kind": "HEARTBEAT",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1793835190
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,9 +1395,29 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1793873184
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793873342
     }
   ],
   "trades": [
+    {
+      "symbol": "LAOPUUSDT",
+      "side": "SELL",
+      "entry": 39.8132875657914,
+      "tp": 38.817955376646616,
+      "adds": 3,
+      "pele": 4,
+      "margin": 150.0,
+      "lev": 20,
+      "px": 38.4,
+      "pnl": 106.4937,
+      "tf": "1h"
+    },
     {
       "symbol": "HK1810USDT",
       "side": "SELL",
@@ -1414,8 +1427,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 31.19,
-      "pnl": -2.6641,
+      "px": 31.18,
+      "pnl": -2.5991,
       "tf": "1h"
     },
     {
@@ -1427,8 +1440,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.00474,
-      "pnl": -8.8106,
+      "px": 0.00475,
+      "pnl": -9.2511,
       "tf": "15m"
     },
     {
@@ -1440,23 +1453,23 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.008962,
-      "pnl": 2.8163,
+      "px": 0.009021,
+      "pnl": 1.5182,
       "tf": "1h"
     }
   ],
   "start": 1000.0,
   "session_start": 1793837408,
-  "realized": 319.1597,
-  "closed_n": 12,
-  "open_upnl": -8.6584,
-  "equity": 1310.5013,
+  "realized": 227.6865,
+  "closed_n": 11,
+  "open_upnl": 96.1617,
+  "equity": 1323.8482,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 319.1597,
+    "profit": 227.6865,
     "loss": 0,
-    "count": 12
+    "count": 11
   }
 }
