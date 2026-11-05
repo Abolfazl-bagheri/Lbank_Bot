@@ -179,24 +179,30 @@
       "symbol": "TZAUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 48.45,
-      "qty": 4.128,
-      "margin": 10.0,
+      "entry": 50.40954631379962,
+      "qty": 11.9025,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 47.23875,
+      "tp_price": 49.14930765595463,
       "tf": "1h",
       "opened_at": 1793894480,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        51.62
+      ],
       "steps": [
         {
           "px": 48.45,
           "ts": 1793894480
+        },
+        {
+          "px": 51.45,
+          "ts": 1793916351
         }
       ],
       "entry_candle_ts": 1793894400,
-      "last_leg_candle_ts": 1793894400,
+      "last_leg_candle_ts": 1793916351,
       "dry_run": true,
       "order_id": "PAPER-TZAUSDT-1793894480"
     },
