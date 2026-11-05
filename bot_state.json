@@ -91,31 +91,6 @@
       "order_id": "PAPER-ARGUSUSDT-1793846817"
     },
     {
-      "symbol": "AIOUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.04232,
-      "qty": 4725.8979,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.041262,
-      "tf": "1h",
-      "opened_at": 1793869380,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.04232,
-          "ts": 1793869380
-        }
-      ],
-      "entry_candle_ts": 1793869200,
-      "last_leg_candle_ts": 1793869200,
-      "dry_run": true,
-      "order_id": "PAPER-AIOUSDT-1793869380"
-    },
-    {
       "symbol": "ACTUSDT",
       "side": "SELL",
       "status": "open",
@@ -4654,6 +4629,36 @@
       "pnl_usdt": 27.49348794218973,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "AIOUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.04232,
+      "qty": 4725.8979,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.041262,
+      "tf": "1h",
+      "opened_at": 1793869380,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.04232,
+          "ts": 1793869380
+        }
+      ],
+      "entry_candle_ts": 1793869200,
+      "last_leg_candle_ts": 1793869200,
+      "dry_run": true,
+      "order_id": "PAPER-AIOUSDT-1793869380",
+      "closed_at": 1793872164,
+      "close_px": 0.04101,
+      "pnl_usdt": 6.190926275992465,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -6637,7 +6642,6 @@
     "SYNUSDT": 1793537208,
     "LONGXIAUSDT": 1793558277,
     "APROUSDT": 1793604906,
-    "PIPEDOGUSDT": 1793608506,
     "BIO1USDT": 1793611218,
     "TRUMPSOLUSDT": 1793630182,
     "UP2USDT": 1793631162,
@@ -6667,7 +6671,6 @@
     "METEORAUSDT": 1793852241,
     "AMCUSDT": 1793853303,
     "WUXIBIOUSDT": 1793866147,
-    "MANCERUSDT": 1793870280,
     "ARROWUSDT": 1793871201,
     "BBXUSDT": 1793872237,
     "TOADUSDT": 1793872239,
@@ -6688,9 +6691,11 @@
     "1000WOJAKUSDT": 1793901114,
     "CZUSDT": 1793901119,
     "AINBSCUSDT": 1793904563,
-    "O1USDT": 1793911895
+    "O1USDT": 1793911895,
+    "MANCERUSDT": 1793914388,
+    "FWDIUSDT": 1793915360
   },
-  "last_trade_report_ts": 1793868723,
+  "last_trade_report_ts": 1793871249,
   "last_known_version": "2.7.0",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
