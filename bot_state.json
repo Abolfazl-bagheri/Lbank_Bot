@@ -194,6 +194,31 @@
       "last_leg_candle_ts": 1793887200,
       "dry_run": true,
       "order_id": "PAPER-CLANKERUSDT-1793887244"
+    },
+    {
+      "symbol": "WENUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 7.925,
+      "qty": 25.2366,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 7.726875,
+      "tf": "1h",
+      "opened_at": 1793887337,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 7.925,
+          "ts": 1793887337
+        }
+      ],
+      "entry_candle_ts": 1793887200,
+      "last_leg_candle_ts": 1793887200,
+      "dry_run": true,
+      "order_id": "PAPER-WENUSDT-1793887337"
     }
   ],
   "trade_history": [
@@ -6972,6 +6997,15 @@
       "side": "SELL",
       "upper": 18.281117546516025,
       "open": 18.59,
+      "reported": false
+    },
+    {
+      "symbol": "ARIAUSDT",
+      "tf": "1h",
+      "candle_ts": 1793887200,
+      "side": "SELL",
+      "upper": 0.1461318222926151,
+      "open": 0.14945,
       "reported": false
     }
   ],
