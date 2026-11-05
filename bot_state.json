@@ -4,15 +4,15 @@
       "symbol": "LAOPUUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 39.39208259199685,
-      "qty": 15.2315,
-      "margin": 30.0,
+      "entry": 39.692026956531606,
+      "qty": 35.2716,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 38.407280527196924,
-      "tf": "15m",
+      "tp_price": 38.699726282618315,
+      "tf": "1h",
       "opened_at": 1793843206,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [
         39.7
       ],
@@ -24,10 +24,14 @@
         {
           "px": 39.55,
           "ts": 1793843421
+        },
+        {
+          "px": 39.92,
+          "ts": 1793844349
         }
       ],
       "entry_candle_ts": 1793843100,
-      "last_leg_candle_ts": 1793843421,
+      "last_leg_candle_ts": 1793844000,
       "dry_run": true,
       "order_id": "PAPER-LAOPUUSDT-1793843206"
     }
@@ -4509,46 +4513,6 @@
       "side": "SELL"
     },
     {
-      "symbol": "TAKEUSDT",
-      "tf": "1h",
-      "candle_ts": 1793584800,
-      "side": "SELL",
-      "upper": 0.07033670824264608,
-      "open": 0.07124,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "MINIMAXUSDT",
-      "tf": "1h",
-      "candle_ts": 1793584800,
-      "side": "SELL",
-      "upper": 21.113178778695996,
-      "open": 21.42,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "TSEMUSDT",
-      "tf": "1h",
-      "candle_ts": 1793584800,
-      "side": "SELL",
-      "upper": 169.03816938351395,
-      "open": 170.86,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "POPMARTUSDT",
-      "tf": "1h",
-      "candle_ts": 1793584800,
-      "side": "SELL",
-      "upper": 17.546540483183723,
-      "open": 17.751,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "PIEVERSEUSDT",
       "tf": "15m",
       "candle_ts": 1793591100,
@@ -6302,7 +6266,8 @@
       "side": "SELL",
       "upper": 38.23711805316934,
       "open": 38.69,
-      "reported": false
+      "reported": true,
+      "filled": false
     }
   ],
   "paper_days": [
