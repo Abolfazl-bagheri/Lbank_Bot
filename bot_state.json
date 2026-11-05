@@ -219,6 +219,31 @@
       "last_leg_candle_ts": 1793887200,
       "dry_run": true,
       "order_id": "PAPER-WENUSDT-1793887337"
+    },
+    {
+      "symbol": "LYNUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.02118,
+      "qty": 9442.8706,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0206505,
+      "tf": "15m",
+      "opened_at": 1793888134,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.02118,
+          "ts": 1793888134
+        }
+      ],
+      "entry_candle_ts": 1793888100,
+      "last_leg_candle_ts": 1793888100,
+      "dry_run": true,
+      "order_id": "PAPER-LYNUSDT-1793888134"
     }
   ],
   "trade_history": [
@@ -6988,7 +7013,8 @@
       "side": "SELL",
       "upper": 0.1401863729815841,
       "open": 0.14291,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "CLANKERUSDT",
@@ -7006,6 +7032,15 @@
       "side": "SELL",
       "upper": 0.1461318222926151,
       "open": 0.14945,
+      "reported": false
+    },
+    {
+      "symbol": "WENUSDT",
+      "tf": "1h",
+      "candle_ts": 1793887200,
+      "side": "SELL",
+      "upper": 7.827912098739014,
+      "open": 7.921,
       "reported": false
     }
   ],
@@ -7118,9 +7153,10 @@
     "CAPETHUSDT": 1793926972,
     "UP2USDT": 1793927026,
     "CYBERLEEKUSDT": 1793927052,
-    "DRVUSDT": 1793929608
+    "DRVUSDT": 1793929608,
+    "GSTOCKUSDT": 1793930663
   },
-  "last_trade_report_ts": 1793886558,
+  "last_trade_report_ts": 1793887639,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
