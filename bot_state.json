@@ -4,17 +4,18 @@
       "symbol": "LAOPUUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 39.692026956531606,
-      "qty": 35.2716,
-      "margin": 70.0,
+      "entry": 39.8132875657914,
+      "qty": 75.3518,
+      "margin": 150.0,
       "leverage": 20,
-      "tp_price": 38.699726282618315,
+      "tp_price": 38.817955376646616,
       "tf": "1h",
       "opened_at": 1793843206,
-      "adds": 2,
-      "last_leg_margin": 40.0,
+      "adds": 3,
+      "last_leg_margin": 80.0,
       "used_res_levels": [
-        39.7
+        39.7,
+        40.07
       ],
       "steps": [
         {
@@ -28,10 +29,14 @@
         {
           "px": 39.92,
           "ts": 1793844349
+        },
+        {
+          "px": 39.92,
+          "ts": 1793844475
         }
       ],
       "entry_candle_ts": 1793843100,
-      "last_leg_candle_ts": 1793844000,
+      "last_leg_candle_ts": 1793844475,
       "dry_run": true,
       "order_id": "PAPER-LAOPUUSDT-1793843206"
     },
@@ -6301,6 +6306,15 @@
       "side": "SELL",
       "upper": 39.27255836489384,
       "open": 39.75,
+      "reported": false
+    },
+    {
+      "symbol": "HK1810USDT",
+      "tf": "1h",
+      "candle_ts": 1793844000,
+      "side": "SELL",
+      "upper": 30.300007448132018,
+      "open": 30.69,
       "reported": false
     }
   ],
