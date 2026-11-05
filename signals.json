@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1793887242,
+  "updated_at": 1793887251,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "XTZUSDT",
-      "tf": "1h",
-      "gap": 1.53,
-      "ts": 1793847834
-    },
     {
       "kind": "GAP",
       "symbol": "LYNUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 1.5,
       "ts": 1793887242
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793887251
     }
   ],
   "trades": [
@@ -1481,6 +1481,19 @@
       "lev": 20,
       "px": 0.019653,
       "pnl": -4.4491,
+      "tf": "15m"
+    },
+    {
+      "symbol": "CLANKERUSDT",
+      "side": "SELL",
+      "entry": 18.56,
+      "tp": 18.096,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 18.56,
+      "pnl": 0.0,
       "tf": "15m"
     }
   ],
