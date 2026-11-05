@@ -210,15 +210,15 @@
       "symbol": "CYBERUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.2692220532266234,
-      "qty": 5200.1683,
-      "margin": 70.0,
+      "entry": 0.28742558425142334,
+      "qty": 10437.484199999999,
+      "margin": 150.0,
       "leverage": 20,
-      "tp_price": 0.2624915018959578,
-      "tf": "15m",
+      "tp_price": 0.28023994464513774,
+      "tf": "1h",
       "opened_at": 1793907074,
-      "adds": 2,
-      "last_leg_margin": 40.0,
+      "adds": 3,
+      "last_leg_margin": 80.0,
       "used_res_levels": [],
       "steps": [
         {
@@ -232,10 +232,14 @@
         {
           "px": 0.2733,
           "ts": 1793908843
+        },
+        {
+          "px": 0.3055,
+          "ts": 1793919653
         }
       ],
       "entry_candle_ts": 1793907000,
-      "last_leg_candle_ts": 1793908800,
+      "last_leg_candle_ts": 1793919600,
       "dry_run": true,
       "order_id": "PAPER-CYBERUSDT-1793907074"
     },
@@ -7591,7 +7595,6 @@
     "AEHRUSDT": 1793830009,
     "QUACKAIUSDT": 1793843367,
     "METEORAUSDT": 1793852241,
-    "WUXIBIOUSDT": 1793866147,
     "ARROWUSDT": 1793871201,
     "BBXUSDT": 1793872237,
     "OFCUSDT": 1793873172,
@@ -7600,13 +7603,10 @@
     "BEMUSDT": 1793901058,
     "RIOTUSDT": 1793901063,
     "QUID1USDT": 1793901083,
-    "AINBSCUSDT": 1793904563,
     "O1USDT": 1793911895,
     "MANCERUSDT": 1793914576,
     "PIPEDOGUSDT": 1793915458,
-    "UBIKUSDT": 1793916982,
     "TOADUSDT": 1793916983,
-    "OROCHIUSDT": 1793917021,
     "HK1810USDT": 1793923446,
     "HK0700USDT": 1793923522,
     "NEXUSDT": 1793923587,
@@ -7630,9 +7630,12 @@
     "CZUSDT": 1793945085,
     "USOUSDT": 1793952284,
     "CANTONUSDT": 1793952369,
-    "BTCDOMUSDT": 1793955831
+    "BTCDOMUSDT": 1793955831,
+    "OROCHIUSDT": 1793961063,
+    "UBIKUSDT": 1793961071,
+    "AINBSCUSDT": 1793962017
   },
-  "last_trade_report_ts": 1793914474,
+  "last_trade_report_ts": 1793918080,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
