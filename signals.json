@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1793878228,
+  "updated_at": 1793878235,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1793837253
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 2.13,
       "ts": 1793878228
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793878235
     }
   ],
   "trades": [
@@ -1455,6 +1455,19 @@
       "lev": 20,
       "px": 0.04835,
       "pnl": -4.0946,
+      "tf": "15m"
+    },
+    {
+      "symbol": "XTZUSDT",
+      "side": "SELL",
+      "entry": 0.2909,
+      "tp": 0.2836275,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.2909,
+      "pnl": 0.0,
       "tf": "15m"
     }
   ],
