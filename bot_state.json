@@ -145,6 +145,31 @@
       "last_leg_candle_ts": 1793847600,
       "dry_run": true,
       "order_id": "PAPER-XTZUSDT-1793847913"
+    },
+    {
+      "symbol": "JCTUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.006827,
+      "qty": 29295.4446,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.006656324999999999,
+      "tf": "1h",
+      "opened_at": 1793858598,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.006827,
+          "ts": 1793858598
+        }
+      ],
+      "entry_candle_ts": 1793858400,
+      "last_leg_candle_ts": 1793858400,
+      "dry_run": true,
+      "order_id": "PAPER-JCTUSDT-1793858598"
     }
   ],
   "trade_history": [
@@ -4654,16 +4679,6 @@
       "side": "SELL"
     },
     {
-      "symbol": "HAEDALUSDT",
-      "tf": "1h",
-      "candle_ts": 1793599200,
-      "side": "SELL",
-      "upper": 0.02734043002608365,
-      "open": 0.02767,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "STARUSDT",
       "tf": "15m",
       "candle_ts": 1793602800,
@@ -6397,7 +6412,8 @@
       "side": "SELL",
       "upper": 0.02178002897842498,
       "open": 0.02215,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -6511,7 +6527,7 @@
     "1000WOJAKUSDT": 1793901114,
     "CZUSDT": 1793901119
   },
-  "last_trade_report_ts": 1793846875,
+  "last_trade_report_ts": 1793857939,
   "last_known_version": "2.6.8",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
