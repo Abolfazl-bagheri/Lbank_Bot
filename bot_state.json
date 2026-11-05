@@ -139,24 +139,30 @@
       "symbol": "TRUTHUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.019349,
-      "qty": 10336.4515,
-      "margin": 10.0,
+      "entry": 0.019508341191093733,
+      "qty": 30756.0748,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.018865275,
+      "tp_price": 0.01902063266131639,
       "tf": "15m",
       "opened_at": 1793880125,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.01965
+      ],
       "steps": [
         {
           "px": 0.019349,
           "ts": 1793880125
+        },
+        {
+          "px": 0.019589,
+          "ts": 1793886541
         }
       ],
       "entry_candle_ts": 1793880000,
-      "last_leg_candle_ts": 1793880000,
+      "last_leg_candle_ts": 1793886541,
       "dry_run": true,
       "order_id": "PAPER-TRUTHUSDT-1793880125"
     }
@@ -5105,16 +5111,6 @@
       "side": "SELL"
     },
     {
-      "symbol": "CASHCATUSDT",
-      "tf": "15m",
-      "candle_ts": 1793627100,
-      "side": "SELL",
-      "upper": 0.10493565644589777,
-      "open": 0.10631,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "CVNAUSDT",
       "tf": "15m",
       "candle_ts": 1793630700,
@@ -7024,7 +7020,6 @@
     "OFCUSDT": 1793873172,
     "B3USDT": 1793880575,
     "AI1USDT": 1793882848,
-    "DRVUSDT": 1793885679,
     "BEMUSDT": 1793901058,
     "RIOTUSDT": 1793901063,
     "QUID1USDT": 1793901083,
@@ -7050,9 +7045,10 @@
     "LIGHT1USDT": 1793925108,
     "CAPETHUSDT": 1793926972,
     "UP2USDT": 1793927026,
-    "CYBERLEEKUSDT": 1793927052
+    "CYBERLEEKUSDT": 1793927052,
+    "DRVUSDT": 1793929608
   },
-  "last_trade_report_ts": 1793884030,
+  "last_trade_report_ts": 1793885649,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
