@@ -35,8 +35,9 @@ SIGNALS_FILE = os.path.join(BASE_DIR, "signals.json")
 LIVE_TOPIC = os.environ.get("LIVE_TOPIC", "lbank-gap-b0b85cee29ce").strip()
 STATE_BAK = os.path.join(BASE_DIR, "bot_state.bak")
 
-BOT_VERSION = "2.6.9"
+BOT_VERSION = "2.7.0"
 CHANGELOG = {
+    "2.7.0": ["احتمال‌گپ زودتر","سیگنال فقط دقایق اول کندل","بیدار شدن نزدیک کندل هر ۱۰ث"],
     "2.6.5": [
         "چارت اجباری: خط‌روند داینامیک + سقف پله با هم",
         "کلوز و پله‌سقف دیگر در تلگرام نیست (فقط وب/ntfy)",
@@ -67,9 +68,9 @@ CHAT_ID = os.environ.get("CHAT_ID", "").strip()
 TIMEFRAMES = {"15m": "15min", "1h": "1hr", "4h": "4hr"}
 TF_ORDER = {"15m": 0, "1h": 1, "4h": 2}
 PERIOD_SEC = {"15m": 900, "1h": 3600, "4h": 14400}
-OPEN_WINDOW_SEC = {"15m": 300, "1h": 420, "4h": 480}
-PRE_ALERT_BEFORE = {"15m": 180, "1h": 360, "4h": 1200}  # 3m / 6m / 20m قبل از کندل
-SIGNAL_SCAN_SEC = {"15m": 240, "1h": 360, "4h": 420}
+OPEN_WINDOW_SEC = {"15m": 90, "1h": 120, "4h": 180}
+PRE_ALERT_BEFORE = {"15m": 240, "1h": 600, "4h": 1500}  # 4m / 10m / 25m قبل
+SIGNAL_SCAN_SEC = {"15m": 100, "1h": 130, "4h": 200}
 
 BB_PERIOD = 20
 BB_STD = 2.0
@@ -432,6 +433,7 @@ def push_positions_live() -> None:
             "tp_pct": float(TRADE_TP_PCT),
             "mode": mode,
             "version": BOT_VERSION,
+            "session_start": int(paper_session_start or 0),
             "ts": int(time.time()),
         }
         push_live(ev)
@@ -1705,68 +1707,83 @@ async def process_symbol(symbol: str, tfs_to_check: list) -> None:
 
 
 async def pre_alert_cycle(tfs: list | None = None) -> None:
-    """احتمال گپ؛ چند TF یک نماد → یک پیام."""
+    """احتمال گپ چند دقیقه قبل از باز شدن کندل؛ موازی و بدون تأخیر زیاد."""
     tfs = tfs or pre_alert_tfs_now()
     if not tfs:
         return
     symbols = get_top_movers(TOP_GAINERS)
     log.info("PRE_ALERT TFs=%s n=%d iran=%s", ",".join(tfs), len(symbols), iran_now().strftime("%H:%M:%S"))
-    hits: dict = {}  # symbol -> list of dicts
-    for tf in tfs:
-        for symbol in symbols:
-            if is_blacklisted(symbol):
-                continue
-            try:
-                df, _ = await fetch_klines(symbol, tf, size=150)
-                if df is None or len(df) < BB_PERIOD + 2:
-                    continue
-                cur = df.iloc[-1]
-                upper = float(cur["upper"])
-                close = float(cur["c"])
-                fut = get_futures_last(symbol)
-                if not fut or upper <= 0:
-                    continue
-                px = fut if abs(fut - close) / close * 100 < 8 else close
-                if px <= upper:
-                    continue
-                diff = (px - upper) / px * 100.0
-                if diff < MIN_OPEN_GAP_PCT:
-                    continue
-                period = PERIOD_SEC[tf]
-                next_open = (int(time.time()) // period + 1) * period
-                key = (symbol, tf, next_open)
-                if key in sent_pre_alerts:
-                    continue
-                sent_pre_alerts.add(key)
-                hits.setdefault(symbol, []).append({
-                    "tf": tf, "diff": diff, "px": px, "upper": upper, "df": df, "next_open": next_open,
-                })
-            except Exception as e:
-                log.debug("pre %s %s: %s", symbol, tf, e)
-    # ارسال یک‌جا
+    hits: dict = {}
+    sem = asyncio.Semaphore(16)
+
+    async def scan_one(symbol: str, tf: str):
+        if is_blacklisted(symbol):
+            return
+        # هنوز داخل پنجره قبل از کندل؟
+        now = int(time.time())
+        p = PERIOD_SEC[tf]
+        remaining = p - (now % p)
+        before = PRE_ALERT_BEFORE.get(tf, 180)
+        if remaining > before or remaining < 5:
+            return
+        try:
+            df, _ = await fetch_klines(symbol, tf, size=120)
+            if df is None or len(df) < BB_PERIOD + 2:
+                return
+            cur = df.iloc[-1]
+            upper = float(cur["upper"])
+            close = float(cur["c"])
+            fut = get_futures_last(symbol)
+            if not fut or upper <= 0:
+                return
+            px = fut if abs(fut - close) / max(close, 1e-12) * 100 < 8 else close
+            if px <= upper:
+                return
+            diff = (px - upper) / px * 100.0
+            if diff < MIN_OPEN_GAP_PCT:
+                return
+            next_open = (now // p + 1) * p
+            key = (symbol, tf, next_open)
+            if key in sent_pre_alerts:
+                return
+            sent_pre_alerts.add(key)
+            hits.setdefault(symbol, []).append({
+                "tf": tf, "diff": diff, "px": px, "upper": upper, "df": df, "next_open": next_open, "remaining": remaining,
+            })
+        except Exception as e:
+            log.debug("pre %s %s: %s", symbol, tf, e)
+
+    async def run_sym(sym: str):
+        async with sem:
+            for tf in tfs:
+                await scan_one(sym, tf)
+
+    await asyncio.gather(*[run_sym(s) for s in symbols])
+
     for symbol, items in hits.items():
-        # جلوگیری از تکرار خیلی نزدیک برای همان نماد
-        bucket = (symbol, int(time.time()) // 600)  # هر ۱۰ دقیقه یک‌بار
+        bucket = (symbol, int(time.time()) // 300)  # هر ۵ دقیقه یک‌بار (نه ۱۰)
         if bucket in sent_pre_alerts:
             continue
         sent_pre_alerts.add(bucket)
         items.sort(key=lambda x: TF_ORDER.get(x["tf"], 99))
         lines = [f"⚠️ <b>احتمال گپ</b> · <a href=\"{tv_lbank_url(symbol)}\">{symbol}</a>"]
         for it in items:
-            lines.append(f"• <b>{it['tf']}</b> · اختلاف تا UB ≈ <b>{it['diff']:.2f}%</b>")
-            log.info("PRE_ALERT_HIT %s %s diff=%.2f%%", symbol, it["tf"], it["diff"])
+            lines.append(
+                f"• <b>{it['tf']}</b> · اختلاف تا UB ≈ <b>{it['diff']:.2f}%</b>"
+                f" · ~{int(it.get('remaining') or 0)}s تا کندل"
+            )
+            log.info("PRE_ALERT_HIT %s %s diff=%.2f%% remain=%ss", symbol, it["tf"], it["diff"], it.get("remaining"))
             log_signal_web("GAP", symbol, it["tf"], it["diff"])
             push_live({"t": "sig", "kind": "GAP", "symbol": symbol, "tf": it["tf"], "gap": round(float(it["diff"]), 2), "ts": int(time.time())})
         lines.append(f"<a href=\"{lbank_futures_url(symbol)}\">ال‌بانک</a>")
         cap = "\n".join(lines)
-        # چارت از بالاترین TF
         best = sorted(items, key=lambda x: -TF_ORDER.get(x["tf"], 0))[0]
         img = make_gap_chart(best["df"], symbol, best["tf"], {"fut_last": best["px"]})
         if img:
             send_telegram_photo(img, cap)
         else:
             send_telegram_text(cap)
-        await asyncio.sleep(0.15)
+        await asyncio.sleep(0.08)
 
 
 
@@ -1860,8 +1877,15 @@ async def one_cycle(tfs: list | None = None) -> None:
         return
     cycle_batch = {}
     t0 = time.time()
+    # فقط TFهایی که هنوز داخل پنجره باز شدن کندل‌اند
+    now_i = int(time.time())
+    tfs = [tf for tf in tfs if (now_i % PERIOD_SEC.get(tf, 900)) < OPEN_WINDOW_SEC.get(tf, 90)]
+    if not tfs:
+        log.info("cycle skipped — خارج پنجره باز شدن کندل")
+        return
     symbols = get_top_movers(TOP_GAINERS)
-    log.info("cycle TFs=%s n=%d iran=%s", ",".join(tfs), len(symbols), iran_now().strftime("%H:%M:%S"))
+    log.info("cycle TFs=%s n=%d iran=%s age15=%s", ",".join(tfs), len(symbols), iran_now().strftime("%H:%M:%S"), now_i % 900)
+
 
     try:
         await report_previous_gaps(tfs)
@@ -1942,9 +1966,12 @@ async def main() -> None:
                 await asyncio.sleep(3)
             else:
                 wait = seconds_until_next_candle()
-                # نزدیک کندل زودتر بیدار شو؛ حداکثر ۳۰ث
-                sleep_for = max(1, min(wait - 3, 30))
                 pre2 = pre_alert_tfs_now()
+                # نزدیک باز شدن کندل یا داخل پنجره احتمال‌گپ → حداکثر ۱۰ثانیه
+                if wait <= 90 or pre2:
+                    sleep_for = max(1, min(wait - 2, 10))
+                else:
+                    sleep_for = max(1, min(wait - 3, 25))
                 log.info("sleep=%ds next_candle=%ds pre=%s", sleep_for, wait, ",".join(pre2) or "-")
                 await asyncio.sleep(sleep_for)
         except Exception as e:
