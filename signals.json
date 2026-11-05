@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.8",
-  "updated_at": 1793842315,
+  "updated_at": 1793842320,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "ZZZUSDT",
-      "tf": "15m",
-      "gap": 3.24,
-      "ts": 1793812580
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,13 +1395,34 @@
       "tf": "15m",
       "gap": 1.31,
       "ts": 1793842315
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793842320
     }
   ],
-  "trades": [],
+  "trades": [
+    {
+      "symbol": "EIDOUSDT",
+      "side": "SELL",
+      "entry": 10.37,
+      "tp": 10.11075,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 10.37,
+      "pnl": 0.0,
+      "tf": "15m"
+    }
+  ],
   "start": 1000.0,
   "realized": -3875.4021,
   "closed_n": 121,
-  "open_upnl": 0,
+  "open_upnl": 0.0,
   "equity": -2875.4021,
   "lev": 20,
   "margin_leg": 10.0,
