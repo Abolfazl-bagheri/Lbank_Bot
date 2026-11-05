@@ -76,35 +76,6 @@
       "order_id": "PAPER-ACTUSDT-1793869497"
     },
     {
-      "symbol": "AIOUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.04956190940122596,
-      "qty": 12106.071100000001,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.048322861666195316,
-      "tf": "1h",
-      "opened_at": 1793877334,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.04738,
-          "ts": 1793877334
-        },
-        {
-          "px": 0.05073,
-          "ts": 1793880069
-        }
-      ],
-      "entry_candle_ts": 1793877300,
-      "last_leg_candle_ts": 1793880000,
-      "dry_run": true,
-      "order_id": "PAPER-AIOUSDT-1793877334"
-    },
-    {
       "symbol": "FRONGUSDT",
       "side": "SELL",
       "status": "open",
@@ -4860,6 +4831,40 @@
       "pnl_usdt": 48.804262486562884,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "AIOUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.04956190940122596,
+      "qty": 12106.071100000001,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 0.048322861666195316,
+      "tf": "1h",
+      "opened_at": 1793877334,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.04738,
+          "ts": 1793877334
+        },
+        {
+          "px": 0.05073,
+          "ts": 1793880069
+        }
+      ],
+      "entry_candle_ts": 1793877300,
+      "last_leg_candle_ts": 1793880000,
+      "dry_run": true,
+      "order_id": "PAPER-AIOUSDT-1793877334",
+      "closed_at": 1793882076,
+      "close_px": 0.0483,
+      "pnl_usdt": 15.276764956857123,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -6975,7 +6980,6 @@
     "FIGHT1USDT": 1793700356,
     "MARRIOTTUSDT": 1793714834,
     "FUTUUSDT": 1793718431,
-    "LIGHT1USDT": 1793726282,
     "IRENONUSDT": 1793776197,
     "ONSEMIUSDT": 1793784100,
     "SIMOUSDT": 1793785920,
@@ -7017,7 +7021,8 @@
     "1000000BABYDOGEUSDT": 1793923607,
     "STONKBROKERUSDT": 1793924211,
     "OSCRUSDT": 1793924212,
-    "AMCUSDT": 1793924216
+    "AMCUSDT": 1793924216,
+    "LIGHT1USDT": 1793925108
   },
   "last_trade_report_ts": 1793880625,
   "last_known_version": "2.7.2",
