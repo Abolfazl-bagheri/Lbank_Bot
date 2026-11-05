@@ -24,6 +24,31 @@
       "last_leg_candle_ts": 1793842200,
       "dry_run": true,
       "order_id": "PAPER-EIDOUSDT-1793842317"
+    },
+    {
+      "symbol": "LAOPUUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 39.08,
+      "qty": 5.1177,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 38.102999999999994,
+      "tf": "15m",
+      "opened_at": 1793843206,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 39.08,
+          "ts": 1793843206
+        }
+      ],
+      "entry_candle_ts": 1793843100,
+      "last_leg_candle_ts": 1793843100,
+      "dry_run": true,
+      "order_id": "PAPER-LAOPUUSDT-1793843206"
     }
   ],
   "trade_history": [
@@ -6248,6 +6273,16 @@
       "open": 228.2,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "EIDOUSDT",
+      "tf": "15m",
+      "candle_ts": 1793842200,
+      "side": "SELL",
+      "upper": 10.234621839509934,
+      "open": 10.4,
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -6330,7 +6365,6 @@
     "KNTQUSDT": 1793801068,
     "FLOCK1USDT": 1793821836,
     "AEHRUSDT": 1793830009,
-    "DRVUSDT": 1793842313,
     "QUACKAIUSDT": 1793843367,
     "1000WOJAKUSDT": 1793846928,
     "1000SATSUSDT": 1793846944,
@@ -6359,9 +6393,10 @@
     "CYBERLEEKUSDT": 1793881222,
     "CAPETHUSDT": 1793882822,
     "AI1USDT": 1793882848,
-    "GSTOCKUSDT": 1793882855
+    "GSTOCKUSDT": 1793882855,
+    "DRVUSDT": 1793885679
   },
-  "last_trade_report_ts": 1793840836,
+  "last_trade_report_ts": 1793842371,
   "last_known_version": "2.6.8",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
