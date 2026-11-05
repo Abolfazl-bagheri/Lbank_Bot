@@ -91,31 +91,6 @@
       "order_id": "PAPER-ARGUSUSDT-1793846817"
     },
     {
-      "symbol": "ICNTUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.2461,
-      "qty": 812.6778,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.2399475,
-      "tf": "15m",
-      "opened_at": 1793863105,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.2461,
-          "ts": 1793863105
-        }
-      ],
-      "entry_candle_ts": 1793862900,
-      "last_leg_candle_ts": 1793862900,
-      "dry_run": true,
-      "order_id": "PAPER-ICNTUSDT-1793863105"
-    },
-    {
       "symbol": "MAGMAUSDT",
       "side": "SELL",
       "status": "open",
@@ -4564,6 +4539,36 @@
       "pnl_usdt": 5.23212969786293,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "ICNTUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.2461,
+      "qty": 812.6778,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.2399475,
+      "tf": "15m",
+      "opened_at": 1793863105,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.2461,
+          "ts": 1793863105
+        }
+      ],
+      "entry_candle_ts": 1793862900,
+      "last_leg_candle_ts": 1793862900,
+      "dry_run": true,
+      "order_id": "PAPER-ICNTUSDT-1793863105",
+      "closed_at": 1793864103,
+      "close_px": 0.2329,
+      "pnl_usdt": 10.72734660707031,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -4776,36 +4781,6 @@
       "tf": "15m",
       "candle_ts": 1793430900,
       "side": "SELL"
-    },
-    {
-      "symbol": "LYNUSDT",
-      "tf": "4h",
-      "candle_ts": 1793606400,
-      "side": "SELL",
-      "upper": 0.019919202686661884,
-      "open": 0.02064,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "YOFCUSDT",
-      "tf": "4h",
-      "candle_ts": 1793606400,
-      "side": "SELL",
-      "upper": 13.521821868684347,
-      "open": 13.736,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "CSOPSAMSUNG2LUSDT",
-      "tf": "4h",
-      "candle_ts": 1793606400,
-      "side": "SELL",
-      "upper": 6.593883216395261,
-      "open": 6.671,
-      "reported": true,
-      "filled": false
     },
     {
       "symbol": "CATUSDT",
@@ -6640,9 +6615,6 @@
     "AMCUSDT": 1793853303,
     "WUXIBIOUSDT": 1793866147,
     "O1USDT": 1793866200,
-    "NEXUSDT": 1793866196,
-    "HOTUSDT": 1793866206,
-    "1000000BABYDOGEUSDT": 1793866218,
     "MANCERUSDT": 1793870280,
     "ARROWUSDT": 1793871201,
     "BBXUSDT": 1793872237,
@@ -6665,7 +6637,7 @@
     "CZUSDT": 1793901119,
     "AINBSCUSDT": 1793904563
   },
-  "last_trade_report_ts": 1793863220,
+  "last_trade_report_ts": 1793866797,
   "last_known_version": "2.6.8",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
