@@ -34,6 +34,31 @@
       "last_leg_candle_ts": 1793844000,
       "dry_run": true,
       "order_id": "PAPER-LAOPUUSDT-1793843206"
+    },
+    {
+      "symbol": "HK1810USDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 30.78,
+      "qty": 6.4977,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 30.0105,
+      "tf": "1h",
+      "opened_at": 1793844380,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 30.78,
+          "ts": 1793844380
+        }
+      ],
+      "entry_candle_ts": 1793844000,
+      "last_leg_candle_ts": 1793844000,
+      "dry_run": true,
+      "order_id": "PAPER-HK1810USDT-1793844380"
     }
   ],
   "trade_history": [
@@ -6268,6 +6293,15 @@
       "open": 38.69,
       "reported": true,
       "filled": false
+    },
+    {
+      "symbol": "LAOPUUSDT",
+      "tf": "1h",
+      "candle_ts": 1793844000,
+      "side": "SELL",
+      "upper": 39.27255836489384,
+      "open": 39.75,
+      "reported": false
     }
   ],
   "paper_days": [
