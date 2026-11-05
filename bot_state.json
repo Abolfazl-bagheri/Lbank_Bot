@@ -164,6 +164,31 @@
       "last_leg_candle_ts": 1793862900,
       "dry_run": true,
       "order_id": "PAPER-ICNTUSDT-1793863105"
+    },
+    {
+      "symbol": "MAGMAUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.42675,
+      "qty": 468.6585,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.41608125,
+      "tf": "15m",
+      "opened_at": 1793863124,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.42675,
+          "ts": 1793863124
+        }
+      ],
+      "entry_candle_ts": 1793862900,
+      "last_leg_candle_ts": 1793862900,
+      "dry_run": true,
+      "order_id": "PAPER-MAGMAUSDT-1793863124"
     }
   ],
   "trade_history": [
@@ -6497,6 +6522,15 @@
       "open": 0.3014,
       "reported": true,
       "filled": false
+    },
+    {
+      "symbol": "ICNTUSDT",
+      "tf": "15m",
+      "candle_ts": 1793862900,
+      "side": "SELL",
+      "upper": 0.24296395526566236,
+      "open": 0.2464,
+      "reported": false
     }
   ],
   "paper_days": [
