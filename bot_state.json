@@ -1,5 +1,31 @@
 {
-  "open_trades": [],
+  "open_trades": [
+    {
+      "symbol": "EIDOUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 10.37,
+      "qty": 19.2864,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 10.11075,
+      "tf": "15m",
+      "opened_at": 1793842317,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 10.37,
+          "ts": 1793842317
+        }
+      ],
+      "entry_candle_ts": 1793842200,
+      "last_leg_candle_ts": 1793842200,
+      "dry_run": true,
+      "order_id": "PAPER-EIDOUSDT-1793842317"
+    }
+  ],
   "trade_history": [
     {
       "symbol": "AEONUSDT",
@@ -6335,7 +6361,7 @@
     "AI1USDT": 1793882848,
     "GSTOCKUSDT": 1793882855
   },
-  "last_trade_report_ts": 1793838763,
+  "last_trade_report_ts": 1793840836,
   "last_known_version": "2.6.8",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
