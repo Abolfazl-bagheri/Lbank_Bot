@@ -165,6 +165,31 @@
       "last_leg_candle_ts": 1793886541,
       "dry_run": true,
       "order_id": "PAPER-TRUTHUSDT-1793880125"
+    },
+    {
+      "symbol": "CLANKERUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 18.56,
+      "qty": 10.7759,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 18.096,
+      "tf": "15m",
+      "opened_at": 1793887244,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 18.56,
+          "ts": 1793887244
+        }
+      ],
+      "entry_candle_ts": 1793887200,
+      "last_leg_candle_ts": 1793887200,
+      "dry_run": true,
+      "order_id": "PAPER-CLANKERUSDT-1793887244"
     }
   ],
   "trade_history": [
@@ -7048,7 +7073,7 @@
     "CYBERLEEKUSDT": 1793927052,
     "DRVUSDT": 1793929608
   },
-  "last_trade_report_ts": 1793885649,
+  "last_trade_report_ts": 1793886558,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
