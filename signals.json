@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1793889926,
+  "updated_at": 1793889937,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "APRUSDT",
-      "tf": "15m",
-      "gap": 1.12,
-      "ts": 1793860298
-    },
     {
       "kind": "SELL",
       "symbol": "CARDSUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 1.43,
       "ts": 1793889926
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793889937
     }
   ],
   "trades": [
@@ -1507,6 +1507,19 @@
       "lev": 20,
       "px": 0.002796,
       "pnl": 4.0645,
+      "tf": "15m"
+    },
+    {
+      "symbol": "SQQQUSDT",
+      "side": "SELL",
+      "entry": 45.31,
+      "tp": 44.17725,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 45.31,
+      "pnl": 0.0,
       "tf": "15m"
     }
   ],
