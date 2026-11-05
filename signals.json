@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1793914223,
+  "updated_at": 1793914234,
   "signals": [
-    {
-      "kind": "HEARTBEAT",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1793885650
-    },
     {
       "kind": "GAP",
       "symbol": "FONEUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 4.84,
       "ts": 1793914223
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793914234
     }
   ],
   "trades": [
@@ -1508,6 +1508,19 @@
       "px": 0.15531,
       "pnl": 0.5522,
       "tf": "4h"
+    },
+    {
+      "symbol": "NETUSDT",
+      "side": "SELL",
+      "entry": 288.71,
+      "tp": 281.49224999999996,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 288.71,
+      "pnl": 0.0,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
