@@ -139,6 +139,31 @@
       "last_leg_candle_ts": 1793858400,
       "dry_run": true,
       "order_id": "PAPER-JCTUSDT-1793858598"
+    },
+    {
+      "symbol": "ICNTUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.2461,
+      "qty": 812.6778,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.2399475,
+      "tf": "15m",
+      "opened_at": 1793863105,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.2461,
+          "ts": 1793863105
+        }
+      ],
+      "entry_candle_ts": 1793862900,
+      "last_leg_candle_ts": 1793862900,
+      "dry_run": true,
+      "order_id": "PAPER-ICNTUSDT-1793863105"
     }
   ],
   "trade_history": [
@@ -4718,16 +4743,6 @@
       "side": "SELL"
     },
     {
-      "symbol": "STARUSDT",
-      "tf": "15m",
-      "candle_ts": 1793602800,
-      "side": "SELL",
-      "upper": 0.03938110844809572,
-      "open": 0.04001,
-      "reported": true,
-      "filled": false
-    },
-    {
       "symbol": "LYNUSDT",
       "tf": "4h",
       "candle_ts": 1793606400,
@@ -6595,7 +6610,7 @@
     "CZUSDT": 1793901119,
     "AINBSCUSDT": 1793904563
   },
-  "last_trade_report_ts": 1793860507,
+  "last_trade_report_ts": 1793861412,
   "last_known_version": "2.6.8",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
