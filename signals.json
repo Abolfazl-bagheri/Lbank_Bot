@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.8",
-  "updated_at": 1793863920,
+  "updated_at": 1793864107,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "ELSAUSDT",
-      "tf": "1h",
-      "gap": 9.67,
-      "ts": 1793829440
-    },
     {
       "kind": "GAP",
       "symbol": "APPUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 1.34,
       "ts": 1793863920
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793864107
     }
   ],
   "trades": [
@@ -1427,8 +1427,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 31.22,
-      "pnl": -2.859,
+      "px": 31.23,
+      "pnl": -2.924,
       "tf": "1h"
     },
     {
@@ -1445,32 +1445,6 @@
       "tf": "15m"
     },
     {
-      "symbol": "XTZUSDT",
-      "side": "SELL",
-      "entry": 0.2714,
-      "tp": 0.264615,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.2656,
-      "pnl": 4.2741,
-      "tf": "1h"
-    },
-    {
-      "symbol": "ICNTUSDT",
-      "side": "SELL",
-      "entry": 0.2461,
-      "tp": 0.2399475,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.2387,
-      "pnl": 6.0138,
-      "tf": "15m"
-    },
-    {
       "symbol": "MAGMAUSDT",
       "side": "SELL",
       "entry": 0.42675,
@@ -1479,22 +1453,22 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.43395,
-      "pnl": -3.3743,
+      "px": 0.43783,
+      "pnl": -5.1927,
       "tf": "15m"
     }
   ],
   "start": 1000.0,
-  "realized": -3722.6697,
-  "closed_n": 126,
-  "open_upnl": 43.195,
-  "equity": -2679.4747,
+  "realized": -3706.7102,
+  "closed_n": 128,
+  "open_upnl": 31.0237,
+  "equity": -2675.6865,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 2946.9237,
+    "profit": 2962.8832,
     "loss": -6669.5934,
-    "count": 126
+    "count": 128
   }
 }
