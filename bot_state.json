@@ -91,31 +91,6 @@
       "order_id": "PAPER-ARGUSUSDT-1793846817"
     },
     {
-      "symbol": "MINIMAXUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 22.09,
-      "qty": 9.0539,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 21.53775,
-      "tf": "15m",
-      "opened_at": 1793846964,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 22.09,
-          "ts": 1793846964
-        }
-      ],
-      "entry_candle_ts": 1793846700,
-      "last_leg_candle_ts": 1793846700,
-      "dry_run": true,
-      "order_id": "PAPER-MINIMAXUSDT-1793846964"
-    },
-    {
       "symbol": "LYNUSDT",
       "side": "SELL",
       "status": "open",
@@ -4429,6 +4404,36 @@
       "pnl_usdt": 8.486017357762767,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "MINIMAXUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 22.09,
+      "qty": 9.0539,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 21.53775,
+      "tf": "15m",
+      "opened_at": 1793846964,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 22.09,
+          "ts": 1793846964
+        }
+      ],
+      "entry_candle_ts": 1793846700,
+      "last_leg_candle_ts": 1793846700,
+      "dry_run": true,
+      "order_id": "PAPER-MINIMAXUSDT-1793846964",
+      "closed_at": 1793857922,
+      "close_px": 21.01,
+      "pnl_usdt": 9.778180172023525,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -4641,66 +4646,6 @@
       "tf": "15m",
       "candle_ts": 1793430900,
       "side": "SELL"
-    },
-    {
-      "symbol": "PIEVERSEUSDT",
-      "tf": "15m",
-      "candle_ts": 1793591100,
-      "side": "SELL",
-      "upper": 1.0730495526564967,
-      "open": 1.0864,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "ZHONGJIUSDT",
-      "tf": "1h",
-      "candle_ts": 1793595600,
-      "side": "SELL",
-      "upper": 92.9430166041063,
-      "open": 94.15,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "HAEDALUSDT",
-      "tf": "1h",
-      "candle_ts": 1793595600,
-      "side": "SELL",
-      "upper": 0.026735856156814085,
-      "open": 0.02717,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "YOFCUSDT",
-      "tf": "1h",
-      "candle_ts": 1793595600,
-      "side": "SELL",
-      "upper": 13.538751124982387,
-      "open": 13.748,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "STORJUSDT",
-      "tf": "15m",
-      "candle_ts": 1793596500,
-      "side": "SELL",
-      "upper": 0.021122024692940757,
-      "open": 0.02145,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "BIRBUSDT",
-      "tf": "15m",
-      "candle_ts": 1793597400,
-      "side": "SELL",
-      "upper": 0.0874325348679743,
-      "open": 0.08926,
-      "reported": true,
-      "filled": true
     },
     {
       "symbol": "HAEDALUSDT",
@@ -6426,7 +6371,8 @@
       "side": "SELL",
       "upper": 0.0045214897897640615,
       "open": 0.00458,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "MINIMAXUSDT",
@@ -6435,7 +6381,8 @@
       "side": "SELL",
       "upper": 21.775513686819608,
       "open": 22.06,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "LYNUSDT",
@@ -6498,7 +6445,6 @@
     "SAFE1USDT": 1793449863,
     "AXLUSDT": 1793502358,
     "DODOUSDT": 1793508698,
-    "QUID1USDT": 1793527676,
     "SYNUSDT": 1793537208,
     "LONGXIAUSDT": 1793558277,
     "APROUSDT": 1793604906,
@@ -6530,10 +6476,8 @@
     "QUACKAIUSDT": 1793843367,
     "OSCRUSDT": 1793850616,
     "SXTUSDT": 1793851456,
-    "RIOTUSDT": 1793852211,
     "METEORAUSDT": 1793852241,
     "AMCUSDT": 1793853303,
-    "BEMUSDT": 1793855863,
     "AINBSCUSDT": 1793861206,
     "WUXIBIOUSDT": 1793866147,
     "O1USDT": 1793866200,
@@ -6552,7 +6496,14 @@
     "CAPETHUSDT": 1793882822,
     "AI1USDT": 1793882848,
     "GSTOCKUSDT": 1793882855,
-    "DRVUSDT": 1793885679
+    "DRVUSDT": 1793885679,
+    "BEMUSDT": 1793901058,
+    "RIOTUSDT": 1793901063,
+    "QUID1USDT": 1793901083,
+    "1000SATSUSDT": 1793901110,
+    "NEIRO1USDT": 1793901113,
+    "1000WOJAKUSDT": 1793901114,
+    "CZUSDT": 1793901119
   },
   "last_trade_report_ts": 1793846875,
   "last_known_version": "2.6.8",
