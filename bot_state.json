@@ -192,15 +192,15 @@
       "symbol": "CYBERUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.26397040187426024,
-      "qty": 2272.9821,
-      "margin": 30.0,
+      "entry": 0.2692220532266234,
+      "qty": 5200.1683,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 0.2573711418274037,
+      "tp_price": 0.2624915018959578,
       "tf": "15m",
       "opened_at": 1793907074,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [],
       "steps": [
         {
@@ -210,10 +210,14 @@
         {
           "px": 0.2669,
           "ts": 1793907969
+        },
+        {
+          "px": 0.2733,
+          "ts": 1793908843
         }
       ],
       "entry_candle_ts": 1793907000,
-      "last_leg_candle_ts": 1793907900,
+      "last_leg_candle_ts": 1793908800,
       "dry_run": true,
       "order_id": "PAPER-CYBERUSDT-1793907074"
     }
@@ -7400,6 +7404,16 @@
       "side": "SELL",
       "upper": 0.2575969723004083,
       "open": 0.261,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "CYBERUSDT",
+      "tf": "15m",
+      "candle_ts": 1793907900,
+      "side": "SELL",
+      "upper": 0.26402659029914893,
+      "open": 0.2667,
       "reported": false
     }
   ],
@@ -7440,7 +7454,6 @@
   "kline_blacklist": {
     "STXSTOCKUSDT": 1793301443,
     "IBBETFUSDT": 1793310363,
-    "CANTONUSDT": 1793322198,
     "GMESTOCKUSDT": 1793353780,
     "EURUSDT": 1793385188,
     "SKY1USDT": 1793398016,
