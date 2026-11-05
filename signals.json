@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1793891762,
+  "updated_at": 1793892017,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "AIOUSDT",
-      "tf": "1h",
-      "gap": 2.72,
-      "ts": 1793869200
-    },
     {
       "kind": "GAP",
       "symbol": "PIEVERSEUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1793891762
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793892017
     }
   ],
   "trades": [
@@ -1419,19 +1419,6 @@
       "tf": "1h"
     },
     {
-      "symbol": "ARGUSUSDT",
-      "side": "SELL",
-      "entry": 0.00454,
-      "tp": 0.0044265,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.00436,
-      "pnl": 7.9295,
-      "tf": "15m"
-    },
-    {
       "symbol": "ACTUSDT",
       "side": "SELL",
       "entry": 0.009063294160849472,
@@ -1443,19 +1430,6 @@
       "px": 0.008881,
       "pnl": 12.0681,
       "tf": "1h"
-    },
-    {
-      "symbol": "ZZZUSDT",
-      "side": "SELL",
-      "entry": 0.00959,
-      "tp": 0.00935025,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.00928,
-      "pnl": 6.4651,
-      "tf": "15m"
     },
     {
       "symbol": "ARIAUSDT",
@@ -1538,16 +1512,16 @@
   ],
   "start": 1000.0,
   "session_start": 1793837408,
-  "realized": 563.0257,
-  "closed_n": 20,
-  "open_upnl": -9.8579,
+  "realized": 577.4203,
+  "closed_n": 22,
+  "open_upnl": -24.2525,
   "equity": 1553.1678,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 563.0257,
+    "profit": 577.4203,
     "loss": 0,
-    "count": 20
+    "count": 22
   }
 }
