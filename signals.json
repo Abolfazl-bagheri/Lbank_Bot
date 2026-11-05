@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.8",
-  "updated_at": 1793847911,
+  "updated_at": 1793847919,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "FLUIDUSDT",
-      "tf": "1h",
-      "gap": 1.08,
-      "ts": 1793822701
-    },
     {
       "kind": "GAP",
       "symbol": "DGAIUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 1.59,
       "ts": 1793847911
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793847919
     }
   ],
   "trades": [
@@ -1467,6 +1467,19 @@
       "margin": 10.0,
       "lev": 20,
       "px": 0.02191,
+      "pnl": 0.0,
+      "tf": "1h"
+    },
+    {
+      "symbol": "XTZUSDT",
+      "side": "SELL",
+      "entry": 0.2714,
+      "tp": 0.264615,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.2714,
       "pnl": 0.0,
       "tf": "1h"
     }
