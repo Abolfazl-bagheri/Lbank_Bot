@@ -267,35 +267,6 @@
       "last_leg_candle_ts": 1793908800,
       "dry_run": true,
       "order_id": "PAPER-ARIAUSDT-1793908925"
-    },
-    {
-      "symbol": "NETUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 286.3268552499908,
-      "qty": 2.095537,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 279.168683868741,
-      "tf": "15m",
-      "opened_at": 1793914225,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 288.71,
-          "ts": 1793914225
-        },
-        {
-          "px": 285.15,
-          "ts": 1793915129
-        }
-      ],
-      "entry_candle_ts": 1793914200,
-      "last_leg_candle_ts": 1793915100,
-      "dry_run": true,
-      "order_id": "PAPER-NETUSDT-1793914225"
     }
   ],
   "trade_history": [
@@ -5366,6 +5337,40 @@
       "pnl_usdt": 5.359940628349981,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "NETUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 286.3268552499908,
+      "qty": 2.095537,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 279.168683868741,
+      "tf": "15m",
+      "opened_at": 1793914225,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 288.71,
+          "ts": 1793914225
+        },
+        {
+          "px": 285.15,
+          "ts": 1793915129
+        }
+      ],
+      "entry_candle_ts": 1793914200,
+      "last_leg_candle_ts": 1793915100,
+      "dry_run": true,
+      "order_id": "PAPER-NETUSDT-1793914225",
+      "closed_at": 1793920773,
+      "close_px": 278.73,
+      "pnl_usdt": 15.919265225802135,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -5578,26 +5583,6 @@
       "tf": "15m",
       "candle_ts": 1793430900,
       "side": "SELL"
-    },
-    {
-      "symbol": "GPROUSDT",
-      "tf": "15m",
-      "candle_ts": 1793660400,
-      "side": "SELL",
-      "upper": 1.0344273416736383,
-      "open": 1.0634,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "GPROUSDT",
-      "tf": "1h",
-      "candle_ts": 1793660400,
-      "side": "SELL",
-      "upper": 1.0368737867077356,
-      "open": 1.0634,
-      "reported": true,
-      "filled": true
     },
     {
       "symbol": "CLAUDIAUSDT",
@@ -7526,6 +7511,15 @@
       "open": 285.0,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "CYBERUSDT",
+      "tf": "1h",
+      "candle_ts": 1793919600,
+      "side": "SELL",
+      "upper": 0.2993672497228366,
+      "open": 0.3035,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -7633,9 +7627,10 @@
     "BTCDOMUSDT": 1793955831,
     "OROCHIUSDT": 1793961063,
     "UBIKUSDT": 1793961071,
-    "AINBSCUSDT": 1793962017
+    "AINBSCUSDT": 1793962017,
+    "WUXIBIOUSDT": 1793963028
   },
-  "last_trade_report_ts": 1793918080,
+  "last_trade_report_ts": 1793919975,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
