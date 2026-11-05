@@ -175,31 +175,6 @@
       "order_id": "PAPER-TRUTHUSDT-1793880125"
     },
     {
-      "symbol": "FOGOUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.002854,
-      "qty": 70077.0848,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.0027826500000000002,
-      "tf": "15m",
-      "opened_at": 1793889029,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.002854,
-          "ts": 1793889029
-        }
-      ],
-      "entry_candle_ts": 1793889000,
-      "last_leg_candle_ts": 1793889000,
-      "dry_run": true,
-      "order_id": "PAPER-FOGOUSDT-1793889029"
-    },
-    {
       "symbol": "SQQQUSDT",
       "side": "SELL",
       "status": "open",
@@ -261,15 +236,15 @@
       "symbol": "UVXYUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 18.30484465284854,
-      "qty": 32.7782,
-      "margin": 30.0,
+      "entry": 19.10896575398559,
+      "qty": 73.264,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 17.847223536527327,
+      "tp_price": 18.631241610135948,
       "tf": "15m",
       "opened_at": 1793889994,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [],
       "steps": [
         {
@@ -279,10 +254,14 @@
         {
           "px": 18.59,
           "ts": 1793890879
+        },
+        {
+          "px": 19.76,
+          "ts": 1793891729
         }
       ],
       "entry_candle_ts": 1793889900,
-      "last_leg_candle_ts": 1793890800,
+      "last_leg_candle_ts": 1793891700,
       "dry_run": true,
       "order_id": "PAPER-UVXYUSDT-1793889994"
     },
@@ -5136,6 +5115,36 @@
       "pnl_usdt": 17.56800194869172,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "FOGOUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.002854,
+      "qty": 70077.0848,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0027826500000000002,
+      "tf": "15m",
+      "opened_at": 1793889029,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.002854,
+          "ts": 1793889029
+        }
+      ],
+      "entry_candle_ts": 1793889000,
+      "last_leg_candle_ts": 1793889000,
+      "dry_run": true,
+      "order_id": "PAPER-FOGOUSDT-1793889029",
+      "closed_at": 1793891315,
+      "close_px": 0.002702,
+      "pnl_usdt": 10.651716888577452,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -7392,7 +7401,7 @@
     "DRVUSDT": 1793929608,
     "GSTOCKUSDT": 1793930663
   },
-  "last_trade_report_ts": 1793890223,
+  "last_trade_report_ts": 1793891328,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
