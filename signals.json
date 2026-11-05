@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1793916348,
+  "updated_at": 1793916361,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "TAUSDT",
-      "tf": "1h",
-      "gap": 1.15,
-      "ts": 1793887219
-    },
     {
       "kind": "SELL",
       "symbol": "CLANKERUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1793916348
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793916361
     }
   ],
   "trades": [
@@ -1473,14 +1473,14 @@
     {
       "symbol": "TZAUSDT",
       "side": "SELL",
-      "entry": 48.45,
-      "tp": 47.23875,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
+      "entry": 50.40954631379962,
+      "tp": 49.14930765595463,
+      "adds": 1,
+      "pele": 2,
+      "margin": 30.0,
       "lev": 20,
       "px": 51.45,
-      "pnl": -12.3839,
+      "pnl": -12.384,
       "tf": "1h"
     },
     {
@@ -1527,8 +1527,8 @@
   "session_start": 1793837408,
   "realized": 1009.745,
   "closed_n": 26,
-  "open_upnl": -1948.6654,
-  "equity": 61.0796,
+  "open_upnl": -1948.6655,
+  "equity": 61.0795,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
