@@ -192,24 +192,28 @@
       "symbol": "CYBERUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.2583,
-      "qty": 774.2935,
-      "margin": 10.0,
+      "entry": 0.26397040187426024,
+      "qty": 2272.9821,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.25184249999999997,
+      "tp_price": 0.2573711418274037,
       "tf": "15m",
       "opened_at": 1793907074,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 0.2583,
           "ts": 1793907074
+        },
+        {
+          "px": 0.2669,
+          "ts": 1793907969
         }
       ],
       "entry_candle_ts": 1793907000,
-      "last_leg_candle_ts": 1793907000,
+      "last_leg_candle_ts": 1793907900,
       "dry_run": true,
       "order_id": "PAPER-CYBERUSDT-1793907074"
     }
@@ -7388,6 +7392,15 @@
       "open": 22.12,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "CYBERUSDT",
+      "tf": "15m",
+      "candle_ts": 1793907000,
+      "side": "SELL",
+      "upper": 0.2575969723004083,
+      "open": 0.261,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -7496,7 +7509,7 @@
     "NEIRO1USDT": 1793945071,
     "CZUSDT": 1793945085
   },
-  "last_trade_report_ts": 1793905602,
+  "last_trade_report_ts": 1793907318,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
