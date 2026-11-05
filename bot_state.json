@@ -138,16 +138,18 @@
       "symbol": "SOXSUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 75.99906976744187,
-      "qty": 7.8948,
-      "margin": 30.0,
+      "entry": 78.289493297842,
+      "qty": 17.8823,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 74.09909302325582,
+      "tp_price": 76.33225596539594,
       "tf": "1h",
       "opened_at": 1793890951,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
+      "adds": 2,
+      "last_leg_margin": 40.0,
+      "used_res_levels": [
+        80.29
+      ],
       "steps": [
         {
           "px": 71.43,
@@ -156,10 +158,14 @@
         {
           "px": 78.51,
           "ts": 1793894457
+        },
+        {
+          "px": 80.1,
+          "ts": 1793913550
         }
       ],
       "entry_candle_ts": 1793890800,
-      "last_leg_candle_ts": 1793894400,
+      "last_leg_candle_ts": 1793913550,
       "dry_run": true,
       "order_id": "PAPER-SOXSUSDT-1793890951"
     },
@@ -5529,16 +5535,6 @@
       "side": "SELL"
     },
     {
-      "symbol": "AGTUSDT",
-      "tf": "1h",
-      "candle_ts": 1793653200,
-      "side": "SELL",
-      "upper": 0.03454913760230663,
-      "open": 0.035165,
-      "reported": true,
-      "filled": false
-    },
-    {
       "symbol": "ICNTUSDT",
       "tf": "1h",
       "candle_ts": 1793656800,
@@ -7075,7 +7071,8 @@
       "side": "SELL",
       "upper": 0.28314346167249205,
       "open": 0.2891,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ARIAUSDT",
@@ -7084,7 +7081,8 @@
       "side": "SELL",
       "upper": 0.1362874318288542,
       "open": 0.13794,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "TRUTHUSDT",
@@ -7103,7 +7101,8 @@
       "side": "SELL",
       "upper": 0.04790577111123766,
       "open": 0.05053,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "FRONGUSDT",
@@ -7372,7 +7371,8 @@
       "side": "SELL",
       "upper": 0.14485312437378187,
       "open": 0.14975,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "SOXSUSDT",
@@ -7381,7 +7381,8 @@
       "side": "SELL",
       "upper": 74.42375847203704,
       "open": 78.58,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "SKDDUSDT",
@@ -7410,7 +7411,8 @@
       "side": "SELL",
       "upper": 11.129882314056228,
       "open": 11.426,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "UVXYUSDT",
@@ -7439,7 +7441,8 @@
       "side": "SELL",
       "upper": 0.26402659029914893,
       "open": 0.2667,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "CYBERUSDT",
@@ -7448,7 +7451,8 @@
       "side": "SELL",
       "upper": 0.27172892063137805,
       "open": 0.2745,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CYBERUSDT",
@@ -7457,6 +7461,15 @@
       "side": "SELL",
       "upper": 0.2704039772892884,
       "open": 0.275,
+      "reported": false
+    },
+    {
+      "symbol": "ARIAUSDT",
+      "tf": "4h",
+      "candle_ts": 1793908800,
+      "side": "SELL",
+      "upper": 0.15202156043814977,
+      "open": 0.15525,
       "reported": false
     }
   ],
@@ -7563,9 +7576,12 @@
     "1000WOJAKUSDT": 1793945079,
     "1000SATSUSDT": 1793945072,
     "NEIRO1USDT": 1793945071,
-    "CZUSDT": 1793945085
+    "CZUSDT": 1793945085,
+    "USOUSDT": 1793952284,
+    "CANTONUSDT": 1793952369,
+    "BTCDOMUSDT": 1793955831
   },
-  "last_trade_report_ts": 1793907318,
+  "last_trade_report_ts": 1793912817,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
