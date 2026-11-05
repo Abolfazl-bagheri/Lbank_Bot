@@ -139,6 +139,31 @@
       "last_leg_candle_ts": 1793869200,
       "dry_run": true,
       "order_id": "PAPER-AIOUSDT-1793869380"
+    },
+    {
+      "symbol": "ACTUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.00909,
+      "qty": 22002.2002,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.00886275,
+      "tf": "1h",
+      "opened_at": 1793869497,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.00909,
+          "ts": 1793869497
+        }
+      ],
+      "entry_candle_ts": 1793869200,
+      "last_leg_candle_ts": 1793869200,
+      "dry_run": true,
+      "order_id": "PAPER-ACTUSDT-1793869497"
     }
   ],
   "trade_history": [
@@ -6531,6 +6556,15 @@
       "side": "SELL",
       "upper": 0.1144876555525182,
       "open": 0.11803,
+      "reported": false
+    },
+    {
+      "symbol": "AIOUSDT",
+      "tf": "1h",
+      "candle_ts": 1793869200,
+      "side": "SELL",
+      "upper": 0.04172744358814638,
+      "open": 0.04226,
       "reported": false
     }
   ],
