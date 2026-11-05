@@ -187,31 +187,6 @@
       "last_leg_candle_ts": 1793894400,
       "dry_run": true,
       "order_id": "PAPER-TZAUSDT-1793894480"
-    },
-    {
-      "symbol": "SKDDUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 12.127,
-      "qty": 16.4921,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 11.823825000000001,
-      "tf": "1h",
-      "opened_at": 1793894584,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 12.127,
-          "ts": 1793894584
-        }
-      ],
-      "entry_candle_ts": 1793894400,
-      "last_leg_candle_ts": 1793894400,
-      "dry_run": true,
-      "order_id": "PAPER-SKDDUSDT-1793894584"
     }
   ],
   "trade_history": [
@@ -5252,6 +5227,36 @@
       "pnl_usdt": 80.40667827809888,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "SKDDUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 12.127,
+      "qty": 16.4921,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 11.823825000000001,
+      "tf": "1h",
+      "opened_at": 1793894584,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 12.127,
+          "ts": 1793894584
+        }
+      ],
+      "entry_candle_ts": 1793894400,
+      "last_leg_candle_ts": 1793894400,
+      "dry_run": true,
+      "order_id": "PAPER-SKDDUSDT-1793894584",
+      "closed_at": 1793906303,
+      "close_px": 11.802,
+      "pnl_usdt": 5.359940628349981,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -7398,7 +7403,6 @@
     "STXSTOCKUSDT": 1793301443,
     "IBBETFUSDT": 1793310363,
     "CANTONUSDT": 1793322198,
-    "BTCDOMUSDT": 1793350188,
     "GMESTOCKUSDT": 1793353780,
     "EURUSDT": 1793385188,
     "SKY1USDT": 1793398016,
@@ -7467,7 +7471,7 @@
     "NEIRO1USDT": 1793945071,
     "CZUSDT": 1793945085
   },
-  "last_trade_report_ts": 1793904551,
+  "last_trade_report_ts": 1793905602,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
