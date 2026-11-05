@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.6.8",
-  "updated_at": 1793837812,
+  "updated_at": 1793837817,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "STANDARDUSDT",
-      "tf": "1h",
-      "gap": 2.17,
-      "ts": 1793811433
-    },
     {
       "kind": "GAP",
       "symbol": "BKNGUSDT",
@@ -1402,13 +1395,34 @@
       "tf": "15m",
       "gap": 1.28,
       "ts": 1793837812
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793837817
     }
   ],
-  "trades": [],
+  "trades": [
+    {
+      "symbol": "HYUNDAIUSDT",
+      "side": "SELL",
+      "entry": 228.09,
+      "tp": 222.38775,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 228.09,
+      "pnl": 0.0,
+      "tf": "15m"
+    }
+  ],
   "start": 1000.0,
   "realized": -3892.5268,
   "closed_n": 120,
-  "open_upnl": 0,
+  "open_upnl": 0.0,
   "equity": -2892.5268,
   "lev": 20,
   "margin_leg": 10.0,
