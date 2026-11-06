@@ -142,24 +142,28 @@
       "symbol": "LYNUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.02348,
-      "qty": 8517.8876,
-      "margin": 10.0,
+      "entry": 0.02443356884459355,
+      "qty": 24556.379999999997,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.022893,
+      "tp_price": 0.02382272962347871,
       "tf": "15m",
       "opened_at": 1793945743,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 0.02348,
           "ts": 1793945743
+        },
+        {
+          "px": 0.02494,
+          "ts": 1793947511
         }
       ],
       "entry_candle_ts": 1793945700,
-      "last_leg_candle_ts": 1793945700,
+      "last_leg_candle_ts": 1793947500,
       "dry_run": true,
       "order_id": "PAPER-LYNUSDT-1793945743"
     }
@@ -6022,16 +6026,6 @@
       "side": "SELL"
     },
     {
-      "symbol": "RUNEUSDT",
-      "tf": "15m",
-      "candle_ts": 1793687400,
-      "side": "SELL",
-      "upper": 0.5841614520808515,
-      "open": 0.5907,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "MEGAUSDT",
       "tf": "15m",
       "candle_ts": 1793688300,
@@ -8127,6 +8121,16 @@
       "upper": 0.004339721000894144,
       "open": 0.0045304,
       "reported": false
+    },
+    {
+      "symbol": "LYNUSDT",
+      "tf": "15m",
+      "candle_ts": 1793945700,
+      "side": "SELL",
+      "upper": 0.023179210940164695,
+      "open": 0.02352,
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -8241,9 +8245,15 @@
     "LONGXIAUSDT": 1793981070,
     "NEXUSDT": 1793981075,
     "HOTUSDT": 1793981094,
-    "1000000BABYDOGEUSDT": 1793981102
+    "1000000BABYDOGEUSDT": 1793981102,
+    "XBRUSDT": 1793988971,
+    "XTIUSDT": 1793988989,
+    "1000SATSUSDT": 1793989022,
+    "NEIRO1USDT": 1793989023,
+    "1000WOJAKUSDT": 1793989024,
+    "CZUSDT": 1793989028
   },
-  "last_trade_report_ts": 1793945061,
+  "last_trade_report_ts": 1793946756,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
