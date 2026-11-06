@@ -258,24 +258,30 @@
       "symbol": "QNTXUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 34.28,
-      "qty": 5.8343,
-      "margin": 10.0,
+      "entry": 34.591908031663124,
+      "qty": 17.3451,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 33.423,
+      "tp_price": 33.72711033087155,
       "tf": "15m",
       "opened_at": 1793980908,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        34.88
+      ],
       "steps": [
         {
           "px": 34.28,
           "ts": 1793980908
+        },
+        {
+          "px": 34.75,
+          "ts": 1793982854
         }
       ],
       "entry_candle_ts": 1793980800,
-      "last_leg_candle_ts": 1793980800,
+      "last_leg_candle_ts": 1793982854,
       "dry_run": true,
       "order_id": "PAPER-QNTXUSDT-1793980908"
     },
@@ -8489,6 +8495,15 @@
       "side": "SELL",
       "upper": 0.3145379628367905,
       "open": 0.3182,
+      "reported": false
+    },
+    {
+      "symbol": "IDOLUSDT",
+      "tf": "15m",
+      "candle_ts": 1793982600,
+      "side": "SELL",
+      "upper": 0.023728878923347185,
+      "open": 0.024115,
       "reported": false
     }
   ],
