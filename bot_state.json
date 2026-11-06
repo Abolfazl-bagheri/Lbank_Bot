@@ -261,16 +261,18 @@
       "symbol": "TAUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.09071634822023372,
-      "qty": 6614.0229,
-      "margin": 30.0,
+      "entry": 0.09454205059012642,
+      "qty": 14808.2255,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 0.08844843951472788,
+      "tp_price": 0.09217849932537325,
       "tf": "4h",
       "opened_at": 1793988950,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
+      "adds": 2,
+      "last_leg_margin": 40.0,
+      "used_res_levels": [
+        0.09785
+      ],
       "steps": [
         {
           "px": 0.08868,
@@ -279,10 +281,14 @@
         {
           "px": 0.09177,
           "ts": 1793995353
+        },
+        {
+          "px": 0.09763,
+          "ts": 1794008970
         }
       ],
       "entry_candle_ts": 1793988900,
-      "last_leg_candle_ts": 1793995200,
+      "last_leg_candle_ts": 1794008970,
       "dry_run": true,
       "order_id": "PAPER-TAUSDT-1793988950"
     },
@@ -8892,6 +8898,15 @@
       "open": 0.00188,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "LYNUSDT",
+      "tf": "15m",
+      "candle_ts": 1794008700,
+      "side": "SELL",
+      "upper": 0.025160980994933156,
+      "open": 0.0255,
+      "reported": false
     }
   ],
   "paper_days": [
