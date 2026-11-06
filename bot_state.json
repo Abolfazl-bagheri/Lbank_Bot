@@ -112,52 +112,33 @@
       "order_id": "PAPER-NAVERUSDT-1793934988"
     },
     {
-      "symbol": "CYBERUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.3556,
-      "qty": 562.4297,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.34671,
-      "tf": "4h",
-      "opened_at": 1793937675,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.3556,
-          "ts": 1793937675
-        }
-      ],
-      "entry_candle_ts": 1793937600,
-      "last_leg_candle_ts": 1793937600,
-      "dry_run": true,
-      "order_id": "PAPER-CYBERUSDT-1793937675"
-    },
-    {
       "symbol": "PIEVERSEUSDT",
       "side": "SELL",
       "status": "open",
       "entry": 1.3419,
-      "qty": 149.0424,
-      "margin": 10.0,
+      "qty": 447.12719999999996,
+      "margin": 30.0,
       "leverage": 20,
       "tp_price": 1.3083525,
       "tf": "15m",
       "opened_at": 1793940322,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        1.3456
+      ],
       "steps": [
         {
           "px": 1.3419,
           "ts": 1793940322
+        },
+        {
+          "px": 1.3419,
+          "ts": 1793940466
         }
       ],
       "entry_candle_ts": 1793940300,
-      "last_leg_candle_ts": 1793940300,
+      "last_leg_candle_ts": 1793940466,
       "dry_run": true,
       "order_id": "PAPER-PIEVERSEUSDT-1793940322"
     }
@@ -5728,6 +5709,36 @@
       "closed_at": 1793940462,
       "close_px": 0.09808,
       "pnl_usdt": 5.203574975173778,
+      "close_reason": "TP50",
+      "why": "TP50"
+    },
+    {
+      "symbol": "CYBERUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.3556,
+      "qty": 562.4297,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.34671,
+      "tf": "4h",
+      "opened_at": 1793937675,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.3556,
+          "ts": 1793937675
+        }
+      ],
+      "entry_candle_ts": 1793937600,
+      "last_leg_candle_ts": 1793937600,
+      "dry_run": true,
+      "order_id": "PAPER-CYBERUSDT-1793937675",
+      "closed_at": 1793940465,
+      "close_px": 0.3395,
+      "pnl_usdt": 9.05511811023622,
       "close_reason": "TP50",
       "why": "TP50"
     }
