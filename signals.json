@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1793934932,
+  "updated_at": 1793934938,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "UVXYUSDT",
-      "tf": "1h",
-      "gap": 4.87,
-      "ts": 1793894494
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 3.42,
       "ts": 1793934932
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793934938
     }
   ],
   "trades": [
@@ -1429,6 +1429,19 @@
       "lev": 20,
       "px": 0.1579,
       "pnl": -675.1926,
+      "tf": "15m"
+    },
+    {
+      "symbol": "AKEUSDT",
+      "side": "SELL",
+      "entry": 0.002682,
+      "tp": 0.00261495,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.002682,
+      "pnl": 0.0,
       "tf": "15m"
     }
   ],
