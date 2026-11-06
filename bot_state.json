@@ -272,17 +272,18 @@
       "symbol": "APPUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 387.1000000000001,
-      "qty": 1.549962,
-      "margin": 30.0,
+      "entry": 388.84266476537647,
+      "qty": 3.6003619999999996,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 377.42250000000007,
+      "tp_price": 379.12159814624204,
       "tf": "1h",
       "opened_at": 1793984557,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [
-        387.9
+        387.9,
+        391.7
       ],
       "steps": [
         {
@@ -292,10 +293,14 @@
         {
           "px": 387.1,
           "ts": 1793984790
+        },
+        {
+          "px": 390.16,
+          "ts": 1793988384
         }
       ],
       "entry_candle_ts": 1793984400,
-      "last_leg_candle_ts": 1793984790,
+      "last_leg_candle_ts": 1793988384,
       "dry_run": true,
       "order_id": "PAPER-APPUSDT-1793984557"
     },
@@ -8619,7 +8624,8 @@
       "side": "SELL",
       "upper": 35.206632865649816,
       "open": 36.04,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "APPUSDT",
@@ -8628,6 +8634,16 @@
       "side": "SELL",
       "upper": 382.6277119485107,
       "open": 386.5,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "KNTQUSDT",
+      "tf": "15m",
+      "candle_ts": 1793988000,
+      "side": "SELL",
+      "upper": 0.4624053498373137,
+      "open": 0.469,
       "reported": false
     }
   ],
