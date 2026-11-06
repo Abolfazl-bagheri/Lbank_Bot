@@ -172,31 +172,6 @@
       "last_leg_candle_ts": 1793947500,
       "dry_run": true,
       "order_id": "PAPER-ICNTUSDT-1793947544"
-    },
-    {
-      "symbol": "WUXIBIOUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 6.342,
-      "qty": 31.5358,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 6.18345,
-      "tf": "15m",
-      "opened_at": 1793970070,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 6.342,
-          "ts": 1793970070
-        }
-      ],
-      "entry_candle_ts": 1793970000,
-      "last_leg_candle_ts": 1793970000,
-      "dry_run": true,
-      "order_id": "PAPER-WUXIBIOUSDT-1793970070"
     }
   ],
   "trade_history": [
@@ -5907,6 +5882,36 @@
       "pnl_usdt": 9.825528007346179,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "WUXIBIOUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 6.342,
+      "qty": 31.5358,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 6.18345,
+      "tf": "15m",
+      "opened_at": 1793970070,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 6.342,
+          "ts": 1793970070
+        }
+      ],
+      "entry_candle_ts": 1793970000,
+      "last_leg_candle_ts": 1793970000,
+      "dry_run": true,
+      "order_id": "PAPER-WUXIBIOUSDT-1793970070",
+      "closed_at": 1793972956,
+      "close_px": 6.169,
+      "pnl_usdt": 5.4556922106591,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -6119,16 +6124,6 @@
       "tf": "15m",
       "candle_ts": 1793430900,
       "side": "SELL"
-    },
-    {
-      "symbol": "IDOLUSDT",
-      "tf": "15m",
-      "candle_ts": 1793713500,
-      "side": "SELL",
-      "upper": 0.02061336317882498,
-      "open": 0.021364,
-      "reported": true,
-      "filled": true
     },
     {
       "symbol": "BOMEUSDT",
@@ -8221,10 +8216,8 @@
     "DRVUSDT": 1793929608,
     "GSTOCKUSDT": 1793930663,
     "GOLDUSDT": 1793936850,
-    "USOUSDT": 1793952284,
     "CANTONUSDT": 1793952369,
     "BTCDOMUSDT": 1793955831,
-    "OROCHIUSDT": 1793961063,
     "UBIKUSDT": 1793961071,
     "AINBSCUSDT": 1793962017,
     "CAPETHUSDT": 1793970966,
@@ -8243,9 +8236,10 @@
     "1000WOJAKUSDT": 1793989024,
     "CZUSDT": 1793989028,
     "QUACKAIUSDT": 1794012379,
-    "RIOTUSDT": 1794012403
+    "RIOTUSDT": 1794012403,
+    "OROCHIUSDT": 1794015069
   },
-  "last_trade_report_ts": 1793970381,
+  "last_trade_report_ts": 1793972030,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
