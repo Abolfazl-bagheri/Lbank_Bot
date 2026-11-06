@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1793932369,
+  "updated_at": 1793932524,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "UVXYUSDT",
-      "tf": "15m",
-      "gap": 5.9,
-      "ts": 1793892540
-    },
     {
       "kind": "GAP",
       "symbol": "TZAUSDT",
@@ -1402,22 +1395,16 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1793932369
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793932524
     }
   ],
   "trades": [
-    {
-      "symbol": "JCTUSDT",
-      "side": "SELL",
-      "entry": 0.003284989882481365,
-      "tp": 0.003202865135419331,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
-      "lev": 20,
-      "px": 0.003354,
-      "pnl": -12.6046,
-      "tf": "15m"
-    },
     {
       "symbol": "BIRBUSDT",
       "side": "SELL",
@@ -1427,23 +1414,23 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.09618,
-      "pnl": 0.0,
+      "px": 0.09624,
+      "pnl": -0.1248,
       "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1793926439,
-  "realized": 8.2366,
-  "closed_n": 1,
-  "open_upnl": -12.6046,
-  "equity": 995.632,
+  "realized": 23.76,
+  "closed_n": 2,
+  "open_upnl": -0.1248,
+  "equity": 1023.6352,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 8.2366,
+    "profit": 23.76,
     "loss": 0,
-    "count": 1
+    "count": 2
   }
 }
