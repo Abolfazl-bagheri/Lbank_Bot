@@ -1,35 +1,6 @@
 {
   "open_trades": [
     {
-      "symbol": "BIRBUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.10048797762350456,
-      "qty": 5970.8634999999995,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.09797577818291694,
-      "tf": "15m",
-      "opened_at": 1793932222,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.09618,
-          "ts": 1793932222
-        },
-        {
-          "px": 0.10279,
-          "ts": 1793934040
-        }
-      ],
-      "entry_candle_ts": 1793932200,
-      "last_leg_candle_ts": 1793934000,
-      "dry_run": true,
-      "order_id": "PAPER-BIRBUSDT-1793932222"
-    },
-    {
       "symbol": "UAIUSDT",
       "side": "SELL",
       "status": "open",
@@ -5622,6 +5593,40 @@
       "pnl_usdt": 15.523314017119592,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "BIRBUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.10048797762350456,
+      "qty": 5970.8634999999995,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 0.09797577818291694,
+      "tf": "15m",
+      "opened_at": 1793932222,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.09618,
+          "ts": 1793932222
+        },
+        {
+          "px": 0.10279,
+          "ts": 1793934040
+        }
+      ],
+      "entry_candle_ts": 1793932200,
+      "last_leg_candle_ts": 1793934000,
+      "dry_run": true,
+      "order_id": "PAPER-BIRBUSDT-1793932222",
+      "closed_at": 1793935975,
+      "close_px": 0.09639,
+      "pnl_usdt": 24.468465106492626,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -7830,7 +7835,8 @@
       "side": "SELL",
       "upper": 0.14341879711719574,
       "open": 0.15717,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "AKEUSDT",
@@ -7839,7 +7845,8 @@
       "side": "SELL",
       "upper": 0.0025903177746528817,
       "open": 0.0027064,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "NAVERUSDT",
@@ -7848,7 +7855,8 @@
       "side": "SELL",
       "upper": 137.71026451538964,
       "open": 140.5,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "AKEUSDT",
@@ -7857,6 +7865,15 @@
       "side": "SELL",
       "upper": 0.0028789879302835325,
       "open": 0.00301,
+      "reported": false
+    },
+    {
+      "symbol": "CYBERUSDT",
+      "tf": "15m",
+      "candle_ts": 1793935800,
+      "side": "SELL",
+      "upper": 0.3572624552929025,
+      "open": 0.366,
       "reported": false
     }
   ],
