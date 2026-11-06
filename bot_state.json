@@ -192,6 +192,31 @@
       "last_leg_candle_ts": 1793970000,
       "dry_run": true,
       "order_id": "PAPER-BLESSUSDT-1793970052"
+    },
+    {
+      "symbol": "WUXIBIOUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 6.342,
+      "qty": 31.5358,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 6.18345,
+      "tf": "15m",
+      "opened_at": 1793970070,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 6.342,
+          "ts": 1793970070
+        }
+      ],
+      "entry_candle_ts": 1793970000,
+      "last_leg_candle_ts": 1793970000,
+      "dry_run": true,
+      "order_id": "PAPER-WUXIBIOUSDT-1793970070"
     }
   ],
   "trade_history": [
@@ -8171,6 +8196,15 @@
       "open": 0.2474,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "BLESSUSDT",
+      "tf": "1h",
+      "candle_ts": 1793970000,
+      "side": "SELL",
+      "upper": 0.008550416907306234,
+      "open": 0.008705,
+      "reported": false
     }
   ],
   "paper_days": [
