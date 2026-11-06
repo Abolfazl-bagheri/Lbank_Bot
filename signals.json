@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1793928764,
+  "updated_at": 1793928921,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "TZAUSDT",
-      "tf": "15m",
-      "gap": 1.62,
-      "ts": 1793890840
-    },
     {
       "kind": "SELL",
       "symbol": "SQQQUSDT",
@@ -1402,22 +1395,16 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1793928764
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793928921
     }
   ],
   "trades": [
-    {
-      "symbol": "ACTUSDT",
-      "side": "SELL",
-      "entry": 0.009567,
-      "tp": 0.009327825000000001,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.009502,
-      "pnl": 1.3588,
-      "tf": "1h"
-    },
     {
       "symbol": "JCTUSDT",
       "side": "SELL",
@@ -1427,23 +1414,23 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.003238,
-      "pnl": 0.0,
+      "px": 0.003268,
+      "pnl": -1.853,
       "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1793926439,
-  "realized": 0,
-  "closed_n": 0,
-  "open_upnl": 1.3588,
-  "equity": 1001.3588,
+  "realized": 8.2366,
+  "closed_n": 1,
+  "open_upnl": -1.853,
+  "equity": 1006.3836,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 0,
+    "profit": 8.2366,
     "loss": 0,
-    "count": 0
+    "count": 1
   }
 }
