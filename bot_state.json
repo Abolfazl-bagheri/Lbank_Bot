@@ -112,6 +112,31 @@
       "last_leg_candle_ts": 1793941200,
       "dry_run": true,
       "order_id": "PAPER-PIEVERSEUSDT-1793940322"
+    },
+    {
+      "symbol": "AKEUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.004518,
+      "qty": 44267.3749,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.004405050000000001,
+      "tf": "1h",
+      "opened_at": 1793944842,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.004518,
+          "ts": 1793944842
+        }
+      ],
+      "entry_candle_ts": 1793944800,
+      "last_leg_candle_ts": 1793944800,
+      "dry_run": true,
+      "order_id": "PAPER-AKEUSDT-1793944842"
     }
   ],
   "trade_history": [
@@ -8197,7 +8222,7 @@
     "HOTUSDT": 1793981094,
     "1000000BABYDOGEUSDT": 1793981102
   },
-  "last_trade_report_ts": 1793942403,
+  "last_trade_report_ts": 1793943319,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
