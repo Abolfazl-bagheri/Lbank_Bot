@@ -300,24 +300,28 @@
       "symbol": "TAUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.08868,
-      "qty": 2255.3,
-      "margin": 10.0,
+      "entry": 0.09071634822023372,
+      "qty": 6614.0229,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.086463,
-      "tf": "15m",
+      "tp_price": 0.08844843951472788,
+      "tf": "4h",
       "opened_at": 1793988950,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 0.08868,
           "ts": 1793988950
+        },
+        {
+          "px": 0.09177,
+          "ts": 1793995353
         }
       ],
       "entry_candle_ts": 1793988900,
-      "last_leg_candle_ts": 1793988900,
+      "last_leg_candle_ts": 1793995200,
       "dry_run": true,
       "order_id": "PAPER-TAUSDT-1793988950"
     },
@@ -8719,6 +8723,15 @@
       "side": "SELL",
       "upper": 0.010010624943948164,
       "open": 0.01015,
+      "reported": false
+    },
+    {
+      "symbol": "QNTXUSDT",
+      "tf": "4h",
+      "candle_ts": 1793995200,
+      "side": "SELL",
+      "upper": 37.11928315834616,
+      "open": 37.97,
       "reported": false
     }
   ],
