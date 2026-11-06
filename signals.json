@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1793937674,
+  "updated_at": 1793937681,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1793905600
-    },
     {
       "kind": "HEARTBEAT",
       "symbol": "—",
@@ -1402,6 +1395,13 @@
       "tf": "4h",
       "gap": 5.86,
       "ts": 1793937674
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793937681
     }
   ],
   "trades": [
@@ -1454,6 +1454,19 @@
       "margin": 10.0,
       "lev": 20,
       "px": 0.1007,
+      "pnl": 0.0,
+      "tf": "4h"
+    },
+    {
+      "symbol": "CYBERUSDT",
+      "side": "SELL",
+      "entry": 0.3556,
+      "tp": 0.34671,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.3556,
       "pnl": 0.0,
       "tf": "4h"
     }
