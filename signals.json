@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1793988043,
+  "updated_at": 1793988054,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "AEONUSDT",
-      "tf": "1h",
-      "gap": 1.09,
-      "ts": 1793969618
-    },
     {
       "kind": "GAP",
       "symbol": "BLESSUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 1.3,
       "ts": 1793988043
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793988054
     }
   ],
   "trades": [
@@ -1521,6 +1521,19 @@
       "px": 390.16,
       "pnl": -4.743,
       "tf": "1h"
+    },
+    {
+      "symbol": "KNTQUSDT",
+      "side": "SELL",
+      "entry": 0.4685,
+      "tp": 0.4567875,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.4685,
+      "pnl": 0.0,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
