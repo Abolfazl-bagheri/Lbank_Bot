@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1793988948,
+  "updated_at": 1793988960,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "BLESSUSDT",
-      "tf": "1h",
-      "gap": 1.65,
-      "ts": 1793970040
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 0.76,
       "ts": 1793988948
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793988960
     }
   ],
   "trades": [
@@ -1532,6 +1532,19 @@
       "margin": 10.0,
       "lev": 20,
       "px": 0.027538,
+      "pnl": 0.0,
+      "tf": "15m"
+    },
+    {
+      "symbol": "TAUSDT",
+      "side": "SELL",
+      "entry": 0.08868,
+      "tp": 0.086463,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.08868,
       "pnl": 0.0,
       "tf": "15m"
     }
