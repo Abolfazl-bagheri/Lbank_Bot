@@ -334,31 +334,6 @@
       "order_id": "PAPER-KNTQUSDT-1793988045"
     },
     {
-      "symbol": "IDOLUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.027538,
-      "qty": 7262.6916,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.02684955,
-      "tf": "15m",
-      "opened_at": 1793988920,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.027538,
-          "ts": 1793988920
-        }
-      ],
-      "entry_candle_ts": 1793988900,
-      "last_leg_candle_ts": 1793988900,
-      "dry_run": true,
-      "order_id": "PAPER-IDOLUSDT-1793988920"
-    },
-    {
       "symbol": "ACTUSDT",
       "side": "SELL",
       "status": "open",
@@ -6410,6 +6385,36 @@
       "pnl_usdt": 5.492730210016137,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "IDOLUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.027538,
+      "qty": 7262.6916,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.02684955,
+      "tf": "15m",
+      "opened_at": 1793988920,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.027538,
+          "ts": 1793988920
+        }
+      ],
+      "entry_candle_ts": 1793988900,
+      "last_leg_candle_ts": 1793988900,
+      "dry_run": true,
+      "order_id": "PAPER-IDOLUSDT-1793988920",
+      "closed_at": 1793990029,
+      "close_px": 0.024814,
+      "pnl_usdt": 19.783571791706013,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -8708,7 +8713,8 @@
       "side": "SELL",
       "upper": 0.0269333791122653,
       "open": 0.027348,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "KNTQUSDT",
@@ -8717,6 +8723,16 @@
       "side": "SELL",
       "upper": 0.47813049133042945,
       "open": 0.4858,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "ACTUSDT",
+      "tf": "15m",
+      "candle_ts": 1793989800,
+      "side": "SELL",
+      "upper": 0.010010624943948164,
+      "open": 0.01015,
       "reported": false
     }
   ],
@@ -8825,7 +8841,12 @@
     "LWLGUSDT": 1794021432,
     "FLOCK1USDT": 1794024991,
     "TRUMPSOLUSDT": 1794028606,
-    "SAFE1USDT": 1794032229
+    "SAFE1USDT": 1794032229,
+    "TOADUSDT": 1794033098,
+    "1000SATSUSDT": 1794033124,
+    "1000WOJAKUSDT": 1794033128,
+    "NEIRO1USDT": 1794033133,
+    "CZUSDT": 1794033135
   },
   "last_trade_report_ts": 1793988403,
   "last_known_version": "2.7.2",
