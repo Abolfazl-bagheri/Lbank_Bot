@@ -287,6 +287,31 @@
       "last_leg_candle_ts": 1793980800,
       "dry_run": true,
       "order_id": "PAPER-QNTXUSDT-1793980898"
+    },
+    {
+      "symbol": "ONEUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.0015412,
+      "qty": 129769.0112,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.00150267,
+      "tf": "4h",
+      "opened_at": 1793980918,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.0015412,
+          "ts": 1793980918
+        }
+      ],
+      "entry_candle_ts": 1793980800,
+      "last_leg_candle_ts": 1793980800,
+      "dry_run": true,
+      "order_id": "PAPER-ONEUSDT-1793980918"
     }
   ],
   "trade_history": [
@@ -8326,6 +8351,15 @@
       "side": "SELL",
       "upper": 33.75467139451443,
       "open": 34.3,
+      "reported": false
+    },
+    {
+      "symbol": "ZILUSDT",
+      "tf": "1h",
+      "candle_ts": 1793980800,
+      "side": "SELL",
+      "upper": 0.0018445042461862234,
+      "open": 0.001875,
       "reported": false
     }
   ],
