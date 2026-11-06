@@ -82,17 +82,18 @@
       "symbol": "PIEVERSEUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 1.366583283962256,
-      "qty": 1024.4527,
-      "margin": 70.0,
+      "entry": 1.385610860298091,
+      "qty": 2165.11,
+      "margin": 150.0,
       "leverage": 20,
-      "tp_price": 1.3324187018631997,
+      "tp_price": 1.3509705887906387,
       "tf": "15m",
       "opened_at": 1793940322,
-      "adds": 2,
-      "last_leg_margin": 40.0,
+      "adds": 3,
+      "last_leg_margin": 80.0,
       "used_res_levels": [
-        1.3456
+        1.3456,
+        1.408
       ],
       "steps": [
         {
@@ -106,10 +107,14 @@
         {
           "px": 1.3857,
           "ts": 1793941227
+        },
+        {
+          "px": 1.4027,
+          "ts": 1793947668
         }
       ],
       "entry_candle_ts": 1793940300,
-      "last_leg_candle_ts": 1793941200,
+      "last_leg_candle_ts": 1793947668,
       "dry_run": true,
       "order_id": "PAPER-PIEVERSEUSDT-1793940322"
     },
@@ -6051,16 +6056,6 @@
       "side": "SELL"
     },
     {
-      "symbol": "MEGAUSDT",
-      "tf": "15m",
-      "candle_ts": 1793688300,
-      "side": "SELL",
-      "upper": 0.045887355315573204,
-      "open": 0.04637,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "AXISUSDT",
       "tf": "1h",
       "candle_ts": 1793689200,
@@ -8164,6 +8159,15 @@
       "side": "SELL",
       "upper": 0.02446721337641753,
       "open": 0.02496,
+      "reported": false
+    },
+    {
+      "symbol": "ICNTUSDT",
+      "tf": "15m",
+      "candle_ts": 1793947500,
+      "side": "SELL",
+      "upper": 0.2425558920748076,
+      "open": 0.2474,
       "reported": false
     }
   ],
