@@ -362,6 +362,31 @@
       "last_leg_candle_ts": 1793995200,
       "dry_run": true,
       "order_id": "PAPER-ONEUSDT-1793995384"
+    },
+    {
+      "symbol": "PAIDUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.002412,
+      "qty": 82918.7396,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0023517,
+      "tf": "15m",
+      "opened_at": 1793996129,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.002412,
+          "ts": 1793996129
+        }
+      ],
+      "entry_candle_ts": 1793996100,
+      "last_leg_candle_ts": 1793996100,
+      "dry_run": true,
+      "order_id": "PAPER-PAIDUSDT-1793996129"
     }
   ],
   "trade_history": [
@@ -8957,7 +8982,7 @@
     "HOTUSDT": 1794038834,
     "1000000BABYDOGEUSDT": 1794038838
   },
-  "last_trade_report_ts": 1793990052,
+  "last_trade_report_ts": 1793995803,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
