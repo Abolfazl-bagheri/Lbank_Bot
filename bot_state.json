@@ -29,24 +29,30 @@
       "symbol": "UAIUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.1065,
-      "qty": 1877.9343,
-      "margin": 10.0,
+      "entry": 0.1058983050870492,
+      "qty": 5665.813099999999,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.1038375,
+      "tp_price": 0.10325084745987297,
       "tf": "15m",
       "opened_at": 1793933123,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.10591
+      ],
       "steps": [
         {
           "px": 0.1065,
           "ts": 1793933123
+        },
+        {
+          "px": 0.1056,
+          "ts": 1793933427
         }
       ],
       "entry_candle_ts": 1793933100,
-      "last_leg_candle_ts": 1793933100,
+      "last_leg_candle_ts": 1793933427,
       "dry_run": true,
       "order_id": "PAPER-UAIUSDT-1793933123"
     }
@@ -7703,6 +7709,16 @@
       "side": "SELL",
       "upper": 0.09531902560117829,
       "open": 0.09632,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "UAIUSDT",
+      "tf": "15m",
+      "candle_ts": 1793933100,
+      "side": "SELL",
+      "upper": 0.10310224817152411,
+      "open": 0.10448,
       "reported": false
     }
   ],
@@ -7820,7 +7836,7 @@
     "WUXIBIOUSDT": 1793963028,
     "CAPETHUSDT": 1793970966
   },
-  "last_trade_report_ts": 1793932368,
+  "last_trade_report_ts": 1793933275,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
