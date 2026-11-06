@@ -345,6 +345,31 @@
       "last_leg_candle_ts": 1793982600,
       "dry_run": true,
       "order_id": "PAPER-IDOLUSDT-1793982661"
+    },
+    {
+      "symbol": "APPUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 387.1,
+      "qty": 0.516662,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 377.4225,
+      "tf": "1h",
+      "opened_at": 1793984557,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 387.1,
+          "ts": 1793984557
+        }
+      ],
+      "entry_candle_ts": 1793984400,
+      "last_leg_candle_ts": 1793984400,
+      "dry_run": true,
+      "order_id": "PAPER-APPUSDT-1793984557"
     }
   ],
   "trade_history": [
@@ -8524,6 +8549,15 @@
       "open": 0.024115,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "QNTXUSDT",
+      "tf": "1h",
+      "candle_ts": 1793984400,
+      "side": "SELL",
+      "upper": 35.206632865649816,
+      "open": 36.04,
+      "reported": false
     }
   ],
   "paper_days": [
