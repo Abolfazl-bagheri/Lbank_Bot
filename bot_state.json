@@ -144,35 +144,6 @@
       "order_id": "PAPER-AKEUSDT-1793944842"
     },
     {
-      "symbol": "LYNUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.02443356884459355,
-      "qty": 24556.379999999997,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.02382272962347871,
-      "tf": "15m",
-      "opened_at": 1793945743,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.02348,
-          "ts": 1793945743
-        },
-        {
-          "px": 0.02494,
-          "ts": 1793947511
-        }
-      ],
-      "entry_candle_ts": 1793945700,
-      "last_leg_candle_ts": 1793947500,
-      "dry_run": true,
-      "order_id": "PAPER-LYNUSDT-1793945743"
-    },
-    {
       "symbol": "ICNTUSDT",
       "side": "SELL",
       "status": "open",
@@ -5842,6 +5813,40 @@
       "pnl_usdt": 371.3419218543521,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "LYNUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.02443356884459355,
+      "qty": 24556.379999999997,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 0.02382272962347871,
+      "tf": "15m",
+      "opened_at": 1793945743,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.02348,
+          "ts": 1793945743
+        },
+        {
+          "px": 0.02494,
+          "ts": 1793947511
+        }
+      ],
+      "entry_candle_ts": 1793945700,
+      "last_leg_candle_ts": 1793947500,
+      "dry_run": true,
+      "order_id": "PAPER-LYNUSDT-1793945743",
+      "closed_at": 1793969305,
+      "close_px": 0.01863,
+      "pnl_usdt": 142.51464159426828,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -6054,36 +6059,6 @@
       "tf": "15m",
       "candle_ts": 1793430900,
       "side": "SELL"
-    },
-    {
-      "symbol": "AXISUSDT",
-      "tf": "1h",
-      "candle_ts": 1793689200,
-      "side": "SELL",
-      "upper": 0.1300852020499605,
-      "open": 0.1315,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "CLAUDIAUSDT",
-      "tf": "4h",
-      "candle_ts": 1793692800,
-      "side": "SELL",
-      "upper": 0.002620473790114484,
-      "open": 0.002687,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "AGTUSDT",
-      "tf": "15m",
-      "candle_ts": 1793709900,
-      "side": "SELL",
-      "upper": 0.048888982427013394,
-      "open": 0.053111,
-      "reported": true,
-      "filled": false
     },
     {
       "symbol": "BMTUSDT",
@@ -8159,7 +8134,8 @@
       "side": "SELL",
       "upper": 0.02446721337641753,
       "open": 0.02496,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ICNTUSDT",
@@ -8168,7 +8144,8 @@
       "side": "SELL",
       "upper": 0.2425558920748076,
       "open": 0.2474,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -8246,7 +8223,6 @@
     "KNTQUSDT": 1793801068,
     "FLOCK1USDT": 1793821836,
     "AEHRUSDT": 1793830009,
-    "QUACKAIUSDT": 1793843367,
     "METEORAUSDT": 1793852241,
     "ARROWUSDT": 1793871201,
     "BBXUSDT": 1793872237,
@@ -8254,7 +8230,6 @@
     "B3USDT": 1793880575,
     "AI1USDT": 1793882848,
     "BEMUSDT": 1793901058,
-    "RIOTUSDT": 1793901063,
     "QUID1USDT": 1793901083,
     "O1USDT": 1793911895,
     "MANCERUSDT": 1793914576,
@@ -8274,7 +8249,6 @@
     "OROCHIUSDT": 1793961063,
     "UBIKUSDT": 1793961071,
     "AINBSCUSDT": 1793962017,
-    "WUXIBIOUSDT": 1793963028,
     "CAPETHUSDT": 1793970966,
     "UP2USDT": 1793978208,
     "NGASUSDT": 1793980968,
@@ -8289,7 +8263,9 @@
     "1000SATSUSDT": 1793989022,
     "NEIRO1USDT": 1793989023,
     "1000WOJAKUSDT": 1793989024,
-    "CZUSDT": 1793989028
+    "CZUSDT": 1793989028,
+    "QUACKAIUSDT": 1794012379,
+    "RIOTUSDT": 1794012403
   },
   "last_trade_report_ts": 1793947683,
   "last_known_version": "2.7.2",
