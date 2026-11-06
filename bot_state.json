@@ -154,11 +154,11 @@
         },
         {
           "px": 5.047,
-          "ts": 1793999104
+          "ts": 1793999197
         }
       ],
       "entry_candle_ts": 1793977200,
-      "last_leg_candle_ts": 1793999104,
+      "last_leg_candle_ts": 1793999197,
       "dry_run": true,
       "order_id": "PAPER-SMRUSDT-1793977366"
     },
@@ -210,19 +210,18 @@
       "symbol": "LUNRUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 10.252661444073944,
-      "qty": 292.6069,
-      "margin": 150.0,
+      "entry": 10.002548854958016,
+      "qty": 139.96429999999998,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 9.996344907972095,
+      "tp_price": 9.752485133584067,
       "tf": "1h",
       "opened_at": 1793980975,
-      "adds": 3,
-      "last_leg_margin": 80.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [
         9.96,
-        10.13,
-        10.51
+        10.13
       ],
       "steps": [
         {
@@ -236,14 +235,10 @@
         {
           "px": 10.114,
           "ts": 1793986412
-        },
-        {
-          "px": 10.482,
-          "ts": 1793999116
         }
       ],
       "entry_candle_ts": 1793980800,
-      "last_leg_candle_ts": 1793999116,
+      "last_leg_candle_ts": 1793986412,
       "dry_run": true,
       "order_id": "PAPER-LUNRUSDT-1793980975"
     },
@@ -6541,9 +6536,9 @@
       "last_leg_candle_ts": 1793995200,
       "dry_run": true,
       "order_id": "PAPER-IDOLUSDT-1793995368",
-      "closed_at": 1793997218,
-      "close_px": 0.025209,
-      "pnl_usdt": 7.8362617677326,
+      "closed_at": 1793998190,
+      "close_px": 0.0255,
+      "pnl_usdt": 5.618020352936704,
       "close_reason": "TP50",
       "why": "TP50"
     }
@@ -9043,7 +9038,7 @@
     "HOTUSDT": 1794038834,
     "1000000BABYDOGEUSDT": 1794038838
   },
-  "last_trade_report_ts": 1793997230,
+  "last_trade_report_ts": 1793998204,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
