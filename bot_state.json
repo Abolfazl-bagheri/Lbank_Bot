@@ -267,24 +267,28 @@
       "symbol": "KNTQUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.4691,
-      "qty": 426.3483,
-      "margin": 10.0,
+      "entry": 0.48159793197830403,
+      "qty": 1245.8525,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.4573725,
+      "tp_price": 0.46955798367884644,
       "tf": "15m",
       "opened_at": 1793988034,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 0.4691,
           "ts": 1793988034
+        },
+        {
+          "px": 0.4881,
+          "ts": 1793988980
         }
       ],
       "entry_candle_ts": 1793988000,
-      "last_leg_candle_ts": 1793988000,
+      "last_leg_candle_ts": 1793988900,
       "dry_run": true,
       "order_id": "PAPER-KNTQUSDT-1793988034"
     },
@@ -8650,6 +8654,15 @@
       "side": "SELL",
       "upper": 0.026910664448601636,
       "open": 0.027348,
+      "reported": false
+    },
+    {
+      "symbol": "TAUSDT",
+      "tf": "15m",
+      "candle_ts": 1793988900,
+      "side": "SELL",
+      "upper": 0.08800449114175862,
+      "open": 0.08892,
       "reported": false
     }
   ],
