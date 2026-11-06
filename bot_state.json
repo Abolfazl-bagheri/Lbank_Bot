@@ -72,24 +72,28 @@
       "symbol": "AKEUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.002682,
-      "qty": 74571.2155,
-      "margin": 10.0,
+      "entry": 0.0028797629877931113,
+      "qty": 208350.47970000003,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.00261495,
+      "tp_price": 0.0028077689130982836,
       "tf": "15m",
       "opened_at": 1793934934,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 0.002682,
           "ts": 1793934934
+        },
+        {
+          "px": 0.00299,
+          "ts": 1793935809
         }
       ],
       "entry_candle_ts": 1793934900,
-      "last_leg_candle_ts": 1793934900,
+      "last_leg_candle_ts": 1793935800,
       "dry_run": true,
       "order_id": "PAPER-AKEUSDT-1793934934"
     },
@@ -7781,7 +7785,8 @@
       "side": "SELL",
       "upper": 0.10074826483827272,
       "open": 0.10314,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "UAIUSDT",
@@ -7790,7 +7795,8 @@
       "side": "SELL",
       "upper": 0.10515772437008258,
       "open": 0.10684,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "UAIUSDT",
@@ -7808,6 +7814,15 @@
       "side": "SELL",
       "upper": 0.0025903177746528817,
       "open": 0.0027064,
+      "reported": false
+    },
+    {
+      "symbol": "NAVERUSDT",
+      "tf": "15m",
+      "candle_ts": 1793934900,
+      "side": "SELL",
+      "upper": 137.71026451538964,
+      "open": 140.5,
       "reported": false
     }
   ],
@@ -7922,7 +7937,8 @@
     "UBIKUSDT": 1793961071,
     "AINBSCUSDT": 1793962017,
     "WUXIBIOUSDT": 1793963028,
-    "CAPETHUSDT": 1793970966
+    "CAPETHUSDT": 1793970966,
+    "UP2USDT": 1793978208
   },
   "last_trade_report_ts": 1793934290,
   "last_known_version": "2.7.2",
