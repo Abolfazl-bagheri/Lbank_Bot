@@ -149,16 +149,18 @@
       "symbol": "ZCSHUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 36.26991150121505,
-      "qty": 16.5426,
-      "margin": 30.0,
+      "entry": 35.97098262598857,
+      "qty": 38.9202,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 35.36316371368467,
+      "tp_price": 35.07170806033886,
       "tf": "1h",
       "opened_at": 1793976394,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
+      "adds": 2,
+      "last_leg_margin": 40.0,
+      "used_res_levels": [
+        35.89
+      ],
       "steps": [
         {
           "px": 36.19,
@@ -167,10 +169,14 @@
         {
           "px": 36.31,
           "ts": 1793977326
+        },
+        {
+          "px": 35.75,
+          "ts": 1793980202
         }
       ],
       "entry_candle_ts": 1793976300,
-      "last_leg_candle_ts": 1793977200,
+      "last_leg_candle_ts": 1793980202,
       "dry_run": true,
       "order_id": "PAPER-ZCSHUSDT-1793976394"
     },
