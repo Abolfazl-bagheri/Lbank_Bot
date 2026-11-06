@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1794008796,
+  "updated_at": 1794008807,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1793981898
-    },
     {
       "kind": "GAP",
       "symbol": "QNTXUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 1.25,
       "ts": 1794008796
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794008807
     }
   ],
   "trades": [
@@ -1546,6 +1546,19 @@
       "lev": 20,
       "px": 0.002466,
       "pnl": -4.4776,
+      "tf": "15m"
+    },
+    {
+      "symbol": "LYNUSDT",
+      "side": "SELL",
+      "entry": 0.02548,
+      "tp": 0.024842999999999997,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.02548,
+      "pnl": 0.0,
       "tf": "15m"
     }
   ],
