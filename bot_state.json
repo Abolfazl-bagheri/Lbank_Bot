@@ -96,31 +96,6 @@
       "last_leg_candle_ts": 1793934900,
       "dry_run": true,
       "order_id": "PAPER-NAVERUSDT-1793934988"
-    },
-    {
-      "symbol": "CYBERUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.366,
-      "qty": 546.4481,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.35685,
-      "tf": "15m",
-      "opened_at": 1793935824,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.366,
-          "ts": 1793935824
-        }
-      ],
-      "entry_candle_ts": 1793935800,
-      "last_leg_candle_ts": 1793935800,
-      "dry_run": true,
-      "order_id": "PAPER-CYBERUSDT-1793935824"
     }
   ],
   "trade_history": [
@@ -5631,6 +5606,36 @@
       "pnl_usdt": 24.468465106492626,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "CYBERUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.366,
+      "qty": 546.4481,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.35685,
+      "tf": "15m",
+      "opened_at": 1793935824,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.366,
+          "ts": 1793935824
+        }
+      ],
+      "entry_candle_ts": 1793935800,
+      "last_leg_candle_ts": 1793935800,
+      "dry_run": true,
+      "order_id": "PAPER-CYBERUSDT-1793935824",
+      "closed_at": 1793936869,
+      "close_px": 0.3538,
+      "pnl_usdt": 6.66666666666666,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -7869,7 +7874,8 @@
       "side": "SELL",
       "upper": 0.0028789879302835325,
       "open": 0.00301,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CYBERUSDT",
@@ -7878,6 +7884,16 @@
       "side": "SELL",
       "upper": 0.3572624552929025,
       "open": 0.366,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "AKEUSDT",
+      "tf": "15m",
+      "candle_ts": 1793936700,
+      "side": "SELL",
+      "upper": 0.0031071348617230593,
+      "open": 0.003237,
       "reported": false
     }
   ],
