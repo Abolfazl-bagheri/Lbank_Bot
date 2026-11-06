@@ -258,15 +258,15 @@
       "symbol": "QNTXUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 34.591908031663124,
-      "qty": 17.3451,
-      "margin": 30.0,
+      "entry": 35.39928935896917,
+      "qty": 39.5488,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 33.72711033087155,
-      "tf": "15m",
+      "tp_price": 34.51430712499494,
+      "tf": "1h",
       "opened_at": 1793980908,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [
         34.88
       ],
@@ -278,10 +278,14 @@
         {
           "px": 34.75,
           "ts": 1793982854
+        },
+        {
+          "px": 36.03,
+          "ts": 1793984439
         }
       ],
       "entry_candle_ts": 1793980800,
-      "last_leg_candle_ts": 1793982854,
+      "last_leg_candle_ts": 1793984400,
       "dry_run": true,
       "order_id": "PAPER-QNTXUSDT-1793980908"
     },
@@ -8495,7 +8499,8 @@
       "side": "SELL",
       "upper": 0.3145379628367905,
       "open": 0.3182,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "IDOLUSDT",
@@ -8504,7 +8509,8 @@
       "side": "SELL",
       "upper": 0.023728878923347185,
       "open": 0.024115,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -8582,7 +8588,6 @@
     "O1USDT": 1793911895,
     "MANCERUSDT": 1793914576,
     "PIPEDOGUSDT": 1793915458,
-    "TOADUSDT": 1793916983,
     "STONKBROKERUSDT": 1793924211,
     "OSCRUSDT": 1793924212,
     "AMCUSDT": 1793924216,
@@ -8619,7 +8624,7 @@
     "LWLGUSDT": 1794023284,
     "FLOCK1USDT": 1794024976
   },
-  "last_trade_report_ts": 1793981350,
+  "last_trade_report_ts": 1793982875,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
