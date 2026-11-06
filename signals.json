@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1793940327,
+  "updated_at": 1793940471,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1793907977
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1395,13 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1793940327
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793940471
     }
   ],
   "trades": [
@@ -1445,39 +1445,13 @@
       "tf": "15m"
     },
     {
-      "symbol": "BIRBUSDT",
-      "side": "SELL",
-      "entry": 0.1007,
-      "tp": 0.09818249999999999,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.09808,
-      "pnl": 5.2036,
-      "tf": "4h"
-    },
-    {
-      "symbol": "CYBERUSDT",
-      "side": "SELL",
-      "entry": 0.3556,
-      "tp": 0.34671,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.3395,
-      "pnl": 9.0551,
-      "tf": "4h"
-    },
-    {
       "symbol": "PIEVERSEUSDT",
       "side": "SELL",
       "entry": 1.3419,
       "tp": 1.3083525,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
+      "adds": 1,
+      "pele": 2,
+      "margin": 30.0,
       "lev": 20,
       "px": 1.3419,
       "pnl": 0.0,
@@ -1486,16 +1460,16 @@
   ],
   "start": 1000.0,
   "session_start": 1793926439,
-  "realized": 54.8951,
-  "closed_n": 4,
-  "open_upnl": -1140.84,
+  "realized": 69.1538,
+  "closed_n": 6,
+  "open_upnl": -1155.0987,
   "equity": -85.9449,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 54.8951,
+    "profit": 69.1538,
     "loss": 0,
-    "count": 4
+    "count": 6
   }
 }
