@@ -160,6 +160,31 @@
       "last_leg_candle_ts": 1793937600,
       "dry_run": true,
       "order_id": "PAPER-CYBERUSDT-1793937675"
+    },
+    {
+      "symbol": "PIEVERSEUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 1.3419,
+      "qty": 149.0424,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 1.3083525,
+      "tf": "15m",
+      "opened_at": 1793940322,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 1.3419,
+          "ts": 1793940322
+        }
+      ],
+      "entry_candle_ts": 1793940300,
+      "last_leg_candle_ts": 1793940300,
+      "dry_run": true,
+      "order_id": "PAPER-PIEVERSEUSDT-1793940322"
     }
   ],
   "trade_history": [
@@ -7989,6 +8014,15 @@
       "upper": 0.3347698635931906,
       "open": 0.3557,
       "reported": false
+    },
+    {
+      "symbol": "AKEUSDT",
+      "tf": "15m",
+      "candle_ts": 1793939400,
+      "side": "SELL",
+      "upper": 0.0037336067064571606,
+      "open": 0.0037775,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -8112,7 +8146,7 @@
     "HOTUSDT": 1793981094,
     "1000000BABYDOGEUSDT": 1793981102
   },
-  "last_trade_report_ts": 1793937993,
+  "last_trade_report_ts": 1793939568,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
