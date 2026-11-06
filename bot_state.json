@@ -341,6 +341,31 @@
       "last_leg_candle_ts": 1793988900,
       "dry_run": true,
       "order_id": "PAPER-TAUSDT-1793988950"
+    },
+    {
+      "symbol": "ACTUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.010108,
+      "qty": 19786.3079,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0098553,
+      "tf": "15m",
+      "opened_at": 1793989849,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.010108,
+          "ts": 1793989849
+        }
+      ],
+      "entry_candle_ts": 1793989800,
+      "last_leg_candle_ts": 1793989800,
+      "dry_run": true,
+      "order_id": "PAPER-ACTUSDT-1793989849"
     }
   ],
   "trade_history": [
@@ -8645,7 +8670,8 @@
       "side": "SELL",
       "upper": 0.4625334307217989,
       "open": 0.469,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "IDOLUSDT",
@@ -8663,6 +8689,15 @@
       "side": "SELL",
       "upper": 0.08800449114175862,
       "open": 0.08892,
+      "reported": false
+    },
+    {
+      "symbol": "KNTQUSDT",
+      "tf": "15m",
+      "candle_ts": 1793988900,
+      "side": "SELL",
+      "upper": 0.47780653612070967,
+      "open": 0.4858,
       "reported": false
     }
   ],
@@ -8758,10 +8793,6 @@
     "LONGXIAUSDT": 1793981070,
     "XBRUSDT": 1793988971,
     "XTIUSDT": 1793988989,
-    "1000SATSUSDT": 1793989022,
-    "NEIRO1USDT": 1793989023,
-    "1000WOJAKUSDT": 1793989024,
-    "CZUSDT": 1793989028,
     "QUACKAIUSDT": 1794012405,
     "RIOTUSDT": 1794012426,
     "OROCHIUSDT": 1794015066,
@@ -8776,7 +8807,8 @@
     "LWLGUSDT": 1794023284,
     "FLOCK1USDT": 1794024976,
     "TOADUSDT": 1794027800,
-    "TRUMPSOLUSDT": 1794028601
+    "TRUMPSOLUSDT": 1794028601,
+    "SAFE1USDT": 1794032230
   },
   "last_trade_report_ts": 1793988326,
   "last_known_version": "2.7.2",
