@@ -28,6 +28,31 @@
       "last_leg_candle_ts": 1793929500,
       "dry_run": true,
       "order_id": "PAPER-JCTUSDT-1793928672"
+    },
+    {
+      "symbol": "BIRBUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.09618,
+      "qty": 2079.4344,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0937755,
+      "tf": "15m",
+      "opened_at": 1793932222,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.09618,
+          "ts": 1793932222
+        }
+      ],
+      "entry_candle_ts": 1793932200,
+      "last_leg_candle_ts": 1793932200,
+      "dry_run": true,
+      "order_id": "PAPER-BIRBUSDT-1793932222"
     }
   ],
   "trade_history": [
@@ -5684,16 +5709,6 @@
       "side": "SELL"
     },
     {
-      "symbol": "CLAUDIAUSDT",
-      "tf": "15m",
-      "candle_ts": 1793671200,
-      "side": "SELL",
-      "upper": 0.0022641760408000245,
-      "open": 0.002336,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "AGTUSDT",
       "tf": "1h",
       "candle_ts": 1793674800,
@@ -7628,7 +7643,8 @@
       "side": "SELL",
       "upper": 0.009475951303596972,
       "open": 0.0096,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "JCTUSDT",
@@ -7637,7 +7653,18 @@
       "side": "SELL",
       "upper": 0.003171634981617042,
       "open": 0.003231,
-      "reported": false
+      "reported": true,
+      "filled": false
+    },
+    {
+      "symbol": "JCTUSDT",
+      "tf": "15m",
+      "candle_ts": 1793929500,
+      "side": "SELL",
+      "upper": 0.0032516874512064585,
+      "open": 0.003308,
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -7754,7 +7781,7 @@
     "WUXIBIOUSDT": 1793963028,
     "CAPETHUSDT": 1793970966
   },
-  "last_trade_report_ts": 1793928923,
+  "last_trade_report_ts": 1793931458,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
