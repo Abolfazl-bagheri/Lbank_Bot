@@ -137,6 +137,31 @@
       "last_leg_candle_ts": 1793944800,
       "dry_run": true,
       "order_id": "PAPER-AKEUSDT-1793944842"
+    },
+    {
+      "symbol": "LYNUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.02348,
+      "qty": 8517.8876,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.022893,
+      "tf": "15m",
+      "opened_at": 1793945743,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.02348,
+          "ts": 1793945743
+        }
+      ],
+      "entry_candle_ts": 1793945700,
+      "last_leg_candle_ts": 1793945700,
+      "dry_run": true,
+      "order_id": "PAPER-LYNUSDT-1793945743"
     }
   ],
   "trade_history": [
@@ -5997,16 +6022,6 @@
       "side": "SELL"
     },
     {
-      "symbol": "BMTUSDT",
-      "tf": "1h",
-      "candle_ts": 1793685600,
-      "side": "SELL",
-      "upper": 0.023551702504293406,
-      "open": 0.02379,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "RUNEUSDT",
       "tf": "15m",
       "candle_ts": 1793687400,
@@ -8081,7 +8096,8 @@
       "side": "SELL",
       "upper": 0.1526517700588468,
       "open": 0.16439,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "AKEUSDT",
@@ -8090,7 +8106,8 @@
       "side": "SELL",
       "upper": 0.0039315003432607775,
       "open": 0.0042757,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "PIEVERSEUSDT",
@@ -8099,6 +8116,16 @@
       "side": "SELL",
       "upper": 1.371639029434599,
       "open": 1.3887,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "AKEUSDT",
+      "tf": "1h",
+      "candle_ts": 1793944800,
+      "side": "SELL",
+      "upper": 0.004339721000894144,
+      "open": 0.0045304,
       "reported": false
     }
   ],
@@ -8199,12 +8226,6 @@
     "DRVUSDT": 1793929608,
     "GSTOCKUSDT": 1793930663,
     "GOLDUSDT": 1793936850,
-    "XBRUSDT": 1793945035,
-    "XTIUSDT": 1793945052,
-    "1000WOJAKUSDT": 1793945079,
-    "1000SATSUSDT": 1793945072,
-    "NEIRO1USDT": 1793945071,
-    "CZUSDT": 1793945085,
     "USOUSDT": 1793952284,
     "CANTONUSDT": 1793952369,
     "BTCDOMUSDT": 1793955831,
@@ -8222,7 +8243,7 @@
     "HOTUSDT": 1793981094,
     "1000000BABYDOGEUSDT": 1793981102
   },
-  "last_trade_report_ts": 1793943319,
+  "last_trade_report_ts": 1793945061,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
