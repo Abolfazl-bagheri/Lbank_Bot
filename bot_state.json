@@ -33,15 +33,15 @@
       "symbol": "UAIUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.1065250506461939,
-      "qty": 13142.4486,
-      "margin": 70.0,
+      "entry": 0.12889120320075353,
+      "qty": 23275.444199999998,
+      "margin": 150.0,
       "leverage": 20,
-      "tp_price": 0.10386192438003905,
+      "tp_price": 0.1256689231207347,
       "tf": "15m",
       "opened_at": 1793933123,
-      "adds": 2,
-      "last_leg_margin": 40.0,
+      "adds": 3,
+      "last_leg_margin": 80.0,
       "used_res_levels": [
         0.10591
       ],
@@ -57,10 +57,14 @@
         {
           "px": 0.107,
           "ts": 1793934131
+        },
+        {
+          "px": 0.1579,
+          "ts": 1793934920
         }
       ],
       "entry_candle_ts": 1793933100,
-      "last_leg_candle_ts": 1793934000,
+      "last_leg_candle_ts": 1793934900,
       "dry_run": true,
       "order_id": "PAPER-UAIUSDT-1793933123"
     }
@@ -5753,16 +5757,6 @@
       "side": "SELL"
     },
     {
-      "symbol": "AGTUSDT",
-      "tf": "1h",
-      "candle_ts": 1793674800,
-      "side": "SELL",
-      "upper": 0.04173257660970005,
-      "open": 0.042767,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "IRYSUSDT",
       "tf": "1h",
       "candle_ts": 1793682000,
@@ -7727,7 +7721,8 @@
       "side": "SELL",
       "upper": 0.10310224817152411,
       "open": 0.10448,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "BIRBUSDT",
@@ -7736,6 +7731,15 @@
       "side": "SELL",
       "upper": 0.10074826483827272,
       "open": 0.10314,
+      "reported": false
+    },
+    {
+      "symbol": "UAIUSDT",
+      "tf": "15m",
+      "candle_ts": 1793934000,
+      "side": "SELL",
+      "upper": 0.10515772437008258,
+      "open": 0.10684,
       "reported": false
     }
   ],
@@ -7833,7 +7837,6 @@
     "OSCRUSDT": 1793924212,
     "AMCUSDT": 1793924216,
     "LIGHT1USDT": 1793925108,
-    "UP2USDT": 1793927026,
     "CYBERLEEKUSDT": 1793927052,
     "DRVUSDT": 1793929608,
     "GSTOCKUSDT": 1793930663,
@@ -7853,7 +7856,7 @@
     "WUXIBIOUSDT": 1793963028,
     "CAPETHUSDT": 1793970966
   },
-  "last_trade_report_ts": 1793933275,
+  "last_trade_report_ts": 1793934290,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
