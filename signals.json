@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1793933276,
+  "updated_at": 1793933431,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "APPUSDT",
-      "tf": "4h",
-      "gap": 3.09,
-      "ts": 1793893306
-    },
     {
       "kind": "GAP",
       "symbol": "SONYUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1793933276
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793933431
     }
   ],
   "trades": [
@@ -1414,21 +1414,21 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.09766,
-      "pnl": -3.0776,
+      "px": 0.09804,
+      "pnl": -3.8677,
       "tf": "15m"
     },
     {
       "symbol": "UAIUSDT",
       "side": "SELL",
-      "entry": 0.1065,
-      "tp": 0.1038375,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
+      "entry": 0.1058983050870492,
+      "tp": 0.10325084745987297,
+      "adds": 1,
+      "pele": 2,
+      "margin": 30.0,
       "lev": 20,
-      "px": 0.1065,
-      "pnl": 0.0,
+      "px": 0.1056,
+      "pnl": 1.6901,
       "tf": "15m"
     }
   ],
@@ -1436,8 +1436,8 @@
   "session_start": 1793926439,
   "realized": 23.76,
   "closed_n": 2,
-  "open_upnl": -3.0776,
-  "equity": 1020.6824,
+  "open_upnl": -2.1776,
+  "equity": 1021.5824,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
