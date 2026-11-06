@@ -328,6 +328,31 @@
       "last_leg_candle_ts": 1793988000,
       "dry_run": true,
       "order_id": "PAPER-KNTQUSDT-1793988045"
+    },
+    {
+      "symbol": "IDOLUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.027538,
+      "qty": 7262.6916,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.02684955,
+      "tf": "15m",
+      "opened_at": 1793988920,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.027538,
+          "ts": 1793988920
+        }
+      ],
+      "entry_candle_ts": 1793988900,
+      "last_leg_candle_ts": 1793988900,
+      "dry_run": true,
+      "order_id": "PAPER-IDOLUSDT-1793988920"
     }
   ],
   "trade_history": [
@@ -8757,7 +8782,7 @@
     "FLOCK1USDT": 1794024991,
     "TRUMPSOLUSDT": 1794028606
   },
-  "last_trade_report_ts": 1793986452,
+  "last_trade_report_ts": 1793988403,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
