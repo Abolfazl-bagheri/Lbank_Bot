@@ -229,6 +229,31 @@
       "last_leg_candle_ts": 1793977200,
       "dry_run": true,
       "order_id": "PAPER-SMRUSDT-1793977364"
+    },
+    {
+      "symbol": "ZILUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.001857,
+      "qty": 107700.5924,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0018105749999999998,
+      "tf": "15m",
+      "opened_at": 1793980838,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.001857,
+          "ts": 1793980838
+        }
+      ],
+      "entry_candle_ts": 1793980800,
+      "last_leg_candle_ts": 1793980800,
+      "dry_run": true,
+      "order_id": "PAPER-ZILUSDT-1793980838"
     }
   ],
   "trade_history": [
@@ -8286,7 +8311,6 @@
     "GMESTOCKUSDT": 1793353780,
     "EURUSDT": 1793385188,
     "SKY1USDT": 1793398016,
-    "SAFE1USDT": 1793449863,
     "AXLUSDT": 1793502358,
     "SYNUSDT": 1793537208,
     "APROUSDT": 1793604906,
@@ -8352,7 +8376,7 @@
     "KOPNUSDT": 1794021420,
     "LWLGUSDT": 1794021432
   },
-  "last_trade_report_ts": 1793979227,
+  "last_trade_report_ts": 1793980218,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
