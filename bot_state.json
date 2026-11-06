@@ -115,15 +115,15 @@
       "symbol": "PIEVERSEUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 1.3419,
-      "qty": 447.12719999999996,
-      "margin": 30.0,
+      "entry": 1.366583283962256,
+      "qty": 1024.4527,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 1.3083525,
+      "tp_price": 1.3324187018631997,
       "tf": "15m",
       "opened_at": 1793940322,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [
         1.3456
       ],
@@ -135,10 +135,14 @@
         {
           "px": 1.3419,
           "ts": 1793940466
+        },
+        {
+          "px": 1.3857,
+          "ts": 1793941227
         }
       ],
       "entry_candle_ts": 1793940300,
-      "last_leg_candle_ts": 1793940466,
+      "last_leg_candle_ts": 1793941200,
       "dry_run": true,
       "order_id": "PAPER-PIEVERSEUSDT-1793940322"
     }
@@ -8172,7 +8176,7 @@
     "HOTUSDT": 1793981094,
     "1000000BABYDOGEUSDT": 1793981102
   },
-  "last_trade_report_ts": 1793939568,
+  "last_trade_report_ts": 1793940478,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
