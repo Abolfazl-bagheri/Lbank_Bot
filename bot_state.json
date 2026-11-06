@@ -261,6 +261,31 @@
       "last_leg_candle_ts": 1793977200,
       "dry_run": true,
       "order_id": "PAPER-OKLOUSDT-1793977303"
+    },
+    {
+      "symbol": "SMRUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 4.963,
+      "qty": 40.2982,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 4.838925,
+      "tf": "1h",
+      "opened_at": 1793977366,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 4.963,
+          "ts": 1793977366
+        }
+      ],
+      "entry_candle_ts": 1793977200,
+      "last_leg_candle_ts": 1793977200,
+      "dry_run": true,
+      "order_id": "PAPER-SMRUSDT-1793977366"
     }
   ],
   "trade_history": [
@@ -8249,6 +8274,15 @@
       "side": "SELL",
       "upper": 21.779311864817366,
       "open": 22.04,
+      "reported": false
+    },
+    {
+      "symbol": "ZCSHUSDT",
+      "tf": "1h",
+      "candle_ts": 1793977200,
+      "side": "SELL",
+      "upper": 35.96709960773305,
+      "open": 36.36,
       "reported": false
     }
   ],
