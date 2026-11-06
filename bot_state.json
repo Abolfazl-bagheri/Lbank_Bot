@@ -82,15 +82,15 @@
       "symbol": "ICNTUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.2873037826662608,
-      "qty": 4872.8909,
-      "margin": 70.0,
+      "entry": 0.3035735601523676,
+      "qty": 9882.283500000001,
+      "margin": 150.0,
       "leverage": 20,
-      "tp_price": 0.28012118809960423,
-      "tf": "4h",
+      "tp_price": 0.2959842211485584,
+      "tf": "15m",
       "opened_at": 1793947544,
-      "adds": 2,
-      "last_leg_margin": 40.0,
+      "adds": 3,
+      "last_leg_margin": 80.0,
       "used_res_levels": [
         0.2852
       ],
@@ -106,10 +106,14 @@
         {
           "px": 0.3012,
           "ts": 1793980876
+        },
+        {
+          "px": 0.3194,
+          "ts": 1793982624
         }
       ],
       "entry_candle_ts": 1793947500,
-      "last_leg_candle_ts": 1793980800,
+      "last_leg_candle_ts": 1793982600,
       "dry_run": true,
       "order_id": "PAPER-ICNTUSDT-1793947544"
     },
@@ -287,31 +291,6 @@
       "last_leg_candle_ts": 1793980800,
       "dry_run": true,
       "order_id": "PAPER-QNTXUSDT-1793980898"
-    },
-    {
-      "symbol": "MOVRUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 1.1242,
-      "qty": 177.9043,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 1.096095,
-      "tf": "1h",
-      "opened_at": 1793980935,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 1.1242,
-          "ts": 1793980935
-        }
-      ],
-      "entry_candle_ts": 1793980800,
-      "last_leg_candle_ts": 1793980800,
-      "dry_run": true,
-      "order_id": "PAPER-MOVRUSDT-1793980935"
     },
     {
       "symbol": "LUNRUSDT",
@@ -6231,6 +6210,36 @@
       "pnl_usdt": 20.983649104593805,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "MOVRUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 1.1242,
+      "qty": 177.9043,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 1.096095,
+      "tf": "1h",
+      "opened_at": 1793980935,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 1.1242,
+          "ts": 1793980935
+        }
+      ],
+      "entry_candle_ts": 1793980800,
+      "last_leg_candle_ts": 1793980800,
+      "dry_run": true,
+      "order_id": "PAPER-MOVRUSDT-1793980935",
+      "closed_at": 1793981973,
+      "close_px": 1.0881,
+      "pnl_usdt": 6.4223447785091645,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -8533,7 +8542,6 @@
     "MARRIOTTUSDT": 1793714834,
     "ONSEMIUSDT": 1793784100,
     "SIMOUSDT": 1793785920,
-    "KNTQUSDT": 1793801068,
     "METEORAUSDT": 1793852241,
     "ARROWUSDT": 1793871201,
     "OFCUSDT": 1793873172,
