@@ -114,35 +114,6 @@
       "order_id": "PAPER-ICNTUSDT-1793947544"
     },
     {
-      "symbol": "ANSEMUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.05287077104001381,
-      "qty": 11348.425299999999,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.05154900176401346,
-      "tf": "1h",
-      "opened_at": 1793976323,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.05209,
-          "ts": 1793976323
-        },
-        {
-          "px": 0.05327,
-          "ts": 1793977268
-        }
-      ],
-      "entry_candle_ts": 1793976300,
-      "last_leg_candle_ts": 1793977200,
-      "dry_run": true,
-      "order_id": "PAPER-ANSEMUSDT-1793976323"
-    },
-    {
       "symbol": "OUSTUSDT",
       "side": "SELL",
       "status": "open",
@@ -6069,6 +6040,40 @@
       "pnl_usdt": 205.29860932319062,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "ANSEMUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.05287077104001381,
+      "qty": 11348.425299999999,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 0.05154900176401346,
+      "tf": "1h",
+      "opened_at": 1793976323,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.05209,
+          "ts": 1793976323
+        },
+        {
+          "px": 0.05327,
+          "ts": 1793977268
+        }
+      ],
+      "entry_candle_ts": 1793976300,
+      "last_leg_candle_ts": 1793977200,
+      "dry_run": true,
+      "order_id": "PAPER-ANSEMUSDT-1793976323",
+      "closed_at": 1793980187,
+      "close_px": 0.05127,
+      "pnl_usdt": 18.166230700161027,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -6281,16 +6286,6 @@
       "tf": "15m",
       "candle_ts": 1793430900,
       "side": "SELL"
-    },
-    {
-      "symbol": "HUTUSDT",
-      "tf": "15m",
-      "candle_ts": 1793720700,
-      "side": "SELL",
-      "upper": 62.87657624857238,
-      "open": 63.58,
-      "reported": true,
-      "filled": false
     },
     {
       "symbol": "CLANKERUSDT",
@@ -8215,6 +8210,15 @@
       "upper": 4.834576981662585,
       "open": 4.887,
       "reported": false
+    },
+    {
+      "symbol": "ICNTUSDT",
+      "tf": "15m",
+      "candle_ts": 1793979900,
+      "side": "SELL",
+      "upper": 0.29709504110315665,
+      "open": 0.3001,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -8332,7 +8336,8 @@
     "AEHRUSDT": 1794020651,
     "RGTIUSDT": 1794020663,
     "POETUSDT": 1794021389,
-    "KOPNUSDT": 1794021399
+    "KOPNUSDT": 1794021399,
+    "LWLGUSDT": 1794023284
   },
   "last_trade_report_ts": 1793979213,
   "last_known_version": "2.7.2",
