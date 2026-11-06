@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1793945742,
+  "updated_at": 1793945749,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "SSPCUSDT",
-      "tf": "15m",
-      "gap": 1.02,
-      "ts": 1793918638
-    },
     {
       "kind": "GAP",
       "symbol": "ICNTUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 1.28,
       "ts": 1793945742
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793945749
     }
   ],
   "trades": [
@@ -1456,6 +1456,19 @@
       "px": 0.004962,
       "pnl": -19.6547,
       "tf": "1h"
+    },
+    {
+      "symbol": "LYNUSDT",
+      "side": "SELL",
+      "entry": 0.02348,
+      "tp": 0.022893,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.02348,
+      "pnl": 0.0,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
