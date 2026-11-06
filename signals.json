@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1793995367,
+  "updated_at": 1793995378,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "OUSTUSDT",
-      "tf": "15m",
-      "gap": 0.67,
-      "ts": 1793976343
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1395,13 @@
       "tf": "4h",
       "gap": 2.9,
       "ts": 1793995367
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793995378
     }
   ],
   "trades": [
@@ -1547,6 +1547,19 @@
       "px": 0.010402,
       "pnl": -5.8172,
       "tf": "15m"
+    },
+    {
+      "symbol": "IDOLUSDT",
+      "side": "SELL",
+      "entry": 0.026237,
+      "tp": 0.025581074999999998,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.026237,
+      "pnl": 0.0,
+      "tf": "4h"
     }
   ],
   "start": 1000.0,
