@@ -127,24 +127,30 @@
       "symbol": "ICNTUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.2471,
-      "qty": 809.3889,
-      "margin": 10.0,
+      "entry": 0.27065449630655847,
+      "qty": 2216.8484,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.24092249999999998,
+      "tp_price": 0.2638881338988945,
       "tf": "15m",
       "opened_at": 1793947544,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.2852
+      ],
       "steps": [
         {
           "px": 0.2471,
           "ts": 1793947544
+        },
+        {
+          "px": 0.2842,
+          "ts": 1793976574
         }
       ],
       "entry_candle_ts": 1793947500,
-      "last_leg_candle_ts": 1793947500,
+      "last_leg_candle_ts": 1793976574,
       "dry_run": true,
       "order_id": "PAPER-ICNTUSDT-1793947544"
     },
