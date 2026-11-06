@@ -80,24 +80,30 @@
       "symbol": "NAVERUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 139.78,
-      "qty": 1.4308,
-      "margin": 10.0,
+      "entry": 139.98651478033645,
+      "qty": 4.2861,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 136.28549999999998,
+      "tp_price": 136.48685191082802,
       "tf": "15m",
       "opened_at": 1793934988,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        140.51
+      ],
       "steps": [
         {
           "px": 139.78,
           "ts": 1793934988
+        },
+        {
+          "px": 140.09,
+          "ts": 1793938644
         }
       ],
       "entry_candle_ts": 1793934900,
-      "last_leg_candle_ts": 1793934900,
+      "last_leg_candle_ts": 1793938644,
       "dry_run": true,
       "order_id": "PAPER-NAVERUSDT-1793934988"
     },
@@ -7780,7 +7786,8 @@
       "side": "SELL",
       "upper": 0.2704039772892884,
       "open": 0.275,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ARIAUSDT",
@@ -7789,7 +7796,8 @@
       "side": "SELL",
       "upper": 0.15202156043814977,
       "open": 0.15525,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "NETUSDT",
@@ -7948,7 +7956,8 @@
       "side": "SELL",
       "upper": 0.0031071348617230593,
       "open": 0.003237,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "UAIUSDT",
@@ -7966,6 +7975,15 @@
       "side": "SELL",
       "upper": 0.09918086593293139,
       "open": 0.1008,
+      "reported": false
+    },
+    {
+      "symbol": "CYBERUSDT",
+      "tf": "4h",
+      "candle_ts": 1793937600,
+      "side": "SELL",
+      "upper": 0.3347698635931906,
+      "open": 0.3557,
       "reported": false
     }
   ],
@@ -8081,9 +8099,16 @@
     "AINBSCUSDT": 1793962017,
     "WUXIBIOUSDT": 1793963028,
     "CAPETHUSDT": 1793970966,
-    "UP2USDT": 1793978208
+    "UP2USDT": 1793978208,
+    "NGASUSDT": 1793980968,
+    "SXTUSDT": 1793980978,
+    "HK1810USDT": 1793981026,
+    "LONGXIAUSDT": 1793981070,
+    "NEXUSDT": 1793981075,
+    "HOTUSDT": 1793981094,
+    "1000000BABYDOGEUSDT": 1793981102
   },
-  "last_trade_report_ts": 1793935984,
+  "last_trade_report_ts": 1793937993,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
