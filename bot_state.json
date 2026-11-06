@@ -24,6 +24,31 @@
       "last_leg_candle_ts": 1793926800,
       "dry_run": true,
       "order_id": "PAPER-ACTUSDT-1793926843"
+    },
+    {
+      "symbol": "JCTUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.003238,
+      "qty": 61766.5225,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.00315705,
+      "tf": "15m",
+      "opened_at": 1793928672,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.003238,
+          "ts": 1793928672
+        }
+      ],
+      "entry_candle_ts": 1793928600,
+      "last_leg_candle_ts": 1793928600,
+      "dry_run": true,
+      "order_id": "PAPER-JCTUSDT-1793928672"
     }
   ],
   "trade_history": [
@@ -7584,6 +7609,16 @@
       "side": "SELL",
       "upper": 0.2993672497228366,
       "open": 0.3035,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "ACTUSDT",
+      "tf": "1h",
+      "candle_ts": 1793926800,
+      "side": "SELL",
+      "upper": 0.009475951303596972,
+      "open": 0.0096,
       "reported": false
     }
   ],
@@ -7681,7 +7716,6 @@
     "OSCRUSDT": 1793924212,
     "AMCUSDT": 1793924216,
     "LIGHT1USDT": 1793925108,
-    "CAPETHUSDT": 1793926972,
     "UP2USDT": 1793927026,
     "CYBERLEEKUSDT": 1793927052,
     "DRVUSDT": 1793929608,
@@ -7699,9 +7733,10 @@
     "OROCHIUSDT": 1793961063,
     "UBIKUSDT": 1793961071,
     "AINBSCUSDT": 1793962017,
-    "WUXIBIOUSDT": 1793963028
+    "WUXIBIOUSDT": 1793963028,
+    "CAPETHUSDT": 1793970966
   },
-  "last_trade_report_ts": 1793922574,
+  "last_trade_report_ts": 1793928019,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
