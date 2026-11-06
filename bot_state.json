@@ -4,15 +4,15 @@
       "symbol": "UAIUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.13925141636927618,
-      "qty": 44523.784199999995,
-      "margin": 310.0,
+      "entry": 0.15106840858760742,
+      "qty": 83405.9227,
+      "margin": 630.0,
       "leverage": 20,
-      "tp_price": 0.13577013096004428,
+      "tp_price": 0.14729169837291722,
       "tf": "1h",
       "opened_at": 1793933123,
-      "adds": 4,
-      "last_leg_margin": 160.0,
+      "adds": 5,
+      "last_leg_margin": 320.0,
       "used_res_levels": [
         0.10591
       ],
@@ -36,10 +36,14 @@
         {
           "px": 0.1506,
           "ts": 1793937650
+        },
+        {
+          "px": 0.1646,
+          "ts": 1793941258
         }
       ],
       "entry_candle_ts": 1793933100,
-      "last_leg_candle_ts": 1793937600,
+      "last_leg_candle_ts": 1793941200,
       "dry_run": true,
       "order_id": "PAPER-UAIUSDT-1793933123"
     },
@@ -8052,6 +8056,15 @@
       "side": "SELL",
       "upper": 1.3236174554764268,
       "open": 1.3396,
+      "reported": false
+    },
+    {
+      "symbol": "PIEVERSEUSDT",
+      "tf": "15m",
+      "candle_ts": 1793941200,
+      "side": "SELL",
+      "upper": 1.3633298521805188,
+      "open": 1.3887,
       "reported": false
     }
   ],
