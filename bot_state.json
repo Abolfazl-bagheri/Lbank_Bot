@@ -312,6 +312,31 @@
       "last_leg_candle_ts": 1793980800,
       "dry_run": true,
       "order_id": "PAPER-ONEUSDT-1793980918"
+    },
+    {
+      "symbol": "MOVRUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 1.1242,
+      "qty": 177.9043,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 1.096095,
+      "tf": "1h",
+      "opened_at": 1793980935,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 1.1242,
+          "ts": 1793980935
+        }
+      ],
+      "entry_candle_ts": 1793980800,
+      "last_leg_candle_ts": 1793980800,
+      "dry_run": true,
+      "order_id": "PAPER-MOVRUSDT-1793980935"
     }
   ],
   "trade_history": [
@@ -8360,6 +8385,15 @@
       "side": "SELL",
       "upper": 0.0018445042461862234,
       "open": 0.001875,
+      "reported": false
+    },
+    {
+      "symbol": "ONEUSDT",
+      "tf": "4h",
+      "candle_ts": 1793980800,
+      "side": "SELL",
+      "upper": 0.001458028670186995,
+      "open": 0.001556,
       "reported": false
     }
   ],
