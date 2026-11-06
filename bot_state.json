@@ -115,11 +115,11 @@
         },
         {
           "px": 1.419,
-          "ts": 1793970363
+          "ts": 1793970317
         }
       ],
       "entry_candle_ts": 1793940300,
-      "last_leg_candle_ts": 1793970363,
+      "last_leg_candle_ts": 1793970317,
       "dry_run": true,
       "order_id": "PAPER-PIEVERSEUSDT-1793940322"
     },
@@ -127,11 +127,11 @@
       "symbol": "AKEUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.0053254361733715535,
-      "qty": 112666.8277,
+      "entry": 0.005319350366724216,
+      "qty": 112795.7285,
       "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.005192300269037264,
+      "tp_price": 0.00518636660755611,
       "tf": "15m",
       "opened_at": 1793944842,
       "adds": 1,
@@ -143,8 +143,8 @@
           "ts": 1793944842
         },
         {
-          "px": 0.005848,
-          "ts": 1793975426
+          "px": 0.005837,
+          "ts": 1793975440
         }
       ],
       "entry_candle_ts": 1793944800,
@@ -181,11 +181,11 @@
       "symbol": "ANSEMUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.05229,
-      "qty": 3824.8231,
+      "entry": 0.05209,
+      "qty": 3839.5085,
       "margin": 10.0,
       "leverage": 20,
-      "tp_price": 0.05098275,
+      "tp_price": 0.05078775,
       "tf": "15m",
       "opened_at": 1793976323,
       "adds": 0,
@@ -193,7 +193,7 @@
       "used_res_levels": [],
       "steps": [
         {
-          "px": 0.05229,
+          "px": 0.05209,
           "ts": 1793976323
         }
       ],
@@ -201,6 +201,31 @@
       "last_leg_candle_ts": 1793976300,
       "dry_run": true,
       "order_id": "PAPER-ANSEMUSDT-1793976323"
+    },
+    {
+      "symbol": "OUSTUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 33.32,
+      "qty": 6.0024,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 32.487,
+      "tf": "15m",
+      "opened_at": 1793976344,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 33.32,
+          "ts": 1793976344
+        }
+      ],
+      "entry_candle_ts": 1793976300,
+      "last_leg_candle_ts": 1793976300,
+      "dry_run": true,
+      "order_id": "PAPER-OUSTUSDT-1793976344"
     }
   ],
   "trade_history": [
@@ -5876,9 +5901,9 @@
       "last_leg_candle_ts": 1793947500,
       "dry_run": true,
       "order_id": "PAPER-LYNUSDT-1793945743",
-      "closed_at": 1793969305,
-      "close_px": 0.01863,
-      "pnl_usdt": 142.51464159426828,
+      "closed_at": 1793969348,
+      "close_px": 0.01869,
+      "pnl_usdt": 141.04125879747053,
       "close_reason": "TP50",
       "why": "TP50"
     },
@@ -5892,21 +5917,21 @@
       "leverage": 20,
       "tp_price": 0.008494199999999999,
       "tf": "1h",
-      "opened_at": 1793970052,
+      "opened_at": 1793970042,
       "adds": 0,
       "last_leg_margin": 10.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 0.008712,
-          "ts": 1793970052
+          "ts": 1793970042
         }
       ],
       "entry_candle_ts": 1793970000,
       "last_leg_candle_ts": 1793970000,
       "dry_run": true,
-      "order_id": "PAPER-BLESSUSDT-1793970052",
-      "closed_at": 1793971142,
+      "order_id": "PAPER-BLESSUSDT-1793970042",
+      "closed_at": 1793971088,
       "close_px": 0.008284,
       "pnl_usdt": 9.825528007346179,
       "close_reason": "TP50",
@@ -5916,29 +5941,29 @@
       "symbol": "WUXIBIOUSDT",
       "side": "SELL",
       "status": "closed",
-      "entry": 6.342,
-      "qty": 31.5358,
+      "entry": 6.382,
+      "qty": 31.3381,
       "margin": 10.0,
       "leverage": 20,
-      "tp_price": 6.18345,
+      "tp_price": 6.222449999999999,
       "tf": "15m",
-      "opened_at": 1793970070,
+      "opened_at": 1793970081,
       "adds": 0,
       "last_leg_margin": 10.0,
       "used_res_levels": [],
       "steps": [
         {
-          "px": 6.342,
-          "ts": 1793970070
+          "px": 6.382,
+          "ts": 1793970081
         }
       ],
       "entry_candle_ts": 1793970000,
       "last_leg_candle_ts": 1793970000,
       "dry_run": true,
-      "order_id": "PAPER-WUXIBIOUSDT-1793970070",
-      "closed_at": 1793972956,
-      "close_px": 6.169,
-      "pnl_usdt": 5.4556922106591,
+      "order_id": "PAPER-WUXIBIOUSDT-1793970081",
+      "closed_at": 1793971090,
+      "close_px": 6.199,
+      "pnl_usdt": 5.7348793481667135,
       "close_reason": "TP50",
       "why": "TP50"
     }
@@ -8077,7 +8102,7 @@
       "tf": "1h",
       "candle_ts": 1793970000,
       "side": "SELL",
-      "upper": 0.008550416907306234,
+      "upper": 0.008568180053109949,
       "open": 0.008705,
       "reported": true,
       "filled": true
@@ -8107,8 +8132,17 @@
       "tf": "15m",
       "candle_ts": 1793975400,
       "side": "SELL",
-      "upper": 0.005699791654985308,
+      "upper": 0.005694911955204015,
       "open": 0.0058256,
+      "reported": false
+    },
+    {
+      "symbol": "ANSEMUSDT",
+      "tf": "15m",
+      "candle_ts": 1793976300,
+      "side": "SELL",
+      "upper": 0.05184994410771211,
+      "open": 0.0528,
       "reported": false
     }
   ],
@@ -8203,6 +8237,7 @@
     "DRVUSDT": 1793929608,
     "GSTOCKUSDT": 1793930663,
     "GOLDUSDT": 1793936850,
+    "USOUSDT": 1793952284,
     "CANTONUSDT": 1793952369,
     "BTCDOMUSDT": 1793955831,
     "UBIKUSDT": 1793961071,
@@ -8221,13 +8256,13 @@
     "NEIRO1USDT": 1793989023,
     "1000WOJAKUSDT": 1793989024,
     "CZUSDT": 1793989028,
-    "QUACKAIUSDT": 1794012379,
-    "RIOTUSDT": 1794012403,
-    "OROCHIUSDT": 1794015069,
-    "IRENONUSDT": 1794016996,
-    "BBXUSDT": 1794018713
+    "QUACKAIUSDT": 1794012405,
+    "RIOTUSDT": 1794012426,
+    "OROCHIUSDT": 1794015066,
+    "IRENONUSDT": 1794016985,
+    "BBXUSDT": 1794018704
   },
-  "last_trade_report_ts": 1793975657,
+  "last_trade_report_ts": 1793974885,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
