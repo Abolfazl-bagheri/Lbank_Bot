@@ -329,24 +329,28 @@
       "symbol": "ACTUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.010108,
-      "qty": 19786.3079,
-      "margin": 10.0,
+      "entry": 0.01030211796967995,
+      "qty": 58240.4513,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.0098553,
-      "tf": "15m",
+      "tp_price": 0.010044565020437952,
+      "tf": "4h",
       "opened_at": 1793989849,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 0.010108,
           "ts": 1793989849
+        },
+        {
+          "px": 0.010402,
+          "ts": 1793995434
         }
       ],
       "entry_candle_ts": 1793989800,
-      "last_leg_candle_ts": 1793989800,
+      "last_leg_candle_ts": 1793995200,
       "dry_run": true,
       "order_id": "PAPER-ACTUSDT-1793989849"
     },
@@ -8801,6 +8805,15 @@
       "upper": 0.02547483976494224,
       "open": 0.026059,
       "reported": false
+    },
+    {
+      "symbol": "ONEUSDT",
+      "tf": "4h",
+      "candle_ts": 1793995200,
+      "side": "SELL",
+      "upper": 0.0015614607025145094,
+      "open": 0.001594,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -8913,7 +8926,8 @@
     "1000WOJAKUSDT": 1794033118,
     "NEIRO1USDT": 1794033119,
     "1000SATSUSDT": 1794033120,
-    "CZUSDT": 1794033130
+    "CZUSDT": 1794033130,
+    "ARROWUSDT": 1794038599
   },
   "last_trade_report_ts": 1793990052,
   "last_known_version": "2.7.2",
