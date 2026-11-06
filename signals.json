@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1793976321,
+  "updated_at": 1793976329,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "BIRBUSDT",
-      "tf": "15m",
-      "gap": 0.9,
-      "ts": 1793932220
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 0.84,
       "ts": 1793976321
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793976329
     }
   ],
   "trades": [
@@ -1468,6 +1468,19 @@
       "lev": 20,
       "px": 0.2842,
       "pnl": -30.0283,
+      "tf": "15m"
+    },
+    {
+      "symbol": "ANSEMUSDT",
+      "side": "SELL",
+      "entry": 0.05229,
+      "tp": 0.05098275,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.05229,
+      "pnl": 0.0,
       "tf": "15m"
     }
   ],
