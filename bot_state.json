@@ -125,6 +125,31 @@
       "last_leg_candle_ts": 1793937600,
       "dry_run": true,
       "order_id": "PAPER-BIRBUSDT-1793937664"
+    },
+    {
+      "symbol": "CYBERUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.3556,
+      "qty": 562.4297,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.34671,
+      "tf": "4h",
+      "opened_at": 1793937675,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.3556,
+          "ts": 1793937675
+        }
+      ],
+      "entry_candle_ts": 1793937600,
+      "last_leg_candle_ts": 1793937600,
+      "dry_run": true,
+      "order_id": "PAPER-CYBERUSDT-1793937675"
     }
   ],
   "trade_history": [
@@ -7932,6 +7957,15 @@
       "side": "SELL",
       "upper": 0.13650244194178146,
       "open": 0.14934,
+      "reported": false
+    },
+    {
+      "symbol": "BIRBUSDT",
+      "tf": "4h",
+      "candle_ts": 1793937600,
+      "side": "SELL",
+      "upper": 0.09918086593293139,
+      "open": 0.1008,
       "reported": false
     }
   ],
