@@ -127,24 +127,28 @@
       "symbol": "AKEUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.004518,
-      "qty": 44267.3749,
-      "margin": 10.0,
+      "entry": 0.0053254361733715535,
+      "qty": 112666.8277,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.004405050000000001,
-      "tf": "1h",
+      "tp_price": 0.005192300269037264,
+      "tf": "15m",
       "opened_at": 1793944842,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 0.004518,
           "ts": 1793944842
+        },
+        {
+          "px": 0.005848,
+          "ts": 1793975426
         }
       ],
       "entry_candle_ts": 1793944800,
-      "last_leg_candle_ts": 1793944800,
+      "last_leg_candle_ts": 1793975400,
       "dry_run": true,
       "order_id": "PAPER-AKEUSDT-1793944842"
     },
@@ -6126,56 +6130,6 @@
       "side": "SELL"
     },
     {
-      "symbol": "BOMEUSDT",
-      "tf": "1h",
-      "candle_ts": 1793714400,
-      "side": "SELL",
-      "upper": 0.0006320692446168633,
-      "open": 0.0006415,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "BUSDT",
-      "tf": "1h",
-      "candle_ts": 1793714400,
-      "side": "SELL",
-      "upper": 0.1324949785801425,
-      "open": 0.135,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "CHIPUSDT",
-      "tf": "1h",
-      "candle_ts": 1793714400,
-      "side": "SELL",
-      "upper": 0.04233023331849968,
-      "open": 0.04278,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "NIGHTUSDT",
-      "tf": "1h",
-      "candle_ts": 1793714400,
-      "side": "SELL",
-      "upper": 0.04201895165871213,
-      "open": 0.04249,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "DRIFTUSDT",
-      "tf": "1h",
-      "candle_ts": 1793714400,
-      "side": "SELL",
-      "upper": 0.012933499119135912,
-      "open": 0.01309,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "RUNEUSDT",
       "tf": "15m",
       "candle_ts": 1793718000,
@@ -8100,7 +8054,8 @@
       "side": "SELL",
       "upper": 0.008550416907306234,
       "open": 0.008705,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "WUXIBIOUSDT",
@@ -8119,7 +8074,8 @@
       "side": "SELL",
       "upper": 6.323163104942463,
       "open": 6.4,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -8189,7 +8145,6 @@
     "FIGHT1USDT": 1793700356,
     "MARRIOTTUSDT": 1793714834,
     "FUTUUSDT": 1793718431,
-    "IRENONUSDT": 1793776197,
     "ONSEMIUSDT": 1793784100,
     "SIMOUSDT": 1793785920,
     "POETUSDT": 1793794891,
@@ -8199,7 +8154,6 @@
     "AEHRUSDT": 1793830009,
     "METEORAUSDT": 1793852241,
     "ARROWUSDT": 1793871201,
-    "BBXUSDT": 1793872237,
     "OFCUSDT": 1793873172,
     "B3USDT": 1793880575,
     "AI1USDT": 1793882848,
@@ -8220,7 +8174,6 @@
     "BTCDOMUSDT": 1793955831,
     "UBIKUSDT": 1793961071,
     "AINBSCUSDT": 1793962017,
-    "CAPETHUSDT": 1793970966,
     "UP2USDT": 1793978208,
     "NGASUSDT": 1793980968,
     "SXTUSDT": 1793980978,
@@ -8237,9 +8190,10 @@
     "CZUSDT": 1793989028,
     "QUACKAIUSDT": 1794012379,
     "RIOTUSDT": 1794012403,
-    "OROCHIUSDT": 1794015069
+    "OROCHIUSDT": 1794015069,
+    "IRENONUSDT": 1794016996
   },
-  "last_trade_report_ts": 1793972030,
+  "last_trade_report_ts": 1793973926,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
