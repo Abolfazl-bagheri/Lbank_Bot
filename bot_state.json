@@ -100,6 +100,31 @@
       "last_leg_candle_ts": 1793934900,
       "dry_run": true,
       "order_id": "PAPER-NAVERUSDT-1793934988"
+    },
+    {
+      "symbol": "BIRBUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.1007,
+      "qty": 1986.0973,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.09818249999999999,
+      "tf": "4h",
+      "opened_at": 1793937664,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.1007,
+          "ts": 1793937664
+        }
+      ],
+      "entry_candle_ts": 1793937600,
+      "last_leg_candle_ts": 1793937600,
+      "dry_run": true,
+      "order_id": "PAPER-BIRBUSDT-1793937664"
     }
   ],
   "trade_history": [
@@ -7898,6 +7923,15 @@
       "side": "SELL",
       "upper": 0.0031071348617230593,
       "open": 0.003237,
+      "reported": false
+    },
+    {
+      "symbol": "UAIUSDT",
+      "tf": "1h",
+      "candle_ts": 1793937600,
+      "side": "SELL",
+      "upper": 0.13650244194178146,
+      "open": 0.14934,
       "reported": false
     }
   ],
