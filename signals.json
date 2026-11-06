@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1793932220,
+  "updated_at": 1793932225,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "SSPCUSDT",
-      "tf": "15m",
-      "gap": 4.53,
-      "ts": 1793892528
-    },
     {
       "kind": "GAP",
       "symbol": "SOXSUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 0.9,
       "ts": 1793932220
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793932225
     }
   ],
   "trades": [
@@ -1416,6 +1416,19 @@
       "lev": 20,
       "px": 0.003354,
       "pnl": -12.6046,
+      "tf": "15m"
+    },
+    {
+      "symbol": "BIRBUSDT",
+      "side": "SELL",
+      "entry": 0.09618,
+      "tp": 0.0937755,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.09618,
+      "pnl": 0.0,
       "tf": "15m"
     }
   ],
