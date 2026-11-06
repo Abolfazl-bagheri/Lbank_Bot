@@ -51,15 +51,15 @@
       "symbol": "AKEUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.0034172310821257742,
-      "qty": 877903.7553000001,
-      "margin": 150.0,
+      "entry": 0.0038144629007082465,
+      "qty": 1625392.6598,
+      "margin": 310.0,
       "leverage": 20,
-      "tp_price": 0.0033318003050726297,
-      "tf": "15m",
+      "tp_price": 0.00371910132819054,
+      "tf": "1h",
       "opened_at": 1793934934,
-      "adds": 3,
-      "last_leg_margin": 80.0,
+      "adds": 4,
+      "last_leg_margin": 160.0,
       "used_res_levels": [],
       "steps": [
         {
@@ -77,10 +77,14 @@
         {
           "px": 0.00382,
           "ts": 1793939422
+        },
+        {
+          "px": 0.004281,
+          "ts": 1793941275
         }
       ],
       "entry_candle_ts": 1793934900,
-      "last_leg_candle_ts": 1793939400,
+      "last_leg_candle_ts": 1793941200,
       "dry_run": true,
       "order_id": "PAPER-AKEUSDT-1793934934"
     },
@@ -8065,6 +8069,15 @@
       "side": "SELL",
       "upper": 1.3633298521805188,
       "open": 1.3887,
+      "reported": false
+    },
+    {
+      "symbol": "UAIUSDT",
+      "tf": "1h",
+      "candle_ts": 1793941200,
+      "side": "SELL",
+      "upper": 0.1526517700588468,
+      "open": 0.16439,
       "reported": false
     }
   ],
