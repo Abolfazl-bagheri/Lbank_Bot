@@ -167,6 +167,31 @@
       "last_leg_candle_ts": 1793947500,
       "dry_run": true,
       "order_id": "PAPER-ICNTUSDT-1793947544"
+    },
+    {
+      "symbol": "BLESSUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.008712,
+      "qty": 22956.8411,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.008494199999999999,
+      "tf": "1h",
+      "opened_at": 1793970042,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.008712,
+          "ts": 1793970042
+        }
+      ],
+      "entry_candle_ts": 1793970000,
+      "last_leg_candle_ts": 1793970000,
+      "dry_run": true,
+      "order_id": "PAPER-BLESSUSDT-1793970042"
     }
   ],
   "trade_history": [
@@ -8238,7 +8263,6 @@
     "STONKBROKERUSDT": 1793924211,
     "OSCRUSDT": 1793924212,
     "AMCUSDT": 1793924216,
-    "LIGHT1USDT": 1793925108,
     "CYBERLEEKUSDT": 1793927052,
     "DRVUSDT": 1793929608,
     "GSTOCKUSDT": 1793930663,
@@ -8267,7 +8291,7 @@
     "QUACKAIUSDT": 1794012405,
     "RIOTUSDT": 1794012426
   },
-  "last_trade_report_ts": 1793947683,
+  "last_trade_report_ts": 1793969356,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
