@@ -135,24 +135,30 @@
       "symbol": "SMRUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 4.963,
-      "qty": 40.2982,
-      "margin": 10.0,
+      "entry": 5.018685836932847,
+      "qty": 119.5532,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 4.838925,
+      "tp_price": 4.893218691009526,
       "tf": "1h",
       "opened_at": 1793977366,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        5.059
+      ],
       "steps": [
         {
           "px": 4.963,
           "ts": 1793977366
+        },
+        {
+          "px": 5.047,
+          "ts": 1793999104
         }
       ],
       "entry_candle_ts": 1793977200,
-      "last_leg_candle_ts": 1793977200,
+      "last_leg_candle_ts": 1793999104,
       "dry_run": true,
       "order_id": "PAPER-SMRUSDT-1793977366"
     },
@@ -6530,9 +6536,9 @@
       "last_leg_candle_ts": 1793995200,
       "dry_run": true,
       "order_id": "PAPER-IDOLUSDT-1793995368",
-      "closed_at": 1793998190,
-      "close_px": 0.0255,
-      "pnl_usdt": 5.618020352936704,
+      "closed_at": 1793997218,
+      "close_px": 0.025209,
+      "pnl_usdt": 7.8362617677326,
       "close_reason": "TP50",
       "why": "TP50"
     }
@@ -6747,16 +6753,6 @@
       "tf": "15m",
       "candle_ts": 1793430900,
       "side": "SELL"
-    },
-    {
-      "symbol": "CLANKERUSDT",
-      "tf": "1h",
-      "candle_ts": 1793739600,
-      "side": "SELL",
-      "upper": 13.370854421964278,
-      "open": 13.82,
-      "reported": true,
-      "filled": true
     },
     {
       "symbol": "ANETUSDT",
@@ -9042,7 +9038,7 @@
     "HOTUSDT": 1794038834,
     "1000000BABYDOGEUSDT": 1794038838
   },
-  "last_trade_report_ts": 1793995803,
+  "last_trade_report_ts": 1793997230,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
