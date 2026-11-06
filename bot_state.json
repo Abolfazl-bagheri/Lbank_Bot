@@ -66,17 +66,18 @@
       "symbol": "ZCSHUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 36.00610739618644,
-      "qty": 38.8822,
-      "margin": 70.0,
+      "entry": 35.64775590059971,
+      "qty": 84.1567,
+      "margin": 150.0,
       "leverage": 20,
-      "tp_price": 35.105954711281775,
+      "tp_price": 34.75656200308472,
       "tf": "1h",
       "opened_at": 1793976381,
-      "adds": 2,
-      "last_leg_margin": 40.0,
+      "adds": 3,
+      "last_leg_margin": 80.0,
       "used_res_levels": [
-        35.89
+        35.89,
+        35.4
       ],
       "steps": [
         {
@@ -90,10 +91,14 @@
         {
           "px": 35.84,
           "ts": 1793987296
+        },
+        {
+          "px": 35.34,
+          "ts": 1793997202
         }
       ],
       "entry_candle_ts": 1793976300,
-      "last_leg_candle_ts": 1793987296,
+      "last_leg_candle_ts": 1793997202,
       "dry_run": true,
       "order_id": "PAPER-ZCSHUSDT-1793976381"
     },
@@ -8900,6 +8905,16 @@
       "side": "SELL",
       "upper": 0.0023873876112094597,
       "open": 0.002419,
+      "reported": true,
+      "filled": false
+    },
+    {
+      "symbol": "ANSEMUSDT",
+      "tf": "15m",
+      "candle_ts": 1793997000,
+      "side": "SELL",
+      "upper": 0.055317124512271235,
+      "open": 0.056,
       "reported": false
     }
   ],
