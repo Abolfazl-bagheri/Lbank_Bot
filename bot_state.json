@@ -35,24 +35,30 @@
       "symbol": "OUSTUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 33.32,
-      "qty": 6.0024,
-      "margin": 10.0,
+      "entry": 33.697845529140196,
+      "qty": 17.8053,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 32.487,
+      "tp_price": 32.85539939091169,
       "tf": "15m",
       "opened_at": 1793976344,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        33.96
+      ],
       "steps": [
         {
           "px": 33.32,
           "ts": 1793976344
+        },
+        {
+          "px": 33.89,
+          "ts": 1793995776
         }
       ],
       "entry_candle_ts": 1793976300,
-      "last_leg_candle_ts": 1793976300,
+      "last_leg_candle_ts": 1793995776,
       "dry_run": true,
       "order_id": "PAPER-OUSTUSDT-1793976344"
     },
