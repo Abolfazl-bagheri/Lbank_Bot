@@ -112,31 +112,6 @@
       "order_id": "PAPER-NAVERUSDT-1793934988"
     },
     {
-      "symbol": "BIRBUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.1007,
-      "qty": 1986.0973,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.09818249999999999,
-      "tf": "4h",
-      "opened_at": 1793937664,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.1007,
-          "ts": 1793937664
-        }
-      ],
-      "entry_candle_ts": 1793937600,
-      "last_leg_candle_ts": 1793937600,
-      "dry_run": true,
-      "order_id": "PAPER-BIRBUSDT-1793937664"
-    },
-    {
       "symbol": "CYBERUSDT",
       "side": "SELL",
       "status": "open",
@@ -5725,6 +5700,36 @@
       "pnl_usdt": 6.66666666666666,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "BIRBUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.1007,
+      "qty": 1986.0973,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.09818249999999999,
+      "tf": "4h",
+      "opened_at": 1793937664,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.1007,
+          "ts": 1793937664
+        }
+      ],
+      "entry_candle_ts": 1793937600,
+      "last_leg_candle_ts": 1793937600,
+      "dry_run": true,
+      "order_id": "PAPER-BIRBUSDT-1793937664",
+      "closed_at": 1793940462,
+      "close_px": 0.09808,
+      "pnl_usdt": 5.203574975173778,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -8022,6 +8027,16 @@
       "side": "SELL",
       "upper": 0.0037336067064571606,
       "open": 0.0037775,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "PIEVERSEUSDT",
+      "tf": "15m",
+      "candle_ts": 1793940300,
+      "side": "SELL",
+      "upper": 1.3236174554764268,
+      "open": 1.3396,
       "reported": false
     }
   ],
