@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1793976343,
+  "updated_at": 1793976351,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "BIRBUSDT",
-      "tf": "15m",
-      "gap": 1.71,
-      "ts": 1793933106
-    },
     {
       "kind": "SELL",
       "symbol": "UAIUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 0.67,
       "ts": 1793976343
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793976351
     }
   ],
   "trades": [
@@ -1480,6 +1480,19 @@
       "margin": 10.0,
       "lev": 20,
       "px": 0.05209,
+      "pnl": 0.0,
+      "tf": "15m"
+    },
+    {
+      "symbol": "OUSTUSDT",
+      "side": "SELL",
+      "entry": 33.32,
+      "tp": 32.487,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 33.32,
       "pnl": 0.0,
       "tf": "15m"
     }
