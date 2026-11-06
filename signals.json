@@ -1,8 +1,22 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1793999141,
+  "updated_at": 1793999208,
   "signals": [
+    {
+      "kind": "GAP",
+      "symbol": "INFQUSDT",
+      "tf": "15m",
+      "gap": 1.36,
+      "ts": 1793978121
+    },
+    {
+      "kind": "GAP",
+      "symbol": "ONDSUSDT",
+      "tf": "15m",
+      "gap": 1.24,
+      "ts": 1793978126
+    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1257,108 +1271,115 @@
       "ts": 1793997230
     },
     {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793997835
+    },
+    {
       "kind": "GAP",
       "symbol": "LUNRUSDT",
       "tf": "15m",
-      "gap": 2.74,
-      "ts": 1793997814
+      "gap": 2.5,
+      "ts": 1793997909
     },
     {
       "kind": "GAP",
       "symbol": "PAIDUSDT",
       "tf": "15m",
-      "gap": 2.45,
-      "ts": 1793997819
+      "gap": 2.65,
+      "ts": 1793997923
     },
     {
       "kind": "GAP",
       "symbol": "CLAUDIAUSDT",
       "tf": "15m",
-      "gap": 1.55,
-      "ts": 1793997823
+      "gap": 1.66,
+      "ts": 1793997927
     },
     {
       "kind": "POS",
       "symbol": "—",
       "tf": "—",
       "gap": 0.0,
-      "ts": 1793998108
+      "ts": 1793998202
     },
     {
-      "kind": "GAP",
-      "symbol": "TAUSDT",
-      "tf": "1h",
-      "gap": 1.73,
-      "ts": 1793998291
+      "kind": "HEARTBEAT",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793998204
     },
     {
       "kind": "GAP",
       "symbol": "LUNRUSDT",
       "tf": "1h",
       "gap": 2.4,
-      "ts": 1793998295
+      "ts": 1793998289
     },
     {
       "kind": "GAP",
-      "symbol": "PAIDUSDT",
+      "symbol": "TAUSDT",
       "tf": "1h",
-      "gap": 4.04,
-      "ts": 1793998300
+      "gap": 1.61,
+      "ts": 1793998293
     },
     {
       "kind": "GAP",
-      "symbol": "CLAUDIAUSDT",
+      "symbol": "ANSEMUSDT",
       "tf": "1h",
-      "gap": 3.87,
-      "ts": 1793998304
+      "gap": 2.15,
+      "ts": 1793998296
     },
     {
       "kind": "GAP",
       "symbol": "HUTUSDT",
       "tf": "1h",
       "gap": 1.63,
-      "ts": 1793998308
+      "ts": 1793998299
     },
     {
       "kind": "GAP",
-      "symbol": "ANSEMUSDT",
+      "symbol": "CLAUDIAUSDT",
       "tf": "1h",
-      "gap": 2.09,
-      "ts": 1793998312
+      "gap": 3.83,
+      "ts": 1793998303
+    },
+    {
+      "kind": "GAP",
+      "symbol": "PAIDUSDT",
+      "tf": "1h",
+      "gap": 4.08,
+      "ts": 1793998307
     },
     {
       "kind": "GAP",
       "symbol": "INFQUSDT",
       "tf": "1h",
-      "gap": 1.07,
-      "ts": 1793998404
-    },
-    {
-      "kind": "GAP",
-      "symbol": "IONQUSDT",
-      "tf": "1h",
       "gap": 1.0,
-      "ts": 1793998409
+      "ts": 1793998491
     },
     {
       "kind": "GAP",
       "symbol": "RDWUSDT",
       "tf": "1h",
       "gap": 1.05,
-      "ts": 1793998501
+      "ts": 1793998495
     },
     {
       "kind": "GAP",
       "symbol": "OUSTUSDT",
       "tf": "1h",
-      "gap": 1.07,
-      "ts": 1793998593
+      "gap": 1.13,
+      "ts": 1793998589
     },
     {
       "kind": "GAP",
       "symbol": "PAIDUSDT",
       "tf": "15m",
-      "gap": 2.85,
+      "gap": 2.69,
       "ts": 1793998812
     },
     {
@@ -1372,36 +1393,15 @@
       "kind": "GAP",
       "symbol": "OUSTUSDT",
       "tf": "15m",
-      "gap": 1.6,
-      "ts": 1793998820
+      "gap": 1.69,
+      "ts": 1793998819
     },
     {
       "kind": "POS",
       "symbol": "—",
       "tf": "—",
       "gap": 0.0,
-      "ts": 1793999114
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1793999126
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1793999139
-    },
-    {
-      "kind": "HEARTBEAT",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1793999141
+      "ts": 1793999208
     }
   ],
   "trades": [
@@ -1440,8 +1440,8 @@
       "pele": 4,
       "margin": 150.0,
       "lev": 20,
-      "px": 35.52,
-      "pnl": 10.7515,
+      "px": 35.53,
+      "pnl": 9.91,
       "tf": "1h"
     },
     {
@@ -1453,8 +1453,8 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 23.58,
-      "pnl": -23.8095,
+      "px": 23.59,
+      "pnl": -24.0741,
       "tf": "1h"
     },
     {
@@ -1479,18 +1479,18 @@
       "pele": 5,
       "margin": 310.0,
       "lev": 20,
-      "px": 37.48,
-      "pnl": -53.8697,
+      "px": 37.47,
+      "pnl": -52.2011,
       "tf": "4h"
     },
     {
       "symbol": "LUNRUSDT",
       "side": "SELL",
-      "entry": 10.252661444073944,
-      "tp": 9.996344907972095,
-      "adds": 3,
-      "pele": 4,
-      "margin": 150.0,
+      "entry": 10.002548854958016,
+      "tp": 9.752485133584067,
+      "adds": 2,
+      "pele": 3,
+      "margin": 70.0,
       "lev": 20,
       "px": 10.482,
       "pnl": -67.1061,
@@ -1505,8 +1505,8 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 0.4799,
-      "pnl": 2.1154,
+      "px": 0.4801,
+      "pnl": 1.8662,
       "tf": "15m"
     },
     {
@@ -1577,15 +1577,15 @@
   ],
   "start": 1000.0,
   "session_start": 1793926439,
-  "realized": 3415.5528,
+  "realized": 3413.3346,
   "closed_n": 21,
-  "open_upnl": -182.3526,
-  "equity": 4233.2002,
+  "open_upnl": -182.0393,
+  "equity": 4231.2953,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 3415.5528,
+    "profit": 3413.3346,
     "loss": 0,
     "count": 21
   }
