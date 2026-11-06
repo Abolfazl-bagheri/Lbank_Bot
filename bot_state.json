@@ -184,23 +184,29 @@
       "side": "SELL",
       "status": "open",
       "entry": 33.41,
-      "qty": 5.9862,
-      "margin": 10.0,
+      "qty": 17.9587,
+      "margin": 30.0,
       "leverage": 20,
       "tp_price": 32.574749999999995,
       "tf": "15m",
       "opened_at": 1793976355,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        33.5
+      ],
       "steps": [
         {
           "px": 33.41,
           "ts": 1793976355
+        },
+        {
+          "px": 33.41,
+          "ts": 1793976584
         }
       ],
       "entry_candle_ts": 1793976300,
-      "last_leg_candle_ts": 1793976300,
+      "last_leg_candle_ts": 1793976584,
       "dry_run": true,
       "order_id": "PAPER-OUSTUSDT-1793976355"
     },
