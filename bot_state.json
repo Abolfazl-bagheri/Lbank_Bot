@@ -92,6 +92,31 @@
       "last_leg_candle_ts": 1793934900,
       "dry_run": true,
       "order_id": "PAPER-AKEUSDT-1793934934"
+    },
+    {
+      "symbol": "NAVERUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 139.78,
+      "qty": 1.4308,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 136.28549999999998,
+      "tf": "15m",
+      "opened_at": 1793934988,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 139.78,
+          "ts": 1793934988
+        }
+      ],
+      "entry_candle_ts": 1793934900,
+      "last_leg_candle_ts": 1793934900,
+      "dry_run": true,
+      "order_id": "PAPER-NAVERUSDT-1793934988"
     }
   ],
   "trade_history": [
@@ -7774,6 +7799,15 @@
       "side": "SELL",
       "upper": 0.14341879711719574,
       "open": 0.15717,
+      "reported": false
+    },
+    {
+      "symbol": "AKEUSDT",
+      "tf": "15m",
+      "candle_ts": 1793934900,
+      "side": "SELL",
+      "upper": 0.0025903177746528817,
+      "open": 0.0027064,
       "reported": false
     }
   ],
