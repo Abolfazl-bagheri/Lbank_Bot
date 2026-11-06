@@ -1,53 +1,6 @@
 {
   "open_trades": [
     {
-      "symbol": "UAIUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.15106840858760742,
-      "qty": 83405.9227,
-      "margin": 630.0,
-      "leverage": 20,
-      "tp_price": 0.14729169837291722,
-      "tf": "1h",
-      "opened_at": 1793933123,
-      "adds": 5,
-      "last_leg_margin": 320.0,
-      "used_res_levels": [
-        0.10591
-      ],
-      "steps": [
-        {
-          "px": 0.1065,
-          "ts": 1793933123
-        },
-        {
-          "px": 0.1056,
-          "ts": 1793933427
-        },
-        {
-          "px": 0.107,
-          "ts": 1793934131
-        },
-        {
-          "px": 0.1579,
-          "ts": 1793934920
-        },
-        {
-          "px": 0.1506,
-          "ts": 1793937650
-        },
-        {
-          "px": 0.1646,
-          "ts": 1793941258
-        }
-      ],
-      "entry_candle_ts": 1793933100,
-      "last_leg_candle_ts": 1793941200,
-      "dry_run": true,
-      "order_id": "PAPER-UAIUSDT-1793933123"
-    },
-    {
       "symbol": "NAVERUSDT",
       "side": "SELL",
       "status": "open",
@@ -6459,6 +6412,58 @@
       "pnl_usdt": 19.340547606943122,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "UAIUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.15106840858760742,
+      "qty": 83405.9227,
+      "margin": 630.0,
+      "leverage": 20,
+      "tp_price": 0.14729169837291722,
+      "tf": "1h",
+      "opened_at": 1793933123,
+      "adds": 5,
+      "last_leg_margin": 320.0,
+      "used_res_levels": [
+        0.10591
+      ],
+      "steps": [
+        {
+          "px": 0.1065,
+          "ts": 1793933123
+        },
+        {
+          "px": 0.1056,
+          "ts": 1793933427
+        },
+        {
+          "px": 0.107,
+          "ts": 1793934131
+        },
+        {
+          "px": 0.1579,
+          "ts": 1793934920
+        },
+        {
+          "px": 0.1506,
+          "ts": 1793937650
+        },
+        {
+          "px": 0.1646,
+          "ts": 1793941258
+        }
+      ],
+      "entry_candle_ts": 1793933100,
+      "last_leg_candle_ts": 1793941200,
+      "dry_run": true,
+      "order_id": "PAPER-UAIUSDT-1793933123",
+      "closed_at": 1793995772,
+      "close_px": 0.1233,
+      "pnl_usdt": 2316.049738492812,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -8659,7 +8664,8 @@
       "side": "SELL",
       "upper": 0.0014577368901971702,
       "open": 0.001556,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "ZILUSDT",
@@ -8678,7 +8684,8 @@
       "side": "SELL",
       "upper": 0.2926003366993828,
       "open": 0.3025,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "LUNRUSDT",
@@ -8777,7 +8784,8 @@
       "side": "SELL",
       "upper": 0.010010624943948164,
       "open": 0.01015,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "QNTXUSDT",
@@ -8813,6 +8821,15 @@
       "side": "SELL",
       "upper": 0.0015614607025145094,
       "open": 0.001594,
+      "reported": false
+    },
+    {
+      "symbol": "ACTUSDT",
+      "tf": "4h",
+      "candle_ts": 1793995200,
+      "side": "SELL",
+      "upper": 0.010232450305752242,
+      "open": 0.01038,
       "reported": false
     }
   ],
@@ -8927,7 +8944,12 @@
     "NEIRO1USDT": 1794033119,
     "1000SATSUSDT": 1794033120,
     "CZUSDT": 1794033130,
-    "ARROWUSDT": 1794038599
+    "ARROWUSDT": 1794038726,
+    "KNTQUSDT": 1794038678,
+    "MURATAUSDT": 1794038839,
+    "NEXUSDT": 1794038816,
+    "HOTUSDT": 1794038834,
+    "1000000BABYDOGEUSDT": 1794038838
   },
   "last_trade_report_ts": 1793990052,
   "last_known_version": "2.7.2",
