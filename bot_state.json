@@ -4,17 +4,18 @@
       "symbol": "NAVERUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 139.98651478033645,
-      "qty": 4.2861,
-      "margin": 30.0,
+      "entry": 139.35206818294927,
+      "qty": 10.0465,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 136.48685191082802,
+      "tp_price": 135.86826647837555,
       "tf": "15m",
       "opened_at": 1793934988,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [
-        140.51
+        140.51,
+        139.03
       ],
       "steps": [
         {
@@ -24,10 +25,14 @@
         {
           "px": 140.09,
           "ts": 1793938644
+        },
+        {
+          "px": 138.88,
+          "ts": 1794000971
         }
       ],
       "entry_candle_ts": 1793934900,
-      "last_leg_candle_ts": 1793938644,
+      "last_leg_candle_ts": 1794000971,
       "dry_run": true,
       "order_id": "PAPER-NAVERUSDT-1793934988"
     },
@@ -154,11 +159,11 @@
         },
         {
           "px": 5.047,
-          "ts": 1793999197
+          "ts": 1793999104
         }
       ],
       "entry_candle_ts": 1793977200,
-      "last_leg_candle_ts": 1793999197,
+      "last_leg_candle_ts": 1793999104,
       "dry_run": true,
       "order_id": "PAPER-SMRUSDT-1793977366"
     },
@@ -239,11 +244,11 @@
         },
         {
           "px": 10.482,
-          "ts": 1793999210
+          "ts": 1793999116
         }
       ],
       "entry_candle_ts": 1793980800,
-      "last_leg_candle_ts": 1793999210,
+      "last_leg_candle_ts": 1793999116,
       "dry_run": true,
       "order_id": "PAPER-LUNRUSDT-1793980975"
     },
@@ -6541,9 +6546,9 @@
       "last_leg_candle_ts": 1793995200,
       "dry_run": true,
       "order_id": "PAPER-IDOLUSDT-1793995368",
-      "closed_at": 1793998190,
-      "close_px": 0.0255,
-      "pnl_usdt": 5.618020352936704,
+      "closed_at": 1793997218,
+      "close_px": 0.025209,
+      "pnl_usdt": 7.8362617677326,
       "close_reason": "TP50",
       "why": "TP50"
     }
@@ -9043,7 +9048,7 @@
     "HOTUSDT": 1794038834,
     "1000000BABYDOGEUSDT": 1794038838
   },
-  "last_trade_report_ts": 1793998204,
+  "last_trade_report_ts": 1794000103,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
