@@ -238,6 +238,31 @@
       "last_leg_candle_ts": 1793976300,
       "dry_run": true,
       "order_id": "PAPER-ZCSHUSDT-1793976394"
+    },
+    {
+      "symbol": "OKLOUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 22.16,
+      "qty": 9.0253,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 21.605999999999998,
+      "tf": "1h",
+      "opened_at": 1793977303,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 22.16,
+          "ts": 1793977303
+        }
+      ],
+      "entry_candle_ts": 1793977200,
+      "last_leg_candle_ts": 1793977200,
+      "dry_run": true,
+      "order_id": "PAPER-OKLOUSDT-1793977303"
     }
   ],
   "trade_history": [
@@ -8216,6 +8241,15 @@
       "candle_ts": 1793977200,
       "side": "SELL",
       "upper": 0.053402922950187844,
+      "open": 0.0542,
+      "reported": false
+    },
+    {
+      "symbol": "ANSEMUSDT",
+      "tf": "1h",
+      "candle_ts": 1793977200,
+      "side": "SELL",
+      "upper": 0.05233274447608058,
       "open": 0.0542,
       "reported": false
     }
