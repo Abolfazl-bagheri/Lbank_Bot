@@ -48,47 +48,6 @@
       "order_id": "PAPER-UAIUSDT-1793933123"
     },
     {
-      "symbol": "AKEUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.0038144629007082465,
-      "qty": 1625392.6598,
-      "margin": 310.0,
-      "leverage": 20,
-      "tp_price": 0.00371910132819054,
-      "tf": "1h",
-      "opened_at": 1793934934,
-      "adds": 4,
-      "last_leg_margin": 160.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.002682,
-          "ts": 1793934934
-        },
-        {
-          "px": 0.00299,
-          "ts": 1793935809
-        },
-        {
-          "px": 0.003191,
-          "ts": 1793936711
-        },
-        {
-          "px": 0.00382,
-          "ts": 1793939422
-        },
-        {
-          "px": 0.004281,
-          "ts": 1793941275
-        }
-      ],
-      "entry_candle_ts": 1793934900,
-      "last_leg_candle_ts": 1793941200,
-      "dry_run": true,
-      "order_id": "PAPER-AKEUSDT-1793934934"
-    },
-    {
       "symbol": "NAVERUSDT",
       "side": "SELL",
       "status": "open",
@@ -5753,6 +5712,52 @@
       "pnl_usdt": 9.05511811023622,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "AKEUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.0038144629007082465,
+      "qty": 1625392.6598,
+      "margin": 310.0,
+      "leverage": 20,
+      "tp_price": 0.00371910132819054,
+      "tf": "1h",
+      "opened_at": 1793934934,
+      "adds": 4,
+      "last_leg_margin": 160.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.002682,
+          "ts": 1793934934
+        },
+        {
+          "px": 0.00299,
+          "ts": 1793935809
+        },
+        {
+          "px": 0.003191,
+          "ts": 1793936711
+        },
+        {
+          "px": 0.00382,
+          "ts": 1793939422
+        },
+        {
+          "px": 0.004281,
+          "ts": 1793941275
+        }
+      ],
+      "entry_candle_ts": 1793934900,
+      "last_leg_candle_ts": 1793941200,
+      "dry_run": true,
+      "order_id": "PAPER-AKEUSDT-1793934934",
+      "closed_at": 1793943311,
+      "close_px": 0.003586,
+      "pnl_usdt": 371.3419218543521,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -5965,36 +5970,6 @@
       "tf": "15m",
       "candle_ts": 1793430900,
       "side": "SELL"
-    },
-    {
-      "symbol": "IRYSUSDT",
-      "tf": "1h",
-      "candle_ts": 1793682000,
-      "side": "SELL",
-      "upper": 0.02144802050752271,
-      "open": 0.02168,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "BMTUSDT",
-      "tf": "1h",
-      "candle_ts": 1793682000,
-      "side": "SELL",
-      "upper": 0.02294555478738375,
-      "open": 0.02339,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "ICNTUSDT",
-      "tf": "15m",
-      "candle_ts": 1793682900,
-      "side": "SELL",
-      "upper": 0.20033116792249248,
-      "open": 0.2036,
-      "reported": true,
-      "filled": true
     },
     {
       "symbol": "BMTUSDT",
@@ -8023,7 +7998,8 @@
       "side": "SELL",
       "upper": 0.13650244194178146,
       "open": 0.14934,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "BIRBUSDT",
@@ -8060,7 +8036,8 @@
       "side": "SELL",
       "upper": 1.3236174554764268,
       "open": 1.3396,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "PIEVERSEUSDT",
@@ -8069,7 +8046,8 @@
       "side": "SELL",
       "upper": 1.3633298521805188,
       "open": 1.3887,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "UAIUSDT",
@@ -8087,6 +8065,15 @@
       "side": "SELL",
       "upper": 0.0039315003432607775,
       "open": 0.0042757,
+      "reported": false
+    },
+    {
+      "symbol": "PIEVERSEUSDT",
+      "tf": "1h",
+      "candle_ts": 1793941200,
+      "side": "SELL",
+      "upper": 1.371639029434599,
+      "open": 1.3887,
       "reported": false
     }
   ],
@@ -8143,7 +8130,6 @@
     "SKY1USDT": 1793398016,
     "SAFE1USDT": 1793449863,
     "AXLUSDT": 1793502358,
-    "DODOUSDT": 1793508698,
     "SYNUSDT": 1793537208,
     "APROUSDT": 1793604906,
     "BIO1USDT": 1793611218,
@@ -8211,7 +8197,7 @@
     "HOTUSDT": 1793981094,
     "1000000BABYDOGEUSDT": 1793981102
   },
-  "last_trade_report_ts": 1793940478,
+  "last_trade_report_ts": 1793942403,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
