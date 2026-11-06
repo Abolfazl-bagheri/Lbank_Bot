@@ -210,18 +210,19 @@
       "symbol": "LUNRUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 10.002548854958016,
-      "qty": 139.96429999999998,
-      "margin": 70.0,
+      "entry": 10.252661444073944,
+      "qty": 292.6069,
+      "margin": 150.0,
       "leverage": 20,
-      "tp_price": 9.752485133584067,
+      "tp_price": 9.996344907972095,
       "tf": "1h",
       "opened_at": 1793980975,
-      "adds": 2,
-      "last_leg_margin": 40.0,
+      "adds": 3,
+      "last_leg_margin": 80.0,
       "used_res_levels": [
         9.96,
-        10.13
+        10.13,
+        10.51
       ],
       "steps": [
         {
@@ -235,10 +236,14 @@
         {
           "px": 10.114,
           "ts": 1793986412
+        },
+        {
+          "px": 10.482,
+          "ts": 1793999116
         }
       ],
       "entry_candle_ts": 1793980800,
-      "last_leg_candle_ts": 1793986412,
+      "last_leg_candle_ts": 1793999116,
       "dry_run": true,
       "order_id": "PAPER-LUNRUSDT-1793980975"
     },
