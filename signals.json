@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1793934987,
+  "updated_at": 1793934993,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "SSPCUSDT",
-      "tf": "1h",
-      "gap": 4.22,
-      "ts": 1793894512
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 1.48,
       "ts": 1793934987
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793934993
     }
   ],
   "trades": [
@@ -1441,6 +1441,19 @@
       "margin": 10.0,
       "lev": 20,
       "px": 0.002682,
+      "pnl": 0.0,
+      "tf": "15m"
+    },
+    {
+      "symbol": "NAVERUSDT",
+      "side": "SELL",
+      "entry": 139.78,
+      "tp": 136.28549999999998,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 139.78,
       "pnl": 0.0,
       "tf": "15m"
     }
