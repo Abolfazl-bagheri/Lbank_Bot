@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1793988032,
+  "updated_at": 1793988042,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1793969355
-    },
     {
       "kind": "HEARTBEAT",
       "symbol": "—",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 1.4,
       "ts": 1793988032
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1793988042
     }
   ],
   "trades": [
@@ -1508,6 +1508,19 @@
       "px": 9.974,
       "pnl": 3.9958,
       "tf": "1h"
+    },
+    {
+      "symbol": "KNTQUSDT",
+      "side": "SELL",
+      "entry": 0.4691,
+      "tp": 0.4573725,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.4691,
+      "pnl": 0.0,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
