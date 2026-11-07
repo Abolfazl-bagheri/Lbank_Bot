@@ -1,41 +1,6 @@
 {
   "open_trades": [
     {
-      "symbol": "CARVUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.03349853401411352,
-      "qty": 41792.8737,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 0.03266107066376068,
-      "tf": "15m",
-      "opened_at": 1794010548,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [
-        0.03348
-      ],
-      "steps": [
-        {
-          "px": 0.03299,
-          "ts": 1794010548
-        },
-        {
-          "px": 0.03394,
-          "ts": 1794013280
-        },
-        {
-          "px": 0.03341,
-          "ts": 1794035154
-        }
-      ],
-      "entry_candle_ts": 1794010500,
-      "last_leg_candle_ts": 1794035154,
-      "dry_run": true,
-      "order_id": "PAPER-CARVUSDT-1794010548"
-    },
-    {
       "symbol": "FOLKSUSDT",
       "side": "SELL",
       "status": "open",
@@ -7060,6 +7025,46 @@
       "pnl_usdt": 21.162262626910323,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "CARVUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.03349853401411352,
+      "qty": 41792.8737,
+      "margin": 70.0,
+      "leverage": 20,
+      "tp_price": 0.03266107066376068,
+      "tf": "15m",
+      "opened_at": 1794010548,
+      "adds": 2,
+      "last_leg_margin": 40.0,
+      "used_res_levels": [
+        0.03348
+      ],
+      "steps": [
+        {
+          "px": 0.03299,
+          "ts": 1794010548
+        },
+        {
+          "px": 0.03394,
+          "ts": 1794013280
+        },
+        {
+          "px": 0.03341,
+          "ts": 1794035154
+        }
+      ],
+      "entry_candle_ts": 1794010500,
+      "last_leg_candle_ts": 1794035154,
+      "dry_run": true,
+      "order_id": "PAPER-CARVUSDT-1794010548",
+      "closed_at": 1794044898,
+      "close_px": 0.03266,
+      "pnl_usdt": 35.04474611528732,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -9488,7 +9493,8 @@
       "side": "SELL",
       "upper": 0.1438134907203566,
       "open": 0.1457,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "KATUSDT",
@@ -9497,7 +9503,8 @@
       "side": "SELL",
       "upper": 0.0037747376749496945,
       "open": 0.003818,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -9625,9 +9632,10 @@
     "1000SATSUSDT": 1794077221,
     "PIPEDOGUSDT": 1794079892,
     "SPORTFUNUSDT": 1794081839,
-    "ARROWUSDT": 1794086185
+    "ARROWUSDT": 1794086185,
+    "BARUSDT": 1794087994
   },
-  "last_trade_report_ts": 1794042352,
+  "last_trade_report_ts": 1794044056,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
