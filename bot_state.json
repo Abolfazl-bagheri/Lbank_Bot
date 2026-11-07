@@ -97,24 +97,30 @@
       "symbol": "PIEVERSEUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 1.4992,
-      "qty": 133.4045,
-      "margin": 10.0,
+      "entry": 1.5308620876877854,
+      "qty": 391.93600000000004,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 1.4617200000000001,
+      "tp_price": 1.4925905354955908,
       "tf": "1h",
       "opened_at": 1794031329,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        1.5522
+      ],
       "steps": [
         {
           "px": 1.4992,
           "ts": 1794031329
+        },
+        {
+          "px": 1.5472,
+          "ts": 1794032349
         }
       ],
       "entry_candle_ts": 1794031200,
-      "last_leg_candle_ts": 1794031200,
+      "last_leg_candle_ts": 1794032349,
       "dry_run": true,
       "order_id": "PAPER-PIEVERSEUSDT-1794031329"
     }
@@ -9219,7 +9225,8 @@
       "side": "SELL",
       "upper": 0.011150183261036634,
       "open": 0.0113,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ESPORTSUSDT",
@@ -9237,6 +9244,15 @@
       "side": "SELL",
       "upper": 1.4726399113528186,
       "open": 1.4955,
+      "reported": false
+    },
+    {
+      "symbol": "ESPORTSUSDT",
+      "tf": "15m",
+      "candle_ts": 1794032100,
+      "side": "SELL",
+      "upper": 0.011904076210428955,
+      "open": 0.01243,
       "reported": false
     }
   ],
