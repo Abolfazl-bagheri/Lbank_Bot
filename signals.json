@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1794048330,
+  "updated_at": 1794048336,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "ACTUSDT",
-      "tf": "4h",
-      "gap": 2.64,
-      "ts": 1794008511
-    },
     {
       "kind": "GAP",
       "symbol": "INFQUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 1.01,
       "ts": 1794048330
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794048336
     }
   ],
   "trades": [
@@ -1430,6 +1430,19 @@
       "px": 0.015359,
       "pnl": -3.5026,
       "tf": "1h"
+    },
+    {
+      "symbol": "BLENDUSDT",
+      "side": "SELL",
+      "entry": 0.05586,
+      "tp": 0.0544635,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.05586,
+      "pnl": 0.0,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
