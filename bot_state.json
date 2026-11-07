@@ -40,51 +40,6 @@
       "order_id": "PAPER-KOMAUSDT-1794042046"
     },
     {
-      "symbol": "HMSTRUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.00013724922567854767,
-      "qty": 45173296.7479,
-      "margin": 310.0,
-      "leverage": 20,
-      "tp_price": 0.00013381799503658397,
-      "tf": "1h",
-      "opened_at": 1794068225,
-      "adds": 4,
-      "last_leg_margin": 160.0,
-      "used_res_levels": [
-        0.000132,
-        0.0001298,
-        0.0001404
-      ],
-      "steps": [
-        {
-          "px": 0.0001337,
-          "ts": 1794068225
-        },
-        {
-          "px": 0.0001316,
-          "ts": 1794069274
-        },
-        {
-          "px": 0.0001295,
-          "ts": 1794074855
-        },
-        {
-          "px": 0.0001377,
-          "ts": 1794081757
-        },
-        {
-          "px": 0.0001401,
-          "ts": 1794082745
-        }
-      ],
-      "entry_candle_ts": 1794068100,
-      "last_leg_candle_ts": 1794082745,
-      "dry_run": true,
-      "order_id": "PAPER-HMSTRUSDT-1794068225"
-    },
-    {
       "symbol": "GRVTUSDT",
       "side": "SELL",
       "status": "open",
@@ -202,40 +157,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "STARUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.03946281472564931,
-      "qty": 15204.1866,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.03847624435750808,
-      "tf": "15m",
-      "opened_at": 1793602959,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        0.03934
-      ],
-      "steps": [
-        {
-          "px": 0.04002,
-          "ts": 1793602959
-        },
-        {
-          "px": 0.03919,
-          "ts": 1793604952
-        }
-      ],
-      "entry_candle_ts": 1793602800,
-      "last_leg_candle_ts": 1793604952,
-      "dry_run": true,
-      "order_id": "PAPER-STARUSDT-1793602959",
-      "closed_at": 1793608581,
-      "close_px": 0.03825,
-      "pnl_usdt": 18.439861435342998
-    },
     {
       "symbol": "LYNUSDT",
       "side": "SELL",
@@ -7230,6 +7151,56 @@
       "pnl_usdt": 5.88235294117646,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "HMSTRUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.00013724922567854767,
+      "qty": 45173296.7479,
+      "margin": 310.0,
+      "leverage": 20,
+      "tp_price": 0.00013381799503658397,
+      "tf": "1h",
+      "opened_at": 1794068225,
+      "adds": 4,
+      "last_leg_margin": 160.0,
+      "used_res_levels": [
+        0.000132,
+        0.0001298,
+        0.0001404
+      ],
+      "steps": [
+        {
+          "px": 0.0001337,
+          "ts": 1794068225
+        },
+        {
+          "px": 0.0001316,
+          "ts": 1794069274
+        },
+        {
+          "px": 0.0001295,
+          "ts": 1794074855
+        },
+        {
+          "px": 0.0001377,
+          "ts": 1794081757
+        },
+        {
+          "px": 0.0001401,
+          "ts": 1794082745
+        }
+      ],
+      "entry_candle_ts": 1794068100,
+      "last_leg_candle_ts": 1794082745,
+      "dry_run": true,
+      "order_id": "PAPER-HMSTRUSDT-1794068225",
+      "closed_at": 1794084573,
+      "close_px": 0.0001337,
+      "pnl_usdt": 160.33022480239035,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -7442,16 +7413,6 @@
       "tf": "15m",
       "candle_ts": 1793430900,
       "side": "SELL"
-    },
-    {
-      "symbol": "ELSAUSDT",
-      "tf": "15m",
-      "candle_ts": 1793824200,
-      "side": "SELL",
-      "upper": 0.09359908940696529,
-      "open": 0.09526,
-      "reported": true,
-      "filled": true
     },
     {
       "symbol": "APPUSDT",
@@ -9457,7 +9418,6 @@
     "BEMUSDT": 1793901058,
     "QUID1USDT": 1793901083,
     "O1USDT": 1793911895,
-    "MANCERUSDT": 1793914576,
     "STONKBROKERUSDT": 1793924211,
     "OSCRUSDT": 1793924212,
     "AMCUSDT": 1793924216,
@@ -9509,9 +9469,10 @@
     "NEXUSDT": 1794125084,
     "SXTUSDT": 1794125089,
     "HOTUSDT": 1794125148,
-    "1000000BABYDOGEUSDT": 1794125149
+    "1000000BABYDOGEUSDT": 1794125149,
+    "MANCERUSDT": 1794126726
   },
-  "last_trade_report_ts": 1794082195,
+  "last_trade_report_ts": 1794083700,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
