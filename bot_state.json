@@ -62,17 +62,18 @@
       "symbol": "HMSTRUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.00013229263157893664,
-      "qty": 4535399.9904000005,
-      "margin": 30.0,
+      "entry": 0.0001306822733075738,
+      "qty": 10713006.168000001,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 0.0001289853157894632,
+      "tp_price": 0.00012741521647488446,
       "tf": "15m",
       "opened_at": 1794068225,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [
-        0.000132
+        0.000132,
+        0.0001298
       ],
       "steps": [
         {
@@ -82,10 +83,14 @@
         {
           "px": 0.0001316,
           "ts": 1794069274
+        },
+        {
+          "px": 0.0001295,
+          "ts": 1794074855
         }
       ],
       "entry_candle_ts": 1794068100,
-      "last_leg_candle_ts": 1794069274,
+      "last_leg_candle_ts": 1794074855,
       "dry_run": true,
       "order_id": "PAPER-HMSTRUSDT-1794068225"
     },
@@ -9224,7 +9229,8 @@
       "side": "SELL",
       "upper": 0.002188700500372278,
       "open": 0.0022352,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "SIGNUSDT",
@@ -9253,6 +9259,16 @@
       "side": "SELL",
       "upper": 0.043500933088689825,
       "open": 0.044301,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "IDOLUSDT",
+      "tf": "1h",
+      "candle_ts": 1794074400,
+      "side": "SELL",
+      "upper": 0.037585509574192995,
+      "open": 0.038581,
       "reported": false
     }
   ],
