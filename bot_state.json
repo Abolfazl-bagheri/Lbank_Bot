@@ -90,31 +90,6 @@
       "order_id": "PAPER-HMSTRUSDT-1794068225"
     },
     {
-      "symbol": "ESPORTSUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.011267,
-      "qty": 17750.9541,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.010985324999999999,
-      "tf": "15m",
-      "opened_at": 1794070851,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.011267,
-          "ts": 1794070851
-        }
-      ],
-      "entry_candle_ts": 1794070800,
-      "last_leg_candle_ts": 1794070800,
-      "dry_run": true,
-      "order_id": "PAPER-ESPORTSUSDT-1794070851"
-    },
-    {
       "symbol": "SIGNUSDT",
       "side": "SELL",
       "status": "open",
@@ -166,34 +141,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "BIRBUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.08724,
-      "qty": 2292.5264,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.085059,
-      "tf": "15m",
-      "opened_at": 1793597674,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.08724,
-          "ts": 1793597674
-        }
-      ],
-      "entry_candle_ts": 1793597400,
-      "last_leg_candle_ts": 1793597400,
-      "dry_run": true,
-      "order_id": "PAPER-BIRBUSDT-1793597674",
-      "closed_at": 1793599556,
-      "close_px": 0.0847,
-      "pnl_usdt": 5.823016964695096
-    },
     {
       "symbol": "ZHONGJIUSDT",
       "side": "SELL",
@@ -7201,6 +7148,36 @@
       "pnl_usdt": 16.3423803001911,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "ESPORTSUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.011267,
+      "qty": 17750.9541,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.010985324999999999,
+      "tf": "15m",
+      "opened_at": 1794070851,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.011267,
+          "ts": 1794070851
+        }
+      ],
+      "entry_candle_ts": 1794070800,
+      "last_leg_candle_ts": 1794070800,
+      "dry_run": true,
+      "order_id": "PAPER-ESPORTSUSDT-1794070851",
+      "closed_at": 1794072893,
+      "close_px": 0.010933,
+      "pnl_usdt": 5.928818674003714,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -7413,16 +7390,6 @@
       "tf": "15m",
       "candle_ts": 1793430900,
       "side": "SELL"
-    },
-    {
-      "symbol": "ZZZUSDT",
-      "tf": "15m",
-      "candle_ts": 1793812500,
-      "side": "SELL",
-      "upper": 0.009743965146496907,
-      "open": 0.00986,
-      "reported": true,
-      "filled": false
     },
     {
       "symbol": "DGAIUSDT",
@@ -9241,7 +9208,8 @@
       "side": "SELL",
       "upper": 0.011093967232911537,
       "open": 0.01125,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ONEUSDT",
@@ -9259,7 +9227,18 @@
       "side": "SELL",
       "upper": 0.010483415937987569,
       "open": 0.010983,
-      "reported": false
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "AEONUSDT",
+      "tf": "15m",
+      "candle_ts": 1794071700,
+      "side": "SELL",
+      "upper": 0.026972402693942923,
+      "open": 0.02726,
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -9361,13 +9340,8 @@
     "TRUMPSOLUSDT": 1794028601,
     "MURATAUSDT": 1794038839,
     "GSTOCKUSDT": 1794048395,
-    "POETUSDT": 1794071767,
-    "LWLGUSDT": 1794071768,
     "RGTIUSDT": 1794071770,
-    "AINBSCUSDT": 1794071771,
-    "FLYUSDT": 1794071772,
     "KOPNUSDT": 1794071799,
-    "TOADUSDT": 1794071802,
     "FLOCK1USDT": 1794071825,
     "METEORAUSDT": 1794076314,
     "SAFE1USDT": 1794076315,
@@ -9385,7 +9359,13 @@
     "AEHRUSDT": 1794111443,
     "FIGHT1USDT": 1794111444,
     "FIGUSDT": 1794112326,
-    "ARGUSDT": 1794114249
+    "ARGUSDT": 1794114249,
+    "APROUSDT": 1794115028,
+    "AINBSCUSDT": 1794115859,
+    "FLYUSDT": 1794115908,
+    "POETUSDT": 1794115909,
+    "LWLGUSDT": 1794115917,
+    "TOADUSDT": 1794115929
   },
   "last_trade_report_ts": 1794071289,
   "last_known_version": "2.7.2",
