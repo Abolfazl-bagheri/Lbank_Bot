@@ -90,35 +90,6 @@
       "order_id": "PAPER-HMSTRUSDT-1794068225"
     },
     {
-      "symbol": "ONEUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.002285141074121467,
-      "qty": 262565.8462,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.00222801254726843,
-      "tf": "1h",
-      "opened_at": 1794069937,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.0024207,
-          "ts": 1794069937
-        },
-        {
-          "px": 0.0022229,
-          "ts": 1794070872
-        }
-      ],
-      "entry_candle_ts": 1794069900,
-      "last_leg_candle_ts": 1794070800,
-      "dry_run": true,
-      "order_id": "PAPER-ONEUSDT-1794069937"
-    },
-    {
       "symbol": "ESPORTSUSDT",
       "side": "SELL",
       "status": "open",
@@ -142,37 +113,34 @@
       "last_leg_candle_ts": 1794070800,
       "dry_run": true,
       "order_id": "PAPER-ESPORTSUSDT-1794070851"
-    }
-  ],
-  "trade_history": [
+    },
     {
-      "symbol": "PIEVERSEUSDT",
+      "symbol": "SIGNUSDT",
       "side": "SELL",
-      "status": "closed",
-      "entry": 1.1028,
-      "qty": 181.3565,
+      "status": "open",
+      "entry": 0.010866,
+      "qty": 18406.0372,
       "margin": 10.0,
       "leverage": 20,
-      "tp_price": 1.07523,
+      "tp_price": 0.01059435,
       "tf": "15m",
-      "opened_at": 1793591400,
+      "opened_at": 1794071734,
       "adds": 0,
       "last_leg_margin": 10.0,
       "used_res_levels": [],
       "steps": [
         {
-          "px": 1.1028,
-          "ts": 1793591400
+          "px": 0.010866,
+          "ts": 1794071734
         }
       ],
-      "entry_candle_ts": 1793591100,
-      "last_leg_candle_ts": 1793591100,
+      "entry_candle_ts": 1794071700,
+      "last_leg_candle_ts": 1794071700,
       "dry_run": true,
-      "order_id": "PAPER-PIEVERSEUSDT-1793591400",
-      "closed_at": 1793596073,
-      "close_px": 1.0651,
-      "pnl_usdt": 6.8371418208197445
-    },
+      "order_id": "PAPER-SIGNUSDT-1794071734"
+    }
+  ],
+  "trade_history": [
     {
       "symbol": "BIRBUSDT",
       "side": "SELL",
@@ -7174,6 +7142,40 @@
       "pnl_usdt": 71.73666218731101,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "ONEUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.002285141074121467,
+      "qty": 262565.8462,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 0.00222801254726843,
+      "tf": "1h",
+      "opened_at": 1794069937,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.0024207,
+          "ts": 1794069937
+        },
+        {
+          "px": 0.0022229,
+          "ts": 1794070872
+        }
+      ],
+      "entry_candle_ts": 1794069900,
+      "last_leg_candle_ts": 1794070800,
+      "dry_run": true,
+      "order_id": "PAPER-ONEUSDT-1794069937",
+      "closed_at": 1794071283,
+      "close_px": 0.0022229,
+      "pnl_usdt": 16.3423803001911,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -9289,7 +9291,6 @@
     "SKY1USDT": 1793398016,
     "AXLUSDT": 1793502358,
     "SYNUSDT": 1793537208,
-    "APROUSDT": 1793604906,
     "BIO1USDT": 1793611218,
     "CRWDUSDT": 1793658035,
     "GALUSDT": 1793658927,
@@ -9352,7 +9353,7 @@
     "FIGUSDT": 1794112326,
     "ARGUSDT": 1794114249
   },
-  "last_trade_report_ts": 1794070206,
+  "last_trade_report_ts": 1794071289,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
