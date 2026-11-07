@@ -154,24 +154,28 @@
       "symbol": "CLAUDIAUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.003758,
-      "qty": 53219.7978,
-      "margin": 10.0,
+      "entry": 0.003595911562210972,
+      "qty": 166856.16139999998,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.00366405,
+      "tp_price": 0.0035060137731556975,
       "tf": "15m",
       "opened_at": 1794078939,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 0.003758,
           "ts": 1794078939
+        },
+        {
+          "px": 0.00352,
+          "ts": 1794079834
         }
       ],
       "entry_candle_ts": 1794078900,
-      "last_leg_candle_ts": 1794078900,
+      "last_leg_candle_ts": 1794079800,
       "dry_run": true,
       "order_id": "PAPER-CLAUDIAUSDT-1794078939"
     }
@@ -9315,6 +9319,15 @@
       "upper": 0.03915941527740142,
       "open": 0.0396,
       "reported": false
+    },
+    {
+      "symbol": "CLAUDIAUSDT",
+      "tf": "15m",
+      "candle_ts": 1794078900,
+      "side": "SELL",
+      "upper": 0.003242492988817987,
+      "open": 0.00372,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -9441,7 +9454,8 @@
     "1000WOJAKUSDT": 1794121453,
     "1000SATSUSDT": 1794121460,
     "CZUSDT": 1794121473,
-    "NEIRO1USDT": 1794121471
+    "NEIRO1USDT": 1794121471,
+    "QUACKAIUSDT": 1794122215
   },
   "last_trade_report_ts": 1794078466,
   "last_known_version": "2.7.2",
