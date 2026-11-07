@@ -29,15 +29,15 @@
       "symbol": "KOMAUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.015269858876358783,
-      "qty": 39293.094,
-      "margin": 30.0,
+      "entry": 0.015543358348843876,
+      "qty": 90070.6249,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 0.014888112404449812,
+      "tp_price": 0.015154774390122779,
       "tf": "1h",
       "opened_at": 1794042046,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [],
       "steps": [
         {
@@ -47,10 +47,14 @@
         {
           "px": 0.015349,
           "ts": 1794045639
+        },
+        {
+          "px": 0.015755,
+          "ts": 1794049244
         }
       ],
       "entry_candle_ts": 1794042000,
-      "last_leg_candle_ts": 1794045600,
+      "last_leg_candle_ts": 1794049200,
       "dry_run": true,
       "order_id": "PAPER-KOMAUSDT-1794042046"
     },
@@ -7318,16 +7322,6 @@
       "side": "SELL"
     },
     {
-      "symbol": "BEAMXUSDT",
-      "tf": "15m",
-      "candle_ts": 1793789100,
-      "side": "SELL",
-      "upper": 0.004304817768567717,
-      "open": 0.004361,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "FRONGUSDT",
       "tf": "15m",
       "candle_ts": 1793792700,
@@ -9525,6 +9519,15 @@
       "upper": 0.015073137184545825,
       "open": 0.015386,
       "reported": false
+    },
+    {
+      "symbol": "BLENDUSDT",
+      "tf": "15m",
+      "candle_ts": 1794048300,
+      "side": "SELL",
+      "upper": 0.055295365771901445,
+      "open": 0.0563,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -9625,7 +9628,6 @@
     "XBRUSDT": 1793988971,
     "XTIUSDT": 1793988989,
     "OROCHIUSDT": 1794015066,
-    "IRENONUSDT": 1794016985,
     "BBXUSDT": 1794018704,
     "AEHRUSDT": 1794020651,
     "TRUMPSOLUSDT": 1794028601,
@@ -9653,7 +9655,7 @@
     "ARROWUSDT": 1794086185,
     "BARUSDT": 1794087994
   },
-  "last_trade_report_ts": 1794047618,
+  "last_trade_report_ts": 1794048557,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
