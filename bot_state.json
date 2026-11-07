@@ -4,11 +4,11 @@
       "symbol": "NAVERUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 139.3175419444721,
-      "qty": 10.049,
+      "entry": 139.35206818294927,
+      "qty": 10.0465,
       "margin": 70.0,
       "leverage": 20,
-      "tp_price": 135.8346033958603,
+      "tp_price": 135.86826647837555,
       "tf": "15m",
       "opened_at": 1793934988,
       "adds": 2,
@@ -27,12 +27,12 @@
           "ts": 1793938644
         },
         {
-          "px": 138.82,
-          "ts": 1794001733
+          "px": 138.88,
+          "ts": 1794000971
         }
       ],
       "entry_candle_ts": 1793934900,
-      "last_leg_candle_ts": 1794001733,
+      "last_leg_candle_ts": 1794000971,
       "dry_run": true,
       "order_id": "PAPER-NAVERUSDT-1793934988"
     },
@@ -64,11 +64,11 @@
         },
         {
           "px": 34.9,
-          "ts": 1794007173
+          "ts": 1794007091
         }
       ],
       "entry_candle_ts": 1793976300,
-      "last_leg_candle_ts": 1794007173,
+      "last_leg_candle_ts": 1794007091,
       "dry_run": true,
       "order_id": "PAPER-OUSTUSDT-1793976344"
     },
@@ -164,11 +164,11 @@
         },
         {
           "px": 5.047,
-          "ts": 1793999197
+          "ts": 1793999104
         }
       ],
       "entry_candle_ts": 1793977200,
-      "last_leg_candle_ts": 1793999197,
+      "last_leg_candle_ts": 1793999104,
       "dry_run": true,
       "order_id": "PAPER-SMRUSDT-1793977366"
     },
@@ -249,11 +249,11 @@
         },
         {
           "px": 10.482,
-          "ts": 1793999210
+          "ts": 1793999116
         }
       ],
       "entry_candle_ts": 1793980800,
-      "last_leg_candle_ts": 1793999210,
+      "last_leg_candle_ts": 1793999116,
       "dry_run": true,
       "order_id": "PAPER-LUNRUSDT-1793980975"
     },
@@ -261,16 +261,18 @@
       "symbol": "TAUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.09447771294034779,
-      "qty": 14818.3096,
-      "margin": 70.0,
+      "entry": 0.09610210215198554,
+      "qty": 31216.799,
+      "margin": 150.0,
       "leverage": 20,
-      "tp_price": 0.0921157701168391,
+      "tp_price": 0.0936995495981859,
       "tf": "4h",
       "opened_at": 1793988950,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [],
+      "adds": 3,
+      "last_leg_margin": 80.0,
+      "used_res_levels": [
+        0.09785
+      ],
       "steps": [
         {
           "px": 0.08868,
@@ -281,8 +283,12 @@
           "ts": 1793995353
         },
         {
+          "px": 0.09763,
+          "ts": 1794008970
+        },
+        {
           "px": 0.09751,
-          "ts": 1794009663
+          "ts": 1794009692
         }
       ],
       "entry_candle_ts": 1793988900,
@@ -323,11 +329,11 @@
       "symbol": "ONEUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.0017887722016962713,
-      "qty": 782659.7476,
+      "entry": 0.0017901241416614117,
+      "qty": 782068.6662,
       "margin": 70.0,
       "leverage": 20,
-      "tp_price": 0.0017440528966538645,
+      "tp_price": 0.0017453710381198763,
       "tf": "4h",
       "opened_at": 1793995384,
       "adds": 2,
@@ -340,11 +346,11 @@
         },
         {
           "px": 0.0018796,
-          "ts": 1794006916
+          "ts": 1794006913
         },
         {
-          "px": 0.0018011,
-          "ts": 1794009680
+          "px": 0.0018035,
+          "ts": 1794009668
         }
       ],
       "entry_candle_ts": 1793995200,
@@ -381,26 +387,26 @@
       "symbol": "LYNUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.02547,
-      "qty": 7852.3753,
+      "entry": 0.02548,
+      "qty": 7849.2936,
       "margin": 10.0,
       "leverage": 20,
-      "tp_price": 0.024833249999999998,
+      "tp_price": 0.024842999999999997,
       "tf": "15m",
-      "opened_at": 1794008734,
+      "opened_at": 1794008798,
       "adds": 0,
       "last_leg_margin": 10.0,
       "used_res_levels": [],
       "steps": [
         {
-          "px": 0.02547,
-          "ts": 1794008734
+          "px": 0.02548,
+          "ts": 1794008798
         }
       ],
       "entry_candle_ts": 1794008700,
       "last_leg_candle_ts": 1794008700,
       "dry_run": true,
-      "order_id": "PAPER-LYNUSDT-1794008734"
+      "order_id": "PAPER-LYNUSDT-1794008798"
     },
     {
       "symbol": "FONEUSDT",
@@ -6559,9 +6565,9 @@
       "last_leg_candle_ts": 1793995200,
       "dry_run": true,
       "order_id": "PAPER-IDOLUSDT-1793995368",
-      "closed_at": 1793998190,
-      "close_px": 0.0255,
-      "pnl_usdt": 5.618020352936704,
+      "closed_at": 1793997218,
+      "close_px": 0.025209,
+      "pnl_usdt": 7.8362617677326,
       "close_reason": "TP50",
       "why": "TP50"
     },
@@ -6589,9 +6595,9 @@
       "last_leg_candle_ts": 1793997000,
       "dry_run": true,
       "order_id": "PAPER-ANSEMUSDT-1793997035",
-      "closed_at": 1794001753,
-      "close_px": 0.05471,
-      "pnl_usdt": 6.5075154730327185,
+      "closed_at": 1794001670,
+      "close_px": 0.05481,
+      "pnl_usdt": 6.153846153846173,
       "close_reason": "TP50",
       "why": "TP50"
     },
@@ -6623,9 +6629,9 @@
       "last_leg_candle_ts": 1793988900,
       "dry_run": true,
       "order_id": "PAPER-KNTQUSDT-1793988034",
-      "closed_at": 1794005348,
-      "close_px": 0.469,
-      "pnl_usdt": 15.695165375674737,
+      "closed_at": 1794005281,
+      "close_px": 0.4691,
+      "pnl_usdt": 15.570580123089536,
       "close_reason": "TP50",
       "why": "TP50"
     }
@@ -8921,7 +8927,7 @@
       "tf": "15m",
       "candle_ts": 1794006900,
       "side": "SELL",
-      "upper": 0.0018512725292510837,
+      "upper": 0.0018518590880688488,
       "open": 0.00188,
       "reported": true,
       "filled": true
@@ -8931,7 +8937,7 @@
       "tf": "15m",
       "candle_ts": 1794008700,
       "side": "SELL",
-      "upper": 0.02521297899724371,
+      "upper": 0.025160980994933156,
       "open": 0.0255,
       "reported": false
     },
@@ -8945,12 +8951,12 @@
       "reported": false
     },
     {
-      "symbol": "TAUSDT",
+      "symbol": "ONEUSDT",
       "tf": "4h",
       "candle_ts": 1794009600,
       "side": "SELL",
-      "upper": 0.09606876648462798,
-      "open": 0.09758,
+      "upper": 0.0017407865453352863,
+      "open": 0.001792,
       "reported": false
     }
   ],
@@ -9071,9 +9077,9 @@
     "NEXUSDT": 1794038816,
     "HOTUSDT": 1794038834,
     "1000000BABYDOGEUSDT": 1794038838,
-    "GSTOCKUSDT": 1794048395
+    "GSTOCKUSDT": 1794048379
   },
-  "last_trade_report_ts": 1794008997,
+  "last_trade_report_ts": 1794008992,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
