@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1794043865,
+  "updated_at": 1794043872,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794003577
-    },
     {
       "kind": "GAP",
       "symbol": "INFQUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 1.62,
       "ts": 1794043865
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794043872
     }
   ],
   "trades": [
@@ -1456,6 +1456,19 @@
       "px": 0.015461,
       "pnl": -4.5918,
       "tf": "1h"
+    },
+    {
+      "symbol": "KATUSDT",
+      "side": "SELL",
+      "entry": 0.003837,
+      "tp": 0.003741075,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.003837,
+      "pnl": 0.0,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
