@@ -64,16 +64,18 @@
       "symbol": "CTUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.14173059218138936,
-      "qty": 9877.895700000001,
-      "margin": 70.0,
+      "entry": 0.1438514712201085,
+      "qty": 20854.844100000002,
+      "margin": 150.0,
       "leverage": 20,
-      "tp_price": 0.13818732737685463,
+      "tp_price": 0.14025518443960577,
       "tf": "15m",
       "opened_at": 1794040259,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [],
+      "adds": 3,
+      "last_leg_margin": 80.0,
+      "used_res_levels": [
+        0.1462
+      ],
       "steps": [
         {
           "px": 0.13497,
@@ -86,10 +88,14 @@
         {
           "px": 0.14576,
           "ts": 1794043832
+        },
+        {
+          "px": 0.14576,
+          "ts": 1794044043
         }
       ],
       "entry_candle_ts": 1794040200,
-      "last_leg_candle_ts": 1794043800,
+      "last_leg_candle_ts": 1794044043,
       "dry_run": true,
       "order_id": "PAPER-CTUSDT-1794040259"
     },
@@ -9482,6 +9488,15 @@
       "side": "SELL",
       "upper": 0.1438134907203566,
       "open": 0.1457,
+      "reported": false
+    },
+    {
+      "symbol": "KATUSDT",
+      "tf": "15m",
+      "candle_ts": 1794043800,
+      "side": "SELL",
+      "upper": 0.0037747376749496945,
+      "open": 0.003818,
       "reported": false
     }
   ],
