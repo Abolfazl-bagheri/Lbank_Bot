@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1794048218,
+  "updated_at": 1794048330,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "ONEUSDT",
-      "tf": "4h",
-      "gap": 10.87,
-      "ts": 1794008507
-    },
     {
       "kind": "GAP",
       "symbol": "ACTUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 2.67,
       "ts": 1794048218
+    },
+    {
+      "kind": "SELL",
+      "symbol": "BLENDUSDT",
+      "tf": "15m",
+      "gap": 1.01,
+      "ts": 1794048330
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 2.514,
-      "pnl": 0.5553,
+      "px": 2.539,
+      "pnl": -1.428,
       "tf": "1h"
     },
     {
@@ -1427,8 +1427,8 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 0.015363,
-      "pnl": -3.6598,
+      "px": 0.015359,
+      "pnl": -3.5026,
       "tf": "1h"
     }
   ],
@@ -1436,8 +1436,8 @@
   "session_start": 1794010157,
   "realized": 568.7729,
   "closed_n": 9,
-  "open_upnl": -3.1045,
-  "equity": 1565.6684,
+  "open_upnl": -4.9306,
+  "equity": 1563.8423,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
