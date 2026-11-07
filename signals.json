@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1794031328,
+  "updated_at": 1794031334,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "ICNTUSDT",
-      "tf": "4h",
-      "gap": 1.91,
-      "ts": 1793995257
-    },
     {
       "kind": "GAP",
       "symbol": "KNTQUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 1.77,
       "ts": 1794031328
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794031334
     }
   ],
   "trades": [
@@ -1443,6 +1443,19 @@
       "px": 0.011329,
       "pnl": 0.0,
       "tf": "15m"
+    },
+    {
+      "symbol": "PIEVERSEUSDT",
+      "side": "SELL",
+      "entry": 1.4992,
+      "tp": 1.4617200000000001,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 1.4992,
+      "pnl": 0.0,
+      "tf": "1h"
     }
   ],
   "start": 1000.0,
