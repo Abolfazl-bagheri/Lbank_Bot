@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1794068231,
+  "updated_at": 1794068469,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794010149
-    },
     {
       "kind": "HEARTBEAT",
       "symbol": "—",
@@ -1402,6 +1395,13 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1794068231
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794068469
     }
   ],
   "trades": [
@@ -1432,19 +1432,6 @@
       "tf": "1h"
     },
     {
-      "symbol": "BLENDUSDT",
-      "side": "SELL",
-      "entry": 0.05586,
-      "tp": 0.0544635,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.05281,
-      "pnl": 10.9202,
-      "tf": "15m"
-    },
-    {
       "symbol": "IDOLUSDT",
       "side": "SELL",
       "entry": 0.03494,
@@ -1473,16 +1460,16 @@
   ],
   "start": 1000.0,
   "session_start": 1794010157,
-  "realized": 568.7729,
-  "closed_n": 9,
-  "open_upnl": -21.5416,
+  "realized": 579.6931,
+  "closed_n": 10,
+  "open_upnl": -32.4618,
   "equity": 1547.2313,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 568.7729,
+    "profit": 579.6931,
     "loss": 0,
-    "count": 9
+    "count": 10
   }
 }
