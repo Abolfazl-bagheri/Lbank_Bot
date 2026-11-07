@@ -29,16 +29,18 @@
       "symbol": "KOMAUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.015543358348843876,
-      "qty": 90070.6249,
-      "margin": 70.0,
+      "entry": 0.015921093775249247,
+      "qty": 188429.2651,
+      "margin": 150.0,
       "leverage": 20,
-      "tp_price": 0.015154774390122779,
+      "tp_price": 0.015523066430868015,
       "tf": "1h",
       "opened_at": 1794042046,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [],
+      "adds": 3,
+      "last_leg_margin": 80.0,
+      "used_res_levels": [
+        0.016289
+      ],
       "steps": [
         {
           "px": 0.015114,
@@ -51,10 +53,14 @@
         {
           "px": 0.015755,
           "ts": 1794049244
+        },
+        {
+          "px": 0.016267,
+          "ts": 1794075598
         }
       ],
       "entry_candle_ts": 1794042000,
-      "last_leg_candle_ts": 1794049200,
+      "last_leg_candle_ts": 1794075598,
       "dry_run": true,
       "order_id": "PAPER-KOMAUSDT-1794042046"
     },
@@ -9271,6 +9277,15 @@
       "side": "SELL",
       "upper": 0.037585509574192995,
       "open": 0.038581,
+      "reported": false
+    },
+    {
+      "symbol": "GRVTUSDT",
+      "tf": "15m",
+      "candle_ts": 1794075300,
+      "side": "SELL",
+      "upper": 0.20867766472660002,
+      "open": 0.21183,
       "reported": false
     }
   ],
