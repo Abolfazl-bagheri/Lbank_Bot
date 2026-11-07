@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1794073535,
+  "updated_at": 1794073542,
   "signals": [
-    {
-      "kind": "HEARTBEAT",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794017198
-    },
     {
       "kind": "GAP",
       "symbol": "INFQUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 2.58,
       "ts": 1794073535
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794073542
     }
   ],
   "trades": [
@@ -1455,6 +1455,19 @@
       "lev": 20,
       "px": 0.0268,
       "pnl": 2.9412,
+      "tf": "15m"
+    },
+    {
+      "symbol": "IDOLUSDT",
+      "side": "SELL",
+      "entry": 0.044654,
+      "tp": 0.04353765,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.044654,
+      "pnl": 0.0,
       "tf": "15m"
     }
   ],
