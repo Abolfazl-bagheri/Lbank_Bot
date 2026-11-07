@@ -68,17 +68,18 @@
       "symbol": "SWARMSUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.007222658600959236,
-      "qty": 193834.4421,
-      "margin": 70.0,
+      "entry": 0.007156718091774303,
+      "qty": 419186.5548,
+      "margin": 150.0,
       "leverage": 20,
-      "tp_price": 0.007042092135935255,
+      "tp_price": 0.006977800139479945,
       "tf": "4h",
       "opened_at": 1794078053,
-      "adds": 2,
-      "last_leg_margin": 40.0,
+      "adds": 3,
+      "last_leg_margin": 80.0,
       "used_res_levels": [
-        0.007228
+        0.007228,
+        0.00711
       ],
       "steps": [
         {
@@ -92,10 +93,14 @@
         {
           "px": 0.007203,
           "ts": 1794084577
+        },
+        {
+          "px": 0.0071,
+          "ts": 1794086372
         }
       ],
       "entry_candle_ts": 1794078000,
-      "last_leg_candle_ts": 1794084577,
+      "last_leg_candle_ts": 1794086372,
       "dry_run": true,
       "order_id": "PAPER-SWARMSUSDT-1794078053"
     },
@@ -123,74 +128,9 @@
       "last_leg_candle_ts": 1794078000,
       "dry_run": true,
       "order_id": "PAPER-THEUSDT-1794078080"
-    },
-    {
-      "symbol": "CLAUDIAUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.004861442019223147,
-      "qty": 617100.8495,
-      "margin": 150.0,
-      "leverage": 20,
-      "tp_price": 0.004739905968742568,
-      "tf": "15m",
-      "opened_at": 1794078939,
-      "adds": 3,
-      "last_leg_margin": 80.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.003758,
-          "ts": 1794078939
-        },
-        {
-          "px": 0.00352,
-          "ts": 1794079834
-        },
-        {
-          "px": 0.00422,
-          "ts": 1794080748
-        },
-        {
-          "px": 0.006138,
-          "ts": 1794081631
-        }
-      ],
-      "entry_candle_ts": 1794078900,
-      "last_leg_candle_ts": 1794081600,
-      "dry_run": true,
-      "order_id": "PAPER-CLAUDIAUSDT-1794078939"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "LYNUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.02019,
-      "qty": 9905.894,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.019685249999999998,
-      "tf": "4h",
-      "opened_at": 1793606812,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.02019,
-          "ts": 1793606812
-        }
-      ],
-      "entry_candle_ts": 1793606400,
-      "last_leg_candle_ts": 1793606400,
-      "dry_run": true,
-      "order_id": "PAPER-LYNUSDT-1793606812",
-      "closed_at": 1793608583,
-      "close_px": 0.01945,
-      "pnl_usdt": 7.3303615651312635
-    },
     {
       "symbol": "CATUSDT",
       "side": "SELL",
@@ -7207,6 +7147,48 @@
       "pnl_usdt": 160.33022480239035,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "CLAUDIAUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.004861442019223147,
+      "qty": 617100.8495,
+      "margin": 150.0,
+      "leverage": 20,
+      "tp_price": 0.004739905968742568,
+      "tf": "15m",
+      "opened_at": 1794078939,
+      "adds": 3,
+      "last_leg_margin": 80.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.003758,
+          "ts": 1794078939
+        },
+        {
+          "px": 0.00352,
+          "ts": 1794079834
+        },
+        {
+          "px": 0.00422,
+          "ts": 1794080748
+        },
+        {
+          "px": 0.006138,
+          "ts": 1794081631
+        }
+      ],
+      "entry_candle_ts": 1794078900,
+      "last_leg_candle_ts": 1794081600,
+      "dry_run": true,
+      "order_id": "PAPER-CLAUDIAUSDT-1794078939",
+      "closed_at": 1794084585,
+      "close_px": 0.004336,
+      "pnl_usdt": 324.25071644099086,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -7419,16 +7401,6 @@
       "tf": "15m",
       "candle_ts": 1793430900,
       "side": "SELL"
-    },
-    {
-      "symbol": "APPUSDT",
-      "tf": "15m",
-      "candle_ts": 1793826900,
-      "side": "SELL",
-      "upper": 304.29127381946046,
-      "open": 315.4,
-      "reported": true,
-      "filled": false
     },
     {
       "symbol": "APPUSDT",
@@ -9317,7 +9289,8 @@
       "side": "SELL",
       "upper": 0.004852566359716105,
       "open": 0.006068,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "SWARMSUSDT",
@@ -9344,7 +9317,8 @@
       "side": "SELL",
       "upper": 0.00013542544811179626,
       "open": 0.0001382,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -9413,7 +9387,6 @@
     "BIO1USDT": 1793611218,
     "CRWDUSDT": 1793658035,
     "GALUSDT": 1793658927,
-    "BIDUUSDT": 1793678955,
     "PORUSDT": 1793694114,
     "MARRIOTTUSDT": 1793714834,
     "ONSEMIUSDT": 1793784100,
@@ -9478,7 +9451,7 @@
     "1000000BABYDOGEUSDT": 1794125149,
     "MANCERUSDT": 1794126726
   },
-  "last_trade_report_ts": 1794083700,
+  "last_trade_report_ts": 1794085642,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
