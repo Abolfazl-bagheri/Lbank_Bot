@@ -76,31 +76,6 @@
       "order_id": "PAPER-HMSTRUSDT-1794068225"
     },
     {
-      "symbol": "AEONUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.0272,
-      "qty": 7352.9412,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.02652,
-      "tf": "15m",
-      "opened_at": 1794071752,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.0272,
-          "ts": 1794071752
-        }
-      ],
-      "entry_candle_ts": 1794071700,
-      "last_leg_candle_ts": 1794071700,
-      "dry_run": true,
-      "order_id": "PAPER-AEONUSDT-1794071752"
-    },
-    {
       "symbol": "GRVTUSDT",
       "side": "SELL",
       "status": "open",
@@ -124,47 +99,34 @@
       "last_leg_candle_ts": 1794075300,
       "dry_run": true,
       "order_id": "PAPER-GRVTUSDT-1794075339"
+    },
+    {
+      "symbol": "SWARMSUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.007184,
+      "qty": 27839.6437,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0070044,
+      "tf": "1h",
+      "opened_at": 1794078053,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.007184,
+          "ts": 1794078053
+        }
+      ],
+      "entry_candle_ts": 1794078000,
+      "last_leg_candle_ts": 1794078000,
+      "dry_run": true,
+      "order_id": "PAPER-SWARMSUSDT-1794078053"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "HAEDALUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.027464420353374222,
-      "qty": 50975.042700000005,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 0.026777809844539865,
-      "tf": "1h",
-      "opened_at": 1793595879,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [
-        0.0275
-      ],
-      "steps": [
-        {
-          "px": 0.02718,
-          "ts": 1793595879
-        },
-        {
-          "px": 0.02774,
-          "ts": 1793599378
-        },
-        {
-          "px": 0.0274,
-          "ts": 1793600470
-        }
-      ],
-      "entry_candle_ts": 1793595600,
-      "last_leg_candle_ts": 1793600470,
-      "dry_run": true,
-      "order_id": "PAPER-HAEDALUSDT-1793595879",
-      "closed_at": 1793603151,
-      "close_px": 0.02658,
-      "pnl_usdt": 45.08336527014269
-    },
     {
       "symbol": "STARUSDT",
       "side": "SELL",
@@ -7163,6 +7125,36 @@
       "pnl_usdt": 5.156683855612848,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "AEONUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.0272,
+      "qty": 7352.9412,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.02652,
+      "tf": "15m",
+      "opened_at": 1794071752,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.0272,
+          "ts": 1794071752
+        }
+      ],
+      "entry_candle_ts": 1794071700,
+      "last_leg_candle_ts": 1794071700,
+      "dry_run": true,
+      "order_id": "PAPER-AEONUSDT-1794071752",
+      "closed_at": 1794076501,
+      "close_px": 0.0264,
+      "pnl_usdt": 5.88235294117646,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -9345,7 +9337,6 @@
     "BTCDOMUSDT": 1793955831,
     "UBIKUSDT": 1793961071,
     "NGASUSDT": 1793980968,
-    "SXTUSDT": 1793980978,
     "HK1810USDT": 1793981026,
     "LONGXIAUSDT": 1793981070,
     "XBRUSDT": 1793988971,
@@ -9358,12 +9349,7 @@
     "RGTIUSDT": 1794071770,
     "KOPNUSDT": 1794071799,
     "FLOCK1USDT": 1794071825,
-    "METEORAUSDT": 1794076314,
     "SAFE1USDT": 1794076315,
-    "1000WOJAKUSDT": 1794077213,
-    "CZUSDT": 1794077216,
-    "NEIRO1USDT": 1794077219,
-    "1000SATSUSDT": 1794077221,
     "PIPEDOGUSDT": 1794079892,
     "SPORTFUNUSDT": 1794081839,
     "ARROWUSDT": 1794086185,
@@ -9380,9 +9366,11 @@
     "FLYUSDT": 1794115908,
     "POETUSDT": 1794115909,
     "LWLGUSDT": 1794115917,
-    "TOADUSDT": 1794115929
+    "TOADUSDT": 1794115929,
+    "METEORAUSDT": 1794120360,
+    "CAPETHUSDT": 1794120413
   },
-  "last_trade_report_ts": 1794074869,
+  "last_trade_report_ts": 1794076506,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
