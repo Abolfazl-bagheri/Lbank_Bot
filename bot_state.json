@@ -90,31 +90,6 @@
       "order_id": "PAPER-HMSTRUSDT-1794068225"
     },
     {
-      "symbol": "SIGNUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.010866,
-      "qty": 18406.0372,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.01059435,
-      "tf": "15m",
-      "opened_at": 1794071734,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.010866,
-          "ts": 1794071734
-        }
-      ],
-      "entry_candle_ts": 1794071700,
-      "last_leg_candle_ts": 1794071700,
-      "dry_run": true,
-      "order_id": "PAPER-SIGNUSDT-1794071734"
-    },
-    {
       "symbol": "AEONUSDT",
       "side": "SELL",
       "status": "open",
@@ -138,37 +113,34 @@
       "last_leg_candle_ts": 1794071700,
       "dry_run": true,
       "order_id": "PAPER-AEONUSDT-1794071752"
-    }
-  ],
-  "trade_history": [
+    },
     {
-      "symbol": "ZHONGJIUSDT",
+      "symbol": "IDOLUSDT",
       "side": "SELL",
-      "status": "closed",
-      "entry": 93.11,
-      "qty": 2.148,
+      "status": "open",
+      "entry": 0.044654,
+      "qty": 4478.8821,
       "margin": 10.0,
       "leverage": 20,
-      "tp_price": 90.78224999999999,
-      "tf": "1h",
-      "opened_at": 1793595862,
+      "tp_price": 0.04353765,
+      "tf": "15m",
+      "opened_at": 1794073536,
       "adds": 0,
       "last_leg_margin": 10.0,
       "used_res_levels": [],
       "steps": [
         {
-          "px": 93.11,
-          "ts": 1793595862
+          "px": 0.044654,
+          "ts": 1794073536
         }
       ],
-      "entry_candle_ts": 1793595600,
-      "last_leg_candle_ts": 1793595600,
+      "entry_candle_ts": 1794073500,
+      "last_leg_candle_ts": 1794073500,
       "dry_run": true,
-      "order_id": "PAPER-ZHONGJIUSDT-1793595862",
-      "closed_at": 1793600467,
-      "close_px": 90.26,
-      "pnl_usdt": 6.121791429491986
-    },
+      "order_id": "PAPER-IDOLUSDT-1794073536"
+    }
+  ],
+  "trade_history": [
     {
       "symbol": "STORJUSDT",
       "side": "SELL",
@@ -7178,6 +7150,36 @@
       "pnl_usdt": 5.928818674003714,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "SIGNUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.010866,
+      "qty": 18406.0372,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.01059435,
+      "tf": "15m",
+      "opened_at": 1794071734,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.010866,
+          "ts": 1794071734
+        }
+      ],
+      "entry_candle_ts": 1794071700,
+      "last_leg_candle_ts": 1794071700,
+      "dry_run": true,
+      "order_id": "PAPER-SIGNUSDT-1794071734",
+      "closed_at": 1794072895,
+      "close_px": 0.010311,
+      "pnl_usdt": 10.21535063500828,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -9367,7 +9369,7 @@
     "LWLGUSDT": 1794115917,
     "TOADUSDT": 1794115929
   },
-  "last_trade_report_ts": 1794071289,
+  "last_trade_report_ts": 1794072901,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
