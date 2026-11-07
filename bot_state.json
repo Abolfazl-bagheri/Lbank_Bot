@@ -64,24 +64,28 @@
       "symbol": "CTUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.13497,
-      "qty": 1481.8108,
-      "margin": 10.0,
+      "entry": 0.13669227429514344,
+      "qty": 4389.4215,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.13159575,
+      "tp_price": 0.13327496743776485,
       "tf": "15m",
       "opened_at": 1794040259,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 0.13497,
           "ts": 1794040259
+        },
+        {
+          "px": 0.13757,
+          "ts": 1794042092
         }
       ],
       "entry_candle_ts": 1794040200,
-      "last_leg_candle_ts": 1794040200,
+      "last_leg_candle_ts": 1794042000,
       "dry_run": true,
       "order_id": "PAPER-CTUSDT-1794040259"
     },
@@ -9433,6 +9437,15 @@
       "open": 0.1349,
       "reported": true,
       "filled": false
+    },
+    {
+      "symbol": "KOMAUSDT",
+      "tf": "1h",
+      "candle_ts": 1794042000,
+      "side": "SELL",
+      "upper": 0.014572604059141592,
+      "open": 0.015155,
+      "reported": false
     }
   ],
   "paper_days": [
