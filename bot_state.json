@@ -68,15 +68,15 @@
       "symbol": "ESPORTSUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.01198667299959294,
-      "qty": 50055.590899999996,
-      "margin": 30.0,
+      "entry": 0.012139666844495444,
+      "qty": 115324.4169,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 0.011687006174603116,
-      "tf": "15m",
+      "tp_price": 0.011836175173383059,
+      "tf": "1h",
       "opened_at": 1794031243,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [],
       "steps": [
         {
@@ -86,10 +86,14 @@
         {
           "px": 0.012345,
           "ts": 1794032125
+        },
+        {
+          "px": 0.012257,
+          "ts": 1794034850
         }
       ],
       "entry_candle_ts": 1794031200,
-      "last_leg_candle_ts": 1794032100,
+      "last_leg_candle_ts": 1794034800,
       "dry_run": true,
       "order_id": "PAPER-ESPORTSUSDT-1794031243"
     },
@@ -9253,7 +9257,8 @@
       "side": "SELL",
       "upper": 0.011904076210428955,
       "open": 0.01243,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -9331,7 +9336,6 @@
     "MARRIOTTUSDT": 1793714834,
     "ONSEMIUSDT": 1793784100,
     "SIMOUSDT": 1793785920,
-    "METEORAUSDT": 1793852241,
     "OFCUSDT": 1793873172,
     "B3USDT": 1793880575,
     "AI1USDT": 1793882848,
@@ -9362,11 +9366,6 @@
     "FUTUUSDT": 1794019612,
     "AEHRUSDT": 1794020651,
     "TRUMPSOLUSDT": 1794028601,
-    "SAFE1USDT": 1794032230,
-    "1000WOJAKUSDT": 1794033118,
-    "NEIRO1USDT": 1794033119,
-    "1000SATSUSDT": 1794033120,
-    "CZUSDT": 1794033130,
     "ARROWUSDT": 1794038726,
     "KNTQUSDT": 1794038678,
     "MURATAUSDT": 1794038839,
@@ -9384,9 +9383,15 @@
     "FLYUSDT": 1794071772,
     "KOPNUSDT": 1794071799,
     "TOADUSDT": 1794071802,
-    "FLOCK1USDT": 1794071825
+    "FLOCK1USDT": 1794071825,
+    "METEORAUSDT": 1794076314,
+    "SAFE1USDT": 1794076315,
+    "1000WOJAKUSDT": 1794077213,
+    "CZUSDT": 1794077216,
+    "NEIRO1USDT": 1794077219,
+    "1000SATSUSDT": 1794077221
   },
-  "last_trade_report_ts": 1794031539,
+  "last_trade_report_ts": 1794034195,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
