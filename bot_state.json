@@ -1,31 +1,6 @@
 {
   "open_trades": [
     {
-      "symbol": "FOLKSUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 2.521,
-      "qty": 79.3336,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 2.457975,
-      "tf": "1h",
-      "opened_at": 1794034922,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 2.521,
-          "ts": 1794034922
-        }
-      ],
-      "entry_candle_ts": 1794034800,
-      "last_leg_candle_ts": 1794034800,
-      "dry_run": true,
-      "order_id": "PAPER-FOLKSUSDT-1794034922"
-    },
-    {
       "symbol": "KOMAUSDT",
       "side": "SELL",
       "status": "open",
@@ -152,45 +127,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "TAKEUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.07091802044132924,
-      "qty": 19741.1037,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 0.069145069930296,
-      "tf": "1h",
-      "opened_at": 1793585089,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [
-        0.07177,
-        0.07073
-      ],
-      "steps": [
-        {
-          "px": 0.07119,
-          "ts": 1793585089
-        },
-        {
-          "px": 0.07161,
-          "ts": 1793587999
-        },
-        {
-          "px": 0.07051,
-          "ts": 1793593341
-        }
-      ],
-      "entry_candle_ts": 1793584800,
-      "last_leg_candle_ts": 1793593341,
-      "dry_run": true,
-      "order_id": "PAPER-TAKEUSDT-1793585089",
-      "closed_at": 1793601318,
-      "close_px": 0.06898,
-      "pnl_usdt": 38.2586626216618
-    },
     {
       "symbol": "HAEDALUSDT",
       "side": "SELL",
@@ -7197,6 +7133,36 @@
       "pnl_usdt": 25.328078299975296,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "FOLKSUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 2.521,
+      "qty": 79.3336,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 2.457975,
+      "tf": "1h",
+      "opened_at": 1794034922,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 2.521,
+          "ts": 1794034922
+        }
+      ],
+      "entry_candle_ts": 1794034800,
+      "last_leg_candle_ts": 1794034800,
+      "dry_run": true,
+      "order_id": "PAPER-FOLKSUSDT-1794034922",
+      "closed_at": 1794076497,
+      "close_px": 2.456,
+      "pnl_usdt": 5.156683855612848,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -9286,7 +9252,8 @@
       "side": "SELL",
       "upper": 0.20867766472660002,
       "open": 0.21183,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
