@@ -43,18 +43,19 @@
       "symbol": "HMSTRUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.00013433355851416828,
-      "qty": 22332468.7679,
-      "margin": 150.0,
+      "entry": 0.00013724922567854767,
+      "qty": 45173296.7479,
+      "margin": 310.0,
       "leverage": 20,
-      "tp_price": 0.00013097521955131406,
+      "tp_price": 0.00013381799503658397,
       "tf": "1h",
       "opened_at": 1794068225,
-      "adds": 3,
-      "last_leg_margin": 80.0,
+      "adds": 4,
+      "last_leg_margin": 160.0,
       "used_res_levels": [
         0.000132,
-        0.0001298
+        0.0001298,
+        0.0001404
       ],
       "steps": [
         {
@@ -72,10 +73,14 @@
         {
           "px": 0.0001377,
           "ts": 1794081757
+        },
+        {
+          "px": 0.0001401,
+          "ts": 1794082745
         }
       ],
       "entry_candle_ts": 1794068100,
-      "last_leg_candle_ts": 1794081600,
+      "last_leg_candle_ts": 1794082745,
       "dry_run": true,
       "order_id": "PAPER-HMSTRUSDT-1794068225"
     },
@@ -7439,46 +7444,6 @@
       "side": "SELL"
     },
     {
-      "symbol": "DGAIUSDT",
-      "tf": "4h",
-      "candle_ts": 1793822400,
-      "side": "SELL",
-      "upper": 0.8117520519297484,
-      "open": 0.8369,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "CLANKERUSDT",
-      "tf": "4h",
-      "candle_ts": 1793822400,
-      "side": "SELL",
-      "upper": 21.32756252916068,
-      "open": 22.85,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "ELSAUSDT",
-      "tf": "4h",
-      "candle_ts": 1793822400,
-      "side": "SELL",
-      "upper": 0.08380309864370095,
-      "open": 0.0884,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "USUSDT",
-      "tf": "4h",
-      "candle_ts": 1793822400,
-      "side": "SELL",
-      "upper": 0.005032756147265602,
-      "open": 0.005131,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "ELSAUSDT",
       "tf": "15m",
       "candle_ts": 1793824200,
@@ -9325,7 +9290,8 @@
       "side": "SELL",
       "upper": 0.007132045286069907,
       "open": 0.007206,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "THEUSDT",
@@ -9334,7 +9300,8 @@
       "side": "SELL",
       "upper": 0.03915941527740142,
       "open": 0.0396,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CLAUDIAUSDT",
@@ -9363,7 +9330,8 @@
       "side": "SELL",
       "upper": 0.004087056302141485,
       "open": 0.00449,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CLAUDIAUSDT",
@@ -9372,7 +9340,8 @@
       "side": "SELL",
       "upper": 0.005538507529299767,
       "open": 0.006432,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CLAUDIAUSDT",
@@ -9399,6 +9368,15 @@
       "side": "SELL",
       "upper": 0.004916059770390417,
       "open": 0.006068,
+      "reported": false
+    },
+    {
+      "symbol": "HMSTRUSDT",
+      "tf": "1h",
+      "candle_ts": 1794081600,
+      "side": "SELL",
+      "upper": 0.00013542544811179626,
+      "open": 0.0001382,
       "reported": false
     }
   ],
@@ -9527,9 +9505,13 @@
     "NEIRO1USDT": 1794121471,
     "QUACKAIUSDT": 1794122215,
     "PIPEDOGUSDT": 1794124059,
-    "NIULAIUSDT": 1794124933
+    "NIULAIUSDT": 1794124933,
+    "NEXUSDT": 1794125084,
+    "SXTUSDT": 1794125089,
+    "HOTUSDT": 1794125148,
+    "1000000BABYDOGEUSDT": 1794125149
   },
-  "last_trade_report_ts": 1794081014,
+  "last_trade_report_ts": 1794082195,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
