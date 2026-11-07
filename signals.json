@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1794048557,
+  "updated_at": 1794048703,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "LYNUSDT",
-      "tf": "15m",
-      "gap": 1.01,
-      "ts": 1794008732
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1395,13 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1794048557
+    },
+    {
+      "kind": "GAP",
+      "symbol": "BLENDUSDT",
+      "tf": "1h",
+      "gap": 1.12,
+      "ts": 1794048703
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 2.539,
-      "pnl": -1.428,
+      "px": 2.561,
+      "pnl": -3.1733,
       "tf": "1h"
     },
     {
@@ -1427,8 +1427,8 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 0.015359,
-      "pnl": -3.5026,
+      "px": 0.015586,
+      "pnl": -12.4222,
       "tf": "1h"
     },
     {
@@ -1440,8 +1440,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.05586,
-      "pnl": 0.0,
+      "px": 0.05468,
+      "pnl": 4.2248,
       "tf": "15m"
     }
   ],
@@ -1449,8 +1449,8 @@
   "session_start": 1794010157,
   "realized": 568.7729,
   "closed_n": 9,
-  "open_upnl": -4.9306,
-  "equity": 1563.8423,
+  "open_upnl": -11.3707,
+  "equity": 1557.4022,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
