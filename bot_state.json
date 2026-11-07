@@ -33,16 +33,18 @@
       "symbol": "LYNUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.02774713356993283,
-      "qty": 21623.8553,
-      "margin": 30.0,
+      "entry": 0.02766286574002982,
+      "qty": 50609.3625,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 0.02705345523068451,
+      "tp_price": 0.026971294096529073,
       "tf": "15m",
       "opened_at": 1794013238,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
+      "adds": 2,
+      "last_leg_margin": 40.0,
+      "used_res_levels": [
+        0.02769
+      ],
       "steps": [
         {
           "px": 0.02658,
@@ -51,10 +53,14 @@
         {
           "px": 0.02837,
           "ts": 1794014122
+        },
+        {
+          "px": 0.0276,
+          "ts": 1794017933
         }
       ],
       "entry_candle_ts": 1794013200,
-      "last_leg_candle_ts": 1794014100,
+      "last_leg_candle_ts": 1794017933,
       "dry_run": true,
       "order_id": "PAPER-LYNUSDT-1794013238"
     },
@@ -9342,7 +9348,7 @@
     "RIOTUSDT": 1794056625,
     "QUACKAIUSDT": 1794056635
   },
-  "last_trade_report_ts": 1794015274,
+  "last_trade_report_ts": 1794017197,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
