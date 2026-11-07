@@ -261,15 +261,15 @@
       "symbol": "TAUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.09071634822023372,
-      "qty": 6614.0229,
-      "margin": 30.0,
+      "entry": 0.09447771294034779,
+      "qty": 14818.3096,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 0.08844843951472788,
+      "tp_price": 0.0921157701168391,
       "tf": "4h",
       "opened_at": 1793988950,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [],
       "steps": [
         {
@@ -279,10 +279,14 @@
         {
           "px": 0.09177,
           "ts": 1793995353
+        },
+        {
+          "px": 0.09751,
+          "ts": 1794009663
         }
       ],
       "entry_candle_ts": 1793988900,
-      "last_leg_candle_ts": 1793995200,
+      "last_leg_candle_ts": 1794009600,
       "dry_run": true,
       "order_id": "PAPER-TAUSDT-1793988950"
     },
@@ -8925,6 +8929,15 @@
       "side": "SELL",
       "upper": 0.02521297899724371,
       "open": 0.0255,
+      "reported": false
+    },
+    {
+      "symbol": "FONEUSDT",
+      "tf": "15m",
+      "candle_ts": 1794009600,
+      "side": "SELL",
+      "upper": 0.0019966563967332967,
+      "open": 0.002019,
       "reported": false
     }
   ],
