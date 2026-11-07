@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1794078051,
+  "updated_at": 1794078058,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "ESPORTSUSDT",
-      "tf": "1h",
-      "gap": 1.88,
-      "ts": 1794031273
-    },
     {
       "kind": "SELL",
       "symbol": "PIEVERSEUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 0.72,
       "ts": 1794078051
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794078058
     }
   ],
   "trades": [
@@ -1443,6 +1443,19 @@
       "px": 0.2084,
       "pnl": 2.7449,
       "tf": "15m"
+    },
+    {
+      "symbol": "SWARMSUSDT",
+      "side": "SELL",
+      "entry": 0.007184,
+      "tp": 0.0070044,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.007184,
+      "pnl": 0.0,
+      "tf": "1h"
     }
   ],
   "start": 1000.0,
