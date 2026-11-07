@@ -68,16 +68,18 @@
       "symbol": "AKEUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.005196986409839832,
-      "qty": 115451.5238,
-      "margin": 30.0,
+      "entry": 0.005477186292833569,
+      "qty": 255605.6934,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 0.005067061749593836,
+      "tp_price": 0.00534025663551273,
       "tf": "15m",
       "opened_at": 1794013259,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
+      "adds": 2,
+      "last_leg_margin": 40.0,
+      "used_res_levels": [
+        0.0057241
+      ],
       "steps": [
         {
           "px": 0.004899,
@@ -86,10 +88,14 @@
         {
           "px": 0.00536,
           "ts": 1794014143
+        },
+        {
+          "px": 0.005708,
+          "ts": 1794017939
         }
       ],
       "entry_candle_ts": 1794013200,
-      "last_leg_candle_ts": 1794014100,
+      "last_leg_candle_ts": 1794017939,
       "dry_run": true,
       "order_id": "PAPER-AKEUSDT-1794013259"
     }
