@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1794031242,
+  "updated_at": 1794031248,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "IONQUSDT",
-      "tf": "1h",
-      "gap": 1.63,
-      "ts": 1793995245
-    },
     {
       "kind": "GAP",
       "symbol": "IDOLUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 1.58,
       "ts": 1794031242
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794031248
     }
   ],
   "trades": [
@@ -1429,6 +1429,19 @@
       "lev": 20,
       "px": 0.02991,
       "pnl": -113.726,
+      "tf": "15m"
+    },
+    {
+      "symbol": "ESPORTSUSDT",
+      "side": "SELL",
+      "entry": 0.011329,
+      "tp": 0.011045775,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.011329,
+      "pnl": 0.0,
       "tf": "15m"
     }
   ],
