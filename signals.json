@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1794016797,
+  "updated_at": 1794017196,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1793988324
-    },
     {
       "kind": "HEARTBEAT",
       "symbol": "—",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 1.73,
       "ts": 1794016797
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794017196
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 0.03395,
-      "pnl": -5.9378,
+      "px": 0.03501,
+      "pnl": -24.8566,
       "tf": "15m"
     },
     {
@@ -1427,8 +1427,8 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 0.02825,
-      "pnl": -10.8739,
+      "px": 0.02872,
+      "pnl": -21.0371,
       "tf": "15m"
     },
     {
@@ -1440,36 +1440,23 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 0.005557,
-      "pnl": -41.5641,
+      "px": 0.005542,
+      "pnl": -39.8323,
       "tf": "15m"
-    },
-    {
-      "symbol": "RATSUSDT",
-      "side": "SELL",
-      "entry": 1.525e-05,
-      "tp": 1.4868749999999999e-05,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 1.475e-05,
-      "pnl": 6.5574,
-      "tf": "1h"
     }
   ],
   "start": 1000.0,
   "session_start": 1794010157,
-  "realized": 0,
-  "closed_n": 0,
-  "open_upnl": -51.8184,
-  "equity": 948.1816,
+  "realized": 6.5574,
+  "closed_n": 1,
+  "open_upnl": -85.726,
+  "equity": 920.8314,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 0,
+    "profit": 6.5574,
     "loss": 0,
-    "count": 0
+    "count": 1
   }
 }
