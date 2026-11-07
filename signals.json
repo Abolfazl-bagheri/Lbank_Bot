@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1794034920,
+  "updated_at": 1794034928,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "LUNRUSDT",
-      "tf": "15m",
-      "gap": 3.09,
-      "ts": 1793996915
-    },
     {
       "kind": "GAP",
       "symbol": "CLAUDIAUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 1.17,
       "ts": 1794034920
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794034928
     }
   ],
   "trades": [
@@ -1455,6 +1455,19 @@
       "lev": 20,
       "px": 1.506,
       "pnl": 9.7443,
+      "tf": "1h"
+    },
+    {
+      "symbol": "FOLKSUSDT",
+      "side": "SELL",
+      "entry": 2.521,
+      "tp": 2.457975,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 2.521,
+      "pnl": 0.0,
       "tf": "1h"
     }
   ],
