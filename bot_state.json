@@ -104,24 +104,28 @@
       "symbol": "SWARMSUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.007184,
-      "qty": 27839.6437,
-      "margin": 10.0,
+      "entry": 0.007249037598116931,
+      "qty": 82769.60800000001,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.0070044,
-      "tf": "1h",
+      "tp_price": 0.007067811658164007,
+      "tf": "4h",
       "opened_at": 1794078053,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 0.007184,
           "ts": 1794078053
+        },
+        {
+          "px": 0.007282,
+          "ts": 1794081686
         }
       ],
       "entry_candle_ts": 1794078000,
-      "last_leg_candle_ts": 1794078000,
+      "last_leg_candle_ts": 1794081600,
       "dry_run": true,
       "order_id": "PAPER-SWARMSUSDT-1794078053"
     },
@@ -9364,6 +9368,15 @@
       "side": "SELL",
       "upper": 0.005538507529299767,
       "open": 0.006432,
+      "reported": false
+    },
+    {
+      "symbol": "CLAUDIAUSDT",
+      "tf": "1h",
+      "candle_ts": 1794081600,
+      "side": "SELL",
+      "upper": 0.004852566359716105,
+      "open": 0.006068,
       "reported": false
     }
   ],
