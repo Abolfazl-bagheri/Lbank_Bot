@@ -323,15 +323,15 @@
       "symbol": "ONEUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.0017725952749813785,
-      "qty": 338486.7422,
-      "margin": 30.0,
+      "entry": 0.0017887722016962713,
+      "qty": 782659.7476,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 0.001728280393106844,
-      "tf": "15m",
+      "tp_price": 0.0017440528966538645,
+      "tf": "4h",
       "opened_at": 1793995384,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [],
       "steps": [
         {
@@ -341,10 +341,14 @@
         {
           "px": 0.0018796,
           "ts": 1794006916
+        },
+        {
+          "px": 0.0018011,
+          "ts": 1794009680
         }
       ],
       "entry_candle_ts": 1793995200,
-      "last_leg_candle_ts": 1794006900,
+      "last_leg_candle_ts": 1794009600,
       "dry_run": true,
       "order_id": "PAPER-ONEUSDT-1793995384"
     },
@@ -8938,6 +8942,15 @@
       "side": "SELL",
       "upper": 0.0019966563967332967,
       "open": 0.002019,
+      "reported": false
+    },
+    {
+      "symbol": "TAUSDT",
+      "tf": "4h",
+      "candle_ts": 1794009600,
+      "side": "SELL",
+      "upper": 0.09606876648462798,
+      "open": 0.09758,
       "reported": false
     }
   ],
