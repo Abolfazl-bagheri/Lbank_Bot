@@ -63,41 +63,6 @@
       "last_leg_candle_ts": 1794017933,
       "dry_run": true,
       "order_id": "PAPER-LYNUSDT-1794013238"
-    },
-    {
-      "symbol": "AKEUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.005477186292833569,
-      "qty": 255605.6934,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 0.00534025663551273,
-      "tf": "15m",
-      "opened_at": 1794013259,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [
-        0.0057241
-      ],
-      "steps": [
-        {
-          "px": 0.004899,
-          "ts": 1794013259
-        },
-        {
-          "px": 0.00536,
-          "ts": 1794014143
-        },
-        {
-          "px": 0.005708,
-          "ts": 1794017939
-        }
-      ],
-      "entry_candle_ts": 1794013200,
-      "last_leg_candle_ts": 1794017939,
-      "dry_run": true,
-      "order_id": "PAPER-AKEUSDT-1794013259"
     }
   ],
   "trade_history": [
@@ -6822,6 +6787,46 @@
       "pnl_usdt": 6.557377049180333,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "AKEUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.005477186292833569,
+      "qty": 255605.6934,
+      "margin": 70.0,
+      "leverage": 20,
+      "tp_price": 0.00534025663551273,
+      "tf": "15m",
+      "opened_at": 1794013259,
+      "adds": 2,
+      "last_leg_margin": 40.0,
+      "used_res_levels": [
+        0.0057241
+      ],
+      "steps": [
+        {
+          "px": 0.004899,
+          "ts": 1794013259
+        },
+        {
+          "px": 0.00536,
+          "ts": 1794014143
+        },
+        {
+          "px": 0.005708,
+          "ts": 1794017939
+        }
+      ],
+      "entry_candle_ts": 1794013200,
+      "last_leg_candle_ts": 1794017939,
+      "dry_run": true,
+      "order_id": "PAPER-AKEUSDT-1794013259",
+      "closed_at": 1794028761,
+      "close_px": 0.004706,
+      "pnl_usdt": 197.11960708359342,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -7034,76 +7039,6 @@
       "tf": "15m",
       "candle_ts": 1793430900,
       "side": "SELL"
-    },
-    {
-      "symbol": "SHEINUSDT",
-      "tf": "1h",
-      "candle_ts": 1793761200,
-      "side": "SELL",
-      "upper": 4.791750169349532,
-      "open": 4.849,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "CLANKERUSDT",
-      "tf": "4h",
-      "candle_ts": 1793764800,
-      "side": "SELL",
-      "upper": 15.280021109225881,
-      "open": 15.74,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "BMTUSDT",
-      "tf": "4h",
-      "candle_ts": 1793764800,
-      "side": "SELL",
-      "upper": 0.028217692098858094,
-      "open": 0.02904,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "SHEINUSDT",
-      "tf": "4h",
-      "candle_ts": 1793764800,
-      "side": "SELL",
-      "upper": 4.809238234723951,
-      "open": 4.877,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "USELESSUSDT",
-      "tf": "15m",
-      "candle_ts": 1793768400,
-      "side": "SELL",
-      "upper": 0.1324218950061689,
-      "open": 0.13445,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "CASHCATUSDT",
-      "tf": "15m",
-      "candle_ts": 1793768400,
-      "side": "SELL",
-      "upper": 0.11130245623340396,
-      "open": 0.11327,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "USELESSUSDT",
-      "tf": "1h",
-      "candle_ts": 1793768400,
-      "side": "SELL",
-      "upper": 0.13302001366439223,
-      "open": 0.13445,
-      "reported": true,
-      "filled": true
     },
     {
       "symbol": "ANSEMUSDT",
@@ -9318,7 +9253,6 @@
     "CANTONUSDT": 1793952369,
     "BTCDOMUSDT": 1793955831,
     "UBIKUSDT": 1793961071,
-    "AINBSCUSDT": 1793962017,
     "NGASUSDT": 1793980968,
     "SXTUSDT": 1793980978,
     "HK1810USDT": 1793981026,
@@ -9328,15 +9262,8 @@
     "OROCHIUSDT": 1794015066,
     "IRENONUSDT": 1794016985,
     "BBXUSDT": 1794018704,
-    "FLYUSDT": 1794019609,
     "FUTUUSDT": 1794019612,
     "AEHRUSDT": 1794020651,
-    "RGTIUSDT": 1794020663,
-    "POETUSDT": 1794021389,
-    "KOPNUSDT": 1794021399,
-    "LWLGUSDT": 1794023284,
-    "FLOCK1USDT": 1794024976,
-    "TOADUSDT": 1794027800,
     "TRUMPSOLUSDT": 1794028601,
     "SAFE1USDT": 1794032230,
     "1000WOJAKUSDT": 1794033118,
@@ -9352,7 +9279,15 @@
     "GSTOCKUSDT": 1794048395,
     "UP2USDT": 1794053793,
     "RIOTUSDT": 1794056625,
-    "QUACKAIUSDT": 1794056635
+    "QUACKAIUSDT": 1794056635,
+    "POETUSDT": 1794071767,
+    "LWLGUSDT": 1794071768,
+    "RGTIUSDT": 1794071770,
+    "AINBSCUSDT": 1794071771,
+    "FLYUSDT": 1794071772,
+    "KOPNUSDT": 1794071799,
+    "TOADUSDT": 1794071802,
+    "FLOCK1USDT": 1794071825
   },
   "last_trade_report_ts": 1794018794,
   "last_known_version": "2.7.2",
