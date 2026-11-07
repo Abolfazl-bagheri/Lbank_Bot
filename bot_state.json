@@ -55,29 +55,29 @@
       "order_id": "PAPER-KOMAUSDT-1794042046"
     },
     {
-      "symbol": "KATUSDT",
+      "symbol": "BLENDUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.003837,
-      "qty": 52124.0553,
+      "entry": 0.05586,
+      "qty": 3580.3795,
       "margin": 10.0,
       "leverage": 20,
-      "tp_price": 0.003741075,
+      "tp_price": 0.0544635,
       "tf": "15m",
-      "opened_at": 1794043867,
+      "opened_at": 1794048332,
       "adds": 0,
       "last_leg_margin": 10.0,
       "used_res_levels": [],
       "steps": [
         {
-          "px": 0.003837,
-          "ts": 1794043867
+          "px": 0.05586,
+          "ts": 1794048332
         }
       ],
-      "entry_candle_ts": 1794043800,
-      "last_leg_candle_ts": 1794043800,
+      "entry_candle_ts": 1794048300,
+      "last_leg_candle_ts": 1794048300,
       "dry_run": true,
-      "order_id": "PAPER-KATUSDT-1794043867"
+      "order_id": "PAPER-BLENDUSDT-1794048332"
     }
   ],
   "trade_history": [
@@ -7074,6 +7074,36 @@
       "pnl_usdt": 112.8553884268937,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "KATUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.003837,
+      "qty": 52124.0553,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.003741075,
+      "tf": "15m",
+      "opened_at": 1794043867,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.003837,
+          "ts": 1794043867
+        }
+      ],
+      "entry_candle_ts": 1794043800,
+      "last_leg_candle_ts": 1794043800,
+      "dry_run": true,
+      "order_id": "PAPER-KATUSDT-1794043867",
+      "closed_at": 1794045976,
+      "close_px": 0.003734,
+      "pnl_usdt": 5.368777690904364,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -9556,7 +9586,6 @@
   "kline_blacklist": {
     "STXSTOCKUSDT": 1793301443,
     "IBBETFUSDT": 1793310363,
-    "GMESTOCKUSDT": 1793353780,
     "EURUSDT": 1793385188,
     "SKY1USDT": 1793398016,
     "AXLUSDT": 1793502358,
@@ -9598,7 +9627,6 @@
     "OROCHIUSDT": 1794015066,
     "IRENONUSDT": 1794016985,
     "BBXUSDT": 1794018704,
-    "FUTUUSDT": 1794019612,
     "AEHRUSDT": 1794020651,
     "TRUMPSOLUSDT": 1794028601,
     "MURATAUSDT": 1794038839,
@@ -9625,7 +9653,7 @@
     "ARROWUSDT": 1794086185,
     "BARUSDT": 1794087994
   },
-  "last_trade_report_ts": 1794044056,
+  "last_trade_report_ts": 1794047618,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
