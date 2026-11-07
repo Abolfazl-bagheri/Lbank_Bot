@@ -104,37 +104,6 @@
       "order_id": "PAPER-ESPORTSUSDT-1794031243"
     },
     {
-      "symbol": "PIEVERSEUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 1.5308620876877854,
-      "qty": 391.93600000000004,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 1.4925905354955908,
-      "tf": "1h",
-      "opened_at": 1794031329,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        1.5522
-      ],
-      "steps": [
-        {
-          "px": 1.4992,
-          "ts": 1794031329
-        },
-        {
-          "px": 1.5472,
-          "ts": 1794032349
-        }
-      ],
-      "entry_candle_ts": 1794031200,
-      "last_leg_candle_ts": 1794032349,
-      "dry_run": true,
-      "order_id": "PAPER-PIEVERSEUSDT-1794031329"
-    },
-    {
       "symbol": "FOLKSUSDT",
       "side": "SELL",
       "status": "open",
@@ -6922,6 +6891,42 @@
       "pnl_usdt": 197.11960708359342,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "PIEVERSEUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 1.5308620876877854,
+      "qty": 391.93600000000004,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 1.4925905354955908,
+      "tf": "1h",
+      "opened_at": 1794031329,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        1.5522
+      ],
+      "steps": [
+        {
+          "px": 1.4992,
+          "ts": 1794031329
+        },
+        {
+          "px": 1.5472,
+          "ts": 1794032349
+        }
+      ],
+      "entry_candle_ts": 1794031200,
+      "last_leg_candle_ts": 1794032349,
+      "dry_run": true,
+      "order_id": "PAPER-PIEVERSEUSDT-1794031329",
+      "closed_at": 1794036833,
+      "close_px": 1.4886,
+      "pnl_usdt": 16.564034615927355,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -9394,7 +9399,6 @@
     "QUID1USDT": 1793901083,
     "O1USDT": 1793911895,
     "MANCERUSDT": 1793914576,
-    "PIPEDOGUSDT": 1793915458,
     "STONKBROKERUSDT": 1793924211,
     "OSCRUSDT": 1793924212,
     "AMCUSDT": 1793924216,
@@ -9440,9 +9444,10 @@
     "1000WOJAKUSDT": 1794077213,
     "CZUSDT": 1794077216,
     "NEIRO1USDT": 1794077219,
-    "1000SATSUSDT": 1794077221
+    "1000SATSUSDT": 1794077221,
+    "PIPEDOGUSDT": 1794079892
   },
-  "last_trade_report_ts": 1794034195,
+  "last_trade_report_ts": 1794035169,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
