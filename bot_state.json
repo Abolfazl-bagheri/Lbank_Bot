@@ -146,6 +146,31 @@
       "last_leg_candle_ts": 1794069900,
       "dry_run": true,
       "order_id": "PAPER-ONEUSDT-1794069937"
+    },
+    {
+      "symbol": "ESPORTSUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.011267,
+      "qty": 17750.9541,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.010985324999999999,
+      "tf": "15m",
+      "opened_at": 1794070851,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.011267,
+          "ts": 1794070851
+        }
+      ],
+      "entry_candle_ts": 1794070800,
+      "last_leg_candle_ts": 1794070800,
+      "dry_run": true,
+      "order_id": "PAPER-ESPORTSUSDT-1794070851"
     }
   ],
   "trade_history": [
@@ -9192,7 +9217,8 @@
       "side": "SELL",
       "upper": 0.0363425671002651,
       "open": 0.0374,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "IDOLUSDT",
@@ -9201,6 +9227,15 @@
       "side": "SELL",
       "upper": 0.03867056295390994,
       "open": 0.03946,
+      "reported": false
+    },
+    {
+      "symbol": "ONEUSDT",
+      "tf": "15m",
+      "candle_ts": 1794069900,
+      "side": "SELL",
+      "upper": 0.0023174711607336328,
+      "open": 0.002408,
       "reported": false
     }
   ],
@@ -9304,7 +9339,6 @@
     "TRUMPSOLUSDT": 1794028601,
     "MURATAUSDT": 1794038839,
     "GSTOCKUSDT": 1794048395,
-    "QUACKAIUSDT": 1794056635,
     "POETUSDT": 1794071767,
     "LWLGUSDT": 1794071768,
     "RGTIUSDT": 1794071770,
@@ -9330,7 +9364,7 @@
     "FIGHT1USDT": 1794111444,
     "FIGUSDT": 1794112326
   },
-  "last_trade_report_ts": 1794068471,
+  "last_trade_report_ts": 1794070206,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
