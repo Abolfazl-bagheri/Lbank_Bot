@@ -118,24 +118,28 @@
       "symbol": "IDOLUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.044654,
-      "qty": 4478.8821,
-      "margin": 10.0,
+      "entry": 0.04071784111320188,
+      "qty": 14735.5553,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.04353765,
-      "tf": "15m",
+      "tp_price": 0.039699895085371834,
+      "tf": "1h",
       "opened_at": 1794073536,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 0.044654,
           "ts": 1794073536
+        },
+        {
+          "px": 0.038999,
+          "ts": 1794074454
         }
       ],
       "entry_candle_ts": 1794073500,
-      "last_leg_candle_ts": 1794073500,
+      "last_leg_candle_ts": 1794074400,
       "dry_run": true,
       "order_id": "PAPER-IDOLUSDT-1794073536"
     }
@@ -9241,6 +9245,15 @@
       "open": 0.02726,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "IDOLUSDT",
+      "tf": "15m",
+      "candle_ts": 1794073500,
+      "side": "SELL",
+      "upper": 0.043500933088689825,
+      "open": 0.044301,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -9369,7 +9382,7 @@
     "LWLGUSDT": 1794115917,
     "TOADUSDT": 1794115929
   },
-  "last_trade_report_ts": 1794072901,
+  "last_trade_report_ts": 1794073801,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
