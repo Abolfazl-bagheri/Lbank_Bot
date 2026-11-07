@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1794068127,
+  "updated_at": 1794068134,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794009673
-    },
     {
       "kind": "SELL",
       "symbol": "ONEUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 2.27,
       "ts": 1794068127
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794068134
     }
   ],
   "trades": [
@@ -1442,6 +1442,19 @@
       "lev": 20,
       "px": 0.05281,
       "pnl": 10.9202,
+      "tf": "15m"
+    },
+    {
+      "symbol": "IDOLUSDT",
+      "side": "SELL",
+      "entry": 0.03494,
+      "tp": 0.0340665,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.03494,
+      "pnl": 0.0,
       "tf": "15m"
     }
   ],
