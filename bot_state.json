@@ -128,6 +128,31 @@
       "last_leg_candle_ts": 1794078000,
       "dry_run": true,
       "order_id": "PAPER-THEUSDT-1794078080"
+    },
+    {
+      "symbol": "CLAUDIAUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.006809,
+      "qty": 29372.8888,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0066387749999999995,
+      "tf": "1h",
+      "opened_at": 1794088851,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.006809,
+          "ts": 1794088851
+        }
+      ],
+      "entry_candle_ts": 1794088800,
+      "last_leg_candle_ts": 1794088800,
+      "dry_run": true,
+      "order_id": "PAPER-CLAUDIAUSDT-1794088851"
     }
   ],
   "trade_history": [
@@ -7404,26 +7429,6 @@
     },
     {
       "symbol": "APPUSDT",
-      "tf": "15m",
-      "candle_ts": 1793827800,
-      "side": "SELL",
-      "upper": 321.6528075984007,
-      "open": 330.7,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "ELSAUSDT",
-      "tf": "15m",
-      "candle_ts": 1793828700,
-      "side": "SELL",
-      "upper": 0.10680411103342073,
-      "open": 0.10875,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "APPUSDT",
       "tf": "1h",
       "candle_ts": 1793829600,
       "side": "SELL",
@@ -9386,8 +9391,6 @@
     "SYNUSDT": 1793537208,
     "BIO1USDT": 1793611218,
     "CRWDUSDT": 1793658035,
-    "GALUSDT": 1793658927,
-    "PORUSDT": 1793694114,
     "MARRIOTTUSDT": 1793714834,
     "ONSEMIUSDT": 1793784100,
     "SIMOUSDT": 1793785920,
@@ -9449,9 +9452,10 @@
     "SXTUSDT": 1794125089,
     "HOTUSDT": 1794125148,
     "1000000BABYDOGEUSDT": 1794125149,
-    "MANCERUSDT": 1794126726
+    "MANCERUSDT": 1794126726,
+    "PORUSDT": 1794130305
   },
-  "last_trade_report_ts": 1794085642,
+  "last_trade_report_ts": 1794088155,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
