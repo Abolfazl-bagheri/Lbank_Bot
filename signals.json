@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1794028433,
+  "updated_at": 1794028765,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "ACTUSDT",
-      "tf": "15m",
-      "gap": 1.22,
-      "ts": 1793989809
-    },
     {
       "kind": "SELL",
       "symbol": "ACTUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 1.11,
       "ts": 1794028433
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794028765
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 0.03458,
-      "pnl": -17.182,
+      "px": 0.03445,
+      "pnl": -14.8618,
       "tf": "15m"
     },
     {
@@ -1427,36 +1427,23 @@
       "pele": 3,
       "margin": 70.0,
       "lev": 20,
-      "px": 0.02986,
-      "pnl": -111.1956,
-      "tf": "15m"
-    },
-    {
-      "symbol": "AKEUSDT",
-      "side": "SELL",
-      "entry": 0.005477186292833569,
-      "tp": 0.00534025663551273,
-      "adds": 2,
-      "pele": 3,
-      "margin": 70.0,
-      "lev": 20,
-      "px": 0.004726,
-      "pnl": 192.0075,
+      "px": 0.0297,
+      "pnl": -103.0981,
       "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1794010157,
-  "realized": 6.5574,
-  "closed_n": 1,
-  "open_upnl": 63.6299,
-  "equity": 1070.1873,
+  "realized": 203.677,
+  "closed_n": 2,
+  "open_upnl": -117.9599,
+  "equity": 1085.7171,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 6.5574,
+    "profit": 203.677,
     "loss": 0,
-    "count": 1
+    "count": 2
   }
 }
