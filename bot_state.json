@@ -107,6 +107,31 @@
       "last_leg_candle_ts": 1794068100,
       "dry_run": true,
       "order_id": "PAPER-IDOLUSDT-1794068129"
+    },
+    {
+      "symbol": "HMSTRUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.0001337,
+      "qty": 1495886.3126,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0001303575,
+      "tf": "15m",
+      "opened_at": 1794068225,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.0001337,
+          "ts": 1794068225
+        }
+      ],
+      "entry_candle_ts": 1794068100,
+      "last_leg_candle_ts": 1794068100,
+      "dry_run": true,
+      "order_id": "PAPER-HMSTRUSDT-1794068225"
     }
   ],
   "trade_history": [
@@ -9562,6 +9587,15 @@
       "upper": 0.015621812364502262,
       "open": 0.015791,
       "reported": false
+    },
+    {
+      "symbol": "IDOLUSDT",
+      "tf": "15m",
+      "candle_ts": 1794068100,
+      "side": "SELL",
+      "upper": 0.03414618447301809,
+      "open": 0.034856,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -9684,7 +9718,9 @@
     "SPORTFUNUSDT": 1794081839,
     "ARROWUSDT": 1794086185,
     "BARUSDT": 1794087994,
-    "IRENONUSDT": 1794092563
+    "IRENONUSDT": 1794092563,
+    "RIOTUSDT": 1794111399,
+    "UP2USDT": 1794111408
   },
   "last_trade_report_ts": 1794048557,
   "last_known_version": "2.7.2",
