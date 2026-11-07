@@ -138,6 +138,31 @@
       "last_leg_candle_ts": 1794071700,
       "dry_run": true,
       "order_id": "PAPER-SIGNUSDT-1794071734"
+    },
+    {
+      "symbol": "AEONUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.0272,
+      "qty": 7352.9412,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.02652,
+      "tf": "15m",
+      "opened_at": 1794071752,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.0272,
+          "ts": 1794071752
+        }
+      ],
+      "entry_candle_ts": 1794071700,
+      "last_leg_candle_ts": 1794071700,
+      "dry_run": true,
+      "order_id": "PAPER-AEONUSDT-1794071752"
     }
   ],
   "trade_history": [
@@ -9225,6 +9250,15 @@
       "side": "SELL",
       "upper": 0.002188700500372278,
       "open": 0.0022352,
+      "reported": false
+    },
+    {
+      "symbol": "SIGNUSDT",
+      "tf": "15m",
+      "candle_ts": 1794071700,
+      "side": "SELL",
+      "upper": 0.010483415937987569,
+      "open": 0.010983,
       "reported": false
     }
   ],
