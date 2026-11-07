@@ -94,6 +94,31 @@
       "last_leg_candle_ts": 1794034800,
       "dry_run": true,
       "order_id": "PAPER-FOLKSUSDT-1794034922"
+    },
+    {
+      "symbol": "KOMAUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.015922,
+      "qty": 12561.236,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.015523949999999998,
+      "tf": "15m",
+      "opened_at": 1794039330,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.015922,
+          "ts": 1794039330
+        }
+      ],
+      "entry_candle_ts": 1794039300,
+      "last_leg_candle_ts": 1794039300,
+      "dry_run": true,
+      "order_id": "PAPER-KOMAUSDT-1794039330"
     }
   ],
   "trade_history": [
@@ -9172,7 +9197,8 @@
       "side": "SELL",
       "upper": 0.09606876648462798,
       "open": 0.09758,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ONEUSDT",
@@ -9181,7 +9207,8 @@
       "side": "SELL",
       "upper": 0.001737821143291568,
       "open": 0.001792,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CARVUSDT",
@@ -9310,7 +9337,8 @@
       "side": "SELL",
       "upper": 0.01188783057606874,
       "open": 0.01229,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "FOLKSUSDT",
@@ -9319,7 +9347,8 @@
       "side": "SELL",
       "upper": 2.4916108688021907,
       "open": 2.522,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -9427,11 +9456,7 @@
     "AEHRUSDT": 1794020651,
     "TRUMPSOLUSDT": 1794028601,
     "ARROWUSDT": 1794038726,
-    "KNTQUSDT": 1794038678,
     "MURATAUSDT": 1794038839,
-    "NEXUSDT": 1794038816,
-    "HOTUSDT": 1794038834,
-    "1000000BABYDOGEUSDT": 1794038838,
     "GSTOCKUSDT": 1794048395,
     "UP2USDT": 1794053793,
     "RIOTUSDT": 1794056625,
@@ -9450,9 +9475,10 @@
     "CZUSDT": 1794077216,
     "NEIRO1USDT": 1794077219,
     "1000SATSUSDT": 1794077221,
-    "PIPEDOGUSDT": 1794079892
+    "PIPEDOGUSDT": 1794079892,
+    "SPORTFUNUSDT": 1794081839
   },
-  "last_trade_report_ts": 1794036841,
+  "last_trade_report_ts": 1794038802,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
