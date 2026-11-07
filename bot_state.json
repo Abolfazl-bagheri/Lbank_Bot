@@ -71,39 +71,6 @@
       "order_id": "PAPER-LYNUSDT-1794013238"
     },
     {
-      "symbol": "ESPORTSUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.012139666844495444,
-      "qty": 115324.4169,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 0.011836175173383059,
-      "tf": "1h",
-      "opened_at": 1794031243,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.011329,
-          "ts": 1794031243
-        },
-        {
-          "px": 0.012345,
-          "ts": 1794032125
-        },
-        {
-          "px": 0.012257,
-          "ts": 1794034850
-        }
-      ],
-      "entry_candle_ts": 1794031200,
-      "last_leg_candle_ts": 1794034800,
-      "dry_run": true,
-      "order_id": "PAPER-ESPORTSUSDT-1794031243"
-    },
-    {
       "symbol": "FOLKSUSDT",
       "side": "SELL",
       "status": "open",
@@ -6927,6 +6894,44 @@
       "pnl_usdt": 16.564034615927355,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "ESPORTSUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.012139666844495444,
+      "qty": 115324.4169,
+      "margin": 70.0,
+      "leverage": 20,
+      "tp_price": 0.011836175173383059,
+      "tf": "1h",
+      "opened_at": 1794031243,
+      "adds": 2,
+      "last_leg_margin": 40.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.011329,
+          "ts": 1794031243
+        },
+        {
+          "px": 0.012345,
+          "ts": 1794032125
+        },
+        {
+          "px": 0.012257,
+          "ts": 1794034850
+        }
+      ],
+      "entry_candle_ts": 1794031200,
+      "last_leg_candle_ts": 1794034800,
+      "dry_run": true,
+      "order_id": "PAPER-ESPORTSUSDT-1794031243",
+      "closed_at": 1794037688,
+      "close_px": 0.011035,
+      "pnl_usdt": 127.39505969184616,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -9447,7 +9452,7 @@
     "1000SATSUSDT": 1794077221,
     "PIPEDOGUSDT": 1794079892
   },
-  "last_trade_report_ts": 1794035169,
+  "last_trade_report_ts": 1794036841,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
