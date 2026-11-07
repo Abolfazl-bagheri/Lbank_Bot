@@ -126,24 +126,28 @@
       "symbol": "ONEUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.0024207,
-      "qty": 82620.7295,
-      "margin": 10.0,
+      "entry": 0.002285141074121467,
+      "qty": 262565.8462,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.0023601825,
-      "tf": "15m",
+      "tp_price": 0.00222801254726843,
+      "tf": "1h",
       "opened_at": 1794069937,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 0.0024207,
           "ts": 1794069937
+        },
+        {
+          "px": 0.0022229,
+          "ts": 1794070872
         }
       ],
       "entry_candle_ts": 1794069900,
-      "last_leg_candle_ts": 1794069900,
+      "last_leg_candle_ts": 1794070800,
       "dry_run": true,
       "order_id": "PAPER-ONEUSDT-1794069937"
     },
@@ -9236,6 +9240,15 @@
       "side": "SELL",
       "upper": 0.0023174711607336328,
       "open": 0.002408,
+      "reported": false
+    },
+    {
+      "symbol": "ESPORTSUSDT",
+      "tf": "15m",
+      "candle_ts": 1794070800,
+      "side": "SELL",
+      "upper": 0.011093967232911537,
+      "open": 0.01125,
       "reported": false
     }
   ],
