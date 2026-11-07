@@ -154,15 +154,15 @@
       "symbol": "CLAUDIAUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.003595911562210972,
-      "qty": 166856.16139999998,
-      "margin": 30.0,
+      "entry": 0.003927844143867087,
+      "qty": 356429.6211,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 0.0035060137731556975,
+      "tp_price": 0.00382964804027041,
       "tf": "15m",
       "opened_at": 1794078939,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [],
       "steps": [
         {
@@ -172,10 +172,14 @@
         {
           "px": 0.00352,
           "ts": 1794079834
+        },
+        {
+          "px": 0.00422,
+          "ts": 1794080748
         }
       ],
       "entry_candle_ts": 1794078900,
-      "last_leg_candle_ts": 1794079800,
+      "last_leg_candle_ts": 1794080700,
       "dry_run": true,
       "order_id": "PAPER-CLAUDIAUSDT-1794078939"
     }
@@ -9327,6 +9331,16 @@
       "side": "SELL",
       "upper": 0.003242492988817987,
       "open": 0.00372,
+      "reported": true,
+      "filled": false
+    },
+    {
+      "symbol": "CLAUDIAUSDT",
+      "tf": "15m",
+      "candle_ts": 1794079800,
+      "side": "SELL",
+      "upper": 0.0033921225193182035,
+      "open": 0.003554,
       "reported": false
     }
   ],
@@ -9429,10 +9443,8 @@
     "MURATAUSDT": 1794038839,
     "GSTOCKUSDT": 1794048395,
     "RGTIUSDT": 1794071770,
-    "KOPNUSDT": 1794071799,
     "FLOCK1USDT": 1794071825,
     "SAFE1USDT": 1794076315,
-    "PIPEDOGUSDT": 1794079892,
     "SPORTFUNUSDT": 1794081839,
     "ARROWUSDT": 1794086185,
     "BARUSDT": 1794087994,
@@ -9457,7 +9469,7 @@
     "NEIRO1USDT": 1794121471,
     "QUACKAIUSDT": 1794122215
   },
-  "last_trade_report_ts": 1794078466,
+  "last_trade_report_ts": 1794080085,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
