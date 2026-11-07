@@ -43,15 +43,15 @@
       "symbol": "HMSTRUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.0001306822733075738,
-      "qty": 10713006.168000001,
-      "margin": 70.0,
+      "entry": 0.00013433355851416828,
+      "qty": 22332468.7679,
+      "margin": 150.0,
       "leverage": 20,
-      "tp_price": 0.00012741521647488446,
-      "tf": "15m",
+      "tp_price": 0.00013097521955131406,
+      "tf": "1h",
       "opened_at": 1794068225,
-      "adds": 2,
-      "last_leg_margin": 40.0,
+      "adds": 3,
+      "last_leg_margin": 80.0,
       "used_res_levels": [
         0.000132,
         0.0001298
@@ -68,10 +68,14 @@
         {
           "px": 0.0001295,
           "ts": 1794074855
+        },
+        {
+          "px": 0.0001377,
+          "ts": 1794081757
         }
       ],
       "entry_candle_ts": 1794068100,
-      "last_leg_candle_ts": 1794074855,
+      "last_leg_candle_ts": 1794081600,
       "dry_run": true,
       "order_id": "PAPER-HMSTRUSDT-1794068225"
     },
@@ -9387,6 +9391,15 @@
       "upper": 0.007133202284097371,
       "open": 0.0073,
       "reported": false
+    },
+    {
+      "symbol": "CLAUDIAUSDT",
+      "tf": "4h",
+      "candle_ts": 1794081600,
+      "side": "SELL",
+      "upper": 0.004916059770390417,
+      "open": 0.006068,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -9513,7 +9526,8 @@
     "CZUSDT": 1794121473,
     "NEIRO1USDT": 1794121471,
     "QUACKAIUSDT": 1794122215,
-    "PIPEDOGUSDT": 1794124059
+    "PIPEDOGUSDT": 1794124059,
+    "NIULAIUSDT": 1794124933
   },
   "last_trade_report_ts": 1794081014,
   "last_known_version": "2.7.2",
