@@ -154,15 +154,15 @@
       "symbol": "CLAUDIAUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.003927844143867087,
-      "qty": 356429.6211,
-      "margin": 70.0,
+      "entry": 0.004861442019223147,
+      "qty": 617100.8495,
+      "margin": 150.0,
       "leverage": 20,
-      "tp_price": 0.00382964804027041,
+      "tp_price": 0.004739905968742568,
       "tf": "15m",
       "opened_at": 1794078939,
-      "adds": 2,
-      "last_leg_margin": 40.0,
+      "adds": 3,
+      "last_leg_margin": 80.0,
       "used_res_levels": [],
       "steps": [
         {
@@ -176,10 +176,14 @@
         {
           "px": 0.00422,
           "ts": 1794080748
+        },
+        {
+          "px": 0.006138,
+          "ts": 1794081631
         }
       ],
       "entry_candle_ts": 1794078900,
-      "last_leg_candle_ts": 1794080700,
+      "last_leg_candle_ts": 1794081600,
       "dry_run": true,
       "order_id": "PAPER-CLAUDIAUSDT-1794078939"
     }
@@ -9341,6 +9345,16 @@
       "side": "SELL",
       "upper": 0.0033921225193182035,
       "open": 0.003554,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "CLAUDIAUSDT",
+      "tf": "15m",
+      "candle_ts": 1794080700,
+      "side": "SELL",
+      "upper": 0.004087056302141485,
+      "open": 0.00449,
       "reported": false
     }
   ],
@@ -9467,9 +9481,10 @@
     "1000SATSUSDT": 1794121460,
     "CZUSDT": 1794121473,
     "NEIRO1USDT": 1794121471,
-    "QUACKAIUSDT": 1794122215
+    "QUACKAIUSDT": 1794122215,
+    "PIPEDOGUSDT": 1794124059
   },
-  "last_trade_report_ts": 1794080085,
+  "last_trade_report_ts": 1794081014,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
