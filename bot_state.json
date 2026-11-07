@@ -91,24 +91,30 @@
       "symbol": "HMSTRUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.0001337,
-      "qty": 1495886.3126,
-      "margin": 10.0,
+      "entry": 0.00013229263157893664,
+      "qty": 4535399.9904000005,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.0001303575,
+      "tp_price": 0.0001289853157894632,
       "tf": "15m",
       "opened_at": 1794068225,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.000132
+      ],
       "steps": [
         {
           "px": 0.0001337,
           "ts": 1794068225
+        },
+        {
+          "px": 0.0001316,
+          "ts": 1794069274
         }
       ],
       "entry_candle_ts": 1794068100,
-      "last_leg_candle_ts": 1794068100,
+      "last_leg_candle_ts": 1794069274,
       "dry_run": true,
       "order_id": "PAPER-HMSTRUSDT-1794068225"
     }
@@ -9137,7 +9143,8 @@
       "side": "SELL",
       "upper": 0.03414618447301809,
       "open": 0.034856,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "HMSTRUSDT",
@@ -9146,6 +9153,16 @@
       "side": "SELL",
       "upper": 0.00013244132349773865,
       "open": 0.0001339,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "IDOLUSDT",
+      "tf": "15m",
+      "candle_ts": 1794069000,
+      "side": "SELL",
+      "upper": 0.0363425671002651,
+      "open": 0.0374,
       "reported": false
     }
   ],
@@ -9272,7 +9289,8 @@
     "RIOTUSDT": 1794111399,
     "UP2USDT": 1794111408,
     "AEHRUSDT": 1794111443,
-    "FIGHT1USDT": 1794111444
+    "FIGHT1USDT": 1794111444,
+    "FIGUSDT": 1794112326
   },
   "last_trade_report_ts": 1794068471,
   "last_known_version": "2.7.2",
