@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1794014121,
+  "updated_at": 1794014127,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "TEMUSDT",
-      "tf": "1h",
-      "gap": 1.21,
-      "ts": 1793987519
-    },
     {
       "kind": "GAP",
       "symbol": "KNTQUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 5.63,
       "ts": 1794014121
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794014127
     }
   ],
   "trades": [
@@ -1434,11 +1434,11 @@
     {
       "symbol": "AKEUSDT",
       "side": "SELL",
-      "entry": 0.004953,
-      "tp": 0.004829175,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
+      "entry": 0.005223411233376446,
+      "tp": 0.0050928259525420344,
+      "adds": 1,
+      "pele": 2,
+      "margin": 30.0,
       "lev": 20,
       "px": 0.00537,
       "pnl": -16.8383,
