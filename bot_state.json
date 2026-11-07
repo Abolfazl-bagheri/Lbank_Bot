@@ -43,24 +43,30 @@
       "symbol": "GRVTUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.2113,
-      "qty": 946.5215,
-      "margin": 10.0,
+      "entry": 0.21143329128160113,
+      "qty": 2837.7745,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.2060175,
+      "tp_price": 0.2061474589995611,
       "tf": "15m",
       "opened_at": 1794075339,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.2119
+      ],
       "steps": [
         {
           "px": 0.2113,
           "ts": 1794075339
+        },
+        {
+          "px": 0.2115,
+          "ts": 1794095333
         }
       ],
       "entry_candle_ts": 1794075300,
-      "last_leg_candle_ts": 1794075300,
+      "last_leg_candle_ts": 1794095333,
       "dry_run": true,
       "order_id": "PAPER-GRVTUSDT-1794075339"
     },
@@ -9391,7 +9397,7 @@
     "MANCERUSDT": 1794126726,
     "PORUSDT": 1794130305
   },
-  "last_trade_report_ts": 1794089192,
+  "last_trade_report_ts": 1794094401,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
