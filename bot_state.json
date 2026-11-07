@@ -59,39 +59,6 @@
       "order_id": "PAPER-KOMAUSDT-1794042046"
     },
     {
-      "symbol": "IDOLUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.038076033991334975,
-      "qty": 36768.5353,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 0.0371241331415516,
-      "tf": "15m",
-      "opened_at": 1794068129,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.03494,
-          "ts": 1794068129
-        },
-        {
-          "px": 0.037419,
-          "ts": 1794069035
-        },
-        {
-          "px": 0.039303,
-          "ts": 1794069921
-        }
-      ],
-      "entry_candle_ts": 1794068100,
-      "last_leg_candle_ts": 1794069900,
-      "dry_run": true,
-      "order_id": "PAPER-IDOLUSDT-1794068129"
-    },
-    {
       "symbol": "HMSTRUSDT",
       "side": "SELL",
       "status": "open",
@@ -178,40 +145,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "XDPUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.018960000000000005,
-      "qty": 31645.5696,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.018486000000000002,
-      "tf": "15m",
-      "opened_at": 1793578801,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        0.019
-      ],
-      "steps": [
-        {
-          "px": 0.01896,
-          "ts": 1793578801
-        },
-        {
-          "px": 0.01896,
-          "ts": 1793578909
-        }
-      ],
-      "entry_candle_ts": 1793578500,
-      "last_leg_candle_ts": 1793578909,
-      "dry_run": true,
-      "order_id": "PAPER-XDPUSDT-1793578801",
-      "closed_at": 1793579814,
-      "close_px": 0.01812,
-      "pnl_usdt": 26.58227848101277
-    },
     {
       "symbol": "PIEVERSEUSDT",
       "side": "SELL",
@@ -7203,6 +7136,44 @@
       "pnl_usdt": 10.92015753669888,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "IDOLUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.038076033991334975,
+      "qty": 36768.5353,
+      "margin": 70.0,
+      "leverage": 20,
+      "tp_price": 0.0371241331415516,
+      "tf": "15m",
+      "opened_at": 1794068129,
+      "adds": 2,
+      "last_leg_margin": 40.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.03494,
+          "ts": 1794068129
+        },
+        {
+          "px": 0.037419,
+          "ts": 1794069035
+        },
+        {
+          "px": 0.039303,
+          "ts": 1794069921
+        }
+      ],
+      "entry_candle_ts": 1794068100,
+      "last_leg_candle_ts": 1794069900,
+      "dry_run": true,
+      "order_id": "PAPER-IDOLUSDT-1794068129",
+      "closed_at": 1794071280,
+      "close_px": 0.036125,
+      "pnl_usdt": 71.73666218731101,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -7415,16 +7386,6 @@
       "tf": "15m",
       "candle_ts": 1793430900,
       "side": "SELL"
-    },
-    {
-      "symbol": "ZZZUSDT",
-      "tf": "1h",
-      "candle_ts": 1793811600,
-      "side": "SELL",
-      "upper": 0.009565991655942657,
-      "open": 0.00974,
-      "reported": true,
-      "filled": true
     },
     {
       "symbol": "ZZZUSDT",
@@ -9173,7 +9134,8 @@
       "side": "SELL",
       "upper": 0.015073137184545825,
       "open": 0.015386,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "BLENDUSDT",
@@ -9192,7 +9154,8 @@
       "side": "SELL",
       "upper": 0.015621812364502262,
       "open": 0.015791,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "IDOLUSDT",
@@ -9231,7 +9194,8 @@
       "side": "SELL",
       "upper": 0.03867056295390994,
       "open": 0.03946,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ONEUSDT",
@@ -9240,7 +9204,8 @@
       "side": "SELL",
       "upper": 0.0023174711607336328,
       "open": 0.002408,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ESPORTSUSDT",
@@ -9249,6 +9214,15 @@
       "side": "SELL",
       "upper": 0.011093967232911537,
       "open": 0.01125,
+      "reported": false
+    },
+    {
+      "symbol": "ONEUSDT",
+      "tf": "1h",
+      "candle_ts": 1794070800,
+      "side": "SELL",
+      "upper": 0.002188700500372278,
+      "open": 0.0022352,
       "reported": false
     }
   ],
@@ -9375,7 +9349,8 @@
     "UP2USDT": 1794111408,
     "AEHRUSDT": 1794111443,
     "FIGHT1USDT": 1794111444,
-    "FIGUSDT": 1794112326
+    "FIGUSDT": 1794112326,
+    "ARGUSDT": 1794114249
   },
   "last_trade_report_ts": 1794070206,
   "last_known_version": "2.7.2",
