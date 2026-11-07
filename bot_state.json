@@ -127,6 +127,31 @@
       "last_leg_candle_ts": 1794032349,
       "dry_run": true,
       "order_id": "PAPER-PIEVERSEUSDT-1794031329"
+    },
+    {
+      "symbol": "FOLKSUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 2.521,
+      "qty": 79.3336,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 2.457975,
+      "tf": "1h",
+      "opened_at": 1794034922,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 2.521,
+          "ts": 1794034922
+        }
+      ],
+      "entry_candle_ts": 1794034800,
+      "last_leg_candle_ts": 1794034800,
+      "dry_run": true,
+      "order_id": "PAPER-FOLKSUSDT-1794034922"
     }
   ],
   "trade_history": [
@@ -9259,6 +9284,15 @@
       "open": 0.01243,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "ESPORTSUSDT",
+      "tf": "1h",
+      "candle_ts": 1794034800,
+      "side": "SELL",
+      "upper": 0.01188783057606874,
+      "open": 0.01229,
+      "reported": false
     }
   ],
   "paper_days": [
