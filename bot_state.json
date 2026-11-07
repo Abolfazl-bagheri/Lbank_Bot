@@ -149,6 +149,31 @@
       "last_leg_candle_ts": 1794078000,
       "dry_run": true,
       "order_id": "PAPER-THEUSDT-1794078080"
+    },
+    {
+      "symbol": "CLAUDIAUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.003758,
+      "qty": 53219.7978,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.00366405,
+      "tf": "15m",
+      "opened_at": 1794078939,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.003758,
+          "ts": 1794078939
+        }
+      ],
+      "entry_candle_ts": 1794078900,
+      "last_leg_candle_ts": 1794078900,
+      "dry_run": true,
+      "order_id": "PAPER-CLAUDIAUSDT-1794078939"
     }
   ],
   "trade_history": [
@@ -9260,7 +9285,8 @@
       "side": "SELL",
       "upper": 0.037585509574192995,
       "open": 0.038581,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "GRVTUSDT",
@@ -9279,6 +9305,15 @@
       "side": "SELL",
       "upper": 0.007132045286069907,
       "open": 0.007206,
+      "reported": false
+    },
+    {
+      "symbol": "THEUSDT",
+      "tf": "1h",
+      "candle_ts": 1794078000,
+      "side": "SELL",
+      "upper": 0.03915941527740142,
+      "open": 0.0396,
       "reported": false
     }
   ],
@@ -9402,9 +9437,13 @@
     "LWLGUSDT": 1794115917,
     "TOADUSDT": 1794115929,
     "METEORAUSDT": 1794120360,
-    "CAPETHUSDT": 1794120413
+    "CAPETHUSDT": 1794120413,
+    "1000WOJAKUSDT": 1794121453,
+    "1000SATSUSDT": 1794121460,
+    "CZUSDT": 1794121473,
+    "NEIRO1USDT": 1794121471
   },
-  "last_trade_report_ts": 1794076506,
+  "last_trade_report_ts": 1794078466,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
