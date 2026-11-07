@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1794013258,
+  "updated_at": 1794013263,
   "signals": [
-    {
-      "kind": "HEARTBEAT",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1793984752
-    },
     {
       "kind": "GAP",
       "symbol": "INFQUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 4.52,
       "ts": 1794013258
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794013263
     }
   ],
   "trades": [
@@ -1428,6 +1428,19 @@
       "margin": 10.0,
       "lev": 20,
       "px": 0.02658,
+      "pnl": 0.0,
+      "tf": "15m"
+    },
+    {
+      "symbol": "AKEUSDT",
+      "side": "SELL",
+      "entry": 0.004899,
+      "tp": 0.004776524999999999,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.004899,
       "pnl": 0.0,
       "tf": "15m"
     }
