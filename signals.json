@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1794041013,
+  "updated_at": 1794041346,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "PAIDUSDT",
-      "tf": "15m",
-      "gap": 1.11,
-      "ts": 1793999633
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 1.65,
       "ts": 1794041013
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794041346
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 3,
       "margin": 70.0,
       "lev": 20,
-      "px": 0.03343,
-      "pnl": 2.8642,
+      "px": 0.03367,
+      "pnl": -7.1661,
       "tf": "15m"
     },
     {
@@ -1427,22 +1427,9 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 2.48,
-      "pnl": 3.2527,
+      "px": 2.478,
+      "pnl": 3.4113,
       "tf": "1h"
-    },
-    {
-      "symbol": "KOMAUSDT",
-      "side": "SELL",
-      "entry": 0.015821014092067296,
-      "tp": 0.015425488739765613,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
-      "lev": 20,
-      "px": 0.015225,
-      "pnl": 22.6034,
-      "tf": "15m"
     },
     {
       "symbol": "CTUSDT",
@@ -1453,23 +1440,23 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.13595,
-      "pnl": -1.4522,
+      "px": 0.13654,
+      "pnl": -2.3264,
       "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1794010157,
-  "realized": 394.3417,
-  "closed_n": 5,
-  "open_upnl": 27.2681,
-  "equity": 1421.6098,
+  "realized": 415.504,
+  "closed_n": 6,
+  "open_upnl": -6.0812,
+  "equity": 1409.4228,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 394.3417,
+    "profit": 415.504,
     "loss": 0,
-    "count": 5
+    "count": 6
   }
 }
