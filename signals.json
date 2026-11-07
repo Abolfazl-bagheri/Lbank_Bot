@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1794013269,
+  "updated_at": 1794013276,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1793986419
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 5.49,
       "ts": 1794013269
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794013276
     }
   ],
   "trades": [
@@ -1428,6 +1428,19 @@
       "margin": 10.0,
       "lev": 20,
       "px": 0.02653,
+      "pnl": 0.0,
+      "tf": "15m"
+    },
+    {
+      "symbol": "AKEUSDT",
+      "side": "SELL",
+      "entry": 0.004953,
+      "tp": 0.004829175,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.004953,
       "pnl": 0.0,
       "tf": "15m"
     }
