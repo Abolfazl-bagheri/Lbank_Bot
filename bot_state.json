@@ -117,6 +117,31 @@
       "last_leg_candle_ts": 1794042000,
       "dry_run": true,
       "order_id": "PAPER-KOMAUSDT-1794042046"
+    },
+    {
+      "symbol": "KATUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.003837,
+      "qty": 52124.0553,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.003741075,
+      "tf": "15m",
+      "opened_at": 1794043867,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.003837,
+          "ts": 1794043867
+        }
+      ],
+      "entry_candle_ts": 1794043800,
+      "last_leg_candle_ts": 1794043800,
+      "dry_run": true,
+      "order_id": "PAPER-KATUSDT-1794043867"
     }
   ],
   "trade_history": [
@@ -9448,6 +9473,15 @@
       "side": "SELL",
       "upper": 0.1347389960347059,
       "open": 0.1388,
+      "reported": false
+    },
+    {
+      "symbol": "CTUSDT",
+      "tf": "15m",
+      "candle_ts": 1794043800,
+      "side": "SELL",
+      "upper": 0.1438134907203566,
+      "open": 0.1457,
       "reported": false
     }
   ],
