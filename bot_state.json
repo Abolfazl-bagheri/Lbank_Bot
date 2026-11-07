@@ -4,16 +4,18 @@
       "symbol": "CARVUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.03361731184768758,
-      "qty": 17847.947,
-      "margin": 30.0,
+      "entry": 0.03349853401411352,
+      "qty": 41792.8737,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 0.032776879051495386,
+      "tp_price": 0.03266107066376068,
       "tf": "15m",
       "opened_at": 1794010548,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
+      "adds": 2,
+      "last_leg_margin": 40.0,
+      "used_res_levels": [
+        0.03348
+      ],
       "steps": [
         {
           "px": 0.03299,
@@ -22,10 +24,14 @@
         {
           "px": 0.03394,
           "ts": 1794013280
+        },
+        {
+          "px": 0.03341,
+          "ts": 1794035154
         }
       ],
       "entry_candle_ts": 1794010500,
-      "last_leg_candle_ts": 1794013200,
+      "last_leg_candle_ts": 1794035154,
       "dry_run": true,
       "order_id": "PAPER-CARVUSDT-1794010548"
     },
@@ -9264,7 +9270,8 @@
       "side": "SELL",
       "upper": 0.011116200851067909,
       "open": 0.0113,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "PIEVERSEUSDT",
@@ -9273,7 +9280,8 @@
       "side": "SELL",
       "upper": 1.4726399113528186,
       "open": 1.4955,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "ESPORTSUSDT",
@@ -9292,6 +9300,15 @@
       "side": "SELL",
       "upper": 0.01188783057606874,
       "open": 0.01229,
+      "reported": false
+    },
+    {
+      "symbol": "FOLKSUSDT",
+      "tf": "1h",
+      "candle_ts": 1794034800,
+      "side": "SELL",
+      "upper": 2.4916108688021907,
+      "open": 2.522,
       "reported": false
     }
   ],
