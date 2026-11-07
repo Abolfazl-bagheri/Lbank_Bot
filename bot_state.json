@@ -121,6 +121,31 @@
       "last_leg_candle_ts": 1794069274,
       "dry_run": true,
       "order_id": "PAPER-HMSTRUSDT-1794068225"
+    },
+    {
+      "symbol": "ONEUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.0024207,
+      "qty": 82620.7295,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0023601825,
+      "tf": "15m",
+      "opened_at": 1794069937,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.0024207,
+          "ts": 1794069937
+        }
+      ],
+      "entry_candle_ts": 1794069900,
+      "last_leg_candle_ts": 1794069900,
+      "dry_run": true,
+      "order_id": "PAPER-ONEUSDT-1794069937"
     }
   ],
   "trade_history": [
@@ -9167,6 +9192,15 @@
       "side": "SELL",
       "upper": 0.0363425671002651,
       "open": 0.0374,
+      "reported": false
+    },
+    {
+      "symbol": "IDOLUSDT",
+      "tf": "15m",
+      "candle_ts": 1794069900,
+      "side": "SELL",
+      "upper": 0.03867056295390994,
+      "open": 0.03946,
       "reported": false
     }
   ],
