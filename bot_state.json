@@ -63,6 +63,31 @@
       "last_leg_candle_ts": 1794017933,
       "dry_run": true,
       "order_id": "PAPER-LYNUSDT-1794013238"
+    },
+    {
+      "symbol": "ESPORTSUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.011329,
+      "qty": 17653.8088,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.011045775,
+      "tf": "15m",
+      "opened_at": 1794031243,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.011329,
+          "ts": 1794031243
+        }
+      ],
+      "entry_candle_ts": 1794031200,
+      "last_leg_candle_ts": 1794031200,
+      "dry_run": true,
+      "order_id": "PAPER-ESPORTSUSDT-1794031243"
     }
   ],
   "trade_history": [
@@ -9289,7 +9314,7 @@
     "TOADUSDT": 1794071802,
     "FLOCK1USDT": 1794071825
   },
-  "last_trade_report_ts": 1794018794,
+  "last_trade_report_ts": 1794029845,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
