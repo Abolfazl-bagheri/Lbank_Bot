@@ -36,41 +36,6 @@
       "order_id": "PAPER-CARVUSDT-1794010548"
     },
     {
-      "symbol": "LYNUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.02766286574002982,
-      "qty": 50609.3625,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 0.026971294096529073,
-      "tf": "15m",
-      "opened_at": 1794013238,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [
-        0.02769
-      ],
-      "steps": [
-        {
-          "px": 0.02658,
-          "ts": 1794013238
-        },
-        {
-          "px": 0.02837,
-          "ts": 1794014122
-        },
-        {
-          "px": 0.0276,
-          "ts": 1794017933
-        }
-      ],
-      "entry_candle_ts": 1794013200,
-      "last_leg_candle_ts": 1794017933,
-      "dry_run": true,
-      "order_id": "PAPER-LYNUSDT-1794013238"
-    },
-    {
       "symbol": "FOLKSUSDT",
       "side": "SELL",
       "status": "open",
@@ -6986,6 +6951,46 @@
       "pnl_usdt": 127.39505969184616,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "LYNUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.02766286574002982,
+      "qty": 50609.3625,
+      "margin": 70.0,
+      "leverage": 20,
+      "tp_price": 0.026971294096529073,
+      "tf": "15m",
+      "opened_at": 1794013238,
+      "adds": 2,
+      "last_leg_margin": 40.0,
+      "used_res_levels": [
+        0.02769
+      ],
+      "steps": [
+        {
+          "px": 0.02658,
+          "ts": 1794013238
+        },
+        {
+          "px": 0.02837,
+          "ts": 1794014122
+        },
+        {
+          "px": 0.0276,
+          "ts": 1794017933
+        }
+      ],
+      "entry_candle_ts": 1794013200,
+      "last_leg_candle_ts": 1794017933,
+      "dry_run": true,
+      "order_id": "PAPER-LYNUSDT-1794013238",
+      "closed_at": 1794040459,
+      "close_px": 0.02674,
+      "pnl_usdt": 46.70564677513256,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -9376,7 +9381,8 @@
       "side": "SELL",
       "upper": 0.015212289346943512,
       "open": 0.015982,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "KOMAUSDT",
@@ -9385,6 +9391,15 @@
       "side": "SELL",
       "upper": 0.015602929327874663,
       "open": 0.01584,
+      "reported": false
+    },
+    {
+      "symbol": "CTUSDT",
+      "tf": "15m",
+      "candle_ts": 1794040200,
+      "side": "SELL",
+      "upper": 0.13320199062590532,
+      "open": 0.1349,
       "reported": false
     }
   ],
