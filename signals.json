@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1794069935,
+  "updated_at": 1794069942,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "RATSUSDT",
-      "tf": "1h",
-      "gap": 1.92,
-      "ts": 1794012694
-    },
     {
       "kind": "GAP",
       "symbol": "LYNUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 4.26,
       "ts": 1794069935
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794069942
     }
   ],
   "trades": [
@@ -1455,6 +1455,19 @@
       "lev": 20,
       "px": 0.0001306,
       "pnl": 7.6768,
+      "tf": "15m"
+    },
+    {
+      "symbol": "ONEUSDT",
+      "side": "SELL",
+      "entry": 0.0024207,
+      "tp": 0.0023601825,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.0024207,
+      "pnl": 0.0,
       "tf": "15m"
     }
   ],
