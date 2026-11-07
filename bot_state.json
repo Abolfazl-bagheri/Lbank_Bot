@@ -68,16 +68,18 @@
       "symbol": "SWARMSUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.007249037598116931,
-      "qty": 82769.60800000001,
-      "margin": 30.0,
+      "entry": 0.007222658600959236,
+      "qty": 193834.4421,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 0.007067811658164007,
+      "tp_price": 0.007042092135935255,
       "tf": "4h",
       "opened_at": 1794078053,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
+      "adds": 2,
+      "last_leg_margin": 40.0,
+      "used_res_levels": [
+        0.007228
+      ],
       "steps": [
         {
           "px": 0.007184,
@@ -86,10 +88,14 @@
         {
           "px": 0.007282,
           "ts": 1794081686
+        },
+        {
+          "px": 0.007203,
+          "ts": 1794084577
         }
       ],
       "entry_candle_ts": 1794078000,
-      "last_leg_candle_ts": 1794081600,
+      "last_leg_candle_ts": 1794084577,
       "dry_run": true,
       "order_id": "PAPER-SWARMSUSDT-1794078053"
     },
