@@ -64,15 +64,15 @@
       "symbol": "CTUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.13669227429514344,
-      "qty": 4389.4215,
-      "margin": 30.0,
+      "entry": 0.14173059218138936,
+      "qty": 9877.895700000001,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 0.13327496743776485,
+      "tp_price": 0.13818732737685463,
       "tf": "15m",
       "opened_at": 1794040259,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [],
       "steps": [
         {
@@ -82,10 +82,14 @@
         {
           "px": 0.13757,
           "ts": 1794042092
+        },
+        {
+          "px": 0.14576,
+          "ts": 1794043832
         }
       ],
       "entry_candle_ts": 1794040200,
-      "last_leg_candle_ts": 1794042000,
+      "last_leg_candle_ts": 1794043800,
       "dry_run": true,
       "order_id": "PAPER-CTUSDT-1794040259"
     },
@@ -7239,26 +7243,6 @@
       "side": "SELL"
     },
     {
-      "symbol": "ANSEMUSDT",
-      "tf": "1h",
-      "candle_ts": 1793782800,
-      "side": "SELL",
-      "upper": 0.04748244378088166,
-      "open": 0.0482,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "ATHUSDT",
-      "tf": "1h",
-      "candle_ts": 1793782800,
-      "side": "SELL",
-      "upper": 0.0052093361568178636,
-      "open": 0.005303,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "FOLKSUSDT",
       "tf": "1h",
       "candle_ts": 1793786400,
@@ -9454,6 +9438,16 @@
       "side": "SELL",
       "upper": 0.13721868919432137,
       "open": 0.1388,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "CTUSDT",
+      "tf": "1h",
+      "candle_ts": 1794042000,
+      "side": "SELL",
+      "upper": 0.1347389960347059,
+      "open": 0.1388,
       "reported": false
     }
   ],
@@ -9581,9 +9575,10 @@
     "NEIRO1USDT": 1794077219,
     "1000SATSUSDT": 1794077221,
     "PIPEDOGUSDT": 1794079892,
-    "SPORTFUNUSDT": 1794081839
+    "SPORTFUNUSDT": 1794081839,
+    "ARROWUSDT": 1794086185
   },
-  "last_trade_report_ts": 1794040468,
+  "last_trade_report_ts": 1794042352,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
