@@ -62,24 +62,28 @@
       "symbol": "IDOLUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.03494,
-      "qty": 5724.0985,
-      "margin": 10.0,
+      "entry": 0.03655448400534183,
+      "qty": 16413.855,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.0340665,
+      "tp_price": 0.03564062190520828,
       "tf": "15m",
       "opened_at": 1794068129,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 0.03494,
           "ts": 1794068129
+        },
+        {
+          "px": 0.037419,
+          "ts": 1794069035
         }
       ],
       "entry_candle_ts": 1794068100,
-      "last_leg_candle_ts": 1794068100,
+      "last_leg_candle_ts": 1794069000,
       "dry_run": true,
       "order_id": "PAPER-IDOLUSDT-1794068129"
     },
@@ -9213,7 +9217,6 @@
     "CRWDUSDT": 1793658035,
     "GALUSDT": 1793658927,
     "BIDUUSDT": 1793678955,
-    "FIGUSDT": 1793683258,
     "PORUSDT": 1793694114,
     "MARRIOTTUSDT": 1793714834,
     "ONSEMIUSDT": 1793784100,
@@ -9271,7 +9274,7 @@
     "AEHRUSDT": 1794111443,
     "FIGHT1USDT": 1794111444
   },
-  "last_trade_report_ts": 1794048557,
+  "last_trade_report_ts": 1794068471,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
