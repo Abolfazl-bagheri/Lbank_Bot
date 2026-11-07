@@ -61,35 +61,6 @@
       "order_id": "PAPER-FOLKSUSDT-1794034922"
     },
     {
-      "symbol": "KOMAUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.015821014092067296,
-      "qty": 37924.244099999996,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.015425488739765613,
-      "tf": "15m",
-      "opened_at": 1794039330,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.015922,
-          "ts": 1794039330
-        },
-        {
-          "px": 0.015771,
-          "ts": 1794040224
-        }
-      ],
-      "entry_candle_ts": 1794039300,
-      "last_leg_candle_ts": 1794040200,
-      "dry_run": true,
-      "order_id": "PAPER-KOMAUSDT-1794039330"
-    },
-    {
       "symbol": "CTUSDT",
       "side": "SELL",
       "status": "open",
@@ -6991,6 +6962,40 @@
       "pnl_usdt": 46.70564677513256,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "KOMAUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.015821014092067296,
+      "qty": 37924.244099999996,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 0.015425488739765613,
+      "tf": "15m",
+      "opened_at": 1794039330,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.015922,
+          "ts": 1794039330
+        },
+        {
+          "px": 0.015771,
+          "ts": 1794040224
+        }
+      ],
+      "entry_candle_ts": 1794039300,
+      "last_leg_candle_ts": 1794040200,
+      "dry_run": true,
+      "order_id": "PAPER-KOMAUSDT-1794039330",
+      "closed_at": 1794041341,
+      "close_px": 0.015263,
+      "pnl_usdt": 21.162262626910323,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -9391,7 +9396,8 @@
       "side": "SELL",
       "upper": 0.015602929327874663,
       "open": 0.01584,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CTUSDT",
@@ -9400,7 +9406,8 @@
       "side": "SELL",
       "upper": 0.13320199062590532,
       "open": 0.1349,
-      "reported": false
+      "reported": true,
+      "filled": false
     }
   ],
   "paper_days": [
@@ -9530,7 +9537,7 @@
     "PIPEDOGUSDT": 1794079892,
     "SPORTFUNUSDT": 1794081839
   },
-  "last_trade_report_ts": 1794038802,
+  "last_trade_report_ts": 1794040468,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
