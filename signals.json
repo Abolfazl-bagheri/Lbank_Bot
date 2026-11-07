@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1794010546,
+  "updated_at": 1794010551,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "LUNRUSDT",
-      "tf": "1h",
-      "gap": 2.23,
-      "ts": 1793983903
-    },
     {
       "kind": "GAP",
       "symbol": "ONDSUSDT",
@@ -1402,14 +1395,35 @@
       "tf": "15m",
       "gap": 0.89,
       "ts": 1794010546
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794010551
     }
   ],
-  "trades": [],
+  "trades": [
+    {
+      "symbol": "CARVUSDT",
+      "side": "SELL",
+      "entry": 0.03299,
+      "tp": 0.03216525,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.03299,
+      "pnl": 0.0,
+      "tf": "15m"
+    }
+  ],
   "start": 1000.0,
   "session_start": 1794010157,
   "realized": 0,
   "closed_n": 0,
-  "open_upnl": 0,
+  "open_upnl": 0.0,
   "equity": 1000.0,
   "lev": 20,
   "margin_leg": 10.0,
