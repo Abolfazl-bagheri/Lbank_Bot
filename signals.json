@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1794045644,
+  "updated_at": 1794045978,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "INFQUSDT",
-      "tf": "15m",
-      "gap": 2.49,
-      "ts": 1794006817
-    },
     {
       "kind": "GAP",
       "symbol": "ONEUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1794045644
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794045978
     }
   ],
   "trades": [
@@ -1419,19 +1419,6 @@
       "tf": "1h"
     },
     {
-      "symbol": "CTUSDT",
-      "side": "SELL",
-      "entry": 0.1438514712201085,
-      "tp": 0.14025518443960577,
-      "adds": 3,
-      "pele": 4,
-      "margin": 150.0,
-      "lev": 20,
-      "px": 0.13844,
-      "pnl": 112.8554,
-      "tf": "15m"
-    },
-    {
       "symbol": "KOMAUSDT",
       "side": "SELL",
       "entry": 0.015269858876358783,
@@ -1443,33 +1430,20 @@
       "px": 0.015349,
       "pnl": -3.1097,
       "tf": "1h"
-    },
-    {
-      "symbol": "KATUSDT",
-      "side": "SELL",
-      "entry": 0.003837,
-      "tp": 0.003741075,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.003734,
-      "pnl": 5.3688,
-      "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1794010157,
-  "realized": 450.5487,
-  "closed_n": 7,
-  "open_upnl": 115.7492,
+  "realized": 568.7729,
+  "closed_n": 9,
+  "open_upnl": -2.475,
   "equity": 1566.2979,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 450.5487,
+    "profit": 568.7729,
     "loss": 0,
-    "count": 7
+    "count": 9
   }
 }
