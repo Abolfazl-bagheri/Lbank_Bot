@@ -198,15 +198,15 @@
       "symbol": "AIOTUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.16505810375627242,
-      "qty": 18175.4178,
-      "margin": 150.0,
+      "entry": 0.1685745161092173,
+      "qty": 36778.9874,
+      "margin": 310.0,
       "leverage": 20,
-      "tp_price": 0.1609316511623656,
-      "tf": "15m",
+      "tp_price": 0.16436015320648686,
+      "tf": "1h",
       "opened_at": 1794151855,
-      "adds": 3,
-      "last_leg_margin": 80.0,
+      "adds": 4,
+      "last_leg_margin": 160.0,
       "used_res_levels": [],
       "steps": [
         {
@@ -224,10 +224,14 @@
         {
           "px": 0.17696,
           "ts": 1794155445
+        },
+        {
+          "px": 0.17201,
+          "ts": 1794157245
         }
       ],
       "entry_candle_ts": 1794151800,
-      "last_leg_candle_ts": 1794155400,
+      "last_leg_candle_ts": 1794157200,
       "dry_run": true,
       "order_id": "PAPER-AIOTUSDT-1794151855"
     },
@@ -9662,7 +9666,7 @@
     "ONSEMIUSDT": 1794198742,
     "SIMOUSDT": 1794199618
   },
-  "last_trade_report_ts": 1794155679,
+  "last_trade_report_ts": 1794156586,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
