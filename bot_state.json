@@ -177,6 +177,31 @@
       "last_leg_candle_ts": 1794125700,
       "dry_run": true,
       "order_id": "PAPER-AKEUSDT-1794125779"
+    },
+    {
+      "symbol": "SOPHUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.001354,
+      "qty": 147710.4874,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.00132015,
+      "tf": "15m",
+      "opened_at": 1794127543,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.001354,
+          "ts": 1794127543
+        }
+      ],
+      "entry_candle_ts": 1794127500,
+      "last_leg_candle_ts": 1794127500,
+      "dry_run": true,
+      "order_id": "PAPER-SOPHUSDT-1794127543"
     }
   ],
   "trade_history": [
@@ -9626,7 +9651,7 @@
     "TOADUSDT": 1794166299,
     "SAFE1USDT": 1794167215
   },
-  "last_trade_report_ts": 1794125234,
+  "last_trade_report_ts": 1794126754,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
