@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1794125869,
+  "updated_at": 1794125877,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "ACTUSDT",
-      "tf": "15m",
-      "gap": 2.94,
-      "ts": 1794096825
-    },
     {
       "kind": "SELL",
       "symbol": "ACTUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1794125869
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794125877
     }
   ],
   "trades": [
@@ -1458,19 +1458,6 @@
       "tf": "15m"
     },
     {
-      "symbol": "ICNTUSDT",
-      "side": "SELL",
-      "entry": 0.36508318217238356,
-      "tp": 0.355956102618074,
-      "adds": 2,
-      "pele": 3,
-      "margin": 70.0,
-      "lev": 20,
-      "px": 0.3557,
-      "pnl": 35.9821,
-      "tf": "15m"
-    },
-    {
       "symbol": "TAUSDT",
       "side": "SELL",
       "entry": 0.10607938614600407,
@@ -1512,16 +1499,16 @@
   ],
   "start": 1000.0,
   "session_start": 1794096385,
-  "realized": 26.2147,
-  "closed_n": 2,
-  "open_upnl": -661.5902,
-  "equity": 364.6245,
+  "realized": 62.1967,
+  "closed_n": 3,
+  "open_upnl": -697.5723,
+  "equity": 364.6244,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 26.2147,
+    "profit": 62.1967,
     "loss": 0,
-    "count": 2
+    "count": 3
   }
 }
