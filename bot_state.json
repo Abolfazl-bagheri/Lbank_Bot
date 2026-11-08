@@ -195,68 +195,9 @@
       "last_leg_candle_ts": 1794139200,
       "dry_run": true,
       "order_id": "PAPER-HOTUSDT-1794132942"
-    },
-    {
-      "symbol": "NAORISUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.03078,
-      "qty": 6497.7258,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.0300105,
-      "tf": "15m",
-      "opened_at": 1794150026,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.03078,
-          "ts": 1794150026
-        }
-      ],
-      "entry_candle_ts": 1794150000,
-      "last_leg_candle_ts": 1794150000,
-      "dry_run": true,
-      "order_id": "PAPER-NAORISUSDT-1794150026"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "AGTUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.035253080712498365,
-      "qty": 17019.7891,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.034371753694685904,
-      "tf": "1h",
-      "opened_at": 1793653411,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        0.03544
-      ],
-      "steps": [
-        {
-          "px": 0.03512,
-          "ts": 1793653411
-        },
-        {
-          "px": 0.03532,
-          "ts": 1793654430
-        }
-      ],
-      "entry_candle_ts": 1793653200,
-      "last_leg_candle_ts": 1793654430,
-      "dry_run": true,
-      "order_id": "PAPER-AGTUSDT-1793653411",
-      "closed_at": 1793658118,
-      "close_px": 0.03415,
-      "pnl_usdt": 18.774201122921216
-    },
     {
       "symbol": "ARIAUSDT",
       "side": "SELL",
@@ -7368,6 +7309,36 @@
       "pnl_usdt": 40.299634210942436,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "NAORISUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.03078,
+      "qty": 6497.7258,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0300105,
+      "tf": "15m",
+      "opened_at": 1794150026,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.03078,
+          "ts": 1794150026
+        }
+      ],
+      "entry_candle_ts": 1794150000,
+      "last_leg_candle_ts": 1794150000,
+      "dry_run": true,
+      "order_id": "PAPER-NAORISUSDT-1794150026",
+      "closed_at": 1794151119,
+      "close_px": 0.02885,
+      "pnl_usdt": 12.540610786224807,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -7580,96 +7551,6 @@
       "tf": "15m",
       "candle_ts": 1793430900,
       "side": "SELL"
-    },
-    {
-      "symbol": "SQQQUSDT",
-      "tf": "15m",
-      "candle_ts": 1793890800,
-      "side": "SELL",
-      "upper": 45.56917117593362,
-      "open": 46.15,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "UVXYUSDT",
-      "tf": "15m",
-      "candle_ts": 1793890800,
-      "side": "SELL",
-      "upper": 18.224988115404365,
-      "open": 18.72,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "ARIAUSDT",
-      "tf": "1h",
-      "candle_ts": 1793890800,
-      "side": "SELL",
-      "upper": 0.15084361889473755,
-      "open": 0.15262,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "SQQQUSDT",
-      "tf": "1h",
-      "candle_ts": 1793890800,
-      "side": "SELL",
-      "upper": 45.42832734765915,
-      "open": 46.15,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "UVXYUSDT",
-      "tf": "1h",
-      "candle_ts": 1793890800,
-      "side": "SELL",
-      "upper": 18.169241518529283,
-      "open": 18.72,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "SOXSUSDT",
-      "tf": "1h",
-      "candle_ts": 1793890800,
-      "side": "SELL",
-      "upper": 70.51395785584045,
-      "open": 71.79,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "SSPCUSDT",
-      "tf": "1h",
-      "candle_ts": 1793890800,
-      "side": "SELL",
-      "upper": 10.309710463752284,
-      "open": 10.467,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "UVXYUSDT",
-      "tf": "15m",
-      "candle_ts": 1793891700,
-      "side": "SELL",
-      "upper": 19.181000981588532,
-      "open": 19.69,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "SSPCUSDT",
-      "tf": "15m",
-      "candle_ts": 1793891700,
-      "side": "SELL",
-      "upper": 10.921542016971832,
-      "open": 11.2,
-      "reported": true,
-      "filled": false
     },
     {
       "symbol": "UVXYUSDT",
@@ -9524,6 +9405,16 @@
       "side": "SELL",
       "upper": 0.029954444935658384,
       "open": 0.03124,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "NAORISUSDT",
+      "tf": "1h",
+      "candle_ts": 1794150000,
+      "side": "SELL",
+      "upper": 0.02965541867242142,
+      "open": 0.03124,
       "reported": false
     }
   ],
@@ -9668,7 +9559,7 @@
     "OSCRUSDT": 1794190598,
     "JUVUSDT": 1794190600
   },
-  "last_trade_report_ts": 1794148422,
+  "last_trade_report_ts": 1794150386,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
