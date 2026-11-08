@@ -206,24 +206,28 @@
       "symbol": "ANSEMUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.04886,
-      "qty": 4093.3279,
-      "margin": 10.0,
+      "entry": 0.052449766706848144,
+      "qty": 11439.517100000001,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.0476385,
+      "tp_price": 0.05113852253917694,
       "tf": "15m",
       "opened_at": 1794151830,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 0.04886,
           "ts": 1794151830
+        },
+        {
+          "px": 0.05445,
+          "ts": 1794154553
         }
       ],
       "entry_candle_ts": 1794151800,
-      "last_leg_candle_ts": 1794151800,
+      "last_leg_candle_ts": 1794154500,
       "dry_run": true,
       "order_id": "PAPER-ANSEMUSDT-1794151830"
     },
@@ -9509,6 +9513,15 @@
       "side": "SELL",
       "upper": 0.3267105500323414,
       "open": 0.3406,
+      "reported": false
+    },
+    {
+      "symbol": "BLENDUSDT",
+      "tf": "15m",
+      "candle_ts": 1794154500,
+      "side": "SELL",
+      "upper": 0.05738231353542907,
+      "open": 0.0581,
       "reported": false
     }
   ],
