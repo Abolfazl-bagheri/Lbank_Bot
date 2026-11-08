@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1794116716,
+  "updated_at": 1794116721,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "MUSEBOOKUSDT",
-      "tf": "1h",
-      "gap": 1.13,
-      "ts": 1794073933
-    },
     {
       "kind": "GAP",
       "symbol": "ACTUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 1.26,
       "ts": 1794116716
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794116721
     }
   ],
   "trades": [
@@ -1430,6 +1430,19 @@
       "px": 0.02467,
       "pnl": 5.5299,
       "tf": "1h"
+    },
+    {
+      "symbol": "HMSTRUSDT",
+      "side": "SELL",
+      "entry": 0.0001416,
+      "tp": 0.00013806,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.0001416,
+      "pnl": 0.0,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
