@@ -190,24 +190,28 @@
       "symbol": "HOTUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.0003836,
-      "qty": 521376.4338,
-      "margin": 10.0,
+      "entry": 0.000397284799863256,
+      "qty": 1510251.5883,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.00037401,
+      "tp_price": 0.0003873526798666746,
       "tf": "15m",
       "opened_at": 1794132942,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 0.0003836,
           "ts": 1794132942
+        },
+        {
+          "px": 0.0004045,
+          "ts": 1794133813
         }
       ],
       "entry_candle_ts": 1794132900,
-      "last_leg_candle_ts": 1794132900,
+      "last_leg_candle_ts": 1794133800,
       "dry_run": true,
       "order_id": "PAPER-HOTUSDT-1794132942"
     }
@@ -9686,7 +9690,6 @@
     "OSCRUSDT": 1793924212,
     "AMCUSDT": 1793924216,
     "CYBERLEEKUSDT": 1793927052,
-    "DRVUSDT": 1793929608,
     "GOLDUSDT": 1793936850,
     "CANTONUSDT": 1793952369,
     "BTCDOMUSDT": 1793955831,
@@ -9737,7 +9740,7 @@
     "PIPEDOGUSDT": 1794170773,
     "QUACKAIUSDT": 1794171787
   },
-  "last_trade_report_ts": 1794132293,
+  "last_trade_report_ts": 1794133244,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
