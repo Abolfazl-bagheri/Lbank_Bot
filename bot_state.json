@@ -218,6 +218,31 @@
       "last_leg_candle_ts": 1794124800,
       "dry_run": true,
       "order_id": "PAPER-JCTUSDT-1794124945"
+    },
+    {
+      "symbol": "AKEUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.005688,
+      "qty": 35161.744,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0055458,
+      "tf": "15m",
+      "opened_at": 1794125779,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.005688,
+          "ts": 1794125779
+        }
+      ],
+      "entry_candle_ts": 1794125700,
+      "last_leg_candle_ts": 1794125700,
+      "dry_run": true,
+      "order_id": "PAPER-AKEUSDT-1794125779"
     }
   ],
   "trade_history": [
@@ -9306,7 +9331,8 @@
       "side": "SELL",
       "upper": 0.01925767158697059,
       "open": 0.020297,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "KOMAUSDT",
@@ -9385,7 +9411,8 @@
       "side": "SELL",
       "upper": 0.16517139012814025,
       "open": 0.16703,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ICNTUSDT",
@@ -9424,7 +9451,8 @@
       "side": "SELL",
       "upper": 0.355397507661571,
       "open": 0.3644,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "ICNTUSDT",
@@ -9478,6 +9506,15 @@
       "side": "SELL",
       "upper": 0.10465713022928107,
       "open": 0.1075,
+      "reported": false
+    },
+    {
+      "symbol": "JCTUSDT",
+      "tf": "1h",
+      "candle_ts": 1794124800,
+      "side": "SELL",
+      "upper": 0.0031386334827197887,
+      "open": 0.003173,
       "reported": false
     }
   ],
@@ -9592,11 +9629,7 @@
     "POETUSDT": 1794115909,
     "LWLGUSDT": 1794115917,
     "QUACKAIUSDT": 1794122215,
-    "NIULAIUSDT": 1794124933,
-    "NEXUSDT": 1794125084,
     "SXTUSDT": 1794125089,
-    "HOTUSDT": 1794125148,
-    "1000000BABYDOGEUSDT": 1794125149,
     "MANCERUSDT": 1794126726,
     "PORUSDT": 1794130305,
     "KNTQUSDT": 1794139413,
@@ -9621,7 +9654,7 @@
     "TOADUSDT": 1794166299,
     "SAFE1USDT": 1794167215
   },
-  "last_trade_report_ts": 1794124138,
+  "last_trade_report_ts": 1794125234,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
