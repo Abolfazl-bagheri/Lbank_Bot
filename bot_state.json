@@ -220,6 +220,31 @@
       "last_leg_candle_ts": 1794151800,
       "dry_run": true,
       "order_id": "PAPER-ANSEMUSDT-1794151830"
+    },
+    {
+      "symbol": "AIOTUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.15319,
+      "qty": 1305.5682,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.14936025,
+      "tf": "15m",
+      "opened_at": 1794151855,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.15319,
+          "ts": 1794151855
+        }
+      ],
+      "entry_candle_ts": 1794151800,
+      "last_leg_candle_ts": 1794151800,
+      "dry_run": true,
+      "order_id": "PAPER-AIOTUSDT-1794151855"
     }
   ],
   "trade_history": [
@@ -9440,6 +9465,15 @@
       "side": "SELL",
       "upper": 0.02965541867242142,
       "open": 0.03124,
+      "reported": false
+    },
+    {
+      "symbol": "ANSEMUSDT",
+      "tf": "15m",
+      "candle_ts": 1794151800,
+      "side": "SELL",
+      "upper": 0.04778173525870145,
+      "open": 0.0493,
       "reported": false
     }
   ],
