@@ -48,52 +48,6 @@
       "order_id": "PAPER-JCTUSDT-1794124945"
     },
     {
-      "symbol": "SOPHUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.0013023728378904755,
-      "qty": 4760541.543500001,
-      "margin": 310.0,
-      "leverage": 20,
-      "tp_price": 0.0012698135169432136,
-      "tf": "15m",
-      "opened_at": 1794127543,
-      "adds": 4,
-      "last_leg_margin": 160.0,
-      "used_res_levels": [
-        0.001347,
-        0.001328,
-        0.001309,
-        0.001292
-      ],
-      "steps": [
-        {
-          "px": 0.001354,
-          "ts": 1794127543
-        },
-        {
-          "px": 0.001344,
-          "ts": 1794129591
-        },
-        {
-          "px": 0.001323,
-          "ts": 1794141294
-        },
-        {
-          "px": 0.001305,
-          "ts": 1794143936
-        },
-        {
-          "px": 0.001288,
-          "ts": 1794148408
-        }
-      ],
-      "entry_candle_ts": 1794127500,
-      "last_leg_candle_ts": 1794148408,
-      "dry_run": true,
-      "order_id": "PAPER-SOPHUSDT-1794127543"
-    },
-    {
       "symbol": "PIEVERSEUSDT",
       "side": "SELL",
       "status": "open",
@@ -235,34 +189,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "AGTUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.04286,
-      "qty": 4666.3556,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.0417885,
-      "tf": "1h",
-      "opened_at": 1793675073,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.04286,
-          "ts": 1793675073
-        }
-      ],
-      "entry_candle_ts": 1793674800,
-      "last_leg_candle_ts": 1793674800,
-      "dry_run": true,
-      "order_id": "PAPER-AGTUSDT-1793675073",
-      "closed_at": 1793683265,
-      "close_px": 0.04147,
-      "pnl_usdt": 6.486234251049941
-    },
     {
       "symbol": "ICNTUSDT",
       "side": "SELL",
@@ -7397,6 +7323,57 @@
       "closed_at": 1794158339,
       "close_px": 0.0004154,
       "pnl_usdt": 79.54930236069464,
+      "close_reason": "TP50",
+      "why": "TP50"
+    },
+    {
+      "symbol": "SOPHUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.0013023728378904755,
+      "qty": 4760541.543500001,
+      "margin": 310.0,
+      "leverage": 20,
+      "tp_price": 0.0012698135169432136,
+      "tf": "15m",
+      "opened_at": 1794127543,
+      "adds": 4,
+      "last_leg_margin": 160.0,
+      "used_res_levels": [
+        0.001347,
+        0.001328,
+        0.001309,
+        0.001292
+      ],
+      "steps": [
+        {
+          "px": 0.001354,
+          "ts": 1794127543
+        },
+        {
+          "px": 0.001344,
+          "ts": 1794129591
+        },
+        {
+          "px": 0.001323,
+          "ts": 1794141294
+        },
+        {
+          "px": 0.001305,
+          "ts": 1794143936
+        },
+        {
+          "px": 0.001288,
+          "ts": 1794148408
+        }
+      ],
+      "entry_candle_ts": 1794127500,
+      "last_leg_candle_ts": 1794148408,
+      "dry_run": true,
+      "order_id": "PAPER-SOPHUSDT-1794127543",
+      "closed_at": 1794159212,
+      "close_px": 0.001267,
+      "pnl_usdt": 168.39386429171842,
       "close_reason": "TP50",
       "why": "TP50"
     }
