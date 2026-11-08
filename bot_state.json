@@ -194,15 +194,15 @@
       "symbol": "HOTUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.00041794102327879004,
-      "qty": 3349754.9224,
-      "margin": 70.0,
+      "entry": 0.0004267149591011222,
+      "qty": 7030454.2553,
+      "margin": 150.0,
       "leverage": 20,
-      "tp_price": 0.0004074924976968203,
-      "tf": "15m",
+      "tp_price": 0.00041604708512359416,
+      "tf": "1h",
       "opened_at": 1794132942,
-      "adds": 2,
-      "last_leg_margin": 40.0,
+      "adds": 3,
+      "last_leg_margin": 80.0,
       "used_res_levels": [],
       "steps": [
         {
@@ -216,10 +216,14 @@
         {
           "px": 0.0004349,
           "ts": 1794134719
+        },
+        {
+          "px": 0.0004347,
+          "ts": 1794139294
         }
       ],
       "entry_candle_ts": 1794132900,
-      "last_leg_candle_ts": 1794134700,
+      "last_leg_candle_ts": 1794139200,
       "dry_run": true,
       "order_id": "PAPER-HOTUSDT-1794132942"
     },
@@ -9664,6 +9668,15 @@
       "side": "SELL",
       "upper": 0.009084771102136912,
       "open": 0.0092,
+      "reported": false
+    },
+    {
+      "symbol": "AGTUSDT",
+      "tf": "15m",
+      "candle_ts": 1794139200,
+      "side": "SELL",
+      "upper": 0.02950811953832581,
+      "open": 0.0302,
       "reported": false
     }
   ],
