@@ -46,79 +46,9 @@
       "last_leg_candle_ts": 1794139200,
       "dry_run": true,
       "order_id": "PAPER-JCTUSDT-1794124945"
-    },
-    {
-      "symbol": "BLENDUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.05796702130332752,
-      "qty": 24151.6636,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 0.056517845770744334,
-      "tf": "15m",
-      "opened_at": 1794154527,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [
-        0.0574,
-        0.0584
-      ],
-      "steps": [
-        {
-          "px": 0.05816,
-          "ts": 1794154527
-        },
-        {
-          "px": 0.05718,
-          "ts": 1794156570
-        },
-        {
-          "px": 0.05832,
-          "ts": 1794171902
-        }
-      ],
-      "entry_candle_ts": 1794154500,
-      "last_leg_candle_ts": 1794171902,
-      "dry_run": true,
-      "order_id": "PAPER-BLENDUSDT-1794154527"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "GPROUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 1.0665910098110374,
-      "qty": 562.5399,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 1.0399262345657614,
-      "tf": "15m",
-      "opened_at": 1793660679,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        1.0771
-      ],
-      "steps": [
-        {
-          "px": 1.054,
-          "ts": 1793660679
-        },
-        {
-          "px": 1.073,
-          "ts": 1793671740
-        }
-      ],
-      "entry_candle_ts": 1793660400,
-      "last_leg_candle_ts": 1793671740,
-      "dry_run": true,
-      "order_id": "PAPER-GPROUSDT-1793660679",
-      "closed_at": 1793697532,
-      "close_px": 1.024,
-      "pnl_usdt": 23.959142399999976
-    },
     {
       "symbol": "RUNEUSDT",
       "side": "SELL",
@@ -7295,6 +7225,47 @@
       "pnl_usdt": 5.775944144715992,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "BLENDUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.05796702130332752,
+      "qty": 24151.6636,
+      "margin": 70.0,
+      "leverage": 20,
+      "tp_price": 0.056517845770744334,
+      "tf": "15m",
+      "opened_at": 1794154527,
+      "adds": 2,
+      "last_leg_margin": 40.0,
+      "used_res_levels": [
+        0.0574,
+        0.0584
+      ],
+      "steps": [
+        {
+          "px": 0.05816,
+          "ts": 1794154527
+        },
+        {
+          "px": 0.05718,
+          "ts": 1794156570
+        },
+        {
+          "px": 0.05832,
+          "ts": 1794171902
+        }
+      ],
+      "entry_candle_ts": 1794154500,
+      "last_leg_candle_ts": 1794171902,
+      "dry_run": true,
+      "order_id": "PAPER-BLENDUSDT-1794154527",
+      "closed_at": 1794176345,
+      "close_px": 0.05649,
+      "pnl_usdt": 35.67252168846277,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -9483,12 +9454,10 @@
     "GALUSDT": 1794141094,
     "B3USDT": 1794143806,
     "RIOTUSDT": 1794157401,
-    "XTIUSDT": 1794157404,
     "KOPNUSDT": 1794160960,
     "METEORAUSDT": 1794163747,
     "CAPETHUSDT": 1794163767,
     "TOADUSDT": 1794166299,
-    "SAFE1USDT": 1794167215,
     "PIPEDOGUSDT": 1794170773,
     "DRVUSDT": 1794177070,
     "FLOCK1USDT": 1794177995,
@@ -9524,7 +9493,10 @@
     "LIGHT1USDT": 1794213992,
     "QUACKAIUSDT": 1794215793,
     "BTCDOMUSDT": 1794218564,
-    "LWLGUSDT": 1794218578
+    "LWLGUSDT": 1794218578,
+    "SAFE1USDT": 1794219393,
+    "AEHRUSDT": 1794219394,
+    "XTIUSDT": 1794219396
   },
   "last_trade_report_ts": 1794174690,
   "last_known_version": "2.7.2",
