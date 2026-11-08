@@ -42,37 +42,6 @@
       "order_id": "PAPER-KOMAUSDT-1794107731"
     },
     {
-      "symbol": "BMTUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.02489948759012655,
-      "qty": 24096.8815,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.024277000400373384,
-      "tf": "1h",
-      "opened_at": 1794114087,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        0.02489
-      ],
-      "steps": [
-        {
-          "px": 0.02506,
-          "ts": 1794114087
-        },
-        {
-          "px": 0.02482,
-          "ts": 1794115237
-        }
-      ],
-      "entry_candle_ts": 1794114000,
-      "last_leg_candle_ts": 1794115237,
-      "dry_run": true,
-      "order_id": "PAPER-BMTUSDT-1794114087"
-    },
-    {
       "symbol": "HMSTRUSDT",
       "side": "SELL",
       "status": "open",
@@ -99,34 +68,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "TSEMUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 170.13,
-      "qty": 1.1756,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 165.87675,
-      "tf": "1h",
-      "opened_at": 1793585186,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 170.13,
-          "ts": 1793585186
-        }
-      ],
-      "entry_candle_ts": 1793584800,
-      "last_leg_candle_ts": 1793584800,
-      "dry_run": true,
-      "order_id": "PAPER-TSEMUSDT-1793585186",
-      "closed_at": 1793629053,
-      "close_px": 165.47,
-      "pnl_usdt": 5.478163757126899
-    },
     {
       "symbol": "CASHCATUSDT",
       "side": "SELL",
@@ -7206,6 +7147,42 @@
       "pnl_usdt": 8.154338826837458,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "BMTUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.02489948759012655,
+      "qty": 24096.8815,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 0.024277000400373384,
+      "tf": "1h",
+      "opened_at": 1794114087,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.02489
+      ],
+      "steps": [
+        {
+          "px": 0.02506,
+          "ts": 1794114087
+        },
+        {
+          "px": 0.02482,
+          "ts": 1794115237
+        }
+      ],
+      "entry_candle_ts": 1794114000,
+      "last_leg_candle_ts": 1794115237,
+      "dry_run": true,
+      "order_id": "PAPER-BMTUSDT-1794114087",
+      "closed_at": 1794117894,
+      "close_px": 0.02415,
+      "pnl_usdt": 18.06031358871203,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -7418,16 +7395,6 @@
       "tf": "15m",
       "candle_ts": 1793430900,
       "side": "SELL"
-    },
-    {
-      "symbol": "JCTUSDT",
-      "tf": "1h",
-      "candle_ts": 1793858400,
-      "side": "SELL",
-      "upper": 0.006493243730016757,
-      "open": 0.006816,
-      "reported": true,
-      "filled": true
     },
     {
       "symbol": "CARDSUSDT",
@@ -9235,7 +9202,8 @@
       "side": "SELL",
       "upper": 0.02001886407600112,
       "open": 0.020491,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "BMTUSDT",
@@ -9244,7 +9212,8 @@
       "side": "SELL",
       "upper": 0.024678998716302483,
       "open": 0.02508,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "HMSTRUSDT",
@@ -9253,6 +9222,16 @@
       "side": "SELL",
       "upper": 0.00013981602502435026,
       "open": 0.0001419,
+      "reported": true,
+      "filled": false
+    },
+    {
+      "symbol": "KOMAUSDT",
+      "tf": "1h",
+      "candle_ts": 1794117600,
+      "side": "SELL",
+      "upper": 0.02091497531220496,
+      "open": 0.021156,
       "reported": false
     }
   ],
@@ -9395,7 +9374,8 @@
     "XTIUSDT": 1794157404,
     "O1USDT": 1794158165,
     "FLYUSDT": 1794159225,
-    "AINBSCUSDT": 1794159229
+    "AINBSCUSDT": 1794159229,
+    "KOPNUSDT": 1794160960
   },
   "last_trade_report_ts": 1794116896,
   "last_known_version": "2.7.2",
