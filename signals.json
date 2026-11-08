@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1794171913,
+  "updated_at": 1794172706,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "HAEDALUSDT",
-      "tf": "1h",
-      "gap": 1.09,
-      "ts": 1794138893
-    },
     {
       "kind": "GAP",
       "symbol": "MEGAUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1794171913
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794172706
     }
   ],
   "trades": [
@@ -1414,22 +1414,9 @@
       "pele": 6,
       "margin": 630.0,
       "lev": 20,
-      "px": 0.011615,
-      "pnl": -11196.8645,
+      "px": 0.015696,
+      "pnl": -19558.0357,
       "tf": "1h"
-    },
-    {
-      "symbol": "ANSEMUSDT",
-      "side": "SELL",
-      "entry": 0.059719823319856265,
-      "tp": 0.05822682773685986,
-      "adds": 4,
-      "pele": 5,
-      "margin": 310.0,
-      "lev": 20,
-      "px": 0.05923,
-      "pnl": 50.8525,
-      "tf": "4h"
     },
     {
       "symbol": "BLENDUSDT",
@@ -1440,8 +1427,8 @@
       "pele": 3,
       "margin": 70.0,
       "lev": 20,
-      "px": 0.05832,
-      "pnl": -8.525,
+      "px": 0.05814,
+      "pnl": -4.1777,
       "tf": "15m"
     },
     {
@@ -1453,23 +1440,23 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.03179,
-      "pnl": -1.7772,
+      "px": 0.03212,
+      "pnl": -3.8718,
       "tf": "1h"
     }
   ],
   "start": 1000.0,
   "session_start": 1794096385,
-  "realized": 2140.237,
-  "closed_n": 19,
-  "open_upnl": -11156.3142,
-  "equity": -8016.0772,
+  "realized": 2414.2985,
+  "closed_n": 20,
+  "open_upnl": -19566.0852,
+  "equity": -16151.7867,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 2140.237,
+    "profit": 2414.2985,
     "loss": 0,
-    "count": 19
+    "count": 20
   }
 }
