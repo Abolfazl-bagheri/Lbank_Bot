@@ -1,53 +1,6 @@
 {
   "open_trades": [
     {
-      "symbol": "CLAUDIAUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.008613713702247757,
-      "qty": 1462783.6999,
-      "margin": 630.0,
-      "leverage": 20,
-      "tp_price": 0.008398370859691563,
-      "tf": "15m",
-      "opened_at": 1794120314,
-      "adds": 5,
-      "last_leg_margin": 320.0,
-      "used_res_levels": [
-        0.0088
-      ],
-      "steps": [
-        {
-          "px": 0.006649,
-          "ts": 1794120314
-        },
-        {
-          "px": 0.007325,
-          "ts": 1794121225
-        },
-        {
-          "px": 0.008219,
-          "ts": 1794123017
-        },
-        {
-          "px": 0.007812,
-          "ts": 1794124876
-        },
-        {
-          "px": 0.009217,
-          "ts": 1794139242
-        },
-        {
-          "px": 0.008782,
-          "ts": 1794154790
-        }
-      ],
-      "entry_candle_ts": 1794120300,
-      "last_leg_candle_ts": 1794154790,
-      "dry_run": true,
-      "order_id": "PAPER-CLAUDIAUSDT-1794120314"
-    },
-    {
       "symbol": "JCTUSDT",
       "side": "SELL",
       "status": "open",
@@ -305,45 +258,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "MINIMAXUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 21.665835961608103,
-      "qty": 64.61779999999999,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 21.1241900625679,
-      "tf": "1h",
-      "opened_at": 1793585106,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [
-        21.68,
-        21.81
-      ],
-      "steps": [
-        {
-          "px": 21.29,
-          "ts": 1793585106
-        },
-        {
-          "px": 21.63,
-          "ts": 1793603141
-        },
-        {
-          "px": 21.78,
-          "ts": 1793627265
-        }
-      ],
-      "entry_candle_ts": 1793584800,
-      "last_leg_candle_ts": 1793627265,
-      "dry_run": true,
-      "order_id": "PAPER-MINIMAXUSDT-1793585106",
-      "closed_at": 1793671717,
-      "close_px": 21.01,
-      "pnl_usdt": 42.378717713839485
-    },
     {
       "symbol": "ICNTUSDT",
       "side": "SELL",
@@ -7448,6 +7362,58 @@
       "pnl_usdt": 25.655976676384856,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "CLAUDIAUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.008613713702247757,
+      "qty": 1462783.6999,
+      "margin": 630.0,
+      "leverage": 20,
+      "tp_price": 0.008398370859691563,
+      "tf": "15m",
+      "opened_at": 1794120314,
+      "adds": 5,
+      "last_leg_margin": 320.0,
+      "used_res_levels": [
+        0.0088
+      ],
+      "steps": [
+        {
+          "px": 0.006649,
+          "ts": 1794120314
+        },
+        {
+          "px": 0.007325,
+          "ts": 1794121225
+        },
+        {
+          "px": 0.008219,
+          "ts": 1794123017
+        },
+        {
+          "px": 0.007812,
+          "ts": 1794124876
+        },
+        {
+          "px": 0.009217,
+          "ts": 1794139242
+        },
+        {
+          "px": 0.008782,
+          "ts": 1794154790
+        }
+      ],
+      "entry_candle_ts": 1794120300,
+      "last_leg_candle_ts": 1794154790,
+      "dry_run": true,
+      "order_id": "PAPER-CLAUDIAUSDT-1794120314",
+      "closed_at": 1794156563,
+      "close_px": 0.008368,
+      "pnl_usdt": 359.4259985114002,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -9514,7 +9480,8 @@
       "side": "SELL",
       "upper": 0.05738231353542907,
       "open": 0.0581,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ANSEMUSDT",
@@ -9523,7 +9490,8 @@
       "side": "SELL",
       "upper": 0.05214188918246977,
       "open": 0.0532,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "ANSEMUSDT",
@@ -9532,7 +9500,18 @@
       "side": "SELL",
       "upper": 0.0555268186719218,
       "open": 0.0575,
-      "reported": false
+      "reported": true,
+      "filled": false
+    },
+    {
+      "symbol": "AIOTUSDT",
+      "tf": "15m",
+      "candle_ts": 1794155400,
+      "side": "SELL",
+      "upper": 0.17222141076707018,
+      "open": 0.18043,
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -9612,7 +9591,6 @@
     "BIO1USDT": 1793611218,
     "CRWDUSDT": 1793658035,
     "MARRIOTTUSDT": 1793714834,
-    "SIMOUSDT": 1793785920,
     "AI1USDT": 1793882848,
     "QUID1USDT": 1793901083,
     "STONKBROKERUSDT": 1793924211,
@@ -9673,9 +9651,12 @@
     "OSCRUSDT": 1794190598,
     "JUVUSDT": 1794190600,
     "OROCHIUSDT": 1794195128,
-    "KNTQUSDT": 1794196979
+    "KNTQUSDT": 1794196979,
+    "UP2USDT": 1794198698,
+    "ONSEMIUSDT": 1794198742,
+    "SIMOUSDT": 1794199618
   },
-  "last_trade_report_ts": 1794154139,
+  "last_trade_report_ts": 1794155679,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
