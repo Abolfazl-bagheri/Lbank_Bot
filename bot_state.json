@@ -255,6 +255,31 @@
       "last_leg_candle_ts": 1794139200,
       "dry_run": true,
       "order_id": "PAPER-AGTUSDT-1794139273"
+    },
+    {
+      "symbol": "SKYAIUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.03836,
+      "qty": 5213.7643,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.037401,
+      "tf": "1h",
+      "opened_at": 1794139325,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.03836,
+          "ts": 1794139325
+        }
+      ],
+      "entry_candle_ts": 1794139200,
+      "last_leg_candle_ts": 1794139200,
+      "dry_run": true,
+      "order_id": "PAPER-SKYAIUSDT-1794139325"
     }
   ],
   "trade_history": [
@@ -9690,6 +9715,15 @@
       "side": "SELL",
       "upper": 0.0004297737417153655,
       "open": 0.0004401,
+      "reported": false
+    },
+    {
+      "symbol": "JCTUSDT",
+      "tf": "1h",
+      "candle_ts": 1794139200,
+      "side": "SELL",
+      "upper": 0.008447029775955794,
+      "open": 0.009743,
       "reported": false
     }
   ],
