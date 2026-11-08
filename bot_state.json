@@ -1,60 +1,6 @@
 {
-  "open_trades": [
-    {
-      "symbol": "ACTUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.012803,
-      "qty": 15621.3387,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.012482925,
-      "tf": "15m",
-      "opened_at": 1794096934,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.012803,
-          "ts": 1794096934
-        }
-      ],
-      "entry_candle_ts": 1794096900,
-      "last_leg_candle_ts": 1794096900,
-      "dry_run": true,
-      "order_id": "PAPER-ACTUSDT-1794096934"
-    }
-  ],
+  "open_trades": [],
   "trade_history": [
-    {
-      "symbol": "AGTUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.03385,
-      "qty": 5908.4195,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.03300375,
-      "tf": "15m",
-      "opened_at": 1793625517,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.03385,
-          "ts": 1793625517
-        }
-      ],
-      "entry_candle_ts": 1793625300,
-      "last_leg_candle_ts": 1793625300,
-      "dry_run": true,
-      "order_id": "PAPER-AGTUSDT-1793625517",
-      "closed_at": 1793628466,
-      "close_px": 0.03122,
-      "pnl_usdt": 15.539143279172801
-    },
     {
       "symbol": "TSEMUSDT",
       "side": "SELL",
@@ -7132,6 +7078,36 @@
       "pnl_usdt": 3.9513141647556926,
       "close_reason": "NIGHT_RESET",
       "why": "NIGHT_RESET"
+    },
+    {
+      "symbol": "ACTUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.012803,
+      "qty": 15621.3387,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.012482925,
+      "tf": "15m",
+      "opened_at": 1794096934,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.012803,
+          "ts": 1794096934
+        }
+      ],
+      "entry_candle_ts": 1794096900,
+      "last_leg_candle_ts": 1794096900,
+      "dry_run": true,
+      "order_id": "PAPER-ACTUSDT-1794096934",
+      "closed_at": 1794098011,
+      "close_px": 0.012281,
+      "pnl_usdt": 8.154338826837458,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -7344,16 +7320,6 @@
       "tf": "15m",
       "candle_ts": 1793430900,
       "side": "SELL"
-    },
-    {
-      "symbol": "HYUNDAIUSDT",
-      "tf": "15m",
-      "candle_ts": 1793837700,
-      "side": "SELL",
-      "upper": 225.15996661424944,
-      "open": 228.2,
-      "reported": true,
-      "filled": true
     },
     {
       "symbol": "EIDOUSDT",
@@ -9183,6 +9149,16 @@
       "upper": 0.005345986180809096,
       "open": 0.005605,
       "reported": false
+    },
+    {
+      "symbol": "ACTUSDT",
+      "tf": "15m",
+      "candle_ts": 1794096900,
+      "side": "SELL",
+      "upper": 0.012649530288963873,
+      "open": 0.0128,
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -9324,7 +9300,8 @@
     "1000000BABYDOGEUSDT": 1794125149,
     "MANCERUSDT": 1794126726,
     "PORUSDT": 1794130305,
-    "KNTQUSDT": 1794139413
+    "KNTQUSDT": 1794139413,
+    "GALUSDT": 1794141094
   },
   "last_trade_report_ts": 1794096378,
   "last_known_version": "2.7.2",
