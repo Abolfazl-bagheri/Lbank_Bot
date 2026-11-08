@@ -212,15 +212,15 @@
       "symbol": "ANSEMUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.052449766706848144,
-      "qty": 11439.517100000001,
-      "margin": 30.0,
+      "entry": 0.05466862126373898,
+      "qty": 25608.8405,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 0.05113852253917694,
+      "tp_price": 0.05330190573214551,
       "tf": "15m",
       "opened_at": 1794151830,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [],
       "steps": [
         {
@@ -230,10 +230,14 @@
         {
           "px": 0.05445,
           "ts": 1794154553
+        },
+        {
+          "px": 0.05646,
+          "ts": 1794155426
         }
       ],
       "entry_candle_ts": 1794151800,
-      "last_leg_candle_ts": 1794154500,
+      "last_leg_candle_ts": 1794155400,
       "dry_run": true,
       "order_id": "PAPER-ANSEMUSDT-1794151830"
     },
@@ -271,31 +275,6 @@
       "order_id": "PAPER-AIOTUSDT-1794151855"
     },
     {
-      "symbol": "HNTUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.343,
-      "qty": 583.0904,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.33442500000000003,
-      "tf": "15m",
-      "opened_at": 1794153651,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.343,
-          "ts": 1794153651
-        }
-      ],
-      "entry_candle_ts": 1794153600,
-      "last_leg_candle_ts": 1794153600,
-      "dry_run": true,
-      "order_id": "PAPER-HNTUSDT-1794153651"
-    },
-    {
       "symbol": "BLENDUSDT",
       "side": "SELL",
       "status": "open",
@@ -322,34 +301,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "ARIAUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.1166,
-      "qty": 1715.2659,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.113685,
-      "tf": "4h",
-      "opened_at": 1793635447,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.1166,
-          "ts": 1793635447
-        }
-      ],
-      "entry_candle_ts": 1793635200,
-      "last_leg_candle_ts": 1793635200,
-      "dry_run": true,
-      "order_id": "PAPER-ARIAUSDT-1793635447",
-      "closed_at": 1793659911,
-      "close_px": 0.11338,
-      "pnl_usdt": 5.523156089193827
-    },
     {
       "symbol": "MINIMAXUSDT",
       "side": "SELL",
@@ -7463,6 +7414,36 @@
       "pnl_usdt": 12.540610786224807,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "HNTUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.343,
+      "qty": 583.0904,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.33442500000000003,
+      "tf": "15m",
+      "opened_at": 1794153651,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.343,
+          "ts": 1794153651
+        }
+      ],
+      "entry_candle_ts": 1794153600,
+      "last_leg_candle_ts": 1794153600,
+      "dry_run": true,
+      "order_id": "PAPER-HNTUSDT-1794153651",
+      "closed_at": 1794154805,
+      "close_px": 0.299,
+      "pnl_usdt": 25.655976676384856,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -9635,7 +9616,6 @@
     "RGTIUSDT": 1794071770,
     "SPORTFUNUSDT": 1794081839,
     "ARROWUSDT": 1794086185,
-    "UP2USDT": 1794111408,
     "FIGHT1USDT": 1794111444,
     "ARGUSDT": 1794114249,
     "APROUSDT": 1794115028,
