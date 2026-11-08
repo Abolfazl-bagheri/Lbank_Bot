@@ -48,37 +48,6 @@
       "order_id": "PAPER-JCTUSDT-1794124945"
     },
     {
-      "symbol": "PIEVERSEUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 1.5070784054759192,
-      "qty": 398.1213,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 1.4694014453390212,
-      "tf": "1h",
-      "opened_at": 1794132086,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        1.5221
-      ],
-      "steps": [
-        {
-          "px": 1.4857,
-          "ts": 1794132086
-        },
-        {
-          "px": 1.518,
-          "ts": 1794152952
-        }
-      ],
-      "entry_candle_ts": 1794132000,
-      "last_leg_candle_ts": 1794152952,
-      "dry_run": true,
-      "order_id": "PAPER-PIEVERSEUSDT-1794132086"
-    },
-    {
       "symbol": "ANSEMUSDT",
       "side": "SELL",
       "status": "open",
@@ -177,40 +146,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "AMZNUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 251.803588079966,
-      "qty": 2.382812,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 245.50849837796684,
-      "tf": "4h",
-      "opened_at": 1793635647,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        251.29
-      ],
-      "steps": [
-        {
-          "px": 253.61,
-          "ts": 1793635647
-        },
-        {
-          "px": 250.91,
-          "ts": 1793640945
-        }
-      ],
-      "entry_candle_ts": 1793635200,
-      "last_leg_candle_ts": 1793640945,
-      "dry_run": true,
-      "order_id": "PAPER-AMZNUSDT-1793635647",
-      "closed_at": 1793686054,
-      "close_px": 245.33,
-      "pnl_usdt": 15.425327643647769
-    },
     {
       "symbol": "IRYSUSDT",
       "side": "SELL",
@@ -7386,6 +7321,42 @@
       "pnl_usdt": 492.5167078132435,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "PIEVERSEUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 1.5070784054759192,
+      "qty": 398.1213,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 1.4694014453390212,
+      "tf": "1h",
+      "opened_at": 1794132086,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        1.5221
+      ],
+      "steps": [
+        {
+          "px": 1.4857,
+          "ts": 1794132086
+        },
+        {
+          "px": 1.518,
+          "ts": 1794152952
+        }
+      ],
+      "entry_candle_ts": 1794132000,
+      "last_leg_candle_ts": 1794152952,
+      "dry_run": true,
+      "order_id": "PAPER-PIEVERSEUSDT-1794132086",
+      "closed_at": 1794171899,
+      "close_px": 1.4674,
+      "pnl_usdt": 15.796818001670914,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -9456,7 +9427,8 @@
       "side": "SELL",
       "upper": 0.031028120055169847,
       "open": 0.03147,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "JCTUSDT",
