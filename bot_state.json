@@ -190,15 +190,15 @@
       "symbol": "HOTUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.000397284799863256,
-      "qty": 1510251.5883,
-      "margin": 30.0,
+      "entry": 0.00041794102327879004,
+      "qty": 3349754.9224,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 0.0003873526798666746,
+      "tp_price": 0.0004074924976968203,
       "tf": "15m",
       "opened_at": 1794132942,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [],
       "steps": [
         {
@@ -208,10 +208,14 @@
         {
           "px": 0.0004045,
           "ts": 1794133813
+        },
+        {
+          "px": 0.0004349,
+          "ts": 1794134719
         }
       ],
       "entry_candle_ts": 1794132900,
-      "last_leg_candle_ts": 1794133800,
+      "last_leg_candle_ts": 1794134700,
       "dry_run": true,
       "order_id": "PAPER-HOTUSDT-1794132942"
     }
@@ -9592,7 +9596,8 @@
       "side": "SELL",
       "upper": 0.004780300543334319,
       "open": 0.004838,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "HOTUSDT",
@@ -9601,6 +9606,16 @@
       "side": "SELL",
       "upper": 0.00037675714212998646,
       "open": 0.0003838,
+      "reported": true,
+      "filled": false
+    },
+    {
+      "symbol": "HOTUSDT",
+      "tf": "15m",
+      "candle_ts": 1794133800,
+      "side": "SELL",
+      "upper": 0.0003944424748399444,
+      "open": 0.0004042,
       "reported": false
     }
   ],
@@ -9702,7 +9717,6 @@
     "MURATAUSDT": 1794038839,
     "GSTOCKUSDT": 1794048395,
     "RGTIUSDT": 1794071770,
-    "FLOCK1USDT": 1794071825,
     "SPORTFUNUSDT": 1794081839,
     "ARROWUSDT": 1794086185,
     "BARUSDT": 1794087994,
@@ -9738,7 +9752,8 @@
     "TOADUSDT": 1794166299,
     "SAFE1USDT": 1794167215,
     "PIPEDOGUSDT": 1794170773,
-    "QUACKAIUSDT": 1794171787
+    "QUACKAIUSDT": 1794171787,
+    "DRVUSDT": 1794177070
   },
   "last_trade_report_ts": 1794133244,
   "last_known_version": "2.7.2",
