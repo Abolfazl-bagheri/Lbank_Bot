@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1794123027,
+  "updated_at": 1794123033,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794081692
-    },
     {
       "kind": "SELL",
       "symbol": "CLAUDIAUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 1.7,
       "ts": 1794123027
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794123033
     }
   ],
   "trades": [
@@ -1467,6 +1467,19 @@
       "margin": 10.0,
       "lev": 20,
       "px": 0.3496,
+      "pnl": 0.0,
+      "tf": "15m"
+    },
+    {
+      "symbol": "TAUSDT",
+      "side": "SELL",
+      "entry": 0.10438,
+      "tp": 0.1017705,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.10438,
       "pnl": 0.0,
       "tf": "15m"
     }
