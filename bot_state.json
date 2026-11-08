@@ -41,24 +41,30 @@
       "symbol": "BMTUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.02506,
-      "qty": 7980.846,
-      "margin": 10.0,
+      "entry": 0.02489948759012655,
+      "qty": 24096.8815,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.024433499999999997,
+      "tp_price": 0.024277000400373384,
       "tf": "1h",
       "opened_at": 1794114087,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.02489
+      ],
       "steps": [
         {
           "px": 0.02506,
           "ts": 1794114087
+        },
+        {
+          "px": 0.02482,
+          "ts": 1794115237
         }
       ],
       "entry_candle_ts": 1794114000,
-      "last_leg_candle_ts": 1794114000,
+      "last_leg_candle_ts": 1794115237,
       "dry_run": true,
       "order_id": "PAPER-BMTUSDT-1794114087"
     }
@@ -9171,7 +9177,8 @@
       "side": "SELL",
       "upper": 0.019669363348137684,
       "open": 0.020297,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "KOMAUSDT",
@@ -9180,7 +9187,8 @@
       "side": "SELL",
       "upper": 0.019327964215997737,
       "open": 0.020297,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "KOMAUSDT",
@@ -9198,6 +9206,15 @@
       "side": "SELL",
       "upper": 0.02001886407600112,
       "open": 0.020491,
+      "reported": false
+    },
+    {
+      "symbol": "BMTUSDT",
+      "tf": "1h",
+      "candle_ts": 1794114000,
+      "side": "SELL",
+      "upper": 0.024678998716302483,
+      "open": 0.02508,
       "reported": false
     }
   ],
@@ -9283,7 +9300,6 @@
     "AI1USDT": 1793882848,
     "BEMUSDT": 1793901058,
     "QUID1USDT": 1793901083,
-    "O1USDT": 1793911895,
     "STONKBROKERUSDT": 1793924211,
     "OSCRUSDT": 1793924212,
     "AMCUSDT": 1793924216,
@@ -9337,9 +9353,13 @@
     "B3USDT": 1794143806,
     "IRENONUSDT": 1794144696,
     "1000BTTCUSDT": 1794145597,
-    "LIGHT1USDT": 1794153876
+    "LIGHT1USDT": 1794153876,
+    "FIGUSDT": 1794157373,
+    "RIOTUSDT": 1794157401,
+    "XTIUSDT": 1794157404,
+    "O1USDT": 1794158165
   },
-  "last_trade_report_ts": 1794110799,
+  "last_trade_report_ts": 1794114327,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
