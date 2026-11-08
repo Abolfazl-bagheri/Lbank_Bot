@@ -97,16 +97,18 @@
       "symbol": "TAUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.11061517457097154,
-      "qty": 12656.4914,
-      "margin": 70.0,
+      "entry": 0.11253998805241724,
+      "qty": 26657.191400000003,
+      "margin": 150.0,
       "leverage": 20,
-      "tp_price": 0.10784979520669725,
+      "tp_price": 0.10972648835110681,
       "tf": "1h",
       "opened_at": 1794123028,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [],
+      "adds": 3,
+      "last_leg_margin": 80.0,
+      "used_res_levels": [
+        0.11464
+      ],
       "steps": [
         {
           "px": 0.10438,
@@ -119,10 +121,14 @@
         {
           "px": 0.11428,
           "ts": 1794128442
+        },
+        {
+          "px": 0.11428,
+          "ts": 1794128687
         }
       ],
       "entry_candle_ts": 1794123000,
-      "last_leg_candle_ts": 1794128400,
+      "last_leg_candle_ts": 1794128687,
       "dry_run": true,
       "order_id": "PAPER-TAUSDT-1794123028"
     },
@@ -7593,36 +7599,6 @@
       "side": "SELL"
     },
     {
-      "symbol": "ELSAUSDT",
-      "tf": "15m",
-      "candle_ts": 1793869200,
-      "side": "SELL",
-      "upper": 0.1144876555525182,
-      "open": 0.11803,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "AIOUSDT",
-      "tf": "1h",
-      "candle_ts": 1793869200,
-      "side": "SELL",
-      "upper": 0.04172744358814638,
-      "open": 0.04226,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "ACTUSDT",
-      "tf": "1h",
-      "candle_ts": 1793869200,
-      "side": "SELL",
-      "upper": 0.009015490065423161,
-      "open": 0.00911,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "AIOUSDT",
       "tf": "15m",
       "candle_ts": 1793877300,
@@ -9508,7 +9484,8 @@
       "side": "SELL",
       "upper": 0.3592875273002436,
       "open": 0.3687,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "KOMAUSDT",
@@ -9526,7 +9503,8 @@
       "side": "SELL",
       "upper": 0.10465713022928107,
       "open": 0.1075,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "JCTUSDT",
@@ -9535,7 +9513,8 @@
       "side": "SELL",
       "upper": 0.0031386334827197887,
       "open": 0.003173,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "AKEUSDT",
@@ -9554,7 +9533,8 @@
       "side": "SELL",
       "upper": 0.0013411244463350776,
       "open": 0.001358,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "TAUSDT",
@@ -9572,6 +9552,15 @@
       "side": "SELL",
       "upper": 0.13436338971583894,
       "open": 0.1358,
+      "reported": false
+    },
+    {
+      "symbol": "JCTUSDT",
+      "tf": "1h",
+      "candle_ts": 1794128400,
+      "side": "SELL",
+      "upper": 0.0033964290503246185,
+      "open": 0.003536,
       "reported": false
     }
   ],
@@ -9709,7 +9698,8 @@
     "NEIRO1USDT": 1794165399,
     "TOADUSDT": 1794166299,
     "SAFE1USDT": 1794167215,
-    "PIPEDOGUSDT": 1794170773
+    "PIPEDOGUSDT": 1794170773,
+    "QUACKAIUSDT": 1794171787
   },
   "last_trade_report_ts": 1794127662,
   "last_known_version": "2.7.2",
