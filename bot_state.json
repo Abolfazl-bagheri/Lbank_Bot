@@ -92,19 +92,20 @@
       "symbol": "SOPHUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.0013180616883895603,
-      "qty": 2276069.4938000003,
-      "margin": 150.0,
+      "entry": 0.0013023728378904755,
+      "qty": 4760541.543500001,
+      "margin": 310.0,
       "leverage": 20,
-      "tp_price": 0.0012851101461798214,
+      "tp_price": 0.0012698135169432136,
       "tf": "15m",
       "opened_at": 1794127543,
-      "adds": 3,
-      "last_leg_margin": 80.0,
+      "adds": 4,
+      "last_leg_margin": 160.0,
       "used_res_levels": [
         0.001347,
         0.001328,
-        0.001309
+        0.001309,
+        0.001292
       ],
       "steps": [
         {
@@ -122,10 +123,14 @@
         {
           "px": 0.001305,
           "ts": 1794143936
+        },
+        {
+          "px": 0.001288,
+          "ts": 1794148408
         }
       ],
       "entry_candle_ts": 1794127500,
-      "last_leg_candle_ts": 1794143936,
+      "last_leg_candle_ts": 1794148408,
       "dry_run": true,
       "order_id": "PAPER-SOPHUSDT-1794127543"
     },
@@ -7552,66 +7557,6 @@
       "side": "SELL"
     },
     {
-      "symbol": "CLANKERUSDT",
-      "tf": "15m",
-      "candle_ts": 1793887200,
-      "side": "SELL",
-      "upper": 18.281117546516025,
-      "open": 18.59,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "ARIAUSDT",
-      "tf": "1h",
-      "candle_ts": 1793887200,
-      "side": "SELL",
-      "upper": 0.1461318222926151,
-      "open": 0.14945,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "WENUSDT",
-      "tf": "1h",
-      "candle_ts": 1793887200,
-      "side": "SELL",
-      "upper": 7.827912098739014,
-      "open": 7.921,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "LYNUSDT",
-      "tf": "15m",
-      "candle_ts": 1793888100,
-      "side": "SELL",
-      "upper": 0.020612405244380877,
-      "open": 0.02094,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "FOGOUSDT",
-      "tf": "15m",
-      "candle_ts": 1793889000,
-      "side": "SELL",
-      "upper": 0.002815201928515876,
-      "open": 0.002845,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "LYNUSDT",
-      "tf": "15m",
-      "candle_ts": 1793889000,
-      "side": "SELL",
-      "upper": 0.021287612636037734,
-      "open": 0.02169,
-      "reported": true,
-      "filled": false
-    },
-    {
       "symbol": "SQQQUSDT",
       "tf": "15m",
       "candle_ts": 1793889900,
@@ -9554,7 +9499,8 @@
       "side": "SELL",
       "upper": 0.011358316539006536,
       "open": 0.013274,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "4USDT",
@@ -9573,7 +9519,8 @@
       "side": "SELL",
       "upper": 0.009758470525667732,
       "open": 0.009887,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -9656,10 +9603,8 @@
     "ONSEMIUSDT": 1793784100,
     "SIMOUSDT": 1793785920,
     "AI1USDT": 1793882848,
-    "BEMUSDT": 1793901058,
     "QUID1USDT": 1793901083,
     "STONKBROKERUSDT": 1793924211,
-    "OSCRUSDT": 1793924212,
     "AMCUSDT": 1793924216,
     "CYBERLEEKUSDT": 1793927052,
     "GOLDUSDT": 1793936850,
@@ -9684,7 +9629,6 @@
     "MANCERUSDT": 1794126726,
     "GALUSDT": 1794141094,
     "B3USDT": 1794143806,
-    "1000BTTCUSDT": 1794145597,
     "LIGHT1USDT": 1794153876,
     "FIGUSDT": 1794157373,
     "RIOTUSDT": 1794157401,
@@ -9714,9 +9658,13 @@
     "PORUSDT": 1794187019,
     "ATMUSDT": 1794188784,
     "IRENONUSDT": 1794188819,
-    "BARUSDT": 1794188820
+    "BARUSDT": 1794188820,
+    "BEMUSDT": 1794189825,
+    "1000BTTCUSDT": 1794189823,
+    "OSCRUSDT": 1794190598,
+    "JUVUSDT": 1794190600
   },
-  "last_trade_report_ts": 1794144866,
+  "last_trade_report_ts": 1794146777,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
