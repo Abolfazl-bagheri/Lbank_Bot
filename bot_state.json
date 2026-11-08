@@ -206,6 +206,31 @@
       "last_leg_candle_ts": 1794127500,
       "dry_run": true,
       "order_id": "PAPER-SOPHUSDT-1794127543"
+    },
+    {
+      "symbol": "AIOTUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.13584,
+      "qty": 1472.3204,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.13244399999999998,
+      "tf": "1h",
+      "opened_at": 1794128453,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.13584,
+          "ts": 1794128453
+        }
+      ],
+      "entry_candle_ts": 1794128400,
+      "last_leg_candle_ts": 1794128400,
+      "dry_run": true,
+      "order_id": "PAPER-AIOTUSDT-1794128453"
     }
   ],
   "trade_history": [
@@ -9525,6 +9550,15 @@
       "side": "SELL",
       "upper": 0.0013411244463350776,
       "open": 0.001358,
+      "reported": false
+    },
+    {
+      "symbol": "TAUSDT",
+      "tf": "1h",
+      "candle_ts": 1794128400,
+      "side": "SELL",
+      "upper": 0.1099319250326807,
+      "open": 0.11427,
       "reported": false
     }
   ],
