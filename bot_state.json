@@ -1,51 +1,6 @@
 {
   "open_trades": [
     {
-      "symbol": "KOMAUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.020999930548980188,
-      "qty": 600001.9842999999,
-      "margin": 630.0,
-      "leverage": 20,
-      "tp_price": 0.02047493228525568,
-      "tf": "4h",
-      "opened_at": 1794107731,
-      "adds": 5,
-      "last_leg_margin": 320.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.018105,
-          "ts": 1794107731
-        },
-        {
-          "px": 0.020187,
-          "ts": 1794110415
-        },
-        {
-          "px": 0.020466,
-          "ts": 1794111338
-        },
-        {
-          "px": 0.020535,
-          "ts": 1794114055
-        },
-        {
-          "px": 0.021168,
-          "ts": 1794117638
-        },
-        {
-          "px": 0.021265,
-          "ts": 1794124898
-        }
-      ],
-      "entry_candle_ts": 1794107700,
-      "last_leg_candle_ts": 1794124800,
-      "dry_run": true,
-      "order_id": "PAPER-KOMAUSDT-1794107731"
-    },
-    {
       "symbol": "HMSTRUSDT",
       "side": "SELL",
       "status": "open",
@@ -225,40 +180,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "CSOPSAMSUNG2LUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 6.696205370355902,
-      "qty": 89.60300000000001,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 6.5288002360970046,
-      "tf": "4h",
-      "opened_at": 1793606840,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        6.738
-      ],
-      "steps": [
-        {
-          "px": 6.655,
-          "ts": 1793606840
-        },
-        {
-          "px": 6.717,
-          "ts": 1793614840
-        }
-      ],
-      "entry_candle_ts": 1793606400,
-      "last_leg_candle_ts": 1793614840,
-      "dry_run": true,
-      "order_id": "PAPER-CSOPSAMSUNG2LUSDT-1793606840",
-      "closed_at": 1793630123,
-      "close_px": 6.468,
-      "pnl_usdt": 20.447882739633478
-    },
     {
       "symbol": "YOFCUSDT",
       "side": "SELL",
@@ -7350,6 +7271,56 @@
       "pnl_usdt": 35.98208759759917,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "KOMAUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.020999930548980188,
+      "qty": 600001.9842999999,
+      "margin": 630.0,
+      "leverage": 20,
+      "tp_price": 0.02047493228525568,
+      "tf": "4h",
+      "opened_at": 1794107731,
+      "adds": 5,
+      "last_leg_margin": 320.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.018105,
+          "ts": 1794107731
+        },
+        {
+          "px": 0.020187,
+          "ts": 1794110415
+        },
+        {
+          "px": 0.020466,
+          "ts": 1794111338
+        },
+        {
+          "px": 0.020535,
+          "ts": 1794114055
+        },
+        {
+          "px": 0.021168,
+          "ts": 1794117638
+        },
+        {
+          "px": 0.021265,
+          "ts": 1794124898
+        }
+      ],
+      "entry_candle_ts": 1794107700,
+      "last_leg_candle_ts": 1794124800,
+      "dry_run": true,
+      "order_id": "PAPER-KOMAUSDT-1794107731",
+      "closed_at": 1794126743,
+      "close_px": 0.019924,
+      "pnl_usdt": 645.5604643801408,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -9515,7 +9486,8 @@
       "side": "SELL",
       "upper": 0.005597359320948408,
       "open": 0.0056818,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
