@@ -128,15 +128,15 @@
       "symbol": "ICNTUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.36075256141225964,
-      "qty": 1663.1899,
-      "margin": 30.0,
+      "entry": 0.36508318217238356,
+      "qty": 3834.7426000000005,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 0.3517337473769531,
+      "tp_price": 0.355956102618074,
       "tf": "15m",
       "opened_at": 1794123006,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [],
       "steps": [
         {
@@ -146,10 +146,14 @@
         {
           "px": 0.3666,
           "ts": 1794123950
+        },
+        {
+          "px": 0.3684,
+          "ts": 1794124835
         }
       ],
       "entry_candle_ts": 1794123000,
-      "last_leg_candle_ts": 1794123900,
+      "last_leg_candle_ts": 1794124800,
       "dry_run": true,
       "order_id": "PAPER-ICNTUSDT-1794123006"
     },
@@ -9353,7 +9357,8 @@
       "side": "SELL",
       "upper": 0.33912759219300026,
       "open": 0.345,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "CLAUDIAUSDT",
@@ -9362,7 +9367,8 @@
       "side": "SELL",
       "upper": 0.007992686250836541,
       "open": 0.00817,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "TAUSDT",
@@ -9371,6 +9377,16 @@
       "side": "SELL",
       "upper": 0.10260565906217937,
       "open": 0.10441,
+      "reported": true,
+      "filled": false
+    },
+    {
+      "symbol": "ICNTUSDT",
+      "tf": "15m",
+      "candle_ts": 1794123900,
+      "side": "SELL",
+      "upper": 0.355397507661571,
+      "open": 0.3644,
       "reported": false
     }
   ],
@@ -9485,7 +9501,6 @@
     "POETUSDT": 1794115909,
     "LWLGUSDT": 1794115917,
     "QUACKAIUSDT": 1794122215,
-    "PIPEDOGUSDT": 1794124059,
     "NIULAIUSDT": 1794124933,
     "NEXUSDT": 1794125084,
     "SXTUSDT": 1794125089,
@@ -9512,9 +9527,10 @@
     "1000WOJAKUSDT": 1794165393,
     "CZUSDT": 1794165398,
     "NEIRO1USDT": 1794165399,
-    "TOADUSDT": 1794166299
+    "TOADUSDT": 1794166299,
+    "SAFE1USDT": 1794167215
   },
-  "last_trade_report_ts": 1794123203,
+  "last_trade_report_ts": 1794124138,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
