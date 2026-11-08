@@ -32,6 +32,31 @@
       "last_leg_candle_ts": 1794111300,
       "dry_run": true,
       "order_id": "PAPER-KOMAUSDT-1794107731"
+    },
+    {
+      "symbol": "BMTUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.02509,
+      "qty": 7971.3033,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.024462750000000002,
+      "tf": "1h",
+      "opened_at": 1794114038,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.02509,
+          "ts": 1794114038
+        }
+      ],
+      "entry_candle_ts": 1794114000,
+      "last_leg_candle_ts": 1794114000,
+      "dry_run": true,
+      "order_id": "PAPER-BMTUSDT-1794114038"
     }
   ],
   "trade_history": [
@@ -9142,7 +9167,8 @@
       "side": "SELL",
       "upper": 0.019669363348137684,
       "open": 0.020297,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "KOMAUSDT",
@@ -9161,6 +9187,16 @@
       "upper": 0.01925767158697059,
       "open": 0.020297,
       "reported": false
+    },
+    {
+      "symbol": "KOMAUSDT",
+      "tf": "15m",
+      "candle_ts": 1794111300,
+      "side": "SELL",
+      "upper": 0.020299497004871863,
+      "open": 0.020558,
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -9252,15 +9288,12 @@
     "CYBERLEEKUSDT": 1793927052,
     "DRVUSDT": 1793929608,
     "GOLDUSDT": 1793936850,
-    "USOUSDT": 1793952284,
     "CANTONUSDT": 1793952369,
     "BTCDOMUSDT": 1793955831,
     "UBIKUSDT": 1793961071,
-    "NGASUSDT": 1793980968,
     "HK1810USDT": 1793981026,
     "LONGXIAUSDT": 1793981070,
     "XBRUSDT": 1793988971,
-    "XTIUSDT": 1793988989,
     "OROCHIUSDT": 1794015066,
     "BBXUSDT": 1794018704,
     "TRUMPSOLUSDT": 1794028601,
@@ -9272,11 +9305,9 @@
     "SPORTFUNUSDT": 1794081839,
     "ARROWUSDT": 1794086185,
     "BARUSDT": 1794087994,
-    "RIOTUSDT": 1794111399,
     "UP2USDT": 1794111408,
     "AEHRUSDT": 1794111443,
     "FIGHT1USDT": 1794111444,
-    "FIGUSDT": 1794112326,
     "ARGUSDT": 1794114249,
     "APROUSDT": 1794115028,
     "AINBSCUSDT": 1794115859,
@@ -9304,9 +9335,13 @@
     "B3USDT": 1794143806,
     "IRENONUSDT": 1794144696,
     "1000BTTCUSDT": 1794145597,
-    "LIGHT1USDT": 1794153876
+    "LIGHT1USDT": 1794153876,
+    "XTIUSDT": 1794155506,
+    "RIOTUSDT": 1794155507,
+    "FIGUSDT": 1794156378,
+    "KOPNUSDT": 1794156395
   },
-  "last_trade_report_ts": 1794110799,
+  "last_trade_report_ts": 1794112416,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
