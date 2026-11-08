@@ -92,17 +92,18 @@
       "symbol": "BLENDUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.057502976364599535,
-      "qty": 10434.2425,
-      "margin": 30.0,
+      "entry": 0.05796702130332752,
+      "qty": 24151.6636,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 0.056065401955484546,
+      "tp_price": 0.056517845770744334,
       "tf": "15m",
       "opened_at": 1794154527,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [
-        0.0574
+        0.0574,
+        0.0584
       ],
       "steps": [
         {
@@ -112,10 +113,14 @@
         {
           "px": 0.05718,
           "ts": 1794156570
+        },
+        {
+          "px": 0.05832,
+          "ts": 1794171902
         }
       ],
       "entry_candle_ts": 1794154500,
-      "last_leg_candle_ts": 1794156570,
+      "last_leg_candle_ts": 1794171902,
       "dry_run": true,
       "order_id": "PAPER-BLENDUSDT-1794154527"
     },
