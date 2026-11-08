@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1794154525,
+  "updated_at": 1794154536,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794128448
-    },
     {
       "kind": "SELL",
       "symbol": "AIOTUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 1.34,
       "ts": 1794154525
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794154536
     }
   ],
   "trades": [
@@ -1507,6 +1507,19 @@
       "lev": 20,
       "px": 0.299,
       "pnl": 25.656,
+      "tf": "15m"
+    },
+    {
+      "symbol": "BLENDUSDT",
+      "side": "SELL",
+      "entry": 0.05816,
+      "tp": 0.056706,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.05816,
+      "pnl": 0.0,
       "tf": "15m"
     }
   ],
