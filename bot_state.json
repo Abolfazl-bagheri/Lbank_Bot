@@ -138,24 +138,30 @@
       "symbol": "PIEVERSEUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 1.4857,
-      "qty": 134.6167,
-      "margin": 10.0,
+      "entry": 1.5070784054759192,
+      "qty": 398.1213,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 1.4485575,
+      "tp_price": 1.4694014453390212,
       "tf": "1h",
       "opened_at": 1794132086,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        1.5221
+      ],
       "steps": [
         {
           "px": 1.4857,
           "ts": 1794132086
+        },
+        {
+          "px": 1.518,
+          "ts": 1794152952
         }
       ],
       "entry_candle_ts": 1794132000,
-      "last_leg_candle_ts": 1794132000,
+      "last_leg_candle_ts": 1794152952,
       "dry_run": true,
       "order_id": "PAPER-PIEVERSEUSDT-1794132086"
     },
@@ -9468,7 +9474,8 @@
       "side": "SELL",
       "upper": 0.04778173525870145,
       "open": 0.0493,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "AIOTUSDT",
@@ -9477,6 +9484,16 @@
       "side": "SELL",
       "upper": 0.15102924721502822,
       "open": 0.15313,
+      "reported": true,
+      "filled": false
+    },
+    {
+      "symbol": "AIOTUSDT",
+      "tf": "15m",
+      "candle_ts": 1794152700,
+      "side": "SELL",
+      "upper": 0.15473866415935061,
+      "open": 0.1569,
       "reported": false
     }
   ],
