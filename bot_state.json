@@ -97,15 +97,15 @@
       "symbol": "TAUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.10607938614600407,
-      "qty": 5656.1414,
-      "margin": 30.0,
+      "entry": 0.11061517457097154,
+      "qty": 12656.4914,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 0.10342740149235397,
-      "tf": "15m",
+      "tp_price": 0.10784979520669725,
+      "tf": "1h",
       "opened_at": 1794123028,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [],
       "steps": [
         {
@@ -115,10 +115,14 @@
         {
           "px": 0.10695,
           "ts": 1794124857
+        },
+        {
+          "px": 0.11428,
+          "ts": 1794128442
         }
       ],
       "entry_candle_ts": 1794123000,
-      "last_leg_candle_ts": 1794124800,
+      "last_leg_candle_ts": 1794128400,
       "dry_run": true,
       "order_id": "PAPER-TAUSDT-1794123028"
     },
@@ -9513,6 +9517,15 @@
       "open": 0.0056818,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "SOPHUSDT",
+      "tf": "15m",
+      "candle_ts": 1794127500,
+      "side": "SELL",
+      "upper": 0.0013411244463350776,
+      "open": 0.001358,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -9625,7 +9638,6 @@
     "APROUSDT": 1794115028,
     "POETUSDT": 1794115909,
     "LWLGUSDT": 1794115917,
-    "QUACKAIUSDT": 1794122215,
     "SXTUSDT": 1794125089,
     "MANCERUSDT": 1794126726,
     "PORUSDT": 1794130305,
@@ -9649,9 +9661,10 @@
     "CZUSDT": 1794165398,
     "NEIRO1USDT": 1794165399,
     "TOADUSDT": 1794166299,
-    "SAFE1USDT": 1794167215
+    "SAFE1USDT": 1794167215,
+    "PIPEDOGUSDT": 1794170773
   },
-  "last_trade_report_ts": 1794126754,
+  "last_trade_report_ts": 1794127662,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
