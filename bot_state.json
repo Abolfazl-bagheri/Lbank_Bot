@@ -4,15 +4,15 @@
       "symbol": "KOMAUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.020288587686805956,
-      "qty": 147866.3792,
-      "margin": 150.0,
+      "entry": 0.02073315381841747,
+      "qty": 299037.95889999997,
+      "margin": 310.0,
       "leverage": 20,
-      "tp_price": 0.019781372994635806,
+      "tp_price": 0.020214824972957034,
       "tf": "1h",
       "opened_at": 1794107731,
-      "adds": 3,
-      "last_leg_margin": 80.0,
+      "adds": 4,
+      "last_leg_margin": 160.0,
       "used_res_levels": [],
       "steps": [
         {
@@ -30,10 +30,14 @@
         {
           "px": 0.020535,
           "ts": 1794114055
+        },
+        {
+          "px": 0.021168,
+          "ts": 1794117638
         }
       ],
       "entry_candle_ts": 1794107700,
-      "last_leg_candle_ts": 1794114000,
+      "last_leg_candle_ts": 1794117600,
       "dry_run": true,
       "order_id": "PAPER-KOMAUSDT-1794107731"
     },
@@ -9241,6 +9245,15 @@
       "upper": 0.024678998716302483,
       "open": 0.02508,
       "reported": false
+    },
+    {
+      "symbol": "HMSTRUSDT",
+      "tf": "15m",
+      "candle_ts": 1794116700,
+      "side": "SELL",
+      "upper": 0.00013981602502435026,
+      "open": 0.0001419,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -9384,7 +9397,7 @@
     "FLYUSDT": 1794159225,
     "AINBSCUSDT": 1794159229
   },
-  "last_trade_report_ts": 1794115245,
+  "last_trade_report_ts": 1794116896,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
