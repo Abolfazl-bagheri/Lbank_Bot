@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1794096378,
+  "updated_at": 1794096385,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "KOMAUSDT",
-      "tf": "1h",
-      "gap": 4.78,
-      "ts": 1794045099
-    },
     {
       "kind": "GAP",
       "symbol": "CTUSDT",
@@ -1402,74 +1395,28 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1794096378
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794096385
     }
   ],
-  "trades": [
-    {
-      "symbol": "KOMAUSDT",
-      "side": "SELL",
-      "entry": 0.015921093775249247,
-      "tp": 0.015523066430868015,
-      "adds": 3,
-      "pele": 4,
-      "margin": 150.0,
-      "lev": 20,
-      "px": 0.017214,
-      "pnl": -243.6214,
-      "tf": "1h"
-    },
-    {
-      "symbol": "GRVTUSDT",
-      "side": "SELL",
-      "entry": 0.21143329128160113,
-      "tp": 0.2061474589995611,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
-      "lev": 20,
-      "px": 0.2115,
-      "pnl": -0.1893,
-      "tf": "15m"
-    },
-    {
-      "symbol": "SWARMSUSDT",
-      "side": "SELL",
-      "entry": 0.007156718091774303,
-      "tp": 0.006977800139479945,
-      "adds": 3,
-      "pele": 4,
-      "margin": 150.0,
-      "lev": 20,
-      "px": 0.007165,
-      "pnl": -3.4717,
-      "tf": "4h"
-    },
-    {
-      "symbol": "CLAUDIAUSDT",
-      "side": "SELL",
-      "entry": 0.005669,
-      "tp": 0.005527275,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.005669,
-      "pnl": 0.0,
-      "tf": "4h"
-    }
-  ],
+  "trades": [],
   "start": 1000.0,
-  "session_start": 1794010157,
-  "realized": 1249.9431,
-  "closed_n": 21,
-  "open_upnl": -247.2824,
-  "equity": 2002.6607,
+  "session_start": 1794096385,
+  "realized": 0,
+  "closed_n": 0,
+  "open_upnl": 0,
+  "equity": 1000.0,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 1249.9431,
+    "profit": 0,
     "loss": 0,
-    "count": 21
+    "count": 0
   }
 }
