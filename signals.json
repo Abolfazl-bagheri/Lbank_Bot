@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1794132940,
+  "updated_at": 1794132948,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794111515
-    },
     {
       "kind": "GAP",
       "symbol": "SKYAIUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 1.78,
       "ts": 1794132940
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794132948
     }
   ],
   "trades": [
@@ -1495,6 +1495,19 @@
       "px": 1.4938,
       "pnl": -1.0904,
       "tf": "1h"
+    },
+    {
+      "symbol": "HOTUSDT",
+      "side": "SELL",
+      "entry": 0.0003836,
+      "tp": 0.00037401,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.0003836,
+      "pnl": 0.0,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
