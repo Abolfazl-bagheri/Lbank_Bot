@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1794120312,
+  "updated_at": 1794120318,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794078058
-    },
     {
       "kind": "SELL",
       "symbol": "THEUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 5.11,
       "ts": 1794120312
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794120318
     }
   ],
   "trades": [
@@ -1429,6 +1429,19 @@
       "lev": 20,
       "px": 0.0001423,
       "pnl": -0.9887,
+      "tf": "15m"
+    },
+    {
+      "symbol": "CLAUDIAUSDT",
+      "side": "SELL",
+      "entry": 0.006649,
+      "tp": 0.0064827750000000005,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.006649,
+      "pnl": 0.0,
       "tf": "15m"
     }
   ],
