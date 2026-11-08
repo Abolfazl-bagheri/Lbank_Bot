@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1794121252,
+  "updated_at": 1794121258,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "SWARMSUSDT",
-      "tf": "4h",
-      "gap": 4.13,
-      "ts": 1794080517
-    },
     {
       "kind": "GAP",
       "symbol": "IDOLUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 1.1,
       "ts": 1794121252
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794121258
     }
   ],
   "trades": [
@@ -1442,6 +1442,19 @@
       "lev": 20,
       "px": 0.007325,
       "pnl": -20.3339,
+      "tf": "15m"
+    },
+    {
+      "symbol": "ARIAUSDT",
+      "side": "SELL",
+      "entry": 0.16692,
+      "tp": 0.162747,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.16692,
+      "pnl": 0.0,
       "tf": "15m"
     }
   ],
