@@ -119,6 +119,31 @@
       "last_leg_candle_ts": 1794121200,
       "dry_run": true,
       "order_id": "PAPER-ARIAUSDT-1794121254"
+    },
+    {
+      "symbol": "ICNTUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.3496,
+      "qty": 572.0824,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.34086,
+      "tf": "15m",
+      "opened_at": 1794123006,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.3496,
+          "ts": 1794123006
+        }
+      ],
+      "entry_candle_ts": 1794123000,
+      "last_leg_candle_ts": 1794123000,
+      "dry_run": true,
+      "order_id": "PAPER-ICNTUSDT-1794123006"
     }
   ],
   "trade_history": [
@@ -7451,26 +7476,6 @@
       "side": "SELL"
     },
     {
-      "symbol": "ICNTUSDT",
-      "tf": "15m",
-      "candle_ts": 1793862900,
-      "side": "SELL",
-      "upper": 0.24296395526566236,
-      "open": 0.2464,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "MAGMAUSDT",
-      "tf": "15m",
-      "candle_ts": 1793862900,
-      "side": "SELL",
-      "upper": 0.4198487078982623,
-      "open": 0.4264,
-      "reported": true,
-      "filled": false
-    },
-    {
       "symbol": "ELSAUSDT",
       "tf": "15m",
       "candle_ts": 1793869200,
@@ -9266,7 +9271,8 @@
       "side": "SELL",
       "upper": 0.02091497531220496,
       "open": 0.021156,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CLAUDIAUSDT",
@@ -9275,7 +9281,8 @@
       "side": "SELL",
       "upper": 0.0063095343889177005,
       "open": 0.006629,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CLAUDIAUSDT",
@@ -9284,7 +9291,8 @@
       "side": "SELL",
       "upper": 0.007025017478958612,
       "open": 0.007593,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ARIAUSDT",
@@ -9292,6 +9300,16 @@
       "candle_ts": 1794121200,
       "side": "SELL",
       "upper": 0.16508118442379865,
+      "open": 0.16703,
+      "reported": true,
+      "filled": false
+    },
+    {
+      "symbol": "ARIAUSDT",
+      "tf": "1h",
+      "candle_ts": 1794121200,
+      "side": "SELL",
+      "upper": 0.16517139012814025,
       "open": 0.16703,
       "reported": false
     }
@@ -9407,11 +9425,6 @@
     "APROUSDT": 1794115028,
     "POETUSDT": 1794115909,
     "LWLGUSDT": 1794115917,
-    "TOADUSDT": 1794115929,
-    "1000WOJAKUSDT": 1794121453,
-    "1000SATSUSDT": 1794121460,
-    "CZUSDT": 1794121473,
-    "NEIRO1USDT": 1794121471,
     "QUACKAIUSDT": 1794122215,
     "PIPEDOGUSDT": 1794124059,
     "NIULAIUSDT": 1794124933,
@@ -9435,9 +9448,13 @@
     "AINBSCUSDT": 1794159229,
     "KOPNUSDT": 1794160960,
     "METEORAUSDT": 1794163747,
-    "CAPETHUSDT": 1794163767
+    "CAPETHUSDT": 1794163767,
+    "1000SATSUSDT": 1794165392,
+    "1000WOJAKUSDT": 1794165393,
+    "CZUSDT": 1794165398,
+    "NEIRO1USDT": 1794165399
   },
-  "last_trade_report_ts": 1794120485,
+  "last_trade_report_ts": 1794121508,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
