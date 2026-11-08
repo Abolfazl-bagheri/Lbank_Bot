@@ -4,11 +4,11 @@
       "symbol": "KOMAUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.020272958569414863,
-      "qty": 147980.3744,
+      "entry": 0.020288587686805956,
+      "qty": 147866.3792,
       "margin": 150.0,
       "leverage": 20,
-      "tp_price": 0.01976613460517949,
+      "tp_price": 0.019781372994635806,
       "tf": "1h",
       "opened_at": 1794107731,
       "adds": 3,
@@ -28,8 +28,8 @@
           "ts": 1794111338
         },
         {
-          "px": 0.020505,
-          "ts": 1794114083
+          "px": 0.020535,
+          "ts": 1794114055
         }
       ],
       "entry_candle_ts": 1794107700,
@@ -41,26 +41,26 @@
       "symbol": "BMTUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.02509,
-      "qty": 7971.3033,
+      "entry": 0.02506,
+      "qty": 7980.846,
       "margin": 10.0,
       "leverage": 20,
-      "tp_price": 0.024462750000000002,
+      "tp_price": 0.024433499999999997,
       "tf": "1h",
-      "opened_at": 1794114038,
+      "opened_at": 1794114087,
       "adds": 0,
       "last_leg_margin": 10.0,
       "used_res_levels": [],
       "steps": [
         {
-          "px": 0.02509,
-          "ts": 1794114038
+          "px": 0.02506,
+          "ts": 1794114087
         }
       ],
       "entry_candle_ts": 1794114000,
       "last_leg_candle_ts": 1794114000,
       "dry_run": true,
-      "order_id": "PAPER-BMTUSDT-1794114038"
+      "order_id": "PAPER-BMTUSDT-1794114087"
     }
   ],
   "trade_history": [
@@ -9171,8 +9171,7 @@
       "side": "SELL",
       "upper": 0.019669363348137684,
       "open": 0.020297,
-      "reported": true,
-      "filled": true
+      "reported": false
     },
     {
       "symbol": "KOMAUSDT",
@@ -9194,21 +9193,11 @@
     },
     {
       "symbol": "KOMAUSDT",
-      "tf": "15m",
-      "candle_ts": 1794111300,
-      "side": "SELL",
-      "upper": 0.020299497004871863,
-      "open": 0.020558,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "BMTUSDT",
       "tf": "1h",
       "candle_ts": 1794114000,
       "side": "SELL",
-      "upper": 0.024684998800191565,
-      "open": 0.02508,
+      "upper": 0.02001886407600112,
+      "open": 0.020491,
       "reported": false
     }
   ],
@@ -9348,13 +9337,9 @@
     "B3USDT": 1794143806,
     "IRENONUSDT": 1794144696,
     "1000BTTCUSDT": 1794145597,
-    "LIGHT1USDT": 1794153876,
-    "XTIUSDT": 1794155506,
-    "RIOTUSDT": 1794155507,
-    "FIGUSDT": 1794156378,
-    "KOPNUSDT": 1794156395
+    "LIGHT1USDT": 1794153876
   },
-  "last_trade_report_ts": 1794112416,
+  "last_trade_report_ts": 1794110799,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
