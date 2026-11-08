@@ -63,37 +63,6 @@
       "order_id": "PAPER-CLAUDIAUSDT-1794120314"
     },
     {
-      "symbol": "ARIAUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.16527190367777356,
-      "qty": 3630.3812,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.1611401060858292,
-      "tf": "15m",
-      "opened_at": 1794121254,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        0.16481
-      ],
-      "steps": [
-        {
-          "px": 0.16692,
-          "ts": 1794121254
-        },
-        {
-          "px": 0.16446,
-          "ts": 1794125863
-        }
-      ],
-      "entry_candle_ts": 1794121200,
-      "last_leg_candle_ts": 1794125863,
-      "dry_run": true,
-      "order_id": "PAPER-ARIAUSDT-1794121254"
-    },
-    {
       "symbol": "TAUSDT",
       "side": "SELL",
       "status": "open",
@@ -244,49 +213,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "YOFCUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 13.70185293801967,
-      "qty": 218.94850000000002,
-      "margin": 150.0,
-      "leverage": 20,
-      "tp_price": 13.359306614569178,
-      "tf": "4h",
-      "opened_at": 1793595910,
-      "adds": 3,
-      "last_leg_margin": 80.0,
-      "used_res_levels": [
-        13.779,
-        13.696
-      ],
-      "steps": [
-        {
-          "px": 13.75,
-          "ts": 1793595910
-        },
-        {
-          "px": 13.75,
-          "ts": 1793596077
-        },
-        {
-          "px": 13.75,
-          "ts": 1793606825
-        },
-        {
-          "px": 13.66,
-          "ts": 1793612975
-        }
-      ],
-      "entry_candle_ts": 1793595600,
-      "last_leg_candle_ts": 1793612975,
-      "dry_run": true,
-      "order_id": "PAPER-YOFCUSDT-1793595910",
-      "closed_at": 1793635837,
-      "close_px": 13.14,
-      "pnl_usdt": 123.01685193116815
-    },
     {
       "symbol": "AEONUSDT",
       "side": "SELL",
@@ -7385,6 +7311,42 @@
       "pnl_usdt": 645.5604643801408,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "ARIAUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.16527190367777356,
+      "qty": 3630.3812,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 0.1611401060858292,
+      "tf": "15m",
+      "opened_at": 1794121254,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.16481
+      ],
+      "steps": [
+        {
+          "px": 0.16692,
+          "ts": 1794121254
+        },
+        {
+          "px": 0.16446,
+          "ts": 1794125863
+        }
+      ],
+      "entry_candle_ts": 1794121200,
+      "last_leg_candle_ts": 1794125863,
+      "dry_run": true,
+      "order_id": "PAPER-ARIAUSDT-1794121254",
+      "closed_at": 1794129434,
+      "close_px": 0.16072,
+      "pnl_usdt": 16.525145205497072,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -9701,7 +9663,7 @@
     "PIPEDOGUSDT": 1794170773,
     "QUACKAIUSDT": 1794171787
   },
-  "last_trade_report_ts": 1794127662,
+  "last_trade_report_ts": 1794128703,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
