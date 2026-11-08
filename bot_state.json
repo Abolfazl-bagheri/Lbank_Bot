@@ -220,66 +220,9 @@
       "last_leg_candle_ts": 1794139200,
       "dry_run": true,
       "order_id": "PAPER-HOTUSDT-1794132942"
-    },
-    {
-      "symbol": "SKYAIUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.03836,
-      "qty": 5213.7643,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.037401,
-      "tf": "1h",
-      "opened_at": 1794139325,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.03836,
-          "ts": 1794139325
-        }
-      ],
-      "entry_candle_ts": 1794139200,
-      "last_leg_candle_ts": 1794139200,
-      "dry_run": true,
-      "order_id": "PAPER-SKYAIUSDT-1794139325"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "NOMUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.0016515215311021382,
-      "qty": 363301.3489,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.0016102334928245847,
-      "tf": "1h",
-      "opened_at": 1793641607,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.001692,
-          "ts": 1793641607
-        },
-        {
-          "px": 0.001632,
-          "ts": 1793642673
-        }
-      ],
-      "entry_candle_ts": 1793641500,
-      "last_leg_candle_ts": 1793642400,
-      "dry_run": true,
-      "order_id": "PAPER-NOMUSDT-1793641607",
-      "closed_at": 1793643464,
-      "close_px": 0.001578,
-      "pnl_usdt": 26.71047142318773
-    },
     {
       "symbol": "MPWRUSDT",
       "side": "SELL",
@@ -7402,6 +7345,36 @@
       "pnl_usdt": 15.450643776824046,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "SKYAIUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.03836,
+      "qty": 5213.7643,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.037401,
+      "tf": "1h",
+      "opened_at": 1794139325,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.03836,
+          "ts": 1794139325
+        }
+      ],
+      "entry_candle_ts": 1794139200,
+      "last_leg_candle_ts": 1794139200,
+      "dry_run": true,
+      "order_id": "PAPER-SKYAIUSDT-1794139325",
+      "closed_at": 1794142112,
+      "close_px": 0.03709,
+      "pnl_usdt": 6.621480709071951,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -9758,7 +9731,7 @@
     "1000000BABYDOGEUSDT": 1794182837,
     "YMTCUSDT": 1794184316
   },
-  "last_trade_report_ts": 1794139815,
+  "last_trade_report_ts": 1794141314,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
