@@ -94,6 +94,31 @@
       "last_leg_candle_ts": 1794121200,
       "dry_run": true,
       "order_id": "PAPER-CLAUDIAUSDT-1794120314"
+    },
+    {
+      "symbol": "ARIAUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.16692,
+      "qty": 1198.1788,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.162747,
+      "tf": "15m",
+      "opened_at": 1794121254,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.16692,
+          "ts": 1794121254
+        }
+      ],
+      "entry_candle_ts": 1794121200,
+      "last_leg_candle_ts": 1794121200,
+      "dry_run": true,
+      "order_id": "PAPER-ARIAUSDT-1794121254"
     }
   ],
   "trade_history": [
@@ -9250,6 +9275,15 @@
       "side": "SELL",
       "upper": 0.0063095343889177005,
       "open": 0.006629,
+      "reported": false
+    },
+    {
+      "symbol": "CLAUDIAUSDT",
+      "tf": "15m",
+      "candle_ts": 1794121200,
+      "side": "SELL",
+      "upper": 0.007025017478958612,
+      "open": 0.007593,
       "reported": false
     }
   ],
