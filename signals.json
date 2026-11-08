@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1794150025,
+  "updated_at": 1794150033,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "YPFUSDT",
-      "tf": "15m",
-      "gap": 1.05,
-      "ts": 1794124822
-    },
     {
       "kind": "SELL",
       "symbol": "ICNTUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 2.68,
       "ts": 1794150025
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794150033
     }
   ],
   "trades": [
@@ -1469,6 +1469,19 @@
       "px": 0.0004297,
       "pnl": -20.9862,
       "tf": "1h"
+    },
+    {
+      "symbol": "NAORISUSDT",
+      "side": "SELL",
+      "entry": 0.03078,
+      "tp": 0.0300105,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.03078,
+      "pnl": 0.0,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
