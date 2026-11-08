@@ -109,15 +109,15 @@
       "symbol": "JCTUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.004026944884339492,
-      "qty": 744981.639,
-      "margin": 150.0,
+      "entry": 0.004407523844703395,
+      "qty": 1406685.5265,
+      "margin": 310.0,
       "leverage": 20,
-      "tp_price": 0.0039262712622310045,
+      "tp_price": 0.00429733574858581,
       "tf": "15m",
       "opened_at": 1794124945,
-      "adds": 3,
-      "last_leg_margin": 80.0,
+      "adds": 4,
+      "last_leg_margin": 160.0,
       "used_res_levels": [
         0.003381
       ],
@@ -137,10 +137,14 @@
         {
           "px": 0.004758,
           "ts": 1794132022
+        },
+        {
+          "px": 0.004836,
+          "ts": 1794132917
         }
       ],
       "entry_candle_ts": 1794124800,
-      "last_leg_candle_ts": 1794132000,
+      "last_leg_candle_ts": 1794132900,
       "dry_run": true,
       "order_id": "PAPER-JCTUSDT-1794124945"
     },
@@ -9521,7 +9525,8 @@
       "side": "SELL",
       "upper": 0.1099319250326807,
       "open": 0.11427,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "AIOTUSDT",
@@ -9530,7 +9535,8 @@
       "side": "SELL",
       "upper": 0.13436338971583894,
       "open": 0.1358,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "JCTUSDT",
@@ -9539,7 +9545,8 @@
       "side": "SELL",
       "upper": 0.0033964290503246185,
       "open": 0.003536,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "JCTUSDT",
@@ -9566,6 +9573,15 @@
       "side": "SELL",
       "upper": 0.004295832350656253,
       "open": 0.004729,
+      "reported": false
+    },
+    {
+      "symbol": "PIEVERSEUSDT",
+      "tf": "1h",
+      "candle_ts": 1794132000,
+      "side": "SELL",
+      "upper": 1.4684889654456803,
+      "open": 1.4863,
       "reported": false
     }
   ],
@@ -9706,7 +9722,7 @@
     "PIPEDOGUSDT": 1794170773,
     "QUACKAIUSDT": 1794171787
   },
-  "last_trade_report_ts": 1794131248,
+  "last_trade_report_ts": 1794132293,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
