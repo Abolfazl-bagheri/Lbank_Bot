@@ -120,51 +120,6 @@
       "order_id": "PAPER-ANSEMUSDT-1794151830"
     },
     {
-      "symbol": "AIOTUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.16824652579240404,
-      "qty": 74890.1051,
-      "margin": 630.0,
-      "leverage": 20,
-      "tp_price": 0.16404036264759395,
-      "tf": "4h",
-      "opened_at": 1794151855,
-      "adds": 5,
-      "last_leg_margin": 320.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.15319,
-          "ts": 1794151855
-        },
-        {
-          "px": 0.15552,
-          "ts": 1794152743
-        },
-        {
-          "px": 0.1522,
-          "ts": 1794153714
-        },
-        {
-          "px": 0.17696,
-          "ts": 1794155445
-        },
-        {
-          "px": 0.17201,
-          "ts": 1794157245
-        },
-        {
-          "px": 0.16793,
-          "ts": 1794168076
-        }
-      ],
-      "entry_candle_ts": 1794151800,
-      "last_leg_candle_ts": 1794168000,
-      "dry_run": true,
-      "order_id": "PAPER-AIOTUSDT-1794151855"
-    },
-    {
       "symbol": "BLENDUSDT",
       "side": "SELL",
       "status": "open",
@@ -222,34 +177,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "ICNTUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.2046,
-      "qty": 977.5171,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.199485,
-      "tf": "15m",
-      "opened_at": 1793683005,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.2046,
-          "ts": 1793683005
-        }
-      ],
-      "entry_candle_ts": 1793682900,
-      "last_leg_candle_ts": 1793682900,
-      "dry_run": true,
-      "order_id": "PAPER-ICNTUSDT-1793683005",
-      "closed_at": 1793684143,
-      "close_px": 0.1992,
-      "pnl_usdt": 5.2785923753665855
-    },
     {
       "symbol": "AMZNUSDT",
       "side": "SELL",
@@ -7409,6 +7336,56 @@
       "pnl_usdt": 168.39386429171842,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "AIOTUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.16824652579240404,
+      "qty": 74890.1051,
+      "margin": 630.0,
+      "leverage": 20,
+      "tp_price": 0.16404036264759395,
+      "tf": "4h",
+      "opened_at": 1794151855,
+      "adds": 5,
+      "last_leg_margin": 320.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.15319,
+          "ts": 1794151855
+        },
+        {
+          "px": 0.15552,
+          "ts": 1794152743
+        },
+        {
+          "px": 0.1522,
+          "ts": 1794153714
+        },
+        {
+          "px": 0.17696,
+          "ts": 1794155445
+        },
+        {
+          "px": 0.17201,
+          "ts": 1794157245
+        },
+        {
+          "px": 0.16793,
+          "ts": 1794168076
+        }
+      ],
+      "entry_candle_ts": 1794151800,
+      "last_leg_candle_ts": 1794168000,
+      "dry_run": true,
+      "order_id": "PAPER-AIOTUSDT-1794151855",
+      "closed_at": 1794170931,
+      "close_px": 0.16167,
+      "pnl_usdt": 492.5167078132435,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -9507,6 +9484,16 @@
       "upper": 0.05819674981466231,
       "open": 0.0611,
       "reported": false
+    },
+    {
+      "symbol": "JCTUSDT",
+      "tf": "15m",
+      "candle_ts": 1794168900,
+      "side": "SELL",
+      "upper": 0.01667226741585506,
+      "open": 0.016956,
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -9610,7 +9597,6 @@
     "MANCERUSDT": 1794126726,
     "GALUSDT": 1794141094,
     "B3USDT": 1794143806,
-    "LIGHT1USDT": 1794153876,
     "RIOTUSDT": 1794157401,
     "XTIUSDT": 1794157404,
     "KOPNUSDT": 1794160960,
@@ -9650,9 +9636,10 @@
     "1000WOJAKUSDT": 1794209511,
     "NEIRO1USDT": 1794209512,
     "CZUSDT": 1794209514,
-    "MUSTOCKUSDT": 1794211442
+    "MUSTOCKUSDT": 1794211442,
+    "LIGHT1USDT": 1794213992
   },
-  "last_trade_report_ts": 1794168490,
+  "last_trade_report_ts": 1794170061,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
