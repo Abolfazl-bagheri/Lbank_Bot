@@ -4,24 +4,28 @@
       "symbol": "KOMAUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.018105,
-      "qty": 11046.6722,
-      "margin": 10.0,
+      "entry": 0.019441759402787386,
+      "qty": 30861.4045,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.017652374999999998,
+      "tp_price": 0.018955715417717702,
       "tf": "15m",
       "opened_at": 1794107731,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 0.018105,
           "ts": 1794107731
+        },
+        {
+          "px": 0.020187,
+          "ts": 1794110415
         }
       ],
       "entry_candle_ts": 1794107700,
-      "last_leg_candle_ts": 1794107700,
+      "last_leg_candle_ts": 1794110400,
       "dry_run": true,
       "order_id": "PAPER-KOMAUSDT-1794107731"
     }
@@ -9115,6 +9119,16 @@
       "open": 0.0128,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "KOMAUSDT",
+      "tf": "15m",
+      "candle_ts": 1794107700,
+      "side": "SELL",
+      "upper": 0.017916824570883463,
+      "open": 0.018126,
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -9259,7 +9273,7 @@
     "IRENONUSDT": 1794144696,
     "1000BTTCUSDT": 1794145597
   },
-  "last_trade_report_ts": 1794107100,
+  "last_trade_report_ts": 1794109718,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
