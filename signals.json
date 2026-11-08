@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1794151828,
+  "updated_at": 1794151836,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "TAUSDT",
-      "tf": "1h",
-      "gap": 2.14,
-      "ts": 1794124913
-    },
     {
       "kind": "SELL",
       "symbol": "JCTUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 2.21,
       "ts": 1794151828
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794151836
     }
   ],
   "trades": [
@@ -1469,6 +1469,19 @@
       "px": 0.0004249,
       "pnl": 12.76,
       "tf": "1h"
+    },
+    {
+      "symbol": "ANSEMUSDT",
+      "side": "SELL",
+      "entry": 0.04886,
+      "tp": 0.0476385,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.04886,
+      "pnl": 0.0,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
