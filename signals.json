@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1794132084,
+  "updated_at": 1794132092,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "KOMAUSDT",
-      "tf": "4h",
-      "gap": 4.6,
-      "ts": 1794110476
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 1.16,
       "ts": 1794132084
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794132092
     }
   ],
   "trades": [
@@ -1481,6 +1481,19 @@
       "lev": 20,
       "px": 0.13638,
       "pnl": -0.7951,
+      "tf": "1h"
+    },
+    {
+      "symbol": "PIEVERSEUSDT",
+      "side": "SELL",
+      "entry": 1.4857,
+      "tp": 1.4485575,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 1.4857,
+      "pnl": 0.0,
       "tf": "1h"
     }
   ],
