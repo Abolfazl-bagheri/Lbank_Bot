@@ -119,15 +119,15 @@
       "symbol": "AIOTUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.1685745161092173,
-      "qty": 36778.9874,
-      "margin": 310.0,
+      "entry": 0.16824652579240404,
+      "qty": 74890.1051,
+      "margin": 630.0,
       "leverage": 20,
-      "tp_price": 0.16436015320648686,
-      "tf": "1h",
+      "tp_price": 0.16404036264759395,
+      "tf": "4h",
       "opened_at": 1794151855,
-      "adds": 4,
-      "last_leg_margin": 160.0,
+      "adds": 5,
+      "last_leg_margin": 320.0,
       "used_res_levels": [],
       "steps": [
         {
@@ -149,10 +149,14 @@
         {
           "px": 0.17201,
           "ts": 1794157245
+        },
+        {
+          "px": 0.16793,
+          "ts": 1794168076
         }
       ],
       "entry_candle_ts": 1794151800,
-      "last_leg_candle_ts": 1794157200,
+      "last_leg_candle_ts": 1794168000,
       "dry_run": true,
       "order_id": "PAPER-AIOTUSDT-1794151855"
     },
@@ -9496,6 +9500,15 @@
       "side": "SELL",
       "upper": 0.031028120055169847,
       "open": 0.03147,
+      "reported": false
+    },
+    {
+      "symbol": "JCTUSDT",
+      "tf": "4h",
+      "candle_ts": 1794168000,
+      "side": "SELL",
+      "upper": 0.01184892259907247,
+      "open": 0.0131,
       "reported": false
     }
   ],
