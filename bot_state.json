@@ -186,6 +186,31 @@
       "last_leg_candle_ts": 1794156570,
       "dry_run": true,
       "order_id": "PAPER-BLENDUSDT-1794154527"
+    },
+    {
+      "symbol": "MERLUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.03151,
+      "qty": 6347.1914,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.030722250000000003,
+      "tf": "1h",
+      "opened_at": 1794168047,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.03151,
+          "ts": 1794168047
+        }
+      ],
+      "entry_candle_ts": 1794168000,
+      "last_leg_candle_ts": 1794168000,
+      "dry_run": true,
+      "order_id": "PAPER-MERLUSDT-1794168047"
     }
   ],
   "trade_history": [
@@ -7590,36 +7615,6 @@
       "side": "SELL"
     },
     {
-      "symbol": "UVXYUSDT",
-      "tf": "1h",
-      "candle_ts": 1793901600,
-      "side": "SELL",
-      "upper": 21.79080353180393,
-      "open": 22.12,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "CYBERUSDT",
-      "tf": "15m",
-      "candle_ts": 1793907000,
-      "side": "SELL",
-      "upper": 0.2575969723004083,
-      "open": 0.261,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "CYBERUSDT",
-      "tf": "15m",
-      "candle_ts": 1793907900,
-      "side": "SELL",
-      "upper": 0.26402659029914893,
-      "open": 0.2667,
-      "reported": true,
-      "filled": false
-    },
-    {
       "symbol": "CYBERUSDT",
       "tf": "15m",
       "candle_ts": 1793908800,
@@ -9576,7 +9571,6 @@
     "QUID1USDT": 1793901083,
     "STONKBROKERUSDT": 1793924211,
     "AMCUSDT": 1793924216,
-    "CYBERLEEKUSDT": 1793927052,
     "GOLDUSDT": 1793936850,
     "CANTONUSDT": 1793952369,
     "BTCDOMUSDT": 1793955831,
@@ -9600,14 +9594,9 @@
     "LIGHT1USDT": 1794153876,
     "RIOTUSDT": 1794157401,
     "XTIUSDT": 1794157404,
-    "O1USDT": 1794158165,
     "KOPNUSDT": 1794160960,
     "METEORAUSDT": 1794163747,
     "CAPETHUSDT": 1794163767,
-    "1000SATSUSDT": 1794165392,
-    "1000WOJAKUSDT": 1794165393,
-    "CZUSDT": 1794165398,
-    "NEIRO1USDT": 1794165399,
     "TOADUSDT": 1794166299,
     "SAFE1USDT": 1794167215,
     "PIPEDOGUSDT": 1794170773,
@@ -9635,9 +9624,15 @@
     "SIMOUSDT": 1794199618,
     "FIGUSDT": 1794201391,
     "AINBSCUSDT": 1794203197,
-    "FLYUSDT": 1794203212
+    "FLYUSDT": 1794203212,
+    "O1USDT": 1794209461,
+    "CYBERLEEKUSDT": 1794209504,
+    "1000SATSUSDT": 1794209510,
+    "1000WOJAKUSDT": 1794209511,
+    "NEIRO1USDT": 1794209512,
+    "CZUSDT": 1794209514
   },
-  "last_trade_report_ts": 1794159223,
+  "last_trade_report_ts": 1794167368,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
