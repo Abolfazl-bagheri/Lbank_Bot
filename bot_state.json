@@ -1,5 +1,31 @@
 {
-  "open_trades": [],
+  "open_trades": [
+    {
+      "symbol": "KOMAUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.018105,
+      "qty": 11046.6722,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.017652374999999998,
+      "tf": "15m",
+      "opened_at": 1794107731,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.018105,
+          "ts": 1794107731
+        }
+      ],
+      "entry_candle_ts": 1794107700,
+      "last_leg_candle_ts": 1794107700,
+      "dry_run": true,
+      "order_id": "PAPER-KOMAUSDT-1794107731"
+    }
+  ],
   "trade_history": [
     {
       "symbol": "TSEMUSDT",
@@ -7322,76 +7348,6 @@
       "side": "SELL"
     },
     {
-      "symbol": "EIDOUSDT",
-      "tf": "15m",
-      "candle_ts": 1793842200,
-      "side": "SELL",
-      "upper": 10.234621839509934,
-      "open": 10.4,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "LAOPUUSDT",
-      "tf": "15m",
-      "candle_ts": 1793843100,
-      "side": "SELL",
-      "upper": 38.23711805316934,
-      "open": 38.69,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "LAOPUUSDT",
-      "tf": "1h",
-      "candle_ts": 1793844000,
-      "side": "SELL",
-      "upper": 39.27255836489384,
-      "open": 39.75,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "HK1810USDT",
-      "tf": "1h",
-      "candle_ts": 1793844000,
-      "side": "SELL",
-      "upper": 30.300007448132018,
-      "open": 30.69,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "ARGUSUSDT",
-      "tf": "15m",
-      "candle_ts": 1793846700,
-      "side": "SELL",
-      "upper": 0.0045214897897640615,
-      "open": 0.00458,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "MINIMAXUSDT",
-      "tf": "15m",
-      "candle_ts": 1793846700,
-      "side": "SELL",
-      "upper": 21.775513686819608,
-      "open": 22.06,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "LYNUSDT",
-      "tf": "1h",
-      "candle_ts": 1793847600,
-      "side": "SELL",
-      "upper": 0.02178002897842498,
-      "open": 0.02215,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "JCTUSDT",
       "tf": "1h",
       "candle_ts": 1793858400,
@@ -9240,8 +9196,6 @@
     "MARRIOTTUSDT": 1793714834,
     "ONSEMIUSDT": 1793784100,
     "SIMOUSDT": 1793785920,
-    "OFCUSDT": 1793873172,
-    "B3USDT": 1793880575,
     "AI1USDT": 1793882848,
     "BEMUSDT": 1793901058,
     "QUID1USDT": 1793901083,
@@ -9272,7 +9226,6 @@
     "SPORTFUNUSDT": 1794081839,
     "ARROWUSDT": 1794086185,
     "BARUSDT": 1794087994,
-    "IRENONUSDT": 1794092563,
     "RIOTUSDT": 1794111399,
     "UP2USDT": 1794111408,
     "AEHRUSDT": 1794111443,
@@ -9301,9 +9254,12 @@
     "MANCERUSDT": 1794126726,
     "PORUSDT": 1794130305,
     "KNTQUSDT": 1794139413,
-    "GALUSDT": 1794141094
+    "GALUSDT": 1794141094,
+    "B3USDT": 1794143806,
+    "IRENONUSDT": 1794144696,
+    "1000BTTCUSDT": 1794145597
   },
-  "last_trade_report_ts": 1794096378,
+  "last_trade_report_ts": 1794107100,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
