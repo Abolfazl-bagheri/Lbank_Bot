@@ -1,8 +1,22 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1794114091,
+  "updated_at": 1794114310,
   "signals": [
+    {
+      "kind": "GAP",
+      "symbol": "GRASSUSDT",
+      "tf": "15m",
+      "gap": 1.32,
+      "ts": 1794073432
+    },
+    {
+      "kind": "GAP",
+      "symbol": "IDOLUSDT",
+      "tf": "15m",
+      "gap": 4.38,
+      "ts": 1794073511
+    },
     {
       "kind": "SELL",
       "symbol": "IDOLUSDT",
@@ -1348,86 +1362,72 @@
       "ts": 1794113688
     },
     {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794113906
-    },
-    {
       "kind": "GAP",
       "symbol": "STANDARDUSDT",
       "tf": "15m",
-      "gap": 1.22,
+      "gap": 1.17,
       "ts": 1794114009
     },
     {
-      "kind": "GAP",
-      "symbol": "KOMAUSDT",
-      "tf": "1h",
-      "gap": 4.91,
-      "ts": 1794114021
-    },
-    {
-      "kind": "GAP",
+      "kind": "SELL",
       "symbol": "BMTUSDT",
       "tf": "1h",
-      "gap": 3.12,
-      "ts": 1794114025
-    },
-    {
-      "kind": "SELL",
-      "symbol": "KOMAUSDT",
-      "tf": "1h",
-      "gap": 2.51,
-      "ts": 1794114054
+      "gap": 1.61,
+      "ts": 1794114036
     },
     {
       "kind": "POS",
       "symbol": "—",
       "tf": "—",
       "gap": 0.0,
-      "ts": 1794114058
+      "ts": 1794114041
     },
     {
       "kind": "SELL",
-      "symbol": "BMTUSDT",
+      "symbol": "KOMAUSDT",
       "tf": "1h",
-      "gap": 1.52,
-      "ts": 1794114086
+      "gap": 2.28,
+      "ts": 1794114082
     },
     {
       "kind": "POS",
       "symbol": "—",
       "tf": "—",
       "gap": 0.0,
-      "ts": 1794114091
+      "ts": 1794114087
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794114310
     }
   ],
   "trades": [
     {
       "symbol": "KOMAUSDT",
       "side": "SELL",
-      "entry": 0.020288587686805956,
-      "tp": 0.019781372994635806,
+      "entry": 0.020272958569414863,
+      "tp": 0.01976613460517949,
       "adds": 3,
       "pele": 4,
       "margin": 150.0,
       "lev": 20,
-      "px": 0.020535,
-      "pnl": -36.4361,
+      "px": 0.020505,
+      "pnl": -34.3376,
       "tf": "1h"
     },
     {
       "symbol": "BMTUSDT",
       "side": "SELL",
-      "entry": 0.02506,
-      "tp": 0.024433499999999997,
+      "entry": 0.02509,
+      "tp": 0.024462750000000002,
       "adds": 0,
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.02506,
+      "px": 0.02509,
       "pnl": 0.0,
       "tf": "1h"
     }
@@ -1436,8 +1436,8 @@
   "session_start": 1794096385,
   "realized": 8.1543,
   "closed_n": 1,
-  "open_upnl": -36.4361,
-  "equity": 971.7182,
+  "open_upnl": -34.3376,
+  "equity": 973.8167,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
