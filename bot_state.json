@@ -70,15 +70,15 @@
       "symbol": "CLAUDIAUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.007084894292866957,
-      "qty": 84687.2197,
-      "margin": 30.0,
+      "entry": 0.007691349991326904,
+      "qty": 182022.662,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 0.006907771935545283,
+      "tp_price": 0.007499066241543732,
       "tf": "15m",
       "opened_at": 1794120314,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [],
       "steps": [
         {
@@ -88,10 +88,14 @@
         {
           "px": 0.007325,
           "ts": 1794121225
+        },
+        {
+          "px": 0.008219,
+          "ts": 1794123017
         }
       ],
       "entry_candle_ts": 1794120300,
-      "last_leg_candle_ts": 1794121200,
+      "last_leg_candle_ts": 1794123000,
       "dry_run": true,
       "order_id": "PAPER-CLAUDIAUSDT-1794120314"
     },
@@ -9311,6 +9315,15 @@
       "side": "SELL",
       "upper": 0.16517139012814025,
       "open": 0.16703,
+      "reported": false
+    },
+    {
+      "symbol": "ICNTUSDT",
+      "tf": "15m",
+      "candle_ts": 1794123000,
+      "side": "SELL",
+      "upper": 0.33912759219300026,
+      "open": 0.345,
       "reported": false
     }
   ],
