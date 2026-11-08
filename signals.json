@@ -1,8 +1,15 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1794180825,
+  "updated_at": 1794180876,
   "signals": [
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794139814
+    },
     {
       "kind": "HEARTBEAT",
       "symbol": "—",
@@ -1376,32 +1383,25 @@
       "ts": 1794179918
     },
     {
-      "kind": "GAP",
-      "symbol": "SHEINUSDT",
-      "tf": "15m",
-      "gap": 1.12,
-      "ts": 1794180501
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794180521
     },
     {
       "kind": "GAP",
       "symbol": "AEONUSDT",
       "tf": "15m",
-      "gap": 1.75,
-      "ts": 1794180590
+      "gap": 1.18,
+      "ts": 1794180611
     },
     {
       "kind": "POS",
       "symbol": "—",
       "tf": "—",
       "gap": 0.0,
-      "ts": 1794180823
-    },
-    {
-      "kind": "HEARTBEAT",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794180825
+      "ts": 1794180876
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 6,
       "margin": 630.0,
       "lev": 20,
-      "px": 0.011496,
-      "pnl": -10953.0568,
+      "px": 0.011533,
+      "pnl": -11028.8625,
       "tf": "1h"
     }
   ],
@@ -1423,8 +1423,8 @@
   "session_start": 1794096385,
   "realized": 2455.747,
   "closed_n": 22,
-  "open_upnl": -10953.0568,
-  "equity": -7497.3098,
+  "open_upnl": -11028.8625,
+  "equity": -7573.1155,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
