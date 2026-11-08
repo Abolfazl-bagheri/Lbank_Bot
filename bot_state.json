@@ -148,6 +148,31 @@
       "last_leg_candle_ts": 1794123000,
       "dry_run": true,
       "order_id": "PAPER-ICNTUSDT-1794123006"
+    },
+    {
+      "symbol": "TAUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.10438,
+      "qty": 1916.0759,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.1017705,
+      "tf": "15m",
+      "opened_at": 1794123028,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.10438,
+          "ts": 1794123028
+        }
+      ],
+      "entry_candle_ts": 1794123000,
+      "last_leg_candle_ts": 1794123000,
+      "dry_run": true,
+      "order_id": "PAPER-TAUSDT-1794123028"
     }
   ],
   "trade_history": [
@@ -9324,6 +9349,15 @@
       "side": "SELL",
       "upper": 0.33912759219300026,
       "open": 0.345,
+      "reported": false
+    },
+    {
+      "symbol": "CLAUDIAUSDT",
+      "tf": "15m",
+      "candle_ts": 1794123000,
+      "side": "SELL",
+      "upper": 0.007992686250836541,
+      "open": 0.00817,
       "reported": false
     }
   ],
