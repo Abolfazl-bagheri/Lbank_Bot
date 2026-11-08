@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1794125778,
+  "updated_at": 1794125786,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794096385
-    },
     {
       "kind": "GAP",
       "symbol": "BLENDUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 1.59,
       "ts": 1794125778
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794125786
     }
   ],
   "trades": [
@@ -1495,6 +1495,19 @@
       "px": 0.003323,
       "pnl": -10.117,
       "tf": "1h"
+    },
+    {
+      "symbol": "AKEUSDT",
+      "side": "SELL",
+      "entry": 0.005688,
+      "tp": 0.0055458,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.005688,
+      "pnl": 0.0,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
