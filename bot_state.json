@@ -92,18 +92,19 @@
       "symbol": "SOPHUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.0013333132015271457,
-      "qty": 1050015.854,
-      "margin": 70.0,
+      "entry": 0.0013180616883895603,
+      "qty": 2276069.4938000003,
+      "margin": 150.0,
       "leverage": 20,
-      "tp_price": 0.001299980371488967,
+      "tp_price": 0.0012851101461798214,
       "tf": "15m",
       "opened_at": 1794127543,
-      "adds": 2,
-      "last_leg_margin": 40.0,
+      "adds": 3,
+      "last_leg_margin": 80.0,
       "used_res_levels": [
         0.001347,
-        0.001328
+        0.001328,
+        0.001309
       ],
       "steps": [
         {
@@ -117,10 +118,14 @@
         {
           "px": 0.001323,
           "ts": 1794141294
+        },
+        {
+          "px": 0.001305,
+          "ts": 1794143936
         }
       ],
       "entry_candle_ts": 1794127500,
-      "last_leg_candle_ts": 1794141294,
+      "last_leg_candle_ts": 1794143936,
       "dry_run": true,
       "order_id": "PAPER-SOPHUSDT-1794127543"
     },
@@ -7614,16 +7619,6 @@
       "side": "SELL"
     },
     {
-      "symbol": "ARIAUSDT",
-      "tf": "1h",
-      "candle_ts": 1793883600,
-      "side": "SELL",
-      "upper": 0.1401863729815841,
-      "open": 0.14291,
-      "reported": true,
-      "filled": false
-    },
-    {
       "symbol": "CLANKERUSDT",
       "tf": "15m",
       "candle_ts": 1793887200,
@@ -9550,7 +9545,8 @@
       "side": "SELL",
       "upper": 0.0004297737417153655,
       "open": 0.0004401,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "JCTUSDT",
@@ -9559,7 +9555,8 @@
       "side": "SELL",
       "upper": 0.008447029775955794,
       "open": 0.009743,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "SKYAIUSDT",
@@ -9568,7 +9565,8 @@
       "side": "SELL",
       "upper": 0.037552276459145786,
       "open": 0.0386,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "AIOTUSDT",
@@ -9595,7 +9593,8 @@
       "side": "SELL",
       "upper": 0.028628746681270124,
       "open": 0.030233,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "SKYAIUSDT",
@@ -9631,6 +9630,16 @@
       "side": "SELL",
       "upper": 0.009733336207628571,
       "open": 0.00985,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "4USDT",
+      "tf": "1h",
+      "candle_ts": 1794142800,
+      "side": "SELL",
+      "upper": 0.009758470525667732,
+      "open": 0.009887,
       "reported": false
     }
   ],
@@ -9725,12 +9734,10 @@
     "BTCDOMUSDT": 1793955831,
     "UBIKUSDT": 1793961071,
     "HK1810USDT": 1793981026,
-    "LONGXIAUSDT": 1793981070,
     "XBRUSDT": 1793988971,
     "OROCHIUSDT": 1794015066,
     "BBXUSDT": 1794018704,
     "MURATAUSDT": 1794038839,
-    "GSTOCKUSDT": 1794048395,
     "RGTIUSDT": 1794071770,
     "SPORTFUNUSDT": 1794081839,
     "ARROWUSDT": 1794086185,
@@ -9772,9 +9779,11 @@
     "ARCSOLUSDT": 1794182719,
     "NEXUSDT": 1794182833,
     "1000000BABYDOGEUSDT": 1794182837,
-    "YMTCUSDT": 1794184316
+    "YMTCUSDT": 1794184316,
+    "GSTOCKUSDT": 1794187017,
+    "PORUSDT": 1794187019
   },
-  "last_trade_report_ts": 1794141314,
+  "last_trade_report_ts": 1794143260,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
