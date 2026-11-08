@@ -65,6 +65,31 @@
       "last_leg_candle_ts": 1794116700,
       "dry_run": true,
       "order_id": "PAPER-HMSTRUSDT-1794116717"
+    },
+    {
+      "symbol": "CLAUDIAUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.006649,
+      "qty": 30079.7112,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0064827750000000005,
+      "tf": "15m",
+      "opened_at": 1794120314,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.006649,
+          "ts": 1794120314
+        }
+      ],
+      "entry_candle_ts": 1794120300,
+      "last_leg_candle_ts": 1794120300,
+      "dry_run": true,
+      "order_id": "PAPER-CLAUDIAUSDT-1794120314"
     }
   ],
   "trade_history": [
@@ -7397,26 +7422,6 @@
       "side": "SELL"
     },
     {
-      "symbol": "CARDSUSDT",
-      "tf": "15m",
-      "candle_ts": 1793859300,
-      "side": "SELL",
-      "upper": 0.28474478273028714,
-      "open": 0.2912,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "CARDSUSDT",
-      "tf": "15m",
-      "candle_ts": 1793860200,
-      "side": "SELL",
-      "upper": 0.29362176147577984,
-      "open": 0.3014,
-      "reported": true,
-      "filled": false
-    },
-    {
       "symbol": "ICNTUSDT",
       "tf": "15m",
       "candle_ts": 1793862900,
@@ -9331,7 +9336,6 @@
     "XBRUSDT": 1793988971,
     "OROCHIUSDT": 1794015066,
     "BBXUSDT": 1794018704,
-    "TRUMPSOLUSDT": 1794028601,
     "MURATAUSDT": 1794038839,
     "GSTOCKUSDT": 1794048395,
     "RGTIUSDT": 1794071770,
@@ -9377,7 +9381,7 @@
     "AINBSCUSDT": 1794159229,
     "KOPNUSDT": 1794160960
   },
-  "last_trade_report_ts": 1794116896,
+  "last_trade_report_ts": 1794118856,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
