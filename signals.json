@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1794175534,
+  "updated_at": 1794176348,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "AGTUSDT",
-      "tf": "15m",
-      "gap": 2.58,
-      "ts": 1794139272
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1395,13 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1794175534
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794176348
     }
   ],
   "trades": [
@@ -1414,36 +1414,23 @@
       "pele": 6,
       "margin": 630.0,
       "lev": 20,
-      "px": 0.014791,
-      "pnl": -17703.8676,
+      "px": 0.015144,
+      "pnl": -18427.0956,
       "tf": "1h"
-    },
-    {
-      "symbol": "BLENDUSDT",
-      "side": "SELL",
-      "entry": 0.05796702130332752,
-      "tp": 0.056517845770744334,
-      "adds": 2,
-      "pele": 3,
-      "margin": 70.0,
-      "lev": 20,
-      "px": 0.05652,
-      "pnl": 34.948,
-      "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1794096385,
-  "realized": 2420.0745,
-  "closed_n": 21,
-  "open_upnl": -17668.9196,
-  "equity": -14248.8451,
+  "realized": 2455.747,
+  "closed_n": 22,
+  "open_upnl": -18427.0956,
+  "equity": -14971.3486,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 2420.0745,
+    "profit": 2455.747,
     "loss": 0,
-    "count": 21
+    "count": 22
   }
 }
