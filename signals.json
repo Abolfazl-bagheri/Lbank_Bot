@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1794180521,
+  "updated_at": 1794180590,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "JCTUSDT",
-      "tf": "4h",
-      "gap": 17.75,
-      "ts": 1794139384
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1397,11 +1390,18 @@
       "ts": 1794179918
     },
     {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794180521
+      "kind": "GAP",
+      "symbol": "SHEINUSDT",
+      "tf": "15m",
+      "gap": 1.12,
+      "ts": 1794180501
+    },
+    {
+      "kind": "GAP",
+      "symbol": "AEONUSDT",
+      "tf": "15m",
+      "gap": 1.75,
+      "ts": 1794180590
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 6,
       "margin": 630.0,
       "lev": 20,
-      "px": 0.011631,
-      "pnl": -11229.6454,
+      "px": 0.011582,
+      "pnl": -11129.2539,
       "tf": "1h"
     }
   ],
@@ -1423,8 +1423,8 @@
   "session_start": 1794096385,
   "realized": 2455.747,
   "closed_n": 22,
-  "open_upnl": -11229.6454,
-  "equity": -7773.8984,
+  "open_upnl": -11129.2539,
+  "equity": -7673.5069,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
