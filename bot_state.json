@@ -48,47 +48,6 @@
       "order_id": "PAPER-JCTUSDT-1794124945"
     },
     {
-      "symbol": "ANSEMUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.059719823319856265,
-      "qty": 103818.12359999999,
-      "margin": 310.0,
-      "leverage": 20,
-      "tp_price": 0.05822682773685986,
-      "tf": "4h",
-      "opened_at": 1794151830,
-      "adds": 4,
-      "last_leg_margin": 160.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.04886,
-          "ts": 1794151830
-        },
-        {
-          "px": 0.05445,
-          "ts": 1794154553
-        },
-        {
-          "px": 0.05646,
-          "ts": 1794155426
-        },
-        {
-          "px": 0.05883,
-          "ts": 1794157279
-        },
-        {
-          "px": 0.06273,
-          "ts": 1794168093
-        }
-      ],
-      "entry_candle_ts": 1794151800,
-      "last_leg_candle_ts": 1794168000,
-      "dry_run": true,
-      "order_id": "PAPER-ANSEMUSDT-1794151830"
-    },
-    {
       "symbol": "BLENDUSDT",
       "side": "SELL",
       "status": "open",
@@ -151,40 +110,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "IRYSUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.02187330791515211,
-      "qty": 27430.6933,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.021326475217273305,
-      "tf": "1h",
-      "opened_at": 1793682312,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        0.02196
-      ],
-      "steps": [
-        {
-          "px": 0.02184,
-          "ts": 1793682312
-        },
-        {
-          "px": 0.02189,
-          "ts": 1793683268
-        }
-      ],
-      "entry_candle_ts": 1793682000,
-      "last_leg_candle_ts": 1793683268,
-      "dry_run": true,
-      "order_id": "PAPER-IRYSUSDT-1793682312",
-      "closed_at": 1793688492,
-      "close_px": 0.02127,
-      "pnl_usdt": 16.549154361810547
-    },
     {
       "symbol": "BMTUSDT",
       "side": "SELL",
@@ -7362,6 +7287,52 @@
       "pnl_usdt": 15.796818001670914,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "ANSEMUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.059719823319856265,
+      "qty": 103818.12359999999,
+      "margin": 310.0,
+      "leverage": 20,
+      "tp_price": 0.05822682773685986,
+      "tf": "4h",
+      "opened_at": 1794151830,
+      "adds": 4,
+      "last_leg_margin": 160.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.04886,
+          "ts": 1794151830
+        },
+        {
+          "px": 0.05445,
+          "ts": 1794154553
+        },
+        {
+          "px": 0.05646,
+          "ts": 1794155426
+        },
+        {
+          "px": 0.05883,
+          "ts": 1794157279
+        },
+        {
+          "px": 0.06273,
+          "ts": 1794168093
+        }
+      ],
+      "entry_candle_ts": 1794151800,
+      "last_leg_candle_ts": 1794168000,
+      "dry_run": true,
+      "order_id": "PAPER-ANSEMUSDT-1794151830",
+      "closed_at": 1794172701,
+      "close_px": 0.05708,
+      "pnl_usdt": 274.0615037564421,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -9582,7 +9553,6 @@
     "TOADUSDT": 1794166299,
     "SAFE1USDT": 1794167215,
     "PIPEDOGUSDT": 1794170773,
-    "QUACKAIUSDT": 1794171787,
     "DRVUSDT": 1794177070,
     "FLOCK1USDT": 1794177995,
     "HOTUSDT": 1794182648,
@@ -9614,9 +9584,10 @@
     "NEIRO1USDT": 1794209512,
     "CZUSDT": 1794209514,
     "MUSTOCKUSDT": 1794211442,
-    "LIGHT1USDT": 1794213992
+    "LIGHT1USDT": 1794213992,
+    "QUACKAIUSDT": 1794215793
   },
-  "last_trade_report_ts": 1794170061,
+  "last_trade_report_ts": 1794171913,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
