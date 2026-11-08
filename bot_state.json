@@ -92,17 +92,18 @@
       "symbol": "SOPHUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.0013473168805522857,
-      "qty": 445329.53500000003,
-      "margin": 30.0,
+      "entry": 0.0013333132015271457,
+      "qty": 1050015.854,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 0.0013136339585384784,
+      "tp_price": 0.001299980371488967,
       "tf": "15m",
       "opened_at": 1794127543,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [
-        0.001347
+        0.001347,
+        0.001328
       ],
       "steps": [
         {
@@ -112,10 +113,14 @@
         {
           "px": 0.001344,
           "ts": 1794129591
+        },
+        {
+          "px": 0.001323,
+          "ts": 1794141294
         }
       ],
       "entry_candle_ts": 1794127500,
-      "last_leg_candle_ts": 1794129591,
+      "last_leg_candle_ts": 1794141294,
       "dry_run": true,
       "order_id": "PAPER-SOPHUSDT-1794127543"
     },
@@ -9750,7 +9755,8 @@
     "HOTUSDT": 1794182648,
     "ARCSOLUSDT": 1794182719,
     "NEXUSDT": 1794182833,
-    "1000000BABYDOGEUSDT": 1794182837
+    "1000000BABYDOGEUSDT": 1794182837,
+    "YMTCUSDT": 1794184316
   },
   "last_trade_report_ts": 1794139815,
   "last_known_version": "2.7.2",
