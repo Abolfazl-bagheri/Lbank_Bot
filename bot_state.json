@@ -82,77 +82,9 @@
       "last_leg_candle_ts": 1794171902,
       "dry_run": true,
       "order_id": "PAPER-BLENDUSDT-1794154527"
-    },
-    {
-      "symbol": "MERLUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.03151,
-      "qty": 6347.1914,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.030722250000000003,
-      "tf": "1h",
-      "opened_at": 1794168047,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.03151,
-          "ts": 1794168047
-        }
-      ],
-      "entry_candle_ts": 1794168000,
-      "last_leg_candle_ts": 1794168000,
-      "dry_run": true,
-      "order_id": "PAPER-MERLUSDT-1794168047"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "BMTUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.023590623731460408,
-      "qty": 127169.16820000001,
-      "margin": 150.0,
-      "leverage": 20,
-      "tp_price": 0.0230008581381739,
-      "tf": "1h",
-      "opened_at": 1793682329,
-      "adds": 3,
-      "last_leg_margin": 80.0,
-      "used_res_levels": [
-        0.02336,
-        0.02375
-      ],
-      "steps": [
-        {
-          "px": 0.02345,
-          "ts": 1793682329
-        },
-        {
-          "px": 0.02329,
-          "ts": 1793684845
-        },
-        {
-          "px": 0.02364,
-          "ts": 1793685902
-        },
-        {
-          "px": 0.02366,
-          "ts": 1793687582
-        }
-      ],
-      "entry_candle_ts": 1793682000,
-      "last_leg_candle_ts": 1793687582,
-      "dry_run": true,
-      "order_id": "PAPER-BMTUSDT-1793682329",
-      "closed_at": 1793689576,
-      "close_px": 0.02294,
-      "pnl_usdt": 82.7392788168723
-    },
     {
       "symbol": "GPROUSDT",
       "side": "SELL",
@@ -7333,6 +7265,36 @@
       "pnl_usdt": 274.0615037564421,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "MERLUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.03151,
+      "qty": 6347.1914,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.030722250000000003,
+      "tf": "1h",
+      "opened_at": 1794168047,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.03151,
+          "ts": 1794168047
+        }
+      ],
+      "entry_candle_ts": 1794168000,
+      "last_leg_candle_ts": 1794168000,
+      "dry_run": true,
+      "order_id": "PAPER-MERLUSDT-1794168047",
+      "closed_at": 1794175531,
+      "close_px": 0.0306,
+      "pnl_usdt": 5.775944144715992,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -7545,26 +7507,6 @@
       "tf": "15m",
       "candle_ts": 1793430900,
       "side": "SELL"
-    },
-    {
-      "symbol": "NETUSDT",
-      "tf": "15m",
-      "candle_ts": 1793914200,
-      "side": "SELL",
-      "upper": 274.73712839538473,
-      "open": 288.6,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "NETUSDT",
-      "tf": "15m",
-      "candle_ts": 1793915100,
-      "side": "SELL",
-      "upper": 280.99765335553394,
-      "open": 285.0,
-      "reported": true,
-      "filled": true
     },
     {
       "symbol": "CYBERUSDT",
@@ -9513,7 +9455,6 @@
   "last_daily_report_date": "2026-11-08",
   "kline_blacklist": {
     "STXSTOCKUSDT": 1793301443,
-    "IBBETFUSDT": 1793310363,
     "EURUSDT": 1793385188,
     "SKY1USDT": 1793398016,
     "AXLUSDT": 1793502358,
@@ -9527,20 +9468,16 @@
     "AMCUSDT": 1793924216,
     "GOLDUSDT": 1793936850,
     "CANTONUSDT": 1793952369,
-    "BTCDOMUSDT": 1793955831,
     "UBIKUSDT": 1793961071,
-    "HK1810USDT": 1793981026,
     "XBRUSDT": 1793988971,
     "BBXUSDT": 1794018704,
     "MURATAUSDT": 1794038839,
-    "RGTIUSDT": 1794071770,
     "SPORTFUNUSDT": 1794081839,
     "ARROWUSDT": 1794086185,
     "FIGHT1USDT": 1794111444,
     "ARGUSDT": 1794114249,
     "APROUSDT": 1794115028,
     "POETUSDT": 1794115909,
-    "LWLGUSDT": 1794115917,
     "SXTUSDT": 1794125089,
     "MANCERUSDT": 1794126726,
     "GALUSDT": 1794141094,
@@ -9585,9 +9522,11 @@
     "CZUSDT": 1794209514,
     "MUSTOCKUSDT": 1794211442,
     "LIGHT1USDT": 1794213992,
-    "QUACKAIUSDT": 1794215793
+    "QUACKAIUSDT": 1794215793,
+    "BTCDOMUSDT": 1794218564,
+    "LWLGUSDT": 1794218578
   },
-  "last_trade_report_ts": 1794171913,
+  "last_trade_report_ts": 1794174690,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
