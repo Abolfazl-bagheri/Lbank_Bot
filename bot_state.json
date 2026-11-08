@@ -4,16 +4,18 @@
       "symbol": "CLAUDIAUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.008446632645090955,
-      "qty": 734020.3203,
-      "margin": 310.0,
+      "entry": 0.008613713702247757,
+      "qty": 1462783.6999,
+      "margin": 630.0,
       "leverage": 20,
-      "tp_price": 0.008235466828963681,
+      "tp_price": 0.008398370859691563,
       "tf": "15m",
       "opened_at": 1794120314,
-      "adds": 4,
-      "last_leg_margin": 160.0,
-      "used_res_levels": [],
+      "adds": 5,
+      "last_leg_margin": 320.0,
+      "used_res_levels": [
+        0.0088
+      ],
       "steps": [
         {
           "px": 0.006649,
@@ -34,10 +36,14 @@
         {
           "px": 0.009217,
           "ts": 1794139242
+        },
+        {
+          "px": 0.008782,
+          "ts": 1794154790
         }
       ],
       "entry_candle_ts": 1794120300,
-      "last_leg_candle_ts": 1794139200,
+      "last_leg_candle_ts": 1794154790,
       "dry_run": true,
       "order_id": "PAPER-CLAUDIAUSDT-1794120314"
     },
@@ -9477,7 +9483,8 @@
       "side": "SELL",
       "upper": 0.318258181011117,
       "open": 0.3377,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "JCTUSDT",
@@ -9522,6 +9529,15 @@
       "side": "SELL",
       "upper": 0.05738231353542907,
       "open": 0.0581,
+      "reported": false
+    },
+    {
+      "symbol": "ANSEMUSDT",
+      "tf": "15m",
+      "candle_ts": 1794154500,
+      "side": "SELL",
+      "upper": 0.05214188918246977,
+      "open": 0.0532,
       "reported": false
     }
   ],
