@@ -128,24 +128,28 @@
       "symbol": "ICNTUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.3496,
-      "qty": 572.0824,
-      "margin": 10.0,
+      "entry": 0.36075256141225964,
+      "qty": 1663.1899,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.34086,
+      "tp_price": 0.3517337473769531,
       "tf": "15m",
       "opened_at": 1794123006,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 0.3496,
           "ts": 1794123006
+        },
+        {
+          "px": 0.3666,
+          "ts": 1794123950
         }
       ],
       "entry_candle_ts": 1794123000,
-      "last_leg_candle_ts": 1794123000,
+      "last_leg_candle_ts": 1794123900,
       "dry_run": true,
       "order_id": "PAPER-ICNTUSDT-1794123006"
     },
@@ -9359,6 +9363,15 @@
       "upper": 0.007992686250836541,
       "open": 0.00817,
       "reported": false
+    },
+    {
+      "symbol": "TAUSDT",
+      "tf": "15m",
+      "candle_ts": 1794123000,
+      "side": "SELL",
+      "upper": 0.10260565906217937,
+      "open": 0.10441,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -9461,7 +9474,6 @@
     "GSTOCKUSDT": 1794048395,
     "RGTIUSDT": 1794071770,
     "FLOCK1USDT": 1794071825,
-    "SAFE1USDT": 1794076315,
     "SPORTFUNUSDT": 1794081839,
     "ARROWUSDT": 1794086185,
     "BARUSDT": 1794087994,
@@ -9499,9 +9511,10 @@
     "1000SATSUSDT": 1794165392,
     "1000WOJAKUSDT": 1794165393,
     "CZUSDT": 1794165398,
-    "NEIRO1USDT": 1794165399
+    "NEIRO1USDT": 1794165399,
+    "TOADUSDT": 1794166299
   },
-  "last_trade_report_ts": 1794121508,
+  "last_trade_report_ts": 1794123203,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
