@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1794143944,
+  "updated_at": 1794143953,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "TAUSDT",
-      "tf": "15m",
-      "gap": 1.26,
-      "ts": 1794123925
-    },
     {
       "kind": "GAP",
       "symbol": "CLAUDIAUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1794143944
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794143953
     }
   ],
   "trades": [
@@ -1482,33 +1482,20 @@
       "px": 0.0004511,
       "pnl": -171.4379,
       "tf": "1h"
-    },
-    {
-      "symbol": "4USDT",
-      "side": "SELL",
-      "entry": 0.00988,
-      "tp": 0.009633,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.00962,
-      "pnl": 5.2632,
-      "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1794096385,
-  "realized": 940.7949,
-  "closed_n": 10,
-  "open_upnl": -12095.8199,
+  "realized": 946.0581,
+  "closed_n": 11,
+  "open_upnl": -12101.0831,
   "equity": -10155.025,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 940.7949,
+    "profit": 946.0581,
     "loss": 0,
-    "count": 10
+    "count": 11
   }
 }
