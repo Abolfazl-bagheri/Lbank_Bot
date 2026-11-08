@@ -7623,36 +7623,6 @@
       "side": "SELL"
     },
     {
-      "symbol": "CYBERUSDT",
-      "tf": "15m",
-      "candle_ts": 1793908800,
-      "side": "SELL",
-      "upper": 0.27172892063137805,
-      "open": 0.2745,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "CYBERUSDT",
-      "tf": "4h",
-      "candle_ts": 1793908800,
-      "side": "SELL",
-      "upper": 0.2704039772892884,
-      "open": 0.275,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "ARIAUSDT",
-      "tf": "4h",
-      "candle_ts": 1793908800,
-      "side": "SELL",
-      "upper": 0.15202156043814977,
-      "open": 0.15525,
-      "reported": true,
-      "filled": false
-    },
-    {
       "symbol": "NETUSDT",
       "tf": "15m",
       "candle_ts": 1793914200,
@@ -9409,7 +9379,8 @@
       "side": "SELL",
       "upper": 0.00900053586659412,
       "open": 0.009778,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "HNTUSDT",
@@ -9428,7 +9399,8 @@
       "side": "SELL",
       "upper": 0.14991695934075305,
       "open": 0.15187,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "HNTUSDT",
@@ -9437,7 +9409,8 @@
       "side": "SELL",
       "upper": 0.3267105500323414,
       "open": 0.3406,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "BLENDUSDT",
@@ -9486,7 +9459,8 @@
       "side": "SELL",
       "upper": 0.16693681459523096,
       "open": 0.17189,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ANSEMUSDT",
@@ -9495,7 +9469,8 @@
       "side": "SELL",
       "upper": 0.05418697746049185,
       "open": 0.0577,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "MERLUSDT",
@@ -9522,6 +9497,15 @@
       "side": "SELL",
       "upper": 0.16328657099987987,
       "open": 0.16685,
+      "reported": false
+    },
+    {
+      "symbol": "ANSEMUSDT",
+      "tf": "4h",
+      "candle_ts": 1794168000,
+      "side": "SELL",
+      "upper": 0.05819674981466231,
+      "open": 0.0611,
       "reported": false
     }
   ],
@@ -9665,9 +9649,10 @@
     "1000SATSUSDT": 1794209510,
     "1000WOJAKUSDT": 1794209511,
     "NEIRO1USDT": 1794209512,
-    "CZUSDT": 1794209514
+    "CZUSDT": 1794209514,
+    "MUSTOCKUSDT": 1794211442
   },
-  "last_trade_report_ts": 1794167368,
+  "last_trade_report_ts": 1794168490,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
