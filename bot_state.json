@@ -70,24 +70,28 @@
       "symbol": "CLAUDIAUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.006649,
-      "qty": 30079.7112,
-      "margin": 10.0,
+      "entry": 0.007084894292866957,
+      "qty": 84687.2197,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.0064827750000000005,
+      "tp_price": 0.006907771935545283,
       "tf": "15m",
       "opened_at": 1794120314,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 0.006649,
           "ts": 1794120314
+        },
+        {
+          "px": 0.007325,
+          "ts": 1794121225
         }
       ],
       "entry_candle_ts": 1794120300,
-      "last_leg_candle_ts": 1794120300,
+      "last_leg_candle_ts": 1794121200,
       "dry_run": true,
       "order_id": "PAPER-CLAUDIAUSDT-1794120314"
     }
@@ -9238,6 +9242,15 @@
       "upper": 0.02091497531220496,
       "open": 0.021156,
       "reported": false
+    },
+    {
+      "symbol": "CLAUDIAUSDT",
+      "tf": "15m",
+      "candle_ts": 1794120300,
+      "side": "SELL",
+      "upper": 0.0063095343889177005,
+      "open": 0.006629,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -9352,8 +9365,6 @@
     "POETUSDT": 1794115909,
     "LWLGUSDT": 1794115917,
     "TOADUSDT": 1794115929,
-    "METEORAUSDT": 1794120360,
-    "CAPETHUSDT": 1794120413,
     "1000WOJAKUSDT": 1794121453,
     "1000SATSUSDT": 1794121460,
     "CZUSDT": 1794121473,
@@ -9379,9 +9390,11 @@
     "O1USDT": 1794158165,
     "FLYUSDT": 1794159225,
     "AINBSCUSDT": 1794159229,
-    "KOPNUSDT": 1794160960
+    "KOPNUSDT": 1794160960,
+    "METEORAUSDT": 1794163747,
+    "CAPETHUSDT": 1794163767
   },
-  "last_trade_report_ts": 1794118856,
+  "last_trade_report_ts": 1794120485,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
