@@ -111,60 +111,32 @@
       "order_id": "PAPER-SWARMSUSDT-1794078053"
     },
     {
-      "symbol": "THEUSDT",
+      "symbol": "CLAUDIAUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.03953,
-      "qty": 5059.4485,
+      "entry": 0.005669,
+      "qty": 35279.5908,
       "margin": 10.0,
       "leverage": 20,
-      "tp_price": 0.03854175,
-      "tf": "1h",
-      "opened_at": 1794078080,
+      "tp_price": 0.005527275,
+      "tf": "4h",
+      "opened_at": 1794096051,
       "adds": 0,
       "last_leg_margin": 10.0,
       "used_res_levels": [],
       "steps": [
         {
-          "px": 0.03953,
-          "ts": 1794078080
+          "px": 0.005669,
+          "ts": 1794096051
         }
       ],
-      "entry_candle_ts": 1794078000,
-      "last_leg_candle_ts": 1794078000,
+      "entry_candle_ts": 1794096000,
+      "last_leg_candle_ts": 1794096000,
       "dry_run": true,
-      "order_id": "PAPER-THEUSDT-1794078080"
+      "order_id": "PAPER-CLAUDIAUSDT-1794096051"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "STORJUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.02194,
-      "qty": 9115.7703,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.0213915,
-      "tf": "1h",
-      "opened_at": 1793610277,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.02194,
-          "ts": 1793610277
-        }
-      ],
-      "entry_candle_ts": 1793610000,
-      "last_leg_candle_ts": 1793610000,
-      "dry_run": true,
-      "order_id": "PAPER-STORJUSDT-1793610277",
-      "closed_at": 1793611230,
-      "close_px": 0.02125,
-      "pnl_usdt": 6.289881494986322
-    },
     {
       "symbol": "CLAUDIAUSDT",
       "side": "SELL",
@@ -7197,6 +7169,36 @@
       "pnl_usdt": 37.18607725069759,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "THEUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.03953,
+      "qty": 5059.4485,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.03854175,
+      "tf": "1h",
+      "opened_at": 1794078080,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.03953,
+          "ts": 1794078080
+        }
+      ],
+      "entry_candle_ts": 1794078000,
+      "last_leg_candle_ts": 1794078000,
+      "dry_run": true,
+      "order_id": "PAPER-THEUSDT-1794078080",
+      "closed_at": 1794095340,
+      "close_px": 0.03797,
+      "pnl_usdt": 7.892739691373669,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -9397,7 +9399,7 @@
     "MANCERUSDT": 1794126726,
     "PORUSDT": 1794130305
   },
-  "last_trade_report_ts": 1794094401,
+  "last_trade_report_ts": 1794095345,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
