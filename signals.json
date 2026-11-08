@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1794114036,
+  "updated_at": 1794114041,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "IDOLUSDT",
-      "tf": "15m",
-      "gap": 1.42,
-      "ts": 1794072613
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 1.61,
       "ts": 1794114036
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794114041
     }
   ],
   "trades": [
@@ -1417,6 +1417,19 @@
       "px": 0.020505,
       "pnl": -34.3376,
       "tf": "15m"
+    },
+    {
+      "symbol": "BMTUSDT",
+      "side": "SELL",
+      "entry": 0.02509,
+      "tp": 0.024462750000000002,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.02509,
+      "pnl": 0.0,
+      "tf": "1h"
     }
   ],
   "start": 1000.0,
