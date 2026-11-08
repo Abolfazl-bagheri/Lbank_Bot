@@ -217,31 +217,6 @@
       "order_id": "PAPER-HOTUSDT-1794132942"
     },
     {
-      "symbol": "AGTUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.03029,
-      "qty": 6602.8392,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.02953275,
-      "tf": "15m",
-      "opened_at": 1794139273,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.03029,
-          "ts": 1794139273
-        }
-      ],
-      "entry_candle_ts": 1794139200,
-      "last_leg_candle_ts": 1794139200,
-      "dry_run": true,
-      "order_id": "PAPER-AGTUSDT-1794139273"
-    },
-    {
       "symbol": "SKYAIUSDT",
       "side": "SELL",
       "status": "open",
@@ -268,34 +243,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "TSLLUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 11.94,
-      "qty": 16.7504,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 11.641499999999999,
-      "tf": "1h",
-      "opened_at": 1793635511,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 11.94,
-          "ts": 1793635511
-        }
-      ],
-      "entry_candle_ts": 1793635200,
-      "last_leg_candle_ts": 1793635200,
-      "dry_run": true,
-      "order_id": "PAPER-TSLLUSDT-1793635511",
-      "closed_at": 1793641710,
-      "close_px": 11.64,
-      "pnl_usdt": 5.025125628140685
-    },
     {
       "symbol": "NOMUSDT",
       "side": "SELL",
@@ -7420,6 +7367,36 @@
       "pnl_usdt": 6.9209039548022755,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "AGTUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.03029,
+      "qty": 6602.8392,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.02953275,
+      "tf": "15m",
+      "opened_at": 1794139273,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.03029,
+          "ts": 1794139273
+        }
+      ],
+      "entry_candle_ts": 1794139200,
+      "last_leg_candle_ts": 1794139200,
+      "dry_run": true,
+      "order_id": "PAPER-AGTUSDT-1794139273",
+      "closed_at": 1794140363,
+      "close_px": 0.02795,
+      "pnl_usdt": 15.450643776824046,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -9550,7 +9527,8 @@
       "side": "SELL",
       "upper": 0.009084771102136912,
       "open": 0.0092,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "AGTUSDT",
@@ -9559,7 +9537,8 @@
       "side": "SELL",
       "upper": 0.02950811953832581,
       "open": 0.0302,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "HOTUSDT",
@@ -9744,7 +9723,6 @@
     "LWLGUSDT": 1794115917,
     "SXTUSDT": 1794125089,
     "MANCERUSDT": 1794126726,
-    "KNTQUSDT": 1794139413,
     "GALUSDT": 1794141094,
     "B3USDT": 1794143806,
     "IRENONUSDT": 1794144696,
@@ -9774,7 +9752,7 @@
     "NEXUSDT": 1794182833,
     "1000000BABYDOGEUSDT": 1794182837
   },
-  "last_trade_report_ts": 1794134870,
+  "last_trade_report_ts": 1794139815,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
