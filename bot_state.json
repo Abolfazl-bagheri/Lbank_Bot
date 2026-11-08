@@ -193,6 +193,31 @@
       "last_leg_candle_ts": 1794124800,
       "dry_run": true,
       "order_id": "PAPER-TAUSDT-1794123028"
+    },
+    {
+      "symbol": "JCTUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.003163,
+      "qty": 63231.1097,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.003083925,
+      "tf": "1h",
+      "opened_at": 1794124945,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.003163,
+          "ts": 1794124945
+        }
+      ],
+      "entry_candle_ts": 1794124800,
+      "last_leg_candle_ts": 1794124800,
+      "dry_run": true,
+      "order_id": "PAPER-JCTUSDT-1794124945"
     }
   ],
   "trade_history": [
@@ -9444,6 +9469,15 @@
       "side": "SELL",
       "upper": 0.020865628065159986,
       "open": 0.0213,
+      "reported": false
+    },
+    {
+      "symbol": "TAUSDT",
+      "tf": "1h",
+      "candle_ts": 1794124800,
+      "side": "SELL",
+      "upper": 0.10465713022928107,
+      "open": 0.1075,
       "reported": false
     }
   ],
