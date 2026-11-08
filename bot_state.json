@@ -105,15 +105,15 @@
       "symbol": "JCTUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.003425446083540187,
-      "qty": 408705.8929,
-      "margin": 70.0,
+      "entry": 0.004026944884339492,
+      "qty": 744981.639,
+      "margin": 150.0,
       "leverage": 20,
-      "tp_price": 0.0033398099314516823,
-      "tf": "1h",
+      "tp_price": 0.0039262712622310045,
+      "tf": "15m",
       "opened_at": 1794124945,
-      "adds": 2,
-      "last_leg_margin": 40.0,
+      "adds": 3,
+      "last_leg_margin": 80.0,
       "used_res_levels": [
         0.003381
       ],
@@ -129,10 +129,14 @@
         {
           "px": 0.003526,
           "ts": 1794128466
+        },
+        {
+          "px": 0.004758,
+          "ts": 1794132022
         }
       ],
       "entry_candle_ts": 1794124800,
-      "last_leg_candle_ts": 1794128400,
+      "last_leg_candle_ts": 1794132000,
       "dry_run": true,
       "order_id": "PAPER-JCTUSDT-1794124945"
     },
@@ -9646,7 +9650,7 @@
     "PIPEDOGUSDT": 1794170773,
     "QUACKAIUSDT": 1794171787
   },
-  "last_trade_report_ts": 1794129605,
+  "last_trade_report_ts": 1794131248,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
