@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1794124943,
+  "updated_at": 1794124951,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "EDGEXUSDT",
-      "tf": "1h",
-      "gap": 1.39,
-      "ts": 1794095607
-    },
     {
       "kind": "GAP",
       "symbol": "GRASSUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 0.77,
       "ts": 1794124943
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794124951
     }
   ],
   "trades": [
@@ -1482,6 +1482,19 @@
       "px": 0.10695,
       "pnl": -4.9243,
       "tf": "15m"
+    },
+    {
+      "symbol": "JCTUSDT",
+      "side": "SELL",
+      "entry": 0.003163,
+      "tp": 0.003083925,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.003163,
+      "pnl": 0.0,
+      "tf": "1h"
     }
   ],
   "start": 1000.0,
