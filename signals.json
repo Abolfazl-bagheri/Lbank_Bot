@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1794114054,
+  "updated_at": 1794114058,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "ACTUSDT",
-      "tf": "15m",
-      "gap": 1.11,
-      "ts": 1794073427
-    },
     {
       "kind": "GAP",
       "symbol": "GRASSUSDT",
@@ -1402,21 +1395,28 @@
       "tf": "1h",
       "gap": 2.51,
       "ts": 1794114054
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794114058
     }
   ],
   "trades": [
     {
       "symbol": "KOMAUSDT",
       "side": "SELL",
-      "entry": 0.020014116930981388,
-      "tp": 0.019513764007706852,
-      "adds": 2,
-      "pele": 3,
-      "margin": 70.0,
+      "entry": 0.020288587686805956,
+      "tp": 0.019781372994635806,
+      "adds": 3,
+      "pele": 4,
+      "margin": 150.0,
       "lev": 20,
       "px": 0.020535,
       "pnl": -36.4361,
-      "tf": "15m"
+      "tf": "1h"
     }
   ],
   "start": 1000.0,
