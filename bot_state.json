@@ -107,6 +107,31 @@
       "last_leg_candle_ts": 1794218400,
       "dry_run": true,
       "order_id": "PAPER-NXPCUSDT-1794218461"
+    },
+    {
+      "symbol": "ZCATUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.0148,
+      "qty": 13513.5135,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.01443,
+      "tf": "15m",
+      "opened_at": 1794220224,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.0148,
+          "ts": 1794220224
+        }
+      ],
+      "entry_candle_ts": 1794220200,
+      "last_leg_candle_ts": 1794220200,
+      "dry_run": true,
+      "order_id": "PAPER-ZCATUSDT-1794220224"
     }
   ],
   "trade_history": [
@@ -9432,7 +9457,8 @@
       "side": "SELL",
       "upper": 15.11995423227121,
       "open": 15.36,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "INITUSDT",
@@ -9441,7 +9467,8 @@
       "side": "SELL",
       "upper": 0.1345610243356749,
       "open": 0.13762,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "AKEUSDT",
@@ -9460,6 +9487,15 @@
       "side": "SELL",
       "upper": 0.0335829637956196,
       "open": 0.034506,
+      "reported": false
+    },
+    {
+      "symbol": "NXPCUSDT",
+      "tf": "1h",
+      "candle_ts": 1794218400,
+      "side": "SELL",
+      "upper": 0.16237352020430348,
+      "open": 0.1652,
       "reported": false
     }
   ],
@@ -9547,7 +9583,6 @@
     "SKY1USDT": 1793398016,
     "AXLUSDT": 1793502358,
     "SYNUSDT": 1793537208,
-    "BIO1USDT": 1793611218,
     "CRWDUSDT": 1793658035,
     "QUID1USDT": 1793901083,
     "STONKBROKERUSDT": 1793924211,
@@ -9585,7 +9620,6 @@
     "MUSTOCKUSDT": 1794211442,
     "LIGHT1USDT": 1794213992,
     "QUACKAIUSDT": 1794215793,
-    "BTCDOMUSDT": 1794218564,
     "LWLGUSDT": 1794218578,
     "SAFE1USDT": 1794219393,
     "AEHRUSDT": 1794219394,
@@ -9616,9 +9650,12 @@
     "1000SATSUSDT": 1794253652,
     "CZUSDT": 1794253676,
     "AI1USDT": 1794256268,
-    "UP2USDT": 1794260810
+    "UP2USDT": 1794260810,
+    "BTCDOMUSDT": 1794262603,
+    "OSCRUSDT": 1794262610,
+    "BIO1USDT": 1794262616
   },
-  "last_trade_report_ts": 1794217741,
+  "last_trade_report_ts": 1794218773,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
