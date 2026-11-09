@@ -1,51 +1,6 @@
 {
   "open_trades": [
     {
-      "symbol": "YOFCUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 11.47109604471063,
-      "qty": 540.4889000000001,
-      "margin": 310.0,
-      "leverage": 20,
-      "tp_price": 11.184318643592864,
-      "tf": "1h",
-      "opened_at": 1794188787,
-      "adds": 4,
-      "last_leg_margin": 160.0,
-      "used_res_levels": [
-        11.816,
-        11.533,
-        11.4
-      ],
-      "steps": [
-        {
-          "px": 11.4,
-          "ts": 1794188787
-        },
-        {
-          "px": 11.67,
-          "ts": 1794193242
-        },
-        {
-          "px": 11.77,
-          "ts": 1794195276
-        },
-        {
-          "px": 11.51,
-          "ts": 1794198828
-        },
-        {
-          "px": 11.36,
-          "ts": 1794201528
-        }
-      ],
-      "entry_candle_ts": 1794188700,
-      "last_leg_candle_ts": 1794201528,
-      "dry_run": true,
-      "order_id": "PAPER-YOFCUSDT-1794188787"
-    },
-    {
       "symbol": "EWTUSDT",
       "side": "SELL",
       "status": "open",
@@ -123,176 +78,9 @@
       "last_leg_candle_ts": 1794200400,
       "dry_run": true,
       "order_id": "PAPER-PIEVERSEUSDT-1794199526"
-    },
-    {
-      "symbol": "B2USDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.4587798166407827,
-      "qty": 3051.5728,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 0.4473103212247631,
-      "tf": "1h",
-      "opened_at": 1794202220,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.4551,
-          "ts": 1794202220
-        },
-        {
-          "px": 0.4604,
-          "ts": 1794203116
-        },
-        {
-          "px": 0.4589,
-          "ts": 1794204061
-        }
-      ],
-      "entry_candle_ts": 1794202200,
-      "last_leg_candle_ts": 1794204000,
-      "dry_run": true,
-      "order_id": "PAPER-B2USDT-1794202220"
-    },
-    {
-      "symbol": "NXPCUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.158751562193039,
-      "qty": 8818.8109,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 0.154782773138213,
-      "tf": "15m",
-      "opened_at": 1794202261,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [
-        0.1524
-      ],
-      "steps": [
-        {
-          "px": 0.1554,
-          "ts": 1794202261
-        },
-        {
-          "px": 0.1521,
-          "ts": 1794203372
-        },
-        {
-          "px": 0.1632,
-          "ts": 1794205821
-        }
-      ],
-      "entry_candle_ts": 1794202200,
-      "last_leg_candle_ts": 1794205800,
-      "dry_run": true,
-      "order_id": "PAPER-NXPCUSDT-1794202261"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "CCLUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 30.374,
-      "qty": 6.5846,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 29.614649999999997,
-      "tf": "4h",
-      "opened_at": 1793635557,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 30.374,
-          "ts": 1793635557
-        }
-      ],
-      "entry_candle_ts": 1793635200,
-      "last_leg_candle_ts": 1793635200,
-      "dry_run": true,
-      "order_id": "PAPER-CCLUSDT-1793635557",
-      "closed_at": 1793720176,
-      "close_px": 29.538,
-      "pnl_usdt": 5.504707973925058
-    },
-    {
-      "symbol": "DRIFTUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.013393399241590285,
-      "qty": 223990.9335,
-      "margin": 150.0,
-      "leverage": 20,
-      "tp_price": 0.013058564260550527,
-      "tf": "1h",
-      "opened_at": 1793714798,
-      "adds": 3,
-      "last_leg_margin": 80.0,
-      "used_res_levels": [
-        0.01314,
-        0.01344
-      ],
-      "steps": [
-        {
-          "px": 0.01307,
-          "ts": 1793714798
-        },
-        {
-          "px": 0.01309,
-          "ts": 1793715716
-        },
-        {
-          "px": 0.01342,
-          "ts": 1793717540
-        },
-        {
-          "px": 0.0135,
-          "ts": 1793718296
-        }
-      ],
-      "entry_candle_ts": 1793714400,
-      "last_leg_candle_ts": 1793718000,
-      "dry_run": true,
-      "order_id": "PAPER-DRIFTUSDT-1793714798",
-      "closed_at": 1793720185,
-      "close_px": 0.01301,
-      "pnl_usdt": 85.87795405957606
-    },
-    {
-      "symbol": "AIOUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.03731,
-      "qty": 5360.4932,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.03637725,
-      "tf": "15m",
-      "opened_at": 1793720035,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.03731,
-          "ts": 1793720035
-        }
-      ],
-      "entry_candle_ts": 1793719800,
-      "last_leg_candle_ts": 1793719800,
-      "dry_run": true,
-      "order_id": "PAPER-AIOUSDT-1793720035",
-      "closed_at": 1793721056,
-      "close_px": 0.03564,
-      "pnl_usdt": 8.952023586169952
-    },
     {
       "symbol": "CLAUDIAUSDT",
       "side": "SELL",
@@ -7444,6 +7232,134 @@
       "pnl_usdt": 15.460150514120347,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "B2USDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.4587798166407827,
+      "qty": 3051.5728,
+      "margin": 70.0,
+      "leverage": 20,
+      "tp_price": 0.4473103212247631,
+      "tf": "1h",
+      "opened_at": 1794202220,
+      "adds": 2,
+      "last_leg_margin": 40.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.4551,
+          "ts": 1794202220
+        },
+        {
+          "px": 0.4604,
+          "ts": 1794203116
+        },
+        {
+          "px": 0.4589,
+          "ts": 1794204061
+        }
+      ],
+      "entry_candle_ts": 1794202200,
+      "last_leg_candle_ts": 1794204000,
+      "dry_run": true,
+      "order_id": "PAPER-B2USDT-1794202220",
+      "closed_at": 1794206922,
+      "close_px": 0.4346,
+      "pnl_usdt": 73.78647026140035,
+      "close_reason": "TP50",
+      "why": "TP50"
+    },
+    {
+      "symbol": "NXPCUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.158751562193039,
+      "qty": 8818.8109,
+      "margin": 70.0,
+      "leverage": 20,
+      "tp_price": 0.154782773138213,
+      "tf": "15m",
+      "opened_at": 1794202261,
+      "adds": 2,
+      "last_leg_margin": 40.0,
+      "used_res_levels": [
+        0.1524
+      ],
+      "steps": [
+        {
+          "px": 0.1554,
+          "ts": 1794202261
+        },
+        {
+          "px": 0.1521,
+          "ts": 1794203372
+        },
+        {
+          "px": 0.1632,
+          "ts": 1794205821
+        }
+      ],
+      "entry_candle_ts": 1794202200,
+      "last_leg_candle_ts": 1794205800,
+      "dry_run": true,
+      "order_id": "PAPER-NXPCUSDT-1794202261",
+      "closed_at": 1794206922,
+      "close_px": 0.1529,
+      "pnl_usdt": 51.603820189769344,
+      "close_reason": "TP50",
+      "why": "TP50"
+    },
+    {
+      "symbol": "YOFCUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 11.47109604471063,
+      "qty": 540.4889000000001,
+      "margin": 310.0,
+      "leverage": 20,
+      "tp_price": 11.184318643592864,
+      "tf": "1h",
+      "opened_at": 1794188787,
+      "adds": 4,
+      "last_leg_margin": 160.0,
+      "used_res_levels": [
+        11.816,
+        11.533,
+        11.4
+      ],
+      "steps": [
+        {
+          "px": 11.4,
+          "ts": 1794188787
+        },
+        {
+          "px": 11.67,
+          "ts": 1794193242
+        },
+        {
+          "px": 11.77,
+          "ts": 1794195276
+        },
+        {
+          "px": 11.51,
+          "ts": 1794198828
+        },
+        {
+          "px": 11.36,
+          "ts": 1794201528
+        }
+      ],
+      "entry_candle_ts": 1794188700,
+      "last_leg_candle_ts": 1794201528,
+      "dry_run": true,
+      "order_id": "PAPER-YOFCUSDT-1794188787",
+      "closed_at": 1794208724,
+      "close_px": 11.16,
+      "pnl_usdt": 168.14395674903935,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -9443,7 +9359,8 @@
       "side": "SELL",
       "upper": 0.44260870690050397,
       "open": 0.4606,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "NXPCUSDT",
@@ -9609,9 +9526,10 @@
     "NEXUSDT": 1794240192,
     "SILVERUSDT": 1794240255,
     "1000000BABYDOGEUSDT": 1794240331,
-    "FIGUSDT": 1794246425
+    "FIGUSDT": 1794246425,
+    "OFCUSDT": 1794251008
   },
-  "last_trade_report_ts": 1794206046,
+  "last_trade_report_ts": 1794207935,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
