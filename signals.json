@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1794218459,
+  "updated_at": 1794218466,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "UNITREEUSDT",
-      "tf": "1h",
-      "gap": 5.09,
-      "ts": 1794189691
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 1.41,
       "ts": 1794218459
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794218466
     }
   ],
   "trades": [
@@ -1441,6 +1441,19 @@
       "margin": 10.0,
       "lev": 20,
       "px": 0.034634,
+      "pnl": 0.0,
+      "tf": "1h"
+    },
+    {
+      "symbol": "NXPCUSDT",
+      "side": "SELL",
+      "entry": 0.1647,
+      "tp": 0.16058250000000002,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.1647,
       "pnl": 0.0,
       "tf": "1h"
     }
