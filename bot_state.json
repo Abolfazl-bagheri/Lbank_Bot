@@ -39,17 +39,18 @@
       "symbol": "YOFCUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 11.68719760212106,
-      "qty": 119.7892,
-      "margin": 70.0,
+      "entry": 11.592018769020566,
+      "qty": 258.7988,
+      "margin": 150.0,
       "leverage": 20,
-      "tp_price": 11.395017662068033,
+      "tp_price": 11.30221829979505,
       "tf": "1h",
       "opened_at": 1794188787,
-      "adds": 2,
-      "last_leg_margin": 40.0,
+      "adds": 3,
+      "last_leg_margin": 80.0,
       "used_res_levels": [
-        11.816
+        11.816,
+        11.533
       ],
       "steps": [
         {
@@ -63,10 +64,14 @@
         {
           "px": 11.77,
           "ts": 1794195276
+        },
+        {
+          "px": 11.51,
+          "ts": 1794198828
         }
       ],
       "entry_candle_ts": 1794188700,
-      "last_leg_candle_ts": 1794195276,
+      "last_leg_candle_ts": 1794198828,
       "dry_run": true,
       "order_id": "PAPER-YOFCUSDT-1794188787"
     },
@@ -7593,46 +7598,6 @@
       "side": "SELL"
     },
     {
-      "symbol": "UAIUSDT",
-      "tf": "1h",
-      "candle_ts": 1793937600,
-      "side": "SELL",
-      "upper": 0.13650244194178146,
-      "open": 0.14934,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "BIRBUSDT",
-      "tf": "4h",
-      "candle_ts": 1793937600,
-      "side": "SELL",
-      "upper": 0.09918086593293139,
-      "open": 0.1008,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "CYBERUSDT",
-      "tf": "4h",
-      "candle_ts": 1793937600,
-      "side": "SELL",
-      "upper": 0.3347698635931906,
-      "open": 0.3557,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "AKEUSDT",
-      "tf": "15m",
-      "candle_ts": 1793939400,
-      "side": "SELL",
-      "upper": 0.0037336067064571606,
-      "open": 0.0037775,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "PIEVERSEUSDT",
       "tf": "15m",
       "candle_ts": 1793940300,
@@ -9419,7 +9384,8 @@
       "side": "SELL",
       "upper": 11.527769561316829,
       "open": 11.668,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "UMCUSDT",
@@ -9428,6 +9394,16 @@
       "side": "SELL",
       "upper": 14.644448833626443,
       "open": 14.88,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "UNITREEUSDT",
+      "tf": "4h",
+      "candle_ts": 1794196800,
+      "side": "SELL",
+      "upper": 103.16124049857409,
+      "open": 105.08,
       "reported": false
     }
   ],
@@ -9581,9 +9557,13 @@
     "TOADUSDT": 1794231118,
     "BEMUSDT": 1794233803,
     "TSMONUSDT": 1794234714,
-    "OROCHIUSDT": 1794239182
+    "OROCHIUSDT": 1794239182,
+    "HOTUSDT": 1794240147,
+    "NEXUSDT": 1794240192,
+    "SILVERUSDT": 1794240255,
+    "1000000BABYDOGEUSDT": 1794240331
   },
-  "last_trade_report_ts": 1794195296,
+  "last_trade_report_ts": 1794197329,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
