@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1794188720,
+  "updated_at": 1794188724,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "NAORISUSDT",
-      "tf": "15m",
-      "gap": 3.56,
-      "ts": 1794150011
-    },
     {
       "kind": "SELL",
       "symbol": "NAORISUSDT",
@@ -1402,14 +1395,35 @@
       "tf": "15m",
       "gap": 1.5,
       "ts": 1794188720
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794188724
     }
   ],
-  "trades": [],
+  "trades": [
+    {
+      "symbol": "ZHIPUUSDT",
+      "side": "SELL",
+      "entry": 57.06,
+      "tp": 55.6335,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 57.06,
+      "pnl": 0.0,
+      "tf": "15m"
+    }
+  ],
   "start": 1000.0,
   "session_start": 1794182902,
   "realized": 12.1075,
   "closed_n": 1,
-  "open_upnl": 0,
+  "open_upnl": 0.0,
   "equity": 1012.1075,
   "lev": 20,
   "margin_leg": 10.0,
