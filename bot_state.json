@@ -111,6 +111,31 @@
       "last_leg_candle_ts": 1794259800,
       "dry_run": true,
       "order_id": "PAPER-AVAAIUSDT-1794259858"
+    },
+    {
+      "symbol": "SECZUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 7.77,
+      "qty": 25.74,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 7.575749999999999,
+      "tf": "15m",
+      "opened_at": 1794259891,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 7.77,
+          "ts": 1794259891
+        }
+      ],
+      "entry_candle_ts": 1794259800,
+      "last_leg_candle_ts": 1794259800,
+      "dry_run": true,
+      "order_id": "PAPER-SECZUSDT-1794259891"
     }
   ],
   "trade_history": [
@@ -9132,6 +9157,15 @@
       "side": "SELL",
       "upper": 0.0007327868145220473,
       "open": 0.0007405,
+      "reported": false
+    },
+    {
+      "symbol": "AVAAIUSDT",
+      "tf": "15m",
+      "candle_ts": 1794259800,
+      "side": "SELL",
+      "upper": 0.006547502426900438,
+      "open": 0.006628,
       "reported": false
     }
   ],
