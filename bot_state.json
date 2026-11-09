@@ -4,24 +4,28 @@
       "symbol": "ZHIPUUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 57.06,
-      "qty": 3.5051,
-      "margin": 10.0,
+      "entry": 57.07333174796439,
+      "qty": 10.5128,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 55.6335,
-      "tf": "15m",
+      "tp_price": 55.64649845426528,
+      "tf": "1h",
       "opened_at": 1794188721,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 57.06,
           "ts": 1794188721
+        },
+        {
+          "px": 57.08,
+          "ts": 1794189671
         }
       ],
       "entry_candle_ts": 1794188700,
-      "last_leg_candle_ts": 1794188700,
+      "last_leg_candle_ts": 1794189600,
       "dry_run": true,
       "order_id": "PAPER-ZHIPUUSDT-1794188721"
     },
@@ -7548,16 +7552,6 @@
       "side": "SELL"
     },
     {
-      "symbol": "JCTUSDT",
-      "tf": "15m",
-      "candle_ts": 1793929500,
-      "side": "SELL",
-      "upper": 0.0032516874512064585,
-      "open": 0.003308,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "BIRBUSDT",
       "tf": "15m",
       "candle_ts": 1793932200,
@@ -9433,6 +9427,15 @@
       "upper": 105.91169475545976,
       "open": 108.58,
       "reported": false
+    },
+    {
+      "symbol": "YOFCUSDT",
+      "tf": "15m",
+      "candle_ts": 1794188700,
+      "side": "SELL",
+      "upper": 11.276609812673767,
+      "open": 11.393,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -9586,7 +9589,7 @@
     "GSTOCKUSDT": 1794231093,
     "TOADUSDT": 1794231118
   },
-  "last_trade_report_ts": 1794188081,
+  "last_trade_report_ts": 1794188982,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
