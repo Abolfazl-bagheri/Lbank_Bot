@@ -57,77 +57,9 @@
       "last_leg_candle_ts": 1794211200,
       "dry_run": true,
       "order_id": "PAPER-PIEVERSEUSDT-1794199526"
-    },
-    {
-      "symbol": "AKEUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.005434,
-      "qty": 36805.3,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.00529815,
-      "tf": "15m",
-      "opened_at": 1794216698,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.005434,
-          "ts": 1794216698
-        }
-      ],
-      "entry_candle_ts": 1794216600,
-      "last_leg_candle_ts": 1794216600,
-      "dry_run": true,
-      "order_id": "PAPER-AKEUSDT-1794216698"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "HUTUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 63.744277606612414,
-      "qty": 47.063,
-      "margin": 150.0,
-      "leverage": 20,
-      "tp_price": 62.150670666447105,
-      "tf": "15m",
-      "opened_at": 1793718371,
-      "adds": 3,
-      "last_leg_margin": 80.0,
-      "used_res_levels": [
-        63.58,
-        64.65
-      ],
-      "steps": [
-        {
-          "px": 60.72,
-          "ts": 1793718371
-        },
-        {
-          "px": 63.25,
-          "ts": 1793720927
-        },
-        {
-          "px": 63.49,
-          "ts": 1793739154
-        },
-        {
-          "px": 64.4,
-          "ts": 1793740963
-        }
-      ],
-      "entry_candle_ts": 1793718000,
-      "last_leg_candle_ts": 1793740963,
-      "dry_run": true,
-      "order_id": "PAPER-HUTUSDT-1793718371",
-      "closed_at": 1793754413,
-      "close_px": 61.86,
-      "pnl_usdt": 88.67984754212442
-    },
     {
       "symbol": "ANSEMUSDT",
       "side": "SELL",
@@ -7353,6 +7285,36 @@
       "pnl_usdt": 42.13821302600514,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "AKEUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.005434,
+      "qty": 36805.3,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.00529815,
+      "tf": "15m",
+      "opened_at": 1794216698,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.005434,
+          "ts": 1794216698
+        }
+      ],
+      "entry_candle_ts": 1794216600,
+      "last_leg_candle_ts": 1794216600,
+      "dry_run": true,
+      "order_id": "PAPER-AKEUSDT-1794216698",
+      "closed_at": 1794217736,
+      "close_px": 0.005197,
+      "pnl_usdt": 8.722856091277121,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -9430,6 +9392,16 @@
       "upper": 0.1345610243356749,
       "open": 0.13762,
       "reported": false
+    },
+    {
+      "symbol": "AKEUSDT",
+      "tf": "15m",
+      "candle_ts": 1794216600,
+      "side": "SELL",
+      "upper": 0.005124035864066203,
+      "open": 0.0054459,
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -9547,7 +9519,6 @@
     "1000BTTCUSDT": 1794189823,
     "JUVUSDT": 1794190600,
     "KNTQUSDT": 1794196979,
-    "UP2USDT": 1794198698,
     "ONSEMIUSDT": 1794198742,
     "SIMOUSDT": 1794199618,
     "FLYUSDT": 1794203212,
@@ -9585,9 +9556,10 @@
     "NEIRO1USDT": 1794253651,
     "1000SATSUSDT": 1794253652,
     "CZUSDT": 1794253676,
-    "AI1USDT": 1794256268
+    "AI1USDT": 1794256268,
+    "UP2USDT": 1794260810
   },
-  "last_trade_report_ts": 1794215192,
+  "last_trade_report_ts": 1794216830,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
