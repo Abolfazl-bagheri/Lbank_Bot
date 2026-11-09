@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1794261662,
+  "updated_at": 1794261966,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "SHEINUSDT",
-      "tf": "4h",
-      "gap": 1.36,
-      "ts": 1794196261
-    },
     {
       "kind": "GAP",
       "symbol": "UNITREEUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1794261662
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794261966
     }
   ],
   "trades": [
@@ -1458,19 +1458,6 @@
       "tf": "15m"
     },
     {
-      "symbol": "SECZUSDT",
-      "side": "SELL",
-      "entry": 7.77,
-      "tp": 7.575749999999999,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 7.57,
-      "pnl": 5.148,
-      "tf": "15m"
-    },
-    {
       "symbol": "ASTSUSDT",
       "side": "SELL",
       "entry": 38.54,
@@ -1486,16 +1473,16 @@
   ],
   "start": 1000.0,
   "session_start": 1794182902,
-  "realized": 604.4006,
-  "closed_n": 19,
-  "open_upnl": -353.4664,
+  "realized": 609.5486,
+  "closed_n": 20,
+  "open_upnl": -358.6144,
   "equity": 1250.9342,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 604.4006,
+    "profit": 609.5486,
     "loss": 0,
-    "count": 19
+    "count": 20
   }
 }
