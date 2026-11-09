@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1794220222,
+  "updated_at": 1794220230,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "UNITREEUSDT",
-      "tf": "15m",
-      "gap": 2.25,
-      "ts": 1794190429
-    },
     {
       "kind": "GAP",
       "symbol": "YOFCUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 1.41,
       "ts": 1794220222
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794220230
     }
   ],
   "trades": [
@@ -1456,6 +1456,19 @@
       "px": 0.1571,
       "pnl": 9.2289,
       "tf": "1h"
+    },
+    {
+      "symbol": "ZCATUSDT",
+      "side": "SELL",
+      "entry": 0.0148,
+      "tp": 0.01443,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.0148,
+      "pnl": 0.0,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
