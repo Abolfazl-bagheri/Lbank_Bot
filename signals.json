@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1794256258,
+  "updated_at": 1794256265,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "SNXXUSDT",
-      "tf": "15m",
-      "gap": 2.12,
-      "ts": 1794191343
-    },
     {
       "kind": "GAP",
       "symbol": "MUUUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 2.6,
       "ts": 1794256258
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794256265
     }
   ],
   "trades": [
@@ -1443,6 +1443,19 @@
       "px": 0.030563,
       "pnl": 23.5087,
       "tf": "1h"
+    },
+    {
+      "symbol": "INITUSDT",
+      "side": "SELL",
+      "entry": 0.18876,
+      "tp": 0.184041,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.18876,
+      "pnl": 0.0,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
