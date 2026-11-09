@@ -123,31 +123,6 @@
       "order_id": "PAPER-AVAAIUSDT-1794259858"
     },
     {
-      "symbol": "SECZUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 7.77,
-      "qty": 25.74,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 7.575749999999999,
-      "tf": "15m",
-      "opened_at": 1794259891,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 7.77,
-          "ts": 1794259891
-        }
-      ],
-      "entry_candle_ts": 1794259800,
-      "last_leg_candle_ts": 1794259800,
-      "dry_run": true,
-      "order_id": "PAPER-SECZUSDT-1794259891"
-    },
-    {
       "symbol": "ASTSUSDT",
       "side": "SELL",
       "status": "open",
@@ -174,45 +149,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "BASUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.015415956273276476,
-      "qty": 90814.99549999999,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 0.015030557366444564,
-      "tf": "1h",
-      "opened_at": 1793718411,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [
-        0.015547,
-        0.015368
-      ],
-      "steps": [
-        {
-          "px": 0.015597,
-          "ts": 1793718411
-        },
-        {
-          "px": 0.015508,
-          "ts": 1793721037
-        },
-        {
-          "px": 0.015326,
-          "ts": 1793739174
-        }
-      ],
-      "entry_candle_ts": 1793718000,
-      "last_leg_candle_ts": 1793739174,
-      "dry_run": true,
-      "order_id": "PAPER-BASUSDT-1793718411",
-      "closed_at": 1793755355,
-      "close_px": 0.014973,
-      "pnl_usdt": 40.22707197620138
-    },
     {
       "symbol": "SMCIUSDT",
       "side": "SELL",
@@ -7406,6 +7342,36 @@
       "pnl_usdt": 5.962498313773086,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "SECZUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 7.77,
+      "qty": 25.74,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 7.575749999999999,
+      "tf": "15m",
+      "opened_at": 1794259891,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 7.77,
+          "ts": 1794259891
+        }
+      ],
+      "entry_candle_ts": 1794259800,
+      "last_leg_candle_ts": 1794259800,
+      "dry_run": true,
+      "order_id": "PAPER-SECZUSDT-1794259891",
+      "closed_at": 1794261959,
+      "close_px": 7.57,
+      "pnl_usdt": 5.14800514800513,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -9183,7 +9149,8 @@
       "side": "SELL",
       "upper": 0.17542889535679154,
       "open": 0.18548,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "TAGUSDT",
@@ -9192,7 +9159,8 @@
       "side": "SELL",
       "upper": 0.0007327868145220473,
       "open": 0.0007405,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "AVAAIUSDT",
@@ -9221,6 +9189,15 @@
       "side": "SELL",
       "upper": 38.064768961702875,
       "open": 38.58,
+      "reported": false
+    },
+    {
+      "symbol": "INITUSDT",
+      "tf": "1h",
+      "candle_ts": 1794261600,
+      "side": "SELL",
+      "upper": 0.18533642567716885,
+      "open": 0.18907,
       "reported": false
     }
   ],
@@ -9373,7 +9350,9 @@
     "CZUSDT": 1794299580,
     "NEIRO1USDT": 1794299583,
     "AI1USDT": 1794300376,
-    "MANCERUSDT": 1794302216
+    "MANCERUSDT": 1794302216,
+    "UP2USDT": 1794304950,
+    "ONSEMIUSDT": 1794305039
   },
   "last_trade_report_ts": 1794260939,
   "last_known_version": "2.7.2",
