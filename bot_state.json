@@ -92,37 +92,6 @@
       "order_id": "PAPER-INITUSDT-1794256260"
     },
     {
-      "symbol": "AVAAIUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.006532270434536069,
-      "qty": 91851.6779,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.006368963673672667,
-      "tf": "15m",
-      "opened_at": 1794259858,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        0.006509
-      ],
-      "steps": [
-        {
-          "px": 0.006631,
-          "ts": 1794259858
-        },
-        {
-          "px": 0.006484,
-          "ts": 1794260923
-        }
-      ],
-      "entry_candle_ts": 1794259800,
-      "last_leg_candle_ts": 1794260923,
-      "dry_run": true,
-      "order_id": "PAPER-AVAAIUSDT-1794259858"
-    },
-    {
       "symbol": "ASTSUSDT",
       "side": "SELL",
       "status": "open",
@@ -149,45 +118,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "SMCIUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 34.35648881450433,
-      "qty": 40.7492,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 33.49757659414172,
-      "tf": "1h",
-      "opened_at": 1793743474,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [
-        34.11,
-        34.67
-      ],
-      "steps": [
-        {
-          "px": 34.05,
-          "ts": 1793743474
-        },
-        {
-          "px": 34.05,
-          "ts": 1793743661
-        },
-        {
-          "px": 34.59,
-          "ts": 1793748182
-        }
-      ],
-      "entry_candle_ts": 1793743200,
-      "last_leg_candle_ts": 1793748182,
-      "dry_run": true,
-      "order_id": "PAPER-SMCIUSDT-1793743474",
-      "closed_at": 1793755358,
-      "close_px": 33.33,
-      "pnl_usdt": 41.82861491071142
-    },
     {
       "symbol": "OUSTUSDT",
       "side": "SELL",
@@ -7372,6 +7302,42 @@
       "pnl_usdt": 5.14800514800513,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "AVAAIUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.006532270434536069,
+      "qty": 91851.6779,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 0.006368963673672667,
+      "tf": "15m",
+      "opened_at": 1794259858,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.006509
+      ],
+      "steps": [
+        {
+          "px": 0.006631,
+          "ts": 1794259858
+        },
+        {
+          "px": 0.006484,
+          "ts": 1794260923
+        }
+      ],
+      "entry_candle_ts": 1794259800,
+      "last_leg_candle_ts": 1794260923,
+      "dry_run": true,
+      "order_id": "PAPER-AVAAIUSDT-1794259858",
+      "closed_at": 1794262717,
+      "close_px": 0.006341,
+      "pnl_usdt": 17.568510347473374,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -9189,7 +9155,8 @@
       "side": "SELL",
       "upper": 38.064768961702875,
       "open": 38.58,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "INITUSDT",
@@ -9354,7 +9321,7 @@
     "UP2USDT": 1794304950,
     "ONSEMIUSDT": 1794305039
   },
-  "last_trade_report_ts": 1794260939,
+  "last_trade_report_ts": 1794261967,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
