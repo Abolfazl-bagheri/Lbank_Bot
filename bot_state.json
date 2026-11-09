@@ -7386,9 +7386,9 @@
       "last_leg_candle_ts": 1794192512,
       "dry_run": true,
       "order_id": "PAPER-ZHIPUUSDT-1794188721",
-      "closed_at": 1794201526,
-      "close_px": 55.99,
-      "pnl_usdt": 36.976678035685964,
+      "closed_at": 1794201525,
+      "close_px": 56.0,
+      "pnl_usdt": 36.73323754239002,
       "close_reason": "TP50",
       "why": "TP50"
     }
@@ -9382,6 +9382,15 @@
       "open": 1.6034,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "PIEVERSEUSDT",
+      "tf": "1h",
+      "candle_ts": 1794200400,
+      "side": "SELL",
+      "upper": 1.5734895583230268,
+      "open": 1.6034,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -9540,7 +9549,7 @@
     "SILVERUSDT": 1794240255,
     "1000000BABYDOGEUSDT": 1794240331
   },
-  "last_trade_report_ts": 1794201544,
+  "last_trade_report_ts": 1794200789,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
