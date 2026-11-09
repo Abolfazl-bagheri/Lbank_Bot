@@ -160,24 +160,28 @@
       "symbol": "PIEVERSEUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 1.5918,
-      "qty": 125.6439,
-      "margin": 10.0,
+      "entry": 1.5923332440211198,
+      "qty": 376.8055,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 1.552005,
+      "tp_price": 1.5525249129205918,
       "tf": "15m",
       "opened_at": 1794199526,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 1.5918,
           "ts": 1794199526
+        },
+        {
+          "px": 1.5926,
+          "ts": 1794200445
         }
       ],
       "entry_candle_ts": 1794199500,
-      "last_leg_candle_ts": 1794199500,
+      "last_leg_candle_ts": 1794200400,
       "dry_run": true,
       "order_id": "PAPER-PIEVERSEUSDT-1794199526"
     }
@@ -7625,16 +7629,6 @@
     {
       "symbol": "PIEVERSEUSDT",
       "tf": "15m",
-      "candle_ts": 1793940300,
-      "side": "SELL",
-      "upper": 1.3236174554764268,
-      "open": 1.3396,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "PIEVERSEUSDT",
-      "tf": "15m",
       "candle_ts": 1793941200,
       "side": "SELL",
       "upper": 1.3633298521805188,
@@ -9430,6 +9424,15 @@
       "upper": 103.16124049857409,
       "open": 105.08,
       "reported": false
+    },
+    {
+      "symbol": "PIEVERSEUSDT",
+      "tf": "15m",
+      "candle_ts": 1794199500,
+      "side": "SELL",
+      "upper": 1.559340114539264,
+      "open": 1.5848,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -9588,7 +9591,7 @@
     "SILVERUSDT": 1794240255,
     "1000000BABYDOGEUSDT": 1794240331
   },
-  "last_trade_report_ts": 1794198843,
+  "last_trade_report_ts": 1794199747,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
