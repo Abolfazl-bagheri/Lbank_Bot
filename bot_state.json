@@ -24,6 +24,31 @@
       "last_leg_candle_ts": 1794188700,
       "dry_run": true,
       "order_id": "PAPER-ZHIPUUSDT-1794188721"
+    },
+    {
+      "symbol": "MINIMAXUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 20.87,
+      "qty": 9.5831,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 20.34825,
+      "tf": "15m",
+      "opened_at": 1794188731,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 20.87,
+          "ts": 1794188731
+        }
+      ],
+      "entry_candle_ts": 1794188700,
+      "last_leg_candle_ts": 1794188700,
+      "dry_run": true,
+      "order_id": "PAPER-MINIMAXUSDT-1794188731"
     }
   ],
   "trade_history": [
@@ -9331,6 +9356,15 @@
       "open": 0.05305,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "ZHIPUUSDT",
+      "tf": "15m",
+      "candle_ts": 1794188700,
+      "side": "SELL",
+      "upper": 56.202988977338684,
+      "open": 56.87,
+      "reported": false
     }
   ],
   "paper_days": [
