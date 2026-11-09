@@ -218,68 +218,9 @@
       "last_leg_candle_ts": 1794203372,
       "dry_run": true,
       "order_id": "PAPER-NXPCUSDT-1794202261"
-    },
-    {
-      "symbol": "CLAUDIAUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.007611030105646502,
-      "qty": 78832.9558,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.007420754353005339,
-      "tf": "15m",
-      "opened_at": 1794203139,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        0.007578
-      ],
-      "steps": [
-        {
-          "px": 0.007734,
-          "ts": 1794203139
-        },
-        {
-          "px": 0.007551,
-          "ts": 1794204382
-        }
-      ],
-      "entry_candle_ts": 1794203100,
-      "last_leg_candle_ts": 1794204382,
-      "dry_run": true,
-      "order_id": "PAPER-CLAUDIAUSDT-1794203139"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "IDOLUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.021123,
-      "qty": 9468.352,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.020594925,
-      "tf": "15m",
-      "opened_at": 1793713732,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.021123,
-          "ts": 1793713732
-        }
-      ],
-      "entry_candle_ts": 1793713500,
-      "last_leg_candle_ts": 1793713500,
-      "dry_run": true,
-      "order_id": "PAPER-IDOLUSDT-1793713732",
-      "closed_at": 1793718569,
-      "close_px": 0.019896,
-      "pnl_usdt": 11.617667944894182
-    },
     {
       "symbol": "CHIPUSDT",
       "side": "SELL",
@@ -7486,6 +7427,42 @@
       "pnl_usdt": 36.976678035685964,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "CLAUDIAUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.007611030105646502,
+      "qty": 78832.9558,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 0.007420754353005339,
+      "tf": "15m",
+      "opened_at": 1794203139,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.007578
+      ],
+      "steps": [
+        {
+          "px": 0.007734,
+          "ts": 1794203139
+        },
+        {
+          "px": 0.007551,
+          "ts": 1794204382
+        }
+      ],
+      "entry_candle_ts": 1794203100,
+      "last_leg_candle_ts": 1794204382,
+      "dry_run": true,
+      "order_id": "PAPER-CLAUDIAUSDT-1794203139",
+      "closed_at": 1794205121,
+      "close_px": 0.007356,
+      "pnl_usdt": 20.104777049085634,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -7698,16 +7675,6 @@
       "tf": "15m",
       "candle_ts": 1793430900,
       "side": "SELL"
-    },
-    {
-      "symbol": "LYNUSDT",
-      "tf": "15m",
-      "candle_ts": 1793945700,
-      "side": "SELL",
-      "upper": 0.023179210940164695,
-      "open": 0.02352,
-      "reported": true,
-      "filled": true
     },
     {
       "symbol": "LYNUSDT",
@@ -9673,7 +9640,7 @@
     "1000000BABYDOGEUSDT": 1794240331,
     "FIGUSDT": 1794246425
   },
-  "last_trade_report_ts": 1794203390,
+  "last_trade_report_ts": 1794204400,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
