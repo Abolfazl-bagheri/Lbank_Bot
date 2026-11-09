@@ -59,91 +59,32 @@
       "order_id": "PAPER-PIEVERSEUSDT-1794199526"
     },
     {
-      "symbol": "CLANKERUSDT",
+      "symbol": "AKEUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 15.434560572401894,
-      "qty": 90.7055,
-      "margin": 70.0,
+      "entry": 0.005434,
+      "qty": 36805.3,
+      "margin": 10.0,
       "leverage": 20,
-      "tp_price": 15.048696558091846,
-      "tf": "1h",
-      "opened_at": 1794213931,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [
-        15.63
-      ],
+      "tp_price": 0.00529815,
+      "tf": "15m",
+      "opened_at": 1794216698,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
       "steps": [
         {
-          "px": 15.59,
-          "ts": 1794213931
-        },
-        {
-          "px": 15.59,
-          "ts": 1794214127
-        },
-        {
-          "px": 15.32,
-          "ts": 1794214842
+          "px": 0.005434,
+          "ts": 1794216698
         }
       ],
-      "entry_candle_ts": 1794213900,
-      "last_leg_candle_ts": 1794214800,
+      "entry_candle_ts": 1794216600,
+      "last_leg_candle_ts": 1794216600,
       "dry_run": true,
-      "order_id": "PAPER-CLANKERUSDT-1794213931"
+      "order_id": "PAPER-AKEUSDT-1794216698"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "SHAZUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 24.243888374901168,
-      "qty": 255.7346,
-      "margin": 310.0,
-      "leverage": 20,
-      "tp_price": 23.63779116552864,
-      "tf": "15m",
-      "opened_at": 1793718266,
-      "adds": 4,
-      "last_leg_margin": 160.0,
-      "used_res_levels": [
-        23.59,
-        24.34,
-        24.16,
-        24.49
-      ],
-      "steps": [
-        {
-          "px": 23.55,
-          "ts": 1793718266
-        },
-        {
-          "px": 23.55,
-          "ts": 1793718593
-        },
-        {
-          "px": 24.29,
-          "ts": 1793735429
-        },
-        {
-          "px": 24.12,
-          "ts": 1793738261
-        },
-        {
-          "px": 24.43,
-          "ts": 1793740941
-        }
-      ],
-      "entry_candle_ts": 1793718000,
-      "last_leg_candle_ts": 1793740941,
-      "dry_run": true,
-      "order_id": "PAPER-SHAZUSDT-1793718266",
-      "closed_at": 1793754391,
-      "close_px": 23.16,
-      "pnl_usdt": 277.1877110003661
-    },
     {
       "symbol": "HUTUSDT",
       "side": "SELL",
@@ -7372,6 +7313,46 @@
       "pnl_usdt": 87.83801213661727,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "CLANKERUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 15.434560572401894,
+      "qty": 90.7055,
+      "margin": 70.0,
+      "leverage": 20,
+      "tp_price": 15.048696558091846,
+      "tf": "1h",
+      "opened_at": 1794213931,
+      "adds": 2,
+      "last_leg_margin": 40.0,
+      "used_res_levels": [
+        15.63
+      ],
+      "steps": [
+        {
+          "px": 15.59,
+          "ts": 1794213931
+        },
+        {
+          "px": 15.59,
+          "ts": 1794214127
+        },
+        {
+          "px": 15.32,
+          "ts": 1794214842
+        }
+      ],
+      "entry_candle_ts": 1794213900,
+      "last_leg_candle_ts": 1794214800,
+      "dry_run": true,
+      "order_id": "PAPER-CLANKERUSDT-1794213931",
+      "closed_at": 1794215910,
+      "close_px": 14.97,
+      "pnl_usdt": 42.13821302600514,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -9564,7 +9545,6 @@
     "IRENONUSDT": 1794188819,
     "BARUSDT": 1794188820,
     "1000BTTCUSDT": 1794189823,
-    "OSCRUSDT": 1794190598,
     "JUVUSDT": 1794190600,
     "KNTQUSDT": 1794196979,
     "UP2USDT": 1794198698,
