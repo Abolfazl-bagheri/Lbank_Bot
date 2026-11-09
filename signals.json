@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1794193240,
+  "updated_at": 1794193248,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "ANSEMUSDT",
-      "tf": "15m",
-      "gap": 1.12,
-      "ts": 1794157216
-    },
     {
       "kind": "SELL",
       "symbol": "AIOTUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 1.22,
       "ts": 1794193240
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794193248
     }
   ],
   "trades": [
@@ -1447,15 +1447,15 @@
     {
       "symbol": "YOFCUSDT",
       "side": "SELL",
-      "entry": 11.4,
-      "tp": 11.115,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
+      "entry": 11.578589901929378,
+      "tp": 11.289125154381143,
+      "adds": 1,
+      "pele": 2,
+      "margin": 30.0,
       "lev": 20,
       "px": 11.67,
-      "pnl": -4.7368,
-      "tf": "15m"
+      "pnl": -4.7369,
+      "tf": "1h"
     },
     {
       "symbol": "EWTUSDT",
@@ -1475,8 +1475,8 @@
   "session_start": 1794182902,
   "realized": 12.1075,
   "closed_n": 1,
-  "open_upnl": 32.4042,
-  "equity": 1044.5117,
+  "open_upnl": 32.4041,
+  "equity": 1044.5116,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
