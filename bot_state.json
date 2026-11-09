@@ -1,5 +1,31 @@
 {
-  "open_trades": [],
+  "open_trades": [
+    {
+      "symbol": "ZHIPUUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 57.06,
+      "qty": 3.5051,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 55.6335,
+      "tf": "15m",
+      "opened_at": 1794188721,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 57.06,
+          "ts": 1794188721
+        }
+      ],
+      "entry_candle_ts": 1794188700,
+      "last_leg_candle_ts": 1794188700,
+      "dry_run": true,
+      "order_id": "PAPER-ZHIPUUSDT-1794188721"
+    }
+  ],
   "trade_history": [
     {
       "symbol": "BMTUSDT",
@@ -7198,9 +7224,9 @@
       "last_leg_candle_ts": 1794139200,
       "dry_run": true,
       "order_id": "PAPER-JCTUSDT-1794124945",
-      "closed_at": 1794182848,
-      "close_px": 0.011429,
-      "pnl_usdt": -10815.7868494001,
+      "closed_at": 1794182900,
+      "close_px": 0.011246,
+      "pnl_usdt": -10440.855622395098,
       "close_reason": "NIGHT_RESET",
       "why": "NIGHT_RESET"
     },
@@ -7208,29 +7234,29 @@
       "symbol": "AIOUSDT",
       "side": "SELL",
       "status": "closed",
-      "entry": 0.0532,
-      "qty": 3759.3985,
+      "entry": 0.05319,
+      "qty": 3760.1053,
       "margin": 10.0,
       "leverage": 20,
-      "tp_price": 0.05187,
+      "tp_price": 0.05186025,
       "tf": "15m",
-      "opened_at": 1794186032,
+      "opened_at": 1794186035,
       "adds": 0,
       "last_leg_margin": 10.0,
       "used_res_levels": [],
       "steps": [
         {
-          "px": 0.0532,
-          "ts": 1794186032
+          "px": 0.05319,
+          "ts": 1794186035
         }
       ],
       "entry_candle_ts": 1794186000,
       "last_leg_candle_ts": 1794186000,
       "dry_run": true,
-      "order_id": "PAPER-AIOUSDT-1794186032",
-      "closed_at": 1794187129,
-      "close_px": 0.05012,
-      "pnl_usdt": 11.578947368421053,
+      "order_id": "PAPER-AIOUSDT-1794186035",
+      "closed_at": 1794187164,
+      "close_px": 0.04997,
+      "pnl_usdt": 12.107539011092312,
       "close_reason": "TP50",
       "why": "TP50"
     }
@@ -7445,16 +7471,6 @@
       "tf": "15m",
       "candle_ts": 1793430900,
       "side": "SELL"
-    },
-    {
-      "symbol": "JCTUSDT",
-      "tf": "15m",
-      "candle_ts": 1793928600,
-      "side": "SELL",
-      "upper": 0.003171634981617042,
-      "open": 0.003231,
-      "reported": true,
-      "filled": false
     },
     {
       "symbol": "JCTUSDT",
@@ -9311,7 +9327,7 @@
       "tf": "15m",
       "candle_ts": 1794186000,
       "side": "SELL",
-      "upper": 0.05230782617864195,
+      "upper": 0.05236265658944184,
       "open": 0.05305,
       "reported": true,
       "filled": true
@@ -9383,17 +9399,17 @@
     },
     {
       "from": 1794096385,
-      "to": 1794182849,
+      "to": 1794182902,
       "start": 1000.0,
       "realized": 2455.747,
-      "unrealized_closed": -10815.7868,
-      "net": -8360.0399,
+      "unrealized_closed": -10440.8556,
+      "net": -7985.1086,
       "trades": 23,
       "tp_trades": 22,
       "reset_trades": 1
     }
   ],
-  "paper_session_start": 1794182850,
+  "paper_session_start": 1794182902,
   "last_daily_report_date": "2026-11-09",
   "kline_blacklist": {
     "STXSTOCKUSDT": 1793301443,
@@ -9409,6 +9425,7 @@
     "AMCUSDT": 1793924216,
     "CANTONUSDT": 1793952369,
     "UBIKUSDT": 1793961071,
+    "XBRUSDT": 1793988971,
     "BBXUSDT": 1794018704,
     "SPORTFUNUSDT": 1794081839,
     "ARROWUSDT": 1794086185,
@@ -9423,9 +9440,9 @@
     "METEORAUSDT": 1794163747,
     "CAPETHUSDT": 1794163767,
     "PIPEDOGUSDT": 1794170773,
+    "DRVUSDT": 1794177070,
     "FLOCK1USDT": 1794177995,
     "ARCSOLUSDT": 1794182719,
-    "GSTOCKUSDT": 1794187017,
     "PORUSDT": 1794187019,
     "ATMUSDT": 1794188784,
     "IRENONUSDT": 1794188819,
@@ -9456,17 +9473,18 @@
     "SAFE1USDT": 1794219393,
     "AEHRUSDT": 1794219394,
     "XTIUSDT": 1794219396,
-    "XBRUSDT": 1794221176,
-    "KOPNUSDT": 1794221186,
-    "POETUSDT": 1794222994,
-    "DODOUSDT": 1794225763,
-    "MARRIOTTUSDT": 1794225862,
-    "NGASUSDT": 1794225796,
-    "BRLUSDT": 1794225806,
-    "GOLDUSDT": 1794228404,
-    "MURATAUSDT": 1794229392
+    "POETUSDT": 1794223905,
+    "DODOUSDT": 1794225779,
+    "KOPNUSDT": 1794225898,
+    "MARRIOTTUSDT": 1794225911,
+    "NGASUSDT": 1794225821,
+    "BRLUSDT": 1794225832,
+    "GOLDUSDT": 1794228410,
+    "MURATAUSDT": 1794229413,
+    "GSTOCKUSDT": 1794231093,
+    "TOADUSDT": 1794231118
   },
-  "last_trade_report_ts": 1794186322,
+  "last_trade_report_ts": 1794188081,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
