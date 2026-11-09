@@ -179,6 +179,31 @@
       "last_leg_candle_ts": 1794202200,
       "dry_run": true,
       "order_id": "PAPER-B2USDT-1794202220"
+    },
+    {
+      "symbol": "NXPCUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.1554,
+      "qty": 1287.0013,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.151515,
+      "tf": "15m",
+      "opened_at": 1794202261,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.1554,
+          "ts": 1794202261
+        }
+      ],
+      "entry_candle_ts": 1794202200,
+      "last_leg_candle_ts": 1794202200,
+      "dry_run": true,
+      "order_id": "PAPER-NXPCUSDT-1794202261"
     }
   ],
   "trade_history": [
@@ -9407,6 +9432,15 @@
       "open": 1.6034,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "B2USDT",
+      "tf": "15m",
+      "candle_ts": 1794202200,
+      "side": "SELL",
+      "upper": 0.4417398200706428,
+      "open": 0.4581,
+      "reported": false
     }
   ],
   "paper_days": [
