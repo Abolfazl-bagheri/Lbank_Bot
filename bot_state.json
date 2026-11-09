@@ -59,46 +59,6 @@
       "order_id": "PAPER-PIEVERSEUSDT-1794199526"
     },
     {
-      "symbol": "INITUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.1381962959743433,
-      "qty": 21708.2519,
-      "margin": 150.0,
-      "leverage": 20,
-      "tp_price": 0.13474138857498472,
-      "tf": "1h",
-      "opened_at": 1794213036,
-      "adds": 3,
-      "last_leg_margin": 80.0,
-      "used_res_levels": [
-        0.13768,
-        0.13896
-      ],
-      "steps": [
-        {
-          "px": 0.13723,
-          "ts": 1794213036
-        },
-        {
-          "px": 0.13723,
-          "ts": 1794213241
-        },
-        {
-          "px": 0.13844,
-          "ts": 1794214871
-        },
-        {
-          "px": 0.13844,
-          "ts": 1794215180
-        }
-      ],
-      "entry_candle_ts": 1794213000,
-      "last_leg_candle_ts": 1794215180,
-      "dry_run": true,
-      "order_id": "PAPER-INITUSDT-1794213036"
-    },
-    {
       "symbol": "CLANKERUSDT",
       "side": "SELL",
       "status": "open",
@@ -135,45 +95,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "NIGHTUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.04268184635881001,
-      "qty": 32800.8303,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 0.04161480019983976,
-      "tf": "1h",
-      "opened_at": 1793714760,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [
-        0.04223,
-        0.04312
-      ],
-      "steps": [
-        {
-          "px": 0.0424,
-          "ts": 1793714760
-        },
-        {
-          "px": 0.04214,
-          "ts": 1793715696
-        },
-        {
-          "px": 0.04303,
-          "ts": 1793719357
-        }
-      ],
-      "entry_candle_ts": 1793714400,
-      "last_leg_candle_ts": 1793719357,
-      "dry_run": true,
-      "order_id": "PAPER-NIGHTUSDT-1793714760",
-      "closed_at": 1793754388,
-      "close_px": 0.04143,
-      "pnl_usdt": 41.06159999735488
-    },
     {
       "symbol": "SHAZUSDT",
       "side": "SELL",
@@ -7406,6 +7327,51 @@
       "pnl_usdt": 6.205136385388437,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "INITUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.1381962959743433,
+      "qty": 21708.2519,
+      "margin": 150.0,
+      "leverage": 20,
+      "tp_price": 0.13474138857498472,
+      "tf": "1h",
+      "opened_at": 1794213036,
+      "adds": 3,
+      "last_leg_margin": 80.0,
+      "used_res_levels": [
+        0.13768,
+        0.13896
+      ],
+      "steps": [
+        {
+          "px": 0.13723,
+          "ts": 1794213036
+        },
+        {
+          "px": 0.13723,
+          "ts": 1794213241
+        },
+        {
+          "px": 0.13844,
+          "ts": 1794214871
+        },
+        {
+          "px": 0.13844,
+          "ts": 1794215180
+        }
+      ],
+      "entry_candle_ts": 1794213000,
+      "last_leg_candle_ts": 1794215180,
+      "dry_run": true,
+      "order_id": "PAPER-INITUSDT-1794213036",
+      "closed_at": 1794215907,
+      "close_px": 0.13415,
+      "pnl_usdt": 87.83801213661727,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -9641,7 +9607,7 @@
     "CZUSDT": 1794253676,
     "AI1USDT": 1794256268
   },
-  "last_trade_report_ts": 1794213253,
+  "last_trade_report_ts": 1794215192,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
