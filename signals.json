@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1794265239,
+  "updated_at": 1794265247,
   "signals": [
-    {
-      "kind": "HEARTBEAT",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794199747
-    },
     {
       "kind": "GAP",
       "symbol": "PIEVERSEUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 0.89,
       "ts": 1794265239
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794265247
     }
   ],
   "trades": [
@@ -1456,6 +1456,19 @@
       "px": 9.93e-06,
       "pnl": 1.4,
       "tf": "15m"
+    },
+    {
+      "symbol": "BONERUSDT",
+      "side": "SELL",
+      "entry": 0.00453,
+      "tp": 0.00441675,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.00453,
+      "pnl": 0.0,
+      "tf": "1h"
     }
   ],
   "start": 1000.0,
