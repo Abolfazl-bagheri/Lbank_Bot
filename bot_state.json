@@ -71,37 +71,6 @@
       "order_id": "PAPER-EWTUSDT-1794189742"
     },
     {
-      "symbol": "UMCUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 14.873237483546475,
-      "qty": 40.340900000000005,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 14.501406546457813,
-      "tf": "1h",
-      "opened_at": 1794193294,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        14.95
-      ],
-      "steps": [
-        {
-          "px": 14.82,
-          "ts": 1794193294
-        },
-        {
-          "px": 14.9,
-          "ts": 1794195284
-        }
-      ],
-      "entry_candle_ts": 1794193200,
-      "last_leg_candle_ts": 1794195284,
-      "dry_run": true,
-      "order_id": "PAPER-UMCUSDT-1794193294"
-    },
-    {
       "symbol": "UNITREEUSDT",
       "side": "SELL",
       "status": "open",
@@ -225,34 +194,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "CHIPUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.0428,
-      "qty": 4672.8972,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.041729999999999996,
-      "tf": "1h",
-      "opened_at": 1793714674,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.0428,
-          "ts": 1793714674
-        }
-      ],
-      "entry_candle_ts": 1793714400,
-      "last_leg_candle_ts": 1793714400,
-      "dry_run": true,
-      "order_id": "PAPER-CHIPUSDT-1793714674",
-      "closed_at": 1793719356,
-      "close_px": 0.04171,
-      "pnl_usdt": 5.093457943925237
-    },
     {
       "symbol": "CCLUSDT",
       "side": "SELL",
@@ -7467,6 +7408,42 @@
       "pnl_usdt": 20.104777049085634,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "UMCUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 14.873237483546475,
+      "qty": 40.340900000000005,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 14.501406546457813,
+      "tf": "1h",
+      "opened_at": 1794193294,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        14.95
+      ],
+      "steps": [
+        {
+          "px": 14.82,
+          "ts": 1794193294
+        },
+        {
+          "px": 14.9,
+          "ts": 1794195284
+        }
+      ],
+      "entry_candle_ts": 1794193200,
+      "last_leg_candle_ts": 1794195284,
+      "dry_run": true,
+      "order_id": "PAPER-UMCUSDT-1794193294",
+      "closed_at": 1794206919,
+      "close_px": 14.49,
+      "pnl_usdt": 15.460150514120347,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -7679,26 +7656,6 @@
       "tf": "15m",
       "candle_ts": 1793430900,
       "side": "SELL"
-    },
-    {
-      "symbol": "LYNUSDT",
-      "tf": "15m",
-      "candle_ts": 1793947500,
-      "side": "SELL",
-      "upper": 0.02446721337641753,
-      "open": 0.02496,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "ICNTUSDT",
-      "tf": "15m",
-      "candle_ts": 1793947500,
-      "side": "SELL",
-      "upper": 0.2425558920748076,
-      "open": 0.2474,
-      "reported": true,
-      "filled": true
     },
     {
       "symbol": "BLESSUSDT",
@@ -9487,6 +9444,16 @@
       "upper": 0.44260870690050397,
       "open": 0.4606,
       "reported": false
+    },
+    {
+      "symbol": "NXPCUSDT",
+      "tf": "15m",
+      "candle_ts": 1794205800,
+      "side": "SELL",
+      "upper": 0.16229938082834128,
+      "open": 0.1642,
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -9644,7 +9611,7 @@
     "1000000BABYDOGEUSDT": 1794240331,
     "FIGUSDT": 1794246425
   },
-  "last_trade_report_ts": 1794204400,
+  "last_trade_report_ts": 1794206046,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
