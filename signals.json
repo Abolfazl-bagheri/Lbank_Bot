@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1794267987,
+  "updated_at": 1794268192,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794206045
-    },
     {
       "kind": "HEARTBEAT",
       "symbol": "—",
@@ -1402,6 +1395,13 @@
       "tf": "4h",
       "gap": 2.02,
       "ts": 1794267987
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794268192
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 106.83,
-      "pnl": -2.906,
+      "px": 106.9,
+      "pnl": -3.0389,
       "tf": "4h"
     },
     {
@@ -1427,8 +1427,8 @@
       "pele": 3,
       "margin": 70.0,
       "lev": 20,
-      "px": 2.0061,
-      "pnl": -356.583,
+      "px": 2.0123,
+      "pnl": -362.0119,
       "tf": "4h"
     },
     {
@@ -1440,22 +1440,9 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.000792,
-      "pnl": 2.0,
+      "px": 0.000804,
+      "pnl": -1.0,
       "tf": "15m"
-    },
-    {
-      "symbol": "SECZUSDT",
-      "side": "SELL",
-      "entry": 8.01,
-      "tp": 7.809749999999999,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 7.74,
-      "pnl": 6.7416,
-      "tf": "1h"
     },
     {
       "symbol": "BONERUSDT",
@@ -1466,23 +1453,23 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.00498,
-      "pnl": 3.1621,
+      "px": 0.00506,
+      "pnl": 0.0,
       "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1794182902,
-  "realized": 719.0711,
-  "closed_n": 26,
-  "open_upnl": -347.5853,
-  "equity": 1371.4858,
+  "realized": 724.5643,
+  "closed_n": 27,
+  "open_upnl": -366.0508,
+  "equity": 1358.5135,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 719.0711,
+    "profit": 724.5643,
     "loss": 0,
-    "count": 26
+    "count": 27
   }
 }
