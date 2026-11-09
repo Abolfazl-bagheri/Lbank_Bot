@@ -36,48 +36,21 @@
       "order_id": "PAPER-ZHIPUUSDT-1794188721"
     },
     {
-      "symbol": "UNITREEUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 109.85941335872273,
-      "qty": 5.4616,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 107.11292802475467,
-      "tf": "1h",
-      "opened_at": 1794188753,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 110.22,
-          "ts": 1794188753
-        },
-        {
-          "px": 109.68,
-          "ts": 1794189692
-        }
-      ],
-      "entry_candle_ts": 1794188700,
-      "last_leg_candle_ts": 1794189600,
-      "dry_run": true,
-      "order_id": "PAPER-UNITREEUSDT-1794188753"
-    },
-    {
       "symbol": "YOFCUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 11.578589901929378,
-      "qty": 51.8198,
-      "margin": 30.0,
+      "entry": 11.68719760212106,
+      "qty": 119.7892,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 11.289125154381143,
+      "tp_price": 11.395017662068033,
       "tf": "1h",
       "opened_at": 1794188787,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
+      "adds": 2,
+      "last_leg_margin": 40.0,
+      "used_res_levels": [
+        11.816
+      ],
       "steps": [
         {
           "px": 11.4,
@@ -86,10 +59,14 @@
         {
           "px": 11.67,
           "ts": 1794193242
+        },
+        {
+          "px": 11.77,
+          "ts": 1794195276
         }
       ],
       "entry_candle_ts": 1794188700,
-      "last_leg_candle_ts": 1794193200,
+      "last_leg_candle_ts": 1794195276,
       "dry_run": true,
       "order_id": "PAPER-YOFCUSDT-1794188787"
     },
@@ -145,44 +122,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "BOMEUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.0006397577797895499,
-      "qty": 2188328.2145000002,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 0.0006237638352948111,
-      "tf": "1h",
-      "opened_at": 1793710984,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [
-        0.0006429
-      ],
-      "steps": [
-        {
-          "px": 0.0006295,
-          "ts": 1793710984
-        },
-        {
-          "px": 0.0006415,
-          "ts": 1793714610
-        },
-        {
-          "px": 0.0006415,
-          "ts": 1793714921
-        }
-      ],
-      "entry_candle_ts": 1793710800,
-      "last_leg_candle_ts": 1793714921,
-      "dry_run": true,
-      "order_id": "PAPER-BOMEUSDT-1793710984",
-      "closed_at": 1793716490,
-      "close_px": 0.0006231,
-      "pnl_usdt": 36.45268950545831
-    },
     {
       "symbol": "AGTUSDT",
       "side": "SELL",
@@ -7375,6 +7314,40 @@
       "pnl_usdt": 5.462386200287497,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "UNITREEUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 109.85941335872273,
+      "qty": 5.4616,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 107.11292802475467,
+      "tf": "1h",
+      "opened_at": 1794188753,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 110.22,
+          "ts": 1794188753
+        },
+        {
+          "px": 109.68,
+          "ts": 1794189692
+        }
+      ],
+      "entry_candle_ts": 1794188700,
+      "last_leg_candle_ts": 1794189600,
+      "dry_run": true,
+      "order_id": "PAPER-UNITREEUSDT-1794188753",
+      "closed_at": 1794194355,
+      "close_px": 106.41,
+      "pnl_usdt": 18.8390594120109,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -7587,26 +7560,6 @@
       "tf": "15m",
       "candle_ts": 1793430900,
       "side": "SELL"
-    },
-    {
-      "symbol": "AKEUSDT",
-      "tf": "15m",
-      "candle_ts": 1793935800,
-      "side": "SELL",
-      "upper": 0.0028789879302835325,
-      "open": 0.00301,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "CYBERUSDT",
-      "tf": "15m",
-      "candle_ts": 1793935800,
-      "side": "SELL",
-      "upper": 0.3572624552929025,
-      "open": 0.366,
-      "reported": true,
-      "filled": true
     },
     {
       "symbol": "AKEUSDT",
