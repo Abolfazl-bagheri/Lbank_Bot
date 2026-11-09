@@ -59,31 +59,6 @@
       "order_id": "PAPER-PIEVERSEUSDT-1794199526"
     },
     {
-      "symbol": "SKDDUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 12.538,
-      "qty": 15.9515,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 12.22455,
-      "tf": "4h",
-      "opened_at": 1794211267,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 12.538,
-          "ts": 1794211267
-        }
-      ],
-      "entry_candle_ts": 1794211200,
-      "last_leg_candle_ts": 1794211200,
-      "dry_run": true,
-      "order_id": "PAPER-SKDDUSDT-1794211267"
-    },
-    {
       "symbol": "INITUSDT",
       "side": "SELL",
       "status": "open",
@@ -141,34 +116,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "ANETUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 195.2,
-      "qty": 1.0246,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 190.32,
-      "tf": "15m",
-      "opened_at": 1793743314,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 195.2,
-          "ts": 1793743314
-        }
-      ],
-      "entry_candle_ts": 1793743200,
-      "last_leg_candle_ts": 1793743200,
-      "dry_run": true,
-      "order_id": "PAPER-ANETUSDT-1793743314",
-      "closed_at": 1793749894,
-      "close_px": 190.2,
-      "pnl_usdt": 5.1229508196721305
-    },
     {
       "symbol": "NIGHTUSDT",
       "side": "SELL",
@@ -7410,6 +7357,36 @@
       "pnl_usdt": 6.832538352455825,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "SKDDUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 12.538,
+      "qty": 15.9515,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 12.22455,
+      "tf": "4h",
+      "opened_at": 1794211267,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 12.538,
+          "ts": 1794211267
+        }
+      ],
+      "entry_candle_ts": 1794211200,
+      "last_leg_candle_ts": 1794211200,
+      "dry_run": true,
+      "order_id": "PAPER-SKDDUSDT-1794211267",
+      "closed_at": 1794214123,
+      "close_px": 12.149,
+      "pnl_usdt": 6.205136385388437,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -9457,6 +9434,16 @@
       "side": "SELL",
       "upper": 0.1354419811567339,
       "open": 0.13742,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "CLANKERUSDT",
+      "tf": "15m",
+      "candle_ts": 1794213900,
+      "side": "SELL",
+      "upper": 15.253276244668301,
+      "open": 15.53,
       "reported": false
     }
   ],
