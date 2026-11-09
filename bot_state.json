@@ -57,6 +57,31 @@
       "last_leg_candle_ts": 1794211200,
       "dry_run": true,
       "order_id": "PAPER-PIEVERSEUSDT-1794199526"
+    },
+    {
+      "symbol": "IDOLUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.034634,
+      "qty": 5774.6723,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.03376815,
+      "tf": "1h",
+      "opened_at": 1794218438,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.034634,
+          "ts": 1794218438
+        }
+      ],
+      "entry_candle_ts": 1794218400,
+      "last_leg_candle_ts": 1794218400,
+      "dry_run": true,
+      "order_id": "PAPER-IDOLUSDT-1794218438"
     }
   ],
   "trade_history": [
@@ -9559,7 +9584,7 @@
     "AI1USDT": 1794256268,
     "UP2USDT": 1794260810
   },
-  "last_trade_report_ts": 1794216830,
+  "last_trade_report_ts": 1794217741,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
