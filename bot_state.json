@@ -58,24 +58,28 @@
       "symbol": "UNITREEUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 110.22,
-      "qty": 1.8146,
-      "margin": 10.0,
+      "entry": 109.85941335872273,
+      "qty": 5.4616,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 107.4645,
-      "tf": "15m",
+      "tp_price": 107.11292802475467,
+      "tf": "1h",
       "opened_at": 1794188753,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 110.22,
           "ts": 1794188753
+        },
+        {
+          "px": 109.68,
+          "ts": 1794189692
         }
       ],
       "entry_candle_ts": 1794188700,
-      "last_leg_candle_ts": 1794188700,
+      "last_leg_candle_ts": 1794189600,
       "dry_run": true,
       "order_id": "PAPER-UNITREEUSDT-1794188753"
     },
@@ -9435,6 +9439,15 @@
       "side": "SELL",
       "upper": 11.276609812673767,
       "open": 11.393,
+      "reported": false
+    },
+    {
+      "symbol": "ZHIPUUSDT",
+      "tf": "1h",
+      "candle_ts": 1794189600,
+      "side": "SELL",
+      "upper": 56.43074664267188,
+      "open": 57.05,
       "reported": false
     }
   ],
