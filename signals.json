@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1794265305,
+  "updated_at": 1794265314,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "STARUSDT",
-      "tf": "1h",
-      "gap": 2.33,
-      "ts": 1794199897
-    },
     {
       "kind": "GAP",
       "symbol": "PIEVERSEUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 2.21,
       "ts": 1794265305
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794265314
     }
   ],
   "trades": [
@@ -1467,6 +1467,19 @@
       "margin": 10.0,
       "lev": 20,
       "px": 0.00453,
+      "pnl": 0.0,
+      "tf": "1h"
+    },
+    {
+      "symbol": "SECZUSDT",
+      "side": "SELL",
+      "entry": 8.01,
+      "tp": 7.809749999999999,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 8.01,
       "pnl": 0.0,
       "tf": "1h"
     }
