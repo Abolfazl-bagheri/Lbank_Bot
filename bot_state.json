@@ -4,26 +4,26 @@
       "symbol": "AIOUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.0532,
-      "qty": 3759.3985,
+      "entry": 0.05319,
+      "qty": 3760.1053,
       "margin": 10.0,
       "leverage": 20,
-      "tp_price": 0.05187,
+      "tp_price": 0.05186025,
       "tf": "15m",
-      "opened_at": 1794186032,
+      "opened_at": 1794186035,
       "adds": 0,
       "last_leg_margin": 10.0,
       "used_res_levels": [],
       "steps": [
         {
-          "px": 0.0532,
-          "ts": 1794186032
+          "px": 0.05319,
+          "ts": 1794186035
         }
       ],
       "entry_candle_ts": 1794186000,
       "last_leg_candle_ts": 1794186000,
       "dry_run": true,
-      "order_id": "PAPER-AIOUSDT-1794186032"
+      "order_id": "PAPER-AIOUSDT-1794186035"
     }
   ],
   "trade_history": [
@@ -7263,9 +7263,9 @@
       "last_leg_candle_ts": 1794139200,
       "dry_run": true,
       "order_id": "PAPER-JCTUSDT-1794124945",
-      "closed_at": 1794182848,
-      "close_px": 0.011429,
-      "pnl_usdt": -10815.7868494001,
+      "closed_at": 1794182900,
+      "close_px": 0.011246,
+      "pnl_usdt": -10440.855622395098,
       "close_reason": "NIGHT_RESET",
       "why": "NIGHT_RESET"
     }
@@ -9418,17 +9418,17 @@
     },
     {
       "from": 1794096385,
-      "to": 1794182849,
+      "to": 1794182902,
       "start": 1000.0,
       "realized": 2455.747,
-      "unrealized_closed": -10815.7868,
-      "net": -8360.0399,
+      "unrealized_closed": -10440.8556,
+      "net": -7985.1086,
       "trades": 23,
       "tp_trades": 22,
       "reset_trades": 1
     }
   ],
-  "paper_session_start": 1794182850,
+  "paper_session_start": 1794182902,
   "last_daily_report_date": "2026-11-09",
   "kline_blacklist": {
     "STXSTOCKUSDT": 1793301443,
@@ -9444,6 +9444,7 @@
     "AMCUSDT": 1793924216,
     "CANTONUSDT": 1793952369,
     "UBIKUSDT": 1793961071,
+    "XBRUSDT": 1793988971,
     "BBXUSDT": 1794018704,
     "SPORTFUNUSDT": 1794081839,
     "ARROWUSDT": 1794086185,
@@ -9459,6 +9460,7 @@
     "CAPETHUSDT": 1794163767,
     "TOADUSDT": 1794166299,
     "PIPEDOGUSDT": 1794170773,
+    "DRVUSDT": 1794177070,
     "FLOCK1USDT": 1794177995,
     "ARCSOLUSDT": 1794182719,
     "GSTOCKUSDT": 1794187017,
@@ -9492,16 +9494,15 @@
     "SAFE1USDT": 1794219393,
     "AEHRUSDT": 1794219394,
     "XTIUSDT": 1794219396,
-    "XBRUSDT": 1794221176,
-    "KOPNUSDT": 1794221186,
-    "POETUSDT": 1794222994,
-    "DODOUSDT": 1794225763,
-    "MARRIOTTUSDT": 1794225862,
-    "NGASUSDT": 1794225796,
-    "BRLUSDT": 1794225806,
-    "GOLDUSDT": 1794228404
+    "POETUSDT": 1794223905,
+    "DODOUSDT": 1794225779,
+    "KOPNUSDT": 1794225898,
+    "MARRIOTTUSDT": 1794225911,
+    "NGASUSDT": 1794225821,
+    "BRLUSDT": 1794225832,
+    "GOLDUSDT": 1794228410
   },
-  "last_trade_report_ts": 1794185342,
+  "last_trade_report_ts": 1794185363,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
