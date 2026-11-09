@@ -1,82 +1,6 @@
 {
-  "open_trades": [
-    {
-      "symbol": "JCTUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.0061499278638885175,
-      "qty": 2048804.5192,
-      "margin": 630.0,
-      "leverage": 20,
-      "tp_price": 0.005996179667291305,
-      "tf": "1h",
-      "opened_at": 1794124945,
-      "adds": 5,
-      "last_leg_margin": 320.0,
-      "used_res_levels": [
-        0.003381
-      ],
-      "steps": [
-        {
-          "px": 0.003163,
-          "ts": 1794124945
-        },
-        {
-          "px": 0.003373,
-          "ts": 1794126020
-        },
-        {
-          "px": 0.003526,
-          "ts": 1794128466
-        },
-        {
-          "px": 0.004758,
-          "ts": 1794132022
-        },
-        {
-          "px": 0.004836,
-          "ts": 1794132917
-        },
-        {
-          "px": 0.009967,
-          "ts": 1794139310
-        }
-      ],
-      "entry_candle_ts": 1794124800,
-      "last_leg_candle_ts": 1794139200,
-      "dry_run": true,
-      "order_id": "PAPER-JCTUSDT-1794124945"
-    }
-  ],
+  "open_trades": [],
   "trade_history": [
-    {
-      "symbol": "RUNEUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.5839,
-      "qty": 342.5244,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.5693024999999999,
-      "tf": "15m",
-      "opened_at": 1793687674,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.5839,
-          "ts": 1793687674
-        }
-      ],
-      "entry_candle_ts": 1793687400,
-      "last_leg_candle_ts": 1793687400,
-      "dry_run": true,
-      "order_id": "PAPER-RUNEUSDT-1793687674",
-      "closed_at": 1793697535,
-      "close_px": 0.5688,
-      "pnl_usdt": 5.172118513444084
-    },
     {
       "symbol": "MEGAUSDT",
       "side": "SELL",
@@ -7266,6 +7190,58 @@
       "pnl_usdt": 35.67252168846277,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "JCTUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.0061499278638885175,
+      "qty": 2048804.5192,
+      "margin": 630.0,
+      "leverage": 20,
+      "tp_price": 0.005996179667291305,
+      "tf": "1h",
+      "opened_at": 1794124945,
+      "adds": 5,
+      "last_leg_margin": 320.0,
+      "used_res_levels": [
+        0.003381
+      ],
+      "steps": [
+        {
+          "px": 0.003163,
+          "ts": 1794124945
+        },
+        {
+          "px": 0.003373,
+          "ts": 1794126020
+        },
+        {
+          "px": 0.003526,
+          "ts": 1794128466
+        },
+        {
+          "px": 0.004758,
+          "ts": 1794132022
+        },
+        {
+          "px": 0.004836,
+          "ts": 1794132917
+        },
+        {
+          "px": 0.009967,
+          "ts": 1794139310
+        }
+      ],
+      "entry_candle_ts": 1794124800,
+      "last_leg_candle_ts": 1794139200,
+      "dry_run": true,
+      "order_id": "PAPER-JCTUSDT-1794124945",
+      "closed_at": 1794182848,
+      "close_px": 0.011429,
+      "pnl_usdt": -10815.7868494001,
+      "close_reason": "NIGHT_RESET",
+      "why": "NIGHT_RESET"
     }
   ],
   "pending": [
@@ -7478,16 +7454,6 @@
       "tf": "15m",
       "candle_ts": 1793430900,
       "side": "SELL"
-    },
-    {
-      "symbol": "CYBERUSDT",
-      "tf": "1h",
-      "candle_ts": 1793919600,
-      "side": "SELL",
-      "upper": 0.2993672497228366,
-      "open": 0.3035,
-      "reported": true,
-      "filled": true
     },
     {
       "symbol": "ACTUSDT",
@@ -9326,7 +9292,8 @@
       "side": "SELL",
       "upper": 0.01184892259907247,
       "open": 0.0131,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "AIOTUSDT",
@@ -9335,7 +9302,8 @@
       "side": "SELL",
       "upper": 0.16328657099987987,
       "open": 0.16685,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ANSEMUSDT",
@@ -9344,7 +9312,8 @@
       "side": "SELL",
       "upper": 0.05819674981466231,
       "open": 0.0611,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "JCTUSDT",
@@ -9420,10 +9389,21 @@
       "trades": 25,
       "tp_trades": 21,
       "reset_trades": 4
+    },
+    {
+      "from": 1794096385,
+      "to": 1794182849,
+      "start": 1000.0,
+      "realized": 2455.747,
+      "unrealized_closed": -10815.7868,
+      "net": -8360.0399,
+      "trades": 23,
+      "tp_trades": 22,
+      "reset_trades": 1
     }
   ],
-  "paper_session_start": 1794096385,
-  "last_daily_report_date": "2026-11-08",
+  "paper_session_start": 1794182850,
+  "last_daily_report_date": "2026-11-09",
   "kline_blacklist": {
     "STXSTOCKUSDT": 1793301443,
     "EURUSDT": 1793385188,
@@ -9432,7 +9412,6 @@
     "SYNUSDT": 1793537208,
     "BIO1USDT": 1793611218,
     "CRWDUSDT": 1793658035,
-    "MARRIOTTUSDT": 1793714834,
     "AI1USDT": 1793882848,
     "QUID1USDT": 1793901083,
     "STONKBROKERUSDT": 1793924211,
@@ -9440,7 +9419,6 @@
     "GOLDUSDT": 1793936850,
     "CANTONUSDT": 1793952369,
     "UBIKUSDT": 1793961071,
-    "XBRUSDT": 1793988971,
     "BBXUSDT": 1794018704,
     "MURATAUSDT": 1794038839,
     "SPORTFUNUSDT": 1794081839,
@@ -9448,13 +9426,11 @@
     "FIGHT1USDT": 1794111444,
     "ARGUSDT": 1794114249,
     "APROUSDT": 1794115028,
-    "POETUSDT": 1794115909,
     "SXTUSDT": 1794125089,
     "MANCERUSDT": 1794126726,
     "GALUSDT": 1794141094,
     "B3USDT": 1794143806,
     "RIOTUSDT": 1794157401,
-    "KOPNUSDT": 1794160960,
     "METEORAUSDT": 1794163747,
     "CAPETHUSDT": 1794163767,
     "TOADUSDT": 1794166299,
@@ -9496,9 +9472,16 @@
     "LWLGUSDT": 1794218578,
     "SAFE1USDT": 1794219393,
     "AEHRUSDT": 1794219394,
-    "XTIUSDT": 1794219396
+    "XTIUSDT": 1794219396,
+    "XBRUSDT": 1794221176,
+    "KOPNUSDT": 1794221186,
+    "POETUSDT": 1794222994,
+    "DODOUSDT": 1794225763,
+    "MARRIOTTUSDT": 1794225862,
+    "NGASUSDT": 1794225796,
+    "BRLUSDT": 1794225806
   },
-  "last_trade_report_ts": 1794174690,
+  "last_trade_report_ts": 1794182846,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
