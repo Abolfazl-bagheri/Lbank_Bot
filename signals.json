@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1794256265,
+  "updated_at": 1794256488,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "MUUUSDT",
-      "tf": "15m",
-      "gap": 1.05,
-      "ts": 1794191347
-    },
     {
       "kind": "GAP",
       "symbol": "RAMUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1794256265
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794256488
     }
   ],
   "trades": [
@@ -1432,19 +1432,6 @@
       "tf": "4h"
     },
     {
-      "symbol": "IDOLUSDT",
-      "side": "SELL",
-      "entry": 0.034634,
-      "tp": 0.03376815,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.030563,
-      "pnl": 23.5087,
-      "tf": "1h"
-    },
-    {
       "symbol": "INITUSDT",
       "side": "SELL",
       "entry": 0.18876,
@@ -1460,16 +1447,16 @@
   ],
   "start": 1000.0,
   "session_start": 1794182902,
-  "realized": 574.9294,
-  "closed_n": 17,
-  "open_upnl": -333.138,
+  "realized": 598.4381,
+  "closed_n": 18,
+  "open_upnl": -356.6467,
   "equity": 1241.7914,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 574.9294,
+    "profit": 598.4381,
     "loss": 0,
-    "count": 17
+    "count": 18
   }
 }
