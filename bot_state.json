@@ -109,31 +109,6 @@
       "order_id": "PAPER-MUSEBOOKUSDT-1794264317"
     },
     {
-      "symbol": "BONERUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.00453,
-      "qty": 44150.1104,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.00441675,
-      "tf": "1h",
-      "opened_at": 1794265241,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.00453,
-          "ts": 1794265241
-        }
-      ],
-      "entry_candle_ts": 1794265200,
-      "last_leg_candle_ts": 1794265200,
-      "dry_run": true,
-      "order_id": "PAPER-BONERUSDT-1794265241"
-    },
-    {
       "symbol": "SECZUSDT",
       "side": "SELL",
       "status": "open",
@@ -185,50 +160,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "PUMPUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.0042610823156353245,
-      "qty": 704046.4787999999,
-      "margin": 150.0,
-      "leverage": 20,
-      "tp_price": 0.004154555257744441,
-      "tf": "1h",
-      "opened_at": 1793711160,
-      "adds": 3,
-      "last_leg_margin": 80.0,
-      "used_res_levels": [
-        0.004251,
-        0.004208,
-        0.004301
-      ],
-      "steps": [
-        {
-          "px": 0.004262,
-          "ts": 1793711160
-        },
-        {
-          "px": 0.004242,
-          "ts": 1793712134
-        },
-        {
-          "px": 0.004202,
-          "ts": 1793714947
-        },
-        {
-          "px": 0.004296,
-          "ts": 1793739128
-        }
-      ],
-      "entry_candle_ts": 1793710800,
-      "last_leg_candle_ts": 1793739128,
-      "dry_run": true,
-      "order_id": "PAPER-PUMPUSDT-1793711160",
-      "closed_at": 1793759976,
-      "close_px": 0.004137,
-      "pnl_usdt": 87.3597173985764
-    },
     {
       "symbol": "AMDUSDT",
       "side": "SELL",
@@ -7406,6 +7337,36 @@
       "pnl_usdt": 6.642449403217442,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "BONERUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.00453,
+      "qty": 44150.1104,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.00441675,
+      "tf": "1h",
+      "opened_at": 1794265241,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.00453,
+          "ts": 1794265241
+        }
+      ],
+      "entry_candle_ts": 1794265200,
+      "last_leg_candle_ts": 1794265200,
+      "dry_run": true,
+      "order_id": "PAPER-BONERUSDT-1794265241",
+      "closed_at": 1794266311,
+      "close_px": 0.00441,
+      "pnl_usdt": 5.298013245033126,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -7618,16 +7579,6 @@
       "tf": "15m",
       "candle_ts": 1793430900,
       "side": "SELL"
-    },
-    {
-      "symbol": "ONEUSDT",
-      "tf": "15m",
-      "candle_ts": 1794006900,
-      "side": "SELL",
-      "upper": 0.0018512725292510837,
-      "open": 0.00188,
-      "reported": true,
-      "filled": true
     },
     {
       "symbol": "LYNUSDT",
@@ -9233,7 +9184,8 @@
       "side": "SELL",
       "upper": 0.18533642567716885,
       "open": 0.18907,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "MOOUSDT",
@@ -9252,7 +9204,8 @@
       "side": "SELL",
       "upper": 9.968303915315333e-06,
       "open": 1.008e-05,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "BONERUSDT",
@@ -9271,6 +9224,16 @@
       "upper": 7.8326159436299,
       "open": 8.06,
       "reported": false
+    },
+    {
+      "symbol": "CLAUDIAUSDT",
+      "tf": "15m",
+      "candle_ts": 1794265200,
+      "side": "SELL",
+      "upper": 0.006772790636107398,
+      "open": 0.00696,
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -9426,7 +9389,7 @@
     "UP2USDT": 1794304950,
     "ONSEMIUSDT": 1794305039
   },
-  "last_trade_report_ts": 1794264525,
+  "last_trade_report_ts": 1794265565,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
