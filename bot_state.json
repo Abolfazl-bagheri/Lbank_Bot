@@ -84,56 +84,6 @@
       "order_id": "PAPER-MOOUSDT-1794263441"
     },
     {
-      "symbol": "SECZUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 8.01,
-      "qty": 24.9688,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 7.809749999999999,
-      "tf": "1h",
-      "opened_at": 1794265307,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 8.01,
-          "ts": 1794265307
-        }
-      ],
-      "entry_candle_ts": 1794265200,
-      "last_leg_candle_ts": 1794265200,
-      "dry_run": true,
-      "order_id": "PAPER-SECZUSDT-1794265307"
-    },
-    {
-      "symbol": "CLAUDIAUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.007449,
-      "qty": 26849.2415,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.007262775,
-      "tf": "15m",
-      "opened_at": 1794265357,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.007449,
-          "ts": 1794265357
-        }
-      ],
-      "entry_candle_ts": 1794265200,
-      "last_leg_candle_ts": 1794265200,
-      "dry_run": true,
-      "order_id": "PAPER-CLAUDIAUSDT-1794265357"
-    },
-    {
       "symbol": "BONERUSDT",
       "side": "SELL",
       "status": "open",
@@ -160,73 +110,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "CARDSUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.2572,
-      "qty": 777.605,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.25077,
-      "tf": "1h",
-      "opened_at": 1793747094,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.2572,
-          "ts": 1793747094
-        }
-      ],
-      "entry_candle_ts": 1793746800,
-      "last_leg_candle_ts": 1793746800,
-      "dry_run": true,
-      "order_id": "PAPER-CARDSUSDT-1793747094",
-      "closed_at": 1793759980,
-      "close_px": 0.2503,
-      "pnl_usdt": 5.365474339035741
-    },
-    {
-      "symbol": "LITUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 3.291182066537825,
-      "qty": 425.3791,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 3.2089025148743793,
-      "tf": "1h",
-      "opened_at": 1793711183,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [
-        3.257,
-        3.335
-      ],
-      "steps": [
-        {
-          "px": 3.2289,
-          "ts": 1793711183
-        },
-        {
-          "px": 3.2449,
-          "ts": 1793712965
-        },
-        {
-          "px": 3.331,
-          "ts": 1793738238
-        }
-      ],
-      "entry_candle_ts": 1793710800,
-      "last_leg_candle_ts": 1793738238,
-      "dry_run": true,
-      "order_id": "PAPER-LITUSDT-1793711183",
-      "closed_at": 1793761657,
-      "close_px": 3.1989,
-      "pnl_usdt": 39.25486057623734
-    },
     {
       "symbol": "CASHCATUSDT",
       "side": "SELL",
@@ -7358,6 +7241,66 @@
       "pnl_usdt": 10.600000000000001,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "CLAUDIAUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.007449,
+      "qty": 26849.2415,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.007262775,
+      "tf": "15m",
+      "opened_at": 1794265357,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.007449,
+          "ts": 1794265357
+        }
+      ],
+      "entry_candle_ts": 1794265200,
+      "last_leg_candle_ts": 1794265200,
+      "dry_run": true,
+      "order_id": "PAPER-CLAUDIAUSDT-1794265357",
+      "closed_at": 1794267211,
+      "close_px": 0.006731,
+      "pnl_usdt": 19.277755403409852,
+      "close_reason": "TP50",
+      "why": "TP50"
+    },
+    {
+      "symbol": "SECZUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 8.01,
+      "qty": 24.9688,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 7.809749999999999,
+      "tf": "1h",
+      "opened_at": 1794265307,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 8.01,
+          "ts": 1794265307
+        }
+      ],
+      "entry_candle_ts": 1794265200,
+      "last_leg_candle_ts": 1794265200,
+      "dry_run": true,
+      "order_id": "PAPER-SECZUSDT-1794265307",
+      "closed_at": 1794268186,
+      "close_px": 7.79,
+      "pnl_usdt": 5.493133583021218,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -7570,16 +7513,6 @@
       "tf": "15m",
       "candle_ts": 1793430900,
       "side": "SELL"
-    },
-    {
-      "symbol": "LYNUSDT",
-      "tf": "15m",
-      "candle_ts": 1794008700,
-      "side": "SELL",
-      "upper": 0.02521297899724371,
-      "open": 0.0255,
-      "reported": true,
-      "filled": true
     },
     {
       "symbol": "FONEUSDT",
@@ -9233,7 +9166,8 @@
       "side": "SELL",
       "upper": 0.004975562765869744,
       "open": 0.00507,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -9389,7 +9323,7 @@
     "UP2USDT": 1794304950,
     "ONSEMIUSDT": 1794305039
   },
-  "last_trade_report_ts": 1794265565,
+  "last_trade_report_ts": 1794267218,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
