@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1794258040,
+  "updated_at": 1794258046,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "UNITREEUSDT",
-      "tf": "1h",
-      "gap": 3.02,
-      "ts": 1794192705
-    },
     {
       "kind": "GAP",
       "symbol": "ZHIPUUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 5.82,
       "ts": 1794258040
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794258046
     }
   ],
   "trades": [
@@ -1434,15 +1434,15 @@
     {
       "symbol": "INITUSDT",
       "side": "SELL",
-      "entry": 0.18876,
-      "tp": 0.184041,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
+      "entry": 0.18709266854235385,
+      "tp": 0.182415351828795,
+      "adds": 1,
+      "pele": 2,
+      "margin": 30.0,
       "lev": 20,
       "px": 0.18627,
       "pnl": 2.6383,
-      "tf": "15m"
+      "tf": "1h"
     }
   ],
   "start": 1000.0,
