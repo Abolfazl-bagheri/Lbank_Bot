@@ -113,6 +113,31 @@
       "last_leg_candle_ts": 1794213241,
       "dry_run": true,
       "order_id": "PAPER-INITUSDT-1794213036"
+    },
+    {
+      "symbol": "CLANKERUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 15.59,
+      "qty": 12.8287,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 15.200249999999999,
+      "tf": "15m",
+      "opened_at": 1794213931,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 15.59,
+          "ts": 1794213931
+        }
+      ],
+      "entry_candle_ts": 1794213900,
+      "last_leg_candle_ts": 1794213900,
+      "dry_run": true,
+      "order_id": "PAPER-CLANKERUSDT-1794213931"
     }
   ],
   "trade_history": [
@@ -9591,7 +9616,7 @@
     "CZUSDT": 1794253676,
     "AI1USDT": 1794256268
   },
-  "last_trade_report_ts": 1794211647,
+  "last_trade_report_ts": 1794213253,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
