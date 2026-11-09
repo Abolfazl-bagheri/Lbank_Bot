@@ -208,6 +208,31 @@
       "last_leg_candle_ts": 1794202200,
       "dry_run": true,
       "order_id": "PAPER-NXPCUSDT-1794202261"
+    },
+    {
+      "symbol": "CLAUDIAUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.007734,
+      "qty": 25859.8397,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.00754065,
+      "tf": "15m",
+      "opened_at": 1794203139,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.007734,
+          "ts": 1794203139
+        }
+      ],
+      "entry_candle_ts": 1794203100,
+      "last_leg_candle_ts": 1794203100,
+      "dry_run": true,
+      "order_id": "PAPER-CLAUDIAUSDT-1794203139"
     }
   ],
   "trade_history": [
@@ -9453,6 +9478,15 @@
       "side": "SELL",
       "upper": 0.15326063998463454,
       "open": 0.1562,
+      "reported": false
+    },
+    {
+      "symbol": "B2USDT",
+      "tf": "15m",
+      "candle_ts": 1794203100,
+      "side": "SELL",
+      "upper": 0.4538801820963755,
+      "open": 0.4599,
       "reported": false
     }
   ],
