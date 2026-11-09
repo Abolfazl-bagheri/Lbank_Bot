@@ -188,24 +188,30 @@
       "symbol": "NXPCUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.1554,
-      "qty": 1287.0013,
-      "margin": 10.0,
+      "entry": 0.15318431626985168,
+      "qty": 3916.8501,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.151515,
+      "tp_price": 0.14935470836310538,
       "tf": "15m",
       "opened_at": 1794202261,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.1524
+      ],
       "steps": [
         {
           "px": 0.1554,
           "ts": 1794202261
+        },
+        {
+          "px": 0.1521,
+          "ts": 1794203372
         }
       ],
       "entry_candle_ts": 1794202200,
-      "last_leg_candle_ts": 1794202200,
+      "last_leg_candle_ts": 1794203372,
       "dry_run": true,
       "order_id": "PAPER-NXPCUSDT-1794202261"
     },
@@ -9469,7 +9475,8 @@
       "side": "SELL",
       "upper": 0.4417398200706428,
       "open": 0.4581,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "NXPCUSDT",
@@ -9478,7 +9485,8 @@
       "side": "SELL",
       "upper": 0.15326063998463454,
       "open": 0.1562,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "B2USDT",
@@ -9487,6 +9495,15 @@
       "side": "SELL",
       "upper": 0.4538801820963755,
       "open": 0.4599,
+      "reported": false
+    },
+    {
+      "symbol": "CLAUDIAUSDT",
+      "tf": "15m",
+      "candle_ts": 1794203100,
+      "side": "SELL",
+      "upper": 0.007140927115425929,
+      "open": 0.007321,
       "reported": false
     }
   ],
@@ -9643,7 +9660,8 @@
     "HOTUSDT": 1794240147,
     "NEXUSDT": 1794240192,
     "SILVERUSDT": 1794240255,
-    "1000000BABYDOGEUSDT": 1794240331
+    "1000000BABYDOGEUSDT": 1794240331,
+    "FIGUSDT": 1794246425
   },
   "last_trade_report_ts": 1794201544,
   "last_known_version": "2.7.2",
