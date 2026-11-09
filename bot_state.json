@@ -78,6 +78,31 @@
       "last_leg_candle_ts": 1794200400,
       "dry_run": true,
       "order_id": "PAPER-PIEVERSEUSDT-1794199526"
+    },
+    {
+      "symbol": "SOXSUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 77.57,
+      "qty": 2.5783,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 75.63074999999999,
+      "tf": "4h",
+      "opened_at": 1794211255,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 77.57,
+          "ts": 1794211255
+        }
+      ],
+      "entry_candle_ts": 1794211200,
+      "last_leg_candle_ts": 1794211200,
+      "dry_run": true,
+      "order_id": "PAPER-SOXSUSDT-1794211255"
     }
   ],
   "trade_history": [
@@ -9478,7 +9503,6 @@
     "B3USDT": 1794143806,
     "RIOTUSDT": 1794157401,
     "METEORAUSDT": 1794163747,
-    "CAPETHUSDT": 1794163767,
     "PIPEDOGUSDT": 1794170773,
     "DRVUSDT": 1794177070,
     "FLOCK1USDT": 1794177995,
@@ -9495,12 +9519,7 @@
     "ONSEMIUSDT": 1794198742,
     "SIMOUSDT": 1794199618,
     "FLYUSDT": 1794203212,
-    "O1USDT": 1794209461,
     "CYBERLEEKUSDT": 1794209504,
-    "1000SATSUSDT": 1794209510,
-    "1000WOJAKUSDT": 1794209511,
-    "NEIRO1USDT": 1794209512,
-    "CZUSDT": 1794209514,
     "MUSTOCKUSDT": 1794211442,
     "LIGHT1USDT": 1794213992,
     "QUACKAIUSDT": 1794215793,
@@ -9527,9 +9546,15 @@
     "SILVERUSDT": 1794240255,
     "1000000BABYDOGEUSDT": 1794240331,
     "FIGUSDT": 1794246425,
-    "OFCUSDT": 1794251008
+    "OFCUSDT": 1794251008,
+    "O1USDT": 1794253602,
+    "1000WOJAKUSDT": 1794253637,
+    "CAPETHUSDT": 1794253646,
+    "NEIRO1USDT": 1794253651,
+    "1000SATSUSDT": 1794253652,
+    "CZUSDT": 1794253676
   },
-  "last_trade_report_ts": 1794207935,
+  "last_trade_report_ts": 1794210614,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
