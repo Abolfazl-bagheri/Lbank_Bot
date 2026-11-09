@@ -36,31 +36,6 @@
       "order_id": "PAPER-ZHIPUUSDT-1794188721"
     },
     {
-      "symbol": "MINIMAXUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 20.87,
-      "qty": 9.5831,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 20.34825,
-      "tf": "15m",
-      "opened_at": 1794188731,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 20.87,
-          "ts": 1794188731
-        }
-      ],
-      "entry_candle_ts": 1794188700,
-      "last_leg_candle_ts": 1794188700,
-      "dry_run": true,
-      "order_id": "PAPER-MINIMAXUSDT-1794188731"
-    },
-    {
       "symbol": "UNITREEUSDT",
       "side": "SELL",
       "status": "open",
@@ -170,38 +145,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "BMTUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.0272131246942974,
-      "qty": 22048.184699999998,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.026532796576939962,
-      "tf": "15m",
-      "opened_at": 1793710965,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.02732,
-          "ts": 1793710965
-        },
-        {
-          "px": 0.02716,
-          "ts": 1793712002
-        }
-      ],
-      "entry_candle_ts": 1793710800,
-      "last_leg_candle_ts": 1793711700,
-      "dry_run": true,
-      "order_id": "PAPER-BMTUSDT-1793710965",
-      "closed_at": 1793712959,
-      "close_px": 0.02641,
-      "pnl_usdt": 17.707441611048
-    },
     {
       "symbol": "BOMEUSDT",
       "side": "SELL",
@@ -7402,6 +7345,36 @@
       "pnl_usdt": 12.107539011092312,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "MINIMAXUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 20.87,
+      "qty": 9.5831,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 20.34825,
+      "tf": "15m",
+      "opened_at": 1794188731,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 20.87,
+          "ts": 1794188731
+        }
+      ],
+      "entry_candle_ts": 1794188700,
+      "last_leg_candle_ts": 1794188700,
+      "dry_run": true,
+      "order_id": "PAPER-MINIMAXUSDT-1794188731",
+      "closed_at": 1794194352,
+      "close_px": 20.3,
+      "pnl_usdt": 5.462386200287497,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -7614,56 +7587,6 @@
       "tf": "15m",
       "candle_ts": 1793430900,
       "side": "SELL"
-    },
-    {
-      "symbol": "BIRBUSDT",
-      "tf": "15m",
-      "candle_ts": 1793934000,
-      "side": "SELL",
-      "upper": 0.10074826483827272,
-      "open": 0.10314,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "UAIUSDT",
-      "tf": "15m",
-      "candle_ts": 1793934000,
-      "side": "SELL",
-      "upper": 0.10515772437008258,
-      "open": 0.10684,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "UAIUSDT",
-      "tf": "15m",
-      "candle_ts": 1793934900,
-      "side": "SELL",
-      "upper": 0.14341879711719574,
-      "open": 0.15717,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "AKEUSDT",
-      "tf": "15m",
-      "candle_ts": 1793934900,
-      "side": "SELL",
-      "upper": 0.0025903177746528817,
-      "open": 0.0027064,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "NAVERUSDT",
-      "tf": "15m",
-      "candle_ts": 1793934900,
-      "side": "SELL",
-      "upper": 137.71026451538964,
-      "open": 140.5,
-      "reported": true,
-      "filled": false
     },
     {
       "symbol": "AKEUSDT",
@@ -9492,7 +9415,8 @@
       "side": "SELL",
       "upper": 56.43074664267188,
       "open": 57.05,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "UNITREEUSDT",
@@ -9501,7 +9425,8 @@
       "side": "SELL",
       "upper": 104.09220286931982,
       "open": 106.57,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "EWTUSDT",
@@ -9510,7 +9435,8 @@
       "side": "SELL",
       "upper": 91.96102631279871,
       "open": 92.92,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "YOFCUSDT",
@@ -9519,6 +9445,15 @@
       "side": "SELL",
       "upper": 11.527769561316829,
       "open": 11.668,
+      "reported": false
+    },
+    {
+      "symbol": "UMCUSDT",
+      "tf": "1h",
+      "candle_ts": 1794193200,
+      "side": "SELL",
+      "upper": 14.644448833626443,
+      "open": 14.88,
       "reported": false
     }
   ],
@@ -9674,7 +9609,7 @@
     "BEMUSDT": 1794233803,
     "TSMONUSDT": 1794234714
   },
-  "last_trade_report_ts": 1794191700,
+  "last_trade_report_ts": 1794193648,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
