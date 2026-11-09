@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1794261967,
+  "updated_at": 1794262723,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "YOFCUSDT",
-      "tf": "1h",
-      "gap": 1.06,
-      "ts": 1794196464
-    },
     {
       "kind": "GAP",
       "symbol": "UMCUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1794261967
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794262723
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 106.54,
-      "pnl": -2.3552,
+      "px": 106.53,
+      "pnl": -2.3362,
       "tf": "4h"
     },
     {
@@ -1427,8 +1427,8 @@
       "pele": 3,
       "margin": 70.0,
       "lev": 20,
-      "px": 1.9994,
-      "pnl": -350.7163,
+      "px": 2.0315,
+      "pnl": -378.8238,
       "tf": "4h"
     },
     {
@@ -1440,22 +1440,9 @@
       "pele": 3,
       "margin": 70.0,
       "lev": 20,
-      "px": 0.19049,
-      "pnl": -10.8951,
+      "px": 0.19208,
+      "pnl": -22.6717,
       "tf": "1h"
-    },
-    {
-      "symbol": "AVAAIUSDT",
-      "side": "SELL",
-      "entry": 0.006532270434536069,
-      "tp": 0.006368963673672667,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
-      "lev": 20,
-      "px": 0.006474,
-      "pnl": 5.3522,
-      "tf": "15m"
     },
     {
       "symbol": "ASTSUSDT",
@@ -1466,23 +1453,23 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 38.54,
-      "pnl": 0.0,
+      "px": 37.9,
+      "pnl": 3.3212,
       "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1794182902,
-  "realized": 609.5486,
-  "closed_n": 20,
-  "open_upnl": -358.6144,
-  "equity": 1250.9342,
+  "realized": 627.1171,
+  "closed_n": 21,
+  "open_upnl": -400.5105,
+  "equity": 1226.6066,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 609.5486,
+    "profit": 627.1171,
     "loss": 0,
-    "count": 20
+    "count": 21
   }
 }
