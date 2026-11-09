@@ -142,6 +142,31 @@
       "last_leg_candle_ts": 1794189600,
       "dry_run": true,
       "order_id": "PAPER-EWTUSDT-1794189742"
+    },
+    {
+      "symbol": "UMCUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 14.82,
+      "qty": 13.4953,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 14.4495,
+      "tf": "1h",
+      "opened_at": 1794193294,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 14.82,
+          "ts": 1794193294
+        }
+      ],
+      "entry_candle_ts": 1794193200,
+      "last_leg_candle_ts": 1794193200,
+      "dry_run": true,
+      "order_id": "PAPER-UMCUSDT-1794193294"
     }
   ],
   "trade_history": [
@@ -9485,6 +9510,15 @@
       "side": "SELL",
       "upper": 91.96102631279871,
       "open": 92.92,
+      "reported": false
+    },
+    {
+      "symbol": "YOFCUSDT",
+      "tf": "1h",
+      "candle_ts": 1794193200,
+      "side": "SELL",
+      "upper": 11.527769561316829,
+      "open": 11.668,
       "reported": false
     }
   ],
