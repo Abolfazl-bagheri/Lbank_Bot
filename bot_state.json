@@ -62,24 +62,28 @@
       "symbol": "INITUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.18876,
-      "qty": 1059.5465,
-      "margin": 10.0,
+      "entry": 0.18709266854235385,
+      "qty": 3206.9669,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.184041,
-      "tf": "15m",
+      "tp_price": 0.182415351828795,
+      "tf": "1h",
       "opened_at": 1794256260,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 0.18876,
           "ts": 1794256260
+        },
+        {
+          "px": 0.18627,
+          "ts": 1794258041
         }
       ],
       "entry_candle_ts": 1794256200,
-      "last_leg_candle_ts": 1794256200,
+      "last_leg_candle_ts": 1794258000,
       "dry_run": true,
       "order_id": "PAPER-INITUSDT-1794256260"
     }
@@ -9093,7 +9097,8 @@
       "side": "SELL",
       "upper": 0.18384854282188076,
       "open": 0.18785,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -9175,7 +9180,6 @@
   "paper_session_start": 1794182902,
   "last_daily_report_date": "2026-11-09",
   "kline_blacklist": {
-    "STXSTOCKUSDT": 1793301443,
     "EURUSDT": 1793385188,
     "SKY1USDT": 1793398016,
     "AXLUSDT": 1793502358,
@@ -9232,7 +9236,6 @@
     "OFCUSDT": 1794251008,
     "O1USDT": 1794253602,
     "CAPETHUSDT": 1794253646,
-    "AI1USDT": 1794256268,
     "UP2USDT": 1794260810,
     "BTCDOMUSDT": 1794262603,
     "OSCRUSDT": 1794262610,
@@ -9248,9 +9251,10 @@
     "1000SATSUSDT": 1794299574,
     "1000WOJAKUSDT": 1794299575,
     "CZUSDT": 1794299580,
-    "NEIRO1USDT": 1794299583
+    "NEIRO1USDT": 1794299583,
+    "AI1USDT": 1794300376
   },
-  "last_trade_report_ts": 1794222346,
+  "last_trade_report_ts": 1794256490,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
