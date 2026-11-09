@@ -74,6 +74,31 @@
       "last_leg_candle_ts": 1794188700,
       "dry_run": true,
       "order_id": "PAPER-UNITREEUSDT-1794188753"
+    },
+    {
+      "symbol": "YOFCUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 11.4,
+      "qty": 17.5439,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 11.115,
+      "tf": "15m",
+      "opened_at": 1794188787,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 11.4,
+          "ts": 1794188787
+        }
+      ],
+      "entry_candle_ts": 1794188700,
+      "last_leg_candle_ts": 1794188700,
+      "dry_run": true,
+      "order_id": "PAPER-YOFCUSDT-1794188787"
     }
   ],
   "trade_history": [
@@ -9398,6 +9423,15 @@
       "side": "SELL",
       "upper": 20.625476250110005,
       "open": 20.89,
+      "reported": false
+    },
+    {
+      "symbol": "UNITREEUSDT",
+      "tf": "15m",
+      "candle_ts": 1794188700,
+      "side": "SELL",
+      "upper": 105.91169475545976,
+      "open": 108.58,
       "reported": false
     }
   ],
