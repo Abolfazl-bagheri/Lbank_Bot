@@ -86,6 +86,31 @@
       "last_leg_candle_ts": 1794258000,
       "dry_run": true,
       "order_id": "PAPER-INITUSDT-1794256260"
+    },
+    {
+      "symbol": "TAGUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.0007413,
+      "qty": 269796.3038,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0007227675,
+      "tf": "1h",
+      "opened_at": 1794258089,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.0007413,
+          "ts": 1794258089
+        }
+      ],
+      "entry_candle_ts": 1794258000,
+      "last_leg_candle_ts": 1794258000,
+      "dry_run": true,
+      "order_id": "PAPER-TAGUSDT-1794258089"
     }
   ],
   "trade_history": [
@@ -9099,6 +9124,15 @@
       "open": 0.18785,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "INITUSDT",
+      "tf": "1h",
+      "candle_ts": 1794258000,
+      "side": "SELL",
+      "upper": 0.17542889535679154,
+      "open": 0.18548,
+      "reported": false
     }
   ],
   "paper_days": [
