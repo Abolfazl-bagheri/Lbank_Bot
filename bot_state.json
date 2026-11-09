@@ -1,41 +1,6 @@
 {
   "open_trades": [
     {
-      "symbol": "ZHIPUUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 57.50892060088482,
-      "qty": 24.3441,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 56.0711975858627,
-      "tf": "1h",
-      "opened_at": 1794188721,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [
-        57.98
-      ],
-      "steps": [
-        {
-          "px": 57.06,
-          "ts": 1794188721
-        },
-        {
-          "px": 57.08,
-          "ts": 1794189671
-        },
-        {
-          "px": 57.84,
-          "ts": 1794192512
-        }
-      ],
-      "entry_candle_ts": 1794188700,
-      "last_leg_candle_ts": 1794192512,
-      "dry_run": true,
-      "order_id": "PAPER-ZHIPUUSDT-1794188721"
-    },
-    {
       "symbol": "YOFCUSDT",
       "side": "SELL",
       "status": "open",
@@ -187,38 +152,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "AGTUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.05449408515198487,
-      "qty": 11010.3693,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.053131733023185246,
-      "tf": "15m",
-      "opened_at": 1793710193,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.05225,
-          "ts": 1793710193
-        },
-        {
-          "px": 0.05569,
-          "ts": 1793711010
-        }
-      ],
-      "entry_candle_ts": 1793709900,
-      "last_leg_candle_ts": 1793710800,
-      "dry_run": true,
-      "order_id": "PAPER-AGTUSDT-1793710193",
-      "closed_at": 1793717532,
-      "close_px": 0.05252,
-      "pnl_usdt": 21.73540647370203
-    },
     {
       "symbol": "IDOLUSDT",
       "side": "SELL",
@@ -7413,6 +7346,46 @@
       "pnl_usdt": 18.8390594120109,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "ZHIPUUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 57.50892060088482,
+      "qty": 24.3441,
+      "margin": 70.0,
+      "leverage": 20,
+      "tp_price": 56.0711975858627,
+      "tf": "1h",
+      "opened_at": 1794188721,
+      "adds": 2,
+      "last_leg_margin": 40.0,
+      "used_res_levels": [
+        57.98
+      ],
+      "steps": [
+        {
+          "px": 57.06,
+          "ts": 1794188721
+        },
+        {
+          "px": 57.08,
+          "ts": 1794189671
+        },
+        {
+          "px": 57.84,
+          "ts": 1794192512
+        }
+      ],
+      "entry_candle_ts": 1794188700,
+      "last_leg_candle_ts": 1794192512,
+      "dry_run": true,
+      "order_id": "PAPER-ZHIPUUSDT-1794188721",
+      "closed_at": 1794201525,
+      "close_px": 56.0,
+      "pnl_usdt": 36.73323754239002,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -7625,46 +7598,6 @@
       "tf": "15m",
       "candle_ts": 1793430900,
       "side": "SELL"
-    },
-    {
-      "symbol": "PIEVERSEUSDT",
-      "tf": "15m",
-      "candle_ts": 1793941200,
-      "side": "SELL",
-      "upper": 1.3633298521805188,
-      "open": 1.3887,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "UAIUSDT",
-      "tf": "1h",
-      "candle_ts": 1793941200,
-      "side": "SELL",
-      "upper": 0.1526517700588468,
-      "open": 0.16439,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "AKEUSDT",
-      "tf": "1h",
-      "candle_ts": 1793941200,
-      "side": "SELL",
-      "upper": 0.0039315003432607775,
-      "open": 0.0042757,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "PIEVERSEUSDT",
-      "tf": "1h",
-      "candle_ts": 1793941200,
-      "side": "SELL",
-      "upper": 1.371639029434599,
-      "open": 1.3887,
-      "reported": true,
-      "filled": true
     },
     {
       "symbol": "AKEUSDT",
@@ -9432,7 +9365,8 @@
       "side": "SELL",
       "upper": 1.559340114539264,
       "open": 1.5848,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "PIEVERSEUSDT",
@@ -9440,6 +9374,16 @@
       "candle_ts": 1794200400,
       "side": "SELL",
       "upper": 1.5860836641677616,
+      "open": 1.6034,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "PIEVERSEUSDT",
+      "tf": "1h",
+      "candle_ts": 1794200400,
+      "side": "SELL",
+      "upper": 1.5734895583230268,
       "open": 1.6034,
       "reported": false
     }
@@ -9600,7 +9544,7 @@
     "SILVERUSDT": 1794240255,
     "1000000BABYDOGEUSDT": 1794240331
   },
-  "last_trade_report_ts": 1794199747,
+  "last_trade_report_ts": 1794200789,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
