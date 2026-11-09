@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1794264315,
+  "updated_at": 1794264322,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "FOLKSUSDT",
-      "tf": "15m",
-      "gap": 1.29,
-      "ts": 1794198519
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 0.32,
       "ts": 1794264315
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794264322
     }
   ],
   "trades": [
@@ -1442,6 +1442,19 @@
       "lev": 20,
       "px": 0.000801,
       "pnl": -0.25,
+      "tf": "15m"
+    },
+    {
+      "symbol": "MUSEBOOKUSDT",
+      "side": "SELL",
+      "entry": 1e-05,
+      "tp": 9.75e-06,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 1e-05,
+      "pnl": 0.0,
       "tf": "15m"
     }
   ],
