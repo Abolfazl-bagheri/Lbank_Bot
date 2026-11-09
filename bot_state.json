@@ -88,23 +88,29 @@
       "side": "SELL",
       "status": "open",
       "entry": 0.13723,
-      "qty": 1457.4073,
-      "margin": 10.0,
+      "qty": 4372.2218,
+      "margin": 30.0,
       "leverage": 20,
       "tp_price": 0.13379924999999998,
       "tf": "15m",
       "opened_at": 1794213036,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.13768
+      ],
       "steps": [
         {
           "px": 0.13723,
           "ts": 1794213036
+        },
+        {
+          "px": 0.13723,
+          "ts": 1794213241
         }
       ],
       "entry_candle_ts": 1794213000,
-      "last_leg_candle_ts": 1794213000,
+      "last_leg_candle_ts": 1794213241,
       "dry_run": true,
       "order_id": "PAPER-INITUSDT-1794213036"
     }
@@ -9418,6 +9424,15 @@
       "upper": 1.5701508221959504,
       "open": 1.6003,
       "reported": false
+    },
+    {
+      "symbol": "INITUSDT",
+      "tf": "15m",
+      "candle_ts": 1794213000,
+      "side": "SELL",
+      "upper": 0.1354419811567339,
+      "open": 0.13742,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -9573,7 +9588,8 @@
     "CAPETHUSDT": 1794253646,
     "NEIRO1USDT": 1794253651,
     "1000SATSUSDT": 1794253652,
-    "CZUSDT": 1794253676
+    "CZUSDT": 1794253676,
+    "AI1USDT": 1794256268
   },
   "last_trade_report_ts": 1794211647,
   "last_known_version": "2.7.2",
