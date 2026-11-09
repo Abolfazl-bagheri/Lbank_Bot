@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1794211284,
+  "updated_at": 1794211646,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "UMCUSDT",
-      "tf": "15m",
-      "gap": 3.05,
-      "ts": 1794187718
-    },
     {
       "kind": "GAP",
       "symbol": "EWTUSDT",
@@ -1402,22 +1395,16 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1794211284
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794211646
     }
   ],
   "trades": [
-    {
-      "symbol": "EWTUSDT",
-      "side": "SELL",
-      "entry": 93.0,
-      "tp": 90.675,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 90.49,
-      "pnl": 5.3978,
-      "tf": "1h"
-    },
     {
       "symbol": "UNITREEUSDT",
       "side": "SELL",
@@ -1473,16 +1460,16 @@
   ],
   "start": 1000.0,
   "session_start": 1794182902,
-  "realized": 402.4848,
-  "closed_n": 9,
-  "open_upnl": 0.1084,
-  "equity": 1402.5932,
+  "realized": 407.8827,
+  "closed_n": 10,
+  "open_upnl": -5.2894,
+  "equity": 1402.5933,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 402.4848,
+    "profit": 407.8827,
     "loss": 0,
-    "count": 9
+    "count": 10
   }
 }
