@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1794196870,
+  "updated_at": 1794196878,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "MERLUSDT",
-      "tf": "1h",
-      "gap": 2.82,
-      "ts": 1794167623
-    },
     {
       "kind": "GAP",
       "symbol": "AIOUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "4h",
       "gap": 2.03,
       "ts": 1794196870
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794196878
     }
   ],
   "trades": [
@@ -1456,6 +1456,19 @@
       "px": 14.81,
       "pnl": 2.5511,
       "tf": "1h"
+    },
+    {
+      "symbol": "UNITREEUSDT",
+      "side": "SELL",
+      "entry": 105.3,
+      "tp": 102.66749999999999,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 105.3,
+      "pnl": 0.0,
+      "tf": "4h"
     }
   ],
   "start": 1000.0,
