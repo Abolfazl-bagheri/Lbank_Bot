@@ -84,31 +84,6 @@
       "order_id": "PAPER-MOOUSDT-1794263441"
     },
     {
-      "symbol": "MUSEBOOKUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 1e-05,
-      "qty": 20000000.0,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 9.75e-06,
-      "tf": "15m",
-      "opened_at": 1794264317,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 1e-05,
-          "ts": 1794264317
-        }
-      ],
-      "entry_candle_ts": 1794264300,
-      "last_leg_candle_ts": 1794264300,
-      "dry_run": true,
-      "order_id": "PAPER-MUSEBOOKUSDT-1794264317"
-    },
-    {
       "symbol": "SECZUSDT",
       "side": "SELL",
       "status": "open",
@@ -185,45 +160,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "AMDUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 517.0685801344472,
-      "qty": 2.707531,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 504.141865631086,
-      "tf": "1h",
-      "opened_at": 1793743437,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [
-        521.05,
-        515.24
-      ],
-      "steps": [
-        {
-          "px": 523.27,
-          "ts": 1793743437
-        },
-        {
-          "px": 519.4,
-          "ts": 1793745445
-        },
-        {
-          "px": 514.39,
-          "ts": 1793751709
-        }
-      ],
-      "entry_candle_ts": 1793743200,
-      "last_leg_candle_ts": 1793751709,
-      "dry_run": true,
-      "order_id": "PAPER-AMDUSDT-1793743437",
-      "closed_at": 1793759980,
-      "close_px": 502.79,
-      "pnl_usdt": 38.66027245946422
-    },
     {
       "symbol": "CARDSUSDT",
       "side": "SELL",
@@ -7392,6 +7328,36 @@
       "pnl_usdt": 5.298013245033126,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "MUSEBOOKUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 1e-05,
+      "qty": 20000000.0,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 9.75e-06,
+      "tf": "15m",
+      "opened_at": 1794264317,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 1e-05,
+          "ts": 1794264317
+        }
+      ],
+      "entry_candle_ts": 1794264300,
+      "last_leg_candle_ts": 1794264300,
+      "dry_run": true,
+      "order_id": "PAPER-MUSEBOOKUSDT-1794264317",
+      "closed_at": 1794267209,
+      "close_px": 9.47e-06,
+      "pnl_usdt": 10.600000000000001,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -9259,6 +9225,15 @@
       "open": 0.00696,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "BONERUSDT",
+      "tf": "15m",
+      "candle_ts": 1794267000,
+      "side": "SELL",
+      "upper": 0.004975562765869744,
+      "open": 0.00507,
+      "reported": false
     }
   ],
   "paper_days": [
