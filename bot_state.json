@@ -82,62 +82,9 @@
       "last_leg_candle_ts": 1794218400,
       "dry_run": true,
       "order_id": "PAPER-IDOLUSDT-1794218438"
-    },
-    {
-      "symbol": "ZCATUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.0148,
-      "qty": 13513.5135,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.01443,
-      "tf": "15m",
-      "opened_at": 1794220224,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.0148,
-          "ts": 1794220224
-        }
-      ],
-      "entry_candle_ts": 1794220200,
-      "last_leg_candle_ts": 1794220200,
-      "dry_run": true,
-      "order_id": "PAPER-ZCATUSDT-1794220224"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "CATEUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.0409,
-      "qty": 4889.9756,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.039877499999999996,
-      "tf": "1h",
-      "opened_at": 1793747162,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.0409,
-          "ts": 1793747162
-        }
-      ],
-      "entry_candle_ts": 1793746800,
-      "last_leg_candle_ts": 1793746800,
-      "dry_run": true,
-      "order_id": "PAPER-CATEUSDT-1793747162",
-      "closed_at": 1793754419,
-      "close_px": 0.03861,
-      "pnl_usdt": 11.198044009779956
-    },
     {
       "symbol": "CVNAUSDT",
       "side": "SELL",
@@ -7361,6 +7308,36 @@
       "pnl_usdt": 9.228901032179749,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "ZCATUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.0148,
+      "qty": 13513.5135,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.01443,
+      "tf": "15m",
+      "opened_at": 1794220224,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.0148,
+          "ts": 1794220224
+        }
+      ],
+      "entry_candle_ts": 1794220200,
+      "last_leg_candle_ts": 1794220200,
+      "dry_run": true,
+      "order_id": "PAPER-ZCATUSDT-1794220224",
+      "closed_at": 1794221384,
+      "close_px": 0.01435,
+      "pnl_usdt": 6.081081081081091,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -9476,7 +9453,8 @@
       "side": "SELL",
       "upper": 0.014591168278324481,
       "open": 0.01477,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -9601,7 +9579,6 @@
     "LIGHT1USDT": 1794213992,
     "QUACKAIUSDT": 1794215793,
     "LWLGUSDT": 1794218578,
-    "SAFE1USDT": 1794219393,
     "AEHRUSDT": 1794219394,
     "XTIUSDT": 1794219396,
     "POETUSDT": 1794223905,
@@ -9633,9 +9610,10 @@
     "UP2USDT": 1794260810,
     "BTCDOMUSDT": 1794262603,
     "OSCRUSDT": 1794262610,
-    "BIO1USDT": 1794262616
+    "BIO1USDT": 1794262616,
+    "SAFE1USDT": 1794264407
   },
-  "last_trade_report_ts": 1794218773,
+  "last_trade_report_ts": 1794220466,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
