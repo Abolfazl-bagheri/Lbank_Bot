@@ -125,6 +125,31 @@
       "last_leg_candle_ts": 1794195284,
       "dry_run": true,
       "order_id": "PAPER-UMCUSDT-1794193294"
+    },
+    {
+      "symbol": "UNITREEUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 105.3,
+      "qty": 1.8993,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 102.66749999999999,
+      "tf": "4h",
+      "opened_at": 1794196872,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 105.3,
+          "ts": 1794196872
+        }
+      ],
+      "entry_candle_ts": 1794196800,
+      "last_leg_candle_ts": 1794196800,
+      "dry_run": true,
+      "order_id": "PAPER-UNITREEUSDT-1794196872"
     }
   ],
   "trade_history": [
@@ -7568,16 +7593,6 @@
       "side": "SELL"
     },
     {
-      "symbol": "AKEUSDT",
-      "tf": "15m",
-      "candle_ts": 1793936700,
-      "side": "SELL",
-      "upper": 0.0031071348617230593,
-      "open": 0.003237,
-      "reported": true,
-      "filled": false
-    },
-    {
       "symbol": "UAIUSDT",
       "tf": "1h",
       "candle_ts": 1793937600,
@@ -9533,7 +9548,6 @@
     "1000BTTCUSDT": 1794189823,
     "OSCRUSDT": 1794190598,
     "JUVUSDT": 1794190600,
-    "OROCHIUSDT": 1794195128,
     "KNTQUSDT": 1794196979,
     "UP2USDT": 1794198698,
     "ONSEMIUSDT": 1794198742,
@@ -9566,9 +9580,10 @@
     "GSTOCKUSDT": 1794231093,
     "TOADUSDT": 1794231118,
     "BEMUSDT": 1794233803,
-    "TSMONUSDT": 1794234714
+    "TSMONUSDT": 1794234714,
+    "OROCHIUSDT": 1794239182
   },
-  "last_trade_report_ts": 1794193648,
+  "last_trade_report_ts": 1794195296,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
