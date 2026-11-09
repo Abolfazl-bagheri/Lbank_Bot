@@ -103,6 +103,31 @@
       "last_leg_candle_ts": 1794211200,
       "dry_run": true,
       "order_id": "PAPER-SOXSUSDT-1794211255"
+    },
+    {
+      "symbol": "SKDDUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 12.538,
+      "qty": 15.9515,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 12.22455,
+      "tf": "4h",
+      "opened_at": 1794211267,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 12.538,
+          "ts": 1794211267
+        }
+      ],
+      "entry_candle_ts": 1794211200,
+      "last_leg_candle_ts": 1794211200,
+      "dry_run": true,
+      "order_id": "PAPER-SKDDUSDT-1794211267"
     }
   ],
   "trade_history": [
@@ -9396,6 +9421,15 @@
       "open": 0.1642,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "SOXSUSDT",
+      "tf": "4h",
+      "candle_ts": 1794211200,
+      "side": "SELL",
+      "upper": 76.56147509094949,
+      "open": 77.52,
+      "reported": false
     }
   ],
   "paper_days": [
