@@ -49,6 +49,31 @@
       "last_leg_candle_ts": 1794188700,
       "dry_run": true,
       "order_id": "PAPER-MINIMAXUSDT-1794188731"
+    },
+    {
+      "symbol": "UNITREEUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 110.22,
+      "qty": 1.8146,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 107.4645,
+      "tf": "15m",
+      "opened_at": 1794188753,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 110.22,
+          "ts": 1794188753
+        }
+      ],
+      "entry_candle_ts": 1794188700,
+      "last_leg_candle_ts": 1794188700,
+      "dry_run": true,
+      "order_id": "PAPER-UNITREEUSDT-1794188753"
     }
   ],
   "trade_history": [
@@ -9364,6 +9389,15 @@
       "side": "SELL",
       "upper": 56.202988977338684,
       "open": 56.87,
+      "reported": false
+    },
+    {
+      "symbol": "MINIMAXUSDT",
+      "tf": "15m",
+      "candle_ts": 1794188700,
+      "side": "SELL",
+      "upper": 20.625476250110005,
+      "open": 20.89,
       "reported": false
     }
   ],
