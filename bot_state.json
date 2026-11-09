@@ -132,6 +132,31 @@
       "last_leg_candle_ts": 1794265200,
       "dry_run": true,
       "order_id": "PAPER-BONERUSDT-1794265241"
+    },
+    {
+      "symbol": "SECZUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 8.01,
+      "qty": 24.9688,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 7.809749999999999,
+      "tf": "1h",
+      "opened_at": 1794265307,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 8.01,
+          "ts": 1794265307
+        }
+      ],
+      "entry_candle_ts": 1794265200,
+      "last_leg_candle_ts": 1794265200,
+      "dry_run": true,
+      "order_id": "PAPER-SECZUSDT-1794265307"
     }
   ],
   "trade_history": [
@@ -9202,6 +9227,15 @@
       "side": "SELL",
       "upper": 9.968303915315333e-06,
       "open": 1.008e-05,
+      "reported": false
+    },
+    {
+      "symbol": "BONERUSDT",
+      "tf": "1h",
+      "candle_ts": 1794265200,
+      "side": "SELL",
+      "upper": 0.004489823161690062,
+      "open": 0.00461,
       "reported": false
     }
   ],
