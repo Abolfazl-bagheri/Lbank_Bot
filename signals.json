@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1794267025,
+  "updated_at": 1794267216,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "PIEVERSEUSDT",
-      "tf": "15m",
-      "gap": 1.5,
-      "ts": 1794201221
-    },
     {
       "kind": "GAP",
       "symbol": "B2USDT",
@@ -1402,6 +1395,13 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1794267025
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794267216
     }
   ],
   "trades": [
@@ -1445,19 +1445,6 @@
       "tf": "15m"
     },
     {
-      "symbol": "MUSEBOOKUSDT",
-      "side": "SELL",
-      "entry": 1e-05,
-      "tp": 9.75e-06,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 9.47e-06,
-      "pnl": 10.6,
-      "tf": "15m"
-    },
-    {
       "symbol": "SECZUSDT",
       "side": "SELL",
       "entry": 8.01,
@@ -1469,19 +1456,6 @@
       "px": 7.86,
       "pnl": 3.7453,
       "tf": "1h"
-    },
-    {
-      "symbol": "CLAUDIAUSDT",
-      "side": "SELL",
-      "entry": 0.007449,
-      "tp": 0.007262775,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.006731,
-      "pnl": 19.2778,
-      "tf": "15m"
     },
     {
       "symbol": "BONERUSDT",
@@ -1499,16 +1473,16 @@
   ],
   "start": 1000.0,
   "session_start": 1794182902,
-  "realized": 689.1934,
-  "closed_n": 24,
-  "open_upnl": -332.1092,
-  "equity": 1357.0842,
+  "realized": 719.0711,
+  "closed_n": 26,
+  "open_upnl": -361.987,
+  "equity": 1357.0841,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 689.1934,
+    "profit": 719.0711,
     "loss": 0,
-    "count": 24
+    "count": 26
   }
 }
