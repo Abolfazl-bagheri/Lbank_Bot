@@ -59,31 +59,6 @@
       "order_id": "PAPER-PIEVERSEUSDT-1794199526"
     },
     {
-      "symbol": "SOXSUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 77.57,
-      "qty": 2.5783,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 75.63074999999999,
-      "tf": "4h",
-      "opened_at": 1794211255,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 77.57,
-          "ts": 1794211255
-        }
-      ],
-      "entry_candle_ts": 1794211200,
-      "last_leg_candle_ts": 1794211200,
-      "dry_run": true,
-      "order_id": "PAPER-SOXSUSDT-1794211255"
-    },
-    {
       "symbol": "SKDDUSDT",
       "side": "SELL",
       "status": "open",
@@ -110,38 +85,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "BUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.1340486860375805,
-      "qty": 4475.9857,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.13069746888664097,
-      "tf": "1h",
-      "opened_at": 1793711121,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.13169,
-          "ts": 1793711121
-        },
-        {
-          "px": 0.13526,
-          "ts": 1793714646
-        }
-      ],
-      "entry_candle_ts": 1793710800,
-      "last_leg_candle_ts": 1793714400,
-      "dry_run": true,
-      "order_id": "PAPER-BUSDT-1793711121",
-      "closed_at": 1793742746,
-      "close_px": 0.13065,
-      "pnl_usdt": 15.212470057159766
-    },
     {
       "symbol": "ANETUSDT",
       "side": "SELL",
@@ -7381,6 +7324,36 @@
       "pnl_usdt": 5.397849462365603,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "SOXSUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 77.57,
+      "qty": 2.5783,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 75.63074999999999,
+      "tf": "4h",
+      "opened_at": 1794211255,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 77.57,
+          "ts": 1794211255
+        }
+      ],
+      "entry_candle_ts": 1794211200,
+      "last_leg_candle_ts": 1794211200,
+      "dry_run": true,
+      "order_id": "PAPER-SOXSUSDT-1794211255",
+      "closed_at": 1794212319,
+      "close_px": 74.92,
+      "pnl_usdt": 6.832538352455825,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -9578,7 +9551,7 @@
     "1000SATSUSDT": 1794253652,
     "CZUSDT": 1794253676
   },
-  "last_trade_report_ts": 1794210614,
+  "last_trade_report_ts": 1794211647,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
