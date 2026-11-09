@@ -142,6 +142,31 @@
       "last_leg_candle_ts": 1794259800,
       "dry_run": true,
       "order_id": "PAPER-SECZUSDT-1794259891"
+    },
+    {
+      "symbol": "ASTSUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 38.54,
+      "qty": 5.1894,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 37.576499999999996,
+      "tf": "15m",
+      "opened_at": 1794261625,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 38.54,
+          "ts": 1794261625
+        }
+      ],
+      "entry_candle_ts": 1794261600,
+      "last_leg_candle_ts": 1794261600,
+      "dry_run": true,
+      "order_id": "PAPER-ASTSUSDT-1794261625"
     }
   ],
   "trade_history": [
@@ -9297,7 +9322,6 @@
     "1000BTTCUSDT": 1794189823,
     "JUVUSDT": 1794190600,
     "KNTQUSDT": 1794196979,
-    "ONSEMIUSDT": 1794198742,
     "SIMOUSDT": 1794199618,
     "CYBERLEEKUSDT": 1794209504,
     "MUSTOCKUSDT": 1794211442,
@@ -9320,7 +9344,6 @@
     "OFCUSDT": 1794251008,
     "O1USDT": 1794253602,
     "CAPETHUSDT": 1794253646,
-    "UP2USDT": 1794260810,
     "BTCDOMUSDT": 1794262603,
     "OSCRUSDT": 1794262610,
     "BIO1USDT": 1794262616,
@@ -9339,7 +9362,7 @@
     "AI1USDT": 1794300376,
     "MANCERUSDT": 1794302216
   },
-  "last_trade_report_ts": 1794260035,
+  "last_trade_report_ts": 1794260939,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
