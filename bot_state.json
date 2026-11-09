@@ -86,73 +86,9 @@
       "last_leg_candle_ts": 1794258000,
       "dry_run": true,
       "order_id": "PAPER-INITUSDT-1794256260"
-    },
-    {
-      "symbol": "TAGUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.0007413,
-      "qty": 269796.3038,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.0007227675,
-      "tf": "1h",
-      "opened_at": 1794258089,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.0007413,
-          "ts": 1794258089
-        }
-      ],
-      "entry_candle_ts": 1794258000,
-      "last_leg_candle_ts": 1794258000,
-      "dry_run": true,
-      "order_id": "PAPER-TAGUSDT-1794258089"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "SAGAUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.01729659668001587,
-      "qty": 80940.7785,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 0.016864181763015473,
-      "tf": "1h",
-      "opened_at": 1793711209,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [
-        0.01705,
-        0.01762
-      ],
-      "steps": [
-        {
-          "px": 0.01691,
-          "ts": 1793711209
-        },
-        {
-          "px": 0.017,
-          "ts": 1793716514
-        },
-        {
-          "px": 0.01755,
-          "ts": 1793723715
-        }
-      ],
-      "entry_candle_ts": 1793710800,
-      "last_leg_candle_ts": 1793723715,
-      "dry_run": true,
-      "order_id": "PAPER-SAGAUSDT-1793711209",
-      "closed_at": 1793755353,
-      "close_px": 0.0168,
-      "pnl_usdt": 40.1949218614481
-    },
     {
       "symbol": "BASUSDT",
       "side": "SELL",
@@ -7355,6 +7291,36 @@
       "pnl_usdt": 23.50869088179245,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "TAGUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.0007413,
+      "qty": 269796.3038,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0007227675,
+      "tf": "1h",
+      "opened_at": 1794258089,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.0007413,
+          "ts": 1794258089
+        }
+      ],
+      "entry_candle_ts": 1794258000,
+      "last_leg_candle_ts": 1794258000,
+      "dry_run": true,
+      "order_id": "PAPER-TAGUSDT-1794258089",
+      "closed_at": 1794259121,
+      "close_px": 0.0007192,
+      "pnl_usdt": 5.962498313773086,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -9133,6 +9099,15 @@
       "upper": 0.17542889535679154,
       "open": 0.18548,
       "reported": false
+    },
+    {
+      "symbol": "TAGUSDT",
+      "tf": "1h",
+      "candle_ts": 1794258000,
+      "side": "SELL",
+      "upper": 0.0007327868145220473,
+      "open": 0.0007405,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -9231,7 +9206,6 @@
     "ARGUSDT": 1794114249,
     "APROUSDT": 1794115028,
     "SXTUSDT": 1794125089,
-    "MANCERUSDT": 1794126726,
     "GALUSDT": 1794141094,
     "B3USDT": 1794143806,
     "RIOTUSDT": 1794157401,
@@ -9286,9 +9260,10 @@
     "1000WOJAKUSDT": 1794299575,
     "CZUSDT": 1794299580,
     "NEIRO1USDT": 1794299583,
-    "AI1USDT": 1794300376
+    "AI1USDT": 1794300376,
+    "MANCERUSDT": 1794302216
   },
-  "last_trade_report_ts": 1794256490,
+  "last_trade_report_ts": 1794258360,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
