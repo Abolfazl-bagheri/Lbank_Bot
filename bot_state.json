@@ -93,24 +93,30 @@
       "symbol": "CLANKERUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 15.59,
-      "qty": 12.8287,
-      "margin": 10.0,
+      "entry": 15.590000000000002,
+      "qty": 38.4862,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 15.200249999999999,
+      "tp_price": 15.20025,
       "tf": "15m",
       "opened_at": 1794213931,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        15.63
+      ],
       "steps": [
         {
           "px": 15.59,
           "ts": 1794213931
+        },
+        {
+          "px": 15.59,
+          "ts": 1794214127
         }
       ],
       "entry_candle_ts": 1794213900,
-      "last_leg_candle_ts": 1794213900,
+      "last_leg_candle_ts": 1794214127,
       "dry_run": true,
       "order_id": "PAPER-CLANKERUSDT-1794213931"
     }
