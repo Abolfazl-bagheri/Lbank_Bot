@@ -157,6 +157,31 @@
       "last_leg_candle_ts": 1794265200,
       "dry_run": true,
       "order_id": "PAPER-SECZUSDT-1794265307"
+    },
+    {
+      "symbol": "CLAUDIAUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.007449,
+      "qty": 26849.2415,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.007262775,
+      "tf": "15m",
+      "opened_at": 1794265357,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.007449,
+          "ts": 1794265357
+        }
+      ],
+      "entry_candle_ts": 1794265200,
+      "last_leg_candle_ts": 1794265200,
+      "dry_run": true,
+      "order_id": "PAPER-CLAUDIAUSDT-1794265357"
     }
   ],
   "trade_history": [
@@ -9236,6 +9261,15 @@
       "side": "SELL",
       "upper": 0.004489823161690062,
       "open": 0.00461,
+      "reported": false
+    },
+    {
+      "symbol": "SECZUSDT",
+      "tf": "1h",
+      "candle_ts": 1794265200,
+      "side": "SELL",
+      "upper": 7.8326159436299,
+      "open": 8.06,
       "reported": false
     }
   ],
