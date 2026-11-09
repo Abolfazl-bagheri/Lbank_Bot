@@ -159,15 +159,15 @@
       "symbol": "B2USDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.45861967005219706,
-      "qty": 1308.2736,
-      "margin": 30.0,
+      "entry": 0.4587798166407827,
+      "qty": 3051.5728,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 0.4471541783008921,
-      "tf": "15m",
+      "tp_price": 0.4473103212247631,
+      "tf": "1h",
       "opened_at": 1794202220,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [],
       "steps": [
         {
@@ -177,10 +177,14 @@
         {
           "px": 0.4604,
           "ts": 1794203116
+        },
+        {
+          "px": 0.4589,
+          "ts": 1794204061
         }
       ],
       "entry_candle_ts": 1794202200,
-      "last_leg_candle_ts": 1794203100,
+      "last_leg_candle_ts": 1794204000,
       "dry_run": true,
       "order_id": "PAPER-B2USDT-1794202220"
     },
@@ -9628,7 +9632,6 @@
     "UP2USDT": 1794198698,
     "ONSEMIUSDT": 1794198742,
     "SIMOUSDT": 1794199618,
-    "AINBSCUSDT": 1794203197,
     "FLYUSDT": 1794203212,
     "O1USDT": 1794209461,
     "CYBERLEEKUSDT": 1794209504,
@@ -9663,7 +9666,7 @@
     "1000000BABYDOGEUSDT": 1794240331,
     "FIGUSDT": 1794246425
   },
-  "last_trade_report_ts": 1794201544,
+  "last_trade_report_ts": 1794203390,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
