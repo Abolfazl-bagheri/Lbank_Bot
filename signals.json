@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1794263448,
+  "updated_at": 1794263623,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "UNITREEUSDT",
-      "tf": "4h",
-      "gap": 2.03,
-      "ts": 1794196870
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1395,13 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1794263448
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794263623
     }
   ],
   "trades": [
@@ -1432,32 +1432,6 @@
       "tf": "4h"
     },
     {
-      "symbol": "INITUSDT",
-      "side": "SELL",
-      "entry": 0.1890190095667112,
-      "tp": 0.18429353432754342,
-      "adds": 2,
-      "pele": 3,
-      "margin": 70.0,
-      "lev": 20,
-      "px": 0.18225,
-      "pnl": 50.1358,
-      "tf": "1h"
-    },
-    {
-      "symbol": "ASTSUSDT",
-      "side": "SELL",
-      "entry": 38.54,
-      "tp": 37.576499999999996,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 37.26,
-      "pnl": 6.6424,
-      "tf": "15m"
-    },
-    {
       "symbol": "MOOUSDT",
       "side": "SELL",
       "entry": 0.0008,
@@ -1473,16 +1447,16 @@
   ],
   "start": 1000.0,
   "session_start": 1794182902,
-  "realized": 627.1171,
-  "closed_n": 21,
-  "open_upnl": -324.8386,
+  "realized": 683.8953,
+  "closed_n": 23,
+  "open_upnl": -381.6168,
   "equity": 1302.2785,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 627.1171,
+    "profit": 683.8953,
     "loss": 0,
-    "count": 21
+    "count": 23
   }
 }
