@@ -1,82 +1,6 @@
 {
-  "open_trades": [
-    {
-      "symbol": "BONERUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.005499747039861624,
-      "qty": 254557.1623,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 0.005362253363865083,
-      "tf": "1h",
-      "opened_at": 1794272458,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [
-        0.00556
-      ],
-      "steps": [
-        {
-          "px": 0.00527,
-          "ts": 1794272458
-        },
-        {
-          "px": 0.00554,
-          "ts": 1794276047
-        },
-        {
-          "px": 0.00554,
-          "ts": 1794276336
-        }
-      ],
-      "entry_candle_ts": 1794272400,
-      "last_leg_candle_ts": 1794276336,
-      "dry_run": true,
-      "order_id": "PAPER-BONERUSDT-1794272458"
-    }
-  ],
+  "open_trades": [],
   "trade_history": [
-    {
-      "symbol": "SHEINUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 4.896998402179304,
-      "qty": 285.88939999999997,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 4.774573442124821,
-      "tf": "4h",
-      "opened_at": 1793761503,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [
-        4.925
-      ],
-      "steps": [
-        {
-          "px": 4.86,
-          "ts": 1793761503
-        },
-        {
-          "px": 4.87,
-          "ts": 1793765169
-        },
-        {
-          "px": 4.92,
-          "ts": 1793772445
-        }
-      ],
-      "entry_candle_ts": 1793761200,
-      "last_leg_candle_ts": 1793772445,
-      "dry_run": true,
-      "order_id": "PAPER-SHEINUSDT-1793761503",
-      "closed_at": 1793786680,
-      "close_px": 4.9,
-      "pnl_usdt": -0.8581250398416957,
-      "close_reason": "NIGHT_RESET",
-      "why": "NIGHT_RESET"
-    },
     {
       "symbol": "USELESSUSDT",
       "side": "SELL",
@@ -7105,6 +7029,46 @@
       "pnl_usdt": 5.6825604180274505,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "BONERUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.005499747039861624,
+      "qty": 254557.1623,
+      "margin": 70.0,
+      "leverage": 20,
+      "tp_price": 0.005362253363865083,
+      "tf": "1h",
+      "opened_at": 1794272458,
+      "adds": 2,
+      "last_leg_margin": 40.0,
+      "used_res_levels": [
+        0.00556
+      ],
+      "steps": [
+        {
+          "px": 0.00527,
+          "ts": 1794272458
+        },
+        {
+          "px": 0.00554,
+          "ts": 1794276047
+        },
+        {
+          "px": 0.00554,
+          "ts": 1794276336
+        }
+      ],
+      "entry_candle_ts": 1794272400,
+      "last_leg_candle_ts": 1794276336,
+      "dry_run": true,
+      "order_id": "PAPER-BONERUSDT-1794272458",
+      "closed_at": 1794292368,
+      "close_px": 0.00526,
+      "pnl_usdt": 61.02932614419267,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -7317,46 +7281,6 @@
       "tf": "15m",
       "candle_ts": 1793430900,
       "side": "SELL"
-    },
-    {
-      "symbol": "ESPORTSUSDT",
-      "tf": "15m",
-      "candle_ts": 1794031200,
-      "side": "SELL",
-      "upper": 0.011150183261036634,
-      "open": 0.0113,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "ESPORTSUSDT",
-      "tf": "1h",
-      "candle_ts": 1794031200,
-      "side": "SELL",
-      "upper": 0.011116200851067909,
-      "open": 0.0113,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "PIEVERSEUSDT",
-      "tf": "1h",
-      "candle_ts": 1794031200,
-      "side": "SELL",
-      "upper": 1.4726399113528186,
-      "open": 1.4955,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "ESPORTSUSDT",
-      "tf": "15m",
-      "candle_ts": 1794032100,
-      "side": "SELL",
-      "upper": 0.011904076210428955,
-      "open": 0.01243,
-      "reported": true,
-      "filled": true
     },
     {
       "symbol": "ESPORTSUSDT",
