@@ -1,55 +1,6 @@
 {
   "open_trades": [
     {
-      "symbol": "ONEUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.00176343803402776,
-      "qty": 7145133.4025,
-      "margin": 630.0,
-      "leverage": 20,
-      "tp_price": 0.0017193520831770659,
-      "tf": "1h",
-      "opened_at": 1794296802,
-      "adds": 5,
-      "last_leg_margin": 320.0,
-      "used_res_levels": [
-        0.001607,
-        0.00167,
-        0.001759
-      ],
-      "steps": [
-        {
-          "px": 0.0015759,
-          "ts": 1794296802
-        },
-        {
-          "px": 0.0016024,
-          "ts": 1794298668
-        },
-        {
-          "px": 0.0016662,
-          "ts": 1794299570
-        },
-        {
-          "px": 0.0018006,
-          "ts": 1794300351
-        },
-        {
-          "px": 0.0018227,
-          "ts": 1794301282
-        },
-        {
-          "px": 0.0017562,
-          "ts": 1794305054
-        }
-      ],
-      "entry_candle_ts": 1794296700,
-      "last_leg_candle_ts": 1794305054,
-      "dry_run": true,
-      "order_id": "PAPER-ONEUSDT-1794296802"
-    },
-    {
       "symbol": "ARIAUSDT",
       "side": "SELL",
       "status": "open",
@@ -130,36 +81,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "MUSEBOOKUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 1.208e-05,
-      "qty": 16556291.3907,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 1.1778e-05,
-      "tf": "15m",
-      "opened_at": 1793792873,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 1.208e-05,
-          "ts": 1793792873
-        }
-      ],
-      "entry_candle_ts": 1793792700,
-      "last_leg_candle_ts": 1793792700,
-      "dry_run": true,
-      "order_id": "PAPER-MUSEBOOKUSDT-1793792873",
-      "closed_at": 1793797652,
-      "close_px": 1.171e-05,
-      "pnl_usdt": 6.125827814569535,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "SSPCUSDT",
       "side": "SELL",
@@ -7191,6 +7112,60 @@
       "pnl_usdt": 7.3190348525469116,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "ONEUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.00176343803402776,
+      "qty": 7145133.4025,
+      "margin": 630.0,
+      "leverage": 20,
+      "tp_price": 0.0017193520831770659,
+      "tf": "1h",
+      "opened_at": 1794296802,
+      "adds": 5,
+      "last_leg_margin": 320.0,
+      "used_res_levels": [
+        0.001607,
+        0.00167,
+        0.001759
+      ],
+      "steps": [
+        {
+          "px": 0.0015759,
+          "ts": 1794296802
+        },
+        {
+          "px": 0.0016024,
+          "ts": 1794298668
+        },
+        {
+          "px": 0.0016662,
+          "ts": 1794299570
+        },
+        {
+          "px": 0.0018006,
+          "ts": 1794300351
+        },
+        {
+          "px": 0.0018227,
+          "ts": 1794301282
+        },
+        {
+          "px": 0.0017562,
+          "ts": 1794305054
+        }
+      ],
+      "entry_candle_ts": 1794296700,
+      "last_leg_candle_ts": 1794305054,
+      "dry_run": true,
+      "order_id": "PAPER-ONEUSDT-1794296802",
+      "closed_at": 1794323925,
+      "close_px": 0.0017176,
+      "pnl_usdt": 327.5188680322436,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -9080,7 +9055,8 @@
       "side": "SELL",
       "upper": 0.23662418331225896,
       "open": 0.24273,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "QNTXUSDT",
@@ -9089,7 +9065,8 @@
       "side": "SELL",
       "upper": 41.530767081141306,
       "open": 42.06,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "MARAUSDT",
@@ -9098,7 +9075,8 @@
       "side": "SELL",
       "upper": 7.018176231196522,
       "open": 7.096,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "AKEUSDT",
@@ -9107,7 +9085,8 @@
       "side": "SELL",
       "upper": 0.0026639436138873964,
       "open": 0.0026966,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "INITUSDT",
@@ -9116,7 +9095,8 @@
       "side": "SELL",
       "upper": 0.24517584450653276,
       "open": 0.2491,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "MARAUSDT",
@@ -9134,6 +9114,54 @@
       "side": "SELL",
       "upper": 529.716933174743,
       "open": 535.37,
+      "reported": true,
+      "filled": false
+    },
+    {
+      "symbol": "INITUSDT",
+      "tf": "1h",
+      "candle_ts": 1794322800,
+      "side": "SELL",
+      "upper": 0.24107894017722756,
+      "open": 0.2491,
+      "reported": false
+    },
+    {
+      "symbol": "TERUSDT",
+      "tf": "15m",
+      "candle_ts": 1794322800,
+      "side": "SELL",
+      "upper": 250.58427426180452,
+      "open": 253.5,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "INTWUSDT",
+      "tf": "15m",
+      "candle_ts": 1794322800,
+      "side": "SELL",
+      "upper": 6.069344401387451,
+      "open": 6.17,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "AMDUSDT",
+      "tf": "1h",
+      "candle_ts": 1794322800,
+      "side": "SELL",
+      "upper": 529.7492137312502,
+      "open": 535.37,
+      "reported": false
+    },
+    {
+      "symbol": "DJTUSDT",
+      "tf": "15m",
+      "candle_ts": 1794323700,
+      "side": "SELL",
+      "upper": 4.366546274115746,
+      "open": 4.429,
       "reported": false
     }
   ],
@@ -9300,9 +9328,10 @@
     "STXSTOCKUSDT": 1794355532,
     "AMCUSDT": 1794358021,
     "ONSEMIUSDT": 1794360726,
-    "CAPETHUSDT": 1794361582
+    "CAPETHUSDT": 1794361582,
+    "O1USDT": 1794366307
   },
-  "last_trade_report_ts": 1794322160,
+  "last_trade_report_ts": 1794323300,
   "last_known_version": "2.7.4",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
