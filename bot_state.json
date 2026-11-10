@@ -29,24 +29,28 @@
       "symbol": "INITUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.24561,
-      "qty": 814.2991,
-      "margin": 10.0,
+      "entry": 0.26472289561270335,
+      "qty": 2266.5209999999997,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.23946974999999998,
+      "tp_price": 0.25810482322238576,
       "tf": "4h",
       "opened_at": 1794326511,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 0.24561,
           "ts": 1794326511
+        },
+        {
+          "px": 0.27544,
+          "ts": 1794340876
         }
       ],
       "entry_candle_ts": 1794326400,
-      "last_leg_candle_ts": 1794326400,
+      "last_leg_candle_ts": 1794340800,
       "dry_run": true,
       "order_id": "PAPER-INITUSDT-1794326511"
     },
@@ -9110,6 +9114,15 @@
       "side": "SELL",
       "upper": 0.03701067825518485,
       "open": 0.03854,
+      "reported": false
+    },
+    {
+      "symbol": "MERLUSDT",
+      "tf": "1h",
+      "candle_ts": 1794340800,
+      "side": "SELL",
+      "upper": 0.034951156141860104,
+      "open": 0.03562,
       "reported": false
     }
   ],
