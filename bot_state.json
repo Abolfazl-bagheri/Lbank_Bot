@@ -26,66 +26,32 @@
       "order_id": "PAPER-ARIAUSDT-1794297644"
     },
     {
-      "symbol": "MERLUSDT",
+      "symbol": "EQTUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.035869727323355756,
-      "qty": 16727.197200000002,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.03497298414027186,
-      "tf": "1h",
-      "opened_at": 1794339031,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.03601,
-          "ts": 1794339031
-        },
-        {
-          "px": 0.0358,
-          "ts": 1794340850
-        }
-      ],
-      "entry_candle_ts": 1794339000,
-      "last_leg_candle_ts": 1794340800,
-      "dry_run": true,
-      "order_id": "PAPER-MERLUSDT-1794339031"
-    }
-  ],
-  "trade_history": [
-    {
-      "symbol": "CLANKERUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 18.66,
-      "qty": 10.7181,
+      "entry": 52.11,
+      "qty": 3.838,
       "margin": 10.0,
       "leverage": 20,
-      "tp_price": 18.1935,
+      "tp_price": 50.807249999999996,
       "tf": "15m",
-      "opened_at": 1793805585,
+      "opened_at": 1794345372,
       "adds": 0,
       "last_leg_margin": 10.0,
       "used_res_levels": [],
       "steps": [
         {
-          "px": 18.66,
-          "ts": 1793805585
+          "px": 52.11,
+          "ts": 1794345372
         }
       ],
-      "entry_candle_ts": 1793805300,
-      "last_leg_candle_ts": 1793805300,
+      "entry_candle_ts": 1794345300,
+      "last_leg_candle_ts": 1794345300,
       "dry_run": true,
-      "order_id": "PAPER-CLANKERUSDT-1793805585",
-      "closed_at": 1793806446,
-      "close_px": 18.03,
-      "pnl_usdt": 6.752411575562691,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
+      "order_id": "PAPER-EQTUSDT-1794345372"
+    }
+  ],
+  "trade_history": [
     {
       "symbol": "YOFCUSDT",
       "side": "SELL",
@@ -7139,6 +7105,40 @@
       "pnl_usdt": 41.03059292428191,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "MERLUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.035869727323355756,
+      "qty": 16727.197200000002,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 0.03497298414027186,
+      "tf": "1h",
+      "opened_at": 1794339031,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.03601,
+          "ts": 1794339031
+        },
+        {
+          "px": 0.0358,
+          "ts": 1794340850
+        }
+      ],
+      "entry_candle_ts": 1794339000,
+      "last_leg_candle_ts": 1794340800,
+      "dry_run": true,
+      "order_id": "PAPER-MERLUSDT-1794339031",
+      "closed_at": 1794341937,
+      "close_px": 0.03331,
+      "pnl_usdt": 42.81706354130629,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -9049,7 +9049,8 @@
       "side": "SELL",
       "upper": 0.034951156141860104,
       "open": 0.03562,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "INITUSDT",
@@ -9058,6 +9059,15 @@
       "side": "SELL",
       "upper": 0.25691834073744585,
       "open": 0.26045,
+      "reported": false
+    },
+    {
+      "symbol": "CRWVUSDT",
+      "tf": "15m",
+      "candle_ts": 1794345300,
+      "side": "SELL",
+      "upper": 50.622500511178174,
+      "open": 51.52,
       "reported": false
     }
   ],
@@ -9182,7 +9192,6 @@
     "XTIUSDT": 1794219396,
     "POETUSDT": 1794223905,
     "DODOUSDT": 1794225779,
-    "MARRIOTTUSDT": 1794225911,
     "BRLUSDT": 1794225832,
     "GOLDUSDT": 1794228410,
     "GSTOCKUSDT": 1794231093,
@@ -9199,18 +9208,11 @@
     "MANCERUSDT": 1794302216,
     "TSTUSDT": 1794312277,
     "TQQQUSDT": 1794312291,
-    "RIOTUSDT": 1794341131,
     "FLYUSDT": 1794342848,
     "AEHRUSDT": 1794342862,
-    "UBIKUSDT": 1794342869,
     "LWLGUSDT": 1794342893,
     "RGTIUSDT": 1794342903,
     "KOPNUSDT": 1794342912,
-    "1000SATSUSDT": 1794342914,
-    "1000WOJAKUSDT": 1794342916,
-    "NEIRO1USDT": 1794342919,
-    "CZUSDT": 1794342920,
-    "CYBERLEEKUSDT": 1794343621,
     "AINBSCUSDT": 1794347168,
     "UP2USDT": 1794348962,
     "NGASUSDT": 1794355494,
@@ -9229,9 +9231,16 @@
     "1000000BABYDOGEUSDT": 1794370029,
     "SOYBEANUSDT": 1794376183,
     "MURATAUSDT": 1794377801,
-    "B3USDT": 1794384299
+    "B3USDT": 1794384299,
+    "1000WOJAKUSDT": 1794386802,
+    "1000SATSUSDT": 1794386806,
+    "CZUSDT": 1794386809,
+    "NEIRO1USDT": 1794386810,
+    "CYBERLEEKUSDT": 1794387754,
+    "UBIKUSDT": 1794387803,
+    "MARRIOTTUSDT": 1794387810
   },
-  "last_trade_report_ts": 1794341252,
+  "last_trade_report_ts": 1794344749,
   "last_known_version": "2.7.4",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
