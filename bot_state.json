@@ -106,35 +106,6 @@
       "order_id": "PAPER-NIGHTUSDT-1794297741"
     },
     {
-      "symbol": "CYBERUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.32445310705757435,
-      "qty": 1849.2657,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.316341779381135,
-      "tf": "15m",
-      "opened_at": 1794311153,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.3059,
-          "ts": 1794311153
-        },
-        {
-          "px": 0.3346,
-          "ts": 1794312035
-        }
-      ],
-      "entry_candle_ts": 1794311100,
-      "last_leg_candle_ts": 1794312000,
-      "dry_run": true,
-      "order_id": "PAPER-CYBERUSDT-1794311153"
-    },
-    {
       "symbol": "SECZUSDT",
       "side": "SELL",
       "status": "open",
@@ -161,36 +132,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "ZZZUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.0088,
-      "qty": 22727.2727,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.00858,
-      "tf": "1h",
-      "opened_at": 1793786751,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.0088,
-          "ts": 1793786751
-        }
-      ],
-      "entry_candle_ts": 1793786400,
-      "last_leg_candle_ts": 1793786400,
-      "dry_run": true,
-      "order_id": "PAPER-ZZZUSDT-1793786751",
-      "closed_at": 1793789429,
-      "close_px": 0.00842,
-      "pnl_usdt": 8.636363636363638,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "BEAMXUSDT",
       "side": "SELL",
@@ -7212,6 +7153,40 @@
       "pnl_usdt": 15.438058634307264,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "CYBERUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.32445310705757435,
+      "qty": 1849.2657,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 0.316341779381135,
+      "tf": "15m",
+      "opened_at": 1794311153,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.3059,
+          "ts": 1794311153
+        },
+        {
+          "px": 0.3346,
+          "ts": 1794312035
+        }
+      ],
+      "entry_candle_ts": 1794311100,
+      "last_leg_candle_ts": 1794312000,
+      "dry_run": true,
+      "order_id": "PAPER-CYBERUSDT-1794311153",
+      "closed_at": 1794313133,
+      "close_px": 0.297,
+      "pnl_usdt": 50.76808905892733,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -8942,7 +8917,8 @@
       "side": "SELL",
       "upper": 0.20127254891221372,
       "open": 0.21251,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "AIOUSDT",
@@ -8961,7 +8937,8 @@
       "side": "SELL",
       "upper": 0.04294078270398226,
       "open": 0.04355,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "BULLAUSDT",
@@ -8970,7 +8947,8 @@
       "side": "SELL",
       "upper": 0.06240747914439819,
       "open": 0.06308,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ONEUSDT",
@@ -9009,7 +8987,8 @@
       "side": "SELL",
       "upper": 0.0018855138452317012,
       "open": 0.001911,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "BULLAUSDT",
@@ -9018,7 +8997,8 @@
       "side": "SELL",
       "upper": 0.06688792094182863,
       "open": 0.067803,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CYBERUSDT",
@@ -9027,7 +9007,8 @@
       "side": "SELL",
       "upper": 0.29398323738874343,
       "open": 0.3054,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "SOPHUSDT",
@@ -9036,7 +9017,8 @@
       "side": "SELL",
       "upper": 0.001385559230946275,
       "open": 0.001402,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CYBERUSDT",
@@ -9045,7 +9027,8 @@
       "side": "SELL",
       "upper": 0.3199240872759977,
       "open": 0.3368,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "SECZUSDT",
@@ -9054,7 +9037,8 @@
       "side": "SELL",
       "upper": 8.41379304189394,
       "open": 8.548,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CYBERUSDT",
@@ -9063,6 +9047,15 @@
       "side": "SELL",
       "upper": 0.3147584184982754,
       "open": 0.3368,
+      "reported": false
+    },
+    {
+      "symbol": "SECZUSDT",
+      "tf": "4h",
+      "candle_ts": 1794312000,
+      "side": "SELL",
+      "upper": 8.347764927895671,
+      "open": 8.548,
       "reported": false
     }
   ],
@@ -9217,9 +9210,6 @@
     "LYTEUSDT": 1794312275,
     "TSTUSDT": 1794312277,
     "TQQQUSDT": 1794312291,
-    "NEXUSDT": 1794312341,
-    "HOTUSDT": 1794312349,
-    "1000000BABYDOGEUSDT": 1794312370,
     "B3USDT": 1794338194,
     "RIOTUSDT": 1794341131,
     "FLYUSDT": 1794342848,
@@ -9234,9 +9224,11 @@
     "CZUSDT": 1794342920,
     "CYBERLEEKUSDT": 1794343621,
     "AINBSCUSDT": 1794347168,
-    "UP2USDT": 1794348962
+    "UP2USDT": 1794348962,
+    "NGASUSDT": 1794355494,
+    "STXSTOCKUSDT": 1794355532
   },
-  "last_trade_report_ts": 1794311352,
+  "last_trade_report_ts": 1794312549,
   "last_known_version": "2.7.4",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
