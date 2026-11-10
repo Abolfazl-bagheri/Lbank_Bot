@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.4",
-  "updated_at": 1794308440,
+  "updated_at": 1794308447,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "SNXXUSDT",
-      "tf": "4h",
-      "gap": 1.56,
-      "ts": 1794267725
-    },
     {
       "kind": "GAP",
       "symbol": "MPWRUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 2.44,
       "ts": 1794308440
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794308447
     }
   ],
   "trades": [
@@ -1447,15 +1447,15 @@
     {
       "symbol": "BULLAUSDT",
       "side": "SELL",
-      "entry": 0.06305,
-      "tp": 0.061473749999999994,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
+      "entry": 0.06675768167327062,
+      "tp": 0.06508873963143885,
+      "adds": 1,
+      "pele": 2,
+      "margin": 30.0,
       "lev": 20,
       "px": 0.06878,
       "pnl": -18.1761,
-      "tf": "4h"
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
