@@ -4,15 +4,15 @@
       "symbol": "ONEUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.0017189373584719882,
-      "qty": 1745264.2966999998,
-      "margin": 150.0,
+      "entry": 0.001770972400233447,
+      "qty": 3500901.5382,
+      "margin": 310.0,
       "leverage": 20,
-      "tp_price": 0.0016759639245101884,
-      "tf": "15m",
+      "tp_price": 0.0017266980902276108,
+      "tf": "1h",
       "opened_at": 1794296802,
-      "adds": 3,
-      "last_leg_margin": 80.0,
+      "adds": 4,
+      "last_leg_margin": 160.0,
       "used_res_levels": [
         0.001607,
         0.00167
@@ -33,10 +33,14 @@
         {
           "px": 0.0018006,
           "ts": 1794300351
+        },
+        {
+          "px": 0.0018227,
+          "ts": 1794301282
         }
       ],
       "entry_candle_ts": 1794296700,
-      "last_leg_candle_ts": 1794300300,
+      "last_leg_candle_ts": 1794301200,
       "dry_run": true,
       "order_id": "PAPER-ONEUSDT-1794296802"
     },
@@ -9219,7 +9223,7 @@
     "CZUSDT": 1794342920,
     "CYBERLEEKUSDT": 1794343621
   },
-  "last_trade_report_ts": 1794299587,
+  "last_trade_report_ts": 1794300515,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
