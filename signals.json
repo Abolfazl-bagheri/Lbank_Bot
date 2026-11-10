@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.4",
-  "updated_at": 1794318840,
+  "updated_at": 1794319217,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794270797
-    },
     {
       "kind": "HEARTBEAT",
       "symbol": "—",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 1.21,
       "ts": 1794318840
+    },
+    {
+      "kind": "GAP",
+      "symbol": "FONEUSDT",
+      "tf": "15m",
+      "gap": 2.96,
+      "ts": 1794319217
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 6,
       "margin": 630.0,
       "lev": 20,
-      "px": 0.001795,
-      "pnl": -225.5145,
+      "px": 0.0018103,
+      "pnl": -334.835,
       "tf": "1h"
     },
     {
@@ -1427,8 +1427,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.199,
-      "pnl": -0.3927,
+      "px": 0.19984,
+      "pnl": -1.2386,
       "tf": "1h"
     }
   ],
@@ -1436,8 +1436,8 @@
   "session_start": 1794269325,
   "realized": 205.5473,
   "closed_n": 11,
-  "open_upnl": -225.9072,
-  "equity": 979.6401,
+  "open_upnl": -336.0736,
+  "equity": 869.4737,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
