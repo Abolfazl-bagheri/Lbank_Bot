@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.4",
-  "updated_at": 1794323713,
+  "updated_at": 1794323930,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "NIGHTUSDT",
-      "tf": "4h",
-      "gap": 3.46,
-      "ts": 1794296513
-    },
     {
       "kind": "GAP",
       "symbol": "INITUSDT",
@@ -1402,22 +1395,16 @@
       "tf": "15m",
       "gap": 1.45,
       "ts": 1794323713
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794323930
     }
   ],
   "trades": [
-    {
-      "symbol": "ONEUSDT",
-      "side": "SELL",
-      "entry": 0.00176343803402776,
-      "tp": 0.0017193520831770659,
-      "adds": 5,
-      "pele": 6,
-      "margin": 630.0,
-      "lev": 20,
-      "px": 0.0017176,
-      "pnl": 327.5189,
-      "tf": "1h"
-    },
     {
       "symbol": "ARIAUSDT",
       "side": "SELL",
@@ -1430,19 +1417,6 @@
       "px": 0.21115,
       "pnl": -12.6278,
       "tf": "1h"
-    },
-    {
-      "symbol": "INITUSDT",
-      "side": "SELL",
-      "entry": 0.2526257067570472,
-      "tp": 0.24631006408812103,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
-      "lev": 20,
-      "px": 0.23351,
-      "pnl": 45.4009,
-      "tf": "15m"
     },
     {
       "symbol": "MARAUSDT",
@@ -1460,16 +1434,16 @@
   ],
   "start": 1000.0,
   "session_start": 1794269325,
-  "realized": 212.8663,
-  "closed_n": 12,
-  "open_upnl": 359.4866,
+  "realized": 585.7861,
+  "closed_n": 14,
+  "open_upnl": -13.4332,
   "equity": 1572.3529,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 212.8663,
+    "profit": 585.7861,
     "loss": 0,
-    "count": 12
+    "count": 14
   }
 }
