@@ -49,6 +49,31 @@
       "last_leg_candle_ts": 1794272400,
       "dry_run": true,
       "order_id": "PAPER-STABLEUSDT-1794272436"
+    },
+    {
+      "symbol": "BONERUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.00527,
+      "qty": 37950.6641,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0051382500000000005,
+      "tf": "1h",
+      "opened_at": 1794272458,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.00527,
+          "ts": 1794272458
+        }
+      ],
+      "entry_candle_ts": 1794272400,
+      "last_leg_candle_ts": 1794272400,
+      "dry_run": true,
+      "order_id": "PAPER-BONERUSDT-1794272458"
     }
   ],
   "trade_history": [
@@ -9041,6 +9066,15 @@
       "side": "SELL",
       "upper": 0.005932025804624667,
       "open": 0.00621,
+      "reported": false
+    },
+    {
+      "symbol": "STABLEUSDT",
+      "tf": "1h",
+      "candle_ts": 1794272400,
+      "side": "SELL",
+      "upper": 0.030340845756103484,
+      "open": 0.0307,
       "reported": false
     }
   ],
