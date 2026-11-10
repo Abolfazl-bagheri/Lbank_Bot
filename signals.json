@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1794292130,
+  "updated_at": 1794292371,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "NXPCUSDT",
-      "tf": "1h",
-      "gap": 3.96,
-      "ts": 1794217915
-    },
     {
       "kind": "GAP",
       "symbol": "IDOLUSDT",
@@ -1402,35 +1395,28 @@
       "tf": "15m",
       "gap": 1.02,
       "ts": 1794292130
-    }
-  ],
-  "trades": [
+    },
     {
-      "symbol": "BONERUSDT",
-      "side": "SELL",
-      "entry": 0.005499747039861624,
-      "tp": 0.005362253363865083,
-      "adds": 2,
-      "pele": 3,
-      "margin": 70.0,
-      "lev": 20,
-      "px": 0.00516,
-      "pnl": 86.485,
-      "tf": "1h"
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794292371
     }
   ],
+  "trades": [],
   "start": 1000.0,
   "session_start": 1794269325,
-  "realized": 31.7187,
-  "closed_n": 3,
-  "open_upnl": 86.485,
-  "equity": 1118.2037,
+  "realized": 92.748,
+  "closed_n": 4,
+  "open_upnl": 0,
+  "equity": 1092.748,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 31.7187,
+    "profit": 92.748,
     "loss": 0,
-    "count": 3
+    "count": 4
   }
 }
