@@ -73,64 +73,9 @@
       "last_leg_candle_ts": 1794297600,
       "dry_run": true,
       "order_id": "PAPER-ARIAUSDT-1794297644"
-    },
-    {
-      "symbol": "JCTUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.00746,
-      "qty": 26809.6515,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.0072735,
-      "tf": "15m",
-      "opened_at": 1794319375,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.00746,
-          "ts": 1794319375
-        }
-      ],
-      "entry_candle_ts": 1794319200,
-      "last_leg_candle_ts": 1794319200,
-      "dry_run": true,
-      "order_id": "PAPER-JCTUSDT-1794319375"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "JCTUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.005496,
-      "qty": 36390.1019,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.0053586,
-      "tf": "15m",
-      "opened_at": 1793795611,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.005496,
-          "ts": 1793795611
-        }
-      ],
-      "entry_candle_ts": 1793795400,
-      "last_leg_candle_ts": 1793795400,
-      "dry_run": true,
-      "order_id": "PAPER-JCTUSDT-1793795611",
-      "closed_at": 1793796560,
-      "close_px": 0.005169,
-      "pnl_usdt": 11.899563318777293,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "MUSEBOOKUSDT",
       "side": "SELL",
@@ -7162,6 +7107,36 @@
       "pnl_usdt": 6.759906759906781,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "JCTUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.00746,
+      "qty": 26809.6515,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0072735,
+      "tf": "15m",
+      "opened_at": 1794319375,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.00746,
+          "ts": 1794319375
+        }
+      ],
+      "entry_candle_ts": 1794319200,
+      "last_leg_candle_ts": 1794319200,
+      "dry_run": true,
+      "order_id": "PAPER-JCTUSDT-1794319375",
+      "closed_at": 1794320317,
+      "close_px": 0.007187,
+      "pnl_usdt": 7.3190348525469116,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -9033,6 +9008,16 @@
       "upper": 8.347764927895671,
       "open": 8.548,
       "reported": false
+    },
+    {
+      "symbol": "JCTUSDT",
+      "tf": "15m",
+      "candle_ts": 1794319200,
+      "side": "SELL",
+      "upper": 0.007243893886811205,
+      "open": 0.007415,
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -9204,7 +9189,7 @@
     "ONSEMIUSDT": 1794360726,
     "CAPETHUSDT": 1794361582
   },
-  "last_trade_report_ts": 1794317649,
+  "last_trade_report_ts": 1794319606,
   "last_known_version": "2.7.4",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
