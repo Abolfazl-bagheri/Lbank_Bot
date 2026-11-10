@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1794297739,
+  "updated_at": 1794297747,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794259126
-    },
     {
       "kind": "GAP",
       "symbol": "ZCATUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "4h",
       "gap": 1.22,
       "ts": 1794297739
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794297747
     }
   ],
   "trades": [
@@ -1456,6 +1456,19 @@
       "px": 0.04754,
       "pnl": 0.0,
       "tf": "1h"
+    },
+    {
+      "symbol": "NIGHTUSDT",
+      "side": "SELL",
+      "entry": 0.04347,
+      "tp": 0.04238325,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.04347,
+      "pnl": 0.0,
+      "tf": "4h"
     }
   ],
   "start": 1000.0,
