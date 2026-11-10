@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.4",
-  "updated_at": 1794351207,
+  "updated_at": 1794351667,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "MARAUSDT",
-      "tf": "15m",
-      "gap": 3.33,
-      "ts": 1794322819
-    },
     {
       "kind": "GAP",
       "symbol": "SOXLUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 1.09,
       "ts": 1794351207
+    },
+    {
+      "kind": "SELL",
+      "symbol": "ICPUSDT",
+      "tf": "1h",
+      "gap": 1.33,
+      "ts": 1794351667
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.22653,
-      "pnl": -28.1154,
+      "px": 0.22247,
+      "pnl": -24.027,
       "tf": "1h"
     },
     {
@@ -1427,8 +1427,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 51.93,
-      "pnl": 0.6908,
+      "px": 51.92,
+      "pnl": 0.7292,
       "tf": "15m"
     }
   ],
@@ -1436,8 +1436,8 @@
   "session_start": 1794269325,
   "realized": 773.1321,
   "closed_n": 20,
-  "open_upnl": -27.4246,
-  "equity": 1745.7075,
+  "open_upnl": -23.2978,
+  "equity": 1749.8343,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
