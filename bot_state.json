@@ -111,6 +111,31 @@
       "last_leg_candle_ts": 1794268800,
       "dry_run": true,
       "order_id": "PAPER-BONERUSDT-1794267018"
+    },
+    {
+      "symbol": "INITUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.1868,
+      "qty": 1070.6638,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.18213,
+      "tf": "4h",
+      "opened_at": 1794268866,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.1868,
+          "ts": 1794268866
+        }
+      ],
+      "entry_candle_ts": 1794268800,
+      "last_leg_candle_ts": 1794268800,
+      "dry_run": true,
+      "order_id": "PAPER-INITUSDT-1794268866"
     }
   ],
   "trade_history": [
@@ -9172,6 +9197,15 @@
       "open": 0.00507,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "BONERUSDT",
+      "tf": "1h",
+      "candle_ts": 1794268800,
+      "side": "SELL",
+      "upper": 0.004825746060577805,
+      "open": 0.00495,
+      "reported": false
     }
   ],
   "paper_days": [
