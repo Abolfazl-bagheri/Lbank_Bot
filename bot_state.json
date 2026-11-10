@@ -133,6 +133,31 @@
       "last_leg_candle_ts": 1794312000,
       "dry_run": true,
       "order_id": "PAPER-CYBERUSDT-1794311153"
+    },
+    {
+      "symbol": "SECZUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 8.58,
+      "qty": 23.31,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 8.365499999999999,
+      "tf": "4h",
+      "opened_at": 1794312134,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 8.58,
+          "ts": 1794312134
+        }
+      ],
+      "entry_candle_ts": 1794312000,
+      "last_leg_candle_ts": 1794312000,
+      "dry_run": true,
+      "order_id": "PAPER-SECZUSDT-1794312134"
     }
   ],
   "trade_history": [
@@ -9029,6 +9054,15 @@
       "side": "SELL",
       "upper": 8.41379304189394,
       "open": 8.548,
+      "reported": false
+    },
+    {
+      "symbol": "CYBERUSDT",
+      "tf": "1h",
+      "candle_ts": 1794312000,
+      "side": "SELL",
+      "upper": 0.3147584184982754,
+      "open": 0.3368,
       "reported": false
     }
   ],
