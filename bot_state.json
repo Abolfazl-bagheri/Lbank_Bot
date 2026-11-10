@@ -55,68 +55,9 @@
       "last_leg_candle_ts": 1794324861,
       "dry_run": true,
       "order_id": "PAPER-MARAUSDT-1794322892"
-    },
-    {
-      "symbol": "DJTUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 4.635,
-      "qty": 43.1499,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 4.519125,
-      "tf": "15m",
-      "opened_at": 1794324624,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 4.635,
-          "ts": 1794324624
-        }
-      ],
-      "entry_candle_ts": 1794324600,
-      "last_leg_candle_ts": 1794324600,
-      "dry_run": true,
-      "order_id": "PAPER-DJTUSDT-1794324624"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "SXTUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.009721027474253142,
-      "qty": 61721.8707,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.009478001787396814,
-      "tf": "1h",
-      "opened_at": 1793803603,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.00986,
-          "ts": 1793803603
-        },
-        {
-          "px": 0.009653,
-          "ts": 1793804709
-        }
-      ],
-      "entry_candle_ts": 1793803500,
-      "last_leg_candle_ts": 1793804400,
-      "dry_run": true,
-      "order_id": "PAPER-SXTUSDT-1793803603",
-      "closed_at": 1793805670,
-      "close_px": 0.009212,
-      "pnl_usdt": 31.418127904771744,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "AKEUSDT",
       "side": "SELL",
@@ -7172,6 +7113,36 @@
       "pnl_usdt": 45.40085884948594,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "DJTUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 4.635,
+      "qty": 43.1499,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 4.519125,
+      "tf": "15m",
+      "opened_at": 1794324624,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 4.635,
+          "ts": 1794324624
+        }
+      ],
+      "entry_candle_ts": 1794324600,
+      "last_leg_candle_ts": 1794324600,
+      "dry_run": true,
+      "order_id": "PAPER-DJTUSDT-1794324624",
+      "closed_at": 1794325798,
+      "close_px": 4.515,
+      "pnl_usdt": 5.177993527508096,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -9178,7 +9149,8 @@
       "side": "SELL",
       "upper": 4.522722720653355,
       "open": 4.624,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "NIULAIUSDT",
@@ -9187,7 +9159,8 @@
       "side": "SELL",
       "upper": 0.06092363032243863,
       "open": 0.06154,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -9356,7 +9329,7 @@
     "OSCRUSDT": 1794367943,
     "ARGUSDT": 1794367944
   },
-  "last_trade_report_ts": 1794323300,
+  "last_trade_report_ts": 1794324878,
   "last_known_version": "2.7.4",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
