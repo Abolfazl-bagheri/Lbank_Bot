@@ -109,24 +109,28 @@
       "symbol": "CYBERUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.3059,
-      "qty": 653.8084,
-      "margin": 10.0,
+      "entry": 0.32445310705757435,
+      "qty": 1849.2657,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.2982525,
+      "tp_price": 0.316341779381135,
       "tf": "15m",
       "opened_at": 1794311153,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 0.3059,
           "ts": 1794311153
+        },
+        {
+          "px": 0.3346,
+          "ts": 1794312035
         }
       ],
       "entry_candle_ts": 1794311100,
-      "last_leg_candle_ts": 1794311100,
+      "last_leg_candle_ts": 1794312000,
       "dry_run": true,
       "order_id": "PAPER-CYBERUSDT-1794311153"
     }
@@ -8990,6 +8994,24 @@
       "upper": 0.06688792094182863,
       "open": 0.067803,
       "reported": false
+    },
+    {
+      "symbol": "CYBERUSDT",
+      "tf": "15m",
+      "candle_ts": 1794311100,
+      "side": "SELL",
+      "upper": 0.29398323738874343,
+      "open": 0.3054,
+      "reported": false
+    },
+    {
+      "symbol": "SOPHUSDT",
+      "tf": "15m",
+      "candle_ts": 1794311100,
+      "side": "SELL",
+      "upper": 0.001385559230946275,
+      "open": 0.001402,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -9162,7 +9184,7 @@
     "AINBSCUSDT": 1794347168,
     "UP2USDT": 1794348962
   },
-  "last_trade_report_ts": 1794310450,
+  "last_trade_report_ts": 1794311352,
   "last_known_version": "2.7.4",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
