@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.4",
-  "updated_at": 1794309317,
+  "updated_at": 1794309539,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "EDGEXUSDT",
-      "tf": "4h",
-      "gap": 1.91,
-      "ts": 1794267758
-    },
     {
       "kind": "GAP",
       "symbol": "AXTIUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 1.07,
       "ts": 1794309317
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794309539
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 6,
       "margin": 630.0,
       "lev": 20,
-      "px": 0.0018872,
-      "pnl": -884.2958,
+      "px": 0.0018924,
+      "pnl": -921.4505,
       "tf": "1h"
     },
     {
@@ -1427,8 +1427,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.20926,
-      "pnl": -10.7245,
+      "px": 0.21018,
+      "pnl": -11.651,
       "tf": "1h"
     },
     {
@@ -1440,36 +1440,23 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 0.04251,
-      "pnl": 8.6068,
+      "px": 0.04247,
+      "pnl": 9.1633,
       "tf": "4h"
-    },
-    {
-      "symbol": "BULLAUSDT",
-      "side": "SELL",
-      "entry": 0.06675768167327062,
-      "tp": 0.06508873963143885,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
-      "lev": 20,
-      "px": 0.0649,
-      "pnl": 16.6963,
-      "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1794269325,
-  "realized": 114.6535,
-  "closed_n": 7,
-  "open_upnl": -869.7172,
-  "equity": 244.9363,
+  "realized": 130.0916,
+  "closed_n": 8,
+  "open_upnl": -923.9382,
+  "equity": 206.1534,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 114.6535,
+    "profit": 130.0916,
     "loss": 0,
-    "count": 7
+    "count": 8
   }
 }
