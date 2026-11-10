@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.4",
-  "updated_at": 1794313728,
+  "updated_at": 1794314044,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "BONERUSDT",
-      "tf": "1h",
-      "gap": 0.5,
-      "ts": 1794268851
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 1.33,
       "ts": 1794313728
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794314044
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 6,
       "margin": 630.0,
       "lev": 20,
-      "px": 0.0018345,
-      "pnl": -507.7472,
+      "px": 0.001836,
+      "pnl": -518.4649,
       "tf": "1h"
     },
     {
@@ -1427,22 +1427,9 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.21062,
-      "pnl": -12.0941,
+      "px": 0.21086,
+      "pnl": -12.3357,
       "tf": "1h"
-    },
-    {
-      "symbol": "NIGHTUSDT",
-      "side": "SELL",
-      "entry": 0.04312866512742378,
-      "tp": 0.04205044849923819,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
-      "lev": 20,
-      "px": 0.04194,
-      "pnl": 16.5365,
-      "tf": "4h"
     },
     {
       "symbol": "SECZUSDT",
@@ -1453,23 +1440,23 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 8.42,
-      "pnl": 3.7296,
+      "px": 8.44,
+      "pnl": 3.2634,
       "tf": "4h"
     }
   ],
   "start": 1000.0,
   "session_start": 1794269325,
-  "realized": 180.8597,
-  "closed_n": 9,
-  "open_upnl": -499.5752,
-  "equity": 681.2845,
+  "realized": 198.7874,
+  "closed_n": 10,
+  "open_upnl": -527.5372,
+  "equity": 671.2502,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 180.8597,
+    "profit": 198.7874,
     "loss": 0,
-    "count": 9
+    "count": 10
   }
 }
