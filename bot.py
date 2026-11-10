@@ -35,7 +35,7 @@ SIGNALS_FILE = os.path.join(BASE_DIR, "signals.json")
 LIVE_TOPIC = os.environ.get("LIVE_TOPIC", "lbank-gap-b0b85cee29ce").strip()
 STATE_BAK = os.path.join(BASE_DIR, "bot_state.bak")
 
-BOT_VERSION = "2.7.2"
+BOT_VERSION = "2.7.4"
 CHANGELOG = {
     "2.7.0": ["احتمال‌گپ زودتر","سیگنال فقط دقایق اول کندل","بیدار شدن نزدیک کندل هر ۱۰ث"],
     "2.6.5": [
@@ -75,7 +75,8 @@ SIGNAL_SCAN_SEC = {"15m": 200, "1h": 240, "4h": 320}
 BB_PERIOD = 20
 BB_STD = 2.0
 PENETRATION_PCT = 0.3
-MIN_OPEN_GAP_PCT = 1.0
+MIN_OPEN_GAP_PCT = 1.0          # احتمال‌گپ / نمایش
+ENTRY_MIN_GAP_PCT = 2.0         # ورود paper/live فقط اگر فاصله >= ۲٪
 TOP_GAINERS = 60
 TOP_VOLUME = 30
 ALWAYS_INCLUDE = ["BTCUSDT", "XAUTUSDT"]
@@ -92,7 +93,9 @@ TRADE_MARGIN_USDT = float(os.environ.get("TRADE_MARGIN_USDT", "10"))
 TRADE_LEVERAGE = int(os.environ.get("TRADE_LEVERAGE", "20"))
 TRADE_TP_PCT = float(os.environ.get("TRADE_TP_PCT", "50"))  # 50% سود مارجین → کلوز
 TRADE_AVG_DOWN = True
-TRADE_MAX_ADDS = int(os.environ.get("TRADE_MAX_ADDS", "5"))  # سقف پله (با دبل حجم)
+TRADE_MAX_ADDS = int(os.environ.get("TRADE_MAX_ADDS", "2"))  # سقف پله: 10+20+40=70U
+TRADE_MAX_MARGIN_USDT = float(os.environ.get("TRADE_MAX_MARGIN_USDT", "70"))  # سقف مارجین هر نماد
+TRADE_MAX_LOSS_ROI = float(os.environ.get("TRADE_MAX_LOSS_ROI", "-120"))  # اگر ROI بدتر از این، دیگر پله نزن  # سقف پله (با دبل حجم)
 AVG_LEG_PERIOD_SEC = 900
 RES_TOUCH_PCT = 0.4  # فاصله مجاز تا سقف برای پله (%)
 
@@ -1339,6 +1342,17 @@ def manage_open_trades() -> None:
         adds = int(rec.get("adds") or 0)
         if adds >= TRADE_MAX_ADDS:
             continue
+        cur_margin = float(rec.get("margin") or TRADE_MARGIN_USDT)
+        if cur_margin >= TRADE_MAX_MARGIN_USDT:
+            continue
+        # اگر خیلی در ضرر است، پله نزن (مارتینگل انفجاری)
+        try:
+            _pnl, _roi = _sell_upnl(rec, float(px))
+            if _roi <= TRADE_MAX_LOSS_ROI:
+                log.info("SKIP_ADD_DEEP_LOSS %s roi=%.1f%% margin=%.0f", sym, _roi, cur_margin)
+                continue
+        except Exception:
+            pass
         # پله فقط روی لمس سقف مقاومت (نه هر کندل)
         levels = find_resistance_levels(sym, float(px), rec.get("tf") or "1h")
         if not levels:
@@ -1695,13 +1709,19 @@ async def process_symbol(symbol: str, tfs_to_check: list) -> None:
         log_signal_web("SELL", symbol, tf, float(sig.get("diff_pct") or 0))
         log.info("SIGNAL_SILENT %s %s %s gap=%.2f%%", sig["side"], symbol, tf, float(sig.get("diff_pct") or 0))
 
-        # هر سیگنال SELL → دقیقاً یک ورود paper/live (پله فقط اگر از قبل باز باشد)
+        # ورود فقط اگر فاصله تا UB هنوز >= ENTRY_MIN_GAP_PCT
         if trading_enabled() and sig.get("side") == "SELL":
             entry = float(sig.get("fut_last") or sig.get("open") or 0)
-            if entry > 0:
+            gap_now = float(sig.get("diff_pct") or 0)
+            if entry > 0 and gap_now >= ENTRY_MIN_GAP_PCT:
                 rec = open_sell_trade(symbol, entry, tf, sig.get("candle_ts"))
-                log.info("PAPER_ENTRY %s %s entry=%s ok=%s", symbol, tf, entry, bool(rec))
+                log.info("PAPER_ENTRY %s %s entry=%s gap=%.2f%% ok=%s", symbol, tf, entry, gap_now, bool(rec))
                 save_state(force_remote=True)
+            else:
+                log.info(
+                    "PAPER_SKIP_GAP %s %s gap=%.2f%% < entry_min=%.1f%%",
+                    symbol, tf, gap_now, ENTRY_MIN_GAP_PCT,
+                )
 
         pending_signals.append({
             "symbol": symbol, "tf": tf, "candle_ts": sig["candle_ts"], "side": sig["side"],
