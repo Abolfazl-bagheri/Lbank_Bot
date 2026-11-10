@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.4",
-  "updated_at": 1794322890,
+  "updated_at": 1794322898,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794293281
-    },
     {
       "kind": "HEARTBEAT",
       "symbol": "—",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 2.84,
       "ts": 1794322890
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794322898
     }
   ],
   "trades": [
@@ -1443,6 +1443,19 @@
       "px": 0.25057,
       "pnl": 4.8824,
       "tf": "15m"
+    },
+    {
+      "symbol": "MARAUSDT",
+      "side": "SELL",
+      "entry": 7.45,
+      "tp": 7.26375,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 7.45,
+      "pnl": 0.0,
+      "tf": "1h"
     }
   ],
   "start": 1000.0,
