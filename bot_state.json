@@ -24,6 +24,31 @@
       "last_leg_candle_ts": 1794270600,
       "dry_run": true,
       "order_id": "PAPER-BONERUSDT-1794270639"
+    },
+    {
+      "symbol": "NIUBIUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.00623,
+      "qty": 32102.7287,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.00607425,
+      "tf": "15m",
+      "opened_at": 1794271572,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.00623,
+          "ts": 1794271572
+        }
+      ],
+      "entry_candle_ts": 1794271500,
+      "last_leg_candle_ts": 1794271500,
+      "dry_run": true,
+      "order_id": "PAPER-NIUBIUSDT-1794271572"
     }
   ],
   "trade_history": [
@@ -9009,6 +9034,15 @@
       "upper": 7.6354597872811585,
       "open": 7.872,
       "reported": false
+    },
+    {
+      "symbol": "BONERUSDT",
+      "tf": "15m",
+      "candle_ts": 1794270600,
+      "side": "SELL",
+      "upper": 0.005615169649924097,
+      "open": 0.0057,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -9181,7 +9215,7 @@
     "HOTUSDT": 1794312349,
     "1000000BABYDOGEUSDT": 1794312370
   },
-  "last_trade_report_ts": 1794269319,
+  "last_trade_report_ts": 1794270799,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
