@@ -26,35 +26,6 @@
       "order_id": "PAPER-ARIAUSDT-1794297644"
     },
     {
-      "symbol": "INITUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.26472289561270335,
-      "qty": 2266.5209999999997,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.25810482322238576,
-      "tf": "4h",
-      "opened_at": 1794326511,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.24561,
-          "ts": 1794326511
-        },
-        {
-          "px": 0.27544,
-          "ts": 1794340876
-        }
-      ],
-      "entry_candle_ts": 1794326400,
-      "last_leg_candle_ts": 1794340800,
-      "dry_run": true,
-      "order_id": "PAPER-INITUSDT-1794326511"
-    },
-    {
       "symbol": "MERLUSDT",
       "side": "SELL",
       "status": "open",
@@ -85,42 +56,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "ANSEMUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.05014999999999999,
-      "qty": 11964.1077,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.048896249999999995,
-      "tf": "15m",
-      "opened_at": 1793805545,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        0.0503
-      ],
-      "steps": [
-        {
-          "px": 0.05015,
-          "ts": 1793805545
-        },
-        {
-          "px": 0.05015,
-          "ts": 1793805703
-        }
-      ],
-      "entry_candle_ts": 1793805300,
-      "last_leg_candle_ts": 1793805703,
-      "dry_run": true,
-      "order_id": "PAPER-ANSEMUSDT-1793805545",
-      "closed_at": 1793806445,
-      "close_px": 0.04851,
-      "pnl_usdt": 19.621136590229263,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "CLANKERUSDT",
       "side": "SELL",
@@ -7170,6 +7105,40 @@
       "pnl_usdt": 14.759358288770045,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "INITUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.26472289561270335,
+      "qty": 2266.5209999999997,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 0.25810482322238576,
+      "tf": "4h",
+      "opened_at": 1794326511,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.24561,
+          "ts": 1794326511
+        },
+        {
+          "px": 0.27544,
+          "ts": 1794340876
+        }
+      ],
+      "entry_candle_ts": 1794326400,
+      "last_leg_candle_ts": 1794340800,
+      "dry_run": true,
+      "order_id": "PAPER-INITUSDT-1794326511",
+      "closed_at": 1794341934,
+      "close_px": 0.24662,
+      "pnl_usdt": 41.03059292428191,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -7382,56 +7351,6 @@
       "tf": "15m",
       "candle_ts": 1793430900,
       "side": "SELL"
-    },
-    {
-      "symbol": "CLAUDIAUSDT",
-      "tf": "15m",
-      "candle_ts": 1794081600,
-      "side": "SELL",
-      "upper": 0.005538507529299767,
-      "open": 0.006432,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "CLAUDIAUSDT",
-      "tf": "1h",
-      "candle_ts": 1794081600,
-      "side": "SELL",
-      "upper": 0.004852566359716105,
-      "open": 0.006068,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "SWARMSUSDT",
-      "tf": "4h",
-      "candle_ts": 1794081600,
-      "side": "SELL",
-      "upper": 0.007133202284097371,
-      "open": 0.0073,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "CLAUDIAUSDT",
-      "tf": "4h",
-      "candle_ts": 1794081600,
-      "side": "SELL",
-      "upper": 0.004916059770390417,
-      "open": 0.006068,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "HMSTRUSDT",
-      "tf": "1h",
-      "candle_ts": 1794081600,
-      "side": "SELL",
-      "upper": 0.00013542544811179626,
-      "open": 0.0001382,
-      "reported": true,
-      "filled": true
     },
     {
       "symbol": "CLAUDIAUSDT",
@@ -9050,7 +8969,8 @@
       "side": "SELL",
       "upper": 42.904313733583756,
       "open": 43.53,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "SOPHUSDT",
@@ -9059,7 +8979,8 @@
       "side": "SELL",
       "upper": 0.0014256335875315385,
       "open": 0.001441,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "INITUSDT",
@@ -9068,7 +8989,8 @@
       "side": "SELL",
       "upper": 0.23359935624652806,
       "open": 0.24211,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "MARAUSDT",
@@ -9077,7 +8999,8 @@
       "side": "SELL",
       "upper": 7.174261848025312,
       "open": 7.378,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "SECZUSDT",
@@ -9086,7 +9009,8 @@
       "side": "SELL",
       "upper": 9.020969915255785,
       "open": 9.344,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "DJTUSDT",
@@ -9095,7 +9019,8 @@
       "side": "SELL",
       "upper": 4.343679914288303,
       "open": 4.443,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "MERLUSDT",
@@ -9114,7 +9039,8 @@
       "side": "SELL",
       "upper": 0.03701067825518485,
       "open": 0.03854,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "MERLUSDT",
@@ -9123,6 +9049,15 @@
       "side": "SELL",
       "upper": 0.034951156141860104,
       "open": 0.03562,
+      "reported": false
+    },
+    {
+      "symbol": "INITUSDT",
+      "tf": "4h",
+      "candle_ts": 1794340800,
+      "side": "SELL",
+      "upper": 0.25691834073744585,
+      "open": 0.26045,
       "reported": false
     }
   ],
@@ -9293,9 +9228,10 @@
     "NEXUSDT": 1794370005,
     "1000000BABYDOGEUSDT": 1794370029,
     "SOYBEANUSDT": 1794376183,
-    "MURATAUSDT": 1794377801
+    "MURATAUSDT": 1794377801,
+    "B3USDT": 1794384299
   },
-  "last_trade_report_ts": 1794340169,
+  "last_trade_report_ts": 1794341252,
   "last_known_version": "2.7.4",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
