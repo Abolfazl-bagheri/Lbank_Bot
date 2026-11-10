@@ -24,6 +24,31 @@
       "last_leg_candle_ts": 1794296700,
       "dry_run": true,
       "order_id": "PAPER-ONEUSDT-1794296802"
+    },
+    {
+      "symbol": "ARIAUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.19861,
+      "qty": 1006.9986,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.19364475,
+      "tf": "1h",
+      "opened_at": 1794297644,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.19861,
+          "ts": 1794297644
+        }
+      ],
+      "entry_candle_ts": 1794297600,
+      "last_leg_candle_ts": 1794297600,
+      "dry_run": true,
+      "order_id": "PAPER-ARIAUSDT-1794297644"
     }
   ],
   "trade_history": [
@@ -8903,6 +8928,15 @@
       "open": 0.01043,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "ONEUSDT",
+      "tf": "15m",
+      "candle_ts": 1794296700,
+      "side": "SELL",
+      "upper": 0.0015480337742197051,
+      "open": 0.001567,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -9013,7 +9047,6 @@
     "APROUSDT": 1794115028,
     "SXTUSDT": 1794125089,
     "GALUSDT": 1794141094,
-    "RIOTUSDT": 1794157401,
     "METEORAUSDT": 1794163747,
     "PIPEDOGUSDT": 1794170773,
     "DRVUSDT": 1794177070,
@@ -9074,7 +9107,7 @@
     "1000000BABYDOGEUSDT": 1794312370,
     "B3USDT": 1794338194
   },
-  "last_trade_report_ts": 1794295240,
+  "last_trade_report_ts": 1794296902,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
