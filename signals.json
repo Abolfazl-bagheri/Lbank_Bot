@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.4",
-  "updated_at": 1794314046,
+  "updated_at": 1794314936,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "INITUSDT",
-      "tf": "4h",
-      "gap": 7.61,
-      "ts": 1794268865
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1395,13 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1794314046
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794314936
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 6,
       "margin": 630.0,
       "lev": 20,
-      "px": 0.001836,
-      "pnl": -518.4649,
+      "px": 0.0018195,
+      "pnl": -400.5702,
       "tf": "1h"
     },
     {
@@ -1427,36 +1427,23 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.21086,
-      "pnl": -12.3357,
+      "px": 0.19881,
+      "pnl": -0.2014,
       "tf": "1h"
-    },
-    {
-      "symbol": "SECZUSDT",
-      "side": "SELL",
-      "entry": 8.58,
-      "tp": 8.365499999999999,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 8.44,
-      "pnl": 3.2634,
-      "tf": "4h"
     }
   ],
   "start": 1000.0,
   "session_start": 1794269325,
-  "realized": 198.7874,
-  "closed_n": 10,
-  "open_upnl": -527.5372,
-  "equity": 671.2502,
+  "realized": 205.5473,
+  "closed_n": 11,
+  "open_upnl": -400.7716,
+  "equity": 804.7757,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 198.7874,
+    "profit": 205.5473,
     "loss": 0,
-    "count": 10
+    "count": 11
   }
 }
