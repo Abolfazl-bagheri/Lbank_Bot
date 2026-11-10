@@ -4,24 +4,30 @@
       "symbol": "ONEUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.0015759,
-      "qty": 126911.6061,
-      "margin": 10.0,
+      "entry": 0.0015934681923346374,
+      "qty": 376537.1678,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.0015365025,
+      "tp_price": 0.0015536314875262715,
       "tf": "15m",
       "opened_at": 1794296802,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.001607
+      ],
       "steps": [
         {
           "px": 0.0015759,
           "ts": 1794296802
+        },
+        {
+          "px": 0.0016024,
+          "ts": 1794298668
         }
       ],
       "entry_candle_ts": 1794296700,
-      "last_leg_candle_ts": 1794296700,
+      "last_leg_candle_ts": 1794298668,
       "dry_run": true,
       "order_id": "PAPER-ONEUSDT-1794296802"
     },
@@ -7436,16 +7442,6 @@
     {
       "symbol": "KOMAUSDT",
       "tf": "15m",
-      "candle_ts": 1794039300,
-      "side": "SELL",
-      "upper": 0.015212289346943512,
-      "open": 0.015982,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "KOMAUSDT",
-      "tf": "15m",
       "candle_ts": 1794040200,
       "side": "SELL",
       "upper": 0.015602929327874663,
@@ -8940,7 +8936,8 @@
       "side": "SELL",
       "upper": 0.17258016491627343,
       "open": 0.18535,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "TTMIUSDT",
@@ -8949,7 +8946,8 @@
       "side": "SELL",
       "upper": 75.62705134592308,
       "open": 76.89,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "TERUSDT",
@@ -8958,7 +8956,8 @@
       "side": "SELL",
       "upper": 246.48893819059072,
       "open": 250.1,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "SECZUSDT",
@@ -8967,7 +8966,8 @@
       "side": "SELL",
       "upper": 7.6354597872811585,
       "open": 7.872,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "BONERUSDT",
@@ -9036,7 +9036,8 @@
       "side": "SELL",
       "upper": 0.0015480337742197051,
       "open": 0.001567,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ARIAUSDT",
@@ -9072,6 +9073,15 @@
       "side": "SELL",
       "upper": 0.04294078270398226,
       "open": 0.04355,
+      "reported": false
+    },
+    {
+      "symbol": "BULLAUSDT",
+      "tf": "4h",
+      "candle_ts": 1794297600,
+      "side": "SELL",
+      "upper": 0.06240747914439819,
+      "open": 0.06308,
       "reported": false
     }
   ],
@@ -9241,9 +9251,10 @@
     "NEXUSDT": 1794312341,
     "HOTUSDT": 1794312349,
     "1000000BABYDOGEUSDT": 1794312370,
-    "B3USDT": 1794338194
+    "B3USDT": 1794338194,
+    "RIOTUSDT": 1794341131
   },
-  "last_trade_report_ts": 1794296902,
+  "last_trade_report_ts": 1794298037,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
