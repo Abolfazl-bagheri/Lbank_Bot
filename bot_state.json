@@ -1,31 +1,6 @@
 {
   "open_trades": [
     {
-      "symbol": "STABLEUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.03062,
-      "qty": 6531.6786,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.0298545,
-      "tf": "1h",
-      "opened_at": 1794272436,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.03062,
-          "ts": 1794272436
-        }
-      ],
-      "entry_candle_ts": 1794272400,
-      "last_leg_candle_ts": 1794272400,
-      "dry_run": true,
-      "order_id": "PAPER-STABLEUSDT-1794272436"
-    },
-    {
       "symbol": "BONERUSDT",
       "side": "SELL",
       "status": "open",
@@ -52,46 +27,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "BMTUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.029299809221345202,
-      "qty": 47781.8811,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 0.028567313990811572,
-      "tf": "4h",
-      "opened_at": 1793751558,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [
-        0.03005
-      ],
-      "steps": [
-        {
-          "px": 0.02722,
-          "ts": 1793751558
-        },
-        {
-          "px": 0.02911,
-          "ts": 1793765082
-        },
-        {
-          "px": 0.02997,
-          "ts": 1793783261
-        }
-      ],
-      "entry_candle_ts": 1793751300,
-      "last_leg_candle_ts": 1793783261,
-      "dry_run": true,
-      "order_id": "PAPER-BMTUSDT-1793751558",
-      "closed_at": 1793786680,
-      "close_px": 0.02962,
-      "pnl_usdt": -15.299317709896577,
-      "close_reason": "NIGHT_RESET",
-      "why": "NIGHT_RESET"
-    },
     {
       "symbol": "SHEINUSDT",
       "side": "SELL",
@@ -7130,6 +7065,36 @@
       "pnl_usdt": 19.77528089887641,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "STABLEUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.03062,
+      "qty": 6531.6786,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0298545,
+      "tf": "1h",
+      "opened_at": 1794272436,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.03062,
+          "ts": 1794272436
+        }
+      ],
+      "entry_candle_ts": 1794272400,
+      "last_leg_candle_ts": 1794272400,
+      "dry_run": true,
+      "order_id": "PAPER-STABLEUSDT-1794272436",
+      "closed_at": 1794275284,
+      "close_px": 0.02975,
+      "pnl_usdt": 5.6825604180274505,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -7342,26 +7307,6 @@
       "tf": "15m",
       "candle_ts": 1793430900,
       "side": "SELL"
-    },
-    {
-      "symbol": "LYNUSDT",
-      "tf": "15m",
-      "candle_ts": 1794014100,
-      "side": "SELL",
-      "upper": 0.027828702107912388,
-      "open": 0.0283,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "AKEUSDT",
-      "tf": "15m",
-      "candle_ts": 1794014100,
-      "side": "SELL",
-      "upper": 0.005073687568424931,
-      "open": 0.0052856,
-      "reported": true,
-      "filled": true
     },
     {
       "symbol": "ESPORTSUSDT",
@@ -9168,7 +9113,7 @@
     "HOTUSDT": 1794312349,
     "1000000BABYDOGEUSDT": 1794312370
   },
-  "last_trade_report_ts": 1794271746,
+  "last_trade_report_ts": 1794274389,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
