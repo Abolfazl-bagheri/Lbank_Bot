@@ -1,5 +1,31 @@
 {
-  "open_trades": [],
+  "open_trades": [
+    {
+      "symbol": "ONEUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.0015759,
+      "qty": 126911.6061,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0015365025,
+      "tf": "15m",
+      "opened_at": 1794296802,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.0015759,
+          "ts": 1794296802
+        }
+      ],
+      "entry_candle_ts": 1794296700,
+      "last_leg_candle_ts": 1794296700,
+      "dry_run": true,
+      "order_id": "PAPER-ONEUSDT-1794296802"
+    }
+  ],
   "trade_history": [
     {
       "symbol": "ANSEMUSDT",
@@ -8987,7 +9013,6 @@
     "APROUSDT": 1794115028,
     "SXTUSDT": 1794125089,
     "GALUSDT": 1794141094,
-    "B3USDT": 1794143806,
     "RIOTUSDT": 1794157401,
     "METEORAUSDT": 1794163747,
     "PIPEDOGUSDT": 1794170773,
@@ -9046,9 +9071,10 @@
     "TQQQUSDT": 1794312291,
     "NEXUSDT": 1794312341,
     "HOTUSDT": 1794312349,
-    "1000000BABYDOGEUSDT": 1794312370
+    "1000000BABYDOGEUSDT": 1794312370,
+    "B3USDT": 1794338194
   },
-  "last_trade_report_ts": 1794293282,
+  "last_trade_report_ts": 1794295240,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
