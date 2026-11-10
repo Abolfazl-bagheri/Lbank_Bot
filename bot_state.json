@@ -54,24 +54,28 @@
       "symbol": "MERLUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.03601,
-      "qty": 5554.0128,
-      "margin": 10.0,
+      "entry": 0.035869727323355756,
+      "qty": 16727.197200000002,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.03510975,
-      "tf": "15m",
+      "tp_price": 0.03497298414027186,
+      "tf": "1h",
       "opened_at": 1794339031,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 0.03601,
           "ts": 1794339031
+        },
+        {
+          "px": 0.0358,
+          "ts": 1794340850
         }
       ],
       "entry_candle_ts": 1794339000,
-      "last_leg_candle_ts": 1794339000,
+      "last_leg_candle_ts": 1794340800,
       "dry_run": true,
       "order_id": "PAPER-MERLUSDT-1794339031"
     }
@@ -7378,26 +7382,6 @@
     {
       "symbol": "CLAUDIAUSDT",
       "tf": "15m",
-      "candle_ts": 1794079800,
-      "side": "SELL",
-      "upper": 0.0033921225193182035,
-      "open": 0.003554,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "CLAUDIAUSDT",
-      "tf": "15m",
-      "candle_ts": 1794080700,
-      "side": "SELL",
-      "upper": 0.004087056302141485,
-      "open": 0.00449,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "CLAUDIAUSDT",
-      "tf": "15m",
       "candle_ts": 1794081600,
       "side": "SELL",
       "upper": 0.005538507529299767,
@@ -9108,6 +9092,25 @@
       "upper": 4.343679914288303,
       "open": 4.443,
       "reported": false
+    },
+    {
+      "symbol": "MERLUSDT",
+      "tf": "15m",
+      "candle_ts": 1794339000,
+      "side": "SELL",
+      "upper": 0.0350991397725534,
+      "open": 0.03606,
+      "reported": true,
+      "filled": false
+    },
+    {
+      "symbol": "MERLUSDT",
+      "tf": "15m",
+      "candle_ts": 1794339900,
+      "side": "SELL",
+      "upper": 0.03701067825518485,
+      "open": 0.03854,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -9248,7 +9251,6 @@
     "MANCERUSDT": 1794302216,
     "TSTUSDT": 1794312277,
     "TQQQUSDT": 1794312291,
-    "B3USDT": 1794338194,
     "RIOTUSDT": 1794341131,
     "FLYUSDT": 1794342848,
     "AEHRUSDT": 1794342862,
@@ -9280,7 +9282,7 @@
     "SOYBEANUSDT": 1794376183,
     "MURATAUSDT": 1794377801
   },
-  "last_trade_report_ts": 1794338495,
+  "last_trade_report_ts": 1794340169,
   "last_known_version": "2.7.4",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
