@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.4",
-  "updated_at": 1794326458,
+  "updated_at": 1794326499,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "ONEUSDT",
-      "tf": "15m",
-      "gap": 4.81,
-      "ts": 1794300217
-    },
-    {
-      "kind": "GAP",
-      "symbol": "VICRUSDT",
-      "tf": "15m",
-      "gap": 1.18,
-      "ts": 1794300222
-    },
     {
       "kind": "SELL",
       "symbol": "ONEUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "1h",
       "gap": 2.53,
       "ts": 1794326458
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794326468
+    },
+    {
+      "kind": "SELL",
+      "symbol": "QNTXUSDT",
+      "tf": "4h",
+      "gap": 1.19,
+      "ts": 1794326499
     }
   ],
   "trades": [
@@ -1429,6 +1429,19 @@
       "lev": 20,
       "px": 7.33,
       "pnl": 14.3621,
+      "tf": "1h"
+    },
+    {
+      "symbol": "DJTUSDT",
+      "side": "SELL",
+      "entry": 4.479,
+      "tp": 4.367025,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 4.479,
+      "pnl": 0.0,
       "tf": "1h"
     }
   ],
