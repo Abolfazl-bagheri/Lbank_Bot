@@ -1,5 +1,31 @@
 {
-  "open_trades": [],
+  "open_trades": [
+    {
+      "symbol": "BONERUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.00575,
+      "qty": 34782.6087,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.00560625,
+      "tf": "15m",
+      "opened_at": 1794270639,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.00575,
+          "ts": 1794270639
+        }
+      ],
+      "entry_candle_ts": 1794270600,
+      "last_leg_candle_ts": 1794270600,
+      "dry_run": true,
+      "order_id": "PAPER-BONERUSDT-1794270639"
+    }
+  ],
   "trade_history": [
     {
       "symbol": "HOMEUSDT",
@@ -7318,16 +7344,6 @@
       "tf": "15m",
       "candle_ts": 1793430900,
       "side": "SELL"
-    },
-    {
-      "symbol": "CARVUSDT",
-      "tf": "15m",
-      "candle_ts": 1794010500,
-      "side": "SELL",
-      "upper": 0.03269575310965908,
-      "open": 0.03318,
-      "reported": true,
-      "filled": true
     },
     {
       "symbol": "LYNUSDT",
