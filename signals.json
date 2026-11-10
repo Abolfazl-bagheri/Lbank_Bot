@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.4",
-  "updated_at": 1794333406,
+  "updated_at": 1794333586,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794306027
-    },
     {
       "kind": "HEARTBEAT",
       "symbol": "—",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 1.22,
       "ts": 1794333406
+    },
+    {
+      "kind": "GAP",
+      "symbol": "EQTUSDT",
+      "tf": "15m",
+      "gap": 3.26,
+      "ts": 1794333586
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.21264,
-      "pnl": -14.1282,
+      "px": 0.21366,
+      "pnl": -15.1553,
       "tf": "1h"
     },
     {
@@ -1427,8 +1427,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.27221,
-      "pnl": -21.6604,
+      "px": 0.27145,
+      "pnl": -21.0415,
       "tf": "4h"
     }
   ],
@@ -1436,8 +1436,8 @@
   "session_start": 1794269325,
   "realized": 689.2845,
   "closed_n": 18,
-  "open_upnl": -35.7886,
-  "equity": 1653.4959,
+  "open_upnl": -36.1968,
+  "equity": 1653.0877,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
