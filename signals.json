@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1794274591,
+  "updated_at": 1794275288,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "INITUSDT",
-      "tf": "1h",
-      "gap": 2.8,
-      "ts": 1794214869
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,22 +1395,16 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1794274591
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794275288
     }
   ],
   "trades": [
-    {
-      "symbol": "STABLEUSDT",
-      "side": "SELL",
-      "entry": 0.03062,
-      "tp": 0.0298545,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.03003,
-      "pnl": 3.8537,
-      "tf": "1h"
-    },
     {
       "symbol": "BONERUSDT",
       "side": "SELL",
@@ -1427,23 +1414,23 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.00557,
-      "pnl": -11.3852,
+      "px": 0.00551,
+      "pnl": -9.1082,
       "tf": "1h"
     }
   ],
   "start": 1000.0,
   "session_start": 1794269325,
-  "realized": 26.0362,
-  "closed_n": 2,
-  "open_upnl": -7.5315,
-  "equity": 1018.5047,
+  "realized": 31.7187,
+  "closed_n": 3,
+  "open_upnl": -9.1082,
+  "equity": 1022.6105,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 26.0362,
+    "profit": 31.7187,
     "loss": 0,
-    "count": 2
+    "count": 3
   }
 }
