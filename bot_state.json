@@ -78,24 +78,28 @@
       "symbol": "INITUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.25684,
-      "qty": 778.6949,
-      "margin": 10.0,
+      "entry": 0.2526257067570472,
+      "qty": 2375.0552,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.250419,
+      "tp_price": 0.24631006408812103,
       "tf": "15m",
       "opened_at": 1794321925,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 0.25684,
           "ts": 1794321925
+        },
+        {
+          "px": 0.25057,
+          "ts": 1794322859
         }
       ],
       "entry_candle_ts": 1794321900,
-      "last_leg_candle_ts": 1794321900,
+      "last_leg_candle_ts": 1794322800,
       "dry_run": true,
       "order_id": "PAPER-INITUSDT-1794321925"
     }
@@ -9043,6 +9047,42 @@
       "open": 0.007415,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "INITUSDT",
+      "tf": "15m",
+      "candle_ts": 1794321900,
+      "side": "SELL",
+      "upper": 0.23662418331225896,
+      "open": 0.24273,
+      "reported": false
+    },
+    {
+      "symbol": "QNTXUSDT",
+      "tf": "15m",
+      "candle_ts": 1794321900,
+      "side": "SELL",
+      "upper": 41.530767081141306,
+      "open": 42.06,
+      "reported": false
+    },
+    {
+      "symbol": "MARAUSDT",
+      "tf": "15m",
+      "candle_ts": 1794321900,
+      "side": "SELL",
+      "upper": 7.018176231196522,
+      "open": 7.096,
+      "reported": false
+    },
+    {
+      "symbol": "AKEUSDT",
+      "tf": "15m",
+      "candle_ts": 1794321900,
+      "side": "SELL",
+      "upper": 0.0026639436138873964,
+      "open": 0.0026966,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -9150,7 +9190,6 @@
     "FIGHT1USDT": 1794111444,
     "ARGUSDT": 1794114249,
     "APROUSDT": 1794115028,
-    "SXTUSDT": 1794125089,
     "GALUSDT": 1794141094,
     "METEORAUSDT": 1794163747,
     "PIPEDOGUSDT": 1794170773,
@@ -9163,7 +9202,6 @@
     "BARUSDT": 1794188820,
     "1000BTTCUSDT": 1794189823,
     "JUVUSDT": 1794190600,
-    "KNTQUSDT": 1794196979,
     "SIMOUSDT": 1794199618,
     "MUSTOCKUSDT": 1794211442,
     "LIGHT1USDT": 1794213992,
@@ -9212,7 +9250,7 @@
     "ONSEMIUSDT": 1794360726,
     "CAPETHUSDT": 1794361582
   },
-  "last_trade_report_ts": 1794321231,
+  "last_trade_report_ts": 1794322160,
   "last_known_version": "2.7.4",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
