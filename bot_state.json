@@ -75,37 +75,6 @@
       "order_id": "PAPER-ARIAUSDT-1794297644"
     },
     {
-      "symbol": "NIGHTUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.04312866512742378,
-      "qty": 13911.8612,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.04205044849923819,
-      "tf": "4h",
-      "opened_at": 1794297741,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        0.04302
-      ],
-      "steps": [
-        {
-          "px": 0.04347,
-          "ts": 1794297741
-        },
-        {
-          "px": 0.04296,
-          "ts": 1794300501
-        }
-      ],
-      "entry_candle_ts": 1794297600,
-      "last_leg_candle_ts": 1794300501,
-      "dry_run": true,
-      "order_id": "PAPER-NIGHTUSDT-1794297741"
-    },
-    {
       "symbol": "SECZUSDT",
       "side": "SELL",
       "status": "open",
@@ -132,36 +101,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "BEAMXUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.004311,
-      "qty": 46392.9483,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.004203225,
-      "tf": "15m",
-      "opened_at": 1793789409,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.004311,
-          "ts": 1793789409
-        }
-      ],
-      "entry_candle_ts": 1793789100,
-      "last_leg_candle_ts": 1793789100,
-      "dry_run": true,
-      "order_id": "PAPER-BEAMXUSDT-1793789409",
-      "closed_at": 1793791137,
-      "close_px": 0.004198,
-      "pnl_usdt": 5.2424031547204555,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "FRONGUSDT",
       "side": "SELL",
@@ -7185,6 +7124,42 @@
       "closed_at": 1794313133,
       "close_px": 0.297,
       "pnl_usdt": 50.76808905892733,
+      "close_reason": "TP50",
+      "why": "TP50"
+    },
+    {
+      "symbol": "NIGHTUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.04312866512742378,
+      "qty": 13911.8612,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 0.04205044849923819,
+      "tf": "4h",
+      "opened_at": 1794297741,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.04302
+      ],
+      "steps": [
+        {
+          "px": 0.04347,
+          "ts": 1794297741
+        },
+        {
+          "px": 0.04296,
+          "ts": 1794300501
+        }
+      ],
+      "entry_candle_ts": 1794297600,
+      "last_leg_candle_ts": 1794300501,
+      "dry_run": true,
+      "order_id": "PAPER-NIGHTUSDT-1794297741",
+      "closed_at": 1794314039,
+      "close_px": 0.04184,
+      "pnl_usdt": 17.92773029654058,
       "close_reason": "TP50",
       "why": "TP50"
     }
