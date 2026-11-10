@@ -94,24 +94,30 @@
       "symbol": "NIGHTUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.04347,
-      "qty": 4600.8742,
-      "margin": 10.0,
+      "entry": 0.04312866512742378,
+      "qty": 13911.8612,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.04238325,
+      "tp_price": 0.04205044849923819,
       "tf": "4h",
       "opened_at": 1794297741,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.04302
+      ],
       "steps": [
         {
           "px": 0.04347,
           "ts": 1794297741
+        },
+        {
+          "px": 0.04296,
+          "ts": 1794300501
         }
       ],
       "entry_candle_ts": 1794297600,
-      "last_leg_candle_ts": 1794297600,
+      "last_leg_candle_ts": 1794300501,
       "dry_run": true,
       "order_id": "PAPER-NIGHTUSDT-1794297741"
     },
