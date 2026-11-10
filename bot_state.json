@@ -4,18 +4,19 @@
       "symbol": "ONEUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.001770972400233447,
-      "qty": 3500901.5382,
-      "margin": 310.0,
+      "entry": 0.00176343803402776,
+      "qty": 7145133.4025,
+      "margin": 630.0,
       "leverage": 20,
-      "tp_price": 0.0017266980902276108,
+      "tp_price": 0.0017193520831770659,
       "tf": "1h",
       "opened_at": 1794296802,
-      "adds": 4,
-      "last_leg_margin": 160.0,
+      "adds": 5,
+      "last_leg_margin": 320.0,
       "used_res_levels": [
         0.001607,
-        0.00167
+        0.00167,
+        0.001759
       ],
       "steps": [
         {
@@ -37,10 +38,14 @@
         {
           "px": 0.0018227,
           "ts": 1794301282
+        },
+        {
+          "px": 0.0017562,
+          "ts": 1794305054
         }
       ],
       "entry_candle_ts": 1794296700,
-      "last_leg_candle_ts": 1794301200,
+      "last_leg_candle_ts": 1794305054,
       "dry_run": true,
       "order_id": "PAPER-ONEUSDT-1794296802"
     },
@@ -7388,36 +7393,6 @@
       "side": "SELL"
     },
     {
-      "symbol": "CTUSDT",
-      "tf": "15m",
-      "candle_ts": 1794043800,
-      "side": "SELL",
-      "upper": 0.1438134907203566,
-      "open": 0.1457,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "KATUSDT",
-      "tf": "15m",
-      "candle_ts": 1794043800,
-      "side": "SELL",
-      "upper": 0.0037747376749496945,
-      "open": 0.003818,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "KOMAUSDT",
-      "tf": "1h",
-      "candle_ts": 1794045600,
-      "side": "SELL",
-      "upper": 0.015073137184545825,
-      "open": 0.015386,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "BLENDUSDT",
       "tf": "15m",
       "candle_ts": 1794048300,
@@ -9001,7 +8976,8 @@
       "side": "SELL",
       "upper": 0.0017453070001764532,
       "open": 0.00182,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -9172,9 +9148,10 @@
     "1000WOJAKUSDT": 1794342916,
     "NEIRO1USDT": 1794342919,
     "CZUSDT": 1794342920,
-    "CYBERLEEKUSDT": 1794343621
+    "CYBERLEEKUSDT": 1794343621,
+    "AINBSCUSDT": 1794347168
   },
-  "last_trade_report_ts": 1794301496,
+  "last_trade_report_ts": 1794303344,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
