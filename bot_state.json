@@ -55,6 +55,31 @@
       "last_leg_candle_ts": 1794324861,
       "dry_run": true,
       "order_id": "PAPER-MARAUSDT-1794322892"
+    },
+    {
+      "symbol": "DJTUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 4.479,
+      "qty": 44.6528,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 4.367025,
+      "tf": "1h",
+      "opened_at": 1794326460,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 4.479,
+          "ts": 1794326460
+        }
+      ],
+      "entry_candle_ts": 1794326400,
+      "last_leg_candle_ts": 1794326400,
+      "dry_run": true,
+      "order_id": "PAPER-DJTUSDT-1794326460"
     }
   ],
   "trade_history": [
@@ -9161,6 +9186,15 @@
       "open": 0.06154,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "QNTXUSDT",
+      "tf": "1h",
+      "candle_ts": 1794326400,
+      "side": "SELL",
+      "upper": 42.83349499061717,
+      "open": 43.53,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -9273,7 +9307,6 @@
     "DRVUSDT": 1794177070,
     "FLOCK1USDT": 1794177995,
     "ARCSOLUSDT": 1794182719,
-    "PORUSDT": 1794187019,
     "ATMUSDT": 1794188784,
     "IRENONUSDT": 1794188819,
     "BARUSDT": 1794188820,
@@ -9289,7 +9322,6 @@
     "MARRIOTTUSDT": 1794225911,
     "BRLUSDT": 1794225832,
     "GOLDUSDT": 1794228410,
-    "MURATAUSDT": 1794229413,
     "GSTOCKUSDT": 1794231093,
     "BEMUSDT": 1794233803,
     "TSMONUSDT": 1794234714,
@@ -9297,7 +9329,6 @@
     "SILVERUSDT": 1794240255,
     "FIGUSDT": 1794246425,
     "OFCUSDT": 1794251008,
-    "BTCDOMUSDT": 1794262603,
     "BIO1USDT": 1794262616,
     "SAFE1USDT": 1794264407,
     "TOADUSDT": 1794299510,
@@ -9329,7 +9360,7 @@
     "OSCRUSDT": 1794367943,
     "ARGUSDT": 1794367944
   },
-  "last_trade_report_ts": 1794324878,
+  "last_trade_report_ts": 1794325805,
   "last_known_version": "2.7.4",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
