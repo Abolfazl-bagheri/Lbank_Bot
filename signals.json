@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1794276046,
+  "updated_at": 1794276051,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "AKEUSDT",
-      "tf": "15m",
-      "gap": 5.5,
-      "ts": 1794216534
-    },
     {
       "kind": "GAP",
       "symbol": "IDOLUSDT",
@@ -1402,17 +1395,24 @@
       "tf": "1h",
       "gap": 2.15,
       "ts": 1794276046
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794276051
     }
   ],
   "trades": [
     {
       "symbol": "BONERUSDT",
       "side": "SELL",
-      "entry": 0.00527,
-      "tp": 0.0051382500000000005,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
+      "entry": 0.00544697761202871,
+      "tp": 0.005310803171727992,
+      "adds": 1,
+      "pele": 2,
+      "margin": 30.0,
       "lev": 20,
       "px": 0.00554,
       "pnl": -10.2467,
