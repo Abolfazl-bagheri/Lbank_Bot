@@ -109,24 +109,28 @@
       "symbol": "BULLAUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.06305,
-      "qty": 3172.0856,
-      "margin": 10.0,
+      "entry": 0.06675768167327062,
+      "qty": 8987.7297,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.061473749999999994,
-      "tf": "4h",
+      "tp_price": 0.06508873963143885,
+      "tf": "15m",
       "opened_at": 1794297843,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 0.06305,
           "ts": 1794297843
+        },
+        {
+          "px": 0.06878,
+          "ts": 1794308442
         }
       ],
       "entry_candle_ts": 1794297600,
-      "last_leg_candle_ts": 1794297600,
+      "last_leg_candle_ts": 1794308400,
       "dry_run": true,
       "order_id": "PAPER-BULLAUSDT-1794297843"
     }
@@ -7393,16 +7397,6 @@
       "side": "SELL"
     },
     {
-      "symbol": "BLENDUSDT",
-      "tf": "15m",
-      "candle_ts": 1794048300,
-      "side": "SELL",
-      "upper": 0.055295365771901445,
-      "open": 0.0563,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "KOMAUSDT",
       "tf": "1h",
       "candle_ts": 1794049200,
@@ -9151,7 +9145,7 @@
     "AINBSCUSDT": 1794347168,
     "UP2USDT": 1794348962
   },
-  "last_trade_report_ts": 1794306029,
+  "last_trade_report_ts": 1794307704,
   "last_known_version": "2.7.4",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
