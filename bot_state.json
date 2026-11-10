@@ -70,31 +70,6 @@
       "order_id": "PAPER-ARIAUSDT-1794297644"
     },
     {
-      "symbol": "AIOUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.04754,
-      "qty": 4206.9836,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.0463515,
-      "tf": "1h",
-      "opened_at": 1794297705,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.04754,
-          "ts": 1794297705
-        }
-      ],
-      "entry_candle_ts": 1794297600,
-      "last_leg_candle_ts": 1794297600,
-      "dry_run": true,
-      "order_id": "PAPER-AIOUSDT-1794297705"
-    },
-    {
       "symbol": "NIGHTUSDT",
       "side": "SELL",
       "status": "open",
@@ -152,42 +127,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "ATHUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.005251816458107568,
-      "qty": 114246.1861,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.005120521046654878,
-      "tf": "1h",
-      "opened_at": 1793783146,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        0.005238
-      ],
-      "steps": [
-        {
-          "px": 0.005296,
-          "ts": 1793783146
-        },
-        {
-          "px": 0.00523,
-          "ts": 1793785956
-        }
-      ],
-      "entry_candle_ts": 1793782800,
-      "last_leg_candle_ts": 1793785956,
-      "dry_run": true,
-      "order_id": "PAPER-ATHUSDT-1793783146",
-      "closed_at": 1793786681,
-      "close_px": 0.005197,
-      "pnl_usdt": 6.262571269749217,
-      "close_reason": "NIGHT_RESET",
-      "why": "NIGHT_RESET"
-    },
     {
       "symbol": "FOLKSUSDT",
       "side": "SELL",
@@ -7205,6 +7144,36 @@
       "pnl_usdt": 5.215355805243464,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "AIOUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.04754,
+      "qty": 4206.9836,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0463515,
+      "tf": "1h",
+      "opened_at": 1794297705,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.04754,
+          "ts": 1794297705
+        }
+      ],
+      "entry_candle_ts": 1794297600,
+      "last_leg_candle_ts": 1794297600,
+      "dry_run": true,
+      "order_id": "PAPER-AIOUSDT-1794297705",
+      "closed_at": 1794302434,
+      "close_px": 0.04602,
+      "pnl_usdt": 6.394615061001264,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -7417,36 +7386,6 @@
       "tf": "15m",
       "candle_ts": 1793430900,
       "side": "SELL"
-    },
-    {
-      "symbol": "KOMAUSDT",
-      "tf": "1h",
-      "candle_ts": 1794042000,
-      "side": "SELL",
-      "upper": 0.014572604059141592,
-      "open": 0.015155,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "CTUSDT",
-      "tf": "15m",
-      "candle_ts": 1794042000,
-      "side": "SELL",
-      "upper": 0.13721868919432137,
-      "open": 0.1388,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "CTUSDT",
-      "tf": "1h",
-      "candle_ts": 1794042000,
-      "side": "SELL",
-      "upper": 0.1347389960347059,
-      "open": 0.1388,
-      "reported": true,
-      "filled": true
     },
     {
       "symbol": "CTUSDT",
@@ -9005,7 +8944,8 @@
       "side": "SELL",
       "upper": 0.19596177760141364,
       "open": 0.19851,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "INITUSDT",
@@ -9023,7 +8963,8 @@
       "side": "SELL",
       "upper": 0.04658516465022852,
       "open": 0.04731,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "NIGHTUSDT",
@@ -9050,6 +8991,16 @@
       "side": "SELL",
       "upper": 0.0017764621504521602,
       "open": 0.001814,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "ONEUSDT",
+      "tf": "1h",
+      "candle_ts": 1794301200,
+      "side": "SELL",
+      "upper": 0.0017453070001764532,
+      "open": 0.00182,
       "reported": false
     }
   ],
@@ -9223,7 +9174,7 @@
     "CZUSDT": 1794342920,
     "CYBERLEEKUSDT": 1794343621
   },
-  "last_trade_report_ts": 1794300515,
+  "last_trade_report_ts": 1794301496,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
