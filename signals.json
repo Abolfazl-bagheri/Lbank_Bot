@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.4",
-  "updated_at": 1794321859,
+  "updated_at": 1794321923,
   "signals": [
-    {
-      "kind": "HEARTBEAT",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794272742
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 1.35,
       "ts": 1794321859
+    },
+    {
+      "kind": "SELL",
+      "symbol": "INITUSDT",
+      "tf": "15m",
+      "gap": 7.87,
+      "ts": 1794321923
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 6,
       "margin": 630.0,
       "lev": 20,
-      "px": 0.0017446,
-      "pnl": 134.6003,
+      "px": 0.0017773,
+      "pnl": -99.0456,
       "tf": "1h"
     },
     {
@@ -1427,8 +1427,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.2062,
-      "pnl": -7.6431,
+      "px": 0.21013,
+      "pnl": -11.6006,
       "tf": "1h"
     }
   ],
@@ -1436,8 +1436,8 @@
   "session_start": 1794269325,
   "realized": 212.8663,
   "closed_n": 12,
-  "open_upnl": 126.9572,
-  "equity": 1339.8235,
+  "open_upnl": -110.6462,
+  "equity": 1102.2201,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
