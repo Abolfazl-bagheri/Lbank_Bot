@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.4",
-  "updated_at": 1794345369,
+  "updated_at": 1794345375,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "FONEUSDT",
-      "tf": "15m",
-      "gap": 1.09,
-      "ts": 1794320106
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 2.35,
       "ts": 1794345369
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794345375
     }
   ],
   "trades": [
@@ -1417,6 +1417,19 @@
       "px": 0.21418,
       "pnl": -15.679,
       "tf": "1h"
+    },
+    {
+      "symbol": "EQTUSDT",
+      "side": "SELL",
+      "entry": 52.11,
+      "tp": 50.807249999999996,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 52.11,
+      "pnl": 0.0,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
