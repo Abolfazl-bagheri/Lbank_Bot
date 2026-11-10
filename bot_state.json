@@ -26,35 +26,6 @@
       "order_id": "PAPER-ARIAUSDT-1794297644"
     },
     {
-      "symbol": "INITUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.2526257067570472,
-      "qty": 2375.0552,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.24631006408812103,
-      "tf": "15m",
-      "opened_at": 1794321925,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.25684,
-          "ts": 1794321925
-        },
-        {
-          "px": 0.25057,
-          "ts": 1794322859
-        }
-      ],
-      "entry_candle_ts": 1794321900,
-      "last_leg_candle_ts": 1794322800,
-      "dry_run": true,
-      "order_id": "PAPER-INITUSDT-1794321925"
-    },
-    {
       "symbol": "MARAUSDT",
       "side": "SELL",
       "status": "open",
@@ -78,39 +49,34 @@
       "last_leg_candle_ts": 1794322800,
       "dry_run": true,
       "order_id": "PAPER-MARAUSDT-1794322892"
-    }
-  ],
-  "trade_history": [
+    },
     {
-      "symbol": "SSPCUSDT",
+      "symbol": "DJTUSDT",
       "side": "SELL",
-      "status": "closed",
-      "entry": 10.298,
-      "qty": 19.4212,
+      "status": "open",
+      "entry": 4.635,
+      "qty": 43.1499,
       "margin": 10.0,
       "leverage": 20,
-      "tp_price": 10.04055,
+      "tp_price": 4.519125,
       "tf": "15m",
-      "opened_at": 1793798193,
+      "opened_at": 1794324624,
       "adds": 0,
       "last_leg_margin": 10.0,
       "used_res_levels": [],
       "steps": [
         {
-          "px": 10.298,
-          "ts": 1793798193
+          "px": 4.635,
+          "ts": 1794324624
         }
       ],
-      "entry_candle_ts": 1793798100,
-      "last_leg_candle_ts": 1793798100,
+      "entry_candle_ts": 1794324600,
+      "last_leg_candle_ts": 1794324600,
       "dry_run": true,
-      "order_id": "PAPER-SSPCUSDT-1793798193",
-      "closed_at": 1793799142,
-      "close_px": 10.027,
-      "pnl_usdt": 5.263157894736858,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
+      "order_id": "PAPER-DJTUSDT-1794324624"
+    }
+  ],
+  "trade_history": [
     {
       "symbol": "SXTUSDT",
       "side": "SELL",
@@ -7166,6 +7132,40 @@
       "pnl_usdt": 327.5188680322436,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "INITUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.2526257067570472,
+      "qty": 2375.0552,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 0.24631006408812103,
+      "tf": "15m",
+      "opened_at": 1794321925,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.25684,
+          "ts": 1794321925
+        },
+        {
+          "px": 0.25057,
+          "ts": 1794322859
+        }
+      ],
+      "entry_candle_ts": 1794321900,
+      "last_leg_candle_ts": 1794322800,
+      "dry_run": true,
+      "order_id": "PAPER-INITUSDT-1794321925",
+      "closed_at": 1794323927,
+      "close_px": 0.23351,
+      "pnl_usdt": 45.40085884948594,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -9268,7 +9268,6 @@
     "SPORTFUNUSDT": 1794081839,
     "ARROWUSDT": 1794086185,
     "FIGHT1USDT": 1794111444,
-    "ARGUSDT": 1794114249,
     "APROUSDT": 1794115028,
     "GALUSDT": 1794141094,
     "METEORAUSDT": 1794163747,
@@ -9301,7 +9300,6 @@
     "FIGUSDT": 1794246425,
     "OFCUSDT": 1794251008,
     "BTCDOMUSDT": 1794262603,
-    "OSCRUSDT": 1794262610,
     "BIO1USDT": 1794262616,
     "SAFE1USDT": 1794264407,
     "TOADUSDT": 1794299510,
