@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1794300357,
+  "updated_at": 1794300507,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794261631
-    },
     {
       "kind": "SELL",
       "symbol": "INITUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1794300357
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794300507
     }
   ],
   "trades": [
@@ -1432,19 +1432,6 @@
       "tf": "1h"
     },
     {
-      "symbol": "INITUSDT",
-      "side": "SELL",
-      "entry": 0.2136,
-      "tp": 0.20826,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.20803,
-      "pnl": 5.2154,
-      "tf": "4h"
-    },
-    {
       "symbol": "AIOUSDT",
       "side": "SELL",
       "entry": 0.04754,
@@ -1460,11 +1447,11 @@
     {
       "symbol": "NIGHTUSDT",
       "side": "SELL",
-      "entry": 0.04347,
-      "tp": 0.04238325,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
+      "entry": 0.04312866512742378,
+      "tp": 0.04205044849923819,
+      "adds": 1,
+      "pele": 2,
+      "margin": 30.0,
       "lev": 20,
       "px": 0.04296,
       "pnl": 2.3464,
@@ -1486,16 +1473,16 @@
   ],
   "start": 1000.0,
   "session_start": 1794269325,
-  "realized": 103.0436,
-  "closed_n": 5,
-  "open_upnl": -130.769,
-  "equity": 972.2746,
+  "realized": 108.2589,
+  "closed_n": 6,
+  "open_upnl": -135.9844,
+  "equity": 972.2745,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 103.0436,
+    "profit": 108.2589,
     "loss": 0,
-    "count": 5
+    "count": 6
   }
 }
