@@ -7438,26 +7438,6 @@
     {
       "symbol": "IDOLUSDT",
       "tf": "15m",
-      "candle_ts": 1794068100,
-      "side": "SELL",
-      "upper": 0.03414618447301809,
-      "open": 0.034856,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "HMSTRUSDT",
-      "tf": "15m",
-      "candle_ts": 1794068100,
-      "side": "SELL",
-      "upper": 0.00013244132349773865,
-      "open": 0.0001339,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "IDOLUSDT",
-      "tf": "15m",
       "candle_ts": 1794069000,
       "side": "SELL",
       "upper": 0.0363425671002651,
@@ -9092,7 +9072,8 @@
       "side": "SELL",
       "upper": 8.347764927895671,
       "open": 8.548,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "JCTUSDT",
@@ -9161,7 +9142,8 @@
       "side": "SELL",
       "upper": 7.238648764755652,
       "open": 7.388,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "AMDUSDT",
@@ -9180,7 +9162,8 @@
       "side": "SELL",
       "upper": 0.24107894017722756,
       "open": 0.2491,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "TERUSDT",
@@ -9209,7 +9192,8 @@
       "side": "SELL",
       "upper": 529.7492137312502,
       "open": 535.37,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "DJTUSDT",
@@ -9302,6 +9286,15 @@
       "side": "SELL",
       "upper": 9.020969915255785,
       "open": 9.344,
+      "reported": false
+    },
+    {
+      "symbol": "DJTUSDT",
+      "tf": "4h",
+      "candle_ts": 1794326400,
+      "side": "SELL",
+      "upper": 4.343679914288303,
+      "open": 4.443,
       "reported": false
     }
   ],
@@ -9466,9 +9459,15 @@
     "CAPETHUSDT": 1794361582,
     "O1USDT": 1794366307,
     "OSCRUSDT": 1794367943,
-    "ARGUSDT": 1794367944
+    "ARGUSDT": 1794367944,
+    "HOTUSDT": 1794369871,
+    "SXTUSDT": 1794369881,
+    "NIULAIUSDT": 1794369936,
+    "KNTQUSDT": 1794369994,
+    "NEXUSDT": 1794370005,
+    "1000000BABYDOGEUSDT": 1794370029
   },
-  "last_trade_report_ts": 1794325805,
+  "last_trade_report_ts": 1794327019,
   "last_known_version": "2.7.4",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
