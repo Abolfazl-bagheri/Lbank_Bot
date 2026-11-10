@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.4",
-  "updated_at": 1794320106,
+  "updated_at": 1794320321,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794271744
-    },
     {
       "kind": "HEARTBEAT",
       "symbol": "—",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 1.09,
       "ts": 1794320106
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794320321
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 6,
       "margin": 630.0,
       "lev": 20,
-      "px": 0.0017902,
-      "pnl": -191.2178,
+      "px": 0.0017819,
+      "pnl": -131.9132,
       "tf": "1h"
     },
     {
@@ -1427,36 +1427,23 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.2031,
-      "pnl": -4.5214,
+      "px": 0.20094,
+      "pnl": -2.3463,
       "tf": "1h"
-    },
-    {
-      "symbol": "JCTUSDT",
-      "side": "SELL",
-      "entry": 0.00746,
-      "tp": 0.0072735,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.007379,
-      "pnl": 2.1716,
-      "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1794269325,
-  "realized": 205.5473,
-  "closed_n": 11,
-  "open_upnl": -193.5676,
-  "equity": 1011.9797,
+  "realized": 212.8663,
+  "closed_n": 12,
+  "open_upnl": -134.2595,
+  "equity": 1078.6068,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 205.5473,
+    "profit": 212.8663,
     "loss": 0,
-    "count": 11
+    "count": 12
   }
 }
