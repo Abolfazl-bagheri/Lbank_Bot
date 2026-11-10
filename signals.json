@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.4",
-  "updated_at": 1794339029,
+  "updated_at": 1794339035,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "ARIAUSDT",
-      "tf": "4h",
-      "gap": 2.35,
-      "ts": 1794310916
-    },
     {
       "kind": "GAP",
       "symbol": "SECZUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 2.53,
       "ts": 1794339029
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794339035
     }
   ],
   "trades": [
@@ -1430,6 +1430,19 @@
       "px": 0.28202,
       "pnl": -29.6486,
       "tf": "4h"
+    },
+    {
+      "symbol": "MERLUSDT",
+      "side": "SELL",
+      "entry": 0.03601,
+      "tp": 0.03510975,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.03601,
+      "pnl": 0.0,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
