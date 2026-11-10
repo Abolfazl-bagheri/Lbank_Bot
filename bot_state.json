@@ -80,6 +80,31 @@
       "last_leg_candle_ts": 1794326400,
       "dry_run": true,
       "order_id": "PAPER-DJTUSDT-1794326460"
+    },
+    {
+      "symbol": "INITUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.24561,
+      "qty": 814.2991,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.23946974999999998,
+      "tf": "4h",
+      "opened_at": 1794326511,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.24561,
+          "ts": 1794326511
+        }
+      ],
+      "entry_candle_ts": 1794326400,
+      "last_leg_candle_ts": 1794326400,
+      "dry_run": true,
+      "order_id": "PAPER-INITUSDT-1794326511"
     }
   ],
   "trade_history": [
@@ -9194,6 +9219,33 @@
       "side": "SELL",
       "upper": 42.83349499061717,
       "open": 43.53,
+      "reported": false
+    },
+    {
+      "symbol": "DJTUSDT",
+      "tf": "1h",
+      "candle_ts": 1794326400,
+      "side": "SELL",
+      "upper": 4.365491404915115,
+      "open": 4.453,
+      "reported": false
+    },
+    {
+      "symbol": "QNTXUSDT",
+      "tf": "4h",
+      "candle_ts": 1794326400,
+      "side": "SELL",
+      "upper": 42.904313733583756,
+      "open": 43.53,
+      "reported": false
+    },
+    {
+      "symbol": "SOPHUSDT",
+      "tf": "4h",
+      "candle_ts": 1794326400,
+      "side": "SELL",
+      "upper": 0.0014256335875315385,
+      "open": 0.001441,
       "reported": false
     }
   ],
