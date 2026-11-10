@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.4",
-  "updated_at": 1794312914,
+  "updated_at": 1794313140,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "SECZUSDT",
-      "tf": "1h",
-      "gap": 1.43,
-      "ts": 1794268715
-    },
     {
       "kind": "GAP",
       "symbol": "FNUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 1.15,
       "ts": 1794312914
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794313140
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 6,
       "margin": 630.0,
       "lev": 20,
-      "px": 0.0018303,
-      "pnl": -477.7377,
+      "px": 0.0018217,
+      "pnl": -416.2895,
       "tf": "1h"
     },
     {
@@ -1427,8 +1427,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.20626,
-      "pnl": -7.7035,
+      "px": 0.20739,
+      "pnl": -8.8414,
       "tf": "1h"
     },
     {
@@ -1440,22 +1440,9 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 0.04205,
-      "pnl": 15.0062,
+      "px": 0.04206,
+      "pnl": 14.8671,
       "tf": "4h"
-    },
-    {
-      "symbol": "CYBERUSDT",
-      "side": "SELL",
-      "entry": 0.32445310705757435,
-      "tp": 0.316341779381135,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
-      "lev": 20,
-      "px": 0.2901,
-      "pnl": 63.528,
-      "tf": "15m"
     },
     {
       "symbol": "SECZUSDT",
@@ -1466,23 +1453,23 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 8.51,
-      "pnl": 1.6317,
+      "px": 8.52,
+      "pnl": 1.3986,
       "tf": "4h"
     }
   ],
   "start": 1000.0,
   "session_start": 1794269325,
-  "realized": 130.0916,
-  "closed_n": 8,
-  "open_upnl": -405.2753,
-  "equity": 724.8163,
+  "realized": 180.8597,
+  "closed_n": 9,
+  "open_upnl": -408.8652,
+  "equity": 771.9945,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 130.0916,
+    "profit": 180.8597,
     "loss": 0,
-    "count": 8
+    "count": 9
   }
 }
