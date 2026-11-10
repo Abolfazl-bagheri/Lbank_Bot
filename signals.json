@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.4",
-  "updated_at": 1794321231,
+  "updated_at": 1794321843,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "STABLEUSDT",
-      "tf": "1h",
-      "gap": 0.91,
-      "ts": 1794272435
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1395,13 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1794321231
+    },
+    {
+      "kind": "GAP",
+      "symbol": "INITUSDT",
+      "tf": "15m",
+      "gap": 9.98,
+      "ts": 1794321843
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 6,
       "margin": 630.0,
       "lev": 20,
-      "px": 0.0017572,
-      "pnl": 44.5716,
+      "px": 0.0017446,
+      "pnl": 134.6003,
       "tf": "1h"
     },
     {
@@ -1427,8 +1427,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.20642,
-      "pnl": -7.8647,
+      "px": 0.2062,
+      "pnl": -7.6431,
       "tf": "1h"
     }
   ],
@@ -1436,8 +1436,8 @@
   "session_start": 1794269325,
   "realized": 212.8663,
   "closed_n": 12,
-  "open_upnl": 36.7069,
-  "equity": 1249.5732,
+  "open_upnl": 126.9572,
+  "equity": 1339.8235,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
