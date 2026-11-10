@@ -73,6 +73,31 @@
       "last_leg_candle_ts": 1794297600,
       "dry_run": true,
       "order_id": "PAPER-ARIAUSDT-1794297644"
+    },
+    {
+      "symbol": "INITUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.25684,
+      "qty": 778.6949,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.250419,
+      "tf": "15m",
+      "opened_at": 1794321925,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.25684,
+          "ts": 1794321925
+        }
+      ],
+      "entry_candle_ts": 1794321900,
+      "last_leg_candle_ts": 1794321900,
+      "dry_run": true,
+      "order_id": "PAPER-INITUSDT-1794321925"
     }
   ],
   "trade_history": [
@@ -9157,7 +9182,6 @@
     "SILVERUSDT": 1794240255,
     "FIGUSDT": 1794246425,
     "OFCUSDT": 1794251008,
-    "O1USDT": 1794253602,
     "BTCDOMUSDT": 1794262603,
     "OSCRUSDT": 1794262610,
     "BIO1USDT": 1794262616,
@@ -9165,7 +9189,6 @@
     "TOADUSDT": 1794299510,
     "AI1USDT": 1794300376,
     "MANCERUSDT": 1794302216,
-    "LYTEUSDT": 1794312275,
     "TSTUSDT": 1794312277,
     "TQQQUSDT": 1794312291,
     "B3USDT": 1794338194,
@@ -9189,7 +9212,7 @@
     "ONSEMIUSDT": 1794360726,
     "CAPETHUSDT": 1794361582
   },
-  "last_trade_report_ts": 1794319606,
+  "last_trade_report_ts": 1794321231,
   "last_known_version": "2.7.4",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
