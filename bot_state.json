@@ -66,31 +66,6 @@
       "order_id": "PAPER-ARIAUSDT-1794297644"
     },
     {
-      "symbol": "INITUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.2136,
-      "qty": 936.3296,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.20826,
-      "tf": "4h",
-      "opened_at": 1794297659,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.2136,
-          "ts": 1794297659
-        }
-      ],
-      "entry_candle_ts": 1794297600,
-      "last_leg_candle_ts": 1794297600,
-      "dry_run": true,
-      "order_id": "PAPER-INITUSDT-1794297659"
-    },
-    {
       "symbol": "AIOUSDT",
       "side": "SELL",
       "status": "open",
@@ -167,51 +142,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "ANSEMUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.04799181340845644,
-      "qty": 62510.6614,
-      "margin": 150.0,
-      "leverage": 20,
-      "tp_price": 0.046792018073245026,
-      "tf": "1h",
-      "opened_at": 1793780338,
-      "adds": 3,
-      "last_leg_margin": 80.0,
-      "used_res_levels": [
-        0.0476,
-        0.0481
-      ],
-      "steps": [
-        {
-          "px": 0.0468,
-          "ts": 1793780338
-        },
-        {
-          "px": 0.04964,
-          "ts": 1793783030
-        },
-        {
-          "px": 0.04747,
-          "ts": 1793784166
-        },
-        {
-          "px": 0.04801,
-          "ts": 1793785940
-        }
-      ],
-      "entry_candle_ts": 1793780100,
-      "last_leg_candle_ts": 1793785940,
-      "dry_run": true,
-      "order_id": "PAPER-ANSEMUSDT-1793780338",
-      "closed_at": 1793786681,
-      "close_px": 0.04786,
-      "pnl_usdt": 8.239743349636202,
-      "close_reason": "NIGHT_RESET",
-      "why": "NIGHT_RESET"
-    },
     {
       "symbol": "ATHUSDT",
       "side": "SELL",
@@ -7235,6 +7165,36 @@
       "pnl_usdt": 10.295519542421331,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "INITUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.2136,
+      "qty": 936.3296,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.20826,
+      "tf": "4h",
+      "opened_at": 1794297659,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.2136,
+          "ts": 1794297659
+        }
+      ],
+      "entry_candle_ts": 1794297600,
+      "last_leg_candle_ts": 1794297600,
+      "dry_run": true,
+      "order_id": "PAPER-INITUSDT-1794297659",
+      "closed_at": 1794300497,
+      "close_px": 0.20803,
+      "pnl_usdt": 5.215355805243464,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -9072,6 +9032,15 @@
       "upper": 0.06240747914439819,
       "open": 0.06308,
       "reported": false
+    },
+    {
+      "symbol": "ONEUSDT",
+      "tf": "15m",
+      "candle_ts": 1794300300,
+      "side": "SELL",
+      "upper": 0.0017764621504521602,
+      "open": 0.001814,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -9241,7 +9210,8 @@
     "1000SATSUSDT": 1794342914,
     "1000WOJAKUSDT": 1794342916,
     "NEIRO1USDT": 1794342919,
-    "CZUSDT": 1794342920
+    "CZUSDT": 1794342920,
+    "CYBERLEEKUSDT": 1794343621
   },
   "last_trade_report_ts": 1794299587,
   "last_known_version": "2.7.2",
