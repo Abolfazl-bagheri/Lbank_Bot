@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.4",
-  "updated_at": 1794311151,
+  "updated_at": 1794311158,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "AMATUSDT",
-      "tf": "4h",
-      "gap": 1.57,
-      "ts": 1794267805
-    },
     {
       "kind": "GAP",
       "symbol": "VICRUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 3.9,
       "ts": 1794311151
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794311158
     }
   ],
   "trades": [
@@ -1443,6 +1443,19 @@
       "px": 0.04234,
       "pnl": 10.9718,
       "tf": "4h"
+    },
+    {
+      "symbol": "CYBERUSDT",
+      "side": "SELL",
+      "entry": 0.3059,
+      "tp": 0.2982525,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.3059,
+      "pnl": 0.0,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
