@@ -109,6 +109,31 @@
       "last_leg_candle_ts": 1794326400,
       "dry_run": true,
       "order_id": "PAPER-INITUSDT-1794326511"
+    },
+    {
+      "symbol": "SECZUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 9.35,
+      "qty": 21.3904,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 9.116249999999999,
+      "tf": "4h",
+      "opened_at": 1794326541,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 9.35,
+          "ts": 1794326541
+        }
+      ],
+      "entry_candle_ts": 1794326400,
+      "last_leg_candle_ts": 1794326400,
+      "dry_run": true,
+      "order_id": "PAPER-SECZUSDT-1794326541"
     }
   ],
   "trade_history": [
@@ -9259,6 +9284,15 @@
       "side": "SELL",
       "upper": 0.23359935624652806,
       "open": 0.24211,
+      "reported": false
+    },
+    {
+      "symbol": "MARAUSDT",
+      "tf": "4h",
+      "candle_ts": 1794326400,
+      "side": "SELL",
+      "upper": 7.174261848025312,
+      "open": 7.378,
       "reported": false
     }
   ],
