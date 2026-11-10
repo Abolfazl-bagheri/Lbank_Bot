@@ -4,15 +4,15 @@
       "symbol": "ONEUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.0016342318237529273,
-      "qty": 856671.6054,
-      "margin": 70.0,
+      "entry": 0.0017189373584719882,
+      "qty": 1745264.2966999998,
+      "margin": 150.0,
       "leverage": 20,
-      "tp_price": 0.001593376028159104,
+      "tp_price": 0.0016759639245101884,
       "tf": "15m",
       "opened_at": 1794296802,
-      "adds": 2,
-      "last_leg_margin": 40.0,
+      "adds": 3,
+      "last_leg_margin": 80.0,
       "used_res_levels": [
         0.001607,
         0.00167
@@ -29,10 +29,14 @@
         {
           "px": 0.0016662,
           "ts": 1794299570
+        },
+        {
+          "px": 0.0018006,
+          "ts": 1794300351
         }
       ],
       "entry_candle_ts": 1794296700,
-      "last_leg_candle_ts": 1794299570,
+      "last_leg_candle_ts": 1794300300,
       "dry_run": true,
       "order_id": "PAPER-ONEUSDT-1794296802"
     },
@@ -9216,16 +9220,6 @@
     "BIO1USDT": 1794262616,
     "SAFE1USDT": 1794264407,
     "TOADUSDT": 1794299510,
-    "FLYUSDT": 1794299511,
-    "LWLGUSDT": 1794299520,
-    "RGTIUSDT": 1794299522,
-    "UBIKUSDT": 1794299524,
-    "AEHRUSDT": 1794299527,
-    "KOPNUSDT": 1794299542,
-    "1000SATSUSDT": 1794299574,
-    "1000WOJAKUSDT": 1794299575,
-    "CZUSDT": 1794299580,
-    "NEIRO1USDT": 1794299583,
     "AI1USDT": 1794300376,
     "MANCERUSDT": 1794302216,
     "UP2USDT": 1794304950,
@@ -9237,9 +9231,19 @@
     "HOTUSDT": 1794312349,
     "1000000BABYDOGEUSDT": 1794312370,
     "B3USDT": 1794338194,
-    "RIOTUSDT": 1794341131
+    "RIOTUSDT": 1794341131,
+    "FLYUSDT": 1794342848,
+    "AEHRUSDT": 1794342862,
+    "UBIKUSDT": 1794342869,
+    "LWLGUSDT": 1794342893,
+    "RGTIUSDT": 1794342903,
+    "KOPNUSDT": 1794342912,
+    "1000SATSUSDT": 1794342914,
+    "1000WOJAKUSDT": 1794342916,
+    "NEIRO1USDT": 1794342919,
+    "CZUSDT": 1794342920
   },
-  "last_trade_report_ts": 1794298037,
+  "last_trade_report_ts": 1794299587,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
