@@ -1,62 +1,6 @@
 {
-  "open_trades": [
-    {
-      "symbol": "PLAYUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.01049,
-      "qty": 19065.7769,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.010227749999999999,
-      "tf": "15m",
-      "opened_at": 1794293142,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.01049,
-          "ts": 1794293142
-        }
-      ],
-      "entry_candle_ts": 1794293100,
-      "last_leg_candle_ts": 1794293100,
-      "dry_run": true,
-      "order_id": "PAPER-PLAYUSDT-1794293142"
-    }
-  ],
+  "open_trades": [],
   "trade_history": [
-    {
-      "symbol": "USELESSUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.13452,
-      "qty": 1486.7678,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.131157,
-      "tf": "15m",
-      "opened_at": 1793768597,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.13452,
-          "ts": 1793768597
-        }
-      ],
-      "entry_candle_ts": 1793768400,
-      "last_leg_candle_ts": 1793768400,
-      "dry_run": true,
-      "order_id": "PAPER-USELESSUSDT-1793768597",
-      "closed_at": 1793786681,
-      "close_px": 0.13987,
-      "pnl_usdt": -7.954207552780246,
-      "close_reason": "NIGHT_RESET",
-      "why": "NIGHT_RESET"
-    },
     {
       "symbol": "ANSEMUSDT",
       "side": "SELL",
@@ -7095,6 +7039,36 @@
       "pnl_usdt": 61.02932614419267,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "PLAYUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.01049,
+      "qty": 19065.7769,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.010227749999999999,
+      "tf": "15m",
+      "opened_at": 1794293142,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.01049,
+          "ts": 1794293142
+        }
+      ],
+      "entry_candle_ts": 1794293100,
+      "last_leg_candle_ts": 1794293100,
+      "dry_run": true,
+      "order_id": "PAPER-PLAYUSDT-1794293142",
+      "closed_at": 1794294281,
+      "close_px": 0.00995,
+      "pnl_usdt": 10.295519542421331,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -7307,26 +7281,6 @@
       "tf": "15m",
       "candle_ts": 1793430900,
       "side": "SELL"
-    },
-    {
-      "symbol": "ESPORTSUSDT",
-      "tf": "1h",
-      "candle_ts": 1794034800,
-      "side": "SELL",
-      "upper": 0.01188783057606874,
-      "open": 0.01229,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "FOLKSUSDT",
-      "tf": "1h",
-      "candle_ts": 1794034800,
-      "side": "SELL",
-      "upper": 2.4916108688021907,
-      "open": 2.522,
-      "reported": true,
-      "filled": true
     },
     {
       "symbol": "KOMAUSDT",
@@ -8911,7 +8865,18 @@
       "side": "SELL",
       "upper": 0.005420735583301535,
       "open": 0.00553,
-      "reported": false
+      "reported": true,
+      "filled": false
+    },
+    {
+      "symbol": "PLAYUSDT",
+      "tf": "15m",
+      "candle_ts": 1794293100,
+      "side": "SELL",
+      "upper": 0.009806433755350778,
+      "open": 0.01043,
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -9083,7 +9048,7 @@
     "HOTUSDT": 1794312349,
     "1000000BABYDOGEUSDT": 1794312370
   },
-  "last_trade_report_ts": 1794292373,
+  "last_trade_report_ts": 1794293282,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
