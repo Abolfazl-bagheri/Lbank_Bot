@@ -124,6 +124,31 @@
       "last_leg_candle_ts": 1794297600,
       "dry_run": true,
       "order_id": "PAPER-NIGHTUSDT-1794297741"
+    },
+    {
+      "symbol": "BULLAUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.06305,
+      "qty": 3172.0856,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.061473749999999994,
+      "tf": "4h",
+      "opened_at": 1794297843,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.06305,
+          "ts": 1794297843
+        }
+      ],
+      "entry_candle_ts": 1794297600,
+      "last_leg_candle_ts": 1794297600,
+      "dry_run": true,
+      "order_id": "PAPER-BULLAUSDT-1794297843"
     }
   ],
   "trade_history": [
@@ -9038,6 +9063,15 @@
       "side": "SELL",
       "upper": 0.04658516465022852,
       "open": 0.04731,
+      "reported": false
+    },
+    {
+      "symbol": "NIGHTUSDT",
+      "tf": "4h",
+      "candle_ts": 1794297600,
+      "side": "SELL",
+      "upper": 0.04294078270398226,
+      "open": 0.04355,
       "reported": false
     }
   ],
