@@ -87,24 +87,28 @@
       "symbol": "BONERUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.00506,
-      "qty": 39525.6917,
-      "margin": 10.0,
+      "entry": 0.0049180360721470485,
+      "qty": 121999.9185,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.0049335,
-      "tf": "15m",
+      "tp_price": 0.004795085170343372,
+      "tf": "1h",
       "opened_at": 1794267018,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 0.00506,
           "ts": 1794267018
+        },
+        {
+          "px": 0.00485,
+          "ts": 1794268852
         }
       ],
       "entry_candle_ts": 1794267000,
-      "last_leg_candle_ts": 1794267000,
+      "last_leg_candle_ts": 1794268800,
       "dry_run": true,
       "order_id": "PAPER-BONERUSDT-1794267018"
     }
@@ -9323,7 +9327,7 @@
     "UP2USDT": 1794304950,
     "ONSEMIUSDT": 1794305039
   },
-  "last_trade_report_ts": 1794267218,
+  "last_trade_report_ts": 1794268193,
   "last_known_version": "2.7.2",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
