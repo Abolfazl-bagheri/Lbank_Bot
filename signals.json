@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.2",
-  "updated_at": 1794268865,
+  "updated_at": 1794268872,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "SKDDUSDT",
-      "tf": "4h",
-      "gap": 2.29,
-      "ts": 1794210107
-    },
     {
       "kind": "GAP",
       "symbol": "UNITREEUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "4h",
       "gap": 7.61,
       "ts": 1794268865
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794268872
     }
   ],
   "trades": [
@@ -1456,6 +1456,19 @@
       "px": 0.00485,
       "pnl": 8.3004,
       "tf": "1h"
+    },
+    {
+      "symbol": "INITUSDT",
+      "side": "SELL",
+      "entry": 0.1868,
+      "tp": 0.18213,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.1868,
+      "pnl": 0.0,
+      "tf": "4h"
     }
   ],
   "start": 1000.0,
