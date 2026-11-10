@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.4",
-  "updated_at": 1794312133,
+  "updated_at": 1794312140,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "MUUUSDT",
-      "tf": "4h",
-      "gap": 1.1,
-      "ts": 1794268294
-    },
     {
       "kind": "GAP",
       "symbol": "CRDOUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "4h",
       "gap": 2.71,
       "ts": 1794312133
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794312140
     }
   ],
   "trades": [
@@ -1456,6 +1456,19 @@
       "px": 0.3346,
       "pnl": -18.7643,
       "tf": "15m"
+    },
+    {
+      "symbol": "SECZUSDT",
+      "side": "SELL",
+      "entry": 8.58,
+      "tp": 8.365499999999999,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 8.58,
+      "pnl": 0.0,
+      "tf": "4h"
     }
   ],
   "start": 1000.0,
