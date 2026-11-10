@@ -73,64 +73,9 @@
       "last_leg_candle_ts": 1794297600,
       "dry_run": true,
       "order_id": "PAPER-ARIAUSDT-1794297644"
-    },
-    {
-      "symbol": "SECZUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 8.58,
-      "qty": 23.31,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 8.365499999999999,
-      "tf": "4h",
-      "opened_at": 1794312134,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 8.58,
-          "ts": 1794312134
-        }
-      ],
-      "entry_candle_ts": 1794312000,
-      "last_leg_candle_ts": 1794312000,
-      "dry_run": true,
-      "order_id": "PAPER-SECZUSDT-1794312134"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "FRONGUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.00231,
-      "qty": 86580.0866,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.00225225,
-      "tf": "15m",
-      "opened_at": 1793792836,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.00231,
-          "ts": 1793792836
-        }
-      ],
-      "entry_candle_ts": 1793792700,
-      "last_leg_candle_ts": 1793792700,
-      "dry_run": true,
-      "order_id": "PAPER-FRONGUSDT-1793792836",
-      "closed_at": 1793794771,
-      "close_px": 0.00221,
-      "pnl_usdt": 8.658008658008644,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "JCTUSDT",
       "side": "SELL",
@@ -7162,6 +7107,36 @@
       "pnl_usdt": 17.92773029654058,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "SECZUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 8.58,
+      "qty": 23.31,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 8.365499999999999,
+      "tf": "4h",
+      "opened_at": 1794312134,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 8.58,
+          "ts": 1794312134
+        }
+      ],
+      "entry_candle_ts": 1794312000,
+      "last_leg_candle_ts": 1794312000,
+      "dry_run": true,
+      "order_id": "PAPER-SECZUSDT-1794312134",
+      "closed_at": 1794314932,
+      "close_px": 8.29,
+      "pnl_usdt": 6.759906759906781,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -9131,7 +9106,6 @@
     "CRWDUSDT": 1793658035,
     "QUID1USDT": 1793901083,
     "STONKBROKERUSDT": 1793924211,
-    "AMCUSDT": 1793924216,
     "CANTONUSDT": 1793952369,
     "XBRUSDT": 1793988971,
     "BBXUSDT": 1794018704,
@@ -9201,9 +9175,10 @@
     "AINBSCUSDT": 1794347168,
     "UP2USDT": 1794348962,
     "NGASUSDT": 1794355494,
-    "STXSTOCKUSDT": 1794355532
+    "STXSTOCKUSDT": 1794355532,
+    "AMCUSDT": 1794358021
   },
-  "last_trade_report_ts": 1794312549,
+  "last_trade_report_ts": 1794314046,
   "last_known_version": "2.7.4",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
