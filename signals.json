@@ -1,36 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.4",
-  "updated_at": 1794326499,
+  "updated_at": 1794326528,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "ONEUSDT",
-      "tf": "15m",
-      "gap": 1.34,
-      "ts": 1794300349
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794300357
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794300507
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794300513
-    },
     {
       "kind": "HEARTBEAT",
       "symbol": "—",
@@ -1402,6 +1374,34 @@
       "tf": "4h",
       "gap": 1.19,
       "ts": 1794326499
+    },
+    {
+      "kind": "SELL",
+      "symbol": "SOPHUSDT",
+      "tf": "4h",
+      "gap": 1.07,
+      "ts": 1794326502
+    },
+    {
+      "kind": "SELL",
+      "symbol": "INITUSDT",
+      "tf": "4h",
+      "gap": 4.89,
+      "ts": 1794326508
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794326517
+    },
+    {
+      "kind": "SELL",
+      "symbol": "MARAUSDT",
+      "tf": "4h",
+      "gap": 2.12,
+      "ts": 1794326528
     }
   ],
   "trades": [
@@ -1443,6 +1443,19 @@
       "px": 4.479,
       "pnl": 0.0,
       "tf": "1h"
+    },
+    {
+      "symbol": "INITUSDT",
+      "side": "SELL",
+      "entry": 0.24561,
+      "tp": 0.23946974999999998,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.24561,
+      "pnl": 0.0,
+      "tf": "4h"
     }
   ],
   "start": 1000.0,
