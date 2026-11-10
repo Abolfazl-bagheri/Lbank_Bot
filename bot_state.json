@@ -4,17 +4,18 @@
       "symbol": "ONEUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.0015934681923346374,
-      "qty": 376537.1678,
-      "margin": 30.0,
+      "entry": 0.0016342318237529273,
+      "qty": 856671.6054,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 0.0015536314875262715,
+      "tp_price": 0.001593376028159104,
       "tf": "15m",
       "opened_at": 1794296802,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [
-        0.001607
+        0.001607,
+        0.00167
       ],
       "steps": [
         {
@@ -24,10 +25,14 @@
         {
           "px": 0.0016024,
           "ts": 1794298668
+        },
+        {
+          "px": 0.0016662,
+          "ts": 1794299570
         }
       ],
       "entry_candle_ts": 1794296700,
-      "last_leg_candle_ts": 1794298668,
+      "last_leg_candle_ts": 1794299570,
       "dry_run": true,
       "order_id": "PAPER-ONEUSDT-1794296802"
     },
@@ -7438,26 +7443,6 @@
       "tf": "15m",
       "candle_ts": 1793430900,
       "side": "SELL"
-    },
-    {
-      "symbol": "KOMAUSDT",
-      "tf": "15m",
-      "candle_ts": 1794040200,
-      "side": "SELL",
-      "upper": 0.015602929327874663,
-      "open": 0.01584,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "CTUSDT",
-      "tf": "15m",
-      "candle_ts": 1794040200,
-      "side": "SELL",
-      "upper": 0.13320199062590532,
-      "open": 0.1349,
-      "reported": true,
-      "filled": false
     },
     {
       "symbol": "KOMAUSDT",
