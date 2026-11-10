@@ -29,15 +29,15 @@
       "symbol": "MARAUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 7.509759387203364,
-      "qty": 79.896,
-      "margin": 30.0,
+      "entry": 7.405975041856996,
+      "qty": 189.0365,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 7.32201540252328,
-      "tf": "1h",
+      "tp_price": 7.220825665810571,
+      "tf": "4h",
       "opened_at": 1794322892,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [
         7.563
       ],
@@ -49,10 +49,14 @@
         {
           "px": 7.54,
           "ts": 1794324861
+        },
+        {
+          "px": 7.33,
+          "ts": 1794326530
         }
       ],
       "entry_candle_ts": 1794322800,
-      "last_leg_candle_ts": 1794324861,
+      "last_leg_candle_ts": 1794326400,
       "dry_run": true,
       "order_id": "PAPER-MARAUSDT-1794322892"
     },
@@ -9246,6 +9250,15 @@
       "side": "SELL",
       "upper": 0.0014256335875315385,
       "open": 0.001441,
+      "reported": false
+    },
+    {
+      "symbol": "INITUSDT",
+      "tf": "4h",
+      "candle_ts": 1794326400,
+      "side": "SELL",
+      "upper": 0.23359935624652806,
+      "open": 0.24211,
       "reported": false
     }
   ],
