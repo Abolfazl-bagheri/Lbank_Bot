@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.4",
-  "updated_at": 1794341620,
+  "updated_at": 1794341938,
   "signals": [
-    {
-      "kind": "HEARTBEAT",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794315940
-    },
     {
       "kind": "GAP",
       "symbol": "BRUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 2.94,
       "ts": 1794341620
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794341938
     }
   ],
   "trades": [
@@ -1414,49 +1414,23 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.21572,
-      "pnl": -17.2297,
-      "tf": "1h"
-    },
-    {
-      "symbol": "INITUSDT",
-      "side": "SELL",
-      "entry": 0.26472289561270335,
-      "tp": 0.25810482322238576,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
-      "lev": 20,
-      "px": 0.24621,
-      "pnl": 41.9599,
-      "tf": "4h"
-    },
-    {
-      "symbol": "MERLUSDT",
-      "side": "SELL",
-      "entry": 0.035869727323355756,
-      "tp": 0.03497298414027186,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
-      "lev": 20,
-      "px": 0.03408,
-      "pnl": 29.9371,
+      "px": 0.21625,
+      "pnl": -17.7635,
       "tf": "1h"
     }
   ],
   "start": 1000.0,
   "session_start": 1794269325,
-  "realized": 689.2845,
-  "closed_n": 18,
-  "open_upnl": 54.6673,
-  "equity": 1743.9518,
+  "realized": 773.1321,
+  "closed_n": 20,
+  "open_upnl": -17.7635,
+  "equity": 1755.3686,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 689.2845,
+    "profit": 773.1321,
     "loss": 0,
-    "count": 18
+    "count": 20
   }
 }
