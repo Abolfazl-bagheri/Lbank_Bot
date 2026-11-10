@@ -29,24 +29,30 @@
       "symbol": "MARAUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 7.45,
-      "qty": 26.8456,
-      "margin": 10.0,
+      "entry": 7.509759387203364,
+      "qty": 79.896,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 7.26375,
+      "tp_price": 7.32201540252328,
       "tf": "1h",
       "opened_at": 1794322892,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        7.563
+      ],
       "steps": [
         {
           "px": 7.45,
           "ts": 1794322892
+        },
+        {
+          "px": 7.54,
+          "ts": 1794324861
         }
       ],
       "entry_candle_ts": 1794322800,
-      "last_leg_candle_ts": 1794322800,
+      "last_leg_candle_ts": 1794324861,
       "dry_run": true,
       "order_id": "PAPER-MARAUSDT-1794322892"
     },
@@ -9162,6 +9168,25 @@
       "side": "SELL",
       "upper": 4.366546274115746,
       "open": 4.429,
+      "reported": true,
+      "filled": false
+    },
+    {
+      "symbol": "DJTUSDT",
+      "tf": "15m",
+      "candle_ts": 1794324600,
+      "side": "SELL",
+      "upper": 4.522722720653355,
+      "open": 4.624,
+      "reported": false
+    },
+    {
+      "symbol": "NIULAIUSDT",
+      "tf": "15m",
+      "candle_ts": 1794324600,
+      "side": "SELL",
+      "upper": 0.06092363032243863,
+      "open": 0.06154,
       "reported": false
     }
   ],
@@ -9327,7 +9352,9 @@
     "AMCUSDT": 1794358021,
     "ONSEMIUSDT": 1794360726,
     "CAPETHUSDT": 1794361582,
-    "O1USDT": 1794366307
+    "O1USDT": 1794366307,
+    "OSCRUSDT": 1794367943,
+    "ARGUSDT": 1794367944
   },
   "last_trade_report_ts": 1794323300,
   "last_known_version": "2.7.4",
