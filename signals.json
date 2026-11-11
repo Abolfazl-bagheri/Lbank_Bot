@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.5",
-  "updated_at": 1794398480,
+  "updated_at": 1794398491,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "OXYUSDT",
-      "tf": "15m",
-      "gap": 2.27,
-      "ts": 1794340822
-    },
-    {
-      "kind": "SELL",
-      "symbol": "MERLUSDT",
-      "tf": "1h",
-      "gap": 2.37,
-      "ts": 1794340849
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "4h",
       "gap": 17.04,
       "ts": 1794398480
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794398485
+    },
+    {
+      "kind": "SELL",
+      "symbol": "MEMEUSDT",
+      "tf": "1h",
+      "gap": 91.87,
+      "ts": 1794398491
     }
   ],
   "trades": [
@@ -1443,14 +1443,27 @@
       "px": 0.29817,
       "pnl": -0.24,
       "tf": "4h"
+    },
+    {
+      "symbol": "AGTUSDT",
+      "side": "SELL",
+      "entry": 0.05892,
+      "tp": 0.057447,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.05892,
+      "pnl": -0.24,
+      "tf": "4h"
     }
   ],
   "start": 1000.0,
   "session_start": 1794356927,
   "realized": 93.9091,
   "closed_n": 1,
-  "open_upnl": -3.1811,
-  "equity": 1090.728,
+  "open_upnl": -3.4211,
+  "equity": 1090.488,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
