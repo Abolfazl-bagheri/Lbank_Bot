@@ -29,24 +29,28 @@
       "symbol": "MEMEUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.00475,
-      "qty": 42105.2632,
-      "margin": 10.0,
+      "entry": 0.004524784482795807,
+      "qty": 132603.00079999998,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.00463125,
+      "tp_price": 0.0044116648707259115,
       "tf": "15m",
       "opened_at": 1794398451,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 0.00475,
           "ts": 1794398451
+        },
+        {
+          "px": 0.00442,
+          "ts": 1794399351
         }
       ],
       "entry_candle_ts": 1794398400,
-      "last_leg_candle_ts": 1794398400,
+      "last_leg_candle_ts": 1794399300,
       "dry_run": true,
       "order_id": "PAPER-MEMEUSDT-1794398451"
     },
@@ -7405,106 +7409,6 @@
       "side": "SELL"
     },
     {
-      "symbol": "CLAUDIAUSDT",
-      "tf": "15m",
-      "candle_ts": 1794139200,
-      "side": "SELL",
-      "upper": 0.009084771102136912,
-      "open": 0.0092,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "AGTUSDT",
-      "tf": "15m",
-      "candle_ts": 1794139200,
-      "side": "SELL",
-      "upper": 0.02950811953832581,
-      "open": 0.0302,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "HOTUSDT",
-      "tf": "1h",
-      "candle_ts": 1794139200,
-      "side": "SELL",
-      "upper": 0.0004297737417153655,
-      "open": 0.0004401,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "JCTUSDT",
-      "tf": "1h",
-      "candle_ts": 1794139200,
-      "side": "SELL",
-      "upper": 0.008447029775955794,
-      "open": 0.009743,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "SKYAIUSDT",
-      "tf": "1h",
-      "candle_ts": 1794139200,
-      "side": "SELL",
-      "upper": 0.037552276459145786,
-      "open": 0.0386,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "AIOTUSDT",
-      "tf": "4h",
-      "candle_ts": 1794139200,
-      "side": "SELL",
-      "upper": 0.1400326745226064,
-      "open": 0.14304,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "CLAUDIAUSDT",
-      "tf": "4h",
-      "candle_ts": 1794139200,
-      "side": "SELL",
-      "upper": 0.008202345867378679,
-      "open": 0.008654,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "AGTUSDT",
-      "tf": "1h",
-      "candle_ts": 1794139200,
-      "side": "SELL",
-      "upper": 0.028628746681270124,
-      "open": 0.030233,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "SKYAIUSDT",
-      "tf": "4h",
-      "candle_ts": 1794139200,
-      "side": "SELL",
-      "upper": 0.036841757079058575,
-      "open": 0.0386,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "JCTUSDT",
-      "tf": "4h",
-      "candle_ts": 1794139200,
-      "side": "SELL",
-      "upper": 0.008198180435746091,
-      "open": 0.009743,
-      "reported": true,
-      "filled": false
-    },
-    {
       "symbol": "JCTUSDT",
       "tf": "1h",
       "candle_ts": 1794142800,
@@ -8721,7 +8625,8 @@
       "side": "SELL",
       "upper": 0.25691834073744585,
       "open": 0.26045,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CRWVUSDT",
@@ -8860,7 +8765,8 @@
       "side": "SELL",
       "upper": 0.05665207536879156,
       "open": 0.0577,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CRWVUSDT",
@@ -8869,7 +8775,8 @@
       "side": "SELL",
       "upper": 54.24833246600566,
       "open": 54.91,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CRWVUSDT",
@@ -8878,7 +8785,8 @@
       "side": "SELL",
       "upper": 56.06795111074341,
       "open": 56.69,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "DJTUSDT",
@@ -8907,7 +8815,8 @@
       "side": "SELL",
       "upper": 4.362,
       "open": 4.362,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "ARIAUSDT",
@@ -8934,6 +8843,60 @@
       "side": "SELL",
       "upper": 0.28433083692350153,
       "open": 0.29905,
+      "reported": false
+    },
+    {
+      "symbol": "AGTUSDT",
+      "tf": "4h",
+      "candle_ts": 1794398400,
+      "side": "SELL",
+      "upper": 0.048881348987041814,
+      "open": 0.05854,
+      "reported": false
+    },
+    {
+      "symbol": "MEMEUSDT",
+      "tf": "1h",
+      "candle_ts": 1794398400,
+      "side": "SELL",
+      "upper": 0.0003860158036470958,
+      "open": 0.000386,
+      "reported": false
+    },
+    {
+      "symbol": "HUTUSDT",
+      "tf": "15m",
+      "candle_ts": 1794398400,
+      "side": "SELL",
+      "upper": 61.48489724172656,
+      "open": 61.23,
+      "reported": false
+    },
+    {
+      "symbol": "MEMEUSDT",
+      "tf": "4h",
+      "candle_ts": 1794398400,
+      "side": "SELL",
+      "upper": 0.0003899311742912211,
+      "open": 0.000386,
+      "reported": false
+    },
+    {
+      "symbol": "DJTUSDT",
+      "tf": "15m",
+      "candle_ts": 1794398400,
+      "side": "SELL",
+      "upper": 4.417815786877585,
+      "open": 4.44,
+      "reported": false
+    },
+    {
+      "symbol": "LYNUSDT",
+      "tf": "1h",
+      "candle_ts": 1794398400,
+      "side": "SELL",
+      "upper": 0.021600283802312378,
+      "open": 0.02221,
       "reported": false
     }
   ],
@@ -9064,7 +9027,6 @@
     "JUVUSDT": 1794190600,
     "SIMOUSDT": 1794199618,
     "MUSTOCKUSDT": 1794211442,
-    "LIGHT1USDT": 1794213992,
     "QUACKAIUSDT": 1794215793,
     "XTIUSDT": 1794219396,
     "POETUSDT": 1794223905,
@@ -9110,9 +9072,14 @@
     "1000SATSUSDT": 1794439932,
     "NEIRO1USDT": 1794439934,
     "1000WOJAKUSDT": 1794439937,
-    "CZUSDT": 1794439939
+    "CZUSDT": 1794439939,
+    "LYTEUSDT": 1794441776,
+    "STXSTOCKUSDT": 1794441868,
+    "HOTUSDT": 1794441905,
+    "NEXUSDT": 1794441907,
+    "1000000BABYDOGEUSDT": 1794441924
   },
-  "last_trade_report_ts": 1794396835,
+  "last_trade_report_ts": 1794398872,
   "last_known_version": "2.7.5",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
