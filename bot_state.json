@@ -107,6 +107,31 @@
       "last_leg_candle_ts": 1794412800,
       "dry_run": true,
       "order_id": "PAPER-SNXXUSDT-1794412959"
+    },
+    {
+      "symbol": "RUMUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 5.901,
+      "qty": 33.8926,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 5.753475,
+      "tf": "1h",
+      "opened_at": 1794412970,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 5.901,
+          "ts": 1794412970
+        }
+      ],
+      "entry_candle_ts": 1794412800,
+      "last_leg_candle_ts": 1794412800,
+      "dry_run": true,
+      "order_id": "PAPER-RUMUSDT-1794412970"
     }
   ],
   "trade_history": [
@@ -9337,6 +9362,15 @@
       "side": "SELL",
       "upper": 0.0003895982033320667,
       "open": 0.0003903,
+      "reported": false
+    },
+    {
+      "symbol": "SNXXUSDT",
+      "tf": "4h",
+      "candle_ts": 1794412800,
+      "side": "SELL",
+      "upper": 4.470024162512963,
+      "open": 4.61,
       "reported": false
     }
   ],
