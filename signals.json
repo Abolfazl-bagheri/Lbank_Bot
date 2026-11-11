@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.5",
-  "updated_at": 1794412941,
+  "updated_at": 1794412950,
   "signals": [
-    {
-      "kind": "HEARTBEAT",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794402368
-    },
-    {
-      "kind": "GAP",
-      "symbol": "ANSEMUSDT",
-      "tf": "15m",
-      "gap": 1.75,
-      "ts": 1794402805
-    },
     {
       "kind": "GAP",
       "symbol": "B2USDT",
@@ -1402,6 +1388,20 @@
       "tf": "1h",
       "gap": 2.29,
       "ts": 1794412941
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794412945
+    },
+    {
+      "kind": "SELL",
+      "symbol": "ANSEMUSDT",
+      "tf": "4h",
+      "gap": 1.15,
+      "ts": 1794412950
     }
   ],
   "trades": [
@@ -1430,14 +1430,27 @@
       "px": 6.799,
       "pnl": -4.7212,
       "tf": "15m"
+    },
+    {
+      "symbol": "OPGUSDT",
+      "side": "SELL",
+      "entry": 0.1563,
+      "tp": 0.1523925,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.1563,
+      "pnl": -0.24,
+      "tf": "1h"
     }
   ],
   "start": 1000.0,
   "session_start": 1794356927,
   "realized": 234.0889,
   "closed_n": 10,
-  "open_upnl": -21.2517,
-  "equity": 1212.8372,
+  "open_upnl": -21.4917,
+  "equity": 1212.5972,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
