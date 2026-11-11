@@ -49,6 +49,31 @@
       "last_leg_candle_ts": 1794398400,
       "dry_run": true,
       "order_id": "PAPER-MEMEUSDT-1794398451"
+    },
+    {
+      "symbol": "ARIAUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.29817,
+      "qty": 670.7583,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.29071575,
+      "tf": "4h",
+      "opened_at": 1794398466,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.29817,
+          "ts": 1794398466
+        }
+      ],
+      "entry_candle_ts": 1794398400,
+      "last_leg_candle_ts": 1794398400,
+      "dry_run": true,
+      "order_id": "PAPER-ARIAUSDT-1794398466"
     }
   ],
   "trade_history": [
@@ -8866,6 +8891,15 @@
       "side": "SELL",
       "upper": 0.292685518272654,
       "open": 0.29905,
+      "reported": false
+    },
+    {
+      "symbol": "MEMEUSDT",
+      "tf": "15m",
+      "candle_ts": 1794398400,
+      "side": "SELL",
+      "upper": 0.00038598224746721723,
+      "open": 0.0003862,
       "reported": false
     }
   ],
