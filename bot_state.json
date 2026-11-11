@@ -1,5 +1,31 @@
 {
-  "open_trades": [],
+  "open_trades": [
+    {
+      "symbol": "ZCATUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.02146,
+      "qty": 9319.6645,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0209235,
+      "tf": "15m",
+      "opened_at": 1794357055,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.02146,
+          "ts": 1794357055
+        }
+      ],
+      "entry_candle_ts": 1794357000,
+      "last_leg_candle_ts": 1794357000,
+      "dry_run": true,
+      "order_id": "PAPER-ZCATUSDT-1794357055"
+    }
+  ],
   "trade_history": [
     {
       "symbol": "SXTUSDT",
@@ -9186,7 +9212,6 @@
     "RGTIUSDT": 1794342903,
     "KOPNUSDT": 1794342912,
     "UP2USDT": 1794348962,
-    "NGASUSDT": 1794355494,
     "STXSTOCKUSDT": 1794355532,
     "AMCUSDT": 1794358021,
     "ONSEMIUSDT": 1794360726,
