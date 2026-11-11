@@ -1,78 +1,6 @@
 {
-  "open_trades": [
-    {
-      "symbol": "RAMUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 6.776139377524114,
-      "qty": 206.60719999999998,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 6.606735893086011,
-      "tf": "15m",
-      "opened_at": 1794411013,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [
-        6.804
-      ],
-      "steps": [
-        {
-          "px": 6.652,
-          "ts": 1794411013
-        },
-        {
-          "px": 6.824,
-          "ts": 1794412888
-        },
-        {
-          "px": 6.784,
-          "ts": 1794413946
-        }
-      ],
-      "entry_candle_ts": 1794411000,
-      "last_leg_candle_ts": 1794413946,
-      "dry_run": true,
-      "order_id": "PAPER-RAMUSDT-1794411013"
-    }
-  ],
+  "open_trades": [],
   "trade_history": [
-    {
-      "symbol": "BATUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.14581,
-      "qty": 4114.9441,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.14216474999999998,
-      "tf": "15m",
-      "opened_at": 1793830613,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        0.14639
-      ],
-      "steps": [
-        {
-          "px": 0.14581,
-          "ts": 1793830613
-        },
-        {
-          "px": 0.14581,
-          "ts": 1793830725
-        }
-      ],
-      "entry_candle_ts": 1793830500,
-      "last_leg_candle_ts": 1793830725,
-      "dry_run": true,
-      "order_id": "PAPER-BATUSDT-1793830613",
-      "closed_at": 1793837405,
-      "close_px": 0.14512,
-      "pnl_usdt": 2.8393114326863564,
-      "close_reason": "NIGHT_RESET",
-      "why": "NIGHT_RESET"
-    },
     {
       "symbol": "CHILLGUYUSDT",
       "side": "SELL",
@@ -7003,6 +6931,46 @@
       "closed_at": 1794428715,
       "close_px": 5.284,
       "pnl_usdt": 5.19815668202765,
+      "close_reason": "TP50",
+      "why": "TP50"
+    },
+    {
+      "symbol": "RAMUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 6.776139377524114,
+      "qty": 206.60719999999998,
+      "margin": 70.0,
+      "leverage": 20,
+      "tp_price": 6.606735893086011,
+      "tf": "15m",
+      "opened_at": 1794411013,
+      "adds": 2,
+      "last_leg_margin": 40.0,
+      "used_res_levels": [
+        6.804
+      ],
+      "steps": [
+        {
+          "px": 6.652,
+          "ts": 1794411013
+        },
+        {
+          "px": 6.824,
+          "ts": 1794412888
+        },
+        {
+          "px": 6.784,
+          "ts": 1794413946
+        }
+      ],
+      "entry_candle_ts": 1794411000,
+      "last_leg_candle_ts": 1794413946,
+      "dry_run": true,
+      "order_id": "PAPER-RAMUSDT-1794411013",
+      "closed_at": 1794435613,
+      "close_px": 6.603,
+      "pnl_usdt": 35.77186286010647,
       "close_reason": "TP50",
       "why": "TP50"
     }
