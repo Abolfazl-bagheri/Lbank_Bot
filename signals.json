@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.4",
-  "updated_at": 1794357053,
+  "updated_at": 1794357058,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "INTWUSDT",
-      "tf": "15m",
-      "gap": 1.47,
-      "ts": 1794322952
-    },
     {
       "kind": "SELL",
       "symbol": "AMDUSDT",
@@ -1402,14 +1395,35 @@
       "tf": "15m",
       "gap": 6.92,
       "ts": 1794357053
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794357058
     }
   ],
-  "trades": [],
+  "trades": [
+    {
+      "symbol": "ZCATUSDT",
+      "side": "SELL",
+      "entry": 0.02146,
+      "tp": 0.0209235,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.02146,
+      "pnl": 0.0,
+      "tf": "15m"
+    }
+  ],
   "start": 1000.0,
   "session_start": 1794356927,
   "realized": 0,
   "closed_n": 0,
-  "open_upnl": 0,
+  "open_upnl": 0.0,
   "equity": 1000.0,
   "lev": 20,
   "margin_leg": 10.0,
