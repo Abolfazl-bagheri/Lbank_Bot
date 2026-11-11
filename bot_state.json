@@ -92,31 +92,6 @@
       "order_id": "PAPER-DJTUSDT-1794416455"
     },
     {
-      "symbol": "AEONUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.026,
-      "qty": 7692.3077,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.025349999999999998,
-      "tf": "1h",
-      "opened_at": 1794416538,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.026,
-          "ts": 1794416538
-        }
-      ],
-      "entry_candle_ts": 1794416400,
-      "last_leg_candle_ts": 1794416400,
-      "dry_run": true,
-      "order_id": "PAPER-AEONUSDT-1794416538"
-    },
-    {
       "symbol": "ZZZUSDT",
       "side": "SELL",
       "status": "open",
@@ -145,59 +120,35 @@
       "symbol": "CLAUDIAUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.005982,
-      "qty": 33433.6342,
-      "margin": 10.0,
+      "entry": 0.0059819999999999995,
+      "qty": 100300.9027,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.00583245,
+      "tp_price": 0.0058324499999999994,
       "tf": "15m",
       "opened_at": 1794417399,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.005998
+      ],
       "steps": [
         {
           "px": 0.005982,
           "ts": 1794417399
+        },
+        {
+          "px": 0.005982,
+          "ts": 1794417559
         }
       ],
       "entry_candle_ts": 1794417300,
-      "last_leg_candle_ts": 1794417300,
+      "last_leg_candle_ts": 1794417559,
       "dry_run": true,
       "order_id": "PAPER-CLAUDIAUSDT-1794417399"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "CATUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 1.764e-06,
-      "qty": 113378684.8073,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 1.7198999999999998e-06,
-      "tf": "15m",
-      "opened_at": 1793801824,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 1.764e-06,
-          "ts": 1793801824
-        }
-      ],
-      "entry_candle_ts": 1793801700,
-      "last_leg_candle_ts": 1793801700,
-      "dry_run": true,
-      "order_id": "PAPER-CATUSDT-1793801824",
-      "closed_at": 1793837402,
-      "close_px": 1.76e-06,
-      "pnl_usdt": 0.453514739229011,
-      "close_reason": "NIGHT_RESET",
-      "why": "NIGHT_RESET"
-    },
     {
       "symbol": "RIVNUSDT",
       "side": "SELL",
@@ -7201,6 +7152,36 @@
       "closed_at": 1794417554,
       "close_px": 5.825,
       "pnl_usdt": 43.154631708012666,
+      "close_reason": "TP50",
+      "why": "TP50"
+    },
+    {
+      "symbol": "AEONUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.026,
+      "qty": 7692.3077,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.025349999999999998,
+      "tf": "1h",
+      "opened_at": 1794416538,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.026,
+          "ts": 1794416538
+        }
+      ],
+      "entry_candle_ts": 1794416400,
+      "last_leg_candle_ts": 1794416400,
+      "dry_run": true,
+      "order_id": "PAPER-AEONUSDT-1794416538",
+      "closed_at": 1794417557,
+      "close_px": 0.0245,
+      "pnl_usdt": 11.538461538461522,
       "close_reason": "TP50",
       "why": "TP50"
     }
