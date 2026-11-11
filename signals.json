@@ -1,8 +1,15 @@
 {
   "mode": "PAPER",
   "version": "2.7.5",
-  "updated_at": 1794400218,
+  "updated_at": 1794400230,
   "signals": [
+    {
+      "kind": "GAP",
+      "symbol": "DKNGUSDT",
+      "tf": "1h",
+      "gap": 1.19,
+      "ts": 1794343902
+    },
     {
       "kind": "GAP",
       "symbol": "RKLBUSDT",
@@ -1390,32 +1397,25 @@
       "ts": 1794400104
     },
     {
-      "kind": "SELL",
-      "symbol": "JCTUSDT",
-      "tf": "15m",
-      "gap": 1.28,
-      "ts": 1794400215
-    },
-    {
-      "kind": "SELL",
-      "symbol": "MEMEUSDT",
-      "tf": "15m",
-      "gap": 91.39,
-      "ts": 1794400218
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794400230
     }
   ],
   "trades": [
     {
       "symbol": "MEMEUSDT",
       "side": "SELL",
-      "entry": 0.004524784482795807,
-      "tp": 0.0044116648707259115,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
+      "entry": 0.004510588596390614,
+      "tp": 0.004397823881480849,
+      "adds": 2,
+      "pele": 3,
+      "margin": 70.0,
       "lev": 20,
-      "px": 0.0045,
-      "pnl": 2.5665,
+      "px": 0.00454,
+      "pnl": -10.8087,
       "tf": "15m"
     },
     {
@@ -1427,8 +1427,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.28332,
-      "pnl": 9.7208,
+      "px": 0.28067,
+      "pnl": 11.4983,
       "tf": "4h"
     },
     {
@@ -1440,8 +1440,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.06021,
-      "pnl": -4.6188,
+      "px": 0.06027,
+      "pnl": -4.8225,
       "tf": "4h"
     }
   ],
@@ -1449,8 +1449,8 @@
   "session_start": 1794356927,
   "realized": 66.9394,
   "closed_n": 2,
-  "open_upnl": 7.6685,
-  "equity": 1074.6079,
+  "open_upnl": -4.1329,
+  "equity": 1062.8065,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
