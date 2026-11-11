@@ -1,70 +1,6 @@
 {
-  "open_trades": [
-    {
-      "symbol": "ZCATUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.02302443174785545,
-      "qty": 60804.9751,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 0.022448820954159062,
-      "tf": "15m",
-      "opened_at": 1794357055,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.02146,
-          "ts": 1794357055
-        },
-        {
-          "px": 0.0228,
-          "ts": 1794357922
-        },
-        {
-          "px": 0.02357,
-          "ts": 1794358854
-        }
-      ],
-      "entry_candle_ts": 1794357000,
-      "last_leg_candle_ts": 1794358800,
-      "dry_run": true,
-      "order_id": "PAPER-ZCATUSDT-1794357055"
-    }
-  ],
+  "open_trades": [],
   "trade_history": [
-    {
-      "symbol": "SXTUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.009648,
-      "qty": 20729.6849,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.0094068,
-      "tf": "1h",
-      "opened_at": 1793808174,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.009648,
-          "ts": 1793808174
-        }
-      ],
-      "entry_candle_ts": 1793808000,
-      "last_leg_candle_ts": 1793808000,
-      "dry_run": true,
-      "order_id": "PAPER-SXTUSDT-1793808174",
-      "closed_at": 1793809058,
-      "close_px": 0.009289,
-      "pnl_usdt": 7.441956882255388,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "CATEUSDT",
       "side": "SELL",
@@ -7116,6 +7052,44 @@
       "pnl_usdt": 0.38380349261178814,
       "close_reason": "NIGHT_RESET",
       "why": "NIGHT_RESET"
+    },
+    {
+      "symbol": "ZCATUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.02302443174785545,
+      "qty": 60804.9751,
+      "margin": 70.0,
+      "leverage": 20,
+      "tp_price": 0.022448820954159062,
+      "tf": "15m",
+      "opened_at": 1794357055,
+      "adds": 2,
+      "last_leg_margin": 40.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.02146,
+          "ts": 1794357055
+        },
+        {
+          "px": 0.0228,
+          "ts": 1794357922
+        },
+        {
+          "px": 0.02357,
+          "ts": 1794358854
+        }
+      ],
+      "entry_candle_ts": 1794357000,
+      "last_leg_candle_ts": 1794358800,
+      "dry_run": true,
+      "order_id": "PAPER-ZCATUSDT-1794357055",
+      "closed_at": 1794361677,
+      "close_px": 0.02148,
+      "pnl_usdt": 93.90913403102871,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -9035,7 +9009,8 @@
       "side": "SELL",
       "upper": 2.5011726870269078,
       "open": 2.535,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ANSEMUSDT",
@@ -9064,7 +9039,8 @@
       "side": "SELL",
       "upper": 0.021436682973255725,
       "open": 0.02228,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ZCATUSDT",
@@ -9073,6 +9049,63 @@
       "side": "SELL",
       "upper": 0.022180328800520663,
       "open": 0.02264,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "ZCATUSDT",
+      "tf": "1h",
+      "candle_ts": 1794358800,
+      "side": "SELL",
+      "upper": 0.02102643077756193,
+      "open": 0.02264,
+      "reported": false
+    },
+    {
+      "symbol": "ANSEMUSDT",
+      "tf": "1h",
+      "candle_ts": 1794358800,
+      "side": "SELL",
+      "upper": 0.05456493202455062,
+      "open": 0.0554,
+      "reported": false
+    },
+    {
+      "symbol": "HANMIUSDT",
+      "tf": "1h",
+      "candle_ts": 1794358800,
+      "side": "SELL",
+      "upper": 131.6417573414122,
+      "open": 132.98,
+      "reported": false
+    },
+    {
+      "symbol": "KIOXIAUSDT",
+      "tf": "15m",
+      "candle_ts": 1794358800,
+      "side": "SELL",
+      "upper": 57.75407437422108,
+      "open": 58.38,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "KIOXIAUSDT",
+      "tf": "15m",
+      "candle_ts": 1794359700,
+      "side": "SELL",
+      "upper": 58.28771821898886,
+      "open": 58.91,
+      "reported": true,
+      "filled": false
+    },
+    {
+      "symbol": "ZHIPUUSDT",
+      "tf": "15m",
+      "candle_ts": 1794361500,
+      "side": "SELL",
+      "upper": 64.15639868287029,
+      "open": 64.83,
       "reported": false
     }
   ],
@@ -9255,7 +9288,7 @@
     "AINBSCUSDT": 1794391379,
     "GSTOCKUSDT": 1794401210
   },
-  "last_trade_report_ts": 1794358246,
+  "last_trade_report_ts": 1794360779,
   "last_known_version": "2.7.4",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
