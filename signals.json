@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.5",
-  "updated_at": 1794415561,
+  "updated_at": 1794415750,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "VICRUSDT",
-      "tf": "15m",
-      "gap": 1.03,
-      "ts": 1794407341
-    },
     {
       "kind": "SELL",
       "symbol": "VICRUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 1.39,
       "ts": 1794415561
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794415750
     }
   ],
   "trades": [
@@ -1416,19 +1416,6 @@
       "lev": 20,
       "px": 6.87,
       "pnl": -21.0723,
-      "tf": "15m"
-    },
-    {
-      "symbol": "KGENUSDT",
-      "side": "SELL",
-      "entry": 0.07627,
-      "tp": 0.07436325,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.07307,
-      "pnl": 8.1512,
       "tf": "15m"
     },
     {
@@ -1473,16 +1460,16 @@
   ],
   "start": 1000.0,
   "session_start": 1794356927,
-  "realized": 295.8489,
-  "closed_n": 11,
-  "open_upnl": 8.5066,
-  "equity": 1304.3555,
+  "realized": 304.2401,
+  "closed_n": 12,
+  "open_upnl": 0.3554,
+  "equity": 1304.5955,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 322.8186,
+    "profit": 331.2099,
     "loss": -26.9697,
-    "count": 11
+    "count": 12
   }
 }
