@@ -33,24 +33,28 @@
       "symbol": "MEMEUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.0043,
-      "qty": 46511.6279,
-      "margin": 10.0,
+      "entry": 0.004273250388802576,
+      "qty": 140408.3415,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.0041925,
+      "tp_price": 0.004166419129082511,
       "tf": "15m",
       "opened_at": 1794403868,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 0.0043,
           "ts": 1794403868
+        },
+        {
+          "px": 0.00426,
+          "ts": 1794405716
         }
       ],
       "entry_candle_ts": 1794403800,
-      "last_leg_candle_ts": 1794403800,
+      "last_leg_candle_ts": 1794405600,
       "dry_run": true,
       "order_id": "PAPER-MEMEUSDT-1794403868"
     }
@@ -8991,6 +8995,24 @@
       "upper": 0.06508081052049956,
       "open": 0.0655,
       "reported": false
+    },
+    {
+      "symbol": "ANSEMUSDT",
+      "tf": "1h",
+      "candle_ts": 1794405600,
+      "side": "SELL",
+      "upper": 0.06561911732682504,
+      "open": 0.0661,
+      "reported": false
+    },
+    {
+      "symbol": "OPGUSDT",
+      "tf": "1h",
+      "candle_ts": 1794405600,
+      "side": "SELL",
+      "upper": 0.14148166436516355,
+      "open": 0.143,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -9171,7 +9193,7 @@
     "GSTOCKUSDT": 1794445379,
     "MANCERUSDT": 1794446213
   },
-  "last_trade_report_ts": 1794404007,
+  "last_trade_report_ts": 1794404910,
   "last_known_version": "2.7.5",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
