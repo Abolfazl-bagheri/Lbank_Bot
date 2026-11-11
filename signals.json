@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.4",
-  "updated_at": 1794366334,
+  "updated_at": 1794366837,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "COREUSDT",
-      "tf": "1h",
-      "gap": 1.48,
-      "ts": 1794336703
-    },
     {
       "kind": "GAP",
       "symbol": "EQTUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1794366334
+    },
+    {
+      "kind": "GAP",
+      "symbol": "INITUSDT",
+      "tf": "15m",
+      "gap": 7.7,
+      "ts": 1794366837
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.005851,
-      "pnl": 0.0,
+      "px": 0.005828,
+      "pnl": 0.7862,
       "tf": "15m"
     }
   ],
@@ -1423,8 +1423,8 @@
   "session_start": 1794356927,
   "realized": 93.9091,
   "closed_n": 1,
-  "open_upnl": 0.0,
-  "equity": 1093.9091,
+  "open_upnl": 0.7862,
+  "equity": 1094.6953,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
