@@ -4,24 +4,28 @@
       "symbol": "RAMUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 6.652,
-      "qty": 30.0661,
-      "margin": 10.0,
+      "entry": 6.765686831817255,
+      "qty": 88.6827,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 6.4857,
+      "tp_price": 6.596544661021823,
       "tf": "15m",
       "opened_at": 1794411013,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 6.652,
           "ts": 1794411013
+        },
+        {
+          "px": 6.824,
+          "ts": 1794412888
         }
       ],
       "entry_candle_ts": 1794411000,
-      "last_leg_candle_ts": 1794411000,
+      "last_leg_candle_ts": 1794412800,
       "dry_run": true,
       "order_id": "PAPER-RAMUSDT-1794411013"
     },
@@ -9295,6 +9299,24 @@
       "side": "SELL",
       "upper": 0.0003894337638315434,
       "open": 0.0003897,
+      "reported": false
+    },
+    {
+      "symbol": "AXTIUSDT",
+      "tf": "1h",
+      "candle_ts": 1794412800,
+      "side": "SELL",
+      "upper": 47.5159162767845,
+      "open": 48.58,
+      "reported": false
+    },
+    {
+      "symbol": "SNXXUSDT",
+      "tf": "1h",
+      "candle_ts": 1794412800,
+      "side": "SELL",
+      "upper": 4.543060072709343,
+      "open": 4.61,
       "reported": false
     }
   ],
