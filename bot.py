@@ -35,7 +35,7 @@ SIGNALS_FILE = os.path.join(BASE_DIR, "signals.json")
 LIVE_TOPIC = os.environ.get("LIVE_TOPIC", "lbank-gap-b0b85cee29ce").strip()
 STATE_BAK = os.path.join(BASE_DIR, "bot_state.bak")
 
-BOT_VERSION = "2.7.5"
+BOT_VERSION = "2.8.0"
 CHANGELOG = {
     "2.7.0": ["احتمال‌گپ زودتر","سیگنال فقط دقایق اول کندل","بیدار شدن نزدیک کندل هر ۱۰ث"],
     "2.6.5": [
@@ -65,22 +65,42 @@ CHANGELOG = {
 TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN", "").strip()
 CHAT_ID = os.environ.get("CHAT_ID", "").strip()
 
-TIMEFRAMES = {"15m": "15min", "1h": "1hr", "4h": "4hr"}
-TF_ORDER = {"15m": 0, "1h": 1, "4h": 2}
-PERIOD_SEC = {"15m": 900, "1h": 3600, "4h": 14400}
-OPEN_WINDOW_SEC = {"15m": 180, "1h": 210, "4h": 300}
-PRE_ALERT_BEFORE = {"15m": 180, "1h": 600, "4h": 1200}  # 3m / 10m / 20m قبل از کندل
-SIGNAL_SCAN_SEC = {"15m": 200, "1h": 240, "4h": 320}
+# --- حالت تست: فقط طلا + بیت‌کوین (شت‌کوین خاموش) ---
+FOCUS_MODE = os.environ.get("FOCUS_MODE", "1").strip() not in ("0", "false", "False", "no")
+FOCUS_SYMBOLS = [
+    s.strip().upper()
+    for s in os.environ.get("FOCUS_SYMBOLS", "BTCUSDT,XAUTUSDT").split(",")
+    if s.strip()
+]
+
+TIMEFRAMES = {
+    "1m": "1min",
+    "5m": "5min",
+    "15m": "15min",
+    "1h": "1hr",
+    "4h": "4hr",
+}
+TF_ORDER = {"1m": 0, "5m": 1, "15m": 2, "1h": 3, "4h": 4}
+PERIOD_SEC = {"1m": 60, "5m": 300, "15m": 900, "1h": 3600, "4h": 14400}
+OPEN_WINDOW_SEC = {"1m": 25, "5m": 60, "15m": 180, "1h": 210, "4h": 300}
+PRE_ALERT_BEFORE = {"1m": 20, "5m": 60, "15m": 180, "1h": 600, "4h": 1200}
+SIGNAL_SCAN_SEC = {"1m": 30, "5m": 70, "15m": 200, "1h": 240, "4h": 320}
 
 BB_PERIOD = 20
 BB_STD = 2.0
 PENETRATION_PCT = 0.3
-MIN_OPEN_GAP_PCT = 1.0          # احتمال‌گپ / نمایش
-ENTRY_MIN_GAP_PCT = 2.0         # ورود paper/live فقط اگر فاصله >= ۲٪
+# آستانه پیش‌فرض؛ برای طلا پایین‌تر در gap_thresholds
+MIN_OPEN_GAP_PCT = 0.35
+ENTRY_MIN_GAP_PCT = 0.5
+GAP_THRESHOLDS = {
+    "BTCUSDT": {"min": 0.35, "entry": 0.6},
+    "XAUTUSDT": {"min": 0.12, "entry": 0.25},  # طلا آرام‌تر از شت
+}
 TOP_GAINERS = 60
 TOP_VOLUME = 30
-ALWAYS_INCLUDE = ["BTCUSDT", "XAUTUSDT"]
+ALWAYS_INCLUDE = list(FOCUS_SYMBOLS) if FOCUS_SYMBOLS else ["BTCUSDT", "XAUTUSDT"]
 ONLY_SELL = True
+STRUCTURE_BREAK_PCT = 0.08  # شکست حمایت/مقاومت (٪)
 
 TRADE_MODE = os.environ.get("TRADE_MODE", "off").strip().lower()
 if TRADE_MODE not in ("off", "paper", "live"):
@@ -108,8 +128,8 @@ RES_TOUCH_PCT = 0.4  # فاصله مجاز تا سقف برای پله (%)
 FUTURES_TICKERS_URL = "https://lbkperp.lbank.com/cfd/openApi/v1/pub/marketData?productGroup=SwapU"
 PERP_BASE = "https://lbkperp.lbank.com"
 SPOT_WS = "wss://www.lbkex.net/ws/V2/"
-GATE_INTERVAL = {"15m": "15m", "1h": "1h", "4h": "4h"}
-MEXC_INTERVAL = {"15m": "Min15", "1h": "Min60", "4h": "Min240"}
+GATE_INTERVAL = {"1m": "1m", "5m": "5m", "15m": "15m", "1h": "1h", "4h": "4h"}
+MEXC_INTERVAL = {"1m": "Min1", "5m": "Min5", "15m": "Min15", "1h": "Min60", "4h": "Min240"}
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s | %(levelname)s | %(message)s", datefmt="%H:%M:%S")
 log = logging.getLogger("bot")
@@ -505,6 +525,10 @@ def send_telegram_photo(image_bytes: bytes, caption: str) -> bool:
 def format_startup_message() -> str:
     global last_known_version
     lines = [f"✅ ربات روشن شد — <b>v{BOT_VERSION}</b>", f"🧠 agents · TRADE_MODE=<code>{TRADE_MODE}</code>"]
+    if FOCUS_MODE:
+        lines.append("🎯 <b>FOCUS تست</b>: " + ", ".join(FOCUS_SYMBOLS) + " · شت خاموش")
+        lines.append("TF: " + ", ".join(TIMEFRAMES.keys()))
+
     if trading_enabled():
         lines.append(f"🤖 exec: {'PAPER' if is_paper_mode() else 'LIVE'} · {TRADE_MARGIN_USDT}U · {TRADE_LEVERAGE}x · گزارش هر ۱۵د")
     if last_known_version and last_known_version != BOT_VERSION:
@@ -541,7 +565,22 @@ def refresh_futures_map() -> dict:
     return futures_last_map
 
 
+def get_scan_symbols() -> list:
+    """در FOCUS_MODE فقط طلا+بیت؛ وگرنه movers."""
+    if FOCUS_MODE:
+        syms = [s for s in FOCUS_SYMBOLS if not is_blacklisted(s)]
+        log.info("FOCUS scan symbols=%s", ",".join(syms))
+        return syms
+    return get_top_movers(TOP_GAINERS)
+
+
+def gap_limits_for(symbol: str) -> tuple:
+    th = GAP_THRESHOLDS.get((symbol or "").upper()) or {}
+    return float(th.get("min", MIN_OPEN_GAP_PCT)), float(th.get("entry", ENTRY_MIN_GAP_PCT))
+
+
 def get_top_movers(n: int = TOP_GAINERS) -> list:
+
     fmap = refresh_futures_map()
     rows = []
     for sym, rec in fmap.items():
@@ -757,6 +796,69 @@ def is_erratic_wick_candle(row) -> bool:
         return False
 
 
+
+sent_structure: set = set()
+
+
+def check_structure_breaks(symbol: str, tf: str = "15m") -> None:
+    """نوتیف شکست مقاومت/حمایت — حالت تست طلا و بیت."""
+    try:
+        contract = symbol[:-4] + "_USDT" if symbol.endswith("USDT") and "_" not in symbol else symbol
+        gmap = {"1m": "1m", "5m": "5m", "15m": "15m", "1h": "1h", "4h": "4h"}
+        interval = gmap.get(tf, "15m")
+        url = f"https://api.gateio.ws/api/v4/futures/usdt/candlesticks?contract={contract}&interval={interval}&limit=80"
+        r = requests.get(url, timeout=12)
+        if r.status_code != 200:
+            return
+        data = r.json() or []
+        if len(data) < 30:
+            return
+        highs = [float(x["h"]) for x in data]
+        lows = [float(x["l"]) for x in data]
+        closes = [float(x["c"]) for x in data]
+        px = closes[-1]
+        prev = closes[-2]
+        sw = 2
+        res_piv, sup_piv = [], []
+        for i in range(sw, len(highs) - sw - 1):
+            h, l = highs[i], lows[i]
+            if all(highs[i - k] <= h for k in range(1, sw + 1)) and all(highs[i + k] < h for k in range(1, sw + 1)):
+                res_piv.append(h)
+            if all(lows[i - k] >= l for k in range(1, sw + 1)) and all(lows[i + k] > l for k in range(1, sw + 1)):
+                sup_piv.append(l)
+        for lv in sorted(set(res_piv)):
+            if prev < lv <= px and (px - lv) / max(lv, 1e-12) * 100.0 <= 1.5:
+                key = (symbol, tf, "RES_BRK", round(lv, 6), int(time.time()) // max(PERIOD_SEC.get(tf, 900), 1))
+                if key in sent_structure:
+                    continue
+                sent_structure.add(key)
+                link = tv_lbank_url(symbol)
+                send_telegram_text(
+                    f"🔺 <b>شکست مقاومت</b> · <a href=\"{link}\">{symbol}</a>\n"
+                    f"TF <b>{tf}</b> · سطح <code>{lv:.6g}</code> · قیمت <code>{px:.6g}</code>"
+                )
+                log.info("STRUCT_RES_BREAK %s %s lv=%s px=%s", symbol, tf, lv, px)
+                break
+        for lv in sorted(set(sup_piv), reverse=True):
+            if prev > lv >= px and (lv - px) / max(lv, 1e-12) * 100.0 <= 1.5:
+                key = (symbol, tf, "SUP_BRK", round(lv, 6), int(time.time()) // max(PERIOD_SEC.get(tf, 900), 1))
+                if key in sent_structure:
+                    continue
+                sent_structure.add(key)
+                link = tv_lbank_url(symbol)
+                send_telegram_text(
+                    f"🔻 <b>شکست حمایت</b> · <a href=\"{link}\">{symbol}</a>\n"
+                    f"TF <b>{tf}</b> · سطح <code>{lv:.6g}</code> · قیمت <code>{px:.6g}</code>"
+                )
+                log.info("STRUCT_SUP_BREAK %s %s lv=%s px=%s", symbol, tf, lv, px)
+                break
+        if len(sent_structure) > 2000:
+            sent_structure.clear()
+    except Exception as e:
+        log.debug("structure %s: %s", symbol, e)
+
+
+
 def check_signal(df: pd.DataFrame, symbol: str, tf: str):
     if len(df) < BB_PERIOD + 2:
         log.info("SKIP_SHORT %s %s bars=%s", symbol, tf, len(df) if df is not None else 0)
@@ -797,11 +899,12 @@ def check_signal(df: pd.DataFrame, symbol: str, tf: str):
         fut = close if close > 0 else open_p
         log.info("FUT_FALLBACK %s %s use=%.6g", symbol, tf, fut)
     live_gap_pct = (fut - upper) / fut * 100.0 if fut and upper > 0 else 0.0
+    min_gap, _entry_gap = gap_limits_for(symbol)
     # شرط اصلی: قیمت لحظه‌ای بالای UB با فاصله کافی؛ open فقط تأیید ضعیف
     side = None
-    if fut > upper and live_gap_pct >= MIN_OPEN_GAP_PCT:
+    if fut > upper and live_gap_pct >= min_gap:
         side = "SELL"
-    elif open_p > upper and open_gap_pct >= MIN_OPEN_GAP_PCT and fut >= upper * 0.998:
+    elif open_p > upper and open_gap_pct >= min_gap and fut >= upper * 0.998:
         # open گپ داشته و هنوز نزدیک/بالای UB است
         side = "SELL"
         live_gap_pct = max(live_gap_pct, open_gap_pct)
@@ -1765,7 +1868,7 @@ async def process_symbol(symbol: str, tfs_to_check: list) -> None:
         entered = False
         if trading_enabled() and sig.get("side") == "SELL":
             entry = float(sig.get("fut_last") or sig.get("open") or 0)
-            if entry > 0 and gap_now >= ENTRY_MIN_GAP_PCT:
+            if entry > 0 and gap_now >= gap_limits_for(symbol)[1]:
                 rec = open_sell_trade(symbol, entry, tf, sig.get("candle_ts"))
                 entered = bool(rec)
                 log.info("PAPER_ENTRY %s %s entry=%s gap=%.2f%% ok=%s", symbol, tf, entry, gap_now, entered)
@@ -1773,12 +1876,12 @@ async def process_symbol(symbol: str, tfs_to_check: list) -> None:
                     save_state(force_remote=True)
             else:
                 log.info(
-                    "PAPER_SKIP_GAP %s %s gap=%.2f%% < entry_min=%.1f%%",
-                    symbol, tf, gap_now, ENTRY_MIN_GAP_PCT,
+                    "PAPER_SKIP_GAP %s %s gap=%.2f%% < entry_min=%.2f%%",
+                    symbol, tf, gap_now, gap_limits_for(symbol)[1],
                 )
         # فقط بعد از پردازش علامت بزن تا گپ ۱٫۵٪ پنجره را نسوزاند اگر بعداً به ۲٪ رسید
         # (اگر ورود شد یا گپ >= entry min بود، تکرار نده)
-        if entered or gap_now >= ENTRY_MIN_GAP_PCT:
+        if entered or gap_now >= gap_limits_for(symbol)[1]:
             sk = (symbol, tf, sig.get("candle_ts"), sig.get("side"))
             sent_signals.add(sk)
             if len(sent_signals) > 4000:
@@ -1800,7 +1903,7 @@ async def pre_alert_cycle(tfs: list | None = None) -> None:
     tfs = tfs or pre_alert_tfs_now()
     if not tfs:
         return
-    symbols = get_top_movers(TOP_GAINERS)
+    symbols = get_scan_symbols()
     log.info("PRE_ALERT TFs=%s n=%d iran=%s", ",".join(tfs), len(symbols), iran_now().strftime("%H:%M:%S"))
     hits: dict = {}
     sem = asyncio.Semaphore(16)
@@ -1829,7 +1932,7 @@ async def pre_alert_cycle(tfs: list | None = None) -> None:
             if px <= upper:
                 return
             diff = (px - upper) / px * 100.0
-            if diff < MIN_OPEN_GAP_PCT:
+            if diff < gap_limits_for(symbol)[0]:
                 return
             next_open = (now // p + 1) * p
             key = (symbol, tf, next_open)
@@ -1972,7 +2075,7 @@ async def one_cycle(tfs: list | None = None) -> None:
     if not tfs:
         log.info("cycle skipped — خارج پنجره باز شدن کندل")
         return
-    symbols = get_top_movers(TOP_GAINERS)
+    symbols = get_scan_symbols()
     log.info("cycle TFs=%s n=%d iran=%s age15=%s", ",".join(tfs), len(symbols), iran_now().strftime("%H:%M:%S"), now_i % 900)
 
 
@@ -1988,6 +2091,13 @@ async def one_cycle(tfs: list | None = None) -> None:
 
     # اول سیگنال — گزارش گپ قبلی بعداً تا پنجرهٔ زمانی نسوزد
     await asyncio.gather(*[one(s) for s in symbols])
+    # شکست ساختار روی طلا/بیت
+    for sym in symbols:
+        for tf_s in ("15m", "1h", "4h"):
+            try:
+                check_structure_breaks(sym, tf_s)
+            except Exception:
+                pass
     flush_cycle_signals()
     try:
         await report_previous_gaps(tfs)
@@ -2057,7 +2167,10 @@ async def main() -> None:
                 wait = seconds_until_next_candle()
                 pre2 = pre_alert_tfs_now()
                 # نزدیک باز شدن کندل یا داخل پنجره احتمال‌گپ → حداکثر ۱۰ثانیه
-                if wait <= 90 or pre2:
+                if FOCUS_MODE:
+                    # طلا+بیت: چشم برندار — نزدیک کندل هر ۲ث، وگرنه هر ۵ث
+                    sleep_for = max(1, min(wait - 1, 2 if wait <= 120 or pre2 else 5))
+                elif wait <= 90 or pre2:
                     sleep_for = max(1, min(wait - 2, 10))
                 else:
                     sleep_for = max(1, min(wait - 3, 25))
