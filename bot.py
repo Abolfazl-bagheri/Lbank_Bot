@@ -35,8 +35,13 @@ SIGNALS_FILE = os.path.join(BASE_DIR, "signals.json")
 LIVE_TOPIC = os.environ.get("LIVE_TOPIC", "lbank-gap-b0b85cee29ce").strip()
 STATE_BAK = os.path.join(BASE_DIR, "bot_state.bak")
 
-BOT_VERSION = "2.8.0"
+BOT_VERSION = "2.8.1"
 CHANGELOG = {
+    "2.8.1": [
+        "پایش لایو ثانیه‌ای قیمت vs UB برای BTC/XAUT",
+        "نوتیف ⚡ لایو گپ مستقل از پنجره باز شدن کندل",
+        "آنتی‌اسپم هر کندل + cooldown",
+    ],
     "2.7.0": ["احتمال‌گپ زودتر","سیگنال فقط دقایق اول کندل","بیدار شدن نزدیک کندل هر ۱۰ث"],
     "2.6.5": [
         "چارت اجباری: خط‌روند داینامیک + سقف پله با هم",
@@ -528,6 +533,7 @@ def format_startup_message() -> str:
     if FOCUS_MODE:
         lines.append("🎯 <b>FOCUS تست</b>: " + ", ".join(FOCUS_SYMBOLS) + " · شت خاموش")
         lines.append("TF: " + ", ".join(TIMEFRAMES.keys()))
+        lines.append("⚡ پایش لایو قیمت vs UB هر ~2ث")
 
     if trading_enabled():
         lines.append(f"🤖 exec: {'PAPER' if is_paper_mode() else 'LIVE'} · {TRADE_MARGIN_USDT}U · {TRADE_LEVERAGE}x · گزارش هر ۱۵د")
@@ -794,6 +800,92 @@ def is_erratic_wick_candle(row) -> bool:
         return body / rng < 0.15 and rng / max(c, 1e-12) > 0.08
     except Exception:
         return False
+
+
+live_bb_cache: dict = {}
+live_gap_sent: dict = {}
+LIVE_WATCH_TFS = ["1m", "5m", "15m"]
+LIVE_BB_REFRESH_SEC = 20
+LIVE_PRICE_POLL_SEC = 2
+LIVE_GAP_COOLDOWN_SEC = 45
+
+
+async def refresh_live_bb(symbol: str, tf: str):
+    key = (symbol, tf)
+    now = int(time.time())
+    cached = live_bb_cache.get(key)
+    if cached and now - int(cached.get("ts") or 0) < LIVE_BB_REFRESH_SEC:
+        return cached
+    try:
+        df, src = await fetch_klines(symbol, tf, size=max(BB_PERIOD + 5, 40))
+        if df is None or len(df) < BB_PERIOD + 2:
+            return cached
+        use = df.iloc[:-1] if len(df) > BB_PERIOD + 3 else df
+        if len(use) < BB_PERIOD + 1:
+            use = df
+        cur = use.iloc[-1]
+        upper, lower = float(cur["upper"]), float(cur["lower"])
+        sma = float(cur["sma"]) if "sma" in cur else 0.0
+        if np.isnan(upper) or upper <= 0:
+            return cached
+        rec = {"ts": now, "upper": upper, "lower": lower, "sma": sma, "src": src or "?"}
+        live_bb_cache[key] = rec
+        return rec
+    except Exception as e:
+        log.debug("live_bb %s %s: %s", symbol, tf, e)
+        return cached
+
+
+async def live_gap_watch_once() -> None:
+    """پایش ثانیه‌ای قیمت vs UB برای FOCUS — بدون پنجره کندل."""
+    if not FOCUS_MODE:
+        return
+    refresh_futures_map()
+    symbols = get_scan_symbols()
+    now = int(time.time())
+    for symbol in symbols:
+        fut = get_futures_last(symbol)
+        if not fut:
+            continue
+        min_gap, _ = gap_limits_for(symbol)
+        live_min = max(0.08, float(min_gap) * 0.7)
+        for tf in LIVE_WATCH_TFS:
+            bb = await refresh_live_bb(symbol, tf)
+            if not bb:
+                continue
+            upper = float(bb["upper"])
+            if upper <= 0:
+                continue
+            if fut <= upper:
+                continue
+            gap = (fut - upper) / fut * 100.0
+            if gap < live_min:
+                continue
+            period = PERIOD_SEC.get(tf, 60)
+            period_id = now // period
+            skey = (symbol, tf, period_id)
+            last = int(live_gap_sent.get(skey) or 0)
+            if last and now - last < LIVE_GAP_COOLDOWN_SEC:
+                continue
+            if skey in live_gap_sent:
+                continue
+            live_gap_sent[skey] = now
+            if len(live_gap_sent) > 500:
+                for k in list(live_gap_sent.keys())[:200]:
+                    live_gap_sent.pop(k, None)
+            link = tv_lbank_url(symbol)
+            msg = (
+                f"⚡ <b>لایو گپ</b> · <a href=\"{link}\">{symbol}</a>\n"
+                f"TF <b>{tf}</b> · فاصله تا UB <b>{gap:.2f}%</b>\n"
+                f"قیمت <code>{fut:.6g}</code> · UB <code>{upper:.6g}</code>\n"
+                f"<i>پایش ثانیه‌ای · src={bb.get('src')}</i>"
+            )
+            send_telegram_text(msg)
+            try:
+                log_signal_web("GAP", symbol, tf, gap)
+            except Exception:
+                pass
+            log.info("LIVE_GAP %s %s gap=%.2f%% fut=%.6g upper=%.6g", symbol, tf, gap, fut, upper)
 
 
 
@@ -2155,6 +2247,12 @@ async def main() -> None:
         pass
     while True:
         try:
+            # پایش لایو گپ (ثانیه‌ای) — مستقل از پنجره کندل
+            if FOCUS_MODE:
+                try:
+                    await live_gap_watch_once()
+                except Exception as e:
+                    log.debug("live_watch: %s", e)
             pre = pre_alert_tfs_now()
             if pre:
                 await pre_alert_cycle(pre)
@@ -2162,14 +2260,14 @@ async def main() -> None:
             if tfs:
                 log.info("سر کندل %s", tfs)
                 await one_cycle(tfs)
-                await asyncio.sleep(3)
+                await asyncio.sleep(2 if FOCUS_MODE else 3)
             else:
                 wait = seconds_until_next_candle()
                 pre2 = pre_alert_tfs_now()
                 # نزدیک باز شدن کندل یا داخل پنجره احتمال‌گپ → حداکثر ۱۰ثانیه
                 if FOCUS_MODE:
-                    # طلا+بیت: چشم برندار — نزدیک کندل هر ۲ث، وگرنه هر ۵ث
-                    sleep_for = max(1, min(wait - 1, 2 if wait <= 120 or pre2 else 5))
+                    # طلا+بیت: هر ~۲ث قیمت vs UB
+                    sleep_for = max(1, min(int(LIVE_PRICE_POLL_SEC), 2 if wait <= 180 or pre2 else 3))
                 elif wait <= 90 or pre2:
                     sleep_for = max(1, min(wait - 2, 10))
                 else:
