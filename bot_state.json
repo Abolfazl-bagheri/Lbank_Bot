@@ -1,5 +1,31 @@
 {
-  "open_trades": [],
+  "open_trades": [
+    {
+      "symbol": "JCTUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.005851,
+      "qty": 34182.1911,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.005704725,
+      "tf": "15m",
+      "opened_at": 1794366167,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.005851,
+          "ts": 1794366167
+        }
+      ],
+      "entry_candle_ts": 1794366000,
+      "last_leg_candle_ts": 1794366000,
+      "dry_run": true,
+      "order_id": "PAPER-JCTUSDT-1794366167"
+    }
+  ],
   "trade_history": [
     {
       "symbol": "CATEUSDT",
@@ -9059,7 +9085,8 @@
       "side": "SELL",
       "upper": 0.02102643077756193,
       "open": 0.02264,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ANSEMUSDT",
@@ -9068,7 +9095,8 @@
       "side": "SELL",
       "upper": 0.05456493202455062,
       "open": 0.0554,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "HANMIUSDT",
@@ -9077,7 +9105,8 @@
       "side": "SELL",
       "upper": 131.6417573414122,
       "open": 132.98,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "KIOXIAUSDT",
@@ -9106,6 +9135,34 @@
       "side": "SELL",
       "upper": 64.15639868287029,
       "open": 64.83,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "ANSEMUSDT",
+      "tf": "1h",
+      "candle_ts": 1794362400,
+      "side": "SELL",
+      "upper": 0.05665207536879156,
+      "open": 0.0577,
+      "reported": false
+    },
+    {
+      "symbol": "CRWVUSDT",
+      "tf": "1h",
+      "candle_ts": 1794362400,
+      "side": "SELL",
+      "upper": 54.24833246600566,
+      "open": 54.91,
+      "reported": false
+    },
+    {
+      "symbol": "CRWVUSDT",
+      "tf": "1h",
+      "candle_ts": 1794366000,
+      "side": "SELL",
+      "upper": 56.06795111074341,
+      "open": 56.69,
       "reported": false
     }
   ],
@@ -9244,7 +9301,6 @@
     "BRLUSDT": 1794225832,
     "GOLDUSDT": 1794228410,
     "BEMUSDT": 1794233803,
-    "TSMONUSDT": 1794234714,
     "OROCHIUSDT": 1794239182,
     "SILVERUSDT": 1794240255,
     "FIGUSDT": 1794246425,
@@ -9263,7 +9319,6 @@
     "UP2USDT": 1794348962,
     "STXSTOCKUSDT": 1794355532,
     "AMCUSDT": 1794358021,
-    "ONSEMIUSDT": 1794360726,
     "CAPETHUSDT": 1794361582,
     "O1USDT": 1794366307,
     "OSCRUSDT": 1794367943,
@@ -9286,9 +9341,11 @@
     "MARRIOTTUSDT": 1794387810,
     "RIOTUSDT": 1794388601,
     "AINBSCUSDT": 1794391379,
-    "GSTOCKUSDT": 1794401210
+    "GSTOCKUSDT": 1794401210,
+    "ONSEMIUSDT": 1794406599,
+    "TSMONUSDT": 1794407661
   },
-  "last_trade_report_ts": 1794360779,
+  "last_trade_report_ts": 1794365275,
   "last_known_version": "2.7.4",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
