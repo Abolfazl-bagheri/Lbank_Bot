@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.5",
-  "updated_at": 1794399348,
+  "updated_at": 1794399371,
   "signals": [
-    {
-      "kind": "HEARTBEAT",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794342810
-    },
-    {
-      "kind": "GAP",
-      "symbol": "EQTUSDT",
-      "tf": "15m",
-      "gap": 3.64,
-      "ts": 1794343431
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "15m",
       "gap": 91.25,
       "ts": 1794399348
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794399355
+    },
+    {
+      "kind": "SELL",
+      "symbol": "RUMUSDT",
+      "tf": "15m",
+      "gap": 1.15,
+      "ts": 1794399371
     }
   ],
   "trades": [
@@ -1421,14 +1421,14 @@
     {
       "symbol": "MEMEUSDT",
       "side": "SELL",
-      "entry": 0.00475,
-      "tp": 0.00463125,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
+      "entry": 0.004524784482795807,
+      "tp": 0.0044116648707259115,
+      "adds": 1,
+      "pele": 2,
+      "margin": 30.0,
       "lev": 20,
       "px": 0.00442,
-      "pnl": 13.6547,
+      "pnl": 13.1747,
       "tf": "15m"
     },
     {
@@ -1462,8 +1462,8 @@
   "session_start": 1794356927,
   "realized": 93.9091,
   "closed_n": 1,
-  "open_upnl": -19.1984,
-  "equity": 1074.7107,
+  "open_upnl": -19.6784,
+  "equity": 1074.2307,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
