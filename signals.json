@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.4",
-  "updated_at": 1794359657,
+  "updated_at": 1794359735,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "BRUSDT",
-      "tf": "4h",
-      "gap": 1.11,
-      "ts": 1794325345
-    },
     {
       "kind": "GAP",
       "symbol": "INITUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 1.03,
       "ts": 1794359657
+    },
+    {
+      "kind": "SELL",
+      "symbol": "KIOXIAUSDT",
+      "tf": "15m",
+      "gap": 0.75,
+      "ts": 1794359735
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 3,
       "margin": 70.0,
       "lev": 20,
-      "px": 0.02347,
-      "pnl": -27.0928,
+      "px": 0.02283,
+      "pnl": 11.8224,
       "tf": "15m"
     }
   ],
@@ -1423,8 +1423,8 @@
   "session_start": 1794356927,
   "realized": 0,
   "closed_n": 0,
-  "open_upnl": -27.0928,
-  "equity": 972.9072,
+  "open_upnl": 11.8224,
+  "equity": 1011.8224,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
