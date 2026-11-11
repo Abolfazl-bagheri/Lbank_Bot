@@ -95,17 +95,18 @@
       "symbol": "RUMUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 5.920999999999999,
-      "qty": 101.33430000000001,
-      "margin": 30.0,
+      "entry": 6.010264832363034,
+      "qty": 232.9349,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 5.772974999999999,
+      "tp_price": 5.860008211553958,
       "tf": "1h",
       "opened_at": 1794412907,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [
-        5.935
+        5.935,
+        6.103
       ],
       "steps": [
         {
@@ -115,10 +116,14 @@
         {
           "px": 5.921,
           "ts": 1794413400
+        },
+        {
+          "px": 6.079,
+          "ts": 1794414839
         }
       ],
       "entry_candle_ts": 1794412800,
-      "last_leg_candle_ts": 1794413400,
+      "last_leg_candle_ts": 1794414839,
       "dry_run": true,
       "order_id": "PAPER-RUMUSDT-1794412907"
     },
