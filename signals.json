@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.5",
-  "updated_at": 1794398464,
+  "updated_at": 1794398480,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "INITUSDT",
-      "tf": "15m",
-      "gap": 1.09,
-      "ts": 1794340812
-    },
-    {
-      "kind": "GAP",
-      "symbol": "EQTUSDT",
-      "tf": "15m",
-      "gap": 3.97,
-      "ts": 1794340817
-    },
     {
       "kind": "GAP",
       "symbol": "OXYUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "4h",
       "gap": 4.64,
       "ts": 1794398464
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794398469
+    },
+    {
+      "kind": "SELL",
+      "symbol": "AGTUSDT",
+      "tf": "4h",
+      "gap": 17.04,
+      "ts": 1794398480
     }
   ],
   "trades": [
@@ -1430,14 +1430,27 @@
       "px": 0.00475,
       "pnl": -0.24,
       "tf": "15m"
+    },
+    {
+      "symbol": "ARIAUSDT",
+      "side": "SELL",
+      "entry": 0.29817,
+      "tp": 0.29071575,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.29817,
+      "pnl": -0.24,
+      "tf": "4h"
     }
   ],
   "start": 1000.0,
   "session_start": 1794356927,
   "realized": 93.9091,
   "closed_n": 1,
-  "open_upnl": -2.9411,
-  "equity": 1090.968,
+  "open_upnl": -3.1811,
+  "equity": 1090.728,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
