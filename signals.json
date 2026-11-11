@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.5",
-  "updated_at": 1794406555,
+  "updated_at": 1794406740,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "ANSEMUSDT",
-      "tf": "1h",
-      "gap": 2.65,
-      "ts": 1794358339
-    },
     {
       "kind": "GAP",
       "symbol": "ZCATUSDT",
@@ -1402,48 +1395,28 @@
       "tf": "15m",
       "gap": 1.21,
       "ts": 1794406555
-    }
-  ],
-  "trades": [
-    {
-      "symbol": "ANSEMUSDT",
-      "side": "SELL",
-      "entry": 0.06714907105762796,
-      "tp": 0.06547034428118727,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
-      "lev": 20,
-      "px": 0.06432,
-      "pnl": 24.5587,
-      "tf": "15m"
     },
     {
-      "symbol": "MEMEUSDT",
-      "side": "SELL",
-      "entry": 0.004273250388802576,
-      "tp": 0.004166419129082511,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
-      "lev": 20,
-      "px": 0.00411,
-      "pnl": 22.2017,
-      "tf": "15m"
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794406740
     }
   ],
+  "trades": [],
   "start": 1000.0,
   "session_start": 1794356927,
-  "realized": 141.9551,
-  "closed_n": 5,
-  "open_upnl": 46.7604,
-  "equity": 1188.7155,
+  "realized": 190.1556,
+  "closed_n": 7,
+  "open_upnl": 0,
+  "equity": 1190.1556,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 168.9249,
+    "profit": 217.1253,
     "loss": -26.9697,
-    "count": 5
+    "count": 7
   }
 }
