@@ -103,31 +103,6 @@
       "order_id": "PAPER-RUMUSDT-1794412907"
     },
     {
-      "symbol": "AGTUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.0732,
-      "qty": 2732.2404,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.07137,
-      "tf": "4h",
-      "opened_at": 1794412926,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.0732,
-          "ts": 1794412926
-        }
-      ],
-      "entry_candle_ts": 1794412800,
-      "last_leg_candle_ts": 1794412800,
-      "dry_run": true,
-      "order_id": "PAPER-AGTUSDT-1794412926"
-    },
-    {
       "symbol": "DJTUSDT",
       "side": "SELL",
       "status": "open",
@@ -179,40 +154,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "CLANKERUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 21.43160544363481,
-      "qty": 27.996,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 20.895815307543938,
-      "tf": "4h",
-      "opened_at": 1793808119,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 18.52,
-          "ts": 1793808119
-        },
-        {
-          "px": 23.26,
-          "ts": 1793822823
-        }
-      ],
-      "entry_candle_ts": 1793808000,
-      "last_leg_candle_ts": 1793822400,
-      "dry_run": true,
-      "order_id": "PAPER-CLANKERUSDT-1793808119",
-      "closed_at": 1793829991,
-      "close_px": 20.6,
-      "pnl_usdt": 23.281656033336333,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "ELSAUSDT",
       "side": "SELL",
@@ -7232,6 +7173,36 @@
       "pnl_usdt": 8.391241641536668,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "AGTUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.0732,
+      "qty": 2732.2404,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.07137,
+      "tf": "4h",
+      "opened_at": 1794412926,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.0732,
+          "ts": 1794412926
+        }
+      ],
+      "entry_candle_ts": 1794412800,
+      "last_leg_candle_ts": 1794412800,
+      "dry_run": true,
+      "order_id": "PAPER-AGTUSDT-1794412926",
+      "closed_at": 1794416783,
+      "close_px": 0.07113,
+      "pnl_usdt": 5.655737704918039,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -7444,26 +7415,6 @@
       "tf": "15m",
       "candle_ts": 1793430900,
       "side": "SELL"
-    },
-    {
-      "symbol": "AIOTUSDT",
-      "tf": "1h",
-      "candle_ts": 1794157200,
-      "side": "SELL",
-      "upper": 0.16693681459523096,
-      "open": 0.17189,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "ANSEMUSDT",
-      "tf": "1h",
-      "candle_ts": 1794157200,
-      "side": "SELL",
-      "upper": 0.05418697746049185,
-      "open": 0.0577,
-      "reported": true,
-      "filled": false
     },
     {
       "symbol": "MERLUSDT",
@@ -9272,7 +9223,8 @@
       "side": "SELL",
       "upper": 0.0003894337638315434,
       "open": 0.0003897,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "AXTIUSDT",
@@ -9281,7 +9233,8 @@
       "side": "SELL",
       "upper": 47.5159162767845,
       "open": 48.58,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "SNXXUSDT",
@@ -9290,7 +9243,8 @@
       "side": "SELL",
       "upper": 4.543060072709343,
       "open": 4.61,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "RAMUSDT",
@@ -9309,7 +9263,8 @@
       "side": "SELL",
       "upper": 18.900076717042023,
       "open": 19.14,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "RUMUSDT",
@@ -9318,7 +9273,8 @@
       "side": "SELL",
       "upper": 5.749300177481446,
       "open": 5.889,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "OPGUSDT",
@@ -9327,7 +9283,8 @@
       "side": "SELL",
       "upper": 0.152725354501792,
       "open": 0.1551,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "AGTUSDT",
@@ -9418,7 +9375,8 @@
       "side": "SELL",
       "upper": 55.637595944571416,
       "open": 56.57,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "RAMUSDT",
@@ -9436,7 +9394,8 @@
       "side": "SELL",
       "upper": 4.958454566756041,
       "open": 5.182,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "BEUSDT",
@@ -9445,7 +9404,8 @@
       "side": "SELL",
       "upper": 214.73596058289263,
       "open": 217.7,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "SNDKUSDT",
@@ -9539,7 +9499,8 @@
       "side": "SELL",
       "upper": 0.025638918380719723,
       "open": 0.02611,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "AAOIUSDT",
@@ -9557,6 +9518,33 @@
       "side": "SELL",
       "upper": 5.197946015631112,
       "open": 5.357,
+      "reported": false
+    },
+    {
+      "symbol": "AEONUSDT",
+      "tf": "1h",
+      "candle_ts": 1794416400,
+      "side": "SELL",
+      "upper": 0.025270476218874374,
+      "open": 0.02589,
+      "reported": false
+    },
+    {
+      "symbol": "AGPUUSDT",
+      "tf": "1h",
+      "candle_ts": 1794416400,
+      "side": "SELL",
+      "upper": 8.568991398744231,
+      "open": 8.675,
+      "reported": false
+    },
+    {
+      "symbol": "MPWRUSDT",
+      "tf": "1h",
+      "candle_ts": 1794416400,
+      "side": "SELL",
+      "upper": 1482.2932009773492,
+      "open": 1497.1,
       "reported": false
     }
   ],
