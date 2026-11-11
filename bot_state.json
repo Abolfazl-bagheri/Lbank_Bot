@@ -8902,7 +8902,8 @@
       "side": "SELL",
       "upper": 0.007076044538768412,
       "open": 0.007144,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "MEMEUSDT",
@@ -8911,6 +8912,43 @@
       "side": "SELL",
       "upper": 0.00038732517840943463,
       "open": 0.000386,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "JCTUSDT",
+      "tf": "15m",
+      "candle_ts": 1794401100,
+      "side": "SELL",
+      "upper": 0.0074779251159248945,
+      "open": 0.007592,
+      "reported": false
+    },
+    {
+      "symbol": "B2USDT",
+      "tf": "15m",
+      "candle_ts": 1794401100,
+      "side": "SELL",
+      "upper": 0.5113972970327703,
+      "open": 0.5136,
+      "reported": false
+    },
+    {
+      "symbol": "HPEUSDT",
+      "tf": "15m",
+      "candle_ts": 1794401100,
+      "side": "SELL",
+      "upper": 50.54000038497913,
+      "open": 50.54,
+      "reported": false
+    },
+    {
+      "symbol": "NOTUSDT",
+      "tf": "15m",
+      "candle_ts": 1794401100,
+      "side": "SELL",
+      "upper": 0.0003311319179914335,
+      "open": 0.0003296,
       "reported": false
     }
   ],
@@ -9093,7 +9131,7 @@
     "LIGHT1USDT": 1794442609,
     "UP2USDT": 1794443477
   },
-  "last_trade_report_ts": 1794400393,
+  "last_trade_report_ts": 1794401311,
   "last_known_version": "2.7.5",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
