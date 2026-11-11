@@ -84,84 +84,9 @@
       "last_leg_candle_ts": 1794420000,
       "dry_run": true,
       "order_id": "PAPER-MEMEUSDT-1794420081"
-    },
-    {
-      "symbol": "KGENUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.08067,
-      "qty": 2479.2364,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.07865325000000001,
-      "tf": "1h",
-      "opened_at": 1794420104,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.08067,
-          "ts": 1794420104
-        }
-      ],
-      "entry_candle_ts": 1794420000,
-      "last_leg_candle_ts": 1794420000,
-      "dry_run": true,
-      "order_id": "PAPER-KGENUSDT-1794420104"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "BKNGUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 172.13931274692996,
-      "qty": 36.0173,
-      "margin": 310.0,
-      "leverage": 20,
-      "tp_price": 167.83582992825671,
-      "tf": "1h",
-      "opened_at": 1793804738,
-      "adds": 4,
-      "last_leg_margin": 160.0,
-      "used_res_levels": [
-        170.08,
-        172.22,
-        173.2
-      ],
-      "steps": [
-        {
-          "px": 170.08,
-          "ts": 1793804738
-        },
-        {
-          "px": 169.63,
-          "ts": 1793806432
-        },
-        {
-          "px": 172.52,
-          "ts": 1793808259
-        },
-        {
-          "px": 171.71,
-          "ts": 1793809935
-        },
-        {
-          "px": 172.71,
-          "ts": 1793813711
-        }
-      ],
-      "entry_candle_ts": 1793804400,
-      "last_leg_candle_ts": 1793813711,
-      "dry_run": true,
-      "order_id": "PAPER-BKNGUSDT-1793804738",
-      "closed_at": 1793837403,
-      "close_px": 171.14,
-      "pnl_usdt": 35.992586075177854,
-      "close_reason": "NIGHT_RESET",
-      "why": "NIGHT_RESET"
-    },
     {
       "symbol": "STANDARDUSDT",
       "side": "SELL",
@@ -7115,6 +7040,36 @@
       "closed_at": 1794425840,
       "close_px": 0.00561,
       "pnl_usdt": 85.67904349461995,
+      "close_reason": "TP50",
+      "why": "TP50"
+    },
+    {
+      "symbol": "KGENUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.08067,
+      "qty": 2479.2364,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.07865325000000001,
+      "tf": "1h",
+      "opened_at": 1794420104,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.08067,
+          "ts": 1794420104
+        }
+      ],
+      "entry_candle_ts": 1794420000,
+      "last_leg_candle_ts": 1794420000,
+      "dry_run": true,
+      "order_id": "PAPER-KGENUSDT-1794420104",
+      "closed_at": 1794426060,
+      "close_px": 0.07858,
+      "pnl_usdt": 5.18160406594771,
       "close_reason": "TP50",
       "why": "TP50"
     }
