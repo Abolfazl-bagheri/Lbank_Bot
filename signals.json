@@ -1,8 +1,15 @@
 {
   "mode": "PAPER",
   "version": "2.7.5",
-  "updated_at": 1794401107,
+  "updated_at": 1794401109,
   "signals": [
+    {
+      "kind": "SELL",
+      "symbol": "CRWVUSDT",
+      "tf": "15m",
+      "gap": 1.4,
+      "ts": 1794345355
+    },
     {
       "kind": "SELL",
       "symbol": "EQTUSDT",
@@ -1334,74 +1341,67 @@
       "ts": 1794400104
     },
     {
-      "kind": "SELL",
-      "symbol": "JCTUSDT",
-      "tf": "15m",
-      "gap": 1.28,
-      "ts": 1794400215
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794400230
     },
     {
       "kind": "SELL",
       "symbol": "MEMEUSDT",
       "tf": "15m",
-      "gap": 91.39,
-      "ts": 1794400218
+      "gap": 91.47,
+      "ts": 1794400242
+    },
+    {
+      "kind": "SELL",
+      "symbol": "JCTUSDT",
+      "tf": "15m",
+      "gap": 1.53,
+      "ts": 1794400261
     },
     {
       "kind": "POS",
       "symbol": "—",
       "tf": "—",
       "gap": 0.0,
-      "ts": 1794400224
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794400393
+      "ts": 1794400505
     },
     {
       "kind": "HEARTBEAT",
       "symbol": "—",
       "tf": "—",
       "gap": 0.0,
-      "ts": 1794400394
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794400562
+      "ts": 1794400507
     },
     {
       "kind": "GAP",
       "symbol": "JCTUSDT",
       "tf": "15m",
-      "gap": 3.86,
-      "ts": 1794401023
+      "gap": 4.0,
+      "ts": 1794401048
     },
     {
       "kind": "GAP",
       "symbol": "B2USDT",
       "tf": "15m",
       "gap": 2.04,
-      "ts": 1794401028
+      "ts": 1794401056
     },
     {
       "kind": "GAP",
       "symbol": "HPEUSDT",
       "tf": "15m",
       "gap": 1.25,
-      "ts": 1794401032
+      "ts": 1794401060
     },
     {
       "kind": "GAP",
       "symbol": "BLUAIUSDT",
       "tf": "15m",
-      "gap": 1.14,
-      "ts": 1794401107
+      "gap": 1.32,
+      "ts": 1794401109
     }
   ],
   "trades": [
@@ -1427,22 +1427,22 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.05971,
-      "pnl": -2.9216,
+      "px": 0.05963,
+      "pnl": -2.65,
       "tf": "4h"
     }
   ],
   "start": 1000.0,
   "session_start": 1794356927,
-  "realized": 76.9001,
+  "realized": 78.8923,
   "closed_n": 3,
-  "open_upnl": -26.1456,
-  "equity": 1050.7545,
+  "open_upnl": -25.874,
+  "equity": 1053.0183,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 103.8699,
+    "profit": 105.862,
     "loss": -26.9697,
     "count": 3
   }
