@@ -1,112 +1,6 @@
 {
-  "open_trades": [
-    {
-      "symbol": "AGTUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.05892,
-      "qty": 3394.4331,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.057447,
-      "tf": "4h",
-      "opened_at": 1794398482,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.05892,
-          "ts": 1794398482
-        }
-      ],
-      "entry_candle_ts": 1794398400,
-      "last_leg_candle_ts": 1794398400,
-      "dry_run": true,
-      "order_id": "PAPER-AGTUSDT-1794398482"
-    },
-    {
-      "symbol": "JCTUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.007636,
-      "qty": 26191.7234,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.0074451000000000005,
-      "tf": "15m",
-      "opened_at": 1794401126,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.007636,
-          "ts": 1794401126
-        }
-      ],
-      "entry_candle_ts": 1794401100,
-      "last_leg_candle_ts": 1794401100,
-      "dry_run": true,
-      "order_id": "PAPER-JCTUSDT-1794401126"
-    },
-    {
-      "symbol": "B2USDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.5241,
-      "qty": 381.6066,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.5109975,
-      "tf": "1h",
-      "opened_at": 1794402051,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.5241,
-          "ts": 1794402051
-        }
-      ],
-      "entry_candle_ts": 1794402000,
-      "last_leg_candle_ts": 1794402000,
-      "dry_run": true,
-      "order_id": "PAPER-B2USDT-1794402051"
-    }
-  ],
+  "open_trades": [],
   "trade_history": [
-    {
-      "symbol": "FARTCOINUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.1303,
-      "qty": 1534.9194,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.1270425,
-      "tf": "1h",
-      "opened_at": 1793808402,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.1303,
-          "ts": 1793808402
-        }
-      ],
-      "entry_candle_ts": 1793808000,
-      "last_leg_candle_ts": 1793808000,
-      "dry_run": true,
-      "order_id": "PAPER-FARTCOINUSDT-1793808402",
-      "closed_at": 1793812686,
-      "close_px": 0.1265,
-      "pnl_usdt": 5.832693783576359,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "ARXUSDT",
       "side": "SELL",
@@ -7125,9 +7019,9 @@
       "last_leg_candle_ts": 1794398400,
       "dry_run": true,
       "order_id": "PAPER-ARIAUSDT-1794398466",
-      "closed_at": 1794400389,
-      "close_px": 0.28332,
-      "pnl_usdt": 9.960760639903391,
+      "closed_at": 1794400501,
+      "close_px": 0.28035,
+      "pnl_usdt": 11.952912767884094,
       "close_reason": "TP50",
       "why": "TP50"
     },
@@ -7163,9 +7057,39 @@
       "last_leg_candle_ts": 1794400200,
       "dry_run": true,
       "order_id": "PAPER-MEMEUSDT-1794398451",
-      "closed_at": 1794403134,
+      "closed_at": 1794403138,
       "close_px": 0.00434,
       "pnl_usdt": 52.947421349392734,
+      "close_reason": "TP50",
+      "why": "TP50"
+    },
+    {
+      "symbol": "AGTUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.05892,
+      "qty": 3394.4331,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.057447,
+      "tf": "4h",
+      "opened_at": 1794398482,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.05892,
+          "ts": 1794398482
+        }
+      ],
+      "entry_candle_ts": 1794398400,
+      "last_leg_candle_ts": 1794398400,
+      "dry_run": true,
+      "order_id": "PAPER-AGTUSDT-1794398482",
+      "closed_at": 1794403140,
+      "close_px": 0.05594,
+      "pnl_usdt": 10.115410726408701,
       "close_reason": "TP50",
       "why": "TP50"
     }
@@ -8891,22 +8815,22 @@
     {
       "symbol": "JCTUSDT",
       "tf": "15m",
-      "candle_ts": 1794401100,
+      "candle_ts": 1794400200,
       "side": "SELL",
-      "upper": 0.0074779251159248945,
-      "open": 0.007592,
+      "upper": 0.007067971004330282,
+      "open": 0.007144,
       "reported": true,
-      "filled": true
+      "filled": false
     },
     {
-      "symbol": "B2USDT",
+      "symbol": "JCTUSDT",
       "tf": "15m",
       "candle_ts": 1794401100,
       "side": "SELL",
-      "upper": 0.5113972970327703,
-      "open": 0.5136,
+      "upper": 0.007485631381810303,
+      "open": 0.007592,
       "reported": true,
-      "filled": false
+      "filled": true
     },
     {
       "symbol": "HPEUSDT",
@@ -8933,7 +8857,7 @@
       "tf": "15m",
       "candle_ts": 1794402000,
       "side": "SELL",
-      "upper": 0.518219016326874,
+      "upper": 0.5182769542313531,
       "open": 0.5216,
       "reported": true,
       "filled": false
@@ -8943,7 +8867,7 @@
       "tf": "1h",
       "candle_ts": 1794402000,
       "side": "SELL",
-      "upper": 1.231461704217004,
+      "upper": 1.230262143225745,
       "open": 1.242,
       "reported": false
     },
@@ -8952,7 +8876,7 @@
       "tf": "1h",
       "candle_ts": 1794402000,
       "side": "SELL",
-      "upper": 0.5135562142878058,
+      "upper": 0.5137925477844374,
       "open": 0.5216,
       "reported": false
     },
@@ -8971,7 +8895,7 @@
       "tf": "1h",
       "candle_ts": 1794402000,
       "side": "SELL",
-      "upper": 0.022419123706501183,
+      "upper": 0.022433959097823156,
       "open": 0.02275,
       "reported": false
     },
@@ -8989,7 +8913,7 @@
       "tf": "15m",
       "candle_ts": 1794402900,
       "side": "SELL",
-      "upper": 0.5320237607029139,
+      "upper": 0.5326538403019583,
       "open": 0.5388,
       "reported": false
     }
@@ -9169,11 +9093,11 @@
     "NEXUSDT": 1794441907,
     "1000000BABYDOGEUSDT": 1794441924,
     "LIGHT1USDT": 1794442609,
-    "UP2USDT": 1794443477,
-    "GSTOCKUSDT": 1794445379,
-    "MANCERUSDT": 1794446213
+    "UP2USDT": 1794443519,
+    "GSTOCKUSDT": 1794445445,
+    "MANCERUSDT": 1794446237
   },
-  "last_trade_report_ts": 1794402368,
+  "last_trade_report_ts": 1794402446,
   "last_known_version": "2.7.5",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
