@@ -1,68 +1,6 @@
 {
-  "open_trades": [
-    {
-      "symbol": "EQTUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 52.11,
-      "qty": 3.838,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 50.807249999999996,
-      "tf": "15m",
-      "opened_at": 1794345372,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 52.11,
-          "ts": 1794345372
-        }
-      ],
-      "entry_candle_ts": 1794345300,
-      "last_leg_candle_ts": 1794345300,
-      "dry_run": true,
-      "order_id": "PAPER-EQTUSDT-1794345372"
-    }
-  ],
+  "open_trades": [],
   "trade_history": [
-    {
-      "symbol": "CARDSUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.2841,
-      "qty": 2111.9323999999997,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.2769975,
-      "tf": "15m",
-      "opened_at": 1793806322,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        0.28453
-      ],
-      "steps": [
-        {
-          "px": 0.2841,
-          "ts": 1793806322
-        },
-        {
-          "px": 0.2841,
-          "ts": 1793806447
-        }
-      ],
-      "entry_candle_ts": 1793806200,
-      "last_leg_candle_ts": 1793806447,
-      "dry_run": true,
-      "order_id": "PAPER-CARDSUSDT-1793806322",
-      "closed_at": 1793809054,
-      "close_px": 0.2745,
-      "pnl_usdt": 20.274551214361132,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "SXTUSDT",
       "side": "SELL",
@@ -7114,6 +7052,36 @@
       "pnl_usdt": -22.00292029605758,
       "close_reason": "NIGHT_RESET",
       "why": "NIGHT_RESET"
+    },
+    {
+      "symbol": "EQTUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 52.11,
+      "qty": 3.838,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 50.807249999999996,
+      "tf": "15m",
+      "opened_at": 1794345372,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 52.11,
+          "ts": 1794345372
+        }
+      ],
+      "entry_candle_ts": 1794345300,
+      "last_leg_candle_ts": 1794345300,
+      "dry_run": true,
+      "order_id": "PAPER-EQTUSDT-1794345372",
+      "closed_at": 1794356925,
+      "close_px": 52.01,
+      "pnl_usdt": 0.38380349261178814,
+      "close_reason": "NIGHT_RESET",
+      "why": "NIGHT_RESET"
     }
   ],
   "pending": [
@@ -9150,9 +9118,20 @@
       "trades": 35,
       "tp_trades": 27,
       "reset_trades": 8
+    },
+    {
+      "from": 1794269325,
+      "to": 1794356927,
+      "start": 1000.0,
+      "realized": 773.1321,
+      "unrealized_closed": -21.6191,
+      "net": 751.513,
+      "trades": 22,
+      "tp_trades": 20,
+      "reset_trades": 2
     }
   ],
-  "paper_session_start": 1794269325,
+  "paper_session_start": 1794356927,
   "last_daily_report_date": "2026-11-11",
   "kline_blacklist": {
     "EURUSDT": 1793385188,
