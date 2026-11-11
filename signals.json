@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.5",
-  "updated_at": 1794405757,
+  "updated_at": 1794405797,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "HANMIUSDT",
-      "tf": "15m",
-      "gap": 1.09,
-      "ts": 1794357822
-    },
-    {
-      "kind": "SELL",
-      "symbol": "ZCATUSDT",
-      "tf": "15m",
-      "gap": 5.98,
-      "ts": 1794357920
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "15m",
       "gap": 90.87,
       "ts": 1794405757
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794405762
+    },
+    {
+      "kind": "SELL",
+      "symbol": "MEMEUSDT",
+      "tf": "1h",
+      "gap": 90.92,
+      "ts": 1794405797
     }
   ],
   "trades": [
@@ -1421,14 +1421,14 @@
     {
       "symbol": "MEMEUSDT",
       "side": "SELL",
-      "entry": 0.0043,
-      "tp": 0.0041925,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
+      "entry": 0.004273250388802576,
+      "tp": 0.004166419129082511,
+      "adds": 1,
+      "pele": 2,
+      "margin": 30.0,
       "lev": 20,
       "px": 0.00426,
-      "pnl": 1.6205,
+      "pnl": 1.1405,
       "tf": "15m"
     }
   ],
@@ -1436,8 +1436,8 @@
   "session_start": 1794356927,
   "realized": 141.9551,
   "closed_n": 5,
-  "open_upnl": 5.3599,
-  "equity": 1147.315,
+  "open_upnl": 4.8799,
+  "equity": 1146.835,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
