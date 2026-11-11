@@ -24,6 +24,31 @@
       "last_leg_candle_ts": 1794366000,
       "dry_run": true,
       "order_id": "PAPER-JCTUSDT-1794366167"
+    },
+    {
+      "symbol": "MEMEUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.00475,
+      "qty": 42105.2632,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.00463125,
+      "tf": "15m",
+      "opened_at": 1794398451,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.00475,
+          "ts": 1794398451
+        }
+      ],
+      "entry_candle_ts": 1794398400,
+      "last_leg_candle_ts": 1794398400,
+      "dry_run": true,
+      "order_id": "PAPER-MEMEUSDT-1794398451"
     }
   ],
   "trade_history": [
@@ -8832,6 +8857,15 @@
       "side": "SELL",
       "upper": 4.362,
       "open": 4.362,
+      "reported": false
+    },
+    {
+      "symbol": "ARIAUSDT",
+      "tf": "1h",
+      "candle_ts": 1794398400,
+      "side": "SELL",
+      "upper": 0.292685518272654,
+      "open": 0.29905,
       "reported": false
     }
   ],
