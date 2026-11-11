@@ -82,6 +82,31 @@
       "last_leg_candle_ts": 1794412800,
       "dry_run": true,
       "order_id": "PAPER-OPGUSDT-1794412942"
+    },
+    {
+      "symbol": "SNXXUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 4.592,
+      "qty": 43.554,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 4.4772,
+      "tf": "4h",
+      "opened_at": 1794412959,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 4.592,
+          "ts": 1794412959
+        }
+      ],
+      "entry_candle_ts": 1794412800,
+      "last_leg_candle_ts": 1794412800,
+      "dry_run": true,
+      "order_id": "PAPER-SNXXUSDT-1794412959"
     }
   ],
   "trade_history": [
@@ -9285,6 +9310,33 @@
       "side": "SELL",
       "upper": 47.48570055002779,
       "open": 48.58,
+      "reported": false
+    },
+    {
+      "symbol": "OPGUSDT",
+      "tf": "1h",
+      "candle_ts": 1794412800,
+      "side": "SELL",
+      "upper": 0.152725354501792,
+      "open": 0.1551,
+      "reported": false
+    },
+    {
+      "symbol": "ANSEMUSDT",
+      "tf": "4h",
+      "candle_ts": 1794412800,
+      "side": "SELL",
+      "upper": 0.06411516553762553,
+      "open": 0.0654,
+      "reported": false
+    },
+    {
+      "symbol": "MEMEUSDT",
+      "tf": "1h",
+      "candle_ts": 1794412800,
+      "side": "SELL",
+      "upper": 0.0003895982033320667,
+      "open": 0.0003903,
       "reported": false
     }
   ],
