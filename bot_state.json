@@ -74,6 +74,31 @@
       "last_leg_candle_ts": 1794398400,
       "dry_run": true,
       "order_id": "PAPER-ARIAUSDT-1794398466"
+    },
+    {
+      "symbol": "AGTUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.05892,
+      "qty": 3394.4331,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.057447,
+      "tf": "4h",
+      "opened_at": 1794398482,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.05892,
+          "ts": 1794398482
+        }
+      ],
+      "entry_candle_ts": 1794398400,
+      "last_leg_candle_ts": 1794398400,
+      "dry_run": true,
+      "order_id": "PAPER-AGTUSDT-1794398482"
     }
   ],
   "trade_history": [
@@ -8900,6 +8925,15 @@
       "side": "SELL",
       "upper": 0.00038598224746721723,
       "open": 0.0003862,
+      "reported": false
+    },
+    {
+      "symbol": "ARIAUSDT",
+      "tf": "4h",
+      "candle_ts": 1794398400,
+      "side": "SELL",
+      "upper": 0.28433083692350153,
+      "open": 0.29905,
       "reported": false
     }
   ],
