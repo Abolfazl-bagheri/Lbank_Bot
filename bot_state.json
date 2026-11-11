@@ -4,15 +4,15 @@
       "symbol": "ZCATUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.022335118684223564,
-      "qty": 26863.524100000002,
-      "margin": 30.0,
+      "entry": 0.02302443174785545,
+      "qty": 60804.9751,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 0.021776740717117975,
+      "tp_price": 0.022448820954159062,
       "tf": "15m",
       "opened_at": 1794357055,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [],
       "steps": [
         {
@@ -22,10 +22,14 @@
         {
           "px": 0.0228,
           "ts": 1794357922
+        },
+        {
+          "px": 0.02357,
+          "ts": 1794358854
         }
       ],
       "entry_candle_ts": 1794357000,
-      "last_leg_candle_ts": 1794357900,
+      "last_leg_candle_ts": 1794358800,
       "dry_run": true,
       "order_id": "PAPER-ZCATUSDT-1794357055"
     }
@@ -9050,6 +9054,16 @@
       "side": "SELL",
       "upper": 0.019973928427600384,
       "open": 0.02082,
+      "reported": true,
+      "filled": false
+    },
+    {
+      "symbol": "ZCATUSDT",
+      "tf": "15m",
+      "candle_ts": 1794357900,
+      "side": "SELL",
+      "upper": 0.021436682973255725,
+      "open": 0.02228,
       "reported": false
     }
   ],
@@ -9229,9 +9243,10 @@
     "UBIKUSDT": 1794387803,
     "MARRIOTTUSDT": 1794387810,
     "RIOTUSDT": 1794388601,
-    "AINBSCUSDT": 1794391379
+    "AINBSCUSDT": 1794391379,
+    "GSTOCKUSDT": 1794401210
   },
-  "last_trade_report_ts": 1794357218,
+  "last_trade_report_ts": 1794358246,
   "last_known_version": "2.7.4",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
