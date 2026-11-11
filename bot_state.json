@@ -193,24 +193,30 @@
       "symbol": "KGENUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.07465,
-      "qty": 2679.1695,
-      "margin": 10.0,
+      "entry": 0.0763829817147162,
+      "qty": 7855.1529,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.07278375,
+      "tp_price": 0.0744734071718483,
       "tf": "4h",
       "opened_at": 1794413102,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.07758
+      ],
       "steps": [
         {
           "px": 0.07465,
           "ts": 1794413102
+        },
+        {
+          "px": 0.07728,
+          "ts": 1794413944
         }
       ],
       "entry_candle_ts": 1794412800,
-      "last_leg_candle_ts": 1794412800,
+      "last_leg_candle_ts": 1794413944,
       "dry_run": true,
       "order_id": "PAPER-KGENUSDT-1794413102"
     }
