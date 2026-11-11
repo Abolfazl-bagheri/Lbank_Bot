@@ -97,31 +97,6 @@
       "order_id": "PAPER-DJTUSDT-1794416455"
     },
     {
-      "symbol": "ZZZUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.00511,
-      "qty": 39138.9432,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.00498225,
-      "tf": "15m",
-      "opened_at": 1794417352,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.00511,
-          "ts": 1794417352
-        }
-      ],
-      "entry_candle_ts": 1794417300,
-      "last_leg_candle_ts": 1794417300,
-      "dry_run": true,
-      "order_id": "PAPER-ZZZUSDT-1794417352"
-    },
-    {
       "symbol": "CLAUDIAUSDT",
       "side": "SELL",
       "status": "open",
@@ -155,50 +130,34 @@
       "last_leg_candle_ts": 1794418200,
       "dry_run": true,
       "order_id": "PAPER-CLAUDIAUSDT-1794417399"
+    },
+    {
+      "symbol": "MEMEUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.00436,
+      "qty": 45871.5596,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0042510000000000004,
+      "tf": "15m",
+      "opened_at": 1794420081,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.00436,
+          "ts": 1794420081
+        }
+      ],
+      "entry_candle_ts": 1794420000,
+      "last_leg_candle_ts": 1794420000,
+      "dry_run": true,
+      "order_id": "PAPER-MEMEUSDT-1794420081"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "RIVNUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 14.104808154588593,
-      "qty": 99.257,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 13.752187950723878,
-      "tf": "15m",
-      "opened_at": 1793802868,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [
-        14.301,
-        14.048
-      ],
-      "steps": [
-        {
-          "px": 14.18,
-          "ts": 1793802868
-        },
-        {
-          "px": 14.26,
-          "ts": 1793803759
-        },
-        {
-          "px": 14.01,
-          "ts": 1793823020
-        }
-      ],
-      "entry_candle_ts": 1793802600,
-      "last_leg_candle_ts": 1793823020,
-      "dry_run": true,
-      "order_id": "PAPER-RIVNUSDT-1793802868",
-      "closed_at": 1793837402,
-      "close_px": 14.03,
-      "pnl_usdt": 7.425227998578591,
-      "close_reason": "NIGHT_RESET",
-      "why": "NIGHT_RESET"
-    },
     {
       "symbol": "APPUSDT",
       "side": "SELL",
@@ -7193,6 +7152,36 @@
       "pnl_usdt": 11.538461538461522,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "ZZZUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.00511,
+      "qty": 39138.9432,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.00498225,
+      "tf": "15m",
+      "opened_at": 1794417352,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.00511,
+          "ts": 1794417352
+        }
+      ],
+      "entry_candle_ts": 1794417300,
+      "last_leg_candle_ts": 1794417300,
+      "dry_run": true,
+      "order_id": "PAPER-ZZZUSDT-1794417352",
+      "closed_at": 1794418460,
+      "close_px": 0.00533,
+      "pnl_usdt": -8.610567514677092,
+      "close_reason": "STOP",
+      "why": "STOP"
     }
   ],
   "pending": [
@@ -9564,7 +9553,8 @@
       "side": "SELL",
       "upper": 0.005227283518525866,
       "open": 0.00531,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "CLAUDIAUSDT",
@@ -9573,6 +9563,25 @@
       "side": "SELL",
       "upper": 0.005780179464067363,
       "open": 0.005724,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "CLAUDIAUSDT",
+      "tf": "15m",
+      "candle_ts": 1794419100,
+      "side": "SELL",
+      "upper": 0.005867629134929185,
+      "open": 0.00581,
+      "reported": false
+    },
+    {
+      "symbol": "ZZZUSDT",
+      "tf": "1h",
+      "candle_ts": 1794420000,
+      "side": "SELL",
+      "upper": 0.005306416668492617,
+      "open": 0.00544,
       "reported": false
     }
   ],
@@ -9754,7 +9763,7 @@
     "HAJIMIUSDT": 1794456373,
     "QUACKAIUSDT": 1794460636
   },
-  "last_trade_report_ts": 1794416791,
+  "last_trade_report_ts": 1794418461,
   "last_known_version": "2.7.5",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
