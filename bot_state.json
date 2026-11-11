@@ -1,35 +1,6 @@
 {
   "open_trades": [
     {
-      "symbol": "ANSEMUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.06717610918016496,
-      "qty": 8931.7469,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.06549670645066084,
-      "tf": "15m",
-      "opened_at": 1794403816,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.06542,
-          "ts": 1794403816
-        },
-        {
-          "px": 0.06809,
-          "ts": 1794404724
-        }
-      ],
-      "entry_candle_ts": 1794403800,
-      "last_leg_candle_ts": 1794404700,
-      "dry_run": true,
-      "order_id": "PAPER-ANSEMUSDT-1794403816"
-    },
-    {
       "symbol": "MEMEUSDT",
       "side": "SELL",
       "status": "open",
@@ -60,44 +31,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "ZZZUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.009751721881229351,
-      "qty": 143564.3898,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 0.009507928834198617,
-      "tf": "15m",
-      "opened_at": 1793797516,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.00889,
-          "ts": 1793797516
-        },
-        {
-          "px": 0.00961,
-          "ts": 1793811945
-        },
-        {
-          "px": 0.01007,
-          "ts": 1793812582
-        }
-      ],
-      "entry_candle_ts": 1793797200,
-      "last_leg_candle_ts": 1793812500,
-      "dry_run": true,
-      "order_id": "PAPER-ZZZUSDT-1793797516",
-      "closed_at": 1793818182,
-      "close_px": 0.00947,
-      "pnl_usdt": 40.44522993219034,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "RDDTUSDT",
       "side": "SELL",
@@ -7131,6 +7064,40 @@
       "pnl_usdt": 9.845449341728674,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "ANSEMUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.06717610918016496,
+      "qty": 8931.7469,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 0.06549670645066084,
+      "tf": "15m",
+      "opened_at": 1794403816,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.06542,
+          "ts": 1794403816
+        },
+        {
+          "px": 0.06809,
+          "ts": 1794404724
+        }
+      ],
+      "entry_candle_ts": 1794403800,
+      "last_leg_candle_ts": 1794404700,
+      "dry_run": true,
+      "order_id": "PAPER-ANSEMUSDT-1794403816",
+      "closed_at": 1794406695,
+      "close_px": 0.06416,
+      "pnl_usdt": 26.9391235989196,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -9026,7 +8993,8 @@
       "side": "SELL",
       "upper": 0.0003887831722726716,
       "open": 0.0003847,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "MEMEUSDT",
@@ -9035,6 +9003,15 @@
       "side": "SELL",
       "upper": 0.00038695052422861473,
       "open": 0.0003847,
+      "reported": false
+    },
+    {
+      "symbol": "VICRUSDT",
+      "tf": "15m",
+      "candle_ts": 1794406500,
+      "side": "SELL",
+      "upper": 175.15916525273482,
+      "open": 174.69,
       "reported": false
     }
   ],
