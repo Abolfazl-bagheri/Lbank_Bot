@@ -34,70 +34,9 @@
       "last_leg_candle_ts": 1794413946,
       "dry_run": true,
       "order_id": "PAPER-RAMUSDT-1794411013"
-    },
-    {
-      "symbol": "DJTUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 5.425,
-      "qty": 36.8664,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 5.289375,
-      "tf": "1h",
-      "opened_at": 1794416455,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 5.425,
-          "ts": 1794416455
-        }
-      ],
-      "entry_candle_ts": 1794416400,
-      "last_leg_candle_ts": 1794416400,
-      "dry_run": true,
-      "order_id": "PAPER-DJTUSDT-1794416455"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "USUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.004995687359348243,
-      "qty": 120103.5927,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.004870795175364537,
-      "tf": "4h",
-      "opened_at": 1793822868,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        0.004965
-      ],
-      "steps": [
-        {
-          "px": 0.005077,
-          "ts": 1793822868
-        },
-        {
-          "px": 0.004956,
-          "ts": 1793830714
-        }
-      ],
-      "entry_candle_ts": 1793822400,
-      "last_leg_candle_ts": 1793830714,
-      "dry_run": true,
-      "order_id": "PAPER-USUSDT-1793822868",
-      "closed_at": 1793837404,
-      "close_px": 0.004983,
-      "pnl_usdt": 1.5237974399461685,
-      "close_reason": "NIGHT_RESET",
-      "why": "NIGHT_RESET"
-    },
     {
       "symbol": "BATUSDT",
       "side": "SELL",
@@ -7036,6 +6975,36 @@
       "pnl_usdt": -7.79816513761468,
       "close_reason": "STOP",
       "why": "STOP"
+    },
+    {
+      "symbol": "DJTUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 5.425,
+      "qty": 36.8664,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 5.289375,
+      "tf": "1h",
+      "opened_at": 1794416455,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 5.425,
+          "ts": 1794416455
+        }
+      ],
+      "entry_candle_ts": 1794416400,
+      "last_leg_candle_ts": 1794416400,
+      "dry_run": true,
+      "order_id": "PAPER-DJTUSDT-1794416455",
+      "closed_at": 1794428715,
+      "close_px": 5.284,
+      "pnl_usdt": 5.19815668202765,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
