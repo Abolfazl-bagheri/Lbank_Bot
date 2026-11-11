@@ -29,24 +29,28 @@
       "symbol": "MEMEUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.00431,
-      "qty": 46403.7123,
-      "margin": 10.0,
+      "entry": 0.0044023335883509795,
+      "qty": 136291.3527,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.004202249999999999,
+      "tp_price": 0.004292275248642205,
       "tf": "15m",
       "opened_at": 1794411048,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 0.00431,
           "ts": 1794411048
+        },
+        {
+          "px": 0.00445,
+          "ts": 1794412839
         }
       ],
       "entry_candle_ts": 1794411000,
-      "last_leg_candle_ts": 1794411000,
+      "last_leg_candle_ts": 1794412800,
       "dry_run": true,
       "order_id": "PAPER-MEMEUSDT-1794411048"
     },
@@ -7362,16 +7366,6 @@
       "side": "SELL"
     },
     {
-      "symbol": "AIOTUSDT",
-      "tf": "15m",
-      "candle_ts": 1794152700,
-      "side": "SELL",
-      "upper": 0.15473866415935061,
-      "open": 0.1569,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "HNTUSDT",
       "tf": "15m",
       "candle_ts": 1794153600,
@@ -9162,7 +9156,8 @@
       "side": "SELL",
       "upper": 18.288097739112047,
       "open": 18.52,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "RAMUSDT",
@@ -9171,7 +9166,8 @@
       "side": "SELL",
       "upper": 6.435573368094003,
       "open": 6.396,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "AXTIUSDT",
@@ -9180,7 +9176,8 @@
       "side": "SELL",
       "upper": 46.69586813952509,
       "open": 47.33,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "SNXXUSDT",
@@ -9189,7 +9186,8 @@
       "side": "SELL",
       "upper": 4.407083221753743,
       "open": 4.468,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "MEMEUSDT",
@@ -9198,7 +9196,8 @@
       "side": "SELL",
       "upper": 0.00038705054914445485,
       "open": 0.0003841,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "DJTUSDT",
@@ -9207,7 +9206,8 @@
       "side": "SELL",
       "upper": 4.972320388114023,
       "open": 5.02,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "RAMUSDT",
@@ -9225,6 +9225,15 @@
       "side": "SELL",
       "upper": 5.708401288336924,
       "open": 5.776,
+      "reported": false
+    },
+    {
+      "symbol": "KGENUSDT",
+      "tf": "15m",
+      "candle_ts": 1794411900,
+      "side": "SELL",
+      "upper": 0.07452274400478498,
+      "open": 0.07472,
       "reported": false
     }
   ],
@@ -9401,9 +9410,11 @@
     "GSTOCKUSDT": 1794445445,
     "MANCERUSDT": 1794446237,
     "FLYUSDT": 1794452679,
-    "KOPNUSDT": 1794454330
+    "KOPNUSDT": 1794454330,
+    "POETUSDT": 1794455332,
+    "SIMOUSDT": 1794455347
   },
-  "last_trade_report_ts": 1794411271,
+  "last_trade_report_ts": 1794412286,
   "last_known_version": "2.7.5",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
