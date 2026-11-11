@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.5",
-  "updated_at": 1794400104,
+  "updated_at": 1794400215,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "EQTUSDT",
-      "tf": "1h",
-      "gap": 2.65,
-      "ts": 1794343898
-    },
     {
       "kind": "GAP",
       "symbol": "DKNGUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 1.04,
       "ts": 1794400104
+    },
+    {
+      "kind": "SELL",
+      "symbol": "JCTUSDT",
+      "tf": "15m",
+      "gap": 1.28,
+      "ts": 1794400215
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 0.00453,
-      "pnl": -1.4116,
+      "px": 0.0045,
+      "pnl": 2.5665,
       "tf": "15m"
     },
     {
@@ -1427,8 +1427,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.29234,
-      "pnl": 3.6705,
+      "px": 0.28332,
+      "pnl": 9.7208,
       "tf": "4h"
     },
     {
@@ -1440,8 +1440,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.06155,
-      "pnl": -9.1674,
+      "px": 0.06021,
+      "pnl": -4.6188,
       "tf": "4h"
     }
   ],
@@ -1449,8 +1449,8 @@
   "session_start": 1794356927,
   "realized": 66.9394,
   "closed_n": 2,
-  "open_upnl": -6.9085,
-  "equity": 1060.0309,
+  "open_upnl": 7.6685,
+  "equity": 1074.6079,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
