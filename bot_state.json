@@ -1,31 +1,6 @@
 {
   "open_trades": [
     {
-      "symbol": "JCTUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.005851,
-      "qty": 34182.1911,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.005704725,
-      "tf": "15m",
-      "opened_at": 1794366167,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.005851,
-          "ts": 1794366167
-        }
-      ],
-      "entry_candle_ts": 1794366000,
-      "last_leg_candle_ts": 1794366000,
-      "dry_run": true,
-      "order_id": "PAPER-JCTUSDT-1794366167"
-    },
-    {
       "symbol": "MEMEUSDT",
       "side": "SELL",
       "status": "open",
@@ -106,42 +81,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "CATEUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.04318794788298727,
-      "qty": 13892.7648,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.04210824918591259,
-      "tf": "15m",
-      "opened_at": 1793806352,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        0.04347
-      ],
-      "steps": [
-        {
-          "px": 0.04277,
-          "ts": 1793806352
-        },
-        {
-          "px": 0.0434,
-          "ts": 1793809229
-        }
-      ],
-      "entry_candle_ts": 1793806200,
-      "last_leg_candle_ts": 1793809229,
-      "dry_run": true,
-      "order_id": "PAPER-CATEUSDT-1793806352",
-      "closed_at": 1793810839,
-      "close_px": 0.04177,
-      "pnl_usdt": 19.69921636696934,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "STONKUSDT",
       "side": "SELL",
@@ -7195,6 +7134,36 @@
       "pnl_usdt": 93.90913403102871,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "JCTUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.005851,
+      "qty": 34182.1911,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.005704725,
+      "tf": "15m",
+      "opened_at": 1794366167,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.005851,
+          "ts": 1794366167
+        }
+      ],
+      "entry_candle_ts": 1794366000,
+      "last_leg_candle_ts": 1794366000,
+      "dry_run": true,
+      "order_id": "PAPER-JCTUSDT-1794366167",
+      "closed_at": 1794399514,
+      "close_px": 0.00664,
+      "pnl_usdt": -26.96974876089556,
+      "close_reason": "STOP",
+      "why": "STOP"
     }
   ],
   "pending": [
@@ -8834,7 +8803,8 @@
       "side": "SELL",
       "upper": 0.00038598224746721723,
       "open": 0.0003862,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ARIAUSDT",
@@ -8870,7 +8840,8 @@
       "side": "SELL",
       "upper": 61.48489724172656,
       "open": 61.23,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "MEMEUSDT",
@@ -8888,7 +8859,8 @@
       "side": "SELL",
       "upper": 4.417815786877585,
       "open": 4.44,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "LYNUSDT",
@@ -8897,6 +8869,24 @@
       "side": "SELL",
       "upper": 0.021600283802312378,
       "open": 0.02221,
+      "reported": false
+    },
+    {
+      "symbol": "MEMEUSDT",
+      "tf": "15m",
+      "candle_ts": 1794399300,
+      "side": "SELL",
+      "upper": 0.0003866935863661037,
+      "open": 0.000386,
+      "reported": false
+    },
+    {
+      "symbol": "RUMUSDT",
+      "tf": "15m",
+      "candle_ts": 1794399300,
+      "side": "SELL",
+      "upper": 5.466394736754993,
+      "open": 5.437,
       "reported": false
     }
   ],
@@ -9077,7 +9067,8 @@
     "STXSTOCKUSDT": 1794441868,
     "HOTUSDT": 1794441905,
     "NEXUSDT": 1794441907,
-    "1000000BABYDOGEUSDT": 1794441924
+    "1000000BABYDOGEUSDT": 1794441924,
+    "LIGHT1USDT": 1794442609
   },
   "last_trade_report_ts": 1794398872,
   "last_known_version": "2.7.5",
