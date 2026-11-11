@@ -1,31 +1,6 @@
 {
   "open_trades": [
     {
-      "symbol": "ARIAUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.19861,
-      "qty": 1006.9986,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.19364475,
-      "tf": "1h",
-      "opened_at": 1794297644,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.19861,
-          "ts": 1794297644
-        }
-      ],
-      "entry_candle_ts": 1794297600,
-      "last_leg_candle_ts": 1794297600,
-      "dry_run": true,
-      "order_id": "PAPER-ARIAUSDT-1794297644"
-    },
-    {
       "symbol": "EQTUSDT",
       "side": "SELL",
       "status": "open",
@@ -52,36 +27,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "YOFCUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 14.61,
-      "qty": 13.6893,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 14.24475,
-      "tf": "15m",
-      "opened_at": 1793807339,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 14.61,
-          "ts": 1793807339
-        }
-      ],
-      "entry_candle_ts": 1793807100,
-      "last_leg_candle_ts": 1793807100,
-      "dry_run": true,
-      "order_id": "PAPER-YOFCUSDT-1793807339",
-      "closed_at": 1793808590,
-      "close_px": 14.24,
-      "pnl_usdt": 5.065023956194377,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "CARDSUSDT",
       "side": "SELL",
@@ -7139,6 +7084,36 @@
       "pnl_usdt": 42.81706354130629,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "ARIAUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.19861,
+      "qty": 1006.9986,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.19364475,
+      "tf": "1h",
+      "opened_at": 1794297644,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.19861,
+          "ts": 1794297644
+        }
+      ],
+      "entry_candle_ts": 1794297600,
+      "last_leg_candle_ts": 1794297600,
+      "dry_run": true,
+      "order_id": "PAPER-ARIAUSDT-1794297644",
+      "closed_at": 1794356922,
+      "close_px": 0.22046,
+      "pnl_usdt": -22.00292029605758,
+      "close_reason": "NIGHT_RESET",
+      "why": "NIGHT_RESET"
     }
   ],
   "pending": [
@@ -9178,7 +9153,7 @@
     }
   ],
   "paper_session_start": 1794269325,
-  "last_daily_report_date": "2026-11-10",
+  "last_daily_report_date": "2026-11-11",
   "kline_blacklist": {
     "EURUSDT": 1793385188,
     "SKY1USDT": 1793398016,
