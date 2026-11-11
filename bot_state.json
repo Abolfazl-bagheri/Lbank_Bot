@@ -182,6 +182,31 @@
       "last_leg_candle_ts": 1794412800,
       "dry_run": true,
       "order_id": "PAPER-DJTUSDT-1794413052"
+    },
+    {
+      "symbol": "KGENUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.07465,
+      "qty": 2679.1695,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.07278375,
+      "tf": "4h",
+      "opened_at": 1794413102,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.07465,
+          "ts": 1794413102
+        }
+      ],
+      "entry_candle_ts": 1794412800,
+      "last_leg_candle_ts": 1794412800,
+      "dry_run": true,
+      "order_id": "PAPER-KGENUSDT-1794413102"
     }
   ],
   "trade_history": [
@@ -9511,6 +9536,24 @@
       "side": "SELL",
       "upper": 55.96434450687127,
       "open": 56.57,
+      "reported": false
+    },
+    {
+      "symbol": "DJTUSDT",
+      "tf": "4h",
+      "candle_ts": 1794412800,
+      "side": "SELL",
+      "upper": 4.954605645223525,
+      "open": 5.182,
+      "reported": false
+    },
+    {
+      "symbol": "BLUAIUSDT",
+      "tf": "4h",
+      "candle_ts": 1794412800,
+      "side": "SELL",
+      "upper": 0.007251589065738353,
+      "open": 0.007339,
       "reported": false
     }
   ],
