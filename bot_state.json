@@ -155,6 +155,31 @@
       "last_leg_candle_ts": 1794420000,
       "dry_run": true,
       "order_id": "PAPER-MEMEUSDT-1794420081"
+    },
+    {
+      "symbol": "KGENUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.08067,
+      "qty": 2479.2364,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.07865325000000001,
+      "tf": "1h",
+      "opened_at": 1794420104,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.08067,
+          "ts": 1794420104
+        }
+      ],
+      "entry_candle_ts": 1794420000,
+      "last_leg_candle_ts": 1794420000,
+      "dry_run": true,
+      "order_id": "PAPER-KGENUSDT-1794420104"
     }
   ],
   "trade_history": [
@@ -9582,6 +9607,15 @@
       "side": "SELL",
       "upper": 0.005306416668492617,
       "open": 0.00544,
+      "reported": false
+    },
+    {
+      "symbol": "MEMEUSDT",
+      "tf": "15m",
+      "candle_ts": 1794420000,
+      "side": "SELL",
+      "upper": 0.0003933426738601847,
+      "open": 0.0003898,
       "reported": false
     }
   ],
