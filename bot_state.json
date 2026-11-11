@@ -4,24 +4,28 @@
       "symbol": "ZCATUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.02146,
-      "qty": 9319.6645,
-      "margin": 10.0,
+      "entry": 0.022335118684223564,
+      "qty": 26863.524100000002,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.0209235,
+      "tp_price": 0.021776740717117975,
       "tf": "15m",
       "opened_at": 1794357055,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 0.02146,
           "ts": 1794357055
+        },
+        {
+          "px": 0.0228,
+          "ts": 1794357922
         }
       ],
       "entry_candle_ts": 1794357000,
-      "last_leg_candle_ts": 1794357000,
+      "last_leg_candle_ts": 1794357900,
       "dry_run": true,
       "order_id": "PAPER-ZCATUSDT-1794357055"
     }
@@ -7322,26 +7326,6 @@
       "side": "SELL"
     },
     {
-      "symbol": "CLAUDIAUSDT",
-      "tf": "4h",
-      "candle_ts": 1794096000,
-      "side": "SELL",
-      "upper": 0.005345986180809096,
-      "open": 0.005605,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "ACTUSDT",
-      "tf": "15m",
-      "candle_ts": 1794096900,
-      "side": "SELL",
-      "upper": 0.012649530288963873,
-      "open": 0.0128,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "KOMAUSDT",
       "tf": "15m",
       "candle_ts": 1794107700,
@@ -9056,6 +9040,16 @@
       "side": "SELL",
       "upper": 0.05221953860333792,
       "open": 0.0529,
+      "reported": true,
+      "filled": false
+    },
+    {
+      "symbol": "ZCATUSDT",
+      "tf": "15m",
+      "candle_ts": 1794357000,
+      "side": "SELL",
+      "upper": 0.019973928427600384,
+      "open": 0.02082,
       "reported": false
     }
   ],
@@ -9193,7 +9187,6 @@
     "DODOUSDT": 1794225779,
     "BRLUSDT": 1794225832,
     "GOLDUSDT": 1794228410,
-    "GSTOCKUSDT": 1794231093,
     "BEMUSDT": 1794233803,
     "TSMONUSDT": 1794234714,
     "OROCHIUSDT": 1794239182,
@@ -9238,7 +9231,7 @@
     "RIOTUSDT": 1794388601,
     "AINBSCUSDT": 1794391379
   },
-  "last_trade_report_ts": 1794352729,
+  "last_trade_report_ts": 1794357218,
   "last_known_version": "2.7.4",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
