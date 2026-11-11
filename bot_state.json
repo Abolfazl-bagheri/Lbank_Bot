@@ -1,5 +1,31 @@
 {
-  "open_trades": [],
+  "open_trades": [
+    {
+      "symbol": "MEMEUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.00437,
+      "qty": 45766.5904,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.00426075,
+      "tf": "15m",
+      "opened_at": 1794409245,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.00437,
+          "ts": 1794409245
+        }
+      ],
+      "entry_candle_ts": 1794409200,
+      "last_leg_candle_ts": 1794409200,
+      "dry_run": true,
+      "order_id": "PAPER-MEMEUSDT-1794409245"
+    }
+  ],
   "trade_history": [
     {
       "symbol": "IDOLUSDT",
@@ -9154,7 +9180,6 @@
     "AI1USDT": 1794300376,
     "TSTUSDT": 1794312277,
     "TQQQUSDT": 1794312291,
-    "FLYUSDT": 1794342848,
     "LWLGUSDT": 1794342893,
     "RGTIUSDT": 1794342903,
     "KOPNUSDT": 1794342912,
@@ -9167,7 +9192,6 @@
     "KNTQUSDT": 1794369994,
     "SOYBEANUSDT": 1794376183,
     "MURATAUSDT": 1794377801,
-    "B3USDT": 1794384299,
     "UBIKUSDT": 1794387803,
     "MARRIOTTUSDT": 1794387810,
     "RIOTUSDT": 1794388601,
