@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.5",
-  "updated_at": 1794400261,
+  "updated_at": 1794400505,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "RKLBUSDT",
-      "tf": "1h",
-      "gap": 1.11,
-      "ts": 1794344414
-    },
     {
       "kind": "GAP",
       "symbol": "EQTUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 1.53,
       "ts": 1794400261
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794400505
     }
   ],
   "trades": [
@@ -1419,19 +1419,6 @@
       "tf": "15m"
     },
     {
-      "symbol": "ARIAUSDT",
-      "side": "SELL",
-      "entry": 0.29817,
-      "tp": 0.29071575,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.28035,
-      "pnl": 11.7129,
-      "tf": "4h"
-    },
-    {
       "symbol": "AGTUSDT",
       "side": "SELL",
       "entry": 0.05892,
@@ -1447,16 +1434,16 @@
   ],
   "start": 1000.0,
   "session_start": 1794356927,
-  "realized": 66.9394,
-  "closed_n": 2,
-  "open_upnl": -3.4091,
-  "equity": 1063.5303,
+  "realized": 78.8923,
+  "closed_n": 3,
+  "open_upnl": -15.122,
+  "equity": 1063.7703,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 93.9091,
+    "profit": 105.862,
     "loss": -26.9697,
-    "count": 2
+    "count": 3
   }
 }
