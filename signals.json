@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.5",
-  "updated_at": 1794418258,
+  "updated_at": 1794418459,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "KIOXIAUSDT",
-      "tf": "15m",
-      "gap": 1.17,
-      "ts": 1794410065
-    },
-    {
-      "kind": "GAP",
-      "symbol": "KGENUSDT",
-      "tf": "15m",
-      "gap": 1.1,
-      "ts": 1794410069
-    },
     {
       "kind": "GAP",
       "symbol": "AAOIUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "15m",
       "gap": 3.2,
       "ts": 1794418258
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794418265
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794418459
     }
   ],
   "trades": [
@@ -1421,14 +1421,14 @@
     {
       "symbol": "AXTIUSDT",
       "side": "SELL",
-      "entry": 48.63999999999999,
-      "tp": 47.42399999999999,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
+      "entry": 48.81666044834669,
+      "tp": 47.59624393713802,
+      "adds": 2,
+      "pele": 3,
+      "margin": 70.0,
       "lev": 20,
       "px": 48.95,
-      "pnl": -4.544,
+      "pnl": -5.504,
       "tf": "1h"
     },
     {
@@ -1460,14 +1460,14 @@
     {
       "symbol": "CLAUDIAUSDT",
       "side": "SELL",
-      "entry": 0.0059819999999999995,
-      "tp": 0.0058324499999999994,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
+      "entry": 0.005975709328171129,
+      "tp": 0.005826316594966851,
+      "adds": 2,
+      "pele": 3,
+      "margin": 70.0,
       "lev": 20,
       "px": 0.005971,
-      "pnl": 0.3833,
+      "pnl": -0.5767,
       "tf": "15m"
     }
   ],
@@ -1475,8 +1475,8 @@
   "session_start": 1794356927,
   "realized": 364.589,
   "closed_n": 15,
-  "open_upnl": -33.8881,
-  "equity": 1330.7009,
+  "open_upnl": -35.8081,
+  "equity": 1328.7809,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
