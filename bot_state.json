@@ -36,42 +36,6 @@
       "order_id": "PAPER-RAMUSDT-1794411013"
     },
     {
-      "symbol": "AXTIUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 48.81666044834669,
-      "qty": 28.6787,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 47.59624393713802,
-      "tf": "1h",
-      "opened_at": 1794412873,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [
-        48.76,
-        49.06
-      ],
-      "steps": [
-        {
-          "px": 48.64,
-          "ts": 1794412873
-        },
-        {
-          "px": 48.64,
-          "ts": 1794413393
-        },
-        {
-          "px": 48.95,
-          "ts": 1794418454
-        }
-      ],
-      "entry_candle_ts": 1794412800,
-      "last_leg_candle_ts": 1794418454,
-      "dry_run": true,
-      "order_id": "PAPER-AXTIUSDT-1794412873"
-    },
-    {
       "symbol": "DJTUSDT",
       "side": "SELL",
       "status": "open",
@@ -95,41 +59,6 @@
       "last_leg_candle_ts": 1794416400,
       "dry_run": true,
       "order_id": "PAPER-DJTUSDT-1794416455"
-    },
-    {
-      "symbol": "CLAUDIAUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.005975709328171129,
-      "qty": 234281.81040000002,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 0.005826316594966851,
-      "tf": "15m",
-      "opened_at": 1794417399,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [
-        0.005998
-      ],
-      "steps": [
-        {
-          "px": 0.005982,
-          "ts": 1794417399
-        },
-        {
-          "px": 0.005982,
-          "ts": 1794417559
-        },
-        {
-          "px": 0.005971,
-          "ts": 1794418259
-        }
-      ],
-      "entry_candle_ts": 1794417300,
-      "last_leg_candle_ts": 1794418200,
-      "dry_run": true,
-      "order_id": "PAPER-CLAUDIAUSDT-1794417399"
     },
     {
       "symbol": "MEMEUSDT",
@@ -183,106 +112,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "APPUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 292.3018334131674,
-      "qty": 43.106072,
-      "margin": 630.0,
-      "leverage": 20,
-      "tp_price": 284.99428757783824,
-      "tf": "15m",
-      "opened_at": 1793803630,
-      "adds": 5,
-      "last_leg_margin": 320.0,
-      "used_res_levels": [
-        262.0,
-        273.9,
-        276.0
-      ],
-      "steps": [
-        {
-          "px": 260.97,
-          "ts": 1793803630
-        },
-        {
-          "px": 260.97,
-          "ts": 1793803771
-        },
-        {
-          "px": 270.04,
-          "ts": 1793808314
-        },
-        {
-          "px": 273.21,
-          "ts": 1793812670
-        },
-        {
-          "px": 275.15,
-          "ts": 1793816234
-        },
-        {
-          "px": 314.37,
-          "ts": 1793827000
-        }
-      ],
-      "entry_candle_ts": 1793803500,
-      "last_leg_candle_ts": 1793826900,
-      "dry_run": true,
-      "order_id": "PAPER-APPUSDT-1793803630",
-      "closed_at": 1793837403,
-      "close_px": 331.47,
-      "pnl_usdt": -1688.3879694880472,
-      "close_reason": "NIGHT_RESET",
-      "why": "NIGHT_RESET"
-    },
-    {
-      "symbol": "DKNGUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 23.632883100759564,
-      "qty": 126.9418,
-      "margin": 150.0,
-      "leverage": 20,
-      "tp_price": 23.042061023240574,
-      "tf": "15m",
-      "opened_at": 1793803681,
-      "adds": 3,
-      "last_leg_margin": 80.0,
-      "used_res_levels": [
-        23.447,
-        23.684,
-        23.833
-      ],
-      "steps": [
-        {
-          "px": 23.27,
-          "ts": 1793803681
-        },
-        {
-          "px": 23.38,
-          "ts": 1793805674
-        },
-        {
-          "px": 23.6,
-          "ts": 1793808571
-        },
-        {
-          "px": 23.76,
-          "ts": 1793812103
-        }
-      ],
-      "entry_candle_ts": 1793803500,
-      "last_leg_candle_ts": 1793812103,
-      "dry_run": true,
-      "order_id": "PAPER-DKNGUSDT-1793803681",
-      "closed_at": 1793837403,
-      "close_px": 23.19,
-      "pnl_usdt": 56.220364507112755,
-      "close_reason": "NIGHT_RESET",
-      "why": "NIGHT_RESET"
-    },
     {
       "symbol": "BKNGUSDT",
       "side": "SELL",
@@ -7207,6 +7036,87 @@
       "pnl_usdt": -8.610567514677092,
       "close_reason": "STOP",
       "why": "STOP"
+    },
+    {
+      "symbol": "AXTIUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 48.81666044834669,
+      "qty": 28.6787,
+      "margin": 70.0,
+      "leverage": 20,
+      "tp_price": 47.59624393713802,
+      "tf": "1h",
+      "opened_at": 1794412873,
+      "adds": 2,
+      "last_leg_margin": 40.0,
+      "used_res_levels": [
+        48.76,
+        49.06
+      ],
+      "steps": [
+        {
+          "px": 48.64,
+          "ts": 1794412873
+        },
+        {
+          "px": 48.64,
+          "ts": 1794413393
+        },
+        {
+          "px": 48.95,
+          "ts": 1794418454
+        }
+      ],
+      "entry_candle_ts": 1794412800,
+      "last_leg_candle_ts": 1794418454,
+      "dry_run": true,
+      "order_id": "PAPER-AXTIUSDT-1794412873",
+      "closed_at": 1794425839,
+      "close_px": 47.56,
+      "pnl_usdt": 36.03943021761835,
+      "close_reason": "TP50",
+      "why": "TP50"
+    },
+    {
+      "symbol": "CLAUDIAUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.005975709328171129,
+      "qty": 234281.81040000002,
+      "margin": 70.0,
+      "leverage": 20,
+      "tp_price": 0.005826316594966851,
+      "tf": "15m",
+      "opened_at": 1794417399,
+      "adds": 2,
+      "last_leg_margin": 40.0,
+      "used_res_levels": [
+        0.005998
+      ],
+      "steps": [
+        {
+          "px": 0.005982,
+          "ts": 1794417399
+        },
+        {
+          "px": 0.005982,
+          "ts": 1794417559
+        },
+        {
+          "px": 0.005971,
+          "ts": 1794418259
+        }
+      ],
+      "entry_candle_ts": 1794417300,
+      "last_leg_candle_ts": 1794418200,
+      "dry_run": true,
+      "order_id": "PAPER-CLAUDIAUSDT-1794417399",
+      "closed_at": 1794425840,
+      "close_px": 0.00561,
+      "pnl_usdt": 85.67904349461995,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -9825,7 +9735,7 @@
     "HAJIMIUSDT": 1794456373,
     "QUACKAIUSDT": 1794460636
   },
-  "last_trade_report_ts": 1794424944,
+  "last_trade_report_ts": 1794425891,
   "last_known_version": "2.8.1",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
