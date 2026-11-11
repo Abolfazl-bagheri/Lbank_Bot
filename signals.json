@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.5",
-  "updated_at": 1794420080,
+  "updated_at": 1794420103,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "TSLLUSDT",
-      "tf": "15m",
-      "gap": 1.17,
-      "ts": 1794410990
-    },
-    {
-      "kind": "GAP",
-      "symbol": "BEUSDT",
-      "tf": "15m",
-      "gap": 1.56,
-      "ts": 1794410994
-    },
     {
       "kind": "GAP",
       "symbol": "AAOIUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "15m",
       "gap": 90.98,
       "ts": 1794420080
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794420088
+    },
+    {
+      "kind": "SELL",
+      "symbol": "KGENUSDT",
+      "tf": "1h",
+      "gap": 2.66,
+      "ts": 1794420103
     }
   ],
   "trades": [
@@ -1456,14 +1456,27 @@
       "px": 0.005801,
       "pnl": 39.2512,
       "tf": "15m"
+    },
+    {
+      "symbol": "MEMEUSDT",
+      "side": "SELL",
+      "entry": 0.00436,
+      "tp": 0.0042510000000000004,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.00436,
+      "pnl": -0.24,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1794356927,
   "realized": 355.9784,
   "closed_n": 16,
-  "open_upnl": 26.7825,
-  "equity": 1382.7609,
+  "open_upnl": 26.5425,
+  "equity": 1382.5209,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
