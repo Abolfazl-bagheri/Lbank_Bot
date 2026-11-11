@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.5",
-  "updated_at": 1794416536,
+  "updated_at": 1794416549,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "MUUUSDT",
-      "tf": "15m",
-      "gap": 1.5,
-      "ts": 1794409229
-    },
-    {
-      "kind": "GAP",
-      "symbol": "HAJIMIUSDT",
-      "tf": "15m",
-      "gap": 1.01,
-      "ts": 1794409235
-    },
     {
       "kind": "GAP",
       "symbol": "SNDKUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "1h",
       "gap": 2.81,
       "ts": 1794416536
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794416545
+    },
+    {
+      "kind": "SELL",
+      "symbol": "AGPUUSDT",
+      "tf": "1h",
+      "gap": 1.05,
+      "ts": 1794416549
     }
   ],
   "trades": [
@@ -1469,14 +1469,27 @@
       "px": 5.425,
       "pnl": -0.24,
       "tf": "1h"
+    },
+    {
+      "symbol": "AEONUSDT",
+      "side": "SELL",
+      "entry": 0.026,
+      "tp": 0.025349999999999998,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.026,
+      "pnl": -0.24,
+      "tf": "1h"
     }
   ],
   "start": 1000.0,
   "session_start": 1794356927,
   "realized": 304.2401,
   "closed_n": 12,
-  "open_upnl": -2.2361,
-  "equity": 1302.004,
+  "open_upnl": -2.4761,
+  "equity": 1301.764,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
