@@ -57,31 +57,6 @@
       "last_leg_candle_ts": 1794398400,
       "dry_run": true,
       "order_id": "PAPER-AGTUSDT-1794398482"
-    },
-    {
-      "symbol": "JCTUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.007636,
-      "qty": 26191.7234,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.0074451000000000005,
-      "tf": "15m",
-      "opened_at": 1794401126,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.007636,
-          "ts": 1794401126
-        }
-      ],
-      "entry_candle_ts": 1794401100,
-      "last_leg_candle_ts": 1794401100,
-      "dry_run": true,
-      "order_id": "PAPER-JCTUSDT-1794401126"
     }
   ],
   "trade_history": [
@@ -7163,9 +7138,9 @@
       "last_leg_candle_ts": 1794398400,
       "dry_run": true,
       "order_id": "PAPER-ARIAUSDT-1794398466",
-      "closed_at": 1794400389,
-      "close_px": 0.28332,
-      "pnl_usdt": 9.960760639903391,
+      "closed_at": 1794400501,
+      "close_px": 0.28035,
+      "pnl_usdt": 11.952912767884094,
       "close_reason": "TP50",
       "why": "TP50"
     }
@@ -8918,19 +8893,20 @@
     {
       "symbol": "JCTUSDT",
       "tf": "15m",
-      "candle_ts": 1794401100,
+      "candle_ts": 1794400200,
       "side": "SELL",
-      "upper": 0.0074779251159248945,
-      "open": 0.007592,
-      "reported": false
+      "upper": 0.007067971004330282,
+      "open": 0.007144,
+      "reported": true,
+      "filled": false
     },
     {
-      "symbol": "B2USDT",
+      "symbol": "JCTUSDT",
       "tf": "15m",
       "candle_ts": 1794401100,
       "side": "SELL",
-      "upper": 0.5113972970327703,
-      "open": 0.5136,
+      "upper": 0.007485631381810303,
+      "open": 0.007592,
       "reported": false
     },
     {
@@ -9129,9 +9105,9 @@
     "NEXUSDT": 1794441907,
     "1000000BABYDOGEUSDT": 1794441924,
     "LIGHT1USDT": 1794442609,
-    "UP2USDT": 1794443477
+    "UP2USDT": 1794443519
   },
-  "last_trade_report_ts": 1794401311,
+  "last_trade_report_ts": 1794400507,
   "last_known_version": "2.7.5",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
