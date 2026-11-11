@@ -35,7 +35,7 @@ SIGNALS_FILE = os.path.join(BASE_DIR, "signals.json")
 LIVE_TOPIC = os.environ.get("LIVE_TOPIC", "lbank-gap-b0b85cee29ce").strip()
 STATE_BAK = os.path.join(BASE_DIR, "bot_state.bak")
 
-BOT_VERSION = "2.7.4"
+BOT_VERSION = "2.7.5"
 CHANGELOG = {
     "2.7.0": ["احتمال‌گپ زودتر","سیگنال فقط دقایق اول کندل","بیدار شدن نزدیک کندل هر ۱۰ث"],
     "2.6.5": [
@@ -93,9 +93,14 @@ TRADE_MARGIN_USDT = float(os.environ.get("TRADE_MARGIN_USDT", "10"))
 TRADE_LEVERAGE = int(os.environ.get("TRADE_LEVERAGE", "20"))
 TRADE_TP_PCT = float(os.environ.get("TRADE_TP_PCT", "50"))  # 50% سود مارجین → کلوز
 TRADE_AVG_DOWN = True
-TRADE_MAX_ADDS = int(os.environ.get("TRADE_MAX_ADDS", "2"))  # سقف پله: 10+20+40=70U
-TRADE_MAX_MARGIN_USDT = float(os.environ.get("TRADE_MAX_MARGIN_USDT", "70"))  # سقف مارجین هر نماد
-TRADE_MAX_LOSS_ROI = float(os.environ.get("TRADE_MAX_LOSS_ROI", "-120"))  # اگر ROI بدتر از این، دیگر پله نزن  # سقف پله (با دبل حجم)
+TRADE_MAX_ADDS = int(os.environ.get("TRADE_MAX_ADDS", "2"))
+TRADE_MAX_MARGIN_USDT = float(os.environ.get("TRADE_MAX_MARGIN_USDT", "70"))
+TRADE_MAX_LOSS_ROI = float(os.environ.get("TRADE_MAX_LOSS_ROI", "-120"))  # فقط جلوی پله
+TRADE_STOP_ROI = float(os.environ.get("TRADE_STOP_ROI", "-80"))  # حد ضرر سخت — بستن پوزیشن
+MAX_OPEN_POSITIONS = int(os.environ.get("MAX_OPEN_POSITIONS", "8"))
+MAX_TOTAL_MARGIN_USDT = float(os.environ.get("MAX_TOTAL_MARGIN_USDT", "300"))  # سقف مارجین کل
+FEE_RATE_ROUNDTRIP = float(os.environ.get("FEE_RATE_ROUNDTRIP", "0.0012"))  # ≈0.06%×2 تیکر
+NIGHT_FORCE_CLOSE = os.environ.get("NIGHT_FORCE_CLOSE", "0").strip() in ("1", "true", "True", "yes")
 AVG_LEG_PERIOD_SEC = 900
 RES_TOUCH_PCT = 0.4  # فاصله مجاز تا سقف برای پله (%)
 
@@ -112,6 +117,9 @@ log = logging.getLogger("bot")
 futures_last_map: dict = {}
 kline_blacklist: dict = {}
 sent_signals: set = set()
+_res_cache: dict = {}  # symbol|tf -> (ts, levels)
+_last_signals_push_ts = 0
+
 sent_pre_alerts: set = set()
 open_trades: list = []
 trade_history: list = []
@@ -720,7 +728,12 @@ async def fetch_klines(symbol: str, tf: str, size: int = 80):
     if not candidates:
         cycle_counters["src_none"] = cycle_counters.get("src_none", 0) + 1
         return None, None
-    candidates.sort(key=lambda x: (x[2], -len(x[1])))
+    # اولویت با فیوچرز (نزدیک‌تر به قیمت ورود LBank) نه اسپات
+    def _rank(c):
+        name, df, fr = c
+        pri = 0 if name.startswith("gate") else (1 if name.startswith("mexc") else 2)
+        return (pri, fr, -len(df))
+    candidates.sort(key=_rank)
     name, df, fr = candidates[0]
     if name.startswith("spot"):
         cycle_counters["src_spot"] = cycle_counters.get("src_spot", 0) + 1
@@ -779,33 +792,33 @@ def check_signal(df: pd.DataFrame, symbol: str, tf: str):
         return None
     upper_pen = (high - upper) / upper * 100.0 if upper > 0 else 0.0
     open_gap_pct = (open_p - upper) / open_p * 100.0 if open_p > 0 else 0.0
+    fut = get_futures_last(symbol)
+    if fut is None:
+        fut = close if close > 0 else open_p
+        log.info("FUT_FALLBACK %s %s use=%.6g", symbol, tf, fut)
+    live_gap_pct = (fut - upper) / fut * 100.0 if fut and upper > 0 else 0.0
+    # شرط اصلی: قیمت لحظه‌ای بالای UB با فاصله کافی؛ open فقط تأیید ضعیف
     side = None
-    if open_p > upper and open_gap_pct >= MIN_OPEN_GAP_PCT:
+    if fut > upper and live_gap_pct >= MIN_OPEN_GAP_PCT:
         side = "SELL"
+    elif open_p > upper and open_gap_pct >= MIN_OPEN_GAP_PCT and fut >= upper * 0.998:
+        # open گپ داشته و هنوز نزدیک/بالای UB است
+        side = "SELL"
+        live_gap_pct = max(live_gap_pct, open_gap_pct)
     if not side or (ONLY_SELL and side != "SELL"):
         stats["skip_no_gap"] += 1
         log.info(
-            "SKIP_NO_GAP %s %s | open=%.6g upper=%.6g gap=%.2f%% pen=%.2f%%",
-            symbol, tf, open_p, upper, open_gap_pct, upper_pen,
+            "SKIP_NO_GAP %s %s | open=%.6g fut=%.6g upper=%.6g live_gap=%.2f%% open_gap=%.2f%%",
+            symbol, tf, open_p, fut, upper, live_gap_pct, open_gap_pct,
         )
         return None
-    fut = get_futures_last(symbol)
-    if fut is not None and fut < upper * 0.995 and symbol not in ALWAYS_INCLUDE:
-        stats["skip_no_gap"] += 1
-        log.info("SKIP_FUT_BELOW_UB %s %s | fut=%.6g upper=%.6g", symbol, tf, fut, upper)
-        return None
-    if fut is None:
-        fut = open_p
-        log.info("FUT_FALLBACK %s %s use_open=%.6g", symbol, tf, open_p)
     key = (symbol, tf, candle_ts, side)
     if key in sent_signals:
         stats["skip_dup"] += 1
         return None
-    sent_signals.add(key)
-    if len(sent_signals) > 4000:
-        sent_signals.clear()
+    # sent_signals بعد از تصمیم ورود/ارسال ثبت می‌شود (نه اینجا)
     stats["signal_ok"] += 1
-    diff_pct = (fut - upper) / fut * 100.0 if fut else 0.0
+    diff_pct = live_gap_pct
     log.info(
         "SIGNAL_CANDIDATE SELL %s %s | age=%ss open=%.6g upper=%.6g fut=%.6g gap=%.2f%%",
         symbol, tf, age_sec, open_p, upper, fut, diff_pct,
@@ -901,7 +914,12 @@ def log_signal_web(kind: str, symbol: str, tf: str, gap: float) -> None:
         }
         with open(SIGNALS_FILE, "w", encoding="utf-8") as f:
             json.dump(payload, f, ensure_ascii=False, indent=2)
-        github_push_file(SIGNALS_FILE, "signals.json", force=True)
+        global _last_signals_push_ts
+        nowp = int(time.time())
+        # حداکثر هر ۳ دقیقه یک کامیت — جلوگیری از انفجار Pages
+        if kind in ("SELL", "GAP") or nowp - int(_last_signals_push_ts or 0) >= 180:
+            if github_push_file(SIGNALS_FILE, "signals.json", force=True):
+                _last_signals_push_ts = nowp
     except Exception as e:
         log.warning("log_signal_web: %s", e)
 
@@ -1142,8 +1160,14 @@ def _qty_from_margin(price: float, margin: float) -> float | None:
 
 
 def find_resistance_levels(symbol: str, px: float, tf: str = "1h") -> list:
-    """سقف‌های سوئینگ از Gate؛ فقط بالای قیمت فعلی."""
+    """سقف‌های سوئینگ از Gate؛ فقط بالای قیمت فعلی (کش ۶۰ث)."""
     try:
+        ck = f"{symbol}|{tf}"
+        now = int(time.time())
+        cached = _res_cache.get(ck)
+        if cached and now - cached[0] < 60:
+            levels = [L for L in cached[1] if L > px * 1.001]
+            return levels[:6]
         contract = symbol[:-4] + "_USDT" if symbol.endswith("USDT") and "_" not in symbol else symbol
         interval = GATE_INTERVAL.get(tf, "1h")
         url = f"https://api.gateio.ws/api/v4/futures/usdt/candlesticks?contract={contract}&interval={interval}&limit=120"
@@ -1178,7 +1202,12 @@ def find_resistance_levels(symbol: str, px: float, tf: str = "1h") -> list:
         if day_hi > px * 1.002 and all(abs(day_hi - L) / L * 100 > 0.5 for L in levels):
             levels.append(day_hi)
         levels = sorted(levels)
-        return levels[:6]
+        out = levels[:6]
+        _res_cache[ck] = (now, list(out))
+        if len(_res_cache) > 200:
+            for k in list(_res_cache.keys())[:50]:
+                _res_cache.pop(k, None)
+        return out
     except Exception as e:
         log.debug("res levels %s: %s", symbol, e)
         return []
@@ -1192,7 +1221,16 @@ def open_sell_trade(symbol: str, entry_price: float, tf: str, candle_ts: int | N
     if entry_price <= 0:
         log.info("PAPER_SKIP %s reason=bad_entry", symbol)
         return None
+    n_open = sum(1 for x in open_trades if x.get("status") == "open")
+    total_m = sum(float(x.get("margin") or 0) for x in open_trades if x.get("status") == "open")
     existing = next((t for t in open_trades if t.get("symbol") == symbol and t.get("status") == "open" and t.get("side") == "SELL"), None)
+    if existing is None:
+        if n_open >= MAX_OPEN_POSITIONS:
+            log.info("PAPER_SKIP %s reason=max_open n=%s", symbol, n_open)
+            return None
+        if total_m + TRADE_MARGIN_USDT > MAX_TOTAL_MARGIN_USDT:
+            log.info("PAPER_SKIP %s reason=max_total_margin used=%.0f", symbol, total_m)
+            return None
     if existing is not None:
         if not TRADE_AVG_DOWN:
             log.info("PAPER_SKIP %s reason=already_open_no_avg", symbol)
@@ -1269,7 +1307,7 @@ def open_sell_trade(symbol: str, entry_price: float, tf: str, candle_ts: int | N
         "symbol": symbol.upper(), "productGroup": "SwapU", "side": "sell", "orderType": "market",
         "volume": qty, "positionSide": "short",
     })
-    ok = isinstance(data, dict) and (data.get("success") is True or data.get("error_code") in (0, "0", None))
+    ok = isinstance(data, dict) and (data.get("success") is True or str(data.get("error_code")) in ("0",))
     if not ok:
         send_telegram_text(f"⚠️ LIVE ناموفق {symbol}\n<code>{str(data)[:160]}</code>")
         return None
@@ -1332,11 +1370,20 @@ def manage_open_trades() -> None:
         px = get_futures_last(sym)
         if not px:
             continue
-        # کلوز فقط با ۵۰٪ سود مارجین
+        # TP
         tp = float(rec.get("tp_price") or 0)
         if tp > 0 and px <= tp:
             close_trade_record(rec, px, "TP50")
             continue
+        # حد ضرر سخت
+        try:
+            _pnl_sl, _roi_sl = _sell_upnl(rec, float(px))
+            if _roi_sl <= TRADE_STOP_ROI:
+                log.info("STOP_LOSS %s roi=%.1f%% px=%.6g", sym, _roi_sl, px)
+                close_trade_record(rec, px, "STOP")
+                continue
+        except Exception:
+            pass
         if not TRADE_AVG_DOWN or not is_paper_mode():
             continue
         adds = int(rec.get("adds") or 0)
@@ -1408,7 +1455,7 @@ def manage_open_trades() -> None:
 
 
 def _sell_upnl(rec: dict, px: float) -> tuple[float, float]:
-    """(pnl_usdt, margin_roi_pct) for open SELL."""
+    """(pnl_usdt, margin_roi_pct) for open SELL — با تخمین کارمزد رفت‌وبرگشت."""
     entry = float(rec.get("entry") or 0)
     lev = float(rec.get("leverage") or TRADE_LEVERAGE)
     margin = float(rec.get("margin") or TRADE_MARGIN_USDT)
@@ -1416,6 +1463,10 @@ def _sell_upnl(rec: dict, px: float) -> tuple[float, float]:
         return 0.0, 0.0
     margin_roi = ((entry - px) / entry * 100.0) * lev
     pnl = margin * (margin_roi / 100.0)
+    # کارمزد تقریبی روی نهional ≈ margin*lev
+    fee = margin * lev * float(FEE_RATE_ROUNDTRIP)
+    pnl -= fee
+    margin_roi = (pnl / margin * 100.0) if margin else margin_roi
     return pnl, margin_roi
 
 
@@ -1533,11 +1584,6 @@ def maybe_send_daily_paper_report(force: bool = False) -> None:
         if not px:
             continue
         pnl_before, roi_before = _sell_upnl(rec, float(px))
-        close_trade_record(rec, float(px), "NIGHT_RESET")
-        # stamp reason on last history item
-        if trade_history and trade_history[-1].get("symbol") == sym:
-            trade_history[-1]["close_reason"] = "NIGHT_RESET"
-            trade_history[-1]["why"] = "NIGHT_RESET"
         reset_pnls.append(float(pnl_before))
         reset_rows.append({
             "symbol": sym,
@@ -1547,11 +1593,17 @@ def maybe_send_daily_paper_report(force: bool = False) -> None:
             "roi": round(float(roi_before), 2),
             "steps": int(rec.get("adds") or 0) + 1,
             "tf": rec.get("tf"),
-            "why": "NIGHT_RESET",
+            "why": "NIGHT_SNAPSHOT",
         })
+        if NIGHT_FORCE_CLOSE:
+            close_trade_record(rec, float(px), "NIGHT_RESET")
+            if trade_history and trade_history[-1].get("symbol") == sym:
+                trade_history[-1]["close_reason"] = "NIGHT_RESET"
+                trade_history[-1]["why"] = "NIGHT_RESET"
 
     unrealized_closed = sum(reset_pnls)
-    open_trades[:] = [x for x in open_trades if x.get("status") == "open"]
+    if NIGHT_FORCE_CLOSE:
+        open_trades[:] = [x for x in open_trades if x.get("status") == "open"]
     day_net = float(profit) + float(loss_tp) + float(unrealized_closed)
     balance_before = float(PAPER_START_BALANCE) + float(profit) + float(loss_tp) + float(unrealized_closed)
     mode = "PAPER" if is_paper_mode() else "LIVE"
@@ -1706,22 +1758,31 @@ async def process_symbol(symbol: str, tfs_to_check: list) -> None:
             pass
 
         # سیگنال متنی قطع — فقط لاگ + paper + وب داخلی
-        log_signal_web("SELL", symbol, tf, float(sig.get("diff_pct") or 0))
-        log.info("SIGNAL_SILENT %s %s %s gap=%.2f%%", sig["side"], symbol, tf, float(sig.get("diff_pct") or 0))
+        gap_now = float(sig.get("diff_pct") or 0)
+        log_signal_web("SELL", symbol, tf, gap_now)
+        log.info("SIGNAL_SILENT %s %s %s gap=%.2f%%", sig["side"], symbol, tf, gap_now)
 
-        # ورود فقط اگر فاصله تا UB هنوز >= ENTRY_MIN_GAP_PCT
+        entered = False
         if trading_enabled() and sig.get("side") == "SELL":
             entry = float(sig.get("fut_last") or sig.get("open") or 0)
-            gap_now = float(sig.get("diff_pct") or 0)
             if entry > 0 and gap_now >= ENTRY_MIN_GAP_PCT:
                 rec = open_sell_trade(symbol, entry, tf, sig.get("candle_ts"))
-                log.info("PAPER_ENTRY %s %s entry=%s gap=%.2f%% ok=%s", symbol, tf, entry, gap_now, bool(rec))
-                save_state(force_remote=True)
+                entered = bool(rec)
+                log.info("PAPER_ENTRY %s %s entry=%s gap=%.2f%% ok=%s", symbol, tf, entry, gap_now, entered)
+                if entered:
+                    save_state(force_remote=True)
             else:
                 log.info(
                     "PAPER_SKIP_GAP %s %s gap=%.2f%% < entry_min=%.1f%%",
                     symbol, tf, gap_now, ENTRY_MIN_GAP_PCT,
                 )
+        # فقط بعد از پردازش علامت بزن تا گپ ۱٫۵٪ پنجره را نسوزاند اگر بعداً به ۲٪ رسید
+        # (اگر ورود شد یا گپ >= entry min بود، تکرار نده)
+        if entered or gap_now >= ENTRY_MIN_GAP_PCT:
+            sk = (symbol, tf, sig.get("candle_ts"), sig.get("side"))
+            sent_signals.add(sk)
+            if len(sent_signals) > 4000:
+                sent_signals.clear()
 
         pending_signals.append({
             "symbol": symbol, "tf": tf, "candle_ts": sig["candle_ts"], "side": sig["side"],
