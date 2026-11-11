@@ -1,5 +1,31 @@
 {
-  "open_trades": [],
+  "open_trades": [
+    {
+      "symbol": "RAMUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 6.652,
+      "qty": 30.0661,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 6.4857,
+      "tf": "15m",
+      "opened_at": 1794411013,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 6.652,
+          "ts": 1794411013
+        }
+      ],
+      "entry_candle_ts": 1794411000,
+      "last_leg_candle_ts": 1794411000,
+      "dry_run": true,
+      "order_id": "PAPER-RAMUSDT-1794411013"
+    }
+  ],
   "trade_history": [
     {
       "symbol": "RDDTUSDT",
@@ -9094,6 +9120,15 @@
       "upper": 0.07139560086843245,
       "open": 0.07213,
       "reported": false
+    },
+    {
+      "symbol": "MUUUSDT",
+      "tf": "15m",
+      "candle_ts": 1794411000,
+      "side": "SELL",
+      "upper": 18.288097739112047,
+      "open": 18.52,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -9224,7 +9259,6 @@
     "SIMOUSDT": 1794199618,
     "QUACKAIUSDT": 1794215793,
     "XTIUSDT": 1794219396,
-    "POETUSDT": 1794223905,
     "DODOUSDT": 1794225779,
     "BRLUSDT": 1794225832,
     "GOLDUSDT": 1794228410,
@@ -9240,7 +9274,6 @@
     "TQQQUSDT": 1794312291,
     "LWLGUSDT": 1794342893,
     "RGTIUSDT": 1794342903,
-    "KOPNUSDT": 1794342912,
     "AMCUSDT": 1794358021,
     "CAPETHUSDT": 1794361582,
     "OSCRUSDT": 1794367943,
