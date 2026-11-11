@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.5",
-  "updated_at": 1794399371,
+  "updated_at": 1794400104,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794343729
-    },
-    {
-      "kind": "HEARTBEAT",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794343731
-    },
     {
       "kind": "GAP",
       "symbol": "EQTUSDT",
@@ -1402,22 +1388,23 @@
       "tf": "15m",
       "gap": 1.15,
       "ts": 1794399371
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794399519
+    },
+    {
+      "kind": "GAP",
+      "symbol": "JCTUSDT",
+      "tf": "15m",
+      "gap": 1.04,
+      "ts": 1794400104
     }
   ],
   "trades": [
-    {
-      "symbol": "JCTUSDT",
-      "side": "SELL",
-      "entry": 0.005851,
-      "tp": 0.005704725,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.00664,
-      "pnl": -27.2097,
-      "tf": "15m"
-    },
     {
       "symbol": "MEMEUSDT",
       "side": "SELL",
@@ -1427,8 +1414,8 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 0.00442,
-      "pnl": 13.1747,
+      "px": 0.00453,
+      "pnl": -1.4116,
       "tf": "15m"
     },
     {
@@ -1440,8 +1427,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.30688,
-      "pnl": -6.0823,
+      "px": 0.29234,
+      "pnl": 3.6705,
       "tf": "4h"
     },
     {
@@ -1453,23 +1440,23 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.05872,
-      "pnl": 0.4389,
+      "px": 0.06155,
+      "pnl": -9.1674,
       "tf": "4h"
     }
   ],
   "start": 1000.0,
   "session_start": 1794356927,
-  "realized": 93.9091,
-  "closed_n": 1,
-  "open_upnl": -19.6784,
-  "equity": 1074.2307,
+  "realized": 66.9394,
+  "closed_n": 2,
+  "open_upnl": -6.9085,
+  "equity": 1060.0309,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
     "profit": 93.9091,
-    "loss": 0,
-    "count": 1
+    "loss": -26.9697,
+    "count": 2
   }
 }
