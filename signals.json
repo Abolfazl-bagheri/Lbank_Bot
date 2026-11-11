@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.7.4",
-  "updated_at": 1794361546,
+  "updated_at": 1794361680,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "QNTXUSDT",
-      "tf": "4h",
-      "gap": 1.19,
-      "ts": 1794326499
-    },
     {
       "kind": "SELL",
       "symbol": "SOPHUSDT",
@@ -1402,35 +1395,28 @@
       "tf": "15m",
       "gap": 0.99,
       "ts": 1794361546
-    }
-  ],
-  "trades": [
+    },
     {
-      "symbol": "ZCATUSDT",
-      "side": "SELL",
-      "entry": 0.02302443174785545,
-      "tp": 0.022448820954159062,
-      "adds": 2,
-      "pele": 3,
-      "margin": 70.0,
-      "lev": 20,
-      "px": 0.02148,
-      "pnl": 93.9091,
-      "tf": "15m"
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794361680
     }
   ],
+  "trades": [],
   "start": 1000.0,
   "session_start": 1794356927,
-  "realized": 0,
-  "closed_n": 0,
-  "open_upnl": 93.9091,
+  "realized": 93.9091,
+  "closed_n": 1,
+  "open_upnl": 0,
   "equity": 1093.9091,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 0,
+    "profit": 93.9091,
     "loss": 0,
-    "count": 0
+    "count": 1
   }
 }
