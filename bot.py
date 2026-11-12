@@ -35,8 +35,12 @@ SIGNALS_FILE = os.path.join(BASE_DIR, "signals.json")
 LIVE_TOPIC = os.environ.get("LIVE_TOPIC", "lbank-gap-b0b85cee29ce").strip()
 STATE_BAK = os.path.join(BASE_DIR, "bot_state.bak")
 
-BOT_VERSION = "2.8.2"
+BOT_VERSION = "2.8.3"
 CHANGELOG = {
+    "2.8.3": [
+        "حذف بیت — اضافه نقره SILVER و نفت CRCL",
+        "FOCUS: طلا + نقره + نفت",
+    ],
     "2.8.2": [
         "گپ لانگ زیر LB + سِل بالای UB در FOCUS",
         "نوتیف شدو بالای UB · آستانه پایین‌تر · heartbeat لاگ",
@@ -79,7 +83,7 @@ CHAT_ID = os.environ.get("CHAT_ID", "").strip()
 FOCUS_MODE = os.environ.get("FOCUS_MODE", "1").strip() not in ("0", "false", "False", "no")
 FOCUS_SYMBOLS = [
     s.strip().upper()
-    for s in os.environ.get("FOCUS_SYMBOLS", "BTCUSDT,XAUTUSDT,GOLDUSDT").split(",")
+    for s in os.environ.get("FOCUS_SYMBOLS", "XAUTUSDT,GOLDUSDT,SILVERUSDT,CRCLUSDT").split(",")
     if s.strip()
 ]
 
@@ -103,15 +107,25 @@ PENETRATION_PCT = 0.3
 MIN_OPEN_GAP_PCT = 0.35
 ENTRY_MIN_GAP_PCT = 0.5
 GAP_THRESHOLDS = {
-    "BTCUSDT": {"min": 0.12, "entry": 0.25},
     "XAUTUSDT": {"min": 0.06, "entry": 0.12},
     "GOLDUSDT": {"min": 0.06, "entry": 0.12},
+    "SILVERUSDT": {"min": 0.08, "entry": 0.15},
+    "CRCLUSDT": {"min": 0.10, "entry": 0.18},  # نفت خام
+    "BTCUSDT": {"min": 0.12, "entry": 0.25},
+}
+# Gate contract name if با نماد LBank فرق دارد
+GATE_CONTRACT_ALIAS = {
+    "SILVERUSDT": "XAG_USDT",
+    "GOLDUSDT": "XAU_USDT",
+    "XAUTUSDT": "XAUT_USDT",
+    "CRCLUSDT": "CRCL_USDT",
+    "BTCUSDT": "BTC_USDT",
 }
 FOCUS_BOTH_SIDES = True  # در FOCUS هم گپ بالای UB (سِل) هم زیر LB (لانگ)
 
 TOP_GAINERS = 60
 TOP_VOLUME = 30
-ALWAYS_INCLUDE = list(FOCUS_SYMBOLS) if FOCUS_SYMBOLS else ["BTCUSDT", "XAUTUSDT"]
+ALWAYS_INCLUDE = list(FOCUS_SYMBOLS) if FOCUS_SYMBOLS else ["XAUTUSDT", "GOLDUSDT", "SILVERUSDT", "CRCLUSDT"]
 ONLY_SELL = True
 FOCUS_BOTH_SIDES = True
 STRUCTURE_BREAK_PCT = 0.08  # شکست حمایت/مقاومت (٪)
@@ -648,7 +662,10 @@ def fetch_klines_gate(symbol: str, tf: str, size: int = 80) -> pd.DataFrame | No
     interval = GATE_INTERVAL.get(tf)
     if not interval:
         return None
-    contract = symbol.upper()
+    symu = symbol.upper()
+    contract = GATE_CONTRACT_ALIAS.get(symu) or (
+        symu[:-4] + "_USDT" if symu.endswith("USDT") and "_" not in symu else symu
+    )
     if contract.endswith("USDT") and "_" not in contract:
         contract = contract[:-4] + "_USDT"
     url = f"https://api.gateio.ws/api/v4/futures/usdt/candlesticks?contract={contract}&interval={interval}&limit={size}"
@@ -949,7 +966,7 @@ async def live_gap_watch_once() -> None:
 def check_structure_breaks(symbol: str, tf: str = "15m") -> None:
     """نوتیف شکست مقاومت/حمایت — حالت تست طلا و بیت."""
     try:
-        contract = symbol[:-4] + "_USDT" if symbol.endswith("USDT") and "_" not in symbol else symbol
+        contract = GATE_CONTRACT_ALIAS.get(symbol.upper()) or (symbol[:-4] + "_USDT" if symbol.endswith("USDT") and "_" not in symbol else symbol)
         gmap = {"1m": "1m", "5m": "5m", "15m": "15m", "1h": "1h", "4h": "4h"}
         interval = gmap.get(tf, "15m")
         url = f"https://api.gateio.ws/api/v4/futures/usdt/candlesticks?contract={contract}&interval={interval}&limit=80"
@@ -1427,7 +1444,7 @@ def find_resistance_levels(symbol: str, px: float, tf: str = "1h") -> list:
         if cached and now - cached[0] < 60:
             levels = [L for L in cached[1] if L > px * 1.001]
             return levels[:6]
-        contract = symbol[:-4] + "_USDT" if symbol.endswith("USDT") and "_" not in symbol else symbol
+        contract = GATE_CONTRACT_ALIAS.get(symbol.upper()) or (symbol[:-4] + "_USDT" if symbol.endswith("USDT") and "_" not in symbol else symbol)
         interval = GATE_INTERVAL.get(tf, "1h")
         url = f"https://api.gateio.ws/api/v4/futures/usdt/candlesticks?contract={contract}&interval={interval}&limit=120"
         r = requests.get(url, timeout=12)
