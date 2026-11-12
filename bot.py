@@ -35,8 +35,13 @@ SIGNALS_FILE = os.path.join(BASE_DIR, "signals.json")
 LIVE_TOPIC = os.environ.get("LIVE_TOPIC", "lbank-gap-b0b85cee29ce").strip()
 STATE_BAK = os.path.join(BASE_DIR, "bot_state.bak")
 
-BOT_VERSION = "2.8.1"
+BOT_VERSION = "2.8.2"
 CHANGELOG = {
+    "2.8.2": [
+        "گپ لانگ زیر LB + سِل بالای UB در FOCUS",
+        "نوتیف شدو بالای UB · آستانه پایین‌تر · heartbeat لاگ",
+        "GOLDUSDT به واچ‌لیست تست",
+    ],
     "2.8.1": [
         "پایش لایو ثانیه‌ای قیمت vs UB برای BTC/XAUT",
         "نوتیف ⚡ لایو گپ مستقل از پنجره باز شدن کندل",
@@ -74,7 +79,7 @@ CHAT_ID = os.environ.get("CHAT_ID", "").strip()
 FOCUS_MODE = os.environ.get("FOCUS_MODE", "1").strip() not in ("0", "false", "False", "no")
 FOCUS_SYMBOLS = [
     s.strip().upper()
-    for s in os.environ.get("FOCUS_SYMBOLS", "BTCUSDT,XAUTUSDT").split(",")
+    for s in os.environ.get("FOCUS_SYMBOLS", "BTCUSDT,XAUTUSDT,GOLDUSDT").split(",")
     if s.strip()
 ]
 
@@ -98,13 +103,17 @@ PENETRATION_PCT = 0.3
 MIN_OPEN_GAP_PCT = 0.35
 ENTRY_MIN_GAP_PCT = 0.5
 GAP_THRESHOLDS = {
-    "BTCUSDT": {"min": 0.35, "entry": 0.6},
-    "XAUTUSDT": {"min": 0.12, "entry": 0.25},  # طلا آرام‌تر از شت
+    "BTCUSDT": {"min": 0.12, "entry": 0.25},
+    "XAUTUSDT": {"min": 0.06, "entry": 0.12},
+    "GOLDUSDT": {"min": 0.06, "entry": 0.12},
 }
+FOCUS_BOTH_SIDES = True  # در FOCUS هم گپ بالای UB (سِل) هم زیر LB (لانگ)
+
 TOP_GAINERS = 60
 TOP_VOLUME = 30
 ALWAYS_INCLUDE = list(FOCUS_SYMBOLS) if FOCUS_SYMBOLS else ["BTCUSDT", "XAUTUSDT"]
 ONLY_SELL = True
+FOCUS_BOTH_SIDES = True
 STRUCTURE_BREAK_PCT = 0.08  # شکست حمایت/مقاومت (٪)
 
 TRADE_MODE = os.environ.get("TRADE_MODE", "off").strip().lower()
@@ -837,59 +846,104 @@ async def refresh_live_bb(symbol: str, tf: str):
 
 
 async def live_gap_watch_once() -> None:
-    """پایش ثانیه‌ای قیمت vs UB برای FOCUS — بدون پنجره کندل."""
+    """پایش ثانیه‌ای قیمت vs UB/LB در FOCUS — سِل و لانگ + شدو."""
     if not FOCUS_MODE:
         return
     refresh_futures_map()
     symbols = get_scan_symbols()
     now = int(time.time())
+    if not hasattr(live_gap_watch_once, "_last_hb"):
+        live_gap_watch_once._last_hb = 0
+    do_hb = now - int(getattr(live_gap_watch_once, "_last_hb", 0) or 0) >= 180
+    if do_hb:
+        live_gap_watch_once._last_hb = now
+
     for symbol in symbols:
         fut = get_futures_last(symbol)
-        if not fut:
-            continue
         min_gap, _ = gap_limits_for(symbol)
-        live_min = max(0.08, float(min_gap) * 0.7)
+        live_min = max(0.05, float(min_gap) * 0.5)
         for tf in LIVE_WATCH_TFS:
             bb = await refresh_live_bb(symbol, tf)
             if not bb:
+                if do_hb:
+                    log.info("LIVE_HB %s %s no_bb", symbol, tf)
                 continue
             upper = float(bb["upper"])
-            if upper <= 0:
+            lower = float(bb.get("lower") or 0)
+            if not fut:
+                try:
+                    df_tmp, _ = await fetch_klines(symbol, tf, size=3)
+                    if df_tmp is not None and len(df_tmp):
+                        fut = float(df_tmp.iloc[-1]["c"])
+                except Exception:
+                    pass
+            if not fut or upper <= 0:
                 continue
-            if fut <= upper:
+            gap_up = (fut - upper) / fut * 100.0
+            gap_dn = (lower - fut) / fut * 100.0 if lower > 0 else -999.0
+            if do_hb and tf == "1m":
+                log.info(
+                    "LIVE_HB %s 1m fut=%.6g ub=%.6g lb=%.6g up=%.3f%% dn=%.3f%%",
+                    symbol, fut, upper, lower, gap_up, gap_dn,
+                )
+
+            side, gap = None, 0.0
+            if fut > upper and gap_up >= live_min:
+                side, gap = "SELL", gap_up
+            elif FOCUS_BOTH_SIDES and lower > 0 and fut < lower and gap_dn >= live_min:
+                side, gap = "LONG", gap_dn
+
+            hi, wick_up = 0.0, False
+            try:
+                df2, _ = await fetch_klines(symbol, tf, size=BB_PERIOD + 5)
+                if df2 is not None and len(df2) >= 2:
+                    hi = float(df2.iloc[-1]["h"])
+                    if upper > 0 and hi > upper and (hi - upper) / hi * 100.0 >= live_min * 0.7:
+                        wick_up = True
+            except Exception:
+                pass
+
+            if not side and not wick_up:
                 continue
-            gap = (fut - upper) / fut * 100.0
-            if gap < live_min:
-                continue
+
             period = PERIOD_SEC.get(tf, 60)
             period_id = now // period
-            skey = (symbol, tf, period_id)
-            last = int(live_gap_sent.get(skey) or 0)
-            if last and now - last < LIVE_GAP_COOLDOWN_SEC:
-                continue
-            if skey in live_gap_sent:
-                continue
-            live_gap_sent[skey] = now
+            link = tv_lbank_url(symbol)
+
+            if side:
+                skey = (symbol, tf, side, period_id)
+                last = int(live_gap_sent.get(skey) or 0)
+                if not ((last and now - last < LIVE_GAP_COOLDOWN_SEC) or skey in live_gap_sent):
+                    live_gap_sent[skey] = now
+                    emoji = "🔴" if side == "SELL" else "🟢"
+                    msg = (
+                        f"⚡ <b>لایو گپ {side}</b> {emoji} · <a href=\"{link}\">{symbol}</a>\n"
+                        f"TF <b>{tf}</b> · فاصله <b>{gap:.2f}%</b>\n"
+                        f"قیمت <code>{fut:.6g}</code> · UB <code>{upper:.6g}</code> · LB <code>{lower:.6g}</code>"
+                    )
+                    send_telegram_text(msg)
+                    try:
+                        log_signal_web("GAP", symbol, tf, gap if side == "SELL" else -gap)
+                    except Exception:
+                        pass
+                    log.info("LIVE_GAP %s %s %s gap=%.2f%%", side, symbol, tf, gap)
+
+            if wick_up:
+                wkey = (symbol, tf, "WICK", period_id)
+                if wkey not in live_gap_sent:
+                    live_gap_sent[wkey] = now
+                    wgap = (hi - upper) / hi * 100.0
+                    msg = (
+                        f"⚡ <b>لایو شدو بالای UB</b> · <a href=\"{link}\">{symbol}</a>\n"
+                        f"TF <b>{tf}</b> · high <code>{hi:.6g}</code> · UB <code>{upper:.6g}</code> · {wgap:.2f}%"
+                    )
+                    send_telegram_text(msg)
+                    log.info("LIVE_WICK_UP %s %s wgap=%.2f%%", symbol, tf, wgap)
+
             if len(live_gap_sent) > 500:
                 for k in list(live_gap_sent.keys())[:200]:
                     live_gap_sent.pop(k, None)
-            link = tv_lbank_url(symbol)
-            msg = (
-                f"⚡ <b>لایو گپ</b> · <a href=\"{link}\">{symbol}</a>\n"
-                f"TF <b>{tf}</b> · فاصله تا UB <b>{gap:.2f}%</b>\n"
-                f"قیمت <code>{fut:.6g}</code> · UB <code>{upper:.6g}</code>\n"
-                f"<i>پایش ثانیه‌ای · src={bb.get('src')}</i>"
-            )
-            send_telegram_text(msg)
-            try:
-                log_signal_web("GAP", symbol, tf, gap)
-            except Exception:
-                pass
-            log.info("LIVE_GAP %s %s gap=%.2f%% fut=%.6g upper=%.6g", symbol, tf, gap, fut, upper)
 
-
-
-sent_structure: set = set()
 
 
 def check_structure_breaks(symbol: str, tf: str = "15m") -> None:
@@ -997,10 +1051,20 @@ def check_signal(df: pd.DataFrame, symbol: str, tf: str):
     if fut > upper and live_gap_pct >= min_gap:
         side = "SELL"
     elif open_p > upper and open_gap_pct >= min_gap and fut >= upper * 0.998:
-        # open گپ داشته و هنوز نزدیک/بالای UB است
         side = "SELL"
         live_gap_pct = max(live_gap_pct, open_gap_pct)
-    if not side or (ONLY_SELL and side != "SELL"):
+    else:
+        # گپ لانگ: قیمت زیر LB
+        lower_v = float(lower)
+        live_low_gap = (lower_v - fut) / fut * 100.0 if fut and lower_v > 0 else 0.0
+        open_low_gap = (lower_v - open_p) / open_p * 100.0 if open_p and lower_v > 0 else 0.0
+        if FOCUS_BOTH_SIDES and lower_v > 0 and fut < lower_v and live_low_gap >= min_gap:
+            side = "LONG"
+            live_gap_pct = live_low_gap
+        elif FOCUS_BOTH_SIDES and lower_v > 0 and open_p < lower_v and open_low_gap >= min_gap and fut <= lower_v * 1.002:
+            side = "LONG"
+            live_gap_pct = max(live_low_gap, open_low_gap)
+    if not side or (ONLY_SELL and side != "SELL" and not FOCUS_BOTH_SIDES):
         stats["skip_no_gap"] += 1
         log.info(
             "SKIP_NO_GAP %s %s | open=%.6g fut=%.6g upper=%.6g live_gap=%.2f%% open_gap=%.2f%%",
