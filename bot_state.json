@@ -7187,26 +7187,6 @@
       "side": "SELL"
     },
     {
-      "symbol": "INITUSDT",
-      "tf": "1h",
-      "candle_ts": 1794258000,
-      "side": "SELL",
-      "upper": 0.17542889535679154,
-      "open": 0.18548,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "TAGUSDT",
-      "tf": "1h",
-      "candle_ts": 1794258000,
-      "side": "SELL",
-      "upper": 0.0007327868145220473,
-      "open": 0.0007405,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "AVAAIUSDT",
       "tf": "15m",
       "candle_ts": 1794259800,
@@ -9472,7 +9452,28 @@
       "side": "LONG",
       "upper": 3886.870268387234,
       "open": 3882.83,
-      "reported": false
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "XAUTUSDT",
+      "tf": "1m",
+      "candle_ts": 1794516840,
+      "side": "LONG",
+      "upper": 3883.9699632094585,
+      "open": 3877.31,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
+      "candle_ts": 1794517200,
+      "side": "LONG",
+      "upper": 3888.1863485890863,
+      "open": 3875.69,
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -9662,7 +9663,7 @@
     "HAJIMIUSDT": 1794456373,
     "QUACKAIUSDT": 1794460636
   },
-  "last_trade_report_ts": 1794515300,
+  "last_trade_report_ts": 1794517598,
   "last_known_version": "2.8.3",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
