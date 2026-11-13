@@ -1,5 +1,31 @@
 {
-  "open_trades": [],
+  "open_trades": [
+    {
+      "symbol": "SILVERUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 50.77,
+      "qty": 3.9393,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 49.500750000000004,
+      "tf": "5m",
+      "opened_at": 1794533142,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 50.77,
+          "ts": 1794533142
+        }
+      ],
+      "entry_candle_ts": 1794533100,
+      "last_leg_candle_ts": 1794532500,
+      "dry_run": true,
+      "order_id": "PAPER-SILVERUSDT-1794533142"
+    }
+  ],
   "trade_history": [
     {
       "symbol": "CHILLGUYUSDT",
