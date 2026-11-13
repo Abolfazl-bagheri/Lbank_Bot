@@ -1,41 +1,6 @@
 {
   "open_trades": [
     {
-      "symbol": "SILVERUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 50.727136775053815,
-      "qty": 27.598599999999998,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 49.45895835567747,
-      "tf": "15m",
-      "opened_at": 1794533142,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [
-        50.83
-      ],
-      "steps": [
-        {
-          "px": 50.77,
-          "ts": 1794533142
-        },
-        {
-          "px": 50.72,
-          "ts": 1794533325
-        },
-        {
-          "px": 50.72,
-          "ts": 1794533448
-        }
-      ],
-      "entry_candle_ts": 1794533100,
-      "last_leg_candle_ts": 1794533400,
-      "dry_run": true,
-      "order_id": "PAPER-SILVERUSDT-1794533142"
-    },
-    {
       "symbol": "GOLDUSDT",
       "side": "SELL",
       "status": "open",
@@ -72,42 +37,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "CHILLGUYUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.009367255234911668,
-      "qty": 64052.914600000004,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.009133073854038876,
-      "tf": "15m",
-      "opened_at": 1793830652,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        0.009311
-      ],
-      "steps": [
-        {
-          "px": 0.009511,
-          "ts": 1793830652
-        },
-        {
-          "px": 0.009297,
-          "ts": 1793835171
-        }
-      ],
-      "entry_candle_ts": 1793830500,
-      "last_leg_candle_ts": 1793835171,
-      "dry_run": true,
-      "order_id": "PAPER-CHILLGUYUSDT-1793830652",
-      "closed_at": 1793837405,
-      "close_px": 0.009296,
-      "pnl_usdt": 4.564105479656405,
-      "close_reason": "NIGHT_RESET",
-      "why": "NIGHT_RESET"
-    },
     {
       "symbol": "MRNAUSDT",
       "side": "SELL",
@@ -7044,6 +6973,46 @@
       "pnl_usdt": 35.77186286010647,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "SILVERUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 50.727136775053815,
+      "qty": 27.598599999999998,
+      "margin": 70.0,
+      "leverage": 20,
+      "tp_price": 49.45895835567747,
+      "tf": "15m",
+      "opened_at": 1794533142,
+      "adds": 2,
+      "last_leg_margin": 40.0,
+      "used_res_levels": [
+        50.83
+      ],
+      "steps": [
+        {
+          "px": 50.77,
+          "ts": 1794533142
+        },
+        {
+          "px": 50.72,
+          "ts": 1794533325
+        },
+        {
+          "px": 50.72,
+          "ts": 1794533448
+        }
+      ],
+      "entry_candle_ts": 1794533100,
+      "last_leg_candle_ts": 1794533400,
+      "dry_run": true,
+      "order_id": "PAPER-SILVERUSDT-1794533142",
+      "closed_at": 1794583295,
+      "close_px": 49.43,
+      "pnl_usdt": 35.79921124127776,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -9263,7 +9232,8 @@
       "side": "LONG",
       "upper": 64.0240098822595,
       "open": 61.38,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CRCLUSDT",
