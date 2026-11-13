@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.8.3",
-  "updated_at": 1794533141,
+  "updated_at": 1794533149,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "XAUTUSDT",
-      "tf": "1m",
-      "gap": -0.09,
-      "ts": 1794490437
-    },
-    {
-      "kind": "SELL",
-      "symbol": "XAUTUSDT",
-      "tf": "5m",
-      "gap": 0.09,
-      "ts": 1794490524
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,15 +1388,43 @@
       "tf": "5m",
       "gap": 0.34,
       "ts": 1794533141
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794533145
+    },
+    {
+      "kind": "SELL",
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
+      "gap": 0.08,
+      "ts": 1794533149
     }
   ],
-  "trades": [],
+  "trades": [
+    {
+      "symbol": "SILVERUSDT",
+      "side": "SELL",
+      "entry": 50.77,
+      "tp": 49.500750000000004,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 50.77,
+      "pnl": -0.24,
+      "tf": "5m"
+    }
+  ],
   "start": 1000.0,
   "session_start": 1794531444,
   "realized": 0,
   "closed_n": 0,
-  "open_upnl": 0,
-  "equity": 1000.0,
+  "open_upnl": -0.24,
+  "equity": 999.76,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
