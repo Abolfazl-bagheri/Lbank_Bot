@@ -1,29 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.8.3",
-  "updated_at": 1794583170,
+  "updated_at": 1794583309,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794534937
-    },
-    {
-      "kind": "GAP",
-      "symbol": "SILVERUSDT",
-      "tf": "15m",
-      "gap": 0.23,
-      "ts": 1794535061
-    },
-    {
-      "kind": "GAP",
-      "symbol": "GOLDUSDT",
-      "tf": "15m",
-      "gap": 0.09,
-      "ts": 1794535171
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,22 +1381,30 @@
       "tf": "15m",
       "gap": -0.67,
       "ts": 1794583170
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794583298
+    },
+    {
+      "kind": "HEARTBEAT",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794583298
+    },
+    {
+      "kind": "GAP",
+      "symbol": "XAUTUSDT",
+      "tf": "1m",
+      "gap": -0.06,
+      "ts": 1794583309
     }
   ],
   "trades": [
-    {
-      "symbol": "SILVERUSDT",
-      "side": "SELL",
-      "entry": 50.727136775053815,
-      "tp": 49.45895835567747,
-      "adds": 2,
-      "pele": 3,
-      "margin": 70.0,
-      "lev": 20,
-      "px": 49.47,
-      "pnl": 33.0153,
-      "tf": "15m"
-    },
     {
       "symbol": "GOLDUSDT",
       "side": "SELL",
@@ -1427,23 +1414,23 @@
       "pele": 3,
       "margin": 70.0,
       "lev": 20,
-      "px": 3890.51,
-      "pnl": 4.552,
+      "px": 3888.85,
+      "pnl": 5.1466,
       "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1794531444,
-  "realized": 0,
-  "closed_n": 0,
-  "open_upnl": 37.5673,
-  "equity": 1037.5673,
+  "realized": 35.7992,
+  "closed_n": 1,
+  "open_upnl": 5.1466,
+  "equity": 1040.9458,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 0,
+    "profit": 35.7992,
     "loss": 0,
-    "count": 0
+    "count": 1
   }
 }
