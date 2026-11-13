@@ -4,15 +4,15 @@
       "symbol": "SILVERUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 50.736655673659904,
-      "qty": 11.8257,
-      "margin": 30.0,
+      "entry": 50.727136775053815,
+      "qty": 27.598599999999998,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 49.468239281818406,
-      "tf": "5m",
+      "tp_price": 49.45895835567747,
+      "tf": "15m",
       "opened_at": 1794533142,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [
         50.83
       ],
@@ -24,10 +24,14 @@
         {
           "px": 50.72,
           "ts": 1794533325
+        },
+        {
+          "px": 50.72,
+          "ts": 1794533448
         }
       ],
       "entry_candle_ts": 1794533100,
-      "last_leg_candle_ts": 1794533325,
+      "last_leg_candle_ts": 1794533400,
       "dry_run": true,
       "order_id": "PAPER-SILVERUSDT-1794533142"
     },
@@ -9411,6 +9415,24 @@
       "side": "SELL",
       "upper": 3913.8182405851708,
       "open": 3918.41,
+      "reported": false
+    },
+    {
+      "symbol": "GOLDUSDT",
+      "tf": "15m",
+      "candle_ts": 1794533400,
+      "side": "SELL",
+      "upper": 3913.283727679994,
+      "open": 3918.6,
+      "reported": false
+    },
+    {
+      "symbol": "XAUTUSDT",
+      "tf": "15m",
+      "candle_ts": 1794533400,
+      "side": "SELL",
+      "upper": 3904.3959153077944,
+      "open": 3908.7,
       "reported": false
     }
   ],
