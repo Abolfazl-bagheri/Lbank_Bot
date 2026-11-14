@@ -6981,18 +6981,6 @@
   ],
   "pending": [
     {
-      "symbol": "MUSEBOOKUSDT",
-      "tf": "15m",
-      "candle_ts": 1793359800,
-      "side": "SELL"
-    },
-    {
-      "symbol": "IDOLUSDT",
-      "tf": "15m",
-      "candle_ts": 1793362500,
-      "side": "SELL"
-    },
-    {
       "symbol": "VKTXUSDT",
       "tf": "15m",
       "candle_ts": 1793367000,
@@ -9853,7 +9841,8 @@
       "side": "LONG",
       "upper": 3870.6780835762765,
       "open": 3869.88,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "XAUTUSDT",
@@ -9862,6 +9851,25 @@
       "side": "LONG",
       "upper": 3871.763190632569,
       "open": 3869.88,
+      "reported": false
+    },
+    {
+      "symbol": "XAUTUSDT",
+      "tf": "1m",
+      "candle_ts": 1794654840,
+      "side": "LONG",
+      "upper": 3870.5174608248335,
+      "open": 3869.58,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "XAUTUSDT",
+      "tf": "1m",
+      "candle_ts": 1794655320,
+      "side": "LONG",
+      "upper": 3870.0925987661803,
+      "open": 3869.59,
       "reported": false
     }
   ],
@@ -10074,7 +10082,7 @@
     "HAJIMIUSDT": 1794456373,
     "QUACKAIUSDT": 1794460636
   },
-  "last_trade_report_ts": 1794654361,
+  "last_trade_report_ts": 1794655353,
   "last_known_version": "2.8.3",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
