@@ -1,41 +1,5 @@
 {
-  "open_trades": [
-    {
-      "symbol": "GOLDUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 3907.9056423204033,
-      "qty": 0.358248,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 3810.2080012623933,
-      "tf": "15m",
-      "opened_at": 1794533153,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [
-        3913.33
-      ],
-      "steps": [
-        {
-          "px": 3921.73,
-          "ts": 1794533153
-        },
-        {
-          "px": 3918.84,
-          "ts": 1794533436
-        },
-        {
-          "px": 3899.03,
-          "ts": 1794576884
-        }
-      ],
-      "entry_candle_ts": 1794533100,
-      "last_leg_candle_ts": 1794576884,
-      "dry_run": true,
-      "order_id": "PAPER-GOLDUSDT-1794533153"
-    }
-  ],
+  "open_trades": [],
   "trade_history": [
     {
       "symbol": "MRNAUSDT",
@@ -9354,10 +9318,21 @@
       "trades": 0,
       "tp_trades": 0,
       "reset_trades": 0
+    },
+    {
+      "from": 1794531444,
+      "to": 1794614662,
+      "start": 1000.0,
+      "realized": 35.7992,
+      "unrealized_closed": 4.8135,
+      "net": 40.6127,
+      "trades": 2,
+      "tp_trades": 1,
+      "reset_trades": 1
     }
   ],
-  "paper_session_start": 1794531444,
-  "last_daily_report_date": "2026-11-13",
+  "paper_session_start": 1794614662,
+  "last_daily_report_date": "2026-11-14",
   "kline_blacklist": {
     "EURUSDT": 1793385188,
     "SKY1USDT": 1793398016,
@@ -9434,7 +9409,7 @@
     "HAJIMIUSDT": 1794456373,
     "QUACKAIUSDT": 1794460636
   },
-  "last_trade_report_ts": 1794613754,
+  "last_trade_report_ts": 1794614660,
   "last_known_version": "2.8.3",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
