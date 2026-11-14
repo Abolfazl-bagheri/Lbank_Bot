@@ -35,8 +35,12 @@ SIGNALS_FILE = os.path.join(BASE_DIR, "signals.json")
 LIVE_TOPIC = os.environ.get("LIVE_TOPIC", "lbank-gap-b0b85cee29ce").strip()
 STATE_BAK = os.path.join(BASE_DIR, "bot_state.bak")
 
-BOT_VERSION = "2.8.3"
+BOT_VERSION = "2.8.4"
 CHANGELOG = {
+    "2.8.4": [
+        "قطع سیگنال طلا/نقره/نفت وقتی بازار بسته است (آخر هفته)",
+        "لینک TV طلا→XAUUSD نقره→XAGUSD نفت→USOIL (نه XAUT غلط)",
+    ],
     "2.8.3": [
         "حذف بیت — اضافه نقره SILVER و نفت CRCL",
         "FOCUS: طلا + نقره + نفت",
@@ -188,6 +192,47 @@ last_known_version = None
 
 def iran_now() -> datetime:
     return datetime.now(TEHRAN)
+
+# نمادهای وابسته به سشن بازار جهانی (آخر هفته بسته)
+SESSION_SYMBOLS = {
+    "XAUTUSDT", "GOLDUSDT", "SILVERUSDT", "CRCLUSDT",
+    "XAUUSDT", "XAGUSDT", "USOUSDT",
+}
+TV_SYMBOL_MAP = {
+    "XAUTUSDT": "OANDA:XAUUSD",
+    "GOLDUSDT": "OANDA:XAUUSD",
+    "XAUUSDT": "OANDA:XAUUSD",
+    "SILVERUSDT": "OANDA:XAGUSD",
+    "XAGUSDT": "OANDA:XAGUSD",
+    "CRCLUSDT": "TVC:USOIL",
+    "USOUSDT": "TVC:USOIL",
+}
+
+
+def is_session_symbol(symbol: str) -> bool:
+    return (symbol or "").upper() in SESSION_SYMBOLS
+
+
+def is_commodity_market_open(now_utc: datetime | None = None) -> bool:
+    """بازار طلا/نقره/نفت تقریباً یکشنبه ۲۲:۰۰ UTC تا جمعه ۲۱:۰۰ UTC."""
+    now = now_utc or datetime.now(timezone.utc)
+    wd = now.weekday()  # Mon=0 … Sun=6
+    h = now.hour + now.minute / 60.0
+    if wd == 5:  # شنبه
+        return False
+    if wd == 6 and h < 22.0:  # یکشنبه قبل از باز شدن
+        return False
+    if wd == 4 and h >= 21.0:  # جمعه بعد از بسته شدن
+        return False
+    return True
+
+
+def symbol_tradeable_now(symbol: str) -> bool:
+    if is_session_symbol(symbol) and not is_commodity_market_open():
+        return False
+    return True
+
+
 
 
 def trading_enabled() -> bool:
@@ -876,6 +921,10 @@ async def live_gap_watch_once() -> None:
         live_gap_watch_once._last_hb = now
 
     for symbol in symbols:
+        if not symbol_tradeable_now(symbol):
+            if do_hb:
+                log.info("LIVE_SKIP_CLOSED %s market closed", symbol)
+            continue
         fut = get_futures_last(symbol)
         min_gap, _ = gap_limits_for(symbol)
         live_min = max(0.05, float(min_gap) * 0.5)
@@ -1023,6 +1072,9 @@ def check_structure_breaks(symbol: str, tf: str = "15m") -> None:
 
 
 def check_signal(df: pd.DataFrame, symbol: str, tf: str):
+    if not symbol_tradeable_now(symbol):
+        log.info("SKIP_MARKET_CLOSED %s %s", symbol, tf)
+        return None
     if len(df) < BB_PERIOD + 2:
         log.info("SKIP_SHORT %s %s bars=%s", symbol, tf, len(df) if df is not None else 0)
         return None
@@ -1106,12 +1158,16 @@ def check_signal(df: pd.DataFrame, symbol: str, tf: str):
 
 
 def tv_lbank_url(symbol: str) -> str:
-    s = (symbol or "").upper().replace("_", "").replace("-", "")
-    return f"https://www.tradingview.com/chart/?symbol=LBANK%3A{s}.P"
+    """لینک چارت: برای طلا/نقره/نفت از نماد استاندارد TV، وگرنه LBank perp."""
+    sym = (symbol or "").upper().replace("_", "").replace("-", "")
+    mapped = TV_SYMBOL_MAP.get(sym) or TV_SYMBOL_MAP.get((symbol or "").upper())
+    if mapped:
+        # OANDA:XAUUSD → OANDA%3AXAUUSD
+        return "https://www.tradingview.com/chart/?symbol=" + mapped.replace(":", "%3A")
+    return f"https://www.tradingview.com/chart/?symbol=LBANK%3A{sym}.P"
 
 
 def lbank_futures_url(symbol: str) -> str:
-    # فرمت درست: btcusdt نه btc_usdt
     s = (symbol or "").lower().replace("_", "").replace("-", "")
     return f"https://www.lbank.com/futures/{s}"
 
@@ -1995,6 +2051,9 @@ def pre_alert_tfs_now() -> list:
 
 
 async def process_symbol(symbol: str, tfs_to_check: list) -> None:
+    if not symbol_tradeable_now(symbol):
+        log.info("SKIP_MARKET_CLOSED %s (process)", symbol)
+        return
     now = int(time.time())
     for tf in sorted(tfs_to_check, key=lambda x: TF_ORDER.get(x, 99)):
         if tf not in TIMEFRAMES:
