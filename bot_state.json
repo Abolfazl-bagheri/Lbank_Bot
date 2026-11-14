@@ -8929,7 +8929,8 @@
       "side": "LONG",
       "upper": 3890.14024460107,
       "open": 3837.92,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "XAUTUSDT",
@@ -9000,6 +9001,24 @@
       "open": 3832.94,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "XAUTUSDT",
+      "tf": "1m",
+      "candle_ts": 1794682980,
+      "side": "LONG",
+      "upper": 3835.355421498801,
+      "open": 3831.56,
+      "reported": false
+    },
+    {
+      "symbol": "XAUTUSDT",
+      "tf": "1h",
+      "candle_ts": 1794682800,
+      "side": "LONG",
+      "upper": 3892.028113457248,
+      "open": 3830.6,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -9211,7 +9230,7 @@
     "HAJIMIUSDT": 1794456373,
     "QUACKAIUSDT": 1794460636
   },
-  "last_trade_report_ts": 1794682136,
+  "last_trade_report_ts": 1794683143,
   "last_known_version": "2.8.3",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
