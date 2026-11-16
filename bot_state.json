@@ -1,81 +1,5 @@
 {
-  "open_trades": [
-    {
-      "symbol": "XAUTUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 3880.54,
-      "qty": 0.051539,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 3783.5265,
-      "tf": "1h",
-      "opened_at": 1794787244,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 3880.54,
-          "ts": 1794787244
-        }
-      ],
-      "entry_candle_ts": 1794787200,
-      "last_leg_candle_ts": 1794787200,
-      "dry_run": true,
-      "order_id": "PAPER-XAUTUSDT-1794787244"
-    },
-    {
-      "symbol": "GOLDUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 3903.94,
-      "qty": 0.05123,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 3806.3415,
-      "tf": "1h",
-      "opened_at": 1794787252,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 3903.94,
-          "ts": 1794787252
-        }
-      ],
-      "entry_candle_ts": 1794787200,
-      "last_leg_candle_ts": 1794787200,
-      "dry_run": true,
-      "order_id": "PAPER-GOLDUSDT-1794787252"
-    },
-    {
-      "symbol": "SILVERUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 49.06,
-      "qty": 4.0766,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 47.8335,
-      "tf": "1h",
-      "opened_at": 1794787260,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 49.06,
-          "ts": 1794787260
-        }
-      ],
-      "entry_candle_ts": 1794787200,
-      "last_leg_candle_ts": 1794787200,
-      "dry_run": true,
-      "order_id": "PAPER-SILVERUSDT-1794787260"
-    }
-  ],
+  "open_trades": [],
   "trade_history": [
     {
       "symbol": "MRNAUSDT",
@@ -8903,6 +8827,15 @@
       "upper": 3890.1591322337895,
       "open": 3904.3,
       "reported": false
+    },
+    {
+      "symbol": "SILVERUSDT",
+      "tf": "1h",
+      "candle_ts": 1794787200,
+      "side": "SELL",
+      "upper": 48.84304297334984,
+      "open": 49.11,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -9045,10 +8978,21 @@
       "trades": 0,
       "tp_trades": 0,
       "reset_trades": 0
+    },
+    {
+      "from": 1794700913,
+      "to": 1794787357,
+      "start": 1000.0,
+      "realized": 0.0,
+      "unrealized_closed": -0.2677,
+      "net": -0.2677,
+      "trades": 3,
+      "tp_trades": 0,
+      "reset_trades": 3
     }
   ],
-  "paper_session_start": 1794700913,
-  "last_daily_report_date": "2026-11-15",
+  "paper_session_start": 1794787357,
+  "last_daily_report_date": "2026-11-16",
   "kline_blacklist": {
     "EURUSDT": 1793385188,
     "SKY1USDT": 1793398016,
