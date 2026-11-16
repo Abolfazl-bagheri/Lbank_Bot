@@ -8819,7 +8819,8 @@
       "side": "SELL",
       "upper": 3870.5267353474114,
       "open": 3883.48,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "GOLDUSDT",
@@ -8828,7 +8829,8 @@
       "side": "SELL",
       "upper": 3890.1591322337895,
       "open": 3904.3,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "SILVERUSDT",
@@ -8837,7 +8839,8 @@
       "side": "SELL",
       "upper": 48.84304297334984,
       "open": 49.11,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "XAUTUSDT",
@@ -8848,6 +8851,33 @@
       "open": 3876.43,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "GOLDUSDT",
+      "tf": "1h",
+      "candle_ts": 1794790800,
+      "side": "SELL",
+      "upper": 3890.884561562755,
+      "open": 3893.89,
+      "reported": false
+    },
+    {
+      "symbol": "SILVERUSDT",
+      "tf": "1h",
+      "candle_ts": 1794790800,
+      "side": "SELL",
+      "upper": 48.843180336832326,
+      "open": 48.9,
+      "reported": false
+    },
+    {
+      "symbol": "XAUTUSDT",
+      "tf": "1h",
+      "candle_ts": 1794790800,
+      "side": "SELL",
+      "upper": 3871.474530263604,
+      "open": 3874.55,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -9081,7 +9111,7 @@
     "HAJIMIUSDT": 1794456373,
     "QUACKAIUSDT": 1794460636
   },
-  "last_trade_report_ts": 1794789700,
+  "last_trade_report_ts": 1794790962,
   "last_known_version": "2.8.4",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
