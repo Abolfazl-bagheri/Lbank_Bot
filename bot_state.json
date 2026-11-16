@@ -1,5 +1,31 @@
 {
-  "open_trades": [],
+  "open_trades": [
+    {
+      "symbol": "XAUTUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 3880.54,
+      "qty": 0.051539,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 3783.5265,
+      "tf": "1h",
+      "opened_at": 1794787244,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 3880.54,
+          "ts": 1794787244
+        }
+      ],
+      "entry_candle_ts": 1794787200,
+      "last_leg_candle_ts": 1794787200,
+      "dry_run": true,
+      "order_id": "PAPER-XAUTUSDT-1794787244"
+    }
+  ],
   "trade_history": [
     {
       "symbol": "MRNAUSDT",
@@ -8791,6 +8817,24 @@
       "open": 48.13,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "XAUTUSDT",
+      "tf": "15m",
+      "candle_ts": 1794787200,
+      "side": "SELL",
+      "upper": 3879.6296715345834,
+      "open": 3883.48,
+      "reported": false
+    },
+    {
+      "symbol": "GOLDUSDT",
+      "tf": "15m",
+      "candle_ts": 1794787200,
+      "side": "SELL",
+      "upper": 3899.964757868032,
+      "open": 3904.3,
+      "reported": false
     }
   ],
   "paper_days": [
