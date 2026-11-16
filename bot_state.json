@@ -49,6 +49,31 @@
       "last_leg_candle_ts": 1794787200,
       "dry_run": true,
       "order_id": "PAPER-GOLDUSDT-1794787252"
+    },
+    {
+      "symbol": "SILVERUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 49.06,
+      "qty": 4.0766,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 47.8335,
+      "tf": "1h",
+      "opened_at": 1794787260,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 49.06,
+          "ts": 1794787260
+        }
+      ],
+      "entry_candle_ts": 1794787200,
+      "last_leg_candle_ts": 1794787200,
+      "dry_run": true,
+      "order_id": "PAPER-SILVERUSDT-1794787260"
     }
   ],
   "trade_history": [
@@ -8868,6 +8893,15 @@
       "side": "SELL",
       "upper": 3870.5267353474114,
       "open": 3883.48,
+      "reported": false
+    },
+    {
+      "symbol": "GOLDUSDT",
+      "tf": "1h",
+      "candle_ts": 1794787200,
+      "side": "SELL",
+      "upper": 3890.1591322337895,
+      "open": 3904.3,
       "reported": false
     }
   ],
