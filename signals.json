@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.9.4",
-  "updated_at": 1794930351,
+  "updated_at": 1794930372,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "COHRUSDT",
-      "tf": "1h",
-      "gap": 1.7,
-      "ts": 1794920517
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794920749
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "15m",
       "gap": 2.75,
       "ts": 1794930351
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794930358
+    },
+    {
+      "kind": "SELL",
+      "symbol": "PAIDUSDT",
+      "tf": "15m",
+      "gap": 2.14,
+      "ts": 1794930372
     }
   ],
   "trades": [
@@ -1443,14 +1443,27 @@
       "px": 2.069,
       "pnl": 12.9231,
       "tf": "1h"
+    },
+    {
+      "symbol": "UVXYUSDT",
+      "side": "SELL",
+      "entry": 21.84,
+      "tp": 21.294,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 21.84,
+      "pnl": -0.24,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1794873896,
   "realized": -59.8077,
   "closed_n": 16,
-  "open_upnl": 15.2952,
-  "equity": 955.4875,
+  "open_upnl": 15.0552,
+  "equity": 955.2475,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
