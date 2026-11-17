@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.9.4",
-  "updated_at": 1794951051,
+  "updated_at": 1794951063,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "UVXYUSDT",
-      "tf": "1h",
-      "gap": 5.36,
-      "ts": 1794934298
-    },
-    {
-      "kind": "GAP",
-      "symbol": "MMTUSDT",
-      "tf": "1h",
-      "gap": 5.03,
-      "ts": 1794934302
-    },
     {
       "kind": "GAP",
       "symbol": "BREVUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "15m",
       "gap": 2.01,
       "ts": 1794951051
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794951056
+    },
+    {
+      "kind": "SELL",
+      "symbol": "ZORAUSDT",
+      "tf": "15m",
+      "gap": 1.17,
+      "ts": 1794951063
     }
   ],
   "trades": [
@@ -1456,14 +1456,27 @@
       "px": 10.14,
       "pnl": -0.24,
       "tf": "15m"
+    },
+    {
+      "symbol": "CRDOUSDT",
+      "side": "SELL",
+      "entry": 131.29,
+      "tp": 128.00775,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 131.29,
+      "pnl": -0.24,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1794873896,
   "realized": 15.3089,
   "closed_n": 28,
-  "open_upnl": 2.2146,
-  "equity": 1017.5235,
+  "open_upnl": 1.9746,
+  "equity": 1017.2835,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
