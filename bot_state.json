@@ -63,31 +63,6 @@
       "order_id": "PAPER-XAUTUSDT-1794930482"
     },
     {
-      "symbol": "UVXYUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 22.33,
-      "qty": 8.9566,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 21.771749999999997,
-      "tf": "1h",
-      "opened_at": 1794934852,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 22.33,
-          "ts": 1794934852
-        }
-      ],
-      "entry_candle_ts": 1794934800,
-      "last_leg_candle_ts": 1794934800,
-      "dry_run": true,
-      "order_id": "PAPER-UVXYUSDT-1794934852"
-    },
-    {
       "symbol": "MMTUSDT",
       "side": "SELL",
       "status": "open",
@@ -114,36 +89,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "ZZZUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.00959,
-      "qty": 20855.0574,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.00935025,
-      "tf": "15m",
-      "opened_at": 1793879168,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.00959,
-          "ts": 1793879168
-        }
-      ],
-      "entry_candle_ts": 1793879100,
-      "last_leg_candle_ts": 1793879100,
-      "dry_run": true,
-      "order_id": "PAPER-ZZZUSDT-1793879168",
-      "closed_at": 1793892006,
-      "close_px": 0.00928,
-      "pnl_usdt": 6.465067778936383,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "TRUTHUSDT",
       "side": "SELL",
@@ -7061,6 +7006,36 @@
       "pnl_usdt": 5.785546355923539,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "UVXYUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 22.33,
+      "qty": 8.9566,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 21.771749999999997,
+      "tf": "1h",
+      "opened_at": 1794934852,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 22.33,
+          "ts": 1794934852
+        }
+      ],
+      "entry_candle_ts": 1794934800,
+      "last_leg_candle_ts": 1794934800,
+      "dry_run": true,
+      "order_id": "PAPER-UVXYUSDT-1794934852",
+      "closed_at": 1794935921,
+      "close_px": 21.75,
+      "pnl_usdt": 5.19480519480518,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -7255,16 +7230,6 @@
       "upper": 3870.0925987661803,
       "open": 3869.59,
       "reported": false
-    },
-    {
-      "symbol": "XAUTUSDT",
-      "tf": "1m",
-      "candle_ts": 1794676620,
-      "side": "LONG",
-      "upper": 3837.564921022841,
-      "open": 3834.97,
-      "reported": true,
-      "filled": true
     },
     {
       "symbol": "XAUTUSDT",
@@ -9328,7 +9293,8 @@
       "side": "LONG",
       "upper": 0.001382,
       "open": 0.001382,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "MMTUSDT",
@@ -9337,7 +9303,8 @@
       "side": "SELL",
       "upper": 0.13834505651388485,
       "open": 0.1397,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "UVXYUSDT",
@@ -9373,6 +9340,25 @@
       "side": "SELL",
       "upper": 11.814734618228819,
       "open": 11.79,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "PAIDUSDT",
+      "tf": "15m",
+      "candle_ts": 1794935700,
+      "side": "LONG",
+      "upper": 0.001382,
+      "open": 0.001382,
+      "reported": false
+    },
+    {
+      "symbol": "HUTUSDT",
+      "tf": "15m",
+      "candle_ts": 1794935700,
+      "side": "SELL",
+      "upper": 54.9152884845827,
+      "open": 53.64,
       "reported": false
     }
   ],
