@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.9.4",
-  "updated_at": 1794952822,
+  "updated_at": 1794952856,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "MMTUSDT",
-      "tf": "15m",
-      "gap": 2.63,
-      "ts": 1794936539
-    },
-    {
-      "kind": "GAP",
-      "symbol": "BOTUSDT",
-      "tf": "15m",
-      "gap": 1.01,
-      "ts": 1794936543
-    },
     {
       "kind": "GAP",
       "symbol": "WENUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "15m",
       "gap": 2.57,
       "ts": 1794952822
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794952828
+    },
+    {
+      "kind": "SELL",
+      "symbol": "ICNTUSDT",
+      "tf": "1h",
+      "gap": 4.96,
+      "ts": 1794952856
     }
   ],
   "trades": [
@@ -1443,14 +1443,27 @@
       "px": 55.66,
       "pnl": 3.0131,
       "tf": "5m"
+    },
+    {
+      "symbol": "ICNTUSDT",
+      "side": "SELL",
+      "entry": 0.2732,
+      "tp": 0.26637,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.2732,
+      "pnl": -0.24,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1794873896,
   "realized": 31.0013,
   "closed_n": 31,
-  "open_upnl": 11.3494,
-  "equity": 1042.3507,
+  "open_upnl": 11.1094,
+  "equity": 1042.1107,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
