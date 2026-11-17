@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.9.4",
-  "updated_at": 1794947417,
+  "updated_at": 1794947433,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "BLURUSDT",
-      "tf": "1h",
-      "gap": 1.23,
-      "ts": 1794930824
-    },
-    {
-      "kind": "GAP",
-      "symbol": "TZAUSDT",
-      "tf": "1h",
-      "gap": 1.22,
-      "ts": 1794930828
-    },
     {
       "kind": "GAP",
       "symbol": "TZAUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "15m",
       "gap": 2.54,
       "ts": 1794947417
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794947424
+    },
+    {
+      "kind": "SELL",
+      "symbol": "PAIDUSDT",
+      "tf": "15m",
+      "gap": 1.5,
+      "ts": 1794947433
     }
   ],
   "trades": [
@@ -1443,14 +1443,27 @@
       "px": 22.9,
       "pnl": 2.0199,
       "tf": "4h"
+    },
+    {
+      "symbol": "BREVUSDT",
+      "side": "SELL",
+      "entry": 0.10773,
+      "tp": 0.10503675,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.10773,
+      "pnl": -0.24,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1794873896,
   "realized": -5.6141,
   "closed_n": 26,
-  "open_upnl": 10.6064,
-  "equity": 1004.9923,
+  "open_upnl": 10.3664,
+  "equity": 1004.7523,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
