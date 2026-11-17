@@ -92,76 +92,9 @@
       "last_leg_candle_ts": 1794946833,
       "dry_run": true,
       "order_id": "PAPER-UVXYUSDT-1794945652"
-    },
-    {
-      "symbol": "BREVUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.10091,
-      "qty": 1981.9641,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.09838725,
-      "tf": "4h",
-      "opened_at": 1794945700,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.10091,
-          "ts": 1794945700
-        }
-      ],
-      "entry_candle_ts": 1794945600,
-      "last_leg_candle_ts": 1794945600,
-      "dry_run": true,
-      "order_id": "PAPER-BREVUSDT-1794945700"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "SSPCUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 11.39747777624545,
-      "qty": 263.2161,
-      "margin": 150.0,
-      "leverage": 20,
-      "tp_price": 11.112540831839313,
-      "tf": "1h",
-      "opened_at": 1793889950,
-      "adds": 3,
-      "last_leg_margin": 80.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 10.777,
-          "ts": 1793889950
-        },
-        {
-          "px": 10.927,
-          "ts": 1793890971
-        },
-        {
-          "px": 11.407,
-          "ts": 1793891752
-        },
-        {
-          "px": 11.601,
-          "ts": 1793894515
-        }
-      ],
-      "entry_candle_ts": 1793889900,
-      "last_leg_candle_ts": 1793894400,
-      "dry_run": true,
-      "order_id": "PAPER-SSPCUSDT-1793889950",
-      "closed_at": 1793905590,
-      "close_px": 11.092,
-      "pnl_usdt": 80.40667827809888,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "SKDDUSDT",
       "side": "SELL",
@@ -7045,6 +6978,36 @@
       "pnl_usdt": 5.2112676056337754,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "BREVUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.10091,
+      "qty": 1981.9641,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.09838725,
+      "tf": "4h",
+      "opened_at": 1794945700,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.10091,
+          "ts": 1794945700
+        }
+      ],
+      "entry_candle_ts": 1794945600,
+      "last_leg_candle_ts": 1794945600,
+      "dry_run": true,
+      "order_id": "PAPER-BREVUSDT-1794945700",
+      "closed_at": 1794946912,
+      "close_px": 0.10576,
+      "pnl_usdt": -9.612526013279174,
+      "close_reason": "STOP",
+      "why": "STOP"
     }
   ],
   "pending": [
