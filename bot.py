@@ -35,8 +35,15 @@ SIGNALS_FILE = os.path.join(BASE_DIR, "signals.json")
 LIVE_TOPIC = os.environ.get("LIVE_TOPIC", "lbank-gap-b0b85cee29ce").strip()
 STATE_BAK = os.path.join(BASE_DIR, "bot_state.bak")
 
-BOT_VERSION = "2.9.0"
+BOT_VERSION = "2.9.1"
 CHANGELOG = {
+    "2.9.2": [
+        "۱م و ۵م فقط طلا/نقره/نفت — شت فقط ۱۵م/۱س/۴س",
+    ],
+    "2.9.1": [
+        "چارت فلت/خالی ارسال نمی‌شود",
+        "سقف دور محور Y را خراب نمی‌کند",
+    ],
     "2.9.0": [
         "HYBRID: برگشت شت‌کوین‌ها + طلا/نقره/نفت همیشه در اسکن",
         "لایو گپ فقط روی فارکس؛ سشن بسته=بدون سیگنال کالا",
@@ -612,7 +619,7 @@ def format_startup_message() -> str:
         lines.append("🎯 <b>FOCUS</b>: " + ", ".join(FOCUS_SYMBOLS or FOREX_ALWAYS) + " · شت خاموش")
     else:
         lines.append("🔥 <b>HYBRID</b>: شت‌کوین + فارکس (" + ", ".join(FOREX_ALWAYS) + ")")
-    lines.append("TF: " + ", ".join(TIMEFRAMES.keys()))
+    lines.append("TF شت: 15m/1h/4h · TF فارکس: 1m/5m/15m/1h/4h")
     lines.append("⚡ لایو گپ فارکس هر ~2ث · سشن طلا فیلتر می‌شود")
 
     if trading_enabled():
@@ -1321,7 +1328,7 @@ def detect_fake_break_watch(df: pd.DataFrame) -> str | None:
 
 
 def make_gap_chart(df: pd.DataFrame, symbol: str, tf: str, sig: dict | None = None) -> bytes | None:
-    """چارت سفید: فقط کندل واقعی + BB + خط‌روند + سقف (بدون نوار خالی/flat)."""
+    """چارت سفید فقط با کندل واقعی؛ اگر داده فلت/خراب بود هیچی نفرست."""
     try:
         import matplotlib
         matplotlib.use("Agg")
@@ -1333,25 +1340,28 @@ def make_gap_chart(df: pd.DataFrame, symbol: str, tf: str, sig: dict | None = No
             return None
 
         raw = df.copy().reset_index(drop=True)
-        # حذف کندل بدون دامنه واقعی (منبع مشکل FOXA/CLSK)
         o0 = raw["o"].astype(float)
         h0 = raw["h"].astype(float)
         l0 = raw["l"].astype(float)
         c0 = raw["c"].astype(float)
-        rng0 = (h0 - l0)
-        flat = (rng0 <= 0) | ((h0 == l0) & (o0 == c0))
-        # نسبی: دامنه خیلی کوچک نسبت به قیمت
+        rng0 = (h0 - l0).clip(lower=0)
         mid = c0.replace(0, np.nan).abs()
-        tiny = rng0 <= (mid * 0.00015)  # <0.015%
+        # فلت کامل یا دامنه بی‌معنی
+        flat = (rng0 <= 0) | ((h0 == l0) & (o0 == c0))
+        tiny = rng0 <= (mid * 0.0002)
         keep = ~(flat | tiny.fillna(False))
         plot_df = raw.loc[keep].copy().reset_index(drop=True)
-        if len(plot_df) < 25:
-            plot_df = raw.tail(60).copy().reset_index(drop=True)
-        else:
-            plot_df = plot_df.tail(70).reset_index(drop=True)
 
+        # اگر بیش از ۶۰٪ کندل‌ها فلت بودند → چارت بی‌ارزش
+        flat_ratio = 1.0 - (len(plot_df) / max(len(raw), 1))
+        if flat_ratio > 0.60 or len(plot_df) < 20:
+            log.info("CHART_SKIP %s %s flat_ratio=%.0f%% n_keep=%d", symbol, tf, flat_ratio * 100, len(plot_df))
+            return None
+
+        plot_df = plot_df.tail(60).reset_index(drop=True)
+        # BB روی همین داده تمیز
         s = plot_df["c"].astype(float).rolling(BB_PERIOD).mean()
-        sd = plot_df["c"].astype(float).rolling(BB_PERIOD).std(ddof=1)
+        sd = plot_df["c"].astype(float).rolling(BB_PERIOD).std(ddof=0)
         plot_df["sma"] = s
         plot_df["upper"] = s + BB_STD * sd
         plot_df["lower"] = s - BB_STD * sd
@@ -1361,80 +1371,77 @@ def make_gap_chart(df: pd.DataFrame, symbol: str, tf: str, sig: dict | None = No
         l = plot_df["l"].to_numpy(float)
         c = plot_df["c"].to_numpy(float)
         n = len(plot_df)
-        xs = np.arange(n)
+        if n < 15:
+            return None
+
+        # اگر دامنه قیمت کل نمودار خیلی کوچک است (همه تقریباً یک خط)
+        y_min_c, y_max_c = float(np.nanmin(l)), float(np.nanmax(h))
+        span = y_max_c - y_min_c
+        ref = abs(float(c[-1])) or 1.0
+        if span / ref < 0.0015:  # کمتر از ۰.۱۵٪
+            log.info("CHART_SKIP %s %s span_too_small=%.4f%%", symbol, tf, span / ref * 100)
+            return None
+
         entry = float((sig or {}).get("fut_last") or (sig or {}).get("open") or c[-1])
         ub = float(plot_df["upper"].iloc[-1]) if plot_df["upper"].notna().iloc[-1] else None
         gap_pct = ((entry - ub) / entry * 100.0) if ub and entry > 0 else None
 
-        fig, ax = plt.subplots(figsize=(11, 5.4), dpi=130)
+        fig, ax = plt.subplots(figsize=(11, 5.2), dpi=130)
         fig.patch.set_facecolor("#ffffff")
         ax.set_facecolor("#ffffff")
-        yspan = float(np.nanmax(h) - np.nanmin(l)) or abs(entry) * 0.02
-        body_min = yspan * 0.004
+        yspan = span or abs(entry) * 0.02
+        body_min = yspan * 0.006
 
         for i in range(n):
             up = c[i] >= o[i]
             col = "#16a34a" if up else "#dc2626"
-            ax.vlines(i, l[i], h[i], colors=col, linewidth=1.15, zorder=2)
+            ax.vlines(i, l[i], h[i], colors=col, linewidth=1.1, zorder=2)
             y0, y1 = min(o[i], c[i]), max(o[i], c[i])
             if y1 - y0 < body_min:
                 y1 = y0 + body_min
-            ax.add_patch(Rectangle((i - 0.32, y0), 0.64, y1 - y0, facecolor=col, edgecolor=col, zorder=3))
+            ax.add_patch(Rectangle((i - 0.32, y0), 0.64, y1 - y0, facecolor=col, edgecolor=col, alpha=0.9, zorder=3))
 
-        ax.plot(xs, plot_df["upper"], color="#7c3aed", lw=1.05, alpha=0.8, zorder=1)
-        ax.plot(xs, plot_df["lower"], color="#7c3aed", lw=1.05, alpha=0.55, zorder=1)
-        ax.fill_between(xs, plot_df["lower"], plot_df["upper"], color="#7c3aed", alpha=0.07, zorder=0)
+        # BB
+        ax.plot(range(n), plot_df["upper"].to_numpy(float), color="#7c3aed", lw=1.0, alpha=0.85, label="UB")
+        ax.plot(range(n), plot_df["sma"].to_numpy(float), color="#64748b", lw=0.9, alpha=0.75)
+        ax.plot(range(n), plot_df["lower"].to_numpy(float), color="#0891b2", lw=1.0, alpha=0.85)
 
-        def pivots(arr, high=True, sw=3):
-            out = []
-            for i in range(sw, len(arr) - sw):
-                v = arr[i]
-                if high:
-                    if all(arr[i - k] < v for k in range(1, sw + 1)) and all(arr[i + k] <= v for k in range(1, sw + 1)):
-                        out.append(i)
-                else:
-                    if all(arr[i - k] > v for k in range(1, sw + 1)) and all(arr[i + k] >= v for k in range(1, sw + 1)):
-                        out.append(i)
-            return out
-
-        ph, pl_ = pivots(h, True), pivots(l, False)
-        if len(ph) >= 2:
-            a, b = ph[-2], ph[-1]
-            if b - a >= 2:
-                slope = (h[b] - h[a]) / (b - a)
-                y_end = h[b] + slope * (n - 1 - b)
-                ax.plot([a, n - 1], [h[a], y_end], color="#ea580c", lw=2.0, zorder=4)
-                ax.scatter([a, b], [h[a], h[b]], s=32, color="#ea580c", zorder=5, edgecolors="#9a3412", linewidths=0.5)
-        if len(pl_) >= 2:
-            a, b = pl_[-2], pl_[-1]
-            if b - a >= 2:
-                slope = (l[b] - l[a]) / (b - a)
-                y_end = l[b] + slope * (n - 1 - b)
-                ax.plot([a, n - 1], [l[a], y_end], color="#0284c7", lw=2.0, zorder=4)
-                ax.scatter([a, b], [l[a], l[b]], s=32, color="#0284c7", zorder=5, edgecolors="#075985", linewidths=0.5)
-
+        # سقف‌ها فقط اگر نزدیک قیمت باشند (وگرنه محور Y خراب می‌شود)
         try:
-            levels = find_resistance_levels(symbol, entry, tf if tf in ("15m", "1h", "4h") else "1h")
+            levels = find_resistance_levels(symbol, entry, tf if tf in ("15m", "1h", "4h") else "15m")
         except Exception:
             levels = []
-        for j, lv in enumerate(levels[:3]):
-            ax.axhline(lv, color="#d97706", ls="--", lw=1.15, alpha=0.9, zorder=3)
+        near_levels = []
+        for lv in levels:
+            if entry > 0 and 0 < (lv - entry) / entry * 100.0 <= 6.0:
+                near_levels.append(lv)
+        for j, lv in enumerate(near_levels[:3]):
+            ax.axhline(lv, color="#d97706", ls="--", lw=1.0, alpha=0.85, zorder=3)
             dist = (lv - entry) / entry * 100 if entry else 0
             ax.text(n - 1, lv, f"  سقف{j+1} {lv:.6g} ({dist:+.1f}%)", color="#b45309", fontsize=8, va="bottom", zorder=6)
 
         if ub and ub == ub:
-            ax.axhline(ub, color="#6d28d9", ls=":", lw=1.15, alpha=0.95)
-            ax.text(0.2, ub, f"UB {ub:.6g}", color="#6d28d9", fontsize=8, va="bottom")
-        ax.axhline(entry, color="#0369a1", ls=":", lw=0.95, alpha=0.8)
+            ax.axhline(ub, color="#6d28d9", ls=":", lw=1.2, alpha=0.95)
+            ax.text(0.5, ub, f"UB {ub:.6g}", color="#6d28d9", fontsize=8, va="bottom")
+        ax.axhline(entry, color="#0369a1", ls=":", lw=1.0, alpha=0.85)
         ax.text(n - 1, entry, f"  px {entry:.6g}", color="#0369a1", fontsize=8, va="top")
 
-        title = f"{symbol} · {tf} · روند+سقف"
-        if gap_pct is not None and gap_pct > 0:
+        # محور Y فقط بر اساس کندل + کمی حاشیه (نه سقف‌های دور)
+        pad = span * 0.12 if span > 0 else ref * 0.01
+        y0 = y_min_c - pad
+        y1 = y_max_c + pad
+        if near_levels:
+            y1 = max(y1, max(near_levels) + pad * 0.5)
+        if ub and ub == ub:
+            y0 = min(y0, ub - pad * 0.3)
+            y1 = max(y1, ub + pad * 0.3)
+        ax.set_ylim(y0, y1)
+
+        title = f"{symbol} · {tf}"
+        if gap_pct is not None:
             title += f" · gap≈{gap_pct:.2f}%"
-        elif gap_pct is not None:
-            title += f" · زیر UB ({gap_pct:.2f}%)"
         ax.set_title(title, color="#0f172a", fontsize=11, loc="left")
-        ax.set_xlim(-1, n + 3)
+        ax.set_xlim(-1, n + 2)
         ax.tick_params(colors="#334155", labelsize=8)
         ax.grid(color="#94a3b8", alpha=0.25)
         for s_ in ax.spines.values():
@@ -2160,6 +2167,9 @@ async def pre_alert_cycle(tfs: list | None = None) -> None:
 
     async def scan_one(symbol: str, tf: str):
         if is_blacklisted(symbol):
+            return
+        allowed = FOREX_TIMEFRAMES if is_session_symbol(symbol) else SHIT_TIMEFRAMES
+        if tf not in allowed:
             return
         # هنوز داخل پنجره قبل از کندل؟
         now = int(time.time())
