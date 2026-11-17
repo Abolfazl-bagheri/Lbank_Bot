@@ -124,24 +124,28 @@
       "symbol": "HUTUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 55.66,
-      "qty": 3.5932,
-      "margin": 10.0,
+      "entry": 56.17097850509287,
+      "qty": 10.6816,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 54.268499999999996,
+      "tp_price": 54.76670404246555,
       "tf": "15m",
       "opened_at": 1794953774,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 55.66,
           "ts": 1794953774
+        },
+        {
+          "px": 56.43,
+          "ts": 1794954673
         }
       ],
       "entry_candle_ts": 1794953700,
-      "last_leg_candle_ts": 1794953700,
+      "last_leg_candle_ts": 1794954600,
       "dry_run": true,
       "order_id": "PAPER-HUTUSDT-1794953774"
     }
