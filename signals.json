@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
-  "version": "2.9.1",
-  "updated_at": 1794917629,
+  "version": "2.9.4",
+  "updated_at": 1794917711,
   "signals": [
-    {
-      "kind": "HEARTBEAT",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794901422
-    },
     {
       "kind": "GAP",
       "symbol": "XAUTUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "1m",
       "gap": -0.1,
       "ts": 1794917629
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794917711
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.2388,
-      "pnl": 7.1794,
+      "px": 0.2397,
+      "pnl": 6.4535,
       "tf": "1h"
     },
     {
@@ -1427,8 +1427,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.007359,
-      "pnl": 2.203,
+      "px": 0.007361,
+      "pnl": 2.1493,
       "tf": "4h"
     },
     {
@@ -1440,8 +1440,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 1.1976,
-      "pnl": -0.5411,
+      "px": 1.1941,
+      "pnl": 0.0443,
       "tf": "4h"
     }
   ],
@@ -1449,8 +1449,8 @@
   "session_start": 1794873896,
   "realized": 71.6129,
   "closed_n": 6,
-  "open_upnl": 8.8413,
-  "equity": 1080.4542,
+  "open_upnl": 8.6471,
+  "equity": 1080.26,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
