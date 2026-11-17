@@ -4,24 +4,30 @@
       "symbol": "PREDICTUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 1.1958,
-      "qty": 167.252,
-      "margin": 10.0,
+      "entry": 1.2025807214281847,
+      "qty": 498.927,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 1.165905,
+      "tp_price": 1.17251620339248,
       "tf": "4h",
       "opened_at": 1794916936,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        1.2108
+      ],
       "steps": [
         {
           "px": 1.1958,
           "ts": 1794916936
+        },
+        {
+          "px": 1.206,
+          "ts": 1794918053
         }
       ],
       "entry_candle_ts": 1794916800,
-      "last_leg_candle_ts": 1794916800,
+      "last_leg_candle_ts": 1794918053,
       "dry_run": true,
       "order_id": "PAPER-PREDICTUSDT-1794916936"
     }
