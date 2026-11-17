@@ -36,14 +36,14 @@
       "side": "SELL",
       "status": "open",
       "entry": 0.00086,
-      "qty": 697674.4186,
-      "margin": 30.0,
+      "qty": 1627906.9767,
+      "margin": 70.0,
       "leverage": 20,
       "tp_price": 0.0008384999999999999,
       "tf": "15m",
       "opened_at": 1794922263,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [],
       "steps": [
         {
@@ -53,10 +53,14 @@
         {
           "px": 0.00086,
           "ts": 1794923174
+        },
+        {
+          "px": 0.00086,
+          "ts": 1794924975
         }
       ],
       "entry_candle_ts": 1794922200,
-      "last_leg_candle_ts": 1794923100,
+      "last_leg_candle_ts": 1794924900,
       "dry_run": true,
       "order_id": "PAPER-FONEUSDT-1794922263"
     }
@@ -8882,6 +8886,15 @@
       "upper": 0.031378271794623394,
       "open": 0.0319,
       "reported": false
+    },
+    {
+      "symbol": "PROSUSDT",
+      "tf": "15m",
+      "candle_ts": 1794924900,
+      "side": "SELL",
+      "upper": 0.5095799001078294,
+      "open": 0.517,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -9087,7 +9100,6 @@
     "ARGUSDT": 1794367944,
     "SXTUSDT": 1794369881,
     "NIULAIUSDT": 1794369936,
-    "KNTQUSDT": 1794369994,
     "SOYBEANUSDT": 1794376183,
     "MURATAUSDT": 1794377801,
     "UBIKUSDT": 1794387803,
