@@ -80,6 +80,31 @@
       "last_leg_candle_ts": 1794926700,
       "dry_run": true,
       "order_id": "PAPER-FONEUSDT-1794926767"
+    },
+    {
+      "symbol": "CYPHUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 2.146,
+      "qty": 93.1966,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 2.0923499999999997,
+      "tf": "1h",
+      "opened_at": 1794927657,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 2.146,
+          "ts": 1794927657
+        }
+      ],
+      "entry_candle_ts": 1794927600,
+      "last_leg_candle_ts": 1794927600,
+      "dry_run": true,
+      "order_id": "PAPER-CYPHUSDT-1794927657"
     }
   ],
   "trade_history": [
@@ -8935,7 +8960,8 @@
       "side": "SELL",
       "upper": 0.20001428884424655,
       "open": 0.2043,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "FONEUSDT",
@@ -8944,7 +8970,8 @@
       "side": "SELL",
       "upper": 0.0008195609903370082,
       "open": 0.000814,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CRCLUSDT",
@@ -8965,6 +8992,33 @@
       "open": 57.2,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "FONEUSDT",
+      "tf": "15m",
+      "candle_ts": 1794926700,
+      "side": "SELL",
+      "upper": 0.000814,
+      "open": 0.000814,
+      "reported": false
+    },
+    {
+      "symbol": "CRCLUSDT",
+      "tf": "5m",
+      "candle_ts": 1794927300,
+      "side": "LONG",
+      "upper": 58.25138053014912,
+      "open": 56.7,
+      "reported": false
+    },
+    {
+      "symbol": "CATEUSDT",
+      "tf": "15m",
+      "candle_ts": 1794927600,
+      "side": "SELL",
+      "upper": 0.02154533393140622,
+      "open": 0.02173,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -9215,7 +9269,7 @@
     "BIANRENSHENGUSDT": 1794960417,
     "LIGHT1USDT": 1794962812
   },
-  "last_trade_report_ts": 1794926183,
+  "last_trade_report_ts": 1794927388,
   "last_known_version": "2.9.4",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
