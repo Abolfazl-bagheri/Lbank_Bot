@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.9.1",
-  "updated_at": 1794915371,
+  "updated_at": 1794915430,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "CRCLUSDT",
-      "tf": "1m",
-      "gap": 0.06,
-      "ts": 1794879506
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794879701
-    },
     {
       "kind": "HEARTBEAT",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1794915371
+    },
+    {
+      "kind": "HEARTBEAT",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794915373
+    },
+    {
+      "kind": "GAP",
+      "symbol": "CRCLUSDT",
+      "tf": "5m",
+      "gap": 0.21,
+      "ts": 1794915430
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.01898,
-      "pnl": -0.24,
+      "px": 0.01832,
+      "pnl": 6.7147,
       "tf": "5m"
     }
   ],
@@ -1423,8 +1423,8 @@
   "session_start": 1794873896,
   "realized": 50.4423,
   "closed_n": 4,
-  "open_upnl": -0.24,
-  "equity": 1050.2023,
+  "open_upnl": 6.7147,
+  "equity": 1057.157,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
