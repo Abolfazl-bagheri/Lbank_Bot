@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.9.4",
-  "updated_at": 1794931309,
+  "updated_at": 1794931318,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794922606
-    },
-    {
-      "kind": "SELL",
-      "symbol": "XAUTUSDT",
-      "tf": "5m",
-      "gap": 0.08,
-      "ts": 1794922806
-    },
     {
       "kind": "SELL",
       "symbol": "SILVERUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "4h",
       "gap": 5.11,
       "ts": 1794931309
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794931313
+    },
+    {
+      "kind": "SELL",
+      "symbol": "BLURUSDT",
+      "tf": "1h",
+      "gap": 1.77,
+      "ts": 1794931318
     }
   ],
   "trades": [
@@ -1495,14 +1495,27 @@
       "px": 0.09783,
       "pnl": -0.24,
       "tf": "1h"
+    },
+    {
+      "symbol": "CATEUSDT",
+      "side": "SELL",
+      "entry": 0.022,
+      "tp": 0.021449999999999997,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.022,
+      "pnl": -0.24,
+      "tf": "4h"
     }
   ],
   "start": 1000.0,
   "session_start": 1794873896,
   "realized": -59.8077,
   "closed_n": 16,
-  "open_upnl": 23.2347,
-  "equity": 963.427,
+  "open_upnl": 22.9947,
+  "equity": 963.187,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
