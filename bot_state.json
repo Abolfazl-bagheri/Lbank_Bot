@@ -26,37 +26,6 @@
       "order_id": "PAPER-NESUSDT-1794925835"
     },
     {
-      "symbol": "CYPHUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 2.1171405724960137,
-      "qty": 283.4011,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 2.0642120581836134,
-      "tf": "1h",
-      "opened_at": 1794927657,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        2.111
-      ],
-      "steps": [
-        {
-          "px": 2.146,
-          "ts": 1794927657
-        },
-        {
-          "px": 2.103,
-          "ts": 1794928234
-        }
-      ],
-      "entry_candle_ts": 1794927600,
-      "last_leg_candle_ts": 1794928234,
-      "dry_run": true,
-      "order_id": "PAPER-CYPHUSDT-1794927657"
-    },
-    {
       "symbol": "GOLDUSDT",
       "side": "SELL",
       "status": "open",
@@ -145,40 +114,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "LYNUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.021530410489046158,
-      "qty": 27867.559699999998,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.020992150226820005,
-      "tf": "15m",
-      "opened_at": 1793888134,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.02118,
-          "ts": 1793888134
-        },
-        {
-          "px": 0.02171,
-          "ts": 1793889058
-        }
-      ],
-      "entry_candle_ts": 1793888100,
-      "last_leg_candle_ts": 1793889000,
-      "dry_run": true,
-      "order_id": "PAPER-LYNUSDT-1793888134",
-      "closed_at": 1793891313,
-      "close_px": 0.0209,
-      "pnl_usdt": 17.56800194869172,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "FOGOUSDT",
       "side": "SELL",
@@ -7088,6 +7023,42 @@
       "closed_at": 1794932774,
       "close_px": 1.1627,
       "pnl_usdt": 19.897568978565857,
+      "close_reason": "TP50",
+      "why": "TP50"
+    },
+    {
+      "symbol": "CYPHUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 2.1171405724960137,
+      "qty": 283.4011,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 2.0642120581836134,
+      "tf": "1h",
+      "opened_at": 1794927657,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        2.111
+      ],
+      "steps": [
+        {
+          "px": 2.146,
+          "ts": 1794927657
+        },
+        {
+          "px": 2.103,
+          "ts": 1794928234
+        }
+      ],
+      "entry_candle_ts": 1794927600,
+      "last_leg_candle_ts": 1794928234,
+      "dry_run": true,
+      "order_id": "PAPER-CYPHUSDT-1794927657",
+      "closed_at": 1794932807,
+      "close_px": 2.054,
+      "pnl_usdt": 17.894108681193714,
       "close_reason": "TP50",
       "why": "TP50"
     }
