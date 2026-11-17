@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.9.1",
-  "updated_at": 1794916912,
+  "updated_at": 1794916923,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "CATUSDT",
-      "tf": "1m",
-      "gap": 39602739626.03,
-      "ts": 1794900437
-    },
-    {
-      "kind": "SELL",
-      "symbol": "TOSHIUSDT",
-      "tf": "1m",
-      "gap": 1.0,
-      "ts": 1794900444
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "1h",
       "gap": 2.98,
       "ts": 1794916912
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794916917
+    },
+    {
+      "kind": "SELL",
+      "symbol": "CLAUDIAUSDT",
+      "tf": "4h",
+      "gap": 5.38,
+      "ts": 1794916923
     }
   ],
   "trades": [
@@ -1417,14 +1417,27 @@
       "px": 0.1333,
       "pnl": -0.24,
       "tf": "15m"
+    },
+    {
+      "symbol": "SOONUSDT",
+      "side": "SELL",
+      "entry": 0.248,
+      "tp": 0.2418,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.248,
+      "pnl": -0.24,
+      "tf": "1h"
     }
   ],
   "start": 1000.0,
   "session_start": 1794873896,
   "realized": 59.6099,
   "closed_n": 5,
-  "open_upnl": -0.24,
-  "equity": 1059.3699,
+  "open_upnl": -0.48,
+  "equity": 1059.1299,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
