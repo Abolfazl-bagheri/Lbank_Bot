@@ -8694,7 +8694,8 @@
       "side": "SELL",
       "upper": 0.07364620747351452,
       "open": 0.0764,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "FONEUSDT",
@@ -8703,7 +8704,8 @@
       "side": "SELL",
       "upper": 0.0008337379320415697,
       "open": 0.000814,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "GOLDUSDT",
@@ -8742,7 +8744,8 @@
       "side": "LONG",
       "upper": 3860.1565995972082,
       "open": 3829.15,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "SILVERUSDT",
@@ -8751,7 +8754,8 @@
       "side": "LONG",
       "upper": 48.06679629047899,
       "open": 47.34,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "GOLDUSDT",
@@ -8760,7 +8764,8 @@
       "side": "LONG",
       "upper": 3879.181818731479,
       "open": 3846.24,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "XAUTUSDT",
@@ -8769,7 +8774,8 @@
       "side": "LONG",
       "upper": 3859.6969832282157,
       "open": 3829.15,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "SILVERUSDT",
@@ -8778,7 +8784,8 @@
       "side": "LONG",
       "upper": 48.061355625360946,
       "open": 47.34,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "GOLDUSDT",
@@ -8787,7 +8794,8 @@
       "side": "LONG",
       "upper": 3878.738019457756,
       "open": 3846.24,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "SILVERUSDT",
@@ -8796,7 +8804,8 @@
       "side": "LONG",
       "upper": 48.05473156529812,
       "open": 47.34,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "BREVUSDT",
@@ -8814,6 +8823,33 @@
       "side": "LONG",
       "upper": 0.05884891003159938,
       "open": 0.05838,
+      "reported": false
+    },
+    {
+      "symbol": "FONEUSDT",
+      "tf": "15m",
+      "candle_ts": 1794923100,
+      "side": "SELL",
+      "upper": 0.0008269223906504907,
+      "open": 0.000814,
+      "reported": false
+    },
+    {
+      "symbol": "AKEUSDT",
+      "tf": "15m",
+      "candle_ts": 1794923100,
+      "side": "SELL",
+      "upper": 0.011328859575011679,
+      "open": 0.011444,
+      "reported": false
+    },
+    {
+      "symbol": "XAUTUSDT",
+      "tf": "15m",
+      "candle_ts": 1794923100,
+      "side": "LONG",
+      "upper": 3858.398125758131,
+      "open": 3835.58,
       "reported": false
     }
   ],
@@ -9067,7 +9103,7 @@
     "BIANRENSHENGUSDT": 1794960417,
     "LIGHT1USDT": 1794962812
   },
-  "last_trade_report_ts": 1794922001,
+  "last_trade_report_ts": 1794923384,
   "last_known_version": "2.9.4",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
