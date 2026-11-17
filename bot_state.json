@@ -7155,16 +7155,6 @@
     {
       "symbol": "XAUTUSDT",
       "tf": "1m",
-      "candle_ts": 1794650520,
-      "side": "LONG",
-      "upper": 3870.335888063138,
-      "open": 3869.58,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "XAUTUSDT",
-      "tf": "1m",
       "candle_ts": 1794651240,
       "side": "LONG",
       "upper": 3872.5586276314634,
@@ -8205,7 +8195,8 @@
       "side": "SELL",
       "upper": 1.1281396624708386,
       "open": 1.1438,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "HAEDALUSDT",
@@ -8224,7 +8215,8 @@
       "side": "SELL",
       "upper": 0.020913224100222234,
       "open": 0.02121,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "PAIDUSDT",
@@ -8300,6 +8292,35 @@
       "symbol": "CATUSDT",
       "tf": "1m",
       "candle_ts": 1794909420,
+      "side": "LONG",
+      "upper": 566.8000015285822,
+      "open": 566.8,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "PREDICTUSDT",
+      "tf": "1h",
+      "candle_ts": 1794909600,
+      "side": "SELL",
+      "upper": 1.1715278849093005,
+      "open": 1.1809,
+      "reported": false
+    },
+    {
+      "symbol": "CARDSUSDT",
+      "tf": "1m",
+      "candle_ts": 1794910260,
+      "side": "LONG",
+      "upper": 0.16544686814609427,
+      "open": 0.16487,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "CATUSDT",
+      "tf": "1m",
+      "candle_ts": 1794910320,
       "side": "LONG",
       "upper": 566.8000015285822,
       "open": 566.8,
@@ -8556,7 +8577,7 @@
     "HOTUSDT": 1794946022,
     "B3USDT": 1794950633
   },
-  "last_trade_report_ts": 1794908589,
+  "last_trade_report_ts": 1794910041,
   "last_known_version": "2.9.0",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
