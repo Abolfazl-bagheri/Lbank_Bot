@@ -8660,7 +8660,8 @@
       "side": "SELL",
       "upper": 0.0634054835751057,
       "open": 0.0657,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "COHRUSDT",
@@ -8669,7 +8670,8 @@
       "side": "SELL",
       "upper": 218.9711119305959,
       "open": 222.69,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "BREVUSDT",
@@ -8818,7 +8820,8 @@
       "side": "SELL",
       "upper": 0.07852143371147044,
       "open": 0.08,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "POWERUSDT",
@@ -8827,7 +8830,8 @@
       "side": "LONG",
       "upper": 0.05884891003159938,
       "open": 0.05838,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "FONEUSDT",
@@ -8836,7 +8840,8 @@
       "side": "SELL",
       "upper": 0.0008269223906504907,
       "open": 0.000814,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "AKEUSDT",
@@ -8845,7 +8850,8 @@
       "side": "SELL",
       "upper": 0.011328859575011679,
       "open": 0.011444,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "XAUTUSDT",
@@ -8854,7 +8860,8 @@
       "side": "LONG",
       "upper": 3858.398125758131,
       "open": 3835.58,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "BREVUSDT",
@@ -8872,6 +8879,33 @@
       "side": "SELL",
       "upper": 2.008793366380494,
       "open": 2.026,
+      "reported": false
+    },
+    {
+      "symbol": "BREVUSDT",
+      "tf": "1h",
+      "candle_ts": 1794924000,
+      "side": "SELL",
+      "upper": 0.07701295403683696,
+      "open": 0.0844,
+      "reported": false
+    },
+    {
+      "symbol": "LAUSDT",
+      "tf": "1h",
+      "candle_ts": 1794924000,
+      "side": "SELL",
+      "upper": 0.04317211560594144,
+      "open": 0.04362,
+      "reported": false
+    },
+    {
+      "symbol": "ZKPUSDT",
+      "tf": "1h",
+      "candle_ts": 1794924000,
+      "side": "SELL",
+      "upper": 0.031378271794623394,
+      "open": 0.0319,
       "reported": false
     }
   ],
@@ -9125,7 +9159,7 @@
     "BIANRENSHENGUSDT": 1794960417,
     "LIGHT1USDT": 1794962812
   },
-  "last_trade_report_ts": 1794923384,
+  "last_trade_report_ts": 1794924361,
   "last_known_version": "2.9.4",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
