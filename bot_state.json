@@ -94,78 +94,9 @@
       "last_leg_candle_ts": 1794951000,
       "dry_run": true,
       "order_id": "PAPER-CRCLUSDT-1794950431"
-    },
-    {
-      "symbol": "CRDOUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 131.29,
-      "qty": 1.5233,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 128.00775,
-      "tf": "15m",
-      "opened_at": 1794951053,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 131.29,
-          "ts": 1794951053
-        }
-      ],
-      "entry_candle_ts": 1794951000,
-      "last_leg_candle_ts": 1794951000,
-      "dry_run": true,
-      "order_id": "PAPER-CRDOUSDT-1794951053"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "SQQQUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 48.86526689394446,
-      "qty": 61.393299999999996,
-      "margin": 150.0,
-      "leverage": 20,
-      "tp_price": 47.643635221595844,
-      "tf": "1h",
-      "opened_at": 1793889928,
-      "adds": 3,
-      "last_leg_margin": 80.0,
-      "used_res_levels": [
-        50.5
-      ],
-      "steps": [
-        {
-          "px": 45.31,
-          "ts": 1793889928
-        },
-        {
-          "px": 46.0,
-          "ts": 1793890858
-        },
-        {
-          "px": 48.56,
-          "ts": 1793894605
-        },
-        {
-          "px": 50.3,
-          "ts": 1793916339
-        }
-      ],
-      "entry_candle_ts": 1793889900,
-      "last_leg_candle_ts": 1793916339,
-      "dry_run": true,
-      "order_id": "PAPER-SQQQUSDT-1793889928",
-      "closed_at": 1793926436,
-      "close_px": 48.74,
-      "pnl_usdt": 7.690548025635337,
-      "close_reason": "NIGHT_RESET",
-      "why": "NIGHT_RESET"
-    },
     {
       "symbol": "UVXYUSDT",
       "side": "SELL",
@@ -7031,6 +6962,36 @@
       "pnl_usdt": 5.128205128205124,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "CRDOUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 131.29,
+      "qty": 1.5233,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 128.00775,
+      "tf": "15m",
+      "opened_at": 1794951053,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 131.29,
+          "ts": 1794951053
+        }
+      ],
+      "entry_candle_ts": 1794951000,
+      "last_leg_candle_ts": 1794951000,
+      "dry_run": true,
+      "order_id": "PAPER-CRDOUSDT-1794951053",
+      "closed_at": 1794952244,
+      "close_px": 127.83,
+      "pnl_usdt": 5.270774621067856,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -9278,7 +9239,8 @@
       "side": "SELL",
       "upper": 219.40344573474127,
       "open": 222.0,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "MVLLUSDT",
@@ -9287,7 +9249,8 @@
       "side": "SELL",
       "upper": 9.913584743334491,
       "open": 10.16,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ICNTUSDT",
@@ -9296,7 +9259,8 @@
       "side": "SELL",
       "upper": 0.25614848756767794,
       "open": 0.2609,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "PAIDUSDT",
@@ -9305,7 +9269,8 @@
       "side": "LONG",
       "upper": 0.001382,
       "open": 0.001382,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "COHRUSDT",
@@ -9314,7 +9279,8 @@
       "side": "SELL",
       "upper": 218.39533802810783,
       "open": 221.27,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CRDOUSDT",
@@ -9323,7 +9289,8 @@
       "side": "SELL",
       "upper": 128.64760058147215,
       "open": 131.11,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ZORAUSDT",
@@ -9332,7 +9299,8 @@
       "side": "SELL",
       "upper": 0.004731135868764761,
       "open": 0.00478,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "LITEUSDT",
@@ -9341,7 +9309,8 @@
       "side": "SELL",
       "upper": 581.7339682267341,
       "open": 589.44,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CSOPSKHYNIX2LUSDT",
@@ -9350,7 +9319,8 @@
       "side": "SELL",
       "upper": 1.7332030666452032,
       "open": 1.763,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "SOXLUSDT",
@@ -9359,7 +9329,8 @@
       "side": "SELL",
       "upper": 51.401080037630265,
       "open": 52.17,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CIENUSDT",
@@ -9368,7 +9339,8 @@
       "side": "SELL",
       "upper": 268.5984748258951,
       "open": 271.3,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "NVDLUSDT",
@@ -9377,7 +9349,8 @@
       "side": "SELL",
       "upper": 16.97840655327512,
       "open": 17.44,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "NBISUSDT",
@@ -9386,7 +9359,8 @@
       "side": "SELL",
       "upper": 112.12990894551314,
       "open": 114.19,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "MRVLUSDT",
@@ -9395,7 +9369,8 @@
       "side": "SELL",
       "upper": 152.99146120789894,
       "open": 154.94,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CRWVUSDT",
@@ -9404,7 +9379,8 @@
       "side": "SELL",
       "upper": 51.94145748943016,
       "open": 52.6,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CRCLUSDT",
@@ -9413,7 +9389,8 @@
       "side": "SELL",
       "upper": 55.80101290652365,
       "open": 55.93,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CRCLUSDT",
@@ -9444,6 +9421,15 @@
       "open": 47.68,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "PAIDUSDT",
+      "tf": "15m",
+      "candle_ts": 1794951900,
+      "side": "LONG",
+      "upper": 0.001382,
+      "open": 0.001382,
+      "reported": false
     }
   ],
   "paper_days": [
