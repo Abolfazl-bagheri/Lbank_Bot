@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.9.4",
-  "updated_at": 1794953773,
+  "updated_at": 1794954013,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794937277
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794937311
-    },
     {
       "kind": "GAP",
       "symbol": "WENUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "15m",
       "gap": 2.38,
       "ts": 1794953773
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794953780
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794954013
     }
   ],
   "trades": [
@@ -1456,14 +1456,27 @@
       "px": 0.277,
       "pnl": -3.0218,
       "tf": "15m"
+    },
+    {
+      "symbol": "HUTUSDT",
+      "side": "SELL",
+      "entry": 55.66,
+      "tp": 54.268499999999996,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 55.66,
+      "pnl": -0.24,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1794873896,
   "realized": 31.0013,
   "closed_n": 31,
-  "open_upnl": 8.3213,
-  "equity": 1039.3226,
+  "open_upnl": 8.0813,
+  "equity": 1039.0826,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
