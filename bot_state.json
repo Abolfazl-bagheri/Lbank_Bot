@@ -49,6 +49,31 @@
       "last_leg_candle_ts": 1794916800,
       "dry_run": true,
       "order_id": "PAPER-SOONUSDT-1794916914"
+    },
+    {
+      "symbol": "CLAUDIAUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.00745,
+      "qty": 26845.6376,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.00726375,
+      "tf": "4h",
+      "opened_at": 1794916925,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.00745,
+          "ts": 1794916925
+        }
+      ],
+      "entry_candle_ts": 1794916800,
+      "last_leg_candle_ts": 1794916800,
+      "dry_run": true,
+      "order_id": "PAPER-CLAUDIAUSDT-1794916925"
     }
   ],
   "trade_history": [
@@ -8502,6 +8527,15 @@
       "side": "SELL",
       "upper": 0.12743316310578326,
       "open": 0.135,
+      "reported": false
+    },
+    {
+      "symbol": "SOONUSDT",
+      "tf": "1h",
+      "candle_ts": 1794916800,
+      "side": "SELL",
+      "upper": 0.24061639773591106,
+      "open": 0.2475,
       "reported": false
     }
   ],
