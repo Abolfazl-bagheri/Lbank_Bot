@@ -30,64 +30,9 @@
       "last_leg_candle_ts": 1794918053,
       "dry_run": true,
       "order_id": "PAPER-PREDICTUSDT-1794916936"
-    },
-    {
-      "symbol": "BREVUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.0657,
-      "qty": 3044.14,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.06405749999999999,
-      "tf": "15m",
-      "opened_at": 1794920424,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.0657,
-          "ts": 1794920424
-        }
-      ],
-      "entry_candle_ts": 1794920400,
-      "last_leg_candle_ts": 1794920400,
-      "dry_run": true,
-      "order_id": "PAPER-BREVUSDT-1794920424"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "ICNTUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.2461,
-      "qty": 812.6778,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.2399475,
-      "tf": "15m",
-      "opened_at": 1793863105,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.2461,
-          "ts": 1793863105
-        }
-      ],
-      "entry_candle_ts": 1793862900,
-      "last_leg_candle_ts": 1793862900,
-      "dry_run": true,
-      "order_id": "PAPER-ICNTUSDT-1793863105",
-      "closed_at": 1793864103,
-      "close_px": 0.2329,
-      "pnl_usdt": 10.72734660707031,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "MAGMAUSDT",
       "side": "SELL",
@@ -7022,6 +6967,36 @@
       "pnl_usdt": 8.83221476510068,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "BREVUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.0657,
+      "qty": 3044.14,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.06405749999999999,
+      "tf": "15m",
+      "opened_at": 1794920424,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.0657,
+          "ts": 1794920424
+        }
+      ],
+      "entry_candle_ts": 1794920400,
+      "last_leg_candle_ts": 1794920400,
+      "dry_run": true,
+      "order_id": "PAPER-BREVUSDT-1794920424",
+      "closed_at": 1794921049,
+      "close_px": 0.0683,
+      "pnl_usdt": -7.914764079147658,
+      "close_reason": "STOP",
+      "why": "STOP"
     }
   ],
   "pending": [
@@ -8889,7 +8864,7 @@
     "BIANRENSHENGUSDT": 1794960417,
     "LIGHT1USDT": 1794962812
   },
-  "last_trade_report_ts": 1794920153,
+  "last_trade_report_ts": 1794921074,
   "last_known_version": "2.9.4",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
