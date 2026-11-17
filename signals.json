@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.9.4",
-  "updated_at": 1794951319,
+  "updated_at": 1794951328,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "CLANKERUSDT",
-      "tf": "15m",
-      "gap": 1.05,
-      "ts": 1794934913
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794935214
-    },
     {
       "kind": "HEARTBEAT",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "5m",
       "gap": 0.2,
       "ts": 1794951319
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794951323
+    },
+    {
+      "kind": "SELL",
+      "symbol": "SILVERUSDT",
+      "tf": "5m",
+      "gap": 0.12,
+      "ts": 1794951328
     }
   ],
   "trades": [
@@ -1434,14 +1434,14 @@
     {
       "symbol": "CRCLUSDT",
       "side": "SELL",
-      "entry": 55.53982375429274,
-      "tp": 54.15132816043542,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
+      "entry": 55.847213783089465,
+      "tp": 54.451033438512226,
+      "adds": 2,
+      "pele": 3,
+      "margin": 70.0,
       "lev": 20,
       "px": 56.08,
-      "pnl": -6.5556,
+      "pnl": -7.5156,
       "tf": "5m"
     },
     {
@@ -1488,8 +1488,8 @@
   "session_start": 1794873896,
   "realized": 15.3089,
   "closed_n": 28,
-  "open_upnl": 7.3057,
-  "equity": 1022.6146,
+  "open_upnl": 6.3457,
+  "equity": 1021.6546,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
