@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.9.4",
-  "updated_at": 1794934850,
+  "updated_at": 1794934860,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794925313
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794925523
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "1h",
       "gap": 2.2,
       "ts": 1794934850
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794934856
+    },
+    {
+      "kind": "SELL",
+      "symbol": "SHAZUSDT",
+      "tf": "1h",
+      "gap": 1.83,
+      "ts": 1794934860
     }
   ],
   "trades": [
@@ -1430,14 +1430,27 @@
       "px": 3851.0,
       "pnl": 2.4879,
       "tf": "15m"
+    },
+    {
+      "symbol": "UVXYUSDT",
+      "side": "SELL",
+      "entry": 22.33,
+      "tp": 21.771749999999997,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 22.33,
+      "pnl": -0.24,
+      "tf": "1h"
     }
   ],
   "start": 1000.0,
   "session_start": 1794873896,
   "realized": 1.7352,
   "closed_n": 22,
-  "open_upnl": 3.6516,
-  "equity": 1005.3868,
+  "open_upnl": 3.4116,
+  "equity": 1005.1468,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
