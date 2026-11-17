@@ -55,6 +55,31 @@
       "last_leg_candle_ts": 1794922200,
       "dry_run": true,
       "order_id": "PAPER-BREVUSDT-1794922224"
+    },
+    {
+      "symbol": "FONEUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.00086,
+      "qty": 232558.1395,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0008384999999999999,
+      "tf": "15m",
+      "opened_at": 1794922263,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.00086,
+          "ts": 1794922263
+        }
+      ],
+      "entry_candle_ts": 1794922200,
+      "last_leg_candle_ts": 1794922200,
+      "dry_run": true,
+      "order_id": "PAPER-FONEUSDT-1794922263"
     }
   ],
   "trade_history": [
@@ -8654,6 +8679,15 @@
       "side": "SELL",
       "upper": 0.018828562862244706,
       "open": 0.01897,
+      "reported": false
+    },
+    {
+      "symbol": "BREVUSDT",
+      "tf": "15m",
+      "candle_ts": 1794922200,
+      "side": "SELL",
+      "upper": 0.07364620747351452,
+      "open": 0.0764,
       "reported": false
     }
   ],
