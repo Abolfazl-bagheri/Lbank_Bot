@@ -1,66 +1,6 @@
 {
-  "open_trades": [
-    {
-      "symbol": "CLAUDIAUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.007859759612216806,
-      "qty": 76338.2126,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.007663265621911386,
-      "tf": "5m",
-      "opened_at": 1794902556,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.007383,
-          "ts": 1794902556
-        },
-        {
-          "px": 0.008122,
-          "ts": 1794903060
-        }
-      ],
-      "entry_candle_ts": 1794902400,
-      "last_leg_candle_ts": 1794902400,
-      "dry_run": true,
-      "order_id": "PAPER-CLAUDIAUSDT-1794902556"
-    }
-  ],
+  "open_trades": [],
   "trade_history": [
-    {
-      "symbol": "MRNAUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 257.33,
-      "qty": 0.777212,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 250.89674999999997,
-      "tf": "4h",
-      "opened_at": 1793837244,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 257.33,
-          "ts": 1793837244
-        }
-      ],
-      "entry_candle_ts": 1793836800,
-      "last_leg_candle_ts": 1793836800,
-      "dry_run": true,
-      "order_id": "PAPER-MRNAUSDT-1793837244",
-      "closed_at": 1793837406,
-      "close_px": 258.27,
-      "pnl_usdt": -0.7305794116504083,
-      "close_reason": "NIGHT_RESET",
-      "why": "NIGHT_RESET"
-    },
     {
       "symbol": "HYUNDAIUSDT",
       "side": "SELL",
@@ -7007,6 +6947,40 @@
       "pnl_usdt": 35.79921124127776,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "CLAUDIAUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.007859759612216806,
+      "qty": 76338.2126,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 0.007663265621911386,
+      "tf": "5m",
+      "opened_at": 1794902556,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.007383,
+          "ts": 1794902556
+        },
+        {
+          "px": 0.008122,
+          "ts": 1794903060
+        }
+      ],
+      "entry_candle_ts": 1794902400,
+      "last_leg_candle_ts": 1794902400,
+      "dry_run": true,
+      "order_id": "PAPER-CLAUDIAUSDT-1794902556",
+      "closed_at": 1794903814,
+      "close_px": 0.007421,
+      "pnl_usdt": 33.49412454305759,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -7183,16 +7157,6 @@
       "upper": 3870.782749515578,
       "open": 3869.49,
       "reported": false
-    },
-    {
-      "symbol": "XAUTUSDT",
-      "tf": "1m",
-      "candle_ts": 1794644460,
-      "side": "LONG",
-      "upper": 3869.6677917418183,
-      "open": 3869.12,
-      "reported": true,
-      "filled": true
     },
     {
       "symbol": "XAUTUSDT",
@@ -8305,7 +8269,8 @@
       "side": "SELL",
       "upper": 0.007807412887602328,
       "open": 0.008057,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CATUSDT",
@@ -8314,7 +8279,18 @@
       "side": "LONG",
       "upper": 578.2,
       "open": 578.2,
-      "reported": false
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "ZCATUSDT",
+      "tf": "1m",
+      "candle_ts": 1794903300,
+      "side": "LONG",
+      "upper": 0.0210395830481839,
+      "open": 0.02087,
+      "reported": true,
+      "filled": false
     }
   ],
   "paper_days": [
