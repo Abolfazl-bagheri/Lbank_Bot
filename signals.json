@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.9.4",
-  "updated_at": 1794931272,
+  "updated_at": 1794931293,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794922579
-    },
-    {
-      "kind": "SELL",
-      "symbol": "XAUTUSDT",
-      "tf": "5m",
-      "gap": 0.07,
-      "ts": 1794922585
-    },
     {
       "kind": "SELL",
       "symbol": "GOLDUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "1h",
       "gap": 2.5,
       "ts": 1794931272
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794931282
+    },
+    {
+      "kind": "SELL",
+      "symbol": "CYPHUSDT",
+      "tf": "4h",
+      "gap": 1.72,
+      "ts": 1794931293
     }
   ],
   "trades": [
@@ -1482,14 +1482,27 @@
       "px": 3861.56,
       "pnl": 0.8514,
       "tf": "15m"
+    },
+    {
+      "symbol": "BREVUSDT",
+      "side": "SELL",
+      "entry": 0.09783,
+      "tp": 0.09538425,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.09783,
+      "pnl": -0.24,
+      "tf": "1h"
     }
   ],
   "start": 1000.0,
   "session_start": 1794873896,
   "realized": -59.8077,
   "closed_n": 16,
-  "open_upnl": 23.4747,
-  "equity": 963.667,
+  "open_upnl": 23.2347,
+  "equity": 963.427,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
