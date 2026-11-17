@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.9.1",
-  "updated_at": 1794914532,
+  "updated_at": 1794914540,
   "signals": [
-    {
-      "kind": "HEARTBEAT",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794878572
-    },
-    {
-      "kind": "GAP",
-      "symbol": "SILVERUSDT",
-      "tf": "5m",
-      "gap": -0.11,
-      "ts": 1794878773
-    },
     {
       "kind": "GAP",
       "symbol": "SILVERUSDT",
@@ -1402,15 +1388,43 @@
       "tf": "1m",
       "gap": 2.0,
       "ts": 1794914532
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794914536
+    },
+    {
+      "kind": "SELL",
+      "symbol": "CYPHUSDT",
+      "tf": "1m",
+      "gap": 1.25,
+      "ts": 1794914540
     }
   ],
-  "trades": [],
+  "trades": [
+    {
+      "symbol": "FHEUSDT",
+      "side": "SELL",
+      "entry": 0.01706,
+      "tp": 0.0166335,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.01706,
+      "pnl": -0.24,
+      "tf": "1m"
+    }
+  ],
   "start": 1000.0,
   "session_start": 1794873896,
   "realized": 59.1176,
   "closed_n": 3,
-  "open_upnl": 0,
-  "equity": 1059.1176,
+  "open_upnl": -0.24,
+  "equity": 1058.8776,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
