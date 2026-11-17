@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.9.4",
-  "updated_at": 1794924020,
+  "updated_at": 1794924033,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "GOLDUSDT",
-      "tf": "15m",
-      "gap": -0.07,
-      "ts": 1794910925
-    },
     {
       "kind": "SELL",
       "symbol": "CATUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 1.05,
       "ts": 1794924020
+    },
+    {
+      "kind": "SELL",
+      "symbol": "BREVUSDT",
+      "tf": "15m",
+      "gap": 1.25,
+      "ts": 1794924033
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 1.2101,
-      "pnl": -4.4716,
+      "px": 1.2147,
+      "pnl": -6.7666,
       "tf": "4h"
     },
     {
@@ -1427,8 +1427,8 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 0.00088,
-      "pnl": -14.6735,
+      "px": 0.00086,
+      "pnl": -0.72,
       "tf": "15m"
     },
     {
@@ -1440,8 +1440,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.08184,
-      "pnl": -3.443,
+      "px": 0.08403,
+      "pnl": -8.8806,
       "tf": "15m"
     }
   ],
@@ -1449,8 +1449,8 @@
   "session_start": 1794873896,
   "realized": 63.7642,
   "closed_n": 11,
-  "open_upnl": -22.5881,
-  "equity": 1041.1761,
+  "open_upnl": -16.3672,
+  "equity": 1047.397,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
