@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.9.4",
-  "updated_at": 1794927693,
+  "updated_at": 1794927709,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "XAUTUSDT",
-      "tf": "1m",
-      "gap": -0.08,
-      "ts": 1794917569
-    },
-    {
-      "kind": "GAP",
-      "symbol": "XAUTUSDT",
-      "tf": "1m",
-      "gap": -0.1,
-      "ts": 1794917629
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "1h",
       "gap": 3.91,
       "ts": 1794927693
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794927697
+    },
+    {
+      "kind": "SELL",
+      "symbol": "PROSUSDT",
+      "tf": "1h",
+      "gap": 1.13,
+      "ts": 1794927709
     }
   ],
   "trades": [
@@ -1469,14 +1469,27 @@
       "px": 0.09892,
       "pnl": -0.24,
       "tf": "1h"
+    },
+    {
+      "symbol": "CATEUSDT",
+      "side": "SELL",
+      "entry": 0.02191,
+      "tp": 0.02136225,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.02191,
+      "pnl": -0.24,
+      "tf": "1h"
     }
   ],
   "start": 1000.0,
   "session_start": 1794873896,
   "realized": -27.3762,
   "closed_n": 13,
-  "open_upnl": -6.6723,
-  "equity": 965.9515,
+  "open_upnl": -6.9123,
+  "equity": 965.7115,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
