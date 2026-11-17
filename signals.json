@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.9.4",
-  "updated_at": 1794951094,
+  "updated_at": 1794951104,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "WENUSDT",
-      "tf": "1h",
-      "gap": 1.07,
-      "ts": 1794934816
-    },
-    {
-      "kind": "SELL",
-      "symbol": "PAIDUSDT",
-      "tf": "15m",
-      "gap": 3.44,
-      "ts": 1794934831
-    },
     {
       "kind": "SELL",
       "symbol": "MMTUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "15m",
       "gap": 2.31,
       "ts": 1794951094
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794951101
+    },
+    {
+      "kind": "SELL",
+      "symbol": "NBISUSDT",
+      "tf": "15m",
+      "gap": 1.86,
+      "ts": 1794951104
     }
   ],
   "trades": [
@@ -1469,14 +1469,27 @@
       "px": 131.29,
       "pnl": -0.24,
       "tf": "15m"
+    },
+    {
+      "symbol": "NVDLUSDT",
+      "side": "SELL",
+      "entry": 17.38,
+      "tp": 16.9455,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 17.38,
+      "pnl": -0.24,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1794873896,
   "realized": 15.3089,
   "closed_n": 28,
-  "open_upnl": 1.9746,
-  "equity": 1017.2835,
+  "open_upnl": 1.7346,
+  "equity": 1017.0435,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
