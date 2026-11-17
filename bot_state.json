@@ -1,31 +1,6 @@
 {
   "open_trades": [
     {
-      "symbol": "NESUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.2043,
-      "qty": 978.9525,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.1991925,
-      "tf": "15m",
-      "opened_at": 1794925835,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.2043,
-          "ts": 1794925835
-        }
-      ],
-      "entry_candle_ts": 1794925800,
-      "last_leg_candle_ts": 1794925800,
-      "dry_run": true,
-      "order_id": "PAPER-NESUSDT-1794925835"
-    },
-    {
       "symbol": "GOLDUSDT",
       "side": "SELL",
       "status": "open",
@@ -114,36 +89,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "FOGOUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.002854,
-      "qty": 70077.0848,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.0027826500000000002,
-      "tf": "15m",
-      "opened_at": 1793889029,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.002854,
-          "ts": 1793889029
-        }
-      ],
-      "entry_candle_ts": 1793889000,
-      "last_leg_candle_ts": 1793889000,
-      "dry_run": true,
-      "order_id": "PAPER-FOGOUSDT-1793889029",
-      "closed_at": 1793891315,
-      "close_px": 0.002702,
-      "pnl_usdt": 10.651716888577452,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "ARGUSUSDT",
       "side": "SELL",
@@ -7061,6 +7006,36 @@
       "pnl_usdt": 17.894108681193714,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "NESUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.2043,
+      "qty": 978.9525,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.1991925,
+      "tf": "15m",
+      "opened_at": 1794925835,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.2043,
+          "ts": 1794925835
+        }
+      ],
+      "entry_candle_ts": 1794925800,
+      "last_leg_candle_ts": 1794925800,
+      "dry_run": true,
+      "order_id": "PAPER-NESUSDT-1794925835",
+      "closed_at": 1794933651,
+      "close_px": 0.199,
+      "pnl_usdt": 5.188448360254526,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -9555,7 +9530,6 @@
     "POETUSDT": 1794455332,
     "SIMOUSDT": 1794455347,
     "MUSTOCKUSDT": 1794456284,
-    "QUACKAIUSDT": 1794460636,
     "O1USDT": 1794943368,
     "ZZZUSDT": 1794943379,
     "OROCHIUSDT": 1794943380,
@@ -9586,7 +9560,7 @@
     "SKY1USDT": 1794974770,
     "ARROWUSDT": 1794976281
   },
-  "last_trade_report_ts": 1794932738,
+  "last_trade_report_ts": 1794933651,
   "last_known_version": "2.9.4",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
