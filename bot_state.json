@@ -1,5 +1,31 @@
 {
-  "open_trades": [],
+  "open_trades": [
+    {
+      "symbol": "CLAUDIAUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.007383,
+      "qty": 27089.2591,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.007198425,
+      "tf": "4h",
+      "opened_at": 1794902556,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.007383,
+          "ts": 1794902556
+        }
+      ],
+      "entry_candle_ts": 1794902400,
+      "last_leg_candle_ts": 1794902400,
+      "dry_run": true,
+      "order_id": "PAPER-CLAUDIAUSDT-1794902556"
+    }
+  ],
   "trade_history": [
     {
       "symbol": "MRNAUSDT",
@@ -8240,6 +8266,15 @@
       "open": 578.2,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "LONGXIAUSDT",
+      "tf": "1h",
+      "candle_ts": 1794902400,
+      "side": "SELL",
+      "upper": 0.020847272938290553,
+      "open": 0.02108,
+      "reported": false
     }
   ],
   "paper_days": [
