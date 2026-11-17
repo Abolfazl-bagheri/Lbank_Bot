@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.9.4",
-  "updated_at": 1794920423,
+  "updated_at": 1794920459,
   "signals": [
-    {
-      "kind": "HEARTBEAT",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794905003
-    },
-    {
-      "kind": "GAP",
-      "symbol": "CRCLUSDT",
-      "tf": "5m",
-      "gap": -0.07,
-      "ts": 1794905083
-    },
     {
       "kind": "SELL",
       "symbol": "LUNAUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "15m",
       "gap": 2.45,
       "ts": 1794920423
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794920428
+    },
+    {
+      "kind": "SELL",
+      "symbol": "BREVUSDT",
+      "tf": "1h",
+      "gap": 3.49,
+      "ts": 1794920459
     }
   ],
   "trades": [
@@ -1417,14 +1417,27 @@
       "px": 1.2042,
       "pnl": -1.5279,
       "tf": "4h"
+    },
+    {
+      "symbol": "BREVUSDT",
+      "side": "SELL",
+      "entry": 0.0657,
+      "tp": 0.06405749999999999,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.0657,
+      "pnl": -0.24,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1794873896,
   "realized": 87.6225,
   "closed_n": 8,
-  "open_upnl": -1.5279,
-  "equity": 1086.0946,
+  "open_upnl": -1.7679,
+  "equity": 1085.8546,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
