@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.9.4",
-  "updated_at": 1794924973,
+  "updated_at": 1794924995,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "XAUTUSDT",
-      "tf": "15m",
-      "gap": -0.07,
-      "ts": 1794912684
-    },
-    {
-      "kind": "GAP",
-      "symbol": "GOLDUSDT",
-      "tf": "15m",
-      "gap": -0.06,
-      "ts": 1794912709
-    },
     {
       "kind": "GAP",
       "symbol": "CRCLUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "15m",
       "gap": 4.67,
       "ts": 1794924973
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794924979
+    },
+    {
+      "kind": "SELL",
+      "symbol": "NKEUSDT",
+      "tf": "15m",
+      "gap": 1.3,
+      "ts": 1794924995
     }
   ],
   "trades": [
@@ -1423,12 +1423,12 @@
       "side": "SELL",
       "entry": 0.00086,
       "tp": 0.0008384999999999999,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
+      "adds": 2,
+      "pele": 3,
+      "margin": 70.0,
       "lev": 20,
       "px": 0.00086,
-      "pnl": -0.72,
+      "pnl": -1.68,
       "tf": "15m"
     }
   ],
@@ -1436,8 +1436,8 @@
   "session_start": 1794873896,
   "realized": 37.74,
   "closed_n": 12,
-  "open_upnl": -0.9008,
-  "equity": 1036.8392,
+  "open_upnl": -1.8608,
+  "equity": 1035.8792,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
