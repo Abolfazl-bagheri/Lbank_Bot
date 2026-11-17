@@ -36,23 +36,27 @@
       "side": "SELL",
       "status": "open",
       "entry": 0.00086,
-      "qty": 232558.1395,
-      "margin": 10.0,
+      "qty": 697674.4186,
+      "margin": 30.0,
       "leverage": 20,
       "tp_price": 0.0008384999999999999,
       "tf": "15m",
       "opened_at": 1794922263,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 0.00086,
           "ts": 1794922263
+        },
+        {
+          "px": 0.00086,
+          "ts": 1794923174
         }
       ],
       "entry_candle_ts": 1794922200,
-      "last_leg_candle_ts": 1794922200,
+      "last_leg_candle_ts": 1794923100,
       "dry_run": true,
       "order_id": "PAPER-FONEUSDT-1794922263"
     },
@@ -8792,6 +8796,24 @@
       "side": "LONG",
       "upper": 48.05473156529812,
       "open": 47.34,
+      "reported": false
+    },
+    {
+      "symbol": "BREVUSDT",
+      "tf": "15m",
+      "candle_ts": 1794923100,
+      "side": "SELL",
+      "upper": 0.07852143371147044,
+      "open": 0.08,
+      "reported": false
+    },
+    {
+      "symbol": "POWERUSDT",
+      "tf": "15m",
+      "candle_ts": 1794923100,
+      "side": "LONG",
+      "upper": 0.05884891003159938,
+      "open": 0.05838,
       "reported": false
     }
   ],
