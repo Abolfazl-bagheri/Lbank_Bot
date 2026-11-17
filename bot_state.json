@@ -7155,46 +7155,6 @@
     {
       "symbol": "XAUTUSDT",
       "tf": "1m",
-      "candle_ts": 1794647640,
-      "side": "LONG",
-      "upper": 3868.829352194536,
-      "open": 3868.6,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "XAUTUSDT",
-      "tf": "1m",
-      "candle_ts": 1794647760,
-      "side": "LONG",
-      "upper": 3868.910848484656,
-      "open": 3868.6,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "XAUTUSDT",
-      "tf": "1m",
-      "candle_ts": 1794648060,
-      "side": "LONG",
-      "upper": 3868.7932460016827,
-      "open": 3868.69,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "XAUTUSDT",
-      "tf": "1m",
-      "candle_ts": 1794648240,
-      "side": "LONG",
-      "upper": 3868.888424140149,
-      "open": 3868.79,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "XAUTUSDT",
-      "tf": "1m",
       "candle_ts": 1794648660,
       "side": "LONG",
       "upper": 3869.106596794612,
@@ -8314,7 +8274,8 @@
       "side": "SELL",
       "upper": 0.020856029473249885,
       "open": 0.02121,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "HAEDALUSDT",
@@ -8323,6 +8284,15 @@
       "side": "SELL",
       "upper": 0.020913224100222234,
       "open": 0.02121,
+      "reported": false
+    },
+    {
+      "symbol": "PAIDUSDT",
+      "tf": "15m",
+      "candle_ts": 1794906900,
+      "side": "LONG",
+      "upper": 0.001587863673977312,
+      "open": 0.001345,
       "reported": false
     }
   ],
@@ -8573,9 +8543,10 @@
     "SPORTFUNUSDT": 1794945939,
     "HAJIMIUSDT": 1794945973,
     "1000000BABYDOGEUSDT": 1794946021,
-    "HOTUSDT": 1794946022
+    "HOTUSDT": 1794946022,
+    "B3USDT": 1794950633
   },
-  "last_trade_report_ts": 1794906482,
+  "last_trade_report_ts": 1794907447,
   "last_known_version": "2.9.0",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
