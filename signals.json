@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.9.4",
-  "updated_at": 1794959171,
+  "updated_at": 1794959204,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "CRCLUSDT",
-      "tf": "5m",
-      "gap": 0.3,
-      "ts": 1794950430
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794950434
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "15m",
       "gap": 11.13,
       "ts": 1794959171
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794959178
+    },
+    {
+      "kind": "SELL",
+      "symbol": "HUTUSDT",
+      "tf": "15m",
+      "gap": 5.72,
+      "ts": 1794959204
     }
   ],
   "trades": [
@@ -1456,14 +1456,27 @@
       "px": 57.36,
       "pnl": -21.5575,
       "tf": "15m"
+    },
+    {
+      "symbol": "PAIDUSDT",
+      "side": "SELL",
+      "entry": 0.001555,
+      "tp": 0.001516125,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.001555,
+      "pnl": -0.24,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1794873896,
   "realized": 41.5015,
   "closed_n": 33,
-  "open_upnl": -29.8645,
-  "equity": 1011.637,
+  "open_upnl": -30.1045,
+  "equity": 1011.397,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
