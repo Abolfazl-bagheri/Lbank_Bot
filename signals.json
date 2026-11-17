@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.9.4",
-  "updated_at": 1794917711,
+  "updated_at": 1794917958,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "XAUTUSDT",
-      "tf": "1m",
-      "gap": -0.06,
-      "ts": 1794901431
-    },
     {
       "kind": "SELL",
       "symbol": "EVAAUSDT",
@@ -1402,22 +1395,16 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1794917711
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794917958
     }
   ],
   "trades": [
-    {
-      "symbol": "SOONUSDT",
-      "side": "SELL",
-      "entry": 0.248,
-      "tp": 0.2418,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.2397,
-      "pnl": 6.4535,
-      "tf": "1h"
-    },
     {
       "symbol": "CLAUDIAUSDT",
       "side": "SELL",
@@ -1427,8 +1414,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.007361,
-      "pnl": 2.1493,
+      "px": 0.007351,
+      "pnl": 2.4177,
       "tf": "4h"
     },
     {
@@ -1440,23 +1427,23 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 1.1941,
-      "pnl": 0.0443,
+      "px": 1.1937,
+      "pnl": 0.1112,
       "tf": "4h"
     }
   ],
   "start": 1000.0,
   "session_start": 1794873896,
-  "realized": 71.6129,
-  "closed_n": 6,
-  "open_upnl": 8.6471,
-  "equity": 1080.26,
+  "realized": 78.7903,
+  "closed_n": 7,
+  "open_upnl": 2.5289,
+  "equity": 1081.3192,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 80.2881,
+    "profit": 87.4655,
     "loss": -8.6753,
-    "count": 6
+    "count": 7
   }
 }
