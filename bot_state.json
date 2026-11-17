@@ -7203,26 +7203,6 @@
     {
       "symbol": "XAUTUSDT",
       "tf": "1m",
-      "candle_ts": 1794678240,
-      "side": "LONG",
-      "upper": 3842.005337889923,
-      "open": 3840.53,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "XAUTUSDT",
-      "tf": "1m",
-      "candle_ts": 1794678660,
-      "side": "LONG",
-      "upper": 3842.261237067676,
-      "open": 3839.03,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "XAUTUSDT",
-      "tf": "1m",
       "candle_ts": 1794679080,
       "side": "LONG",
       "upper": 3841.675171346213,
@@ -9339,7 +9319,8 @@
       "side": "SELL",
       "upper": 8.69451867816556,
       "open": 8.65,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "PAIDUSDT",
@@ -9348,7 +9329,8 @@
       "side": "LONG",
       "upper": 0.001382,
       "open": 0.001382,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -9601,7 +9583,7 @@
     "ARROWUSDT": 1794976281,
     "QUACKAIUSDT": 1794978235
   },
-  "last_trade_report_ts": 1794937229,
+  "last_trade_report_ts": 1794938158,
   "last_known_version": "2.9.4",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
