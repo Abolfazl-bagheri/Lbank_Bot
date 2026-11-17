@@ -35,8 +35,13 @@ SIGNALS_FILE = os.path.join(BASE_DIR, "signals.json")
 LIVE_TOPIC = os.environ.get("LIVE_TOPIC", "lbank-gap-b0b85cee29ce").strip()
 STATE_BAK = os.path.join(BASE_DIR, "bot_state.bak")
 
-BOT_VERSION = "2.8.4"
+BOT_VERSION = "2.9.0"
 CHANGELOG = {
+    "2.9.0": [
+        "HYBRID: برگشت شت‌کوین‌ها + طلا/نقره/نفت همیشه در اسکن",
+        "لایو گپ فقط روی فارکس؛ سشن بسته=بدون سیگنال کالا",
+        "FOCUS_MODE=1 فقط فارکس (اختیاری)",
+    ],
     "2.8.4": [
         "قطع سیگنال طلا/نقره/نفت وقتی بازار بسته است (آخر هفته)",
         "لینک TV طلا→XAUUSD نقره→XAGUSD نفت→USOIL (نه XAUT غلط)",
@@ -84,7 +89,12 @@ TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN", "").strip()
 CHAT_ID = os.environ.get("CHAT_ID", "").strip()
 
 # --- حالت تست: فقط طلا + بیت‌کوین (شت‌کوین خاموش) ---
-FOCUS_MODE = os.environ.get("FOCUS_MODE", "1").strip() not in ("0", "false", "False", "no")
+FOCUS_MODE = os.environ.get("FOCUS_MODE", "0").strip() not in ("0", "false", "False", "no")  # 0=شت+فارکس
+FOREX_ALWAYS = [
+    s.strip().upper()
+    for s in os.environ.get("FOREX_ALWAYS", "XAUTUSDT,GOLDUSDT,SILVERUSDT,CRCLUSDT").split(",")
+    if s.strip()
+]
 FOCUS_SYMBOLS = [
     s.strip().upper()
     for s in os.environ.get("FOCUS_SYMBOLS", "XAUTUSDT,GOLDUSDT,SILVERUSDT,CRCLUSDT").split(",")
@@ -108,8 +118,8 @@ BB_PERIOD = 20
 BB_STD = 2.0
 PENETRATION_PCT = 0.3
 # آستانه پیش‌فرض؛ برای طلا پایین‌تر در gap_thresholds
-MIN_OPEN_GAP_PCT = 0.35
-ENTRY_MIN_GAP_PCT = 0.5
+MIN_OPEN_GAP_PCT = 1.0   # شت‌کوین
+ENTRY_MIN_GAP_PCT = 2.0  # ورود شت
 GAP_THRESHOLDS = {
     "XAUTUSDT": {"min": 0.06, "entry": 0.12},
     "GOLDUSDT": {"min": 0.06, "entry": 0.12},
@@ -129,7 +139,7 @@ FOCUS_BOTH_SIDES = True  # در FOCUS هم گپ بالای UB (سِل) هم زی
 
 TOP_GAINERS = 60
 TOP_VOLUME = 30
-ALWAYS_INCLUDE = list(FOCUS_SYMBOLS) if FOCUS_SYMBOLS else ["XAUTUSDT", "GOLDUSDT", "SILVERUSDT", "CRCLUSDT"]
+ALWAYS_INCLUDE = list(dict.fromkeys((FOCUS_SYMBOLS if FOCUS_MODE else []) + FOREX_ALWAYS + ["BTCUSDT"]))
 ONLY_SELL = True
 FOCUS_BOTH_SIDES = True
 STRUCTURE_BREAK_PCT = 0.08  # شکست حمایت/مقاومت (٪)
@@ -599,9 +609,11 @@ def format_startup_message() -> str:
     global last_known_version
     lines = [f"✅ ربات روشن شد — <b>v{BOT_VERSION}</b>", f"🧠 agents · TRADE_MODE=<code>{TRADE_MODE}</code>"]
     if FOCUS_MODE:
-        lines.append("🎯 <b>FOCUS تست</b>: " + ", ".join(FOCUS_SYMBOLS) + " · شت خاموش")
-        lines.append("TF: " + ", ".join(TIMEFRAMES.keys()))
-        lines.append("⚡ پایش لایو قیمت vs UB هر ~2ث")
+        lines.append("🎯 <b>FOCUS</b>: " + ", ".join(FOCUS_SYMBOLS or FOREX_ALWAYS) + " · شت خاموش")
+    else:
+        lines.append("🔥 <b>HYBRID</b>: شت‌کوین + فارکس (" + ", ".join(FOREX_ALWAYS) + ")")
+    lines.append("TF: " + ", ".join(TIMEFRAMES.keys()))
+    lines.append("⚡ لایو گپ فارکس هر ~2ث · سشن طلا فیلتر می‌شود")
 
     if trading_enabled():
         lines.append(f"🤖 exec: {'PAPER' if is_paper_mode() else 'LIVE'} · {TRADE_MARGIN_USDT}U · {TRADE_LEVERAGE}x · گزارش هر ۱۵د")
@@ -640,12 +652,17 @@ def refresh_futures_map() -> dict:
 
 
 def get_scan_symbols() -> list:
-    """در FOCUS_MODE فقط طلا+بیت؛ وگرنه movers."""
+    """FOCUS: فقط FOREX_ALWAYS/FOCUS_SYMBOLS | عادی: پامپ/حجم شت + همیشه فارکس."""
     if FOCUS_MODE:
-        syms = [s for s in FOCUS_SYMBOLS if not is_blacklisted(s)]
+        base = FOCUS_SYMBOLS or FOREX_ALWAYS
+        syms = [s for s in base if not is_blacklisted(s)]
         log.info("FOCUS scan symbols=%s", ",".join(syms))
         return syms
-    return get_top_movers(TOP_GAINERS)
+    movers = get_top_movers(TOP_GAINERS)
+    forex = [s for s in FOREX_ALWAYS if not is_blacklisted(s)]
+    syms = list(dict.fromkeys(movers + forex))
+    log.info("HYBRID scan movers+forex n=%d forex=%s", len(syms), ",".join(forex))
+    return syms
 
 
 def gap_limits_for(symbol: str) -> tuple:
@@ -909,10 +926,11 @@ async def refresh_live_bb(symbol: str, tf: str):
 
 async def live_gap_watch_once() -> None:
     """پایش ثانیه‌ای قیمت vs UB/LB در FOCUS — سِل و لانگ + شدو."""
-    if not FOCUS_MODE:
-        return
+    # لایو ثانیه‌ای فقط روی نمادهای فارکس/کالا (نه همه شت‌ها)
     refresh_futures_map()
-    symbols = get_scan_symbols()
+    symbols = [s for s in (FOCUS_SYMBOLS if FOCUS_MODE else FOREX_ALWAYS) if not is_blacklisted(s)]
+    if not symbols:
+        return
     now = int(time.time())
     if not hasattr(live_gap_watch_once, "_last_hb"):
         live_gap_watch_once._last_hb = 0
@@ -1130,10 +1148,10 @@ def check_signal(df: pd.DataFrame, symbol: str, tf: str):
         if FOCUS_BOTH_SIDES and lower_v > 0 and fut < lower_v and live_low_gap >= min_gap:
             side = "LONG"
             live_gap_pct = live_low_gap
-        elif FOCUS_BOTH_SIDES and lower_v > 0 and open_p < lower_v and open_low_gap >= min_gap and fut <= lower_v * 1.002:
+        elif (FOCUS_BOTH_SIDES or is_session_symbol(symbol)) and lower_v > 0 and open_p < lower_v and open_low_gap >= min_gap and fut <= lower_v * 1.002:
             side = "LONG"
             live_gap_pct = max(live_low_gap, open_low_gap)
-    if not side or (ONLY_SELL and side != "SELL" and not FOCUS_BOTH_SIDES):
+    if not side or (ONLY_SELL and side != "SELL" and not (FOCUS_BOTH_SIDES or is_session_symbol(symbol))):
         stats["skip_no_gap"] += 1
         log.info(
             "SKIP_NO_GAP %s %s | open=%.6g fut=%.6g upper=%.6g live_gap=%.2f%% open_gap=%.2f%%",
@@ -2323,8 +2341,9 @@ async def one_cycle(tfs: list | None = None) -> None:
 
     # اول سیگنال — گزارش گپ قبلی بعداً تا پنجرهٔ زمانی نسوزد
     await asyncio.gather(*[one(s) for s in symbols])
-    # شکست ساختار روی طلا/بیت
-    for sym in symbols:
+    # شکست ساختار فقط فارکس/کالا (نه همه شت‌ها)
+    struct_syms = [s for s in symbols if is_session_symbol(s) or s in FOREX_ALWAYS]
+    for sym in struct_syms:
         for tf_s in ("15m", "1h", "4h"):
             try:
                 check_structure_breaks(sym, tf_s)
@@ -2387,12 +2406,11 @@ async def main() -> None:
         pass
     while True:
         try:
-            # پایش لایو گپ (ثانیه‌ای) — مستقل از پنجره کندل
-            if FOCUS_MODE:
-                try:
-                    await live_gap_watch_once()
-                except Exception as e:
-                    log.debug("live_watch: %s", e)
+            # پایش لایو گپ فارکس (ثانیه‌ای) — مستقل از پنجره کندل
+            try:
+                await live_gap_watch_once()
+            except Exception as e:
+                log.debug("live_watch: %s", e)
             pre = pre_alert_tfs_now()
             if pre:
                 await pre_alert_cycle(pre)
