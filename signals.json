@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.9.1",
-  "updated_at": 1794915049,
+  "updated_at": 1794915085,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794879272
-    },
-    {
-      "kind": "GAP",
-      "symbol": "XAUTUSDT",
-      "tf": "15m",
-      "gap": -0.07,
-      "ts": 1794879301
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,15 +1388,43 @@
       "tf": "5m",
       "gap": 5.02,
       "ts": 1794915049
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794915054
+    },
+    {
+      "kind": "SELL",
+      "symbol": "FHEUSDT",
+      "tf": "15m",
+      "gap": 7.04,
+      "ts": 1794915085
     }
   ],
-  "trades": [],
+  "trades": [
+    {
+      "symbol": "FHEUSDT",
+      "side": "SELL",
+      "entry": 0.01898,
+      "tp": 0.0185055,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.01898,
+      "pnl": -0.24,
+      "tf": "5m"
+    }
+  ],
   "start": 1000.0,
   "session_start": 1794873896,
   "realized": 50.4423,
   "closed_n": 4,
-  "open_upnl": 0,
-  "equity": 1050.4423,
+  "open_upnl": -0.24,
+  "equity": 1050.2023,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
