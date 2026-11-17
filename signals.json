@@ -1,43 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.9.4",
-  "updated_at": 1794946770,
+  "updated_at": 1794947138,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "GOLDUSDT",
-      "tf": "15m",
-      "gap": 0.16,
-      "ts": 1794930465
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794930473
-    },
-    {
-      "kind": "SELL",
-      "symbol": "CRCLUSDT",
-      "tf": "15m",
-      "gap": 0.78,
-      "ts": 1794930477
-    },
-    {
-      "kind": "SELL",
-      "symbol": "XAUTUSDT",
-      "tf": "15m",
-      "gap": 0.14,
-      "ts": 1794930480
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794930485
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1367,41 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1794946770
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794946836
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794946836
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794946881
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794946915
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794947138
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 3855.89,
-      "pnl": 3.7261,
+      "px": 3855.71,
+      "pnl": 3.7539,
       "tf": "15m"
     },
     {
@@ -1427,49 +1427,36 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 3835.0,
-      "pnl": 4.9674,
+      "px": 3835.51,
+      "pnl": 4.8884,
       "tf": "15m"
     },
     {
       "symbol": "UVXYUSDT",
       "side": "SELL",
-      "entry": 23.28,
-      "tp": 22.698,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
+      "entry": 23.00505273893556,
+      "tp": 22.42992642046217,
+      "adds": 1,
+      "pele": 2,
+      "margin": 30.0,
       "lev": 20,
-      "px": 23.05,
-      "pnl": 1.7359,
-      "tf": "4h"
-    },
-    {
-      "symbol": "BREVUSDT",
-      "side": "SELL",
-      "entry": 0.10091,
-      "tp": 0.09838725,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.10264,
-      "pnl": -3.6688,
+      "px": 22.76,
+      "pnl": 5.6713,
       "tf": "4h"
     }
   ],
   "start": 1000.0,
   "session_start": 1794873896,
-  "realized": 3.9984,
-  "closed_n": 25,
-  "open_upnl": 6.7606,
-  "equity": 1010.759,
+  "realized": -5.6141,
+  "closed_n": 26,
+  "open_upnl": 14.3136,
+  "equity": 1008.6995,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
     "profit": 168.2467,
-    "loss": -164.2483,
-    "count": 25
+    "loss": -173.8609,
+    "count": 26
   }
 }
