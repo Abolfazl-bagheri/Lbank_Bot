@@ -144,64 +144,9 @@
       "last_leg_candle_ts": 1794951000,
       "dry_run": true,
       "order_id": "PAPER-CRDOUSDT-1794951053"
-    },
-    {
-      "symbol": "NVDLUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 17.38,
-      "qty": 11.5075,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 16.9455,
-      "tf": "15m",
-      "opened_at": 1794951095,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 17.38,
-          "ts": 1794951095
-        }
-      ],
-      "entry_candle_ts": 1794951000,
-      "last_leg_candle_ts": 1794951000,
-      "dry_run": true,
-      "order_id": "PAPER-NVDLUSDT-1794951095"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "HK1810USDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 30.78,
-      "qty": 6.4977,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 30.0105,
-      "tf": "1h",
-      "opened_at": 1793844380,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 30.78,
-          "ts": 1793844380
-        }
-      ],
-      "entry_candle_ts": 1793844000,
-      "last_leg_candle_ts": 1793844000,
-      "dry_run": true,
-      "order_id": "PAPER-HK1810USDT-1793844380",
-      "closed_at": 1793926433,
-      "close_px": 30.49,
-      "pnl_usdt": 1.8843404808317266,
-      "close_reason": "NIGHT_RESET",
-      "why": "NIGHT_RESET"
-    },
     {
       "symbol": "ACTUSDT",
       "side": "SELL",
@@ -7087,6 +7032,36 @@
       "pnl_usdt": 5.1424858442402455,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "NVDLUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 17.38,
+      "qty": 11.5075,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 16.9455,
+      "tf": "15m",
+      "opened_at": 1794951095,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 17.38,
+          "ts": 1794951095
+        }
+      ],
+      "entry_candle_ts": 1794951000,
+      "last_leg_candle_ts": 1794951000,
+      "dry_run": true,
+      "order_id": "PAPER-NVDLUSDT-1794951095",
+      "closed_at": 1794951383,
+      "close_px": 16.92,
+      "pnl_usdt": 5.293440736478679,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -9469,6 +9444,33 @@
       "side": "SELL",
       "upper": 55.80101290652365,
       "open": 55.93,
+      "reported": false
+    },
+    {
+      "symbol": "CRCLUSDT",
+      "tf": "5m",
+      "candle_ts": 1794951300,
+      "side": "SELL",
+      "upper": 55.96996255590464,
+      "open": 56.06,
+      "reported": false
+    },
+    {
+      "symbol": "SILVERUSDT",
+      "tf": "5m",
+      "candle_ts": 1794951300,
+      "side": "SELL",
+      "upper": 47.62214945708899,
+      "open": 47.68,
+      "reported": false
+    },
+    {
+      "symbol": "SILVERUSDT",
+      "tf": "5m",
+      "candle_ts": 1794951300,
+      "side": "SELL",
+      "upper": 47.62214945708899,
+      "open": 47.68,
       "reported": false
     }
   ],
