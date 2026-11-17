@@ -61,6 +61,31 @@
       "last_leg_candle_ts": 1794930598,
       "dry_run": true,
       "order_id": "PAPER-XAUTUSDT-1794930482"
+    },
+    {
+      "symbol": "UVXYUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 22.33,
+      "qty": 8.9566,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 21.771749999999997,
+      "tf": "1h",
+      "opened_at": 1794934852,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 22.33,
+          "ts": 1794934852
+        }
+      ],
+      "entry_candle_ts": 1794934800,
+      "last_leg_candle_ts": 1794934800,
+      "dry_run": true,
+      "order_id": "PAPER-UVXYUSDT-1794934852"
     }
   ],
   "trade_history": [
@@ -9274,7 +9299,8 @@
       "side": "SELL",
       "upper": 21.839121104894563,
       "open": 21.9,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "PAIDUSDT",
@@ -9283,6 +9309,52 @@
       "side": "LONG",
       "upper": 0.001382,
       "open": 0.001382,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "UVXYUSDT",
+      "tf": "15m",
+      "candle_ts": 1794933900,
+      "side": "SELL",
+      "upper": 22.35724674718347,
+      "open": 22.41,
+      "reported": false
+    },
+    {
+      "symbol": "MMTUSDT",
+      "tf": "15m",
+      "candle_ts": 1794933900,
+      "side": "SELL",
+      "upper": 0.13314059183138138,
+      "open": 0.1353,
+      "reported": false
+    },
+    {
+      "symbol": "PAIDUSDT",
+      "tf": "15m",
+      "candle_ts": 1794933900,
+      "side": "LONG",
+      "upper": 0.001382,
+      "open": 0.001382,
+      "reported": false
+    },
+    {
+      "symbol": "PAIDUSDT",
+      "tf": "15m",
+      "candle_ts": 1794934800,
+      "side": "LONG",
+      "upper": 0.001382,
+      "open": 0.001382,
+      "reported": false
+    },
+    {
+      "symbol": "MMTUSDT",
+      "tf": "15m",
+      "candle_ts": 1794934800,
+      "side": "SELL",
+      "upper": 0.13834505651388485,
+      "open": 0.1397,
       "reported": false
     }
   ],
