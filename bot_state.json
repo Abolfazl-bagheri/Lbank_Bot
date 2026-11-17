@@ -111,131 +111,9 @@
       "last_leg_candle_ts": 1794928234,
       "dry_run": true,
       "order_id": "PAPER-CYPHUSDT-1794927657"
-    },
-    {
-      "symbol": "BREVUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.09892,
-      "qty": 2021.8358,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.09644699999999999,
-      "tf": "1h",
-      "opened_at": 1794927667,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.09892,
-          "ts": 1794927667
-        }
-      ],
-      "entry_candle_ts": 1794927600,
-      "last_leg_candle_ts": 1794927600,
-      "dry_run": true,
-      "order_id": "PAPER-BREVUSDT-1794927667"
-    },
-    {
-      "symbol": "CATEUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.02191,
-      "qty": 9128.2519,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.02136225,
-      "tf": "1h",
-      "opened_at": 1794927694,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.02191,
-          "ts": 1794927694
-        }
-      ],
-      "entry_candle_ts": 1794927600,
-      "last_leg_candle_ts": 1794927600,
-      "dry_run": true,
-      "order_id": "PAPER-CATEUSDT-1794927694"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "XTZUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.29156397482794916,
-      "qty": 4801.6906,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 0.28427487545725044,
-      "tf": "4h",
-      "opened_at": 1793878230,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.2909,
-          "ts": 1793878230
-        },
-        {
-          "px": 0.2976,
-          "ts": 1793879202
-        },
-        {
-          "px": 0.2888,
-          "ts": 1793880099
-        }
-      ],
-      "entry_candle_ts": 1793878200,
-      "last_leg_candle_ts": 1793880000,
-      "dry_run": true,
-      "order_id": "PAPER-XTZUSDT-1793878230",
-      "closed_at": 1793881125,
-      "close_px": 0.2814,
-      "pnl_usdt": 48.804262486562884,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
-    {
-      "symbol": "AIOUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.04956190940122596,
-      "qty": 12106.071100000001,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.048322861666195316,
-      "tf": "1h",
-      "opened_at": 1793877334,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.04738,
-          "ts": 1793877334
-        },
-        {
-          "px": 0.05073,
-          "ts": 1793880069
-        }
-      ],
-      "entry_candle_ts": 1793877300,
-      "last_leg_candle_ts": 1793880000,
-      "dry_run": true,
-      "order_id": "PAPER-AIOUSDT-1793877334",
-      "closed_at": 1793882076,
-      "close_px": 0.0483,
-      "pnl_usdt": 15.276764956857123,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "CNPYUSDT",
       "side": "SELL",
@@ -7125,6 +7003,66 @@
       "pnl_usdt": -65.11627906976744,
       "close_reason": "STOP",
       "why": "STOP"
+    },
+    {
+      "symbol": "BREVUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.09892,
+      "qty": 2021.8358,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.09644699999999999,
+      "tf": "1h",
+      "opened_at": 1794927667,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.09892,
+          "ts": 1794927667
+        }
+      ],
+      "entry_candle_ts": 1794927600,
+      "last_leg_candle_ts": 1794927600,
+      "dry_run": true,
+      "order_id": "PAPER-BREVUSDT-1794927667",
+      "closed_at": 1794928237,
+      "close_px": 0.10589,
+      "pnl_usdt": -14.092195713708053,
+      "close_reason": "STOP",
+      "why": "STOP"
+    },
+    {
+      "symbol": "CATEUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.02191,
+      "qty": 9128.2519,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.02136225,
+      "tf": "1h",
+      "opened_at": 1794927694,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.02191,
+          "ts": 1794927694
+        }
+      ],
+      "entry_candle_ts": 1794927600,
+      "last_leg_candle_ts": 1794927600,
+      "dry_run": true,
+      "order_id": "PAPER-CATEUSDT-1794927694",
+      "closed_at": 1794928238,
+      "close_px": 0.0229,
+      "pnl_usdt": -9.036969420356014,
+      "close_reason": "STOP",
+      "why": "STOP"
     }
   ],
   "pending": [
@@ -9412,7 +9350,7 @@
     "LIGHT1USDT": 1794962812,
     "AINBSCUSDT": 1794971061
   },
-  "last_trade_report_ts": 1794927388,
+  "last_trade_report_ts": 1794928297,
   "last_known_version": "2.9.4",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
