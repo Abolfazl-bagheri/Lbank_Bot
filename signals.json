@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.9.4",
-  "updated_at": 1794924059,
+  "updated_at": 1794924142,
   "signals": [
-    {
-      "kind": "HEARTBEAT",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794911091
-    },
-    {
-      "kind": "SELL",
-      "symbol": "CATEUSDT",
-      "tf": "1m",
-      "gap": 1.1,
-      "ts": 1794911182
-    },
     {
       "kind": "SELL",
       "symbol": "CATUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "1h",
       "gap": 8.35,
       "ts": 1794924059
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794924065
+    },
+    {
+      "kind": "SELL",
+      "symbol": "LAUSDT",
+      "tf": "1h",
+      "gap": 1.03,
+      "ts": 1794924142
     }
   ],
   "trades": [
@@ -1434,23 +1434,23 @@
     {
       "symbol": "BREVUSDT",
       "side": "SELL",
-      "entry": 0.08055,
-      "tp": 0.07853624999999999,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
+      "entry": 0.08283706399519346,
+      "tp": 0.08076613739531362,
+      "adds": 1,
+      "pele": 2,
+      "margin": 30.0,
       "lev": 20,
       "px": 0.08403,
-      "pnl": -8.8806,
-      "tf": "15m"
+      "pnl": -9.3606,
+      "tf": "1h"
     }
   ],
   "start": 1000.0,
   "session_start": 1794873896,
   "realized": 63.7642,
   "closed_n": 11,
-  "open_upnl": -16.3672,
-  "equity": 1047.397,
+  "open_upnl": -16.8472,
+  "equity": 1046.917,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
