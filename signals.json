@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.9.4",
-  "updated_at": 1794921710,
+  "updated_at": 1794921938,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "CRCLUSDT",
-      "tf": "15m",
-      "gap": -0.3,
-      "ts": 1794906875
-    },
     {
       "kind": "GAP",
       "symbol": "PREDICTUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1794921710
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794921938
     }
   ],
   "trades": [
@@ -1414,36 +1414,23 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 1.2127,
-      "pnl": -5.7688,
+      "px": 1.2115,
+      "pnl": -5.1701,
       "tf": "4h"
-    },
-    {
-      "symbol": "BREVUSDT",
-      "side": "SELL",
-      "entry": 0.07216,
-      "tp": 0.070356,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.07326,
-      "pnl": -3.2888,
-      "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1794873896,
-  "realized": 79.7077,
-  "closed_n": 9,
-  "open_upnl": -9.0576,
-  "equity": 1070.6501,
+  "realized": 71.6423,
+  "closed_n": 10,
+  "open_upnl": -5.1701,
+  "equity": 1066.4722,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
     "profit": 96.2978,
-    "loss": -16.59,
-    "count": 9
+    "loss": -24.6554,
+    "count": 10
   }
 }
