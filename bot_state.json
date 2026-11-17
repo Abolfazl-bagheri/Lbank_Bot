@@ -64,24 +64,28 @@
       "symbol": "BREVUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.08055,
-      "qty": 2482.9299,
-      "margin": 10.0,
+      "entry": 0.08283706399519346,
+      "qty": 7243.1346,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.07853624999999999,
-      "tf": "15m",
+      "tp_price": 0.08076613739531362,
+      "tf": "1h",
       "opened_at": 1794923128,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 0.08055,
           "ts": 1794923128
+        },
+        {
+          "px": 0.08403,
+          "ts": 1794924061
         }
       ],
       "entry_candle_ts": 1794923100,
-      "last_leg_candle_ts": 1794923100,
+      "last_leg_candle_ts": 1794924000,
       "dry_run": true,
       "order_id": "PAPER-BREVUSDT-1794923128"
     }
@@ -8850,6 +8854,24 @@
       "side": "LONG",
       "upper": 3858.398125758131,
       "open": 3835.58,
+      "reported": false
+    },
+    {
+      "symbol": "BREVUSDT",
+      "tf": "15m",
+      "candle_ts": 1794924000,
+      "side": "SELL",
+      "upper": 0.08297556844700446,
+      "open": 0.0844,
+      "reported": false
+    },
+    {
+      "symbol": "CYPHUSDT",
+      "tf": "1h",
+      "candle_ts": 1794924000,
+      "side": "SELL",
+      "upper": 2.008793366380494,
+      "open": 2.026,
       "reported": false
     }
   ],
