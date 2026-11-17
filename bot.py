@@ -35,8 +35,16 @@ SIGNALS_FILE = os.path.join(BASE_DIR, "signals.json")
 LIVE_TOPIC = os.environ.get("LIVE_TOPIC", "lbank-gap-b0b85cee29ce").strip()
 STATE_BAK = os.path.join(BASE_DIR, "bot_state.bak")
 
-BOT_VERSION = "2.9.1"
+BOT_VERSION = "2.9.4"
 CHANGELOG = {
+    "2.9.4": [
+        "لایو ثانیه‌ای خاموش — پیام کمتر",
+        "فارکس مثل شت + تایم ۵ دقیقه",
+    ],
+    "2.9.3": [
+        "۱م/۵م از اسکن شت کاملاً حذف شد",
+        "رد گپ غیرواقعی بالای ۲۵٪ (داده خراب)",
+    ],
     "2.9.2": [
         "۱م و ۵م فقط طلا/نقره/نفت — شت فقط ۱۵م/۱س/۴س",
     ],
@@ -108,18 +116,20 @@ FOCUS_SYMBOLS = [
     if s.strip()
 ]
 
+# اسکن کندلی: ۵م فقط فارکس؛ شت از ۱۵م
 TIMEFRAMES = {
-    "1m": "1min",
     "5m": "5min",
     "15m": "15min",
     "1h": "1hr",
     "4h": "4hr",
 }
-TF_ORDER = {"1m": 0, "5m": 1, "15m": 2, "1h": 3, "4h": 4}
-PERIOD_SEC = {"1m": 60, "5m": 300, "15m": 900, "1h": 3600, "4h": 14400}
-OPEN_WINDOW_SEC = {"1m": 25, "5m": 60, "15m": 180, "1h": 210, "4h": 300}
-PRE_ALERT_BEFORE = {"1m": 20, "5m": 60, "15m": 180, "1h": 600, "4h": 1200}
-SIGNAL_SCAN_SEC = {"1m": 30, "5m": 70, "15m": 200, "1h": 240, "4h": 320}
+FOREX_TIMEFRAMES = ("5m", "15m", "1h", "4h")
+SHIT_TIMEFRAMES = ("15m", "1h", "4h")
+TF_ORDER = {"5m": 1, "15m": 2, "1h": 3, "4h": 4}
+PERIOD_SEC = {"5m": 300, "15m": 900, "1h": 3600, "4h": 14400}
+OPEN_WINDOW_SEC = {"5m": 90, "15m": 180, "1h": 210, "4h": 300}
+PRE_ALERT_BEFORE = {"5m": 90, "15m": 180, "1h": 600, "4h": 1200}
+SIGNAL_SCAN_SEC = {"5m": 100, "15m": 200, "1h": 240, "4h": 320}
 
 BB_PERIOD = 20
 BB_STD = 2.0
@@ -614,17 +624,21 @@ def send_telegram_photo(image_bytes: bytes, caption: str) -> bool:
 
 def format_startup_message() -> str:
     global last_known_version
-    lines = [f"✅ ربات روشن شد — <b>v{BOT_VERSION}</b>", f"🧠 agents · TRADE_MODE=<code>{TRADE_MODE}</code>"]
+    mode = "کاغذی" if is_paper_mode() else ("زنده" if trading_enabled() else "فقط سیگنال")
     if FOCUS_MODE:
-        lines.append("🎯 <b>FOCUS</b>: " + ", ".join(FOCUS_SYMBOLS or FOREX_ALWAYS) + " · شت خاموش")
+        style = "FOCUS · فقط فارکس"
     else:
-        lines.append("🔥 <b>HYBRID</b>: شت‌کوین + فارکس (" + ", ".join(FOREX_ALWAYS) + ")")
-    lines.append("TF شت: 15m/1h/4h · TF فارکس: 1m/5m/15m/1h/4h")
-    lines.append("⚡ لایو گپ فارکس هر ~2ث · سشن طلا فیلتر می‌شود")
+        style = "HYBRID · شت + فارکس"
 
-    if trading_enabled():
-        lines.append(f"🤖 exec: {'PAPER' if is_paper_mode() else 'LIVE'} · {TRADE_MARGIN_USDT}U · {TRADE_LEVERAGE}x · گزارش هر ۱۵د")
+    lines = [
+        f"✅ <b>ربات روشن شد</b> · v{BOT_VERSION}",
+        f"حالت: {style} · {mode}",
+        "",
+        "📌 شت: ۱۵م / ۱س / ۴س",
+        "📌 فارکس: طلا · نقره · نفت (۵م / ۱۵م / ۱س / ۴س)",
+    ]
     if last_known_version and last_known_version != BOT_VERSION:
+        lines.append("")
         lines.append(f"📦 {last_known_version} → {BOT_VERSION}")
         for item in CHANGELOG.get(BOT_VERSION) or []:
             lines.append(f"• {item}")
@@ -899,7 +913,7 @@ def is_erratic_wick_candle(row) -> bool:
 
 live_bb_cache: dict = {}
 live_gap_sent: dict = {}
-LIVE_WATCH_TFS = ["1m", "5m", "15m"]
+LIVE_WATCH_TFS = []  # لایو خاموش
 LIVE_BB_REFRESH_SEC = 20
 LIVE_PRICE_POLL_SEC = 2
 LIVE_GAP_COOLDOWN_SEC = 45
@@ -932,8 +946,9 @@ async def refresh_live_bb(symbol: str, tf: str):
 
 
 async def live_gap_watch_once() -> None:
-    """پایش ثانیه‌ای قیمت vs UB/LB در FOCUS — سِل و لانگ + شدو."""
-    # لایو ثانیه‌ای فقط روی نمادهای فارکس/کالا (نه همه شت‌ها)
+    """لایو ثانیه‌ای خاموش."""
+    return
+    # dead code below
     refresh_futures_map()
     symbols = [s for s in (FOCUS_SYMBOLS if FOCUS_MODE else FOREX_ALWAYS) if not is_blacklisted(s)]
     if not symbols:
@@ -1100,6 +1115,9 @@ def check_signal(df: pd.DataFrame, symbol: str, tf: str):
     if not symbol_tradeable_now(symbol):
         log.info("SKIP_MARKET_CLOSED %s %s", symbol, tf)
         return None
+    if not is_session_symbol(symbol) and tf in ("1m", "5m"):
+        log.info("SKIP_TF %s %s (شت بدون ۵م)", symbol, tf)
+        return None
     if len(df) < BB_PERIOD + 2:
         log.info("SKIP_SHORT %s %s bars=%s", symbol, tf, len(df) if df is not None else 0)
         return None
@@ -1170,11 +1188,20 @@ def check_signal(df: pd.DataFrame, symbol: str, tf: str):
         stats["skip_dup"] += 1
         return None
     # sent_signals بعد از تصمیم ورود/ارسال ثبت می‌شود (نه اینجا)
+    # درصد گپ غیرواقعی (داده خراب / مقیاس اشتباه) را رد کن
+    MAX_GAP_PCT = 25.0 if not is_session_symbol(symbol) else 8.0
+    if live_gap_pct > MAX_GAP_PCT or live_gap_pct < 0 or not (upper > 0 and fut > 0):
+        stats["skip_no_gap"] += 1
+        log.info(
+            "SKIP_BAD_GAP %s %s | gap=%.4g%% upper=%.6g fut=%.6g open=%.6g",
+            symbol, tf, live_gap_pct, upper, fut, open_p,
+        )
+        return None
     stats["signal_ok"] += 1
     diff_pct = live_gap_pct
     log.info(
-        "SIGNAL_CANDIDATE SELL %s %s | age=%ss open=%.6g upper=%.6g fut=%.6g gap=%.2f%%",
-        symbol, tf, age_sec, open_p, upper, fut, diff_pct,
+        "SIGNAL_CANDIDATE %s %s %s | age=%ss open=%.6g upper=%.6g fut=%.6g gap=%.2f%%",
+        side, symbol, tf, age_sec, open_p, upper, fut, diff_pct,
     )
     return {
         "side": side, "symbol": symbol, "tf": tf, "open": open_p, "high": high, "low": low, "close": close,
@@ -2079,6 +2106,11 @@ async def process_symbol(symbol: str, tfs_to_check: list) -> None:
     if not symbol_tradeable_now(symbol):
         log.info("SKIP_MARKET_CLOSED %s (process)", symbol)
         return
+    # شت هرگز ۱م/۵م — حتی اگر لیست اشتباه بیاید
+    allowed = set(FOREX_TIMEFRAMES if is_session_symbol(symbol) else SHIT_TIMEFRAMES)
+    tfs_to_check = [tf for tf in tfs_to_check if tf in allowed and tf in TIMEFRAMES]
+    if not tfs_to_check:
+        return
     now = int(time.time())
     for tf in sorted(tfs_to_check, key=lambda x: TF_ORDER.get(x, 99)):
         if tf not in TIMEFRAMES:
@@ -2416,11 +2448,7 @@ async def main() -> None:
         pass
     while True:
         try:
-            # پایش لایو گپ فارکس (ثانیه‌ای) — مستقل از پنجره کندل
-            try:
-                await live_gap_watch_once()
-            except Exception as e:
-                log.debug("live_watch: %s", e)
+            # لایو ثانیه‌ای خاموش — فارکس مثل شت با کندل (۵م+)
             pre = pre_alert_tfs_now()
             if pre:
                 await pre_alert_cycle(pre)
@@ -2433,10 +2461,7 @@ async def main() -> None:
                 wait = seconds_until_next_candle()
                 pre2 = pre_alert_tfs_now()
                 # نزدیک باز شدن کندل یا داخل پنجره احتمال‌گپ → حداکثر ۱۰ثانیه
-                if FOCUS_MODE:
-                    # طلا+بیت: هر ~۲ث قیمت vs UB
-                    sleep_for = max(1, min(int(LIVE_PRICE_POLL_SEC), 2 if wait <= 180 or pre2 else 3))
-                elif wait <= 90 or pre2:
+                if wait <= 90 or pre2:
                     sleep_for = max(1, min(wait - 2, 10))
                 else:
                     sleep_for = max(1, min(wait - 3, 25))
