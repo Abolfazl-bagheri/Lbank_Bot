@@ -86,6 +86,31 @@
       "last_leg_candle_ts": 1794945600,
       "dry_run": true,
       "order_id": "PAPER-UVXYUSDT-1794945652"
+    },
+    {
+      "symbol": "MMTUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.142,
+      "qty": 1408.4507,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.13845,
+      "tf": "4h",
+      "opened_at": 1794945681,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.142,
+          "ts": 1794945681
+        }
+      ],
+      "entry_candle_ts": 1794945600,
+      "last_leg_candle_ts": 1794945600,
+      "dry_run": true,
+      "order_id": "PAPER-MMTUSDT-1794945681"
     }
   ],
   "trade_history": [
@@ -9267,6 +9292,15 @@
       "side": "LONG",
       "upper": 0.001382,
       "open": 0.001382,
+      "reported": false
+    },
+    {
+      "symbol": "UVXYUSDT",
+      "tf": "4h",
+      "candle_ts": 1794945600,
+      "side": "SELL",
+      "upper": 22.593784566509925,
+      "open": 23.12,
       "reported": false
     }
   ],
