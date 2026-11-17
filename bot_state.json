@@ -90,6 +90,31 @@
       "last_leg_candle_ts": 1794950100,
       "dry_run": true,
       "order_id": "PAPER-CRCLUSDT-1794950431"
+    },
+    {
+      "symbol": "MVLLUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 10.14,
+      "qty": 19.7239,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 9.8865,
+      "tf": "15m",
+      "opened_at": 1794951019,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 10.14,
+          "ts": 1794951019
+        }
+      ],
+      "entry_candle_ts": 1794951000,
+      "last_leg_candle_ts": 1794951000,
+      "dry_run": true,
+      "order_id": "PAPER-MVLLUSDT-1794951019"
     }
   ],
   "trade_history": [
@@ -9243,6 +9268,15 @@
       "side": "SELL",
       "upper": 55.446994599905416,
       "open": 55.56,
+      "reported": false
+    },
+    {
+      "symbol": "ALABUSDT",
+      "tf": "15m",
+      "candle_ts": 1794951000,
+      "side": "SELL",
+      "upper": 219.40344573474127,
+      "open": 222.0,
       "reported": false
     }
   ],
