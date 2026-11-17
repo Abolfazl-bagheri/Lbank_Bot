@@ -30,64 +30,9 @@
       "last_leg_candle_ts": 1794918053,
       "dry_run": true,
       "order_id": "PAPER-PREDICTUSDT-1794916936"
-    },
-    {
-      "symbol": "BREVUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.07216,
-      "qty": 2771.6186,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.070356,
-      "tf": "15m",
-      "opened_at": 1794921320,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.07216,
-          "ts": 1794921320
-        }
-      ],
-      "entry_candle_ts": 1794921300,
-      "last_leg_candle_ts": 1794921300,
-      "dry_run": true,
-      "order_id": "PAPER-BREVUSDT-1794921320"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "MAGMAUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.42675,
-      "qty": 468.6585,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.41608125,
-      "tf": "15m",
-      "opened_at": 1793863124,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.42675,
-          "ts": 1793863124
-        }
-      ],
-      "entry_candle_ts": 1793862900,
-      "last_leg_candle_ts": 1793862900,
-      "dry_run": true,
-      "order_id": "PAPER-MAGMAUSDT-1793863124",
-      "closed_at": 1793868717,
-      "close_px": 0.40757,
-      "pnl_usdt": 8.988869361452855,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "ELSAUSDT",
       "side": "SELL",
@@ -7022,6 +6967,36 @@
       "pnl_usdt": -7.914764079147658,
       "close_reason": "STOP",
       "why": "STOP"
+    },
+    {
+      "symbol": "BREVUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.07216,
+      "qty": 2771.6186,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.070356,
+      "tf": "15m",
+      "opened_at": 1794921320,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.07216,
+          "ts": 1794921320
+        }
+      ],
+      "entry_candle_ts": 1794921300,
+      "last_leg_candle_ts": 1794921300,
+      "dry_run": true,
+      "order_id": "PAPER-BREVUSDT-1794921320",
+      "closed_at": 1794921935,
+      "close_px": 0.07507,
+      "pnl_usdt": -8.06541019955653,
+      "close_reason": "STOP",
+      "why": "STOP"
     }
   ],
   "pending": [
@@ -8834,7 +8809,6 @@
     "CANTONUSDT": 1793952369,
     "XBRUSDT": 1793988971,
     "BBXUSDT": 1794018704,
-    "ARROWUSDT": 1794086185,
     "FIGHT1USDT": 1794111444,
     "APROUSDT": 1794115028,
     "GALUSDT": 1794141094,
