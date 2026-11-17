@@ -167,6 +167,31 @@
       "last_leg_candle_ts": 1794930598,
       "dry_run": true,
       "order_id": "PAPER-XAUTUSDT-1794930482"
+    },
+    {
+      "symbol": "BREVUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.09783,
+      "qty": 2044.3627,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.09538425,
+      "tf": "1h",
+      "opened_at": 1794931274,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.09783,
+          "ts": 1794931274
+        }
+      ],
+      "entry_candle_ts": 1794931200,
+      "last_leg_candle_ts": 1794931200,
+      "dry_run": true,
+      "order_id": "PAPER-BREVUSDT-1794931274"
     }
   ],
   "trade_history": [
@@ -9240,6 +9265,24 @@
       "upper": 3866.3725450413917,
       "open": 3870.82,
       "reported": false
+    },
+    {
+      "symbol": "PAIDUSDT",
+      "tf": "15m",
+      "candle_ts": 1794931200,
+      "side": "LONG",
+      "upper": 0.001382,
+      "open": 0.001382,
+      "reported": false
+    },
+    {
+      "symbol": "CATEUSDT",
+      "tf": "1h",
+      "candle_ts": 1794931200,
+      "side": "SELL",
+      "upper": 0.021703564401364946,
+      "open": 0.0219,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -9410,7 +9453,6 @@
   "last_daily_report_date": "2026-11-17",
   "kline_blacklist": {
     "EURUSDT": 1793385188,
-    "SKY1USDT": 1793398016,
     "AXLUSDT": 1793502358,
     "SYNUSDT": 1793537208,
     "CRWDUSDT": 1793658035,
@@ -9491,7 +9533,7 @@
     "AINBSCUSDT": 1794971061,
     "LWLGUSDT": 1794971796
   },
-  "last_trade_report_ts": 1794929200,
+  "last_trade_report_ts": 1794930601,
   "last_known_version": "2.9.4",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
