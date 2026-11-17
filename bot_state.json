@@ -74,6 +74,31 @@
       "last_leg_candle_ts": 1794916800,
       "dry_run": true,
       "order_id": "PAPER-CLAUDIAUSDT-1794916925"
+    },
+    {
+      "symbol": "PREDICTUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 1.1958,
+      "qty": 167.252,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 1.165905,
+      "tf": "4h",
+      "opened_at": 1794916936,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 1.1958,
+          "ts": 1794916936
+        }
+      ],
+      "entry_candle_ts": 1794916800,
+      "last_leg_candle_ts": 1794916800,
+      "dry_run": true,
+      "order_id": "PAPER-PREDICTUSDT-1794916936"
     }
   ],
   "trade_history": [
@@ -8536,6 +8561,24 @@
       "side": "SELL",
       "upper": 0.24061639773591106,
       "open": 0.2475,
+      "reported": false
+    },
+    {
+      "symbol": "CLAUDIAUSDT",
+      "tf": "4h",
+      "candle_ts": 1794916800,
+      "side": "SELL",
+      "upper": 0.007049211297321396,
+      "open": 0.007423,
+      "reported": false
+    },
+    {
+      "symbol": "CYPHUSDT",
+      "tf": "1h",
+      "candle_ts": 1794916800,
+      "side": "SELL",
+      "upper": 1.9423203391574393,
+      "open": 1.94,
       "reported": false
     }
   ],
