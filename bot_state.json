@@ -96,31 +96,6 @@
       "order_id": "PAPER-CRCLUSDT-1794950431"
     },
     {
-      "symbol": "ICNTUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.2732,
-      "qty": 732.0644,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.26637,
-      "tf": "15m",
-      "opened_at": 1794952823,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.2732,
-          "ts": 1794952823
-        }
-      ],
-      "entry_candle_ts": 1794952800,
-      "last_leg_candle_ts": 1794952800,
-      "dry_run": true,
-      "order_id": "PAPER-ICNTUSDT-1794952823"
-    },
-    {
       "symbol": "HUTUSDT",
       "side": "SELL",
       "status": "open",
@@ -151,56 +126,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "UVXYUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 21.367537959179522,
-      "qty": 589.6795,
-      "margin": 630.0,
-      "leverage": 20,
-      "tp_price": 20.833349510200033,
-      "tf": "1h",
-      "opened_at": 1793889994,
-      "adds": 5,
-      "last_leg_margin": 320.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 17.76,
-          "ts": 1793889994
-        },
-        {
-          "px": 18.59,
-          "ts": 1793890879
-        },
-        {
-          "px": 19.76,
-          "ts": 1793891729
-        },
-        {
-          "px": 20.41,
-          "ts": 1793892625
-        },
-        {
-          "px": 20.94,
-          "ts": 1793894497
-        },
-        {
-          "px": 22.44,
-          "ts": 1793901637
-        }
-      ],
-      "entry_candle_ts": 1793889900,
-      "last_leg_candle_ts": 1793901600,
-      "dry_run": true,
-      "order_id": "PAPER-UVXYUSDT-1793889994",
-      "closed_at": 1793926436,
-      "close_px": 22.98,
-      "pnl_usdt": -950.8358779168477,
-      "close_reason": "NIGHT_RESET",
-      "why": "NIGHT_RESET"
-    },
     {
       "symbol": "SOXSUSDT",
       "side": "SELL",
@@ -7044,6 +6969,36 @@
       "closed_at": 1794952244,
       "close_px": 127.83,
       "pnl_usdt": 5.270774621067856,
+      "close_reason": "TP50",
+      "why": "TP50"
+    },
+    {
+      "symbol": "ICNTUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.2732,
+      "qty": 732.0644,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.26637,
+      "tf": "15m",
+      "opened_at": 1794952823,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.2732,
+          "ts": 1794952823
+        }
+      ],
+      "entry_candle_ts": 1794952800,
+      "last_leg_candle_ts": 1794952800,
+      "dry_run": true,
+      "order_id": "PAPER-ICNTUSDT-1794952823",
+      "closed_at": 1794954986,
+      "close_px": 0.2661,
+      "pnl_usdt": 5.197657393850656,
       "close_reason": "TP50",
       "why": "TP50"
     }
