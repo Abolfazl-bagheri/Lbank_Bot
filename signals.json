@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.9.4",
-  "updated_at": 1794922589,
+  "updated_at": 1794922806,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "SOXSUSDT",
-      "tf": "15m",
-      "gap": 1.21,
-      "ts": 1794907840
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794908152
-    },
     {
       "kind": "GAP",
       "symbol": "XAUTUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "5m",
       "gap": 0.06,
       "ts": 1794922589
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794922606
+    },
+    {
+      "kind": "SELL",
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
+      "gap": 0.08,
+      "ts": 1794922806
     }
   ],
   "trades": [
@@ -1414,22 +1414,9 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 1.1908,
-      "pnl": 5.1577,
+      "px": 1.1877,
+      "pnl": 6.7044,
       "tf": "4h"
-    },
-    {
-      "symbol": "BREVUSDT",
-      "side": "SELL",
-      "entry": 0.07616,
-      "tp": 0.074256,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.07916,
-      "pnl": -8.1182,
-      "tf": "15m"
     },
     {
       "symbol": "FONEUSDT",
@@ -1440,23 +1427,23 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.00089,
-      "pnl": -7.2167,
+      "px": 0.00088,
+      "pnl": -4.8912,
       "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1794873896,
-  "realized": 71.6423,
-  "closed_n": 10,
-  "open_upnl": -10.1772,
-  "equity": 1061.4651,
+  "realized": 63.7642,
+  "closed_n": 11,
+  "open_upnl": 1.8132,
+  "equity": 1065.5774,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
     "profit": 96.2978,
-    "loss": -24.6554,
-    "count": 10
+    "loss": -32.5336,
+    "count": 11
   }
 }
