@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.9.0",
-  "updated_at": 1794903650,
+  "updated_at": 1794904034,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794862258
-    },
-    {
-      "kind": "GAP",
-      "symbol": "CRCLUSDT",
-      "tf": "1m",
-      "gap": 0.08,
-      "ts": 1794862368
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,35 +1388,35 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1794903650
-    }
-  ],
-  "trades": [
+    },
     {
-      "symbol": "CLAUDIAUSDT",
-      "side": "SELL",
-      "entry": 0.007859759612216806,
-      "tp": 0.007663265621911386,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
-      "lev": 20,
-      "px": 0.007739,
-      "pnl": 8.4986,
-      "tf": "5m"
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794903817
+    },
+    {
+      "kind": "SELL",
+      "symbol": "CATUSDT",
+      "tf": "1m",
+      "gap": 39326966771.28,
+      "ts": 1794904034
     }
   ],
+  "trades": [],
   "start": 1000.0,
   "session_start": 1794873896,
-  "realized": 0,
-  "closed_n": 0,
-  "open_upnl": 8.4986,
-  "equity": 1008.4986,
+  "realized": 33.4941,
+  "closed_n": 1,
+  "open_upnl": 0,
+  "equity": 1033.4941,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 0,
+    "profit": 33.4941,
     "loss": 0,
-    "count": 0
+    "count": 1
   }
 }
