@@ -9290,7 +9290,8 @@
       "side": "LONG",
       "upper": 0.001382,
       "open": 0.001382,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CRCLUSDT",
@@ -9309,7 +9310,8 @@
       "side": "SELL",
       "upper": 55.42680077876412,
       "open": 55.56,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "CRCLUSDT",
@@ -9318,7 +9320,8 @@
       "side": "SELL",
       "upper": 55.446994599905416,
       "open": 55.56,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ALABUSDT",
@@ -9417,6 +9420,51 @@
       "side": "SELL",
       "upper": 268.5984748258951,
       "open": 271.3,
+      "reported": false
+    },
+    {
+      "symbol": "NVDLUSDT",
+      "tf": "15m",
+      "candle_ts": 1794951000,
+      "side": "SELL",
+      "upper": 16.97840655327512,
+      "open": 17.44,
+      "reported": false
+    },
+    {
+      "symbol": "NBISUSDT",
+      "tf": "15m",
+      "candle_ts": 1794951000,
+      "side": "SELL",
+      "upper": 112.12990894551314,
+      "open": 114.19,
+      "reported": false
+    },
+    {
+      "symbol": "MRVLUSDT",
+      "tf": "15m",
+      "candle_ts": 1794951000,
+      "side": "SELL",
+      "upper": 152.99146120789894,
+      "open": 154.94,
+      "reported": false
+    },
+    {
+      "symbol": "CRWVUSDT",
+      "tf": "15m",
+      "candle_ts": 1794951000,
+      "side": "SELL",
+      "upper": 51.94145748943016,
+      "open": 52.6,
+      "reported": false
+    },
+    {
+      "symbol": "CRCLUSDT",
+      "tf": "15m",
+      "candle_ts": 1794951000,
+      "side": "SELL",
+      "upper": 55.80101290652365,
+      "open": 55.93,
       "reported": false
     }
   ],
@@ -9665,7 +9713,7 @@
     "PIPEDOGUSDT": 1794987155,
     "NIUBIUSDT": 1794988975
   },
-  "last_trade_report_ts": 1794949919,
+  "last_trade_report_ts": 1794951309,
   "last_known_version": "2.9.4",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
