@@ -1,37 +1,6 @@
 {
   "open_trades": [
     {
-      "symbol": "PREDICTUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 1.2025807214281847,
-      "qty": 498.927,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 1.17251620339248,
-      "tf": "4h",
-      "opened_at": 1794916936,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        1.2108
-      ],
-      "steps": [
-        {
-          "px": 1.1958,
-          "ts": 1794916936
-        },
-        {
-          "px": 1.206,
-          "ts": 1794918053
-        }
-      ],
-      "entry_candle_ts": 1794916800,
-      "last_leg_candle_ts": 1794918053,
-      "dry_run": true,
-      "order_id": "PAPER-PREDICTUSDT-1794916936"
-    },
-    {
       "symbol": "NESUSDT",
       "side": "SELL",
       "status": "open",
@@ -176,36 +145,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "WENUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 7.925,
-      "qty": 25.2366,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 7.726875,
-      "tf": "1h",
-      "opened_at": 1793887337,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 7.925,
-          "ts": 1793887337
-        }
-      ],
-      "entry_candle_ts": 1793887200,
-      "last_leg_candle_ts": 1793887200,
-      "dry_run": true,
-      "order_id": "PAPER-WENUSDT-1793887337",
-      "closed_at": 1793889306,
-      "close_px": 7.672,
-      "pnl_usdt": 6.384858044164041,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "LYNUSDT",
       "side": "SELL",
@@ -7115,6 +7054,42 @@
       "pnl_usdt": 5.90909090909089,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "PREDICTUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 1.2025807214281847,
+      "qty": 498.927,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 1.17251620339248,
+      "tf": "4h",
+      "opened_at": 1794916936,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        1.2108
+      ],
+      "steps": [
+        {
+          "px": 1.1958,
+          "ts": 1794916936
+        },
+        {
+          "px": 1.206,
+          "ts": 1794918053
+        }
+      ],
+      "entry_candle_ts": 1794916800,
+      "last_leg_candle_ts": 1794918053,
+      "dry_run": true,
+      "order_id": "PAPER-PREDICTUSDT-1794916936",
+      "closed_at": 1794932774,
+      "close_px": 1.1627,
+      "pnl_usdt": 19.897568978565857,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -9619,7 +9594,7 @@
     "LWLGUSDT": 1794971796,
     "SKY1USDT": 1794974770
   },
-  "last_trade_report_ts": 1794931769,
+  "last_trade_report_ts": 1794932738,
   "last_known_version": "2.9.4",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
