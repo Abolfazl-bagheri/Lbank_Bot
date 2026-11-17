@@ -66,51 +66,32 @@
       "symbol": "UVXYUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 23.28,
-      "qty": 8.5911,
-      "margin": 10.0,
+      "entry": 23.00505273893556,
+      "qty": 26.081300000000002,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 22.698,
+      "tp_price": 22.42992642046217,
       "tf": "4h",
       "opened_at": 1794945652,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        22.91
+      ],
       "steps": [
         {
           "px": 23.28,
           "ts": 1794945652
+        },
+        {
+          "px": 22.87,
+          "ts": 1794946833
         }
       ],
       "entry_candle_ts": 1794945600,
-      "last_leg_candle_ts": 1794945600,
+      "last_leg_candle_ts": 1794946833,
       "dry_run": true,
       "order_id": "PAPER-UVXYUSDT-1794945652"
-    },
-    {
-      "symbol": "MMTUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.142,
-      "qty": 1408.4507,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.13845,
-      "tf": "4h",
-      "opened_at": 1794945681,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.142,
-          "ts": 1794945681
-        }
-      ],
-      "entry_candle_ts": 1794945600,
-      "last_leg_candle_ts": 1794945600,
-      "dry_run": true,
-      "order_id": "PAPER-MMTUSDT-1794945681"
     },
     {
       "symbol": "BREVUSDT",
@@ -139,52 +120,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "ARIAUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.1499418729842976,
-      "qty": 41349.356799999994,
-      "margin": 310.0,
-      "leverage": 20,
-      "tp_price": 0.14619332615969016,
-      "tf": "4h",
-      "opened_at": 1793880046,
-      "adds": 4,
-      "last_leg_margin": 160.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.13818,
-          "ts": 1793880046
-        },
-        {
-          "px": 0.14315,
-          "ts": 1793883644
-        },
-        {
-          "px": 0.14934,
-          "ts": 1793887268
-        },
-        {
-          "px": 0.15437,
-          "ts": 1793890912
-        },
-        {
-          "px": 0.14963,
-          "ts": 1793894546
-        }
-      ],
-      "entry_candle_ts": 1793880000,
-      "last_leg_candle_ts": 1793894400,
-      "dry_run": true,
-      "order_id": "PAPER-ARIAUSDT-1793880046",
-      "closed_at": 1793902727,
-      "close_px": 0.14197,
-      "pnl_usdt": 329.6318201108572,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "SSPCUSDT",
       "side": "SELL",
@@ -7080,6 +7015,36 @@
       "pnl_usdt": -8.142857142857117,
       "close_reason": "STOP",
       "why": "STOP"
+    },
+    {
+      "symbol": "MMTUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.142,
+      "qty": 1408.4507,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.13845,
+      "tf": "4h",
+      "opened_at": 1794945681,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.142,
+          "ts": 1794945681
+        }
+      ],
+      "entry_candle_ts": 1794945600,
+      "last_leg_candle_ts": 1794945600,
+      "dry_run": true,
+      "order_id": "PAPER-MMTUSDT-1794945681",
+      "closed_at": 1794946321,
+      "close_px": 0.1383,
+      "pnl_usdt": 5.2112676056337754,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -9348,6 +9313,16 @@
       "candle_ts": 1794945600,
       "side": "LONG",
       "upper": 0.0013820000086985779,
+      "open": 0.001382,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "PAIDUSDT",
+      "tf": "15m",
+      "candle_ts": 1794946500,
+      "side": "LONG",
+      "upper": 0.0013820000044653562,
       "open": 0.001382,
       "reported": false
     }
