@@ -1,5 +1,31 @@
 {
-  "open_trades": [],
+  "open_trades": [
+    {
+      "symbol": "HAEDALUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.02131,
+      "qty": 9385.2651,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.020777249999999997,
+      "tf": "15m",
+      "opened_at": 1794906178,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.02131,
+          "ts": 1794906178
+        }
+      ],
+      "entry_candle_ts": 1794906000,
+      "last_leg_candle_ts": 1794906000,
+      "dry_run": true,
+      "order_id": "PAPER-HAEDALUSDT-1794906178"
+    }
+  ],
   "trade_history": [
     {
       "symbol": "HYUNDAIUSDT",
@@ -8297,6 +8323,15 @@
       "side": "LONG",
       "upper": 576.0,
       "open": 576.0,
+      "reported": false
+    },
+    {
+      "symbol": "PREDICTUSDT",
+      "tf": "1h",
+      "candle_ts": 1794906000,
+      "side": "SELL",
+      "upper": 1.1281396624708386,
+      "open": 1.1438,
       "reported": false
     }
   ],
