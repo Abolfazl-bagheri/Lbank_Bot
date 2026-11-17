@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.9.4",
-  "updated_at": 1794921318,
+  "updated_at": 1794921333,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794906181
-    },
-    {
-      "kind": "SELL",
-      "symbol": "HAEDALUSDT",
-      "tf": "1h",
-      "gap": 1.86,
-      "ts": 1794906204
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "15m",
       "gap": 4.59,
       "ts": 1794921318
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794921323
+    },
+    {
+      "kind": "SELL",
+      "symbol": "CATEUSDT",
+      "tf": "15m",
+      "gap": 1.01,
+      "ts": 1794921333
     }
   ],
   "trades": [
@@ -1417,14 +1417,27 @@
       "px": 1.213,
       "pnl": -5.9185,
       "tf": "4h"
+    },
+    {
+      "symbol": "BREVUSDT",
+      "side": "SELL",
+      "entry": 0.07216,
+      "tp": 0.070356,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.07216,
+      "pnl": -0.24,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1794873896,
   "realized": 79.7077,
   "closed_n": 9,
-  "open_upnl": -5.9185,
-  "equity": 1073.7892,
+  "open_upnl": -6.1585,
+  "equity": 1073.5492,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
