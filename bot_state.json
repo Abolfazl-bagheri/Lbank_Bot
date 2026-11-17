@@ -1,68 +1,6 @@
 {
-  "open_trades": [
-    {
-      "symbol": "HAEDALUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.02131,
-      "qty": 9385.2651,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.020777249999999997,
-      "tf": "15m",
-      "opened_at": 1794906178,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.02131,
-          "ts": 1794906178
-        }
-      ],
-      "entry_candle_ts": 1794906000,
-      "last_leg_candle_ts": 1794906000,
-      "dry_run": true,
-      "order_id": "PAPER-HAEDALUSDT-1794906178"
-    }
-  ],
+  "open_trades": [],
   "trade_history": [
-    {
-      "symbol": "HYUNDAIUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 228.54288489483486,
-      "qty": 2.625347,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 222.829312772464,
-      "tf": "15m",
-      "opened_at": 1793837814,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        229.3
-      ],
-      "steps": [
-        {
-          "px": 228.09,
-          "ts": 1793837814
-        },
-        {
-          "px": 228.77,
-          "ts": 1793838023
-        }
-      ],
-      "entry_candle_ts": 1793837700,
-      "last_leg_candle_ts": 1793838023,
-      "dry_run": true,
-      "order_id": "PAPER-HYUNDAIUSDT-1793837814",
-      "closed_at": 1793839665,
-      "close_px": 222.02,
-      "pnl_usdt": 17.124711358666143,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "EIDOUSDT",
       "side": "SELL",
@@ -7007,6 +6945,36 @@
       "pnl_usdt": 33.49412454305759,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "HAEDALUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.02131,
+      "qty": 9385.2651,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.020777249999999997,
+      "tf": "15m",
+      "opened_at": 1794906178,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.02131,
+          "ts": 1794906178
+        }
+      ],
+      "entry_candle_ts": 1794906000,
+      "last_leg_candle_ts": 1794906000,
+      "dry_run": true,
+      "order_id": "PAPER-HAEDALUSDT-1794906178",
+      "closed_at": 1794906775,
+      "close_px": 0.02005,
+      "pnl_usdt": 11.825434068512443,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -8199,7 +8167,8 @@
       "side": "SELL",
       "upper": 0.020847272938290553,
       "open": 0.02108,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CLAUDIAUSDT",
@@ -8217,7 +8186,8 @@
       "side": "SELL",
       "upper": 0.9020902161715381,
       "open": 0.9101,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "MUSDT",
@@ -8305,7 +8275,8 @@
       "side": "SELL",
       "upper": 0.03367741176646605,
       "open": 0.03452,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "USTCUSDT",
@@ -8314,7 +8285,8 @@
       "side": "SELL",
       "upper": 0.003942192466265525,
       "open": 0.004008,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CATUSDT",
@@ -8323,7 +8295,8 @@
       "side": "LONG",
       "upper": 576.0,
       "open": 576.0,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "PREDICTUSDT",
@@ -8332,6 +8305,24 @@
       "side": "SELL",
       "upper": 1.1281396624708386,
       "open": 1.1438,
+      "reported": false
+    },
+    {
+      "symbol": "HAEDALUSDT",
+      "tf": "15m",
+      "candle_ts": 1794906000,
+      "side": "SELL",
+      "upper": 0.020856029473249885,
+      "open": 0.02121,
+      "reported": false
+    },
+    {
+      "symbol": "HAEDALUSDT",
+      "tf": "1h",
+      "candle_ts": 1794906000,
+      "side": "SELL",
+      "upper": 0.020913224100222234,
+      "open": 0.02121,
       "reported": false
     }
   ],
@@ -8584,7 +8575,7 @@
     "1000000BABYDOGEUSDT": 1794946021,
     "HOTUSDT": 1794946022
   },
-  "last_trade_report_ts": 1794905001,
+  "last_trade_report_ts": 1794906482,
   "last_known_version": "2.9.0",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
