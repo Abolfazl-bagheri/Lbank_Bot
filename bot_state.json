@@ -105,6 +105,31 @@
       "last_leg_candle_ts": 1794927600,
       "dry_run": true,
       "order_id": "PAPER-CYPHUSDT-1794927657"
+    },
+    {
+      "symbol": "BREVUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.09892,
+      "qty": 2021.8358,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.09644699999999999,
+      "tf": "1h",
+      "opened_at": 1794927667,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.09892,
+          "ts": 1794927667
+        }
+      ],
+      "entry_candle_ts": 1794927600,
+      "last_leg_candle_ts": 1794927600,
+      "dry_run": true,
+      "order_id": "PAPER-BREVUSDT-1794927667"
     }
   ],
   "trade_history": [
@@ -9018,6 +9043,15 @@
       "side": "SELL",
       "upper": 0.02154533393140622,
       "open": 0.02173,
+      "reported": false
+    },
+    {
+      "symbol": "CYPHUSDT",
+      "tf": "1h",
+      "candle_ts": 1794927600,
+      "side": "SELL",
+      "upper": 2.092950203985172,
+      "open": 2.137,
       "reported": false
     }
   ],
