@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.9.4",
-  "updated_at": 1794927656,
+  "updated_at": 1794927665,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "BASEDUSDT",
-      "tf": "4h",
-      "gap": 1.42,
-      "ts": 1794917040
-    },
-    {
-      "kind": "SELL",
-      "symbol": "RUNEUSDT",
-      "tf": "4h",
-      "gap": 1.25,
-      "ts": 1794917059
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "1h",
       "gap": 2.47,
       "ts": 1794927656
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794927662
+    },
+    {
+      "kind": "SELL",
+      "symbol": "BREVUSDT",
+      "tf": "1h",
+      "gap": 9.23,
+      "ts": 1794927665
     }
   ],
   "trades": [
@@ -1443,14 +1443,27 @@
       "px": 0.00088,
       "pnl": -4.8912,
       "tf": "15m"
+    },
+    {
+      "symbol": "CYPHUSDT",
+      "side": "SELL",
+      "entry": 2.146,
+      "tp": 2.0923499999999997,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 2.146,
+      "pnl": -0.24,
+      "tf": "1h"
     }
   ],
   "start": 1000.0,
   "session_start": 1794873896,
   "realized": -27.3762,
   "closed_n": 13,
-  "open_upnl": -6.1923,
-  "equity": 966.4315,
+  "open_upnl": -6.4323,
+  "equity": 966.1915,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
