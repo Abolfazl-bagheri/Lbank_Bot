@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.9.4",
-  "updated_at": 1794955559,
+  "updated_at": 1794955571,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "PAIDUSDT",
-      "tf": "15m",
-      "gap": 7.13,
-      "ts": 1794942088
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794942375
-    },
     {
       "kind": "HEARTBEAT",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "15m",
       "gap": 4.57,
       "ts": 1794955559
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794955566
+    },
+    {
+      "kind": "SELL",
+      "symbol": "CIENUSDT",
+      "tf": "15m",
+      "gap": 1.08,
+      "ts": 1794955571
     }
   ],
   "trades": [
@@ -1447,14 +1447,14 @@
     {
       "symbol": "HUTUSDT",
       "side": "SELL",
-      "entry": 56.17097850509287,
-      "tp": 54.76670404246555,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
+      "entry": 56.55699184364357,
+      "tp": 55.143067047552485,
+      "adds": 2,
+      "pele": 3,
+      "margin": 70.0,
       "lev": 20,
       "px": 56.85,
-      "pnl": -7.9731,
+      "pnl": -8.9331,
       "tf": "15m"
     }
   ],
@@ -1462,8 +1462,8 @@
   "session_start": 1794873896,
   "realized": 36.1989,
   "closed_n": 32,
-  "open_upnl": -12.5825,
-  "equity": 1023.6164,
+  "open_upnl": -13.5425,
+  "equity": 1022.6564,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
