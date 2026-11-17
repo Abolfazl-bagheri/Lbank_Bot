@@ -192,6 +192,31 @@
       "last_leg_candle_ts": 1794931200,
       "dry_run": true,
       "order_id": "PAPER-BREVUSDT-1794931274"
+    },
+    {
+      "symbol": "CATEUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.022,
+      "qty": 9090.9091,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.021449999999999997,
+      "tf": "4h",
+      "opened_at": 1794931310,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.022,
+          "ts": 1794931310
+        }
+      ],
+      "entry_candle_ts": 1794931200,
+      "last_leg_candle_ts": 1794931200,
+      "dry_run": true,
+      "order_id": "PAPER-CATEUSDT-1794931310"
     }
   ],
   "trade_history": [
@@ -9282,6 +9307,24 @@
       "side": "SELL",
       "upper": 0.021703564401364946,
       "open": 0.0219,
+      "reported": false
+    },
+    {
+      "symbol": "BREVUSDT",
+      "tf": "1h",
+      "candle_ts": 1794931200,
+      "side": "SELL",
+      "upper": 0.09538412956705708,
+      "open": 0.0978,
+      "reported": false
+    },
+    {
+      "symbol": "CYPHUSDT",
+      "tf": "4h",
+      "candle_ts": 1794931200,
+      "side": "SELL",
+      "upper": 2.0697585991084746,
+      "open": 2.095,
       "reported": false
     }
   ],
