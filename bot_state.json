@@ -61,6 +61,31 @@
       "last_leg_candle_ts": 1794930598,
       "dry_run": true,
       "order_id": "PAPER-XAUTUSDT-1794930482"
+    },
+    {
+      "symbol": "CRCLUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 55.4,
+      "qty": 3.6101,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 54.015,
+      "tf": "5m",
+      "opened_at": 1794950431,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 55.4,
+          "ts": 1794950431
+        }
+      ],
+      "entry_candle_ts": 1794950400,
+      "last_leg_candle_ts": 1794950100,
+      "dry_run": true,
+      "order_id": "PAPER-CRCLUSDT-1794950431"
     }
   ],
   "trade_history": [
@@ -7175,36 +7200,6 @@
       "reported": false
     },
     {
-      "symbol": "SILVERUSDT",
-      "tf": "15m",
-      "candle_ts": 1794690900,
-      "side": "LONG",
-      "upper": 48.988685348505676,
-      "open": 46.7,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "XAUTUSDT",
-      "tf": "15m",
-      "candle_ts": 1794690900,
-      "side": "LONG",
-      "upper": 3869.413691842677,
-      "open": 3766.64,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "GOLDUSDT",
-      "tf": "15m",
-      "candle_ts": 1794690900,
-      "side": "LONG",
-      "upper": 3882.4724223637213,
-      "open": 3776.69,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "CRCLUSDT",
       "tf": "1m",
       "candle_ts": 1794691200,
@@ -9188,7 +9183,8 @@
       "side": "LONG",
       "upper": 0.001382,
       "open": 0.001382,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "BREVUSDT",
@@ -9197,7 +9193,8 @@
       "side": "SELL",
       "upper": 0.10652800784569726,
       "open": 0.1054,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "BOTUSDT",
@@ -9215,7 +9212,8 @@
       "side": "SELL",
       "upper": 0.2442763150938521,
       "open": 0.2473,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ICNTUSDT",
@@ -9224,6 +9222,15 @@
       "side": "SELL",
       "upper": 0.24465807828576025,
       "open": 0.2473,
+      "reported": false
+    },
+    {
+      "symbol": "PAIDUSDT",
+      "tf": "15m",
+      "candle_ts": 1794950100,
+      "side": "LONG",
+      "upper": 0.001382,
+      "open": 0.001382,
       "reported": false
     }
   ],
