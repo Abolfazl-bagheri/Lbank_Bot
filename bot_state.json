@@ -1,62 +1,6 @@
 {
-  "open_trades": [
-    {
-      "symbol": "FHEUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.01706,
-      "qty": 11723.3294,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.0166335,
-      "tf": "1m",
-      "opened_at": 1794914533,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.01706,
-          "ts": 1794914533
-        }
-      ],
-      "entry_candle_ts": 1794914520,
-      "last_leg_candle_ts": 1794914100,
-      "dry_run": true,
-      "order_id": "PAPER-FHEUSDT-1794914533"
-    }
-  ],
+  "open_trades": [],
   "trade_history": [
-    {
-      "symbol": "MINIMAXUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 22.09,
-      "qty": 9.0539,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 21.53775,
-      "tf": "15m",
-      "opened_at": 1793846964,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 22.09,
-          "ts": 1793846964
-        }
-      ],
-      "entry_candle_ts": 1793846700,
-      "last_leg_candle_ts": 1793846700,
-      "dry_run": true,
-      "order_id": "PAPER-MINIMAXUSDT-1793846964",
-      "closed_at": 1793857922,
-      "close_px": 21.01,
-      "pnl_usdt": 9.778180172023525,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "LYNUSDT",
       "side": "SELL",
@@ -7001,6 +6945,36 @@
       "pnl_usdt": 13.798019801980193,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "FHEUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.01706,
+      "qty": 11723.3294,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0166335,
+      "tf": "1m",
+      "opened_at": 1794914533,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.01706,
+          "ts": 1794914533
+        }
+      ],
+      "entry_candle_ts": 1794914520,
+      "last_leg_candle_ts": 1794914100,
+      "dry_run": true,
+      "order_id": "PAPER-FHEUSDT-1794914533",
+      "closed_at": 1794914855,
+      "close_px": 0.0178,
+      "pnl_usdt": -8.675263774912088,
+      "close_reason": "STOP",
+      "why": "STOP"
     }
   ],
   "pending": [
