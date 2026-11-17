@@ -8669,7 +8669,8 @@
       "side": "LONG",
       "upper": 58.213767668102804,
       "open": 57.3,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -8823,10 +8824,21 @@
       "trades": 3,
       "tp_trades": 0,
       "reset_trades": 3
+    },
+    {
+      "from": 1794787357,
+      "to": 1794873896,
+      "start": 1000.0,
+      "realized": 0.0,
+      "unrealized_closed": 0.0,
+      "net": 0.0,
+      "trades": 0,
+      "tp_trades": 0,
+      "reset_trades": 0
     }
   ],
-  "paper_session_start": 1794787357,
-  "last_daily_report_date": "2026-11-16",
+  "paper_session_start": 1794873896,
+  "last_daily_report_date": "2026-11-17",
   "kline_blacklist": {
     "EURUSDT": 1793385188,
     "SKY1USDT": 1793398016,
