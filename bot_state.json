@@ -8920,7 +8920,8 @@
       "side": "SELL",
       "upper": 0.5095799001078294,
       "open": 0.517,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "FONEUSDT",
@@ -8929,7 +8930,8 @@
       "side": "SELL",
       "upper": 0.0008198010467890227,
       "open": 0.000814,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "NKEUSDT",
@@ -8938,6 +8940,43 @@
       "side": "SELL",
       "upper": 40.11866586860382,
       "open": 40.87,
+      "reported": true,
+      "filled": false
+    },
+    {
+      "symbol": "NESUSDT",
+      "tf": "15m",
+      "candle_ts": 1794925800,
+      "side": "SELL",
+      "upper": 0.20001428884424655,
+      "open": 0.2043,
+      "reported": false
+    },
+    {
+      "symbol": "FONEUSDT",
+      "tf": "15m",
+      "candle_ts": 1794925800,
+      "side": "SELL",
+      "upper": 0.0008195609903370082,
+      "open": 0.000814,
+      "reported": false
+    },
+    {
+      "symbol": "CRCLUSDT",
+      "tf": "5m",
+      "candle_ts": 1794926100,
+      "side": "LONG",
+      "upper": 58.07969410606748,
+      "open": 57.2,
+      "reported": false
+    },
+    {
+      "symbol": "CRCLUSDT",
+      "tf": "5m",
+      "candle_ts": 1794926100,
+      "side": "LONG",
+      "upper": 58.064376337332455,
+      "open": 57.2,
       "reported": false
     }
   ],
@@ -9189,7 +9228,7 @@
     "BIANRENSHENGUSDT": 1794960417,
     "LIGHT1USDT": 1794962812
   },
-  "last_trade_report_ts": 1794925277,
+  "last_trade_report_ts": 1794926183,
   "last_known_version": "2.9.4",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
