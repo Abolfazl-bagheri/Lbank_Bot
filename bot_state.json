@@ -32,39 +32,6 @@
       "order_id": "PAPER-PREDICTUSDT-1794916936"
     },
     {
-      "symbol": "FONEUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.00086,
-      "qty": 1627906.9767,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 0.0008384999999999999,
-      "tf": "15m",
-      "opened_at": 1794922263,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.00086,
-          "ts": 1794922263
-        },
-        {
-          "px": 0.00086,
-          "ts": 1794923174
-        },
-        {
-          "px": 0.00086,
-          "ts": 1794924975
-        }
-      ],
-      "entry_candle_ts": 1794922200,
-      "last_leg_candle_ts": 1794924900,
-      "dry_run": true,
-      "order_id": "PAPER-FONEUSDT-1794922263"
-    },
-    {
       "symbol": "NESUSDT",
       "side": "SELL",
       "status": "open",
@@ -91,51 +58,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "LAOPUUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 39.8132875657914,
-      "qty": 75.3518,
-      "margin": 150.0,
-      "leverage": 20,
-      "tp_price": 38.817955376646616,
-      "tf": "1h",
-      "opened_at": 1793843206,
-      "adds": 3,
-      "last_leg_margin": 80.0,
-      "used_res_levels": [
-        39.7,
-        40.07
-      ],
-      "steps": [
-        {
-          "px": 39.08,
-          "ts": 1793843206
-        },
-        {
-          "px": 39.55,
-          "ts": 1793843421
-        },
-        {
-          "px": 39.92,
-          "ts": 1793844349
-        },
-        {
-          "px": 39.92,
-          "ts": 1793844475
-        }
-      ],
-      "entry_candle_ts": 1793843100,
-      "last_leg_candle_ts": 1793844475,
-      "dry_run": true,
-      "order_id": "PAPER-LAOPUUSDT-1793843206",
-      "closed_at": 1793873987,
-      "close_px": 38.43,
-      "pnl_usdt": 104.23310786672802,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "XTZUSDT",
       "side": "SELL",
@@ -7059,6 +6981,44 @@
       "pnl_usdt": -26.024118901763778,
       "close_reason": "STOP",
       "why": "STOP"
+    },
+    {
+      "symbol": "FONEUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.00086,
+      "qty": 1627906.9767,
+      "margin": 70.0,
+      "leverage": 20,
+      "tp_price": 0.0008384999999999999,
+      "tf": "15m",
+      "opened_at": 1794922263,
+      "adds": 2,
+      "last_leg_margin": 40.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.00086,
+          "ts": 1794922263
+        },
+        {
+          "px": 0.00086,
+          "ts": 1794923174
+        },
+        {
+          "px": 0.00086,
+          "ts": 1794924975
+        }
+      ],
+      "entry_candle_ts": 1794922200,
+      "last_leg_candle_ts": 1794924900,
+      "dry_run": true,
+      "order_id": "PAPER-FONEUSDT-1794922263",
+      "closed_at": 1794926488,
+      "close_px": 0.0009,
+      "pnl_usdt": -65.11627906976744,
+      "close_reason": "STOP",
+      "why": "STOP"
     }
   ],
   "pending": [
@@ -8968,7 +8928,8 @@
       "side": "LONG",
       "upper": 58.07969410606748,
       "open": 57.2,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CRCLUSDT",
@@ -8977,7 +8938,8 @@
       "side": "LONG",
       "upper": 58.064376337332455,
       "open": 57.2,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
