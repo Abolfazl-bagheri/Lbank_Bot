@@ -4,20 +4,24 @@
       "symbol": "CLAUDIAUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.007383,
-      "qty": 27089.2591,
-      "margin": 10.0,
+      "entry": 0.007859759612216806,
+      "qty": 76338.2126,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.007198425,
-      "tf": "4h",
+      "tp_price": 0.007663265621911386,
+      "tf": "5m",
       "opened_at": 1794902556,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 0.007383,
           "ts": 1794902556
+        },
+        {
+          "px": 0.008122,
+          "ts": 1794903060
         }
       ],
       "entry_candle_ts": 1794902400,
@@ -7183,26 +7187,6 @@
     {
       "symbol": "XAUTUSDT",
       "tf": "1m",
-      "candle_ts": 1794643200,
-      "side": "LONG",
-      "upper": 3869.3202910561645,
-      "open": 3868.21,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "XAUTUSDT",
-      "tf": "1m",
-      "candle_ts": 1794643560,
-      "side": "LONG",
-      "upper": 3869.2508793141183,
-      "open": 3868.22,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "XAUTUSDT",
-      "tf": "1m",
       "candle_ts": 1794644460,
       "side": "LONG",
       "upper": 3869.6677917418183,
@@ -8235,7 +8219,8 @@
       "side": "SELL",
       "upper": 4.12395620766766,
       "open": 4.105,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CYPHUSDT",
@@ -8275,6 +8260,43 @@
       "upper": 0.020847272938290553,
       "open": 0.02108,
       "reported": false
+    },
+    {
+      "symbol": "CLAUDIAUSDT",
+      "tf": "4h",
+      "candle_ts": 1794902400,
+      "side": "SELL",
+      "upper": 0.006573504651368987,
+      "open": 0.007181,
+      "reported": false
+    },
+    {
+      "symbol": "MUSDT",
+      "tf": "1h",
+      "candle_ts": 1794902400,
+      "side": "SELL",
+      "upper": 0.9020902161715381,
+      "open": 0.9101,
+      "reported": false
+    },
+    {
+      "symbol": "MUSDT",
+      "tf": "4h",
+      "candle_ts": 1794902400,
+      "side": "SELL",
+      "upper": 0.9000788442875207,
+      "open": 0.9101,
+      "reported": false
+    },
+    {
+      "symbol": "CATUSDT",
+      "tf": "1m",
+      "candle_ts": 1794902700,
+      "side": "LONG",
+      "upper": 578.2,
+      "open": 578.2,
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -8519,9 +8541,15 @@
     "MEMECOINUSDT": 1794943449,
     "CZUSDT": 1794943451,
     "MANCERUSDT": 1794943452,
-    "AI1USDT": 1794944327
+    "AI1USDT": 1794944327,
+    "LONGXIAUSDT": 1794945810,
+    "WOTAMALAILEUSDT": 1794945858,
+    "SPORTFUNUSDT": 1794945939,
+    "HAJIMIUSDT": 1794945973,
+    "1000000BABYDOGEUSDT": 1794946021,
+    "HOTUSDT": 1794946022
   },
-  "last_trade_report_ts": 1794901420,
+  "last_trade_report_ts": 1794902940,
   "last_known_version": "2.9.0",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
