@@ -57,31 +57,6 @@
       "order_id": "PAPER-NESUSDT-1794925835"
     },
     {
-      "symbol": "FONEUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.00086,
-      "qty": 232558.1395,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.0008384999999999999,
-      "tf": "15m",
-      "opened_at": 1794926767,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.00086,
-          "ts": 1794926767
-        }
-      ],
-      "entry_candle_ts": 1794926700,
-      "last_leg_candle_ts": 1794926700,
-      "dry_run": true,
-      "order_id": "PAPER-FONEUSDT-1794926767"
-    },
-    {
       "symbol": "CYPHUSDT",
       "side": "SELL",
       "status": "open",
@@ -114,36 +89,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "CNPYUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.1743,
-      "qty": 1147.4469,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.1699425,
-      "tf": "15m",
-      "opened_at": 1793878273,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.1743,
-          "ts": 1793878273
-        }
-      ],
-      "entry_candle_ts": 1793878200,
-      "last_leg_candle_ts": 1793878200,
-      "dry_run": true,
-      "order_id": "PAPER-CNPYUSDT-1793878273",
-      "closed_at": 1793882089,
-      "close_px": 0.1694,
-      "pnl_usdt": 5.622489959839375,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "FRONGUSDT",
       "side": "SELL",
@@ -7063,6 +7008,36 @@
       "pnl_usdt": -9.036969420356014,
       "close_reason": "STOP",
       "why": "STOP"
+    },
+    {
+      "symbol": "FONEUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.00086,
+      "qty": 232558.1395,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0008384999999999999,
+      "tf": "15m",
+      "opened_at": 1794926767,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.00086,
+          "ts": 1794926767
+        }
+      ],
+      "entry_candle_ts": 1794926700,
+      "last_leg_candle_ts": 1794926700,
+      "dry_run": true,
+      "order_id": "PAPER-FONEUSDT-1794926767",
+      "closed_at": 1794929163,
+      "close_px": 0.0009,
+      "pnl_usdt": -9.30232558139535,
+      "close_reason": "STOP",
+      "why": "STOP"
     }
   ],
   "pending": [
@@ -9353,7 +9328,7 @@
     "AINBSCUSDT": 1794971061,
     "LWLGUSDT": 1794971796
   },
-  "last_trade_report_ts": 1794928297,
+  "last_trade_report_ts": 1794929200,
   "last_known_version": "2.9.4",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
