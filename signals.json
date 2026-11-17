@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.9.4",
-  "updated_at": 1794931388,
+  "updated_at": 1794931767,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "SILVERUSDT",
-      "tf": "5m",
-      "gap": 0.11,
-      "ts": 1794922848
-    },
     {
       "kind": "SELL",
       "symbol": "GOLDUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 1.02,
       "ts": 1794931388
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794931767
     }
   ],
   "trades": [
@@ -1445,29 +1445,16 @@
       "tf": "1h"
     },
     {
-      "symbol": "UVXYUSDT",
-      "side": "SELL",
-      "entry": 21.84,
-      "tp": 21.294,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 21.09,
-      "pnl": 6.6281,
-      "tf": "15m"
-    },
-    {
       "symbol": "GOLDUSDT",
       "side": "SELL",
-      "entry": 3892.25,
-      "tp": 3794.94375,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
+      "entry": 3884.6759603244996,
+      "tp": 3787.5590613163868,
+      "adds": 1,
+      "pele": 2,
+      "margin": 30.0,
       "lev": 20,
       "px": 3880.9,
-      "pnl": 0.3432,
+      "pnl": -0.1368,
       "tf": "15m"
     },
     {
@@ -1512,16 +1499,16 @@
   ],
   "start": 1000.0,
   "session_start": 1794873896,
-  "realized": -59.8077,
-  "closed_n": 16,
-  "open_upnl": 22.9947,
-  "equity": 963.187,
+  "realized": -52.9396,
+  "closed_n": 17,
+  "open_upnl": 15.8866,
+  "equity": 962.947,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 96.2978,
+    "profit": 103.1659,
     "loss": -156.1055,
-    "count": 16
+    "count": 17
   }
 }
