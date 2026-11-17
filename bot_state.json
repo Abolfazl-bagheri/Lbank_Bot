@@ -1,5 +1,31 @@
 {
-  "open_trades": [],
+  "open_trades": [
+    {
+      "symbol": "PREDICTUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 1.2625,
+      "qty": 158.4158,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 1.2309375,
+      "tf": "5m",
+      "opened_at": 1794907558,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 1.2625,
+          "ts": 1794907558
+        }
+      ],
+      "entry_candle_ts": 1794907500,
+      "last_leg_candle_ts": 1794906900,
+      "dry_run": true,
+      "order_id": "PAPER-PREDICTUSDT-1794907558"
+    }
+  ],
   "trade_history": [
     {
       "symbol": "EIDOUSDT",
