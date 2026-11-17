@@ -61,64 +61,9 @@
       "last_leg_candle_ts": 1794930598,
       "dry_run": true,
       "order_id": "PAPER-XAUTUSDT-1794930482"
-    },
-    {
-      "symbol": "BREVUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.09783,
-      "qty": 2044.3627,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.09538425,
-      "tf": "1h",
-      "opened_at": 1794931274,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.09783,
-          "ts": 1794931274
-        }
-      ],
-      "entry_candle_ts": 1794931200,
-      "last_leg_candle_ts": 1794931200,
-      "dry_run": true,
-      "order_id": "PAPER-BREVUSDT-1794931274"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "ARGUSUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.00454,
-      "qty": 44052.8634,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.0044265,
-      "tf": "15m",
-      "opened_at": 1793846817,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.00454,
-          "ts": 1793846817
-        }
-      ],
-      "entry_candle_ts": 1793846700,
-      "last_leg_candle_ts": 1793846700,
-      "dry_run": true,
-      "order_id": "PAPER-ARGUSUSDT-1793846817",
-      "closed_at": 1793892003,
-      "close_px": 0.00436,
-      "pnl_usdt": 7.929515418502185,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "ZZZUSDT",
       "side": "SELL",
@@ -7034,6 +6979,36 @@
       "closed_at": 1794933651,
       "close_px": 0.199,
       "pnl_usdt": 5.188448360254526,
+      "close_reason": "TP50",
+      "why": "TP50"
+    },
+    {
+      "symbol": "BREVUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.09783,
+      "qty": 2044.3627,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.09538425,
+      "tf": "1h",
+      "opened_at": 1794931274,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.09783,
+          "ts": 1794931274
+        }
+      ],
+      "entry_candle_ts": 1794931200,
+      "last_leg_candle_ts": 1794931200,
+      "dry_run": true,
+      "order_id": "PAPER-BREVUSDT-1794931274",
+      "closed_at": 1794933717,
+      "close_px": 0.095,
+      "pnl_usdt": 5.785546355923539,
       "close_reason": "TP50",
       "why": "TP50"
     }
