@@ -7276,16 +7276,6 @@
       "reported": false
     },
     {
-      "symbol": "XAUTUSDT",
-      "tf": "1m",
-      "candle_ts": 1794686280,
-      "side": "LONG",
-      "upper": 3838.3380831053787,
-      "open": 3836.37,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "SILVERUSDT",
       "tf": "15m",
       "candle_ts": 1794689100,
@@ -9022,7 +9012,8 @@
       "side": "SELL",
       "upper": 2.0697585991084746,
       "open": 2.095,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CATEUSDT",
@@ -9031,7 +9022,8 @@
       "side": "SELL",
       "upper": 0.020876467902996083,
       "open": 0.0219,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "BLURUSDT",
@@ -9050,7 +9042,8 @@
       "side": "SELL",
       "upper": 0.08703431139569534,
       "open": 0.0978,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "BLURUSDT",
@@ -9059,7 +9052,8 @@
       "side": "SELL",
       "upper": 0.006469520419259843,
       "open": 0.00668,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "SOXSUSDT",
@@ -9068,7 +9062,8 @@
       "side": "SELL",
       "upper": 61.079621194869006,
       "open": 61.96,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "SQQQUSDT",
@@ -9317,7 +9312,8 @@
       "side": "LONG",
       "upper": 0.001382,
       "open": 0.001382,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "UVXYUSDT",
@@ -9335,6 +9331,24 @@
       "side": "SELL",
       "upper": 0.1373233707788833,
       "open": 0.142,
+      "reported": false
+    },
+    {
+      "symbol": "BREVUSDT",
+      "tf": "4h",
+      "candle_ts": 1794945600,
+      "side": "SELL",
+      "upper": 0.09432184718919363,
+      "open": 0.0986,
+      "reported": false
+    },
+    {
+      "symbol": "PAIDUSDT",
+      "tf": "15m",
+      "candle_ts": 1794945600,
+      "side": "LONG",
+      "upper": 0.0013820000086985779,
+      "open": 0.001382,
       "reported": false
     }
   ],
@@ -9557,12 +9571,8 @@
     "ZZZUSDT": 1794943379,
     "OROCHIUSDT": 1794943380,
     "AI1USDT": 1794944327,
-    "LONGXIAUSDT": 1794945810,
     "WOTAMALAILEUSDT": 1794945858,
     "SPORTFUNUSDT": 1794945939,
-    "HAJIMIUSDT": 1794945973,
-    "1000000BABYDOGEUSDT": 1794946021,
-    "HOTUSDT": 1794946022,
     "B3USDT": 1794950633,
     "FLOCK1USDT": 1794954273,
     "ANTUSDT": 1794960189,
@@ -9585,9 +9595,10 @@
     "1000WOJAKUSDT": 1794987141,
     "SPACE1USDT": 1794987145,
     "MANCERUSDT": 1794987147,
-    "PIPEDOGUSDT": 1794987155
+    "PIPEDOGUSDT": 1794987155,
+    "NIUBIUSDT": 1794988975
   },
-  "last_trade_report_ts": 1794945107,
+  "last_trade_report_ts": 1794946062,
   "last_known_version": "2.9.4",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
