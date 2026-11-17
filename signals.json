@@ -1,50 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.9.4",
-  "updated_at": 1794917958,
+  "updated_at": 1794918326,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "EVAAUSDT",
-      "tf": "15m",
-      "gap": 1.07,
-      "ts": 1794901610
-    },
-    {
-      "kind": "SELL",
-      "symbol": "CYPHUSDT",
-      "tf": "1m",
-      "gap": 1.5,
-      "ts": 1794901628
-    },
-    {
-      "kind": "SELL",
-      "symbol": "CATUSDT",
-      "tf": "1m",
-      "gap": 39684282672.82,
-      "ts": 1794901703
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794901873
-    },
-    {
-      "kind": "GAP",
-      "symbol": "EVAAUSDT",
-      "tf": "1h",
-      "gap": 2.32,
-      "ts": 1794902116
-    },
-    {
-      "kind": "GAP",
-      "symbol": "LONGXIAUSDT",
-      "tf": "1h",
-      "gap": 6.53,
-      "ts": 1794902121
-    },
     {
       "kind": "GAP",
       "symbol": "MUSDT",
@@ -1402,48 +1360,77 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1794917958
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794918024
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794918055
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794918056
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794918082
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794918107
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794918326
     }
   ],
   "trades": [
     {
-      "symbol": "CLAUDIAUSDT",
-      "side": "SELL",
-      "entry": 0.00745,
-      "tp": 0.00726375,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.007351,
-      "pnl": 2.4177,
-      "tf": "4h"
-    },
-    {
       "symbol": "PREDICTUSDT",
       "side": "SELL",
-      "entry": 1.1958,
-      "tp": 1.165905,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
+      "entry": 1.2025807214281847,
+      "tp": 1.17251620339248,
+      "adds": 1,
+      "pele": 2,
+      "margin": 30.0,
       "lev": 20,
-      "px": 1.1937,
-      "pnl": 0.1112,
+      "px": 1.2143,
+      "pnl": -6.5671,
       "tf": "4h"
     }
   ],
   "start": 1000.0,
   "session_start": 1794873896,
-  "realized": 78.7903,
-  "closed_n": 7,
-  "open_upnl": 2.5289,
-  "equity": 1081.3192,
+  "realized": 87.6225,
+  "closed_n": 8,
+  "open_upnl": -6.5671,
+  "equity": 1081.0554,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 87.4655,
+    "profit": 96.2978,
     "loss": -8.6753,
-    "count": 7
+    "count": 8
   }
 }
