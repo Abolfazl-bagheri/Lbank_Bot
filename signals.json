@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.9.1",
-  "updated_at": 1794916867,
+  "updated_at": 1794916884,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794899604
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794899897
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,15 +1388,43 @@
       "tf": "15m",
       "gap": 2.91,
       "ts": 1794916867
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794916872
+    },
+    {
+      "kind": "SELL",
+      "symbol": "SOONUSDT",
+      "tf": "15m",
+      "gap": 1.75,
+      "ts": 1794916884
     }
   ],
-  "trades": [],
+  "trades": [
+    {
+      "symbol": "MMTUSDT",
+      "side": "SELL",
+      "entry": 0.1333,
+      "tp": 0.12996749999999999,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.1333,
+      "pnl": -0.24,
+      "tf": "15m"
+    }
+  ],
   "start": 1000.0,
   "session_start": 1794873896,
   "realized": 59.6099,
   "closed_n": 5,
-  "open_upnl": 0,
-  "equity": 1059.6099,
+  "open_upnl": -0.24,
+  "equity": 1059.3699,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
