@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.9.4",
-  "updated_at": 1794923126,
+  "updated_at": 1794923159,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "PREDICTUSDT",
-      "tf": "1h",
-      "gap": 1.5,
-      "ts": 1794909674
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794910040
-    },
     {
       "kind": "HEARTBEAT",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "15m",
       "gap": 2.52,
       "ts": 1794923126
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794923132
+    },
+    {
+      "kind": "SELL",
+      "symbol": "POWERUSDT",
+      "tf": "15m",
+      "gap": 1.18,
+      "ts": 1794923159
     }
   ],
   "trades": [
@@ -1430,14 +1430,27 @@
       "px": 0.00086,
       "pnl": -0.24,
       "tf": "15m"
+    },
+    {
+      "symbol": "BREVUSDT",
+      "side": "SELL",
+      "entry": 0.08055,
+      "tp": 0.07853624999999999,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.08055,
+      "pnl": -0.24,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1794873896,
   "realized": 63.7642,
   "closed_n": 11,
-  "open_upnl": 1.4252,
-  "equity": 1065.1894,
+  "open_upnl": 1.1852,
+  "equity": 1064.9494,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
