@@ -96,31 +96,6 @@
       "order_id": "PAPER-CRCLUSDT-1794950431"
     },
     {
-      "symbol": "MVLLUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 10.14,
-      "qty": 19.7239,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 9.8865,
-      "tf": "15m",
-      "opened_at": 1794951019,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 10.14,
-          "ts": 1794951019
-        }
-      ],
-      "entry_candle_ts": 1794951000,
-      "last_leg_candle_ts": 1794951000,
-      "dry_run": true,
-      "order_id": "PAPER-MVLLUSDT-1794951019"
-    },
-    {
       "symbol": "CRDOUSDT",
       "side": "SELL",
       "status": "open",
@@ -147,42 +122,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "ACTUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.009063294160849472,
-      "qty": 66201.0952,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.008836711806828235,
-      "tf": "1h",
-      "opened_at": 1793869497,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        0.00907
-      ],
-      "steps": [
-        {
-          "px": 0.00909,
-          "ts": 1793869497
-        },
-        {
-          "px": 0.00905,
-          "ts": 1793885632
-        }
-      ],
-      "entry_candle_ts": 1793869200,
-      "last_leg_candle_ts": 1793885632,
-      "dry_run": true,
-      "order_id": "PAPER-ACTUSDT-1793869497",
-      "closed_at": 1793926435,
-      "close_px": 0.009531,
-      "pnl_usdt": -30.96263880549305,
-      "close_reason": "NIGHT_RESET",
-      "why": "NIGHT_RESET"
-    },
     {
       "symbol": "SQQQUSDT",
       "side": "SELL",
@@ -7062,6 +7001,36 @@
       "pnl_usdt": 5.293440736478679,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "MVLLUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 10.14,
+      "qty": 19.7239,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 9.8865,
+      "tf": "15m",
+      "opened_at": 1794951019,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 10.14,
+          "ts": 1794951019
+        }
+      ],
+      "entry_candle_ts": 1794951000,
+      "last_leg_candle_ts": 1794951000,
+      "dry_run": true,
+      "order_id": "PAPER-MVLLUSDT-1794951019",
+      "closed_at": 1794951668,
+      "close_px": 9.88,
+      "pnl_usdt": 5.128205128205124,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -9453,7 +9422,8 @@
       "side": "SELL",
       "upper": 55.96996255590464,
       "open": 56.06,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "SILVERUSDT",
@@ -9462,7 +9432,8 @@
       "side": "SELL",
       "upper": 47.62214945708899,
       "open": 47.68,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "SILVERUSDT",
@@ -9471,7 +9442,8 @@
       "side": "SELL",
       "upper": 47.62214945708899,
       "open": 47.68,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
