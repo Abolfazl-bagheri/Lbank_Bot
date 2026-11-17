@@ -173,64 +173,9 @@
       "last_leg_candle_ts": 1794931200,
       "dry_run": true,
       "order_id": "PAPER-BREVUSDT-1794931274"
-    },
-    {
-      "symbol": "CATEUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.022,
-      "qty": 9090.9091,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.021449999999999997,
-      "tf": "4h",
-      "opened_at": 1794931310,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.022,
-          "ts": 1794931310
-        }
-      ],
-      "entry_candle_ts": 1794931200,
-      "last_leg_candle_ts": 1794931200,
-      "dry_run": true,
-      "order_id": "PAPER-CATEUSDT-1794931310"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "CLANKERUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 18.56,
-      "qty": 10.7759,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 18.096,
-      "tf": "15m",
-      "opened_at": 1793887244,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 18.56,
-          "ts": 1793887244
-        }
-      ],
-      "entry_candle_ts": 1793887200,
-      "last_leg_candle_ts": 1793887200,
-      "dry_run": true,
-      "order_id": "PAPER-CLANKERUSDT-1793887244",
-      "closed_at": 1793888339,
-      "close_px": 16.94,
-      "pnl_usdt": 17.45689655172411,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "WENUSDT",
       "side": "SELL",
@@ -7138,6 +7083,36 @@
       "closed_at": 1794931759,
       "close_px": 21.09,
       "pnl_usdt": 6.868131868131869,
+      "close_reason": "TP50",
+      "why": "TP50"
+    },
+    {
+      "symbol": "CATEUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.022,
+      "qty": 9090.9091,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.021449999999999997,
+      "tf": "4h",
+      "opened_at": 1794931310,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.022,
+          "ts": 1794931310
+        }
+      ],
+      "entry_candle_ts": 1794931200,
+      "last_leg_candle_ts": 1794931200,
+      "dry_run": true,
+      "order_id": "PAPER-CATEUSDT-1794931310",
+      "closed_at": 1794931854,
+      "close_px": 0.02135,
+      "pnl_usdt": 5.90909090909089,
       "close_reason": "TP50",
       "why": "TP50"
     }
