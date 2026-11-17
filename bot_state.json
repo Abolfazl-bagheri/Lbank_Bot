@@ -9464,7 +9464,8 @@
       "side": "SELL",
       "upper": 0.2596416861479982,
       "open": 0.2621,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "PAIDUSDT",
@@ -9492,6 +9493,117 @@
       "candle_ts": 1794954600,
       "side": "SELL",
       "upper": 54.30685828495027,
+      "open": 54.08,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "HUTUSDT",
+      "tf": "15m",
+      "candle_ts": 1794955500,
+      "side": "SELL",
+      "upper": 54.2547739820195,
+      "open": 54.08,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "CIENUSDT",
+      "tf": "15m",
+      "candle_ts": 1794955500,
+      "side": "SELL",
+      "upper": 272.5794073438119,
+      "open": 268.5,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "ICNTUSDT",
+      "tf": "1h",
+      "candle_ts": 1794956400,
+      "side": "SELL",
+      "upper": 0.26443994125980896,
+      "open": 0.2685,
+      "reported": false
+    },
+    {
+      "symbol": "CSOPSKHYNIX2LUSDT",
+      "tf": "1h",
+      "candle_ts": 1794956400,
+      "side": "SELL",
+      "upper": 1.8067286435393755,
+      "open": 1.826,
+      "reported": false
+    },
+    {
+      "symbol": "ARMUSDT",
+      "tf": "1h",
+      "candle_ts": 1794956400,
+      "side": "SELL",
+      "upper": 191.06210335433533,
+      "open": 192.68,
+      "reported": false
+    },
+    {
+      "symbol": "NBISUSDT",
+      "tf": "1h",
+      "candle_ts": 1794956400,
+      "side": "SELL",
+      "upper": 116.28165430466959,
+      "open": 117.27,
+      "reported": false
+    },
+    {
+      "symbol": "CRDOUSDT",
+      "tf": "1h",
+      "candle_ts": 1794956400,
+      "side": "SELL",
+      "upper": 130.73239581826016,
+      "open": 131.98,
+      "reported": false
+    },
+    {
+      "symbol": "USUALUSDT",
+      "tf": "1h",
+      "candle_ts": 1794956400,
+      "side": "SELL",
+      "upper": 0.01057180782673001,
+      "open": 0.01071,
+      "reported": false
+    },
+    {
+      "symbol": "CRWVUSDT",
+      "tf": "1h",
+      "candle_ts": 1794956400,
+      "side": "SELL",
+      "upper": 53.53211151147225,
+      "open": 54.15,
+      "reported": false
+    },
+    {
+      "symbol": "CIENUSDT",
+      "tf": "1h",
+      "candle_ts": 1794956400,
+      "side": "SELL",
+      "upper": 271.82728428616804,
+      "open": 276.1,
+      "reported": false
+    },
+    {
+      "symbol": "HUTUSDT",
+      "tf": "15m",
+      "candle_ts": 1794956400,
+      "side": "SELL",
+      "upper": 54.08,
+      "open": 54.08,
+      "reported": false
+    },
+    {
+      "symbol": "HUTUSDT",
+      "tf": "1h",
+      "candle_ts": 1794956400,
+      "side": "SELL",
+      "upper": 55.12756156475198,
       "open": 54.08,
       "reported": false
     }
@@ -9676,7 +9788,6 @@
     "GALUSDT": 1794141094,
     "METEORAUSDT": 1794163747,
     "DRVUSDT": 1794177070,
-    "IRENONUSDT": 1794188819,
     "BARUSDT": 1794188820,
     "1000BTTCUSDT": 1794189823,
     "XTIUSDT": 1794219396,
@@ -9741,7 +9852,7 @@
     "NIUBIUSDT": 1794988975,
     "FLOCK1USDT": 1794997921
   },
-  "last_trade_report_ts": 1794955260,
+  "last_trade_report_ts": 1794956794,
   "last_known_version": "2.9.4",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
