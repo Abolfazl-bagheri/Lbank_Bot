@@ -9304,12 +9304,32 @@
       "side": "SELL",
       "upper": 22.2075247218692,
       "open": 22.48,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "PAIDUSDT",
       "tf": "15m",
       "candle_ts": 1794932100,
+      "side": "LONG",
+      "upper": 0.001382,
+      "open": 0.001382,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "UVXYUSDT",
+      "tf": "15m",
+      "candle_ts": 1794933000,
+      "side": "SELL",
+      "upper": 21.839121104894563,
+      "open": 21.9,
+      "reported": false
+    },
+    {
+      "symbol": "PAIDUSDT",
+      "tf": "15m",
+      "candle_ts": 1794933000,
       "side": "LONG",
       "upper": 0.001382,
       "open": 0.001382,
@@ -9563,7 +9583,8 @@
     "LIGHT1USDT": 1794962812,
     "AINBSCUSDT": 1794971061,
     "LWLGUSDT": 1794971796,
-    "SKY1USDT": 1794974770
+    "SKY1USDT": 1794974770,
+    "ARROWUSDT": 1794976281
   },
   "last_trade_report_ts": 1794932738,
   "last_known_version": "2.9.4",
