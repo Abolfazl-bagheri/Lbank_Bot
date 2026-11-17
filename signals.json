@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.9.4",
-  "updated_at": 1794945699,
+  "updated_at": 1794945720,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "SOXSUSDT",
-      "tf": "4h",
-      "gap": 3.14,
-      "ts": 1794930331
-    },
-    {
-      "kind": "GAP",
-      "symbol": "SKDDUSDT",
-      "tf": "15m",
-      "gap": 2.08,
-      "ts": 1794930335
-    },
     {
       "kind": "GAP",
       "symbol": "SKDDUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "4h",
       "gap": 6.53,
       "ts": 1794945699
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794945703
+    },
+    {
+      "kind": "SELL",
+      "symbol": "PAIDUSDT",
+      "tf": "15m",
+      "gap": 6.06,
+      "ts": 1794945720
     }
   ],
   "trades": [
@@ -1456,14 +1456,27 @@
       "px": 0.142,
       "pnl": -0.24,
       "tf": "4h"
+    },
+    {
+      "symbol": "BREVUSDT",
+      "side": "SELL",
+      "entry": 0.10091,
+      "tp": 0.09838725,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.10091,
+      "pnl": -0.24,
+      "tf": "4h"
     }
   ],
   "start": 1000.0,
   "session_start": 1794873896,
   "realized": -1.2129,
   "closed_n": 24,
-  "open_upnl": 8.9837,
-  "equity": 1007.7708,
+  "open_upnl": 8.7437,
+  "equity": 1007.5308,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
