@@ -85,24 +85,30 @@
       "symbol": "CYPHUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 2.146,
-      "qty": 93.1966,
-      "margin": 10.0,
+      "entry": 2.1171405724960137,
+      "qty": 283.4011,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 2.0923499999999997,
+      "tp_price": 2.0642120581836134,
       "tf": "1h",
       "opened_at": 1794927657,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        2.111
+      ],
       "steps": [
         {
           "px": 2.146,
           "ts": 1794927657
+        },
+        {
+          "px": 2.103,
+          "ts": 1794928234
         }
       ],
       "entry_candle_ts": 1794927600,
-      "last_leg_candle_ts": 1794927600,
+      "last_leg_candle_ts": 1794928234,
       "dry_run": true,
       "order_id": "PAPER-CYPHUSDT-1794927657"
     },
@@ -8944,7 +8950,8 @@
       "side": "SELL",
       "upper": 2.008793366380494,
       "open": 2.026,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "BREVUSDT",
@@ -8953,7 +8960,8 @@
       "side": "SELL",
       "upper": 0.07701295403683696,
       "open": 0.0844,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "LAUSDT",
@@ -8962,7 +8970,8 @@
       "side": "SELL",
       "upper": 0.04317211560594144,
       "open": 0.04362,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ZKPUSDT",
@@ -8971,7 +8980,8 @@
       "side": "SELL",
       "upper": 0.031378271794623394,
       "open": 0.0319,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "PROSUSDT",
@@ -9050,7 +9060,8 @@
       "side": "SELL",
       "upper": 0.000814,
       "open": 0.000814,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CRCLUSDT",
@@ -9059,7 +9070,8 @@
       "side": "LONG",
       "upper": 58.25138053014912,
       "open": 56.7,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CATEUSDT",
@@ -9104,6 +9116,51 @@
       "side": "SELL",
       "upper": 0.03525860416023636,
       "open": 0.03556,
+      "reported": false
+    },
+    {
+      "symbol": "CATEUSDT",
+      "tf": "1h",
+      "candle_ts": 1794927600,
+      "side": "SELL",
+      "upper": 0.02105398412886766,
+      "open": 0.02173,
+      "reported": false
+    },
+    {
+      "symbol": "PROSUSDT",
+      "tf": "1h",
+      "candle_ts": 1794927600,
+      "side": "SELL",
+      "upper": 0.4903139713394349,
+      "open": 0.4929,
+      "reported": false
+    },
+    {
+      "symbol": "ZKPUSDT",
+      "tf": "1h",
+      "candle_ts": 1794927600,
+      "side": "SELL",
+      "upper": 0.03179776898839243,
+      "open": 0.03212,
+      "reported": false
+    },
+    {
+      "symbol": "YGGUSDT",
+      "tf": "1h",
+      "candle_ts": 1794927600,
+      "side": "SELL",
+      "upper": 0.019654893969326022,
+      "open": 0.01977,
+      "reported": false
+    },
+    {
+      "symbol": "CRCLUSDT",
+      "tf": "5m",
+      "candle_ts": 1794928200,
+      "side": "LONG",
+      "upper": 58.44349548936067,
+      "open": 56.0,
       "reported": false
     }
   ],
@@ -9302,7 +9359,6 @@
     "TOADUSDT": 1794299510,
     "TSTUSDT": 1794312277,
     "TQQQUSDT": 1794312291,
-    "LWLGUSDT": 1794342893,
     "RGTIUSDT": 1794342903,
     "AMCUSDT": 1794358021,
     "CAPETHUSDT": 1794361582,
@@ -9353,7 +9409,8 @@
     "FLOCK1USDT": 1794954273,
     "ANTUSDT": 1794960189,
     "BIANRENSHENGUSDT": 1794960417,
-    "LIGHT1USDT": 1794962812
+    "LIGHT1USDT": 1794962812,
+    "AINBSCUSDT": 1794971061
   },
   "last_trade_report_ts": 1794927388,
   "last_known_version": "2.9.4",
