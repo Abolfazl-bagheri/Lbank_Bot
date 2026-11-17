@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.9.0",
-  "updated_at": 1794907840,
+  "updated_at": 1794908152,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "SILVERUSDT",
-      "tf": "5m",
-      "gap": -0.05,
-      "ts": 1794870376
-    },
     {
       "kind": "GAP",
       "symbol": "CRCLUSDT",
@@ -1402,35 +1395,28 @@
       "tf": "15m",
       "gap": 1.21,
       "ts": 1794907840
-    }
-  ],
-  "trades": [
+    },
     {
-      "symbol": "PREDICTUSDT",
-      "side": "SELL",
-      "entry": 1.2625,
-      "tp": 1.2309375,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 1.1754,
-      "pnl": 13.558,
-      "tf": "5m"
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794908152
     }
   ],
+  "trades": [],
   "start": 1000.0,
   "session_start": 1794873896,
-  "realized": 45.3196,
-  "closed_n": 2,
-  "open_upnl": 13.558,
-  "equity": 1058.8776,
+  "realized": 59.1176,
+  "closed_n": 3,
+  "open_upnl": 0,
+  "equity": 1059.1176,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 45.3196,
+    "profit": 59.1176,
     "loss": 0,
-    "count": 2
+    "count": 3
   }
 }
