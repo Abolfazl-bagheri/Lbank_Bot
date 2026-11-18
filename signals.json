@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795024921,
+  "updated_at": 1795024934,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "PANWUSDT",
-      "tf": "1h",
-      "gap": 1.69,
-      "ts": 1795017229
-    },
-    {
-      "kind": "GAP",
-      "symbol": "ZILUSDT",
-      "tf": "1h",
-      "gap": 1.02,
-      "ts": 1795017398
-    },
     {
       "kind": "GAP",
       "symbol": "SOONUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "15m",
       "gap": 3.53,
       "ts": 1795024921
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795024927
+    },
+    {
+      "kind": "SELL",
+      "symbol": "NETUSDT",
+      "tf": "15m",
+      "gap": 1.43,
+      "ts": 1795024934
     }
   ],
   "trades": [
@@ -1447,14 +1447,14 @@
     {
       "symbol": "HUTUSDT",
       "side": "SELL",
-      "entry": 58.57,
-      "tp": 57.10575,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
+      "entry": 58.71648366703854,
+      "tp": 57.248571575362575,
+      "adds": 1,
+      "pele": 2,
+      "margin": 30.0,
       "lev": 20,
       "px": 58.79,
-      "pnl": -0.9912,
+      "pnl": -1.4712,
       "tf": "15m"
     },
     {
@@ -1488,8 +1488,8 @@
   "session_start": 1794960632,
   "realized": 27.361,
   "closed_n": 47,
-  "open_upnl": -21.7893,
-  "equity": 1005.5717,
+  "open_upnl": -22.2693,
+  "equity": 1005.0917,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
