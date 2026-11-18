@@ -80,64 +80,9 @@
       "last_leg_candle_ts": 1795003200,
       "dry_run": true,
       "order_id": "PAPER-ZKCUSDT-1795003289"
-    },
-    {
-      "symbol": "IRYSUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.01781,
-      "qty": 11229.6463,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.017364749999999998,
-      "tf": "4h",
-      "opened_at": 1795003300,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.01781,
-          "ts": 1795003300
-        }
-      ],
-      "entry_candle_ts": 1795003200,
-      "last_leg_candle_ts": 1795003200,
-      "dry_run": true,
-      "order_id": "PAPER-IRYSUSDT-1795003300"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "LYNUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.02547,
-      "qty": 7852.3753,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.024833249999999998,
-      "tf": "15m",
-      "opened_at": 1794008734,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.02547,
-          "ts": 1794008734
-        }
-      ],
-      "entry_candle_ts": 1794008700,
-      "last_leg_candle_ts": 1794008700,
-      "dry_run": true,
-      "order_id": "PAPER-LYNUSDT-1794008734",
-      "closed_at": 1794010139,
-      "close_px": 0.02445,
-      "pnl_usdt": 8.009422850412252,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "NAVERUSDT",
       "side": "SELL",
@@ -6873,6 +6818,36 @@
       "pnl_usdt": 7.676767676767678,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "IRYSUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.01781,
+      "qty": 11229.6463,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.017364749999999998,
+      "tf": "4h",
+      "opened_at": 1795003300,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.01781,
+          "ts": 1795003300
+        }
+      ],
+      "entry_candle_ts": 1795003200,
+      "last_leg_candle_ts": 1795003200,
+      "dry_run": true,
+      "order_id": "PAPER-IRYSUSDT-1795003300",
+      "closed_at": 1795003824,
+      "close_px": 0.01718,
+      "pnl_usdt": 7.074677147669832,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -10127,7 +10102,7 @@
     "GSTOCKUSDT": 1795044685,
     "NIUBIUSDT": 1795046633
   },
-  "last_trade_report_ts": 1795002710,
+  "last_trade_report_ts": 1795003824,
   "last_known_version": "2.10.0",
   "lessons": [
     {
