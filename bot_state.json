@@ -74,6 +74,31 @@
       "last_leg_candle_ts": 1794981600,
       "dry_run": true,
       "order_id": "PAPER-FHEUSDT-1794981691"
+    },
+    {
+      "symbol": "NESUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.2435,
+      "qty": 821.3552,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.2374125,
+      "tf": "1h",
+      "opened_at": 1794981702,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.2435,
+          "ts": 1794981702
+        }
+      ],
+      "entry_candle_ts": 1794981600,
+      "last_leg_candle_ts": 1794981600,
+      "dry_run": true,
+      "order_id": "PAPER-NESUSDT-1794981702"
     }
   ],
   "trade_history": [
@@ -6932,16 +6957,6 @@
   ],
   "pending": [
     {
-      "symbol": "GOLDUSDT",
-      "tf": "1h",
-      "candle_ts": 1794790800,
-      "side": "SELL",
-      "upper": 3890.884561562755,
-      "open": 3893.89,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "SILVERUSDT",
       "tf": "1h",
       "candle_ts": 1794790800,
@@ -9917,6 +9932,15 @@
       "side": "SELL",
       "upper": 0.20074304710699103,
       "open": 0.2187,
+      "reported": false
+    },
+    {
+      "symbol": "FHEUSDT",
+      "tf": "1h",
+      "candle_ts": 1794981600,
+      "side": "SELL",
+      "upper": 0.016222698258953658,
+      "open": 0.01645,
       "reported": false
     }
   ],
