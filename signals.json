@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795006857,
+  "updated_at": 1795006891,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794997308
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794997517
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "1h",
       "gap": 3.01,
       "ts": 1795006857
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795006861
+    },
+    {
+      "kind": "SELL",
+      "symbol": "SHELLUSDT",
+      "tf": "1h",
+      "gap": 1.01,
+      "ts": 1795006891
     }
   ],
   "trades": [
@@ -1417,14 +1417,27 @@
       "px": 2.8025,
       "pnl": 0.0478,
       "tf": "1h"
+    },
+    {
+      "symbol": "MOCAUSDT",
+      "side": "SELL",
+      "entry": 0.00683,
+      "tp": 0.00665925,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.00683,
+      "pnl": -0.24,
+      "tf": "1h"
     }
   ],
   "start": 1000.0,
   "session_start": 1794960632,
   "realized": 34.8841,
   "closed_n": 30,
-  "open_upnl": 0.0478,
-  "equity": 1034.9319,
+  "open_upnl": -0.1922,
+  "equity": 1034.6919,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
