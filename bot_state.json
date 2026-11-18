@@ -64,17 +64,18 @@
       "symbol": "SOONUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.26742127740900884,
-      "qty": 2243.651,
-      "margin": 30.0,
+      "entry": 0.26481883347834373,
+      "qty": 5286.6331,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 0.2607357454737836,
+      "tp_price": 0.2581983626413851,
       "tf": "4h",
       "opened_at": 1795017650,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [
-        0.269
+        0.269,
+        0.2639
       ],
       "steps": [
         {
@@ -84,10 +85,14 @@
         {
           "px": 0.2687,
           "ts": 1795019196
+        },
+        {
+          "px": 0.2629,
+          "ts": 1795019758
         }
       ],
       "entry_candle_ts": 1795017600,
-      "last_leg_candle_ts": 1795019196,
+      "last_leg_candle_ts": 1795019758,
       "dry_run": true,
       "order_id": "PAPER-SOONUSDT-1795017650"
     },
@@ -6783,36 +6788,6 @@
   ],
   "pending": [
     {
-      "symbol": "CRCLUSDT",
-      "tf": "15m",
-      "candle_ts": 1794930300,
-      "side": "LONG",
-      "upper": 59.287132438577885,
-      "open": 54.54,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "XAUTUSDT",
-      "tf": "15m",
-      "candle_ts": 1794930300,
-      "side": "SELL",
-      "upper": 3866.3725450413917,
-      "open": 3870.82,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "PAIDUSDT",
-      "tf": "15m",
-      "candle_ts": 1794931200,
-      "side": "LONG",
-      "upper": 0.001382,
-      "open": 0.001382,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "CATEUSDT",
       "tf": "1h",
       "candle_ts": 1794931200,
@@ -9768,6 +9743,33 @@
       "open": 3755.53,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
+      "candle_ts": 1795019700,
+      "side": "LONG",
+      "upper": 3761.4623706202938,
+      "open": 3733.05,
+      "reported": false
+    },
+    {
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
+      "candle_ts": 1795019700,
+      "side": "LONG",
+      "upper": 3761.6568319285943,
+      "open": 3733.05,
+      "reported": false
+    },
+    {
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
+      "candle_ts": 1795019700,
+      "side": "LONG",
+      "upper": 3761.6639067727683,
+      "open": 3733.05,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -10028,7 +10030,8 @@
     "SPORTFUNUSDT": 1795061028,
     "1000000BABYDOGEUSDT": 1795061082,
     "HOTUSDT": 1795061083,
-    "MURATAUSDT": 1795061977
+    "MURATAUSDT": 1795061977,
+    "BONERUSDT": 1795062789
   },
   "last_trade_report_ts": 1795018852,
   "last_known_version": "2.10.0",
