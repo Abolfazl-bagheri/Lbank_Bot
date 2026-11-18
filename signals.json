@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1794992439,
+  "updated_at": 1794992451,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794981696
-    },
-    {
-      "kind": "SELL",
-      "symbol": "NESUSDT",
-      "tf": "1h",
-      "gap": 3.29,
-      "ts": 1794981701
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "1h",
       "gap": 2.07,
       "ts": 1794992439
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794992444
+    },
+    {
+      "kind": "SELL",
+      "symbol": "PIPPINUSDT",
+      "tf": "1h",
+      "gap": 4.09,
+      "ts": 1794992451
     }
   ],
   "trades": [
@@ -1417,14 +1417,27 @@
       "px": 0.2431,
       "pnl": -7.0456,
       "tf": "4h"
+    },
+    {
+      "symbol": "ZKCUSDT",
+      "side": "SELL",
+      "entry": 0.02713,
+      "tp": 0.02645175,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.02713,
+      "pnl": -0.24,
+      "tf": "1h"
     }
   ],
   "start": 1000.0,
   "session_start": 1794960632,
   "realized": 85.8581,
   "closed_n": 17,
-  "open_upnl": -7.0456,
-  "equity": 1078.8125,
+  "open_upnl": -7.2856,
+  "equity": 1078.5725,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
