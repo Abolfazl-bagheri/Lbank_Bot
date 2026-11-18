@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795023044,
+  "updated_at": 1795023061,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "PANWUSDT",
-      "tf": "15m",
-      "gap": 1.22,
-      "ts": 1795014957
-    },
-    {
-      "kind": "SELL",
-      "symbol": "OKTAUSDT",
-      "tf": "15m",
-      "gap": 1.65,
-      "ts": 1795014965
-    },
     {
       "kind": "SELL",
       "symbol": "NETUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "15m",
       "gap": 3.05,
       "ts": 1795023044
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795023051
+    },
+    {
+      "kind": "SELL",
+      "symbol": "NETUSDT",
+      "tf": "15m",
+      "gap": 2.21,
+      "ts": 1795023061
     }
   ],
   "trades": [
@@ -1473,14 +1473,14 @@
     {
       "symbol": "AKAMUSDT",
       "side": "SELL",
-      "entry": 90.20950158620379,
-      "tp": 87.95426404654869,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
+      "entry": 90.88031386321147,
+      "tp": 88.60830601663118,
+      "adds": 2,
+      "pele": 3,
+      "margin": 70.0,
       "lev": 20,
       "px": 91.39,
-      "pnl": -8.5717,
+      "pnl": -9.5317,
       "tf": "15m"
     }
   ],
@@ -1488,8 +1488,8 @@
   "session_start": 1794960632,
   "realized": 104.1311,
   "closed_n": 44,
-  "open_upnl": -46.0607,
-  "equity": 1058.0704,
+  "open_upnl": -47.0207,
+  "equity": 1057.1104,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
