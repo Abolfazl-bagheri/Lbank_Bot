@@ -6750,16 +6750,6 @@
   ],
   "pending": [
     {
-      "symbol": "CLAUDIAUSDT",
-      "tf": "4h",
-      "candle_ts": 1794916800,
-      "side": "SELL",
-      "upper": 0.007049211297321396,
-      "open": 0.007423,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "CYPHUSDT",
       "tf": "1h",
       "candle_ts": 1794916800,
@@ -9689,7 +9679,8 @@
       "side": "SELL",
       "upper": 2.6831743263532584,
       "open": 2.7971,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "MOCAUSDT",
@@ -9698,7 +9689,8 @@
       "side": "SELL",
       "upper": 0.006624659557387345,
       "open": 0.00683,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "SHELLUSDT",
@@ -9707,7 +9699,8 @@
       "side": "SELL",
       "upper": 0.02965718366734172,
       "open": 0.03002,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ZILUSDT",
@@ -9716,7 +9709,8 @@
       "side": "SELL",
       "upper": 0.0010751673801739454,
       "open": 0.001086,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ZILUSDT",
@@ -9725,7 +9719,8 @@
       "side": "SELL",
       "upper": 0.0010738468158156122,
       "open": 0.001086,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "SOONUSDT",
@@ -9734,6 +9729,15 @@
       "side": "SELL",
       "upper": 0.25366789685738056,
       "open": 0.256,
+      "reported": false
+    },
+    {
+      "symbol": "PIEVERSEUSDT",
+      "tf": "1h",
+      "candle_ts": 1795010400,
+      "side": "SELL",
+      "upper": 2.939364017608615,
+      "open": 3.0614,
       "reported": false
     }
   ],
@@ -9994,7 +9998,7 @@
     "QUID1USDT": 1795047530,
     "ATMUSDT": 1795048296
   },
-  "last_trade_report_ts": 1795009610,
+  "last_trade_report_ts": 1795010600,
   "last_known_version": "2.10.0",
   "lessons": [
     {
@@ -10605,6 +10609,51 @@
       "kind": "gap_result",
       "symbol": "XAUTUSDT",
       "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795010583,
+      "kind": "gap_result",
+      "symbol": "PIEVERSEUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
+    },
+    {
+      "ts": 1795010585,
+      "kind": "gap_result",
+      "symbol": "MOCAUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795010587,
+      "kind": "gap_result",
+      "symbol": "SHELLUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795010591,
+      "kind": "gap_result",
+      "symbol": "ZILUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795010597,
+      "kind": "gap_result",
+      "symbol": "ZILUSDT",
+      "tf": "15m",
       "gap": 0.0,
       "filled": true,
       "note": "filled"
