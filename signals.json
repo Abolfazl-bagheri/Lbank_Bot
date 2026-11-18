@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.9.4",
-  "updated_at": 1794960084,
+  "updated_at": 1794960122,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "CRDOUSDT",
-      "tf": "15m",
-      "gap": 1.91,
-      "ts": 1794950949
-    },
-    {
-      "kind": "GAP",
-      "symbol": "ZORAUSDT",
-      "tf": "15m",
-      "gap": 1.19,
-      "ts": 1794950952
-    },
     {
       "kind": "GAP",
       "symbol": "CIENUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "4h",
       "gap": 3.05,
       "ts": 1794960084
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794960088
+    },
+    {
+      "kind": "SELL",
+      "symbol": "HUTUSDT",
+      "tf": "15m",
+      "gap": 5.88,
+      "ts": 1794960122
     }
   ],
   "trades": [
@@ -1482,14 +1482,27 @@
       "px": 0.10855,
       "pnl": -0.24,
       "tf": "4h"
+    },
+    {
+      "symbol": "ICNTUSDT",
+      "side": "SELL",
+      "entry": 0.2754,
+      "tp": 0.26851499999999995,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.2754,
+      "pnl": -0.24,
+      "tf": "4h"
     }
   ],
   "start": 1000.0,
   "session_start": 1794873896,
   "realized": 41.5015,
   "closed_n": 33,
-  "open_upnl": -27.1386,
-  "equity": 1014.3629,
+  "open_upnl": -27.3786,
+  "equity": 1014.1229,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
