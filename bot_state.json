@@ -1,35 +1,6 @@
 {
   "open_trades": [
     {
-      "symbol": "PIPPINUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.01656481654148221,
-      "qty": 36221.349,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.016150696127945154,
-      "tf": "15m",
-      "opened_at": 1794988825,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.01632,
-          "ts": 1794988825
-        },
-        {
-          "px": 0.01669,
-          "ts": 1794989749
-        }
-      ],
-      "entry_candle_ts": 1794988800,
-      "last_leg_candle_ts": 1794989700,
-      "dry_run": true,
-      "order_id": "PAPER-PIPPINUSDT-1794988825"
-    },
-    {
       "symbol": "MMTUSDT",
       "side": "SELL",
       "status": "open",
@@ -56,36 +27,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "ONEUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.0015393,
-      "qty": 129929.1886,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.0015008175,
-      "tf": "4h",
-      "opened_at": 1793980924,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.0015393,
-          "ts": 1793980924
-        }
-      ],
-      "entry_candle_ts": 1793980800,
-      "last_leg_candle_ts": 1793980800,
-      "dry_run": true,
-      "order_id": "PAPER-ONEUSDT-1793980924",
-      "closed_at": 1793981891,
-      "close_px": 0.001489,
-      "pnl_usdt": 6.535438186188511,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "ICNTUSDT",
       "side": "SELL",
@@ -6861,6 +6802,40 @@
       "pnl_usdt": 5.424120023081349,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "PIPPINUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.01656481654148221,
+      "qty": 36221.349,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 0.016150696127945154,
+      "tf": "15m",
+      "opened_at": 1794988825,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.01632,
+          "ts": 1794988825
+        },
+        {
+          "px": 0.01669,
+          "ts": 1794989749
+        }
+      ],
+      "entry_candle_ts": 1794988800,
+      "last_leg_candle_ts": 1794989700,
+      "dry_run": true,
+      "order_id": "PAPER-PIPPINUSDT-1794988825",
+      "closed_at": 1794990016,
+      "close_px": 0.01762,
+      "pnl_usdt": -38.22016824184062,
+      "close_reason": "STOP",
+      "why": "STOP"
     }
   ],
   "pending": [
