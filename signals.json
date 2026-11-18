@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1794996057,
+  "updated_at": 1794996104,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794985549
-    },
-    {
-      "kind": "HEARTBEAT",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794985551
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "1h",
       "gap": 4.4,
       "ts": 1794996057
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794996061
+    },
+    {
+      "kind": "SELL",
+      "symbol": "IRYSUSDT",
+      "tf": "1h",
+      "gap": 1.24,
+      "ts": 1794996104
     }
   ],
   "trades": [
@@ -1417,14 +1417,27 @@
       "px": 0.01786,
       "pnl": -0.24,
       "tf": "1h"
+    },
+    {
+      "symbol": "ZKCUSDT",
+      "side": "SELL",
+      "entry": 0.03004,
+      "tp": 0.029289,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.03004,
+      "pnl": -0.24,
+      "tf": "1h"
     }
   ],
   "start": 1000.0,
   "session_start": 1794960632,
   "realized": 56.9198,
   "closed_n": 20,
-  "open_upnl": -0.24,
-  "equity": 1056.6798,
+  "open_upnl": -0.48,
+  "equity": 1056.4398,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
