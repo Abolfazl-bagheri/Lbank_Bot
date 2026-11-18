@@ -128,6 +128,31 @@
       "last_leg_candle_ts": 1795014000,
       "dry_run": true,
       "order_id": "PAPER-USARUSDT-1795014106"
+    },
+    {
+      "symbol": "MPUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 38.0,
+      "qty": 5.2632,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 37.05,
+      "tf": "15m",
+      "opened_at": 1795014153,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 38.0,
+          "ts": 1795014153
+        }
+      ],
+      "entry_candle_ts": 1795014000,
+      "last_leg_candle_ts": 1795014000,
+      "dry_run": true,
+      "order_id": "PAPER-MPUSDT-1795014153"
     }
   ],
   "trade_history": [
@@ -6830,26 +6855,6 @@
   ],
   "pending": [
     {
-      "symbol": "GOLDUSDT",
-      "tf": "5m",
-      "candle_ts": 1794922800,
-      "side": "LONG",
-      "upper": 3878.738019457756,
-      "open": 3846.24,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "SILVERUSDT",
-      "tf": "5m",
-      "candle_ts": 1794922800,
-      "side": "LONG",
-      "upper": 48.05473156529812,
-      "open": 47.34,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "BREVUSDT",
       "tf": "15m",
       "candle_ts": 1794923100,
@@ -9802,6 +9807,24 @@
       "side": "SELL",
       "upper": 116.1541062208611,
       "open": 117.8,
+      "reported": false
+    },
+    {
+      "symbol": "USARUSDT",
+      "tf": "15m",
+      "candle_ts": 1795014000,
+      "side": "SELL",
+      "upper": 7.267931322312404,
+      "open": 7.48,
+      "reported": false
+    },
+    {
+      "symbol": "USARUSDT",
+      "tf": "1h",
+      "candle_ts": 1795014000,
+      "side": "SELL",
+      "upper": 7.324967610215235,
+      "open": 7.48,
       "reported": false
     }
   ],
