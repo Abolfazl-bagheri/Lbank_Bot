@@ -9726,7 +9726,8 @@
       "side": "SELL",
       "upper": 0.007966966203910849,
       "open": 0.00812,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "HUMAUSDT",
@@ -9735,7 +9736,8 @@
       "side": "SELL",
       "upper": 0.00794251945047194,
       "open": 0.00812,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "CRCLUSDT",
@@ -11182,6 +11184,24 @@
       "gap": 0.0,
       "filled": true,
       "note": "filled"
+    },
+    {
+      "ts": 1795019498,
+      "kind": "gap_result",
+      "symbol": "HUMAUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795019501,
+      "kind": "gap_result",
+      "symbol": "HUMAUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
     }
   ],
   "tune_history": [],
