@@ -1,29 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1794987968,
+  "updated_at": 1794988195,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794976885
-    },
-    {
-      "kind": "HEARTBEAT",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794976885
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794976916
-    },
     {
       "kind": "GAP",
       "symbol": "CATEUSDT",
@@ -1402,35 +1381,56 @@
       "tf": "15m",
       "gap": 6.56,
       "ts": 1794987968
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794987972
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794988091
+    },
+    {
+      "kind": "GAP",
+      "symbol": "FLUXUSDT",
+      "tf": "4h",
+      "gap": 2.11,
+      "ts": 1794988195
     }
   ],
   "trades": [
     {
-      "symbol": "BLESSUSDT",
+      "symbol": "PIPPINUSDT",
       "side": "SELL",
-      "entry": 0.012798,
-      "tp": 0.01247805,
+      "entry": 0.01383,
+      "tp": 0.01348425,
       "adds": 0,
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.011398,
-      "pnl": 21.6384,
+      "px": 0.01495,
+      "pnl": -16.4367,
       "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1794960632,
-  "realized": 128.2881,
-  "closed_n": 11,
-  "open_upnl": 21.6384,
-  "equity": 1149.9265,
+  "realized": 150.1665,
+  "closed_n": 12,
+  "open_upnl": -16.4367,
+  "equity": 1133.7298,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 128.2881,
+    "profit": 150.1665,
     "loss": 0,
-    "count": 11
+    "count": 12
   }
 }
