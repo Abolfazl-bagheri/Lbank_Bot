@@ -6817,16 +6817,6 @@
   ],
   "pending": [
     {
-      "symbol": "CRWVUSDT",
-      "tf": "15m",
-      "candle_ts": 1794951000,
-      "side": "SELL",
-      "upper": 51.94145748943016,
-      "open": 52.6,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "CRCLUSDT",
       "tf": "15m",
       "candle_ts": 1794951000,
@@ -9663,7 +9653,8 @@
       "side": "SELL",
       "upper": 297.45986356941904,
       "open": 293.8,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "OKTAUSDT",
@@ -9708,7 +9699,8 @@
       "side": "SELL",
       "upper": 56.54093148567411,
       "open": 55.49,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ZSUSDT",
@@ -9717,7 +9709,8 @@
       "side": "SELL",
       "upper": 198.01159067224864,
       "open": 194.22,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ZSUSDT",
@@ -9735,7 +9728,8 @@
       "side": "LONG",
       "upper": 3741.3939242006263,
       "open": 3726.62,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "XAUTUSDT",
@@ -9744,7 +9738,8 @@
       "side": "LONG",
       "upper": 3741.1637892814156,
       "open": 3726.62,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "XAUTUSDT",
@@ -9753,7 +9748,8 @@
       "side": "LONG",
       "upper": 3741.2939155235067,
       "open": 3726.62,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "GOLDUSDT",
@@ -9762,7 +9758,8 @@
       "side": "LONG",
       "upper": 3753.808497890943,
       "open": 3737.96,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "XAUTUSDT",
@@ -9771,7 +9768,8 @@
       "side": "LONG",
       "upper": 3741.582601567334,
       "open": 3726.62,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "PANWUSDT",
@@ -9789,6 +9787,15 @@
       "side": "SELL",
       "upper": 297.18095788414183,
       "open": 293.8,
+      "reported": false
+    },
+    {
+      "symbol": "ZSUSDT",
+      "tf": "15m",
+      "candle_ts": 1795029300,
+      "side": "SELL",
+      "upper": 197.81843117868922,
+      "open": 194.22,
       "reported": false
     }
   ],
@@ -11725,6 +11732,78 @@
       "kind": "gap_result",
       "symbol": "AKAMUSDT",
       "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795029408,
+      "kind": "gap_result",
+      "symbol": "NETUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795029411,
+      "kind": "gap_result",
+      "symbol": "HUTUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795029414,
+      "kind": "gap_result",
+      "symbol": "ZSUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795029416,
+      "kind": "gap_result",
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795029420,
+      "kind": "gap_result",
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795029422,
+      "kind": "gap_result",
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795029427,
+      "kind": "gap_result",
+      "symbol": "GOLDUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795029435,
+      "kind": "gap_result",
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
       "gap": 0.0,
       "filled": true,
       "note": "filled"
