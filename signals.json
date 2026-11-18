@@ -1,29 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.9.4",
-  "updated_at": 1794986144,
+  "updated_at": 1794986424,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "USUALUSDT",
-      "tf": "4h",
-      "gap": 1.13,
-      "ts": 1794973838
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794973866
-    },
-    {
-      "kind": "GAP",
-      "symbol": "MELANIAUSDT",
-      "tf": "1h",
-      "gap": 2.61,
-      "ts": 1794974088
-    },
     {
       "kind": "GAP",
       "symbol": "NESUSDT",
@@ -1402,6 +1381,27 @@
       "tf": "15m",
       "gap": 2.89,
       "ts": 1794986144
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794986149
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794986321
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794986424
     }
   ],
   "trades": [
@@ -1414,36 +1414,36 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 0.2418,
-      "pnl": 13.021,
+      "px": 0.2424,
+      "pnl": 11.5663,
       "tf": "1h"
     },
     {
-      "symbol": "MMTUSDT",
+      "symbol": "BLESSUSDT",
       "side": "SELL",
-      "entry": 0.2316,
-      "tp": 0.22580999999999998,
+      "entry": 0.012689,
+      "tp": 0.012371775,
       "adds": 0,
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.2217,
-      "pnl": 8.3092,
-      "tf": "1h"
+      "px": 0.012724,
+      "pnl": -0.7917,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1794960632,
-  "realized": 89.0979,
-  "closed_n": 8,
-  "open_upnl": 21.3302,
-  "equity": 1110.4281,
+  "realized": 97.6471,
+  "closed_n": 9,
+  "open_upnl": 10.7746,
+  "equity": 1108.4217,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 89.0979,
+    "profit": 97.6471,
     "loss": 0,
-    "count": 8
+    "count": 9
   }
 }
