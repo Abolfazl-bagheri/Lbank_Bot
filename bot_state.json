@@ -134,24 +134,30 @@
       "symbol": "HUMAUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.00862,
-      "qty": 23201.8561,
-      "margin": 10.0,
+      "entry": 0.008699630485050869,
+      "qty": 68968.4465,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.008404499999999999,
+      "tp_price": 0.008482139722924597,
       "tf": "1h",
       "opened_at": 1795024847,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.00876
+      ],
       "steps": [
         {
           "px": 0.00862,
           "ts": 1795024847
+        },
+        {
+          "px": 0.00874,
+          "ts": 1795025492
         }
       ],
       "entry_candle_ts": 1795024800,
-      "last_leg_candle_ts": 1795024800,
+      "last_leg_candle_ts": 1795025492,
       "dry_run": true,
       "order_id": "PAPER-HUMAUSDT-1795024847"
     },
