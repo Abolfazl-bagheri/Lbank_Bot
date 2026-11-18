@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795023954,
+  "updated_at": 1795023963,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "MPUSDT",
-      "tf": "15m",
-      "gap": 1.01,
-      "ts": 1795015736
-    },
-    {
-      "kind": "GAP",
-      "symbol": "AKAMUSDT",
-      "tf": "15m",
-      "gap": 1.6,
-      "ts": 1795015739
-    },
     {
       "kind": "SELL",
       "symbol": "PROSUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "15m",
       "gap": 3.13,
       "ts": 1795023954
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795023961
+    },
+    {
+      "kind": "SELL",
+      "symbol": "NETUSDT",
+      "tf": "15m",
+      "gap": 1.53,
+      "ts": 1795023963
     }
   ],
   "trades": [
@@ -1469,14 +1469,27 @@
       "px": 91.63,
       "pnl": -13.2288,
       "tf": "15m"
+    },
+    {
+      "symbol": "HUTUSDT",
+      "side": "SELL",
+      "entry": 58.57,
+      "tp": 57.10575,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 58.57,
+      "pnl": -0.24,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1794960632,
   "realized": 92.1844,
   "closed_n": 45,
-  "open_upnl": -53.6826,
-  "equity": 1038.5018,
+  "open_upnl": -53.9226,
+  "equity": 1038.2618,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
