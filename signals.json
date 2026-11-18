@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795029066,
+  "updated_at": 1795029083,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795022244
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795022310
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "5m",
       "gap": 0.06,
       "ts": 1795029066
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795029077
+    },
+    {
+      "kind": "SELL",
+      "symbol": "GOLDUSDT",
+      "tf": "5m",
+      "gap": 0.08,
+      "ts": 1795029083
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 3,
       "margin": 70.0,
       "lev": 20,
-      "px": 725.67,
-      "pnl": 2.3304,
+      "px": 725.71,
+      "pnl": 2.2534,
       "tf": "1h"
     },
     {
@@ -1440,21 +1440,8 @@
       "pele": 3,
       "margin": 70.0,
       "lev": 20,
-      "px": 92.62,
-      "pnl": -28.4796,
-      "tf": "15m"
-    },
-    {
-      "symbol": "HUTUSDT",
-      "side": "SELL",
-      "entry": 58.48351594091501,
-      "tp": 57.02142804239214,
-      "adds": 2,
-      "pele": 3,
-      "margin": 70.0,
-      "lev": 20,
-      "px": 57.02,
-      "pnl": 33.3542,
+      "px": 92.56,
+      "pnl": -27.5554,
       "tf": "15m"
     },
     {
@@ -1466,23 +1453,23 @@
       "pele": 3,
       "margin": 70.0,
       "lev": 20,
-      "px": 0.008731,
-      "pnl": 0.9835,
+      "px": 0.008746,
+      "pnl": -1.4172,
       "tf": "1h"
     }
   ],
   "start": 1000.0,
   "session_start": 1794960632,
-  "realized": 18.9585,
-  "closed_n": 48,
-  "open_upnl": -5.9514,
-  "equity": 1013.0071,
+  "realized": 53.9927,
+  "closed_n": 49,
+  "open_upnl": -40.8591,
+  "equity": 1013.1336,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 339.4366,
+    "profit": 374.4708,
     "loss": -320.4781,
-    "count": 48
+    "count": 49
   }
 }
