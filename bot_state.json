@@ -6842,26 +6842,6 @@
   ],
   "pending": [
     {
-      "symbol": "SHAZUSDT",
-      "tf": "1h",
-      "candle_ts": 1794934800,
-      "side": "SELL",
-      "upper": 22.46114613431495,
-      "open": 22.95,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "MMTUSDT",
-      "tf": "1h",
-      "candle_ts": 1794934800,
-      "side": "SELL",
-      "upper": 0.13598033525234443,
-      "open": 0.1397,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "CLANKERUSDT",
       "tf": "15m",
       "candle_ts": 1794934800,
@@ -9795,7 +9775,8 @@
       "side": "SELL",
       "upper": 0.01169504186723424,
       "open": 0.011815,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "AKAMUSDT",
@@ -9804,7 +9785,8 @@
       "side": "SELL",
       "upper": 88.59986823323167,
       "open": 87.36,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "NETUSDT",
@@ -9813,7 +9795,8 @@
       "side": "SELL",
       "upper": 297.5335000345414,
       "open": 293.8,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "AKAMUSDT",
@@ -9822,6 +9805,24 @@
       "side": "SELL",
       "upper": 88.6846115482483,
       "open": 87.36,
+      "reported": false
+    },
+    {
+      "symbol": "HUTUSDT",
+      "tf": "15m",
+      "candle_ts": 1795023900,
+      "side": "SELL",
+      "upper": 56.73617809017235,
+      "open": 55.49,
+      "reported": false
+    },
+    {
+      "symbol": "NETUSDT",
+      "tf": "15m",
+      "candle_ts": 1795023900,
+      "side": "SELL",
+      "upper": 297.6528113135218,
+      "open": 293.8,
       "reported": false
     }
   ],
@@ -11417,6 +11418,33 @@
       "kind": "gap_result",
       "symbol": "SILVERUSDT",
       "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795024015,
+      "kind": "gap_result",
+      "symbol": "BLESSUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795024017,
+      "kind": "gap_result",
+      "symbol": "AKAMUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795024019,
+      "kind": "gap_result",
+      "symbol": "NETUSDT",
+      "tf": "15m",
       "gap": 0.0,
       "filled": true,
       "note": "filled"
