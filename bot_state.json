@@ -1,31 +1,6 @@
 {
   "open_trades": [
     {
-      "symbol": "ZKCUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.02713,
-      "qty": 7371.913,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.02645175,
-      "tf": "1h",
-      "opened_at": 1794992440,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.02713,
-          "ts": 1794992440
-        }
-      ],
-      "entry_candle_ts": 1794992400,
-      "last_leg_candle_ts": 1794992400,
-      "dry_run": true,
-      "order_id": "PAPER-ZKCUSDT-1794992440"
-    },
-    {
       "symbol": "PIPPINUSDT",
       "side": "SELL",
       "status": "open",
@@ -52,36 +27,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "IDOLUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.024065,
-      "qty": 8310.8248,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.023463374999999998,
-      "tf": "15m",
-      "opened_at": 1793982676,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.024065,
-          "ts": 1793982676
-        }
-      ],
-      "entry_candle_ts": 1793982600,
-      "last_leg_candle_ts": 1793982600,
-      "dry_run": true,
-      "order_id": "PAPER-IDOLUSDT-1793982676",
-      "closed_at": 1793984744,
-      "close_px": 0.023231,
-      "pnl_usdt": 6.931227924371478,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "ZILUSDT",
       "side": "SELL",
@@ -6841,6 +6786,36 @@
       "closed_at": 1794992717,
       "close_px": 0.2486,
       "pnl_usdt": -11.484474691620575,
+      "close_reason": "STOP",
+      "why": "STOP"
+    },
+    {
+      "symbol": "ZKCUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.02713,
+      "qty": 7371.913,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.02645175,
+      "tf": "1h",
+      "opened_at": 1794992440,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.02713,
+          "ts": 1794992440
+        }
+      ],
+      "entry_candle_ts": 1794992400,
+      "last_leg_candle_ts": 1794992400,
+      "dry_run": true,
+      "order_id": "PAPER-ZKCUSDT-1794992440",
+      "closed_at": 1794993039,
+      "close_px": 0.02829,
+      "pnl_usdt": -8.551419093254683,
       "close_reason": "STOP",
       "why": "STOP"
     }
