@@ -6822,26 +6822,6 @@
   ],
   "pending": [
     {
-      "symbol": "CATUSDT",
-      "tf": "1m",
-      "candle_ts": 1794905820,
-      "side": "LONG",
-      "upper": 576.0,
-      "open": 576.0,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "PREDICTUSDT",
-      "tf": "1h",
-      "candle_ts": 1794906000,
-      "side": "SELL",
-      "upper": 1.1281396624708386,
-      "open": 1.1438,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "HAEDALUSDT",
       "tf": "15m",
       "candle_ts": 1794906000,
@@ -9806,6 +9786,25 @@
       "upper": 0.03411493030510235,
       "open": 0.03447,
       "reported": false
+    },
+    {
+      "symbol": "CRCLUSDT",
+      "tf": "5m",
+      "candle_ts": 1794997500,
+      "side": "LONG",
+      "upper": 56.50450232739406,
+      "open": 55.88,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "IRYSUSDT",
+      "tf": "15m",
+      "candle_ts": 1794997800,
+      "side": "SELL",
+      "upper": 0.017610395881424767,
+      "open": 0.01777,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -10065,7 +10064,7 @@
     "AINBSCUSDT": 1795034819,
     "OROCHIUSDT": 1795036606
   },
-  "last_trade_report_ts": 1794996685,
+  "last_trade_report_ts": 1794997607,
   "last_known_version": "2.10.0",
   "lessons": [
     {
@@ -10307,6 +10306,15 @@
       "kind": "gap_result",
       "symbol": "ZKCUSDT",
       "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1794997924,
+      "kind": "gap_result",
+      "symbol": "CRCLUSDT",
+      "tf": "5m",
       "gap": 0.0,
       "filled": true,
       "note": "filled"
