@@ -78,6 +78,31 @@
       "last_leg_candle_ts": 1795014000,
       "dry_run": true,
       "order_id": "PAPER-ZILUSDT-1795014067"
+    },
+    {
+      "symbol": "TWSTUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 116.65,
+      "qty": 1.7145,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 113.73375,
+      "tf": "15m",
+      "opened_at": 1795014086,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 116.65,
+          "ts": 1795014086
+        }
+      ],
+      "entry_candle_ts": 1795014000,
+      "last_leg_candle_ts": 1795014000,
+      "dry_run": true,
+      "order_id": "PAPER-TWSTUSDT-1795014086"
     }
   ],
   "trade_history": [
@@ -6780,16 +6805,6 @@
   ],
   "pending": [
     {
-      "symbol": "GOLDUSDT",
-      "tf": "5m",
-      "candle_ts": 1794922800,
-      "side": "LONG",
-      "upper": 3879.181818731479,
-      "open": 3846.24,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "XAUTUSDT",
       "tf": "5m",
       "candle_ts": 1794922800,
@@ -9755,6 +9770,15 @@
       "side": "SELL",
       "upper": 0.0011277559909877936,
       "open": 0.001144,
+      "reported": false
+    },
+    {
+      "symbol": "BWETUSDT",
+      "tf": "1h",
+      "candle_ts": 1795014000,
+      "side": "SELL",
+      "upper": 709.5310621810602,
+      "open": 721.38,
       "reported": false
     }
   ],
