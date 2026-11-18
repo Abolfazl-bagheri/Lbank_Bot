@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1794989219,
+  "updated_at": 1794989421,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "ZILUSDT",
-      "tf": "15m",
-      "gap": 1.35,
-      "ts": 1794979745
-    },
     {
       "kind": "GAP",
       "symbol": "CATEUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1794989219
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794989421
     }
   ],
   "trades": [
@@ -1414,22 +1414,9 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.01632,
-      "pnl": -0.24,
+      "px": 0.01642,
+      "pnl": -1.4655,
       "tf": "15m"
-    },
-    {
-      "symbol": "ZKPUSDT",
-      "side": "SELL",
-      "entry": 0.03741,
-      "tp": 0.03647475,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.03741,
-      "pnl": -0.24,
-      "tf": "4h"
     },
     {
       "symbol": "MMTUSDT",
@@ -1440,8 +1427,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.2351,
-      "pnl": -0.24,
+      "px": 0.2342,
+      "pnl": 0.5256,
       "tf": "4h"
     },
     {
@@ -1453,8 +1440,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.3032,
-      "pnl": -0.24,
+      "px": 0.3124,
+      "pnl": -6.3086,
       "tf": "4h"
     },
     {
@@ -1466,23 +1453,23 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.005199,
-      "pnl": -0.24,
+      "px": 0.005138,
+      "pnl": 2.1066,
       "tf": "4h"
     }
   ],
   "start": 1000.0,
   "session_start": 1794960632,
-  "realized": 137.4405,
-  "closed_n": 13,
-  "open_upnl": -1.2,
-  "equity": 1136.2405,
+  "realized": 127.2294,
+  "closed_n": 14,
+  "open_upnl": -5.1419,
+  "equity": 1122.0875,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
     "profit": 150.1665,
-    "loss": -12.726,
-    "count": 13
+    "loss": -22.9371,
+    "count": 14
   }
 }
