@@ -9822,7 +9822,8 @@
       "side": "LONG",
       "upper": 46.25683715791171,
       "open": 45.74,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -10082,7 +10083,7 @@
     "PIPEDOGUSDT": 1795031269,
     "BEMUSDT": 1795033003
   },
-  "last_trade_report_ts": 1794989462,
+  "last_trade_report_ts": 1794990363,
   "last_known_version": "2.10.0",
   "lessons": [
     {
@@ -10210,6 +10211,15 @@
       "gap": 0.0,
       "filled": false,
       "note": "miss"
+    },
+    {
+      "ts": 1794990320,
+      "kind": "gap_result",
+      "symbol": "SILVERUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
     }
   ],
   "tune_history": [],
