@@ -6824,16 +6824,6 @@
   ],
   "pending": [
     {
-      "symbol": "CSOPSKHYNIX2LUSDT",
-      "tf": "1h",
-      "candle_ts": 1794956400,
-      "side": "SELL",
-      "upper": 1.8067286435393755,
-      "open": 1.826,
-      "reported": true,
-      "filled": false
-    },
-    {
       "symbol": "ARMUSDT",
       "tf": "1h",
       "candle_ts": 1794956400,
@@ -9800,6 +9790,16 @@
       "side": "SELL",
       "upper": 293.8,
       "open": 293.8,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "NETUSDT",
+      "tf": "15m",
+      "candle_ts": 1795041900,
+      "side": "SELL",
+      "upper": 293.8,
+      "open": 293.8,
       "reported": false
     }
   ],
@@ -10025,7 +10025,6 @@
     "LIGHT1USDT": 1794962812,
     "SKY1USDT": 1794974770,
     "AMCUSDT": 1794985408,
-    "1000LUNCUSDT": 1794987061,
     "JUVUSDT": 1794987127,
     "FLOCK1USDT": 1794997921,
     "AEHRUSDT": 1795000612,
@@ -10061,7 +10060,8 @@
     "NEIRO1USDT": 1795084382,
     "PIPEDOGUSDT": 1795084383,
     "MEMECOINUSDT": 1795084385,
-    "1000SATSUSDT": 1795084386
+    "1000SATSUSDT": 1795084386,
+    "1000LUNCUSDT": 1795085223
   },
   "last_trade_report_ts": 1795041241,
   "last_known_version": "2.10.0",
@@ -11897,6 +11897,15 @@
       "ts": 1795041212,
       "kind": "gap_result",
       "symbol": "ZSUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795042059,
+      "kind": "gap_result",
+      "symbol": "NETUSDT",
       "tf": "15m",
       "gap": 0.0,
       "filled": true,
