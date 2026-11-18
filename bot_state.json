@@ -24,6 +24,31 @@
       "last_leg_candle_ts": 1794999600,
       "dry_run": true,
       "order_id": "PAPER-PIPPINUSDT-1794999651"
+    },
+    {
+      "symbol": "PIEVERSEUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 2.4631,
+      "qty": 81.1985,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 2.4015225,
+      "tf": "1h",
+      "opened_at": 1794999658,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 2.4631,
+          "ts": 1794999658
+        }
+      ],
+      "entry_candle_ts": 1794999600,
+      "last_leg_candle_ts": 1794999600,
+      "dry_run": true,
+      "order_id": "PAPER-PIEVERSEUSDT-1794999658"
     }
   ],
   "trade_history": [
@@ -6800,16 +6825,6 @@
   ],
   "pending": [
     {
-      "symbol": "PAIDUSDT",
-      "tf": "15m",
-      "candle_ts": 1794906900,
-      "side": "LONG",
-      "upper": 0.001587863673977312,
-      "open": 0.001345,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "PREDICTUSDT",
       "tf": "5m",
       "candle_ts": 1794907500,
@@ -9781,6 +9796,15 @@
       "side": "SELL",
       "upper": 2.396103405317192,
       "open": 2.4222,
+      "reported": false
+    },
+    {
+      "symbol": "PIPPINUSDT",
+      "tf": "1h",
+      "candle_ts": 1794999600,
+      "side": "SELL",
+      "upper": 0.019820282144400847,
+      "open": 0.02087,
       "reported": false
     }
   ],
