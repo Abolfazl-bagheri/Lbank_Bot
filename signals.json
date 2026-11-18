@@ -1,29 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1794988532,
+  "updated_at": 1794988757,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "BULLAUSDT",
-      "tf": "15m",
-      "gap": 4.09,
-      "ts": 1794978132
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794978137
-    },
-    {
-      "kind": "SELL",
-      "symbol": "BULLAUSDT",
-      "tf": "1h",
-      "gap": 2.27,
-      "ts": 1794978173
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,35 +1381,42 @@
       "tf": "1h",
       "gap": 4.6,
       "ts": 1794988532
-    }
-  ],
-  "trades": [
+    },
     {
-      "symbol": "PIPPINUSDT",
-      "side": "SELL",
-      "entry": 0.01383,
-      "tp": 0.01348425,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.01531,
-      "pnl": -21.6427,
-      "tf": "15m"
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794988554
+    },
+    {
+      "kind": "HEARTBEAT",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794988554
+    },
+    {
+      "kind": "GAP",
+      "symbol": "FHEUSDT",
+      "tf": "1h",
+      "gap": 1.04,
+      "ts": 1794988757
     }
   ],
+  "trades": [],
   "start": 1000.0,
   "session_start": 1794960632,
-  "realized": 150.1665,
-  "closed_n": 12,
-  "open_upnl": -21.6427,
-  "equity": 1128.5238,
+  "realized": 137.4405,
+  "closed_n": 13,
+  "open_upnl": 0,
+  "equity": 1137.4405,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
     "profit": 150.1665,
-    "loss": 0,
-    "count": 12
+    "loss": -12.726,
+    "count": 13
   }
 }
