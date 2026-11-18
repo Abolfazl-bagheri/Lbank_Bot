@@ -1,36 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795044047,
+  "updated_at": 1795044239,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795025759
-    },
-    {
-      "kind": "SELL",
-      "symbol": "NETUSDT",
-      "tf": "15m",
-      "gap": 1.55,
-      "ts": 1795025769
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795025830
-    },
-    {
-      "kind": "SELL",
-      "symbol": "PIPPINUSDT",
-      "tf": "15m",
-      "gap": 2.14,
-      "ts": 1795025840
-    },
     {
       "kind": "SELL",
       "symbol": "NETUSDT",
@@ -1402,6 +1374,34 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1795044047
+    },
+    {
+      "kind": "HEARTBEAT",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795044048
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795044090
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795044127
+    },
+    {
+      "kind": "GAP",
+      "symbol": "SILVERUSDT",
+      "tf": "5m",
+      "gap": 0.19,
+      "ts": 1795044239
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 3,
       "margin": 70.0,
       "lev": 20,
-      "px": 727.5,
-      "pnl": -1.1901,
+      "px": 727.4,
+      "pnl": -0.9977,
       "tf": "1h"
     },
     {
@@ -1427,8 +1427,8 @@
       "pele": 3,
       "margin": 70.0,
       "lev": 20,
-      "px": 310.26,
-      "pnl": -38.2636,
+      "px": 310.75,
+      "pnl": -40.5324,
       "tf": "1h"
     },
     {
@@ -1440,8 +1440,8 @@
       "pele": 3,
       "margin": 70.0,
       "lev": 20,
-      "px": 92.33,
-      "pnl": -24.0122,
+      "px": 92.39,
+      "pnl": -24.9365,
       "tf": "15m"
     },
     {
@@ -1453,8 +1453,8 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 203.68,
-      "pnl": -2.1685,
+      "px": 203.62,
+      "pnl": -1.9914,
       "tf": "15m"
     },
     {
@@ -1466,36 +1466,23 @@
       "pele": 3,
       "margin": 70.0,
       "lev": 20,
-      "px": 57.91,
-      "pnl": -18.0254,
-      "tf": "15m"
-    },
-    {
-      "symbol": "PAIDUSDT",
-      "side": "SELL",
-      "entry": 0.0014176641562720195,
-      "tp": 0.0013822225523652191,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
-      "lev": 20,
-      "px": 0.001383,
-      "pnl": 13.951,
+      "px": 57.88,
+      "pnl": -17.2917,
       "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1794960632,
-  "realized": 93.466,
-  "closed_n": 50,
-  "open_upnl": -69.7088,
-  "equity": 1023.7572,
+  "realized": 116.6016,
+  "closed_n": 51,
+  "open_upnl": -85.7497,
+  "equity": 1030.8519,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 413.9442,
+    "profit": 437.0797,
     "loss": -320.4781,
-    "count": 50
+    "count": 51
   }
 }
