@@ -49,6 +49,31 @@
       "last_leg_candle_ts": 1794992400,
       "dry_run": true,
       "order_id": "PAPER-ZKCUSDT-1794992440"
+    },
+    {
+      "symbol": "PIPPINUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.0164,
+      "qty": 12195.122,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.01599,
+      "tf": "1h",
+      "opened_at": 1794992452,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.0164,
+          "ts": 1794992452
+        }
+      ],
+      "entry_candle_ts": 1794992400,
+      "last_leg_candle_ts": 1794992400,
+      "dry_run": true,
+      "order_id": "PAPER-PIPPINUSDT-1794992452"
     }
   ],
   "trade_history": [
@@ -6866,16 +6891,6 @@
   "pending": [
     {
       "symbol": "MUSDT",
-      "tf": "1h",
-      "candle_ts": 1794902400,
-      "side": "SELL",
-      "upper": 0.9020902161715381,
-      "open": 0.9101,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "MUSDT",
       "tf": "4h",
       "candle_ts": 1794902400,
       "side": "SELL",
@@ -9850,6 +9865,15 @@
       "side": "SELL",
       "upper": 674.464069795642,
       "open": 681.66,
+      "reported": false
+    },
+    {
+      "symbol": "ZKCUSDT",
+      "tf": "1h",
+      "candle_ts": 1794992400,
+      "side": "SELL",
+      "upper": 0.026569650166241972,
+      "open": 0.02716,
       "reported": false
     }
   ],
