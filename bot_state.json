@@ -30,6 +30,31 @@
       "last_leg_candle_ts": 1794982913,
       "dry_run": true,
       "order_id": "PAPER-NESUSDT-1794981702"
+    },
+    {
+      "symbol": "MMTUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.2316,
+      "qty": 863.5579,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.22580999999999998,
+      "tf": "1h",
+      "opened_at": 1794985264,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.2316,
+          "ts": 1794985264
+        }
+      ],
+      "entry_candle_ts": 1794985200,
+      "last_leg_candle_ts": 1794985200,
+      "dry_run": true,
+      "order_id": "PAPER-MMTUSDT-1794985264"
     }
   ],
   "trade_history": [
@@ -6884,26 +6909,6 @@
   ],
   "pending": [
     {
-      "symbol": "CRCLUSDT",
-      "tf": "1m",
-      "candle_ts": 1794791100,
-      "side": "SELL",
-      "upper": 58.55052852101303,
-      "open": 58.44,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "GOLDUSDT",
-      "tf": "5m",
-      "candle_ts": 1794791100,
-      "side": "LONG",
-      "upper": 3911.528061443066,
-      "open": 3872.56,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "XAUTUSDT",
       "tf": "5m",
       "candle_ts": 1794791100,
@@ -9873,6 +9878,24 @@
       "open": 0.01585,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "BLESSUSDT",
+      "tf": "15m",
+      "candle_ts": 1794985200,
+      "side": "SELL",
+      "upper": 0.011788352350269178,
+      "open": 0.011995,
+      "reported": false
+    },
+    {
+      "symbol": "ZKPUSDT",
+      "tf": "1h",
+      "candle_ts": 1794985200,
+      "side": "SELL",
+      "upper": 0.036576673571542984,
+      "open": 0.03746,
+      "reported": false
     }
   ],
   "paper_days": [
