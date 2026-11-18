@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795013179,
+  "updated_at": 1795013210,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "2ZUSDT",
-      "tf": "4h",
-      "gap": 1.81,
-      "ts": 1795002688
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795002710
-    },
     {
       "kind": "HEARTBEAT",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "15m",
       "gap": 2.93,
       "ts": 1795013179
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795013184
+    },
+    {
+      "kind": "SELL",
+      "symbol": "BTCUSDT",
+      "tf": "15m",
+      "gap": 0.31,
+      "ts": 1795013210
     }
   ],
   "trades": [
@@ -1417,14 +1417,27 @@
       "px": 3.0211,
       "pnl": 2.8815,
       "tf": "1h"
+    },
+    {
+      "symbol": "SOXSUSDT",
+      "side": "SELL",
+      "entry": 61.62,
+      "tp": 60.079499999999996,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 61.62,
+      "pnl": -0.24,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1794960632,
   "realized": 12.4437,
   "closed_n": 32,
-  "open_upnl": 2.8815,
-  "equity": 1015.3252,
+  "open_upnl": 2.6415,
+  "equity": 1015.0852,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
