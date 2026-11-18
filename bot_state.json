@@ -1,84 +1,6 @@
 {
-  "open_trades": [
-    {
-      "symbol": "ZKCUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.03004,
-      "qty": 6657.7896,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.029289,
-      "tf": "1h",
-      "opened_at": 1794996059,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.03004,
-          "ts": 1794996059
-        }
-      ],
-      "entry_candle_ts": 1794996000,
-      "last_leg_candle_ts": 1794996000,
-      "dry_run": true,
-      "order_id": "PAPER-ZKCUSDT-1794996059"
-    }
-  ],
+  "open_trades": [],
   "trade_history": [
-    {
-      "symbol": "UAIUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.15106840858760742,
-      "qty": 83405.9227,
-      "margin": 630.0,
-      "leverage": 20,
-      "tp_price": 0.14729169837291722,
-      "tf": "1h",
-      "opened_at": 1793933123,
-      "adds": 5,
-      "last_leg_margin": 320.0,
-      "used_res_levels": [
-        0.10591
-      ],
-      "steps": [
-        {
-          "px": 0.1065,
-          "ts": 1793933123
-        },
-        {
-          "px": 0.1056,
-          "ts": 1793933427
-        },
-        {
-          "px": 0.107,
-          "ts": 1793934131
-        },
-        {
-          "px": 0.1579,
-          "ts": 1793934920
-        },
-        {
-          "px": 0.1506,
-          "ts": 1793937650
-        },
-        {
-          "px": 0.1646,
-          "ts": 1793941258
-        }
-      ],
-      "entry_candle_ts": 1793933100,
-      "last_leg_candle_ts": 1793941200,
-      "dry_run": true,
-      "order_id": "PAPER-UAIUSDT-1793933123",
-      "closed_at": 1793995772,
-      "close_px": 0.1233,
-      "pnl_usdt": 2316.049738492812,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "IDOLUSDT",
       "side": "SELL",
@@ -6818,6 +6740,36 @@
       "pnl_usdt": -10.526315789473681,
       "close_reason": "STOP",
       "why": "STOP"
+    },
+    {
+      "symbol": "ZKCUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.03004,
+      "qty": 6657.7896,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.029289,
+      "tf": "1h",
+      "opened_at": 1794996059,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.03004,
+          "ts": 1794996059
+        }
+      ],
+      "entry_candle_ts": 1794996000,
+      "last_leg_candle_ts": 1794996000,
+      "dry_run": true,
+      "order_id": "PAPER-ZKCUSDT-1794996059",
+      "closed_at": 1794998438,
+      "close_px": 0.02917,
+      "pnl_usdt": 5.79227696404793,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
