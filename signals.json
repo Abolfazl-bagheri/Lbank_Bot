@@ -1,43 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1794987167,
+  "updated_at": 1794987357,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "ZKPUSDT",
-      "tf": "4h",
-      "gap": 1.11,
-      "ts": 1794974558
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794974862
-    },
-    {
-      "kind": "HEARTBEAT",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794974863
-    },
-    {
-      "kind": "SELL",
-      "symbol": "XAUTUSDT",
-      "tf": "5m",
-      "gap": 0.06,
-      "ts": 1794975006
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794975033
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,15 +1367,64 @@
       "tf": "15m",
       "gap": 2.36,
       "ts": 1794987167
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794987171
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794987274
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794987316
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794987337
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794987357
     }
   ],
-  "trades": [],
+  "trades": [
+    {
+      "symbol": "BLESSUSDT",
+      "side": "SELL",
+      "entry": 0.012798,
+      "tp": 0.01247805,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.012834,
+      "pnl": -0.8026,
+      "tf": "15m"
+    }
+  ],
   "start": 1000.0,
   "session_start": 1794960632,
   "realized": 128.2881,
   "closed_n": 11,
-  "open_upnl": 0,
-  "equity": 1128.2881,
+  "open_upnl": -0.8026,
+  "equity": 1127.4855,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
