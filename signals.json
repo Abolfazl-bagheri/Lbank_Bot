@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.9.4",
-  "updated_at": 1794982549,
+  "updated_at": 1794982829,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794968769
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794968804
-    },
     {
       "kind": "GAP",
       "symbol": "PIEVERSEUSDT",
@@ -1402,22 +1388,23 @@
       "tf": "15m",
       "gap": 1.26,
       "ts": 1794982549
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794982706
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794982829
     }
   ],
   "trades": [
-    {
-      "symbol": "ZKPUSDT",
-      "side": "SELL",
-      "entry": 0.03731,
-      "tp": 0.03637725,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.03569,
-      "pnl": 8.444,
-      "tf": "15m"
-    },
     {
       "symbol": "FHEUSDT",
       "side": "SELL",
@@ -1427,8 +1414,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.01637,
-      "pnl": 2.4122,
+      "px": 0.01647,
+      "pnl": 1.2067,
       "tf": "1h"
     },
     {
@@ -1440,23 +1427,23 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.2423,
-      "pnl": 0.7456,
+      "px": 0.2454,
+      "pnl": -1.8006,
       "tf": "1h"
     }
   ],
   "start": 1000.0,
   "session_start": 1794960632,
-  "realized": 69.7629,
-  "closed_n": 5,
-  "open_upnl": 11.6018,
-  "equity": 1081.3647,
+  "realized": 78.4469,
+  "closed_n": 6,
+  "open_upnl": -0.5939,
+  "equity": 1077.853,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 69.7629,
+    "profit": 78.4469,
     "loss": 0,
-    "count": 5
+    "count": 6
   }
 }
