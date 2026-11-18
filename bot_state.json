@@ -84,6 +84,31 @@
       "last_leg_candle_ts": 1795017600,
       "dry_run": true,
       "order_id": "PAPER-PROSUSDT-1795017621"
+    },
+    {
+      "symbol": "SOONUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.2649,
+      "qty": 755.0019,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.2582775,
+      "tf": "4h",
+      "opened_at": 1795017650,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.2649,
+          "ts": 1795017650
+        }
+      ],
+      "entry_candle_ts": 1795017600,
+      "last_leg_candle_ts": 1795017600,
+      "dry_run": true,
+      "order_id": "PAPER-SOONUSDT-1795017650"
     }
   ],
   "trade_history": [
@@ -6764,26 +6789,6 @@
     {
       "symbol": "CRCLUSDT",
       "tf": "5m",
-      "candle_ts": 1794926100,
-      "side": "LONG",
-      "upper": 58.064376337332455,
-      "open": 57.2,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "FONEUSDT",
-      "tf": "15m",
-      "candle_ts": 1794926700,
-      "side": "SELL",
-      "upper": 0.000814,
-      "open": 0.000814,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "CRCLUSDT",
-      "tf": "5m",
       "candle_ts": 1794927300,
       "side": "LONG",
       "upper": 58.25138053014912,
@@ -9744,6 +9749,24 @@
       "side": "LONG",
       "upper": 5.544507423213715,
       "open": 5.091,
+      "reported": false
+    },
+    {
+      "symbol": "PROSUSDT",
+      "tf": "1h",
+      "candle_ts": 1795017600,
+      "side": "SELL",
+      "upper": 0.5664751789110515,
+      "open": 0.5823,
+      "reported": false
+    },
+    {
+      "symbol": "ZKCUSDT",
+      "tf": "4h",
+      "candle_ts": 1795017600,
+      "side": "SELL",
+      "upper": 0.028456246329673834,
+      "open": 0.02886,
       "reported": false
     }
   ],
