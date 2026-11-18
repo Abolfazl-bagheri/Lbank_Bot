@@ -1,66 +1,6 @@
 {
-  "open_trades": [
-    {
-      "symbol": "MMTUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.1811,
-      "qty": 1104.3622,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.1765725,
-      "tf": "15m",
-      "opened_at": 1794979860,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.1811,
-          "ts": 1794979860
-        }
-      ],
-      "entry_candle_ts": 1794979800,
-      "last_leg_candle_ts": 1794979800,
-      "dry_run": true,
-      "order_id": "PAPER-MMTUSDT-1794979860"
-    }
-  ],
+  "open_trades": [],
   "trade_history": [
-    {
-      "symbol": "JCTUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.003284989882481365,
-      "qty": 182648.9643,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.003202865135419331,
-      "tf": "15m",
-      "opened_at": 1793928672,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.003238,
-          "ts": 1793928672
-        },
-        {
-          "px": 0.003309,
-          "ts": 1793929577
-        }
-      ],
-      "entry_candle_ts": 1793928600,
-      "last_leg_candle_ts": 1793929500,
-      "dry_run": true,
-      "order_id": "PAPER-JCTUSDT-1793928672",
-      "closed_at": 1793932520,
-      "close_px": 0.0032,
-      "pnl_usdt": 15.523314017119592,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "BIRBUSDT",
       "side": "SELL",
@@ -6882,27 +6822,39 @@
       "pnl_usdt": 5.003474635163297,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "MMTUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.1811,
+      "qty": 1104.3622,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.1765725,
+      "tf": "15m",
+      "opened_at": 1794979860,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.1811,
+          "ts": 1794979860
+        }
+      ],
+      "entry_candle_ts": 1794979800,
+      "last_leg_candle_ts": 1794979800,
+      "dry_run": true,
+      "order_id": "PAPER-MMTUSDT-1794979860",
+      "closed_at": 1794980128,
+      "close_px": 0.1765,
+      "pnl_usdt": 5.080066261733872,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
-    {
-      "symbol": "XAUTUSDT",
-      "tf": "5m",
-      "candle_ts": 1794654600,
-      "side": "LONG",
-      "upper": 3871.763190632569,
-      "open": 3869.88,
-      "reported": false
-    },
-    {
-      "symbol": "XAUTUSDT",
-      "tf": "1m",
-      "candle_ts": 1794655320,
-      "side": "LONG",
-      "upper": 3870.0925987661803,
-      "open": 3869.59,
-      "reported": false
-    },
     {
       "symbol": "SILVERUSDT",
       "tf": "1m",
@@ -9874,6 +9826,24 @@
       "upper": 0.17376144554505948,
       "open": 0.1807,
       "reported": false
+    },
+    {
+      "symbol": "SILVERUSDT",
+      "tf": "5m",
+      "candle_ts": 1794980100,
+      "side": "SELL",
+      "upper": 46.35876615334709,
+      "open": 46.41,
+      "reported": false
+    },
+    {
+      "symbol": "SILVERUSDT",
+      "tf": "5m",
+      "candle_ts": 1794980100,
+      "side": "SELL",
+      "upper": 46.35118481524626,
+      "open": 46.41,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -10132,7 +10102,7 @@
     "ARGUSUSDT": 1795021419,
     "QUACKAIUSDT": 1795022231
   },
-  "last_trade_report_ts": 1794979259,
+  "last_trade_report_ts": 1794980177,
   "last_known_version": "2.9.4",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
