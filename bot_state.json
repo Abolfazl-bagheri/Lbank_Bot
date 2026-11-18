@@ -9795,7 +9795,8 @@
       "side": "SELL",
       "upper": 0.015970661905742933,
       "open": 0.01661,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "SILVERUSDT",
@@ -9804,7 +9805,8 @@
       "side": "LONG",
       "upper": 46.31361373906127,
       "open": 45.8,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "XAUTUSDT",
@@ -9813,7 +9815,8 @@
       "side": "LONG",
       "upper": 3790.8495168017153,
       "open": 3755.53,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "SILVERUSDT",
@@ -10217,6 +10220,33 @@
       "kind": "gap_result",
       "symbol": "SILVERUSDT",
       "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1794990731,
+      "kind": "gap_result",
+      "symbol": "PIPPINUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1794990733,
+      "kind": "gap_result",
+      "symbol": "SILVERUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1794990736,
+      "kind": "gap_result",
+      "symbol": "XAUTUSDT",
+      "tf": "15m",
       "gap": 0.0,
       "filled": true,
       "note": "filled"
