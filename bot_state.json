@@ -6825,26 +6825,6 @@
   ],
   "pending": [
     {
-      "symbol": "PREDICTUSDT",
-      "tf": "5m",
-      "candle_ts": 1794907500,
-      "side": "SELL",
-      "upper": 1.2308423999407117,
-      "open": 1.2714,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "CATUSDT",
-      "tf": "1m",
-      "candle_ts": 1794907620,
-      "side": "LONG",
-      "upper": 579.4183202309443,
-      "open": 571.3,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "ZCATUSDT",
       "tf": "1m",
       "candle_ts": 1794907800,
@@ -9731,7 +9711,8 @@
       "side": "SELL",
       "upper": 0.017203629709935327,
       "open": 0.01784,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "ZKCUSDT",
@@ -9740,7 +9721,8 @@
       "side": "SELL",
       "upper": 0.028718309763360778,
       "open": 0.03025,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "IRYSUSDT",
@@ -9749,7 +9731,8 @@
       "side": "SELL",
       "upper": 0.01653256000157751,
       "open": 0.01674,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "LABUSDT",
@@ -9758,7 +9741,8 @@
       "side": "SELL",
       "upper": 0.03411493030510235,
       "open": 0.03447,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CRCLUSDT",
@@ -9787,7 +9771,8 @@
       "side": "SELL",
       "upper": 2.396398248742837,
       "open": 2.4222,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "PIEVERSEUSDT",
@@ -9796,7 +9781,8 @@
       "side": "SELL",
       "upper": 2.396103405317192,
       "open": 2.4222,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "PIPPINUSDT",
@@ -9805,6 +9791,24 @@
       "side": "SELL",
       "upper": 0.019820282144400847,
       "open": 0.02087,
+      "reported": false
+    },
+    {
+      "symbol": "PIEVERSEUSDT",
+      "tf": "1h",
+      "candle_ts": 1794999600,
+      "side": "SELL",
+      "upper": 2.4008361795253763,
+      "open": 2.4477,
+      "reported": false
+    },
+    {
+      "symbol": "SWARMSUSDT",
+      "tf": "1h",
+      "candle_ts": 1794999600,
+      "side": "SELL",
+      "upper": 0.0063175860260118325,
+      "open": 0.006408,
       "reported": false
     }
   ],
@@ -10063,9 +10067,10 @@
     "PIPEDOGUSDT": 1795031269,
     "BEMUSDT": 1795033003,
     "AINBSCUSDT": 1795034819,
-    "OROCHIUSDT": 1795036606
+    "OROCHIUSDT": 1795036606,
+    "STONKBROKERUSDT": 1795043033
   },
-  "last_trade_report_ts": 1794998851,
+  "last_trade_report_ts": 1794999887,
   "last_known_version": "2.10.0",
   "lessons": [
     {
@@ -10324,6 +10329,60 @@
       "ts": 1794998850,
       "kind": "gap_result",
       "symbol": "IRYSUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1794999869,
+      "kind": "gap_result",
+      "symbol": "PIPPINUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
+    },
+    {
+      "ts": 1794999873,
+      "kind": "gap_result",
+      "symbol": "ZKCUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1794999875,
+      "kind": "gap_result",
+      "symbol": "IRYSUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1794999879,
+      "kind": "gap_result",
+      "symbol": "LABUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1794999881,
+      "kind": "gap_result",
+      "symbol": "PIEVERSEUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1794999884,
+      "kind": "gap_result",
+      "symbol": "PIEVERSEUSDT",
       "tf": "15m",
       "gap": 0.0,
       "filled": true,
