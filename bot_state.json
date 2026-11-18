@@ -6800,16 +6800,6 @@
   ],
   "pending": [
     {
-      "symbol": "CATEUSDT",
-      "tf": "1m",
-      "candle_ts": 1794911160,
-      "side": "LONG",
-      "upper": 0.01832,
-      "open": 0.01832,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "CATUSDT",
       "tf": "1m",
       "candle_ts": 1794911220,
@@ -9778,7 +9768,8 @@
       "side": "SELL",
       "upper": 0.006687370454138263,
       "open": 0.00692,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "PIEVERSEUSDT",
@@ -9787,6 +9778,16 @@
       "side": "SELL",
       "upper": 2.6633625705259845,
       "open": 2.5532,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "PIEVERSEUSDT",
+      "tf": "15m",
+      "candle_ts": 1795005000,
+      "side": "SELL",
+      "upper": 2.7468884534189435,
+      "open": 2.8074,
       "reported": false
     }
   ],
@@ -10045,7 +10046,8 @@
     "STONKBROKERUSDT": 1795043033,
     "GSTOCKUSDT": 1795044685,
     "NIUBIUSDT": 1795046633,
-    "QUID1USDT": 1795047530
+    "QUID1USDT": 1795047530,
+    "ATMUSDT": 1795048296
   },
   "last_trade_report_ts": 1795004742,
   "last_known_version": "2.10.0",
@@ -10478,6 +10480,24 @@
       "kind": "gap_result",
       "symbol": "SWARMSUSDT",
       "tf": "1h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795005141,
+      "kind": "gap_result",
+      "symbol": "MOCAUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795005143,
+      "kind": "gap_result",
+      "symbol": "PIEVERSEUSDT",
+      "tf": "15m",
       "gap": 0.0,
       "filled": true,
       "note": "filled"
