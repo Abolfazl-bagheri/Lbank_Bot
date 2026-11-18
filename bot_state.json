@@ -126,23 +126,29 @@
       "side": "SELL",
       "status": "open",
       "entry": 0.01651,
-      "qty": 12113.8704,
-      "margin": 10.0,
+      "qty": 36341.6112,
+      "margin": 30.0,
       "leverage": 20,
       "tp_price": 0.01609725,
       "tf": "15m",
       "opened_at": 1795020421,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.016544
+      ],
       "steps": [
         {
           "px": 0.01651,
           "ts": 1795020421
+        },
+        {
+          "px": 0.01651,
+          "ts": 1795020502
         }
       ],
       "entry_candle_ts": 1795020300,
-      "last_leg_candle_ts": 1795020300,
+      "last_leg_candle_ts": 1795020502,
       "dry_run": true,
       "order_id": "PAPER-BULLAUSDT-1795020421"
     }
@@ -6813,26 +6819,6 @@
   ],
   "pending": [
     {
-      "symbol": "CATEUSDT",
-      "tf": "4h",
-      "candle_ts": 1794931200,
-      "side": "SELL",
-      "upper": 0.020876467902996083,
-      "open": 0.0219,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "BLURUSDT",
-      "tf": "1h",
-      "candle_ts": 1794931200,
-      "side": "SELL",
-      "upper": 0.006519324561298492,
-      "open": 0.00668,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "BREVUSDT",
       "tf": "4h",
       "candle_ts": 1794931200,
@@ -9785,6 +9771,24 @@
       "candle_ts": 1795020300,
       "side": "SELL",
       "upper": 0.016061078963491765,
+      "open": 0.016339,
+      "reported": false
+    },
+    {
+      "symbol": "AKAMUSDT",
+      "tf": "15m",
+      "candle_ts": 1795020300,
+      "side": "SELL",
+      "upper": 88.20465198915593,
+      "open": 87.36,
+      "reported": false
+    },
+    {
+      "symbol": "BULLAUSDT",
+      "tf": "15m",
+      "candle_ts": 1795020300,
+      "side": "SELL",
+      "upper": 0.016154901168294652,
       "open": 0.016339,
       "reported": false
     },
