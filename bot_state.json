@@ -1,82 +1,6 @@
 {
-  "open_trades": [
-    {
-      "symbol": "HUTUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 57.884158015074654,
-      "qty": 24.1863,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 56.43705406469778,
-      "tf": "15m",
-      "opened_at": 1794960945,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 57.97,
-          "ts": 1794960945
-        },
-        {
-          "px": 57.75,
-          "ts": 1794961856
-        },
-        {
-          "px": 57.93,
-          "ts": 1794962744
-        }
-      ],
-      "entry_candle_ts": 1794960900,
-      "last_leg_candle_ts": 1794962700,
-      "dry_run": true,
-      "order_id": "PAPER-HUTUSDT-1794960945"
-    }
-  ],
+  "open_trades": [],
   "trade_history": [
-    {
-      "symbol": "CYBERUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.28742558425142334,
-      "qty": 10437.484199999999,
-      "margin": 150.0,
-      "leverage": 20,
-      "tp_price": 0.28023994464513774,
-      "tf": "1h",
-      "opened_at": 1793907074,
-      "adds": 3,
-      "last_leg_margin": 80.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.2583,
-          "ts": 1793907074
-        },
-        {
-          "px": 0.2669,
-          "ts": 1793907969
-        },
-        {
-          "px": 0.2733,
-          "ts": 1793908843
-        },
-        {
-          "px": 0.3055,
-          "ts": 1793919653
-        }
-      ],
-      "entry_candle_ts": 1793907000,
-      "last_leg_candle_ts": 1793919600,
-      "dry_run": true,
-      "order_id": "PAPER-CYBERUSDT-1793907074",
-      "closed_at": 1793926437,
-      "close_px": 0.3215,
-      "pnl_usdt": -355.65117667573736,
-      "close_reason": "NIGHT_RESET",
-      "why": "NIGHT_RESET"
-    },
     {
       "symbol": "ARIAUSDT",
       "side": "SELL",
@@ -6894,6 +6818,44 @@
       "pnl_usdt": 8.617363344051448,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "HUTUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 57.884158015074654,
+      "qty": 24.1863,
+      "margin": 70.0,
+      "leverage": 20,
+      "tp_price": 56.43705406469778,
+      "tf": "15m",
+      "opened_at": 1794960945,
+      "adds": 2,
+      "last_leg_margin": 40.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 57.97,
+          "ts": 1794960945
+        },
+        {
+          "px": 57.75,
+          "ts": 1794961856
+        },
+        {
+          "px": 57.93,
+          "ts": 1794962744
+        }
+      ],
+      "entry_candle_ts": 1794960900,
+      "last_leg_candle_ts": 1794962700,
+      "dry_run": true,
+      "order_id": "PAPER-HUTUSDT-1794960945",
+      "closed_at": 1794968322,
+      "close_px": 56.31,
+      "pnl_usdt": 38.07295979895873,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -9787,7 +9749,8 @@
       "side": "SELL",
       "upper": 54.08,
       "open": 54.08,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "XAUTUSDT",
@@ -9796,7 +9759,8 @@
       "side": "LONG",
       "upper": 3856.779683510021,
       "open": 3808.0,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "SILVERUSDT",
@@ -9805,7 +9769,8 @@
       "side": "LONG",
       "upper": 47.7943664908407,
       "open": 47.03,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "GOLDUSDT",
@@ -9814,7 +9779,8 @@
       "side": "LONG",
       "upper": 3876.8036816857607,
       "open": 3825.49,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
