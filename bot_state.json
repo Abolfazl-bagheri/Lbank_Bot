@@ -65,31 +65,6 @@
       "order_id": "PAPER-NETUSDT-1795014985"
     },
     {
-      "symbol": "PROSUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.6034,
-      "qty": 331.4551,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.588315,
-      "tf": "1h",
-      "opened_at": 1795021254,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.6034,
-          "ts": 1795021254
-        }
-      ],
-      "entry_candle_ts": 1795021200,
-      "last_leg_candle_ts": 1795021200,
-      "dry_run": true,
-      "order_id": "PAPER-PROSUSDT-1795021254"
-    },
-    {
       "symbol": "AKAMUSDT",
       "side": "SELL",
       "status": "open",
@@ -146,39 +121,34 @@
       "last_leg_candle_ts": 1795023900,
       "dry_run": true,
       "order_id": "PAPER-HUTUSDT-1795023955"
-    }
-  ],
-  "trade_history": [
+    },
     {
-      "symbol": "KATUSDT",
+      "symbol": "HUMAUSDT",
       "side": "SELL",
-      "status": "closed",
-      "entry": 0.003837,
-      "qty": 52124.0553,
+      "status": "open",
+      "entry": 0.00862,
+      "qty": 23201.8561,
       "margin": 10.0,
       "leverage": 20,
-      "tp_price": 0.003741075,
-      "tf": "15m",
-      "opened_at": 1794043867,
+      "tp_price": 0.008404499999999999,
+      "tf": "1h",
+      "opened_at": 1795024847,
       "adds": 0,
       "last_leg_margin": 10.0,
       "used_res_levels": [],
       "steps": [
         {
-          "px": 0.003837,
-          "ts": 1794043867
+          "px": 0.00862,
+          "ts": 1795024847
         }
       ],
-      "entry_candle_ts": 1794043800,
-      "last_leg_candle_ts": 1794043800,
+      "entry_candle_ts": 1795024800,
+      "last_leg_candle_ts": 1795024800,
       "dry_run": true,
-      "order_id": "PAPER-KATUSDT-1794043867",
-      "closed_at": 1794045976,
-      "close_px": 0.003734,
-      "pnl_usdt": 5.368777690904364,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
+      "order_id": "PAPER-HUMAUSDT-1795024847"
+    }
+  ],
+  "trade_history": [
     {
       "symbol": "BLENDUSDT",
       "side": "SELL",
@@ -6799,6 +6769,36 @@
       "pnl_usdt": -55.41008144165373,
       "close_reason": "STOP",
       "why": "STOP"
+    },
+    {
+      "symbol": "PROSUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.6034,
+      "qty": 331.4551,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.588315,
+      "tf": "1h",
+      "opened_at": 1795021254,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.6034,
+          "ts": 1795021254
+        }
+      ],
+      "entry_candle_ts": 1795021200,
+      "last_leg_candle_ts": 1795021200,
+      "dry_run": true,
+      "order_id": "PAPER-PROSUSDT-1795021254",
+      "closed_at": 1795024594,
+      "close_px": 0.6318,
+      "pnl_usdt": -9.413324494530983,
+      "close_reason": "STOP",
+      "why": "STOP"
     }
   ],
   "pending": [
@@ -10047,7 +10047,7 @@
     "MURATAUSDT": 1795061977,
     "BONERUSDT": 1795062789
   },
-  "last_trade_report_ts": 1795023134,
+  "last_trade_report_ts": 1795024120,
   "last_known_version": "2.10.0",
   "lessons": [
     {
