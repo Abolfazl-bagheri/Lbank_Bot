@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795020419,
+  "updated_at": 1795020444,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "SOONUSDT",
-      "tf": "1h",
-      "gap": 3.42,
-      "ts": 1795013489
-    },
-    {
-      "kind": "GAP",
-      "symbol": "PIEVERSEUSDT",
-      "tf": "1h",
-      "gap": 4.62,
-      "ts": 1795013493
-    },
     {
       "kind": "GAP",
       "symbol": "WENUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "15m",
       "gap": 2.15,
       "ts": 1795020419
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795020424
+    },
+    {
+      "kind": "SELL",
+      "symbol": "AKAMUSDT",
+      "tf": "15m",
+      "gap": 1.23,
+      "ts": 1795020444
     }
   ],
   "trades": [
@@ -1456,14 +1456,27 @@
       "px": 3.2428,
       "pnl": -5.001,
       "tf": "4h"
+    },
+    {
+      "symbol": "BULLAUSDT",
+      "side": "SELL",
+      "entry": 0.01651,
+      "tp": 0.01609725,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.01651,
+      "pnl": -0.24,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1794960632,
   "realized": 68.8798,
   "closed_n": 43,
-  "open_upnl": 14.6468,
-  "equity": 1083.5266,
+  "open_upnl": 14.4068,
+  "equity": 1083.2866,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
