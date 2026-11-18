@@ -167,68 +167,9 @@
       "last_leg_candle_ts": 1795041236,
       "dry_run": true,
       "order_id": "PAPER-HUTUSDT-1795030368"
-    },
-    {
-      "symbol": "PAIDUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.0014176641562720195,
-      "qty": 423231.4102,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.0013822225523652191,
-      "tf": "15m",
-      "opened_at": 1795042861,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.001415,
-          "ts": 1795042861
-        },
-        {
-          "px": 0.001419,
-          "ts": 1795043734
-        }
-      ],
-      "entry_candle_ts": 1795042800,
-      "last_leg_candle_ts": 1795043700,
-      "dry_run": true,
-      "order_id": "PAPER-PAIDUSDT-1795042861"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "ESPORTSUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.011267,
-      "qty": 17750.9541,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.010985324999999999,
-      "tf": "15m",
-      "opened_at": 1794070851,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.011267,
-          "ts": 1794070851
-        }
-      ],
-      "entry_candle_ts": 1794070800,
-      "last_leg_candle_ts": 1794070800,
-      "dry_run": true,
-      "order_id": "PAPER-ESPORTSUSDT-1794070851",
-      "closed_at": 1794072893,
-      "close_px": 0.010933,
-      "pnl_usdt": 5.928818674003714,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "SIGNUSDT",
       "side": "SELL",
@@ -6855,6 +6796,40 @@
       "pnl_usdt": 39.473370779742694,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "PAIDUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.0014176641562720195,
+      "qty": 423231.4102,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 0.0013822225523652191,
+      "tf": "15m",
+      "opened_at": 1795042861,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.001415,
+          "ts": 1795042861
+        },
+        {
+          "px": 0.001419,
+          "ts": 1795043734
+        }
+      ],
+      "entry_candle_ts": 1795042800,
+      "last_leg_candle_ts": 1795043700,
+      "dry_run": true,
+      "order_id": "PAPER-PAIDUSDT-1795042861",
+      "closed_at": 1795044088,
+      "close_px": 0.001363,
+      "pnl_usdt": 23.13558794451057,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -10075,7 +10050,6 @@
     "ARGUSUSDT": 1795021419,
     "QUACKAIUSDT": 1795022231,
     "O1USDT": 1795024028,
-    "ARROWUSDT": 1795024033,
     "SPACE1USDT": 1795031267,
     "AINBSCUSDT": 1795034819,
     "STONKBROKERUSDT": 1795043033,
@@ -10102,7 +10076,7 @@
     "1000SATSUSDT": 1795084386,
     "1000LUNCUSDT": 1795085223
   },
-  "last_trade_report_ts": 1795043094,
+  "last_trade_report_ts": 1795044048,
   "last_known_version": "2.10.0",
   "lessons": [
     {
