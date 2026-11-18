@@ -109,6 +109,31 @@
       "last_leg_candle_ts": 1795017600,
       "dry_run": true,
       "order_id": "PAPER-SOONUSDT-1795017650"
+    },
+    {
+      "symbol": "PIEVERSEUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 3.1674,
+      "qty": 63.1433,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 3.088215,
+      "tf": "4h",
+      "opened_at": 1795017663,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 3.1674,
+          "ts": 1795017663
+        }
+      ],
+      "entry_candle_ts": 1795017600,
+      "last_leg_candle_ts": 1795017600,
+      "dry_run": true,
+      "order_id": "PAPER-PIEVERSEUSDT-1795017663"
     }
   ],
   "trade_history": [
@@ -6787,26 +6812,6 @@
   ],
   "pending": [
     {
-      "symbol": "CRCLUSDT",
-      "tf": "5m",
-      "candle_ts": 1794927300,
-      "side": "LONG",
-      "upper": 58.25138053014912,
-      "open": 56.7,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "CATEUSDT",
-      "tf": "15m",
-      "candle_ts": 1794927600,
-      "side": "SELL",
-      "upper": 0.02154533393140622,
-      "open": 0.02173,
-      "reported": true,
-      "filled": false
-    },
-    {
       "symbol": "CYPHUSDT",
       "tf": "1h",
       "candle_ts": 1794927600,
@@ -9767,6 +9772,24 @@
       "side": "SELL",
       "upper": 0.028456246329673834,
       "open": 0.02886,
+      "reported": false
+    },
+    {
+      "symbol": "SOONUSDT",
+      "tf": "4h",
+      "candle_ts": 1795017600,
+      "side": "SELL",
+      "upper": 0.2592688414693442,
+      "open": 0.2641,
+      "reported": false
+    },
+    {
+      "symbol": "BWETUSDT",
+      "tf": "4h",
+      "candle_ts": 1795017600,
+      "side": "SELL",
+      "upper": 710.5418749595714,
+      "open": 722.2,
       "reported": false
     }
   ],
