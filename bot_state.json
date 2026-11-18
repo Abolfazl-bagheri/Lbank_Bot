@@ -49,6 +49,31 @@
       "last_leg_candle_ts": 1794981600,
       "dry_run": true,
       "order_id": "PAPER-MMTUSDT-1794981660"
+    },
+    {
+      "symbol": "FHEUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.01659,
+      "qty": 12055.4551,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.01617525,
+      "tf": "1h",
+      "opened_at": 1794981691,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.01659,
+          "ts": 1794981691
+        }
+      ],
+      "entry_candle_ts": 1794981600,
+      "last_leg_candle_ts": 1794981600,
+      "dry_run": true,
+      "order_id": "PAPER-FHEUSDT-1794981691"
     }
   ],
   "trade_history": [
@@ -6907,46 +6932,6 @@
   ],
   "pending": [
     {
-      "symbol": "XAUTUSDT",
-      "tf": "1h",
-      "candle_ts": 1794787200,
-      "side": "SELL",
-      "upper": 3870.5267353474114,
-      "open": 3883.48,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "GOLDUSDT",
-      "tf": "1h",
-      "candle_ts": 1794787200,
-      "side": "SELL",
-      "upper": 3890.1591322337895,
-      "open": 3904.3,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "SILVERUSDT",
-      "tf": "1h",
-      "candle_ts": 1794787200,
-      "side": "SELL",
-      "upper": 48.84304297334984,
-      "open": 49.11,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "XAUTUSDT",
-      "tf": "1m",
-      "candle_ts": 1794787920,
-      "side": "LONG",
-      "upper": 3886.3114416258068,
-      "open": 3876.43,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "GOLDUSDT",
       "tf": "1h",
       "candle_ts": 1794790800,
@@ -9896,6 +9881,42 @@
       "side": "SELL",
       "upper": 0.016366332064886288,
       "open": 0.01645,
+      "reported": false
+    },
+    {
+      "symbol": "MMTUSDT",
+      "tf": "15m",
+      "candle_ts": 1794981600,
+      "side": "SELL",
+      "upper": 0.20487013264851625,
+      "open": 0.2187,
+      "reported": false
+    },
+    {
+      "symbol": "ZKPUSDT",
+      "tf": "1h",
+      "candle_ts": 1794981600,
+      "side": "SELL",
+      "upper": 0.03573477890491389,
+      "open": 0.03692,
+      "reported": false
+    },
+    {
+      "symbol": "ZORAUSDT",
+      "tf": "1h",
+      "candle_ts": 1794981600,
+      "side": "SELL",
+      "upper": 0.004959377304113841,
+      "open": 0.00501,
+      "reported": false
+    },
+    {
+      "symbol": "MMTUSDT",
+      "tf": "1h",
+      "candle_ts": 1794981600,
+      "side": "SELL",
+      "upper": 0.20074304710699103,
+      "open": 0.2187,
       "reported": false
     }
   ],
