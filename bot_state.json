@@ -1,31 +1,6 @@
 {
   "open_trades": [
     {
-      "symbol": "ZKPUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.03731,
-      "qty": 5360.4932,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.03637725,
-      "tf": "15m",
-      "opened_at": 1794981647,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.03731,
-          "ts": 1794981647
-        }
-      ],
-      "entry_candle_ts": 1794981600,
-      "last_leg_candle_ts": 1794981600,
-      "dry_run": true,
-      "order_id": "PAPER-ZKPUSDT-1794981647"
-    },
-    {
       "symbol": "FHEUSDT",
       "side": "SELL",
       "status": "open",
@@ -77,36 +52,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "CYBERUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.366,
-      "qty": 546.4481,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.35685,
-      "tf": "15m",
-      "opened_at": 1793935824,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.366,
-          "ts": 1793935824
-        }
-      ],
-      "entry_candle_ts": 1793935800,
-      "last_leg_candle_ts": 1793935800,
-      "dry_run": true,
-      "order_id": "PAPER-CYBERUSDT-1793935824",
-      "closed_at": 1793936869,
-      "close_px": 0.3538,
-      "pnl_usdt": 6.66666666666666,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "BIRBUSDT",
       "side": "SELL",
@@ -6924,29 +6869,39 @@
       "pnl_usdt": 5.682859761686537,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "ZKPUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.03731,
+      "qty": 5360.4932,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.03637725,
+      "tf": "15m",
+      "opened_at": 1794981647,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.03731,
+          "ts": 1794981647
+        }
+      ],
+      "entry_candle_ts": 1794981600,
+      "last_leg_candle_ts": 1794981600,
+      "dry_run": true,
+      "order_id": "PAPER-ZKPUSDT-1794981647",
+      "closed_at": 1794982702,
+      "close_px": 0.03569,
+      "pnl_usdt": 8.683998927901385,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
-    {
-      "symbol": "XAUTUSDT",
-      "tf": "1h",
-      "candle_ts": 1794790800,
-      "side": "SELL",
-      "upper": 3871.474530263604,
-      "open": 3874.55,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "XAUTUSDT",
-      "tf": "1m",
-      "candle_ts": 1794791100,
-      "side": "LONG",
-      "upper": 3891.599035666807,
-      "open": 3853.25,
-      "reported": true,
-      "filled": true
-    },
     {
       "symbol": "CRCLUSDT",
       "tf": "1m",
@@ -9840,7 +9795,8 @@
       "side": "SELL",
       "upper": 0.036267427152578614,
       "open": 0.03692,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ZORAUSDT",
@@ -9849,7 +9805,8 @@
       "side": "SELL",
       "upper": 0.0049510877363083275,
       "open": 0.00501,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "FHEUSDT",
@@ -9858,7 +9815,8 @@
       "side": "SELL",
       "upper": 0.016366332064886288,
       "open": 0.01645,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "MMTUSDT",
@@ -9867,7 +9825,8 @@
       "side": "SELL",
       "upper": 0.20487013264851625,
       "open": 0.2187,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "ZKPUSDT",
@@ -9912,6 +9871,24 @@
       "side": "SELL",
       "upper": 0.23548715570571682,
       "open": 0.2408,
+      "reported": false
+    },
+    {
+      "symbol": "MMTUSDT",
+      "tf": "15m",
+      "candle_ts": 1794982500,
+      "side": "SELL",
+      "upper": 0.2164155052534432,
+      "open": 0.2204,
+      "reported": false
+    },
+    {
+      "symbol": "IRYSUSDT",
+      "tf": "15m",
+      "candle_ts": 1794982500,
+      "side": "SELL",
+      "upper": 0.015650329316123878,
+      "open": 0.01585,
       "reported": false
     }
   ],
