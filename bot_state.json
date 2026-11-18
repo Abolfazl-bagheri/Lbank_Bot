@@ -138,15 +138,15 @@
       "symbol": "HUMAUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.008699630485050869,
-      "qty": 68968.4465,
-      "margin": 30.0,
+      "entry": 0.008747642085345224,
+      "qty": 160043.1277,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 0.008482139722924597,
+      "tp_price": 0.008528951033211593,
       "tf": "1h",
       "opened_at": 1795024847,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [
         0.00876
       ],
@@ -158,10 +158,14 @@
         {
           "px": 0.00874,
           "ts": 1795025492
+        },
+        {
+          "px": 0.008784,
+          "ts": 1795028467
         }
       ],
       "entry_candle_ts": 1795024800,
-      "last_leg_candle_ts": 1795025492,
+      "last_leg_candle_ts": 1795028400,
       "dry_run": true,
       "order_id": "PAPER-HUMAUSDT-1795024847"
     },
@@ -6848,16 +6852,6 @@
     {
       "symbol": "CRCLUSDT",
       "tf": "5m",
-      "candle_ts": 1794950400,
-      "side": "SELL",
-      "upper": 55.233368164338586,
-      "open": 55.2,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "CRCLUSDT",
-      "tf": "5m",
       "candle_ts": 1794950700,
       "side": "SELL",
       "upper": 55.42680077876412,
@@ -9824,6 +9818,15 @@
       "upper": 91.71449609422103,
       "open": 91.79,
       "reported": false
+    },
+    {
+      "symbol": "PROSUSDT",
+      "tf": "1h",
+      "candle_ts": 1795028400,
+      "side": "SELL",
+      "upper": 0.6407160887453291,
+      "open": 0.647,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -10009,7 +10012,6 @@
     "SYNUSDT": 1793537208,
     "CANTONUSDT": 1793952369,
     "XBRUSDT": 1793988971,
-    "BBXUSDT": 1794018704,
     "FIGHT1USDT": 1794111444,
     "APROUSDT": 1794115028,
     "GALUSDT": 1794141094,
@@ -10087,7 +10089,7 @@
     "MURATAUSDT": 1795061977,
     "BONERUSDT": 1795062789
   },
-  "last_trade_report_ts": 1795026938,
+  "last_trade_report_ts": 1795028195,
   "last_known_version": "2.10.0",
   "lessons": [
     {
