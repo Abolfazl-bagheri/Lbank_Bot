@@ -1,31 +1,6 @@
 {
   "open_trades": [
     {
-      "symbol": "FHEUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.01659,
-      "qty": 12055.4551,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.01617525,
-      "tf": "1h",
-      "opened_at": 1794981691,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.01659,
-          "ts": 1794981691
-        }
-      ],
-      "entry_candle_ts": 1794981600,
-      "last_leg_candle_ts": 1794981600,
-      "dry_run": true,
-      "order_id": "PAPER-FHEUSDT-1794981691"
-    },
-    {
       "symbol": "NESUSDT",
       "side": "SELL",
       "status": "open",
@@ -52,36 +27,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "BIRBUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.1007,
-      "qty": 1986.0973,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.09818249999999999,
-      "tf": "4h",
-      "opened_at": 1793937664,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.1007,
-          "ts": 1793937664
-        }
-      ],
-      "entry_candle_ts": 1793937600,
-      "last_leg_candle_ts": 1793937600,
-      "dry_run": true,
-      "order_id": "PAPER-BIRBUSDT-1793937664",
-      "closed_at": 1793940462,
-      "close_px": 0.09808,
-      "pnl_usdt": 5.203574975173778,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "CYBERUSDT",
       "side": "SELL",
@@ -6897,6 +6842,36 @@
       "closed_at": 1794982702,
       "close_px": 0.03569,
       "pnl_usdt": 8.683998927901385,
+      "close_reason": "TP50",
+      "why": "TP50"
+    },
+    {
+      "symbol": "FHEUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.01659,
+      "qty": 12055.4551,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.01617525,
+      "tf": "1h",
+      "opened_at": 1794981691,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.01659,
+          "ts": 1794981691
+        }
+      ],
+      "entry_candle_ts": 1794981600,
+      "last_leg_candle_ts": 1794981600,
+      "dry_run": true,
+      "order_id": "PAPER-FHEUSDT-1794981691",
+      "closed_at": 1794982858,
+      "close_px": 0.01616,
+      "pnl_usdt": 5.1838456901748025,
       "close_reason": "TP50",
       "why": "TP50"
     }
