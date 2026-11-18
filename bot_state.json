@@ -6846,46 +6846,6 @@
   ],
   "pending": [
     {
-      "symbol": "BREVUSDT",
-      "tf": "15m",
-      "candle_ts": 1794947400,
-      "side": "SELL",
-      "upper": 0.10499327242692146,
-      "open": 0.1062,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "PAIDUSDT",
-      "tf": "15m",
-      "candle_ts": 1794947400,
-      "side": "SELL",
-      "upper": 0.001382,
-      "open": 0.001382,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "MOGUSDT",
-      "tf": "15m",
-      "candle_ts": 1794947400,
-      "side": "SELL",
-      "upper": 7.838741202028685e-08,
-      "open": 7.89e-08,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "PAIDUSDT",
-      "tf": "15m",
-      "candle_ts": 1794948300,
-      "side": "LONG",
-      "upper": 0.001382,
-      "open": 0.001382,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "PAIDUSDT",
       "tf": "15m",
       "candle_ts": 1794949200,
@@ -9786,7 +9746,8 @@
       "side": "SELL",
       "upper": 88.75267673863488,
       "open": 87.36,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "HUTUSDT",
@@ -9795,7 +9756,8 @@
       "side": "SELL",
       "upper": 56.68985839692502,
       "open": 55.49,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "NETUSDT",
@@ -9804,7 +9766,8 @@
       "side": "SELL",
       "upper": 297.75381565073155,
       "open": 293.8,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "PIPPINUSDT",
@@ -9813,7 +9776,8 @@
       "side": "SELL",
       "upper": 0.02042368577294307,
       "open": 0.0204,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "NETUSDT",
@@ -9821,6 +9785,43 @@
       "candle_ts": 1795025700,
       "side": "SELL",
       "upper": 297.75381565073155,
+      "open": 293.8,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "PIPPINUSDT",
+      "tf": "15m",
+      "candle_ts": 1795026600,
+      "side": "SELL",
+      "upper": 0.021076521679150206,
+      "open": 0.02141,
+      "reported": false
+    },
+    {
+      "symbol": "AKAMUSDT",
+      "tf": "15m",
+      "candle_ts": 1795026600,
+      "side": "SELL",
+      "upper": 91.10293129012325,
+      "open": 92.21,
+      "reported": false
+    },
+    {
+      "symbol": "HUTUSDT",
+      "tf": "15m",
+      "candle_ts": 1795026600,
+      "side": "SELL",
+      "upper": 56.663507239775015,
+      "open": 55.49,
+      "reported": false
+    },
+    {
+      "symbol": "NETUSDT",
+      "tf": "15m",
+      "candle_ts": 1795026600,
+      "side": "SELL",
+      "upper": 297.72521691513094,
       "open": 293.8,
       "reported": false
     }
@@ -11549,6 +11550,51 @@
     },
     {
       "ts": 1795025825,
+      "kind": "gap_result",
+      "symbol": "NETUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795026710,
+      "kind": "gap_result",
+      "symbol": "AKAMUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
+    },
+    {
+      "ts": 1795026712,
+      "kind": "gap_result",
+      "symbol": "HUTUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795026715,
+      "kind": "gap_result",
+      "symbol": "NETUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795026718,
+      "kind": "gap_result",
+      "symbol": "PIPPINUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795026720,
       "kind": "gap_result",
       "symbol": "NETUSDT",
       "tf": "15m",
