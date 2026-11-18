@@ -1,43 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795012505,
+  "updated_at": 1795012558,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "ICNTUSDT",
-      "tf": "4h",
-      "gap": 5.28,
-      "ts": 1795002100
-    },
-    {
-      "kind": "GAP",
-      "symbol": "PIPPINUSDT",
-      "tf": "4h",
-      "gap": 18.47,
-      "ts": 1795002105
-    },
-    {
-      "kind": "GAP",
-      "symbol": "ZKCUSDT",
-      "tf": "4h",
-      "gap": 8.49,
-      "ts": 1795002108
-    },
-    {
-      "kind": "GAP",
-      "symbol": "NESUSDT",
-      "tf": "4h",
-      "gap": 4.38,
-      "ts": 1795002112
-    },
-    {
-      "kind": "GAP",
-      "symbol": "IRYSUSDT",
-      "tf": "4h",
-      "gap": 7.84,
-      "ts": 1795002115
-    },
     {
       "kind": "GAP",
       "symbol": "MMTUSDT",
@@ -1402,6 +1367,41 @@
       "tf": "5m",
       "gap": 0.22,
       "ts": 1795012505
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795012515
+    },
+    {
+      "kind": "HEARTBEAT",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795012516
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795012533
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795012549
+    },
+    {
+      "kind": "SELL",
+      "symbol": "SILVERUSDT",
+      "tf": "5m",
+      "gap": 0.19,
+      "ts": 1795012558
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 3.1214,
-      "pnl": -3.6548,
+      "px": 3.1156,
+      "pnl": -3.2768,
       "tf": "1h"
     }
   ],
@@ -1423,8 +1423,8 @@
   "session_start": 1794960632,
   "realized": 12.4437,
   "closed_n": 32,
-  "open_upnl": -3.6548,
-  "equity": 1008.7889,
+  "open_upnl": -3.2768,
+  "equity": 1009.1669,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
