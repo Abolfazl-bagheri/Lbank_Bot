@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1794995027,
+  "updated_at": 1794995225,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "ZORAUSDT",
-      "tf": "1h",
-      "gap": 2.38,
-      "ts": 1794984816
-    },
     {
       "kind": "GAP",
       "symbol": "NESUSDT",
@@ -1402,35 +1395,28 @@
       "tf": "15m",
       "gap": 2.73,
       "ts": 1794995027
-    }
-  ],
-  "trades": [
+    },
     {
-      "symbol": "PIPPINUSDT",
-      "side": "SELL",
-      "entry": 0.0164,
-      "tp": 0.01599,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.01631,
-      "pnl": 0.8576,
-      "tf": "1h"
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794995225
     }
   ],
+  "trades": [],
   "start": 1000.0,
   "session_start": 1794960632,
-  "realized": 65.8222,
-  "closed_n": 19,
-  "open_upnl": 0.8576,
-  "equity": 1066.6798,
+  "realized": 56.9198,
+  "closed_n": 20,
+  "open_upnl": 0,
+  "equity": 1056.9198,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
     "profit": 155.5906,
-    "loss": -89.7684,
-    "count": 19
+    "loss": -98.6708,
+    "count": 20
   }
 }
