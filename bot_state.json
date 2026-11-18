@@ -24,6 +24,31 @@
       "last_leg_candle_ts": 1794988800,
       "dry_run": true,
       "order_id": "PAPER-PIPPINUSDT-1794988825"
+    },
+    {
+      "symbol": "ZKPUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.03741,
+      "qty": 5346.1641,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.03647475,
+      "tf": "4h",
+      "opened_at": 1794988870,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.03741,
+          "ts": 1794988870
+        }
+      ],
+      "entry_candle_ts": 1794988800,
+      "last_leg_candle_ts": 1794988800,
+      "dry_run": true,
+      "order_id": "PAPER-ZKPUSDT-1794988870"
     }
   ],
   "trade_history": [
@@ -6860,26 +6885,6 @@
   ],
   "pending": [
     {
-      "symbol": "CRCLUSDT",
-      "tf": "5m",
-      "candle_ts": 1794812700,
-      "side": "SELL",
-      "upper": 58.31428393858215,
-      "open": 58.28,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "XAUTUSDT",
-      "tf": "1m",
-      "candle_ts": 1794813960,
-      "side": "LONG",
-      "upper": 3844.159129830309,
-      "open": 3840.11,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "XAUTUSDT",
       "tf": "1m",
       "candle_ts": 1794822840,
@@ -9847,6 +9852,24 @@
       "side": "SELL",
       "upper": 0.012922345168384343,
       "open": 0.01354,
+      "reported": false
+    },
+    {
+      "symbol": "PIPPINUSDT",
+      "tf": "15m",
+      "candle_ts": 1794988800,
+      "side": "SELL",
+      "upper": 0.014926796273834177,
+      "open": 0.01613,
+      "reported": false
+    },
+    {
+      "symbol": "PIPPINUSDT",
+      "tf": "1h",
+      "candle_ts": 1794988800,
+      "side": "SELL",
+      "upper": 0.01469519543436578,
+      "open": 0.01613,
       "reported": false
     }
   ],
