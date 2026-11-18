@@ -152,6 +152,31 @@
       "last_leg_candle_ts": 1794959100,
       "dry_run": true,
       "order_id": "PAPER-PAIDUSDT-1794959172"
+    },
+    {
+      "symbol": "BREVUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.10855,
+      "qty": 1842.4689,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.10583624999999999,
+      "tf": "4h",
+      "opened_at": 1794960052,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.10855,
+          "ts": 1794960052
+        }
+      ],
+      "entry_candle_ts": 1794960000,
+      "last_leg_candle_ts": 1794960000,
+      "dry_run": true,
+      "order_id": "PAPER-BREVUSDT-1794960052"
     }
   ],
   "trade_history": [
@@ -9670,12 +9695,32 @@
       "side": "SELL",
       "upper": 0.001382,
       "open": 0.001382,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "HUTUSDT",
       "tf": "15m",
       "candle_ts": 1794958200,
+      "side": "SELL",
+      "upper": 54.08,
+      "open": 54.08,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "PAIDUSDT",
+      "tf": "15m",
+      "candle_ts": 1794959100,
+      "side": "SELL",
+      "upper": 0.001382,
+      "open": 0.001382,
+      "reported": false
+    },
+    {
+      "symbol": "HUTUSDT",
+      "tf": "15m",
+      "candle_ts": 1794959100,
       "side": "SELL",
       "upper": 54.08,
       "open": 54.08,
@@ -9887,7 +9932,6 @@
     "TSMONUSDT": 1794407661,
     "CYBERLEEKUSDT": 1794439881,
     "LYTEUSDT": 1794441776,
-    "STXSTOCKUSDT": 1794441868,
     "NEXUSDT": 1794441907,
     "GSTOCKUSDT": 1794445445,
     "FLYUSDT": 1794452679,
