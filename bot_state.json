@@ -64,76 +64,32 @@
       "symbol": "MPUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 38.0,
-      "qty": 5.2632,
-      "margin": 10.0,
+      "entry": 37.8998686138764,
+      "qty": 15.831199999999999,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 37.05,
+      "tp_price": 36.95237189852949,
       "tf": "15m",
       "opened_at": 1795014153,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        38.0
+      ],
       "steps": [
         {
           "px": 38.0,
           "ts": 1795014153
+        },
+        {
+          "px": 37.85,
+          "ts": 1795015232
         }
       ],
       "entry_candle_ts": 1795014000,
-      "last_leg_candle_ts": 1795014000,
+      "last_leg_candle_ts": 1795015232,
       "dry_run": true,
       "order_id": "PAPER-MPUSDT-1795014153"
-    },
-    {
-      "symbol": "ZILUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.001265,
-      "qty": 158102.7668,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.001233375,
-      "tf": "15m",
-      "opened_at": 1795014923,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.001265,
-          "ts": 1795014923
-        }
-      ],
-      "entry_candle_ts": 1795014900,
-      "last_leg_candle_ts": 1795014900,
-      "dry_run": true,
-      "order_id": "PAPER-ZILUSDT-1795014923"
-    },
-    {
-      "symbol": "PROSUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.5568,
-      "qty": 359.1954,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.5428799999999999,
-      "tf": "15m",
-      "opened_at": 1795014936,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.5568,
-          "ts": 1795014936
-        }
-      ],
-      "entry_candle_ts": 1795014900,
-      "last_leg_candle_ts": 1795014900,
-      "dry_run": true,
-      "order_id": "PAPER-PROSUSDT-1795014936"
     },
     {
       "symbol": "NETUSDT",
@@ -162,66 +118,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "FONEUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.002,
-      "qty": 100000.0,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.00195,
-      "tf": "15m",
-      "opened_at": 1794009632,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.002,
-          "ts": 1794009632
-        }
-      ],
-      "entry_candle_ts": 1794009600,
-      "last_leg_candle_ts": 1794009600,
-      "dry_run": true,
-      "order_id": "PAPER-FONEUSDT-1794009632",
-      "closed_at": 1794010155,
-      "close_px": 0.00195,
-      "pnl_usdt": 5.000000000000013,
-      "close_reason": "NIGHT_RESET",
-      "why": "NIGHT_RESET"
-    },
-    {
-      "symbol": "RATSUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 1.525e-05,
-      "qty": 13114754.0984,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 1.4868749999999999e-05,
-      "tf": "1h",
-      "opened_at": 1794013294,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 1.525e-05,
-          "ts": 1794013294
-        }
-      ],
-      "entry_candle_ts": 1794013200,
-      "last_leg_candle_ts": 1794013200,
-      "dry_run": true,
-      "order_id": "PAPER-RATSUSDT-1794013294",
-      "closed_at": 1794017192,
-      "close_px": 1.475e-05,
-      "pnl_usdt": 6.557377049180333,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "AKEUSDT",
       "side": "SELL",
@@ -6851,6 +6747,66 @@
       "pnl_usdt": 6.0154576776236,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "ZILUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.001265,
+      "qty": 158102.7668,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.001233375,
+      "tf": "15m",
+      "opened_at": 1795014923,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.001265,
+          "ts": 1795014923
+        }
+      ],
+      "entry_candle_ts": 1795014900,
+      "last_leg_candle_ts": 1795014900,
+      "dry_run": true,
+      "order_id": "PAPER-ZILUSDT-1795014923",
+      "closed_at": 1795015190,
+      "close_px": 0.00122,
+      "pnl_usdt": 7.114624505928871,
+      "close_reason": "TP50",
+      "why": "TP50"
+    },
+    {
+      "symbol": "PROSUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.5568,
+      "qty": 359.1954,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.5428799999999999,
+      "tf": "15m",
+      "opened_at": 1795014936,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.5568,
+          "ts": 1795014936
+        }
+      ],
+      "entry_candle_ts": 1795014900,
+      "last_leg_candle_ts": 1795014900,
+      "dry_run": true,
+      "order_id": "PAPER-PROSUSDT-1795014936",
+      "closed_at": 1795015190,
+      "close_px": 0.5799,
+      "pnl_usdt": -8.297413793103452,
+      "close_reason": "STOP",
+      "why": "STOP"
     }
   ],
   "pending": [
