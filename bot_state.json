@@ -101,24 +101,28 @@
       "symbol": "HUTUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 58.57,
-      "qty": 3.4147,
-      "margin": 10.0,
+      "entry": 58.71648366703854,
+      "qty": 10.218599999999999,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 57.10575,
+      "tp_price": 57.248571575362575,
       "tf": "15m",
       "opened_at": 1795023955,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 58.57,
           "ts": 1795023955
+        },
+        {
+          "px": 58.79,
+          "ts": 1795024922
         }
       ],
       "entry_candle_ts": 1795023900,
-      "last_leg_candle_ts": 1795023900,
+      "last_leg_candle_ts": 1795024800,
       "dry_run": true,
       "order_id": "PAPER-HUTUSDT-1795023955"
     },
@@ -6828,46 +6832,6 @@
   ],
   "pending": [
     {
-      "symbol": "WENUSDT",
-      "tf": "15m",
-      "candle_ts": 1794936600,
-      "side": "SELL",
-      "upper": 8.69451867816556,
-      "open": 8.65,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "PAIDUSDT",
-      "tf": "15m",
-      "candle_ts": 1794936600,
-      "side": "LONG",
-      "upper": 0.001382,
-      "open": 0.001382,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "KAVAUSDT",
-      "tf": "1h",
-      "candle_ts": 1794938400,
-      "side": "SELL",
-      "upper": 0.029454010740482886,
-      "open": 0.02978,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "PAIDUSDT",
-      "tf": "15m",
-      "candle_ts": 1794938400,
-      "side": "LONG",
-      "upper": 0.001382,
-      "open": 0.001382,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "XAUTUSDT",
       "tf": "5m",
       "candle_ts": 1794939000,
@@ -9805,6 +9769,42 @@
       "candle_ts": 1795024800,
       "side": "SELL",
       "upper": 88.74500553012251,
+      "open": 87.36,
+      "reported": false
+    },
+    {
+      "symbol": "PROSUSDT",
+      "tf": "1h",
+      "candle_ts": 1795024800,
+      "side": "SELL",
+      "upper": 0.6132444623358265,
+      "open": 0.6266,
+      "reported": false
+    },
+    {
+      "symbol": "PANWUSDT",
+      "tf": "1h",
+      "candle_ts": 1795024800,
+      "side": "SELL",
+      "upper": 326.1302021798476,
+      "open": 325.27,
+      "reported": false
+    },
+    {
+      "symbol": "OKTAUSDT",
+      "tf": "1h",
+      "candle_ts": 1795024800,
+      "side": "SELL",
+      "upper": 188.83669816354245,
+      "open": 191.04,
+      "reported": false
+    },
+    {
+      "symbol": "AKAMUSDT",
+      "tf": "1h",
+      "candle_ts": 1795024800,
+      "side": "SELL",
+      "upper": 87.46592333368902,
       "open": 87.36,
       "reported": false
     }
