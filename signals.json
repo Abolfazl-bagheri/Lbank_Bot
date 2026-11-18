@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795014922,
+  "updated_at": 1795014935,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "SILVERUSDT",
-      "tf": "5m",
-      "gap": 0.13,
-      "ts": 1795005633
-    },
-    {
-      "kind": "SELL",
-      "symbol": "GOLDUSDT",
-      "tf": "5m",
-      "gap": 0.11,
-      "ts": 1795005636
-    },
     {
       "kind": "SELL",
       "symbol": "XAUTUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "15m",
       "gap": 3.14,
       "ts": 1795014922
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795014929
+    },
+    {
+      "kind": "SELL",
+      "symbol": "PROSUSDT",
+      "tf": "15m",
+      "gap": 2.17,
+      "ts": 1795014935
     }
   ],
   "trades": [
@@ -1456,14 +1456,27 @@
       "px": 37.46,
       "pnl": 2.6021,
       "tf": "15m"
+    },
+    {
+      "symbol": "ZILUSDT",
+      "side": "SELL",
+      "entry": 0.001265,
+      "tp": 0.001233375,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.001265,
+      "pnl": -0.24,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1794960632,
   "realized": 20.1954,
   "closed_n": 36,
-  "open_upnl": -14.8704,
-  "equity": 1005.325,
+  "open_upnl": -15.1104,
+  "equity": 1005.085,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
