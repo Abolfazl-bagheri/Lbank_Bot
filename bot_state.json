@@ -159,6 +159,31 @@
       "last_leg_candle_ts": 1795014900,
       "dry_run": true,
       "order_id": "PAPER-PROSUSDT-1795014936"
+    },
+    {
+      "symbol": "NETUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 299.82,
+      "qty": 0.667067,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 292.3245,
+      "tf": "15m",
+      "opened_at": 1795014985,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 299.82,
+          "ts": 1795014985
+        }
+      ],
+      "entry_candle_ts": 1795014900,
+      "last_leg_candle_ts": 1795014900,
+      "dry_run": true,
+      "order_id": "PAPER-NETUSDT-1795014985"
     }
   ],
   "trade_history": [
@@ -6855,36 +6880,6 @@
   ],
   "pending": [
     {
-      "symbol": "CYPHUSDT",
-      "tf": "1h",
-      "candle_ts": 1794924000,
-      "side": "SELL",
-      "upper": 2.008793366380494,
-      "open": 2.026,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "BREVUSDT",
-      "tf": "1h",
-      "candle_ts": 1794924000,
-      "side": "SELL",
-      "upper": 0.07701295403683696,
-      "open": 0.0844,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "LAUSDT",
-      "tf": "1h",
-      "candle_ts": 1794924000,
-      "side": "SELL",
-      "upper": 0.04317211560594144,
-      "open": 0.04362,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "ZKPUSDT",
       "tf": "1h",
       "candle_ts": 1794924000,
@@ -9829,6 +9824,33 @@
       "side": "SELL",
       "upper": 0.0012252498124918094,
       "open": 0.001268,
+      "reported": false
+    },
+    {
+      "symbol": "PROSUSDT",
+      "tf": "15m",
+      "candle_ts": 1795014900,
+      "side": "SELL",
+      "upper": 0.5446964140546311,
+      "open": 0.5551,
+      "reported": false
+    },
+    {
+      "symbol": "PANWUSDT",
+      "tf": "15m",
+      "candle_ts": 1795014900,
+      "side": "SELL",
+      "upper": 327.2570625610523,
+      "open": 332.74,
+      "reported": false
+    },
+    {
+      "symbol": "OKTAUSDT",
+      "tf": "15m",
+      "candle_ts": 1795014900,
+      "side": "SELL",
+      "upper": 181.93352002598084,
+      "open": 183.66,
       "reported": false
     }
   ],
