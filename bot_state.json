@@ -4,24 +4,28 @@
       "symbol": "HUTUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 57.97,
-      "qty": 3.4501,
-      "margin": 10.0,
+      "entry": 57.82314817134872,
+      "qty": 10.3765,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 56.52075,
+      "tp_price": 56.377569467065,
       "tf": "15m",
       "opened_at": 1794960945,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 57.97,
           "ts": 1794960945
+        },
+        {
+          "px": 57.75,
+          "ts": 1794961856
         }
       ],
       "entry_candle_ts": 1794960900,
-      "last_leg_candle_ts": 1794960900,
+      "last_leg_candle_ts": 1794961800,
       "dry_run": true,
       "order_id": "PAPER-HUTUSDT-1794960945"
     }
@@ -9699,6 +9703,42 @@
       "upper": 3866.2442341408173,
       "open": 3848.06,
       "reported": false
+    },
+    {
+      "symbol": "SILVERUSDT",
+      "tf": "5m",
+      "candle_ts": 1794961500,
+      "side": "LONG",
+      "upper": 47.745110641006754,
+      "open": 47.35,
+      "reported": false
+    },
+    {
+      "symbol": "GOLDUSDT",
+      "tf": "5m",
+      "candle_ts": 1794961500,
+      "side": "LONG",
+      "upper": 3870.7456576320806,
+      "open": 3841.93,
+      "reported": false
+    },
+    {
+      "symbol": "GOLDUSDT",
+      "tf": "5m",
+      "candle_ts": 1794961500,
+      "side": "LONG",
+      "upper": 3870.327538644529,
+      "open": 3841.93,
+      "reported": false
+    },
+    {
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
+      "candle_ts": 1794961500,
+      "side": "LONG",
+      "upper": 3851.179487003038,
+      "open": 3824.07,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -9959,7 +9999,7 @@
     "1000000BABYDOGEUSDT": 1795003546,
     "QUID1USDT": 1795004202
   },
-  "last_trade_report_ts": 1794960630,
+  "last_trade_report_ts": 1794961561,
   "last_known_version": "2.9.4",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
