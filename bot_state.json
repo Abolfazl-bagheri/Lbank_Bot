@@ -6777,26 +6777,6 @@
   ],
   "pending": [
     {
-      "symbol": "SQQQUSDT",
-      "tf": "15m",
-      "candle_ts": 1794930300,
-      "side": "SELL",
-      "upper": 47.66430630126274,
-      "open": 48.04,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "GOLDUSDT",
-      "tf": "15m",
-      "candle_ts": 1794930300,
-      "side": "SELL",
-      "upper": 3885.9597443743532,
-      "open": 3890.27,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "CRCLUSDT",
       "tf": "15m",
       "candle_ts": 1794930300,
@@ -9758,7 +9738,28 @@
       "side": "LONG",
       "upper": 54.99262924793308,
       "open": 53.45,
-      "reported": false
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
+      "candle_ts": 1795018800,
+      "side": "LONG",
+      "upper": 3765.445261918306,
+      "open": 3742.61,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "GOLDUSDT",
+      "tf": "5m",
+      "candle_ts": 1795018800,
+      "side": "LONG",
+      "upper": 3777.9616328000666,
+      "open": 3755.53,
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -11145,6 +11146,33 @@
       "kind": "gap_result",
       "symbol": "NETUSDT",
       "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795019117,
+      "kind": "gap_result",
+      "symbol": "CRCLUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795019121,
+      "kind": "gap_result",
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795019123,
+      "kind": "gap_result",
+      "symbol": "GOLDUSDT",
+      "tf": "5m",
       "gap": 0.0,
       "filled": true,
       "note": "filled"
