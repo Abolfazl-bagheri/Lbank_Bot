@@ -39,15 +39,15 @@
       "symbol": "NETUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 302.772044919757,
-      "qty": 1.9816669999999998,
-      "margin": 30.0,
+      "entry": 302.35902161581606,
+      "qty": 4.630267,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 295.20274379676306,
-      "tf": "15m",
+      "tp_price": 294.80004607542065,
+      "tf": "1h",
       "opened_at": 1795014985,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [],
       "steps": [
         {
@@ -57,10 +57,14 @@
         {
           "px": 304.27,
           "ts": 1795023062
+        },
+        {
+          "px": 302.05,
+          "ts": 1795024954
         }
       ],
       "entry_candle_ts": 1795014900,
-      "last_leg_candle_ts": 1795023000,
+      "last_leg_candle_ts": 1795024800,
       "dry_run": true,
       "order_id": "PAPER-NETUSDT-1795014985"
     },
@@ -6832,36 +6836,6 @@
   ],
   "pending": [
     {
-      "symbol": "XAUTUSDT",
-      "tf": "5m",
-      "candle_ts": 1794939000,
-      "side": "LONG",
-      "upper": 3859.3908159186776,
-      "open": 3848.56,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "XAUTUSDT",
-      "tf": "5m",
-      "candle_ts": 1794939000,
-      "side": "LONG",
-      "upper": 3859.341058817667,
-      "open": 3848.56,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "PAIDUSDT",
-      "tf": "15m",
-      "candle_ts": 1794942000,
-      "side": "LONG",
-      "upper": 0.001382,
-      "open": 0.001382,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "PAIDUSDT",
       "tf": "15m",
       "candle_ts": 1794943800,
@@ -9806,6 +9780,33 @@
       "side": "SELL",
       "upper": 87.46592333368902,
       "open": 87.36,
+      "reported": false
+    },
+    {
+      "symbol": "HUTUSDT",
+      "tf": "15m",
+      "candle_ts": 1795024800,
+      "side": "SELL",
+      "upper": 56.71407836882161,
+      "open": 55.49,
+      "reported": false
+    },
+    {
+      "symbol": "NETUSDT",
+      "tf": "15m",
+      "candle_ts": 1795024800,
+      "side": "SELL",
+      "upper": 297.72761602970303,
+      "open": 293.8,
+      "reported": false
+    },
+    {
+      "symbol": "HUTUSDT",
+      "tf": "1h",
+      "candle_ts": 1795024800,
+      "side": "SELL",
+      "upper": 57.94773642825704,
+      "open": 55.49,
       "reported": false
     }
   ],
