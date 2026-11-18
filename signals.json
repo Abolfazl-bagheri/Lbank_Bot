@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795017648,
+  "updated_at": 1795017658,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "AEONUSDT",
-      "tf": "1h",
-      "gap": 1.04,
-      "ts": 1795010383
-    },
-    {
-      "kind": "SELL",
-      "symbol": "SOONUSDT",
-      "tf": "1h",
-      "gap": 1.22,
-      "ts": 1795010424
-    },
     {
       "kind": "SELL",
       "symbol": "PIEVERSEUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "4h",
       "gap": 2.13,
       "ts": 1795017648
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795017653
+    },
+    {
+      "kind": "SELL",
+      "symbol": "BWETUSDT",
+      "tf": "4h",
+      "gap": 1.64,
+      "ts": 1795017658
     }
   ],
   "trades": [
@@ -1443,14 +1443,27 @@
       "px": 0.5844,
       "pnl": -0.24,
       "tf": "1h"
+    },
+    {
+      "symbol": "SOONUSDT",
+      "side": "SELL",
+      "entry": 0.2649,
+      "tp": 0.2582775,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.2649,
+      "pnl": -0.24,
+      "tf": "4h"
     }
   ],
   "start": 1000.0,
   "session_start": 1794960632,
   "realized": 63.6779,
   "closed_n": 42,
-  "open_upnl": 8.4619,
-  "equity": 1072.1398,
+  "open_upnl": 8.2219,
+  "equity": 1071.8998,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
