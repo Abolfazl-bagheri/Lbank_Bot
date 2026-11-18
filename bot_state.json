@@ -36,31 +36,6 @@
       "order_id": "PAPER-BWETUSDT-1795013272"
     },
     {
-      "symbol": "PIEVERSEUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 3.2217,
-      "qty": 62.079,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 3.1411575,
-      "tf": "1h",
-      "opened_at": 1795014054,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 3.2217,
-          "ts": 1795014054
-        }
-      ],
-      "entry_candle_ts": 1795014000,
-      "last_leg_candle_ts": 1795014000,
-      "dry_run": true,
-      "order_id": "PAPER-PIEVERSEUSDT-1795014054"
-    },
-    {
       "symbol": "TWSTUSDT",
       "side": "SELL",
       "status": "open",
@@ -187,36 +162,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "PAIDUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.002412,
-      "qty": 82918.7396,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.0023517,
-      "tf": "15m",
-      "opened_at": 1793996129,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.002412,
-          "ts": 1793996129
-        }
-      ],
-      "entry_candle_ts": 1793996100,
-      "last_leg_candle_ts": 1793996100,
-      "dry_run": true,
-      "order_id": "PAPER-PAIDUSDT-1793996129",
-      "closed_at": 1794010155,
-      "close_px": 0.002468,
-      "pnl_usdt": -4.643449419568827,
-      "close_reason": "NIGHT_RESET",
-      "why": "NIGHT_RESET"
-    },
     {
       "symbol": "FONEUSDT",
       "side": "SELL",
@@ -6874,6 +6819,36 @@
       "closed_at": 1795014616,
       "close_px": 7.31,
       "pnl_usdt": 15.200000000000031,
+      "close_reason": "TP50",
+      "why": "TP50"
+    },
+    {
+      "symbol": "PIEVERSEUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 3.2217,
+      "qty": 62.079,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 3.1411575,
+      "tf": "1h",
+      "opened_at": 1795014054,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 3.2217,
+          "ts": 1795014054
+        }
+      ],
+      "entry_candle_ts": 1795014000,
+      "last_leg_candle_ts": 1795014000,
+      "dry_run": true,
+      "order_id": "PAPER-PIEVERSEUSDT-1795014054",
+      "closed_at": 1795015186,
+      "close_px": 3.1248,
+      "pnl_usdt": 6.0154576776236,
       "close_reason": "TP50",
       "why": "TP50"
     }
