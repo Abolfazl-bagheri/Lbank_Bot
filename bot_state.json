@@ -99,6 +99,31 @@
       "last_leg_candle_ts": 1794988800,
       "dry_run": true,
       "order_id": "PAPER-ICNTUSDT-1794988892"
+    },
+    {
+      "symbol": "ZORAUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.005199,
+      "qty": 38468.9363,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.005069025,
+      "tf": "4h",
+      "opened_at": 1794988905,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.005199,
+          "ts": 1794988905
+        }
+      ],
+      "entry_candle_ts": 1794988800,
+      "last_leg_candle_ts": 1794988800,
+      "dry_run": true,
+      "order_id": "PAPER-ZORAUSDT-1794988905"
     }
   ],
   "trade_history": [
@@ -6935,26 +6960,6 @@
   ],
   "pending": [
     {
-      "symbol": "CRCLUSDT",
-      "tf": "15m",
-      "candle_ts": 1794872700,
-      "side": "LONG",
-      "upper": 58.213767668102804,
-      "open": 57.3,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "SILVERUSDT",
-      "tf": "15m",
-      "candle_ts": 1794879900,
-      "side": "SELL",
-      "upper": 47.36641279312924,
-      "open": 47.45,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "CATUSDT",
       "tf": "1m",
       "candle_ts": 1794900420,
@@ -9918,6 +9923,24 @@
       "side": "SELL",
       "upper": 0.20766477908832298,
       "open": 0.2338,
+      "reported": false
+    },
+    {
+      "symbol": "ICNTUSDT",
+      "tf": "4h",
+      "candle_ts": 1794988800,
+      "side": "SELL",
+      "upper": 0.2958827051598916,
+      "open": 0.3032,
+      "reported": false
+    },
+    {
+      "symbol": "PIPPINUSDT",
+      "tf": "4h",
+      "candle_ts": 1794988800,
+      "side": "SELL",
+      "upper": 0.014905333967115074,
+      "open": 0.01613,
       "reported": false
     }
   ],
