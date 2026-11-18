@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795013109,
+  "updated_at": 1795013128,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "SAPIENUSDT",
-      "tf": "4h",
-      "gap": 1.21,
-      "ts": 1795002175
-    },
     {
       "kind": "GAP",
       "symbol": "WETUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 1.51,
       "ts": 1795013109
+    },
+    {
+      "kind": "SELL",
+      "symbol": "SHAZUSDT",
+      "tf": "15m",
+      "gap": 1.12,
+      "ts": 1795013128
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 3.0847,
-      "pnl": -1.2631,
+      "px": 3.0211,
+      "pnl": 2.8815,
       "tf": "1h"
     }
   ],
@@ -1423,8 +1423,8 @@
   "session_start": 1794960632,
   "realized": 12.4437,
   "closed_n": 32,
-  "open_upnl": -1.2631,
-  "equity": 1011.1806,
+  "open_upnl": 2.8815,
+  "equity": 1015.3252,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
