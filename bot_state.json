@@ -36,31 +36,6 @@
       "order_id": "PAPER-BWETUSDT-1795013272"
     },
     {
-      "symbol": "TWSTUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 116.65,
-      "qty": 1.7145,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 113.73375,
-      "tf": "15m",
-      "opened_at": 1795014086,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 116.65,
-          "ts": 1795014086
-        }
-      ],
-      "entry_candle_ts": 1795014000,
-      "last_leg_candle_ts": 1795014000,
-      "dry_run": true,
-      "order_id": "PAPER-TWSTUSDT-1795014086"
-    },
-    {
       "symbol": "MPUSDT",
       "side": "SELL",
       "status": "open",
@@ -143,46 +118,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "AKEUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.005477186292833569,
-      "qty": 255605.6934,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 0.00534025663551273,
-      "tf": "15m",
-      "opened_at": 1794013259,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [
-        0.0057241
-      ],
-      "steps": [
-        {
-          "px": 0.004899,
-          "ts": 1794013259
-        },
-        {
-          "px": 0.00536,
-          "ts": 1794014143
-        },
-        {
-          "px": 0.005708,
-          "ts": 1794017939
-        }
-      ],
-      "entry_candle_ts": 1794013200,
-      "last_leg_candle_ts": 1794017939,
-      "dry_run": true,
-      "order_id": "PAPER-AKEUSDT-1794013259",
-      "closed_at": 1794028761,
-      "close_px": 0.004706,
-      "pnl_usdt": 197.11960708359342,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "PIEVERSEUSDT",
       "side": "SELL",
@@ -6832,6 +6767,36 @@
       "pnl_usdt": -8.297413793103452,
       "close_reason": "STOP",
       "why": "STOP"
+    },
+    {
+      "symbol": "TWSTUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 116.65,
+      "qty": 1.7145,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 113.73375,
+      "tf": "15m",
+      "opened_at": 1795014086,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 116.65,
+          "ts": 1795014086
+        }
+      ],
+      "entry_candle_ts": 1795014000,
+      "last_leg_candle_ts": 1795014000,
+      "dry_run": true,
+      "order_id": "PAPER-TWSTUSDT-1795014086",
+      "closed_at": 1795016210,
+      "close_px": 113.57,
+      "pnl_usdt": 5.280754393484805,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
