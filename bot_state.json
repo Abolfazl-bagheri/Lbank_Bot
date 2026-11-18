@@ -6934,26 +6934,6 @@
   ],
   "pending": [
     {
-      "symbol": "CRCLUSDT",
-      "tf": "15m",
-      "candle_ts": 1794796200,
-      "side": "SELL",
-      "upper": 58.85686969787566,
-      "open": 58.76,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "XAUTUSDT",
-      "tf": "5m",
-      "candle_ts": 1794807600,
-      "side": "LONG",
-      "upper": 3864.7301687160575,
-      "open": 3853.59,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "XAUTUSDT",
       "tf": "5m",
       "candle_ts": 1794808800,
@@ -9826,7 +9806,8 @@
       "side": "SELL",
       "upper": 0.03573477890491389,
       "open": 0.03692,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ZORAUSDT",
@@ -9835,7 +9816,8 @@
       "side": "SELL",
       "upper": 0.004959377304113841,
       "open": 0.00501,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "MMTUSDT",
@@ -9844,7 +9826,8 @@
       "side": "SELL",
       "upper": 0.20074304710699103,
       "open": 0.2187,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "FHEUSDT",
@@ -9853,7 +9836,8 @@
       "side": "SELL",
       "upper": 0.016222698258953658,
       "open": 0.01645,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "NESUSDT",
@@ -9862,7 +9846,8 @@
       "side": "SELL",
       "upper": 0.23548715570571682,
       "open": 0.2408,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "MMTUSDT",
@@ -9918,6 +9903,24 @@
       "side": "SELL",
       "upper": 0.07259611467870491,
       "open": 0.07388,
+      "reported": false
+    },
+    {
+      "symbol": "BLESSUSDT",
+      "tf": "1h",
+      "candle_ts": 1794985200,
+      "side": "SELL",
+      "upper": 0.011660763472939914,
+      "open": 0.011995,
+      "reported": false
+    },
+    {
+      "symbol": "IRYSUSDT",
+      "tf": "1h",
+      "candle_ts": 1794985200,
+      "side": "SELL",
+      "upper": 0.015562417971413391,
+      "open": 0.01573,
       "reported": false
     }
   ],
@@ -10179,7 +10182,7 @@
     "O1USDT": 1795024028,
     "ARROWUSDT": 1795024033
   },
-  "last_trade_report_ts": 1794984132,
+  "last_trade_report_ts": 1794985551,
   "last_known_version": "2.9.4",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
