@@ -105,15 +105,15 @@
       "symbol": "HUTUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 58.71648366703854,
-      "qty": 10.218599999999999,
-      "margin": 30.0,
+      "entry": 58.48351594091501,
+      "qty": 23.938399999999998,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 57.248571575362575,
+      "tp_price": 57.02142804239214,
       "tf": "15m",
       "opened_at": 1795023955,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [],
       "steps": [
         {
@@ -123,10 +123,14 @@
         {
           "px": 58.79,
           "ts": 1795024922
+        },
+        {
+          "px": 58.31,
+          "ts": 1795025753
         }
       ],
       "entry_candle_ts": 1795023900,
-      "last_leg_candle_ts": 1795024800,
+      "last_leg_candle_ts": 1795025700,
       "dry_run": true,
       "order_id": "PAPER-HUTUSDT-1795023955"
     },
@@ -6842,16 +6846,6 @@
   ],
   "pending": [
     {
-      "symbol": "UVXYUSDT",
-      "tf": "4h",
-      "candle_ts": 1794945600,
-      "side": "SELL",
-      "upper": 22.593784566509925,
-      "open": 23.12,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "MMTUSDT",
       "tf": "4h",
       "candle_ts": 1794945600,
@@ -9820,6 +9814,15 @@
       "side": "SELL",
       "upper": 194.31196597386003,
       "open": 194.22,
+      "reported": false
+    },
+    {
+      "symbol": "AKAMUSDT",
+      "tf": "15m",
+      "candle_ts": 1795025700,
+      "side": "SELL",
+      "upper": 88.75267673863488,
+      "open": 87.36,
       "reported": false
     }
   ],
