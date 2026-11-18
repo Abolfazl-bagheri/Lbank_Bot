@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795021252,
+  "updated_at": 1795021287,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "ZILUSDT",
-      "tf": "1h",
-      "gap": 2.02,
-      "ts": 1795014066
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795014070
-    },
     {
       "kind": "SELL",
       "symbol": "BWETUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "1h",
       "gap": 2.6,
       "ts": 1795021252
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795021259
+    },
+    {
+      "kind": "SELL",
+      "symbol": "AKAMUSDT",
+      "tf": "15m",
+      "gap": 1.72,
+      "ts": 1795021287
     }
   ],
   "trades": [
@@ -1469,14 +1469,27 @@
       "px": 0.01554,
       "pnl": 34.5314,
       "tf": "15m"
+    },
+    {
+      "symbol": "PROSUSDT",
+      "side": "SELL",
+      "entry": 0.6034,
+      "tp": 0.588315,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.6034,
+      "pnl": -0.24,
+      "tf": "1h"
     }
   ],
   "start": 1000.0,
   "session_start": 1794960632,
   "realized": 68.8798,
   "closed_n": 43,
-  "open_upnl": 61.4556,
-  "equity": 1130.3354,
+  "open_upnl": 61.2156,
+  "equity": 1130.0954,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
