@@ -9804,7 +9804,8 @@
       "side": "SELL",
       "upper": 0.028978995410119942,
       "open": 0.02972,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -10252,6 +10253,15 @@
       "ts": 1794993431,
       "kind": "gap_result",
       "symbol": "TWSTUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1794994331,
+      "kind": "gap_result",
+      "symbol": "ZKCUSDT",
       "tf": "15m",
       "gap": 0.0,
       "filled": true,
