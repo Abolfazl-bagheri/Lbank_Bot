@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795014066,
+  "updated_at": 1795014074,
   "signals": [
-    {
-      "kind": "HEARTBEAT",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795003825
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795003845
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "1h",
       "gap": 2.02,
       "ts": 1795014066
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795014070
+    },
+    {
+      "kind": "SELL",
+      "symbol": "BWETUSDT",
+      "tf": "1h",
+      "gap": 2.06,
+      "ts": 1795014074
     }
   ],
   "trades": [
@@ -1430,14 +1430,27 @@
       "px": 3.2217,
       "pnl": -0.24,
       "tf": "1h"
+    },
+    {
+      "symbol": "ZILUSDT",
+      "side": "SELL",
+      "entry": 0.001151,
+      "tp": 0.001122225,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.001151,
+      "pnl": -0.24,
+      "tf": "1h"
     }
   ],
   "start": 1000.0,
   "session_start": 1794960632,
   "realized": 13.1622,
   "closed_n": 34,
-  "open_upnl": -3.9941,
-  "equity": 1009.1681,
+  "open_upnl": -4.2341,
+  "equity": 1008.9281,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
