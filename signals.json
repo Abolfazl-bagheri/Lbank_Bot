@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795024884,
+  "updated_at": 1795024892,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795017042
-    },
-    {
-      "kind": "HEARTBEAT",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795017043
-    },
     {
       "kind": "GAP",
       "symbol": "BWETUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "1h",
       "gap": 2.04,
       "ts": 1795024884
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795024888
+    },
+    {
+      "kind": "SELL",
+      "symbol": "PANWUSDT",
+      "tf": "1h",
+      "gap": 1.16,
+      "ts": 1795024892
     }
   ],
   "trades": [
@@ -1469,14 +1469,27 @@
       "px": 0.00862,
       "pnl": -0.24,
       "tf": "1h"
+    },
+    {
+      "symbol": "PROSUSDT",
+      "side": "SELL",
+      "entry": 0.626,
+      "tp": 0.61035,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.626,
+      "pnl": -0.24,
+      "tf": "1h"
     }
   ],
   "start": 1000.0,
   "session_start": 1794960632,
   "realized": 27.361,
   "closed_n": 47,
-  "open_upnl": -21.5493,
-  "equity": 1005.8117,
+  "open_upnl": -21.7893,
+  "equity": 1005.5717,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
