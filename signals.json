@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795015588,
+  "updated_at": 1795015729,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "MOCAUSDT",
-      "tf": "1h",
-      "gap": 6.08,
-      "ts": 1795006307
-    },
-    {
-      "kind": "GAP",
-      "symbol": "SOONUSDT",
-      "tf": "1h",
-      "gap": 1.25,
-      "ts": 1795006311
-    },
     {
       "kind": "SELL",
       "symbol": "GOLDUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "5m",
       "gap": 0.12,
       "ts": 1795015588
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795015600
+    },
+    {
+      "kind": "GAP",
+      "symbol": "PROSUSDT",
+      "tf": "15m",
+      "gap": 7.17,
+      "ts": 1795015729
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 3,
       "margin": 70.0,
       "lev": 20,
-      "px": 733.91,
-      "pnl": -13.5211,
+      "px": 733.86,
+      "pnl": -13.4249,
       "tf": "1h"
     },
     {
@@ -1427,8 +1427,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 114.58,
-      "pnl": 3.3091,
+      "px": 114.65,
+      "pnl": 3.1891,
       "tf": "15m"
     },
     {
@@ -1453,8 +1453,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 299.15,
-      "pnl": 0.2069,
+      "px": 299.29,
+      "pnl": 0.1135,
       "tf": "15m"
     }
   ],
@@ -1462,8 +1462,8 @@
   "session_start": 1794960632,
   "realized": 25.0281,
   "closed_n": 39,
-  "open_upnl": -6.4528,
-  "equity": 1018.5753,
+  "open_upnl": -6.57,
+  "equity": 1018.4581,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
