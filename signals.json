@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795005605,
+  "updated_at": 1795005630,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "RATSUSDT",
-      "tf": "1h",
-      "gap": 1.01,
-      "ts": 1794995526
-    },
-    {
-      "kind": "GAP",
-      "symbol": "SOPHUSDT",
-      "tf": "1h",
-      "gap": 3.54,
-      "ts": 1794995638
-    },
     {
       "kind": "GAP",
       "symbol": "CNPYUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "5m",
       "gap": 0.07,
       "ts": 1795005605
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795005623
+    },
+    {
+      "kind": "SELL",
+      "symbol": "CRCLUSDT",
+      "tf": "5m",
+      "gap": 0.12,
+      "ts": 1795005630
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.2602,
-      "pnl": -5.7692,
+      "px": 0.2593,
+      "pnl": -5.0583,
       "tf": "4h"
     },
     {
@@ -1427,8 +1427,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 2.802,
-      "pnl": 0.5633,
+      "px": 2.8031,
+      "pnl": 0.4851,
       "tf": "15m"
     }
   ],
@@ -1436,8 +1436,8 @@
   "session_start": 1794960632,
   "realized": 28.565,
   "closed_n": 29,
-  "open_upnl": -5.2059,
-  "equity": 1023.3591,
+  "open_upnl": -4.5732,
+  "equity": 1023.9918,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
