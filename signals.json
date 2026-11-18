@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795014052,
+  "updated_at": 1795014061,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795003601
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795003823
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "1h",
       "gap": 2.01,
       "ts": 1795014052
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795014057
+    },
+    {
+      "kind": "SELL",
+      "symbol": "SOONUSDT",
+      "tf": "1h",
+      "gap": 1.08,
+      "ts": 1795014061
     }
   ],
   "trades": [
@@ -1417,14 +1417,27 @@
       "px": 724.49,
       "pnl": -3.7541,
       "tf": "15m"
+    },
+    {
+      "symbol": "PIEVERSEUSDT",
+      "side": "SELL",
+      "entry": 3.2217,
+      "tp": 3.1411575,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 3.2217,
+      "pnl": -0.24,
+      "tf": "1h"
     }
   ],
   "start": 1000.0,
   "session_start": 1794960632,
   "realized": 13.1622,
   "closed_n": 34,
-  "open_upnl": -3.7541,
-  "equity": 1009.4081,
+  "open_upnl": -3.9941,
+  "equity": 1009.1681,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
