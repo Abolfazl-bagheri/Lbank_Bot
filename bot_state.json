@@ -109,23 +109,29 @@
       "side": "SELL",
       "status": "open",
       "entry": 7.5,
-      "qty": 26.6667,
-      "margin": 10.0,
+      "qty": 80.0,
+      "margin": 30.0,
       "leverage": 20,
       "tp_price": 7.3125,
       "tf": "15m",
       "opened_at": 1795014106,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        7.53
+      ],
       "steps": [
         {
           "px": 7.5,
           "ts": 1795014106
+        },
+        {
+          "px": 7.5,
+          "ts": 1795014291
         }
       ],
       "entry_candle_ts": 1795014000,
-      "last_leg_candle_ts": 1795014000,
+      "last_leg_candle_ts": 1795014291,
       "dry_run": true,
       "order_id": "PAPER-USARUSDT-1795014106"
     },
@@ -6855,26 +6861,6 @@
   ],
   "pending": [
     {
-      "symbol": "BREVUSDT",
-      "tf": "15m",
-      "candle_ts": 1794923100,
-      "side": "SELL",
-      "upper": 0.07852143371147044,
-      "open": 0.08,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "POWERUSDT",
-      "tf": "15m",
-      "candle_ts": 1794923100,
-      "side": "LONG",
-      "upper": 0.05884891003159938,
-      "open": 0.05838,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "FONEUSDT",
       "tf": "15m",
       "candle_ts": 1794923100,
@@ -9584,7 +9570,8 @@
       "side": "SELL",
       "upper": 0.25366789685738056,
       "open": 0.256,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "PIEVERSEUSDT",
@@ -9593,7 +9580,8 @@
       "side": "SELL",
       "upper": 2.939364017608615,
       "open": 3.0614,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "MOGUSDT",
@@ -9672,7 +9660,8 @@
       "side": "LONG",
       "upper": 23.845798691553124,
       "open": 22.85,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "UVXYUSDT",
@@ -9681,7 +9670,8 @@
       "side": "SELL",
       "upper": 22.508515448141317,
       "open": 22.67,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "BWETUSDT",
@@ -9690,7 +9680,8 @@
       "side": "SELL",
       "upper": 694.0678009664821,
       "open": 699.76,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "WENUSDT",
@@ -9699,7 +9690,8 @@
       "side": "SELL",
       "upper": 8.739599566330675,
       "open": 8.762,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "SOXSUSDT",
@@ -9708,7 +9700,8 @@
       "side": "SELL",
       "upper": 59.81481688789344,
       "open": 61.07,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "BTCUSDT",
@@ -9717,7 +9710,8 @@
       "side": "LONG",
       "upper": 64694.593724927494,
       "open": 63287.1,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CRCLUSDT",
@@ -9726,7 +9720,8 @@
       "side": "LONG",
       "upper": 56.50585814859076,
       "open": 54.18,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "BWETUSDT",
@@ -9735,7 +9730,8 @@
       "side": "SELL",
       "upper": 692.6074564537895,
       "open": 699.76,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "ZILUSDT",
@@ -9825,6 +9821,24 @@
       "side": "SELL",
       "upper": 7.324967610215235,
       "open": 7.48,
+      "reported": false
+    },
+    {
+      "symbol": "MPUSDT",
+      "tf": "15m",
+      "candle_ts": 1795014000,
+      "side": "SELL",
+      "upper": 37.11808431774602,
+      "open": 38.0,
+      "reported": false
+    },
+    {
+      "symbol": "MPUSDT",
+      "tf": "1h",
+      "candle_ts": 1795014000,
+      "side": "SELL",
+      "upper": 37.17194934676297,
+      "open": 38.0,
       "reported": false
     }
   ],
@@ -10807,6 +10821,96 @@
       "gap": 0.0,
       "filled": true,
       "note": "filled"
+    },
+    {
+      "ts": 1795014253,
+      "kind": "gap_result",
+      "symbol": "SOONUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795014256,
+      "kind": "gap_result",
+      "symbol": "PIEVERSEUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
+    },
+    {
+      "ts": 1795014261,
+      "kind": "gap_result",
+      "symbol": "SHAZUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795014264,
+      "kind": "gap_result",
+      "symbol": "UVXYUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795014267,
+      "kind": "gap_result",
+      "symbol": "BWETUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
+    },
+    {
+      "ts": 1795014272,
+      "kind": "gap_result",
+      "symbol": "WENUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
+    },
+    {
+      "ts": 1795014275,
+      "kind": "gap_result",
+      "symbol": "SOXSUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795014279,
+      "kind": "gap_result",
+      "symbol": "BTCUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795014284,
+      "kind": "gap_result",
+      "symbol": "CRCLUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795014286,
+      "kind": "gap_result",
+      "symbol": "BWETUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
     }
   ],
   "tune_history": [],
