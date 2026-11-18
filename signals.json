@@ -1,29 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.9.4",
-  "updated_at": 1794979858,
+  "updated_at": 1794980037,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794960671
-    },
-    {
-      "kind": "SELL",
-      "symbol": "SILVERUSDT",
-      "tf": "5m",
-      "gap": 0.12,
-      "ts": 1794960684
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794960702
-    },
     {
       "kind": "GAP",
       "symbol": "HUTUSDT",
@@ -1402,15 +1381,50 @@
       "tf": "15m",
       "gap": 4.05,
       "ts": 1794979858
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794979863
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794980024
+    },
+    {
+      "kind": "GAP",
+      "symbol": "SILVERUSDT",
+      "tf": "5m",
+      "gap": 0.23,
+      "ts": 1794980037
     }
   ],
-  "trades": [],
+  "trades": [
+    {
+      "symbol": "MMTUSDT",
+      "side": "SELL",
+      "entry": 0.1811,
+      "tp": 0.1765725,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.1812,
+      "pnl": -0.3504,
+      "tf": "15m"
+    }
+  ],
   "start": 1000.0,
   "session_start": 1794960632,
   "realized": 59.0,
   "closed_n": 3,
-  "open_upnl": 0,
-  "equity": 1059.0,
+  "open_upnl": -0.3504,
+  "equity": 1058.6496,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
