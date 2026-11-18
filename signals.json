@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795003601,
+  "updated_at": 1795003823,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794993104
-    },
     {
       "kind": "GAP",
       "symbol": "ZKCUSDT",
@@ -1402,22 +1395,16 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1795003601
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795003823
     }
   ],
   "trades": [
-    {
-      "symbol": "PIPPINUSDT",
-      "side": "SELL",
-      "entry": 0.0198,
-      "tp": 0.019305000000000003,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.0198,
-      "pnl": -0.24,
-      "tf": "4h"
-    },
     {
       "symbol": "MMTUSDT",
       "side": "SELL",
@@ -1427,21 +1414,21 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.2532,
-      "pnl": -0.24,
+      "px": 0.257,
+      "pnl": -3.2416,
       "tf": "4h"
     },
     {
       "symbol": "PIEVERSEUSDT",
       "side": "SELL",
-      "entry": 2.4539,
-      "tp": 2.3925525,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
+      "entry": 2.515776576815689,
+      "tp": 2.4528821623952966,
+      "adds": 1,
+      "pele": 2,
+      "margin": 30.0,
       "lev": 20,
-      "px": 2.4539,
-      "pnl": -0.24,
+      "px": 2.5479,
+      "pnl": -8.3813,
       "tf": "4h"
     },
     {
@@ -1453,8 +1440,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.02887,
-      "pnl": -0.24,
+      "px": 0.02873,
+      "pnl": 0.7299,
       "tf": "4h"
     },
     {
@@ -1466,23 +1453,23 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.01781,
-      "pnl": -0.24,
+      "px": 0.01718,
+      "pnl": 6.8347,
       "tf": "4h"
     }
   ],
   "start": 1000.0,
   "session_start": 1794960632,
-  "realized": 65.1154,
-  "closed_n": 24,
-  "open_upnl": -1.2,
-  "equity": 1063.9154,
+  "realized": 72.7921,
+  "closed_n": 25,
+  "open_upnl": -4.0583,
+  "equity": 1068.7338,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 174.3125,
+    "profit": 181.9893,
     "loss": -109.1971,
-    "count": 24
+    "count": 25
   }
 }
