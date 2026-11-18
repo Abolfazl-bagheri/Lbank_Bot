@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.9.4",
-  "updated_at": 1794981701,
+  "updated_at": 1794981987,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "SKUUUSDT",
-      "tf": "1h",
-      "gap": 1.23,
-      "ts": 1794963112
-    },
-    {
-      "kind": "GAP",
-      "symbol": "HUTUSDT",
-      "tf": "1h",
-      "gap": 4.81,
-      "ts": 1794963116
-    },
     {
       "kind": "GAP",
       "symbol": "CIENUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "1h",
       "gap": 3.29,
       "ts": 1794981701
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794981705
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794981987
     }
   ],
   "trades": [
@@ -1443,14 +1443,27 @@
       "px": 0.01659,
       "pnl": -0.24,
       "tf": "1h"
+    },
+    {
+      "symbol": "NESUSDT",
+      "side": "SELL",
+      "entry": 0.2435,
+      "tp": 0.2374125,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.2435,
+      "pnl": -0.24,
+      "tf": "1h"
     }
   ],
   "start": 1000.0,
   "session_start": 1794960632,
   "realized": 64.0801,
   "closed_n": 4,
-  "open_upnl": -0.72,
-  "equity": 1063.3601,
+  "open_upnl": -0.96,
+  "equity": 1063.1201,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
