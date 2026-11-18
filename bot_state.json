@@ -49,6 +49,31 @@
       "last_leg_candle_ts": 1795003200,
       "dry_run": true,
       "order_id": "PAPER-MMTUSDT-1795003276"
+    },
+    {
+      "symbol": "PIEVERSEUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 2.4539,
+      "qty": 81.5029,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 2.3925525,
+      "tf": "4h",
+      "opened_at": 1795003283,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 2.4539,
+          "ts": 1795003283
+        }
+      ],
+      "entry_candle_ts": 1795003200,
+      "last_leg_candle_ts": 1795003200,
+      "dry_run": true,
+      "order_id": "PAPER-PIEVERSEUSDT-1795003283"
     }
   ],
   "trade_history": [
@@ -6825,16 +6850,6 @@
   ],
   "pending": [
     {
-      "symbol": "CARDSUSDT",
-      "tf": "1m",
-      "candle_ts": 1794908460,
-      "side": "LONG",
-      "upper": 0.16414613310898551,
-      "open": 0.16388,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "CATUSDT",
       "tf": "1m",
       "candle_ts": 1794909420,
@@ -9806,6 +9821,15 @@
       "side": "SELL",
       "upper": 0.31275553982925064,
       "open": 0.3181,
+      "reported": false
+    },
+    {
+      "symbol": "MMTUSDT",
+      "tf": "4h",
+      "candle_ts": 1795003200,
+      "side": "SELL",
+      "upper": 0.23724123557207066,
+      "open": 0.2531,
       "reported": false
     }
   ],
