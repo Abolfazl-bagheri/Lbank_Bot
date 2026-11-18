@@ -28,6 +28,31 @@
       "last_leg_candle_ts": 1795006800,
       "dry_run": true,
       "order_id": "PAPER-PIEVERSEUSDT-1795005036"
+    },
+    {
+      "symbol": "MOCAUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.00683,
+      "qty": 29282.5769,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.00665925,
+      "tf": "1h",
+      "opened_at": 1795006859,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.00683,
+          "ts": 1795006859
+        }
+      ],
+      "entry_candle_ts": 1795006800,
+      "last_leg_candle_ts": 1795006800,
+      "dry_run": true,
+      "order_id": "PAPER-MOCAUSDT-1795006859"
     }
   ],
   "trade_history": [
@@ -6775,16 +6800,6 @@
   ],
   "pending": [
     {
-      "symbol": "MMTUSDT",
-      "tf": "15m",
-      "candle_ts": 1794916800,
-      "side": "SELL",
-      "upper": 0.1294201847398044,
-      "open": 0.135,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "SOONUSDT",
       "tf": "15m",
       "candle_ts": 1794916800,
@@ -9759,6 +9774,15 @@
       "side": "LONG",
       "upper": 3773.2617560930235,
       "open": 3742.19,
+      "reported": false
+    },
+    {
+      "symbol": "PIEVERSEUSDT",
+      "tf": "1h",
+      "candle_ts": 1795006800,
+      "side": "SELL",
+      "upper": 2.6831743263532584,
+      "open": 2.7971,
       "reported": false
     }
   ],
