@@ -4,63 +4,29 @@
       "symbol": "PIPPINUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.01383,
-      "qty": 14461.316,
+      "entry": 0.01632,
+      "qty": 12254.902,
       "margin": 10.0,
       "leverage": 20,
-      "tp_price": 0.01348425,
+      "tp_price": 0.015912,
       "tf": "15m",
-      "opened_at": 1794987970,
+      "opened_at": 1794988825,
       "adds": 0,
       "last_leg_margin": 10.0,
       "used_res_levels": [],
       "steps": [
         {
-          "px": 0.01383,
-          "ts": 1794987970
+          "px": 0.01632,
+          "ts": 1794988825
         }
       ],
-      "entry_candle_ts": 1794987900,
-      "last_leg_candle_ts": 1794987900,
+      "entry_candle_ts": 1794988800,
+      "last_leg_candle_ts": 1794988800,
       "dry_run": true,
-      "order_id": "PAPER-PIPPINUSDT-1794987970"
+      "order_id": "PAPER-PIPPINUSDT-1794988825"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "AKEUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.005319350366724216,
-      "qty": 112795.7285,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.00518636660755611,
-      "tf": "15m",
-      "opened_at": 1793944842,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.004518,
-          "ts": 1793944842
-        },
-        {
-          "px": 0.005837,
-          "ts": 1793975440
-        }
-      ],
-      "entry_candle_ts": 1793944800,
-      "last_leg_candle_ts": 1793975400,
-      "dry_run": true,
-      "order_id": "PAPER-AKEUSDT-1793944842",
-      "closed_at": 1793976527,
-      "close_px": 0.004879,
-      "pnl_usdt": 49.66964042965207,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "PIEVERSEUSDT",
       "side": "SELL",
@@ -6860,6 +6826,36 @@
       "pnl_usdt": 21.87841850289108,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "PIPPINUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.01383,
+      "qty": 14461.316,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.01348425,
+      "tf": "15m",
+      "opened_at": 1794987970,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.01383,
+          "ts": 1794987970
+        }
+      ],
+      "entry_candle_ts": 1794987900,
+      "last_leg_candle_ts": 1794987900,
+      "dry_run": true,
+      "order_id": "PAPER-PIPPINUSDT-1794987970",
+      "closed_at": 1794988553,
+      "close_px": 0.01471,
+      "pnl_usdt": -12.725958062183667,
+      "close_reason": "STOP",
+      "why": "STOP"
     }
   ],
   "pending": [
@@ -10112,7 +10108,7 @@
     "MANCERUSDT": 1795031268,
     "PIPEDOGUSDT": 1795031269
   },
-  "last_trade_report_ts": 1794987359,
+  "last_trade_report_ts": 1794988554,
   "last_known_version": "2.10.0",
   "lessons": [
     {
