@@ -4,24 +4,30 @@
       "symbol": "NESUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.2435,
-      "qty": 821.3552,
-      "margin": 10.0,
+      "entry": 0.24746741349033988,
+      "qty": 2424.5616,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.2374125,
+      "tp_price": 0.24128072815308138,
       "tf": "1h",
       "opened_at": 1794981702,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.25
+      ],
       "steps": [
         {
           "px": 0.2435,
           "ts": 1794981702
+        },
+        {
+          "px": 0.2495,
+          "ts": 1794982913
         }
       ],
       "entry_candle_ts": 1794981600,
-      "last_leg_candle_ts": 1794981600,
+      "last_leg_candle_ts": 1794982913,
       "dry_run": true,
       "order_id": "PAPER-NESUSDT-1794981702"
     }
