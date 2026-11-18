@@ -1,184 +1,5 @@
 {
-  "open_trades": [
-    {
-      "symbol": "GOLDUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 3884.6759603244996,
-      "qty": 0.154453,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 3787.5590613163868,
-      "tf": "15m",
-      "opened_at": 1794930467,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        3894.99
-      ],
-      "steps": [
-        {
-          "px": 3892.25,
-          "ts": 1794930467
-        },
-        {
-          "px": 3880.9,
-          "ts": 1794931762
-        }
-      ],
-      "entry_candle_ts": 1794930300,
-      "last_leg_candle_ts": 1794931762,
-      "dry_run": true,
-      "order_id": "PAPER-GOLDUSDT-1794930467"
-    },
-    {
-      "symbol": "XAUTUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 3871.7,
-      "qty": 0.154971,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 3774.9075,
-      "tf": "15m",
-      "opened_at": 1794930482,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        3876.59
-      ],
-      "steps": [
-        {
-          "px": 3871.7,
-          "ts": 1794930482
-        },
-        {
-          "px": 3871.7,
-          "ts": 1794930598
-        }
-      ],
-      "entry_candle_ts": 1794930300,
-      "last_leg_candle_ts": 1794930598,
-      "dry_run": true,
-      "order_id": "PAPER-XAUTUSDT-1794930482"
-    },
-    {
-      "symbol": "CRCLUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 55.847213783089465,
-      "qty": 25.0684,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 54.451033438512226,
-      "tf": "5m",
-      "opened_at": 1794950431,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 55.4,
-          "ts": 1794950431
-        },
-        {
-          "px": 55.61,
-          "ts": 1794950751
-        },
-        {
-          "px": 56.08,
-          "ts": 1794951321
-        }
-      ],
-      "entry_candle_ts": 1794950400,
-      "last_leg_candle_ts": 1794951000,
-      "dry_run": true,
-      "order_id": "PAPER-CRCLUSDT-1794950431"
-    },
-    {
-      "symbol": "HUTUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 56.55699184364357,
-      "qty": 24.753700000000002,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 55.143067047552485,
-      "tf": "15m",
-      "opened_at": 1794953774,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 55.66,
-          "ts": 1794953774
-        },
-        {
-          "px": 56.43,
-          "ts": 1794954673
-        },
-        {
-          "px": 56.85,
-          "ts": 1794955561
-        }
-      ],
-      "entry_candle_ts": 1794953700,
-      "last_leg_candle_ts": 1794955500,
-      "dry_run": true,
-      "order_id": "PAPER-HUTUSDT-1794953774"
-    },
-    {
-      "symbol": "BREVUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.10855,
-      "qty": 1842.4689,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.10583624999999999,
-      "tf": "4h",
-      "opened_at": 1794960052,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.10855,
-          "ts": 1794960052
-        }
-      ],
-      "entry_candle_ts": 1794960000,
-      "last_leg_candle_ts": 1794960000,
-      "dry_run": true,
-      "order_id": "PAPER-BREVUSDT-1794960052"
-    },
-    {
-      "symbol": "ICNTUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.2754,
-      "qty": 726.2164,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.26851499999999995,
-      "tf": "4h",
-      "opened_at": 1794960085,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.2754,
-          "ts": 1794960085
-        }
-      ],
-      "entry_candle_ts": 1794960000,
-      "last_leg_candle_ts": 1794960000,
-      "dry_run": true,
-      "order_id": "PAPER-ICNTUSDT-1794960085"
-    }
-  ],
+  "open_trades": [],
   "trade_history": [
     {
       "symbol": "CYBERUSDT",
@@ -9987,10 +9808,21 @@
       "trades": 0,
       "tp_trades": 0,
       "reset_trades": 0
+    },
+    {
+      "from": 1794873896,
+      "to": 1794960632,
+      "start": 1000.0,
+      "realized": 50.1188,
+      "unrealized_closed": -36.0973,
+      "net": 14.0216,
+      "trades": 40,
+      "tp_trades": 34,
+      "reset_trades": 6
     }
   ],
-  "paper_session_start": 1794873896,
-  "last_daily_report_date": "2026-11-17",
+  "paper_session_start": 1794960632,
+  "last_daily_report_date": "2026-11-18",
   "kline_blacklist": {
     "EURUSDT": 1793385188,
     "AXLUSDT": 1793502358,
@@ -10072,7 +9904,7 @@
     "HOTUSDT": 1795003540,
     "1000000BABYDOGEUSDT": 1795003546
   },
-  "last_trade_report_ts": 1794958608,
+  "last_trade_report_ts": 1794960630,
   "last_known_version": "2.9.4",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
