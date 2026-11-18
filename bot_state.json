@@ -24,6 +24,31 @@
       "last_leg_candle_ts": 1795010400,
       "dry_run": true,
       "order_id": "PAPER-PIEVERSEUSDT-1795010433"
+    },
+    {
+      "symbol": "SOXSUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 61.62,
+      "qty": 3.2457,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 60.079499999999996,
+      "tf": "15m",
+      "opened_at": 1795013180,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 61.62,
+          "ts": 1795013180
+        }
+      ],
+      "entry_candle_ts": 1795013100,
+      "last_leg_candle_ts": 1795013100,
+      "dry_run": true,
+      "order_id": "PAPER-SOXSUSDT-1795013180"
     }
   ],
   "trade_history": [
@@ -6750,46 +6775,6 @@
   ],
   "pending": [
     {
-      "symbol": "PAIDUSDT",
-      "tf": "5m",
-      "candle_ts": 1794917400,
-      "side": "SELL",
-      "upper": 0.001382,
-      "open": 0.001382,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "BREVUSDT",
-      "tf": "15m",
-      "candle_ts": 1794920400,
-      "side": "SELL",
-      "upper": 0.06409054595776116,
-      "open": 0.0657,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "BREVUSDT",
-      "tf": "1h",
-      "candle_ts": 1794920400,
-      "side": "SELL",
-      "upper": 0.0634054835751057,
-      "open": 0.0657,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "COHRUSDT",
-      "tf": "1h",
-      "candle_ts": 1794920400,
-      "side": "SELL",
-      "upper": 218.9711119305959,
-      "open": 222.69,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "BREVUSDT",
       "tf": "15m",
       "candle_ts": 1794921300,
@@ -9733,6 +9718,42 @@
       "side": "LONG",
       "upper": 55.69914277137701,
       "open": 54.41,
+      "reported": false
+    },
+    {
+      "symbol": "SHAZUSDT",
+      "tf": "15m",
+      "candle_ts": 1795013100,
+      "side": "LONG",
+      "upper": 23.845798691553124,
+      "open": 22.85,
+      "reported": false
+    },
+    {
+      "symbol": "UVXYUSDT",
+      "tf": "15m",
+      "candle_ts": 1795013100,
+      "side": "SELL",
+      "upper": 22.508515448141317,
+      "open": 22.67,
+      "reported": false
+    },
+    {
+      "symbol": "BWETUSDT",
+      "tf": "15m",
+      "candle_ts": 1795013100,
+      "side": "SELL",
+      "upper": 694.0678009664821,
+      "open": 699.76,
+      "reported": false
+    },
+    {
+      "symbol": "WENUSDT",
+      "tf": "15m",
+      "candle_ts": 1795013100,
+      "side": "SELL",
+      "upper": 8.739599566330675,
+      "open": 8.762,
       "reported": false
     }
   ],
