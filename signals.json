@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795014935,
+  "updated_at": 1795014957,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "XAUTUSDT",
-      "tf": "5m",
-      "gap": 0.11,
-      "ts": 1795005638
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795005650
-    },
     {
       "kind": "HEARTBEAT",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "15m",
       "gap": 2.17,
       "ts": 1795014935
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795014939
+    },
+    {
+      "kind": "SELL",
+      "symbol": "PANWUSDT",
+      "tf": "15m",
+      "gap": 1.22,
+      "ts": 1795014957
     }
   ],
   "trades": [
@@ -1469,14 +1469,27 @@
       "px": 0.001265,
       "pnl": -0.24,
       "tf": "15m"
+    },
+    {
+      "symbol": "PROSUSDT",
+      "side": "SELL",
+      "entry": 0.5568,
+      "tp": 0.5428799999999999,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.5568,
+      "pnl": -0.24,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1794960632,
   "realized": 20.1954,
   "closed_n": 36,
-  "open_upnl": -15.1104,
-  "equity": 1005.085,
+  "open_upnl": -15.3504,
+  "equity": 1004.845,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
