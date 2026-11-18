@@ -64,24 +64,30 @@
       "symbol": "SOONUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.2649,
-      "qty": 755.0019,
-      "margin": 10.0,
+      "entry": 0.26742127740900884,
+      "qty": 2243.651,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.2582775,
+      "tp_price": 0.2607357454737836,
       "tf": "4h",
       "opened_at": 1795017650,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.269
+      ],
       "steps": [
         {
           "px": 0.2649,
           "ts": 1795017650
+        },
+        {
+          "px": 0.2687,
+          "ts": 1795019196
         }
       ],
       "entry_candle_ts": 1795017600,
-      "last_leg_candle_ts": 1795017600,
+      "last_leg_candle_ts": 1795019196,
       "dry_run": true,
       "order_id": "PAPER-SOONUSDT-1795017650"
     },
