@@ -1,56 +1,6 @@
 {
   "open_trades": [
     {
-      "symbol": "PIEVERSEUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 3.069,
-      "qty": 65.1678,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 2.992275,
-      "tf": "1h",
-      "opened_at": 1795010433,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 3.069,
-          "ts": 1795010433
-        }
-      ],
-      "entry_candle_ts": 1795010400,
-      "last_leg_candle_ts": 1795010400,
-      "dry_run": true,
-      "order_id": "PAPER-PIEVERSEUSDT-1795010433"
-    },
-    {
-      "symbol": "SOXSUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 61.62,
-      "qty": 3.2457,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 60.079499999999996,
-      "tf": "15m",
-      "opened_at": 1795013180,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 61.62,
-          "ts": 1795013180
-        }
-      ],
-      "entry_candle_ts": 1795013100,
-      "last_leg_candle_ts": 1795013100,
-      "dry_run": true,
-      "order_id": "PAPER-SOXSUSDT-1795013180"
-    },
-    {
       "symbol": "BWETUSDT",
       "side": "SELL",
       "status": "open",
@@ -74,93 +24,34 @@
       "last_leg_candle_ts": 1795013100,
       "dry_run": true,
       "order_id": "PAPER-BWETUSDT-1795013272"
-    }
-  ],
-  "trade_history": [
-    {
-      "symbol": "LUNRUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 10.252661444073944,
-      "qty": 292.6069,
-      "margin": 150.0,
-      "leverage": 20,
-      "tp_price": 9.996344907972095,
-      "tf": "1h",
-      "opened_at": 1793980975,
-      "adds": 3,
-      "last_leg_margin": 80.0,
-      "used_res_levels": [
-        9.96,
-        10.13,
-        10.51
-      ],
-      "steps": [
-        {
-          "px": 9.722,
-          "ts": 1793980975
-        },
-        {
-          "px": 9.927,
-          "ts": 1793985498
-        },
-        {
-          "px": 10.114,
-          "ts": 1793986412
-        },
-        {
-          "px": 10.482,
-          "ts": 1793999210
-        }
-      ],
-      "entry_candle_ts": 1793980800,
-      "last_leg_candle_ts": 1793999210,
-      "dry_run": true,
-      "order_id": "PAPER-LUNRUSDT-1793980975",
-      "closed_at": 1794010154,
-      "close_px": 10.524,
-      "pnl_usdt": -79.39554741161075,
-      "close_reason": "NIGHT_RESET",
-      "why": "NIGHT_RESET"
     },
     {
-      "symbol": "TAUSDT",
+      "symbol": "PIEVERSEUSDT",
       "side": "SELL",
-      "status": "closed",
-      "entry": 0.09447771294034779,
-      "qty": 14818.3096,
-      "margin": 70.0,
+      "status": "open",
+      "entry": 3.2217,
+      "qty": 62.079,
+      "margin": 10.0,
       "leverage": 20,
-      "tp_price": 0.0921157701168391,
-      "tf": "4h",
-      "opened_at": 1793988950,
-      "adds": 2,
-      "last_leg_margin": 40.0,
+      "tp_price": 3.1411575,
+      "tf": "1h",
+      "opened_at": 1795014054,
+      "adds": 0,
+      "last_leg_margin": 10.0,
       "used_res_levels": [],
       "steps": [
         {
-          "px": 0.08868,
-          "ts": 1793988950
-        },
-        {
-          "px": 0.09177,
-          "ts": 1793995353
-        },
-        {
-          "px": 0.09751,
-          "ts": 1794009663
+          "px": 3.2217,
+          "ts": 1795014054
         }
       ],
-      "entry_candle_ts": 1793988900,
-      "last_leg_candle_ts": 1794009600,
+      "entry_candle_ts": 1795014000,
+      "last_leg_candle_ts": 1795014000,
       "dry_run": true,
-      "order_id": "PAPER-TAUSDT-1793988950",
-      "closed_at": 1794010154,
-      "close_px": 0.09724,
-      "pnl_usdt": -40.93242483499566,
-      "close_reason": "NIGHT_RESET",
-      "why": "NIGHT_RESET"
-    },
+      "order_id": "PAPER-PIEVERSEUSDT-1795014054"
+    }
+  ],
+  "trade_history": [
     {
       "symbol": "ACTUSDT",
       "side": "SELL",
@@ -6796,29 +6687,69 @@
       "pnl_usdt": -28.5897860300717,
       "close_reason": "STOP",
       "why": "STOP"
+    },
+    {
+      "symbol": "PIEVERSEUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 3.069,
+      "qty": 65.1678,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 2.992275,
+      "tf": "1h",
+      "opened_at": 1795010433,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 3.069,
+          "ts": 1795010433
+        }
+      ],
+      "entry_candle_ts": 1795010400,
+      "last_leg_candle_ts": 1795010400,
+      "dry_run": true,
+      "order_id": "PAPER-PIEVERSEUSDT-1795010433",
+      "closed_at": 1795013802,
+      "close_px": 3.2049,
+      "pnl_usdt": -8.856304985337237,
+      "close_reason": "STOP",
+      "why": "STOP"
+    },
+    {
+      "symbol": "SOXSUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 61.62,
+      "qty": 3.2457,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 60.079499999999996,
+      "tf": "15m",
+      "opened_at": 1795013180,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 61.62,
+          "ts": 1795013180
+        }
+      ],
+      "entry_candle_ts": 1795013100,
+      "last_leg_candle_ts": 1795013100,
+      "dry_run": true,
+      "order_id": "PAPER-SOXSUSDT-1795013180",
+      "closed_at": 1795013802,
+      "close_px": 58.67,
+      "pnl_usdt": 9.574813372281714,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
-    {
-      "symbol": "GOLDUSDT",
-      "tf": "5m",
-      "candle_ts": 1794922500,
-      "side": "LONG",
-      "upper": 3875.8126624728907,
-      "open": 3859.28,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "XAUTUSDT",
-      "tf": "5m",
-      "candle_ts": 1794922500,
-      "side": "LONG",
-      "upper": 3856.7516075951153,
-      "open": 3841.36,
-      "reported": true,
-      "filled": true
-    },
     {
       "symbol": "GOLDUSDT",
       "tf": "5m",
@@ -9781,6 +9712,24 @@
       "upper": 692.6074564537895,
       "open": 699.76,
       "reported": false
+    },
+    {
+      "symbol": "ZILUSDT",
+      "tf": "15m",
+      "candle_ts": 1795014000,
+      "side": "SELL",
+      "upper": 0.0011352903220770844,
+      "open": 0.001144,
+      "reported": false
+    },
+    {
+      "symbol": "BWETUSDT",
+      "tf": "15m",
+      "candle_ts": 1795014000,
+      "side": "SELL",
+      "upper": 712.7405720776867,
+      "open": 721.38,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -10040,7 +9989,7 @@
     "QUID1USDT": 1795047530,
     "ATMUSDT": 1795048296
   },
-  "last_trade_report_ts": 1795012515,
+  "last_trade_report_ts": 1795013803,
   "last_known_version": "2.10.0",
   "lessons": [
     {
