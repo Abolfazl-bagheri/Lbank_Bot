@@ -24,6 +24,31 @@
       "last_leg_candle_ts": 1795003200,
       "dry_run": true,
       "order_id": "PAPER-PIPPINUSDT-1795003263"
+    },
+    {
+      "symbol": "MMTUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.2532,
+      "qty": 789.8894,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.24686999999999998,
+      "tf": "4h",
+      "opened_at": 1795003276,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.2532,
+          "ts": 1795003276
+        }
+      ],
+      "entry_candle_ts": 1795003200,
+      "last_leg_candle_ts": 1795003200,
+      "dry_run": true,
+      "order_id": "PAPER-MMTUSDT-1795003276"
     }
   ],
   "trade_history": [
@@ -6800,26 +6825,6 @@
   ],
   "pending": [
     {
-      "symbol": "SOXSUSDT",
-      "tf": "15m",
-      "candle_ts": 1794907800,
-      "side": "SELL",
-      "upper": 60.83498501066653,
-      "open": 61.43,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "CATUSDT",
-      "tf": "1m",
-      "candle_ts": 1794908280,
-      "side": "LONG",
-      "upper": 572.900948848882,
-      "open": 566.8,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "CARDSUSDT",
       "tf": "1m",
       "candle_ts": 1794908460,
@@ -9783,6 +9788,24 @@
       "side": "SELL",
       "upper": 0.01757841468427778,
       "open": 0.0178,
+      "reported": false
+    },
+    {
+      "symbol": "PIPPINUSDT",
+      "tf": "4h",
+      "candle_ts": 1795003200,
+      "side": "SELL",
+      "upper": 0.017729137947626455,
+      "open": 0.01981,
+      "reported": false
+    },
+    {
+      "symbol": "ICNTUSDT",
+      "tf": "4h",
+      "candle_ts": 1795003200,
+      "side": "SELL",
+      "upper": 0.31275553982925064,
+      "open": 0.3181,
       "reported": false
     }
   ],
