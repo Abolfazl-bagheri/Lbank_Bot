@@ -80,37 +80,6 @@
       "order_id": "PAPER-TWSTUSDT-1795014086"
     },
     {
-      "symbol": "USARUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 7.5,
-      "qty": 80.0,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 7.3125,
-      "tf": "15m",
-      "opened_at": 1795014106,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        7.53
-      ],
-      "steps": [
-        {
-          "px": 7.5,
-          "ts": 1795014106
-        },
-        {
-          "px": 7.5,
-          "ts": 1795014291
-        }
-      ],
-      "entry_candle_ts": 1795014000,
-      "last_leg_candle_ts": 1795014291,
-      "dry_run": true,
-      "order_id": "PAPER-USARUSDT-1795014106"
-    },
-    {
       "symbol": "MPUSDT",
       "side": "SELL",
       "status": "open",
@@ -137,44 +106,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "ONEUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.0017887722016962713,
-      "qty": 782659.7476,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 0.0017440528966538645,
-      "tf": "4h",
-      "opened_at": 1793995384,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.0015914,
-          "ts": 1793995384
-        },
-        {
-          "px": 0.0018796,
-          "ts": 1794006916
-        },
-        {
-          "px": 0.0018011,
-          "ts": 1794009680
-        }
-      ],
-      "entry_candle_ts": 1793995200,
-      "last_leg_candle_ts": 1794009600,
-      "dry_run": true,
-      "order_id": "PAPER-ONEUSDT-1793995384",
-      "closed_at": 1794010155,
-      "close_px": 0.0018005,
-      "pnl_usdt": -9.178875660998248,
-      "close_reason": "NIGHT_RESET",
-      "why": "NIGHT_RESET"
-    },
     {
       "symbol": "PAIDUSDT",
       "side": "SELL",
@@ -6828,6 +6759,42 @@
       "pnl_usdt": -8.166811468288476,
       "close_reason": "STOP",
       "why": "STOP"
+    },
+    {
+      "symbol": "USARUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 7.5,
+      "qty": 80.0,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 7.3125,
+      "tf": "15m",
+      "opened_at": 1795014106,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        7.53
+      ],
+      "steps": [
+        {
+          "px": 7.5,
+          "ts": 1795014106
+        },
+        {
+          "px": 7.5,
+          "ts": 1795014291
+        }
+      ],
+      "entry_candle_ts": 1795014000,
+      "last_leg_candle_ts": 1795014291,
+      "dry_run": true,
+      "order_id": "PAPER-USARUSDT-1795014106",
+      "closed_at": 1795014616,
+      "close_px": 7.31,
+      "pnl_usdt": 15.200000000000031,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -9994,7 +9961,6 @@
     "EURUSDT": 1793385188,
     "AXLUSDT": 1793502358,
     "SYNUSDT": 1793537208,
-    "CRWDUSDT": 1793658035,
     "CANTONUSDT": 1793952369,
     "XBRUSDT": 1793988971,
     "BBXUSDT": 1794018704,
