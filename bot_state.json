@@ -150,15 +150,15 @@
       "symbol": "AKAMUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 90.20950158620379,
-      "qty": 6.6511000000000005,
-      "margin": 30.0,
+      "entry": 90.88031386321147,
+      "qty": 15.404800000000002,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 87.95426404654869,
+      "tp_price": 88.60830601663118,
       "tf": "15m",
       "opened_at": 1795021310,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [],
       "steps": [
         {
@@ -168,10 +168,14 @@
         {
           "px": 90.36,
           "ts": 1795022241
+        },
+        {
+          "px": 91.39,
+          "ts": 1795023046
         }
       ],
       "entry_candle_ts": 1795021200,
-      "last_leg_candle_ts": 1795022100,
+      "last_leg_candle_ts": 1795023000,
       "dry_run": true,
       "order_id": "PAPER-AKAMUSDT-1795021310"
     }
@@ -6846,16 +6850,6 @@
     {
       "symbol": "PAIDUSDT",
       "tf": "15m",
-      "candle_ts": 1794933900,
-      "side": "LONG",
-      "upper": 0.001382,
-      "open": 0.001382,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "PAIDUSDT",
-      "tf": "15m",
       "candle_ts": 1794934800,
       "side": "LONG",
       "upper": 0.001382,
@@ -9825,6 +9819,15 @@
       "side": "SELL",
       "upper": 45.318624633072254,
       "open": 45.31,
+      "reported": false
+    },
+    {
+      "symbol": "BLESSUSDT",
+      "tf": "15m",
+      "candle_ts": 1795023000,
+      "side": "SELL",
+      "upper": 0.01169504186723424,
+      "open": 0.011815,
       "reported": false
     }
   ],
