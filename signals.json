@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795024846,
+  "updated_at": 1795024877,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "RAMUSDT",
-      "tf": "15m",
-      "gap": 1.3,
-      "ts": 1795016774
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795016843
-    },
     {
       "kind": "GAP",
       "symbol": "IRYSUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "1h",
       "gap": 3.41,
       "ts": 1795024846
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795024852
+    },
+    {
+      "kind": "SELL",
+      "symbol": "AKAMUSDT",
+      "tf": "15m",
+      "gap": 3.97,
+      "ts": 1795024877
     }
   ],
   "trades": [
@@ -1456,14 +1456,27 @@
       "px": 58.79,
       "pnl": -0.9912,
       "tf": "15m"
+    },
+    {
+      "symbol": "HUMAUSDT",
+      "side": "SELL",
+      "entry": 0.00862,
+      "tp": 0.008404499999999999,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.00862,
+      "pnl": -0.24,
+      "tf": "1h"
     }
   ],
   "start": 1000.0,
   "session_start": 1794960632,
   "realized": 27.361,
   "closed_n": 47,
-  "open_upnl": -21.3093,
-  "equity": 1006.0517,
+  "open_upnl": -21.5493,
+  "equity": 1005.8117,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
