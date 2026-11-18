@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1794989748,
+  "updated_at": 1794989827,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794979863
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794980024
-    },
     {
       "kind": "GAP",
       "symbol": "SILVERUSDT",
@@ -1402,20 +1388,34 @@
       "tf": "15m",
       "gap": 4.31,
       "ts": 1794989748
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794989754
+    },
+    {
+      "kind": "SELL",
+      "symbol": "SILVERUSDT",
+      "tf": "15m",
+      "gap": 0.11,
+      "ts": 1794989827
     }
   ],
   "trades": [
     {
       "symbol": "PIPPINUSDT",
       "side": "SELL",
-      "entry": 0.01632,
-      "tp": 0.015912,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
+      "entry": 0.01656481654148221,
+      "tp": 0.016150696127945154,
+      "adds": 1,
+      "pele": 2,
+      "margin": 30.0,
       "lev": 20,
       "px": 0.01669,
-      "pnl": -4.7743,
+      "pnl": -5.2543,
       "tf": "15m"
     },
     {
@@ -1462,8 +1462,8 @@
   "session_start": 1794960632,
   "realized": 127.2294,
   "closed_n": 14,
-  "open_upnl": -8.6735,
-  "equity": 1118.5559,
+  "open_upnl": -9.1535,
+  "equity": 1118.0759,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
