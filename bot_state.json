@@ -122,37 +122,6 @@
       "order_id": "PAPER-PIEVERSEUSDT-1795017663"
     },
     {
-      "symbol": "BULLAUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.01651,
-      "qty": 36341.6112,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.01609725,
-      "tf": "15m",
-      "opened_at": 1795020421,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        0.016544
-      ],
-      "steps": [
-        {
-          "px": 0.01651,
-          "ts": 1795020421
-        },
-        {
-          "px": 0.01651,
-          "ts": 1795020502
-        }
-      ],
-      "entry_candle_ts": 1795020300,
-      "last_leg_candle_ts": 1795020502,
-      "dry_run": true,
-      "order_id": "PAPER-BULLAUSDT-1795020421"
-    },
-    {
       "symbol": "PROSUSDT",
       "side": "SELL",
       "status": "open",
@@ -204,40 +173,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "KOMAUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.015821014092067296,
-      "qty": 37924.244099999996,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.015425488739765613,
-      "tf": "15m",
-      "opened_at": 1794039330,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.015922,
-          "ts": 1794039330
-        },
-        {
-          "px": 0.015771,
-          "ts": 1794040224
-        }
-      ],
-      "entry_candle_ts": 1794039300,
-      "last_leg_candle_ts": 1794040200,
-      "dry_run": true,
-      "order_id": "PAPER-KOMAUSDT-1794039330",
-      "closed_at": 1794041341,
-      "close_px": 0.015263,
-      "pnl_usdt": 21.162262626910323,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "CARVUSDT",
       "side": "SELL",
@@ -6865,49 +6800,45 @@
       "pnl_usdt": 5.201916495550989,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "BULLAUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.01651,
+      "qty": 36341.6112,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 0.01609725,
+      "tf": "15m",
+      "opened_at": 1795020421,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.016544
+      ],
+      "steps": [
+        {
+          "px": 0.01651,
+          "ts": 1795020421
+        },
+        {
+          "px": 0.01651,
+          "ts": 1795020502
+        }
+      ],
+      "entry_candle_ts": 1795020300,
+      "last_leg_candle_ts": 1795020502,
+      "dry_run": true,
+      "order_id": "PAPER-BULLAUSDT-1795020421",
+      "closed_at": 1795021445,
+      "close_px": 0.01554,
+      "pnl_usdt": 35.251362810417945,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
-    {
-      "symbol": "SQQQUSDT",
-      "tf": "1h",
-      "candle_ts": 1794931200,
-      "side": "SELL",
-      "upper": 47.241902703325636,
-      "open": 47.73,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "SHAZUSDT",
-      "tf": "15m",
-      "candle_ts": 1794932100,
-      "side": "SELL",
-      "upper": 22.2075247218692,
-      "open": 22.48,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "PAIDUSDT",
-      "tf": "15m",
-      "candle_ts": 1794932100,
-      "side": "LONG",
-      "upper": 0.001382,
-      "open": 0.001382,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "UVXYUSDT",
-      "tf": "15m",
-      "candle_ts": 1794933000,
-      "side": "SELL",
-      "upper": 21.839121104894563,
-      "open": 21.9,
-      "reported": true,
-      "filled": false
-    },
     {
       "symbol": "PAIDUSDT",
       "tf": "15m",
@@ -9565,7 +9496,8 @@
       "side": "SELL",
       "upper": 0.5664751789110515,
       "open": 0.5823,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ZKCUSDT",
@@ -9629,7 +9561,8 @@
       "side": "SELL",
       "upper": 183.14266785405434,
       "open": 185.24,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "FRONGUSDT",
@@ -9638,7 +9571,8 @@
       "side": "LONG",
       "upper": 0.002746,
       "open": 0.002746,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "FRONGUSDT",
@@ -9665,7 +9599,8 @@
       "side": "SELL",
       "upper": 323.354025823806,
       "open": 325.03,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "NETUSDT",
@@ -9684,7 +9619,8 @@
       "side": "SELL",
       "upper": 294.3790282609863,
       "open": 293.8,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "BTCUSDT",
@@ -9792,7 +9728,8 @@
       "side": "SELL",
       "upper": 0.016061078963491765,
       "open": 0.016339,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "AKAMUSDT",
@@ -9801,7 +9738,8 @@
       "side": "SELL",
       "upper": 88.20465198915593,
       "open": 87.36,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "BULLAUSDT",
@@ -9810,7 +9748,8 @@
       "side": "SELL",
       "upper": 0.016154901168294652,
       "open": 0.016339,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "AKAMUSDT",
@@ -9819,7 +9758,8 @@
       "side": "SELL",
       "upper": 88.20465198915593,
       "open": 87.36,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "MMTUSDT",
@@ -9846,6 +9786,42 @@
       "side": "SELL",
       "upper": 88.36012073914608,
       "open": 87.36,
+      "reported": false
+    },
+    {
+      "symbol": "AKAMUSDT",
+      "tf": "1h",
+      "candle_ts": 1795021200,
+      "side": "SELL",
+      "upper": 87.13251861308731,
+      "open": 87.36,
+      "reported": false
+    },
+    {
+      "symbol": "HUMAUSDT",
+      "tf": "1h",
+      "candle_ts": 1795021200,
+      "side": "SELL",
+      "upper": 0.00784472673355238,
+      "open": 0.00794,
+      "reported": false
+    },
+    {
+      "symbol": "BTCUSDT",
+      "tf": "1h",
+      "candle_ts": 1795021200,
+      "side": "LONG",
+      "upper": 65494.882108836886,
+      "open": 62731.1,
+      "reported": false
+    },
+    {
+      "symbol": "CRCLUSDT",
+      "tf": "1h",
+      "candle_ts": 1795021200,
+      "side": "LONG",
+      "upper": 57.374307422616695,
+      "open": 53.51,
       "reported": false
     }
   ],
@@ -11315,6 +11291,87 @@
       "kind": "gap_result",
       "symbol": "XAUTUSDT",
       "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795021417,
+      "kind": "gap_result",
+      "symbol": "PROSUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795021420,
+      "kind": "gap_result",
+      "symbol": "OKTAUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795021424,
+      "kind": "gap_result",
+      "symbol": "FRONGUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795021426,
+      "kind": "gap_result",
+      "symbol": "PANWUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
+    },
+    {
+      "ts": 1795021431,
+      "kind": "gap_result",
+      "symbol": "NETUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795021433,
+      "kind": "gap_result",
+      "symbol": "BULLAUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795021435,
+      "kind": "gap_result",
+      "symbol": "AKAMUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795021439,
+      "kind": "gap_result",
+      "symbol": "BULLAUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795021441,
+      "kind": "gap_result",
+      "symbol": "AKAMUSDT",
+      "tf": "15m",
       "gap": 0.0,
       "filled": true,
       "note": "filled"
