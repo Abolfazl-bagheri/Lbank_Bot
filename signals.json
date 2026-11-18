@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795024953,
+  "updated_at": 1795024964,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "PROSUSDT",
-      "tf": "1h",
-      "gap": 3.07,
-      "ts": 1795017619
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795017625
-    },
     {
       "kind": "SELL",
       "symbol": "ZKCUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "1h",
       "gap": 2.38,
       "ts": 1795024953
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795024958
+    },
+    {
+      "kind": "SELL",
+      "symbol": "ZSUSDT",
+      "tf": "1h",
+      "gap": 1.05,
+      "ts": 1795024964
     }
   ],
   "trades": [
@@ -1421,15 +1421,15 @@
     {
       "symbol": "NETUSDT",
       "side": "SELL",
-      "entry": 302.772044919757,
-      "tp": 295.20274379676306,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
+      "entry": 302.35902161581606,
+      "tp": 294.80004607542065,
+      "adds": 2,
+      "pele": 3,
+      "margin": 70.0,
       "lev": 20,
       "px": 302.05,
-      "pnl": 0.7109,
-      "tf": "15m"
+      "pnl": -0.2492,
+      "tf": "1h"
     },
     {
       "symbol": "AKAMUSDT",
@@ -1488,8 +1488,8 @@
   "session_start": 1794960632,
   "realized": 27.361,
   "closed_n": 47,
-  "open_upnl": -22.2693,
-  "equity": 1005.0917,
+  "open_upnl": -23.2294,
+  "equity": 1004.1316,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
