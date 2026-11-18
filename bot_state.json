@@ -4,24 +4,28 @@
       "symbol": "BWETUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 711.98,
-      "qty": 0.280907,
-      "margin": 10.0,
+      "entry": 720.2714379366643,
+      "qty": 0.83302,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 694.1805,
-      "tf": "15m",
+      "tp_price": 702.2646519882476,
+      "tf": "1h",
       "opened_at": 1795013272,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 711.98,
           "ts": 1795013272
+        },
+        {
+          "px": 724.49,
+          "ts": 1795014075
         }
       ],
       "entry_candle_ts": 1795013100,
-      "last_leg_candle_ts": 1795013100,
+      "last_leg_candle_ts": 1795014000,
       "dry_run": true,
       "order_id": "PAPER-BWETUSDT-1795013272"
     },
@@ -6776,16 +6780,6 @@
   ],
   "pending": [
     {
-      "symbol": "SILVERUSDT",
-      "tf": "5m",
-      "candle_ts": 1794922800,
-      "side": "LONG",
-      "upper": 48.06679629047899,
-      "open": 47.34,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "GOLDUSDT",
       "tf": "5m",
       "candle_ts": 1794922800,
@@ -9752,6 +9746,15 @@
       "side": "SELL",
       "upper": 0.260048619410583,
       "open": 0.2641,
+      "reported": false
+    },
+    {
+      "symbol": "ZILUSDT",
+      "tf": "1h",
+      "candle_ts": 1795014000,
+      "side": "SELL",
+      "upper": 0.0011277559909877936,
+      "open": 0.001144,
       "reported": false
     }
   ],
