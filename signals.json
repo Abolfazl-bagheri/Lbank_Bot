@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795017619,
+  "updated_at": 1795017638,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "ZILUSDT",
-      "tf": "1h",
-      "gap": 1.68,
-      "ts": 1795009998
-    },
-    {
-      "kind": "GAP",
-      "symbol": "DNAUSDT",
-      "tf": "1h",
-      "gap": 1.44,
-      "ts": 1795010002
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "1h",
       "gap": 3.07,
       "ts": 1795017619
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795017625
+    },
+    {
+      "kind": "SELL",
+      "symbol": "ZKCUSDT",
+      "tf": "4h",
+      "gap": 1.4,
+      "ts": 1795017638
     }
   ],
   "trades": [
@@ -1430,14 +1430,27 @@
       "px": 299.31,
       "pnl": 0.1002,
       "tf": "15m"
+    },
+    {
+      "symbol": "PROSUSDT",
+      "side": "SELL",
+      "entry": 0.5844,
+      "tp": 0.56979,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.5844,
+      "pnl": -0.24,
+      "tf": "1h"
     }
   ],
   "start": 1000.0,
   "session_start": 1794960632,
   "realized": 63.6779,
   "closed_n": 42,
-  "open_upnl": 8.7019,
-  "equity": 1072.3798,
+  "open_upnl": 8.4619,
+  "equity": 1072.1398,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
