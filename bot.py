@@ -35,8 +35,12 @@ SIGNALS_FILE = os.path.join(BASE_DIR, "signals.json")
 LIVE_TOPIC = os.environ.get("LIVE_TOPIC", "lbank-gap-b0b85cee29ce").strip()
 STATE_BAK = os.path.join(BASE_DIR, "bot_state.bak")
 
-BOT_VERSION = "2.9.4"
+BOT_VERSION = "2.10.0"
 CHANGELOG = {
+    "2.10.0": [
+        "تیون خودکار PAPER: gap/ورود/پله در بازه امن",
+        "دفترچه lessons + گزارش شبانه دلیل تغییر",
+    ],
     "2.9.4": [
         "لایو ثانیه‌ای خاموش — پیام کمتر",
         "فارکس مثل شت + تایم ۵ دقیقه",
@@ -135,8 +139,20 @@ BB_PERIOD = 20
 BB_STD = 2.0
 PENETRATION_PCT = 0.3
 # آستانه پیش‌فرض؛ برای طلا پایین‌تر در gap_thresholds
-MIN_OPEN_GAP_PCT = 1.0   # شت‌کوین
-ENTRY_MIN_GAP_PCT = 2.0  # ورود شت
+MIN_OPEN_GAP_PCT = 1.0   # شت‌کوین (قابل تیون paper)
+ENTRY_MIN_GAP_PCT = 2.0  # ورود شت (قابل تیون paper)
+
+# —— تیون خودکار PAPER (فاز B) ——
+AUTO_TUNE_ENABLED = os.environ.get("AUTO_TUNE", "1").strip() not in ("0", "false", "False", "no")
+# بازه امن
+TUNE_GAP_MIN, TUNE_GAP_MAX = 1.0, 3.0
+TUNE_ENTRY_MIN, TUNE_ENTRY_MAX = 1.5, 4.0
+TUNE_ADDS_MIN, TUNE_ADDS_MAX = 0, 4
+# گام تغییر
+TUNE_GAP_STEP = 0.2
+TUNE_ENTRY_STEP = 0.2
+lessons: list = []  # [{ts, kind, symbol, tf, gap, filled, note}]
+tune_history: list = []  # آخرین تغییرات پارامتر
 GAP_THRESHOLDS = {
     "XAUTUSDT": {"min": 0.06, "entry": 0.12},
     "GOLDUSDT": {"min": 0.06, "entry": 0.12},
@@ -384,6 +400,13 @@ def save_state(force_remote: bool = False) -> None:
             "last_trade_report_ts": _last_trade_report_ts,
             "last_daily_report_date": _last_daily_report_date,
             "last_known_version": BOT_VERSION,
+            "lessons": lessons[-400:],
+            "tune_history": tune_history[-50:],
+            "tune_params": {
+                "min_gap": float(MIN_OPEN_GAP_PCT),
+                "entry_gap": float(ENTRY_MIN_GAP_PCT),
+                "max_adds": int(TRADE_MAX_ADDS),
+            },
             "paper_strategy_tag": PAPER_STRATEGY_TAG,
         }
         raw = json.dumps(payload, ensure_ascii=False, indent=2)
@@ -419,8 +442,19 @@ def load_state() -> None:
         pending_signals.extend(payload.get("pending") or [])
         paper_days.clear()
         paper_days.extend(payload.get("paper_days") or [])
-        global paper_session_start
+        global paper_session_start, MIN_OPEN_GAP_PCT, ENTRY_MIN_GAP_PCT, TRADE_MAX_ADDS
         paper_session_start = int(payload.get("paper_session_start") or 0)
+        lessons.clear()
+        lessons.extend(payload.get("lessons") or [])
+        tune_history.clear()
+        tune_history.extend(payload.get("tune_history") or [])
+        tp = payload.get("tune_params") or {}
+        if tp.get("min_gap") is not None:
+            MIN_OPEN_GAP_PCT = float(max(TUNE_GAP_MIN, min(TUNE_GAP_MAX, float(tp["min_gap"]))))
+        if tp.get("entry_gap") is not None:
+            ENTRY_MIN_GAP_PCT = float(max(TUNE_ENTRY_MIN, min(TUNE_ENTRY_MAX, float(tp["entry_gap"]))))
+        if tp.get("max_adds") is not None:
+            TRADE_MAX_ADDS = int(max(TUNE_ADDS_MIN, min(TUNE_ADDS_MAX, int(tp["max_adds"]))))
         if payload.get("last_daily_report_date"):
             global _last_daily_report_date
             _last_daily_report_date = str(payload.get("last_daily_report_date") or "")
@@ -636,6 +670,7 @@ def format_startup_message() -> str:
         "",
         "📌 شت: ۱۵م / ۱س / ۴س",
         "📌 فارکس: طلا · نقره · نفت (۵م / ۱۵م / ۱س / ۴س)",
+        f"🧠 تیون paper: gap≥{MIN_OPEN_GAP_PCT:.1f}% · ورود≥{ENTRY_MIN_GAP_PCT:.1f}% · پله≤{TRADE_MAX_ADDS}",
     ]
     if last_known_version and last_known_version != BOT_VERSION:
         lines.append("")
@@ -684,6 +719,107 @@ def get_scan_symbols() -> list:
     syms = list(dict.fromkeys(movers + forex))
     log.info("HYBRID scan movers+forex n=%d forex=%s", len(syms), ",".join(forex))
     return syms
+
+
+
+def record_lesson(kind: str, symbol: str = "", tf: str = "", gap: float = 0.0, filled: bool | None = None, note: str = "") -> None:
+    try:
+        lessons.append({
+            "ts": int(time.time()),
+            "kind": kind,
+            "symbol": (symbol or "").upper(),
+            "tf": tf or "",
+            "gap": round(float(gap or 0), 3),
+            "filled": filled,
+            "note": (note or "")[:120],
+        })
+        if len(lessons) > 500:
+            del lessons[:-400]
+    except Exception:
+        pass
+
+
+def auto_tune_from_paper(since_ts: int) -> list:
+    """تیون محدود فقط در PAPER؛ خروجی: لیست رشته‌های تغییر برای تلگرام."""
+    global MIN_OPEN_GAP_PCT, ENTRY_MIN_GAP_PCT, TRADE_MAX_ADDS
+    if not AUTO_TUNE_ENABLED or not is_paper_mode():
+        return []
+    changes = []
+    # —— وین‌ریت گپ از pending/lessons ——
+    gap_items = [x for x in lessons if x.get("kind") == "gap_result" and int(x.get("ts") or 0) >= since_ts]
+    if not gap_items:
+        gap_items = [
+            x for x in pending_signals
+            if x.get("reported") and int(x.get("candle_ts") or 0) >= since_ts - 86400
+        ]
+        # normalize
+        norm = []
+        for x in gap_items:
+            norm.append({"filled": bool(x.get("filled")), "gap": float(x.get("diff_pct") or x.get("gap") or 0), "tf": x.get("tf")})
+        gap_items = norm if norm else gap_items
+
+    filled_n = sum(1 for x in gap_items if x.get("filled") is True)
+    total_g = len(gap_items)
+    wr = (100.0 * filled_n / total_g) if total_g >= 5 else None
+
+    old_gap = float(MIN_OPEN_GAP_PCT)
+    old_entry = float(ENTRY_MIN_GAP_PCT)
+    old_adds = int(TRADE_MAX_ADDS)
+
+    if wr is not None:
+        if wr < 35 and total_g >= 8:
+            MIN_OPEN_GAP_PCT = min(TUNE_GAP_MAX, old_gap + TUNE_GAP_STEP)
+            ENTRY_MIN_GAP_PCT = min(TUNE_ENTRY_MAX, old_entry + TUNE_ENTRY_STEP)
+            changes.append(f"وین‌ریت گپ {wr:.0f}% ({filled_n}/{total_g}) ضعیف → gap {old_gap:.1f}→{MIN_OPEN_GAP_PCT:.1f}% · ورود {old_entry:.1f}→{ENTRY_MIN_GAP_PCT:.1f}%")
+        elif wr > 65 and total_g >= 8:
+            MIN_OPEN_GAP_PCT = max(TUNE_GAP_MIN, old_gap - TUNE_GAP_STEP * 0.5)
+            ENTRY_MIN_GAP_PCT = max(TUNE_ENTRY_MIN, old_entry - TUNE_ENTRY_STEP * 0.5)
+            changes.append(f"وین‌ریت گپ {wr:.0f}% خوب → کمی باز: gap {old_gap:.1f}→{MIN_OPEN_GAP_PCT:.1f}%")
+        else:
+            changes.append(f"وین‌ریت گپ {wr:.0f}% ({filled_n}/{total_g}) · بدون تغییر آستانه")
+    else:
+        changes.append(f"داده گپ ناکافی ({total_g}) · تیون gap نخورد")
+
+    # —— پله‌های paper ——
+    sess_trades = [
+        x for x in trade_history
+        if x.get("status") == "closed" and int(x.get("closed_at") or 0) >= since_ts
+    ]
+    high_add_loss = [
+        x for x in sess_trades
+        if int(x.get("adds") or x.get("steps") or 0) >= 2 and float(x.get("pnl_usdt") or x.get("pnl") or 0) < 0
+    ]
+    if len(high_add_loss) >= 3 and old_adds > TUNE_ADDS_MIN:
+        TRADE_MAX_ADDS = max(TUNE_ADDS_MIN, old_adds - 1)
+        changes.append(f"پله‌های ضررده زیاد ({len(high_add_loss)}) → max_adds {old_adds}→{TRADE_MAX_ADDS}")
+    elif len(sess_trades) >= 5:
+        win_adds = sum(1 for x in sess_trades if float(x.get("pnl_usdt") or x.get("pnl") or 0) > 0)
+        if win_adds / max(len(sess_trades), 1) >= 0.6 and old_adds < TUNE_ADDS_MAX:
+            # فقط اگر net مثبت
+            net = sum(float(x.get("pnl_usdt") or x.get("pnl") or 0) for x in sess_trades)
+            if net > 0 and old_adds < 3:
+                TRADE_MAX_ADDS = min(TUNE_ADDS_MAX, old_adds + 1)
+                changes.append(f"paper خوب با پله → max_adds {old_adds}→{TRADE_MAX_ADDS}")
+
+    # clamp نهایی
+    MIN_OPEN_GAP_PCT = float(max(TUNE_GAP_MIN, min(TUNE_GAP_MAX, MIN_OPEN_GAP_PCT)))
+    ENTRY_MIN_GAP_PCT = float(max(TUNE_ENTRY_MIN, min(TUNE_ENTRY_MAX, ENTRY_MIN_GAP_PCT)))
+    if ENTRY_MIN_GAP_PCT < MIN_OPEN_GAP_PCT:
+        ENTRY_MIN_GAP_PCT = min(TUNE_ENTRY_MAX, MIN_OPEN_GAP_PCT + 0.5)
+    TRADE_MAX_ADDS = int(max(TUNE_ADDS_MIN, min(TUNE_ADDS_MAX, TRADE_MAX_ADDS)))
+
+    if changes:
+        tune_history.append({
+            "ts": int(time.time()),
+            "min_gap": MIN_OPEN_GAP_PCT,
+            "entry_gap": ENTRY_MIN_GAP_PCT,
+            "max_adds": TRADE_MAX_ADDS,
+            "notes": changes[:],
+        })
+        if len(tune_history) > 60:
+            del tune_history[:-40]
+        record_lesson("tune", note="; ".join(changes)[:120])
+    return changes
 
 
 def gap_limits_for(symbol: str) -> tuple:
@@ -1992,6 +2128,14 @@ def maybe_send_daily_paper_report(force: bool = False) -> None:
     balance_before = float(PAPER_START_BALANCE) + float(profit) + float(loss_tp) + float(unrealized_closed)
     mode = "PAPER" if is_paper_mode() else "LIVE"
 
+    # تیون خودکار PAPER (فاز B)
+    tune_notes = []
+    try:
+        tune_notes = auto_tune_from_paper(since)
+    except Exception as e:
+        log.warning("auto_tune: %s", e)
+        tune_notes = [f"خطا تیون: {e}"]
+
     # گزارش تلگرام — اجباری
     lines = [
         f"🌙 <b>ریست روزانه paper</b> · {day_key}",
@@ -2012,6 +2156,11 @@ def maybe_send_daily_paper_report(force: bool = False) -> None:
             lines.append(f"{mark} {r['symbol']} {r['pnl']:+.2f}U · پله {r['steps']}")
         if len(reset_rows) > 15:
             lines.append(f"… و {len(reset_rows)-15} مورد دیگر")
+    if tune_notes:
+        lines.append("────────")
+        lines.append(f"🧠 <b>تیون PAPER</b> · gap={MIN_OPEN_GAP_PCT:.1f}% ورود={ENTRY_MIN_GAP_PCT:.1f}% پله≤{TRADE_MAX_ADDS}")
+        for n in tune_notes[:6]:
+            lines.append(f"• {n}")
     send_telegram_text("\n".join(lines))
 
     try:
@@ -2318,6 +2467,14 @@ async def report_previous_gaps(tfs: list) -> None:
             )
             item["reported"] = True
             item["filled"] = filled
+            record_lesson(
+                "gap_result",
+                symbol=str(item.get("symbol") or ""),
+                tf=str(tf or ""),
+                gap=float(item.get("diff_pct") or item.get("gap") or 0),
+                filled=bool(filled),
+                note="filled" if filled else "miss",
+            )
         except Exception as e:
             log.debug("gap report %s: %s", symbol, e)
     for tf, lines in lines_by_tf.items():
