@@ -177,6 +177,31 @@
       "last_leg_candle_ts": 1794960000,
       "dry_run": true,
       "order_id": "PAPER-BREVUSDT-1794960052"
+    },
+    {
+      "symbol": "ICNTUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.2754,
+      "qty": 726.2164,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.26851499999999995,
+      "tf": "4h",
+      "opened_at": 1794960085,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.2754,
+          "ts": 1794960085
+        }
+      ],
+      "entry_candle_ts": 1794960000,
+      "last_leg_candle_ts": 1794960000,
+      "dry_run": true,
+      "order_id": "PAPER-ICNTUSDT-1794960085"
     }
   ],
   "trade_history": [
@@ -9724,6 +9749,15 @@
       "side": "SELL",
       "upper": 54.08,
       "open": 54.08,
+      "reported": false
+    },
+    {
+      "symbol": "BREVUSDT",
+      "tf": "4h",
+      "candle_ts": 1794960000,
+      "side": "SELL",
+      "upper": 0.1037785203493564,
+      "open": 0.1074,
       "reported": false
     }
   ],
