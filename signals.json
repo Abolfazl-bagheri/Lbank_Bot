@@ -1,43 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1794993017,
+  "updated_at": 1794993237,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "MMTUSDT",
-      "tf": "15m",
-      "gap": 1.94,
-      "ts": 1794982529
-    },
-    {
-      "kind": "SELL",
-      "symbol": "IRYSUSDT",
-      "tf": "15m",
-      "gap": 1.26,
-      "ts": 1794982549
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794982706
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794982829
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794982859
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,22 +1367,44 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1794993017
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794993040
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794993061
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794993085
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794993104
+    },
+    {
+      "kind": "GAP",
+      "symbol": "ZKCUSDT",
+      "tf": "15m",
+      "gap": 1.2,
+      "ts": 1794993237
     }
   ],
   "trades": [
-    {
-      "symbol": "ZKCUSDT",
-      "side": "SELL",
-      "entry": 0.02713,
-      "tp": 0.02645175,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.02805,
-      "pnl": -7.0222,
-      "tf": "1h"
-    },
     {
       "symbol": "PIPPINUSDT",
       "side": "SELL",
@@ -1427,23 +1414,23 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.01671,
-      "pnl": -4.0205,
+      "px": 0.01695,
+      "pnl": -6.9473,
       "tf": "1h"
     }
   ],
   "start": 1000.0,
   "session_start": 1794960632,
-  "realized": 74.3736,
-  "closed_n": 18,
-  "open_upnl": -11.0427,
-  "equity": 1063.3309,
+  "realized": 65.8222,
+  "closed_n": 19,
+  "open_upnl": -6.9473,
+  "equity": 1058.8749,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
     "profit": 155.5906,
-    "loss": -81.217,
-    "count": 18
+    "loss": -89.7684,
+    "count": 19
   }
 }
