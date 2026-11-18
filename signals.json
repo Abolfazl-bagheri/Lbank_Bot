@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795028465,
+  "updated_at": 1795028482,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "AKAMUSDT",
-      "tf": "15m",
-      "gap": 1.72,
-      "ts": 1795021287
-    },
-    {
-      "kind": "SELL",
-      "symbol": "AKAMUSDT",
-      "tf": "1h",
-      "gap": 3.09,
-      "ts": 1795021308
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "1h",
       "gap": 2.26,
       "ts": 1795028465
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795028473
+    },
+    {
+      "kind": "SELL",
+      "symbol": "NETUSDT",
+      "tf": "15m",
+      "gap": 3.2,
+      "ts": 1795028482
     }
   ],
   "trades": [
@@ -1460,14 +1460,14 @@
     {
       "symbol": "HUMAUSDT",
       "side": "SELL",
-      "entry": 0.008699630485050869,
-      "tp": 0.008482139722924597,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
+      "entry": 0.008747642085345224,
+      "tp": 0.008528951033211593,
+      "adds": 2,
+      "pele": 3,
+      "margin": 70.0,
       "lev": 20,
       "px": 0.008784,
-      "pnl": -6.5388,
+      "pnl": -7.4988,
       "tf": "1h"
     },
     {
@@ -1488,8 +1488,8 @@
   "session_start": 1794960632,
   "realized": 27.361,
   "closed_n": 47,
-  "open_upnl": -60.2976,
-  "equity": 967.0634,
+  "open_upnl": -61.2576,
+  "equity": 966.1034,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
