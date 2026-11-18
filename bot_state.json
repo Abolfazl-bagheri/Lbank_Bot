@@ -6852,16 +6852,6 @@
   ],
   "pending": [
     {
-      "symbol": "MMTUSDT",
-      "tf": "15m",
-      "candle_ts": 1794934800,
-      "side": "SELL",
-      "upper": 0.13834505651388485,
-      "open": 0.1397,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "UVXYUSDT",
       "tf": "1h",
       "candle_ts": 1794934800,
@@ -9795,7 +9785,8 @@
       "side": "SELL",
       "upper": 88.49166032322513,
       "open": 87.36,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "AKAMUSDT",
@@ -9804,7 +9795,8 @@
       "side": "SELL",
       "upper": 88.49166032322513,
       "open": 87.36,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "SILVERUSDT",
@@ -9813,7 +9805,8 @@
       "side": "SELL",
       "upper": 45.318624633072254,
       "open": 45.31,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "BLESSUSDT",
@@ -9831,6 +9824,15 @@
       "side": "SELL",
       "upper": 88.59986823323167,
       "open": 87.36,
+      "reported": false
+    },
+    {
+      "symbol": "NETUSDT",
+      "tf": "15m",
+      "candle_ts": 1795023000,
+      "side": "SELL",
+      "upper": 297.5335000345414,
+      "open": 293.8,
       "reported": false
     }
   ],
@@ -10095,7 +10097,7 @@
     "MURATAUSDT": 1795061977,
     "BONERUSDT": 1795062789
   },
-  "last_trade_report_ts": 1795021905,
+  "last_trade_report_ts": 1795023134,
   "last_known_version": "2.10.0",
   "lessons": [
     {
@@ -11399,6 +11401,33 @@
       "kind": "gap_result",
       "symbol": "AKAMUSDT",
       "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795023122,
+      "kind": "gap_result",
+      "symbol": "AKAMUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795023126,
+      "kind": "gap_result",
+      "symbol": "AKAMUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795023128,
+      "kind": "gap_result",
+      "symbol": "SILVERUSDT",
+      "tf": "5m",
       "gap": 0.0,
       "filled": true,
       "note": "filled"
