@@ -1,36 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.9.4",
-  "updated_at": 1794960628,
+  "updated_at": 1794960684,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "PAIDUSDT",
-      "tf": "15m",
-      "gap": 3.44,
-      "ts": 1794951032
-    },
-    {
-      "kind": "SELL",
-      "symbol": "COHRUSDT",
-      "tf": "15m",
-      "gap": 1.34,
-      "ts": 1794951036
-    },
-    {
-      "kind": "SELL",
-      "symbol": "CRDOUSDT",
-      "tf": "15m",
-      "gap": 2.01,
-      "ts": 1794951051
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794951056
-    },
     {
       "kind": "SELL",
       "symbol": "ZORAUSDT",
@@ -1402,100 +1374,49 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1794960628
+    },
+    {
+      "kind": "HEARTBEAT",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794960630
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794960632
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794960671
+    },
+    {
+      "kind": "SELL",
+      "symbol": "SILVERUSDT",
+      "tf": "5m",
+      "gap": 0.12,
+      "ts": 1794960684
     }
   ],
-  "trades": [
-    {
-      "symbol": "GOLDUSDT",
-      "side": "SELL",
-      "entry": 3884.6759603244996,
-      "tp": 3787.5590613163868,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
-      "lev": 20,
-      "px": 3854.47,
-      "pnl": 3.9454,
-      "tf": "15m"
-    },
-    {
-      "symbol": "XAUTUSDT",
-      "side": "SELL",
-      "entry": 3871.7,
-      "tp": 3774.9075,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
-      "lev": 20,
-      "px": 3838.92,
-      "pnl": 4.3599,
-      "tf": "15m"
-    },
-    {
-      "symbol": "CRCLUSDT",
-      "side": "SELL",
-      "entry": 55.847213783089465,
-      "tp": 54.451033438512226,
-      "adds": 2,
-      "pele": 3,
-      "margin": 70.0,
-      "lev": 20,
-      "px": 56.56,
-      "pnl": -19.5484,
-      "tf": "5m"
-    },
-    {
-      "symbol": "HUTUSDT",
-      "side": "SELL",
-      "entry": 56.55699184364357,
-      "tp": 55.143067047552485,
-      "adds": 2,
-      "pele": 3,
-      "margin": 70.0,
-      "lev": 20,
-      "px": 57.46,
-      "pnl": -24.0329,
-      "tf": "15m"
-    },
-    {
-      "symbol": "BREVUSDT",
-      "side": "SELL",
-      "entry": 0.10855,
-      "tp": 0.10583624999999999,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.10855,
-      "pnl": -0.24,
-      "tf": "4h"
-    },
-    {
-      "symbol": "ICNTUSDT",
-      "side": "SELL",
-      "entry": 0.2754,
-      "tp": 0.26851499999999995,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.2754,
-      "pnl": -0.24,
-      "tf": "4h"
-    }
-  ],
+  "trades": [],
   "start": 1000.0,
-  "session_start": 1794873896,
-  "realized": 50.1188,
-  "closed_n": 34,
-  "open_upnl": -35.756,
-  "equity": 1014.3628,
+  "session_start": 1794960632,
+  "realized": 0,
+  "closed_n": 0,
+  "open_upnl": 0,
+  "equity": 1000.0,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 223.9797,
-    "loss": -173.8609,
-    "count": 34
+    "profit": 0,
+    "loss": 0,
+    "count": 0
   }
 }
