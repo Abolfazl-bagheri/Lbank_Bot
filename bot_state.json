@@ -6777,16 +6777,6 @@
   ],
   "pending": [
     {
-      "symbol": "PAIDUSDT",
-      "tf": "15m",
-      "candle_ts": 1794930300,
-      "side": "LONG",
-      "upper": 0.001382,
-      "open": 0.001382,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "SOXSUSDT",
       "tf": "15m",
       "candle_ts": 1794930300,
@@ -9687,7 +9677,8 @@
       "side": "LONG",
       "upper": 0.002746,
       "open": 0.002746,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "OKTAUSDT",
@@ -9741,7 +9732,8 @@
       "side": "SELL",
       "upper": 295.9607844786574,
       "open": 293.8,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "NETUSDT",
@@ -9759,6 +9751,15 @@
       "side": "LONG",
       "upper": 65804.90724516359,
       "open": 63097.2,
+      "reported": false
+    },
+    {
+      "symbol": "HUMAUSDT",
+      "tf": "15m",
+      "candle_ts": 1795018500,
+      "side": "SELL",
+      "upper": 0.007966966203910849,
+      "open": 0.00812,
       "reported": false
     }
   ],
@@ -11127,6 +11128,24 @@
       "ts": 1795017940,
       "kind": "gap_result",
       "symbol": "RAMUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795018595,
+      "kind": "gap_result",
+      "symbol": "FRONGUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795018599,
+      "kind": "gap_result",
+      "symbol": "NETUSDT",
       "tf": "15m",
       "gap": 0.0,
       "filled": true,
