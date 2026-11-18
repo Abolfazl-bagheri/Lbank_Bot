@@ -32,31 +32,6 @@
       "order_id": "PAPER-NESUSDT-1794981702"
     },
     {
-      "symbol": "MMTUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.2316,
-      "qty": 863.5579,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.22580999999999998,
-      "tf": "1h",
-      "opened_at": 1794985264,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.2316,
-          "ts": 1794985264
-        }
-      ],
-      "entry_candle_ts": 1794985200,
-      "last_leg_candle_ts": 1794985200,
-      "dry_run": true,
-      "order_id": "PAPER-MMTUSDT-1794985264"
-    },
-    {
       "symbol": "BLESSUSDT",
       "side": "SELL",
       "status": "open",
@@ -83,52 +58,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "AKEUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.0038144629007082465,
-      "qty": 1625392.6598,
-      "margin": 310.0,
-      "leverage": 20,
-      "tp_price": 0.00371910132819054,
-      "tf": "1h",
-      "opened_at": 1793934934,
-      "adds": 4,
-      "last_leg_margin": 160.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.002682,
-          "ts": 1793934934
-        },
-        {
-          "px": 0.00299,
-          "ts": 1793935809
-        },
-        {
-          "px": 0.003191,
-          "ts": 1793936711
-        },
-        {
-          "px": 0.00382,
-          "ts": 1793939422
-        },
-        {
-          "px": 0.004281,
-          "ts": 1793941275
-        }
-      ],
-      "entry_candle_ts": 1793934900,
-      "last_leg_candle_ts": 1793941200,
-      "dry_run": true,
-      "order_id": "PAPER-AKEUSDT-1793934934",
-      "closed_at": 1793943311,
-      "close_px": 0.003586,
-      "pnl_usdt": 371.3419218543521,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "LYNUSDT",
       "side": "SELL",
@@ -6930,19 +6859,39 @@
       "pnl_usdt": 5.467122260188323,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "MMTUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.2316,
+      "qty": 863.5579,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.22580999999999998,
+      "tf": "1h",
+      "opened_at": 1794985264,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.2316,
+          "ts": 1794985264
+        }
+      ],
+      "entry_candle_ts": 1794985200,
+      "last_leg_candle_ts": 1794985200,
+      "dry_run": true,
+      "order_id": "PAPER-MMTUSDT-1794985264",
+      "closed_at": 1794986318,
+      "close_px": 0.2217,
+      "pnl_usdt": 8.549222797927454,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
-    {
-      "symbol": "XAUTUSDT",
-      "tf": "5m",
-      "candle_ts": 1794808800,
-      "side": "LONG",
-      "upper": 3878.4763355827704,
-      "open": 3825.84,
-      "reported": true,
-      "filled": true
-    },
     {
       "symbol": "GOLDUSDT",
       "tf": "5m",
@@ -9876,7 +9825,8 @@
       "side": "SELL",
       "upper": 0.011788352350269178,
       "open": 0.011995,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ZKPUSDT",
@@ -9921,6 +9871,15 @@
       "side": "SELL",
       "upper": 0.015562417971413391,
       "open": 0.01573,
+      "reported": false
+    },
+    {
+      "symbol": "BLESSUSDT",
+      "tf": "15m",
+      "candle_ts": 1794986100,
+      "side": "SELL",
+      "upper": 0.012322707548782829,
+      "open": 0.012503,
       "reported": false
     }
   ],
