@@ -1,5 +1,31 @@
 {
-  "open_trades": [],
+  "open_trades": [
+    {
+      "symbol": "ZKPUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.03731,
+      "qty": 5360.4932,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.03637725,
+      "tf": "15m",
+      "opened_at": 1794981647,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.03731,
+          "ts": 1794981647
+        }
+      ],
+      "entry_candle_ts": 1794981600,
+      "last_leg_candle_ts": 1794981600,
+      "dry_run": true,
+      "order_id": "PAPER-ZKPUSDT-1794981647"
+    }
+  ],
   "trade_history": [
     {
       "symbol": "BIRBUSDT",
@@ -9807,7 +9833,8 @@
       "side": "SELL",
       "upper": 0.01479103287174598,
       "open": 0.014944,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ZKPUSDT",
@@ -9816,7 +9843,8 @@
       "side": "SELL",
       "upper": 0.034321407224207054,
       "open": 0.03509,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "MMTUSDT",
@@ -9825,7 +9853,8 @@
       "side": "SELL",
       "upper": 0.17376144554505948,
       "open": 0.1807,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "SILVERUSDT",
@@ -10102,9 +10131,11 @@
     "CYBERLEEKUSDT": 1795018588,
     "MURATAUSDT": 1795018646,
     "ARGUSUSDT": 1795021419,
-    "QUACKAIUSDT": 1795022231
+    "QUACKAIUSDT": 1795022231,
+    "O1USDT": 1795024028,
+    "ARROWUSDT": 1795024033
   },
-  "last_trade_report_ts": 1794980177,
+  "last_trade_report_ts": 1794981413,
   "last_known_version": "2.9.4",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
