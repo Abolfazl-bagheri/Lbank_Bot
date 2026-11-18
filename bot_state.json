@@ -146,6 +146,31 @@
       "last_leg_candle_ts": 1795024800,
       "dry_run": true,
       "order_id": "PAPER-HUMAUSDT-1795024847"
+    },
+    {
+      "symbol": "PROSUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.626,
+      "qty": 319.4888,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.61035,
+      "tf": "1h",
+      "opened_at": 1795024885,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.626,
+          "ts": 1795024885
+        }
+      ],
+      "entry_candle_ts": 1795024800,
+      "last_leg_candle_ts": 1795024800,
+      "dry_run": true,
+      "order_id": "PAPER-PROSUSDT-1795024885"
     }
   ],
   "trade_history": [
@@ -6803,26 +6828,6 @@
   ],
   "pending": [
     {
-      "symbol": "PAIDUSDT",
-      "tf": "15m",
-      "candle_ts": 1794935700,
-      "side": "LONG",
-      "upper": 0.001382,
-      "open": 0.001382,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "HUTUSDT",
-      "tf": "15m",
-      "candle_ts": 1794935700,
-      "side": "SELL",
-      "upper": 54.9152884845827,
-      "open": 53.64,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "WENUSDT",
       "tf": "15m",
       "candle_ts": 1794936600,
@@ -9783,6 +9788,24 @@
       "side": "SELL",
       "upper": 297.6528113135218,
       "open": 293.8,
+      "reported": false
+    },
+    {
+      "symbol": "HUMAUSDT",
+      "tf": "1h",
+      "candle_ts": 1795024800,
+      "side": "SELL",
+      "upper": 0.008326461379059031,
+      "open": 0.00852,
+      "reported": false
+    },
+    {
+      "symbol": "AKAMUSDT",
+      "tf": "15m",
+      "candle_ts": 1795024800,
+      "side": "SELL",
+      "upper": 88.74500553012251,
+      "open": 87.36,
       "reported": false
     }
   ],
