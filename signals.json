@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.9.4",
-  "updated_at": 1794981690,
+  "updated_at": 1794981701,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794963005
-    },
-    {
-      "kind": "GAP",
-      "symbol": "PROSUSDT",
-      "tf": "1h",
-      "gap": 1.0,
-      "ts": 1794963109
-    },
     {
       "kind": "GAP",
       "symbol": "SKUUUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "1h",
       "gap": 2.21,
       "ts": 1794981690
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794981696
+    },
+    {
+      "kind": "SELL",
+      "symbol": "NESUSDT",
+      "tf": "1h",
+      "gap": 3.29,
+      "ts": 1794981701
     }
   ],
   "trades": [
@@ -1430,14 +1430,27 @@
       "px": 0.2182,
       "pnl": -0.24,
       "tf": "15m"
+    },
+    {
+      "symbol": "FHEUSDT",
+      "side": "SELL",
+      "entry": 0.01659,
+      "tp": 0.01617525,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.01659,
+      "pnl": -0.24,
+      "tf": "1h"
     }
   ],
   "start": 1000.0,
   "session_start": 1794960632,
   "realized": 64.0801,
   "closed_n": 4,
-  "open_upnl": -0.48,
-  "equity": 1063.6001,
+  "open_upnl": -0.72,
+  "equity": 1063.3601,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
