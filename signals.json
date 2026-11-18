@@ -1,29 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795013270,
+  "updated_at": 1795013481,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "PIPPINUSDT",
-      "tf": "1h",
-      "gap": 2.34,
-      "ts": 1795002914
-    },
-    {
-      "kind": "GAP",
-      "symbol": "RATSUSDT",
-      "tf": "1h",
-      "gap": 1.11,
-      "ts": 1795002918
-    },
-    {
-      "kind": "GAP",
-      "symbol": "HUSDT",
-      "tf": "1h",
-      "gap": 1.29,
-      "ts": 1795002921
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1381,27 @@
       "tf": "15m",
       "gap": 2.72,
       "ts": 1795013270
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795013274
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795013354
+    },
+    {
+      "kind": "GAP",
+      "symbol": "BWETUSDT",
+      "tf": "1h",
+      "gap": 3.13,
+      "ts": 1795013481
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 3.1045,
-      "pnl": -2.5535,
+      "px": 3.0825,
+      "pnl": -1.1198,
       "tf": "1h"
     },
     {
@@ -1427,8 +1427,21 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 60.35,
-      "pnl": 3.882,
+      "px": 60.65,
+      "pnl": 2.9083,
+      "tf": "15m"
+    },
+    {
+      "symbol": "BWETUSDT",
+      "side": "SELL",
+      "entry": 711.98,
+      "tp": 694.1805,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 713.95,
+      "pnl": -0.7934,
       "tf": "15m"
     }
   ],
@@ -1436,8 +1449,8 @@
   "session_start": 1794960632,
   "realized": 12.4437,
   "closed_n": 32,
-  "open_upnl": 1.3285,
-  "equity": 1013.7722,
+  "open_upnl": 0.9951,
+  "equity": 1013.4388,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
