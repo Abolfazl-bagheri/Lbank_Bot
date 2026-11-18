@@ -1,31 +1,6 @@
 {
   "open_trades": [
     {
-      "symbol": "BLESSUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.012798,
-      "qty": 15627.4418,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.01247805,
-      "tf": "15m",
-      "opened_at": 1794987168,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.012798,
-          "ts": 1794987168
-        }
-      ],
-      "entry_candle_ts": 1794987000,
-      "last_leg_candle_ts": 1794987000,
-      "dry_run": true,
-      "order_id": "PAPER-BLESSUSDT-1794987168"
-    },
-    {
       "symbol": "PIPPINUSDT",
       "side": "SELL",
       "status": "open",
@@ -52,36 +27,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "WUXIBIOUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 6.382,
-      "qty": 31.3381,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 6.222449999999999,
-      "tf": "15m",
-      "opened_at": 1793970081,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 6.382,
-          "ts": 1793970081
-        }
-      ],
-      "entry_candle_ts": 1793970000,
-      "last_leg_candle_ts": 1793970000,
-      "dry_run": true,
-      "order_id": "PAPER-WUXIBIOUSDT-1793970081",
-      "closed_at": 1793971090,
-      "close_px": 6.199,
-      "pnl_usdt": 5.7348793481667135,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "AKEUSDT",
       "side": "SELL",
@@ -6885,19 +6830,39 @@
       "pnl_usdt": 24.651520813030427,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "BLESSUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.012798,
+      "qty": 15627.4418,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.01247805,
+      "tf": "15m",
+      "opened_at": 1794987168,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.012798,
+          "ts": 1794987168
+        }
+      ],
+      "entry_candle_ts": 1794987000,
+      "last_leg_candle_ts": 1794987000,
+      "dry_run": true,
+      "order_id": "PAPER-BLESSUSDT-1794987168",
+      "closed_at": 1794988088,
+      "close_px": 0.011398,
+      "pnl_usdt": 21.87841850289108,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
-    {
-      "symbol": "GOLDUSDT",
-      "tf": "15m",
-      "candle_ts": 1794808800,
-      "side": "LONG",
-      "upper": 3900.018706172466,
-      "open": 3842.91,
-      "reported": true,
-      "filled": true
-    },
     {
       "symbol": "CRCLUSDT",
       "tf": "5m",
@@ -9866,7 +9831,8 @@
       "side": "SELL",
       "upper": 0.012821718095779516,
       "open": 0.012999,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "BLESSUSDT",
@@ -9875,6 +9841,16 @@
       "side": "SELL",
       "upper": 0.012692214636803891,
       "open": 0.012999,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "PIPPINUSDT",
+      "tf": "15m",
+      "candle_ts": 1794987900,
+      "side": "SELL",
+      "upper": 0.012922345168384343,
+      "open": 0.01354,
       "reported": false
     }
   ],
@@ -10130,13 +10106,35 @@
     "MEMECOINUSDT": 1795030459,
     "1000SATSUSDT": 1795030460,
     "CZUSDT": 1795030461,
-    "NEIRO1USDT": 1795030462
+    "NEIRO1USDT": 1795030462,
+    "1000WOJAKUSDT": 1795031261,
+    "SPACE1USDT": 1795031267,
+    "MANCERUSDT": 1795031268,
+    "PIPEDOGUSDT": 1795031269
   },
   "last_trade_report_ts": 1794987359,
   "last_known_version": "2.10.0",
   "lessons": [
     {
       "ts": 1794987134,
+      "kind": "gap_result",
+      "symbol": "BLESSUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1794988083,
+      "kind": "gap_result",
+      "symbol": "BLESSUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1794988087,
       "kind": "gap_result",
       "symbol": "BLESSUSDT",
       "tf": "15m",
