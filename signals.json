@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.9.4",
-  "updated_at": 1794980037,
+  "updated_at": 1794980108,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "HUTUSDT",
-      "tf": "15m",
-      "gap": 6.23,
-      "ts": 1794960826
-    },
     {
       "kind": "SELL",
       "symbol": "HUTUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "5m",
       "gap": 0.23,
       "ts": 1794980037
+    },
+    {
+      "kind": "SELL",
+      "symbol": "SILVERUSDT",
+      "tf": "5m",
+      "gap": 0.11,
+      "ts": 1794980108
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.1812,
-      "pnl": -0.3504,
+      "px": 0.1765,
+      "pnl": 4.8401,
       "tf": "15m"
     }
   ],
@@ -1423,8 +1423,8 @@
   "session_start": 1794960632,
   "realized": 59.0,
   "closed_n": 3,
-  "open_upnl": -0.3504,
-  "equity": 1058.6496,
+  "open_upnl": 4.8401,
+  "equity": 1063.8401,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
