@@ -99,6 +99,31 @@
       "last_leg_candle_ts": 1795003200,
       "dry_run": true,
       "order_id": "PAPER-ZKCUSDT-1795003289"
+    },
+    {
+      "symbol": "IRYSUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.01781,
+      "qty": 11229.6463,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.017364749999999998,
+      "tf": "4h",
+      "opened_at": 1795003300,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.01781,
+          "ts": 1795003300
+        }
+      ],
+      "entry_candle_ts": 1795003200,
+      "last_leg_candle_ts": 1795003200,
+      "dry_run": true,
+      "order_id": "PAPER-IRYSUSDT-1795003300"
     }
   ],
   "trade_history": [
@@ -6875,16 +6900,6 @@
   ],
   "pending": [
     {
-      "symbol": "PREDICTUSDT",
-      "tf": "1h",
-      "candle_ts": 1794909600,
-      "side": "SELL",
-      "upper": 1.1715278849093005,
-      "open": 1.1809,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "CARDSUSDT",
       "tf": "1m",
       "candle_ts": 1794910260,
@@ -9854,6 +9869,15 @@
       "side": "SELL",
       "upper": 2.3815673741704213,
       "open": 2.4439,
+      "reported": false
+    },
+    {
+      "symbol": "ZKCUSDT",
+      "tf": "4h",
+      "candle_ts": 1795003200,
+      "side": "SELL",
+      "upper": 0.027782098977821343,
+      "open": 0.0295,
       "reported": false
     }
   ],
