@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795003299,
+  "updated_at": 1795003369,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794993040
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794993061
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "4h",
       "gap": 5.38,
       "ts": 1795003299
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795003302
+    },
+    {
+      "kind": "SELL",
+      "symbol": "RATSUSDT",
+      "tf": "4h",
+      "gap": 1.09,
+      "ts": 1795003369
     }
   ],
   "trades": [
@@ -1456,14 +1456,27 @@
       "px": 0.02887,
       "pnl": -0.24,
       "tf": "4h"
+    },
+    {
+      "symbol": "IRYSUSDT",
+      "side": "SELL",
+      "entry": 0.01781,
+      "tp": 0.017364749999999998,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.01781,
+      "pnl": -0.24,
+      "tf": "4h"
     }
   ],
   "start": 1000.0,
   "session_start": 1794960632,
   "realized": 65.1154,
   "closed_n": 24,
-  "open_upnl": -0.96,
-  "equity": 1064.1554,
+  "open_upnl": -1.2,
+  "equity": 1063.9154,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
