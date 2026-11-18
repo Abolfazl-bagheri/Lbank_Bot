@@ -4,24 +4,28 @@
       "symbol": "PIEVERSEUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 2.8133,
-      "qty": 71.0909,
-      "margin": 10.0,
+      "entry": 2.8060907752573887,
+      "qty": 213.8206,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 2.7429675,
-      "tf": "15m",
+      "tp_price": 2.735938505875954,
+      "tf": "1h",
       "opened_at": 1795005036,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 2.8133,
           "ts": 1795005036
+        },
+        {
+          "px": 2.8025,
+          "ts": 1795006842
         }
       ],
       "entry_candle_ts": 1795005000,
-      "last_leg_candle_ts": 1795005000,
+      "last_leg_candle_ts": 1795006800,
       "dry_run": true,
       "order_id": "PAPER-PIEVERSEUSDT-1795005036"
     }
@@ -6771,26 +6775,6 @@
   ],
   "pending": [
     {
-      "symbol": "FHEUSDT",
-      "tf": "15m",
-      "candle_ts": 1794915000,
-      "side": "SELL",
-      "upper": 0.01764469299073325,
-      "open": 0.01816,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "PAIDUSDT",
-      "tf": "5m",
-      "candle_ts": 1794916800,
-      "side": "SELL",
-      "upper": 0.001382,
-      "open": 0.001382,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "MMTUSDT",
       "tf": "15m",
       "candle_ts": 1794916800,
@@ -9758,6 +9742,24 @@
       "upper": 3777.605356597668,
       "open": 3746.22,
       "reported": false
+    },
+    {
+      "symbol": "GOLDUSDT",
+      "tf": "5m",
+      "candle_ts": 1795006500,
+      "side": "LONG",
+      "upper": 3786.4173820307683,
+      "open": 3755.63,
+      "reported": false
+    },
+    {
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
+      "candle_ts": 1795006500,
+      "side": "LONG",
+      "upper": 3773.2617560930235,
+      "open": 3742.19,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -10018,7 +10020,7 @@
     "QUID1USDT": 1795047530,
     "ATMUSDT": 1795048296
   },
-  "last_trade_report_ts": 1795005650,
+  "last_trade_report_ts": 1795006557,
   "last_known_version": "2.10.0",
   "lessons": [
     {
