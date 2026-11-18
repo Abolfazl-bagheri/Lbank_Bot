@@ -6840,16 +6840,6 @@
   ],
   "pending": [
     {
-      "symbol": "PAIDUSDT",
-      "tf": "15m",
-      "candle_ts": 1794933000,
-      "side": "LONG",
-      "upper": 0.001382,
-      "open": 0.001382,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "UVXYUSDT",
       "tf": "15m",
       "candle_ts": 1794933900,
@@ -9768,7 +9758,8 @@
       "side": "SELL",
       "upper": 0.26119467921316003,
       "open": 0.265,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "PROSUSDT",
@@ -9786,7 +9777,8 @@
       "side": "SELL",
       "upper": 88.36012073914608,
       "open": 87.36,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "AKAMUSDT",
@@ -9822,6 +9814,15 @@
       "side": "LONG",
       "upper": 57.374307422616695,
       "open": 53.51,
+      "reported": false
+    },
+    {
+      "symbol": "AKAMUSDT",
+      "tf": "15m",
+      "candle_ts": 1795022100,
+      "side": "SELL",
+      "upper": 88.49166032322513,
+      "open": 87.36,
       "reported": false
     }
   ],
@@ -10086,7 +10087,7 @@
     "MURATAUSDT": 1795061977,
     "BONERUSDT": 1795062789
   },
-  "last_trade_report_ts": 1795020991,
+  "last_trade_report_ts": 1795021905,
   "last_known_version": "2.10.0",
   "lessons": [
     {
@@ -11369,6 +11370,24 @@
     },
     {
       "ts": 1795021441,
+      "kind": "gap_result",
+      "symbol": "AKAMUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795022200,
+      "kind": "gap_result",
+      "symbol": "MMTUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795022202,
       "kind": "gap_result",
       "symbol": "AKAMUSDT",
       "tf": "15m",
