@@ -1,5 +1,31 @@
 {
-  "open_trades": [],
+  "open_trades": [
+    {
+      "symbol": "HUTUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 57.97,
+      "qty": 3.4501,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 56.52075,
+      "tf": "15m",
+      "opened_at": 1794960945,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 57.97,
+          "ts": 1794960945
+        }
+      ],
+      "entry_candle_ts": 1794960900,
+      "last_leg_candle_ts": 1794960900,
+      "dry_run": true,
+      "order_id": "PAPER-HUTUSDT-1794960945"
+    }
+  ],
   "trade_history": [
     {
       "symbol": "CYBERUSDT",
@@ -9643,6 +9669,15 @@
       "side": "SELL",
       "upper": 0.049048560466266405,
       "open": 0.04956,
+      "reported": false
+    },
+    {
+      "symbol": "SILVERUSDT",
+      "tf": "5m",
+      "candle_ts": 1794960600,
+      "side": "LONG",
+      "upper": 47.70616461698317,
+      "open": 47.42,
       "reported": false
     }
   ],
