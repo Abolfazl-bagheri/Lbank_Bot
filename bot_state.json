@@ -109,6 +109,31 @@
       "last_leg_candle_ts": 1795014000,
       "dry_run": true,
       "order_id": "PAPER-MPUSDT-1795014153"
+    },
+    {
+      "symbol": "ZILUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.001265,
+      "qty": 158102.7668,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.001233375,
+      "tf": "15m",
+      "opened_at": 1795014923,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.001265,
+          "ts": 1795014923
+        }
+      ],
+      "entry_candle_ts": 1795014900,
+      "last_leg_candle_ts": 1795014900,
+      "dry_run": true,
+      "order_id": "PAPER-ZILUSDT-1795014923"
     }
   ],
   "trade_history": [
@@ -6805,26 +6830,6 @@
   ],
   "pending": [
     {
-      "symbol": "AKEUSDT",
-      "tf": "15m",
-      "candle_ts": 1794923100,
-      "side": "SELL",
-      "upper": 0.011328859575011679,
-      "open": 0.011444,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "XAUTUSDT",
-      "tf": "15m",
-      "candle_ts": 1794923100,
-      "side": "LONG",
-      "upper": 3858.398125758131,
-      "open": 3835.58,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "BREVUSDT",
       "tf": "15m",
       "candle_ts": 1794924000,
@@ -9783,6 +9788,24 @@
       "upper": 3786.9268451772937,
       "open": 3750.73,
       "reported": false
+    },
+    {
+      "symbol": "BWETUSDT",
+      "tf": "15m",
+      "candle_ts": 1795014900,
+      "side": "SELL",
+      "upper": 727.7981629138129,
+      "open": 732.49,
+      "reported": false
+    },
+    {
+      "symbol": "TWSTUSDT",
+      "tf": "15m",
+      "candle_ts": 1795014900,
+      "side": "SELL",
+      "upper": 116.00433500558503,
+      "open": 116.83,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -9992,7 +10015,6 @@
     "SOYBEANUSDT": 1794376183,
     "UBIKUSDT": 1794387803,
     "MARRIOTTUSDT": 1794387810,
-    "RIOTUSDT": 1794388601,
     "ONSEMIUSDT": 1794406599,
     "TSMONUSDT": 1794407661,
     "LYTEUSDT": 1794441776,
@@ -10041,7 +10063,7 @@
     "QUID1USDT": 1795047530,
     "ATMUSDT": 1795048296
   },
-  "last_trade_report_ts": 1795013803,
+  "last_trade_report_ts": 1795014712,
   "last_known_version": "2.10.0",
   "lessons": [
     {
