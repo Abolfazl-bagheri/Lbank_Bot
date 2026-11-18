@@ -6775,16 +6775,6 @@
   "pending": [
     {
       "symbol": "HAEDALUSDT",
-      "tf": "15m",
-      "candle_ts": 1794906000,
-      "side": "SELL",
-      "upper": 0.020856029473249885,
-      "open": 0.02121,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "HAEDALUSDT",
       "tf": "1h",
       "candle_ts": 1794906000,
       "side": "SELL",
@@ -9756,6 +9746,16 @@
       "side": "SELL",
       "upper": 0.017610395881424767,
       "open": 0.01777,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "PIEVERSEUSDT",
+      "tf": "15m",
+      "candle_ts": 1794998700,
+      "side": "SELL",
+      "upper": 2.396398248742837,
+      "open": 2.4222,
       "reported": false
     }
   ],
@@ -10016,7 +10016,7 @@
     "AINBSCUSDT": 1795034819,
     "OROCHIUSDT": 1795036606
   },
-  "last_trade_report_ts": 1794997607,
+  "last_trade_report_ts": 1794998851,
   "last_known_version": "2.10.0",
   "lessons": [
     {
@@ -10267,6 +10267,15 @@
       "kind": "gap_result",
       "symbol": "CRCLUSDT",
       "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1794998850,
+      "kind": "gap_result",
+      "symbol": "IRYSUSDT",
+      "tf": "15m",
       "gap": 0.0,
       "filled": true,
       "note": "filled"
