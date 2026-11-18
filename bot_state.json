@@ -6849,36 +6849,6 @@
   ],
   "pending": [
     {
-      "symbol": "CIENUSDT",
-      "tf": "1h",
-      "candle_ts": 1794956400,
-      "side": "SELL",
-      "upper": 271.82728428616804,
-      "open": 276.1,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "HUTUSDT",
-      "tf": "15m",
-      "candle_ts": 1794956400,
-      "side": "SELL",
-      "upper": 54.08,
-      "open": 54.08,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "HUTUSDT",
-      "tf": "1h",
-      "candle_ts": 1794956400,
-      "side": "SELL",
-      "upper": 55.12756156475198,
-      "open": 54.08,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "HUTUSDT",
       "tf": "15m",
       "candle_ts": 1794957300,
@@ -9828,6 +9798,34 @@
       "side": "SELL",
       "upper": 53.45261589125578,
       "open": 53.38,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "SILVERUSDT",
+      "tf": "5m",
+      "candle_ts": 1795043400,
+      "side": "SELL",
+      "upper": 45.388353176461145,
+      "open": 45.45,
+      "reported": false
+    },
+    {
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
+      "candle_ts": 1795043400,
+      "side": "SELL",
+      "upper": 3730.72966576803,
+      "open": 3732.98,
+      "reported": false
+    },
+    {
+      "symbol": "CRCLUSDT",
+      "tf": "5m",
+      "candle_ts": 1795043400,
+      "side": "SELL",
+      "upper": 53.6320440604868,
+      "open": 53.76,
       "reported": false
     }
   ],
@@ -12007,6 +12005,15 @@
       "kind": "gap_result",
       "symbol": "NETUSDT",
       "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795043437,
+      "kind": "gap_result",
+      "symbol": "CRCLUSDT",
+      "tf": "5m",
       "gap": 0.0,
       "filled": true,
       "note": "filled"
