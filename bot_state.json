@@ -49,6 +49,31 @@
       "last_leg_candle_ts": 1794988800,
       "dry_run": true,
       "order_id": "PAPER-ZKPUSDT-1794988870"
+    },
+    {
+      "symbol": "MMTUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.2351,
+      "qty": 850.7018,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.2292225,
+      "tf": "4h",
+      "opened_at": 1794988879,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.2351,
+          "ts": 1794988879
+        }
+      ],
+      "entry_candle_ts": 1794988800,
+      "last_leg_candle_ts": 1794988800,
+      "dry_run": true,
+      "order_id": "PAPER-MMTUSDT-1794988879"
     }
   ],
   "trade_history": [
@@ -6886,16 +6911,6 @@
   "pending": [
     {
       "symbol": "XAUTUSDT",
-      "tf": "1m",
-      "candle_ts": 1794822840,
-      "side": "LONG",
-      "upper": 3845.917127205646,
-      "open": 3840.09,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "XAUTUSDT",
       "tf": "5m",
       "candle_ts": 1794861600,
       "side": "LONG",
@@ -9870,6 +9885,15 @@
       "side": "SELL",
       "upper": 0.01469519543436578,
       "open": 0.01613,
+      "reported": false
+    },
+    {
+      "symbol": "ZKPUSDT",
+      "tf": "4h",
+      "candle_ts": 1794988800,
+      "side": "SELL",
+      "upper": 0.03595348531613625,
+      "open": 0.03776,
       "reported": false
     }
   ],
