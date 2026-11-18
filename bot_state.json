@@ -1,5 +1,31 @@
 {
-  "open_trades": [],
+  "open_trades": [
+    {
+      "symbol": "PIPPINUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.02091,
+      "qty": 9564.8015,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.020387250000000003,
+      "tf": "1h",
+      "opened_at": 1794999651,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.02091,
+          "ts": 1794999651
+        }
+      ],
+      "entry_candle_ts": 1794999600,
+      "last_leg_candle_ts": 1794999600,
+      "dry_run": true,
+      "order_id": "PAPER-PIPPINUSDT-1794999651"
+    }
+  ],
   "trade_history": [
     {
       "symbol": "IDOLUSDT",
