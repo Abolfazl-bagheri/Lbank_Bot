@@ -1,62 +1,32 @@
 {
   "open_trades": [
     {
-      "symbol": "PIEVERSEUSDT",
+      "symbol": "PIPPINUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 2.4631,
-      "qty": 81.1985,
+      "entry": 0.0198,
+      "qty": 10101.0101,
       "margin": 10.0,
       "leverage": 20,
-      "tp_price": 2.4015225,
-      "tf": "1h",
-      "opened_at": 1794999658,
+      "tp_price": 0.019305000000000003,
+      "tf": "4h",
+      "opened_at": 1795003263,
       "adds": 0,
       "last_leg_margin": 10.0,
       "used_res_levels": [],
       "steps": [
         {
-          "px": 2.4631,
-          "ts": 1794999658
+          "px": 0.0198,
+          "ts": 1795003263
         }
       ],
-      "entry_candle_ts": 1794999600,
-      "last_leg_candle_ts": 1794999600,
+      "entry_candle_ts": 1795003200,
+      "last_leg_candle_ts": 1795003200,
       "dry_run": true,
-      "order_id": "PAPER-PIEVERSEUSDT-1794999658"
+      "order_id": "PAPER-PIPPINUSDT-1795003263"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "ANSEMUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.05655,
-      "qty": 3536.6932,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.055136250000000005,
-      "tf": "15m",
-      "opened_at": 1793997035,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.05655,
-          "ts": 1793997035
-        }
-      ],
-      "entry_candle_ts": 1793997000,
-      "last_leg_candle_ts": 1793997000,
-      "dry_run": true,
-      "order_id": "PAPER-ANSEMUSDT-1793997035",
-      "closed_at": 1794001753,
-      "close_px": 0.05471,
-      "pnl_usdt": 6.5075154730327185,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "KNTQUSDT",
       "side": "SELL",
@@ -6796,19 +6766,39 @@
       "pnl_usdt": 6.791009086561475,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "PIEVERSEUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 2.4631,
+      "qty": 81.1985,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 2.4015225,
+      "tf": "1h",
+      "opened_at": 1794999658,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 2.4631,
+          "ts": 1794999658
+        }
+      ],
+      "entry_candle_ts": 1794999600,
+      "last_leg_candle_ts": 1794999600,
+      "dry_run": true,
+      "order_id": "PAPER-PIEVERSEUSDT-1794999658",
+      "closed_at": 1795002941,
+      "close_px": 2.3875,
+      "pnl_usdt": 6.1386058219316855,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
-    {
-      "symbol": "ZCATUSDT",
-      "tf": "1m",
-      "candle_ts": 1794907800,
-      "side": "LONG",
-      "upper": 0.0211685154121764,
-      "open": 0.02098,
-      "reported": true,
-      "filled": true
-    },
     {
       "symbol": "SOXSUSDT",
       "tf": "15m",
@@ -9785,6 +9775,15 @@
       "upper": 0.0063175860260118325,
       "open": 0.006408,
       "reported": false
+    },
+    {
+      "symbol": "IRYSUSDT",
+      "tf": "1h",
+      "candle_ts": 1795003200,
+      "side": "SELL",
+      "upper": 0.01757841468427778,
+      "open": 0.0178,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -10046,7 +10045,7 @@
     "STONKBROKERUSDT": 1795043033,
     "GSTOCKUSDT": 1795044685
   },
-  "last_trade_report_ts": 1795001720,
+  "last_trade_report_ts": 1795002710,
   "last_known_version": "2.10.0",
   "lessons": [
     {
