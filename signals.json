@@ -1,29 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795009527,
+  "updated_at": 1795009639,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "PIEVERSEUSDT",
-      "tf": "15m",
-      "gap": 3.05,
-      "ts": 1794998633
-    },
-    {
-      "kind": "GAP",
-      "symbol": "CLAUDIAUSDT",
-      "tf": "15m",
-      "gap": 7.61,
-      "ts": 1794998636
-    },
-    {
-      "kind": "SELL",
-      "symbol": "PIEVERSEUSDT",
-      "tf": "15m",
-      "gap": 1.07,
-      "ts": 1794998737
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,35 +1381,42 @@
       "tf": "15m",
       "gap": 1.09,
       "ts": 1795009527
-    }
-  ],
-  "trades": [
+    },
     {
-      "symbol": "PIEVERSEUSDT",
-      "side": "SELL",
-      "entry": 2.8060907752573887,
-      "tp": 2.735938505875954,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
-      "lev": 20,
-      "px": 2.9398,
-      "pnl": -29.3098,
-      "tf": "1h"
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795009610
+    },
+    {
+      "kind": "HEARTBEAT",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795009611
+    },
+    {
+      "kind": "SELL",
+      "symbol": "ZILUSDT",
+      "tf": "15m",
+      "gap": 1.12,
+      "ts": 1795009639
     }
   ],
+  "trades": [],
   "start": 1000.0,
   "session_start": 1794960632,
-  "realized": 41.0335,
-  "closed_n": 31,
-  "open_upnl": -29.3098,
-  "equity": 1011.7237,
+  "realized": 12.4437,
+  "closed_n": 32,
+  "open_upnl": 0,
+  "equity": 1012.4437,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
     "profit": 222.4286,
-    "loss": -181.3951,
-    "count": 31
+    "loss": -209.9849,
+    "count": 32
   }
 }
