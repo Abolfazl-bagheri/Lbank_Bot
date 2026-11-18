@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.9.4",
-  "updated_at": 1794981645,
+  "updated_at": 1794981652,
   "signals": [
-    {
-      "kind": "HEARTBEAT",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794962480
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794962525
-    },
     {
       "kind": "GAP",
       "symbol": "HUTUSDT",
@@ -1402,15 +1388,43 @@
       "tf": "15m",
       "gap": 2.79,
       "ts": 1794981645
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794981649
+    },
+    {
+      "kind": "SELL",
+      "symbol": "ZORAUSDT",
+      "tf": "15m",
+      "gap": 1.18,
+      "ts": 1794981652
     }
   ],
-  "trades": [],
+  "trades": [
+    {
+      "symbol": "ZKPUSDT",
+      "side": "SELL",
+      "entry": 0.03731,
+      "tp": 0.03637725,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.03731,
+      "pnl": -0.24,
+      "tf": "15m"
+    }
+  ],
   "start": 1000.0,
   "session_start": 1794960632,
   "realized": 64.0801,
   "closed_n": 4,
-  "open_upnl": 0,
-  "equity": 1064.0801,
+  "open_upnl": -0.24,
+  "equity": 1063.8401,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
