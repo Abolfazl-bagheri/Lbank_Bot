@@ -6822,16 +6822,6 @@
   ],
   "pending": [
     {
-      "symbol": "ZCATUSDT",
-      "tf": "1m",
-      "candle_ts": 1794903300,
-      "side": "LONG",
-      "upper": 0.0210395830481839,
-      "open": 0.02087,
-      "reported": true,
-      "filled": false
-    },
-    {
       "symbol": "CATUSDT",
       "tf": "1m",
       "candle_ts": 1794904020,
@@ -9795,7 +9785,8 @@
       "side": "LONG",
       "upper": 114.02314452746569,
       "open": 111.99,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "SOPHUSDT",
@@ -9804,6 +9795,15 @@
       "side": "SELL",
       "upper": 0.0010209117097369023,
       "open": 0.001037,
+      "reported": false
+    },
+    {
+      "symbol": "ZKCUSDT",
+      "tf": "15m",
+      "candle_ts": 1794993300,
+      "side": "SELL",
+      "upper": 0.028978995410119942,
+      "open": 0.02972,
       "reported": false
     }
   ],
@@ -10062,7 +10062,8 @@
     "MANCERUSDT": 1795031268,
     "PIPEDOGUSDT": 1795031269,
     "BEMUSDT": 1795033003,
-    "AINBSCUSDT": 1795034819
+    "AINBSCUSDT": 1795034819,
+    "OROCHIUSDT": 1795036606
   },
   "last_trade_report_ts": 1794992655,
   "last_known_version": "2.10.0",
@@ -10242,6 +10243,15 @@
       "ts": 1794992651,
       "kind": "gap_result",
       "symbol": "BWETUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1794993431,
+      "kind": "gap_result",
+      "symbol": "TWSTUSDT",
       "tf": "15m",
       "gap": 0.0,
       "filled": true,
