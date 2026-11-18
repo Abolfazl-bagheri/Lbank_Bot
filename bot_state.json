@@ -61,23 +61,29 @@
       "side": "SELL",
       "status": "open",
       "entry": 0.00694,
-      "qty": 28818.4438,
-      "margin": 10.0,
+      "qty": 86455.3314,
+      "margin": 30.0,
       "leverage": 20,
       "tp_price": 0.0067665,
       "tf": "15m",
       "opened_at": 1795004117,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.00696
+      ],
       "steps": [
         {
           "px": 0.00694,
           "ts": 1795004117
+        },
+        {
+          "px": 0.00694,
+          "ts": 1795004236
         }
       ],
       "entry_candle_ts": 1795004100,
-      "last_leg_candle_ts": 1795004100,
+      "last_leg_candle_ts": 1795004236,
       "dry_run": true,
       "order_id": "PAPER-MOCAUSDT-1795004117"
     }
