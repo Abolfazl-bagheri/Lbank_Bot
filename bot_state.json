@@ -65,42 +65,6 @@
       "order_id": "PAPER-NETUSDT-1795014985"
     },
     {
-      "symbol": "SOONUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.26481883347834373,
-      "qty": 5286.6331,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 0.2581983626413851,
-      "tf": "4h",
-      "opened_at": 1795017650,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [
-        0.269,
-        0.2639
-      ],
-      "steps": [
-        {
-          "px": 0.2649,
-          "ts": 1795017650
-        },
-        {
-          "px": 0.2687,
-          "ts": 1795019196
-        },
-        {
-          "px": 0.2629,
-          "ts": 1795019758
-        }
-      ],
-      "entry_candle_ts": 1795017600,
-      "last_leg_candle_ts": 1795019758,
-      "dry_run": true,
-      "order_id": "PAPER-SOONUSDT-1795017650"
-    },
-    {
       "symbol": "PROSUSDT",
       "side": "SELL",
       "status": "open",
@@ -185,50 +149,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "CTUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.1438514712201085,
-      "qty": 20854.844100000002,
-      "margin": 150.0,
-      "leverage": 20,
-      "tp_price": 0.14025518443960577,
-      "tf": "15m",
-      "opened_at": 1794040259,
-      "adds": 3,
-      "last_leg_margin": 80.0,
-      "used_res_levels": [
-        0.1462
-      ],
-      "steps": [
-        {
-          "px": 0.13497,
-          "ts": 1794040259
-        },
-        {
-          "px": 0.13757,
-          "ts": 1794042092
-        },
-        {
-          "px": 0.14576,
-          "ts": 1794043832
-        },
-        {
-          "px": 0.14576,
-          "ts": 1794044043
-        }
-      ],
-      "entry_candle_ts": 1794040200,
-      "last_leg_candle_ts": 1794044043,
-      "dry_run": true,
-      "order_id": "PAPER-CTUSDT-1794040259",
-      "closed_at": 1794045974,
-      "close_px": 0.13844,
-      "pnl_usdt": 112.8553884268937,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "KATUSDT",
       "side": "SELL",
@@ -6838,19 +6758,50 @@
       "pnl_usdt": -11.946707078360774,
       "close_reason": "STOP",
       "why": "STOP"
+    },
+    {
+      "symbol": "SOONUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.26481883347834373,
+      "qty": 5286.6331,
+      "margin": 70.0,
+      "leverage": 20,
+      "tp_price": 0.2581983626413851,
+      "tf": "4h",
+      "opened_at": 1795017650,
+      "adds": 2,
+      "last_leg_margin": 40.0,
+      "used_res_levels": [
+        0.269,
+        0.2639
+      ],
+      "steps": [
+        {
+          "px": 0.2649,
+          "ts": 1795017650
+        },
+        {
+          "px": 0.2687,
+          "ts": 1795019196
+        },
+        {
+          "px": 0.2629,
+          "ts": 1795019758
+        }
+      ],
+      "entry_candle_ts": 1795017600,
+      "last_leg_candle_ts": 1795019758,
+      "dry_run": true,
+      "order_id": "PAPER-SOONUSDT-1795017650",
+      "closed_at": 1795024115,
+      "close_px": 0.2753,
+      "pnl_usdt": -55.41008144165373,
+      "close_reason": "STOP",
+      "why": "STOP"
     }
   ],
   "pending": [
-    {
-      "symbol": "CLANKERUSDT",
-      "tf": "15m",
-      "candle_ts": 1794934800,
-      "side": "SELL",
-      "upper": 11.814734618228819,
-      "open": 11.79,
-      "reported": true,
-      "filled": true
-    },
     {
       "symbol": "PAIDUSDT",
       "tf": "15m",
@@ -9814,6 +9765,15 @@
       "side": "SELL",
       "upper": 56.73617809017235,
       "open": 55.49,
+      "reported": false
+    },
+    {
+      "symbol": "NETUSDT",
+      "tf": "15m",
+      "candle_ts": 1795023900,
+      "side": "SELL",
+      "upper": 297.6528113135218,
+      "open": 293.8,
       "reported": false
     },
     {
