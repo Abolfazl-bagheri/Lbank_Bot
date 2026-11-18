@@ -24,6 +24,31 @@
       "last_leg_candle_ts": 1794981600,
       "dry_run": true,
       "order_id": "PAPER-ZKPUSDT-1794981647"
+    },
+    {
+      "symbol": "MMTUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.2182,
+      "qty": 916.5903,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.212745,
+      "tf": "15m",
+      "opened_at": 1794981660,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.2182,
+          "ts": 1794981660
+        }
+      ],
+      "entry_candle_ts": 1794981600,
+      "last_leg_candle_ts": 1794981600,
+      "dry_run": true,
+      "order_id": "PAPER-MMTUSDT-1794981660"
     }
   ],
   "trade_history": [
@@ -6882,36 +6907,6 @@
   ],
   "pending": [
     {
-      "symbol": "SILVERUSDT",
-      "tf": "1m",
-      "candle_ts": 1794780660,
-      "side": "LONG",
-      "upper": 48.192864024698366,
-      "open": 48.13,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "XAUTUSDT",
-      "tf": "15m",
-      "candle_ts": 1794787200,
-      "side": "SELL",
-      "upper": 3879.6296715345834,
-      "open": 3883.48,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "GOLDUSDT",
-      "tf": "15m",
-      "candle_ts": 1794787200,
-      "side": "SELL",
-      "upper": 3899.964757868032,
-      "open": 3904.3,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "XAUTUSDT",
       "tf": "1h",
       "candle_ts": 1794787200,
@@ -9875,6 +9870,33 @@
       "open": 46.41,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "ZKPUSDT",
+      "tf": "15m",
+      "candle_ts": 1794981600,
+      "side": "SELL",
+      "upper": 0.036267427152578614,
+      "open": 0.03692,
+      "reported": false
+    },
+    {
+      "symbol": "ZORAUSDT",
+      "tf": "15m",
+      "candle_ts": 1794981600,
+      "side": "SELL",
+      "upper": 0.0049510877363083275,
+      "open": 0.00501,
+      "reported": false
+    },
+    {
+      "symbol": "FHEUSDT",
+      "tf": "15m",
+      "candle_ts": 1794981600,
+      "side": "SELL",
+      "upper": 0.016366332064886288,
+      "open": 0.01645,
+      "reported": false
     }
   ],
   "paper_days": [
