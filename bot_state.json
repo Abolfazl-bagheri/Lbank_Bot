@@ -6860,18 +6860,6 @@
   ],
   "pending": [
     {
-      "symbol": "CLAUDIAUSDT",
-      "tf": "15m",
-      "candle_ts": 1793392200,
-      "side": "SELL"
-    },
-    {
-      "symbol": "WETUSDT",
-      "tf": "15m",
-      "candle_ts": 1793407500,
-      "side": "SELL"
-    },
-    {
       "symbol": "WETUSDT",
       "tf": "15m",
       "candle_ts": 1793409300,
@@ -9535,7 +9523,8 @@
       "side": "SELL",
       "upper": 55.13228349312984,
       "open": 54.08,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "RENDERUSDT",
@@ -9544,7 +9533,8 @@
       "side": "SELL",
       "upper": 1.4648664793477626,
       "open": 1.4848,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "HUTUSDT",
@@ -9781,6 +9771,24 @@
       "open": 3825.49,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "NESUSDT",
+      "tf": "15m",
+      "candle_ts": 1794970800,
+      "side": "SELL",
+      "upper": 0.2093158400741064,
+      "open": 0.2118,
+      "reported": false
+    },
+    {
+      "symbol": "IDOLUSDT",
+      "tf": "15m",
+      "candle_ts": 1794970800,
+      "side": "SELL",
+      "upper": 0.019698672065693586,
+      "open": 0.01989,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -10013,7 +10021,6 @@
     "B3USDT": 1794950633,
     "BIANRENSHENGUSDT": 1794960417,
     "LIGHT1USDT": 1794962812,
-    "AINBSCUSDT": 1794971061,
     "LWLGUSDT": 1794971796,
     "SKY1USDT": 1794974770,
     "ARROWUSDT": 1794976281,
@@ -10040,7 +10047,7 @@
     "1000000BABYDOGEUSDT": 1795003546,
     "QUID1USDT": 1795004202
   },
-  "last_trade_report_ts": 1794969353,
+  "last_trade_report_ts": 1794970587,
   "last_known_version": "2.9.4",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
