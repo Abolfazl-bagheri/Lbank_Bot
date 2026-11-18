@@ -55,6 +55,31 @@
       "last_leg_candle_ts": 1794985200,
       "dry_run": true,
       "order_id": "PAPER-MMTUSDT-1794985264"
+    },
+    {
+      "symbol": "BLESSUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.011999,
+      "qty": 16668.0557,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.011699024999999998,
+      "tf": "1h",
+      "opened_at": 1794985288,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.011999,
+          "ts": 1794985288
+        }
+      ],
+      "entry_candle_ts": 1794985200,
+      "last_leg_candle_ts": 1794985200,
+      "dry_run": true,
+      "order_id": "PAPER-BLESSUSDT-1794985288"
     }
   ],
   "trade_history": [
@@ -6909,26 +6934,6 @@
   ],
   "pending": [
     {
-      "symbol": "XAUTUSDT",
-      "tf": "5m",
-      "candle_ts": 1794791100,
-      "side": "LONG",
-      "upper": 3891.158368742025,
-      "open": 3853.25,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "SILVERUSDT",
-      "tf": "5m",
-      "candle_ts": 1794791100,
-      "side": "LONG",
-      "upper": 49.31370290901103,
-      "open": 48.37,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "CRCLUSDT",
       "tf": "15m",
       "candle_ts": 1794796200,
@@ -9895,6 +9900,24 @@
       "side": "SELL",
       "upper": 0.036576673571542984,
       "open": 0.03746,
+      "reported": false
+    },
+    {
+      "symbol": "MMTUSDT",
+      "tf": "1h",
+      "candle_ts": 1794985200,
+      "side": "SELL",
+      "upper": 0.22057897544464888,
+      "open": 0.2305,
+      "reported": false
+    },
+    {
+      "symbol": "PRLUSDT",
+      "tf": "1h",
+      "candle_ts": 1794985200,
+      "side": "SELL",
+      "upper": 0.07259611467870491,
+      "open": 0.07388,
       "reported": false
     }
   ],
