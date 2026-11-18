@@ -28,70 +28,9 @@
       "last_leg_candle_ts": 1795006800,
       "dry_run": true,
       "order_id": "PAPER-PIEVERSEUSDT-1795005036"
-    },
-    {
-      "symbol": "MOCAUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.00683,
-      "qty": 29282.5769,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.00665925,
-      "tf": "1h",
-      "opened_at": 1795006859,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.00683,
-          "ts": 1795006859
-        }
-      ],
-      "entry_candle_ts": 1795006800,
-      "last_leg_candle_ts": 1795006800,
-      "dry_run": true,
-      "order_id": "PAPER-MOCAUSDT-1795006859"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "SMRUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 5.018685836932847,
-      "qty": 119.5532,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 4.893218691009526,
-      "tf": "1h",
-      "opened_at": 1793977366,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        5.059
-      ],
-      "steps": [
-        {
-          "px": 4.963,
-          "ts": 1793977366
-        },
-        {
-          "px": 5.047,
-          "ts": 1793999197
-        }
-      ],
-      "entry_candle_ts": 1793977200,
-      "last_leg_candle_ts": 1793999197,
-      "dry_run": true,
-      "order_id": "PAPER-SMRUSDT-1793977366",
-      "closed_at": 1794010154,
-      "close_px": 5.059,
-      "pnl_usdt": -4.8196875887880966,
-      "close_reason": "NIGHT_RESET",
-      "why": "NIGHT_RESET"
-    },
     {
       "symbol": "QNTXUSDT",
       "side": "SELL",
@@ -6796,29 +6735,39 @@
       "pnl_usdt": 6.3191153238546445,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "MOCAUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.00683,
+      "qty": 29282.5769,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.00665925,
+      "tf": "1h",
+      "opened_at": 1795006859,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.00683,
+          "ts": 1795006859
+        }
+      ],
+      "entry_candle_ts": 1795006800,
+      "last_leg_candle_ts": 1795006800,
+      "dry_run": true,
+      "order_id": "PAPER-MOCAUSDT-1795006859",
+      "closed_at": 1795007128,
+      "close_px": 0.00662,
+      "pnl_usdt": 6.149341142020503,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
-    {
-      "symbol": "SOONUSDT",
-      "tf": "15m",
-      "candle_ts": 1794916800,
-      "side": "SELL",
-      "upper": 0.24366644036943447,
-      "open": 0.2475,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "CYPHUSDT",
-      "tf": "15m",
-      "candle_ts": 1794916800,
-      "side": "SELL",
-      "upper": 1.9406855935568805,
-      "open": 1.94,
-      "reported": true,
-      "filled": true
-    },
     {
       "symbol": "FHEUSDT",
       "tf": "1h",
@@ -9526,7 +9475,8 @@
       "side": "SELL",
       "upper": 0.01757841468427778,
       "open": 0.0178,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "PIPPINUSDT",
@@ -9738,7 +9688,8 @@
       "side": "SELL",
       "upper": 0.00696019993330369,
       "open": 0.0071,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "SILVERUSDT",
@@ -9747,7 +9698,8 @@
       "side": "LONG",
       "upper": 46.150870477787926,
       "open": 45.47,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "XAUTUSDT",
@@ -9756,7 +9708,8 @@
       "side": "LONG",
       "upper": 3777.605356597668,
       "open": 3746.22,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "GOLDUSDT",
@@ -9765,7 +9718,8 @@
       "side": "LONG",
       "upper": 3786.4173820307683,
       "open": 3755.63,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "XAUTUSDT",
@@ -9774,7 +9728,8 @@
       "side": "LONG",
       "upper": 3773.2617560930235,
       "open": 3742.19,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "PIEVERSEUSDT",
@@ -9783,6 +9738,24 @@
       "side": "SELL",
       "upper": 2.6831743263532584,
       "open": 2.7971,
+      "reported": false
+    },
+    {
+      "symbol": "MOCAUSDT",
+      "tf": "1h",
+      "candle_ts": 1795006800,
+      "side": "SELL",
+      "upper": 0.006624659557387345,
+      "open": 0.00683,
+      "reported": false
+    },
+    {
+      "symbol": "SHELLUSDT",
+      "tf": "1h",
+      "candle_ts": 1795006800,
+      "side": "SELL",
+      "upper": 0.02965718366734172,
+      "open": 0.03002,
       "reported": false
     }
   ],
@@ -10600,6 +10573,60 @@
       "ts": 1795006075,
       "kind": "gap_result",
       "symbol": "CRCLUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795007057,
+      "kind": "gap_result",
+      "symbol": "IRYSUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795007060,
+      "kind": "gap_result",
+      "symbol": "MOCAUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795007070,
+      "kind": "gap_result",
+      "symbol": "SILVERUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795007080,
+      "kind": "gap_result",
+      "symbol": "XAUTUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795007088,
+      "kind": "gap_result",
+      "symbol": "GOLDUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795007099,
+      "kind": "gap_result",
+      "symbol": "XAUTUSDT",
       "tf": "5m",
       "gap": 0.0,
       "filled": true,
