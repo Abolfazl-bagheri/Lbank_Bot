@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1794999649,
+  "updated_at": 1794999656,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794988872
-    },
-    {
-      "kind": "SELL",
-      "symbol": "MMTUSDT",
-      "tf": "4h",
-      "gap": 11.67,
-      "ts": 1794988877
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,15 +1388,43 @@
       "tf": "1h",
       "gap": 5.21,
       "ts": 1794999649
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1794999653
+    },
+    {
+      "kind": "SELL",
+      "symbol": "PIEVERSEUSDT",
+      "tf": "1h",
+      "gap": 2.53,
+      "ts": 1794999656
     }
   ],
-  "trades": [],
+  "trades": [
+    {
+      "symbol": "PIPPINUSDT",
+      "side": "SELL",
+      "entry": 0.02091,
+      "tp": 0.020387250000000003,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.02091,
+      "pnl": -0.24,
+      "tf": "1h"
+    }
+  ],
   "start": 1000.0,
   "session_start": 1794960632,
   "realized": 52.1857,
   "closed_n": 22,
-  "open_upnl": 0,
-  "equity": 1052.1857,
+  "open_upnl": -0.24,
+  "equity": 1051.9457,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
