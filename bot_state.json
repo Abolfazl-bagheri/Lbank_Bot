@@ -1,62 +1,6 @@
 {
-  "open_trades": [
-    {
-      "symbol": "MMTUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.157,
-      "qty": 1273.8854,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.153075,
-      "tf": "15m",
-      "opened_at": 1794974433,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.157,
-          "ts": 1794974433
-        }
-      ],
-      "entry_candle_ts": 1794974400,
-      "last_leg_candle_ts": 1794974400,
-      "dry_run": true,
-      "order_id": "PAPER-MMTUSDT-1794974433"
-    }
-  ],
+  "open_trades": [],
   "trade_history": [
-    {
-      "symbol": "ARIAUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.15574,
-      "qty": 1284.1916,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.1518465,
-      "tf": "4h",
-      "opened_at": 1793908925,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.15574,
-          "ts": 1793908925
-        }
-      ],
-      "entry_candle_ts": 1793908800,
-      "last_leg_candle_ts": 1793908800,
-      "dry_run": true,
-      "order_id": "PAPER-ARIAUSDT-1793908925",
-      "closed_at": 1793926437,
-      "close_px": 0.15565,
-      "pnl_usdt": 0.11557724412479645,
-      "close_reason": "NIGHT_RESET",
-      "why": "NIGHT_RESET"
-    },
     {
       "symbol": "ACTUSDT",
       "side": "SELL",
@@ -6882,51 +6826,39 @@
       "pnl_usdt": 38.07295979895873,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "MMTUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.157,
+      "qty": 1273.8854,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.153075,
+      "tf": "15m",
+      "opened_at": 1794974433,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.157,
+          "ts": 1794974433
+        }
+      ],
+      "entry_candle_ts": 1794974400,
+      "last_leg_candle_ts": 1794974400,
+      "dry_run": true,
+      "order_id": "PAPER-MMTUSDT-1794974433",
+      "closed_at": 1794975033,
+      "close_px": 0.1445,
+      "pnl_usdt": 15.923566878980903,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
-    {
-      "symbol": "XPINUSDT",
-      "tf": "15m",
-      "candle_ts": 1793414700,
-      "side": "SELL"
-    },
-    {
-      "symbol": "EVAAUSDT",
-      "tf": "15m",
-      "candle_ts": 1793414700,
-      "side": "SELL"
-    },
-    {
-      "symbol": "XPINUSDT",
-      "tf": "15m",
-      "candle_ts": 1793416500,
-      "side": "SELL"
-    },
-    {
-      "symbol": "SWARMSUSDT",
-      "tf": "15m",
-      "candle_ts": 1793416500,
-      "side": "SELL"
-    },
-    {
-      "symbol": "LYNUSDT",
-      "tf": "15m",
-      "candle_ts": 1793416500,
-      "side": "SELL"
-    },
-    {
-      "symbol": "BEAMXUSDT",
-      "tf": "15m",
-      "candle_ts": 1793419200,
-      "side": "SELL"
-    },
-    {
-      "symbol": "BLESSUSDT",
-      "tf": "15m",
-      "candle_ts": 1793419200,
-      "side": "SELL"
-    },
     {
       "symbol": "MAGMAUSDT",
       "tf": "15m",
@@ -9494,7 +9426,8 @@
       "side": "SELL",
       "upper": 0.1037785203493564,
       "open": 0.1074,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ICNTUSDT",
@@ -9503,7 +9436,8 @@
       "side": "SELL",
       "upper": 0.26698912298103705,
       "open": 0.2747,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "HUTUSDT",
@@ -9522,7 +9456,8 @@
       "side": "SELL",
       "upper": 18.66812049958846,
       "open": 18.95,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "HUTUSDT",
@@ -9551,7 +9486,8 @@
       "side": "SELL",
       "upper": 56.87267535152126,
       "open": 54.08,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "RENDERUSDT",
@@ -9560,7 +9496,8 @@
       "side": "SELL",
       "upper": 1.4573085556568335,
       "open": 1.4848,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "TREEUSDT",
@@ -9569,7 +9506,8 @@
       "side": "SELL",
       "upper": 0.030277626579393965,
       "open": 0.03061,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "FLUXUSDT",
@@ -9578,7 +9516,8 @@
       "side": "SELL",
       "upper": 0.049048560466266405,
       "open": 0.04956,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "SILVERUSDT",
@@ -9829,6 +9768,69 @@
       "open": 3781.8,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "MMTUSDT",
+      "tf": "15m",
+      "candle_ts": 1794974400,
+      "side": "SELL",
+      "upper": 0.15375772427794276,
+      "open": 0.1562,
+      "reported": false
+    },
+    {
+      "symbol": "MELANIAUSDT",
+      "tf": "1h",
+      "candle_ts": 1794974400,
+      "side": "SELL",
+      "upper": 0.05013346344180478,
+      "open": 0.05065,
+      "reported": false
+    },
+    {
+      "symbol": "MMTUSDT",
+      "tf": "4h",
+      "candle_ts": 1794974400,
+      "side": "SELL",
+      "upper": 0.15514857109926472,
+      "open": 0.1562,
+      "reported": false
+    },
+    {
+      "symbol": "ICNTUSDT",
+      "tf": "4h",
+      "candle_ts": 1794974400,
+      "side": "SELL",
+      "upper": 0.2754764141542261,
+      "open": 0.2799,
+      "reported": false
+    },
+    {
+      "symbol": "MELANIAUSDT",
+      "tf": "4h",
+      "candle_ts": 1794974400,
+      "side": "SELL",
+      "upper": 0.049635578476224775,
+      "open": 0.05065,
+      "reported": false
+    },
+    {
+      "symbol": "ZKPUSDT",
+      "tf": "4h",
+      "candle_ts": 1794974400,
+      "side": "SELL",
+      "upper": 0.03236738608759598,
+      "open": 0.03273,
+      "reported": false
+    },
+    {
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
+      "candle_ts": 1794975000,
+      "side": "LONG",
+      "upper": 3795.5192116910753,
+      "open": 3775.49,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -10039,13 +10041,11 @@
     "ARGUSDT": 1794367944,
     "SXTUSDT": 1794369881,
     "SOYBEANUSDT": 1794376183,
-    "MURATAUSDT": 1794377801,
     "UBIKUSDT": 1794387803,
     "MARRIOTTUSDT": 1794387810,
     "RIOTUSDT": 1794388601,
     "ONSEMIUSDT": 1794406599,
     "TSMONUSDT": 1794407661,
-    "CYBERLEEKUSDT": 1794439881,
     "LYTEUSDT": 1794441776,
     "NEXUSDT": 1794441907,
     "FLYUSDT": 1794452679,
@@ -10085,9 +10085,10 @@
     "HOTUSDT": 1795003540,
     "1000000BABYDOGEUSDT": 1795003546,
     "QUID1USDT": 1795004202,
-    "LWLGUSDT": 1795015924
+    "LWLGUSDT": 1795015924,
+    "ANTUSDT": 1795017735
   },
-  "last_trade_report_ts": 1794973723,
+  "last_trade_report_ts": 1794974863,
   "last_known_version": "2.9.4",
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
 }
