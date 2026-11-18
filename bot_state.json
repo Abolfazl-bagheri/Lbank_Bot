@@ -49,6 +49,31 @@
       "last_leg_candle_ts": 1795014000,
       "dry_run": true,
       "order_id": "PAPER-PIEVERSEUSDT-1795014054"
+    },
+    {
+      "symbol": "ZILUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.001151,
+      "qty": 173761.9461,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.001122225,
+      "tf": "1h",
+      "opened_at": 1795014067,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.001151,
+          "ts": 1795014067
+        }
+      ],
+      "entry_candle_ts": 1795014000,
+      "last_leg_candle_ts": 1795014000,
+      "dry_run": true,
+      "order_id": "PAPER-ZILUSDT-1795014067"
     }
   ],
   "trade_history": [
@@ -6751,26 +6776,6 @@
   ],
   "pending": [
     {
-      "symbol": "GOLDUSDT",
-      "tf": "5m",
-      "candle_ts": 1794922500,
-      "side": "LONG",
-      "upper": 3875.6652574147433,
-      "open": 3859.28,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "XAUTUSDT",
-      "tf": "5m",
-      "candle_ts": 1794922800,
-      "side": "LONG",
-      "upper": 3860.1565995972082,
-      "open": 3829.15,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "SILVERUSDT",
       "tf": "5m",
       "candle_ts": 1794922800,
@@ -9729,6 +9734,24 @@
       "side": "SELL",
       "upper": 712.7405720776867,
       "open": 721.38,
+      "reported": false
+    },
+    {
+      "symbol": "PIEVERSEUSDT",
+      "tf": "1h",
+      "candle_ts": 1795014000,
+      "side": "SELL",
+      "upper": 3.1569265043098884,
+      "open": 3.193,
+      "reported": false
+    },
+    {
+      "symbol": "SOONUSDT",
+      "tf": "1h",
+      "candle_ts": 1795014000,
+      "side": "SELL",
+      "upper": 0.260048619410583,
+      "open": 0.2641,
       "reported": false
     }
   ],
