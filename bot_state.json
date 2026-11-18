@@ -9606,7 +9606,8 @@
       "side": "SELL",
       "upper": 54.08,
       "open": 54.08,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "BOTUSDT",
@@ -9678,6 +9679,25 @@
       "side": "LONG",
       "upper": 47.70616461698317,
       "open": 47.42,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "HUTUSDT",
+      "tf": "15m",
+      "candle_ts": 1794960900,
+      "side": "SELL",
+      "upper": 54.08,
+      "open": 54.08,
+      "reported": false
+    },
+    {
+      "symbol": "GOLDUSDT",
+      "tf": "15m",
+      "candle_ts": 1794960900,
+      "side": "LONG",
+      "upper": 3866.2442341408173,
+      "open": 3848.06,
       "reported": false
     }
   ],
@@ -9936,7 +9956,8 @@
     "LONGXIAUSDT": 1795003355,
     "STXSTOCKUSDT": 1795003493,
     "HOTUSDT": 1795003540,
-    "1000000BABYDOGEUSDT": 1795003546
+    "1000000BABYDOGEUSDT": 1795003546,
+    "QUID1USDT": 1795004202
   },
   "last_trade_report_ts": 1794960630,
   "last_known_version": "2.9.4",
