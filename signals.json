@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795043733,
+  "updated_at": 1795043781,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "NETUSDT",
-      "tf": "15m",
-      "gap": 1.58,
-      "ts": 1795025615
-    },
-    {
-      "kind": "GAP",
-      "symbol": "AKEUSDT",
-      "tf": "15m",
-      "gap": 1.38,
-      "ts": 1795025618
-    },
     {
       "kind": "GAP",
       "symbol": "PIPPINUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "15m",
       "gap": 2.61,
       "ts": 1795043733
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795043741
+    },
+    {
+      "kind": "SELL",
+      "symbol": "NETUSDT",
+      "tf": "15m",
+      "gap": 5.27,
+      "ts": 1795043781
     }
   ],
   "trades": [
@@ -1473,14 +1473,14 @@
     {
       "symbol": "PAIDUSDT",
       "side": "SELL",
-      "entry": 0.001415,
-      "tp": 0.001379625,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
+      "entry": 0.0014176641562720195,
+      "tp": 0.0013822225523652191,
+      "adds": 1,
+      "pele": 2,
+      "margin": 30.0,
       "lev": 20,
       "px": 0.001419,
-      "pnl": -0.8054,
+      "pnl": -1.2854,
       "tf": "15m"
     }
   ],
@@ -1488,8 +1488,8 @@
   "session_start": 1794960632,
   "realized": 93.466,
   "closed_n": 50,
-  "open_upnl": -85.4646,
-  "equity": 1008.0014,
+  "open_upnl": -85.9446,
+  "equity": 1007.5214,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
