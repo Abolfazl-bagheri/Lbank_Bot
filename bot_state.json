@@ -151,6 +151,31 @@
       "last_leg_candle_ts": 1795020502,
       "dry_run": true,
       "order_id": "PAPER-BULLAUSDT-1795020421"
+    },
+    {
+      "symbol": "PROSUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.6034,
+      "qty": 331.4551,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.588315,
+      "tf": "1h",
+      "opened_at": 1795021254,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.6034,
+          "ts": 1795021254
+        }
+      ],
+      "entry_candle_ts": 1795021200,
+      "last_leg_candle_ts": 1795021200,
+      "dry_run": true,
+      "order_id": "PAPER-PROSUSDT-1795021254"
     }
   ],
   "trade_history": [
@@ -6819,16 +6844,6 @@
   ],
   "pending": [
     {
-      "symbol": "BREVUSDT",
-      "tf": "4h",
-      "candle_ts": 1794931200,
-      "side": "SELL",
-      "upper": 0.08703431139569534,
-      "open": 0.0978,
-      "reported": true,
-      "filled": false
-    },
-    {
       "symbol": "BLURUSDT",
       "tf": "4h",
       "candle_ts": 1794931200,
@@ -9800,6 +9815,15 @@
       "upper": 88.20465198915593,
       "open": 87.36,
       "reported": false
+    },
+    {
+      "symbol": "MMTUSDT",
+      "tf": "15m",
+      "candle_ts": 1795021200,
+      "side": "SELL",
+      "upper": 0.26119467921316003,
+      "open": 0.265,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -10063,7 +10087,7 @@
     "MURATAUSDT": 1795061977,
     "BONERUSDT": 1795062789
   },
-  "last_trade_report_ts": 1795019761,
+  "last_trade_report_ts": 1795020991,
   "last_known_version": "2.10.0",
   "lessons": [
     {
