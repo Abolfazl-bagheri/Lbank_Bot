@@ -134,6 +134,31 @@
       "last_leg_candle_ts": 1795014900,
       "dry_run": true,
       "order_id": "PAPER-ZILUSDT-1795014923"
+    },
+    {
+      "symbol": "PROSUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.5568,
+      "qty": 359.1954,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.5428799999999999,
+      "tf": "15m",
+      "opened_at": 1795014936,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.5568,
+          "ts": 1795014936
+        }
+      ],
+      "entry_candle_ts": 1795014900,
+      "last_leg_candle_ts": 1795014900,
+      "dry_run": true,
+      "order_id": "PAPER-PROSUSDT-1795014936"
     }
   ],
   "trade_history": [
@@ -6830,16 +6855,6 @@
   ],
   "pending": [
     {
-      "symbol": "BREVUSDT",
-      "tf": "15m",
-      "candle_ts": 1794924000,
-      "side": "SELL",
-      "upper": 0.08297556844700446,
-      "open": 0.0844,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "CYPHUSDT",
       "tf": "1h",
       "candle_ts": 1794924000,
@@ -9805,6 +9820,15 @@
       "side": "SELL",
       "upper": 116.00433500558503,
       "open": 116.83,
+      "reported": false
+    },
+    {
+      "symbol": "ZILUSDT",
+      "tf": "15m",
+      "candle_ts": 1795014900,
+      "side": "SELL",
+      "upper": 0.0012252498124918094,
+      "open": 0.001268,
       "reported": false
     }
   ],
