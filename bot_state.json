@@ -6838,16 +6838,6 @@
   ],
   "pending": [
     {
-      "symbol": "GOLDUSDT",
-      "tf": "5m",
-      "candle_ts": 1794808800,
-      "side": "LONG",
-      "upper": 3896.214650060947,
-      "open": 3842.91,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "XAUTUSDT",
       "tf": "15m",
       "candle_ts": 1794808800,
@@ -9825,6 +9815,16 @@
       "side": "SELL",
       "upper": 0.012322707548782829,
       "open": 0.012503,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "BLESSUSDT",
+      "tf": "15m",
+      "candle_ts": 1794987000,
+      "side": "SELL",
+      "upper": 0.012821718095779516,
+      "open": 0.012999,
       "reported": false
     }
   ],
@@ -10088,7 +10088,17 @@
   },
   "last_trade_report_ts": 1794986454,
   "last_known_version": "2.10.0",
-  "lessons": [],
+  "lessons": [
+    {
+      "ts": 1794987134,
+      "kind": "gap_result",
+      "symbol": "BLESSUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    }
+  ],
   "tune_history": [],
   "tune_params": {
     "min_gap": 1.0,
