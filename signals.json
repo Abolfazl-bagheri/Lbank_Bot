@@ -1,29 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795005035,
+  "updated_at": 1795005155,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794995225
-    },
-    {
-      "kind": "SELL",
-      "symbol": "ZKCUSDT",
-      "tf": "15m",
-      "gap": 1.53,
-      "ts": 1794995241
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1794995341
-    },
     {
       "kind": "GAP",
       "symbol": "ZKCUSDT",
@@ -1402,6 +1381,27 @@
       "tf": "15m",
       "gap": 2.36,
       "ts": 1795005035
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795005040
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795005145
+    },
+    {
+      "kind": "SELL",
+      "symbol": "BLESSUSDT",
+      "tf": "15m",
+      "gap": 1.56,
+      "ts": 1795005155
     }
   ],
   "trades": [
@@ -1414,17 +1414,30 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.2582,
-      "pnl": -4.1894,
+      "px": 0.2581,
+      "pnl": -4.1105,
       "tf": "4h"
+    },
+    {
+      "symbol": "PIEVERSEUSDT",
+      "side": "SELL",
+      "entry": 2.8133,
+      "tp": 2.7429675,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 2.8184,
+      "pnl": -0.6026,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1794960632,
   "realized": 28.565,
   "closed_n": 29,
-  "open_upnl": -4.1894,
-  "equity": 1024.3756,
+  "open_upnl": -4.7131,
+  "equity": 1023.8519,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
