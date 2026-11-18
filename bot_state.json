@@ -1,5 +1,31 @@
 {
-  "open_trades": [],
+  "open_trades": [
+    {
+      "symbol": "PIEVERSEUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 3.069,
+      "qty": 65.1678,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 2.992275,
+      "tf": "1h",
+      "opened_at": 1795010433,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 3.069,
+          "ts": 1795010433
+        }
+      ],
+      "entry_candle_ts": 1795010400,
+      "last_leg_candle_ts": 1795010400,
+      "dry_run": true,
+      "order_id": "PAPER-PIEVERSEUSDT-1795010433"
+    }
+  ],
   "trade_history": [
     {
       "symbol": "LUNRUSDT",
@@ -6724,16 +6750,6 @@
   ],
   "pending": [
     {
-      "symbol": "SOONUSDT",
-      "tf": "1h",
-      "candle_ts": 1794916800,
-      "side": "SELL",
-      "upper": 0.24061639773591106,
-      "open": 0.2475,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "CLAUDIAUSDT",
       "tf": "4h",
       "candle_ts": 1794916800,
@@ -9709,6 +9725,15 @@
       "side": "SELL",
       "upper": 0.0010738468158156122,
       "open": 0.001086,
+      "reported": false
+    },
+    {
+      "symbol": "SOONUSDT",
+      "tf": "1h",
+      "candle_ts": 1795010400,
+      "side": "SELL",
+      "upper": 0.25366789685738056,
+      "open": 0.256,
       "reported": false
     }
   ],
