@@ -64,67 +64,29 @@
       "symbol": "PROSUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.626,
-      "qty": 319.4888,
+      "entry": 0.5844,
+      "qty": 342.2313,
       "margin": 10.0,
       "leverage": 20,
-      "tp_price": 0.61035,
-      "tf": "15m",
-      "opened_at": 1795015823,
+      "tp_price": 0.56979,
+      "tf": "1h",
+      "opened_at": 1795017621,
       "adds": 0,
       "last_leg_margin": 10.0,
       "used_res_levels": [],
       "steps": [
         {
-          "px": 0.626,
-          "ts": 1795015823
+          "px": 0.5844,
+          "ts": 1795017621
         }
       ],
-      "entry_candle_ts": 1795015800,
-      "last_leg_candle_ts": 1795015800,
+      "entry_candle_ts": 1795017600,
+      "last_leg_candle_ts": 1795017600,
       "dry_run": true,
-      "order_id": "PAPER-PROSUSDT-1795015823"
+      "order_id": "PAPER-PROSUSDT-1795017621"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "ESPORTSUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.012139666844495444,
-      "qty": 115324.4169,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 0.011836175173383059,
-      "tf": "1h",
-      "opened_at": 1794031243,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.011329,
-          "ts": 1794031243
-        },
-        {
-          "px": 0.012345,
-          "ts": 1794032125
-        },
-        {
-          "px": 0.012257,
-          "ts": 1794034850
-        }
-      ],
-      "entry_candle_ts": 1794031200,
-      "last_leg_candle_ts": 1794034800,
-      "dry_run": true,
-      "order_id": "PAPER-ESPORTSUSDT-1794031243",
-      "closed_at": 1794037688,
-      "close_px": 0.011035,
-      "pnl_usdt": 127.39505969184616,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "LYNUSDT",
       "side": "SELL",
@@ -6766,6 +6728,36 @@
       "pnl_usdt": 15.829109447260453,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "PROSUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.626,
+      "qty": 319.4888,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.61035,
+      "tf": "15m",
+      "opened_at": 1795015823,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.626,
+          "ts": 1795015823
+        }
+      ],
+      "entry_candle_ts": 1795015800,
+      "last_leg_candle_ts": 1795015800,
+      "dry_run": true,
+      "order_id": "PAPER-PROSUSDT-1795015823",
+      "closed_at": 1795016841,
+      "close_px": 0.5711,
+      "pnl_usdt": 17.53993610223641,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -10012,7 +10004,7 @@
     "CRWDUSDT": 1795058225,
     "RIOTUSDT": 1795058234
   },
-  "last_trade_report_ts": 1795015975,
+  "last_trade_report_ts": 1795017042,
   "last_known_version": "2.10.0",
   "lessons": [
     {
