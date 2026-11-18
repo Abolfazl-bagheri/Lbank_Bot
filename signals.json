@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795012808,
+  "updated_at": 1795012833,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "PIEVERSEUSDT",
-      "tf": "4h",
-      "gap": 7.3,
-      "ts": 1795002137
-    },
-    {
-      "kind": "GAP",
-      "symbol": "LAUSDT",
-      "tf": "4h",
-      "gap": 1.28,
-      "ts": 1795002141
-    },
     {
       "kind": "GAP",
       "symbol": "RATSUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "5m",
       "gap": 0.08,
       "ts": 1795012808
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795012827
+    },
+    {
+      "kind": "SELL",
+      "symbol": "SILVERUSDT",
+      "tf": "5m",
+      "gap": 0.16,
+      "ts": 1795012833
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 3.1348,
-      "pnl": -4.528,
+      "px": 3.1401,
+      "pnl": -4.8734,
       "tf": "1h"
     }
   ],
@@ -1423,8 +1423,8 @@
   "session_start": 1794960632,
   "realized": 12.4437,
   "closed_n": 32,
-  "open_upnl": -4.528,
-  "equity": 1007.9157,
+  "open_upnl": -4.8734,
+  "equity": 1007.5703,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
