@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795014984,
+  "updated_at": 1795014998,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "SILVERUSDT",
-      "tf": "5m",
-      "gap": 0.23,
-      "ts": 1795005661
-    },
-    {
-      "kind": "SELL",
-      "symbol": "GOLDUSDT",
-      "tf": "5m",
-      "gap": 0.1,
-      "ts": 1795005663
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "15m",
       "gap": 2.06,
       "ts": 1795014984
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795014991
+    },
+    {
+      "kind": "SELL",
+      "symbol": "AKAMUSDT",
+      "tf": "15m",
+      "gap": 1.84,
+      "ts": 1795014998
     }
   ],
   "trades": [
@@ -1482,14 +1482,27 @@
       "px": 0.5568,
       "pnl": -0.24,
       "tf": "15m"
+    },
+    {
+      "symbol": "NETUSDT",
+      "side": "SELL",
+      "entry": 299.82,
+      "tp": 292.3245,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 299.82,
+      "pnl": -0.24,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1794960632,
   "realized": 20.1954,
   "closed_n": 36,
-  "open_upnl": -15.3504,
-  "equity": 1004.845,
+  "open_upnl": -15.5904,
+  "equity": 1004.605,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
