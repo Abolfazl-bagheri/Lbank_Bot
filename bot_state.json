@@ -74,6 +74,31 @@
       "last_leg_candle_ts": 1794988800,
       "dry_run": true,
       "order_id": "PAPER-MMTUSDT-1794988879"
+    },
+    {
+      "symbol": "ICNTUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.3032,
+      "qty": 659.6306,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.29562,
+      "tf": "4h",
+      "opened_at": 1794988892,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.3032,
+          "ts": 1794988892
+        }
+      ],
+      "entry_candle_ts": 1794988800,
+      "last_leg_candle_ts": 1794988800,
+      "dry_run": true,
+      "order_id": "PAPER-ICNTUSDT-1794988892"
     }
   ],
   "trade_history": [
@@ -6910,16 +6935,6 @@
   ],
   "pending": [
     {
-      "symbol": "XAUTUSDT",
-      "tf": "5m",
-      "candle_ts": 1794861600,
-      "side": "LONG",
-      "upper": 3855.6085208194713,
-      "open": 3840.71,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "CRCLUSDT",
       "tf": "15m",
       "candle_ts": 1794872700,
@@ -9894,6 +9909,15 @@
       "side": "SELL",
       "upper": 0.03595348531613625,
       "open": 0.03776,
+      "reported": false
+    },
+    {
+      "symbol": "MMTUSDT",
+      "tf": "4h",
+      "candle_ts": 1794988800,
+      "side": "SELL",
+      "upper": 0.20766477908832298,
+      "open": 0.2338,
       "reported": false
     }
   ],
