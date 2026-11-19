@@ -34,68 +34,9 @@
       "last_leg_candle_ts": 1795051624,
       "dry_run": true,
       "order_id": "PAPER-NETUSDT-1795047367"
-    },
-    {
-      "symbol": "IRYSUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.023903723608327,
-      "qty": 25100.6918,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.023306130518118827,
-      "tf": "1h",
-      "opened_at": 1795052722,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.02471,
-          "ts": 1795052722
-        },
-        {
-          "px": 0.02352,
-          "ts": 1795053645
-        }
-      ],
-      "entry_candle_ts": 1795052700,
-      "last_leg_candle_ts": 1795053600,
-      "dry_run": true,
-      "order_id": "PAPER-IRYSUSDT-1795052722"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "CLAUDIAUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.006809,
-      "qty": 29372.8888,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.0066387749999999995,
-      "tf": "1h",
-      "opened_at": 1794088851,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.006809,
-          "ts": 1794088851
-        }
-      ],
-      "entry_candle_ts": 1794088800,
-      "last_leg_candle_ts": 1794088800,
-      "dry_run": true,
-      "order_id": "PAPER-CLAUDIAUSDT-1794088851",
-      "closed_at": 1794094393,
-      "close_px": 0.005543,
-      "pnl_usdt": 37.18607725069759,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "THEUSDT",
       "side": "SELL",
@@ -6688,6 +6629,40 @@
       "closed_at": 1795052097,
       "close_px": 0.02433,
       "pnl_usdt": -8.215661103979482,
+      "close_reason": "STOP",
+      "why": "STOP"
+    },
+    {
+      "symbol": "IRYSUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.023903723608327,
+      "qty": 25100.6918,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 0.023306130518118827,
+      "tf": "1h",
+      "opened_at": 1795052722,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.02471,
+          "ts": 1795052722
+        },
+        {
+          "px": 0.02352,
+          "ts": 1795053645
+        }
+      ],
+      "entry_candle_ts": 1795052700,
+      "last_leg_candle_ts": 1795053600,
+      "dry_run": true,
+      "order_id": "PAPER-IRYSUSDT-1795052722",
+      "closed_at": 1795054837,
+      "close_px": 0.02525,
+      "pnl_usdt": -33.79246883202791,
       "close_reason": "STOP",
       "why": "STOP"
     }
