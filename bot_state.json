@@ -71,31 +71,6 @@
       "order_id": "PAPER-INITUSDT-1795075233"
     },
     {
-      "symbol": "NAORISUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.0283,
-      "qty": 7067.1378,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.0275925,
-      "tf": "15m",
-      "opened_at": 1795077025,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.0283,
-          "ts": 1795077025
-        }
-      ],
-      "entry_candle_ts": 1795077000,
-      "last_leg_candle_ts": 1795077000,
-      "dry_run": true,
-      "order_id": "PAPER-NAORISUSDT-1795077025"
-    },
-    {
       "symbol": "ICNTUSDT",
       "side": "SELL",
       "status": "open",
@@ -122,36 +97,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "ACTUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.012803,
-      "qty": 15621.3387,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.012482925,
-      "tf": "15m",
-      "opened_at": 1794096934,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.012803,
-          "ts": 1794096934
-        }
-      ],
-      "entry_candle_ts": 1794096900,
-      "last_leg_candle_ts": 1794096900,
-      "dry_run": true,
-      "order_id": "PAPER-ACTUSDT-1794096934",
-      "closed_at": 1794098011,
-      "close_px": 0.012281,
-      "pnl_usdt": 8.154338826837458,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "BMTUSDT",
       "side": "SELL",
@@ -6715,6 +6660,36 @@
       "pnl_usdt": -27.250776129699894,
       "close_reason": "STOP",
       "why": "STOP"
+    },
+    {
+      "symbol": "NAORISUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.0283,
+      "qty": 7067.1378,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0275925,
+      "tf": "15m",
+      "opened_at": 1795077025,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.0283,
+          "ts": 1795077025
+        }
+      ],
+      "entry_candle_ts": 1795077000,
+      "last_leg_candle_ts": 1795077000,
+      "dry_run": true,
+      "order_id": "PAPER-NAORISUSDT-1795077025",
+      "closed_at": 1795077325,
+      "close_px": 0.02954,
+      "pnl_usdt": -8.763250883392237,
+      "close_reason": "STOP",
+      "why": "STOP"
     }
   ],
   "pending": [
@@ -9934,7 +9909,6 @@
     "AEHRUSDT": 1795000612,
     "STXSTOCKUSDT": 1795003493,
     "LWLGUSDT": 1795015924,
-    "ANTUSDT": 1795017735,
     "CYBERLEEKUSDT": 1795018588,
     "ARGUSUSDT": 1795021419,
     "QUACKAIUSDT": 1795022231,
