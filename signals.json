@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795049113,
+  "updated_at": 1795049146,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795029616
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795029634
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "15m",
       "gap": 2.19,
       "ts": 1795049113
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795049118
+    },
+    {
+      "kind": "SELL",
+      "symbol": "AKAMUSDT",
+      "tf": "15m",
+      "gap": 1.8,
+      "ts": 1795049146
     }
   ],
   "trades": [
@@ -1417,14 +1417,27 @@
       "px": 312.13,
       "pnl": -0.9861,
       "tf": "15m"
+    },
+    {
+      "symbol": "IRYSUSDT",
+      "side": "SELL",
+      "entry": 0.01942,
+      "tp": 0.0189345,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.01942,
+      "pnl": -0.24,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1795046848,
   "realized": 12.4633,
   "closed_n": 2,
-  "open_upnl": -0.9861,
-  "equity": 1011.4772,
+  "open_upnl": -1.2261,
+  "equity": 1011.2372,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
