@@ -1,36 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795047576,
+  "updated_at": 1795047931,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "ZSUSDT",
-      "tf": "15m",
-      "gap": 1.18,
-      "ts": 1795028538
-    },
-    {
-      "kind": "SELL",
-      "symbol": "ZSUSDT",
-      "tf": "1h",
-      "gap": 2.6,
-      "ts": 1795028563
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795028662
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795028712
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,22 +1374,37 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1795047576
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795047639
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795047684
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795047729
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795047931
     }
   ],
   "trades": [
-    {
-      "symbol": "ZKCUSDT",
-      "side": "SELL",
-      "entry": 0.03255,
-      "tp": 0.03173625,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.0321,
-      "pnl": 2.525,
-      "tf": "15m"
-    },
     {
       "symbol": "NETUSDT",
       "side": "SELL",
@@ -1427,23 +1414,23 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 311.07,
-      "pnl": -0.3043,
+      "px": 311.06,
+      "pnl": -0.2979,
       "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1795046848,
-  "realized": 0,
-  "closed_n": 0,
-  "open_upnl": 2.2207,
-  "equity": 1002.2207,
+  "realized": 7.1275,
+  "closed_n": 1,
+  "open_upnl": -0.2979,
+  "equity": 1006.8296,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 0,
+    "profit": 7.1275,
     "loss": 0,
-    "count": 0
+    "count": 1
   }
 }
