@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795075326,
+  "updated_at": 1795075340,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "SENTUSDT",
-      "tf": "1h",
-      "gap": 1.84,
-      "ts": 1795053101
-    },
-    {
-      "kind": "GAP",
-      "symbol": "IRYSUSDT",
-      "tf": "1h",
-      "gap": 12.81,
-      "ts": 1795053105
-    },
     {
       "kind": "GAP",
       "symbol": "NETUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "15m",
       "gap": 2.14,
       "ts": 1795075326
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795075334
+    },
+    {
+      "kind": "SELL",
+      "symbol": "GRASSUSDT",
+      "tf": "4h",
+      "gap": 1.79,
+      "ts": 1795075340
     }
   ],
   "trades": [
@@ -1456,14 +1456,27 @@
       "px": 0.3662,
       "pnl": -0.24,
       "tf": "1h"
+    },
+    {
+      "symbol": "CLAUDIAUSDT",
+      "side": "SELL",
+      "entry": 0.00719,
+      "tp": 0.00701025,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.00719,
+      "pnl": -0.24,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1795046848,
   "realized": -54.6703,
   "closed_n": 8,
-  "open_upnl": -16.1237,
-  "equity": 929.206,
+  "open_upnl": -16.3637,
+  "equity": 928.966,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
