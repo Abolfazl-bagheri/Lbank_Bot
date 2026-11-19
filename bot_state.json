@@ -6669,16 +6669,6 @@
   ],
   "pending": [
     {
-      "symbol": "MELANIAUSDT",
-      "tf": "1h",
-      "candle_ts": 1794974400,
-      "side": "SELL",
-      "upper": 0.05013346344180478,
-      "open": 0.05065,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "MMTUSDT",
       "tf": "4h",
       "candle_ts": 1794974400,
@@ -9651,6 +9641,16 @@
       "side": "LONG",
       "upper": 0.699113670633933,
       "open": 0.6262,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "KAVAUSDT",
+      "tf": "15m",
+      "candle_ts": 1795056300,
+      "side": "SELL",
+      "upper": 0.029735308907650013,
+      "open": 0.03012,
       "reported": false
     }
   ],
@@ -12290,6 +12290,15 @@
       "ts": 1795053858,
       "kind": "gap_result",
       "symbol": "IRYSUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795056446,
+      "kind": "gap_result",
+      "symbol": "PROSUSDT",
       "tf": "15m",
       "gap": 0.0,
       "filled": true,
