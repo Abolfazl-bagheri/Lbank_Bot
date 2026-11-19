@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795075377,
+  "updated_at": 1795075603,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "HUMAUSDT",
-      "tf": "15m",
-      "gap": 1.12,
-      "ts": 1795053612
-    },
     {
       "kind": "GAP",
       "symbol": "CROSSUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "4h",
       "gap": 1.06,
       "ts": 1795075377
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795075603
     }
   ],
   "trades": [
@@ -1417,19 +1417,6 @@
       "px": 315.68,
       "pnl": -21.6826,
       "tf": "1h"
-    },
-    {
-      "symbol": "USUSDT",
-      "side": "SELL",
-      "entry": 0.004109,
-      "tp": 0.004006275,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.00398,
-      "pnl": 6.0389,
-      "tf": "15m"
     },
     {
       "symbol": "INITUSDT",
@@ -1473,16 +1460,16 @@
   ],
   "start": 1000.0,
   "session_start": 1795046848,
-  "realized": -54.6703,
-  "closed_n": 8,
-  "open_upnl": -16.3637,
-  "equity": 928.966,
+  "realized": -48.3914,
+  "closed_n": 9,
+  "open_upnl": -22.4026,
+  "equity": 929.206,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 19.0561,
+    "profit": 25.335,
     "loss": -73.7264,
-    "count": 8
+    "count": 9
   }
 }
