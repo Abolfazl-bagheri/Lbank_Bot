@@ -6688,26 +6688,6 @@
   ],
   "pending": [
     {
-      "symbol": "BLENDUSDT",
-      "tf": "4h",
-      "candle_ts": 1794988800,
-      "side": "SELL",
-      "upper": 0.049253169031799694,
-      "open": 0.04982,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "FLUXUSDT",
-      "tf": "4h",
-      "candle_ts": 1794988800,
-      "side": "SELL",
-      "upper": 0.05049642986405822,
-      "open": 0.05112,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "PIPPINUSDT",
       "tf": "15m",
       "candle_ts": 1794989700,
@@ -9639,7 +9619,8 @@
       "side": "SELL",
       "upper": 0.028224827048787458,
       "open": 0.02881,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "INITUSDT",
@@ -9648,7 +9629,8 @@
       "side": "SELL",
       "upper": 0.11169065105768516,
       "open": 0.10993,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ICNTUSDT",
@@ -9657,7 +9639,8 @@
       "side": "SELL",
       "upper": 0.38304840227802084,
       "open": 0.3813,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "INITUSDT",
@@ -9666,6 +9649,25 @@
       "side": "SELL",
       "upper": 0.11272103332852873,
       "open": 0.10993,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "NAORISUSDT",
+      "tf": "15m",
+      "candle_ts": 1795077900,
+      "side": "SELL",
+      "upper": 0.03052129825160788,
+      "open": 0.03165,
+      "reported": false
+    },
+    {
+      "symbol": "BIRBUSDT",
+      "tf": "15m",
+      "candle_ts": 1795077900,
+      "side": "SELL",
+      "upper": 0.07074841626983626,
+      "open": 0.07151,
       "reported": false
     }
   ],
@@ -12673,6 +12675,42 @@
       "ts": 1795077144,
       "kind": "gap_result",
       "symbol": "ICNTUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795078038,
+      "kind": "gap_result",
+      "symbol": "NAORISUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795078040,
+      "kind": "gap_result",
+      "symbol": "INITUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795078042,
+      "kind": "gap_result",
+      "symbol": "ICNTUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795078045,
+      "kind": "gap_result",
+      "symbol": "INITUSDT",
       "tf": "15m",
       "gap": 0.0,
       "filled": true,
