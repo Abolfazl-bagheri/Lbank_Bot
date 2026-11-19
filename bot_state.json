@@ -34,70 +34,9 @@
       "last_leg_candle_ts": 1795051624,
       "dry_run": true,
       "order_id": "PAPER-NETUSDT-1795047367"
-    },
-    {
-      "symbol": "ICNTUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.3913,
-      "qty": 511.1168,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.38151749999999995,
-      "tf": "1h",
-      "opened_at": 1795078849,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.3913,
-          "ts": 1795078849
-        }
-      ],
-      "entry_candle_ts": 1795078800,
-      "last_leg_candle_ts": 1795078800,
-      "dry_run": true,
-      "order_id": "PAPER-ICNTUSDT-1795078849"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "ARIAUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.16527190367777356,
-      "qty": 3630.3812,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.1611401060858292,
-      "tf": "15m",
-      "opened_at": 1794121254,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        0.16481
-      ],
-      "steps": [
-        {
-          "px": 0.16692,
-          "ts": 1794121254
-        },
-        {
-          "px": 0.16446,
-          "ts": 1794125863
-        }
-      ],
-      "entry_candle_ts": 1794121200,
-      "last_leg_candle_ts": 1794125863,
-      "dry_run": true,
-      "order_id": "PAPER-ARIAUSDT-1794121254",
-      "closed_at": 1794129434,
-      "close_px": 0.16072,
-      "pnl_usdt": 16.525145205497072,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "AKEUSDT",
       "side": "SELL",
@@ -6633,6 +6572,36 @@
       "closed_at": 1795079127,
       "close_px": 0.0342,
       "pnl_usdt": -29.627552325437893,
+      "close_reason": "STOP",
+      "why": "STOP"
+    },
+    {
+      "symbol": "ICNTUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.3913,
+      "qty": 511.1168,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.38151749999999995,
+      "tf": "1h",
+      "opened_at": 1795078849,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.3913,
+          "ts": 1795078849
+        }
+      ],
+      "entry_candle_ts": 1795078800,
+      "last_leg_candle_ts": 1795078800,
+      "dry_run": true,
+      "order_id": "PAPER-ICNTUSDT-1795078849",
+      "closed_at": 1795079927,
+      "close_px": 0.4098,
+      "pnl_usdt": -9.455660618451326,
       "close_reason": "STOP",
       "why": "STOP"
     }
