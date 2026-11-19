@@ -49,6 +49,31 @@
       "last_leg_candle_ts": 1795050000,
       "dry_run": true,
       "order_id": "PAPER-IRYSUSDT-1795050044"
+    },
+    {
+      "symbol": "CROSSUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.17595,
+      "qty": 1136.6866,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.17155125,
+      "tf": "15m",
+      "opened_at": 1795050082,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.17595,
+          "ts": 1795050082
+        }
+      ],
+      "entry_candle_ts": 1795050000,
+      "last_leg_candle_ts": 1795050000,
+      "dry_run": true,
+      "order_id": "PAPER-CROSSUSDT-1795050082"
     }
   ],
   "trade_history": [
@@ -6712,26 +6737,6 @@
   ],
   "pending": [
     {
-      "symbol": "GOLDUSDT",
-      "tf": "5m",
-      "candle_ts": 1794962100,
-      "side": "LONG",
-      "upper": 3873.635685097752,
-      "open": 3830.55,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "HUTUSDT",
-      "tf": "15m",
-      "candle_ts": 1794962700,
-      "side": "SELL",
-      "upper": 54.08,
-      "open": 54.08,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "XAUTUSDT",
       "tf": "15m",
       "candle_ts": 1794962700,
@@ -9690,6 +9695,24 @@
       "side": "SELL",
       "upper": 308.8940861598123,
       "open": 310.9,
+      "reported": false
+    },
+    {
+      "symbol": "IRYSUSDT",
+      "tf": "15m",
+      "candle_ts": 1795050000,
+      "side": "SELL",
+      "upper": 0.020203297572524138,
+      "open": 0.0209,
+      "reported": false
+    },
+    {
+      "symbol": "IRYSUSDT",
+      "tf": "1h",
+      "candle_ts": 1795050000,
+      "side": "SELL",
+      "upper": 0.0200167147016908,
+      "open": 0.0209,
       "reported": false
     }
   ],
