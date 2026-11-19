@@ -1,29 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795077361,
+  "updated_at": 1795077627,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "IDOLUSDT",
-      "tf": "1h",
-      "gap": 1.98,
-      "ts": 1795056712
-    },
-    {
-      "kind": "SELL",
-      "symbol": "XAUTUSDT",
-      "tf": "5m",
-      "gap": 0.12,
-      "ts": 1795056936
-    },
-    {
-      "kind": "SELL",
-      "symbol": "GOLDUSDT",
-      "tf": "5m",
-      "gap": 0.13,
-      "ts": 1795056941
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1381,27 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1795077361
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795077395
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795077423
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795077627
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 3,
       "margin": 70.0,
       "lev": 20,
-      "px": 315.36,
-      "pnl": -20.2432,
+      "px": 315.57,
+      "pnl": -21.1878,
       "tf": "1h"
     },
     {
@@ -1427,36 +1427,23 @@
       "pele": 3,
       "margin": 70.0,
       "lev": 20,
-      "px": 0.11524,
-      "pnl": -10.4901,
-      "tf": "15m"
-    },
-    {
-      "symbol": "ICNTUSDT",
-      "side": "SELL",
-      "entry": 0.3911,
-      "tp": 0.3813225,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.3847,
-      "pnl": 3.0328,
+      "px": 0.11668,
+      "pnl": -28.0941,
       "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1795046848,
-  "realized": -82.3345,
-  "closed_n": 13,
-  "open_upnl": -27.7005,
-  "equity": 889.965,
+  "realized": -74.7149,
+  "closed_n": 14,
+  "open_upnl": -49.2819,
+  "equity": 876.0032,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 35.5436,
+    "profit": 43.1631,
     "loss": -117.8781,
-    "count": 13
+    "count": 14
   }
 }
