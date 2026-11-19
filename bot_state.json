@@ -94,6 +94,31 @@
       "last_leg_candle_ts": 1795089600,
       "dry_run": true,
       "order_id": "PAPER-NESUSDT-1795087829"
+    },
+    {
+      "symbol": "NAORISUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.03278,
+      "qty": 6101.2813,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.031960499999999996,
+      "tf": "4h",
+      "opened_at": 1795089685,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.03278,
+          "ts": 1795089685
+        }
+      ],
+      "entry_candle_ts": 1795089600,
+      "last_leg_candle_ts": 1795089600,
+      "dry_run": true,
+      "order_id": "PAPER-NAORISUSDT-1795089685"
     }
   ],
   "trade_history": [
@@ -6661,26 +6686,6 @@
   ],
   "pending": [
     {
-      "symbol": "BLESSUSDT",
-      "tf": "15m",
-      "candle_ts": 1795005000,
-      "side": "SELL",
-      "upper": 0.011669329072049869,
-      "open": 0.01163,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "XAUTUSDT",
-      "tf": "5m",
-      "candle_ts": 1795005600,
-      "side": "LONG",
-      "upper": 3768.5610937330907,
-      "open": 3751.85,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "CRCLUSDT",
       "tf": "5m",
       "candle_ts": 1795005600,
@@ -9640,6 +9645,24 @@
       "side": "LONG",
       "upper": 3734.4464284236583,
       "open": 3721.38,
+      "reported": false
+    },
+    {
+      "symbol": "NESUSDT",
+      "tf": "1h",
+      "candle_ts": 1795089600,
+      "side": "SELL",
+      "upper": 0.2610143531748325,
+      "open": 0.2649,
+      "reported": false
+    },
+    {
+      "symbol": "CHIPUSDT",
+      "tf": "4h",
+      "candle_ts": 1795089600,
+      "side": "SELL",
+      "upper": 0.03206622176788917,
+      "open": 0.03256,
       "reported": false
     }
   ],
