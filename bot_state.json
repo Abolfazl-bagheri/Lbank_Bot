@@ -9351,7 +9351,8 @@
       "side": "SELL",
       "upper": 0.012902914905202442,
       "open": 0.01345,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "XAUTUSDT",
@@ -9580,7 +9581,8 @@
       "side": "LONG",
       "upper": 0.03465409377186427,
       "open": 0.02981,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "SILVERUSDT",
@@ -9589,7 +9591,8 @@
       "side": "LONG",
       "upper": 45.19795488139314,
       "open": 43.14,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "GOLDUSDT",
@@ -9598,7 +9601,8 @@
       "side": "LONG",
       "upper": 3711.1099094061587,
       "open": 3632.72,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "XAUTUSDT",
@@ -9607,7 +9611,8 @@
       "side": "LONG",
       "upper": 3700.432918213298,
       "open": 3622.43,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -9878,47 +9883,12 @@
     "ARGUSUSDT": 1795160063,
     "ARGUSDT": 1795165373,
     "PORUSDT": 1795165381,
-    "ARROWUSDT": 1795167993
+    "ARROWUSDT": 1795167993,
+    "APEXUSDT": 1795169000
   },
-  "last_trade_report_ts": 1795124908,
+  "last_trade_report_ts": 1795125880,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1794987134,
-      "kind": "gap_result",
-      "symbol": "BLESSUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1794988083,
-      "kind": "gap_result",
-      "symbol": "BLESSUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1794988087,
-      "kind": "gap_result",
-      "symbol": "BLESSUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1794989167,
-      "kind": "gap_result",
-      "symbol": "MMTUSDT",
-      "tf": "4h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1794989169,
       "kind": "gap_result",
@@ -13470,6 +13440,51 @@
       "kind": "gap_result",
       "symbol": "XAUTUSDT",
       "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795125857,
+      "kind": "gap_result",
+      "symbol": "RAREUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795125860,
+      "kind": "gap_result",
+      "symbol": "NAORISUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795125869,
+      "kind": "gap_result",
+      "symbol": "SILVERUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795125872,
+      "kind": "gap_result",
+      "symbol": "GOLDUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795125874,
+      "kind": "gap_result",
+      "symbol": "XAUTUSDT",
+      "tf": "15m",
       "gap": 0.0,
       "filled": true,
       "note": "filled"
