@@ -110,24 +110,30 @@
       "symbol": "RAVEUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.1255,
-      "qty": 1593.6255,
-      "margin": 10.0,
+      "entry": 0.1252330497222174,
+      "qty": 4791.0675,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.1223625,
+      "tp_price": 0.12210222347916197,
       "tf": "4h",
       "opened_at": 1795118488,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.1256
+      ],
       "steps": [
         {
           "px": 0.1255,
           "ts": 1795118488
+        },
+        {
+          "px": 0.1251,
+          "ts": 1795119953
         }
       ],
       "entry_candle_ts": 1795118400,
-      "last_leg_candle_ts": 1795118400,
+      "last_leg_candle_ts": 1795119953,
       "dry_run": true,
       "order_id": "PAPER-RAVEUSDT-1795118488"
     }
