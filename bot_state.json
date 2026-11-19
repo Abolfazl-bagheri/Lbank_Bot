@@ -69,70 +69,9 @@
       "last_leg_candle_ts": 1795076523,
       "dry_run": true,
       "order_id": "PAPER-INITUSDT-1795075233"
-    },
-    {
-      "symbol": "ICNTUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.3911,
-      "qty": 511.3782,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.3813225,
-      "tf": "15m",
-      "opened_at": 1795077163,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.3911,
-          "ts": 1795077163
-        }
-      ],
-      "entry_candle_ts": 1795077000,
-      "last_leg_candle_ts": 1795077000,
-      "dry_run": true,
-      "order_id": "PAPER-ICNTUSDT-1795077163"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "BMTUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.02489948759012655,
-      "qty": 24096.8815,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.024277000400373384,
-      "tf": "1h",
-      "opened_at": 1794114087,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        0.02489
-      ],
-      "steps": [
-        {
-          "px": 0.02506,
-          "ts": 1794114087
-        },
-        {
-          "px": 0.02482,
-          "ts": 1794115237
-        }
-      ],
-      "entry_candle_ts": 1794114000,
-      "last_leg_candle_ts": 1794115237,
-      "dry_run": true,
-      "order_id": "PAPER-BMTUSDT-1794114087",
-      "closed_at": 1794117894,
-      "close_px": 0.02415,
-      "pnl_usdt": 18.06031358871203,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "ICNTUSDT",
       "side": "SELL",
@@ -6690,6 +6629,36 @@
       "pnl_usdt": -8.763250883392237,
       "close_reason": "STOP",
       "why": "STOP"
+    },
+    {
+      "symbol": "ICNTUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.3911,
+      "qty": 511.3782,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.3813225,
+      "tf": "15m",
+      "opened_at": 1795077163,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.3911,
+          "ts": 1795077163
+        }
+      ],
+      "entry_candle_ts": 1795077000,
+      "last_leg_candle_ts": 1795077000,
+      "dry_run": true,
+      "order_id": "PAPER-ICNTUSDT-1795077163",
+      "closed_at": 1795077390,
+      "close_px": 0.3762,
+      "pnl_usdt": 7.619534645870632,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
