@@ -55,90 +55,9 @@
       "last_leg_candle_ts": 1795124097,
       "dry_run": true,
       "order_id": "PAPER-CTRUSDT-1795118479"
-    },
-    {
-      "symbol": "RAVEUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.1252330497222174,
-      "qty": 4791.0675,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.12210222347916197,
-      "tf": "4h",
-      "opened_at": 1795118488,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        0.1256
-      ],
-      "steps": [
-        {
-          "px": 0.1255,
-          "ts": 1795118488
-        },
-        {
-          "px": 0.1251,
-          "ts": 1795119953
-        }
-      ],
-      "entry_candle_ts": 1795118400,
-      "last_leg_candle_ts": 1795119953,
-      "dry_run": true,
-      "order_id": "PAPER-RAVEUSDT-1795118488"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "AIOTUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.16824652579240404,
-      "qty": 74890.1051,
-      "margin": 630.0,
-      "leverage": 20,
-      "tp_price": 0.16404036264759395,
-      "tf": "4h",
-      "opened_at": 1794151855,
-      "adds": 5,
-      "last_leg_margin": 320.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.15319,
-          "ts": 1794151855
-        },
-        {
-          "px": 0.15552,
-          "ts": 1794152743
-        },
-        {
-          "px": 0.1522,
-          "ts": 1794153714
-        },
-        {
-          "px": 0.17696,
-          "ts": 1794155445
-        },
-        {
-          "px": 0.17201,
-          "ts": 1794157245
-        },
-        {
-          "px": 0.16793,
-          "ts": 1794168076
-        }
-      ],
-      "entry_candle_ts": 1794151800,
-      "last_leg_candle_ts": 1794168000,
-      "dry_run": true,
-      "order_id": "PAPER-AIOTUSDT-1794151855",
-      "closed_at": 1794170931,
-      "close_px": 0.16167,
-      "pnl_usdt": 492.5167078132435,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "PIEVERSEUSDT",
       "side": "SELL",
@@ -6620,6 +6539,42 @@
       "pnl_usdt": 21.824921855609727,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "RAVEUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.1252330497222174,
+      "qty": 4791.0675,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 0.12210222347916197,
+      "tf": "4h",
+      "opened_at": 1795118488,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.1256
+      ],
+      "steps": [
+        {
+          "px": 0.1255,
+          "ts": 1795118488
+        },
+        {
+          "px": 0.1251,
+          "ts": 1795119953
+        }
+      ],
+      "entry_candle_ts": 1795118400,
+      "last_leg_candle_ts": 1795119953,
+      "dry_run": true,
+      "order_id": "PAPER-RAVEUSDT-1795118488",
+      "closed_at": 1795126254,
+      "close_px": 0.1301,
+      "pnl_usdt": -23.317887515690575,
+      "close_reason": "STOP",
+      "why": "STOP"
     }
   ],
   "pending": [
