@@ -36,31 +36,6 @@
       "order_id": "PAPER-NETUSDT-1795047367"
     },
     {
-      "symbol": "NAORISUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.03687,
-      "qty": 5424.4643,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.03594825,
-      "tf": "1h",
-      "opened_at": 1795082439,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.03687,
-          "ts": 1795082439
-        }
-      ],
-      "entry_candle_ts": 1795082400,
-      "last_leg_candle_ts": 1795082400,
-      "dry_run": true,
-      "order_id": "PAPER-NAORISUSDT-1795082439"
-    },
-    {
       "symbol": "ICNTUSDT",
       "side": "SELL",
       "status": "open",
@@ -112,36 +87,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "HMSTRUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.0001416,
-      "qty": 1412429.3785,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.00013806,
-      "tf": "15m",
-      "opened_at": 1794116717,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.0001416,
-          "ts": 1794116717
-        }
-      ],
-      "entry_candle_ts": 1794116700,
-      "last_leg_candle_ts": 1794116700,
-      "dry_run": true,
-      "order_id": "PAPER-HMSTRUSDT-1794116717",
-      "closed_at": 1794139789,
-      "close_px": 0.0001367,
-      "pnl_usdt": 6.9209039548022755,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "AGTUSDT",
       "side": "SELL",
@@ -6659,6 +6604,36 @@
       "closed_at": 1795082650,
       "close_px": 0.07292,
       "pnl_usdt": 14.829862874555609,
+      "close_reason": "TP50",
+      "why": "TP50"
+    },
+    {
+      "symbol": "NAORISUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.03687,
+      "qty": 5424.4643,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.03594825,
+      "tf": "1h",
+      "opened_at": 1795082439,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.03687,
+          "ts": 1795082439
+        }
+      ],
+      "entry_candle_ts": 1795082400,
+      "last_leg_candle_ts": 1795082400,
+      "dry_run": true,
+      "order_id": "PAPER-NAORISUSDT-1795082439",
+      "closed_at": 1795082764,
+      "close_px": 0.03573,
+      "pnl_usdt": 6.183889340927595,
       "close_reason": "TP50",
       "why": "TP50"
     }
