@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795118487,
+  "updated_at": 1795118793,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795083663
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795083664
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "4h",
       "gap": 2.6,
       "ts": 1795118487
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795118491
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795118793
     }
   ],
   "trades": [
@@ -1456,14 +1456,27 @@
       "px": 0.01795,
       "pnl": -0.24,
       "tf": "4h"
+    },
+    {
+      "symbol": "RAVEUSDT",
+      "side": "SELL",
+      "entry": 0.1255,
+      "tp": 0.1223625,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.1255,
+      "pnl": -0.24,
+      "tf": "4h"
     }
   ],
   "start": 1000.0,
   "session_start": 1795046848,
   "realized": -97.9988,
   "closed_n": 26,
-  "open_upnl": -8.2253,
-  "equity": 893.7759,
+  "open_upnl": -8.4653,
+  "equity": 893.5359,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
