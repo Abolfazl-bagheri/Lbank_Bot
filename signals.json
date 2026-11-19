@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795053643,
+  "updated_at": 1795053861,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "XAUTUSDT",
-      "tf": "5m",
-      "gap": 0.06,
-      "ts": 1795043406
-    },
-    {
-      "kind": "SELL",
-      "symbol": "CRCLUSDT",
-      "tf": "5m",
-      "gap": 0.15,
-      "ts": 1795043410
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "1h",
       "gap": 5.3,
       "ts": 1795053643
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795053648
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795053861
     }
   ],
   "trades": [
@@ -1421,23 +1421,23 @@
     {
       "symbol": "IRYSUSDT",
       "side": "SELL",
-      "entry": 0.02471,
-      "tp": 0.02409225,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
+      "entry": 0.023903723608327,
+      "tp": 0.023306130518118827,
+      "adds": 1,
+      "pele": 2,
+      "margin": 30.0,
       "lev": 20,
       "px": 0.02352,
-      "pnl": 9.3917,
-      "tf": "15m"
+      "pnl": 8.9117,
+      "tf": "1h"
     }
   ],
   "start": 1000.0,
   "session_start": 1795046848,
   "realized": -10.9527,
   "closed_n": 6,
-  "open_upnl": 10.2902,
-  "equity": 999.3375,
+  "open_upnl": 9.8102,
+  "equity": 998.8575,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
