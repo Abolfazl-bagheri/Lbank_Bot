@@ -24,6 +24,31 @@
       "last_leg_candle_ts": 1795047300,
       "dry_run": true,
       "order_id": "PAPER-ZKCUSDT-1795047329"
+    },
+    {
+      "symbol": "NETUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 310.97,
+      "qty": 0.643149,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 303.19575000000003,
+      "tf": "15m",
+      "opened_at": 1795047367,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 310.97,
+          "ts": 1795047367
+        }
+      ],
+      "entry_candle_ts": 1795047300,
+      "last_leg_candle_ts": 1795047300,
+      "dry_run": true,
+      "order_id": "PAPER-NETUSDT-1795047367"
     }
   ],
   "trade_history": [
@@ -6691,26 +6716,6 @@
   ],
   "pending": [
     {
-      "symbol": "GOLDUSDT",
-      "tf": "5m",
-      "candle_ts": 1794961500,
-      "side": "LONG",
-      "upper": 3870.7456576320806,
-      "open": 3841.93,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "GOLDUSDT",
-      "tf": "5m",
-      "candle_ts": 1794961500,
-      "side": "LONG",
-      "upper": 3870.327538644529,
-      "open": 3841.93,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "XAUTUSDT",
       "tf": "5m",
       "candle_ts": 1794961500,
@@ -9670,6 +9675,24 @@
       "side": "SELL",
       "upper": 303.9925326764105,
       "open": 293.8,
+      "reported": false
+    },
+    {
+      "symbol": "ZKCUSDT",
+      "tf": "15m",
+      "candle_ts": 1795047300,
+      "side": "SELL",
+      "upper": 0.03171204066946485,
+      "open": 0.03231,
+      "reported": false
+    },
+    {
+      "symbol": "AKAMUSDT",
+      "tf": "15m",
+      "candle_ts": 1795047300,
+      "side": "SELL",
+      "upper": 91.7834193385677,
+      "open": 91.33,
       "reported": false
     }
   ],
