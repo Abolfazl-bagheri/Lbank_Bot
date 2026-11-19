@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795123209,
+  "updated_at": 1795123260,
   "signals": [
-    {
-      "kind": "HEARTBEAT",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795087152
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795087229
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "5m",
       "gap": 0.1,
       "ts": 1795123209
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795123252
+    },
+    {
+      "kind": "SELL",
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
+      "gap": 0.15,
+      "ts": 1795123260
     }
   ],
   "trades": [
@@ -1427,8 +1427,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.018122,
-      "pnl": -2.1564,
+      "px": 0.018187,
+      "pnl": -2.8807,
       "tf": "4h"
     },
     {
@@ -1440,36 +1440,23 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 0.1256,
-      "pnl": -2.4781,
+      "px": 0.1252,
+      "pnl": -0.5617,
       "tf": "4h"
-    },
-    {
-      "symbol": "RAREUSDT",
-      "side": "SELL",
-      "entry": 0.013501100782573982,
-      "tp": 0.013163573263009631,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
-      "lev": 20,
-      "px": 0.01301,
-      "pnl": 21.1049,
-      "tf": "1h"
     }
   ],
   "start": 1000.0,
   "session_start": 1795046848,
-  "realized": -69.6846,
-  "closed_n": 28,
-  "open_upnl": 12.1483,
-  "equity": 942.4637,
+  "realized": -47.8597,
+  "closed_n": 29,
+  "open_upnl": -7.7645,
+  "equity": 944.3758,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 291.4048,
+    "profit": 313.2297,
     "loss": -361.0893,
-    "count": 28
+    "count": 29
   }
 }
