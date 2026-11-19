@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795055418,
+  "updated_at": 1795055653,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "SILVERUSDT",
-      "tf": "5m",
-      "gap": 0.19,
-      "ts": 1795044239
-    },
-    {
-      "kind": "GAP",
-      "symbol": "CRCLUSDT",
-      "tf": "5m",
-      "gap": 0.11,
-      "ts": 1795044261
-    },
     {
       "kind": "GAP",
       "symbol": "GOLDUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "15m",
       "gap": 1.95,
       "ts": 1795055418
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795055541
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795055653
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 3,
       "margin": 70.0,
       "lev": 20,
-      "px": 310.71,
-      "pnl": 0.6736,
+      "px": 309.82,
+      "pnl": 4.677,
       "tf": "1h"
     }
   ],
@@ -1423,8 +1423,8 @@
   "session_start": 1795046848,
   "realized": -44.7452,
   "closed_n": 7,
-  "open_upnl": 0.6736,
-  "equity": 955.9284,
+  "open_upnl": 4.677,
+  "equity": 959.9318,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
