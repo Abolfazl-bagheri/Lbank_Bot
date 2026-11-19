@@ -84,6 +84,31 @@
       "last_leg_candle_ts": 1795075200,
       "dry_run": true,
       "order_id": "PAPER-INITUSDT-1795075233"
+    },
+    {
+      "symbol": "ICNTUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.3662,
+      "qty": 546.1496,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.357045,
+      "tf": "1h",
+      "opened_at": 1795075243,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.3662,
+          "ts": 1795075243
+        }
+      ],
+      "entry_candle_ts": 1795075200,
+      "last_leg_candle_ts": 1795075200,
+      "dry_run": true,
+      "order_id": "PAPER-ICNTUSDT-1795075243"
     }
   ],
   "trade_history": [
@@ -6719,16 +6744,6 @@
   ],
   "pending": [
     {
-      "symbol": "BLESSUSDT",
-      "tf": "15m",
-      "candle_ts": 1794985200,
-      "side": "SELL",
-      "upper": 0.011788352350269178,
-      "open": 0.011995,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "ZKPUSDT",
       "tf": "1h",
       "candle_ts": 1794985200,
@@ -9699,6 +9714,15 @@
       "side": "SELL",
       "upper": 0.10200712657822719,
       "open": 0.10265,
+      "reported": false
+    },
+    {
+      "symbol": "INITUSDT",
+      "tf": "15m",
+      "candle_ts": 1795075200,
+      "side": "SELL",
+      "upper": 0.10935544380133251,
+      "open": 0.11347,
       "reported": false
     }
   ],
