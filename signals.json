@@ -1,29 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795124151,
+  "updated_at": 1795124405,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "NAORISUSDT",
-      "tf": "4h",
-      "gap": 13.03,
-      "ts": 1795088485
-    },
-    {
-      "kind": "GAP",
-      "symbol": "CHIPUSDT",
-      "tf": "4h",
-      "gap": 2.62,
-      "ts": 1795088491
-    },
-    {
-      "kind": "GAP",
-      "symbol": "ETHFIUSDT",
-      "tf": "4h",
-      "gap": 2.2,
-      "ts": 1795088496
-    },
     {
       "kind": "GAP",
       "symbol": "NETUSDT",
@@ -1402,6 +1381,27 @@
       "tf": "5m",
       "gap": 0.12,
       "ts": 1795124151
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795124183
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795124245
+    },
+    {
+      "kind": "SELL",
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
+      "gap": 0.09,
+      "ts": 1795124405
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 85.38,
-      "pnl": -4.0595,
+      "px": 85.18,
+      "pnl": -3.5821,
       "tf": "1h"
     },
     {
@@ -1427,8 +1427,8 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 0.018327,
-      "pnl": -5.0734,
+      "px": 0.018273,
+      "pnl": -3.2927,
       "tf": "4h"
     },
     {
@@ -1440,8 +1440,8 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 0.1256,
-      "pnl": -2.4781,
+      "px": 0.1244,
+      "pnl": 3.2712,
       "tf": "4h"
     }
   ],
@@ -1449,8 +1449,8 @@
   "session_start": 1795046848,
   "realized": -47.8597,
   "closed_n": 29,
-  "open_upnl": -11.611,
-  "equity": 940.5293,
+  "open_upnl": -3.6036,
+  "equity": 948.5367,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
