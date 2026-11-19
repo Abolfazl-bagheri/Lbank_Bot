@@ -1,29 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795081664,
+  "updated_at": 1795081890,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795072322
-    },
-    {
-      "kind": "GAP",
-      "symbol": "CHIPUSDT",
-      "tf": "15m",
-      "gap": 1.09,
-      "ts": 1795072419
-    },
-    {
-      "kind": "GAP",
-      "symbol": "USUSDT",
-      "tf": "15m",
-      "gap": 2.23,
-      "ts": 1795072423
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1381,27 @@
       "tf": "15m",
       "gap": 1.93,
       "ts": 1795081664
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795081669
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795081757
+    },
+    {
+      "kind": "GAP",
+      "symbol": "NAORISUSDT",
+      "tf": "1h",
+      "gap": 16.38,
+      "ts": 1795081890
     }
   ],
   "trades": [
@@ -1414,17 +1414,30 @@
       "pele": 3,
       "margin": 70.0,
       "lev": 20,
-      "px": 315.94,
-      "pnl": -22.8522,
+      "px": 316.46,
+      "pnl": -25.1912,
       "tf": "1h"
+    },
+    {
+      "symbol": "VELVETUSDT",
+      "side": "SELL",
+      "entry": 0.07876,
+      "tp": 0.076791,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.08001,
+      "pnl": -3.4142,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1795046848,
   "realized": -57.5298,
   "closed_n": 18,
-  "open_upnl": -22.8522,
-  "equity": 919.618,
+  "open_upnl": -28.6054,
+  "equity": 913.8648,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
