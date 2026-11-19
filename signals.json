@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795114900,
+  "updated_at": 1795115160,
   "signals": [
-    {
-      "kind": "HEARTBEAT",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795080928
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 1.1,
       "ts": 1795114900
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795115160
     }
   ],
   "trades": [
@@ -1416,32 +1416,6 @@
       "lev": 20,
       "px": 304.69,
       "pnl": 27.753,
-      "tf": "1h"
-    },
-    {
-      "symbol": "HUTUSDT",
-      "side": "SELL",
-      "entry": 60.17903833423602,
-      "tp": 58.674562375880114,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
-      "lev": 20,
-      "px": 57.06,
-      "pnl": 30.3776,
-      "tf": "15m"
-    },
-    {
-      "symbol": "NESUSDT",
-      "side": "SELL",
-      "entry": 0.2673065002506762,
-      "tp": 0.2606238377444093,
-      "adds": 2,
-      "pele": 3,
-      "margin": 70.0,
-      "lev": 20,
-      "px": 0.3026,
-      "pnl": -186.5274,
       "tf": "1h"
     },
     {
@@ -1473,16 +1447,16 @@
   ],
   "start": 1000.0,
   "session_start": 1795046848,
-  "realized": 19.9305,
-  "closed_n": 23,
-  "open_upnl": -137.7762,
-  "equity": 882.1543,
+  "realized": -133.8193,
+  "closed_n": 25,
+  "open_upnl": 18.3736,
+  "equity": 884.5543,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 196.1724,
-    "loss": -176.242,
-    "count": 23
+    "profit": 227.27,
+    "loss": -361.0893,
+    "count": 25
   }
 }
