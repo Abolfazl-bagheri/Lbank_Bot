@@ -39,24 +39,28 @@
       "symbol": "INITUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.11462,
-      "qty": 1744.8962,
-      "margin": 10.0,
+      "entry": 0.11367612965596109,
+      "qty": 5278.153,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.11175449999999999,
+      "tp_price": 0.11083422641456206,
       "tf": "15m",
       "opened_at": 1795075233,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 0.11462,
           "ts": 1795075233
+        },
+        {
+          "px": 0.11321,
+          "ts": 1795076140
         }
       ],
       "entry_candle_ts": 1795075200,
-      "last_leg_candle_ts": 1795075200,
+      "last_leg_candle_ts": 1795076100,
       "dry_run": true,
       "order_id": "PAPER-INITUSDT-1795075233"
     },
@@ -6755,26 +6759,6 @@
   ],
   "pending": [
     {
-      "symbol": "ZKPUSDT",
-      "tf": "4h",
-      "candle_ts": 1794988800,
-      "side": "SELL",
-      "upper": 0.03595348531613625,
-      "open": 0.03776,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "MMTUSDT",
-      "tf": "4h",
-      "candle_ts": 1794988800,
-      "side": "SELL",
-      "upper": 0.20766477908832298,
-      "open": 0.2338,
-      "reported": true,
-      "filled": false
-    },
-    {
       "symbol": "ICNTUSDT",
       "tf": "4h",
       "candle_ts": 1794988800,
@@ -9735,6 +9719,24 @@
       "side": "SELL",
       "upper": 0.003937837518021921,
       "open": 0.003975,
+      "reported": false
+    },
+    {
+      "symbol": "NAORISUSDT",
+      "tf": "15m",
+      "candle_ts": 1795076100,
+      "side": "SELL",
+      "upper": 0.02768571320262278,
+      "open": 0.02881,
+      "reported": false
+    },
+    {
+      "symbol": "ICNTUSDT",
+      "tf": "15m",
+      "candle_ts": 1795076100,
+      "side": "SELL",
+      "upper": 0.3741740416077951,
+      "open": 0.3754,
       "reported": false
     }
   ],
