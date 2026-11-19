@@ -6669,36 +6669,6 @@
   ],
   "pending": [
     {
-      "symbol": "CATEUSDT",
-      "tf": "15m",
-      "candle_ts": 1794977100,
-      "side": "SELL",
-      "upper": 0.021039582395706153,
-      "open": 0.0213,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "BULLAUSDT",
-      "tf": "15m",
-      "candle_ts": 1794978000,
-      "side": "SELL",
-      "upper": 0.01380150011767741,
-      "open": 0.013757,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "BULLAUSDT",
-      "tf": "1h",
-      "candle_ts": 1794978000,
-      "side": "SELL",
-      "upper": 0.014063561601339682,
-      "open": 0.013757,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "BULLAUSDT",
       "tf": "15m",
       "candle_ts": 1794979800,
@@ -9651,6 +9621,35 @@
       "upper": 0.020903390336878727,
       "open": 0.021241,
       "reported": false
+    },
+    {
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
+      "candle_ts": 1795057500,
+      "side": "LONG",
+      "upper": 3766.175753719823,
+      "open": 3707.79,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "GOLDUSDT",
+      "tf": "5m",
+      "candle_ts": 1795057500,
+      "side": "LONG",
+      "upper": 3777.328101874843,
+      "open": 3717.53,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "GOLDUSDT",
+      "tf": "5m",
+      "candle_ts": 1795057800,
+      "side": "LONG",
+      "upper": 3780.6609437131992,
+      "open": 3709.51,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -9924,7 +9923,7 @@
     "GMESTOCKUSDT": 1795089871,
     "ZZZUSDT": 1795097971
   },
-  "last_trade_report_ts": 1795056968,
+  "last_trade_report_ts": 1795057874,
   "last_known_version": "2.10.0",
   "lessons": [
     {
@@ -12332,6 +12331,24 @@
     },
     {
       "ts": 1795057523,
+      "kind": "gap_result",
+      "symbol": "GOLDUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795057861,
+      "kind": "gap_result",
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795057873,
       "kind": "gap_result",
       "symbol": "GOLDUSDT",
       "tf": "5m",
