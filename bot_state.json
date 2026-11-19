@@ -6704,16 +6704,6 @@
     {
       "symbol": "XAUTUSDT",
       "tf": "5m",
-      "candle_ts": 1794972000,
-      "side": "LONG",
-      "upper": 3802.0185319255465,
-      "open": 3785.6,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "XAUTUSDT",
-      "tf": "5m",
       "candle_ts": 1794972300,
       "side": "LONG",
       "upper": 3800.902529644446,
@@ -9682,6 +9672,16 @@
       "side": "SELL",
       "upper": 0.020693698835482638,
       "open": 0.02095,
+      "reported": true,
+      "filled": false
+    },
+    {
+      "symbol": "IRYSUSDT",
+      "tf": "15m",
+      "candle_ts": 1795051800,
+      "side": "SELL",
+      "upper": 0.022534122451569282,
+      "open": 0.02313,
       "reported": false
     }
   ],
@@ -12268,6 +12268,15 @@
       "ts": 1795051074,
       "kind": "gap_result",
       "symbol": "AKAMUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
+    },
+    {
+      "ts": 1795051978,
+      "kind": "gap_result",
+      "symbol": "IRYSUSDT",
       "tf": "15m",
       "gap": 0.0,
       "filled": false,
