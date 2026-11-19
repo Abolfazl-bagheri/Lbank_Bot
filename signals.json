@@ -1,43 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795125879,
+  "updated_at": 1795126256,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "PDDUSDT",
-      "tf": "15m",
-      "gap": 1.74,
-      "ts": 1795088764
-    },
-    {
-      "kind": "SELL",
-      "symbol": "PEPEUSDT",
-      "tf": "15m",
-      "gap": 1.01,
-      "ts": 1795088790
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795088869
-    },
-    {
-      "kind": "GAP",
-      "symbol": "MEGAUSDT",
-      "tf": "4h",
-      "gap": 1.68,
-      "ts": 1795088965
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795089096
-    },
     {
       "kind": "HEARTBEAT",
       "symbol": "—",
@@ -1402,6 +1367,41 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1795125879
+    },
+    {
+      "kind": "HEARTBEAT",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795125880
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795125940
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795125981
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795126021
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795126256
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 85.29,
-      "pnl": -3.8447,
+      "px": 85.3,
+      "pnl": -3.8686,
       "tf": "1h"
     },
     {
@@ -1427,36 +1427,23 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 0.018374,
-      "pnl": -6.6233,
-      "tf": "4h"
-    },
-    {
-      "symbol": "RAVEUSDT",
-      "side": "SELL",
-      "entry": 0.1252330497222174,
-      "tp": 0.12210222347916197,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
-      "lev": 20,
-      "px": 0.1273,
-      "pnl": -10.6229,
+      "px": 0.018426,
+      "pnl": -8.338,
       "tf": "4h"
     }
   ],
   "start": 1000.0,
   "session_start": 1795046848,
-  "realized": -47.8597,
-  "closed_n": 29,
-  "open_upnl": -21.0909,
-  "equity": 931.0494,
+  "realized": -71.1776,
+  "closed_n": 30,
+  "open_upnl": -12.2066,
+  "equity": 916.6158,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
     "profit": 313.2297,
-    "loss": -361.0893,
-    "count": 29
+    "loss": -384.4072,
+    "count": 30
   }
 }
