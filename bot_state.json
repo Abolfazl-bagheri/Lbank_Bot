@@ -74,24 +74,28 @@
       "symbol": "NAORISUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.03218,
-      "qty": 6215.0404,
-      "margin": 10.0,
+      "entry": 0.03259069576007651,
+      "qty": 18410.1624,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.0313755,
-      "tf": "15m",
+      "tp_price": 0.031775928366074596,
+      "tf": "1h",
       "opened_at": 1795077921,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 0.03218,
           "ts": 1795077921
+        },
+        {
+          "px": 0.0328,
+          "ts": 1795078872
         }
       ],
       "entry_candle_ts": 1795077900,
-      "last_leg_candle_ts": 1795077900,
+      "last_leg_candle_ts": 1795078800,
       "dry_run": true,
       "order_id": "PAPER-NAORISUSDT-1795077921"
     },
@@ -6713,16 +6717,6 @@
   ],
   "pending": [
     {
-      "symbol": "SILVERUSDT",
-      "tf": "5m",
-      "candle_ts": 1794990000,
-      "side": "LONG",
-      "upper": 46.25683715791171,
-      "open": 45.74,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "BWETUSDT",
       "tf": "15m",
       "candle_ts": 1794991500,
@@ -9690,6 +9684,15 @@
       "side": "SELL",
       "upper": 0.1109748082264403,
       "open": 0.11145,
+      "reported": false
+    },
+    {
+      "symbol": "ICNTUSDT",
+      "tf": "1h",
+      "candle_ts": 1795078800,
+      "side": "SELL",
+      "upper": 0.37886738976869827,
+      "open": 0.3892,
       "reported": false
     }
   ],
