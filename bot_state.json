@@ -6618,36 +6618,6 @@
   ],
   "pending": [
     {
-      "symbol": "ZILUSDT",
-      "tf": "15m",
-      "candle_ts": 1795014000,
-      "side": "SELL",
-      "upper": 0.0011352903220770844,
-      "open": 0.001144,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "BWETUSDT",
-      "tf": "15m",
-      "candle_ts": 1795014000,
-      "side": "SELL",
-      "upper": 712.7405720776867,
-      "open": 721.38,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "PIEVERSEUSDT",
-      "tf": "1h",
-      "candle_ts": 1795014000,
-      "side": "SELL",
-      "upper": 3.1569265043098884,
-      "open": 3.193,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "SOONUSDT",
       "tf": "1h",
       "candle_ts": 1795014000,
@@ -9552,7 +9522,8 @@
       "side": "LONG",
       "upper": 3683.0573121693296,
       "open": 3659.33,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "SILVERUSDT",
@@ -9561,7 +9532,8 @@
       "side": "LONG",
       "upper": 44.40191706449387,
       "open": 43.83,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "XAUTUSDT",
@@ -9570,7 +9542,8 @@
       "side": "LONG",
       "upper": 3673.5274568365967,
       "open": 3649.74,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "XAUTUSDT",
@@ -9579,7 +9552,8 @@
       "side": "LONG",
       "upper": 3673.816530260688,
       "open": 3649.74,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "SILVERUSDT",
@@ -9588,7 +9562,8 @@
       "side": "LONG",
       "upper": 44.40924462342098,
       "open": 43.83,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "GOLDUSDT",
@@ -9597,6 +9572,34 @@
       "side": "LONG",
       "upper": 3683.5063125525194,
       "open": 3659.33,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "SILVERUSDT",
+      "tf": "5m",
+      "candle_ts": 1795123500,
+      "side": "LONG",
+      "upper": 44.468766499568204,
+      "open": 43.62,
+      "reported": false
+    },
+    {
+      "symbol": "GOLDUSDT",
+      "tf": "5m",
+      "candle_ts": 1795123500,
+      "side": "LONG",
+      "upper": 3686.0643488255982,
+      "open": 3652.01,
+      "reported": false
+    },
+    {
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
+      "candle_ts": 1795123500,
+      "side": "LONG",
+      "upper": 3676.5426328069843,
+      "open": 3642.15,
       "reported": false
     }
   ],
@@ -13279,6 +13282,60 @@
       "ts": 1795122663,
       "kind": "gap_result",
       "symbol": "XAUTUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795123548,
+      "kind": "gap_result",
+      "symbol": "GOLDUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795123559,
+      "kind": "gap_result",
+      "symbol": "SILVERUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795123563,
+      "kind": "gap_result",
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795123566,
+      "kind": "gap_result",
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795123577,
+      "kind": "gap_result",
+      "symbol": "SILVERUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795123579,
+      "kind": "gap_result",
+      "symbol": "GOLDUSDT",
       "tf": "5m",
       "gap": 0.0,
       "filled": true,
