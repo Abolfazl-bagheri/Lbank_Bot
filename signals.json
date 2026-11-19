@@ -1,29 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795126256,
+  "updated_at": 1795126658,
   "signals": [
-    {
-      "kind": "HEARTBEAT",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795089099
-    },
-    {
-      "kind": "GAP",
-      "symbol": "EVAAUSDT",
-      "tf": "1h",
-      "gap": 2.04,
-      "ts": 1795089282
-    },
-    {
-      "kind": "GAP",
-      "symbol": "EVAAUSDT",
-      "tf": "4h",
-      "gap": 1.08,
-      "ts": 1795089284
-    },
     {
       "kind": "GAP",
       "symbol": "NESUSDT",
@@ -1402,6 +1381,27 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1795126256
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795126320
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795126320
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795126658
     }
   ],
   "trades": [
@@ -1414,21 +1414,21 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 85.3,
-      "pnl": -3.8686,
+      "px": 85.47,
+      "pnl": -4.2744,
       "tf": "1h"
     },
     {
       "symbol": "CTRUSDT",
       "side": "SELL",
-      "entry": 0.018194983400686312,
-      "tp": 0.017740108815669155,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
+      "entry": 0.018333059666085866,
+      "tp": 0.017874733174433718,
+      "adds": 2,
+      "pele": 3,
+      "margin": 70.0,
       "lev": 20,
-      "px": 0.018426,
-      "pnl": -8.338,
+      "px": 0.01851,
+      "pnl": -15.192,
       "tf": "4h"
     }
   ],
@@ -1436,8 +1436,8 @@
   "session_start": 1795046848,
   "realized": -71.1776,
   "closed_n": 30,
-  "open_upnl": -12.2066,
-  "equity": 916.6158,
+  "open_upnl": -19.4664,
+  "equity": 909.356,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
