@@ -1,29 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795052721,
+  "updated_at": 1795052964,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "PAIDUSDT",
-      "tf": "1h",
-      "gap": 2.33,
-      "ts": 1795042898
-    },
-    {
-      "kind": "SELL",
-      "symbol": "NETUSDT",
-      "tf": "15m",
-      "gap": 4.87,
-      "ts": 1795042902
-    },
-    {
-      "kind": "SELL",
-      "symbol": "NETUSDT",
-      "tf": "1h",
-      "gap": 4.18,
-      "ts": 1795042929
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1381,27 @@
       "tf": "15m",
       "gap": 3.26,
       "ts": 1795052721
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795052726
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795052849
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795052964
     }
   ],
   "trades": [
@@ -1414,17 +1414,30 @@
       "pele": 3,
       "margin": 70.0,
       "lev": 20,
-      "px": 310.33,
-      "pnl": 2.3829,
+      "px": 310.1,
+      "pnl": 3.4175,
       "tf": "1h"
+    },
+    {
+      "symbol": "IRYSUSDT",
+      "side": "SELL",
+      "entry": 0.02471,
+      "tp": 0.02409225,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.02435,
+      "pnl": 2.6738,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1795046848,
   "realized": -10.9527,
   "closed_n": 6,
-  "open_upnl": 2.3829,
-  "equity": 991.4302,
+  "open_upnl": 6.0913,
+  "equity": 995.1386,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
