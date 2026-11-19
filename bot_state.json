@@ -90,64 +90,9 @@
       "last_leg_candle_ts": 1795083661,
       "dry_run": true,
       "order_id": "PAPER-HUTUSDT-1795082522"
-    },
-    {
-      "symbol": "HUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.01712,
-      "qty": 11682.243,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.016692,
-      "tf": "15m",
-      "opened_at": 1795083371,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.01712,
-          "ts": 1795083371
-        }
-      ],
-      "entry_candle_ts": 1795083300,
-      "last_leg_candle_ts": 1795083300,
-      "dry_run": true,
-      "order_id": "PAPER-HUSDT-1795083371"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "AGTUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.03029,
-      "qty": 6602.8392,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.02953275,
-      "tf": "15m",
-      "opened_at": 1794139273,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.03029,
-          "ts": 1794139273
-        }
-      ],
-      "entry_candle_ts": 1794139200,
-      "last_leg_candle_ts": 1794139200,
-      "dry_run": true,
-      "order_id": "PAPER-AGTUSDT-1794139273",
-      "closed_at": 1794140363,
-      "close_px": 0.02795,
-      "pnl_usdt": 15.450643776824046,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "SKYAIUSDT",
       "side": "SELL",
@@ -6665,6 +6610,36 @@
       "closed_at": 1795082764,
       "close_px": 0.03573,
       "pnl_usdt": 6.183889340927595,
+      "close_reason": "TP50",
+      "why": "TP50"
+    },
+    {
+      "symbol": "HUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.01712,
+      "qty": 11682.243,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.016692,
+      "tf": "15m",
+      "opened_at": 1795083371,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.01712,
+          "ts": 1795083371
+        }
+      ],
+      "entry_candle_ts": 1795083300,
+      "last_leg_candle_ts": 1795083300,
+      "dry_run": true,
+      "order_id": "PAPER-HUSDT-1795083371",
+      "closed_at": 1795083956,
+      "close_px": 0.01652,
+      "pnl_usdt": 7.009345794392522,
       "close_reason": "TP50",
       "why": "TP50"
     }
