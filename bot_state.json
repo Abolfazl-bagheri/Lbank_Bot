@@ -6744,16 +6744,6 @@
   ],
   "pending": [
     {
-      "symbol": "MOGUSDT",
-      "tf": "15m",
-      "candle_ts": 1795012200,
-      "side": "SELL",
-      "upper": 8.280818732001188e-08,
-      "open": 8.28e-08,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "CRCLUSDT",
       "tf": "5m",
       "candle_ts": 1795012500,
@@ -9731,6 +9721,16 @@
       "side": "SELL",
       "upper": 0.012308860934763674,
       "open": 0.01245,
+      "reported": true,
+      "filled": false
+    },
+    {
+      "symbol": "RAREUSDT",
+      "tf": "15m",
+      "candle_ts": 1795120200,
+      "side": "SELL",
+      "upper": 0.013220187326611607,
+      "open": 0.01369,
       "reported": false
     }
   ],
@@ -13354,6 +13354,15 @@
       "gap": 0.0,
       "filled": true,
       "note": "filled"
+    },
+    {
+      "ts": 1795120387,
+      "kind": "gap_result",
+      "symbol": "RAREUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
     }
   ],
   "tune_history": [],
