@@ -6632,16 +6632,6 @@
   ],
   "pending": [
     {
-      "symbol": "GOLDUSDT",
-      "tf": "5m",
-      "candle_ts": 1795006500,
-      "side": "LONG",
-      "upper": 3786.4173820307683,
-      "open": 3755.63,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "XAUTUSDT",
       "tf": "5m",
       "candle_ts": 1795006500,
@@ -9616,6 +9606,16 @@
       "side": "LONG",
       "upper": 3685.842713204118,
       "open": 3671.78,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
+      "candle_ts": 1795115400,
+      "side": "LONG",
+      "upper": 3684.5310591407865,
+      "open": 3670.87,
       "reported": false
     }
   ],
@@ -13129,6 +13129,15 @@
       "kind": "gap_result",
       "symbol": "XAUTUSDT",
       "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795115475,
+      "kind": "gap_result",
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
       "gap": 0.0,
       "filled": true,
       "note": "filled"
