@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795118457,
+  "updated_at": 1795118473,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "HUSDT",
-      "tf": "15m",
-      "gap": 2.68,
-      "ts": 1795083369
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795083376
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "4h",
       "gap": 3.91,
       "ts": 1795118457
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795118464
+    },
+    {
+      "kind": "SELL",
+      "symbol": "UVXYUSDT",
+      "tf": "4h",
+      "gap": 1.81,
+      "ts": 1795118473
     }
   ],
   "trades": [
@@ -1430,14 +1430,27 @@
       "px": 85.75,
       "pnl": -4.9428,
       "tf": "1h"
+    },
+    {
+      "symbol": "BILLUSDT",
+      "side": "SELL",
+      "entry": 0.004745,
+      "tp": 0.004626375,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.004745,
+      "pnl": -0.24,
+      "tf": "4h"
     }
   ],
   "start": 1000.0,
   "session_start": 1795046848,
   "realized": -97.9988,
   "closed_n": 26,
-  "open_upnl": -7.7453,
-  "equity": 894.2559,
+  "open_upnl": -7.9853,
+  "equity": 894.0159,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
