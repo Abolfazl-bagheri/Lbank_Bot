@@ -36,31 +36,6 @@
       "order_id": "PAPER-NETUSDT-1795047367"
     },
     {
-      "symbol": "VELVETUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.07876,
-      "qty": 2539.3601,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.076791,
-      "tf": "15m",
-      "opened_at": 1795081666,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.07876,
-          "ts": 1795081666
-        }
-      ],
-      "entry_candle_ts": 1795081500,
-      "last_leg_candle_ts": 1795081500,
-      "dry_run": true,
-      "order_id": "PAPER-VELVETUSDT-1795081666"
-    },
-    {
       "symbol": "NAORISUSDT",
       "side": "SELL",
       "status": "open",
@@ -137,54 +112,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "TAUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.11461946581122806,
-      "qty": 54092.0336,
-      "margin": 310.0,
-      "leverage": 20,
-      "tp_price": 0.11175397916594736,
-      "tf": "1h",
-      "opened_at": 1794123028,
-      "adds": 4,
-      "last_leg_margin": 160.0,
-      "used_res_levels": [
-        0.11464
-      ],
-      "steps": [
-        {
-          "px": 0.10438,
-          "ts": 1794123028
-        },
-        {
-          "px": 0.10695,
-          "ts": 1794124857
-        },
-        {
-          "px": 0.11428,
-          "ts": 1794128442
-        },
-        {
-          "px": 0.11428,
-          "ts": 1794128687
-        },
-        {
-          "px": 0.11664,
-          "ts": 1794132048
-        }
-      ],
-      "entry_candle_ts": 1794123000,
-      "last_leg_candle_ts": 1794132000,
-      "dry_run": true,
-      "order_id": "PAPER-TAUSDT-1794123028",
-      "closed_at": 1794133083,
-      "close_px": 0.11134,
-      "pnl_usdt": 177.39297496902336,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "HMSTRUSDT",
       "side": "SELL",
@@ -6704,19 +6631,39 @@
       "pnl_usdt": -8.39386602098466,
       "close_reason": "STOP",
       "why": "STOP"
+    },
+    {
+      "symbol": "VELVETUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.07876,
+      "qty": 2539.3601,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.076791,
+      "tf": "15m",
+      "opened_at": 1795081666,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.07876,
+          "ts": 1795081666
+        }
+      ],
+      "entry_candle_ts": 1795081500,
+      "last_leg_candle_ts": 1795081500,
+      "dry_run": true,
+      "order_id": "PAPER-VELVETUSDT-1795081666",
+      "closed_at": 1795082650,
+      "close_px": 0.07292,
+      "pnl_usdt": 14.829862874555609,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
-    {
-      "symbol": "CRCLUSDT",
-      "tf": "5m",
-      "candle_ts": 1794997500,
-      "side": "LONG",
-      "upper": 56.50450232739406,
-      "open": 55.88,
-      "reported": true,
-      "filled": true
-    },
     {
       "symbol": "IRYSUSDT",
       "tf": "15m",
@@ -9562,7 +9509,8 @@
       "side": "SELL",
       "upper": 0.1109748082264403,
       "open": 0.11145,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ICNTUSDT",
@@ -9571,7 +9519,8 @@
       "side": "SELL",
       "upper": 0.37886738976869827,
       "open": 0.3892,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "NAORISUSDT",
@@ -9580,7 +9529,8 @@
       "side": "SELL",
       "upper": 0.03010795672438673,
       "open": 0.03278,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "HUTUSDT",
@@ -9669,7 +9619,8 @@
       "side": "SELL",
       "upper": 0.07723738883827105,
       "open": 0.0765,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "NAORISUSDT",
@@ -9687,6 +9638,15 @@
       "side": "SELL",
       "upper": 0.39775194085582855,
       "open": 0.4088,
+      "reported": false
+    },
+    {
+      "symbol": "HUTUSDT",
+      "tf": "15m",
+      "candle_ts": 1795082400,
+      "side": "SELL",
+      "upper": 58.47271825392926,
+      "open": 58.29,
       "reported": false
     }
   ],
@@ -12866,6 +12826,42 @@
       "ts": 1795081642,
       "kind": "gap_result",
       "symbol": "NAORISUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795082641,
+      "kind": "gap_result",
+      "symbol": "INITUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795082644,
+      "kind": "gap_result",
+      "symbol": "ICNTUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
+    },
+    {
+      "ts": 1795082646,
+      "kind": "gap_result",
+      "symbol": "NAORISUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
+    },
+    {
+      "ts": 1795082648,
+      "kind": "gap_result",
+      "symbol": "VELVETUSDT",
       "tf": "15m",
       "gap": 0.0,
       "filled": true,
