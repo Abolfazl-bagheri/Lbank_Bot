@@ -63,64 +63,9 @@
       "last_leg_candle_ts": 1795076100,
       "dry_run": true,
       "order_id": "PAPER-INITUSDT-1795075233"
-    },
-    {
-      "symbol": "NAORISUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.02899,
-      "qty": 6898.9307,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.02826525,
-      "tf": "15m",
-      "opened_at": 1795076123,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.02899,
-          "ts": 1795076123
-        }
-      ],
-      "entry_candle_ts": 1795076100,
-      "last_leg_candle_ts": 1795076100,
-      "dry_run": true,
-      "order_id": "PAPER-NAORISUSDT-1795076123"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "CLAUDIAUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.005669,
-      "qty": 35279.5908,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.005527275,
-      "tf": "4h",
-      "opened_at": 1794096051,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.005669,
-          "ts": 1794096051
-        }
-      ],
-      "entry_candle_ts": 1794096000,
-      "last_leg_candle_ts": 1794096000,
-      "dry_run": true,
-      "order_id": "PAPER-CLAUDIAUSDT-1794096051",
-      "closed_at": 1794096382,
-      "close_px": 0.005557,
-      "pnl_usdt": 3.9513141647556926,
-      "close_reason": "NIGHT_RESET",
-      "why": "NIGHT_RESET"
-    },
     {
       "symbol": "ACTUSDT",
       "side": "SELL",
@@ -6684,6 +6629,36 @@
       "pnl_usdt": 10.2086230876217,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "NAORISUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.02899,
+      "qty": 6898.9307,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.02826525,
+      "tf": "15m",
+      "opened_at": 1795076123,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.02899,
+          "ts": 1795076123
+        }
+      ],
+      "entry_candle_ts": 1795076100,
+      "last_leg_candle_ts": 1795076100,
+      "dry_run": true,
+      "order_id": "PAPER-NAORISUSDT-1795076123",
+      "closed_at": 1795076429,
+      "close_px": 0.03294,
+      "pnl_usdt": -27.250776129699894,
+      "close_reason": "STOP",
+      "why": "STOP"
     }
   ],
   "pending": [
