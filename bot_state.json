@@ -99,6 +99,31 @@
       "last_leg_candle_ts": 1795118400,
       "dry_run": true,
       "order_id": "PAPER-CTRUSDT-1795118479"
+    },
+    {
+      "symbol": "RAVEUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.1255,
+      "qty": 1593.6255,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.1223625,
+      "tf": "4h",
+      "opened_at": 1795118488,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.1255,
+          "ts": 1795118488
+        }
+      ],
+      "entry_candle_ts": 1795118400,
+      "last_leg_candle_ts": 1795118400,
+      "dry_run": true,
+      "order_id": "PAPER-RAVEUSDT-1795118488"
     }
   ],
   "trade_history": [
@@ -6682,16 +6707,6 @@
   ],
   "pending": [
     {
-      "symbol": "ZILUSDT",
-      "tf": "15m",
-      "candle_ts": 1795009500,
-      "side": "SELL",
-      "upper": 0.0010738468158156122,
-      "open": 0.001086,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "SOONUSDT",
       "tf": "1h",
       "candle_ts": 1795010400,
@@ -9664,6 +9679,15 @@
       "side": "SELL",
       "upper": 24.371178650460674,
       "open": 24.7,
+      "reported": false
+    },
+    {
+      "symbol": "CTRUSDT",
+      "tf": "4h",
+      "candle_ts": 1795118400,
+      "side": "SELL",
+      "upper": 0.017279001841366496,
+      "open": 0.01795,
       "reported": false
     }
   ],
