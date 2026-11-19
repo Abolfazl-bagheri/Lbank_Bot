@@ -6701,26 +6701,6 @@
   ],
   "pending": [
     {
-      "symbol": "SILVERUSDT",
-      "tf": "5m",
-      "candle_ts": 1795012800,
-      "side": "LONG",
-      "upper": 46.12388715299514,
-      "open": 45.4,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "SILVERUSDT",
-      "tf": "5m",
-      "candle_ts": 1795012800,
-      "side": "LONG",
-      "upper": 46.133563304009144,
-      "open": 45.4,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "CRCLUSDT",
       "tf": "5m",
       "candle_ts": 1795012800,
@@ -9668,7 +9648,8 @@
       "side": "SELL",
       "upper": 0.013553607682247197,
       "open": 0.01372,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "XAUTUSDT",
@@ -9677,7 +9658,8 @@
       "side": "LONG",
       "upper": 3688.566387871506,
       "open": 3662.08,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "RAREUSDT",
@@ -9686,6 +9668,25 @@
       "side": "SELL",
       "upper": 0.013575728362870817,
       "open": 0.01372,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "RAREUSDT",
+      "tf": "1h",
+      "candle_ts": 1795122000,
+      "side": "SELL",
+      "upper": 0.012902914905202442,
+      "open": 0.01345,
+      "reported": false
+    },
+    {
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
+      "candle_ts": 1795122300,
+      "side": "LONG",
+      "upper": 3674.885046900664,
+      "open": 3656.31,
       "reported": false
     }
   ],
@@ -9955,7 +9956,9 @@
     "ZZZUSDT": 1795158271,
     "LWLGUSDT": 1795159020,
     "FUTUUSDT": 1795159025,
-    "ARGUSUSDT": 1795160063
+    "ARGUSUSDT": 1795160063,
+    "ARGUSDT": 1795165373,
+    "PORUSDT": 1795165381
   },
   "last_trade_report_ts": 1795121810,
   "last_known_version": "2.10.0",
@@ -13319,6 +13322,33 @@
     },
     {
       "ts": 1795121253,
+      "kind": "gap_result",
+      "symbol": "RAREUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795122293,
+      "kind": "gap_result",
+      "symbol": "RAREUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795122297,
+      "kind": "gap_result",
+      "symbol": "XAUTUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795122306,
       "kind": "gap_result",
       "symbol": "RAREUSDT",
       "tf": "15m",
