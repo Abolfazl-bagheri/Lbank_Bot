@@ -36,37 +36,6 @@
       "order_id": "PAPER-NETUSDT-1795047367"
     },
     {
-      "symbol": "HUTUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 60.17903833423602,
-      "qty": 9.9702,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 58.674562375880114,
-      "tf": "15m",
-      "opened_at": 1795082522,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        60.52
-      ],
-      "steps": [
-        {
-          "px": 59.84,
-          "ts": 1795082522
-        },
-        {
-          "px": 60.35,
-          "ts": 1795083661
-        }
-      ],
-      "entry_candle_ts": 1795082400,
-      "last_leg_candle_ts": 1795083661,
-      "dry_run": true,
-      "order_id": "PAPER-HUTUSDT-1795082522"
-    },
-    {
       "symbol": "NESUSDT",
       "side": "SELL",
       "status": "open",
@@ -153,46 +122,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "AIOTUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.14228576005988522,
-      "qty": 9839.3543,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 0.1387286160583881,
-      "tf": "4h",
-      "opened_at": 1794128453,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [
-        0.14383
-      ],
-      "steps": [
-        {
-          "px": 0.13584,
-          "ts": 1794128453
-        },
-        {
-          "px": 0.14342,
-          "ts": 1794139348
-        },
-        {
-          "px": 0.14342,
-          "ts": 1794139794
-        }
-      ],
-      "entry_candle_ts": 1794128400,
-      "last_leg_candle_ts": 1794139794,
-      "dry_run": true,
-      "order_id": "PAPER-AIOTUSDT-1794128453",
-      "closed_at": 1794145719,
-      "close_px": 0.13819,
-      "pnl_usdt": 40.299634210942436,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "NAORISUSDT",
       "side": "SELL",
@@ -6713,39 +6642,45 @@
       "pnl_usdt": 60.32400873548444,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "HUTUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 60.17903833423602,
+      "qty": 9.9702,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 58.674562375880114,
+      "tf": "15m",
+      "opened_at": 1795082522,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        60.52
+      ],
+      "steps": [
+        {
+          "px": 59.84,
+          "ts": 1795082522
+        },
+        {
+          "px": 60.35,
+          "ts": 1795083661
+        }
+      ],
+      "entry_candle_ts": 1795082400,
+      "last_leg_candle_ts": 1795083661,
+      "dry_run": true,
+      "order_id": "PAPER-HUTUSDT-1795082522",
+      "closed_at": 1795115155,
+      "close_px": 57.06,
+      "pnl_usdt": 31.09758900013781,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
-    {
-      "symbol": "CRCLUSDT",
-      "tf": "5m",
-      "candle_ts": 1795005600,
-      "side": "LONG",
-      "upper": 55.917195388949594,
-      "open": 55.42,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "MOCAUSDT",
-      "tf": "15m",
-      "candle_ts": 1795005900,
-      "side": "SELL",
-      "upper": 0.00696019993330369,
-      "open": 0.0071,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "SILVERUSDT",
-      "tf": "15m",
-      "candle_ts": 1795005900,
-      "side": "LONG",
-      "upper": 46.150870477787926,
-      "open": 45.47,
-      "reported": true,
-      "filled": true
-    },
     {
       "symbol": "XAUTUSDT",
       "tf": "15m",
@@ -9618,7 +9553,8 @@
       "side": "SELL",
       "upper": 0.2610143531748325,
       "open": 0.2649,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CHIPUSDT",
@@ -9645,7 +9581,8 @@
       "side": "SELL",
       "upper": 0.010137267300712632,
       "open": 0.01024,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "PDDUSDT",
@@ -9654,7 +9591,8 @@
       "side": "SELL",
       "upper": 82.14703862168902,
       "open": 83.61,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "HUTUSDT",
@@ -9681,7 +9619,8 @@
       "side": "LONG",
       "upper": 3749.939882802956,
       "open": 3724.71,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "SILVERUSDT",
@@ -9690,7 +9629,8 @@
       "side": "LONG",
       "upper": 45.56665939290859,
       "open": 45.04,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "XAUTUSDT",
@@ -9699,6 +9639,34 @@
       "side": "LONG",
       "upper": 3738.9299249221895,
       "open": 3713.31,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "CTRUSDT",
+      "tf": "1h",
+      "candle_ts": 1795114800,
+      "side": "SELL",
+      "upper": 0.01753210278426617,
+      "open": 0.0177,
+      "reported": false
+    },
+    {
+      "symbol": "BILLUSDT",
+      "tf": "1h",
+      "candle_ts": 1795114800,
+      "side": "SELL",
+      "upper": 0.00462984906474998,
+      "open": 0.00468,
+      "reported": false
+    },
+    {
+      "symbol": "SAPIENUSDT",
+      "tf": "1h",
+      "candle_ts": 1795114800,
+      "side": "SELL",
+      "upper": 0.0404689199242409,
+      "open": 0.04115,
       "reported": false
     }
   ],
@@ -9926,7 +9894,6 @@
     "POETUSDT": 1794455332,
     "SIMOUSDT": 1794455347,
     "MUSTOCKUSDT": 1794456284,
-    "AI1USDT": 1794944327,
     "B3USDT": 1794950633,
     "BIANRENSHENGUSDT": 1794960417,
     "SKY1USDT": 1794974770,
@@ -9935,23 +9902,17 @@
     "FLOCK1USDT": 1794997921,
     "AEHRUSDT": 1795000612,
     "LWLGUSDT": 1795015924,
-    "CYBERLEEKUSDT": 1795018588,
-    "ARGUSUSDT": 1795021419,
     "QUACKAIUSDT": 1795022231,
     "SPACE1USDT": 1795031267,
-    "AINBSCUSDT": 1795034819,
     "STONKBROKERUSDT": 1795043033,
     "GSTOCKUSDT": 1795044685,
     "QUID1USDT": 1795047530,
     "ATMUSDT": 1795048296,
     "MURATAUSDT": 1795061977,
     "BONERUSDT": 1795062789,
-    "BEMUSDT": 1795084293,
-    "OROCHIUSDT": 1795084322,
     "PORUSDT": 1795088095,
     "NGASUSDT": 1795089860,
     "GMESTOCKUSDT": 1795089871,
-    "ZZZUSDT": 1795097971,
     "CRWDUSDT": 1795101541,
     "RIOTUSDT": 1795101567,
     "LIGHT1USDT": 1795113085,
@@ -9972,7 +9933,13 @@
     "PIPEDOGUSDT": 1795128436,
     "1000LUNCUSDT": 1795128512,
     "DCTYUSDT": 1795129319,
-    "TQQQUSDT": 1795133106
+    "TQQQUSDT": 1795133106,
+    "BEMUSDT": 1795158173,
+    "CYBERLEEKUSDT": 1795158180,
+    "OROCHIUSDT": 1795158241,
+    "AINBSCUSDT": 1795158246,
+    "AI1USDT": 1795158251,
+    "ZZZUSDT": 1795158271
   },
   "last_trade_report_ts": 1795090017,
   "last_known_version": "2.10.0",
@@ -13159,6 +13126,60 @@
       "kind": "gap_result",
       "symbol": "XAUTUSDT",
       "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795115126,
+      "kind": "gap_result",
+      "symbol": "NESUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795115129,
+      "kind": "gap_result",
+      "symbol": "ESPORTSUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795115132,
+      "kind": "gap_result",
+      "symbol": "PDDUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795115135,
+      "kind": "gap_result",
+      "symbol": "GOLDUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795115141,
+      "kind": "gap_result",
+      "symbol": "SILVERUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795115152,
+      "kind": "gap_result",
+      "symbol": "XAUTUSDT",
+      "tf": "15m",
       "gap": 0.0,
       "filled": true,
       "note": "filled"
