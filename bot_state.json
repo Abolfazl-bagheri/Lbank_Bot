@@ -65,31 +65,6 @@
       "order_id": "PAPER-INITUSDT-1795075233"
     },
     {
-      "symbol": "ICNTUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.3662,
-      "qty": 546.1496,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.357045,
-      "tf": "1h",
-      "opened_at": 1795075243,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.3662,
-          "ts": 1795075243
-        }
-      ],
-      "entry_candle_ts": 1795075200,
-      "last_leg_candle_ts": 1795075200,
-      "dry_run": true,
-      "order_id": "PAPER-ICNTUSDT-1795075243"
-    },
-    {
       "symbol": "CLAUDIAUSDT",
       "side": "SELL",
       "status": "open",
@@ -141,42 +116,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "GRVTUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.21143329128160113,
-      "qty": 2837.7745,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.2061474589995611,
-      "tf": "15m",
-      "opened_at": 1794075339,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        0.2119
-      ],
-      "steps": [
-        {
-          "px": 0.2113,
-          "ts": 1794075339
-        },
-        {
-          "px": 0.2115,
-          "ts": 1794095333
-        }
-      ],
-      "entry_candle_ts": 1794075300,
-      "last_leg_candle_ts": 1794095333,
-      "dry_run": true,
-      "order_id": "PAPER-GRVTUSDT-1794075339",
-      "closed_at": 1794096381,
-      "close_px": 0.2108,
-      "pnl_usdt": 1.7971378426617195,
-      "close_reason": "NIGHT_RESET",
-      "why": "NIGHT_RESET"
-    },
     {
       "symbol": "SWARMSUSDT",
       "side": "SELL",
@@ -6755,19 +6694,39 @@
       "pnl_usdt": 6.278899975663167,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "ICNTUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.3662,
+      "qty": 546.1496,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.357045,
+      "tf": "1h",
+      "opened_at": 1795075243,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.3662,
+          "ts": 1795075243
+        }
+      ],
+      "entry_candle_ts": 1795075200,
+      "last_leg_candle_ts": 1795075200,
+      "dry_run": true,
+      "order_id": "PAPER-ICNTUSDT-1795075243",
+      "closed_at": 1795076355,
+      "close_px": 0.3811,
+      "pnl_usdt": -8.13762971054067,
+      "close_reason": "STOP",
+      "why": "STOP"
     }
   ],
   "pending": [
-    {
-      "symbol": "PIPPINUSDT",
-      "tf": "4h",
-      "candle_ts": 1794988800,
-      "side": "SELL",
-      "upper": 0.014905333967115074,
-      "open": 0.01613,
-      "reported": true,
-      "filled": false
-    },
     {
       "symbol": "ZORAUSDT",
       "tf": "4h",
@@ -9738,6 +9697,15 @@
       "side": "SELL",
       "upper": 0.11085319019209924,
       "open": 0.11109,
+      "reported": false
+    },
+    {
+      "symbol": "ICNTUSDT",
+      "tf": "15m",
+      "candle_ts": 1795076100,
+      "side": "SELL",
+      "upper": 0.374980134628139,
+      "open": 0.3754,
       "reported": false
     }
   ],
