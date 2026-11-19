@@ -24,68 +24,9 @@
       "last_leg_candle_ts": 1795047300,
       "dry_run": true,
       "order_id": "PAPER-NETUSDT-1795047367"
-    },
-    {
-      "symbol": "NIUBIUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.001087,
-      "qty": 183992.6403,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.0010598250000000001,
-      "tf": "15m",
-      "opened_at": 1795048279,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.001087,
-          "ts": 1795048279
-        }
-      ],
-      "entry_candle_ts": 1795048200,
-      "last_leg_candle_ts": 1795048200,
-      "dry_run": true,
-      "order_id": "PAPER-NIUBIUSDT-1795048279"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "IDOLUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.04071784111320188,
-      "qty": 14735.5553,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.039699895085371834,
-      "tf": "1h",
-      "opened_at": 1794073536,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.044654,
-          "ts": 1794073536
-        },
-        {
-          "px": 0.038999,
-          "ts": 1794074454
-        }
-      ],
-      "entry_candle_ts": 1794073500,
-      "last_leg_candle_ts": 1794074400,
-      "dry_run": true,
-      "order_id": "PAPER-IDOLUSDT-1794073536",
-      "closed_at": 1794074864,
-      "close_px": 0.038999,
-      "pnl_usdt": 25.328078299975296,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "FOLKSUSDT",
       "side": "SELL",
@@ -6710,6 +6651,36 @@
       "closed_at": 1795047682,
       "close_px": 0.03139,
       "pnl_usdt": 7.127496159754232,
+      "close_reason": "TP50",
+      "why": "TP50"
+    },
+    {
+      "symbol": "NIUBIUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.001087,
+      "qty": 183992.6403,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0010598250000000001,
+      "tf": "15m",
+      "opened_at": 1795048279,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.001087,
+          "ts": 1795048279
+        }
+      ],
+      "entry_candle_ts": 1795048200,
+      "last_leg_candle_ts": 1795048200,
+      "dry_run": true,
+      "order_id": "PAPER-NIUBIUSDT-1795048279",
+      "closed_at": 1795048838,
+      "close_px": 0.001058,
+      "pnl_usdt": 5.335786568537287,
       "close_reason": "TP50",
       "why": "TP50"
     }
