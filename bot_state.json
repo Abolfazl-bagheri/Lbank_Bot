@@ -6682,16 +6682,6 @@
   ],
   "pending": [
     {
-      "symbol": "PIPPINUSDT",
-      "tf": "4h",
-      "candle_ts": 1795003200,
-      "side": "SELL",
-      "upper": 0.017729137947626455,
-      "open": 0.01981,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "ICNTUSDT",
       "tf": "4h",
       "candle_ts": 1795003200,
@@ -9655,7 +9645,8 @@
       "side": "SELL",
       "upper": 0.2535351026597733,
       "open": 0.2552,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "BMTUSDT",
@@ -9664,6 +9655,16 @@
       "side": "SELL",
       "upper": 0.021612081032666073,
       "open": 0.02177,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "NESUSDT",
+      "tf": "15m",
+      "candle_ts": 1795087800,
+      "side": "SELL",
+      "upper": 0.2583296390294974,
+      "open": 0.2605,
       "reported": false
     }
   ],
@@ -12943,6 +12944,24 @@
       "ts": 1795087033,
       "kind": "gap_result",
       "symbol": "VELVETUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795087933,
+      "kind": "gap_result",
+      "symbol": "NESUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795087935,
+      "kind": "gap_result",
+      "symbol": "BMTUSDT",
       "tf": "15m",
       "gap": 0.0,
       "filled": true,
