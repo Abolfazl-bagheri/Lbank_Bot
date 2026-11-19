@@ -80,89 +80,9 @@
       "last_leg_candle_ts": 1795119953,
       "dry_run": true,
       "order_id": "PAPER-RAVEUSDT-1795118488"
-    },
-    {
-      "symbol": "RAREUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.013501100782573982,
-      "qty": 44440.8207,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.013163573263009631,
-      "tf": "1h",
-      "opened_at": 1795120223,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.01375,
-          "ts": 1795120223
-        },
-        {
-          "px": 0.01338,
-          "ts": 1795122043
-        }
-      ],
-      "entry_candle_ts": 1795120200,
-      "last_leg_candle_ts": 1795122000,
-      "dry_run": true,
-      "order_id": "PAPER-RAREUSDT-1795120223"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "SOPHUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.0013023728378904755,
-      "qty": 4760541.543500001,
-      "margin": 310.0,
-      "leverage": 20,
-      "tp_price": 0.0012698135169432136,
-      "tf": "15m",
-      "opened_at": 1794127543,
-      "adds": 4,
-      "last_leg_margin": 160.0,
-      "used_res_levels": [
-        0.001347,
-        0.001328,
-        0.001309,
-        0.001292
-      ],
-      "steps": [
-        {
-          "px": 0.001354,
-          "ts": 1794127543
-        },
-        {
-          "px": 0.001344,
-          "ts": 1794129591
-        },
-        {
-          "px": 0.001323,
-          "ts": 1794141294
-        },
-        {
-          "px": 0.001305,
-          "ts": 1794143936
-        },
-        {
-          "px": 0.001288,
-          "ts": 1794148408
-        }
-      ],
-      "entry_candle_ts": 1794127500,
-      "last_leg_candle_ts": 1794148408,
-      "dry_run": true,
-      "order_id": "PAPER-SOPHUSDT-1794127543",
-      "closed_at": 1794159212,
-      "close_px": 0.001267,
-      "pnl_usdt": 168.39386429171842,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "AIOTUSDT",
       "side": "SELL",
@@ -6660,39 +6580,43 @@
       "pnl_usdt": 5.796217205613176,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "RAREUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.013501100782573982,
+      "qty": 44440.8207,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 0.013163573263009631,
+      "tf": "1h",
+      "opened_at": 1795120223,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.01375,
+          "ts": 1795120223
+        },
+        {
+          "px": 0.01338,
+          "ts": 1795122043
+        }
+      ],
+      "entry_candle_ts": 1795120200,
+      "last_leg_candle_ts": 1795122000,
+      "dry_run": true,
+      "order_id": "PAPER-RAREUSDT-1795120223",
+      "closed_at": 1795123250,
+      "close_px": 0.01301,
+      "pnl_usdt": 21.824921855609727,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
-    {
-      "symbol": "BWETUSDT",
-      "tf": "15m",
-      "candle_ts": 1795013100,
-      "side": "SELL",
-      "upper": 694.0678009664821,
-      "open": 699.76,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "WENUSDT",
-      "tf": "15m",
-      "candle_ts": 1795013100,
-      "side": "SELL",
-      "upper": 8.739599566330675,
-      "open": 8.762,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "SOXSUSDT",
-      "tf": "15m",
-      "candle_ts": 1795013100,
-      "side": "SELL",
-      "upper": 59.81481688789344,
-      "open": 61.07,
-      "reported": true,
-      "filled": true
-    },
     {
       "symbol": "BTCUSDT",
       "tf": "15m",
@@ -9649,6 +9573,33 @@
       "side": "LONG",
       "upper": 0.033710317269080046,
       "open": 0.03185,
+      "reported": false
+    },
+    {
+      "symbol": "GOLDUSDT",
+      "tf": "5m",
+      "candle_ts": 1795123200,
+      "side": "LONG",
+      "upper": 3683.0573121693296,
+      "open": 3659.33,
+      "reported": false
+    },
+    {
+      "symbol": "SILVERUSDT",
+      "tf": "5m",
+      "candle_ts": 1795123200,
+      "side": "LONG",
+      "upper": 44.40191706449387,
+      "open": 43.83,
+      "reported": false
+    },
+    {
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
+      "candle_ts": 1795123200,
+      "side": "LONG",
+      "upper": 3673.5274568365967,
+      "open": 3649.74,
       "reported": false
     }
   ],
