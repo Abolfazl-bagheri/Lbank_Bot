@@ -24,64 +24,9 @@
       "last_leg_candle_ts": 1795047300,
       "dry_run": true,
       "order_id": "PAPER-NETUSDT-1795047367"
-    },
-    {
-      "symbol": "IRYSUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.01942,
-      "qty": 10298.6612,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.0189345,
-      "tf": "15m",
-      "opened_at": 1795049114,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.01942,
-          "ts": 1795049114
-        }
-      ],
-      "entry_candle_ts": 1795049100,
-      "last_leg_candle_ts": 1795049100,
-      "dry_run": true,
-      "order_id": "PAPER-IRYSUSDT-1795049114"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "FOLKSUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 2.521,
-      "qty": 79.3336,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 2.457975,
-      "tf": "1h",
-      "opened_at": 1794034922,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 2.521,
-          "ts": 1794034922
-        }
-      ],
-      "entry_candle_ts": 1794034800,
-      "last_leg_candle_ts": 1794034800,
-      "dry_run": true,
-      "order_id": "PAPER-FOLKSUSDT-1794034922",
-      "closed_at": 1794076497,
-      "close_px": 2.456,
-      "pnl_usdt": 5.156683855612848,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "AEONUSDT",
       "side": "SELL",
@@ -6708,6 +6653,36 @@
       "pnl_usdt": 5.335786568537287,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "IRYSUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.01942,
+      "qty": 10298.6612,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0189345,
+      "tf": "15m",
+      "opened_at": 1795049114,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.01942,
+          "ts": 1795049114
+        }
+      ],
+      "entry_candle_ts": 1795049100,
+      "last_leg_candle_ts": 1795049100,
+      "dry_run": true,
+      "order_id": "PAPER-IRYSUSDT-1795049114",
+      "closed_at": 1795049776,
+      "close_px": 0.02045,
+      "pnl_usdt": -10.60762100926879,
+      "close_reason": "STOP",
+      "why": "STOP"
     }
   ],
   "pending": [
