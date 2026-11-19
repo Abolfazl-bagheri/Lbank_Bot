@@ -6694,16 +6694,6 @@
   ],
   "pending": [
     {
-      "symbol": "XAUTUSDT",
-      "tf": "5m",
-      "candle_ts": 1794972300,
-      "side": "LONG",
-      "upper": 3800.8506453597365,
-      "open": 3781.8,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "MMTUSDT",
       "tf": "15m",
       "candle_ts": 1794974400,
@@ -9607,7 +9597,8 @@
       "side": "SELL",
       "upper": 0.0200167147016908,
       "open": 0.0209,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "CROSSUSDT",
@@ -9636,7 +9627,8 @@
       "side": "SELL",
       "upper": 0.17117956714940297,
       "open": 0.17711,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "NETUSDT",
@@ -9645,7 +9637,8 @@
       "side": "SELL",
       "upper": 306.1738627409907,
       "open": 310.9,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "IRYSUSDT",
@@ -9674,6 +9667,16 @@
       "side": "SELL",
       "upper": 0.02390465630699535,
       "open": 0.02496,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "IRYSUSDT",
+      "tf": "1h",
+      "candle_ts": 1795053600,
+      "side": "SELL",
+      "upper": 0.02227346603531851,
+      "open": 0.02371,
       "reported": false
     }
   ],
@@ -9949,7 +9952,7 @@
     "NGASUSDT": 1795089860,
     "GMESTOCKUSDT": 1795089871
   },
-  "last_trade_report_ts": 1795052532,
+  "last_trade_report_ts": 1795053863,
   "last_known_version": "2.10.0",
   "lessons": [
     {
@@ -12282,6 +12285,42 @@
       "gap": 0.0,
       "filled": false,
       "note": "miss"
+    },
+    {
+      "ts": 1795053851,
+      "kind": "gap_result",
+      "symbol": "IRYSUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
+    },
+    {
+      "ts": 1795053853,
+      "kind": "gap_result",
+      "symbol": "CROSSUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795053856,
+      "kind": "gap_result",
+      "symbol": "NETUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
+    },
+    {
+      "ts": 1795053858,
+      "kind": "gap_result",
+      "symbol": "IRYSUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
     }
   ],
   "tune_history": [],
