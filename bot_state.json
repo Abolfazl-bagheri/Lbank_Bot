@@ -9616,7 +9616,8 @@
       "side": "LONG",
       "upper": 3683.6387239217884,
       "open": 3670.87,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -13154,6 +13155,15 @@
     },
     {
       "ts": 1795115867,
+      "kind": "gap_result",
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795116356,
       "kind": "gap_result",
       "symbol": "XAUTUSDT",
       "tf": "5m",
