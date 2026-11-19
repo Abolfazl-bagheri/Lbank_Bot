@@ -1,50 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795086250,
+  "updated_at": 1795086626,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795075603
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795075834
-    },
-    {
-      "kind": "HEARTBEAT",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795075836
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795075865
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795075900
-    },
-    {
-      "kind": "GAP",
-      "symbol": "NAORISUSDT",
-      "tf": "15m",
-      "gap": 8.44,
-      "ts": 1795076018
-    },
     {
       "kind": "GAP",
       "symbol": "INITUSDT",
@@ -1402,6 +1360,48 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1795086250
+    },
+    {
+      "kind": "HEARTBEAT",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795086252
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795086330
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795086359
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795086391
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795086421
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795086626
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 3,
       "margin": 70.0,
       "lev": 20,
-      "px": 317.37,
-      "pnl": -29.2846,
+      "px": 317.09,
+      "pnl": -28.0251,
       "tf": "1h"
     },
     {
@@ -1427,8 +1427,8 @@
       "pele": 3,
       "margin": 70.0,
       "lev": 20,
-      "px": 0.424,
-      "pnl": -9.4188,
+      "px": 0.4307,
+      "pnl": -31.6638,
       "tf": "1h"
     },
     {
@@ -1440,36 +1440,23 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 60.73,
-      "pnl": -6.2132,
-      "tf": "15m"
-    },
-    {
-      "symbol": "DCTYUSDT",
-      "side": "SELL",
-      "entry": 0.01635,
-      "tp": 0.01594125,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.01635,
-      "pnl": -0.24,
+      "px": 60.6,
+      "pnl": -4.9171,
       "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1795046848,
-  "realized": -29.5067,
-  "closed_n": 21,
-  "open_upnl": -45.1566,
-  "equity": 925.3367,
+  "realized": -40.3936,
+  "closed_n": 22,
+  "open_upnl": -64.606,
+  "equity": 895.0004,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
     "profit": 135.8484,
-    "loss": -165.3551,
-    "count": 21
+    "loss": -176.242,
+    "count": 22
   }
 }
