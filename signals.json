@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795075231,
+  "updated_at": 1795075241,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795052450
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795052484
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "15m",
       "gap": 4.59,
       "ts": 1795075231
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795075236
+    },
+    {
+      "kind": "SELL",
+      "symbol": "ICNTUSDT",
+      "tf": "1h",
+      "gap": 2.01,
+      "ts": 1795075241
     }
   ],
   "trades": [
@@ -1430,14 +1430,27 @@
       "px": 0.00398,
       "pnl": 6.0389,
       "tf": "15m"
+    },
+    {
+      "symbol": "INITUSDT",
+      "side": "SELL",
+      "entry": 0.11462,
+      "tp": 0.11175449999999999,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.11462,
+      "pnl": -0.24,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1795046848,
   "realized": -54.6703,
   "closed_n": 8,
-  "open_upnl": -15.6437,
-  "equity": 929.686,
+  "open_upnl": -15.8837,
+  "equity": 929.446,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
