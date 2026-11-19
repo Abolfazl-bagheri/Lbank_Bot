@@ -1,76 +1,6 @@
 {
   "open_trades": [
     {
-      "symbol": "NETUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 311.23322998126605,
-      "qty": 4.498249,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 303.4523992317344,
-      "tf": "1h",
-      "opened_at": 1795047367,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [
-        310.6
-      ],
-      "steps": [
-        {
-          "px": 310.97,
-          "ts": 1795047367
-        },
-        {
-          "px": 314.13,
-          "ts": 1795050141
-        },
-        {
-          "px": 309.87,
-          "ts": 1795051624
-        }
-      ],
-      "entry_candle_ts": 1795047300,
-      "last_leg_candle_ts": 1795051624,
-      "dry_run": true,
-      "order_id": "PAPER-NETUSDT-1795047367"
-    },
-    {
-      "symbol": "NESUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.2673065002506762,
-      "qty": 5237.4334,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 0.2606238377444093,
-      "tf": "1h",
-      "opened_at": 1795087829,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [
-        0.2686
-      ],
-      "steps": [
-        {
-          "px": 0.2638,
-          "ts": 1795087829
-        },
-        {
-          "px": 0.2679,
-          "ts": 1795089646
-        },
-        {
-          "px": 0.2679,
-          "ts": 1795089982
-        }
-      ],
-      "entry_candle_ts": 1795087800,
-      "last_leg_candle_ts": 1795089982,
-      "dry_run": true,
-      "order_id": "PAPER-NESUSDT-1795087829"
-    },
-    {
       "symbol": "NAORISUSDT",
       "side": "SELL",
       "status": "open",
@@ -122,66 +52,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "NAORISUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.03078,
-      "qty": 6497.7258,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.0300105,
-      "tf": "15m",
-      "opened_at": 1794150026,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.03078,
-          "ts": 1794150026
-        }
-      ],
-      "entry_candle_ts": 1794150000,
-      "last_leg_candle_ts": 1794150000,
-      "dry_run": true,
-      "order_id": "PAPER-NAORISUSDT-1794150026",
-      "closed_at": 1794151119,
-      "close_px": 0.02885,
-      "pnl_usdt": 12.540610786224807,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
-    {
-      "symbol": "HNTUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.343,
-      "qty": 583.0904,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.33442500000000003,
-      "tf": "15m",
-      "opened_at": 1794153651,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.343,
-          "ts": 1794153651
-        }
-      ],
-      "entry_candle_ts": 1794153600,
-      "last_leg_candle_ts": 1794153600,
-      "dry_run": true,
-      "order_id": "PAPER-HNTUSDT-1794153651",
-      "closed_at": 1794154805,
-      "close_px": 0.299,
-      "pnl_usdt": 25.655976676384856,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "CLAUDIAUSDT",
       "side": "SELL",
@@ -6678,19 +6548,89 @@
       "pnl_usdt": 31.09758900013781,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "NESUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.2673065002506762,
+      "qty": 5237.4334,
+      "margin": 70.0,
+      "leverage": 20,
+      "tp_price": 0.2606238377444093,
+      "tf": "1h",
+      "opened_at": 1795087829,
+      "adds": 2,
+      "last_leg_margin": 40.0,
+      "used_res_levels": [
+        0.2686
+      ],
+      "steps": [
+        {
+          "px": 0.2638,
+          "ts": 1795087829
+        },
+        {
+          "px": 0.2679,
+          "ts": 1795089646
+        },
+        {
+          "px": 0.2679,
+          "ts": 1795089982
+        }
+      ],
+      "entry_candle_ts": 1795087800,
+      "last_leg_candle_ts": 1795089982,
+      "dry_run": true,
+      "order_id": "PAPER-NESUSDT-1795087829",
+      "closed_at": 1795115157,
+      "close_px": 0.3026,
+      "pnl_usdt": -184.84735538685536,
+      "close_reason": "STOP",
+      "why": "STOP"
+    },
+    {
+      "symbol": "NETUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 311.23322998126605,
+      "qty": 4.498249,
+      "margin": 70.0,
+      "leverage": 20,
+      "tp_price": 303.4523992317344,
+      "tf": "1h",
+      "opened_at": 1795047367,
+      "adds": 2,
+      "last_leg_margin": 40.0,
+      "used_res_levels": [
+        310.6
+      ],
+      "steps": [
+        {
+          "px": 310.97,
+          "ts": 1795047367
+        },
+        {
+          "px": 314.13,
+          "ts": 1795050141
+        },
+        {
+          "px": 309.87,
+          "ts": 1795051624
+        }
+      ],
+      "entry_candle_ts": 1795047300,
+      "last_leg_candle_ts": 1795051624,
+      "dry_run": true,
+      "order_id": "PAPER-NETUSDT-1795047367",
+      "closed_at": 1795115201,
+      "close_px": 303.27,
+      "pnl_usdt": 35.820474486106626,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
-    {
-      "symbol": "XAUTUSDT",
-      "tf": "15m",
-      "candle_ts": 1795005900,
-      "side": "LONG",
-      "upper": 3777.605356597668,
-      "open": 3746.22,
-      "reported": true,
-      "filled": true
-    },
     {
       "symbol": "GOLDUSDT",
       "tf": "5m",
@@ -9668,6 +9608,15 @@
       "upper": 0.0404689199242409,
       "open": 0.04115,
       "reported": false
+    },
+    {
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
+      "candle_ts": 1795115100,
+      "side": "LONG",
+      "upper": 3685.842713204118,
+      "open": 3671.78,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -9941,7 +9890,7 @@
     "AI1USDT": 1795158251,
     "ZZZUSDT": 1795158271
   },
-  "last_trade_report_ts": 1795090017,
+  "last_trade_report_ts": 1795115161,
   "last_known_version": "2.10.0",
   "lessons": [
     {
