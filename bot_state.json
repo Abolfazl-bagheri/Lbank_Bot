@@ -9606,7 +9606,8 @@
       "side": "LONG",
       "upper": 3684.5310591407865,
       "open": 3670.87,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "XAUTUSDT",
@@ -9615,7 +9616,8 @@
       "side": "LONG",
       "upper": 3684.4464544986035,
       "open": 3670.87,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -9849,7 +9851,6 @@
     "JUVUSDT": 1794987127,
     "FLOCK1USDT": 1794997921,
     "AEHRUSDT": 1795000612,
-    "LWLGUSDT": 1795015924,
     "QUACKAIUSDT": 1795022231,
     "SPACE1USDT": 1795031267,
     "STONKBROKERUSDT": 1795043033,
@@ -9887,7 +9888,9 @@
     "OROCHIUSDT": 1795158241,
     "AINBSCUSDT": 1795158246,
     "AI1USDT": 1795158251,
-    "ZZZUSDT": 1795158271
+    "ZZZUSDT": 1795158271,
+    "LWLGUSDT": 1795159020,
+    "FUTUUSDT": 1795159025
   },
   "last_trade_report_ts": 1795115161,
   "last_known_version": "2.10.0",
@@ -13134,6 +13137,24 @@
     },
     {
       "ts": 1795115475,
+      "kind": "gap_result",
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795115862,
+      "kind": "gap_result",
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795115867,
       "kind": "gap_result",
       "symbol": "XAUTUSDT",
       "tf": "5m",
