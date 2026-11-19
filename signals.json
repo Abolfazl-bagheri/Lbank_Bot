@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795075241,
+  "updated_at": 1795075253,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795052532
-    },
-    {
-      "kind": "HEARTBEAT",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795052534
-    },
     {
       "kind": "GAP",
       "symbol": "IRYSUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "1h",
       "gap": 2.01,
       "ts": 1795075241
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795075246
+    },
+    {
+      "kind": "SELL",
+      "symbol": "ETHFIUSDT",
+      "tf": "4h",
+      "gap": 1.04,
+      "ts": 1795075253
     }
   ],
   "trades": [
@@ -1443,14 +1443,27 @@
       "px": 0.11462,
       "pnl": -0.24,
       "tf": "15m"
+    },
+    {
+      "symbol": "ICNTUSDT",
+      "side": "SELL",
+      "entry": 0.3662,
+      "tp": 0.357045,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.3662,
+      "pnl": -0.24,
+      "tf": "1h"
     }
   ],
   "start": 1000.0,
   "session_start": 1795046848,
   "realized": -54.6703,
   "closed_n": 8,
-  "open_upnl": -15.8837,
-  "equity": 929.446,
+  "open_upnl": -16.1237,
+  "equity": 929.206,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
