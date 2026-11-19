@@ -54,24 +54,30 @@
       "symbol": "BILLUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.004745,
-      "qty": 42149.6312,
-      "margin": 10.0,
+      "entry": 0.004690016604259638,
+      "qty": 127931.3168,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.004626375,
+      "tp_price": 0.004572766189153147,
       "tf": "4h",
       "opened_at": 1795118459,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.00467
+      ],
       "steps": [
         {
           "px": 0.004745,
           "ts": 1795118459
+        },
+        {
+          "px": 0.004663,
+          "ts": 1795119126
         }
       ],
       "entry_candle_ts": 1795118400,
-      "last_leg_candle_ts": 1795118400,
+      "last_leg_candle_ts": 1795119126,
       "dry_run": true,
       "order_id": "PAPER-BILLUSDT-1795118459"
     },
