@@ -1,43 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795080752,
+  "updated_at": 1795080958,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "USELESSUSDT",
-      "tf": "1h",
-      "gap": 1.17,
-      "ts": 1795071452
-    },
-    {
-      "kind": "GAP",
-      "symbol": "IDOLUSDT",
-      "tf": "1h",
-      "gap": 1.03,
-      "ts": 1795071613
-    },
-    {
-      "kind": "GAP",
-      "symbol": "USUSDT",
-      "tf": "15m",
-      "gap": 3.84,
-      "ts": 1795071618
-    },
-    {
-      "kind": "GAP",
-      "symbol": "USUSDT",
-      "tf": "1h",
-      "gap": 2.29,
-      "ts": 1795071620
-    },
-    {
-      "kind": "SELL",
-      "symbol": "SAMSUNGEMUSDT",
-      "tf": "1h",
-      "gap": 1.22,
-      "ts": 1795071689
-    },
     {
       "kind": "SELL",
       "symbol": "ARIAUSDT",
@@ -1402,6 +1367,41 @@
       "tf": "15m",
       "gap": 2.2,
       "ts": 1795080752
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795080757
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795080848
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795080926
+    },
+    {
+      "kind": "HEARTBEAT",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795080928
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795080958
     }
   ],
   "trades": [
@@ -1414,17 +1414,30 @@
       "pele": 3,
       "margin": 70.0,
       "lev": 20,
-      "px": 315.9,
-      "pnl": -22.6722,
+      "px": 315.93,
+      "pnl": -22.8072,
       "tf": "1h"
+    },
+    {
+      "symbol": "NAORISUSDT",
+      "side": "SELL",
+      "entry": 0.03717,
+      "tp": 0.03624075,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.03712,
+      "pnl": 0.029,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1795046848,
   "realized": -49.1359,
   "closed_n": 17,
-  "open_upnl": -22.6722,
-  "equity": 928.1919,
+  "open_upnl": -22.7782,
+  "equity": 928.0859,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
