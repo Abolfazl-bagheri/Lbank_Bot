@@ -70,24 +70,28 @@
       "symbol": "NESUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.2638,
-      "qty": 758.1501,
-      "margin": 10.0,
+      "entry": 0.2665192457505171,
+      "qty": 2251.2445,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.25720499999999996,
-      "tf": "15m",
+      "tp_price": 0.25985626460675415,
+      "tf": "1h",
       "opened_at": 1795087829,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 0.2638,
           "ts": 1795087829
+        },
+        {
+          "px": 0.2679,
+          "ts": 1795089646
         }
       ],
       "entry_candle_ts": 1795087800,
-      "last_leg_candle_ts": 1795087800,
+      "last_leg_candle_ts": 1795089600,
       "dry_run": true,
       "order_id": "PAPER-NESUSDT-1795087829"
     }
@@ -6657,16 +6661,6 @@
   ],
   "pending": [
     {
-      "symbol": "PIEVERSEUSDT",
-      "tf": "15m",
-      "candle_ts": 1795005000,
-      "side": "SELL",
-      "upper": 2.7468884534189435,
-      "open": 2.8074,
-      "reported": true,
-      "filled": false
-    },
-    {
       "symbol": "BLESSUSDT",
       "tf": "15m",
       "candle_ts": 1795005000,
@@ -9637,6 +9631,15 @@
       "side": "SELL",
       "upper": 3.9233801783834496e-06,
       "open": 3.952e-06,
+      "reported": false
+    },
+    {
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
+      "candle_ts": 1795089300,
+      "side": "LONG",
+      "upper": 3734.4464284236583,
+      "open": 3721.38,
       "reported": false
     }
   ],
