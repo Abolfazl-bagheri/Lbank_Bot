@@ -9583,7 +9583,8 @@
       "side": "SELL",
       "upper": 0.03230226379428007,
       "open": 0.03278,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "INITUSDT",
@@ -9619,7 +9620,8 @@
       "side": "SELL",
       "upper": 58.73783475596932,
       "open": 58.29,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -12716,6 +12718,24 @@
       "ts": 1795079054,
       "kind": "gap_result",
       "symbol": "APRUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795079823,
+      "kind": "gap_result",
+      "symbol": "NAORISUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795079826,
+      "kind": "gap_result",
+      "symbol": "HUTUSDT",
       "tf": "15m",
       "gap": 0.0,
       "filled": true,
