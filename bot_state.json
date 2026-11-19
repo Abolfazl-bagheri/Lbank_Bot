@@ -119,6 +119,31 @@
       "last_leg_candle_ts": 1795089600,
       "dry_run": true,
       "order_id": "PAPER-NAORISUSDT-1795089685"
+    },
+    {
+      "symbol": "PDDUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 83.78,
+      "qty": 2.3872,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 81.6855,
+      "tf": "1h",
+      "opened_at": 1795089729,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 83.78,
+          "ts": 1795089729
+        }
+      ],
+      "entry_candle_ts": 1795089600,
+      "last_leg_candle_ts": 1795089600,
+      "dry_run": true,
+      "order_id": "PAPER-PDDUSDT-1795089729"
     }
   ],
   "trade_history": [
@@ -6686,26 +6711,6 @@
   ],
   "pending": [
     {
-      "symbol": "CRCLUSDT",
-      "tf": "5m",
-      "candle_ts": 1795005600,
-      "side": "LONG",
-      "upper": 55.91073814270925,
-      "open": 55.42,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "SILVERUSDT",
-      "tf": "5m",
-      "candle_ts": 1795005600,
-      "side": "LONG",
-      "upper": 46.01406989945047,
-      "open": 45.6,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "GOLDUSDT",
       "tf": "5m",
       "candle_ts": 1795005600,
@@ -9663,6 +9668,24 @@
       "side": "SELL",
       "upper": 0.03206622176788917,
       "open": 0.03256,
+      "reported": false
+    },
+    {
+      "symbol": "NAORISUSDT",
+      "tf": "4h",
+      "candle_ts": 1795089600,
+      "side": "SELL",
+      "upper": 0.030383036626612007,
+      "open": 0.03278,
+      "reported": false
+    },
+    {
+      "symbol": "ESPORTSUSDT",
+      "tf": "1h",
+      "candle_ts": 1795089600,
+      "side": "SELL",
+      "upper": 0.010137267300712632,
+      "open": 0.01024,
       "reported": false
     }
   ],
