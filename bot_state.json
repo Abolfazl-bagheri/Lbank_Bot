@@ -4,16 +4,18 @@
       "symbol": "NETUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 313.0695779393065,
-      "qty": 1.916549,
-      "margin": 30.0,
+      "entry": 311.23322998126605,
+      "qty": 4.498249,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 305.24283849082383,
+      "tp_price": 303.4523992317344,
       "tf": "1h",
       "opened_at": 1795047367,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
+      "adds": 2,
+      "last_leg_margin": 40.0,
+      "used_res_levels": [
+        310.6
+      ],
       "steps": [
         {
           "px": 310.97,
@@ -22,10 +24,14 @@
         {
           "px": 314.13,
           "ts": 1795050141
+        },
+        {
+          "px": 309.87,
+          "ts": 1795051624
         }
       ],
       "entry_candle_ts": 1795047300,
-      "last_leg_candle_ts": 1795050000,
+      "last_leg_candle_ts": 1795051624,
       "dry_run": true,
       "order_id": "PAPER-NETUSDT-1795047367"
     }
