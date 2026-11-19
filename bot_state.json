@@ -84,6 +84,31 @@
       "last_leg_candle_ts": 1795082400,
       "dry_run": true,
       "order_id": "PAPER-HUTUSDT-1795082522"
+    },
+    {
+      "symbol": "HUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.01712,
+      "qty": 11682.243,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.016692,
+      "tf": "15m",
+      "opened_at": 1795083371,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.01712,
+          "ts": 1795083371
+        }
+      ],
+      "entry_candle_ts": 1795083300,
+      "last_leg_candle_ts": 1795083300,
+      "dry_run": true,
+      "order_id": "PAPER-HUSDT-1795083371"
     }
   ],
   "trade_history": [
@@ -6640,16 +6665,6 @@
   ],
   "pending": [
     {
-      "symbol": "IRYSUSDT",
-      "tf": "15m",
-      "candle_ts": 1794997800,
-      "side": "SELL",
-      "upper": 0.017610395881424767,
-      "open": 0.01777,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "PIEVERSEUSDT",
       "tf": "15m",
       "candle_ts": 1794998700,
@@ -9622,6 +9637,15 @@
       "side": "SELL",
       "upper": 58.47271825392926,
       "open": 58.29,
+      "reported": false
+    },
+    {
+      "symbol": "HUTUSDT",
+      "tf": "15m",
+      "candle_ts": 1795083300,
+      "side": "SELL",
+      "upper": 59.88575903509003,
+      "open": 60.52,
       "reported": false
     }
   ],
