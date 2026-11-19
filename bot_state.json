@@ -29,17 +29,18 @@
       "symbol": "CTRUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.018194983400686312,
-      "qty": 32976.1224,
-      "margin": 30.0,
+      "entry": 0.018333059666085866,
+      "qty": 76364.7763,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 0.017740108815669155,
+      "tp_price": 0.017874733174433718,
       "tf": "4h",
       "opened_at": 1795118479,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [
-        0.01839
+        0.01839,
+        0.01851
       ],
       "steps": [
         {
@@ -49,10 +50,14 @@
         {
           "px": 0.01832,
           "ts": 1795124097
+        },
+        {
+          "px": 0.018438,
+          "ts": 1795126318
         }
       ],
       "entry_candle_ts": 1795118400,
-      "last_leg_candle_ts": 1795124097,
+      "last_leg_candle_ts": 1795126318,
       "dry_run": true,
       "order_id": "PAPER-CTRUSDT-1795118479"
     }
