@@ -1,29 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795048496,
+  "updated_at": 1795048840,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795029099
-    },
-    {
-      "kind": "HEARTBEAT",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795029099
-    },
-    {
-      "kind": "GAP",
-      "symbol": "NETUSDT",
-      "tf": "15m",
-      "gap": 2.71,
-      "ts": 1795029207
-    },
     {
       "kind": "GAP",
       "symbol": "ZSUSDT",
@@ -1402,6 +1381,27 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1795048496
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795048557
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795048597
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795048840
     }
   ],
   "trades": [
@@ -1414,36 +1414,23 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 312.12,
-      "pnl": -0.9796,
-      "tf": "15m"
-    },
-    {
-      "symbol": "NIUBIUSDT",
-      "side": "SELL",
-      "entry": 0.001087,
-      "tp": 0.0010598250000000001,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.001074,
-      "pnl": 2.1519,
+      "px": 312.28,
+      "pnl": -1.0825,
       "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1795046848,
-  "realized": 7.1275,
-  "closed_n": 1,
-  "open_upnl": 1.1723,
-  "equity": 1008.2998,
+  "realized": 12.4633,
+  "closed_n": 2,
+  "open_upnl": -1.0825,
+  "equity": 1011.3808,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 7.1275,
+    "profit": 12.4633,
     "loss": 0,
-    "count": 1
+    "count": 2
   }
 }
