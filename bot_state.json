@@ -34,6 +34,31 @@
       "last_leg_candle_ts": 1795051624,
       "dry_run": true,
       "order_id": "PAPER-NETUSDT-1795047367"
+    },
+    {
+      "symbol": "VELVETUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.07876,
+      "qty": 2539.3601,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.076791,
+      "tf": "15m",
+      "opened_at": 1795081666,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.07876,
+          "ts": 1795081666
+        }
+      ],
+      "entry_candle_ts": 1795081500,
+      "last_leg_candle_ts": 1795081500,
+      "dry_run": true,
+      "order_id": "PAPER-VELVETUSDT-1795081666"
     }
   ],
   "trade_history": [
@@ -9569,7 +9594,8 @@
       "side": "SELL",
       "upper": 0.03599821687461657,
       "open": 0.03626,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "XAUTUSDT",
@@ -9578,7 +9604,8 @@
       "side": "LONG",
       "upper": 3738.3457466131244,
       "open": 3724.37,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "NAORISUSDT",
@@ -9587,7 +9614,8 @@
       "side": "SELL",
       "upper": 0.03635331439520867,
       "open": 0.03626,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -9858,7 +9886,8 @@
     "KNTQUSDT": 1795118649,
     "SPORTFUNUSDT": 1795118680,
     "HOTUSDT": 1795118736,
-    "1000000BABYDOGEUSDT": 1795118745
+    "1000000BABYDOGEUSDT": 1795118745,
+    "APEXUSDT": 1795124808
   },
   "last_trade_report_ts": 1795080926,
   "last_known_version": "2.10.0",
@@ -12739,6 +12768,33 @@
       "kind": "gap_result",
       "symbol": "XAUTUSDT",
       "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795081633,
+      "kind": "gap_result",
+      "symbol": "NAORISUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795081635,
+      "kind": "gap_result",
+      "symbol": "XAUTUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795081642,
+      "kind": "gap_result",
+      "symbol": "NAORISUSDT",
+      "tf": "15m",
       "gap": 0.0,
       "filled": true,
       "note": "filled"
