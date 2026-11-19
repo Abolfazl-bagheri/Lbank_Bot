@@ -53,64 +53,9 @@
       "last_leg_candle_ts": 1795050000,
       "dry_run": true,
       "order_id": "PAPER-IRYSUSDT-1795050044"
-    },
-    {
-      "symbol": "CROSSUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.17595,
-      "qty": 1136.6866,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.17155125,
-      "tf": "15m",
-      "opened_at": 1795050082,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.17595,
-          "ts": 1795050082
-        }
-      ],
-      "entry_candle_ts": 1795050000,
-      "last_leg_candle_ts": 1795050000,
-      "dry_run": true,
-      "order_id": "PAPER-CROSSUSDT-1795050082"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "AEONUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.0272,
-      "qty": 7352.9412,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.02652,
-      "tf": "15m",
-      "opened_at": 1794071752,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.0272,
-          "ts": 1794071752
-        }
-      ],
-      "entry_candle_ts": 1794071700,
-      "last_leg_candle_ts": 1794071700,
-      "dry_run": true,
-      "order_id": "PAPER-AEONUSDT-1794071752",
-      "closed_at": 1794076501,
-      "close_px": 0.0264,
-      "pnl_usdt": 5.88235294117646,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "HMSTRUSDT",
       "side": "SELL",
@@ -6737,6 +6682,36 @@
       "pnl_usdt": -10.60762100926879,
       "close_reason": "STOP",
       "why": "STOP"
+    },
+    {
+      "symbol": "CROSSUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.17595,
+      "qty": 1136.6866,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.17155125,
+      "tf": "15m",
+      "opened_at": 1795050082,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.17595,
+          "ts": 1795050082
+        }
+      ],
+      "entry_candle_ts": 1795050000,
+      "last_leg_candle_ts": 1795050000,
+      "dry_run": true,
+      "order_id": "PAPER-CROSSUSDT-1795050082",
+      "closed_at": 1795050342,
+      "close_px": 0.17015,
+      "pnl_usdt": 6.592782040352373,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
