@@ -9650,7 +9650,8 @@
       "side": "LONG",
       "upper": 0.01812016293279699,
       "open": 0.0168,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -9920,7 +9921,8 @@
     "ZZZUSDT": 1795097971,
     "CRWDUSDT": 1795101541,
     "RIOTUSDT": 1795101567,
-    "LIGHT1USDT": 1795113085
+    "LIGHT1USDT": 1795113085,
+    "BBXUSDT": 1795114016
   },
   "last_trade_report_ts": 1795070486,
   "last_known_version": "2.10.0",
@@ -12413,6 +12415,15 @@
       "ts": 1795069932,
       "kind": "gap_result",
       "symbol": "XAUTUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795070843,
+      "kind": "gap_result",
+      "symbol": "PIPPINUSDT",
       "tf": "15m",
       "gap": 0.0,
       "filled": true,
