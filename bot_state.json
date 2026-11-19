@@ -6699,26 +6699,6 @@
     {
       "symbol": "CRCLUSDT",
       "tf": "5m",
-      "candle_ts": 1795012500,
-      "side": "LONG",
-      "upper": 55.42936188148144,
-      "open": 54.81,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "SILVERUSDT",
-      "tf": "5m",
-      "candle_ts": 1795012500,
-      "side": "LONG",
-      "upper": 46.11257482070192,
-      "open": 45.5,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "CRCLUSDT",
-      "tf": "5m",
       "candle_ts": 1795012800,
       "side": "LONG",
       "upper": 55.628262186982205,
@@ -9684,6 +9664,25 @@
       "side": "SELL",
       "upper": 0.013220187326611607,
       "open": 0.01369,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "RAREUSDT",
+      "tf": "15m",
+      "candle_ts": 1795121100,
+      "side": "SELL",
+      "upper": 0.013553607682247197,
+      "open": 0.01372,
+      "reported": false
+    },
+    {
+      "symbol": "XAUTUSDT",
+      "tf": "15m",
+      "candle_ts": 1795121100,
+      "side": "LONG",
+      "upper": 3688.566387871506,
+      "open": 3662.08,
       "reported": false
     }
   ],
@@ -13316,6 +13315,15 @@
       "gap": 0.0,
       "filled": false,
       "note": "miss"
+    },
+    {
+      "ts": 1795121253,
+      "kind": "gap_result",
+      "symbol": "RAREUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
     }
   ],
   "tune_history": [],
