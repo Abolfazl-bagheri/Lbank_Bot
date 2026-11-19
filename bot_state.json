@@ -9618,7 +9618,8 @@
       "side": "SELL",
       "upper": 59.88575903509003,
       "open": 60.52,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "HUSDT",
@@ -9627,7 +9628,8 @@
       "side": "SELL",
       "upper": 0.01666198548106454,
       "open": 0.01696,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -9875,7 +9877,6 @@
     "ATMUSDT": 1795048296,
     "MURATAUSDT": 1795061977,
     "BONERUSDT": 1795062789,
-    "UP2USDT": 1795084289,
     "BEMUSDT": 1795084293,
     "OROCHIUSDT": 1795084322,
     "1000WOJAKUSDT": 1795084376,
@@ -9899,7 +9900,8 @@
     "SPORTFUNUSDT": 1795118680,
     "HOTUSDT": 1795118736,
     "1000000BABYDOGEUSDT": 1795118745,
-    "APEXUSDT": 1795124808
+    "APEXUSDT": 1795124808,
+    "UP2USDT": 1795127626
   },
   "last_trade_report_ts": 1795083990,
   "last_known_version": "2.10.0",
@@ -12855,6 +12857,24 @@
       "gap": 0.0,
       "filled": false,
       "note": "miss"
+    },
+    {
+      "ts": 1795084325,
+      "kind": "gap_result",
+      "symbol": "HUTUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
+    },
+    {
+      "ts": 1795084327,
+      "kind": "gap_result",
+      "symbol": "HUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
     }
   ],
   "tune_history": [],
