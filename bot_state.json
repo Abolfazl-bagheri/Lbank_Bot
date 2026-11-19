@@ -6759,16 +6759,6 @@
   ],
   "pending": [
     {
-      "symbol": "ICNTUSDT",
-      "tf": "4h",
-      "candle_ts": 1794988800,
-      "side": "SELL",
-      "upper": 0.2958827051598916,
-      "open": 0.3032,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "PIPPINUSDT",
       "tf": "4h",
       "candle_ts": 1794988800,
@@ -9620,7 +9610,8 @@
       "side": "SELL",
       "upper": 0.10935544380133251,
       "open": 0.11347,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ICNTUSDT",
@@ -9683,7 +9674,8 @@
       "side": "SELL",
       "upper": 0.007036037802703074,
       "open": 0.007077,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "GRASSUSDT",
@@ -9737,6 +9729,15 @@
       "side": "SELL",
       "upper": 0.3741740416077951,
       "open": 0.3754,
+      "reported": false
+    },
+    {
+      "symbol": "INITUSDT",
+      "tf": "15m",
+      "candle_ts": 1795076100,
+      "side": "SELL",
+      "upper": 0.11085319019209924,
+      "open": 0.11109,
       "reported": false
     }
   ],
@@ -12695,6 +12696,24 @@
       "gap": 0.0,
       "filled": false,
       "note": "miss"
+    },
+    {
+      "ts": 1795076243,
+      "kind": "gap_result",
+      "symbol": "INITUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795076246,
+      "kind": "gap_result",
+      "symbol": "CLAUDIAUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
     }
   ],
   "tune_history": [],
