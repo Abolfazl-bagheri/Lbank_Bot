@@ -6618,46 +6618,6 @@
   ],
   "pending": [
     {
-      "symbol": "SOONUSDT",
-      "tf": "1h",
-      "candle_ts": 1795014000,
-      "side": "SELL",
-      "upper": 0.260048619410583,
-      "open": 0.2641,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "ZILUSDT",
-      "tf": "1h",
-      "candle_ts": 1795014000,
-      "side": "SELL",
-      "upper": 0.0011277559909877936,
-      "open": 0.001144,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "BWETUSDT",
-      "tf": "1h",
-      "candle_ts": 1795014000,
-      "side": "SELL",
-      "upper": 709.5310621810602,
-      "open": 721.38,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "TWSTUSDT",
-      "tf": "15m",
-      "candle_ts": 1795014000,
-      "side": "SELL",
-      "upper": 114.31265189922372,
-      "open": 114.21,
-      "reported": true,
-      "filled": false
-    },
-    {
       "symbol": "TWSTUSDT",
       "tf": "1h",
       "candle_ts": 1795014000,
@@ -9504,7 +9464,8 @@
       "side": "SELL",
       "upper": 0.30020542135234035,
       "open": 0.2987,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "NAORISUSDT",
@@ -9513,7 +9474,8 @@
       "side": "LONG",
       "upper": 0.033710317269080046,
       "open": 0.03185,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "GOLDUSDT",
@@ -9582,7 +9544,8 @@
       "side": "LONG",
       "upper": 44.468766499568204,
       "open": 43.62,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "GOLDUSDT",
@@ -9591,7 +9554,8 @@
       "side": "LONG",
       "upper": 3686.0643488255982,
       "open": 3652.01,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "XAUTUSDT",
@@ -9600,6 +9564,43 @@
       "side": "LONG",
       "upper": 3676.5426328069843,
       "open": 3642.15,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "NAORISUSDT",
+      "tf": "15m",
+      "candle_ts": 1795123800,
+      "side": "LONG",
+      "upper": 0.03409265630479274,
+      "open": 0.03072,
+      "reported": false
+    },
+    {
+      "symbol": "SILVERUSDT",
+      "tf": "15m",
+      "candle_ts": 1795123800,
+      "side": "LONG",
+      "upper": 45.10575905750501,
+      "open": 43.34,
+      "reported": false
+    },
+    {
+      "symbol": "XAUTUSDT",
+      "tf": "15m",
+      "candle_ts": 1795123800,
+      "side": "LONG",
+      "upper": 3696.148800063614,
+      "open": 3631.07,
+      "reported": false
+    },
+    {
+      "symbol": "GOLDUSDT",
+      "tf": "15m",
+      "candle_ts": 1795123800,
+      "side": "LONG",
+      "upper": 3707.1131664306176,
+      "open": 3641.38,
       "reported": false
     }
   ],
@@ -9873,7 +9874,7 @@
     "ARGUSDT": 1795165373,
     "PORUSDT": 1795165381
   },
-  "last_trade_report_ts": 1795123059,
+  "last_trade_report_ts": 1795123979,
   "last_known_version": "2.10.0",
   "lessons": [
     {
@@ -13336,6 +13337,51 @@
       "ts": 1795123579,
       "kind": "gap_result",
       "symbol": "GOLDUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795123963,
+      "kind": "gap_result",
+      "symbol": "NESUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795123966,
+      "kind": "gap_result",
+      "symbol": "NAORISUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795123969,
+      "kind": "gap_result",
+      "symbol": "SILVERUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795123972,
+      "kind": "gap_result",
+      "symbol": "GOLDUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795123975,
+      "kind": "gap_result",
+      "symbol": "XAUTUSDT",
       "tf": "5m",
       "gap": 0.0,
       "filled": true,
