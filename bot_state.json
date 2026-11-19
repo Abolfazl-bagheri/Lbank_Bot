@@ -6669,16 +6669,6 @@
   ],
   "pending": [
     {
-      "symbol": "MMTUSDT",
-      "tf": "1h",
-      "candle_ts": 1794981600,
-      "side": "SELL",
-      "upper": 0.20074304710699103,
-      "open": 0.2187,
-      "reported": true,
-      "filled": false
-    },
-    {
       "symbol": "FHEUSDT",
       "tf": "1h",
       "candle_ts": 1794981600,
@@ -9650,6 +9640,16 @@
       "side": "SELL",
       "upper": 0.0037823513040096397,
       "open": 0.00382,
+      "reported": true,
+      "filled": false
+    },
+    {
+      "symbol": "ZHONGJIUSDT",
+      "tf": "15m",
+      "candle_ts": 1795072500,
+      "side": "SELL",
+      "upper": 68.7545335876123,
+      "open": 69.0,
       "reported": false
     }
   ],
@@ -12461,6 +12461,15 @@
       "gap": 0.0,
       "filled": true,
       "note": "filled"
+    },
+    {
+      "ts": 1795072624,
+      "kind": "gap_result",
+      "symbol": "USUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
     }
   ],
   "tune_history": [],
