@@ -1,36 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795054666,
+  "updated_at": 1795054879,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "PAIDUSDT",
-      "tf": "15m",
-      "gap": 2.61,
-      "ts": 1795043733
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795043741
-    },
-    {
-      "kind": "SELL",
-      "symbol": "NETUSDT",
-      "tf": "15m",
-      "gap": 5.27,
-      "ts": 1795043781
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795043900
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1374,34 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1795054666
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795054783
+    },
+    {
+      "kind": "HEARTBEAT",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795054785
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795054839
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795054879
     }
   ],
   "trades": [
@@ -1414,36 +1414,23 @@
       "pele": 3,
       "margin": 70.0,
       "lev": 20,
-      "px": 310.5,
-      "pnl": 1.6182,
-      "tf": "1h"
-    },
-    {
-      "symbol": "IRYSUSDT",
-      "side": "SELL",
-      "entry": 0.023903723608327,
-      "tp": 0.023306130518118827,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
-      "lev": 20,
-      "px": 0.02412,
-      "pnl": -6.1487,
+      "px": 310.84,
+      "pnl": 0.0888,
       "tf": "1h"
     }
   ],
   "start": 1000.0,
   "session_start": 1795046848,
-  "realized": -10.9527,
-  "closed_n": 6,
-  "open_upnl": -4.5305,
-  "equity": 984.5168,
+  "realized": -44.7452,
+  "closed_n": 7,
+  "open_upnl": 0.0888,
+  "equity": 955.3436,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
     "profit": 19.0561,
-    "loss": -30.0088,
-    "count": 6
+    "loss": -63.8012,
+    "count": 7
   }
 }
