@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795082437,
+  "updated_at": 1795082454,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "USUSDT",
-      "tf": "15m",
-      "gap": 1.63,
-      "ts": 1795073565
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795073636
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "1h",
       "gap": 7.61,
       "ts": 1795082437
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795082443
+    },
+    {
+      "kind": "SELL",
+      "symbol": "ICNTUSDT",
+      "tf": "1h",
+      "gap": 2.58,
+      "ts": 1795082454
     }
   ],
   "trades": [
@@ -1430,14 +1430,27 @@
       "px": 0.07292,
       "pnl": 14.5899,
       "tf": "15m"
+    },
+    {
+      "symbol": "NAORISUSDT",
+      "side": "SELL",
+      "entry": 0.03687,
+      "tp": 0.03594825,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.03687,
+      "pnl": -0.24,
+      "tf": "1h"
     }
   ],
   "start": 1000.0,
   "session_start": 1795046848,
   "realized": -57.5298,
   "closed_n": 18,
-  "open_upnl": -7.0477,
-  "equity": 935.4225,
+  "open_upnl": -7.2877,
+  "equity": 935.1825,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
