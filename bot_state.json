@@ -51,37 +51,6 @@
       "order_id": "PAPER-PDDUSDT-1795089729"
     },
     {
-      "symbol": "BILLUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.004690016604259638,
-      "qty": 127931.3168,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.004572766189153147,
-      "tf": "4h",
-      "opened_at": 1795118459,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        0.00467
-      ],
-      "steps": [
-        {
-          "px": 0.004745,
-          "ts": 1795118459
-        },
-        {
-          "px": 0.004663,
-          "ts": 1795119126
-        }
-      ],
-      "entry_candle_ts": 1795118400,
-      "last_leg_candle_ts": 1795119126,
-      "dry_run": true,
-      "order_id": "PAPER-BILLUSDT-1795118459"
-    },
-    {
       "symbol": "CTRUSDT",
       "side": "SELL",
       "status": "open",
@@ -164,58 +133,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "CLAUDIAUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.008613713702247757,
-      "qty": 1462783.6999,
-      "margin": 630.0,
-      "leverage": 20,
-      "tp_price": 0.008398370859691563,
-      "tf": "15m",
-      "opened_at": 1794120314,
-      "adds": 5,
-      "last_leg_margin": 320.0,
-      "used_res_levels": [
-        0.0088
-      ],
-      "steps": [
-        {
-          "px": 0.006649,
-          "ts": 1794120314
-        },
-        {
-          "px": 0.007325,
-          "ts": 1794121225
-        },
-        {
-          "px": 0.008219,
-          "ts": 1794123017
-        },
-        {
-          "px": 0.007812,
-          "ts": 1794124876
-        },
-        {
-          "px": 0.009217,
-          "ts": 1794139242
-        },
-        {
-          "px": 0.008782,
-          "ts": 1794154790
-        }
-      ],
-      "entry_candle_ts": 1794120300,
-      "last_leg_candle_ts": 1794154790,
-      "dry_run": true,
-      "order_id": "PAPER-CLAUDIAUSDT-1794120314",
-      "closed_at": 1794156563,
-      "close_px": 0.008368,
-      "pnl_usdt": 359.4259985114002,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "HOTUSDT",
       "side": "SELL",
@@ -6738,6 +6655,42 @@
       "closed_at": 1795115201,
       "close_px": 303.27,
       "pnl_usdt": 35.820474486106626,
+      "close_reason": "TP50",
+      "why": "TP50"
+    },
+    {
+      "symbol": "BILLUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.004690016604259638,
+      "qty": 127931.3168,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 0.004572766189153147,
+      "tf": "4h",
+      "opened_at": 1795118459,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.00467
+      ],
+      "steps": [
+        {
+          "px": 0.004745,
+          "ts": 1795118459
+        },
+        {
+          "px": 0.004663,
+          "ts": 1795119126
+        }
+      ],
+      "entry_candle_ts": 1795118400,
+      "last_leg_candle_ts": 1795119126,
+      "dry_run": true,
+      "order_id": "PAPER-BILLUSDT-1795118459",
+      "closed_at": 1795120556,
+      "close_px": 0.004514,
+      "pnl_usdt": 22.518035961720095,
       "close_reason": "TP50",
       "why": "TP50"
     }
