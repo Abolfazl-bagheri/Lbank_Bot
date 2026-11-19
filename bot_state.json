@@ -6716,16 +6716,6 @@
   ],
   "pending": [
     {
-      "symbol": "IDOLUSDT",
-      "tf": "15m",
-      "candle_ts": 1794970800,
-      "side": "SELL",
-      "upper": 0.019698672065693586,
-      "open": 0.01989,
-      "reported": true,
-      "filled": false
-    },
-    {
       "symbol": "XAUTUSDT",
       "tf": "5m",
       "candle_ts": 1794972000,
@@ -9649,7 +9639,8 @@
       "side": "SELL",
       "upper": 0.020203297572524138,
       "open": 0.0209,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "IRYSUSDT",
@@ -9667,7 +9658,8 @@
       "side": "SELL",
       "upper": 0.17053245285533233,
       "open": 0.17711,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "AKAMUSDT",
@@ -9676,7 +9668,8 @@
       "side": "SELL",
       "upper": 91.92827256107392,
       "open": 92.42,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "CROSSUSDT",
@@ -9694,6 +9687,15 @@
       "side": "SELL",
       "upper": 306.1738627409907,
       "open": 310.9,
+      "reported": false
+    },
+    {
+      "symbol": "IRYSUSDT",
+      "tf": "15m",
+      "candle_ts": 1795050900,
+      "side": "SELL",
+      "upper": 0.020693698835482638,
+      "open": 0.02095,
       "reported": false
     }
   ],
@@ -12253,6 +12255,33 @@
       "ts": 1795050303,
       "kind": "gap_result",
       "symbol": "NETUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
+    },
+    {
+      "ts": 1795051061,
+      "kind": "gap_result",
+      "symbol": "IRYSUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
+    },
+    {
+      "ts": 1795051072,
+      "kind": "gap_result",
+      "symbol": "CROSSUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795051074,
+      "kind": "gap_result",
+      "symbol": "AKAMUSDT",
       "tf": "15m",
       "gap": 0.0,
       "filled": false,
