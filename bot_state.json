@@ -6669,16 +6669,6 @@
       "tf": "15m",
       "candle_ts": 1794998700,
       "side": "SELL",
-      "upper": 2.396398248742837,
-      "open": 2.4222,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "PIEVERSEUSDT",
-      "tf": "15m",
-      "candle_ts": 1794998700,
-      "side": "SELL",
       "upper": 2.396103405317192,
       "open": 2.4222,
       "reported": true,
@@ -9637,7 +9627,8 @@
       "side": "SELL",
       "upper": 58.47271825392926,
       "open": 58.29,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "HUTUSDT",
@@ -9646,6 +9637,15 @@
       "side": "SELL",
       "upper": 59.88575903509003,
       "open": 60.52,
+      "reported": false
+    },
+    {
+      "symbol": "HUSDT",
+      "tf": "15m",
+      "candle_ts": 1795083300,
+      "side": "SELL",
+      "upper": 0.01666198548106454,
+      "open": 0.01696,
       "reported": false
     }
   ],
@@ -12865,6 +12865,15 @@
       "gap": 0.0,
       "filled": true,
       "note": "filled"
+    },
+    {
+      "ts": 1795083441,
+      "kind": "gap_result",
+      "symbol": "HUTUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
     }
   ],
   "tune_history": [],
