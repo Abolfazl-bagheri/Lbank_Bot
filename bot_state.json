@@ -36,35 +36,6 @@
       "order_id": "PAPER-NETUSDT-1795047367"
     },
     {
-      "symbol": "NAORISUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.03259069576007651,
-      "qty": 18410.1624,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.031775928366074596,
-      "tf": "1h",
-      "opened_at": 1795077921,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.03218,
-          "ts": 1795077921
-        },
-        {
-          "px": 0.0328,
-          "ts": 1795078872
-        }
-      ],
-      "entry_candle_ts": 1795077900,
-      "last_leg_candle_ts": 1795078800,
-      "dry_run": true,
-      "order_id": "PAPER-NAORISUSDT-1795077921"
-    },
-    {
       "symbol": "ICNTUSDT",
       "side": "SELL",
       "status": "open",
@@ -91,56 +62,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "KOMAUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.020999930548980188,
-      "qty": 600001.9842999999,
-      "margin": 630.0,
-      "leverage": 20,
-      "tp_price": 0.02047493228525568,
-      "tf": "4h",
-      "opened_at": 1794107731,
-      "adds": 5,
-      "last_leg_margin": 320.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.018105,
-          "ts": 1794107731
-        },
-        {
-          "px": 0.020187,
-          "ts": 1794110415
-        },
-        {
-          "px": 0.020466,
-          "ts": 1794111338
-        },
-        {
-          "px": 0.020535,
-          "ts": 1794114055
-        },
-        {
-          "px": 0.021168,
-          "ts": 1794117638
-        },
-        {
-          "px": 0.021265,
-          "ts": 1794124898
-        }
-      ],
-      "entry_candle_ts": 1794107700,
-      "last_leg_candle_ts": 1794124800,
-      "dry_run": true,
-      "order_id": "PAPER-KOMAUSDT-1794107731",
-      "closed_at": 1794126743,
-      "close_px": 0.019924,
-      "pnl_usdt": 645.5604643801408,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "ARIAUSDT",
       "side": "SELL",
@@ -6680,6 +6601,40 @@
       "pnl_usdt": 64.66221165877691,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "NAORISUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.03259069576007651,
+      "qty": 18410.1624,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 0.031775928366074596,
+      "tf": "1h",
+      "opened_at": 1795077921,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.03218,
+          "ts": 1795077921
+        },
+        {
+          "px": 0.0328,
+          "ts": 1795078872
+        }
+      ],
+      "entry_candle_ts": 1795077900,
+      "last_leg_candle_ts": 1795078800,
+      "dry_run": true,
+      "order_id": "PAPER-NAORISUSDT-1795077921",
+      "closed_at": 1795079127,
+      "close_px": 0.0342,
+      "pnl_usdt": -29.627552325437893,
+      "close_reason": "STOP",
+      "why": "STOP"
     }
   ],
   "pending": [
