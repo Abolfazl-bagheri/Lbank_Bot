@@ -6657,26 +6657,6 @@
   ],
   "pending": [
     {
-      "symbol": "SWARMSUSDT",
-      "tf": "1h",
-      "candle_ts": 1794999600,
-      "side": "SELL",
-      "upper": 0.0063175860260118325,
-      "open": 0.006408,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "IRYSUSDT",
-      "tf": "1h",
-      "candle_ts": 1795003200,
-      "side": "SELL",
-      "upper": 0.01757841468427778,
-      "open": 0.0178,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "PIPPINUSDT",
       "tf": "4h",
       "candle_ts": 1795003200,
@@ -9621,7 +9601,8 @@
       "side": "SELL",
       "upper": 0.015331629048181958,
       "open": 0.015792,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "VELVETUSDT",
@@ -9630,7 +9611,8 @@
       "side": "SELL",
       "upper": 0.08023882268513986,
       "open": 0.08113,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ICNTUSDT",
@@ -9639,6 +9621,24 @@
       "side": "SELL",
       "upper": 0.4168361023972226,
       "open": 0.4237,
+      "reported": false
+    },
+    {
+      "symbol": "NESUSDT",
+      "tf": "15m",
+      "candle_ts": 1795086900,
+      "side": "SELL",
+      "upper": 0.2535351026597733,
+      "open": 0.2552,
+      "reported": false
+    },
+    {
+      "symbol": "BMTUSDT",
+      "tf": "15m",
+      "candle_ts": 1795086900,
+      "side": "SELL",
+      "upper": 0.021612081032666073,
+      "open": 0.02177,
       "reported": false
     }
   ],
@@ -12904,6 +12904,24 @@
       "gap": 0.0,
       "filled": false,
       "note": "miss"
+    },
+    {
+      "ts": 1795087030,
+      "kind": "gap_result",
+      "symbol": "DCTYUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
+    },
+    {
+      "ts": 1795087033,
+      "kind": "gap_result",
+      "symbol": "VELVETUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
     }
   ],
   "tune_history": [],
