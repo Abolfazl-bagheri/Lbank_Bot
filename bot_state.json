@@ -6741,16 +6741,6 @@
   ],
   "pending": [
     {
-      "symbol": "NESUSDT",
-      "tf": "15m",
-      "candle_ts": 1794970800,
-      "side": "SELL",
-      "upper": 0.2093158400741064,
-      "open": 0.2118,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "IDOLUSDT",
       "tf": "15m",
       "candle_ts": 1794970800,
@@ -9452,7 +9442,8 @@
       "side": "SELL",
       "upper": 0.07519710104701971,
       "open": 0.07727,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "OKTAUSDT",
@@ -9554,7 +9545,8 @@
       "side": "SELL",
       "upper": 296.11343505216695,
       "open": 293.8,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "NETUSDT",
@@ -9642,7 +9634,8 @@
       "side": "SELL",
       "upper": 0.018994788760486936,
       "open": 0.01944,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "AKAMUSDT",
@@ -9651,7 +9644,8 @@
       "side": "SELL",
       "upper": 91.69318883706985,
       "open": 91.33,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CROSSUSDT",
@@ -9660,7 +9654,8 @@
       "side": "SELL",
       "upper": 0.16618092222061623,
       "open": 0.16911,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "NETUSDT",
@@ -9669,7 +9664,8 @@
       "side": "SELL",
       "upper": 308.8940861598123,
       "open": 310.9,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "IRYSUSDT",
@@ -9714,6 +9710,15 @@
       "side": "SELL",
       "upper": 0.17117956714940297,
       "open": 0.17711,
+      "reported": false
+    },
+    {
+      "symbol": "NETUSDT",
+      "tf": "1h",
+      "candle_ts": 1795050000,
+      "side": "SELL",
+      "upper": 306.1738627409907,
+      "open": 310.9,
       "reported": false
     }
   ],
@@ -12219,6 +12224,60 @@
       "ts": 1795049309,
       "kind": "gap_result",
       "symbol": "NIUBIUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
+    },
+    {
+      "ts": 1795050287,
+      "kind": "gap_result",
+      "symbol": "VELVETUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795050290,
+      "kind": "gap_result",
+      "symbol": "NETUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
+    },
+    {
+      "ts": 1795050292,
+      "kind": "gap_result",
+      "symbol": "IRYSUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
+    },
+    {
+      "ts": 1795050298,
+      "kind": "gap_result",
+      "symbol": "AKAMUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795050301,
+      "kind": "gap_result",
+      "symbol": "CROSSUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
+    },
+    {
+      "ts": 1795050303,
+      "kind": "gap_result",
+      "symbol": "NETUSDT",
       "tf": "15m",
       "gap": 0.0,
       "filled": false,
