@@ -4,24 +4,28 @@
       "symbol": "NETUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 310.97,
-      "qty": 0.643149,
-      "margin": 10.0,
+      "entry": 313.0695779393065,
+      "qty": 1.916549,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 303.19575000000003,
-      "tf": "15m",
+      "tp_price": 305.24283849082383,
+      "tf": "1h",
       "opened_at": 1795047367,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 310.97,
           "ts": 1795047367
+        },
+        {
+          "px": 314.13,
+          "ts": 1795050141
         }
       ],
       "entry_candle_ts": 1795047300,
-      "last_leg_candle_ts": 1795047300,
+      "last_leg_candle_ts": 1795050000,
       "dry_run": true,
       "order_id": "PAPER-NETUSDT-1795047367"
     },
@@ -6737,36 +6741,6 @@
   ],
   "pending": [
     {
-      "symbol": "XAUTUSDT",
-      "tf": "15m",
-      "candle_ts": 1794962700,
-      "side": "LONG",
-      "upper": 3856.779683510021,
-      "open": 3808.0,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "SILVERUSDT",
-      "tf": "15m",
-      "candle_ts": 1794962700,
-      "side": "LONG",
-      "upper": 47.7943664908407,
-      "open": 47.03,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "GOLDUSDT",
-      "tf": "15m",
-      "candle_ts": 1794962700,
-      "side": "LONG",
-      "upper": 3876.8036816857607,
-      "open": 3825.49,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "NESUSDT",
       "tf": "15m",
       "candle_ts": 1794970800,
@@ -9713,6 +9687,33 @@
       "side": "SELL",
       "upper": 0.0200167147016908,
       "open": 0.0209,
+      "reported": false
+    },
+    {
+      "symbol": "CROSSUSDT",
+      "tf": "15m",
+      "candle_ts": 1795050000,
+      "side": "SELL",
+      "upper": 0.17053245285533233,
+      "open": 0.17711,
+      "reported": false
+    },
+    {
+      "symbol": "AKAMUSDT",
+      "tf": "15m",
+      "candle_ts": 1795050000,
+      "side": "SELL",
+      "upper": 91.92827256107392,
+      "open": 92.42,
+      "reported": false
+    },
+    {
+      "symbol": "CROSSUSDT",
+      "tf": "1h",
+      "candle_ts": 1795050000,
+      "side": "SELL",
+      "upper": 0.17117956714940297,
+      "open": 0.17711,
       "reported": false
     }
   ],
