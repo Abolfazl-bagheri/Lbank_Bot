@@ -6719,16 +6719,6 @@
   ],
   "pending": [
     {
-      "symbol": "IRYSUSDT",
-      "tf": "15m",
-      "candle_ts": 1794982500,
-      "side": "SELL",
-      "upper": 0.015650329316123878,
-      "open": 0.01585,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "BLESSUSDT",
       "tf": "15m",
       "candle_ts": 1794985200,
@@ -9680,7 +9670,8 @@
       "side": "SELL",
       "upper": 0.003942432508416387,
       "open": 0.004035,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "USUSDT",
@@ -9689,7 +9680,8 @@
       "side": "SELL",
       "upper": 0.003955446234803752,
       "open": 0.004035,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "USUSDT",
@@ -9698,6 +9690,15 @@
       "side": "SELL",
       "upper": 0.004080138778371251,
       "open": 0.004177,
+      "reported": false
+    },
+    {
+      "symbol": "INITUSDT",
+      "tf": "15m",
+      "candle_ts": 1795074300,
+      "side": "SELL",
+      "upper": 0.10200712657822719,
+      "open": 0.10265,
       "reported": false
     }
   ],
@@ -12522,6 +12523,24 @@
       "ts": 1795073528,
       "kind": "gap_result",
       "symbol": "ZHONGJIUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795074483,
+      "kind": "gap_result",
+      "symbol": "USUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795074485,
+      "kind": "gap_result",
+      "symbol": "USUSDT",
       "tf": "15m",
       "gap": 0.0,
       "filled": true,
