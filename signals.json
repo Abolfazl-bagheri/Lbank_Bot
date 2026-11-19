@@ -1,29 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795046845,
+  "updated_at": 1795047031,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795028195
-    },
-    {
-      "kind": "HEARTBEAT",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795028196
-    },
-    {
-      "kind": "GAP",
-      "symbol": "AKAMUSDT",
-      "tf": "15m",
-      "gap": 1.33,
-      "ts": 1795028410
-    },
     {
       "kind": "GAP",
       "symbol": "NETUSDT",
@@ -1402,87 +1381,42 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1795046845
+    },
+    {
+      "kind": "HEARTBEAT",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795046847
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795046849
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795047031
     }
   ],
-  "trades": [
-    {
-      "symbol": "BWETUSDT",
-      "side": "SELL",
-      "entry": 727.7546847930053,
-      "tp": 709.56081767318,
-      "adds": 2,
-      "pele": 3,
-      "margin": 70.0,
-      "lev": 20,
-      "px": 734.5,
-      "pnl": -14.6561,
-      "tf": "1h"
-    },
-    {
-      "symbol": "NETUSDT",
-      "side": "SELL",
-      "entry": 302.35902161581606,
-      "tp": 294.80004607542065,
-      "adds": 2,
-      "pele": 3,
-      "margin": 70.0,
-      "lev": 20,
-      "px": 310.63,
-      "pnl": -39.9768,
-      "tf": "1h"
-    },
-    {
-      "symbol": "AKAMUSDT",
-      "side": "SELL",
-      "entry": 90.88031386321147,
-      "tp": 88.60830601663118,
-      "adds": 2,
-      "pele": 3,
-      "margin": 70.0,
-      "lev": 20,
-      "px": 93.02,
-      "pnl": -34.6416,
-      "tf": "15m"
-    },
-    {
-      "symbol": "ZSUSDT",
-      "side": "SELL",
-      "entry": 203.18945265541285,
-      "tp": 198.10971633902753,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
-      "lev": 20,
-      "px": 203.64,
-      "pnl": -2.0504,
-      "tf": "15m"
-    },
-    {
-      "symbol": "HUTUSDT",
-      "side": "SELL",
-      "entry": 57.241687444036025,
-      "tp": 55.81064525793512,
-      "adds": 2,
-      "pele": 3,
-      "margin": 70.0,
-      "lev": 20,
-      "px": 58.24,
-      "pnl": -26.0964,
-      "tf": "15m"
-    }
-  ],
+  "trades": [],
   "start": 1000.0,
-  "session_start": 1794960632,
-  "realized": 116.6016,
-  "closed_n": 51,
-  "open_upnl": -117.4213,
-  "equity": 999.1803,
+  "session_start": 1795046848,
+  "realized": 0,
+  "closed_n": 0,
+  "open_upnl": 0,
+  "equity": 1000.0,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 437.0797,
-    "loss": -320.4781,
-    "count": 51
+    "profit": 0,
+    "loss": 0,
+    "count": 0
   }
 }
