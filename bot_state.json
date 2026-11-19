@@ -84,6 +84,31 @@
       "last_leg_candle_ts": 1795082400,
       "dry_run": true,
       "order_id": "PAPER-NAORISUSDT-1795082439"
+    },
+    {
+      "symbol": "ICNTUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.4083,
+      "qty": 489.8359,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.39809249999999996,
+      "tf": "1h",
+      "opened_at": 1795082455,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.4083,
+          "ts": 1795082455
+        }
+      ],
+      "entry_candle_ts": 1795082400,
+      "last_leg_candle_ts": 1795082400,
+      "dry_run": true,
+      "order_id": "PAPER-ICNTUSDT-1795082455"
     }
   ],
   "trade_history": [
@@ -6658,16 +6683,6 @@
   ],
   "pending": [
     {
-      "symbol": "IRYSUSDT",
-      "tf": "1h",
-      "candle_ts": 1794996000,
-      "side": "SELL",
-      "upper": 0.01653256000157751,
-      "open": 0.01674,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "LABUSDT",
       "tf": "1h",
       "candle_ts": 1794996000,
@@ -9639,6 +9654,15 @@
       "side": "SELL",
       "upper": 0.07723738883827105,
       "open": 0.0765,
+      "reported": false
+    },
+    {
+      "symbol": "NAORISUSDT",
+      "tf": "1h",
+      "candle_ts": 1795082400,
+      "side": "SELL",
+      "upper": 0.034063126608051365,
+      "open": 0.03693,
       "reported": false
     }
   ],
