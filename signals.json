@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795086041,
+  "updated_at": 1795086052,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "GRASSUSDT",
-      "tf": "4h",
-      "gap": 1.79,
-      "ts": 1795075340
-    },
-    {
-      "kind": "SELL",
-      "symbol": "USUSDT",
-      "tf": "1h",
-      "gap": 1.29,
-      "ts": 1795075346
-    },
     {
       "kind": "SELL",
       "symbol": "SAMSUNGEMUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "15m",
       "gap": 6.23,
       "ts": 1795086041
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795086048
+    },
+    {
+      "kind": "SELL",
+      "symbol": "VELVETUSDT",
+      "tf": "15m",
+      "gap": 1.1,
+      "ts": 1795086052
     }
   ],
   "trades": [
@@ -1443,14 +1443,27 @@
       "px": 60.73,
       "pnl": -6.2132,
       "tf": "15m"
+    },
+    {
+      "symbol": "DCTYUSDT",
+      "side": "SELL",
+      "entry": 0.01635,
+      "tp": 0.01594125,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.01635,
+      "pnl": -0.24,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1795046848,
   "realized": -29.5067,
   "closed_n": 21,
-  "open_upnl": -44.9166,
-  "equity": 925.5767,
+  "open_upnl": -45.1566,
+  "equity": 925.3367,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
