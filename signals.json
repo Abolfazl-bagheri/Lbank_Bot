@@ -1,29 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795049732,
+  "updated_at": 1795050013,
   "signals": [
-    {
-      "kind": "HEARTBEAT",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795030013
-    },
-    {
-      "kind": "GAP",
-      "symbol": "NETUSDT",
-      "tf": "15m",
-      "gap": 2.98,
-      "ts": 1795030123
-    },
-    {
-      "kind": "GAP",
-      "symbol": "ZSUSDT",
-      "tf": "15m",
-      "gap": 1.56,
-      "ts": 1795030126
-    },
     {
       "kind": "GAP",
       "symbol": "HUTUSDT",
@@ -1402,6 +1381,27 @@
       "tf": "1h",
       "gap": 1.06,
       "ts": 1795049732
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795049778
+    },
+    {
+      "kind": "HEARTBEAT",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795049778
+    },
+    {
+      "kind": "GAP",
+      "symbol": "IRYSUSDT",
+      "tf": "15m",
+      "gap": 4.91,
+      "ts": 1795050013
     }
   ],
   "trades": [
@@ -1414,36 +1414,23 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 313.4,
-      "pnl": -1.8029,
-      "tf": "15m"
-    },
-    {
-      "symbol": "IRYSUSDT",
-      "side": "SELL",
-      "entry": 0.01942,
-      "tp": 0.0189345,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.02078,
-      "pnl": -14.2462,
+      "px": 313.87,
+      "pnl": -2.1051,
       "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1795046848,
-  "realized": 12.4633,
-  "closed_n": 2,
-  "open_upnl": -16.0491,
-  "equity": 996.4142,
+  "realized": 1.8557,
+  "closed_n": 3,
+  "open_upnl": -2.1051,
+  "equity": 999.7506,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
     "profit": 12.4633,
-    "loss": 0,
-    "count": 2
+    "loss": -10.6076,
+    "count": 3
   }
 }
