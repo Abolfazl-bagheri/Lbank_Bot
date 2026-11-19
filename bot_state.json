@@ -1,5 +1,31 @@
 {
-  "open_trades": [],
+  "open_trades": [
+    {
+      "symbol": "ZKCUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.03255,
+      "qty": 6144.3932,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.03173625,
+      "tf": "15m",
+      "opened_at": 1795047329,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.03255,
+          "ts": 1795047329
+        }
+      ],
+      "entry_candle_ts": 1795047300,
+      "last_leg_candle_ts": 1795047300,
+      "dry_run": true,
+      "order_id": "PAPER-ZKCUSDT-1795047329"
+    }
+  ],
   "trade_history": [
     {
       "symbol": "SIGNUSDT",
