@@ -6599,26 +6599,6 @@
   ],
   "pending": [
     {
-      "symbol": "PROSUSDT",
-      "tf": "1h",
-      "candle_ts": 1795021200,
-      "side": "SELL",
-      "upper": 0.5877205016270923,
-      "open": 0.5992,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "AKAMUSDT",
-      "tf": "15m",
-      "candle_ts": 1795021200,
-      "side": "SELL",
-      "upper": 88.36012073914608,
-      "open": 87.36,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "AKAMUSDT",
       "tf": "1h",
       "candle_ts": 1795021200,
@@ -9589,6 +9569,25 @@
       "side": "LONG",
       "upper": 0.011236232081302904,
       "open": 0.0095537,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "BLESSUSDT",
+      "tf": "15m",
+      "candle_ts": 1795157100,
+      "side": "SELL",
+      "upper": 0.01344671287754432,
+      "open": 0.013661,
+      "reported": false
+    },
+    {
+      "symbol": "AKEUSDT",
+      "tf": "15m",
+      "candle_ts": 1795157100,
+      "side": "LONG",
+      "upper": 0.011900728793415926,
+      "open": 0.0074769,
       "reported": false
     }
   ],
@@ -9877,18 +9876,9 @@
     "XBRUSDT": 1795193230,
     "XTIUSDT": 1795193232
   },
-  "last_trade_report_ts": 1795156382,
+  "last_trade_report_ts": 1795157285,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795003587,
-      "kind": "gap_result",
-      "symbol": "PIPPINUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795003589,
       "kind": "gap_result",
@@ -13475,6 +13465,15 @@
       "ts": 1795156378,
       "kind": "gap_result",
       "symbol": "XPINUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795157282,
+      "kind": "gap_result",
+      "symbol": "AKEUSDT",
       "tf": "15m",
       "gap": 0.0,
       "filled": true,
