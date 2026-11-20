@@ -1,5 +1,31 @@
 {
-  "open_trades": [],
+  "open_trades": [
+    {
+      "symbol": "PIPPINUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.02052,
+      "qty": 9746.5887,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.020007,
+      "tf": "15m",
+      "opened_at": 1795134612,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.02052,
+          "ts": 1795134612
+        }
+      ],
+      "entry_candle_ts": 1795134600,
+      "last_leg_candle_ts": 1795134600,
+      "dry_run": true,
+      "order_id": "PAPER-PIPPINUSDT-1795134612"
+    }
+  ],
   "trade_history": [
     {
       "symbol": "ANSEMUSDT",
