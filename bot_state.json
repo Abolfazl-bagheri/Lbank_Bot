@@ -6638,46 +6638,6 @@
   ],
   "pending": [
     {
-      "symbol": "VELVETUSDT",
-      "tf": "1h",
-      "candle_ts": 1795046400,
-      "side": "SELL",
-      "upper": 0.07519710104701971,
-      "open": 0.07727,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "OKTAUSDT",
-      "tf": "4h",
-      "candle_ts": 1795046400,
-      "side": "SELL",
-      "upper": 199.35537017879756,
-      "open": 202.83,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "PROSUSDT",
-      "tf": "4h",
-      "candle_ts": 1795046400,
-      "side": "SELL",
-      "upper": 0.6665584245506702,
-      "open": 0.6774,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "PANWUSDT",
-      "tf": "4h",
-      "candle_ts": 1795046400,
-      "side": "SELL",
-      "upper": 356.4755964456913,
-      "open": 367.92,
-      "reported": true,
-      "filled": false
-    },
-    {
       "symbol": "PIEVERSEUSDT",
       "tf": "4h",
       "candle_ts": 1795046400,
@@ -9549,7 +9509,8 @@
       "side": "LONG",
       "upper": 63783.450603978556,
       "open": 58375.2,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "RAREUSDT",
@@ -9608,7 +9569,8 @@
       "side": "SELL",
       "upper": 7.582865728970505e-08,
       "open": 7.51e-08,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "DNAUSDT",
@@ -9617,6 +9579,43 @@
       "side": "SELL",
       "upper": 0.1641308432025649,
       "open": 0.165,
+      "reported": true,
+      "filled": false
+    },
+    {
+      "symbol": "ZSUSDT",
+      "tf": "1h",
+      "candle_ts": 1795215600,
+      "side": "SELL",
+      "upper": 224.25589600802124,
+      "open": 226.95,
+      "reported": false
+    },
+    {
+      "symbol": "DNAUSDT",
+      "tf": "1h",
+      "candle_ts": 1795215600,
+      "side": "SELL",
+      "upper": 0.16511012939715614,
+      "open": 0.1662,
+      "reported": false
+    },
+    {
+      "symbol": "TAKEUSDT",
+      "tf": "1h",
+      "candle_ts": 1795215600,
+      "side": "SELL",
+      "upper": 0.060912642039302786,
+      "open": 0.06153,
+      "reported": false
+    },
+    {
+      "symbol": "MOGUSDT",
+      "tf": "15m",
+      "candle_ts": 1795215600,
+      "side": "SELL",
+      "upper": 7.577714151935796e-08,
+      "open": 7.51e-08,
       "reported": false
     }
   ],
@@ -9907,36 +9906,9 @@
     "XTIUSDT": 1795246304,
     "FIGHT1USDT": 1795256206
   },
-  "last_trade_report_ts": 1795214441,
+  "last_trade_report_ts": 1795215869,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795017931,
-      "kind": "gap_result",
-      "symbol": "USARUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795017934,
-      "kind": "gap_result",
-      "symbol": "MPUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795017940,
-      "kind": "gap_result",
-      "symbol": "RAMUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795018595,
       "kind": "gap_result",
@@ -13509,6 +13481,33 @@
       "gap": 0.0,
       "filled": true,
       "note": "filled"
+    },
+    {
+      "ts": 1795215859,
+      "kind": "gap_result",
+      "symbol": "BTCUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795215862,
+      "kind": "gap_result",
+      "symbol": "MOGUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795215864,
+      "kind": "gap_result",
+      "symbol": "DNAUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
     }
   ],
   "tune_history": [],
