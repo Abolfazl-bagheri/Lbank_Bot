@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795197682,
+  "updated_at": 1795197809,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "DJTUSDT",
-      "tf": "15m",
-      "gap": 3.01,
-      "ts": 1795186900
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795186905
-    },
     {
       "kind": "SELL",
       "symbol": "MRNAUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "1h",
       "gap": 1.81,
       "ts": 1795197682
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795197687
+    },
+    {
+      "kind": "SELL",
+      "symbol": "BTCUSDT",
+      "tf": "1h",
+      "gap": 0.2,
+      "ts": 1795197809
     }
   ],
   "trades": [
@@ -1469,14 +1469,27 @@
       "px": 0.007887,
       "pnl": -0.24,
       "tf": "15m"
+    },
+    {
+      "symbol": "JELLYJELLYUSDT",
+      "side": "SELL",
+      "entry": 0.03919,
+      "tp": 0.03821025,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.03919,
+      "pnl": -0.24,
+      "tf": "1h"
     }
   ],
   "start": 1000.0,
   "session_start": 1795133194,
   "realized": 223.3578,
   "closed_n": 10,
-  "open_upnl": 29.5144,
-  "equity": 1252.8722,
+  "open_upnl": 29.2744,
+  "equity": 1252.6322,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
