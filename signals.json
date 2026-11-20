@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795186858,
+  "updated_at": 1795186886,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795150075
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795150198
-    },
     {
       "kind": "GAP",
       "symbol": "BARDUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "15m",
       "gap": 2.13,
       "ts": 1795186858
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795186864
+    },
+    {
+      "kind": "SELL",
+      "symbol": "MRNAUSDT",
+      "tf": "15m",
+      "gap": 1.38,
+      "ts": 1795186886
     }
   ],
   "trades": [
@@ -1456,14 +1456,27 @@
       "px": 52.56,
       "pnl": -19.222,
       "tf": "5m"
+    },
+    {
+      "symbol": "HUMAUSDT",
+      "side": "SELL",
+      "entry": 0.010674,
+      "tp": 0.010407149999999999,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.010674,
+      "pnl": -0.24,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1795133194,
   "realized": 86.1164,
   "closed_n": 5,
-  "open_upnl": -48.0034,
-  "equity": 1038.113,
+  "open_upnl": -48.2434,
+  "equity": 1037.873,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
