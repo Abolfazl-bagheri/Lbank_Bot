@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795147630,
+  "updated_at": 1795147862,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795125879
-    },
-    {
-      "kind": "HEARTBEAT",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795125880
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,20 +1388,34 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1795147630
+    },
+    {
+      "kind": "HEARTBEAT",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795147632
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795147862
     }
   ],
   "trades": [
     {
       "symbol": "BARDUSDT",
       "side": "SELL",
-      "entry": 0.1007900369030964,
-      "tp": 0.09827028598051898,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
+      "entry": 0.10090990879589438,
+      "tp": 0.09838716107599703,
+      "adds": 2,
+      "pele": 3,
+      "margin": 70.0,
       "lev": 20,
-      "px": 0.1023,
-      "pnl": -9.7088,
+      "px": 0.101,
+      "pnl": -2.9299,
       "tf": "1h"
     }
   ],
@@ -1423,8 +1423,8 @@
   "session_start": 1795133194,
   "realized": 28.3873,
   "closed_n": 2,
-  "open_upnl": -9.7088,
-  "equity": 1018.6785,
+  "open_upnl": -2.9299,
+  "equity": 1025.4574,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
