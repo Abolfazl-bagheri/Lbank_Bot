@@ -1,43 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795133960,
+  "updated_at": 1795134348,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795117940
-    },
-    {
-      "kind": "HEARTBEAT",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795117942
-    },
-    {
-      "kind": "GAP",
-      "symbol": "BILLUSDT",
-      "tf": "1h",
-      "gap": 1.26,
-      "ts": 1795118143
-    },
-    {
-      "kind": "GAP",
-      "symbol": "UVXYUSDT",
-      "tf": "1h",
-      "gap": 1.12,
-      "ts": 1795118147
-    },
-    {
-      "kind": "GAP",
-      "symbol": "CTRUSDT",
-      "tf": "1h",
-      "gap": 1.64,
-      "ts": 1795118151
-    },
     {
       "kind": "GAP",
       "symbol": "RAVEUSDT",
@@ -1402,35 +1367,56 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1795133960
-    }
-  ],
-  "trades": [
+    },
     {
-      "symbol": "IRYSUSDT",
-      "side": "SELL",
-      "entry": 0.02473,
-      "tp": 0.024111749999999998,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.02529,
-      "pnl": -4.7689,
-      "tf": "15m"
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795134042
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795134089
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795134127
+    },
+    {
+      "kind": "HEARTBEAT",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795134129
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795134348
     }
   ],
+  "trades": [],
   "start": 1000.0,
   "session_start": 1795133194,
-  "realized": 0,
-  "closed_n": 0,
-  "open_upnl": -4.7689,
-  "equity": 995.2311,
+  "realized": 5.5803,
+  "closed_n": 1,
+  "open_upnl": 0,
+  "equity": 1005.5803,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 0,
+    "profit": 5.5803,
     "loss": 0,
-    "count": 0
+    "count": 1
   }
 }
