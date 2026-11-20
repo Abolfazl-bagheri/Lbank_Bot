@@ -1,36 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795199650,
+  "updated_at": 1795200056,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "DJTUSDT",
-      "tf": "15m",
-      "gap": 1.74,
-      "ts": 1795187625
-    },
-    {
-      "kind": "GAP",
-      "symbol": "ACNUSDT",
-      "tf": "15m",
-      "gap": 1.45,
-      "ts": 1795187628
-    },
-    {
-      "kind": "GAP",
-      "symbol": "TEAMUSDT",
-      "tf": "15m",
-      "gap": 2.32,
-      "ts": 1795187631
-    },
-    {
-      "kind": "GAP",
-      "symbol": "UNHUSDT",
-      "tf": "15m",
-      "gap": 1.44,
-      "ts": 1795187708
-    },
     {
       "kind": "SELL",
       "symbol": "ACNUSDT",
@@ -1402,6 +1374,34 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1795199650
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795199748
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795199799
+    },
+    {
+      "kind": "HEARTBEAT",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795199801
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795200056
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 3,
       "margin": 70.0,
       "lev": 20,
-      "px": 3513.87,
-      "pnl": 18.2457,
+      "px": 3511.92,
+      "pnl": 19.0116,
       "tf": "5m"
     },
     {
@@ -1427,8 +1427,8 @@
       "pele": 3,
       "margin": 70.0,
       "lev": 20,
-      "px": 3523.02,
-      "pnl": 18.0171,
+      "px": 3521.4,
+      "pnl": 18.6518,
       "tf": "5m"
     },
     {
@@ -1440,8 +1440,8 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 138.16,
-      "pnl": 12.7342,
+      "px": 138.75,
+      "pnl": 10.2294,
       "tf": "15m"
     },
     {
@@ -1453,21 +1453,21 @@
       "pele": 3,
       "margin": 70.0,
       "lev": 20,
-      "px": 14.947,
-      "pnl": -5.7173,
+      "px": 14.813,
+      "pnl": 6.8699,
       "tf": "1h"
     },
     {
       "symbol": "JELLYJELLYUSDT",
       "side": "SELL",
-      "entry": 0.03919,
-      "tp": 0.03821025,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
+      "entry": 0.039402754262049824,
+      "tp": 0.03841768540549858,
+      "adds": 1,
+      "pele": 2,
+      "margin": 30.0,
       "lev": 20,
-      "px": 0.03928,
-      "pnl": -0.6993,
+      "px": 0.03951,
+      "pnl": -2.3531,
       "tf": "1h"
     }
   ],
@@ -1475,8 +1475,8 @@
   "session_start": 1795133194,
   "realized": 242.1228,
   "closed_n": 11,
-  "open_upnl": 42.5804,
-  "equity": 1284.7032,
+  "open_upnl": 52.4096,
+  "equity": 1294.5324,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
