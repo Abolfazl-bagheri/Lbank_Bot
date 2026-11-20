@@ -1,73 +1,6 @@
 {
-  "open_trades": [
-    {
-      "symbol": "CASHCATUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.0458,
-      "qty": 4366.8122,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.044655,
-      "tf": "15m",
-      "opened_at": 1795151761,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.0458,
-          "ts": 1795151761
-        }
-      ],
-      "entry_candle_ts": 1795151700,
-      "last_leg_candle_ts": 1795151700,
-      "dry_run": true,
-      "order_id": "PAPER-CASHCATUSDT-1795151761"
-    }
-  ],
+  "open_trades": [],
   "trade_history": [
-    {
-      "symbol": "BLENDUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.05796702130332752,
-      "qty": 24151.6636,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 0.056517845770744334,
-      "tf": "15m",
-      "opened_at": 1794154527,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [
-        0.0574,
-        0.0584
-      ],
-      "steps": [
-        {
-          "px": 0.05816,
-          "ts": 1794154527
-        },
-        {
-          "px": 0.05718,
-          "ts": 1794156570
-        },
-        {
-          "px": 0.05832,
-          "ts": 1794171902
-        }
-      ],
-      "entry_candle_ts": 1794154500,
-      "last_leg_candle_ts": 1794171902,
-      "dry_run": true,
-      "order_id": "PAPER-BLENDUSDT-1794154527",
-      "closed_at": 1794176345,
-      "close_px": 0.05649,
-      "pnl_usdt": 35.67252168846277,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "JCTUSDT",
       "side": "SELL",
@@ -6536,6 +6469,36 @@
       "closed_at": 1795149647,
       "close_px": 0.0977,
       "pnl_usdt": 44.53350882856989,
+      "close_reason": "TP50",
+      "why": "TP50"
+    },
+    {
+      "symbol": "CASHCATUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.0458,
+      "qty": 4366.8122,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.044655,
+      "tf": "15m",
+      "opened_at": 1795151761,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.0458,
+          "ts": 1795151761
+        }
+      ],
+      "entry_candle_ts": 1795151700,
+      "last_leg_candle_ts": 1795151700,
+      "dry_run": true,
+      "order_id": "PAPER-CASHCATUSDT-1795151761",
+      "closed_at": 1795151988,
+      "close_px": 0.044,
+      "pnl_usdt": 7.8602620087336375,
       "close_reason": "TP50",
       "why": "TP50"
     }
