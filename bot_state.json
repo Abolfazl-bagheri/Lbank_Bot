@@ -140,31 +140,6 @@
       "order_id": "PAPER-SKDDUSDT-1795194053"
     },
     {
-      "symbol": "CLAUDIAUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.007887,
-      "qty": 25358.1844,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.007689825,
-      "tf": "15m",
-      "opened_at": 1795197625,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.007887,
-          "ts": 1795197625
-        }
-      ],
-      "entry_candle_ts": 1795197600,
-      "last_leg_candle_ts": 1795197600,
-      "dry_run": true,
-      "order_id": "PAPER-CLAUDIAUSDT-1795197625"
-    },
-    {
       "symbol": "JELLYJELLYUSDT",
       "side": "SELL",
       "status": "open",
@@ -191,42 +166,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "UMCUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 14.873237483546475,
-      "qty": 40.340900000000005,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 14.501406546457813,
-      "tf": "1h",
-      "opened_at": 1794193294,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        14.95
-      ],
-      "steps": [
-        {
-          "px": 14.82,
-          "ts": 1794193294
-        },
-        {
-          "px": 14.9,
-          "ts": 1794195284
-        }
-      ],
-      "entry_candle_ts": 1794193200,
-      "last_leg_candle_ts": 1794195284,
-      "dry_run": true,
-      "order_id": "PAPER-UMCUSDT-1794193294",
-      "closed_at": 1794206919,
-      "close_px": 14.49,
-      "pnl_usdt": 15.460150514120347,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "B2USDT",
       "side": "SELL",
@@ -6687,6 +6626,36 @@
       "pnl_usdt": -13.143285821455365,
       "close_reason": "STOP",
       "why": "STOP"
+    },
+    {
+      "symbol": "CLAUDIAUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.007887,
+      "qty": 25358.1844,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.007689825,
+      "tf": "15m",
+      "opened_at": 1795197625,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.007887,
+          "ts": 1795197625
+        }
+      ],
+      "entry_candle_ts": 1795197600,
+      "last_leg_candle_ts": 1795197600,
+      "dry_run": true,
+      "order_id": "PAPER-CLAUDIAUSDT-1795197625",
+      "closed_at": 1795197944,
+      "close_px": 0.007147,
+      "pnl_usdt": 18.765056421960193,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
