@@ -73,42 +73,6 @@
       "order_id": "PAPER-GOLDUSDT-1795154184"
     },
     {
-      "symbol": "TEAMUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 139.98873501384875,
-      "qty": 10.0009,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 136.48901663850253,
-      "tf": "15m",
-      "opened_at": 1795186958,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [
-        141.88,
-        139.42
-      ],
-      "steps": [
-        {
-          "px": 140.83,
-          "ts": 1795186958
-        },
-        {
-          "px": 141.58,
-          "ts": 1795187523
-        },
-        {
-          "px": 139.0,
-          "ts": 1795201439
-        }
-      ],
-      "entry_candle_ts": 1795186800,
-      "last_leg_candle_ts": 1795201439,
-      "dry_run": true,
-      "order_id": "PAPER-TEAMUSDT-1795186958"
-    },
-    {
       "symbol": "SKDDUSDT",
       "side": "SELL",
       "status": "open",
@@ -177,44 +141,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "B2USDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.4587798166407827,
-      "qty": 3051.5728,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 0.4473103212247631,
-      "tf": "1h",
-      "opened_at": 1794202220,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.4551,
-          "ts": 1794202220
-        },
-        {
-          "px": 0.4604,
-          "ts": 1794203116
-        },
-        {
-          "px": 0.4589,
-          "ts": 1794204061
-        }
-      ],
-      "entry_candle_ts": 1794202200,
-      "last_leg_candle_ts": 1794204000,
-      "dry_run": true,
-      "order_id": "PAPER-B2USDT-1794202220",
-      "closed_at": 1794206922,
-      "close_px": 0.4346,
-      "pnl_usdt": 73.78647026140035,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "NXPCUSDT",
       "side": "SELL",
@@ -6665,6 +6591,47 @@
       "closed_at": 1795197944,
       "close_px": 0.007147,
       "pnl_usdt": 18.765056421960193,
+      "close_reason": "TP50",
+      "why": "TP50"
+    },
+    {
+      "symbol": "TEAMUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 139.98873501384875,
+      "qty": 10.0009,
+      "margin": 70.0,
+      "leverage": 20,
+      "tp_price": 136.48901663850253,
+      "tf": "15m",
+      "opened_at": 1795186958,
+      "adds": 2,
+      "last_leg_margin": 40.0,
+      "used_res_levels": [
+        141.88,
+        139.42
+      ],
+      "steps": [
+        {
+          "px": 140.83,
+          "ts": 1795186958
+        },
+        {
+          "px": 141.58,
+          "ts": 1795187523
+        },
+        {
+          "px": 139.0,
+          "ts": 1795201439
+        }
+      ],
+      "entry_candle_ts": 1795186800,
+      "last_leg_candle_ts": 1795201439,
+      "dry_run": true,
+      "order_id": "PAPER-TEAMUSDT-1795186958",
+      "closed_at": 1795212615,
+      "close_px": 136.36,
+      "pnl_usdt": 36.29027020556804,
       "close_reason": "TP50",
       "why": "TP50"
     }
