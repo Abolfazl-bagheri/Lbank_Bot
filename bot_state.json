@@ -163,6 +163,31 @@
       "last_leg_candle_ts": 1795197600,
       "dry_run": true,
       "order_id": "PAPER-CLAUDIAUSDT-1795197625"
+    },
+    {
+      "symbol": "JELLYJELLYUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.03919,
+      "qty": 5103.3427,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.03821025,
+      "tf": "1h",
+      "opened_at": 1795197683,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.03919,
+          "ts": 1795197683
+        }
+      ],
+      "entry_candle_ts": 1795197600,
+      "last_leg_candle_ts": 1795197600,
+      "dry_run": true,
+      "order_id": "PAPER-JELLYJELLYUSDT-1795197683"
     }
   ],
   "trade_history": [
@@ -6666,56 +6691,6 @@
   ],
   "pending": [
     {
-      "symbol": "NETUSDT",
-      "tf": "15m",
-      "candle_ts": 1795041900,
-      "side": "SELL",
-      "upper": 293.8,
-      "open": 293.8,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "PAIDUSDT",
-      "tf": "15m",
-      "candle_ts": 1795042800,
-      "side": "SELL",
-      "upper": 0.001382,
-      "open": 0.001382,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "PAIDUSDT",
-      "tf": "1h",
-      "candle_ts": 1795042800,
-      "side": "SELL",
-      "upper": 0.0013820000118121491,
-      "open": 0.001382,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "NETUSDT",
-      "tf": "15m",
-      "candle_ts": 1795042800,
-      "side": "SELL",
-      "upper": 293.8,
-      "open": 293.8,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "NETUSDT",
-      "tf": "1h",
-      "candle_ts": 1795042800,
-      "side": "SELL",
-      "upper": 295.9271515017389,
-      "open": 293.8,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "CRCLUSDT",
       "tf": "5m",
       "candle_ts": 1795043100,
@@ -9643,6 +9618,51 @@
       "side": "SELL",
       "upper": 0.00639597138135848,
       "open": 0.006607,
+      "reported": false
+    },
+    {
+      "symbol": "CLAUDIAUSDT",
+      "tf": "15m",
+      "candle_ts": 1795197600,
+      "side": "SELL",
+      "upper": 0.007270848834948814,
+      "open": 0.007858,
+      "reported": false
+    },
+    {
+      "symbol": "SKDDUSDT",
+      "tf": "1h",
+      "candle_ts": 1795197600,
+      "side": "SELL",
+      "upper": 14.689935278635089,
+      "open": 14.872,
+      "reported": false
+    },
+    {
+      "symbol": "SOXSUSDT",
+      "tf": "1h",
+      "candle_ts": 1795197600,
+      "side": "SELL",
+      "upper": 78.87728223690993,
+      "open": 79.46,
+      "reported": false
+    },
+    {
+      "symbol": "CLAUDIAUSDT",
+      "tf": "1h",
+      "candle_ts": 1795197600,
+      "side": "SELL",
+      "upper": 0.007342122278523387,
+      "open": 0.007858,
+      "reported": false
+    },
+    {
+      "symbol": "SOPHUSDT",
+      "tf": "1h",
+      "candle_ts": 1795197600,
+      "side": "SELL",
+      "upper": 0.0010889231473106553,
+      "open": 0.001103,
       "reported": false
     }
   ],
