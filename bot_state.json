@@ -138,6 +138,31 @@
       "last_leg_candle_ts": 1795187523,
       "dry_run": true,
       "order_id": "PAPER-TEAMUSDT-1795186958"
+    },
+    {
+      "symbol": "SKDDUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 14.585,
+      "qty": 13.7127,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 14.220375,
+      "tf": "1h",
+      "opened_at": 1795194053,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 14.585,
+          "ts": 1795194053
+        }
+      ],
+      "entry_candle_ts": 1795194000,
+      "last_leg_candle_ts": 1795194000,
+      "dry_run": true,
+      "order_id": "PAPER-SKDDUSDT-1795194053"
     }
   ],
   "trade_history": [
@@ -6650,15 +6675,6 @@
       "tf": "5m",
       "candle_ts": 1795030500,
       "side": "LONG",
-      "upper": 3743.1827823193544,
-      "open": 3719.24,
-      "reported": false
-    },
-    {
-      "symbol": "XAUTUSDT",
-      "tf": "5m",
-      "candle_ts": 1795030500,
-      "side": "LONG",
       "upper": 3743.181126539739,
       "open": 3719.24,
       "reported": false
@@ -9621,6 +9637,15 @@
       "side": "LONG",
       "upper": 0.0022822206020936225,
       "open": 0.001527,
+      "reported": false
+    },
+    {
+      "symbol": "SOXSUSDT",
+      "tf": "1h",
+      "candle_ts": 1795194000,
+      "side": "SELL",
+      "upper": 76.89547457684287,
+      "open": 78.0,
       "reported": false
     }
   ],
