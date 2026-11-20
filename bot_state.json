@@ -6695,36 +6695,6 @@
   ],
   "pending": [
     {
-      "symbol": "NETUSDT",
-      "tf": "15m",
-      "candle_ts": 1795025700,
-      "side": "SELL",
-      "upper": 297.75381565073155,
-      "open": 293.8,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "PIPPINUSDT",
-      "tf": "15m",
-      "candle_ts": 1795025700,
-      "side": "SELL",
-      "upper": 0.02042368577294307,
-      "open": 0.0204,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "NETUSDT",
-      "tf": "15m",
-      "candle_ts": 1795025700,
-      "side": "SELL",
-      "upper": 297.75381565073155,
-      "open": 293.8,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "PIPPINUSDT",
       "tf": "15m",
       "candle_ts": 1795026600,
@@ -9584,7 +9554,8 @@
       "side": "SELL",
       "upper": 2.521242982213293,
       "open": 2.535,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ELSAUSDT",
@@ -9602,7 +9573,8 @@
       "side": "SELL",
       "upper": 0.010446246429652126,
       "open": 0.01053,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "MRNAUSDT",
@@ -9611,7 +9583,8 @@
       "side": "SELL",
       "upper": 205.58844798002556,
       "open": 208.46,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "HUMAUSDT",
@@ -9629,7 +9602,8 @@
       "side": "SELL",
       "upper": 4.244207988377244,
       "open": 4.315,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "MRNAUSDT",
@@ -9656,7 +9630,8 @@
       "side": "SELL",
       "upper": 137.5865092103031,
       "open": 139.89,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "MONUSDT",
@@ -9674,6 +9649,33 @@
       "side": "SELL",
       "upper": 138.07017259450063,
       "open": 139.89,
+      "reported": false
+    },
+    {
+      "symbol": "ACNUSDT",
+      "tf": "15m",
+      "candle_ts": 1795187700,
+      "side": "SELL",
+      "upper": 226.44410879944078,
+      "open": 228.85,
+      "reported": false
+    },
+    {
+      "symbol": "TEAMUSDT",
+      "tf": "15m",
+      "candle_ts": 1795187700,
+      "side": "SELL",
+      "upper": 140.10505035904603,
+      "open": 141.62,
+      "reported": false
+    },
+    {
+      "symbol": "UNHUSDT",
+      "tf": "15m",
+      "candle_ts": 1795187700,
+      "side": "SELL",
+      "upper": 342.15407623710087,
+      "open": 341.94,
       "reported": false
     }
   ],
@@ -9963,54 +9965,9 @@
     "CAPETHUSDT": 1795230249,
     "FIGUSDT": 1795230268
   },
-  "last_trade_report_ts": 1795186598,
+  "last_trade_report_ts": 1795187528,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795007060,
-      "kind": "gap_result",
-      "symbol": "MOCAUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795007070,
-      "kind": "gap_result",
-      "symbol": "SILVERUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795007080,
-      "kind": "gap_result",
-      "symbol": "XAUTUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795007088,
-      "kind": "gap_result",
-      "symbol": "GOLDUSDT",
-      "tf": "5m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795007099,
-      "kind": "gap_result",
-      "symbol": "XAUTUSDT",
-      "tf": "5m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795010583,
       "kind": "gap_result",
@@ -13565,6 +13522,51 @@
       "gap": 0.0,
       "filled": true,
       "note": "filled"
+    },
+    {
+      "ts": 1795187852,
+      "kind": "gap_result",
+      "symbol": "FOLKSUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795187854,
+      "kind": "gap_result",
+      "symbol": "HUMAUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795187857,
+      "kind": "gap_result",
+      "symbol": "MRNAUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
+    },
+    {
+      "ts": 1795187860,
+      "kind": "gap_result",
+      "symbol": "DJTUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
+    },
+    {
+      "ts": 1795187862,
+      "kind": "gap_result",
+      "symbol": "TEAMUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
     }
   ],
   "tune_history": [],
