@@ -6599,16 +6599,6 @@
   ],
   "pending": [
     {
-      "symbol": "MMTUSDT",
-      "tf": "15m",
-      "candle_ts": 1795021200,
-      "side": "SELL",
-      "upper": 0.26119467921316003,
-      "open": 0.265,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "PROSUSDT",
       "tf": "1h",
       "candle_ts": 1795021200,
@@ -9579,7 +9569,8 @@
       "side": "SELL",
       "upper": 0.055607962507032205,
       "open": 0.056,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "XPINUSDT",
@@ -9588,6 +9579,16 @@
       "side": "SELL",
       "upper": 0.0007375138832816447,
       "open": 0.0007406,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "AKEUSDT",
+      "tf": "15m",
+      "candle_ts": 1795156200,
+      "side": "LONG",
+      "upper": 0.011236232081302904,
+      "open": 0.0095537,
       "reported": false
     }
   ],
@@ -9876,27 +9877,9 @@
     "XBRUSDT": 1795193230,
     "XTIUSDT": 1795193232
   },
-  "last_trade_report_ts": 1795155148,
+  "last_trade_report_ts": 1795156382,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795003580,
-      "kind": "gap_result",
-      "symbol": "BLENDUSDT",
-      "tf": "4h",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
-    {
-      "ts": 1795003583,
-      "kind": "gap_result",
-      "symbol": "FLUXUSDT",
-      "tf": "4h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795003587,
       "kind": "gap_result",
@@ -13478,6 +13461,24 @@
       "gap": 0.0,
       "filled": false,
       "note": "miss"
+    },
+    {
+      "ts": 1795156376,
+      "kind": "gap_result",
+      "symbol": "YBUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795156378,
+      "kind": "gap_result",
+      "symbol": "XPINUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
     }
   ],
   "tune_history": [],
