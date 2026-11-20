@@ -6638,16 +6638,6 @@
   ],
   "pending": [
     {
-      "symbol": "NETUSDT",
-      "tf": "15m",
-      "candle_ts": 1795043700,
-      "side": "SELL",
-      "upper": 293.8,
-      "open": 293.8,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "CLAUDIAUSDT",
       "tf": "15m",
       "candle_ts": 1795044600,
@@ -9618,6 +9608,16 @@
       "side": "SELL",
       "upper": 0.01403667229540243,
       "open": 0.01412,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "MOGUSDT",
+      "tf": "15m",
+      "candle_ts": 1795212900,
+      "side": "SELL",
+      "upper": 7.583421751676007e-08,
+      "open": 7.51e-08,
       "reported": false
     }
   ],
@@ -9825,7 +9825,6 @@
     "AXLUSDT": 1793502358,
     "SYNUSDT": 1793537208,
     "CANTONUSDT": 1793952369,
-    "FIGHT1USDT": 1794111444,
     "METEORAUSDT": 1794163747,
     "DRVUSDT": 1794177070,
     "BARUSDT": 1794188820,
@@ -9907,20 +9906,12 @@
     "BONERUSDT": 1795238202,
     "GALUSDT": 1795239096,
     "CYBERLEEKUSDT": 1795245508,
-    "XTIUSDT": 1795246304
+    "XTIUSDT": 1795246304,
+    "FIGHT1USDT": 1795256206
   },
   "last_trade_report_ts": 1795212617,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795017922,
-      "kind": "gap_result",
-      "symbol": "SOONUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795017925,
       "kind": "gap_result",
@@ -13505,6 +13496,15 @@
     },
     {
       "ts": 1795204055,
+      "kind": "gap_result",
+      "symbol": "RAREUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795213026,
       "kind": "gap_result",
       "symbol": "RAREUSDT",
       "tf": "15m",
