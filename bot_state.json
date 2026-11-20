@@ -182,6 +182,31 @@
       "last_leg_candle_ts": 1795186800,
       "dry_run": true,
       "order_id": "PAPER-DJTUSDT-1795186901"
+    },
+    {
+      "symbol": "TEAMUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 140.83,
+      "qty": 1.4202,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 137.30925000000002,
+      "tf": "15m",
+      "opened_at": 1795186958,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 140.83,
+          "ts": 1795186958
+        }
+      ],
+      "entry_candle_ts": 1795186800,
+      "last_leg_candle_ts": 1795186800,
+      "dry_run": true,
+      "order_id": "PAPER-TEAMUSDT-1795186958"
     }
   ],
   "trade_history": [
@@ -6667,36 +6692,6 @@
   ],
   "pending": [
     {
-      "symbol": "NETUSDT",
-      "tf": "15m",
-      "candle_ts": 1795024800,
-      "side": "SELL",
-      "upper": 297.72761602970303,
-      "open": 293.8,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "HUTUSDT",
-      "tf": "1h",
-      "candle_ts": 1795024800,
-      "side": "SELL",
-      "upper": 57.94773642825704,
-      "open": 55.49,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "NETUSDT",
-      "tf": "1h",
-      "candle_ts": 1795024800,
-      "side": "SELL",
-      "upper": 294.8716652933699,
-      "open": 293.8,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "ZSUSDT",
       "tf": "1h",
       "candle_ts": 1795024800,
@@ -9647,6 +9642,33 @@
       "side": "SELL",
       "upper": 0.010344223159425252,
       "open": 0.01053,
+      "reported": false
+    },
+    {
+      "symbol": "DJTUSDT",
+      "tf": "15m",
+      "candle_ts": 1795186800,
+      "side": "SELL",
+      "upper": 4.244207988377244,
+      "open": 4.315,
+      "reported": false
+    },
+    {
+      "symbol": "MRNAUSDT",
+      "tf": "1h",
+      "candle_ts": 1795186800,
+      "side": "SELL",
+      "upper": 204.74223196232163,
+      "open": 208.46,
+      "reported": false
+    },
+    {
+      "symbol": "DJTUSDT",
+      "tf": "1h",
+      "candle_ts": 1795186800,
+      "side": "SELL",
+      "upper": 4.250232677078454,
+      "open": 4.315,
       "reported": false
     }
   ],
