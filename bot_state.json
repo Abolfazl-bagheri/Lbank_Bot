@@ -76,17 +76,18 @@
       "symbol": "GOLDUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 3553.1400000000003,
-      "qty": 0.168864,
-      "margin": 30.0,
+      "entry": 3573.2939479064303,
+      "qty": 0.391795,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 3464.3115000000003,
+      "tp_price": 3483.9615992087693,
       "tf": "5m",
       "opened_at": 1795154184,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [
-        3565.81
+        3565.81,
+        3601.64
       ],
       "steps": [
         {
@@ -96,10 +97,14 @@
         {
           "px": 3553.14,
           "ts": 1795154221
+        },
+        {
+          "px": 3588.56,
+          "ts": 1795187120
         }
       ],
       "entry_candle_ts": 1795154100,
-      "last_leg_candle_ts": 1795154221,
+      "last_leg_candle_ts": 1795187120,
       "dry_run": true,
       "order_id": "PAPER-GOLDUSDT-1795154184"
     },
