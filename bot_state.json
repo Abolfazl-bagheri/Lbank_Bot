@@ -6671,16 +6671,6 @@
   ],
   "pending": [
     {
-      "symbol": "PAIDUSDT",
-      "tf": "15m",
-      "candle_ts": 1795043700,
-      "side": "SELL",
-      "upper": 0.001382,
-      "open": 0.001382,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "NETUSDT",
       "tf": "15m",
       "candle_ts": 1795043700,
@@ -9651,6 +9641,16 @@
       "side": "SELL",
       "upper": 0.014005519216138169,
       "open": 0.01437,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "RAREUSDT",
+      "tf": "15m",
+      "candle_ts": 1795203900,
+      "side": "SELL",
+      "upper": 0.01403667229540243,
+      "open": 0.01412,
       "reported": false
     }
   ],
@@ -9942,18 +9942,9 @@
     "CYBERLEEKUSDT": 1795245508,
     "XTIUSDT": 1795246304
   },
-  "last_trade_report_ts": 1795202826,
+  "last_trade_report_ts": 1795204059,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795017920,
-      "kind": "gap_result",
-      "symbol": "PIEVERSEUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795017922,
       "kind": "gap_result",
@@ -13541,6 +13532,15 @@
       "kind": "gap_result",
       "symbol": "BTCUSDT",
       "tf": "1h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795204055,
+      "kind": "gap_result",
+      "symbol": "RAREUSDT",
+      "tf": "15m",
       "gap": 0.0,
       "filled": true,
       "note": "filled"
