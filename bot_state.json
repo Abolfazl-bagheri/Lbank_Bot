@@ -9427,7 +9427,8 @@
       "side": "SELL",
       "upper": 0.009418288985964552,
       "open": 0.00956,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "UVXYUSDT",
@@ -9483,7 +9484,8 @@
       "side": "LONG",
       "upper": 3660.3159725323058,
       "open": 3564.11,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CRCLUSDT",
@@ -9492,7 +9494,8 @@
       "side": "LONG",
       "upper": 52.10208835376581,
       "open": 50.61,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -9779,36 +9782,9 @@
     "1000000BABYDOGEUSDT": 1795176332,
     "CAPETHUSDT": 1795182416
   },
-  "last_trade_report_ts": 1795139299,
+  "last_trade_report_ts": 1795140286,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1794990736,
-      "kind": "gap_result",
-      "symbol": "XAUTUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1794992648,
-      "kind": "gap_result",
-      "symbol": "PIPPINUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
-    {
-      "ts": 1794992651,
-      "kind": "gap_result",
-      "symbol": "BWETUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1794993431,
       "kind": "gap_result",
@@ -13378,6 +13354,33 @@
       "kind": "gap_result",
       "symbol": "PIPPINUSDT",
       "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795140270,
+      "kind": "gap_result",
+      "symbol": "HUMAUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
+    },
+    {
+      "ts": 1795140278,
+      "kind": "gap_result",
+      "symbol": "XAUTUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795140282,
+      "kind": "gap_result",
+      "symbol": "CRCLUSDT",
+      "tf": "5m",
       "gap": 0.0,
       "filled": true,
       "note": "filled"
