@@ -6599,26 +6599,6 @@
   ],
   "pending": [
     {
-      "symbol": "BLESSUSDT",
-      "tf": "15m",
-      "candle_ts": 1795023000,
-      "side": "SELL",
-      "upper": 0.01169504186723424,
-      "open": 0.011815,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "AKAMUSDT",
-      "tf": "15m",
-      "candle_ts": 1795023000,
-      "side": "SELL",
-      "upper": 88.59986823323167,
-      "open": 87.36,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "NETUSDT",
       "tf": "15m",
       "candle_ts": 1795023000,
@@ -9530,7 +9510,8 @@
       "side": "SELL",
       "upper": 0.013725131675849073,
       "open": 0.013971,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "FOLKSUSDT",
@@ -9569,7 +9550,8 @@
       "side": "SELL",
       "upper": 2.2692324327501256,
       "open": 2.292,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "XAUTUSDT",
@@ -9587,6 +9569,24 @@
       "side": "LONG",
       "upper": 3562.9722853370245,
       "open": 3542.87,
+      "reported": false
+    },
+    {
+      "symbol": "PROMUSDT",
+      "tf": "1h",
+      "candle_ts": 1795183200,
+      "side": "SELL",
+      "upper": 5.78280640448721,
+      "open": 5.854,
+      "reported": false
+    },
+    {
+      "symbol": "ELSAUSDT",
+      "tf": "1h",
+      "candle_ts": 1795183200,
+      "side": "SELL",
+      "upper": 0.06219521882438743,
+      "open": 0.06329,
       "reported": false
     }
   ],
@@ -9843,27 +9843,15 @@
     "SPORTFUNUSDT": 1795118680,
     "DCTYUSDT": 1795129319,
     "TQQQUSDT": 1795133106,
-    "AINBSCUSDT": 1795158246,
     "AI1USDT": 1795158251,
     "ZZZUSDT": 1795158271,
     "LWLGUSDT": 1795159020,
     "ARGUSUSDT": 1795160063,
-    "ARGUSDT": 1795165373,
     "PORUSDT": 1795165381,
     "ARROWUSDT": 1795167993,
     "APEXUSDT": 1795169000,
-    "FONEUSDT": 1795170708,
     "UP2USDT": 1795171609,
-    "NEIRO1USDT": 1795171794,
-    "1000SATSUSDT": 1795171796,
-    "CZUSDT": 1795171797,
-    "MEMECOINUSDT": 1795171799,
-    "1000WOJAKUSDT": 1795171800,
-    "PIPEDOGUSDT": 1795171803,
-    "MANCERUSDT": 1795171814,
     "1000LUNCUSDT": 1795172560,
-    "HOTUSDT": 1795176329,
-    "1000000BABYDOGEUSDT": 1795176332,
     "CAPETHUSDT": 1795182416,
     "GMESTOCKUSDT": 1795190681,
     "GALUSDT": 1795192331,
@@ -9873,29 +9861,23 @@
     "BEMUSDT": 1795202192,
     "CYBERLEEKUSDT": 1795202207,
     "OROCHIUSDT": 1795202210,
-    "FUTUUSDT": 1795202410
+    "FUTUUSDT": 1795202410,
+    "ARGUSDT": 1795226534,
+    "FONEUSDT": 1795226606,
+    "AINBSCUSDT": 1795226607,
+    "AMDLUSDT": 1795226617,
+    "BTCDOMUSDT": 1795226641,
+    "1000WOJAKUSDT": 1795226673,
+    "1000SATSUSDT": 1795226677,
+    "NEIRO1USDT": 1795226674,
+    "MEMECOINUSDT": 1795226685,
+    "CZUSDT": 1795226687,
+    "PIPEDOGUSDT": 1795226690,
+    "MANCERUSDT": 1795226691
   },
-  "last_trade_report_ts": 1795160140,
+  "last_trade_report_ts": 1795183563,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795006042,
-      "kind": "gap_result",
-      "symbol": "XAUTUSDT",
-      "tf": "5m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795006045,
-      "kind": "gap_result",
-      "symbol": "CRCLUSDT",
-      "tf": "5m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795006048,
       "kind": "gap_result",
@@ -13474,6 +13456,24 @@
       "kind": "gap_result",
       "symbol": "SILVERUSDT",
       "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795183542,
+      "kind": "gap_result",
+      "symbol": "BLESSUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795183544,
+      "kind": "gap_result",
+      "symbol": "FOLKSUSDT",
+      "tf": "15m",
       "gap": 0.0,
       "filled": true,
       "note": "filled"
