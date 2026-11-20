@@ -9581,7 +9581,8 @@
       "side": "SELL",
       "upper": 0.007270848834948814,
       "open": 0.007858,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "SKDDUSDT",
@@ -9930,15 +9931,6 @@
   "last_trade_report_ts": 1795197866,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795016824,
-      "kind": "gap_result",
-      "symbol": "PROSUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795016835,
       "kind": "gap_result",
@@ -13523,6 +13515,15 @@
     },
     {
       "ts": 1795197860,
+      "kind": "gap_result",
+      "symbol": "CLAUDIAUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795198650,
       "kind": "gap_result",
       "symbol": "CLAUDIAUSDT",
       "tf": "15m",
