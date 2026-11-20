@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795146670,
+  "updated_at": 1795146886,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "GOLDUSDT",
-      "tf": "15m",
-      "gap": 0.19,
-      "ts": 1795124825
-    },
     {
       "kind": "SELL",
       "symbol": "XAUTUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1795146670
+    },
+    {
+      "kind": "GAP",
+      "symbol": "BARDUSDT",
+      "tf": "1h",
+      "gap": 7.0,
+      "ts": 1795146886
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.1006,
-      "pnl": -5.7558,
+      "px": 0.1003,
+      "pnl": -5.143,
       "tf": "15m"
     }
   ],
@@ -1423,8 +1423,8 @@
   "session_start": 1795133194,
   "realized": 28.3873,
   "closed_n": 2,
-  "open_upnl": -5.7558,
-  "equity": 1022.6315,
+  "open_upnl": -5.143,
+  "equity": 1023.2443,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
