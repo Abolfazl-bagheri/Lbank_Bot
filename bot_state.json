@@ -9494,7 +9494,8 @@
       "side": "LONG",
       "upper": 3614.829173772408,
       "open": 3544.73,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -9781,18 +9782,9 @@
     "1000000BABYDOGEUSDT": 1795176332,
     "CAPETHUSDT": 1795182416
   },
-  "last_trade_report_ts": 1795140286,
+  "last_trade_report_ts": 1795141186,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1794993431,
-      "kind": "gap_result",
-      "symbol": "TWSTUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1794994331,
       "kind": "gap_result",
@@ -13379,6 +13371,15 @@
       "ts": 1795140282,
       "kind": "gap_result",
       "symbol": "CRCLUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795141066,
+      "kind": "gap_result",
+      "symbol": "XAUTUSDT",
       "tf": "5m",
       "gap": 0.0,
       "filled": true,
