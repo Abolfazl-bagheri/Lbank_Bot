@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795186900,
+  "updated_at": 1795186917,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "IRYSUSDT",
-      "tf": "1h",
-      "gap": 1.82,
-      "ts": 1795151005
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795151078
-    },
     {
       "kind": "HEARTBEAT",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "15m",
       "gap": 3.01,
       "ts": 1795186900
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795186905
+    },
+    {
+      "kind": "SELL",
+      "symbol": "MRNAUSDT",
+      "tf": "1h",
+      "gap": 1.36,
+      "ts": 1795186917
     }
   ],
   "trades": [
@@ -1469,14 +1469,27 @@
       "px": 0.010674,
       "pnl": -0.24,
       "tf": "15m"
+    },
+    {
+      "symbol": "DJTUSDT",
+      "side": "SELL",
+      "entry": 4.376,
+      "tp": 4.2666,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 4.376,
+      "pnl": -0.24,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1795133194,
   "realized": 86.1164,
   "closed_n": 5,
-  "open_upnl": -48.2434,
-  "equity": 1037.873,
+  "open_upnl": -48.4834,
+  "equity": 1037.633,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
