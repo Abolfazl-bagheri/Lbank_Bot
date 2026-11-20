@@ -4,16 +4,18 @@
       "symbol": "BARDUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.1007900369030964,
-      "qty": 5952.969300000001,
-      "margin": 30.0,
+      "entry": 0.10090990879589438,
+      "qty": 13873.7614,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 0.09827028598051898,
+      "tp_price": 0.09838716107599703,
       "tf": "1h",
       "opened_at": 1795145418,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
+      "adds": 2,
+      "last_leg_margin": 40.0,
+      "used_res_levels": [
+        0.1014
+      ],
       "steps": [
         {
           "px": 0.0979,
@@ -22,10 +24,14 @@
         {
           "px": 0.1023,
           "ts": 1795147257
+        },
+        {
+          "px": 0.101,
+          "ts": 1795147860
         }
       ],
       "entry_candle_ts": 1795145400,
-      "last_leg_candle_ts": 1795147200,
+      "last_leg_candle_ts": 1795147860,
       "dry_run": true,
       "order_id": "PAPER-BARDUSDT-1795145418"
     }
@@ -6536,16 +6542,6 @@
   ],
   "pending": [
     {
-      "symbol": "CRCLUSDT",
-      "tf": "5m",
-      "candle_ts": 1795018800,
-      "side": "LONG",
-      "upper": 54.99262924793308,
-      "open": 53.45,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "XAUTUSDT",
       "tf": "5m",
       "candle_ts": 1795018800,
@@ -9347,7 +9343,8 @@
       "side": "SELL",
       "upper": 25.080157820386756,
       "open": 25.28,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "RAVEUSDT",
@@ -9356,7 +9353,8 @@
       "side": "SELL",
       "upper": 0.12704759405326435,
       "open": 0.129,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CTRUSDT",
@@ -9365,7 +9363,8 @@
       "side": "SELL",
       "upper": 0.018027416068847033,
       "open": 0.01843,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "IRYSUSDT",
@@ -9514,7 +9513,8 @@
       "side": "SELL",
       "upper": 0.001293281396830532,
       "open": 0.001309,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "BARDUSDT",
@@ -9523,6 +9523,16 @@
       "side": "SELL",
       "upper": 0.09884613331650442,
       "open": 0.1005,
+      "reported": true,
+      "filled": false
+    },
+    {
+      "symbol": "BARDUSDT",
+      "tf": "1h",
+      "candle_ts": 1795147200,
+      "side": "SELL",
+      "upper": 0.09726333683083573,
+      "open": 0.1022,
       "reported": false
     }
   ],
@@ -9808,56 +9818,12 @@
     "1000LUNCUSDT": 1795172560,
     "HOTUSDT": 1795176329,
     "1000000BABYDOGEUSDT": 1795176332,
-    "CAPETHUSDT": 1795182416
+    "CAPETHUSDT": 1795182416,
+    "GMESTOCKUSDT": 1795190681
   },
-  "last_trade_report_ts": 1795146517,
+  "last_trade_report_ts": 1795147632,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1794999873,
-      "kind": "gap_result",
-      "symbol": "ZKCUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1794999875,
-      "kind": "gap_result",
-      "symbol": "IRYSUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1794999879,
-      "kind": "gap_result",
-      "symbol": "LABUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1794999881,
-      "kind": "gap_result",
-      "symbol": "PIEVERSEUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1794999884,
-      "kind": "gap_result",
-      "symbol": "PIEVERSEUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795003558,
       "kind": "gap_result",
@@ -13406,6 +13372,51 @@
     },
     {
       "ts": 1795146515,
+      "kind": "gap_result",
+      "symbol": "BARDUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
+    },
+    {
+      "ts": 1795147603,
+      "kind": "gap_result",
+      "symbol": "UVXYUSDT",
+      "tf": "4h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795147607,
+      "kind": "gap_result",
+      "symbol": "RAVEUSDT",
+      "tf": "4h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795147613,
+      "kind": "gap_result",
+      "symbol": "CTRUSDT",
+      "tf": "4h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795147616,
+      "kind": "gap_result",
+      "symbol": "TACUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795147627,
       "kind": "gap_result",
       "symbol": "BARDUSDT",
       "tf": "15m",
