@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795194051,
+  "updated_at": 1795194083,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795184791
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795184837
-    },
     {
       "kind": "GAP",
       "symbol": "HUMAUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "1h",
       "gap": 2.58,
       "ts": 1795194051
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795194059
+    },
+    {
+      "kind": "SELL",
+      "symbol": "BANUSDT",
+      "tf": "1h",
+      "gap": 1.57,
+      "ts": 1795194083
     }
   ],
   "trades": [
@@ -1456,14 +1456,27 @@
       "px": 138.47,
       "pnl": 11.4181,
       "tf": "15m"
+    },
+    {
+      "symbol": "SKDDUSDT",
+      "side": "SELL",
+      "entry": 14.585,
+      "tp": 14.220375,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 14.585,
+      "pnl": -0.24,
+      "tf": "1h"
     }
   ],
   "start": 1000.0,
   "session_start": 1795133194,
   "realized": 199.9864,
   "closed_n": 8,
-  "open_upnl": 51.1681,
-  "equity": 1251.1545,
+  "open_upnl": 50.9281,
+  "equity": 1250.9145,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
