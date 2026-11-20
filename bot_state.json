@@ -97,16 +97,18 @@
       "symbol": "CRCLUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 52.47975649435844,
-      "qty": 11.433,
-      "margin": 30.0,
+      "entry": 51.909573081201344,
+      "qty": 26.97,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 51.167762581999476,
+      "tp_price": 50.61183375417131,
       "tf": "5m",
       "opened_at": 1795185371,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
+      "adds": 2,
+      "last_leg_margin": 40.0,
+      "used_res_levels": [
+        51.62
+      ],
       "steps": [
         {
           "px": 52.32,
@@ -115,10 +117,14 @@
         {
           "px": 52.56,
           "ts": 1795185609
+        },
+        {
+          "px": 51.49,
+          "ts": 1795186062
         }
       ],
       "entry_candle_ts": 1795185300,
-      "last_leg_candle_ts": 1795185000,
+      "last_leg_candle_ts": 1795186062,
       "dry_run": true,
       "order_id": "PAPER-CRCLUSDT-1795185371"
     },
@@ -6653,26 +6659,6 @@
   ],
   "pending": [
     {
-      "symbol": "NETUSDT",
-      "tf": "15m",
-      "candle_ts": 1795023900,
-      "side": "SELL",
-      "upper": 297.6528113135218,
-      "open": 293.8,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "HUMAUSDT",
-      "tf": "1h",
-      "candle_ts": 1795024800,
-      "side": "SELL",
-      "upper": 0.008326461379059031,
-      "open": 0.00852,
-      "reported": true,
-      "filled": false
-    },
-    {
       "symbol": "AKAMUSDT",
       "tf": "15m",
       "candle_ts": 1795024800,
@@ -9620,7 +9606,8 @@
       "side": "SELL",
       "upper": 0.012455959355196165,
       "open": 0.01219,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CRCLUSDT",
@@ -9639,6 +9626,25 @@
       "side": "SELL",
       "upper": 52.514692527158566,
       "open": 52.61,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "RAREUSDT",
+      "tf": "15m",
+      "candle_ts": 1795185900,
+      "side": "SELL",
+      "upper": 0.012815794378511587,
+      "open": 0.01313,
+      "reported": false
+    },
+    {
+      "symbol": "SKDDUSDT",
+      "tf": "15m",
+      "candle_ts": 1795185900,
+      "side": "SELL",
+      "upper": 13.347779627044629,
+      "open": 13.474,
       "reported": false
     }
   ],
@@ -9930,24 +9936,6 @@
   "last_trade_report_ts": 1795185409,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795006055,
-      "kind": "gap_result",
-      "symbol": "XAUTUSDT",
-      "tf": "5m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795006062,
-      "kind": "gap_result",
-      "symbol": "XAUTUSDT",
-      "tf": "5m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795006065,
       "kind": "gap_result",
@@ -13523,6 +13511,24 @@
     },
     {
       "ts": 1795185648,
+      "kind": "gap_result",
+      "symbol": "CRCLUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795186055,
+      "kind": "gap_result",
+      "symbol": "RAREUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795186058,
       "kind": "gap_result",
       "symbol": "CRCLUSDT",
       "tf": "5m",
