@@ -6691,26 +6691,6 @@
   ],
   "pending": [
     {
-      "symbol": "CRCLUSDT",
-      "tf": "5m",
-      "candle_ts": 1795043100,
-      "side": "SELL",
-      "upper": 53.45261589125578,
-      "open": 53.38,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "SILVERUSDT",
-      "tf": "5m",
-      "candle_ts": 1795043400,
-      "side": "SELL",
-      "upper": 45.388353176461145,
-      "open": 45.45,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "XAUTUSDT",
       "tf": "5m",
       "candle_ts": 1795043400,
@@ -9582,7 +9562,8 @@
       "side": "SELL",
       "upper": 76.89547457684287,
       "open": 78.0,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "SKDDUSDT",
@@ -9591,7 +9572,8 @@
       "side": "SELL",
       "upper": 14.208737664554032,
       "open": 14.486,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "BANUSDT",
@@ -9600,7 +9582,8 @@
       "side": "SELL",
       "upper": 0.04075020420306064,
       "open": 0.04125,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "BTCUSDT",
@@ -9609,7 +9592,8 @@
       "side": "LONG",
       "upper": 63346.8168764749,
       "open": 59516.8,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CLAUDIAUSDT",
@@ -9618,7 +9602,8 @@
       "side": "SELL",
       "upper": 0.00639597138135848,
       "open": 0.006607,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CLAUDIAUSDT",
@@ -9663,6 +9648,24 @@
       "side": "SELL",
       "upper": 0.0010889231473106553,
       "open": 0.001103,
+      "reported": false
+    },
+    {
+      "symbol": "JELLYJELLYUSDT",
+      "tf": "1h",
+      "candle_ts": 1795197600,
+      "side": "SELL",
+      "upper": 0.03847939205833235,
+      "open": 0.03912,
+      "reported": false
+    },
+    {
+      "symbol": "BTCUSDT",
+      "tf": "1h",
+      "candle_ts": 1795197600,
+      "side": "LONG",
+      "upper": 63488.156870722494,
+      "open": 59140.4,
       "reported": false
     }
   ],
@@ -9955,54 +9958,9 @@
     "BONERUSDT": 1795238202,
     "GALUSDT": 1795239096
   },
-  "last_trade_report_ts": 1795196859,
+  "last_trade_report_ts": 1795197866,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795015953,
-      "kind": "gap_result",
-      "symbol": "PANWUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
-    {
-      "ts": 1795015955,
-      "kind": "gap_result",
-      "symbol": "OKTAUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
-    {
-      "ts": 1795015957,
-      "kind": "gap_result",
-      "symbol": "NETUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
-    {
-      "ts": 1795015961,
-      "kind": "gap_result",
-      "symbol": "AKAMUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
-    {
-      "ts": 1795015970,
-      "kind": "gap_result",
-      "symbol": "CRCLUSDT",
-      "tf": "5m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795016824,
       "kind": "gap_result",
@@ -13557,6 +13515,51 @@
       "gap": 0.0,
       "filled": false,
       "note": "miss"
+    },
+    {
+      "ts": 1795197849,
+      "kind": "gap_result",
+      "symbol": "SOXSUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
+    },
+    {
+      "ts": 1795197851,
+      "kind": "gap_result",
+      "symbol": "SKDDUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
+    },
+    {
+      "ts": 1795197855,
+      "kind": "gap_result",
+      "symbol": "BANUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795197857,
+      "kind": "gap_result",
+      "symbol": "BTCUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795197860,
+      "kind": "gap_result",
+      "symbol": "CLAUDIAUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
     }
   ],
   "tune_history": [],
