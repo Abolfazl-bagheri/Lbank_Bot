@@ -1,29 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795133718,
+  "updated_at": 1795133960,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "SAPIENUSDT",
-      "tf": "4h",
-      "gap": 1.05,
-      "ts": 1795117337
-    },
-    {
-      "kind": "GAP",
-      "symbol": "ICNTUSDT",
-      "tf": "4h",
-      "gap": 1.59,
-      "ts": 1795117537
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795117686
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,15 +1381,50 @@
       "tf": "15m",
       "gap": 2.36,
       "ts": 1795133718
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795133722
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795133847
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795133960
     }
   ],
-  "trades": [],
+  "trades": [
+    {
+      "symbol": "IRYSUSDT",
+      "side": "SELL",
+      "entry": 0.02473,
+      "tp": 0.024111749999999998,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.02529,
+      "pnl": -4.7689,
+      "tf": "15m"
+    }
+  ],
   "start": 1000.0,
   "session_start": 1795133194,
   "realized": 0,
   "closed_n": 0,
-  "open_upnl": 0,
-  "equity": 1000.0,
+  "open_upnl": -4.7689,
+  "equity": 995.2311,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
