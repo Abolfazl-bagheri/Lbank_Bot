@@ -107,17 +107,18 @@
       "symbol": "SKDDUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 14.79349897554878,
-      "qty": 40.5583,
-      "margin": 30.0,
+      "entry": 14.904019697810064,
+      "qty": 93.93430000000001,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 14.42366150116006,
+      "tp_price": 14.531419205364813,
       "tf": "1h",
       "opened_at": 1795194053,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [
-        14.932
+        14.932,
+        15.025
       ],
       "steps": [
         {
@@ -127,10 +128,14 @@
         {
           "px": 14.9,
           "ts": 1795195594
+        },
+        {
+          "px": 14.988,
+          "ts": 1795196441
         }
       ],
       "entry_candle_ts": 1795194000,
-      "last_leg_candle_ts": 1795195594,
+      "last_leg_candle_ts": 1795196441,
       "dry_run": true,
       "order_id": "PAPER-SKDDUSDT-1795194053"
     }
