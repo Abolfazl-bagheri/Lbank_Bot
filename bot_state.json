@@ -157,6 +157,31 @@
       "last_leg_candle_ts": 1795186800,
       "dry_run": true,
       "order_id": "PAPER-HUMAUSDT-1795186859"
+    },
+    {
+      "symbol": "DJTUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 4.376,
+      "qty": 45.7038,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 4.2666,
+      "tf": "15m",
+      "opened_at": 1795186901,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 4.376,
+          "ts": 1795186901
+        }
+      ],
+      "entry_candle_ts": 1795186800,
+      "last_leg_candle_ts": 1795186800,
+      "dry_run": true,
+      "order_id": "PAPER-DJTUSDT-1795186901"
     }
   ],
   "trade_history": [
@@ -6642,36 +6667,6 @@
   ],
   "pending": [
     {
-      "symbol": "OKTAUSDT",
-      "tf": "1h",
-      "candle_ts": 1795024800,
-      "side": "SELL",
-      "upper": 188.83669816354245,
-      "open": 191.04,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "AKAMUSDT",
-      "tf": "1h",
-      "candle_ts": 1795024800,
-      "side": "SELL",
-      "upper": 87.46592333368902,
-      "open": 87.36,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "HUTUSDT",
-      "tf": "15m",
-      "candle_ts": 1795024800,
-      "side": "SELL",
-      "upper": 56.71407836882161,
-      "open": 55.49,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "NETUSDT",
       "tf": "15m",
       "candle_ts": 1795024800,
@@ -9625,6 +9620,33 @@
       "side": "SELL",
       "upper": 0.06373048985535383,
       "open": 0.06419,
+      "reported": false
+    },
+    {
+      "symbol": "HUMAUSDT",
+      "tf": "15m",
+      "candle_ts": 1795186800,
+      "side": "SELL",
+      "upper": 0.010446246429652126,
+      "open": 0.01053,
+      "reported": false
+    },
+    {
+      "symbol": "MRNAUSDT",
+      "tf": "15m",
+      "candle_ts": 1795186800,
+      "side": "SELL",
+      "upper": 205.58844798002556,
+      "open": 208.46,
+      "reported": false
+    },
+    {
+      "symbol": "HUMAUSDT",
+      "tf": "1h",
+      "candle_ts": 1795186800,
+      "side": "SELL",
+      "upper": 0.010344223159425252,
+      "open": 0.01053,
       "reported": false
     }
   ],
