@@ -178,24 +178,30 @@
       "symbol": "TEAMUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 140.83,
-      "qty": 1.4202,
-      "margin": 10.0,
+      "entry": 141.3291108232246,
+      "qty": 4.2455,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 137.30925000000002,
+      "tp_price": 137.79588305264397,
       "tf": "15m",
       "opened_at": 1795186958,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        141.88
+      ],
       "steps": [
         {
           "px": 140.83,
           "ts": 1795186958
+        },
+        {
+          "px": 141.58,
+          "ts": 1795187523
         }
       ],
       "entry_candle_ts": 1795186800,
-      "last_leg_candle_ts": 1795186800,
+      "last_leg_candle_ts": 1795187523,
       "dry_run": true,
       "order_id": "PAPER-TEAMUSDT-1795186958"
     }
