@@ -6599,26 +6599,6 @@
   ],
   "pending": [
     {
-      "symbol": "BULLAUSDT",
-      "tf": "15m",
-      "candle_ts": 1795020300,
-      "side": "SELL",
-      "upper": 0.016154901168294652,
-      "open": 0.016339,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "AKAMUSDT",
-      "tf": "15m",
-      "candle_ts": 1795020300,
-      "side": "SELL",
-      "upper": 88.20465198915593,
-      "open": 87.36,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "MMTUSDT",
       "tf": "15m",
       "candle_ts": 1795021200,
@@ -9580,7 +9560,8 @@
       "side": "SELL",
       "upper": 0.18905884925673241,
       "open": 0.1899,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "ONEUSDT",
@@ -9589,6 +9570,24 @@
       "side": "LONG",
       "upper": 0.0011959727982712737,
       "open": 0.001134,
+      "reported": false
+    },
+    {
+      "symbol": "YBUSDT",
+      "tf": "15m",
+      "candle_ts": 1795155300,
+      "side": "SELL",
+      "upper": 0.055607962507032205,
+      "open": 0.056,
+      "reported": false
+    },
+    {
+      "symbol": "XPINUSDT",
+      "tf": "15m",
+      "candle_ts": 1795155300,
+      "side": "SELL",
+      "upper": 0.0007375138832816447,
+      "open": 0.0007406,
       "reported": false
     }
   ],
@@ -9877,18 +9876,9 @@
     "XBRUSDT": 1795193230,
     "XTIUSDT": 1795193232
   },
-  "last_trade_report_ts": 1795154223,
+  "last_trade_report_ts": 1795155148,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795003578,
-      "kind": "gap_result",
-      "symbol": "ZKCUSDT",
-      "tf": "4h",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
     {
       "ts": 1795003580,
       "kind": "gap_result",
@@ -13479,6 +13469,15 @@
       "gap": 0.0,
       "filled": true,
       "note": "filled"
+    },
+    {
+      "ts": 1795155478,
+      "kind": "gap_result",
+      "symbol": "DOSUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
     }
   ],
   "tune_history": [],
