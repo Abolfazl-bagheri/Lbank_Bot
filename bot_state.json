@@ -178,24 +178,30 @@
       "symbol": "DJTUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 4.376,
-      "qty": 45.7038,
-      "margin": 10.0,
+      "entry": 4.325038285958548,
+      "qty": 138.7271,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 4.2666,
+      "tp_price": 4.216912328809584,
       "tf": "15m",
       "opened_at": 1795186901,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        4.315
+      ],
       "steps": [
         {
           "px": 4.376,
           "ts": 1795186901
+        },
+        {
+          "px": 4.3,
+          "ts": 1795187217
         }
       ],
       "entry_candle_ts": 1795186800,
-      "last_leg_candle_ts": 1795186800,
+      "last_leg_candle_ts": 1795187217,
       "dry_run": true,
       "order_id": "PAPER-DJTUSDT-1795186901"
     },
