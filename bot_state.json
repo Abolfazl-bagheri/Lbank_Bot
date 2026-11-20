@@ -9493,7 +9493,8 @@
       "side": "SELL",
       "upper": 0.01992008686227626,
       "open": 0.02053,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -9784,15 +9785,6 @@
   "last_trade_report_ts": 1795135036,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1794990733,
-      "kind": "gap_result",
-      "symbol": "SILVERUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1794990736,
       "kind": "gap_result",
@@ -13379,6 +13371,15 @@
       "ts": 1795134749,
       "kind": "gap_result",
       "symbol": "IRYSUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795135666,
+      "kind": "gap_result",
+      "symbol": "PIPPINUSDT",
       "tf": "15m",
       "gap": 0.0,
       "filled": true,
