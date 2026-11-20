@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795185917,
+  "updated_at": 1795185941,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795146517
-    },
-    {
-      "kind": "HEARTBEAT",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795146519
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "15m",
       "gap": 2.32,
       "ts": 1795185917
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795185924
+    },
+    {
+      "kind": "SELL",
+      "symbol": "SKDDUSDT",
+      "tf": "15m",
+      "gap": 1.37,
+      "ts": 1795185941
     }
   ],
   "trades": [
@@ -1456,14 +1456,27 @@
       "px": 51.49,
       "pnl": 10.5959,
       "tf": "5m"
+    },
+    {
+      "symbol": "RAREUSDT",
+      "side": "SELL",
+      "entry": 0.01312,
+      "tp": 0.012792,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.01312,
+      "pnl": -0.24,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1795133194,
   "realized": 80.7811,
   "closed_n": 4,
-  "open_upnl": 3.1553,
-  "equity": 1083.9364,
+  "open_upnl": 2.9153,
+  "equity": 1083.6964,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
