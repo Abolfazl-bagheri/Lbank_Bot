@@ -1,29 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795145417,
+  "updated_at": 1795145693,
   "signals": [
-    {
-      "kind": "HEARTBEAT",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795123982
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795124099
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795124100
-    },
     {
       "kind": "SELL",
       "symbol": "SILVERUSDT",
@@ -1402,15 +1381,50 @@
       "tf": "15m",
       "gap": 2.21,
       "ts": 1795145417
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795145421
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795145566
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795145693
     }
   ],
-  "trades": [],
+  "trades": [
+    {
+      "symbol": "BARDUSDT",
+      "side": "SELL",
+      "entry": 0.0979,
+      "tp": 0.0954525,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.0989,
+      "pnl": -2.2829,
+      "tf": "15m"
+    }
+  ],
   "start": 1000.0,
   "session_start": 1795133194,
   "realized": 28.3873,
   "closed_n": 2,
-  "open_upnl": 0,
-  "equity": 1028.3873,
+  "open_upnl": -2.2829,
+  "equity": 1026.1044,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
