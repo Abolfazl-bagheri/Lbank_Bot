@@ -6599,16 +6599,6 @@
   ],
   "pending": [
     {
-      "symbol": "AKAMUSDT",
-      "tf": "15m",
-      "candle_ts": 1795023900,
-      "side": "SELL",
-      "upper": 88.6846115482483,
-      "open": 87.36,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "HUTUSDT",
       "tf": "15m",
       "candle_ts": 1795023900,
@@ -9586,6 +9576,16 @@
       "side": "SELL",
       "upper": 0.009901276061224137,
       "open": 0.01005,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "RAREUSDT",
+      "tf": "15m",
+      "candle_ts": 1795185000,
+      "side": "SELL",
+      "upper": 0.012455959355196165,
+      "open": 0.01219,
       "reported": false
     }
   ],
@@ -9870,20 +9870,13 @@
     "MEMECOINUSDT": 1795226685,
     "CZUSDT": 1795226687,
     "PIPEDOGUSDT": 1795226690,
-    "MANCERUSDT": 1795226691
+    "MANCERUSDT": 1795226691,
+    "O1USDT": 1795228306,
+    "SKY1USDT": 1795228312
   },
   "last_trade_report_ts": 1795184500,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795006048,
-      "kind": "gap_result",
-      "symbol": "SILVERUSDT",
-      "tf": "5m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795006051,
       "kind": "gap_result",
@@ -13470,6 +13463,15 @@
       "ts": 1795183544,
       "kind": "gap_result",
       "symbol": "FOLKSUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795185147,
+      "kind": "gap_result",
+      "symbol": "HUMAUSDT",
       "tf": "15m",
       "gap": 0.0,
       "filled": true,
