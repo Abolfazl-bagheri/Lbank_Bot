@@ -6638,16 +6638,6 @@
       "filled": true
     },
     {
-      "symbol": "NETUSDT",
-      "tf": "15m",
-      "candle_ts": 1795023900,
-      "side": "SELL",
-      "upper": 297.6528113135218,
-      "open": 293.8,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "HUMAUSDT",
       "tf": "1h",
       "candle_ts": 1795024800,
@@ -9614,6 +9604,16 @@
       "side": "SELL",
       "upper": 52.164292496999565,
       "open": 52.1,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "CRCLUSDT",
+      "tf": "5m",
+      "candle_ts": 1795185600,
+      "side": "SELL",
+      "upper": 52.514692527158566,
+      "open": 52.61,
       "reported": false
     }
   ],
@@ -9905,15 +9905,6 @@
   "last_trade_report_ts": 1795185409,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795006051,
-      "kind": "gap_result",
-      "symbol": "GOLDUSDT",
-      "tf": "5m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795006055,
       "kind": "gap_result",
@@ -13501,6 +13492,15 @@
       "kind": "gap_result",
       "symbol": "HUMAUSDT",
       "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795185648,
+      "kind": "gap_result",
+      "symbol": "CRCLUSDT",
+      "tf": "5m",
       "gap": 0.0,
       "filled": true,
       "note": "filled"
