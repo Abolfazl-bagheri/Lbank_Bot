@@ -6532,26 +6532,6 @@
   ],
   "pending": [
     {
-      "symbol": "HUMAUSDT",
-      "tf": "15m",
-      "candle_ts": 1795018500,
-      "side": "SELL",
-      "upper": 0.007966966203910849,
-      "open": 0.00812,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "HUMAUSDT",
-      "tf": "15m",
-      "candle_ts": 1795018500,
-      "side": "SELL",
-      "upper": 0.00794251945047194,
-      "open": 0.00812,
-      "reported": true,
-      "filled": false
-    },
-    {
       "symbol": "CRCLUSDT",
       "tf": "5m",
       "candle_ts": 1795018800,
@@ -9520,6 +9500,25 @@
       "side": "SELL",
       "upper": 0.09574032332007655,
       "open": 0.0981,
+      "reported": true,
+      "filled": false
+    },
+    {
+      "symbol": "TACUSDT",
+      "tf": "15m",
+      "candle_ts": 1795146300,
+      "side": "SELL",
+      "upper": 0.001293281396830532,
+      "open": 0.001309,
+      "reported": false
+    },
+    {
+      "symbol": "BARDUSDT",
+      "tf": "15m",
+      "candle_ts": 1795146300,
+      "side": "SELL",
+      "upper": 0.09884613331650442,
+      "open": 0.1005,
       "reported": false
     }
   ],
@@ -9807,18 +9806,9 @@
     "1000000BABYDOGEUSDT": 1795176332,
     "CAPETHUSDT": 1795182416
   },
-  "last_trade_report_ts": 1795145163,
+  "last_trade_report_ts": 1795146517,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1794999869,
-      "kind": "gap_result",
-      "symbol": "PIPPINUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
     {
       "ts": 1794999873,
       "kind": "gap_result",
@@ -13403,6 +13393,15 @@
     },
     {
       "ts": 1795145564,
+      "kind": "gap_result",
+      "symbol": "BARDUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
+    },
+    {
+      "ts": 1795146515,
       "kind": "gap_result",
       "symbol": "BARDUSDT",
       "tf": "15m",
