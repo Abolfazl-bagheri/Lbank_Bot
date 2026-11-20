@@ -6638,16 +6638,6 @@
   ],
   "pending": [
     {
-      "symbol": "SILVERUSDT",
-      "tf": "15m",
-      "candle_ts": 1795044600,
-      "side": "SELL",
-      "upper": 45.54197368312836,
-      "open": 45.59,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "NETUSDT",
       "tf": "15m",
       "candle_ts": 1795045500,
@@ -9618,6 +9608,16 @@
       "side": "SELL",
       "upper": 7.583152677408029e-08,
       "open": 7.51e-08,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "MOGUSDT",
+      "tf": "15m",
+      "candle_ts": 1795214700,
+      "side": "SELL",
+      "upper": 7.582865728970505e-08,
+      "open": 7.51e-08,
       "reported": false
     }
   ],
@@ -9823,7 +9823,6 @@
   "kline_blacklist": {
     "EURUSDT": 1793385188,
     "AXLUSDT": 1793502358,
-    "SYNUSDT": 1793537208,
     "CANTONUSDT": 1793952369,
     "METEORAUSDT": 1794163747,
     "DRVUSDT": 1794177070,
@@ -9912,15 +9911,6 @@
   "last_trade_report_ts": 1795214441,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795017929,
-      "kind": "gap_result",
-      "symbol": "TWSTUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795017931,
       "kind": "gap_result",
@@ -13507,6 +13497,15 @@
       "ts": 1795213933,
       "kind": "gap_result",
       "symbol": "DNAUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795214818,
+      "kind": "gap_result",
+      "symbol": "MOGUSDT",
       "tf": "15m",
       "gap": 0.0,
       "filled": true,
