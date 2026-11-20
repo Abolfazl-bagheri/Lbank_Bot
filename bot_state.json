@@ -4,24 +4,30 @@
       "symbol": "PIPPINUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.02052,
-      "qty": 9746.5887,
-      "margin": 10.0,
+      "entry": 0.020519999999999997,
+      "qty": 29239.7661,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.020007,
+      "tp_price": 0.020006999999999997,
       "tf": "15m",
       "opened_at": 1795134612,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.02057
+      ],
       "steps": [
         {
           "px": 0.02052,
           "ts": 1795134612
+        },
+        {
+          "px": 0.02052,
+          "ts": 1795134750
         }
       ],
       "entry_candle_ts": 1795134600,
-      "last_leg_candle_ts": 1795134600,
+      "last_leg_candle_ts": 1795134750,
       "dry_run": true,
       "order_id": "PAPER-PIPPINUSDT-1795134612"
     }
@@ -6542,16 +6548,6 @@
   ],
   "pending": [
     {
-      "symbol": "SOONUSDT",
-      "tf": "4h",
-      "candle_ts": 1795017600,
-      "side": "SELL",
-      "upper": 0.2592688414693442,
-      "open": 0.2641,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "BWETUSDT",
       "tf": "4h",
       "candle_ts": 1795017600,
@@ -9529,6 +9525,16 @@
       "side": "SELL",
       "upper": 0.02414579416516819,
       "open": 0.02469,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "PIPPINUSDT",
+      "tf": "15m",
+      "candle_ts": 1795134600,
+      "side": "SELL",
+      "upper": 0.01992008686227626,
+      "open": 0.02053,
       "reported": false
     }
   ],
@@ -9820,15 +9826,6 @@
   "last_trade_report_ts": 1795134127,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1794990731,
-      "kind": "gap_result",
-      "symbol": "PIPPINUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1794990733,
       "kind": "gap_result",
@@ -13416,6 +13413,15 @@
       "kind": "gap_result",
       "symbol": "RAVEUSDT",
       "tf": "4h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795134749,
+      "kind": "gap_result",
+      "symbol": "IRYSUSDT",
+      "tf": "15m",
       "gap": 0.0,
       "filled": true,
       "note": "filled"
