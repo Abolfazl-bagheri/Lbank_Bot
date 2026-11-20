@@ -6507,16 +6507,6 @@
   "pending": [
     {
       "symbol": "NETUSDT",
-      "tf": "15m",
-      "candle_ts": 1795017600,
-      "side": "SELL",
-      "upper": 295.9607844786574,
-      "open": 293.8,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "NETUSDT",
       "tf": "1h",
       "candle_ts": 1795017600,
       "side": "SELL",
@@ -9494,6 +9484,16 @@
       "side": "SELL",
       "upper": 91.30352556156896,
       "open": 92.16,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "SILVERUSDT",
+      "tf": "5m",
+      "candle_ts": 1795143900,
+      "side": "LONG",
+      "upper": 42.405757655125214,
+      "open": 41.42,
       "reported": false
     }
   ],
@@ -9781,18 +9781,9 @@
     "1000000BABYDOGEUSDT": 1795176332,
     "CAPETHUSDT": 1795182416
   },
-  "last_trade_report_ts": 1795142098,
+  "last_trade_report_ts": 1795143051,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1794996258,
-      "kind": "gap_result",
-      "symbol": "ZKCUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1794997924,
       "kind": "gap_result",
@@ -13379,6 +13370,15 @@
       "ts": 1795142910,
       "kind": "gap_result",
       "symbol": "CRCLUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795143899,
+      "kind": "gap_result",
+      "symbol": "UNITREEUSDT",
       "tf": "15m",
       "gap": 0.0,
       "filled": true,
