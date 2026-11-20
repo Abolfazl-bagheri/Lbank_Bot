@@ -109,41 +109,6 @@
       "order_id": "PAPER-GOLDUSDT-1795154184"
     },
     {
-      "symbol": "CRCLUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 51.909573081201344,
-      "qty": 26.97,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 50.61183375417131,
-      "tf": "5m",
-      "opened_at": 1795185371,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [
-        51.62
-      ],
-      "steps": [
-        {
-          "px": 52.32,
-          "ts": 1795185371
-        },
-        {
-          "px": 52.56,
-          "ts": 1795185609
-        },
-        {
-          "px": 51.49,
-          "ts": 1795186062
-        }
-      ],
-      "entry_candle_ts": 1795185300,
-      "last_leg_candle_ts": 1795186062,
-      "dry_run": true,
-      "order_id": "PAPER-CRCLUSDT-1795185371"
-    },
-    {
       "symbol": "DJTUSDT",
       "side": "SELL",
       "status": "open",
@@ -207,36 +172,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "MINIMAXUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 20.87,
-      "qty": 9.5831,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 20.34825,
-      "tf": "15m",
-      "opened_at": 1794188731,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 20.87,
-          "ts": 1794188731
-        }
-      ],
-      "entry_candle_ts": 1794188700,
-      "last_leg_candle_ts": 1794188700,
-      "dry_run": true,
-      "order_id": "PAPER-MINIMAXUSDT-1794188731",
-      "closed_at": 1794194352,
-      "close_px": 20.3,
-      "pnl_usdt": 5.462386200287497,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "UNITREEUSDT",
       "side": "SELL",
@@ -6689,6 +6624,46 @@
       "closed_at": 1795187436,
       "close_px": 0.010195,
       "pnl_usdt": 26.925238898257557,
+      "close_reason": "TP50",
+      "why": "TP50"
+    },
+    {
+      "symbol": "CRCLUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 51.909573081201344,
+      "qty": 26.97,
+      "margin": 70.0,
+      "leverage": 20,
+      "tp_price": 50.61183375417131,
+      "tf": "5m",
+      "opened_at": 1795185371,
+      "adds": 2,
+      "last_leg_margin": 40.0,
+      "used_res_levels": [
+        51.62
+      ],
+      "steps": [
+        {
+          "px": 52.32,
+          "ts": 1795185371
+        },
+        {
+          "px": 52.56,
+          "ts": 1795185609
+        },
+        {
+          "px": 51.49,
+          "ts": 1795186062
+        }
+      ],
+      "entry_candle_ts": 1795185300,
+      "last_leg_candle_ts": 1795186062,
+      "dry_run": true,
+      "order_id": "PAPER-CRCLUSDT-1795185371",
+      "closed_at": 1795188891,
+      "close_px": 50.4,
+      "pnl_usdt": 40.7131515101448,
       "close_reason": "TP50",
       "why": "TP50"
     }
