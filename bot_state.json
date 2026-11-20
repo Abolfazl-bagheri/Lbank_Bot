@@ -132,6 +132,31 @@
       "last_leg_candle_ts": 1795186062,
       "dry_run": true,
       "order_id": "PAPER-CRCLUSDT-1795185371"
+    },
+    {
+      "symbol": "HUMAUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.010674,
+      "qty": 18737.1182,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.010407149999999999,
+      "tf": "15m",
+      "opened_at": 1795186859,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.010674,
+          "ts": 1795186859
+        }
+      ],
+      "entry_candle_ts": 1795186800,
+      "last_leg_candle_ts": 1795186800,
+      "dry_run": true,
+      "order_id": "PAPER-HUMAUSDT-1795186859"
     }
   ],
   "trade_history": [
@@ -6617,26 +6642,6 @@
   ],
   "pending": [
     {
-      "symbol": "PROSUSDT",
-      "tf": "1h",
-      "candle_ts": 1795024800,
-      "side": "SELL",
-      "upper": 0.6132444623358265,
-      "open": 0.6266,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "PANWUSDT",
-      "tf": "1h",
-      "candle_ts": 1795024800,
-      "side": "SELL",
-      "upper": 326.1302021798476,
-      "open": 325.27,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "OKTAUSDT",
       "tf": "1h",
       "candle_ts": 1795024800,
@@ -9603,6 +9608,24 @@
       "upper": 13.332392612607821,
       "open": 13.474,
       "reported": false
+    },
+    {
+      "symbol": "FOLKSUSDT",
+      "tf": "15m",
+      "candle_ts": 1795186800,
+      "side": "SELL",
+      "upper": 2.521242982213293,
+      "open": 2.535,
+      "reported": false
+    },
+    {
+      "symbol": "ELSAUSDT",
+      "tf": "1h",
+      "candle_ts": 1795186800,
+      "side": "SELL",
+      "upper": 0.06373048985535383,
+      "open": 0.06419,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -9889,7 +9912,7 @@
     "O1USDT": 1795228306,
     "SKY1USDT": 1795228312
   },
-  "last_trade_report_ts": 1795185409,
+  "last_trade_report_ts": 1795186598,
   "last_known_version": "2.10.0",
   "lessons": [
     {
