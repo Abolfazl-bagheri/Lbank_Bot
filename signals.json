@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795197624,
+  "updated_at": 1795197638,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "FOLKSUSDT",
-      "tf": "15m",
-      "gap": 1.01,
-      "ts": 1795186842
-    },
-    {
-      "kind": "SELL",
-      "symbol": "ELSAUSDT",
-      "tf": "1h",
-      "gap": 1.21,
-      "ts": 1795186854
-    },
     {
       "kind": "SELL",
       "symbol": "HUMAUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "15m",
       "gap": 7.81,
       "ts": 1795197624
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795197630
+    },
+    {
+      "kind": "SELL",
+      "symbol": "SKDDUSDT",
+      "tf": "1h",
+      "gap": 1.86,
+      "ts": 1795197638
     }
   ],
   "trades": [
@@ -1456,14 +1456,27 @@
       "px": 14.969,
       "pnl": -7.7839,
       "tf": "1h"
+    },
+    {
+      "symbol": "CLAUDIAUSDT",
+      "side": "SELL",
+      "entry": 0.007887,
+      "tp": 0.007689825,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.007887,
+      "pnl": -0.24,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1795133194,
   "realized": 223.3578,
   "closed_n": 10,
-  "open_upnl": 29.7544,
-  "equity": 1253.1122,
+  "open_upnl": 29.5144,
+  "equity": 1252.8722,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
