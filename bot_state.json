@@ -144,37 +144,6 @@
       "order_id": "PAPER-CRCLUSDT-1795185371"
     },
     {
-      "symbol": "HUMAUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.010674000000000001,
-      "qty": 56211.354699999996,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.01040715,
-      "tf": "15m",
-      "opened_at": 1795186859,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        0.0107
-      ],
-      "steps": [
-        {
-          "px": 0.010674,
-          "ts": 1795186859
-        },
-        {
-          "px": 0.010674,
-          "ts": 1795187123
-        }
-      ],
-      "entry_candle_ts": 1795186800,
-      "last_leg_candle_ts": 1795187123,
-      "dry_run": true,
-      "order_id": "PAPER-HUMAUSDT-1795186859"
-    },
-    {
       "symbol": "DJTUSDT",
       "side": "SELL",
       "status": "open",
@@ -232,36 +201,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "AIOUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.05319,
-      "qty": 3760.1053,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.05186025,
-      "tf": "15m",
-      "opened_at": 1794186035,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.05319,
-          "ts": 1794186035
-        }
-      ],
-      "entry_candle_ts": 1794186000,
-      "last_leg_candle_ts": 1794186000,
-      "dry_run": true,
-      "order_id": "PAPER-AIOUSDT-1794186035",
-      "closed_at": 1794187164,
-      "close_px": 0.04997,
-      "pnl_usdt": 12.107539011092312,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "MINIMAXUSDT",
       "side": "SELL",
@@ -6708,6 +6647,42 @@
       "closed_at": 1795186175,
       "close_px": 0.01277,
       "pnl_usdt": 5.33536585365853,
+      "close_reason": "TP50",
+      "why": "TP50"
+    },
+    {
+      "symbol": "HUMAUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.010674000000000001,
+      "qty": 56211.354699999996,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 0.01040715,
+      "tf": "15m",
+      "opened_at": 1795186859,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.0107
+      ],
+      "steps": [
+        {
+          "px": 0.010674,
+          "ts": 1795186859
+        },
+        {
+          "px": 0.010674,
+          "ts": 1795187123
+        }
+      ],
+      "entry_candle_ts": 1795186800,
+      "last_leg_candle_ts": 1795187123,
+      "dry_run": true,
+      "order_id": "PAPER-HUMAUSDT-1795186859",
+      "closed_at": 1795187436,
+      "close_px": 0.010195,
+      "pnl_usdt": 26.925238898257557,
       "close_reason": "TP50",
       "why": "TP50"
     }
