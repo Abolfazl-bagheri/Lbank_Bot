@@ -6666,16 +6666,6 @@
   ],
   "pending": [
     {
-      "symbol": "CRCLUSDT",
-      "tf": "5m",
-      "candle_ts": 1795043400,
-      "side": "SELL",
-      "upper": 53.63548218042782,
-      "open": 53.76,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "SILVERUSDT",
       "tf": "5m",
       "candle_ts": 1795043400,
@@ -9631,7 +9621,8 @@
       "side": "LONG",
       "upper": 3537.2743829531196,
       "open": 3513.69,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "GOLDUSDT",
@@ -9640,6 +9631,16 @@
       "side": "LONG",
       "upper": 3547.216571302783,
       "open": 3523.07,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "GOLDUSDT",
+      "tf": "5m",
+      "candle_ts": 1795200300,
+      "side": "LONG",
+      "upper": 3547.4781092082117,
+      "open": 3514.78,
       "reported": false
     }
   ],
@@ -9935,24 +9936,6 @@
   "last_trade_report_ts": 1795199799,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795016835,
-      "kind": "gap_result",
-      "symbol": "NETUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795016837,
-      "kind": "gap_result",
-      "symbol": "AKAMUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
     {
       "ts": 1795017896,
       "kind": "gap_result",
@@ -13531,6 +13514,24 @@
       "kind": "gap_result",
       "symbol": "CLAUDIAUSDT",
       "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795200428,
+      "kind": "gap_result",
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795200431,
+      "kind": "gap_result",
+      "symbol": "GOLDUSDT",
+      "tf": "5m",
       "gap": 0.0,
       "filled": true,
       "note": "filled"
