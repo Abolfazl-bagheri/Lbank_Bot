@@ -143,24 +143,30 @@
       "symbol": "JELLYJELLYUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.03919,
-      "qty": 5103.3427,
-      "margin": 10.0,
+      "entry": 0.039402754262049824,
+      "qty": 15227.3619,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.03821025,
+      "tp_price": 0.03841768540549858,
       "tf": "1h",
       "opened_at": 1795197683,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.03966
+      ],
       "steps": [
         {
           "px": 0.03919,
           "ts": 1795197683
+        },
+        {
+          "px": 0.03951,
+          "ts": 1795200051
         }
       ],
       "entry_candle_ts": 1795197600,
-      "last_leg_candle_ts": 1795197600,
+      "last_leg_candle_ts": 1795200051,
       "dry_run": true,
       "order_id": "PAPER-JELLYJELLYUSDT-1795197683"
     }
