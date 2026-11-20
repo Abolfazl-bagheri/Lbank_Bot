@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795147255,
+  "updated_at": 1795147630,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "RAVEUSDT",
-      "tf": "1h",
-      "gap": 1.05,
-      "ts": 1795125334
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795125394
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,29 +1388,43 @@
       "tf": "1h",
       "gap": 4.92,
       "ts": 1795147255
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795147259
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795147630
     }
   ],
   "trades": [
     {
       "symbol": "BARDUSDT",
       "side": "SELL",
-      "entry": 0.0979,
-      "tp": 0.0954525,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
+      "entry": 0.1007900369030964,
+      "tp": 0.09827028598051898,
+      "adds": 1,
+      "pele": 2,
+      "margin": 30.0,
       "lev": 20,
       "px": 0.1023,
-      "pnl": -9.2288,
-      "tf": "15m"
+      "pnl": -9.7088,
+      "tf": "1h"
     }
   ],
   "start": 1000.0,
   "session_start": 1795133194,
   "realized": 28.3873,
   "closed_n": 2,
-  "open_upnl": -9.2288,
-  "equity": 1019.1585,
+  "open_upnl": -9.7088,
+  "equity": 1018.6785,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
