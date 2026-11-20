@@ -1,68 +1,6 @@
 {
-  "open_trades": [
-    {
-      "symbol": "IRYSUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.02473,
-      "qty": 8087.3433,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.024111749999999998,
-      "tf": "15m",
-      "opened_at": 1795133719,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.02473,
-          "ts": 1795133719
-        }
-      ],
-      "entry_candle_ts": 1795133700,
-      "last_leg_candle_ts": 1795133700,
-      "dry_run": true,
-      "order_id": "PAPER-IRYSUSDT-1795133719"
-    }
-  ],
+  "open_trades": [],
   "trade_history": [
-    {
-      "symbol": "PIEVERSEUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 1.5070784054759192,
-      "qty": 398.1213,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 1.4694014453390212,
-      "tf": "1h",
-      "opened_at": 1794132086,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        1.5221
-      ],
-      "steps": [
-        {
-          "px": 1.4857,
-          "ts": 1794132086
-        },
-        {
-          "px": 1.518,
-          "ts": 1794152952
-        }
-      ],
-      "entry_candle_ts": 1794132000,
-      "last_leg_candle_ts": 1794152952,
-      "dry_run": true,
-      "order_id": "PAPER-PIEVERSEUSDT-1794132086",
-      "closed_at": 1794171899,
-      "close_px": 1.4674,
-      "pnl_usdt": 15.796818001670914,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "ANSEMUSDT",
       "side": "SELL",
@@ -6544,6 +6482,36 @@
       "pnl_usdt": -23.317887515690575,
       "close_reason": "STOP",
       "why": "STOP"
+    },
+    {
+      "symbol": "IRYSUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.02473,
+      "qty": 8087.3433,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.024111749999999998,
+      "tf": "15m",
+      "opened_at": 1795133719,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.02473,
+          "ts": 1795133719
+        }
+      ],
+      "entry_candle_ts": 1795133700,
+      "last_leg_candle_ts": 1795133700,
+      "dry_run": true,
+      "order_id": "PAPER-IRYSUSDT-1795133719",
+      "closed_at": 1795134345,
+      "close_px": 0.02404,
+      "pnl_usdt": 5.580266882329152,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
