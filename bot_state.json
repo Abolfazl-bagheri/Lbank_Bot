@@ -6492,16 +6492,6 @@
   ],
   "pending": [
     {
-      "symbol": "AKAMUSDT",
-      "tf": "4h",
-      "candle_ts": 1795046400,
-      "side": "SELL",
-      "upper": 90.97889394508361,
-      "open": 91.33,
-      "reported": true,
-      "filled": false
-    },
-    {
       "symbol": "NETUSDT",
       "tf": "1h",
       "candle_ts": 1795046400,
@@ -9484,6 +9474,16 @@
       "side": "SELL",
       "upper": 0.4787511445669421,
       "open": 0.4934,
+      "reported": true,
+      "filled": false
+    },
+    {
+      "symbol": "ENSOUSDT",
+      "tf": "15m",
+      "candle_ts": 1795228200,
+      "side": "SELL",
+      "upper": 0.49499843907711594,
+      "open": 0.5021,
       "reported": false
     }
   ],
@@ -9784,20 +9784,12 @@
     "CZUSDT": 1795270632,
     "NEIRO1USDT": 1795270634,
     "1000SATSUSDT": 1795270635,
-    "MANCERUSDT": 1795270656
+    "MANCERUSDT": 1795270656,
+    "DRVUSDT": 1795271505
   },
   "last_trade_report_ts": 1795227922,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795022200,
-      "kind": "gap_result",
-      "symbol": "MMTUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795022202,
       "kind": "gap_result",
@@ -13382,6 +13374,15 @@
     },
     {
       "ts": 1795227480,
+      "kind": "gap_result",
+      "symbol": "ENSOUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
+    },
+    {
+      "ts": 1795228324,
       "kind": "gap_result",
       "symbol": "ENSOUSDT",
       "tf": "15m",
