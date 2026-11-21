@@ -107,6 +107,31 @@
       "last_leg_candle_ts": 1795286700,
       "dry_run": true,
       "order_id": "PAPER-ANSEMUSDT-1795286726"
+    },
+    {
+      "symbol": "IDOLUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.033539,
+      "qty": 5963.207,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.032700525,
+      "tf": "1h",
+      "opened_at": 1795287637,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.033539,
+          "ts": 1795287637
+        }
+      ],
+      "entry_candle_ts": 1795287600,
+      "last_leg_candle_ts": 1795287600,
+      "dry_run": true,
+      "order_id": "PAPER-IDOLUSDT-1795287637"
     }
   ],
   "trade_history": [
@@ -6575,26 +6600,6 @@
   ],
   "pending": [
     {
-      "symbol": "GRASSUSDT",
-      "tf": "4h",
-      "candle_ts": 1795075200,
-      "side": "SELL",
-      "upper": 0.43037390228513195,
-      "open": 0.4366,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "USUSDT",
-      "tf": "1h",
-      "candle_ts": 1795075200,
-      "side": "SELL",
-      "upper": 0.003928468990384499,
-      "open": 0.003975,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "SAMSUNGEMUSDT",
       "tf": "4h",
       "candle_ts": 1795075200,
@@ -9562,6 +9567,24 @@
       "side": "SELL",
       "upper": 0.03807965472532683,
       "open": 0.03935,
+      "reported": false
+    },
+    {
+      "symbol": "CLAUDIAUSDT",
+      "tf": "1h",
+      "candle_ts": 1795287600,
+      "side": "SELL",
+      "upper": 0.010245273869411856,
+      "open": 0.010391,
+      "reported": false
+    },
+    {
+      "symbol": "PIEVERSEUSDT",
+      "tf": "1h",
+      "candle_ts": 1795287600,
+      "side": "SELL",
+      "upper": 3.3349745328901927,
+      "open": 3.37,
       "reported": false
     }
   ],
