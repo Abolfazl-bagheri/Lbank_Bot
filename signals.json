@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795246125,
+  "updated_at": 1795246278,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795227920
-    },
     {
       "kind": "HEARTBEAT",
       "symbol": "—",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 1.96,
       "ts": 1795246125
+    },
+    {
+      "kind": "SELL",
+      "symbol": "SOPHUSDT",
+      "tf": "15m",
+      "gap": 1.13,
+      "ts": 1795246278
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 23.86,
-      "pnl": -0.6373,
+      "px": 23.83,
+      "pnl": 0.117,
       "tf": "15m"
     }
   ],
@@ -1423,8 +1423,8 @@
   "session_start": 1795219571,
   "realized": 46.0685,
   "closed_n": 8,
-  "open_upnl": -0.6373,
-  "equity": 1045.4312,
+  "open_upnl": 0.117,
+  "equity": 1046.1855,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
