@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795248049,
+  "updated_at": 1795248063,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "SIRENUSDT",
-      "tf": "15m",
-      "gap": 3.95,
-      "ts": 1795229021
-    },
-    {
-      "kind": "SELL",
-      "symbol": "ENSOUSDT",
-      "tf": "15m",
-      "gap": 1.2,
-      "ts": 1795229124
-    },
     {
       "kind": "SELL",
       "symbol": "SIRENUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "1h",
       "gap": 1.78,
       "ts": 1795248049
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795248054
+    },
+    {
+      "kind": "SELL",
+      "symbol": "ENSOUSDT",
+      "tf": "4h",
+      "gap": 1.5,
+      "ts": 1795248063
     }
   ],
   "trades": [
@@ -1417,14 +1417,27 @@
       "px": 23.84,
       "pnl": -0.1345,
       "tf": "15m"
+    },
+    {
+      "symbol": "YBUSDT",
+      "side": "SELL",
+      "entry": 0.05673,
+      "tp": 0.05531175,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.05673,
+      "pnl": -0.24,
+      "tf": "1h"
     }
   ],
   "start": 1000.0,
   "session_start": 1795219571,
   "realized": 46.0685,
   "closed_n": 8,
-  "open_upnl": -0.1345,
-  "equity": 1045.934,
+  "open_upnl": -0.3745,
+  "equity": 1045.694,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
