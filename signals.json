@@ -1,29 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795243891,
+  "updated_at": 1795244101,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795224714
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795224809
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795224916
-    },
     {
       "kind": "HEARTBEAT",
       "symbol": "—",
@@ -1402,22 +1381,30 @@
       "tf": "1h",
       "gap": 4.81,
       "ts": 1795243891
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795243916
+    },
+    {
+      "kind": "HEARTBEAT",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795243916
+    },
+    {
+      "kind": "GAP",
+      "symbol": "GOLDUSDT",
+      "tf": "5m",
+      "gap": 0.11,
+      "ts": 1795244101
     }
   ],
   "trades": [
-    {
-      "symbol": "SKDDUSDT",
-      "side": "SELL",
-      "entry": 15.242,
-      "tp": 14.86095,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 14.917,
-      "pnl": 4.0245,
-      "tf": "15m"
-    },
     {
       "symbol": "POLYMARKETUSDT",
       "side": "SELL",
@@ -1427,23 +1414,23 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 23.81,
-      "pnl": 0.6198,
+      "px": 23.83,
+      "pnl": 0.117,
       "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1795219571,
-  "realized": 43.8995,
-  "closed_n": 4,
-  "open_upnl": 4.6443,
-  "equity": 1048.5438,
+  "realized": 49.5156,
+  "closed_n": 5,
+  "open_upnl": 0.117,
+  "equity": 1049.6326,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 75.162,
+    "profit": 80.778,
     "loss": -31.2624,
-    "count": 4
+    "count": 5
   }
 }
