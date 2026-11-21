@@ -90,35 +90,6 @@
       "order_id": "PAPER-DGAIUSDT-1795291315"
     },
     {
-      "symbol": "INITUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.09474945871529208,
-      "qty": 6332.49,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.09238072224740979,
-      "tf": "1h",
-      "opened_at": 1795297544,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.09443,
-          "ts": 1795297544
-        },
-        {
-          "px": 0.09491,
-          "ts": 1795298519
-        }
-      ],
-      "entry_candle_ts": 1795297500,
-      "last_leg_candle_ts": 1795298400,
-      "dry_run": true,
-      "order_id": "PAPER-INITUSDT-1795297544"
-    },
-    {
       "symbol": "COOKIEUSDT",
       "side": "SELL",
       "status": "open",
@@ -151,36 +122,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "TTMIUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 76.4,
-      "qty": 2.6178,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 74.49000000000001,
-      "tf": "4h",
-      "opened_at": 1794268932,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 76.4,
-          "ts": 1794268932
-        }
-      ],
-      "entry_candle_ts": 1794268800,
-      "last_leg_candle_ts": 1794268800,
-      "dry_run": true,
-      "order_id": "PAPER-TTMIUSDT-1794268932",
-      "closed_at": 1794269323,
-      "close_px": 76.5,
-      "pnl_usdt": -0.261780104712027,
-      "close_reason": "NIGHT_RESET",
-      "why": "NIGHT_RESET"
-    },
     {
       "symbol": "TERUSDT",
       "side": "SELL",
@@ -6627,6 +6568,40 @@
       "pnl_usdt": 158.36893047260762,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "INITUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.09474945871529208,
+      "qty": 6332.49,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 0.09238072224740979,
+      "tf": "1h",
+      "opened_at": 1795297544,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.09443,
+          "ts": 1795297544
+        },
+        {
+          "px": 0.09491,
+          "ts": 1795298519
+        }
+      ],
+      "entry_candle_ts": 1795297500,
+      "last_leg_candle_ts": 1795298400,
+      "dry_run": true,
+      "order_id": "PAPER-INITUSDT-1795297544",
+      "closed_at": 1795300289,
+      "close_px": 0.09224,
+      "pnl_usdt": 15.891122224767289,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -9609,7 +9584,8 @@
       "side": "LONG",
       "upper": 0.018277535062142726,
       "open": 0.01745,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CATEUSDT",
@@ -9618,7 +9594,8 @@
       "side": "LONG",
       "upper": 0.01827127412199719,
       "open": 0.01744,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -9922,24 +9899,6 @@
   "last_trade_report_ts": 1795299572,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795043887,
-      "kind": "gap_result",
-      "symbol": "CRCLUSDT",
-      "tf": "5m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795043890,
-      "kind": "gap_result",
-      "symbol": "SILVERUSDT",
-      "tf": "5m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795043892,
       "kind": "gap_result",
@@ -13517,6 +13476,24 @@
       "ts": 1795299386,
       "kind": "gap_result",
       "symbol": "INITUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795300284,
+      "kind": "gap_result",
+      "symbol": "CATEUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795300286,
+      "kind": "gap_result",
+      "symbol": "CATEUSDT",
       "tf": "15m",
       "gap": 0.0,
       "filled": true,
