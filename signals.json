@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795248065,
+  "updated_at": 1795248304,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795229156
-    },
-    {
-      "kind": "SELL",
-      "symbol": "BTCUSDT",
-      "tf": "15m",
-      "gap": 0.15,
-      "ts": 1795229204
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "4h",
       "gap": 4.58,
       "ts": 1795248065
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795248070
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795248304
     }
   ],
   "trades": [
@@ -1430,14 +1430,27 @@
       "px": 0.05673,
       "pnl": -0.24,
       "tf": "1h"
+    },
+    {
+      "symbol": "BLESSUSDT",
+      "side": "SELL",
+      "entry": 0.016951,
+      "tp": 0.016527225,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.016951,
+      "pnl": -0.24,
+      "tf": "4h"
     }
   ],
   "start": 1000.0,
   "session_start": 1795219571,
   "realized": 46.0685,
   "closed_n": 8,
-  "open_upnl": -0.3745,
-  "equity": 1045.694,
+  "open_upnl": -0.6145,
+  "equity": 1045.454,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
