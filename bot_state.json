@@ -6525,16 +6525,6 @@
       "tf": "15m",
       "candle_ts": 1795073400,
       "side": "SELL",
-      "upper": 0.003942432508416387,
-      "open": 0.004035,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "USUSDT",
-      "tf": "15m",
-      "candle_ts": 1795073400,
-      "side": "SELL",
       "upper": 0.003955446234803752,
       "open": 0.004035,
       "reported": true,
@@ -9511,6 +9501,16 @@
       "side": "LONG",
       "upper": 0.005328366314820044,
       "open": 0.0048691,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "PIEVERSEUSDT",
+      "tf": "15m",
+      "candle_ts": 1795281300,
+      "side": "SELL",
+      "upper": 3.268835266433442,
+      "open": 3.3292,
       "reported": false
     }
   ],
@@ -9796,20 +9796,25 @@
     "1000000BABYDOGEUSDT": 1795291464,
     "COPSTOCKUSDT": 1795291586,
     "XBRUSDT": 1795293074,
-    "FIGHT1USDT": 1795299560
+    "FIGHT1USDT": 1795299560,
+    "FONEUSDT": 1795324552,
+    "ARGUSDT": 1795324553,
+    "GSTOCKUSDT": 1795324555,
+    "OFCUSDT": 1795324557,
+    "DRVUSDT": 1795324557,
+    "ARGUSUSDT": 1795324559,
+    "1000WOJAKUSDT": 1795324583,
+    "O1USDT": 1795324595,
+    "1000SATSUSDT": 1795324616,
+    "NEIRO1USDT": 1795324617,
+    "PIPEDOGUSDT": 1795324622,
+    "MANCERUSDT": 1795324623,
+    "MEMECOINUSDT": 1795324624,
+    "CZUSDT": 1795324625
   },
   "last_trade_report_ts": 1795281058,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795029411,
-      "kind": "gap_result",
-      "symbol": "HUTUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795029414,
       "kind": "gap_result",
@@ -13400,6 +13405,15 @@
       "gap": 0.0,
       "filled": false,
       "note": "miss"
+    },
+    {
+      "ts": 1795281440,
+      "kind": "gap_result",
+      "symbol": "AKEUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
     }
   ],
   "tune_history": [],
