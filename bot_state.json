@@ -6546,26 +6546,6 @@
   ],
   "pending": [
     {
-      "symbol": "USUSDT",
-      "tf": "15m",
-      "candle_ts": 1795073400,
-      "side": "SELL",
-      "upper": 0.003955446234803752,
-      "open": 0.004035,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "USUSDT",
-      "tf": "15m",
-      "candle_ts": 1795074300,
-      "side": "SELL",
-      "upper": 0.004080138778371251,
-      "open": 0.004177,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "INITUSDT",
       "tf": "15m",
       "candle_ts": 1795074300,
@@ -9536,6 +9516,25 @@
       "side": "SELL",
       "upper": 3.268835266433442,
       "open": 3.3292,
+      "reported": true,
+      "filled": false
+    },
+    {
+      "symbol": "CLAUDIAUSDT",
+      "tf": "15m",
+      "candle_ts": 1795282200,
+      "side": "SELL",
+      "upper": 0.010099028332356614,
+      "open": 0.010283,
+      "reported": false
+    },
+    {
+      "symbol": "PIEVERSEUSDT",
+      "tf": "15m",
+      "candle_ts": 1795282200,
+      "side": "SELL",
+      "upper": 3.342152860725209,
+      "open": 3.3844,
       "reported": false
     }
   ],
@@ -9840,15 +9839,6 @@
   "last_trade_report_ts": 1795281962,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795029414,
-      "kind": "gap_result",
-      "symbol": "ZSUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795029416,
       "kind": "gap_result",
@@ -13439,6 +13429,15 @@
       "gap": 0.0,
       "filled": true,
       "note": "filled"
+    },
+    {
+      "ts": 1795282309,
+      "kind": "gap_result",
+      "symbol": "PIEVERSEUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
     }
   ],
   "tune_history": [],
