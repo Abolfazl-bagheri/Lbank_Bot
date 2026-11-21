@@ -82,6 +82,31 @@
       "last_leg_candle_ts": 1795286700,
       "dry_run": true,
       "order_id": "PAPER-ZCATUSDT-1795286716"
+    },
+    {
+      "symbol": "ANSEMUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.03834,
+      "qty": 5216.4841,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0373815,
+      "tf": "15m",
+      "opened_at": 1795286726,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.03834,
+          "ts": 1795286726
+        }
+      ],
+      "entry_candle_ts": 1795286700,
+      "last_leg_candle_ts": 1795286700,
+      "dry_run": true,
+      "order_id": "PAPER-ANSEMUSDT-1795286726"
     }
   ],
   "trade_history": [
@@ -6550,16 +6575,6 @@
   ],
   "pending": [
     {
-      "symbol": "IRYSUSDT",
-      "tf": "4h",
-      "candle_ts": 1795075200,
-      "side": "SELL",
-      "upper": 0.022811586083689356,
-      "open": 0.02326,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "CLAUDIAUSDT",
       "tf": "15m",
       "candle_ts": 1795075200,
@@ -9538,6 +9553,15 @@
       "side": "SELL",
       "upper": 0.036357155428116766,
       "open": 0.03704,
+      "reported": false
+    },
+    {
+      "symbol": "ZCATUSDT",
+      "tf": "15m",
+      "candle_ts": 1795286700,
+      "side": "SELL",
+      "upper": 0.018820509399648487,
+      "open": 0.01933,
       "reported": false
     }
   ],
