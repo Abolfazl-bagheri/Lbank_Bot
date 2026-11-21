@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795231931,
+  "updated_at": 1795231955,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795216898
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795217124
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "15m",
       "gap": 1.83,
       "ts": 1795231931
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795231935
+    },
+    {
+      "kind": "SELL",
+      "symbol": "JELLYJELLYUSDT",
+      "tf": "15m",
+      "gap": 1.14,
+      "ts": 1795231955
     }
   ],
   "trades": [
@@ -1417,14 +1417,27 @@
       "px": 0.02608,
       "pnl": 17.8825,
       "tf": "15m"
+    },
+    {
+      "symbol": "SKDDUSDT",
+      "side": "SELL",
+      "entry": 15.242,
+      "tp": 14.86095,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 15.242,
+      "pnl": -0.24,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1795219571,
   "realized": -7.9574,
   "closed_n": 2,
-  "open_upnl": 17.8825,
-  "equity": 1009.9251,
+  "open_upnl": 17.6425,
+  "equity": 1009.6851,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
