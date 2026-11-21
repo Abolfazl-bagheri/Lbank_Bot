@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795282221,
+  "updated_at": 1795282232,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795250506
-    },
-    {
-      "kind": "GAP",
-      "symbol": "BLESSUSDT",
-      "tf": "15m",
-      "gap": 2.87,
-      "ts": 1795250610
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "15m",
       "gap": 2.67,
       "ts": 1795282221
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795282227
+    },
+    {
+      "kind": "SELL",
+      "symbol": "PIEVERSEUSDT",
+      "tf": "15m",
+      "gap": 1.37,
+      "ts": 1795282232
     }
   ],
   "trades": [
@@ -1430,14 +1430,27 @@
       "px": 3.3885,
       "pnl": -3.6985,
       "tf": "15m"
+    },
+    {
+      "symbol": "CLAUDIAUSDT",
+      "side": "SELL",
+      "entry": 0.010376,
+      "tp": 0.0101166,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.010376,
+      "pnl": -0.24,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1795219571,
   "realized": 124.7538,
   "closed_n": 15,
-  "open_upnl": -3.3301,
-  "equity": 1121.4237,
+  "open_upnl": -3.5701,
+  "equity": 1121.1837,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
