@@ -6542,16 +6542,6 @@
   ],
   "pending": [
     {
-      "symbol": "CRCLUSDT",
-      "tf": "5m",
-      "candle_ts": 1795057800,
-      "side": "LONG",
-      "upper": 54.05526895171146,
-      "open": 53.47,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "BULLAUSDT",
       "tf": "15m",
       "candle_ts": 1795058100,
@@ -9426,7 +9416,8 @@
       "side": "SELL",
       "upper": 0.45112599608369136,
       "open": 0.4592,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "POLYMARKETUSDT",
@@ -9465,7 +9456,8 @@
       "side": "SELL",
       "upper": 0.016625443942902343,
       "open": 0.017236,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "VVVUSDT",
@@ -9484,7 +9476,8 @@
       "side": "SELL",
       "upper": 0.053784048008184863,
       "open": 0.0545,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "BLESSUSDT",
@@ -9532,6 +9525,15 @@
       "side": "SELL",
       "upper": 0.4580190457345662,
       "open": 0.465,
+      "reported": false
+    },
+    {
+      "symbol": "BLESSUSDT",
+      "tf": "4h",
+      "candle_ts": 1795248000,
+      "side": "SELL",
+      "upper": 0.016175325389318145,
+      "open": 0.01701,
       "reported": false
     }
   ],
@@ -9826,38 +9828,17 @@
     "UP2USDT": 1795284229,
     "PORUSDT": 1795284282,
     "QUACKAIUSDT": 1795286791,
-    "SKY1USDT": 1795287885
+    "SKY1USDT": 1795287885,
+    "DODOUSDT": 1795291316,
+    "LONGXIAUSDT": 1795291366,
+    "XTIUSDT": 1795291473,
+    "HOTUSDT": 1795291455,
+    "1000000BABYDOGEUSDT": 1795291464,
+    "COPSTOCKUSDT": 1795291586
   },
-  "last_trade_report_ts": 1795247278,
+  "last_trade_report_ts": 1795248306,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795028632,
-      "kind": "gap_result",
-      "symbol": "PROSUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
-    {
-      "ts": 1795028634,
-      "kind": "gap_result",
-      "symbol": "PANWUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795028637,
-      "kind": "gap_result",
-      "symbol": "OKTAUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
     {
       "ts": 1795028640,
       "kind": "gap_result",
@@ -13430,6 +13411,33 @@
       "gap": 0.0,
       "filled": true,
       "note": "filled"
+    },
+    {
+      "ts": 1795248290,
+      "kind": "gap_result",
+      "symbol": "ENSOUSDT",
+      "tf": "4h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795248295,
+      "kind": "gap_result",
+      "symbol": "BLESSUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795248300,
+      "kind": "gap_result",
+      "symbol": "YBUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
     }
   ],
   "tune_history": [],
