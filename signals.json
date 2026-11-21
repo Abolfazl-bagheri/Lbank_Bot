@@ -1,36 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795285822,
+  "updated_at": 1795286070,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "SKYAIUSDT",
-      "tf": "15m",
-      "gap": 1.8,
-      "ts": 1795255208
-    },
-    {
-      "kind": "SELL",
-      "symbol": "SKYAIUSDT",
-      "tf": "1h",
-      "gap": 5.57,
-      "ts": 1795255235
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795255240
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795255396
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1374,34 @@
       "tf": "15m",
       "gap": 2.11,
       "ts": 1795285822
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795285827
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795285898
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795285985
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795286070
     }
   ],
   "trades": [
@@ -1427,17 +1427,30 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 3.3206,
-      "pnl": 1.912,
+      "px": 3.3559,
+      "pnl": -4.4384,
       "tf": "1h"
+    },
+    {
+      "symbol": "ANSEMUSDT",
+      "side": "SELL",
+      "entry": 0.03714,
+      "tp": 0.0362115,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.03844,
+      "pnl": -7.2405,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1795219571,
   "realized": 102.5358,
   "closed_n": 17,
-  "open_upnl": 1.5261,
-  "equity": 1104.0619,
+  "open_upnl": -12.0648,
+  "equity": 1090.471,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
