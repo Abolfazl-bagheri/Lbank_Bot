@@ -4,17 +4,18 @@
       "symbol": "SIRENUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.026556452018537326,
-      "qty": 22593.3796,
-      "margin": 30.0,
+      "entry": 0.026449586451042912,
+      "qty": 52930.884300000005,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 0.02589254071807389,
+      "tp_price": 0.02578834678976684,
       "tf": "15m",
       "opened_at": 1795229153,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [
-        0.02669
+        0.02669,
+        0.0264
       ],
       "steps": [
         {
@@ -24,10 +25,14 @@
         {
           "px": 0.02661,
           "ts": 1795231531
+        },
+        {
+          "px": 0.02637,
+          "ts": 1795231593
         }
       ],
       "entry_candle_ts": 1795229100,
-      "last_leg_candle_ts": 1795231531,
+      "last_leg_candle_ts": 1795231593,
       "dry_run": true,
       "order_id": "PAPER-SIRENUSDT-1795229153"
     }
