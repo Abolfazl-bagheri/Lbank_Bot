@@ -53,64 +53,9 @@
       "last_leg_candle_ts": 1795233600,
       "dry_run": true,
       "order_id": "PAPER-POLYMARKETUSDT-1795231979"
-    },
-    {
-      "symbol": "ENSOUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.4632,
-      "qty": 431.7789,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.45161999999999997,
-      "tf": "4h",
-      "opened_at": 1795233675,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.4632,
-          "ts": 1795233675
-        }
-      ],
-      "entry_candle_ts": 1795233600,
-      "last_leg_candle_ts": 1795233600,
-      "dry_run": true,
-      "order_id": "PAPER-ENSOUSDT-1795233675"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "SOXSUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 77.57,
-      "qty": 2.5783,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 75.63074999999999,
-      "tf": "4h",
-      "opened_at": 1794211255,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 77.57,
-          "ts": 1794211255
-        }
-      ],
-      "entry_candle_ts": 1794211200,
-      "last_leg_candle_ts": 1794211200,
-      "dry_run": true,
-      "order_id": "PAPER-SOXSUSDT-1794211255",
-      "closed_at": 1794212319,
-      "close_px": 74.92,
-      "pnl_usdt": 6.832538352455825,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "SKDDUSDT",
       "side": "SELL",
@@ -6563,6 +6508,36 @@
       "pnl_usdt": 46.02797982166846,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "ENSOUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.4632,
+      "qty": 431.7789,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.45161999999999997,
+      "tf": "4h",
+      "opened_at": 1795233675,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.4632,
+          "ts": 1795233675
+        }
+      ],
+      "entry_candle_ts": 1795233600,
+      "last_leg_candle_ts": 1795233600,
+      "dry_run": true,
+      "order_id": "PAPER-ENSOUSDT-1795233675",
+      "closed_at": 1795241136,
+      "close_px": 0.4497,
+      "pnl_usdt": 5.829015544041457,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -9859,7 +9834,7 @@
     "UP2USDT": 1795284229,
     "PORUSDT": 1795284282
   },
-  "last_trade_report_ts": 1795233965,
+  "last_trade_report_ts": 1795241111,
   "last_known_version": "2.10.0",
   "lessons": [
     {
