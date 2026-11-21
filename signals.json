@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795251614,
+  "updated_at": 1795251645,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "SAPIENUSDT",
-      "tf": "4h",
-      "gap": 1.4,
-      "ts": 1795232706
-    },
     {
       "kind": "SELL",
       "symbol": "SKDDUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 2.34,
       "ts": 1795251614
+    },
+    {
+      "kind": "SELL",
+      "symbol": "BLESSUSDT",
+      "tf": "1h",
+      "gap": 6.86,
+      "ts": 1795251645
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 23.8,
-      "pnl": 0.8713,
+      "px": 23.88,
+      "pnl": -1.1402,
       "tf": "15m"
     }
   ],
@@ -1423,8 +1423,8 @@
   "session_start": 1795219571,
   "realized": 38.7573,
   "closed_n": 11,
-  "open_upnl": 0.8713,
-  "equity": 1039.6286,
+  "open_upnl": -1.1402,
+  "equity": 1037.6171,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
