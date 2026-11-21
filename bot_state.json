@@ -98,65 +98,29 @@
       "symbol": "COOKIEUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.00795765809441211,
-      "qty": 75399.0675,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.007758716642051806,
-      "tf": "1h",
-      "opened_at": 1795298505,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        0.00802
-      ],
-      "steps": [
-        {
-          "px": 0.007855,
-          "ts": 1795298505
-        },
-        {
-          "px": 0.00801,
-          "ts": 1795299679
-        }
-      ],
-      "entry_candle_ts": 1795298400,
-      "last_leg_candle_ts": 1795299679,
-      "dry_run": true,
-      "order_id": "PAPER-COOKIEUSDT-1795298505"
-    }
-  ],
-  "trade_history": [
-    {
-      "symbol": "TERUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 249.77,
-      "qty": 0.800737,
+      "entry": 0.008332,
+      "qty": 24003.8406,
       "margin": 10.0,
       "leverage": 20,
-      "tp_price": 243.52575000000002,
-      "tf": "4h",
-      "opened_at": 1794268976,
+      "tp_price": 0.008123700000000001,
+      "tf": "1h",
+      "opened_at": 1795302029,
       "adds": 0,
       "last_leg_margin": 10.0,
       "used_res_levels": [],
       "steps": [
         {
-          "px": 249.77,
-          "ts": 1794268976
+          "px": 0.008332,
+          "ts": 1795302029
         }
       ],
-      "entry_candle_ts": 1794268800,
-      "last_leg_candle_ts": 1794268800,
+      "entry_candle_ts": 1795302000,
+      "last_leg_candle_ts": 1795302000,
       "dry_run": true,
-      "order_id": "PAPER-TERUSDT-1794268976",
-      "closed_at": 1794269323,
-      "close_px": 250.66,
-      "pnl_usdt": -0.7126556431917255,
-      "close_reason": "NIGHT_RESET",
-      "why": "NIGHT_RESET"
-    },
+      "order_id": "PAPER-COOKIEUSDT-1795302029"
+    }
+  ],
+  "trade_history": [
     {
       "symbol": "SECZUSDT",
       "side": "SELL",
@@ -6607,6 +6571,42 @@
       "pnl_usdt": 15.891122224767289,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "COOKIEUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.00795765809441211,
+      "qty": 75399.0675,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 0.007758716642051806,
+      "tf": "1h",
+      "opened_at": 1795298505,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.00802
+      ],
+      "steps": [
+        {
+          "px": 0.007855,
+          "ts": 1795298505
+        },
+        {
+          "px": 0.00801,
+          "ts": 1795299679
+        }
+      ],
+      "entry_candle_ts": 1795298400,
+      "last_leg_candle_ts": 1795299679,
+      "dry_run": true,
+      "order_id": "PAPER-COOKIEUSDT-1795298505",
+      "closed_at": 1795301760,
+      "close_px": 0.008319,
+      "pnl_usdt": -27.24484273896808,
+      "close_reason": "STOP",
+      "why": "STOP"
     }
   ],
   "pending": [
