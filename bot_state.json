@@ -28,6 +28,31 @@
       "last_leg_candle_ts": 1795233600,
       "dry_run": true,
       "order_id": "PAPER-POLYMARKETUSDT-1795231979"
+    },
+    {
+      "symbol": "BLESSUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.019902,
+      "qty": 10049.2413,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.01940445,
+      "tf": "15m",
+      "opened_at": 1795249906,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.019902,
+          "ts": 1795249906
+        }
+      ],
+      "entry_candle_ts": 1795249800,
+      "last_leg_candle_ts": 1795249800,
+      "dry_run": true,
+      "order_id": "PAPER-BLESSUSDT-1795249906"
     }
   ],
   "trade_history": [
@@ -9784,7 +9809,8 @@
     "XTIUSDT": 1795291473,
     "HOTUSDT": 1795291455,
     "1000000BABYDOGEUSDT": 1795291464,
-    "COPSTOCKUSDT": 1795291586
+    "COPSTOCKUSDT": 1795291586,
+    "XBRUSDT": 1795293074
   },
   "last_trade_report_ts": 1795249221,
   "last_known_version": "2.10.0",
