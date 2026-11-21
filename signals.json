@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795229152,
+  "updated_at": 1795229204,
   "signals": [
-    {
-      "kind": "HEARTBEAT",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795214441
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795214461
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "15m",
       "gap": 2.0,
       "ts": 1795229152
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795229156
+    },
+    {
+      "kind": "SELL",
+      "symbol": "BTCUSDT",
+      "tf": "15m",
+      "gap": 0.15,
+      "ts": 1795229204
     }
   ],
   "trades": [
@@ -1417,14 +1417,27 @@
       "px": 0.5207,
       "pnl": -5.1997,
       "tf": "15m"
+    },
+    {
+      "symbol": "SIRENUSDT",
+      "side": "SELL",
+      "entry": 0.02645,
+      "tp": 0.02578875,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.02645,
+      "pnl": -0.24,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1795219571,
   "realized": -31.2624,
   "closed_n": 1,
-  "open_upnl": -5.1997,
-  "equity": 963.5379,
+  "open_upnl": -5.4397,
+  "equity": 963.2979,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
