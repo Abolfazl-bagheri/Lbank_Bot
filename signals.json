@@ -1,29 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795228339,
+  "updated_at": 1795228519,
   "signals": [
-    {
-      "kind": "HEARTBEAT",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795213529
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795213549
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795213568
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,15 +1381,50 @@
       "tf": "15m",
       "gap": 2.37,
       "ts": 1795228339
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795228343
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795228440
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795228519
     }
   ],
-  "trades": [],
+  "trades": [
+    {
+      "symbol": "ENSOUSDT",
+      "side": "SELL",
+      "entry": 0.5081,
+      "tp": 0.4953975,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.505,
+      "pnl": 0.9802,
+      "tf": "15m"
+    }
+  ],
   "start": 1000.0,
   "session_start": 1795219571,
   "realized": -31.2624,
   "closed_n": 1,
-  "open_upnl": 0,
-  "equity": 968.7376,
+  "open_upnl": 0.9802,
+  "equity": 969.7178,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
