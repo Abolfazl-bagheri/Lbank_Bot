@@ -6524,26 +6524,6 @@
   ],
   "pending": [
     {
-      "symbol": "AKAMUSDT",
-      "tf": "15m",
-      "candle_ts": 1795046400,
-      "side": "SELL",
-      "upper": 91.83576209429658,
-      "open": 91.33,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "DOSUSDT",
-      "tf": "4h",
-      "candle_ts": 1795046400,
-      "side": "SELL",
-      "upper": 0.16725095970697842,
-      "open": 0.1688,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "NETUSDT",
       "tf": "15m",
       "candle_ts": 1795046400,
@@ -9507,7 +9487,8 @@
       "side": "SELL",
       "upper": 0.443565897381979,
       "open": 0.4487,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "ENSOUSDT",
@@ -9516,6 +9497,25 @@
       "side": "SELL",
       "upper": 0.44311381371141856,
       "open": 0.4487,
+      "reported": true,
+      "filled": false
+    },
+    {
+      "symbol": "ENSOUSDT",
+      "tf": "15m",
+      "candle_ts": 1795226400,
+      "side": "SELL",
+      "upper": 0.4575430465821708,
+      "open": 0.4617,
+      "reported": false
+    },
+    {
+      "symbol": "ENSOUSDT",
+      "tf": "1h",
+      "candle_ts": 1795226400,
+      "side": "SELL",
+      "upper": 0.4578652557786175,
+      "open": 0.4617,
       "reported": false
     }
   ],
@@ -9822,24 +9822,6 @@
   "last_trade_report_ts": 1795225915,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795021435,
-      "kind": "gap_result",
-      "symbol": "AKAMUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795021439,
-      "kind": "gap_result",
-      "symbol": "BULLAUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795021441,
       "kind": "gap_result",
@@ -13421,6 +13403,24 @@
       "gap": 0.0,
       "filled": true,
       "note": "filled"
+    },
+    {
+      "ts": 1795226618,
+      "kind": "gap_result",
+      "symbol": "ENSOUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
+    },
+    {
+      "ts": 1795226621,
+      "kind": "gap_result",
+      "symbol": "ENSOUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
     }
   ],
   "tune_history": [],
