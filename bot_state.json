@@ -122,17 +122,18 @@
       "symbol": "IDOLUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.044553999999999996,
-      "qty": 13466.8044,
-      "margin": 30.0,
+      "entry": 0.04478963305997805,
+      "qty": 31257.2331,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 0.04344015,
+      "tp_price": 0.0436698922334786,
       "tf": "1h",
       "opened_at": 1795298426,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [
-        0.044654
+        0.044654,
+        0.045099
       ],
       "steps": [
         {
@@ -142,10 +143,14 @@
         {
           "px": 0.044554,
           "ts": 1795298588
+        },
+        {
+          "px": 0.044968,
+          "ts": 1795299390
         }
       ],
       "entry_candle_ts": 1795298400,
-      "last_leg_candle_ts": 1795298588,
+      "last_leg_candle_ts": 1795299390,
       "dry_run": true,
       "order_id": "PAPER-IDOLUSDT-1795298426"
     },
@@ -6645,16 +6650,6 @@
   ],
   "pending": [
     {
-      "symbol": "XAUTUSDT",
-      "tf": "5m",
-      "candle_ts": 1795080300,
-      "side": "LONG",
-      "upper": 3737.2795513846604,
-      "open": 3726.0,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "GOLDUSDT",
       "tf": "5m",
       "candle_ts": 1795080300,
@@ -9615,7 +9610,8 @@
       "side": "SELL",
       "upper": 0.09344568249715353,
       "open": 0.0937,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "COOKIEUSDT",
@@ -9633,6 +9629,15 @@
       "side": "SELL",
       "upper": 0.09275016927195612,
       "open": 0.0937,
+      "reported": false
+    },
+    {
+      "symbol": "CATEUSDT",
+      "tf": "15m",
+      "candle_ts": 1795299300,
+      "side": "LONG",
+      "upper": 0.018277535062142726,
+      "open": 0.01745,
       "reported": false
     }
   ],
@@ -9936,15 +9941,6 @@
   "last_trade_report_ts": 1795298591,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795043885,
-      "kind": "gap_result",
-      "symbol": "CRCLUSDT",
-      "tf": "5m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795043887,
       "kind": "gap_result",
@@ -13535,6 +13531,15 @@
       "gap": 0.0,
       "filled": false,
       "note": "miss"
+    },
+    {
+      "ts": 1795299386,
+      "kind": "gap_result",
+      "symbol": "INITUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
     }
   ],
   "tune_history": [],
