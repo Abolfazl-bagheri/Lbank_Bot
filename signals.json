@@ -1,29 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795248304,
+  "updated_at": 1795248621,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795229236
-    },
-    {
-      "kind": "SELL",
-      "symbol": "ENSOUSDT",
-      "tf": "15m",
-      "gap": 1.65,
-      "ts": 1795229255
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795229340
-    },
     {
       "kind": "GAP",
       "symbol": "ENSOUSDT",
@@ -1402,6 +1381,27 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1795248304
+    },
+    {
+      "kind": "HEARTBEAT",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795248306
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795248408
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795248621
     }
   ],
   "trades": [
@@ -1414,22 +1414,9 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 23.84,
-      "pnl": -0.1345,
+      "px": 23.9,
+      "pnl": -1.6431,
       "tf": "15m"
-    },
-    {
-      "symbol": "YBUSDT",
-      "side": "SELL",
-      "entry": 0.05673,
-      "tp": 0.05531175,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.05673,
-      "pnl": -0.24,
-      "tf": "1h"
     },
     {
       "symbol": "BLESSUSDT",
@@ -1440,23 +1427,23 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.016951,
-      "pnl": -0.24,
+      "px": 0.01683,
+      "pnl": 1.1876,
       "tf": "4h"
     }
   ],
   "start": 1000.0,
   "session_start": 1795219571,
-  "realized": 46.0685,
-  "closed_n": 8,
-  "open_upnl": -0.6145,
-  "equity": 1045.454,
+  "realized": 36.9023,
+  "closed_n": 9,
+  "open_upnl": -0.4555,
+  "equity": 1036.4468,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
     "profit": 93.2437,
-    "loss": -47.1751,
-    "count": 8
+    "loss": -56.3414,
+    "count": 9
   }
 }
