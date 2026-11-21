@@ -59,31 +59,6 @@
       "order_id": "PAPER-PIEVERSEUSDT-1795281312"
     },
     {
-      "symbol": "ZCATUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.0192,
-      "qty": 10416.6667,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.018719999999999997,
-      "tf": "15m",
-      "opened_at": 1795286716,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.0192,
-          "ts": 1795286716
-        }
-      ],
-      "entry_candle_ts": 1795286700,
-      "last_leg_candle_ts": 1795286700,
-      "dry_run": true,
-      "order_id": "PAPER-ZCATUSDT-1795286716"
-    },
-    {
       "symbol": "ANSEMUSDT",
       "side": "SELL",
       "status": "open",
@@ -139,36 +114,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "CLAUDIAUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.007449,
-      "qty": 26849.2415,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.007262775,
-      "tf": "15m",
-      "opened_at": 1794265357,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.007449,
-          "ts": 1794265357
-        }
-      ],
-      "entry_candle_ts": 1794265200,
-      "last_leg_candle_ts": 1794265200,
-      "dry_run": true,
-      "order_id": "PAPER-CLAUDIAUSDT-1794265357",
-      "closed_at": 1794267211,
-      "close_px": 0.006731,
-      "pnl_usdt": 19.277755403409852,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "SECZUSDT",
       "side": "SELL",
@@ -6600,6 +6545,36 @@
       "pnl_usdt": -11.147011308562211,
       "close_reason": "STOP",
       "why": "STOP"
+    },
+    {
+      "symbol": "ZCATUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.0192,
+      "qty": 10416.6667,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.018719999999999997,
+      "tf": "15m",
+      "opened_at": 1795286716,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.0192,
+          "ts": 1795286716
+        }
+      ],
+      "entry_candle_ts": 1795286700,
+      "last_leg_candle_ts": 1795286700,
+      "dry_run": true,
+      "order_id": "PAPER-ZCATUSDT-1795286716",
+      "closed_at": 1795288765,
+      "close_px": 0.01866,
+      "pnl_usdt": 5.624999999999989,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
