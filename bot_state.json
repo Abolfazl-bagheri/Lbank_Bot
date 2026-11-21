@@ -65,24 +65,28 @@
       "symbol": "POLYMARKETUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 23.91,
-      "qty": 8.3647,
-      "margin": 10.0,
+      "entry": 23.863287767666804,
+      "qty": 25.1432,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 23.31225,
+      "tp_price": 23.266705573475132,
       "tf": "15m",
       "opened_at": 1795231979,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 23.91,
           "ts": 1795231979
+        },
+        {
+          "px": 23.84,
+          "ts": 1795233741
         }
       ],
       "entry_candle_ts": 1795231800,
-      "last_leg_candle_ts": 1795231800,
+      "last_leg_candle_ts": 1795233600,
       "dry_run": true,
       "order_id": "PAPER-POLYMARKETUSDT-1795231979"
     },
@@ -6589,16 +6593,6 @@
   "pending": [
     {
       "symbol": "IRYSUSDT",
-      "tf": "15m",
-      "candle_ts": 1795052700,
-      "side": "SELL",
-      "upper": 0.02390465630699535,
-      "open": 0.02496,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "IRYSUSDT",
       "tf": "1h",
       "candle_ts": 1795053600,
       "side": "SELL",
@@ -9570,6 +9564,15 @@
       "side": "LONG",
       "upper": 60035.86090508415,
       "open": 56740.0,
+      "reported": false
+    },
+    {
+      "symbol": "ENSOUSDT",
+      "tf": "4h",
+      "candle_ts": 1795233600,
+      "side": "SELL",
+      "upper": 0.45112599608369136,
+      "open": 0.4592,
       "reported": false
     }
   ],
