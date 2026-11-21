@@ -33,24 +33,28 @@
       "symbol": "PIEVERSEUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 3.3309,
-      "qty": 60.0438,
-      "margin": 10.0,
+      "entry": 3.335230517472162,
+      "qty": 179.8976,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 3.2476275,
-      "tf": "15m",
+      "tp_price": 3.251849754535358,
+      "tf": "1h",
       "opened_at": 1795281312,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 3.3309,
           "ts": 1795281312
+        },
+        {
+          "px": 3.3374,
+          "ts": 1795284055
         }
       ],
       "entry_candle_ts": 1795281300,
-      "last_leg_candle_ts": 1795281300,
+      "last_leg_candle_ts": 1795284000,
       "dry_run": true,
       "order_id": "PAPER-PIEVERSEUSDT-1795281312"
     },
@@ -6546,16 +6550,6 @@
   ],
   "pending": [
     {
-      "symbol": "ETHFIUSDT",
-      "tf": "4h",
-      "candle_ts": 1795075200,
-      "side": "SELL",
-      "upper": 0.5134204620771776,
-      "open": 0.5188,
-      "reported": true,
-      "filled": false
-    },
-    {
       "symbol": "INITUSDT",
       "tf": "1h",
       "candle_ts": 1795075200,
@@ -9535,6 +9529,15 @@
       "side": "SELL",
       "upper": 0.015117005530172534,
       "open": 0.015232,
+      "reported": false
+    },
+    {
+      "symbol": "CLAUDIAUSDT",
+      "tf": "1h",
+      "candle_ts": 1795284000,
+      "side": "SELL",
+      "upper": 0.00969589800394623,
+      "open": 0.010222,
       "reported": false
     }
   ],
