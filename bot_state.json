@@ -6498,16 +6498,6 @@
   ],
   "pending": [
     {
-      "symbol": "GOLDUSDT",
-      "tf": "15m",
-      "candle_ts": 1795058100,
-      "side": "LONG",
-      "upper": 3778.224221252497,
-      "open": 3708.8,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "SILVERUSDT",
       "tf": "15m",
       "candle_ts": 1795058100,
@@ -9489,6 +9479,16 @@
       "side": "SELL",
       "upper": 0.01941067458437696,
       "open": 0.019322,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "MERLUSDT",
+      "tf": "15m",
+      "candle_ts": 1795250700,
+      "side": "SELL",
+      "upper": 0.02614430167243694,
+      "open": 0.02641,
       "reported": false
     }
   ],
@@ -9795,15 +9795,6 @@
   "last_trade_report_ts": 1795250122,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795028640,
-      "kind": "gap_result",
-      "symbol": "AKAMUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
     {
       "ts": 1795028643,
       "kind": "gap_result",
@@ -13394,6 +13385,15 @@
       "gap": 0.0,
       "filled": false,
       "note": "miss"
+    },
+    {
+      "ts": 1795250788,
+      "kind": "gap_result",
+      "symbol": "BLESSUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
     }
   ],
   "tune_history": [],
