@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795229740,
+  "updated_at": 1795230010,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "DNAUSDT",
-      "tf": "15m",
-      "gap": 1.01,
-      "ts": 1795214853
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795214928
-    },
     {
       "kind": "GAP",
       "symbol": "DNAUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1795229740
+    },
+    {
+      "kind": "HEARTBEAT",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795229742
+    },
+    {
+      "kind": "GAP",
+      "symbol": "SIRENUSDT",
+      "tf": "15m",
+      "gap": 1.42,
+      "ts": 1795230010
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.5067,
-      "pnl": 0.3111,
+      "px": 0.5095,
+      "pnl": -0.7911,
       "tf": "15m"
     },
     {
@@ -1427,8 +1427,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.02646,
-      "pnl": -0.3156,
+      "px": 0.02616,
+      "pnl": 1.9528,
       "tf": "15m"
     }
   ],
@@ -1436,8 +1436,8 @@
   "session_start": 1795219571,
   "realized": -31.2624,
   "closed_n": 1,
-  "open_upnl": -0.0045,
-  "equity": 968.7331,
+  "open_upnl": 1.1617,
+  "equity": 969.8993,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
