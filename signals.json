@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795255053,
+  "updated_at": 1795255208,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795243316
-    },
     {
       "kind": "GAP",
       "symbol": "YBUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 1.1,
       "ts": 1795255053
+    },
+    {
+      "kind": "GAP",
+      "symbol": "SKYAIUSDT",
+      "tf": "15m",
+      "gap": 1.8,
+      "ts": 1795255208
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 23.83,
-      "pnl": 0.117,
+      "px": 23.89,
+      "pnl": -1.3916,
       "tf": "15m"
     }
   ],
@@ -1423,8 +1423,8 @@
   "session_start": 1795219571,
   "realized": 107.9988,
   "closed_n": 14,
-  "open_upnl": 0.117,
-  "equity": 1108.1158,
+  "open_upnl": -1.3916,
+  "equity": 1106.6072,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
