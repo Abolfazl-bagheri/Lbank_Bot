@@ -62,17 +62,18 @@
       "symbol": "DGAIUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.7729999999999999,
-      "qty": 776.1966,
-      "margin": 30.0,
+      "entry": 0.7894752223528867,
+      "qty": 1773.3298,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 0.7536749999999999,
+      "tp_price": 0.7697383417940645,
       "tf": "4h",
       "opened_at": 1795291315,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [
-        0.7746
+        0.7746,
+        0.8043
       ],
       "steps": [
         {
@@ -82,10 +83,14 @@
         {
           "px": 0.773,
           "ts": 1795291482
+        },
+        {
+          "px": 0.8023,
+          "ts": 1795301755
         }
       ],
       "entry_candle_ts": 1795291200,
-      "last_leg_candle_ts": 1795291482,
+      "last_leg_candle_ts": 1795301755,
       "dry_run": true,
       "order_id": "PAPER-DGAIUSDT-1795291315"
     },
@@ -9833,7 +9838,6 @@
     "POETUSDT": 1794455332,
     "MUSTOCKUSDT": 1794456284,
     "AMCUSDT": 1794985408,
-    "JUVUSDT": 1794987127,
     "FLOCK1USDT": 1794997921,
     "AEHRUSDT": 1795000612,
     "STONKBROKERUSDT": 1795043033,
@@ -9896,7 +9900,7 @@
     "FIGUSDT": 1795341934,
     "BONERUSDT": 1795342752
   },
-  "last_trade_report_ts": 1795300514,
+  "last_trade_report_ts": 1795301493,
   "last_known_version": "2.10.0",
   "lessons": [
     {
