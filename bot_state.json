@@ -6529,16 +6529,6 @@
   ],
   "pending": [
     {
-      "symbol": "EVAAUSDT",
-      "tf": "15m",
-      "candle_ts": 1795070700,
-      "side": "SELL",
-      "upper": 4.2160468089516385,
-      "open": 4.2929,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "XAUTUSDT",
       "tf": "5m",
       "candle_ts": 1795071300,
@@ -9520,6 +9510,16 @@
       "side": "SELL",
       "upper": 0.030408945887955882,
       "open": 0.03201,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "SKYAIUSDT",
+      "tf": "15m",
+      "candle_ts": 1795253400,
+      "side": "SELL",
+      "upper": 0.033743269331828814,
+      "open": 0.03555,
       "reported": false
     }
   ],
@@ -9826,15 +9826,6 @@
   "last_trade_report_ts": 1795253119,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795028649,
-      "kind": "gap_result",
-      "symbol": "HUTUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795028651,
       "kind": "gap_result",
@@ -13425,6 +13416,15 @@
       "gap": 0.0,
       "filled": false,
       "note": "miss"
+    },
+    {
+      "ts": 1795253504,
+      "kind": "gap_result",
+      "symbol": "SKYAIUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
     }
   ],
   "tune_history": [],
