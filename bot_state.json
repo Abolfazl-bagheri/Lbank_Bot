@@ -6583,16 +6583,6 @@
   ],
   "pending": [
     {
-      "symbol": "INITUSDT",
-      "tf": "15m",
-      "candle_ts": 1795077000,
-      "side": "SELL",
-      "upper": 0.11272103332852873,
-      "open": 0.10993,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "NAORISUSDT",
       "tf": "15m",
       "candle_ts": 1795077900,
@@ -9547,7 +9537,8 @@
       "side": "SELL",
       "upper": 0.03602388881762586,
       "open": 0.03724,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "CLAUDIAUSDT",
@@ -9574,6 +9565,15 @@
       "side": "SELL",
       "upper": 0.7588904308495458,
       "open": 0.772,
+      "reported": false
+    },
+    {
+      "symbol": "IDOLUSDT",
+      "tf": "1h",
+      "candle_ts": 1795294800,
+      "side": "SELL",
+      "upper": 0.03984275621657736,
+      "open": 0.041653,
       "reported": false
     }
   ],
@@ -9878,15 +9878,6 @@
   "last_trade_report_ts": 1795294548,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795043069,
-      "kind": "gap_result",
-      "symbol": "ZSUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795043086,
       "kind": "gap_result",
@@ -13477,6 +13468,15 @@
       "gap": 0.0,
       "filled": true,
       "note": "filled"
+    },
+    {
+      "ts": 1795294962,
+      "kind": "gap_result",
+      "symbol": "IDOLUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
     }
   ],
   "tune_history": [],
