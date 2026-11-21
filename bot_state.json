@@ -82,6 +82,31 @@
       "last_leg_candle_ts": 1795291200,
       "dry_run": true,
       "order_id": "PAPER-IDOLUSDT-1795291252"
+    },
+    {
+      "symbol": "CLAUDIAUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.010444,
+      "qty": 19149.7511,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0101829,
+      "tf": "4h",
+      "opened_at": 1795291275,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.010444,
+          "ts": 1795291275
+        }
+      ],
+      "entry_candle_ts": 1795291200,
+      "last_leg_candle_ts": 1795291200,
+      "dry_run": true,
+      "order_id": "PAPER-CLAUDIAUSDT-1795291275"
     }
   ],
   "trade_history": [
@@ -6560,16 +6585,6 @@
   ],
   "pending": [
     {
-      "symbol": "ICNTUSDT",
-      "tf": "15m",
-      "candle_ts": 1795076100,
-      "side": "SELL",
-      "upper": 0.374980134628139,
-      "open": 0.3754,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "NAORISUSDT",
       "tf": "15m",
       "candle_ts": 1795077000,
@@ -9547,6 +9562,15 @@
       "side": "SELL",
       "upper": 0.0551567591211166,
       "open": 0.0552,
+      "reported": false
+    },
+    {
+      "symbol": "IDOLUSDT",
+      "tf": "1h",
+      "candle_ts": 1795291200,
+      "side": "SELL",
+      "upper": 0.03602388881762586,
+      "open": 0.03724,
       "reported": false
     }
   ],
