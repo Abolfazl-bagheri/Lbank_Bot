@@ -87,24 +87,28 @@
       "symbol": "ANSEMUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.03834,
-      "qty": 5216.4841,
-      "margin": 10.0,
+      "entry": 0.03754517920054386,
+      "qty": 15980.7467,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.0373815,
-      "tf": "15m",
+      "tp_price": 0.03660654972053026,
+      "tf": "1h",
       "opened_at": 1795286726,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 0.03834,
           "ts": 1795286726
+        },
+        {
+          "px": 0.03716,
+          "ts": 1795287654
         }
       ],
       "entry_candle_ts": 1795286700,
-      "last_leg_candle_ts": 1795286700,
+      "last_leg_candle_ts": 1795287600,
       "dry_run": true,
       "order_id": "PAPER-ANSEMUSDT-1795286726"
     },
@@ -6600,16 +6604,6 @@
   ],
   "pending": [
     {
-      "symbol": "SAMSUNGEMUSDT",
-      "tf": "4h",
-      "candle_ts": 1795075200,
-      "side": "SELL",
-      "upper": 656.3199755550356,
-      "open": 663.1,
-      "reported": true,
-      "filled": false
-    },
-    {
       "symbol": "USUSDT",
       "tf": "4h",
       "candle_ts": 1795075200,
@@ -9585,6 +9579,15 @@
       "side": "SELL",
       "upper": 3.3349745328901927,
       "open": 3.37,
+      "reported": false
+    },
+    {
+      "symbol": "IDOLUSDT",
+      "tf": "1h",
+      "candle_ts": 1795287600,
+      "side": "SELL",
+      "upper": 0.03273679419225322,
+      "open": 0.033444,
       "reported": false
     }
   ],
