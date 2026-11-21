@@ -33,24 +33,30 @@
       "symbol": "SKYAIUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.03543,
-      "qty": 5644.9337,
-      "margin": 10.0,
+      "entry": 0.03518247167728939,
+      "qty": 17053.946799999998,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.034544250000000006,
+      "tp_price": 0.034302909885357155,
       "tf": "1h",
       "opened_at": 1795255237,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.03519
+      ],
       "steps": [
         {
           "px": 0.03543,
           "ts": 1795255237
+        },
+        {
+          "px": 0.03506,
+          "ts": 1795255480
         }
       ],
       "entry_candle_ts": 1795255200,
-      "last_leg_candle_ts": 1795255200,
+      "last_leg_candle_ts": 1795255480,
       "dry_run": true,
       "order_id": "PAPER-SKYAIUSDT-1795255237"
     }
