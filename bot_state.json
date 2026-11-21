@@ -9594,7 +9594,8 @@
       "side": "LONG",
       "upper": 0.018353322396856584,
       "open": 0.0173,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -9898,15 +9899,6 @@
   "last_trade_report_ts": 1795300514,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795043892,
-      "kind": "gap_result",
-      "symbol": "SILVERUSDT",
-      "tf": "5m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795044778,
       "kind": "gap_result",
@@ -13491,6 +13483,15 @@
     },
     {
       "ts": 1795300286,
+      "kind": "gap_result",
+      "symbol": "CATEUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795301183,
       "kind": "gap_result",
       "symbol": "CATEUSDT",
       "tf": "15m",
