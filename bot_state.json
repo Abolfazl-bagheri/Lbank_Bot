@@ -6523,26 +6523,6 @@
   ],
   "pending": [
     {
-      "symbol": "SILVERUSDT",
-      "tf": "15m",
-      "candle_ts": 1795058100,
-      "side": "LONG",
-      "upper": 46.17743786281582,
-      "open": 44.68,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "XAUTUSDT",
-      "tf": "15m",
-      "candle_ts": 1795058100,
-      "side": "LONG",
-      "upper": 3767.039718661727,
-      "open": 3698.46,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "PIPPINUSDT",
       "tf": "15m",
       "candle_ts": 1795069800,
@@ -9477,7 +9457,8 @@
       "side": "SELL",
       "upper": 0.05572185088434806,
       "open": 0.0567,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ENSOUSDT",
@@ -9514,6 +9495,25 @@
       "side": "SELL",
       "upper": 0.02614430167243694,
       "open": 0.02641,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "BLESSUSDT",
+      "tf": "1h",
+      "candle_ts": 1795251600,
+      "side": "SELL",
+      "upper": 0.01985952995701623,
+      "open": 0.021328,
+      "reported": false
+    },
+    {
+      "symbol": "NAORISUSDT",
+      "tf": "15m",
+      "candle_ts": 1795251600,
+      "side": "SELL",
+      "upper": 0.03359321458262198,
+      "open": 0.03391,
       "reported": false
     }
   ],
@@ -9820,24 +9820,6 @@
   "last_trade_report_ts": 1795251111,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795028643,
-      "kind": "gap_result",
-      "symbol": "HUTUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795028645,
-      "kind": "gap_result",
-      "symbol": "NETUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795028647,
       "kind": "gap_result",
@@ -13415,6 +13397,24 @@
       "ts": 1795250788,
       "kind": "gap_result",
       "symbol": "BLESSUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795251785,
+      "kind": "gap_result",
+      "symbol": "YBUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795251795,
+      "kind": "gap_result",
+      "symbol": "MERLUSDT",
       "tf": "15m",
       "gap": 0.0,
       "filled": true,
