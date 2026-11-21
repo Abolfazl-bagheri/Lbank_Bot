@@ -30,37 +30,6 @@
       "order_id": "PAPER-POLYMARKETUSDT-1795231979"
     },
     {
-      "symbol": "BLESSUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.021577789781418322,
-      "qty": 27806.369700000003,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.021038345036882865,
-      "tf": "1h",
-      "opened_at": 1795251647,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        0.021748
-      ],
-      "steps": [
-        {
-          "px": 0.021322,
-          "ts": 1795251647
-        },
-        {
-          "px": 0.021708,
-          "ts": 1795251992
-        }
-      ],
-      "entry_candle_ts": 1795251600,
-      "last_leg_candle_ts": 1795251992,
-      "dry_run": true,
-      "order_id": "PAPER-BLESSUSDT-1795251647"
-    },
-    {
       "symbol": "SKYAIUSDT",
       "side": "SELL",
       "status": "open",
@@ -87,36 +56,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "TAGUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.0007413,
-      "qty": 269796.3038,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.0007227675,
-      "tf": "1h",
-      "opened_at": 1794258089,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.0007413,
-          "ts": 1794258089
-        }
-      ],
-      "entry_candle_ts": 1794258000,
-      "last_leg_candle_ts": 1794258000,
-      "dry_run": true,
-      "order_id": "PAPER-TAGUSDT-1794258089",
-      "closed_at": 1794259121,
-      "close_px": 0.0007192,
-      "pnl_usdt": 5.962498313773086,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "SECZUSDT",
       "side": "SELL",
@@ -6550,19 +6489,45 @@
       "pnl_usdt": 17.60627072656018,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "BLESSUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.021577789781418322,
+      "qty": 27806.369700000003,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 0.021038345036882865,
+      "tf": "1h",
+      "opened_at": 1795251647,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.021748
+      ],
+      "steps": [
+        {
+          "px": 0.021322,
+          "ts": 1795251647
+        },
+        {
+          "px": 0.021708,
+          "ts": 1795251992
+        }
+      ],
+      "entry_candle_ts": 1795251600,
+      "last_leg_candle_ts": 1795251992,
+      "dry_run": true,
+      "order_id": "PAPER-BLESSUSDT-1795251647",
+      "closed_at": 1795252614,
+      "close_px": 0.019652,
+      "pnl_usdt": 53.54922262918829,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
-    {
-      "symbol": "PIPPINUSDT",
-      "tf": "15m",
-      "candle_ts": 1795069800,
-      "side": "LONG",
-      "upper": 0.01812016293279699,
-      "open": 0.0168,
-      "reported": true,
-      "filled": true
-    },
     {
       "symbol": "EVAAUSDT",
       "tf": "15m",
@@ -9545,6 +9510,16 @@
       "side": "SELL",
       "upper": 0.03359321458262198,
       "open": 0.03391,
+      "reported": true,
+      "filled": false
+    },
+    {
+      "symbol": "SKYAIUSDT",
+      "tf": "15m",
+      "candle_ts": 1795252500,
+      "side": "SELL",
+      "upper": 0.030408945887955882,
+      "open": 0.03201,
       "reported": false
     }
   ],
@@ -9851,15 +9826,6 @@
   "last_trade_report_ts": 1795252031,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795028647,
-      "kind": "gap_result",
-      "symbol": "ZSUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795028649,
       "kind": "gap_result",
@@ -13450,6 +13416,15 @@
       "gap": 0.0,
       "filled": true,
       "note": "filled"
+    },
+    {
+      "ts": 1795252612,
+      "kind": "gap_result",
+      "symbol": "NAORISUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
     }
   ],
   "tune_history": [],
