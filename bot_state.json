@@ -138,6 +138,31 @@
       "last_leg_candle_ts": 1795298400,
       "dry_run": true,
       "order_id": "PAPER-IDOLUSDT-1795298426"
+    },
+    {
+      "symbol": "COOKIEUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.007855,
+      "qty": 25461.4895,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.007658624999999999,
+      "tf": "1h",
+      "opened_at": 1795298505,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.007855,
+          "ts": 1795298505
+        }
+      ],
+      "entry_candle_ts": 1795298400,
+      "last_leg_candle_ts": 1795298400,
+      "dry_run": true,
+      "order_id": "PAPER-COOKIEUSDT-1795298505"
     }
   ],
   "trade_history": [
@@ -6610,26 +6635,6 @@
   ],
   "pending": [
     {
-      "symbol": "ICNTUSDT",
-      "tf": "1h",
-      "candle_ts": 1795078800,
-      "side": "SELL",
-      "upper": 0.37886738976869827,
-      "open": 0.3892,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "NAORISUSDT",
-      "tf": "1h",
-      "candle_ts": 1795078800,
-      "side": "SELL",
-      "upper": 0.03010795672438673,
-      "open": 0.03278,
-      "reported": true,
-      "filled": false
-    },
-    {
       "symbol": "HUTUSDT",
       "tf": "15m",
       "candle_ts": 1795078800,
@@ -9596,6 +9601,24 @@
       "side": "SELL",
       "upper": 0.007750777381184943,
       "open": 0.00788,
+      "reported": false
+    },
+    {
+      "symbol": "IDOLUSDT",
+      "tf": "1h",
+      "candle_ts": 1795298400,
+      "side": "SELL",
+      "upper": 0.0432830991609489,
+      "open": 0.044317,
+      "reported": false
+    },
+    {
+      "symbol": "INITUSDT",
+      "tf": "15m",
+      "candle_ts": 1795298400,
+      "side": "SELL",
+      "upper": 0.09344568249715353,
+      "open": 0.0937,
       "reported": false
     }
   ],
