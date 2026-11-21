@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795244408,
+  "updated_at": 1795244435,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795225265
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795225286
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "15m",
       "gap": 2.2,
       "ts": 1795244408
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795244412
+    },
+    {
+      "kind": "SELL",
+      "symbol": "BLESSUSDT",
+      "tf": "1h",
+      "gap": 3.36,
+      "ts": 1795244435
     }
   ],
   "trades": [
@@ -1417,14 +1417,27 @@
       "px": 23.88,
       "pnl": -1.1402,
       "tf": "15m"
+    },
+    {
+      "symbol": "BLESSUSDT",
+      "side": "SELL",
+      "entry": 0.017204,
+      "tp": 0.0167739,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.017204,
+      "pnl": -0.24,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1795219571,
   "realized": 49.5156,
   "closed_n": 5,
-  "open_upnl": -1.1402,
-  "equity": 1048.3754,
+  "open_upnl": -1.3802,
+  "equity": 1048.1354,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
