@@ -6528,16 +6528,6 @@
   ],
   "pending": [
     {
-      "symbol": "NETUSDT",
-      "tf": "15m",
-      "candle_ts": 1795046400,
-      "side": "SELL",
-      "upper": 293.8,
-      "open": 293.8,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "AKAMUSDT",
       "tf": "4h",
       "candle_ts": 1795046400,
@@ -9511,7 +9501,8 @@
       "side": "SELL",
       "upper": 0.4575430465821708,
       "open": 0.4617,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "ENSOUSDT",
@@ -9520,6 +9511,15 @@
       "side": "SELL",
       "upper": 0.4578652557786175,
       "open": 0.4617,
+      "reported": false
+    },
+    {
+      "symbol": "ENSOUSDT",
+      "tf": "15m",
+      "candle_ts": 1795227300,
+      "side": "SELL",
+      "upper": 0.4787511445669421,
+      "open": 0.4934,
       "reported": false
     }
   ],
@@ -9813,20 +9813,19 @@
     "CADUSDT": 1795261624,
     "NGASUSDT": 1795262595,
     "ARGUSDT": 1795269893,
-    "AINBSCUSDT": 1795269926
+    "AINBSCUSDT": 1795269926,
+    "BTCDOMUSDT": 1795270613,
+    "MEMECOINUSDT": 1795270628,
+    "1000WOJAKUSDT": 1795270629,
+    "PIPEDOGUSDT": 1795270630,
+    "CZUSDT": 1795270632,
+    "NEIRO1USDT": 1795270634,
+    "1000SATSUSDT": 1795270635,
+    "MANCERUSDT": 1795270656
   },
   "last_trade_report_ts": 1795227017,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795021441,
-      "kind": "gap_result",
-      "symbol": "AKAMUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795022200,
       "kind": "gap_result",
@@ -13411,6 +13410,15 @@
     },
     {
       "ts": 1795226621,
+      "kind": "gap_result",
+      "symbol": "ENSOUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
+    },
+    {
+      "ts": 1795227480,
       "kind": "gap_result",
       "symbol": "ENSOUSDT",
       "tf": "15m",
