@@ -59,56 +59,6 @@
       "order_id": "PAPER-PIEVERSEUSDT-1795281312"
     },
     {
-      "symbol": "IDOLUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.037405,
-      "qty": 5346.8788,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.036469875,
-      "tf": "1h",
-      "opened_at": 1795291252,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.037405,
-          "ts": 1795291252
-        }
-      ],
-      "entry_candle_ts": 1795291200,
-      "last_leg_candle_ts": 1795291200,
-      "dry_run": true,
-      "order_id": "PAPER-IDOLUSDT-1795291252"
-    },
-    {
-      "symbol": "CLAUDIAUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.010444,
-      "qty": 19149.7511,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.0101829,
-      "tf": "4h",
-      "opened_at": 1795291275,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.010444,
-          "ts": 1795291275
-        }
-      ],
-      "entry_candle_ts": 1795291200,
-      "last_leg_candle_ts": 1795291200,
-      "dry_run": true,
-      "order_id": "PAPER-CLAUDIAUSDT-1795291275"
-    },
-    {
       "symbol": "DGAIUSDT",
       "side": "SELL",
       "status": "open",
@@ -141,74 +91,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "PIEVERSEUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 1.598865516122961,
-      "qty": 875.6207999999999,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 1.558893878219887,
-      "tf": "4h",
-      "opened_at": 1794199526,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 1.5918,
-          "ts": 1794199526
-        },
-        {
-          "px": 1.5926,
-          "ts": 1794200445
-        },
-        {
-          "px": 1.6038,
-          "ts": 1794211278
-        }
-      ],
-      "entry_candle_ts": 1794199500,
-      "last_leg_candle_ts": 1794211200,
-      "dry_run": true,
-      "order_id": "PAPER-PIEVERSEUSDT-1794199526",
-      "closed_at": 1794269322,
-      "close_px": 2.0658,
-      "pnl_usdt": -408.85757484657694,
-      "close_reason": "NIGHT_RESET",
-      "why": "NIGHT_RESET"
-    },
-    {
-      "symbol": "MOOUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.0008,
-      "qty": 250000.0,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.00078,
-      "tf": "15m",
-      "opened_at": 1794263441,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.0008,
-          "ts": 1794263441
-        }
-      ],
-      "entry_candle_ts": 1794263400,
-      "last_leg_candle_ts": 1794263400,
-      "dry_run": true,
-      "order_id": "PAPER-MOOUSDT-1794263441",
-      "closed_at": 1794269322,
-      "close_px": 0.000817,
-      "pnl_usdt": -4.249999999999995,
-      "close_reason": "NIGHT_RESET",
-      "why": "NIGHT_RESET"
-    },
     {
       "symbol": "BONERUSDT",
       "side": "SELL",
@@ -6612,6 +6494,66 @@
       "pnl_usdt": -47.27627112121767,
       "close_reason": "STOP",
       "why": "STOP"
+    },
+    {
+      "symbol": "IDOLUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.037405,
+      "qty": 5346.8788,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.036469875,
+      "tf": "1h",
+      "opened_at": 1795291252,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.037405,
+          "ts": 1795291252
+        }
+      ],
+      "entry_candle_ts": 1795291200,
+      "last_leg_candle_ts": 1795291200,
+      "dry_run": true,
+      "order_id": "PAPER-IDOLUSDT-1795291252",
+      "closed_at": 1795291600,
+      "close_px": 0.039092,
+      "pnl_usdt": -9.02018446731721,
+      "close_reason": "STOP",
+      "why": "STOP"
+    },
+    {
+      "symbol": "CLAUDIAUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.010444,
+      "qty": 19149.7511,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0101829,
+      "tf": "4h",
+      "opened_at": 1795291275,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.010444,
+          "ts": 1795291275
+        }
+      ],
+      "entry_candle_ts": 1795291200,
+      "last_leg_candle_ts": 1795291200,
+      "dry_run": true,
+      "order_id": "PAPER-CLAUDIAUSDT-1795291275",
+      "closed_at": 1795291812,
+      "close_px": 0.01104,
+      "pnl_usdt": -11.413251627728826,
+      "close_reason": "STOP",
+      "why": "STOP"
     }
   ],
   "pending": [
@@ -9876,11 +9818,8 @@
     "UP2USDT": 1795284229,
     "QUACKAIUSDT": 1795286791,
     "SKY1USDT": 1795287885,
-    "DODOUSDT": 1795291316,
     "LONGXIAUSDT": 1795291366,
     "XTIUSDT": 1795291473,
-    "HOTUSDT": 1795291455,
-    "1000000BABYDOGEUSDT": 1795291464,
     "COPSTOCKUSDT": 1795291586,
     "XBRUSDT": 1795293074,
     "FIGHT1USDT": 1795299560,
@@ -9906,9 +9845,12 @@
     "B3USDT": 1795329999,
     "FRONGUSDT": 1795333598,
     "ANSEMUSDT": 1795334526,
-    "NIULAIUSDT": 1795334570
+    "NIULAIUSDT": 1795334570,
+    "DODOUSDT": 1795334725,
+    "HOTUSDT": 1795334769,
+    "1000000BABYDOGEUSDT": 1795334773
   },
-  "last_trade_report_ts": 1795290668,
+  "last_trade_report_ts": 1795291585,
   "last_known_version": "2.10.0",
   "lessons": [
     {
