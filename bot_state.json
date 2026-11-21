@@ -53,6 +53,31 @@
       "last_leg_candle_ts": 1795281300,
       "dry_run": true,
       "order_id": "PAPER-PIEVERSEUSDT-1795281312"
+    },
+    {
+      "symbol": "CLAUDIAUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.010184,
+      "qty": 19638.6489,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0099294,
+      "tf": "1h",
+      "opened_at": 1795284041,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.010184,
+          "ts": 1795284041
+        }
+      ],
+      "entry_candle_ts": 1795284000,
+      "last_leg_candle_ts": 1795284000,
+      "dry_run": true,
+      "order_id": "PAPER-CLAUDIAUSDT-1795284041"
     }
   ],
   "trade_history": [
@@ -6521,16 +6546,6 @@
   ],
   "pending": [
     {
-      "symbol": "ICNTUSDT",
-      "tf": "1h",
-      "candle_ts": 1795075200,
-      "side": "SELL",
-      "upper": 0.35885219682198977,
-      "open": 0.365,
-      "reported": true,
-      "filled": false
-    },
-    {
       "symbol": "ETHFIUSDT",
       "tf": "4h",
       "candle_ts": 1795075200,
@@ -9512,6 +9527,15 @@
       "upper": 0.01042101132882308,
       "open": 0.01033,
       "reported": false
+    },
+    {
+      "symbol": "BULLAUSDT",
+      "tf": "1h",
+      "candle_ts": 1795284000,
+      "side": "SELL",
+      "upper": 0.015117005530172534,
+      "open": 0.015232,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -9813,7 +9837,7 @@
     "RIOTUSDT": 1795325593,
     "TRUMPSOLUSDT": 1795326388
   },
-  "last_trade_report_ts": 1795282862,
+  "last_trade_report_ts": 1795283784,
   "last_known_version": "2.10.0",
   "lessons": [
     {
