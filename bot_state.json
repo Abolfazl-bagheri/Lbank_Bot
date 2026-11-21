@@ -33,24 +33,30 @@
       "symbol": "BLESSUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.021322,
-      "qty": 9379.9831,
-      "margin": 10.0,
+      "entry": 0.021577789781418322,
+      "qty": 27806.369700000003,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.02078895,
+      "tp_price": 0.021038345036882865,
       "tf": "1h",
       "opened_at": 1795251647,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.021748
+      ],
       "steps": [
         {
           "px": 0.021322,
           "ts": 1795251647
+        },
+        {
+          "px": 0.021708,
+          "ts": 1795251992
         }
       ],
       "entry_candle_ts": 1795251600,
-      "last_leg_candle_ts": 1795251600,
+      "last_leg_candle_ts": 1795251992,
       "dry_run": true,
       "order_id": "PAPER-BLESSUSDT-1795251647"
     }
