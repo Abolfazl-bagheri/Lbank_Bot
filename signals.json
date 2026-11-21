@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795287635,
+  "updated_at": 1795287653,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795258165
-    },
-    {
-      "kind": "GAP",
-      "symbol": "PARTIUSDT",
-      "tf": "1h",
-      "gap": 1.29,
-      "ts": 1795258275
-    },
     {
       "kind": "GAP",
       "symbol": "SKYAIUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "1h",
       "gap": 2.39,
       "ts": 1795287635
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795287641
+    },
+    {
+      "kind": "SELL",
+      "symbol": "ANSEMUSDT",
+      "tf": "1h",
+      "gap": 2.29,
+      "ts": 1795287653
     }
   ],
   "trades": [
@@ -1456,14 +1456,27 @@
       "px": 0.03716,
       "pnl": 5.9155,
       "tf": "15m"
+    },
+    {
+      "symbol": "IDOLUSDT",
+      "side": "SELL",
+      "entry": 0.033539,
+      "tp": 0.032700525,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.033539,
+      "pnl": -0.24,
+      "tf": "1h"
     }
   ],
   "start": 1000.0,
   "session_start": 1795219571,
   "realized": 91.3888,
   "closed_n": 18,
-  "open_upnl": -3.4771,
-  "equity": 1087.9117,
+  "open_upnl": -3.7171,
+  "equity": 1087.6717,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
