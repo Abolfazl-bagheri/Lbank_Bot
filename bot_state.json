@@ -53,74 +53,9 @@
       "last_leg_candle_ts": 1795244400,
       "dry_run": true,
       "order_id": "PAPER-YBUSDT-1795244489"
-    },
-    {
-      "symbol": "BLESSUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.017825,
-      "qty": 11220.1964,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.017379375,
-      "tf": "15m",
-      "opened_at": 1795245321,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.017825,
-          "ts": 1795245321
-        }
-      ],
-      "entry_candle_ts": 1795245300,
-      "last_leg_candle_ts": 1795245300,
-      "dry_run": true,
-      "order_id": "PAPER-BLESSUSDT-1795245321"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "CLANKERUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 15.434560572401894,
-      "qty": 90.7055,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 15.048696558091846,
-      "tf": "1h",
-      "opened_at": 1794213931,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [
-        15.63
-      ],
-      "steps": [
-        {
-          "px": 15.59,
-          "ts": 1794213931
-        },
-        {
-          "px": 15.59,
-          "ts": 1794214127
-        },
-        {
-          "px": 15.32,
-          "ts": 1794214842
-        }
-      ],
-      "entry_candle_ts": 1794213900,
-      "last_leg_candle_ts": 1794214800,
-      "dry_run": true,
-      "order_id": "PAPER-CLANKERUSDT-1794213931",
-      "closed_at": 1794215910,
-      "close_px": 14.97,
-      "pnl_usdt": 42.13821302600514,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "AKEUSDT",
       "side": "SELL",
@@ -6548,6 +6483,36 @@
       "pnl_usdt": -7.84701232271563,
       "close_reason": "STOP",
       "why": "STOP"
+    },
+    {
+      "symbol": "BLESSUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.017825,
+      "qty": 11220.1964,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.017379375,
+      "tf": "15m",
+      "opened_at": 1795245321,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.017825,
+          "ts": 1795245321
+        }
+      ],
+      "entry_candle_ts": 1795245300,
+      "last_leg_candle_ts": 1795245300,
+      "dry_run": true,
+      "order_id": "PAPER-BLESSUSDT-1795245321",
+      "closed_at": 1795245618,
+      "close_px": 0.016714,
+      "pnl_usdt": 12.46563814866761,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
