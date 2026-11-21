@@ -6575,16 +6575,6 @@
   ],
   "pending": [
     {
-      "symbol": "CLAUDIAUSDT",
-      "tf": "15m",
-      "candle_ts": 1795075200,
-      "side": "SELL",
-      "upper": 0.007036037802703074,
-      "open": 0.007077,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "GRASSUSDT",
       "tf": "4h",
       "candle_ts": 1795075200,
@@ -9553,7 +9543,8 @@
       "side": "SELL",
       "upper": 0.036357155428116766,
       "open": 0.03704,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "ZCATUSDT",
@@ -9562,6 +9553,15 @@
       "side": "SELL",
       "upper": 0.018820509399648487,
       "open": 0.01933,
+      "reported": false
+    },
+    {
+      "symbol": "ANSEMUSDT",
+      "tf": "15m",
+      "candle_ts": 1795286700,
+      "side": "SELL",
+      "upper": 0.03807965472532683,
+      "open": 0.03935,
       "reported": false
     }
   ],
@@ -9860,20 +9860,13 @@
     "RIOTUSDT": 1795325593,
     "TRUMPSOLUSDT": 1795326388,
     "OROCHIUSDT": 1795327375,
-    "PORUSDT": 1795328144
+    "PORUSDT": 1795328144,
+    "ZZZUSDT": 1795329982,
+    "B3USDT": 1795329999
   },
   "last_trade_report_ts": 1795286510,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795030311,
-      "kind": "gap_result",
-      "symbol": "NETUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795030313,
       "kind": "gap_result",
@@ -13464,6 +13457,15 @@
       "gap": 0.0,
       "filled": true,
       "note": "filled"
+    },
+    {
+      "ts": 1795286814,
+      "kind": "gap_result",
+      "symbol": "ANSEMUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
     }
   ],
   "tune_history": [],
