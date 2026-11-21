@@ -6551,26 +6551,6 @@
   "pending": [
     {
       "symbol": "INITUSDT",
-      "tf": "1h",
-      "candle_ts": 1795075200,
-      "side": "SELL",
-      "upper": 0.10823933125675442,
-      "open": 0.11347,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "SENTUSDT",
-      "tf": "4h",
-      "candle_ts": 1795075200,
-      "side": "SELL",
-      "upper": 0.02295587059592571,
-      "open": 0.02317,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "INITUSDT",
       "tf": "4h",
       "candle_ts": 1795075200,
       "side": "SELL",
@@ -9452,7 +9432,8 @@
       "side": "SELL",
       "upper": 0.03421683221187426,
       "open": 0.0347,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "SKYAIUSDT",
@@ -9461,7 +9442,8 @@
       "side": "SELL",
       "upper": 0.03418667945522789,
       "open": 0.0347,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "AKEUSDT",
@@ -9520,7 +9502,8 @@
       "side": "SELL",
       "upper": 0.01042101132882308,
       "open": 0.01033,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "BULLAUSDT",
@@ -9538,6 +9521,24 @@
       "side": "SELL",
       "upper": 0.00969589800394623,
       "open": 0.010222,
+      "reported": false
+    },
+    {
+      "symbol": "PIEVERSEUSDT",
+      "tf": "1h",
+      "candle_ts": 1795284000,
+      "side": "SELL",
+      "upper": 3.265119564206961,
+      "open": 3.34,
+      "reported": false
+    },
+    {
+      "symbol": "NIGHTUSDT",
+      "tf": "1h",
+      "candle_ts": 1795284000,
+      "side": "SELL",
+      "upper": 0.04526777439596093,
+      "open": 0.04576,
       "reported": false
     }
   ],
@@ -9838,38 +9839,12 @@
     "MEMECOINUSDT": 1795324624,
     "CZUSDT": 1795324625,
     "RIOTUSDT": 1795325593,
-    "TRUMPSOLUSDT": 1795326388
+    "TRUMPSOLUSDT": 1795326388,
+    "OROCHIUSDT": 1795327375
   },
   "last_trade_report_ts": 1795283784,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795029427,
-      "kind": "gap_result",
-      "symbol": "GOLDUSDT",
-      "tf": "5m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795029435,
-      "kind": "gap_result",
-      "symbol": "XAUTUSDT",
-      "tf": "5m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795030308,
-      "kind": "gap_result",
-      "symbol": "PANWUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795030311,
       "kind": "gap_result",
@@ -13438,6 +13413,33 @@
       "ts": 1795283208,
       "kind": "gap_result",
       "symbol": "PIEVERSEUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795284190,
+      "kind": "gap_result",
+      "symbol": "SKYAIUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795284192,
+      "kind": "gap_result",
+      "symbol": "SKYAIUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795284194,
+      "kind": "gap_result",
+      "symbol": "CLAUDIAUSDT",
       "tf": "15m",
       "gap": 0.0,
       "filled": true,
