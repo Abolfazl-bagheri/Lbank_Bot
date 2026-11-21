@@ -57,64 +57,9 @@
       "last_leg_candle_ts": 1795284000,
       "dry_run": true,
       "order_id": "PAPER-PIEVERSEUSDT-1795281312"
-    },
-    {
-      "symbol": "ANSEMUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.03714,
-      "qty": 5385.0296,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.0362115,
-      "tf": "15m",
-      "opened_at": 1795285823,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.03714,
-          "ts": 1795285823
-        }
-      ],
-      "entry_candle_ts": 1795285800,
-      "last_leg_candle_ts": 1795285800,
-      "dry_run": true,
-      "order_id": "PAPER-ANSEMUSDT-1795285823"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "MUSEBOOKUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 1e-05,
-      "qty": 20000000.0,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 9.75e-06,
-      "tf": "15m",
-      "opened_at": 1794264317,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 1e-05,
-          "ts": 1794264317
-        }
-      ],
-      "entry_candle_ts": 1794264300,
-      "last_leg_candle_ts": 1794264300,
-      "dry_run": true,
-      "order_id": "PAPER-MUSEBOOKUSDT-1794264317",
-      "closed_at": 1794267209,
-      "close_px": 9.47e-06,
-      "pnl_usdt": 10.600000000000001,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "CLAUDIAUSDT",
       "side": "SELL",
@@ -6544,6 +6489,36 @@
       "closed_at": 1795284285,
       "close_px": 0.010856,
       "pnl_usdt": -13.197172034564,
+      "close_reason": "STOP",
+      "why": "STOP"
+    },
+    {
+      "symbol": "ANSEMUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.03714,
+      "qty": 5385.0296,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0362115,
+      "tf": "15m",
+      "opened_at": 1795285823,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.03714,
+          "ts": 1795285823
+        }
+      ],
+      "entry_candle_ts": 1795285800,
+      "last_leg_candle_ts": 1795285800,
+      "dry_run": true,
+      "order_id": "PAPER-ANSEMUSDT-1795285823",
+      "closed_at": 1795286111,
+      "close_px": 0.03921,
+      "pnl_usdt": -11.147011308562211,
       "close_reason": "STOP",
       "why": "STOP"
     }
