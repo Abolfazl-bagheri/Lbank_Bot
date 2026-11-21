@@ -1,29 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795230943,
+  "updated_at": 1795231225,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795215960
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795215980
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795216002
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,22 +1381,30 @@
       "tf": "15m",
       "gap": 1.24,
       "ts": 1795230943
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795231022
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795231121
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795231225
     }
   ],
   "trades": [
-    {
-      "symbol": "ENSOUSDT",
-      "side": "SELL",
-      "entry": 0.5096974847447536,
-      "tp": 0.4969550476261348,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
-      "lev": 20,
-      "px": 0.5184,
-      "pnl": -10.9643,
-      "tf": "1h"
-    },
     {
       "symbol": "SIRENUSDT",
       "side": "SELL",
@@ -1427,23 +1414,23 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.02647,
-      "pnl": -0.3912,
+      "px": 0.02614,
+      "pnl": 2.104,
       "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1795219571,
-  "realized": -31.2624,
-  "closed_n": 1,
-  "open_upnl": -11.3555,
-  "equity": 957.3821,
+  "realized": -7.9574,
+  "closed_n": 2,
+  "open_upnl": 2.104,
+  "equity": 994.1466,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 0,
+    "profit": 23.305,
     "loss": -31.2624,
-    "count": 1
+    "count": 2
   }
 }
