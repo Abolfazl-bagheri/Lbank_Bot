@@ -28,6 +28,31 @@
       "last_leg_candle_ts": 1795233600,
       "dry_run": true,
       "order_id": "PAPER-POLYMARKETUSDT-1795231979"
+    },
+    {
+      "symbol": "YBUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.05673,
+      "qty": 3525.4715,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.05531175,
+      "tf": "1h",
+      "opened_at": 1795248051,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.05673,
+          "ts": 1795248051
+        }
+      ],
+      "entry_candle_ts": 1795248000,
+      "last_leg_candle_ts": 1795248000,
+      "dry_run": true,
+      "order_id": "PAPER-YBUSDT-1795248051"
     }
   ],
   "trade_history": [
@@ -9473,7 +9498,8 @@
       "side": "LONG",
       "upper": 0.001028424059127096,
       "open": 0.000949,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CLAUDIAUSDT",
@@ -9482,7 +9508,8 @@
       "side": "SELL",
       "upper": 0.006892520642431686,
       "open": 0.006905,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -9756,7 +9783,6 @@
     "BONERUSDT": 1795238202,
     "GALUSDT": 1795239096,
     "CYBERLEEKUSDT": 1795245508,
-    "XTIUSDT": 1795246304,
     "FIGHT1USDT": 1795256206,
     "CADUSDT": 1795261624,
     "NGASUSDT": 1795262595,
@@ -9779,27 +9805,9 @@
     "QUACKAIUSDT": 1795286791,
     "SKY1USDT": 1795287885
   },
-  "last_trade_report_ts": 1795245926,
+  "last_trade_report_ts": 1795247278,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795027626,
-      "kind": "gap_result",
-      "symbol": "AKAMUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
-    {
-      "ts": 1795028623,
-      "kind": "gap_result",
-      "symbol": "HUMAUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
     {
       "ts": 1795028632,
       "kind": "gap_result",
@@ -13377,6 +13385,24 @@
       "ts": 1795246321,
       "kind": "gap_result",
       "symbol": "BLESSUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795247272,
+      "kind": "gap_result",
+      "symbol": "SOPHUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795247275,
+      "kind": "gap_result",
+      "symbol": "CLAUDIAUSDT",
       "tf": "15m",
       "gap": 0.0,
       "filled": true,
