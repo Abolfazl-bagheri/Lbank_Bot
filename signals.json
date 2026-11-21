@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795251645,
+  "updated_at": 1795251683,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "SKDDUSDT",
-      "tf": "15m",
-      "gap": 1.48,
-      "ts": 1795232734
-    },
-    {
-      "kind": "SELL",
-      "symbol": "JELLYJELLYUSDT",
-      "tf": "15m",
-      "gap": 1.05,
-      "ts": 1795232741
-    },
     {
       "kind": "SELL",
       "symbol": "CHEEMSUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "1h",
       "gap": 6.86,
       "ts": 1795251645
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795251650
+    },
+    {
+      "kind": "SELL",
+      "symbol": "NAORISUSDT",
+      "tf": "15m",
+      "gap": 1.43,
+      "ts": 1795251683
     }
   ],
   "trades": [
@@ -1417,14 +1417,27 @@
       "px": 23.88,
       "pnl": -1.1402,
       "tf": "15m"
+    },
+    {
+      "symbol": "BLESSUSDT",
+      "side": "SELL",
+      "entry": 0.021322,
+      "tp": 0.02078895,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.021322,
+      "pnl": -0.24,
+      "tf": "1h"
     }
   ],
   "start": 1000.0,
   "session_start": 1795219571,
   "realized": 38.7573,
   "closed_n": 11,
-  "open_upnl": -1.1402,
-  "equity": 1037.6171,
+  "open_upnl": -1.3802,
+  "equity": 1037.3771,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
