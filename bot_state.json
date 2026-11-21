@@ -34,23 +34,29 @@
       "side": "SELL",
       "status": "open",
       "entry": 0.019902,
-      "qty": 10049.2413,
-      "margin": 10.0,
+      "qty": 30147.723899999997,
+      "margin": 30.0,
       "leverage": 20,
       "tp_price": 0.01940445,
       "tf": "15m",
       "opened_at": 1795249906,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.019955
+      ],
       "steps": [
         {
           "px": 0.019902,
           "ts": 1795249906
+        },
+        {
+          "px": 0.019902,
+          "ts": 1795249993
         }
       ],
       "entry_candle_ts": 1795249800,
-      "last_leg_candle_ts": 1795249800,
+      "last_leg_candle_ts": 1795249993,
       "dry_run": true,
       "order_id": "PAPER-BLESSUSDT-1795249906"
     }
@@ -6517,16 +6523,6 @@
   ],
   "pending": [
     {
-      "symbol": "BULLAUSDT",
-      "tf": "15m",
-      "candle_ts": 1795058100,
-      "side": "SELL",
-      "upper": 0.015567245607432965,
-      "open": 0.015737,
-      "reported": true,
-      "filled": false
-    },
-    {
       "symbol": "GOLDUSDT",
       "tf": "15m",
       "candle_ts": 1795058100,
@@ -9509,6 +9505,15 @@
       "side": "SELL",
       "upper": 0.016175325389318145,
       "open": 0.01701,
+      "reported": false
+    },
+    {
+      "symbol": "BLESSUSDT",
+      "tf": "15m",
+      "candle_ts": 1795249800,
+      "side": "SELL",
+      "upper": 0.01941067458437696,
+      "open": 0.019322,
       "reported": false
     }
   ],
