@@ -24,6 +24,31 @@
       "last_leg_candle_ts": 1795228200,
       "dry_run": true,
       "order_id": "PAPER-ENSOUSDT-1795228340"
+    },
+    {
+      "symbol": "SIRENUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.02645,
+      "qty": 7561.4367,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.02578875,
+      "tf": "15m",
+      "opened_at": 1795229153,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.02645,
+          "ts": 1795229153
+        }
+      ],
+      "entry_candle_ts": 1795229100,
+      "last_leg_candle_ts": 1795229100,
+      "dry_run": true,
+      "order_id": "PAPER-SIRENUSDT-1795229153"
     }
   ],
   "trade_history": [
@@ -6518,16 +6543,6 @@
   ],
   "pending": [
     {
-      "symbol": "NETUSDT",
-      "tf": "4h",
-      "candle_ts": 1795046400,
-      "side": "SELL",
-      "upper": 303.9925326764105,
-      "open": 293.8,
-      "reported": true,
-      "filled": false
-    },
-    {
       "symbol": "ZKCUSDT",
       "tf": "15m",
       "candle_ts": 1795047300,
@@ -9509,6 +9524,15 @@
       "side": "SELL",
       "upper": 0.4960647141838318,
       "open": 0.5021,
+      "reported": false
+    },
+    {
+      "symbol": "ENSOUSDT",
+      "tf": "15m",
+      "candle_ts": 1795229100,
+      "side": "SELL",
+      "upper": 0.51444901224956,
+      "open": 0.5219,
       "reported": false
     }
   ],
