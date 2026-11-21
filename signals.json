@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795282322,
+  "updated_at": 1795282513,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795250892
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795250978
-    },
     {
       "kind": "GAP",
       "symbol": "YBUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "15m",
       "gap": 1.19,
       "ts": 1795282322
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795282407
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795282513
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 23.87,
-      "pnl": -0.8888,
+      "px": 23.79,
+      "pnl": 1.1227,
       "tf": "15m"
     },
     {
@@ -1427,36 +1427,23 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 3.3772,
-      "pnl": -3.02,
-      "tf": "15m"
-    },
-    {
-      "symbol": "CLAUDIAUSDT",
-      "side": "SELL",
-      "entry": 0.010376,
-      "tp": 0.0101166,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.010844,
-      "pnl": -9.2608,
+      "px": 3.379,
+      "pnl": -3.1281,
       "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1795219571,
-  "realized": 124.7538,
-  "closed_n": 15,
-  "open_upnl": -13.1696,
-  "equity": 1111.5842,
+  "realized": 115.733,
+  "closed_n": 16,
+  "open_upnl": -2.0054,
+  "equity": 1113.7276,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
     "profit": 196.8465,
-    "loss": -72.0926,
-    "count": 15
+    "loss": -81.1135,
+    "count": 16
   }
 }
