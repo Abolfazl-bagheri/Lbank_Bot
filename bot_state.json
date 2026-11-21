@@ -88,6 +88,31 @@
       "last_leg_candle_ts": 1795291482,
       "dry_run": true,
       "order_id": "PAPER-DGAIUSDT-1795291315"
+    },
+    {
+      "symbol": "INITUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.09443,
+      "qty": 2117.971,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.09206924999999999,
+      "tf": "15m",
+      "opened_at": 1795297544,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.09443,
+          "ts": 1795297544
+        }
+      ],
+      "entry_candle_ts": 1795297500,
+      "last_leg_candle_ts": 1795297500,
+      "dry_run": true,
+      "order_id": "PAPER-INITUSDT-1795297544"
     }
   ],
   "trade_history": [
@@ -6560,16 +6585,6 @@
   ],
   "pending": [
     {
-      "symbol": "NAORISUSDT",
-      "tf": "15m",
-      "candle_ts": 1795077900,
-      "side": "SELL",
-      "upper": 0.03052129825160788,
-      "open": 0.03165,
-      "reported": true,
-      "filled": false
-    },
-    {
       "symbol": "BIRBUSDT",
       "tf": "15m",
       "candle_ts": 1795077900,
@@ -9551,6 +9566,15 @@
       "side": "SELL",
       "upper": 0.03984275621657736,
       "open": 0.041653,
+      "reported": false
+    },
+    {
+      "symbol": "CATEUSDT",
+      "tf": "15m",
+      "candle_ts": 1795297500,
+      "side": "LONG",
+      "upper": 0.01810919194269552,
+      "open": 0.01803,
       "reported": false
     }
   ],
