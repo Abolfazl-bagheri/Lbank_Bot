@@ -6611,16 +6611,6 @@
   ],
   "pending": [
     {
-      "symbol": "NAORISUSDT",
-      "tf": "15m",
-      "candle_ts": 1795080600,
-      "side": "SELL",
-      "upper": 0.03599821687461657,
-      "open": 0.03626,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "XAUTUSDT",
       "tf": "15m",
       "candle_ts": 1795080600,
@@ -9542,7 +9532,8 @@
       "side": "SELL",
       "upper": 0.0432830991609489,
       "open": 0.044317,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "INITUSDT",
@@ -9561,7 +9552,8 @@
       "side": "SELL",
       "upper": 0.007712166011967245,
       "open": 0.00787,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "INITUSDT",
@@ -9570,7 +9562,8 @@
       "side": "SELL",
       "upper": 0.09275016927195612,
       "open": 0.0937,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CATEUSDT",
@@ -9601,6 +9594,15 @@
       "open": 0.0173,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "COOKIEUSDT",
+      "tf": "1h",
+      "candle_ts": 1795302000,
+      "side": "SELL",
+      "upper": 0.008061321160022285,
+      "open": 0.0083,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -9898,38 +9900,12 @@
     "1000000BABYDOGEUSDT": 1795334773,
     "SIMOUSDT": 1795336272,
     "FIGUSDT": 1795341934,
-    "BONERUSDT": 1795342752
+    "BONERUSDT": 1795342752,
+    "JUVUSDT": 1795345325
   },
   "last_trade_report_ts": 1795301493,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795044778,
-      "kind": "gap_result",
-      "symbol": "PAIDUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795044780,
-      "kind": "gap_result",
-      "symbol": "NETUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795045706,
-      "kind": "gap_result",
-      "symbol": "CLAUDIAUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795045709,
       "kind": "gap_result",
@@ -13499,6 +13475,33 @@
       "kind": "gap_result",
       "symbol": "CATEUSDT",
       "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795302158,
+      "kind": "gap_result",
+      "symbol": "IDOLUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795302160,
+      "kind": "gap_result",
+      "symbol": "COOKIEUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
+    },
+    {
+      "ts": 1795302162,
+      "kind": "gap_result",
+      "symbol": "INITUSDT",
+      "tf": "1h",
       "gap": 0.0,
       "filled": true,
       "note": "filled"
