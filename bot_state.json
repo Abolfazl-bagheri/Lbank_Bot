@@ -35,6 +35,31 @@
       "last_leg_candle_ts": 1795231593,
       "dry_run": true,
       "order_id": "PAPER-SIRENUSDT-1795229153"
+    },
+    {
+      "symbol": "SKDDUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 15.242,
+      "qty": 13.1216,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 14.86095,
+      "tf": "15m",
+      "opened_at": 1795231933,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 15.242,
+          "ts": 1795231933
+        }
+      ],
+      "entry_candle_ts": 1795231800,
+      "last_leg_candle_ts": 1795231800,
+      "dry_run": true,
+      "order_id": "PAPER-SKDDUSDT-1795231933"
     }
   ],
   "trade_history": [
@@ -9505,7 +9530,8 @@
       "side": "SELL",
       "upper": 0.07723954145258982,
       "open": 0.0766,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -9812,15 +9838,6 @@
   "last_trade_report_ts": 1795231553,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795025044,
-      "kind": "gap_result",
-      "symbol": "PROSUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795025047,
       "kind": "gap_result",
@@ -13407,6 +13424,15 @@
       "ts": 1795230240,
       "kind": "gap_result",
       "symbol": "ENSOUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795231914,
+      "kind": "gap_result",
+      "symbol": "BREVUSDT",
       "tf": "15m",
       "gap": 0.0,
       "filled": true,
