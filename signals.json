@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795230010,
+  "updated_at": 1795230049,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "DNAUSDT",
-      "tf": "1h",
-      "gap": 2.36,
-      "ts": 1795215093
-    },
     {
       "kind": "GAP",
       "symbol": "IDOLUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 1.42,
       "ts": 1795230010
+    },
+    {
+      "kind": "SELL",
+      "symbol": "ENSOUSDT",
+      "tf": "1h",
+      "gap": 3.63,
+      "ts": 1795230049
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.5095,
-      "pnl": -0.7911,
+      "px": 0.5105,
+      "pnl": -1.1847,
       "tf": "15m"
     },
     {
@@ -1427,8 +1427,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.02616,
-      "pnl": 1.9528,
+      "px": 0.02628,
+      "pnl": 1.0454,
       "tf": "15m"
     }
   ],
@@ -1436,8 +1436,8 @@
   "session_start": 1795219571,
   "realized": -31.2624,
   "closed_n": 1,
-  "open_upnl": 1.1617,
-  "equity": 969.8993,
+  "open_upnl": -0.1393,
+  "equity": 968.5983,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
