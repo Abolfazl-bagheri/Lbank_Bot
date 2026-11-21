@@ -59,35 +59,6 @@
       "order_id": "PAPER-PIEVERSEUSDT-1795281312"
     },
     {
-      "symbol": "ANSEMUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.03754517920054386,
-      "qty": 15980.7467,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.03660654972053026,
-      "tf": "1h",
-      "opened_at": 1795286726,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.03834,
-          "ts": 1795286726
-        },
-        {
-          "px": 0.03716,
-          "ts": 1795287654
-        }
-      ],
-      "entry_candle_ts": 1795286700,
-      "last_leg_candle_ts": 1795287600,
-      "dry_run": true,
-      "order_id": "PAPER-ANSEMUSDT-1795286726"
-    },
-    {
       "symbol": "IDOLUSDT",
       "side": "SELL",
       "status": "open",
@@ -120,36 +91,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "SECZUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 8.01,
-      "qty": 24.9688,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 7.809749999999999,
-      "tf": "1h",
-      "opened_at": 1794265307,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 8.01,
-          "ts": 1794265307
-        }
-      ],
-      "entry_candle_ts": 1794265200,
-      "last_leg_candle_ts": 1794265200,
-      "dry_run": true,
-      "order_id": "PAPER-SECZUSDT-1794265307",
-      "closed_at": 1794268186,
-      "close_px": 7.79,
-      "pnl_usdt": 5.493133583021218,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "UNITREEUSDT",
       "side": "SELL",
@@ -6579,6 +6520,40 @@
       "closed_at": 1795288765,
       "close_px": 0.01866,
       "pnl_usdt": 5.624999999999989,
+      "close_reason": "TP50",
+      "why": "TP50"
+    },
+    {
+      "symbol": "ANSEMUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.03754517920054386,
+      "qty": 15980.7467,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 0.03660654972053026,
+      "tf": "1h",
+      "opened_at": 1795286726,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.03834,
+          "ts": 1795286726
+        },
+        {
+          "px": 0.03716,
+          "ts": 1795287654
+        }
+      ],
+      "entry_candle_ts": 1795286700,
+      "last_leg_candle_ts": 1795287600,
+      "dry_run": true,
+      "order_id": "PAPER-ANSEMUSDT-1795286726",
+      "closed_at": 1795289575,
+      "close_px": 0.03632,
+      "pnl_usdt": 19.57927851135858,
       "close_reason": "TP50",
       "why": "TP50"
     }
