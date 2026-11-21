@@ -53,64 +53,9 @@
       "last_leg_candle_ts": 1795281300,
       "dry_run": true,
       "order_id": "PAPER-PIEVERSEUSDT-1795281312"
-    },
-    {
-      "symbol": "CLAUDIAUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.010376,
-      "qty": 19275.2506,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.0101166,
-      "tf": "15m",
-      "opened_at": 1795282223,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.010376,
-          "ts": 1795282223
-        }
-      ],
-      "entry_candle_ts": 1795282200,
-      "last_leg_candle_ts": 1795282200,
-      "dry_run": true,
-      "order_id": "PAPER-CLAUDIAUSDT-1795282223"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "ASTSUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 38.54,
-      "qty": 5.1894,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 37.576499999999996,
-      "tf": "15m",
-      "opened_at": 1794261625,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 38.54,
-          "ts": 1794261625
-        }
-      ],
-      "entry_candle_ts": 1794261600,
-      "last_leg_candle_ts": 1794261600,
-      "dry_run": true,
-      "order_id": "PAPER-ASTSUSDT-1794261625",
-      "closed_at": 1794263620,
-      "close_px": 37.26,
-      "pnl_usdt": 6.642449403217442,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "BONERUSDT",
       "side": "SELL",
@@ -6542,19 +6487,39 @@
       "pnl_usdt": 16.75501970926479,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "CLAUDIAUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.010376,
+      "qty": 19275.2506,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0101166,
+      "tf": "15m",
+      "opened_at": 1795282223,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.010376,
+          "ts": 1795282223
+        }
+      ],
+      "entry_candle_ts": 1795282200,
+      "last_leg_candle_ts": 1795282200,
+      "dry_run": true,
+      "order_id": "PAPER-CLAUDIAUSDT-1795282223",
+      "closed_at": 1795282404,
+      "close_px": 0.010844,
+      "pnl_usdt": -9.020817270624512,
+      "close_reason": "STOP",
+      "why": "STOP"
     }
   ],
   "pending": [
-    {
-      "symbol": "INITUSDT",
-      "tf": "15m",
-      "candle_ts": 1795074300,
-      "side": "SELL",
-      "upper": 0.10200712657822719,
-      "open": 0.10265,
-      "reported": true,
-      "filled": false
-    },
     {
       "symbol": "INITUSDT",
       "tf": "15m",
@@ -9536,6 +9501,15 @@
       "upper": 3.342152860725209,
       "open": 3.3844,
       "reported": false
+    },
+    {
+      "symbol": "PIEVERSEUSDT",
+      "tf": "15m",
+      "candle_ts": 1795282200,
+      "side": "SELL",
+      "upper": 3.34399054230227,
+      "open": 3.3844,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -9784,7 +9758,6 @@
     "ATMUSDT": 1795048296,
     "MURATAUSDT": 1795061977,
     "CRWDUSDT": 1795101541,
-    "RIOTUSDT": 1795101567,
     "LIGHT1USDT": 1795113085,
     "BBXUSDT": 1795114016,
     "SPORTFUNUSDT": 1795118680,
@@ -9834,7 +9807,8 @@
     "PIPEDOGUSDT": 1795324622,
     "MANCERUSDT": 1795324623,
     "MEMECOINUSDT": 1795324624,
-    "CZUSDT": 1795324625
+    "CZUSDT": 1795324625,
+    "RIOTUSDT": 1795325593
   },
   "last_trade_report_ts": 1795281962,
   "last_known_version": "2.10.0",
