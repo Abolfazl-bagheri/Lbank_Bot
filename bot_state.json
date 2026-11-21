@@ -1,42 +1,6 @@
 {
   "open_trades": [
     {
-      "symbol": "SIRENUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.026449586451042912,
-      "qty": 52930.884300000005,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 0.02578834678976684,
-      "tf": "15m",
-      "opened_at": 1795229153,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [
-        0.02669,
-        0.0264
-      ],
-      "steps": [
-        {
-          "px": 0.02645,
-          "ts": 1795229153
-        },
-        {
-          "px": 0.02661,
-          "ts": 1795231531
-        },
-        {
-          "px": 0.02637,
-          "ts": 1795231593
-        }
-      ],
-      "entry_candle_ts": 1795229100,
-      "last_leg_candle_ts": 1795231593,
-      "dry_run": true,
-      "order_id": "PAPER-SIRENUSDT-1795229153"
-    },
-    {
       "symbol": "SKDDUSDT",
       "side": "SELL",
       "status": "open",
@@ -117,36 +81,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "EWTUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 93.0,
-      "qty": 2.1505,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 90.675,
-      "tf": "1h",
-      "opened_at": 1794189742,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 93.0,
-          "ts": 1794189742
-        }
-      ],
-      "entry_candle_ts": 1794189600,
-      "last_leg_candle_ts": 1794189600,
-      "dry_run": true,
-      "order_id": "PAPER-EWTUSDT-1794189742",
-      "closed_at": 1794211637,
-      "close_px": 90.49,
-      "pnl_usdt": 5.397849462365603,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "SOXSUSDT",
       "side": "SELL",
@@ -6588,6 +6522,47 @@
       "pnl_usdt": 23.304982273555236,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "SIRENUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.026449586451042912,
+      "qty": 52930.884300000005,
+      "margin": 70.0,
+      "leverage": 20,
+      "tp_price": 0.02578834678976684,
+      "tf": "15m",
+      "opened_at": 1795229153,
+      "adds": 2,
+      "last_leg_margin": 40.0,
+      "used_res_levels": [
+        0.02669,
+        0.0264
+      ],
+      "steps": [
+        {
+          "px": 0.02645,
+          "ts": 1795229153
+        },
+        {
+          "px": 0.02661,
+          "ts": 1795231531
+        },
+        {
+          "px": 0.02637,
+          "ts": 1795231593
+        }
+      ],
+      "entry_candle_ts": 1795229100,
+      "last_leg_candle_ts": 1795231593,
+      "dry_run": true,
+      "order_id": "PAPER-SIRENUSDT-1795229153",
+      "closed_at": 1795241105,
+      "close_px": 0.02558,
+      "pnl_usdt": 46.02797982166846,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -9575,7 +9550,8 @@
       "side": "SELL",
       "upper": 22.961901917464164,
       "open": 22.722,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "POLYMARKETUSDT",
@@ -9584,7 +9560,8 @@
       "side": "SELL",
       "upper": 23.536642136987663,
       "open": 22.722,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -9858,7 +9835,6 @@
     "SKY1USDT": 1795228312,
     "CAPETHUSDT": 1795230249,
     "APROUSDT": 1795234598,
-    "UP2USDT": 1795238184,
     "BONERUSDT": 1795238202,
     "GALUSDT": 1795239096,
     "CYBERLEEKUSDT": 1795245508,
@@ -9879,29 +9855,13 @@
     "DRVUSDT": 1795271505,
     "O1USDT": 1795271591,
     "ZZZUSDT": 1795271612,
-    "FIGUSDT": 1795274202
+    "FIGUSDT": 1795274202,
+    "UP2USDT": 1795284229,
+    "PORUSDT": 1795284282
   },
   "last_trade_report_ts": 1795233965,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795027612,
-      "kind": "gap_result",
-      "symbol": "PIPPINUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795027615,
-      "kind": "gap_result",
-      "symbol": "AKAMUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
     {
       "ts": 1795027617,
       "kind": "gap_result",
@@ -13480,6 +13440,24 @@
       "kind": "gap_result",
       "symbol": "BTCUSDT",
       "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795241101,
+      "kind": "gap_result",
+      "symbol": "POLYMARKETUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795241104,
+      "kind": "gap_result",
+      "symbol": "POLYMARKETUSDT",
+      "tf": "1h",
       "gap": 0.0,
       "filled": true,
       "note": "filled"
