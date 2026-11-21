@@ -91,24 +91,30 @@
       "symbol": "IDOLUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.033539,
-      "qty": 5963.207,
-      "margin": 10.0,
+      "entry": 0.034278098842657694,
+      "qty": 17503.8879,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.032700525,
+      "tp_price": 0.03342114637159125,
       "tf": "1h",
       "opened_at": 1795287637,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.034697
+      ],
       "steps": [
         {
           "px": 0.033539,
           "ts": 1795287637
+        },
+        {
+          "px": 0.03466,
+          "ts": 1795288868
         }
       ],
       "entry_candle_ts": 1795287600,
-      "last_leg_candle_ts": 1795287600,
+      "last_leg_candle_ts": 1795288868,
       "dry_run": true,
       "order_id": "PAPER-IDOLUSDT-1795287637"
     }
