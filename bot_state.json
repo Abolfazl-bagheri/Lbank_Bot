@@ -88,74 +88,9 @@
       "last_leg_candle_ts": 1795291482,
       "dry_run": true,
       "order_id": "PAPER-DGAIUSDT-1795291315"
-    },
-    {
-      "symbol": "IDOLUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.042113781125490385,
-      "qty": 14247.117699999999,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.041060936597353125,
-      "tf": "1h",
-      "opened_at": 1795294835,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        0.042364
-      ],
-      "steps": [
-        {
-          "px": 0.041842,
-          "ts": 1795294835
-        },
-        {
-          "px": 0.042251,
-          "ts": 1795295463
-        }
-      ],
-      "entry_candle_ts": 1795294800,
-      "last_leg_candle_ts": 1795295463,
-      "dry_run": true,
-      "order_id": "PAPER-IDOLUSDT-1795294835"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "BONERUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.0049180360721470485,
-      "qty": 121999.9185,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.004795085170343372,
-      "tf": "1h",
-      "opened_at": 1794267018,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.00506,
-          "ts": 1794267018
-        },
-        {
-          "px": 0.00485,
-          "ts": 1794268852
-        }
-      ],
-      "entry_candle_ts": 1794267000,
-      "last_leg_candle_ts": 1794268800,
-      "dry_run": true,
-      "order_id": "PAPER-BONERUSDT-1794267018",
-      "closed_at": 1794269322,
-      "close_px": 0.00493,
-      "pnl_usdt": -1.4595982230437925,
-      "close_reason": "NIGHT_RESET",
-      "why": "NIGHT_RESET"
-    },
     {
       "symbol": "INITUSDT",
       "side": "SELL",
@@ -6583,6 +6518,42 @@
       "closed_at": 1795291812,
       "close_px": 0.01104,
       "pnl_usdt": -11.413251627728826,
+      "close_reason": "STOP",
+      "why": "STOP"
+    },
+    {
+      "symbol": "IDOLUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.042113781125490385,
+      "qty": 14247.117699999999,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 0.041060936597353125,
+      "tf": "1h",
+      "opened_at": 1795294835,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.042364
+      ],
+      "steps": [
+        {
+          "px": 0.041842,
+          "ts": 1795294835
+        },
+        {
+          "px": 0.042251,
+          "ts": 1795295463
+        }
+      ],
+      "entry_candle_ts": 1795294800,
+      "last_leg_candle_ts": 1795295463,
+      "dry_run": true,
+      "order_id": "PAPER-IDOLUSDT-1795294835",
+      "closed_at": 1795296012,
+      "close_px": 0.043835,
+      "pnl_usdt": -24.52240803618279,
       "close_reason": "STOP",
       "why": "STOP"
     }
