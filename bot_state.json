@@ -28,78 +28,9 @@
       "last_leg_candle_ts": 1795233600,
       "dry_run": true,
       "order_id": "PAPER-POLYMARKETUSDT-1795231979"
-    },
-    {
-      "symbol": "SKYAIUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.03518247167728939,
-      "qty": 17053.946799999998,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.034302909885357155,
-      "tf": "1h",
-      "opened_at": 1795255237,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        0.03519
-      ],
-      "steps": [
-        {
-          "px": 0.03543,
-          "ts": 1795255237
-        },
-        {
-          "px": 0.03506,
-          "ts": 1795255480
-        }
-      ],
-      "entry_candle_ts": 1795255200,
-      "last_leg_candle_ts": 1795255480,
-      "dry_run": true,
-      "order_id": "PAPER-SKYAIUSDT-1795255237"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "INITUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.1890190095667112,
-      "qty": 7406.662399999999,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 0.18429353432754342,
-      "tf": "1h",
-      "opened_at": 1794256260,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.18876,
-          "ts": 1794256260
-        },
-        {
-          "px": 0.18627,
-          "ts": 1794258041
-        },
-        {
-          "px": 0.19049,
-          "ts": 1794261655
-        }
-      ],
-      "entry_candle_ts": 1794256200,
-      "last_leg_candle_ts": 1794261600,
-      "dry_run": true,
-      "order_id": "PAPER-INITUSDT-1794256260",
-      "closed_at": 1794263618,
-      "close_px": 0.18225,
-      "pnl_usdt": 50.13576896376161,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "ASTSUSDT",
       "side": "SELL",
@@ -6523,6 +6454,42 @@
       "closed_at": 1795253591,
       "close_px": 0.03437,
       "pnl_usdt": 9.214543436025544,
+      "close_reason": "TP50",
+      "why": "TP50"
+    },
+    {
+      "symbol": "SKYAIUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.03518247167728939,
+      "qty": 17053.946799999998,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 0.034302909885357155,
+      "tf": "1h",
+      "opened_at": 1795255237,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.03519
+      ],
+      "steps": [
+        {
+          "px": 0.03543,
+          "ts": 1795255237
+        },
+        {
+          "px": 0.03506,
+          "ts": 1795255480
+        }
+      ],
+      "entry_candle_ts": 1795255200,
+      "last_leg_candle_ts": 1795255480,
+      "dry_run": true,
+      "order_id": "PAPER-SKYAIUSDT-1795255237",
+      "closed_at": 1795256720,
+      "close_px": 0.0342,
+      "pnl_usdt": 16.75501970926479,
       "close_reason": "TP50",
       "why": "TP50"
     }
