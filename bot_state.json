@@ -6496,16 +6496,6 @@
   ],
   "pending": [
     {
-      "symbol": "ARIAUSDT",
-      "tf": "1h",
-      "candle_ts": 1795071600,
-      "side": "SELL",
-      "upper": 0.259432185312769,
-      "open": 0.26133,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "USUSDT",
       "tf": "15m",
       "candle_ts": 1795071600,
@@ -9488,6 +9478,16 @@
       "side": "SELL",
       "upper": 0.03345717601087273,
       "open": 0.03527,
+      "reported": true,
+      "filled": false
+    },
+    {
+      "symbol": "SKYAIUSDT",
+      "tf": "1h",
+      "candle_ts": 1795258800,
+      "side": "SELL",
+      "upper": 0.03421683221187426,
+      "open": 0.0347,
       "reported": false
     }
   ],
@@ -9791,18 +9791,9 @@
     "XBRUSDT": 1795293074,
     "FIGHT1USDT": 1795299560
   },
-  "last_trade_report_ts": 1795257712,
+  "last_trade_report_ts": 1795258975,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795029408,
-      "kind": "gap_result",
-      "symbol": "NETUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795029411,
       "kind": "gap_result",
@@ -13393,6 +13384,15 @@
       "gap": 0.0,
       "filled": true,
       "note": "filled"
+    },
+    {
+      "ts": 1795258973,
+      "kind": "gap_result",
+      "symbol": "SKYAIUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
     }
   ],
   "tune_history": [],
