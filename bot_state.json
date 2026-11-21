@@ -57,70 +57,9 @@
       "last_leg_candle_ts": 1795284000,
       "dry_run": true,
       "order_id": "PAPER-PIEVERSEUSDT-1795281312"
-    },
-    {
-      "symbol": "IDOLUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.034278098842657694,
-      "qty": 17503.8879,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.03342114637159125,
-      "tf": "1h",
-      "opened_at": 1795287637,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        0.034697
-      ],
-      "steps": [
-        {
-          "px": 0.033539,
-          "ts": 1795287637
-        },
-        {
-          "px": 0.03466,
-          "ts": 1795288868
-        }
-      ],
-      "entry_candle_ts": 1795287600,
-      "last_leg_candle_ts": 1795288868,
-      "dry_run": true,
-      "order_id": "PAPER-IDOLUSDT-1795287637"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "UNITREEUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 105.3,
-      "qty": 1.8993,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 102.66749999999999,
-      "tf": "4h",
-      "opened_at": 1794196872,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 105.3,
-          "ts": 1794196872
-        }
-      ],
-      "entry_candle_ts": 1794196800,
-      "last_leg_candle_ts": 1794196800,
-      "dry_run": true,
-      "order_id": "PAPER-UNITREEUSDT-1794196872",
-      "closed_at": 1794269321,
-      "close_px": 107.09,
-      "pnl_usdt": -3.3998100664767454,
-      "close_reason": "NIGHT_RESET",
-      "why": "NIGHT_RESET"
-    },
     {
       "symbol": "PIEVERSEUSDT",
       "side": "SELL",
@@ -6556,6 +6495,42 @@
       "pnl_usdt": 19.57927851135858,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "IDOLUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.034278098842657694,
+      "qty": 17503.8879,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 0.03342114637159125,
+      "tf": "1h",
+      "opened_at": 1795287637,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.034697
+      ],
+      "steps": [
+        {
+          "px": 0.033539,
+          "ts": 1795287637
+        },
+        {
+          "px": 0.03466,
+          "ts": 1795288868
+        }
+      ],
+      "entry_candle_ts": 1795287600,
+      "last_leg_candle_ts": 1795288868,
+      "dry_run": true,
+      "order_id": "PAPER-IDOLUSDT-1795287637",
+      "closed_at": 1795289660,
+      "close_px": 0.036979,
+      "pnl_usdt": -47.27627112121767,
+      "close_reason": "STOP",
+      "why": "STOP"
     }
   ],
   "pending": [
