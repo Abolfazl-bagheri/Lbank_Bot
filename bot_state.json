@@ -30,31 +30,6 @@
       "order_id": "PAPER-POLYMARKETUSDT-1795231979"
     },
     {
-      "symbol": "YBUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.05673,
-      "qty": 3525.4715,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.05531175,
-      "tf": "1h",
-      "opened_at": 1795248051,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.05673,
-          "ts": 1795248051
-        }
-      ],
-      "entry_candle_ts": 1795248000,
-      "last_leg_candle_ts": 1795248000,
-      "dry_run": true,
-      "order_id": "PAPER-YBUSDT-1795248051"
-    },
-    {
       "symbol": "BLESSUSDT",
       "side": "SELL",
       "status": "open",
@@ -81,36 +56,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "NXPCUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.1647,
-      "qty": 1214.3291,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.16058250000000002,
-      "tf": "1h",
-      "opened_at": 1794218461,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.1647,
-          "ts": 1794218461
-        }
-      ],
-      "entry_candle_ts": 1794218400,
-      "last_leg_candle_ts": 1794218400,
-      "dry_run": true,
-      "order_id": "PAPER-NXPCUSDT-1794218461",
-      "closed_at": 1794220458,
-      "close_px": 0.1571,
-      "pnl_usdt": 9.228901032179749,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "ZCATUSDT",
       "side": "SELL",
@@ -6536,6 +6481,36 @@
       "closed_at": 1795245960,
       "close_px": 0.05701,
       "pnl_usdt": -8.065693430656921,
+      "close_reason": "STOP",
+      "why": "STOP"
+    },
+    {
+      "symbol": "YBUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.05673,
+      "qty": 3525.4715,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.05531175,
+      "tf": "1h",
+      "opened_at": 1795248051,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.05673,
+          "ts": 1795248051
+        }
+      ],
+      "entry_candle_ts": 1795248000,
+      "last_leg_candle_ts": 1795248000,
+      "dry_run": true,
+      "order_id": "PAPER-YBUSDT-1795248051",
+      "closed_at": 1795248618,
+      "close_px": 0.05933,
+      "pnl_usdt": -9.166225982725182,
       "close_reason": "STOP",
       "why": "STOP"
     }
