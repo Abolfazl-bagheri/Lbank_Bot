@@ -28,64 +28,9 @@
       "last_leg_candle_ts": 1795233600,
       "dry_run": true,
       "order_id": "PAPER-POLYMARKETUSDT-1795231979"
-    },
-    {
-      "symbol": "YBUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.0548,
-      "qty": 3649.635,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.05343,
-      "tf": "1h",
-      "opened_at": 1795244489,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.0548,
-          "ts": 1795244489
-        }
-      ],
-      "entry_candle_ts": 1795244400,
-      "last_leg_candle_ts": 1795244400,
-      "dry_run": true,
-      "order_id": "PAPER-YBUSDT-1795244489"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "AKEUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.005434,
-      "qty": 36805.3,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.00529815,
-      "tf": "15m",
-      "opened_at": 1794216698,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.005434,
-          "ts": 1794216698
-        }
-      ],
-      "entry_candle_ts": 1794216600,
-      "last_leg_candle_ts": 1794216600,
-      "dry_run": true,
-      "order_id": "PAPER-AKEUSDT-1794216698",
-      "closed_at": 1794217736,
-      "close_px": 0.005197,
-      "pnl_usdt": 8.722856091277121,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "NXPCUSDT",
       "side": "SELL",
@@ -6513,6 +6458,36 @@
       "pnl_usdt": 12.46563814866761,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "YBUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.0548,
+      "qty": 3649.635,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.05343,
+      "tf": "1h",
+      "opened_at": 1795244489,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.0548,
+          "ts": 1795244489
+        }
+      ],
+      "entry_candle_ts": 1795244400,
+      "last_leg_candle_ts": 1795244400,
+      "dry_run": true,
+      "order_id": "PAPER-YBUSDT-1795244489",
+      "closed_at": 1795245960,
+      "close_px": 0.05701,
+      "pnl_usdt": -8.065693430656921,
+      "close_reason": "STOP",
+      "why": "STOP"
     }
   ],
   "pending": [
@@ -9805,7 +9780,7 @@
     "QUACKAIUSDT": 1795286791,
     "SKY1USDT": 1795287885
   },
-  "last_trade_report_ts": 1795244827,
+  "last_trade_report_ts": 1795245926,
   "last_known_version": "2.10.0",
   "lessons": [
     {
