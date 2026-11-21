@@ -28,64 +28,9 @@
       "last_leg_candle_ts": 1795233600,
       "dry_run": true,
       "order_id": "PAPER-POLYMARKETUSDT-1795231979"
-    },
-    {
-      "symbol": "BLESSUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.016951,
-      "qty": 11798.7139,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.016527225,
-      "tf": "4h",
-      "opened_at": 1795248067,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.016951,
-          "ts": 1795248067
-        }
-      ],
-      "entry_candle_ts": 1795248000,
-      "last_leg_candle_ts": 1795248000,
-      "dry_run": true,
-      "order_id": "PAPER-BLESSUSDT-1795248067"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "ZCATUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.0148,
-      "qty": 13513.5135,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.01443,
-      "tf": "15m",
-      "opened_at": 1794220224,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.0148,
-          "ts": 1794220224
-        }
-      ],
-      "entry_candle_ts": 1794220200,
-      "last_leg_candle_ts": 1794220200,
-      "dry_run": true,
-      "order_id": "PAPER-ZCATUSDT-1794220224",
-      "closed_at": 1794221384,
-      "close_px": 0.01435,
-      "pnl_usdt": 6.081081081081091,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "IDOLUSDT",
       "side": "SELL",
@@ -6511,6 +6456,36 @@
       "closed_at": 1795248618,
       "close_px": 0.05933,
       "pnl_usdt": -9.166225982725182,
+      "close_reason": "STOP",
+      "why": "STOP"
+    },
+    {
+      "symbol": "BLESSUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.016951,
+      "qty": 11798.7139,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.016527225,
+      "tf": "4h",
+      "opened_at": 1795248067,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.016951,
+          "ts": 1795248067
+        }
+      ],
+      "entry_candle_ts": 1795248000,
+      "last_leg_candle_ts": 1795248000,
+      "dry_run": true,
+      "order_id": "PAPER-BLESSUSDT-1795248067",
+      "closed_at": 1795249085,
+      "close_px": 0.018286,
+      "pnl_usdt": -15.751283110140985,
       "close_reason": "STOP",
       "why": "STOP"
     }
