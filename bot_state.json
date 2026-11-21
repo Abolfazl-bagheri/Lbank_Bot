@@ -1,31 +1,6 @@
 {
   "open_trades": [
     {
-      "symbol": "SKDDUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 15.242,
-      "qty": 13.1216,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 14.86095,
-      "tf": "15m",
-      "opened_at": 1795231933,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 15.242,
-          "ts": 1795231933
-        }
-      ],
-      "entry_candle_ts": 1795231800,
-      "last_leg_candle_ts": 1795231800,
-      "dry_run": true,
-      "order_id": "PAPER-SKDDUSDT-1795231933"
-    },
-    {
       "symbol": "POLYMARKETUSDT",
       "side": "SELL",
       "status": "open",
@@ -53,39 +28,34 @@
       "last_leg_candle_ts": 1795233600,
       "dry_run": true,
       "order_id": "PAPER-POLYMARKETUSDT-1795231979"
-    }
-  ],
-  "trade_history": [
+    },
     {
-      "symbol": "SKDDUSDT",
+      "symbol": "BLESSUSDT",
       "side": "SELL",
-      "status": "closed",
-      "entry": 12.538,
-      "qty": 15.9515,
+      "status": "open",
+      "entry": 0.017204,
+      "qty": 11625.2034,
       "margin": 10.0,
       "leverage": 20,
-      "tp_price": 12.22455,
-      "tf": "4h",
-      "opened_at": 1794211267,
+      "tp_price": 0.0167739,
+      "tf": "15m",
+      "opened_at": 1795244409,
       "adds": 0,
       "last_leg_margin": 10.0,
       "used_res_levels": [],
       "steps": [
         {
-          "px": 12.538,
-          "ts": 1794211267
+          "px": 0.017204,
+          "ts": 1795244409
         }
       ],
-      "entry_candle_ts": 1794211200,
-      "last_leg_candle_ts": 1794211200,
+      "entry_candle_ts": 1795244400,
+      "last_leg_candle_ts": 1795244400,
       "dry_run": true,
-      "order_id": "PAPER-SKDDUSDT-1794211267",
-      "closed_at": 1794214123,
-      "close_px": 12.149,
-      "pnl_usdt": 6.205136385388437,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
+      "order_id": "PAPER-BLESSUSDT-1795244409"
+    }
+  ],
+  "trade_history": [
     {
       "symbol": "INITUSDT",
       "side": "SELL",
@@ -6538,6 +6508,36 @@
       "pnl_usdt": 5.829015544041457,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "SKDDUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 15.242,
+      "qty": 13.1216,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 14.86095,
+      "tf": "15m",
+      "opened_at": 1795231933,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 15.242,
+          "ts": 1795231933
+        }
+      ],
+      "entry_candle_ts": 1795231800,
+      "last_leg_candle_ts": 1795231800,
+      "dry_run": true,
+      "order_id": "PAPER-SKDDUSDT-1795231933",
+      "closed_at": 1795243915,
+      "close_px": 14.814,
+      "pnl_usdt": 5.616060884398384,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -9805,7 +9805,6 @@
     "FUTUUSDT": 1795202410,
     "FONEUSDT": 1795226606,
     "AMDLUSDT": 1795226617,
-    "SKY1USDT": 1795228312,
     "CAPETHUSDT": 1795230249,
     "APROUSDT": 1795234598,
     "BONERUSDT": 1795238202,
@@ -9833,7 +9832,7 @@
     "PORUSDT": 1795284282,
     "QUACKAIUSDT": 1795286791
   },
-  "last_trade_report_ts": 1795242926,
+  "last_trade_report_ts": 1795243916,
   "last_known_version": "2.10.0",
   "lessons": [
     {
