@@ -1,29 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795255235,
+  "updated_at": 1795255482,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795243608
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795243696
-    },
-    {
-      "kind": "GAP",
-      "symbol": "GOLDUSDT",
-      "tf": "5m",
-      "gap": 0.13,
-      "ts": 1795243737
-    },
     {
       "kind": "GAP",
       "symbol": "SILVERUSDT",
@@ -1402,6 +1381,27 @@
       "tf": "1h",
       "gap": 5.57,
       "ts": 1795255235
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795255240
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795255396
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795255482
     }
   ],
   "trades": [
@@ -1414,17 +1414,30 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 23.8,
-      "pnl": 0.8713,
+      "px": 23.79,
+      "pnl": 1.1227,
       "tf": "15m"
+    },
+    {
+      "symbol": "SKYAIUSDT",
+      "side": "SELL",
+      "entry": 0.03518247167728939,
+      "tp": 0.034302909885357155,
+      "adds": 1,
+      "pele": 2,
+      "margin": 30.0,
+      "lev": 20,
+      "px": 0.03506,
+      "pnl": 1.3686,
+      "tf": "1h"
     }
   ],
   "start": 1000.0,
   "session_start": 1795219571,
   "realized": 107.9988,
   "closed_n": 14,
-  "open_upnl": 0.8713,
-  "equity": 1108.8701,
+  "open_upnl": 2.4913,
+  "equity": 1110.4901,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
