@@ -60,6 +60,31 @@
       "last_leg_candle_ts": 1795231800,
       "dry_run": true,
       "order_id": "PAPER-SKDDUSDT-1795231933"
+    },
+    {
+      "symbol": "POLYMARKETUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 23.91,
+      "qty": 8.3647,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 23.31225,
+      "tf": "15m",
+      "opened_at": 1795231979,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 23.91,
+          "ts": 1795231979
+        }
+      ],
+      "entry_candle_ts": 1795231800,
+      "last_leg_candle_ts": 1795231800,
+      "dry_run": true,
+      "order_id": "PAPER-POLYMARKETUSDT-1795231979"
     }
   ],
   "trade_history": [
@@ -6538,26 +6563,6 @@
   ],
   "pending": [
     {
-      "symbol": "NETUSDT",
-      "tf": "15m",
-      "candle_ts": 1795048200,
-      "side": "SELL",
-      "upper": 306.03653789239365,
-      "open": 310.9,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "NIUBIUSDT",
-      "tf": "15m",
-      "candle_ts": 1795048200,
-      "side": "SELL",
-      "upper": 0.0010497561633707356,
-      "open": 0.001076,
-      "reported": true,
-      "filled": false
-    },
-    {
       "symbol": "IRYSUSDT",
       "tf": "15m",
       "candle_ts": 1795049100,
@@ -9532,6 +9537,24 @@
       "open": 0.0766,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "SKDDUSDT",
+      "tf": "15m",
+      "candle_ts": 1795231800,
+      "side": "SELL",
+      "upper": 14.962921575378385,
+      "open": 14.864,
+      "reported": false
+    },
+    {
+      "symbol": "JELLYJELLYUSDT",
+      "tf": "15m",
+      "candle_ts": 1795231800,
+      "side": "LONG",
+      "upper": 0.039349051509200365,
+      "open": 0.0382,
+      "reported": false
     }
   ],
   "paper_days": [
