@@ -6552,16 +6552,6 @@
   ],
   "pending": [
     {
-      "symbol": "IRYSUSDT",
-      "tf": "1h",
-      "candle_ts": 1795057200,
-      "side": "SELL",
-      "upper": 0.02304231475072449,
-      "open": 0.02329,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "IDOLUSDT",
       "tf": "1h",
       "candle_ts": 1795057200,
@@ -9515,7 +9505,8 @@
       "side": "SELL",
       "upper": 0.016825606710239405,
       "open": 0.017236,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "BLESSUSDT",
@@ -9533,7 +9524,8 @@
       "side": "SELL",
       "upper": 21.766246329003067,
       "open": 21.967,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "YBUSDT",
@@ -9542,6 +9534,15 @@
       "side": "SELL",
       "upper": 0.053784048008184863,
       "open": 0.0545,
+      "reported": false
+    },
+    {
+      "symbol": "BLESSUSDT",
+      "tf": "15m",
+      "candle_ts": 1795245300,
+      "side": "SELL",
+      "upper": 0.017446831951709936,
+      "open": 0.017783,
       "reported": false
     }
   ],
@@ -9842,24 +9843,6 @@
   "last_trade_report_ts": 1795244827,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795027617,
-      "kind": "gap_result",
-      "symbol": "HUTUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795027619,
-      "kind": "gap_result",
-      "symbol": "NETUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795027622,
       "kind": "gap_result",
@@ -13438,6 +13421,24 @@
       "kind": "gap_result",
       "symbol": "POLYMARKETUSDT",
       "tf": "1h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795245425,
+      "kind": "gap_result",
+      "symbol": "BLESSUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795245436,
+      "kind": "gap_result",
+      "symbol": "VVVUSDT",
+      "tf": "15m",
       "gap": 0.0,
       "filled": true,
       "note": "filled"
