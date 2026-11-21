@@ -1,76 +1,6 @@
 {
-  "open_trades": [
-    {
-      "symbol": "ENSOUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.483602357883972,
-      "qty": 1240.6887000000002,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.4715122989368727,
-      "tf": "15m",
-      "opened_at": 1795226418,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.4662,
-          "ts": 1795226418
-        },
-        {
-          "px": 0.4928,
-          "ts": 1795227327
-        }
-      ],
-      "entry_candle_ts": 1795226400,
-      "last_leg_candle_ts": 1795227300,
-      "dry_run": true,
-      "order_id": "PAPER-ENSOUSDT-1795226418"
-    }
-  ],
+  "open_trades": [],
   "trade_history": [
-    {
-      "symbol": "NXPCUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.158751562193039,
-      "qty": 8818.8109,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 0.154782773138213,
-      "tf": "15m",
-      "opened_at": 1794202261,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [
-        0.1524
-      ],
-      "steps": [
-        {
-          "px": 0.1554,
-          "ts": 1794202261
-        },
-        {
-          "px": 0.1521,
-          "ts": 1794203372
-        },
-        {
-          "px": 0.1632,
-          "ts": 1794205821
-        }
-      ],
-      "entry_candle_ts": 1794202200,
-      "last_leg_candle_ts": 1794205800,
-      "dry_run": true,
-      "order_id": "PAPER-NXPCUSDT-1794202261",
-      "closed_at": 1794206922,
-      "close_px": 0.1529,
-      "pnl_usdt": 51.603820189769344,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "YOFCUSDT",
       "side": "SELL",
@@ -6524,6 +6454,40 @@
       "pnl_usdt": 36.29027020556804,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "ENSOUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.483602357883972,
+      "qty": 1240.6887000000002,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 0.4715122989368727,
+      "tf": "15m",
+      "opened_at": 1795226418,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.4662,
+          "ts": 1795226418
+        },
+        {
+          "px": 0.4928,
+          "ts": 1795227327
+        }
+      ],
+      "entry_candle_ts": 1795226400,
+      "last_leg_candle_ts": 1795227300,
+      "dry_run": true,
+      "order_id": "PAPER-ENSOUSDT-1795226418",
+      "closed_at": 1795227615,
+      "close_px": 0.5088,
+      "pnl_usdt": -31.26243084456619,
+      "close_reason": "STOP",
+      "why": "STOP"
     }
   ],
   "pending": [
@@ -9738,7 +9702,6 @@
     "AXLUSDT": 1793502358,
     "CANTONUSDT": 1793952369,
     "METEORAUSDT": 1794163747,
-    "DRVUSDT": 1794177070,
     "BARUSDT": 1794188820,
     "1000BTTCUSDT": 1794189823,
     "BRLUSDT": 1794225832,
