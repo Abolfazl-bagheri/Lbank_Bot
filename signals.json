@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795233740,
+  "updated_at": 1795233783,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "CARVUSDT",
-      "tf": "15m",
-      "gap": 1.09,
-      "ts": 1795220115
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795220221
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "15m",
       "gap": 3.68,
       "ts": 1795233740
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795233746
+    },
+    {
+      "kind": "SELL",
+      "symbol": "POLYMARKETUSDT",
+      "tf": "1h",
+      "gap": 1.27,
+      "ts": 1795233783
     }
   ],
   "trades": [
@@ -1434,14 +1434,14 @@
     {
       "symbol": "POLYMARKETUSDT",
       "side": "SELL",
-      "entry": 23.91,
-      "tp": 23.31225,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
+      "entry": 23.863287767666804,
+      "tp": 23.266705573475132,
+      "adds": 1,
+      "pele": 2,
+      "margin": 30.0,
       "lev": 20,
       "px": 23.84,
-      "pnl": 0.3455,
+      "pnl": -0.1345,
       "tf": "15m"
     },
     {
@@ -1462,8 +1462,8 @@
   "session_start": 1795219571,
   "realized": -7.9574,
   "closed_n": 2,
-  "open_upnl": 13.2246,
-  "equity": 1005.2672,
+  "open_upnl": 12.7446,
+  "equity": 1004.7872,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
