@@ -9489,7 +9489,8 @@
       "side": "SELL",
       "upper": 0.033743269331828814,
       "open": 0.03555,
-      "reported": false
+      "reported": true,
+      "filled": false
     }
   ],
   "paper_days": [
@@ -9795,15 +9796,6 @@
   "last_trade_report_ts": 1795254019,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795028651,
-      "kind": "gap_result",
-      "symbol": "NETUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795028655,
       "kind": "gap_result",
@@ -13394,6 +13386,15 @@
       "gap": 0.0,
       "filled": true,
       "note": "filled"
+    },
+    {
+      "ts": 1795254411,
+      "kind": "gap_result",
+      "symbol": "SKYAIUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
     }
   ],
   "tune_history": [],
