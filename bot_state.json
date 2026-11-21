@@ -6547,16 +6547,6 @@
   ],
   "pending": [
     {
-      "symbol": "IRYSUSDT",
-      "tf": "15m",
-      "candle_ts": 1795048200,
-      "side": "SELL",
-      "upper": 0.01815133949443306,
-      "open": 0.0183,
-      "reported": true,
-      "filled": false
-    },
-    {
       "symbol": "AKAMUSDT",
       "tf": "15m",
       "candle_ts": 1795048200,
@@ -9470,7 +9460,8 @@
       "side": "SELL",
       "upper": 0.4578652557786175,
       "open": 0.4617,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "ENSOUSDT",
@@ -9509,7 +9500,8 @@
       "side": "SELL",
       "upper": 0.51444901224956,
       "open": 0.5219,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "SIRENUSDT",
@@ -9518,7 +9510,8 @@
       "side": "SELL",
       "upper": 0.02592161316471868,
       "open": 0.02657,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "BTCUSDT",
@@ -9527,7 +9520,8 @@
       "side": "LONG",
       "upper": 59295.391963561815,
       "open": 58597.1,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ENSOUSDT",
@@ -9536,6 +9530,16 @@
       "side": "SELL",
       "upper": 0.5132904880603791,
       "open": 0.5219,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "ENSOUSDT",
+      "tf": "1h",
+      "candle_ts": 1795230000,
+      "side": "SELL",
+      "upper": 0.49197925150955807,
+      "open": 0.5105,
       "reported": false
     }
   ],
@@ -9843,51 +9847,6 @@
   "last_trade_report_ts": 1795229742,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795023126,
-      "kind": "gap_result",
-      "symbol": "AKAMUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795023128,
-      "kind": "gap_result",
-      "symbol": "SILVERUSDT",
-      "tf": "5m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795024015,
-      "kind": "gap_result",
-      "symbol": "BLESSUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795024017,
-      "kind": "gap_result",
-      "symbol": "AKAMUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795024019,
-      "kind": "gap_result",
-      "symbol": "NETUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795025044,
       "kind": "gap_result",
@@ -13442,6 +13401,51 @@
       "gap": 0.0,
       "filled": false,
       "note": "miss"
+    },
+    {
+      "ts": 1795230225,
+      "kind": "gap_result",
+      "symbol": "ENSOUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
+    },
+    {
+      "ts": 1795230228,
+      "kind": "gap_result",
+      "symbol": "ENSOUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795230232,
+      "kind": "gap_result",
+      "symbol": "SIRENUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
+    },
+    {
+      "ts": 1795230237,
+      "kind": "gap_result",
+      "symbol": "BTCUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795230240,
+      "kind": "gap_result",
+      "symbol": "ENSOUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
     }
   ],
   "tune_history": [],
