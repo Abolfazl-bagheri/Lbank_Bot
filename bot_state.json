@@ -6495,16 +6495,6 @@
   ],
   "pending": [
     {
-      "symbol": "NESUSDT",
-      "tf": "15m",
-      "candle_ts": 1795087800,
-      "side": "SELL",
-      "upper": 0.2583296390294974,
-      "open": 0.2605,
-      "reported": true,
-      "filled": false
-    },
-    {
       "symbol": "PIEVERSEUSDT",
       "tf": "15m",
       "candle_ts": 1795087800,
@@ -9455,7 +9445,8 @@
       "side": "SELL",
       "upper": 0.5112513870231323,
       "open": 0.5172,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CELRUSDT",
@@ -9464,7 +9455,8 @@
       "side": "LONG",
       "upper": 0.001928000005105859,
       "open": 0.001928,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ENSOUSDT",
@@ -9473,7 +9465,8 @@
       "side": "SELL",
       "upper": 0.5127591618926849,
       "open": 0.5172,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CELRUSDT",
@@ -9481,6 +9474,16 @@
       "candle_ts": 1795310100,
       "side": "LONG",
       "upper": 0.001928000005105859,
+      "open": 0.001928,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "CELRUSDT",
+      "tf": "15m",
+      "candle_ts": 1795311000,
+      "side": "LONG",
+      "upper": 0.0019280000053717862,
       "open": 0.001928,
       "reported": false
     }
@@ -9792,47 +9795,12 @@
     "FIGUSDT": 1795341934,
     "BONERUSDT": 1795342752,
     "JUVUSDT": 1795345325,
-    "BEMUSDT": 1795353374
+    "BEMUSDT": 1795353374,
+    "QUID1USDT": 1795354270
   },
   "last_trade_report_ts": 1795310760,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795046791,
-      "kind": "gap_result",
-      "symbol": "BTCUSDT",
-      "tf": "4h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795046834,
-      "kind": "gap_result",
-      "symbol": "PAIDUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795046837,
-      "kind": "gap_result",
-      "symbol": "NETUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795046839,
-      "kind": "gap_result",
-      "symbol": "NETUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795047457,
       "kind": "gap_result",
@@ -13390,6 +13358,42 @@
     },
     {
       "ts": 1795309362,
+      "kind": "gap_result",
+      "symbol": "CELRUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795311085,
+      "kind": "gap_result",
+      "symbol": "ENSOUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795311087,
+      "kind": "gap_result",
+      "symbol": "CELRUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795311089,
+      "kind": "gap_result",
+      "symbol": "ENSOUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795311091,
       "kind": "gap_result",
       "symbol": "CELRUSDT",
       "tf": "15m",
