@@ -6537,16 +6537,6 @@
   ],
   "pending": [
     {
-      "symbol": "NAORISUSDT",
-      "tf": "15m",
-      "candle_ts": 1795123800,
-      "side": "LONG",
-      "upper": 0.03409265630479274,
-      "open": 0.03072,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "SILVERUSDT",
       "tf": "15m",
       "candle_ts": 1795123800,
@@ -9481,7 +9471,8 @@
       "side": "SELL",
       "upper": 0.020206047668780626,
       "open": 0.01922,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "BULLAUSDT",
@@ -9526,6 +9517,15 @@
       "side": "SELL",
       "upper": 0.12610659811277627,
       "open": 0.12708,
+      "reported": false
+    },
+    {
+      "symbol": "BLURUSDT",
+      "tf": "15m",
+      "candle_ts": 1795364100,
+      "side": "SELL",
+      "upper": 0.007483433828331196,
+      "open": 0.00756,
       "reported": false
     }
   ],
@@ -9782,7 +9782,6 @@
     "SPORTFUNUSDT": 1795118680,
     "TQQQUSDT": 1795133106,
     "LWLGUSDT": 1795159020,
-    "APEXUSDT": 1795169000,
     "1000LUNCUSDT": 1795172560,
     "SPACE1USDT": 1795193226,
     "FUTUUSDT": 1795202410,
@@ -9837,20 +9836,13 @@
     "NIULAIUSDT": 1795406610,
     "DODOUSDT": 1795406653,
     "1000000BABYDOGEUSDT": 1795406756,
-    "HOTUSDT": 1795406758
+    "HOTUSDT": 1795406758,
+    "AI1USDT": 1795407379,
+    "APEXUSDT": 1795407410
   },
   "last_trade_report_ts": 1795363601,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795075571,
-      "kind": "gap_result",
-      "symbol": "PROSUSDT",
-      "tf": "4h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795075573,
       "kind": "gap_result",
@@ -13438,6 +13430,15 @@
       "kind": "gap_result",
       "symbol": "XVGUSDT",
       "tf": "1h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795364230,
+      "kind": "gap_result",
+      "symbol": "ZCATUSDT",
+      "tf": "15m",
       "gap": 0.0,
       "filled": true,
       "note": "filled"
