@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795388705,
+  "updated_at": 1795388713,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795366582
-    },
-    {
-      "kind": "HEARTBEAT",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795366584
-    },
     {
       "kind": "GAP",
       "symbol": "NIGHTUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "5m",
       "gap": 0.17,
       "ts": 1795388705
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795388710
+    },
+    {
+      "kind": "SELL",
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
+      "gap": 0.14,
+      "ts": 1795388713
     }
   ],
   "trades": [
@@ -1417,14 +1417,27 @@
       "px": 0.04964,
       "pnl": -6.3538,
       "tf": "1h"
+    },
+    {
+      "symbol": "GOLDUSDT",
+      "side": "SELL",
+      "entry": 3584.24,
+      "tp": 3494.6339999999996,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 3584.24,
+      "pnl": -0.24,
+      "tf": "5m"
     }
   ],
   "start": 1000.0,
   "session_start": 1795306140,
   "realized": 96.5602,
   "closed_n": 17,
-  "open_upnl": -6.3538,
-  "equity": 1090.2064,
+  "open_upnl": -6.5938,
+  "equity": 1089.9664,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
