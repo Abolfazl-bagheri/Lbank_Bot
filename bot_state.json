@@ -37,39 +37,6 @@
       "order_id": "PAPER-NIGHTUSDT-1795356080"
     },
     {
-      "symbol": "ZCATUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.020648504197473657,
-      "qty": 67801.5214,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 0.020132291592536815,
-      "tf": "15m",
-      "opened_at": 1795363238,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.02056,
-          "ts": 1795363238
-        },
-        {
-          "px": 0.02065,
-          "ts": 1795364256
-        },
-        {
-          "px": 0.02067,
-          "ts": 1795365026
-        }
-      ],
-      "entry_candle_ts": 1795363200,
-      "last_leg_candle_ts": 1795365000,
-      "dry_run": true,
-      "order_id": "PAPER-ZCATUSDT-1795363238"
-    },
-    {
       "symbol": "DGAIUSDT",
       "side": "SELL",
       "status": "open",
@@ -107,36 +74,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "DJTUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 4.635,
-      "qty": 43.1499,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 4.519125,
-      "tf": "15m",
-      "opened_at": 1794324624,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 4.635,
-          "ts": 1794324624
-        }
-      ],
-      "entry_candle_ts": 1794324600,
-      "last_leg_candle_ts": 1794324600,
-      "dry_run": true,
-      "order_id": "PAPER-DJTUSDT-1794324624",
-      "closed_at": 1794325798,
-      "close_px": 4.515,
-      "pnl_usdt": 5.177993527508096,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "MARAUSDT",
       "side": "SELL",
@@ -6557,6 +6494,44 @@
       "pnl_usdt": -8.293460925039867,
       "close_reason": "STOP",
       "why": "STOP"
+    },
+    {
+      "symbol": "ZCATUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.020648504197473657,
+      "qty": 67801.5214,
+      "margin": 70.0,
+      "leverage": 20,
+      "tp_price": 0.020132291592536815,
+      "tf": "15m",
+      "opened_at": 1795363238,
+      "adds": 2,
+      "last_leg_margin": 40.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.02056,
+          "ts": 1795363238
+        },
+        {
+          "px": 0.02065,
+          "ts": 1795364256
+        },
+        {
+          "px": 0.02067,
+          "ts": 1795365026
+        }
+      ],
+      "entry_candle_ts": 1795363200,
+      "last_leg_candle_ts": 1795365000,
+      "dry_run": true,
+      "order_id": "PAPER-ZCATUSDT-1795363238",
+      "closed_at": 1795371018,
+      "close_px": 0.02003,
+      "pnl_usdt": 41.93552560427426,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
