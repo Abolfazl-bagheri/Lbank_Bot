@@ -6495,16 +6495,6 @@
   ],
   "pending": [
     {
-      "symbol": "XAUTUSDT",
-      "tf": "5m",
-      "candle_ts": 1795089300,
-      "side": "LONG",
-      "upper": 3734.4464284236583,
-      "open": 3721.38,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "NESUSDT",
       "tf": "1h",
       "candle_ts": 1795089600,
@@ -9466,7 +9456,8 @@
       "side": "SELL",
       "upper": 0.06797718464387384,
       "open": 0.06902,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "CELRUSDT",
@@ -9475,7 +9466,8 @@
       "side": "LONG",
       "upper": 0.0019280000348834653,
       "open": 0.001928,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "AKEUSDT",
@@ -9484,6 +9476,15 @@
       "side": "LONG",
       "upper": 0.0056613341410029034,
       "open": 0.0044813,
+      "reported": false
+    },
+    {
+      "symbol": "AKEUSDT",
+      "tf": "15m",
+      "candle_ts": 1795313700,
+      "side": "LONG",
+      "upper": 0.005827977909348623,
+      "open": 0.0039717,
       "reported": false
     }
   ],
@@ -9800,24 +9801,6 @@
   "last_trade_report_ts": 1795312962,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795049287,
-      "kind": "gap_result",
-      "symbol": "AKAMUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795049298,
-      "kind": "gap_result",
-      "symbol": "NETUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
     {
       "ts": 1795049309,
       "kind": "gap_result",
@@ -13393,6 +13376,24 @@
     },
     {
       "ts": 1795312960,
+      "kind": "gap_result",
+      "symbol": "CELRUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795313783,
+      "kind": "gap_result",
+      "symbol": "VELVETUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
+    },
+    {
+      "ts": 1795313785,
       "kind": "gap_result",
       "symbol": "CELRUSDT",
       "tf": "15m",
