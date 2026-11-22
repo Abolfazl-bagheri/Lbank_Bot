@@ -73,24 +73,30 @@
       "symbol": "DGAIUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.9823,
-      "qty": 203.6038,
-      "margin": 10.0,
+      "entry": 0.9903998006655487,
+      "qty": 605.816,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.9577424999999999,
+      "tp_price": 0.9656398056489099,
       "tf": "4h",
       "opened_at": 1795363307,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.9964
+      ],
       "steps": [
         {
           "px": 0.9823,
           "ts": 1795363307
+        },
+        {
+          "px": 0.9945,
+          "ts": 1795368948
         }
       ],
       "entry_candle_ts": 1795363200,
-      "last_leg_candle_ts": 1795363200,
+      "last_leg_candle_ts": 1795368948,
       "dry_run": true,
       "order_id": "PAPER-DGAIUSDT-1795363307"
     }
@@ -9849,7 +9855,9 @@
     "CZUSDT": 1795411940,
     "MEMECOINUSDT": 1795411941,
     "MANCERUSDT": 1795411945,
-    "PIPEDOGUSDT": 1795411957
+    "PIPEDOGUSDT": 1795411957,
+    "FONEUSDT": 1795412071,
+    "ARROWUSDT": 1795412096
   },
   "last_trade_report_ts": 1795368387,
   "last_known_version": "2.10.0",
