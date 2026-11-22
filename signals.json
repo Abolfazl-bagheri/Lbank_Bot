@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795356078,
+  "updated_at": 1795356264,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "DGAIUSDT",
-      "tf": "4h",
-      "gap": 1.14,
-      "ts": 1795320052
-    },
-    {
-      "kind": "SELL",
-      "symbol": "AIGENSYNUSDT",
-      "tf": "1h",
-      "gap": 1.68,
-      "ts": 1795320136
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "1h",
       "gap": 1.68,
       "ts": 1795356078
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795356082
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795356264
     }
   ],
   "trades": [
@@ -1430,14 +1430,27 @@
       "px": 0.9644,
       "pnl": -0.24,
       "tf": "1h"
+    },
+    {
+      "symbol": "NIGHTUSDT",
+      "side": "SELL",
+      "entry": 0.04893,
+      "tp": 0.04770675,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.04893,
+      "pnl": -0.24,
+      "tf": "1h"
     }
   ],
   "start": 1000.0,
   "session_start": 1795306140,
   "realized": -23.3335,
   "closed_n": 9,
-  "open_upnl": -0.48,
-  "equity": 976.1865,
+  "open_upnl": -0.72,
+  "equity": 975.9465,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
