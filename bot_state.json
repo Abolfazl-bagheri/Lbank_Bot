@@ -4,24 +4,30 @@
       "symbol": "AIGENSYNUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.01513,
-      "qty": 13218.7707,
-      "margin": 10.0,
+      "entry": 0.015400886462421616,
+      "qty": 38958.7964,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.01475175,
+      "tp_price": 0.015015864300861074,
       "tf": "1h",
       "opened_at": 1795320137,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.01559
+      ],
       "steps": [
         {
           "px": 0.01513,
           "ts": 1795320137
+        },
+        {
+          "px": 0.01554,
+          "ts": 1795320341
         }
       ],
       "entry_candle_ts": 1795320000,
-      "last_leg_candle_ts": 1795320000,
+      "last_leg_candle_ts": 1795320341,
       "dry_run": true,
       "order_id": "PAPER-AIGENSYNUSDT-1795320137"
     },
@@ -6546,26 +6552,6 @@
   ],
   "pending": [
     {
-      "symbol": "XAUTUSDT",
-      "tf": "5m",
-      "candle_ts": 1795118100,
-      "side": "LONG",
-      "upper": 3683.296522100262,
-      "open": 3665.63,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "BILLUSDT",
-      "tf": "4h",
-      "candle_ts": 1795118400,
-      "side": "SELL",
-      "upper": 0.004559390764630012,
-      "open": 0.00474,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "UVXYUSDT",
       "tf": "4h",
       "candle_ts": 1795118400,
@@ -9538,6 +9524,24 @@
       "upper": 0.006479342704216865,
       "open": 0.002799,
       "reported": false
+    },
+    {
+      "symbol": "DGAIUSDT",
+      "tf": "4h",
+      "candle_ts": 1795320000,
+      "side": "SELL",
+      "upper": 0.8136579619810373,
+      "open": 0.8207,
+      "reported": false
+    },
+    {
+      "symbol": "AIGENSYNUSDT",
+      "tf": "4h",
+      "candle_ts": 1795320000,
+      "side": "SELL",
+      "upper": 0.014942700466233446,
+      "open": 0.01535,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -9849,7 +9853,9 @@
     "ATMUSDT": 1795358863,
     "ARROWUSDT": 1795360548,
     "BARUSDT": 1795360559,
-    "DCTYUSDT": 1795363304
+    "DCTYUSDT": 1795363304,
+    "NIUBIUSDT": 1795363515,
+    "AI1USDT": 1795363522
   },
   "last_trade_report_ts": 1795319429,
   "last_known_version": "2.10.0",
