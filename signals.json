@@ -1,57 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795356619,
+  "updated_at": 1795356917,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "AIGENSYNUSDT",
-      "tf": "4h",
-      "gap": 3.84,
-      "ts": 1795320294
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795320343
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795320346
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795320346
-    },
-    {
-      "kind": "HEARTBEAT",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795320346
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795320361
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795320377
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,48 +1353,84 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1795356619
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795356642
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795356662
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795356683
+    },
+    {
+      "kind": "HEARTBEAT",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795356683
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795356704
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795356704
+    },
+    {
+      "kind": "GAP",
+      "symbol": "BLESSUSDT",
+      "tf": "15m",
+      "gap": 2.16,
+      "ts": 1795356917
     }
   ],
   "trades": [
     {
-      "symbol": "DGAIUSDT",
-      "side": "SELL",
-      "entry": 0.9644,
-      "tp": 0.94029,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.9435,
-      "pnl": 4.0943,
-      "tf": "1h"
-    },
-    {
       "symbol": "NIGHTUSDT",
       "side": "SELL",
-      "entry": 0.04893,
-      "tp": 0.04770675,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
+      "entry": 0.0489833042827507,
+      "tp": 0.04775872167568193,
+      "adds": 1,
+      "pele": 2,
+      "margin": 30.0,
       "lev": 20,
-      "px": 0.04886,
-      "pnl": 0.0461,
+      "px": 0.04897,
+      "pnl": -0.557,
       "tf": "1h"
     }
   ],
   "start": 1000.0,
   "session_start": 1795306140,
-  "realized": -10.0992,
-  "closed_n": 10,
-  "open_upnl": 4.1404,
-  "equity": 994.0412,
+  "realized": -4.8732,
+  "closed_n": 11,
+  "open_upnl": -0.557,
+  "equity": 994.5698,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 62.9359,
+    "profit": 68.1619,
     "loss": -73.0351,
-    "count": 10
+    "count": 11
   }
 }
