@@ -1,62 +1,6 @@
 {
-  "open_trades": [
-    {
-      "symbol": "DCTYUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.00376,
-      "qty": 53191.4894,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.003666,
-      "tf": "1h",
-      "opened_at": 1795309238,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.00376,
-          "ts": 1795309238
-        }
-      ],
-      "entry_candle_ts": 1795309200,
-      "last_leg_candle_ts": 1795309200,
-      "dry_run": true,
-      "order_id": "PAPER-DCTYUSDT-1795309238"
-    }
-  ],
+  "open_trades": [],
   "trade_history": [
-    {
-      "symbol": "NIUBIUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.00623,
-      "qty": 32102.7287,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.00607425,
-      "tf": "15m",
-      "opened_at": 1794271572,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.00623,
-          "ts": 1794271572
-        }
-      ],
-      "entry_candle_ts": 1794271500,
-      "last_leg_candle_ts": 1794271500,
-      "dry_run": true,
-      "order_id": "PAPER-NIUBIUSDT-1794271572",
-      "closed_at": 1794272735,
-      "close_px": 0.005614,
-      "pnl_usdt": 19.77528089887641,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "STABLEUSDT",
       "side": "SELL",
@@ -6515,6 +6459,36 @@
       "closed_at": 1795308480,
       "close_px": 0.00392,
       "pnl_usdt": 6.41975308641975,
+      "close_reason": "TP50",
+      "why": "TP50"
+    },
+    {
+      "symbol": "DCTYUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.00376,
+      "qty": 53191.4894,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.003666,
+      "tf": "1h",
+      "opened_at": 1795309238,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.00376,
+          "ts": 1795309238
+        }
+      ],
+      "entry_candle_ts": 1795309200,
+      "last_leg_candle_ts": 1795309200,
+      "dry_run": true,
+      "order_id": "PAPER-DCTYUSDT-1795309238",
+      "closed_at": 1795309503,
+      "close_px": 0.00363,
+      "pnl_usdt": 6.914893617021272,
       "close_reason": "TP50",
       "why": "TP50"
     }
