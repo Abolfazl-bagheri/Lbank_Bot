@@ -9501,7 +9501,8 @@
       "side": "SELL",
       "upper": 0.013423786678639587,
       "open": 0.013554,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "BLESSUSDT",
@@ -9510,7 +9511,8 @@
       "side": "SELL",
       "upper": 0.013493360748413955,
       "open": 0.013554,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -9823,29 +9825,12 @@
     "BARUSDT": 1795360559,
     "DCTYUSDT": 1795363304,
     "NIUBIUSDT": 1795363515,
-    "AI1USDT": 1795363522
+    "AI1USDT": 1795363522,
+    "STONKBROKERUSDT": 1795365067
   },
   "last_trade_report_ts": 1795321260,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795057500,
-      "kind": "gap_result",
-      "symbol": "KAVAUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795057519,
-      "kind": "gap_result",
-      "symbol": "XAUTUSDT",
-      "tf": "5m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795057523,
       "kind": "gap_result",
@@ -13423,6 +13408,24 @@
       "ts": 1795320242,
       "kind": "gap_result",
       "symbol": "CARDSUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795321880,
+      "kind": "gap_result",
+      "symbol": "BLESSUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795321882,
+      "kind": "gap_result",
+      "symbol": "BLESSUSDT",
       "tf": "15m",
       "gap": 0.0,
       "filled": true,
