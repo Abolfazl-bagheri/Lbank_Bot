@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795388713,
+  "updated_at": 1795388721,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "NIGHTUSDT",
-      "tf": "1h",
-      "gap": 1.05,
-      "ts": 1795366687
-    },
-    {
-      "kind": "GAP",
-      "symbol": "ZCATUSDT",
-      "tf": "15m",
-      "gap": 1.75,
-      "ts": 1795366812
-    },
     {
       "kind": "SELL",
       "symbol": "ZCATUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "5m",
       "gap": 0.14,
       "ts": 1795388713
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795388718
+    },
+    {
+      "kind": "SELL",
+      "symbol": "SILVERUSDT",
+      "tf": "5m",
+      "gap": 0.38,
+      "ts": 1795388721
     }
   ],
   "trades": [
@@ -1430,14 +1430,27 @@
       "px": 3584.24,
       "pnl": -0.24,
       "tf": "5m"
+    },
+    {
+      "symbol": "XAUTUSDT",
+      "side": "SELL",
+      "entry": 3570.0,
+      "tp": 3480.75,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 3570.0,
+      "pnl": -0.24,
+      "tf": "5m"
     }
   ],
   "start": 1000.0,
   "session_start": 1795306140,
   "realized": 96.5602,
   "closed_n": 17,
-  "open_upnl": -6.5938,
-  "equity": 1089.9664,
+  "open_upnl": -6.8338,
+  "equity": 1089.7264,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
