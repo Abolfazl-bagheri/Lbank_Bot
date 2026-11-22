@@ -30,64 +30,9 @@
       "last_leg_candle_ts": 1795356702,
       "dry_run": true,
       "order_id": "PAPER-NIGHTUSDT-1795356080"
-    },
-    {
-      "symbol": "XVGUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.00177,
-      "qty": 112994.3503,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.00172575,
-      "tf": "15m",
-      "opened_at": 1795358725,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.00177,
-          "ts": 1795358725
-        }
-      ],
-      "entry_candle_ts": 1795358700,
-      "last_leg_candle_ts": 1795358700,
-      "dry_run": true,
-      "order_id": "PAPER-XVGUSDT-1795358725"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "SECZUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 8.58,
-      "qty": 23.31,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 8.365499999999999,
-      "tf": "4h",
-      "opened_at": 1794312134,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 8.58,
-          "ts": 1794312134
-        }
-      ],
-      "entry_candle_ts": 1794312000,
-      "last_leg_candle_ts": 1794312000,
-      "dry_run": true,
-      "order_id": "PAPER-SECZUSDT-1794312134",
-      "closed_at": 1794314932,
-      "close_px": 8.29,
-      "pnl_usdt": 6.759906759906781,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "JCTUSDT",
       "side": "SELL",
@@ -6536,19 +6481,39 @@
       "pnl_usdt": 5.2260472832849425,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "XVGUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.00177,
+      "qty": 112994.3503,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.00172575,
+      "tf": "15m",
+      "opened_at": 1795358725,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.00177,
+          "ts": 1795358725
+        }
+      ],
+      "entry_candle_ts": 1795358700,
+      "last_leg_candle_ts": 1795358700,
+      "dry_run": true,
+      "order_id": "PAPER-XVGUSDT-1795358725",
+      "closed_at": 1795358958,
+      "close_px": 0.001633,
+      "pnl_usdt": 15.480225988700585,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
-    {
-      "symbol": "NAORISUSDT",
-      "tf": "15m",
-      "candle_ts": 1795122900,
-      "side": "LONG",
-      "upper": 0.033710317269080046,
-      "open": 0.03185,
-      "reported": true,
-      "filled": true
-    },
     {
       "symbol": "GOLDUSDT",
       "tf": "5m",
@@ -9525,6 +9490,15 @@
       "candle_ts": 1795358700,
       "side": "SELL",
       "upper": 0.1283957755593867,
+      "open": 0.12987,
+      "reported": false
+    },
+    {
+      "symbol": "ZESTUSDT",
+      "tf": "15m",
+      "candle_ts": 1795358700,
+      "side": "SELL",
+      "upper": 0.12818748201996574,
       "open": 0.12987,
       "reported": false
     }
