@@ -9572,7 +9572,8 @@
       "side": "SELL",
       "upper": 42.39960681646159,
       "open": 42.46,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "SILVERUSDT",
@@ -9581,7 +9582,8 @@
       "side": "SELL",
       "upper": 42.39960681646159,
       "open": 42.46,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "SILVERUSDT",
@@ -9590,7 +9592,8 @@
       "side": "SELL",
       "upper": 42.43161326519586,
       "open": 42.46,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -9907,33 +9910,6 @@
   "last_trade_report_ts": 1795389557,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795079042,
-      "kind": "gap_result",
-      "symbol": "ICNTUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
-    {
-      "ts": 1795079045,
-      "kind": "gap_result",
-      "symbol": "INITUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795079047,
-      "kind": "gap_result",
-      "symbol": "USUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795079049,
       "kind": "gap_result",
@@ -13500,6 +13476,33 @@
     },
     {
       "ts": 1795389044,
+      "kind": "gap_result",
+      "symbol": "SILVERUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795389937,
+      "kind": "gap_result",
+      "symbol": "SILVERUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795389940,
+      "kind": "gap_result",
+      "symbol": "SILVERUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795389943,
       "kind": "gap_result",
       "symbol": "SILVERUSDT",
       "tf": "5m",
