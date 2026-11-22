@@ -1,66 +1,6 @@
 {
-  "open_trades": [
-    {
-      "symbol": "DCTYUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.0037556552962347695,
-      "qty": 159759.0707,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.0036617639138289003,
-      "tf": "15m",
-      "opened_at": 1795306519,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.00367,
-          "ts": 1795306519
-        },
-        {
-          "px": 0.0038,
-          "ts": 1795307416
-        }
-      ],
-      "entry_candle_ts": 1795306500,
-      "last_leg_candle_ts": 1795307400,
-      "dry_run": true,
-      "order_id": "PAPER-DCTYUSDT-1795306519"
-    }
-  ],
+  "open_trades": [],
   "trade_history": [
-    {
-      "symbol": "SECZUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 7.84,
-      "qty": 25.5102,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 7.644,
-      "tf": "4h",
-      "opened_at": 1794269023,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 7.84,
-          "ts": 1794269023
-        }
-      ],
-      "entry_candle_ts": 1794268800,
-      "last_leg_candle_ts": 1794268800,
-      "dry_run": true,
-      "order_id": "PAPER-SECZUSDT-1794269023",
-      "closed_at": 1794269323,
-      "close_px": 7.84,
-      "pnl_usdt": 0.0,
-      "close_reason": "NIGHT_RESET",
-      "why": "NIGHT_RESET"
-    },
     {
       "symbol": "BONERUSDT",
       "side": "SELL",
@@ -6517,29 +6457,43 @@
       "pnl_usdt": -27.24484273896808,
       "close_reason": "STOP",
       "why": "STOP"
+    },
+    {
+      "symbol": "DCTYUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.0037556552962347695,
+      "qty": 159759.0707,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 0.0036617639138289003,
+      "tf": "15m",
+      "opened_at": 1795306519,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.00367,
+          "ts": 1795306519
+        },
+        {
+          "px": 0.0038,
+          "ts": 1795307416
+        }
+      ],
+      "entry_candle_ts": 1795306500,
+      "last_leg_candle_ts": 1795307400,
+      "dry_run": true,
+      "order_id": "PAPER-DCTYUSDT-1795306519",
+      "closed_at": 1795307583,
+      "close_px": 0.00393,
+      "pnl_usdt": -27.853147855185767,
+      "close_reason": "STOP",
+      "why": "STOP"
     }
   ],
   "pending": [
-    {
-      "symbol": "NAORISUSDT",
-      "tf": "1h",
-      "candle_ts": 1795082400,
-      "side": "SELL",
-      "upper": 0.034063126608051365,
-      "open": 0.03693,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "ICNTUSDT",
-      "tf": "1h",
-      "candle_ts": 1795082400,
-      "side": "SELL",
-      "upper": 0.39775194085582855,
-      "open": 0.4088,
-      "reported": true,
-      "filled": false
-    },
     {
       "symbol": "HUTUSDT",
       "tf": "15m",
@@ -9511,6 +9465,24 @@
       "side": "SELL",
       "upper": 0.0037885367080733087,
       "open": 0.003868,
+      "reported": false
+    },
+    {
+      "symbol": "CELRUSDT",
+      "tf": "15m",
+      "candle_ts": 1795307400,
+      "side": "LONG",
+      "upper": 0.0019323693495506093,
+      "open": 0.001928,
+      "reported": false
+    },
+    {
+      "symbol": "IDOLUSDT",
+      "tf": "15m",
+      "candle_ts": 1795307400,
+      "side": "LONG",
+      "upper": 0.04892557716204225,
+      "open": 0.027492,
       "reported": false
     }
   ],
