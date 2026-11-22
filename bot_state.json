@@ -6495,36 +6495,6 @@
   ],
   "pending": [
     {
-      "symbol": "PIEVERSEUSDT",
-      "tf": "15m",
-      "candle_ts": 1795088700,
-      "side": "SELL",
-      "upper": 2.8916313654448667,
-      "open": 2.916,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "PDDUSDT",
-      "tf": "15m",
-      "candle_ts": 1795088700,
-      "side": "SELL",
-      "upper": 82.32143074043506,
-      "open": 83.66,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "PEPEUSDT",
-      "tf": "15m",
-      "candle_ts": 1795088700,
-      "side": "SELL",
-      "upper": 3.9233801783834496e-06,
-      "open": 3.952e-06,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "XAUTUSDT",
       "tf": "5m",
       "candle_ts": 1795089300,
@@ -9386,7 +9356,8 @@
       "side": "SELL",
       "upper": 0.0036969136358085165,
       "open": 0.003765,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ENSOUSDT",
@@ -9465,7 +9436,8 @@
       "side": "LONG",
       "upper": 0.0019280000324953498,
       "open": 0.001928,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "AIGENSYNUSDT",
@@ -9474,7 +9446,8 @@
       "side": "SELL",
       "upper": 0.014529944874294121,
       "open": 0.01463,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CELRUSDT",
@@ -9483,6 +9456,34 @@
       "side": "LONG",
       "upper": 0.0019280000324953498,
       "open": 0.001928,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "VELVETUSDT",
+      "tf": "15m",
+      "candle_ts": 1795312800,
+      "side": "SELL",
+      "upper": 0.06797718464387384,
+      "open": 0.06902,
+      "reported": false
+    },
+    {
+      "symbol": "CELRUSDT",
+      "tf": "15m",
+      "candle_ts": 1795312800,
+      "side": "LONG",
+      "upper": 0.0019280000348834653,
+      "open": 0.001928,
+      "reported": false
+    },
+    {
+      "symbol": "AKEUSDT",
+      "tf": "1h",
+      "candle_ts": 1795312800,
+      "side": "LONG",
+      "upper": 0.0056613341410029034,
+      "open": 0.0044813,
       "reported": false
     }
   ],
@@ -9796,45 +9797,9 @@
     "BEMUSDT": 1795353374,
     "QUID1USDT": 1795354270
   },
-  "last_trade_report_ts": 1795311660,
+  "last_trade_report_ts": 1795312962,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795048373,
-      "kind": "gap_result",
-      "symbol": "ZKCUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795048375,
-      "kind": "gap_result",
-      "symbol": "AKAMUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795048379,
-      "kind": "gap_result",
-      "symbol": "NETUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
-    {
-      "ts": 1795049276,
-      "kind": "gap_result",
-      "symbol": "IRYSUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
     {
       "ts": 1795049287,
       "kind": "gap_result",
@@ -13394,6 +13359,42 @@
       "ts": 1795311984,
       "kind": "gap_result",
       "symbol": "AKEUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795312953,
+      "kind": "gap_result",
+      "symbol": "DCTYUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795312955,
+      "kind": "gap_result",
+      "symbol": "CELRUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795312958,
+      "kind": "gap_result",
+      "symbol": "AIGENSYNUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795312960,
+      "kind": "gap_result",
+      "symbol": "CELRUSDT",
       "tf": "15m",
       "gap": 0.0,
       "filled": true,
