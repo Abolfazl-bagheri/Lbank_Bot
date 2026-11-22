@@ -110,24 +110,28 @@
       "symbol": "SILVERUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 42.22,
-      "qty": 4.7371,
-      "margin": 10.0,
+      "entry": 42.279957297179216,
+      "qty": 14.1911,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 41.1645,
-      "tf": "5m",
+      "tp_price": 41.222958364749736,
+      "tf": "15m",
       "opened_at": 1795388723,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 42.22,
           "ts": 1795388723
+        },
+        {
+          "px": 42.31,
+          "ts": 1795389423
         }
       ],
       "entry_candle_ts": 1795388700,
-      "last_leg_candle_ts": 1795388400,
+      "last_leg_candle_ts": 1795389300,
       "dry_run": true,
       "order_id": "PAPER-SILVERUSDT-1795388723"
     }
@@ -6596,16 +6600,6 @@
   ],
   "pending": [
     {
-      "symbol": "CRCLUSDT",
-      "tf": "5m",
-      "candle_ts": 1795131300,
-      "side": "LONG",
-      "upper": 51.93760768262656,
-      "open": 51.33,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "HUMAUSDT",
       "tf": "1h",
       "candle_ts": 1795132800,
@@ -9587,6 +9581,15 @@
       "side": "SELL",
       "upper": 3567.541587184743,
       "open": 3573.16,
+      "reported": false
+    },
+    {
+      "symbol": "GOLDUSDT",
+      "tf": "15m",
+      "candle_ts": 1795389300,
+      "side": "SELL",
+      "upper": 3580.264019541673,
+      "open": 3584.88,
       "reported": false
     }
   ],
