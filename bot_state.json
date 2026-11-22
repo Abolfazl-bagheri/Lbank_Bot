@@ -6550,16 +6550,6 @@
   ],
   "pending": [
     {
-      "symbol": "SILVERUSDT",
-      "tf": "15m",
-      "candle_ts": 1795124700,
-      "side": "LONG",
-      "upper": 45.19795488139314,
-      "open": 43.14,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "GOLDUSDT",
       "tf": "15m",
       "candle_ts": 1795124700,
@@ -9520,7 +9510,8 @@
       "side": "SELL",
       "upper": 0.020632017505554243,
       "open": 0.02,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "BEATUSDT",
@@ -9529,7 +9520,8 @@
       "side": "SELL",
       "upper": 0.07729844867690526,
       "open": 0.0776,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ZCATUSDT",
@@ -9538,6 +9530,16 @@
       "side": "SELL",
       "upper": 0.020635594914714124,
       "open": 0.02057,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "ZCATUSDT",
+      "tf": "15m",
+      "candle_ts": 1795368600,
+      "side": "SELL",
+      "upper": 0.020624671495328317,
+      "open": 0.01991,
       "reported": false
     }
   ],
@@ -9818,7 +9820,6 @@
     "JUVUSDT": 1795345325,
     "BEMUSDT": 1795353374,
     "QUID1USDT": 1795354270,
-    "ARROWUSDT": 1795360548,
     "BARUSDT": 1795360559,
     "STONKBROKERUSDT": 1795365067,
     "GSTOCKUSDT": 1795367820,
@@ -9841,38 +9842,18 @@
     "APEXUSDT": 1795407410,
     "CAPETHUSDT": 1795408321,
     "ARGUSUSDT": 1795411100,
-    "DRVUSDT": 1795411109
+    "DRVUSDT": 1795411109,
+    "1000WOJAKUSDT": 1795411894,
+    "NEIRO1USDT": 1795411934,
+    "1000SATSUSDT": 1795411935,
+    "CZUSDT": 1795411940,
+    "MEMECOINUSDT": 1795411941,
+    "MANCERUSDT": 1795411945,
+    "PIPEDOGUSDT": 1795411957
   },
   "last_trade_report_ts": 1795368387,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795075592,
-      "kind": "gap_result",
-      "symbol": "USUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795075594,
-      "kind": "gap_result",
-      "symbol": "INITUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
-    {
-      "ts": 1795076243,
-      "kind": "gap_result",
-      "symbol": "INITUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795076246,
       "kind": "gap_result",
@@ -13439,6 +13420,33 @@
     },
     {
       "ts": 1795367829,
+      "kind": "gap_result",
+      "symbol": "ZCATUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795368782,
+      "kind": "gap_result",
+      "symbol": "ZCATUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795368785,
+      "kind": "gap_result",
+      "symbol": "BEATUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795368787,
       "kind": "gap_result",
       "symbol": "ZCATUSDT",
       "tf": "15m",
