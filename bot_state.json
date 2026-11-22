@@ -36,23 +36,29 @@
       "side": "SELL",
       "status": "open",
       "entry": 0.8308,
-      "qty": 240.7318,
-      "margin": 10.0,
+      "qty": 722.1954,
+      "margin": 30.0,
       "leverage": 20,
       "tp_price": 0.8100299999999999,
       "tf": "4h",
       "opened_at": 1795320269,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.8326
+      ],
       "steps": [
         {
           "px": 0.8308,
           "ts": 1795320269
+        },
+        {
+          "px": 0.8308,
+          "ts": 1795320343
         }
       ],
       "entry_candle_ts": 1795320000,
-      "last_leg_candle_ts": 1795320000,
+      "last_leg_candle_ts": 1795320343,
       "dry_run": true,
       "order_id": "PAPER-DGAIUSDT-1795320269"
     }
