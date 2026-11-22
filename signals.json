@@ -1,36 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795326305,
+  "updated_at": 1795326548,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795315589
-    },
-    {
-      "kind": "SELL",
-      "symbol": "BTCUSDT",
-      "tf": "15m",
-      "gap": 0.2,
-      "ts": 1795315658
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795315675
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795315752
-    },
     {
       "kind": "HEARTBEAT",
       "symbol": "—",
@@ -1402,6 +1374,34 @@
       "tf": "15m",
       "gap": 2.02,
       "ts": 1795326305
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795326310
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795326383
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795326470
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795326548
     }
   ],
   "trades": [
@@ -1414,17 +1414,30 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 0.8262,
-      "pnl": 2.6021,
+      "px": 0.8237,
+      "pnl": 4.4076,
       "tf": "4h"
+    },
+    {
+      "symbol": "AIGENSYNUSDT",
+      "side": "SELL",
+      "entry": 0.01678,
+      "tp": 0.0163605,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.01723,
+      "pnl": -5.6035,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1795306140,
   "realized": 12.7901,
   "closed_n": 6,
-  "open_upnl": 2.6021,
-  "equity": 1015.3922,
+  "open_upnl": -1.1959,
+  "equity": 1011.5942,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
