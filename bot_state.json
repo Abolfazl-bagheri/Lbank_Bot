@@ -9502,7 +9502,8 @@
       "side": "SELL",
       "upper": 0.01620054664462619,
       "open": 0.016228,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -9815,15 +9816,6 @@
   "last_trade_report_ts": 1795357591,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795069925,
-      "kind": "gap_result",
-      "symbol": "BULLAUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
     {
       "ts": 1795069928,
       "kind": "gap_result",
@@ -13408,6 +13400,15 @@
     },
     {
       "ts": 1795357077,
+      "kind": "gap_result",
+      "symbol": "BLESSUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795357926,
       "kind": "gap_result",
       "symbol": "BLESSUSDT",
       "tf": "15m",
