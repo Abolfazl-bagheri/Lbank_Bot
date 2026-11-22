@@ -1,29 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795327221,
+  "updated_at": 1795327389,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795316567
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795316705
-    },
-    {
-      "kind": "HEARTBEAT",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795316708
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1381,27 @@
       "tf": "15m",
       "gap": 1.89,
       "ts": 1795327221
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795327225
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795327357
+    },
+    {
+      "kind": "SELL",
+      "symbol": "AIGENSYNUSDT",
+      "tf": "1h",
+      "gap": 1.57,
+      "ts": 1795327389
     }
   ],
   "trades": [
@@ -1414,17 +1414,30 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 0.8251,
-      "pnl": 3.3965,
+      "px": 0.8288,
+      "pnl": 0.7244,
       "tf": "4h"
+    },
+    {
+      "symbol": "CLAUDIAUSDT",
+      "side": "SELL",
+      "entry": 0.010781,
+      "tp": 0.010511475000000001,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.010748,
+      "pnl": 0.3722,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1795306140,
   "realized": 21.8485,
   "closed_n": 7,
-  "open_upnl": 3.3965,
-  "equity": 1025.245,
+  "open_upnl": 1.0966,
+  "equity": 1022.9451,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
