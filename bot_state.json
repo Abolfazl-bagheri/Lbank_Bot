@@ -110,15 +110,15 @@
       "symbol": "SILVERUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 42.279957297179216,
-      "qty": 14.1911,
-      "margin": 30.0,
+      "entry": 42.41110453738541,
+      "qty": 33.0102,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 41.222958364749736,
-      "tf": "15m",
+      "tp_price": 41.35082692395078,
+      "tf": "5m",
       "opened_at": 1795388723,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [],
       "steps": [
         {
@@ -128,6 +128,10 @@
         {
           "px": 42.31,
           "ts": 1795389423
+        },
+        {
+          "px": 42.51,
+          "ts": 1795389671
         }
       ],
       "entry_candle_ts": 1795388700,
@@ -6600,26 +6604,6 @@
   ],
   "pending": [
     {
-      "symbol": "UVXYUSDT",
-      "tf": "4h",
-      "candle_ts": 1795132800,
-      "side": "SELL",
-      "upper": 25.080157820386756,
-      "open": 25.28,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "RAVEUSDT",
-      "tf": "4h",
-      "candle_ts": 1795132800,
-      "side": "SELL",
-      "upper": 0.12704759405326435,
-      "open": 0.129,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "CTRUSDT",
       "tf": "4h",
       "candle_ts": 1795132800,
@@ -9589,6 +9573,24 @@
       "side": "SELL",
       "upper": 42.08415981449363,
       "open": 42.22,
+      "reported": false
+    },
+    {
+      "symbol": "SILVERUSDT",
+      "tf": "5m",
+      "candle_ts": 1795389600,
+      "side": "SELL",
+      "upper": 42.39960681646159,
+      "open": 42.46,
+      "reported": false
+    },
+    {
+      "symbol": "SILVERUSDT",
+      "tf": "5m",
+      "candle_ts": 1795389600,
+      "side": "SELL",
+      "upper": 42.39960681646159,
+      "open": 42.46,
       "reported": false
     }
   ],
