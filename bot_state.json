@@ -30,6 +30,31 @@
       "last_leg_candle_ts": 1795356702,
       "dry_run": true,
       "order_id": "PAPER-NIGHTUSDT-1795356080"
+    },
+    {
+      "symbol": "BLESSUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.017083,
+      "qty": 11707.5455,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.016655925000000002,
+      "tf": "1h",
+      "opened_at": 1795359680,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.017083,
+          "ts": 1795359680
+        }
+      ],
+      "entry_candle_ts": 1795359600,
+      "last_leg_candle_ts": 1795359600,
+      "dry_run": true,
+      "order_id": "PAPER-BLESSUSDT-1795359680"
     }
   ],
   "trade_history": [
@@ -6515,16 +6540,6 @@
   ],
   "pending": [
     {
-      "symbol": "GOLDUSDT",
-      "tf": "5m",
-      "candle_ts": 1795123200,
-      "side": "LONG",
-      "upper": 3683.0573121693296,
-      "open": 3659.33,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "SILVERUSDT",
       "tf": "5m",
       "candle_ts": 1795123200,
@@ -9501,6 +9516,15 @@
       "upper": 0.12818748201996574,
       "open": 0.12987,
       "reported": false
+    },
+    {
+      "symbol": "ZESTUSDT",
+      "tf": "1h",
+      "candle_ts": 1795359600,
+      "side": "SELL",
+      "upper": 0.12806353165162085,
+      "open": 0.13039,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -9768,7 +9792,6 @@
     "NGASUSDT": 1795262595,
     "AINBSCUSDT": 1795269926,
     "BTCDOMUSDT": 1795270613,
-    "UP2USDT": 1795284229,
     "QUACKAIUSDT": 1795286791,
     "SKY1USDT": 1795287885,
     "LONGXIAUSDT": 1795291366,
