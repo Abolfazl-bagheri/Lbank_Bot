@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795356054,
+  "updated_at": 1795356063,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "CATEUSDT",
-      "tf": "1h",
-      "gap": 2.02,
-      "ts": 1795319567
-    },
-    {
-      "kind": "GAP",
-      "symbol": "ELSAUSDT",
-      "tf": "1h",
-      "gap": 1.09,
-      "ts": 1795319716
-    },
     {
       "kind": "GAP",
       "symbol": "AIGENSYNUSDT",
@@ -1402,15 +1388,43 @@
       "tf": "1h",
       "gap": 2.14,
       "ts": 1795356054
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795356058
+    },
+    {
+      "kind": "SELL",
+      "symbol": "DGAIUSDT",
+      "tf": "1h",
+      "gap": 2.23,
+      "ts": 1795356063
     }
   ],
-  "trades": [],
+  "trades": [
+    {
+      "symbol": "BLESSUSDT",
+      "side": "SELL",
+      "entry": 0.015747,
+      "tp": 0.015353325000000001,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.015747,
+      "pnl": -0.24,
+      "tf": "1h"
+    }
+  ],
   "start": 1000.0,
   "session_start": 1795306140,
   "realized": -23.3335,
   "closed_n": 9,
-  "open_upnl": 0,
-  "equity": 976.6665,
+  "open_upnl": -0.24,
+  "equity": 976.4265,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
