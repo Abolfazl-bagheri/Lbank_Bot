@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795363236,
+  "updated_at": 1795363271,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795325729
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795325745
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "15m",
       "gap": 1.72,
       "ts": 1795363236
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795363241
+    },
+    {
+      "kind": "SELL",
+      "symbol": "BULLAUSDT",
+      "tf": "4h",
+      "gap": 3.84,
+      "ts": 1795363271
     }
   ],
   "trades": [
@@ -1417,14 +1417,27 @@
       "px": 0.04815,
       "pnl": 9.4872,
       "tf": "1h"
+    },
+    {
+      "symbol": "ZCATUSDT",
+      "side": "SELL",
+      "entry": 0.02056,
+      "tp": 0.020045999999999998,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.02056,
+      "pnl": -0.24,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1795306140,
   "realized": 24.4696,
   "closed_n": 14,
-  "open_upnl": 9.4872,
-  "equity": 1033.9568,
+  "open_upnl": 9.2472,
+  "equity": 1033.7168,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
