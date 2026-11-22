@@ -60,6 +60,31 @@
       "last_leg_candle_ts": 1795388400,
       "dry_run": true,
       "order_id": "PAPER-GOLDUSDT-1795388706"
+    },
+    {
+      "symbol": "XAUTUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 3570.0,
+      "qty": 0.056022,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 3480.75,
+      "tf": "5m",
+      "opened_at": 1795388715,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 3570.0,
+          "ts": 1795388715
+        }
+      ],
+      "entry_candle_ts": 1795388700,
+      "last_leg_candle_ts": 1795388400,
+      "dry_run": true,
+      "order_id": "PAPER-XAUTUSDT-1795388715"
     }
   ],
   "trade_history": [
@@ -6530,16 +6555,6 @@
       "tf": "5m",
       "candle_ts": 1795131300,
       "side": "LONG",
-      "upper": 3635.733663110518,
-      "open": 3620.25,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "XAUTUSDT",
-      "tf": "5m",
-      "candle_ts": 1795131300,
-      "side": "LONG",
       "upper": 3638.2085217527583,
       "open": 3620.25,
       "reported": true,
@@ -9519,6 +9534,15 @@
       "open": 3.715,
       "reported": true,
       "filled": false
+    },
+    {
+      "symbol": "GOLDUSDT",
+      "tf": "5m",
+      "candle_ts": 1795388700,
+      "side": "SELL",
+      "upper": 3578.026101702469,
+      "open": 3584.69,
+      "reported": false
     }
   ],
   "paper_days": [
