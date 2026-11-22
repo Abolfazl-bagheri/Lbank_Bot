@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795302312,
+  "updated_at": 1795306140,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "IDOLUSDT",
-      "tf": "15m",
-      "gap": 1.67,
-      "ts": 1795291210
-    },
     {
       "kind": "GAP",
       "symbol": "YBUSDT",
@@ -1402,74 +1395,28 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1795302312
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795306140
     }
   ],
-  "trades": [
-    {
-      "symbol": "POLYMARKETUSDT",
-      "side": "SELL",
-      "entry": 23.863287767666804,
-      "tp": 23.266705573475132,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
-      "lev": 20,
-      "px": 23.87,
-      "pnl": -0.8888,
-      "tf": "15m"
-    },
-    {
-      "symbol": "PIEVERSEUSDT",
-      "side": "SELL",
-      "entry": 3.335230517472162,
-      "tp": 3.251849754535358,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
-      "lev": 20,
-      "px": 3.398,
-      "pnl": -12.0121,
-      "tf": "1h"
-    },
-    {
-      "symbol": "DGAIUSDT",
-      "side": "SELL",
-      "entry": 0.7894752223528867,
-      "tp": 0.7697383417940645,
-      "adds": 2,
-      "pele": 3,
-      "margin": 70.0,
-      "lev": 20,
-      "px": 0.7987,
-      "pnl": -18.0386,
-      "tf": "4h"
-    },
-    {
-      "symbol": "COOKIEUSDT",
-      "side": "SELL",
-      "entry": 0.008332,
-      "tp": 0.008123700000000001,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.008249,
-      "pnl": 1.7523,
-      "tf": "1h"
-    }
-  ],
+  "trades": [],
   "start": 1000.0,
-  "session_start": 1795219571,
-  "realized": 171.3762,
-  "closed_n": 27,
-  "open_upnl": -29.1872,
-  "equity": 1142.189,
+  "session_start": 1795306140,
+  "realized": 0,
+  "closed_n": 0,
+  "open_upnl": 0,
+  "equity": 1000.0,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 396.3108,
-    "loss": -224.9346,
-    "count": 27
+    "profit": 0,
+    "loss": 0,
+    "count": 0
   }
 }
