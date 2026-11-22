@@ -138,64 +138,9 @@
       "last_leg_candle_ts": 1795389300,
       "dry_run": true,
       "order_id": "PAPER-SILVERUSDT-1795388723"
-    },
-    {
-      "symbol": "BULLAUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.02463,
-      "qty": 8120.1786,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.024014249999999997,
-      "tf": "15m",
-      "opened_at": 1795391123,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.02463,
-          "ts": 1795391123
-        }
-      ],
-      "entry_candle_ts": 1795391100,
-      "last_leg_candle_ts": 1795391100,
-      "dry_run": true,
-      "order_id": "PAPER-BULLAUSDT-1795391123"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "DJTUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 4.479,
-      "qty": 44.6528,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 4.367025,
-      "tf": "1h",
-      "opened_at": 1794326460,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 4.479,
-          "ts": 1794326460
-        }
-      ],
-      "entry_candle_ts": 1794326400,
-      "last_leg_candle_ts": 1794326400,
-      "dry_run": true,
-      "order_id": "PAPER-DJTUSDT-1794326460",
-      "closed_at": 1794332109,
-      "close_px": 4.284,
-      "pnl_usdt": 8.707300736771613,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "SECZUSDT",
       "side": "SELL",
@@ -6623,6 +6568,36 @@
       "closed_at": 1795371424,
       "close_px": 0.9836,
       "pnl_usdt": 38.448511353789364,
+      "close_reason": "TP50",
+      "why": "TP50"
+    },
+    {
+      "symbol": "BULLAUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.02463,
+      "qty": 8120.1786,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.024014249999999997,
+      "tf": "15m",
+      "opened_at": 1795391123,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.02463,
+          "ts": 1795391123
+        }
+      ],
+      "entry_candle_ts": 1795391100,
+      "last_leg_candle_ts": 1795391100,
+      "dry_run": true,
+      "order_id": "PAPER-BULLAUSDT-1795391123",
+      "closed_at": 1795391502,
+      "close_px": 0.02328,
+      "pnl_usdt": 10.96224116930573,
       "close_reason": "TP50",
       "why": "TP50"
     }
