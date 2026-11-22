@@ -6545,16 +6545,6 @@
   ],
   "pending": [
     {
-      "symbol": "GOLDUSDT",
-      "tf": "15m",
-      "candle_ts": 1795123800,
-      "side": "LONG",
-      "upper": 3707.1131664306176,
-      "open": 3641.38,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "SILVERUSDT",
       "tf": "5m",
       "candle_ts": 1795124100,
@@ -9534,6 +9524,16 @@
       "side": "SELL",
       "upper": 0.02029372487092799,
       "open": 0.01936,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "ZCATUSDT",
+      "tf": "15m",
+      "candle_ts": 1795365900,
+      "side": "SELL",
+      "upper": 0.02046026370359662,
+      "open": 0.0197,
       "reported": false
     }
   ],
@@ -9850,15 +9850,6 @@
   "last_trade_report_ts": 1795365421,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795075577,
-      "kind": "gap_result",
-      "symbol": "VELVETUSDT",
-      "tf": "4h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795075580,
       "kind": "gap_result",
@@ -13443,6 +13434,15 @@
     },
     {
       "ts": 1795365157,
+      "kind": "gap_result",
+      "symbol": "ZCATUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795366026,
       "kind": "gap_result",
       "symbol": "ZCATUSDT",
       "tf": "15m",
