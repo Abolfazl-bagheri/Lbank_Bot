@@ -1,62 +1,6 @@
 {
-  "open_trades": [
-    {
-      "symbol": "ENSOUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.5246,
-      "qty": 381.2429,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.511485,
-      "tf": "15m",
-      "opened_at": 1795310204,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.5246,
-          "ts": 1795310204
-        }
-      ],
-      "entry_candle_ts": 1795310100,
-      "last_leg_candle_ts": 1795310100,
-      "dry_run": true,
-      "order_id": "PAPER-ENSOUSDT-1795310204"
-    }
-  ],
+  "open_trades": [],
   "trade_history": [
-    {
-      "symbol": "STABLEUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.03062,
-      "qty": 6531.6786,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.0298545,
-      "tf": "1h",
-      "opened_at": 1794272436,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.03062,
-          "ts": 1794272436
-        }
-      ],
-      "entry_candle_ts": 1794272400,
-      "last_leg_candle_ts": 1794272400,
-      "dry_run": true,
-      "order_id": "PAPER-STABLEUSDT-1794272436",
-      "closed_at": 1794275284,
-      "close_px": 0.02975,
-      "pnl_usdt": 5.6825604180274505,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "BONERUSDT",
       "side": "SELL",
@@ -6515,6 +6459,36 @@
       "closed_at": 1795309503,
       "close_px": 0.00363,
       "pnl_usdt": 6.914893617021272,
+      "close_reason": "TP50",
+      "why": "TP50"
+    },
+    {
+      "symbol": "ENSOUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.5246,
+      "qty": 381.2429,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.511485,
+      "tf": "15m",
+      "opened_at": 1795310204,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.5246,
+          "ts": 1795310204
+        }
+      ],
+      "entry_candle_ts": 1795310100,
+      "last_leg_candle_ts": 1795310100,
+      "dry_run": true,
+      "order_id": "PAPER-ENSOUSDT-1795310204",
+      "closed_at": 1795310355,
+      "close_px": 0.5109,
+      "pnl_usdt": 5.223027068242445,
       "close_reason": "TP50",
       "why": "TP50"
     }
