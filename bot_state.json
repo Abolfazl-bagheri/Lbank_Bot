@@ -49,6 +49,31 @@
       "last_leg_candle_ts": 1795356000,
       "dry_run": true,
       "order_id": "PAPER-DGAIUSDT-1795356065"
+    },
+    {
+      "symbol": "NIGHTUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.04893,
+      "qty": 4087.4719,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.04770675,
+      "tf": "1h",
+      "opened_at": 1795356080,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.04893,
+          "ts": 1795356080
+        }
+      ],
+      "entry_candle_ts": 1795356000,
+      "last_leg_candle_ts": 1795356000,
+      "dry_run": true,
+      "order_id": "PAPER-NIGHTUSDT-1795356080"
     }
   ],
   "trade_history": [
@@ -6545,16 +6570,6 @@
   "pending": [
     {
       "symbol": "RAREUSDT",
-      "tf": "15m",
-      "candle_ts": 1795121100,
-      "side": "SELL",
-      "upper": 0.013575728362870817,
-      "open": 0.01372,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "RAREUSDT",
       "tf": "1h",
       "candle_ts": 1795122000,
       "side": "SELL",
@@ -9532,6 +9547,15 @@
       "side": "SELL",
       "upper": 0.015409351931821315,
       "open": 0.015645,
+      "reported": false
+    },
+    {
+      "symbol": "DGAIUSDT",
+      "tf": "1h",
+      "candle_ts": 1795356000,
+      "side": "SELL",
+      "upper": 0.9428551218520099,
+      "open": 0.9627,
       "reported": false
     }
   ],
