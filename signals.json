@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795362326,
+  "updated_at": 1795362696,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795324893
-    },
-    {
-      "kind": "HEARTBEAT",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795324894
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "15m",
       "gap": 1.27,
       "ts": 1795362326
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795362455
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795362696
     }
   ],
   "trades": [
@@ -1414,36 +1414,23 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 0.0484,
-      "pnl": 6.4249,
-      "tf": "1h"
-    },
-    {
-      "symbol": "XVGUSDT",
-      "side": "SELL",
-      "entry": 0.001596,
-      "tp": 0.0015561,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.001549,
-      "pnl": 5.6497,
+      "px": 0.04819,
+      "pnl": 8.9972,
       "tf": "1h"
     }
   ],
   "start": 1000.0,
   "session_start": 1795306140,
-  "realized": 18.5799,
-  "closed_n": 13,
-  "open_upnl": 12.0746,
-  "equity": 1030.6545,
+  "realized": 24.4696,
+  "closed_n": 14,
+  "open_upnl": 8.9972,
+  "equity": 1033.4668,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 91.615,
+    "profit": 97.5047,
     "loss": -73.0351,
-    "count": 13
+    "count": 14
   }
 }
