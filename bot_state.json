@@ -1,62 +1,6 @@
 {
-  "open_trades": [
-    {
-      "symbol": "DCTYUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.00405,
-      "qty": 49382.716,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.00394875,
-      "tf": "15m",
-      "opened_at": 1795308313,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.00405,
-          "ts": 1795308313
-        }
-      ],
-      "entry_candle_ts": 1795308300,
-      "last_leg_candle_ts": 1795308300,
-      "dry_run": true,
-      "order_id": "PAPER-DCTYUSDT-1795308313"
-    }
-  ],
+  "open_trades": [],
   "trade_history": [
-    {
-      "symbol": "BONERUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.00575,
-      "qty": 34782.6087,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.00560625,
-      "tf": "15m",
-      "opened_at": 1794270639,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.00575,
-          "ts": 1794270639
-        }
-      ],
-      "entry_candle_ts": 1794270600,
-      "last_leg_candle_ts": 1794270600,
-      "dry_run": true,
-      "order_id": "PAPER-BONERUSDT-1794270639",
-      "closed_at": 1794271740,
-      "close_px": 0.00557,
-      "pnl_usdt": 6.260869565217377,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "NIUBIUSDT",
       "side": "SELL",
@@ -6517,19 +6461,39 @@
       "pnl_usdt": -27.853147855185767,
       "close_reason": "STOP",
       "why": "STOP"
+    },
+    {
+      "symbol": "DCTYUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.00405,
+      "qty": 49382.716,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.00394875,
+      "tf": "15m",
+      "opened_at": 1795308313,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.00405,
+          "ts": 1795308313
+        }
+      ],
+      "entry_candle_ts": 1795308300,
+      "last_leg_candle_ts": 1795308300,
+      "dry_run": true,
+      "order_id": "PAPER-DCTYUSDT-1795308313",
+      "closed_at": 1795308480,
+      "close_px": 0.00392,
+      "pnl_usdt": 6.41975308641975,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
-    {
-      "symbol": "HUSDT",
-      "tf": "15m",
-      "candle_ts": 1795083300,
-      "side": "SELL",
-      "upper": 0.01666198548106454,
-      "open": 0.01696,
-      "reported": true,
-      "filled": true
-    },
     {
       "symbol": "DCTYUSDT",
       "tf": "15m",
@@ -9501,6 +9465,15 @@
       "side": "SELL",
       "upper": 0.00398193633409789,
       "open": 0.004011,
+      "reported": false
+    },
+    {
+      "symbol": "CELRUSDT",
+      "tf": "15m",
+      "candle_ts": 1795308300,
+      "side": "LONG",
+      "upper": 0.001928000033258097,
+      "open": 0.001928,
       "reported": false
     },
     {
