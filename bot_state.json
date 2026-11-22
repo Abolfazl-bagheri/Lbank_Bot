@@ -1,125 +1,5 @@
 {
-  "open_trades": [
-    {
-      "symbol": "POLYMARKETUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 23.863287767666804,
-      "qty": 25.1432,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 23.266705573475132,
-      "tf": "15m",
-      "opened_at": 1795231979,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 23.91,
-          "ts": 1795231979
-        },
-        {
-          "px": 23.84,
-          "ts": 1795233741
-        }
-      ],
-      "entry_candle_ts": 1795231800,
-      "last_leg_candle_ts": 1795233600,
-      "dry_run": true,
-      "order_id": "PAPER-POLYMARKETUSDT-1795231979"
-    },
-    {
-      "symbol": "PIEVERSEUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 3.335230517472162,
-      "qty": 179.8976,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 3.251849754535358,
-      "tf": "1h",
-      "opened_at": 1795281312,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 3.3309,
-          "ts": 1795281312
-        },
-        {
-          "px": 3.3374,
-          "ts": 1795284055
-        }
-      ],
-      "entry_candle_ts": 1795281300,
-      "last_leg_candle_ts": 1795284000,
-      "dry_run": true,
-      "order_id": "PAPER-PIEVERSEUSDT-1795281312"
-    },
-    {
-      "symbol": "DGAIUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.7894752223528867,
-      "qty": 1773.3298,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 0.7697383417940645,
-      "tf": "4h",
-      "opened_at": 1795291315,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [
-        0.7746,
-        0.8043
-      ],
-      "steps": [
-        {
-          "px": 0.773,
-          "ts": 1795291315
-        },
-        {
-          "px": 0.773,
-          "ts": 1795291482
-        },
-        {
-          "px": 0.8023,
-          "ts": 1795301755
-        }
-      ],
-      "entry_candle_ts": 1795291200,
-      "last_leg_candle_ts": 1795301755,
-      "dry_run": true,
-      "order_id": "PAPER-DGAIUSDT-1795291315"
-    },
-    {
-      "symbol": "COOKIEUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.008332,
-      "qty": 24003.8406,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.008123700000000001,
-      "tf": "1h",
-      "opened_at": 1795302029,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.008332,
-          "ts": 1795302029
-        }
-      ],
-      "entry_candle_ts": 1795302000,
-      "last_leg_candle_ts": 1795302000,
-      "dry_run": true,
-      "order_id": "PAPER-COOKIEUSDT-1795302029"
-    }
-  ],
+  "open_trades": [],
   "trade_history": [
     {
       "symbol": "SECZUSDT",
@@ -9811,10 +9691,21 @@
       "trades": 16,
       "tp_trades": 12,
       "reset_trades": 4
+    },
+    {
+      "from": 1795219571,
+      "to": 1795306140,
+      "start": 1000.0,
+      "realized": 171.3762,
+      "unrealized_closed": -34.4244,
+      "net": 136.9518,
+      "trades": 31,
+      "tp_trades": 27,
+      "reset_trades": 4
     }
   ],
-  "paper_session_start": 1795219571,
-  "last_daily_report_date": "2026-11-21",
+  "paper_session_start": 1795306140,
+  "last_daily_report_date": "2026-11-22",
   "kline_blacklist": {
     "EURUSDT": 1793385188,
     "AXLUSDT": 1793502358,
@@ -13510,7 +13401,7 @@
   "tune_history": [],
   "tune_params": {
     "min_gap": 1.0,
-    "entry_gap": 1.6999999999999997,
+    "entry_gap": 1.5999999999999996,
     "max_adds": 2
   },
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
