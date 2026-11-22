@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795358724,
+  "updated_at": 1795358740,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795321963
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795322038
-    },
     {
       "kind": "GAP",
       "symbol": "SILVERUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "15m",
       "gap": 5.38,
       "ts": 1795358724
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795358728
+    },
+    {
+      "kind": "SELL",
+      "symbol": "ZESTUSDT",
+      "tf": "15m",
+      "gap": 1.2,
+      "ts": 1795358740
     }
   ],
   "trades": [
@@ -1417,14 +1417,27 @@
       "px": 0.04865,
       "pnl": 3.3627,
       "tf": "1h"
+    },
+    {
+      "symbol": "XVGUSDT",
+      "side": "SELL",
+      "entry": 0.00177,
+      "tp": 0.00172575,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.00177,
+      "pnl": -0.24,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1795306140,
   "realized": -4.8732,
   "closed_n": 11,
-  "open_upnl": 3.3627,
-  "equity": 998.4895,
+  "open_upnl": 3.1227,
+  "equity": 998.2495,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
