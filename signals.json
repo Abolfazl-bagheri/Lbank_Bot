@@ -1,29 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795371377,
+  "updated_at": 1795371617,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "ZESTUSDT",
-      "tf": "15m",
-      "gap": 1.31,
-      "ts": 1795359618
-    },
-    {
-      "kind": "SELL",
-      "symbol": "ZESTUSDT",
-      "tf": "1h",
-      "gap": 1.1,
-      "ts": 1795359663
-    },
-    {
-      "kind": "SELL",
-      "symbol": "BLESSUSDT",
-      "tf": "1h",
-      "gap": 3.72,
-      "ts": 1795359678
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1381,27 @@
       "tf": "15m",
       "gap": 1.35,
       "ts": 1795371377
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795371427
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795371533
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795371617
     }
   ],
   "trades": [
@@ -1414,36 +1414,23 @@
       "pele": 3,
       "margin": 70.0,
       "lev": 20,
-      "px": 0.04982,
-      "pnl": -11.4473,
+      "px": 0.04978,
+      "pnl": -10.3154,
       "tf": "1h"
-    },
-    {
-      "symbol": "DGAIUSDT",
-      "side": "SELL",
-      "entry": 1.0113756339609232,
-      "tp": 0.9860912431119001,
-      "adds": 2,
-      "pele": 3,
-      "margin": 70.0,
-      "lev": 20,
-      "px": 0.9836,
-      "pnl": 36.7685,
-      "tf": "4h"
     }
   ],
   "start": 1000.0,
   "session_start": 1795306140,
-  "realized": 58.1117,
-  "closed_n": 16,
-  "open_upnl": 25.3212,
-  "equity": 1083.4329,
+  "realized": 96.5602,
+  "closed_n": 17,
+  "open_upnl": -10.3154,
+  "equity": 1086.2448,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 139.4402,
+    "profit": 177.8888,
     "loss": -81.3286,
-    "count": 16
+    "count": 17
   }
 }
