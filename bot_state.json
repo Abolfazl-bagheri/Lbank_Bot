@@ -80,6 +80,31 @@
       "last_leg_candle_ts": 1795363200,
       "dry_run": true,
       "order_id": "PAPER-BULLAUSDT-1795363273"
+    },
+    {
+      "symbol": "DGAIUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.9823,
+      "qty": 203.6038,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.9577424999999999,
+      "tf": "4h",
+      "opened_at": 1795363307,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.9823,
+          "ts": 1795363307
+        }
+      ],
+      "entry_candle_ts": 1795363200,
+      "last_leg_candle_ts": 1795363200,
+      "dry_run": true,
+      "order_id": "PAPER-DGAIUSDT-1795363307"
     }
   ],
   "trade_history": [
@@ -6543,26 +6568,6 @@
     {
       "symbol": "SILVERUSDT",
       "tf": "5m",
-      "candle_ts": 1795123200,
-      "side": "LONG",
-      "upper": 44.40924462342098,
-      "open": 43.83,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "GOLDUSDT",
-      "tf": "5m",
-      "candle_ts": 1795123200,
-      "side": "LONG",
-      "upper": 3683.5063125525194,
-      "open": 3659.33,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "SILVERUSDT",
-      "tf": "5m",
       "candle_ts": 1795123500,
       "side": "LONG",
       "upper": 44.468766499568204,
@@ -9527,6 +9532,24 @@
       "candle_ts": 1795363200,
       "side": "SELL",
       "upper": 0.020206047668780626,
+      "open": 0.01922,
+      "reported": false
+    },
+    {
+      "symbol": "BULLAUSDT",
+      "tf": "4h",
+      "candle_ts": 1795363200,
+      "side": "SELL",
+      "upper": 0.018087163126538193,
+      "open": 0.018743,
+      "reported": false
+    },
+    {
+      "symbol": "ZCATUSDT",
+      "tf": "1h",
+      "candle_ts": 1795363200,
+      "side": "SELL",
+      "upper": 0.019734783033313958,
       "open": 0.01922,
       "reported": false
     }
