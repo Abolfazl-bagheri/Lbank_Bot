@@ -9482,7 +9482,8 @@
       "side": "SELL",
       "upper": 0.02149970360274439,
       "open": 0.021796,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CSOPSAMSUNG2LUSDT",
@@ -9806,18 +9807,9 @@
     "ARROWUSDT": 1795412096,
     "QUACKAIUSDT": 1795415523
   },
-  "last_trade_report_ts": 1795372525,
+  "last_trade_report_ts": 1795373778,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795078038,
-      "kind": "gap_result",
-      "symbol": "NAORISUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795078040,
       "kind": "gap_result",
@@ -13408,6 +13400,15 @@
       "gap": 0.0,
       "filled": false,
       "note": "miss"
+    },
+    {
+      "ts": 1795374221,
+      "kind": "gap_result",
+      "symbol": "BULLAUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
     }
   ],
   "tune_history": [],
