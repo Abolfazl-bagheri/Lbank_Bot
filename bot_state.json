@@ -6519,16 +6519,6 @@
       "tf": "5m",
       "candle_ts": 1795122300,
       "side": "LONG",
-      "upper": 3674.885046900664,
-      "open": 3656.31,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "XAUTUSDT",
-      "tf": "5m",
-      "candle_ts": 1795122300,
-      "side": "LONG",
       "upper": 3674.6956180668058,
       "open": 3656.31,
       "reported": true,
@@ -9475,7 +9465,8 @@
       "side": "SELL",
       "upper": 0.015568059906440286,
       "open": 0.015645,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "BLESSUSDT",
@@ -9502,6 +9493,15 @@
       "side": "SELL",
       "upper": 0.048109333064975994,
       "open": 0.04889,
+      "reported": false
+    },
+    {
+      "symbol": "BLESSUSDT",
+      "tf": "15m",
+      "candle_ts": 1795356900,
+      "side": "SELL",
+      "upper": 0.01620054664462619,
+      "open": 0.016228,
       "reported": false
     }
   ],
@@ -9809,20 +9809,12 @@
     "TRUMPSOLUSDT": 1795369657,
     "RIOTUSDT": 1795369657,
     "FRONGUSDT": 1795396606,
-    "OROCHIUSDT": 1795396613
+    "OROCHIUSDT": 1795396613,
+    "FIGUSDT": 1795400232
   },
   "last_trade_report_ts": 1795356683,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795058257,
-      "kind": "gap_result",
-      "symbol": "CRCLUSDT",
-      "tf": "5m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795069925,
       "kind": "gap_result",
@@ -13410,6 +13402,15 @@
       "kind": "gap_result",
       "symbol": "AIGENSYNUSDT",
       "tf": "1h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795357077,
+      "kind": "gap_result",
+      "symbol": "BLESSUSDT",
+      "tf": "15m",
       "gap": 0.0,
       "filled": true,
       "note": "filled"
