@@ -9485,7 +9485,8 @@
       "side": "LONG",
       "upper": 60643.64306631735,
       "open": 59299.1,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -9802,15 +9803,6 @@
   "last_trade_report_ts": 1795317613,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795053851,
-      "kind": "gap_result",
-      "symbol": "IRYSUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
     {
       "ts": 1795053853,
       "kind": "gap_result",
@@ -13395,6 +13387,15 @@
     },
     {
       "ts": 1795317383,
+      "kind": "gap_result",
+      "symbol": "BTCUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795318281,
       "kind": "gap_result",
       "symbol": "BTCUSDT",
       "tf": "15m",
