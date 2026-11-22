@@ -1,5 +1,31 @@
 {
-  "open_trades": [],
+  "open_trades": [
+    {
+      "symbol": "DCTYUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.00376,
+      "qty": 53191.4894,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.003666,
+      "tf": "1h",
+      "opened_at": 1795309238,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.00376,
+          "ts": 1795309238
+        }
+      ],
+      "entry_candle_ts": 1795309200,
+      "last_leg_candle_ts": 1795309200,
+      "dry_run": true,
+      "order_id": "PAPER-DCTYUSDT-1795309238"
+    }
+  ],
   "trade_history": [
     {
       "symbol": "NIUBIUSDT",
@@ -9795,7 +9821,7 @@
     "BONERUSDT": 1795342752,
     "JUVUSDT": 1795345325
   },
-  "last_trade_report_ts": 1795308028,
+  "last_trade_report_ts": 1795308954,
   "last_known_version": "2.10.0",
   "lessons": [
     {
