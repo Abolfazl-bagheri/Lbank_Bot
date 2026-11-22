@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795308312,
+  "updated_at": 1795308345,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795294292
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795294547
-    },
     {
       "kind": "HEARTBEAT",
       "symbol": "—",
@@ -1402,15 +1388,43 @@
       "tf": "15m",
       "gap": 1.68,
       "ts": 1795308312
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795308316
+    },
+    {
+      "kind": "SELL",
+      "symbol": "CELRUSDT",
+      "tf": "15m",
+      "gap": 1.37,
+      "ts": 1795308345
     }
   ],
-  "trades": [],
+  "trades": [
+    {
+      "symbol": "DCTYUSDT",
+      "side": "SELL",
+      "entry": 0.00405,
+      "tp": 0.00394875,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.00405,
+      "pnl": -0.24,
+      "tf": "15m"
+    }
+  ],
   "start": 1000.0,
   "session_start": 1795306140,
   "realized": -27.8531,
   "closed_n": 1,
-  "open_upnl": 0,
-  "equity": 972.1469,
+  "open_upnl": -0.24,
+  "equity": 971.9069,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
