@@ -6495,36 +6495,6 @@
   ],
   "pending": [
     {
-      "symbol": "PDDUSDT",
-      "tf": "4h",
-      "candle_ts": 1795089600,
-      "side": "SELL",
-      "upper": 82.53357947447607,
-      "open": 83.61,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "GOLDUSDT",
-      "tf": "15m",
-      "candle_ts": 1795090500,
-      "side": "LONG",
-      "upper": 3749.939882802956,
-      "open": 3724.71,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "SILVERUSDT",
-      "tf": "15m",
-      "candle_ts": 1795090500,
-      "side": "LONG",
-      "upper": 45.56665939290859,
-      "open": 45.04,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "XAUTUSDT",
       "tf": "15m",
       "candle_ts": 1795090500,
@@ -9455,7 +9425,8 @@
       "side": "SELL",
       "upper": 0.01899690668054848,
       "open": 0.01928,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "AKEUSDT",
@@ -9464,7 +9435,8 @@
       "side": "LONG",
       "upper": 0.005925414330421373,
       "open": 0.0037101,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CATEUSDT",
@@ -9473,7 +9445,8 @@
       "side": "SELL",
       "upper": 0.01899690668054848,
       "open": 0.01928,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "AKEUSDT",
@@ -9482,6 +9455,34 @@
       "side": "LONG",
       "upper": 0.0059656015431727915,
       "open": 0.0037101,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "CLAUDIAUSDT",
+      "tf": "15m",
+      "candle_ts": 1795315500,
+      "side": "SELL",
+      "upper": 0.010554389221459468,
+      "open": 0.01045,
+      "reported": false
+    },
+    {
+      "symbol": "BTCUSDT",
+      "tf": "15m",
+      "candle_ts": 1795315500,
+      "side": "LONG",
+      "upper": 60531.850186936594,
+      "open": 59616.4,
+      "reported": false
+    },
+    {
+      "symbol": "BTCUSDT",
+      "tf": "15m",
+      "candle_ts": 1795315500,
+      "side": "LONG",
+      "upper": 60532.38462294637,
+      "open": 59616.4,
       "reported": false
     }
   ],
@@ -9792,47 +9793,12 @@
     "BONERUSDT": 1795342752,
     "JUVUSDT": 1795345325,
     "BEMUSDT": 1795353374,
-    "QUID1USDT": 1795354270
+    "QUID1USDT": 1795354270,
+    "ATMUSDT": 1795358863
   },
-  "last_trade_report_ts": 1795314785,
+  "last_trade_report_ts": 1795315752,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795050292,
-      "kind": "gap_result",
-      "symbol": "IRYSUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
-    {
-      "ts": 1795050298,
-      "kind": "gap_result",
-      "symbol": "AKAMUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795050301,
-      "kind": "gap_result",
-      "symbol": "CROSSUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
-    {
-      "ts": 1795050303,
-      "kind": "gap_result",
-      "symbol": "NETUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
     {
       "ts": 1795051061,
       "kind": "gap_result",
@@ -13390,6 +13356,42 @@
     },
     {
       "ts": 1795314690,
+      "kind": "gap_result",
+      "symbol": "AKEUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795315582,
+      "kind": "gap_result",
+      "symbol": "CATEUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795315584,
+      "kind": "gap_result",
+      "symbol": "AKEUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795315586,
+      "kind": "gap_result",
+      "symbol": "CATEUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795315588,
       "kind": "gap_result",
       "symbol": "AKEUSDT",
       "tf": "15m",
