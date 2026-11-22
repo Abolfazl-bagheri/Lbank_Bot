@@ -57,31 +57,6 @@
       "order_id": "PAPER-ZCATUSDT-1795363238"
     },
     {
-      "symbol": "BULLAUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.01881,
-      "qty": 10632.6422,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.01833975,
-      "tf": "4h",
-      "opened_at": 1795363273,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.01881,
-          "ts": 1795363273
-        }
-      ],
-      "entry_candle_ts": 1795363200,
-      "last_leg_candle_ts": 1795363200,
-      "dry_run": true,
-      "order_id": "PAPER-BULLAUSDT-1795363273"
-    },
-    {
       "symbol": "DGAIUSDT",
       "side": "SELL",
       "status": "open",
@@ -108,40 +83,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "INITUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.2526257067570472,
-      "qty": 2375.0552,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.24631006408812103,
-      "tf": "15m",
-      "opened_at": 1794321925,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.25684,
-          "ts": 1794321925
-        },
-        {
-          "px": 0.25057,
-          "ts": 1794322859
-        }
-      ],
-      "entry_candle_ts": 1794321900,
-      "last_leg_candle_ts": 1794322800,
-      "dry_run": true,
-      "order_id": "PAPER-INITUSDT-1794321925",
-      "closed_at": 1794323927,
-      "close_px": 0.23351,
-      "pnl_usdt": 45.40085884948594,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "DJTUSDT",
       "side": "SELL",
@@ -6562,6 +6503,36 @@
       "pnl_usdt": 5.889724310776937,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "BULLAUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.01881,
+      "qty": 10632.6422,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.01833975,
+      "tf": "4h",
+      "opened_at": 1795363273,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.01881,
+          "ts": 1795363273
+        }
+      ],
+      "entry_candle_ts": 1795363200,
+      "last_leg_candle_ts": 1795363200,
+      "dry_run": true,
+      "order_id": "PAPER-BULLAUSDT-1795363273",
+      "closed_at": 1795363895,
+      "close_px": 0.01959,
+      "pnl_usdt": -8.293460925039867,
+      "close_reason": "STOP",
+      "why": "STOP"
     }
   ],
   "pending": [
