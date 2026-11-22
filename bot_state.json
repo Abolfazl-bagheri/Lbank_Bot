@@ -6521,16 +6521,6 @@
   ],
   "pending": [
     {
-      "symbol": "VELVETUSDT",
-      "tf": "15m",
-      "candle_ts": 1795081500,
-      "side": "SELL",
-      "upper": 0.07723738883827105,
-      "open": 0.0765,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "NAORISUSDT",
       "tf": "1h",
       "candle_ts": 1795082400,
@@ -9501,7 +9491,8 @@
       "side": "SELL",
       "upper": 0.0035842292680344293,
       "open": 0.00366,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "AKEUSDT",
@@ -9510,6 +9501,16 @@
       "side": "LONG",
       "upper": 0.005617513804060761,
       "open": 0.004726,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "DCTYUSDT",
+      "tf": "15m",
+      "candle_ts": 1795307400,
+      "side": "SELL",
+      "upper": 0.0037885367080733087,
+      "open": 0.003868,
       "reported": false
     }
   ],
@@ -9825,24 +9826,6 @@
   "last_trade_report_ts": 1795307114,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795045709,
-      "kind": "gap_result",
-      "symbol": "NETUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795045712,
-      "kind": "gap_result",
-      "symbol": "SILVERUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795046762,
       "kind": "gap_result",
@@ -13421,6 +13404,24 @@
       "kind": "gap_result",
       "symbol": "INITUSDT",
       "tf": "1h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795307493,
+      "kind": "gap_result",
+      "symbol": "DCTYUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
+    },
+    {
+      "ts": 1795307495,
+      "kind": "gap_result",
+      "symbol": "AKEUSDT",
+      "tf": "15m",
       "gap": 0.0,
       "filled": true,
       "note": "filled"
