@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795389403,
+  "updated_at": 1795389413,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "BEATUSDT",
-      "tf": "15m",
-      "gap": 1.58,
-      "ts": 1795367633
-    },
-    {
-      "kind": "GAP",
-      "symbol": "ZCATUSDT",
-      "tf": "15m",
-      "gap": 1.25,
-      "ts": 1795367637
-    },
     {
       "kind": "SELL",
       "symbol": "ZCATUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "15m",
       "gap": 0.14,
       "ts": 1795389403
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795389410
+    },
+    {
+      "kind": "SELL",
+      "symbol": "GOLDUSDT",
+      "tf": "15m",
+      "gap": 0.15,
+      "ts": 1795389413
     }
   ],
   "trades": [
@@ -1434,15 +1434,15 @@
     {
       "symbol": "XAUTUSDT",
       "side": "SELL",
-      "entry": 3569.9999999999995,
-      "tp": 3480.7499999999995,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
+      "entry": 3571.5195162631694,
+      "tp": 3482.23152835659,
+      "adds": 2,
+      "pele": 3,
+      "margin": 70.0,
       "lev": 20,
       "px": 3572.66,
-      "pnl": -1.1671,
-      "tf": "5m"
+      "pnl": -2.1271,
+      "tf": "15m"
     },
     {
       "symbol": "SILVERUSDT",
@@ -1462,8 +1462,8 @@
   "session_start": 1795306140,
   "realized": 96.5602,
   "closed_n": 17,
-  "open_upnl": -6.866,
-  "equity": 1089.6942,
+  "open_upnl": -7.826,
+  "equity": 1088.7342,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
