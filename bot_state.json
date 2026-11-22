@@ -6550,16 +6550,6 @@
     {
       "symbol": "RAREUSDT",
       "tf": "15m",
-      "candle_ts": 1795119300,
-      "side": "SELL",
-      "upper": 0.012308860934763674,
-      "open": 0.01245,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "RAREUSDT",
-      "tf": "15m",
       "candle_ts": 1795120200,
       "side": "SELL",
       "upper": 0.013220187326611607,
@@ -9538,6 +9528,16 @@
       "side": "SELL",
       "upper": 0.016440889643810665,
       "open": 0.0168,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "CLAUDIAUSDT",
+      "tf": "15m",
+      "candle_ts": 1795327200,
+      "side": "SELL",
+      "upper": 0.010577207671609376,
+      "open": 0.010573,
       "reported": false
     }
   ],
@@ -9856,15 +9856,6 @@
   "last_trade_report_ts": 1795326926,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795057873,
-      "kind": "gap_result",
-      "symbol": "GOLDUSDT",
-      "tf": "5m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795058243,
       "kind": "gap_result",
@@ -13452,6 +13443,15 @@
       "kind": "gap_result",
       "symbol": "AKEUSDT",
       "tf": "1h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795327354,
+      "kind": "gap_result",
+      "symbol": "AIGENSYNUSDT",
+      "tf": "15m",
       "gap": 0.0,
       "filled": true,
       "note": "filled"
