@@ -32,31 +32,6 @@
       "order_id": "PAPER-NIGHTUSDT-1795356080"
     },
     {
-      "symbol": "BLESSUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.017083,
-      "qty": 11707.5455,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.016655925000000002,
-      "tf": "1h",
-      "opened_at": 1795359680,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.017083,
-          "ts": 1795359680
-        }
-      ],
-      "entry_candle_ts": 1795359600,
-      "last_leg_candle_ts": 1795359600,
-      "dry_run": true,
-      "order_id": "PAPER-BLESSUSDT-1795359680"
-    },
-    {
       "symbol": "XVGUSDT",
       "side": "SELL",
       "status": "open",
@@ -83,36 +58,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "JCTUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.00746,
-      "qty": 26809.6515,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.0072735,
-      "tf": "15m",
-      "opened_at": 1794319375,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.00746,
-          "ts": 1794319375
-        }
-      ],
-      "entry_candle_ts": 1794319200,
-      "last_leg_candle_ts": 1794319200,
-      "dry_run": true,
-      "order_id": "PAPER-JCTUSDT-1794319375",
-      "closed_at": 1794320317,
-      "close_px": 0.007187,
-      "pnl_usdt": 7.3190348525469116,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "ONEUSDT",
       "side": "SELL",
@@ -6561,19 +6506,39 @@
       "pnl_usdt": 15.480225988700585,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "BLESSUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.017083,
+      "qty": 11707.5455,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.016655925000000002,
+      "tf": "1h",
+      "opened_at": 1795359680,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.017083,
+          "ts": 1795359680
+        }
+      ],
+      "entry_candle_ts": 1795359600,
+      "last_leg_candle_ts": 1795359600,
+      "dry_run": true,
+      "order_id": "PAPER-BLESSUSDT-1795359680",
+      "closed_at": 1795359931,
+      "close_px": 0.016402,
+      "pnl_usdt": 7.972838494409658,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
-    {
-      "symbol": "XAUTUSDT",
-      "tf": "5m",
-      "candle_ts": 1795123200,
-      "side": "LONG",
-      "upper": 3673.5274568365967,
-      "open": 3649.74,
-      "reported": true,
-      "filled": true
-    },
     {
       "symbol": "XAUTUSDT",
       "tf": "5m",
@@ -9475,7 +9440,8 @@
       "side": "SELL",
       "upper": 0.015409351931821315,
       "open": 0.015645,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "DGAIUSDT",
@@ -9484,7 +9450,8 @@
       "side": "SELL",
       "upper": 0.9428551218520099,
       "open": 0.9627,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "NIGHTUSDT",
@@ -9493,7 +9460,8 @@
       "side": "SELL",
       "upper": 0.048109333064975994,
       "open": 0.04889,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "BLESSUSDT",
@@ -9512,7 +9480,8 @@
       "side": "SELL",
       "upper": 0.0016747607996300804,
       "open": 0.001748,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ZESTUSDT",
@@ -9521,7 +9490,8 @@
       "side": "SELL",
       "upper": 0.1283957755593867,
       "open": 0.12987,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ZESTUSDT",
@@ -9530,7 +9500,8 @@
       "side": "SELL",
       "upper": 0.12818748201996574,
       "open": 0.12987,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ZESTUSDT",
@@ -9548,6 +9519,15 @@
       "side": "SELL",
       "upper": 0.016447285753598374,
       "open": 0.01699,
+      "reported": false
+    },
+    {
+      "symbol": "XVGUSDT",
+      "tf": "1h",
+      "candle_ts": 1795359600,
+      "side": "SELL",
+      "upper": 0.0015638843928332618,
+      "open": 0.001608,
       "reported": false
     }
   ],
@@ -9855,65 +9835,12 @@
     "RIOTUSDT": 1795369657,
     "FRONGUSDT": 1795396606,
     "OROCHIUSDT": 1795396613,
-    "FIGUSDT": 1795400232
+    "FIGUSDT": 1795400232,
+    "UP2USDT": 1795403070
   },
-  "last_trade_report_ts": 1795358521,
+  "last_trade_report_ts": 1795359911,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795069928,
-      "kind": "gap_result",
-      "symbol": "GOLDUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795069930,
-      "kind": "gap_result",
-      "symbol": "SILVERUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795069932,
-      "kind": "gap_result",
-      "symbol": "XAUTUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795070843,
-      "kind": "gap_result",
-      "symbol": "PIPPINUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795071834,
-      "kind": "gap_result",
-      "symbol": "IRYSUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795071836,
-      "kind": "gap_result",
-      "symbol": "IDOLUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795071839,
       "kind": "gap_result",
@@ -13455,6 +13382,60 @@
       "ts": 1795357926,
       "kind": "gap_result",
       "symbol": "BLESSUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795359890,
+      "kind": "gap_result",
+      "symbol": "BLESSUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795359894,
+      "kind": "gap_result",
+      "symbol": "DGAIUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795359896,
+      "kind": "gap_result",
+      "symbol": "NIGHTUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
+    },
+    {
+      "ts": 1795359899,
+      "kind": "gap_result",
+      "symbol": "XVGUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795359902,
+      "kind": "gap_result",
+      "symbol": "ZESTUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795359904,
+      "kind": "gap_result",
+      "symbol": "ZESTUSDT",
       "tf": "15m",
       "gap": 0.0,
       "filled": true,
