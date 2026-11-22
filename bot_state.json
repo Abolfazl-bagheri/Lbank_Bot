@@ -9491,7 +9491,8 @@
       "side": "SELL",
       "upper": 3.720103467684926,
       "open": 3.715,
-      "reported": false
+      "reported": true,
+      "filled": false
     }
   ],
   "paper_days": [
@@ -9802,20 +9803,12 @@
     "MANCERUSDT": 1795411945,
     "PIPEDOGUSDT": 1795411957,
     "FONEUSDT": 1795412071,
-    "ARROWUSDT": 1795412096
+    "ARROWUSDT": 1795412096,
+    "QUACKAIUSDT": 1795415523
   },
   "last_trade_report_ts": 1795371618,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795077144,
-      "kind": "gap_result",
-      "symbol": "ICNTUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795078038,
       "kind": "gap_result",
@@ -13406,6 +13399,15 @@
       "gap": 0.0,
       "filled": true,
       "note": "filled"
+    },
+    {
+      "ts": 1795372347,
+      "kind": "gap_result",
+      "symbol": "CSOPSAMSUNG2LUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
     }
   ],
   "tune_history": [],
