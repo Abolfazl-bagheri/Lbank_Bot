@@ -1,66 +1,6 @@
 {
-  "open_trades": [
-    {
-      "symbol": "CLAUDIAUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.010781,
-      "qty": 18551.1548,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.010511475000000001,
-      "tf": "15m",
-      "opened_at": 1795327222,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.010781,
-          "ts": 1795327222
-        }
-      ],
-      "entry_candle_ts": 1795327200,
-      "last_leg_candle_ts": 1795327200,
-      "dry_run": true,
-      "order_id": "PAPER-CLAUDIAUSDT-1795327222"
-    }
-  ],
+  "open_trades": [],
   "trade_history": [
-    {
-      "symbol": "BULLAUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.06675768167327062,
-      "qty": 8987.7297,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.06508873963143885,
-      "tf": "15m",
-      "opened_at": 1794297843,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.06305,
-          "ts": 1794297843
-        },
-        {
-          "px": 0.06878,
-          "ts": 1794308442
-        }
-      ],
-      "entry_candle_ts": 1794297600,
-      "last_leg_candle_ts": 1794308400,
-      "dry_run": true,
-      "order_id": "PAPER-BULLAUSDT-1794297843",
-      "closed_at": 1794309535,
-      "close_px": 0.06504,
-      "pnl_usdt": 15.438058634307264,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "CYBERUSDT",
       "side": "SELL",
@@ -6519,6 +6459,36 @@
       "pnl_usdt": -36.7597496389023,
       "close_reason": "STOP",
       "why": "STOP"
+    },
+    {
+      "symbol": "CLAUDIAUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.010781,
+      "qty": 18551.1548,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.010511475000000001,
+      "tf": "15m",
+      "opened_at": 1795327222,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.010781,
+          "ts": 1795327222
+        }
+      ],
+      "entry_candle_ts": 1795327200,
+      "last_leg_candle_ts": 1795327200,
+      "dry_run": true,
+      "order_id": "PAPER-CLAUDIAUSDT-1795327222",
+      "closed_at": 1795353017,
+      "close_px": 0.011235,
+      "pnl_usdt": -8.422224283461636,
+      "close_reason": "STOP",
+      "why": "STOP"
     }
   ],
   "pending": [
@@ -9822,7 +9792,7 @@
     "TRUMPSOLUSDT": 1795369657,
     "RIOTUSDT": 1795369657
   },
-  "last_trade_report_ts": 1795326926,
+  "last_trade_report_ts": 1795353018,
   "last_known_version": "2.10.0",
   "lessons": [
     {
