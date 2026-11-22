@@ -1,43 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795321042,
+  "updated_at": 1795321228,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "CELRUSDT",
-      "tf": "15m",
-      "gap": 1.53,
-      "ts": 1795311039
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795311092
-    },
-    {
-      "kind": "SELL",
-      "symbol": "CELRUSDT",
-      "tf": "15m",
-      "gap": 1.53,
-      "ts": 1795311147
-    },
-    {
-      "kind": "SELL",
-      "symbol": "AKEUSDT",
-      "tf": "15m",
-      "gap": 1.79,
-      "ts": 1795311162
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795311177
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1367,41 @@
       "tf": "15m",
       "gap": 2.38,
       "ts": 1795321042
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795321046
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795321061
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795321135
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795321212
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795321228
     }
   ],
   "trades": [
@@ -1414,17 +1414,30 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 0.8338,
-      "pnl": -2.8866,
+      "px": 0.828,
+      "pnl": 1.3021,
       "tf": "4h"
+    },
+    {
+      "symbol": "BLESSUSDT",
+      "side": "SELL",
+      "entry": 0.013823,
+      "tp": 0.013477425,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.013762,
+      "pnl": 0.6426,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1795306140,
   "realized": 6.3226,
   "closed_n": 5,
-  "open_upnl": -2.8866,
-  "equity": 1003.436,
+  "open_upnl": 1.9447,
+  "equity": 1008.2673,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
