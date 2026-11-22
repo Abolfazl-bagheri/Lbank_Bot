@@ -30,64 +30,9 @@
       "last_leg_candle_ts": 1795320343,
       "dry_run": true,
       "order_id": "PAPER-DGAIUSDT-1795320269"
-    },
-    {
-      "symbol": "AIGENSYNUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.01678,
-      "qty": 11918.9511,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.0163605,
-      "tf": "15m",
-      "opened_at": 1795326307,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.01678,
-          "ts": 1795326307
-        }
-      ],
-      "entry_candle_ts": 1795326300,
-      "last_leg_candle_ts": 1795326300,
-      "dry_run": true,
-      "order_id": "PAPER-AIGENSYNUSDT-1795326307"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "INITUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.2136,
-      "qty": 936.3296,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.20826,
-      "tf": "4h",
-      "opened_at": 1794297659,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.2136,
-          "ts": 1794297659
-        }
-      ],
-      "entry_candle_ts": 1794297600,
-      "last_leg_candle_ts": 1794297600,
-      "dry_run": true,
-      "order_id": "PAPER-INITUSDT-1794297659",
-      "closed_at": 1794300497,
-      "close_px": 0.20803,
-      "pnl_usdt": 5.215355805243464,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "AIOUSDT",
       "side": "SELL",
@@ -6542,6 +6487,36 @@
       "closed_at": 1795321277,
       "close_px": 0.013376,
       "pnl_usdt": 6.46748173334297,
+      "close_reason": "TP50",
+      "why": "TP50"
+    },
+    {
+      "symbol": "AIGENSYNUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.01678,
+      "qty": 11918.9511,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0163605,
+      "tf": "15m",
+      "opened_at": 1795326307,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.01678,
+          "ts": 1795326307
+        }
+      ],
+      "entry_candle_ts": 1795326300,
+      "last_leg_candle_ts": 1795326300,
+      "dry_run": true,
+      "order_id": "PAPER-AIGENSYNUSDT-1795326307",
+      "closed_at": 1795326922,
+      "close_px": 0.01602,
+      "pnl_usdt": 9.058402860548272,
       "close_reason": "TP50",
       "why": "TP50"
     }
