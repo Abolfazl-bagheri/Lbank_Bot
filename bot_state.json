@@ -1,5 +1,31 @@
 {
-  "open_trades": [],
+  "open_trades": [
+    {
+      "symbol": "AIGENSYNUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.01513,
+      "qty": 13218.7707,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.01475175,
+      "tf": "1h",
+      "opened_at": 1795320137,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.01513,
+          "ts": 1795320137
+        }
+      ],
+      "entry_candle_ts": 1795320000,
+      "last_leg_candle_ts": 1795320000,
+      "dry_run": true,
+      "order_id": "PAPER-AIGENSYNUSDT-1795320137"
+    }
+  ],
   "trade_history": [
     {
       "symbol": "BONERUSDT",
@@ -6497,16 +6523,6 @@
     {
       "symbol": "XAUTUSDT",
       "tf": "5m",
-      "candle_ts": 1795115100,
-      "side": "LONG",
-      "upper": 3685.842713204118,
-      "open": 3671.78,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "XAUTUSDT",
-      "tf": "5m",
       "candle_ts": 1795115400,
       "side": "LONG",
       "upper": 3684.5310591407865,
@@ -9486,6 +9502,15 @@
       "upper": 0.15939452194217335,
       "open": 0.15386,
       "reported": false
+    },
+    {
+      "symbol": "DGAIUSDT",
+      "tf": "4h",
+      "candle_ts": 1795320000,
+      "side": "SELL",
+      "upper": 0.8113669446910627,
+      "open": 0.8207,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -9797,7 +9822,8 @@
     "QUID1USDT": 1795354270,
     "ATMUSDT": 1795358863,
     "ARROWUSDT": 1795360548,
-    "BARUSDT": 1795360559
+    "BARUSDT": 1795360559,
+    "DCTYUSDT": 1795363304
   },
   "last_trade_report_ts": 1795319429,
   "last_known_version": "2.10.0",
