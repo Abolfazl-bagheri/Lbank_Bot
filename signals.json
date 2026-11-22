@@ -1,57 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795370656,
+  "updated_at": 1795371022,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795358728
-    },
-    {
-      "kind": "SELL",
-      "symbol": "ZESTUSDT",
-      "tf": "15m",
-      "gap": 1.2,
-      "ts": 1795358740
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795358841
-    },
-    {
-      "kind": "SELL",
-      "symbol": "ZESTUSDT",
-      "tf": "15m",
-      "gap": 1.3,
-      "ts": 1795358852
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795358960
-    },
-    {
-      "kind": "GAP",
-      "symbol": "SILVERUSDT",
-      "tf": "5m",
-      "gap": 0.1,
-      "ts": 1795358971
-    },
-    {
-      "kind": "GAP",
-      "symbol": "BULLAUSDT",
-      "tf": "1h",
-      "gap": 2.36,
-      "ts": 1795359106
-    },
     {
       "kind": "GAP",
       "symbol": "XVGUSDT",
@@ -1402,6 +1353,55 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1795370656
+    },
+    {
+      "kind": "HEARTBEAT",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795370658
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795370718
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795370739
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795370759
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795370792
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795370821
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795371022
     }
   ],
   "trades": [
@@ -1414,22 +1414,9 @@
       "pele": 3,
       "margin": 70.0,
       "lev": 20,
-      "px": 0.05005,
-      "pnl": -17.9557,
+      "px": 0.05001,
+      "pnl": -16.8238,
       "tf": "1h"
-    },
-    {
-      "symbol": "ZCATUSDT",
-      "side": "SELL",
-      "entry": 0.020648504197473657,
-      "tp": 0.020132291592536815,
-      "adds": 2,
-      "pele": 3,
-      "margin": 70.0,
-      "lev": 20,
-      "px": 0.02055,
-      "pnl": 4.9987,
-      "tf": "15m"
     },
     {
       "symbol": "DGAIUSDT",
@@ -1440,23 +1427,23 @@
       "pele": 3,
       "margin": 70.0,
       "lev": 20,
-      "px": 1.0246,
-      "pnl": -19.9859,
+      "px": 0.9974,
+      "pnl": 17.6658,
       "tf": "4h"
     }
   ],
   "start": 1000.0,
   "session_start": 1795306140,
-  "realized": 16.1761,
-  "closed_n": 15,
-  "open_upnl": -32.9429,
-  "equity": 983.2332,
+  "realized": 58.1117,
+  "closed_n": 16,
+  "open_upnl": 0.842,
+  "equity": 1058.9537,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 97.5047,
+    "profit": 139.4402,
     "loss": -81.3286,
-    "count": 15
+    "count": 16
   }
 }
