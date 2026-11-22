@@ -71,24 +71,30 @@
       "symbol": "XAUTUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 3570.0,
-      "qty": 0.056022,
-      "margin": 10.0,
+      "entry": 3569.9999999999995,
+      "qty": 0.16806700000000002,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 3480.75,
+      "tp_price": 3480.7499999999995,
       "tf": "5m",
       "opened_at": 1795388715,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        3581.87
+      ],
       "steps": [
         {
           "px": 3570.0,
           "ts": 1795388715
+        },
+        {
+          "px": 3570.0,
+          "ts": 1795388745
         }
       ],
       "entry_candle_ts": 1795388700,
-      "last_leg_candle_ts": 1795388400,
+      "last_leg_candle_ts": 1795388745,
       "dry_run": true,
       "order_id": "PAPER-XAUTUSDT-1795388715"
     },
