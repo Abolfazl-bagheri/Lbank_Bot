@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795320958,
+  "updated_at": 1795321042,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "AGTUSDT",
-      "tf": "15m",
-      "gap": 1.6,
-      "ts": 1795310907
-    },
-    {
-      "kind": "GAP",
-      "symbol": "TOSHIUSDT",
-      "tf": "15m",
-      "gap": 1.01,
-      "ts": 1795310911
-    },
     {
       "kind": "SELL",
       "symbol": "CELRUSDT",
@@ -1402,22 +1388,23 @@
       "tf": "15m",
       "gap": 1.16,
       "ts": 1795320958
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795320977
+    },
+    {
+      "kind": "SELL",
+      "symbol": "BLESSUSDT",
+      "tf": "15m",
+      "gap": 2.38,
+      "ts": 1795321042
     }
   ],
   "trades": [
-    {
-      "symbol": "AIGENSYNUSDT",
-      "side": "SELL",
-      "entry": 0.015400886462421616,
-      "tp": 0.015015864300861074,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
-      "lev": 20,
-      "px": 0.015,
-      "pnl": 14.8981,
-      "tf": "1h"
-    },
     {
       "symbol": "DGAIUSDT",
       "side": "SELL",
@@ -1427,23 +1414,23 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 0.8331,
-      "pnl": -2.381,
+      "px": 0.8338,
+      "pnl": -2.8866,
       "tf": "4h"
     }
   ],
   "start": 1000.0,
   "session_start": 1795306140,
-  "realized": -9.2955,
-  "closed_n": 4,
-  "open_upnl": 12.5171,
-  "equity": 1003.2216,
+  "realized": 6.3226,
+  "closed_n": 5,
+  "open_upnl": -2.8866,
+  "equity": 1003.436,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 18.5577,
+    "profit": 34.1757,
     "loss": -27.8531,
-    "count": 4
+    "count": 5
   }
 }
