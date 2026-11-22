@@ -9559,7 +9559,8 @@
       "side": "SELL",
       "upper": 3578.026101702469,
       "open": 3584.69,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "XAUTUSDT",
@@ -9568,7 +9569,8 @@
       "side": "SELL",
       "upper": 3564.8862629202827,
       "open": 3570.85,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "SILVERUSDT",
@@ -9577,7 +9579,8 @@
       "side": "SELL",
       "upper": 42.058811412999134,
       "open": 42.21,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -9894,33 +9897,6 @@
   "last_trade_report_ts": 1795388640,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795078040,
-      "kind": "gap_result",
-      "symbol": "INITUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795078042,
-      "kind": "gap_result",
-      "symbol": "ICNTUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795078045,
-      "kind": "gap_result",
-      "symbol": "INITUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795079042,
       "kind": "gap_result",
@@ -13490,6 +13466,33 @@
       "kind": "gap_result",
       "symbol": "BULLAUSDT",
       "tf": "1h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795389039,
+      "kind": "gap_result",
+      "symbol": "GOLDUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795389042,
+      "kind": "gap_result",
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795389044,
+      "kind": "gap_result",
+      "symbol": "SILVERUSDT",
+      "tf": "5m",
       "gap": 0.0,
       "filled": true,
       "note": "filled"
