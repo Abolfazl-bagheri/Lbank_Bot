@@ -35,85 +35,9 @@
       "last_leg_candle_ts": 1795367194,
       "dry_run": true,
       "order_id": "PAPER-NIGHTUSDT-1795356080"
-    },
-    {
-      "symbol": "DGAIUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 1.0113756339609232,
-      "qty": 1384.2533,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 0.9860912431119001,
-      "tf": "4h",
-      "opened_at": 1795363307,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [
-        0.9964,
-        1.0308
-      ],
-      "steps": [
-        {
-          "px": 0.9823,
-          "ts": 1795363307
-        },
-        {
-          "px": 0.9945,
-          "ts": 1795368948
-        },
-        {
-          "px": 1.0277,
-          "ts": 1795369755
-        }
-      ],
-      "entry_candle_ts": 1795363200,
-      "last_leg_candle_ts": 1795369755,
-      "dry_run": true,
-      "order_id": "PAPER-DGAIUSDT-1795363307"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "MARAUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 7.405975041856996,
-      "qty": 189.0365,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 7.220825665810571,
-      "tf": "4h",
-      "opened_at": 1794322892,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [
-        7.563
-      ],
-      "steps": [
-        {
-          "px": 7.45,
-          "ts": 1794322892
-        },
-        {
-          "px": 7.54,
-          "ts": 1794324861
-        },
-        {
-          "px": 7.33,
-          "ts": 1794326530
-        }
-      ],
-      "entry_candle_ts": 1794322800,
-      "last_leg_candle_ts": 1794326400,
-      "dry_run": true,
-      "order_id": "PAPER-MARAUSDT-1794322892",
-      "closed_at": 1794332107,
-      "close_px": 7.01,
-      "pnl_usdt": 74.85375733332089,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "DJTUSDT",
       "side": "SELL",
@@ -6532,19 +6456,50 @@
       "pnl_usdt": 41.93552560427426,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "DGAIUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 1.0113756339609232,
+      "qty": 1384.2533,
+      "margin": 70.0,
+      "leverage": 20,
+      "tp_price": 0.9860912431119001,
+      "tf": "4h",
+      "opened_at": 1795363307,
+      "adds": 2,
+      "last_leg_margin": 40.0,
+      "used_res_levels": [
+        0.9964,
+        1.0308
+      ],
+      "steps": [
+        {
+          "px": 0.9823,
+          "ts": 1795363307
+        },
+        {
+          "px": 0.9945,
+          "ts": 1795368948
+        },
+        {
+          "px": 1.0277,
+          "ts": 1795369755
+        }
+      ],
+      "entry_candle_ts": 1795363200,
+      "last_leg_candle_ts": 1795369755,
+      "dry_run": true,
+      "order_id": "PAPER-DGAIUSDT-1795363307",
+      "closed_at": 1795371424,
+      "close_px": 0.9836,
+      "pnl_usdt": 38.448511353789364,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
-    {
-      "symbol": "GOLDUSDT",
-      "tf": "5m",
-      "candle_ts": 1795131300,
-      "side": "LONG",
-      "upper": 3647.6864964288507,
-      "open": 3630.38,
-      "reported": true,
-      "filled": true
-    },
     {
       "symbol": "XAUTUSDT",
       "tf": "5m",
@@ -9527,6 +9482,15 @@
       "side": "SELL",
       "upper": 0.02149970360274439,
       "open": 0.021796,
+      "reported": false
+    },
+    {
+      "symbol": "CSOPSAMSUNG2LUSDT",
+      "tf": "15m",
+      "candle_ts": 1795371300,
+      "side": "SELL",
+      "upper": 3.720103467684926,
+      "open": 3.715,
       "reported": false
     }
   ],
