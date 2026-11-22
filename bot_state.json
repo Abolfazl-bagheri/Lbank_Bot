@@ -73,17 +73,18 @@
       "symbol": "DGAIUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.9903998006655487,
-      "qty": 605.816,
-      "margin": 30.0,
+      "entry": 1.0113756339609232,
+      "qty": 1384.2533,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 0.9656398056489099,
+      "tp_price": 0.9860912431119001,
       "tf": "4h",
       "opened_at": 1795363307,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [
-        0.9964
+        0.9964,
+        1.0308
       ],
       "steps": [
         {
@@ -93,10 +94,14 @@
         {
           "px": 0.9945,
           "ts": 1795368948
+        },
+        {
+          "px": 1.0277,
+          "ts": 1795369755
         }
       ],
       "entry_candle_ts": 1795363200,
-      "last_leg_candle_ts": 1795368948,
+      "last_leg_candle_ts": 1795369755,
       "dry_run": true,
       "order_id": "PAPER-DGAIUSDT-1795363307"
     }
@@ -6556,16 +6561,6 @@
   ],
   "pending": [
     {
-      "symbol": "XAUTUSDT",
-      "tf": "15m",
-      "candle_ts": 1795124700,
-      "side": "LONG",
-      "upper": 3700.432918213298,
-      "open": 3622.43,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "XAIUSDT",
       "tf": "15m",
       "candle_ts": 1795131000,
@@ -9546,6 +9541,15 @@
       "side": "SELL",
       "upper": 0.02058954773053152,
       "open": 0.01979,
+      "reported": false
+    },
+    {
+      "symbol": "ZCATUSDT",
+      "tf": "15m",
+      "candle_ts": 1795369500,
+      "side": "SELL",
+      "upper": 0.020571958929353176,
+      "open": 0.01968,
       "reported": false
     }
   ],
