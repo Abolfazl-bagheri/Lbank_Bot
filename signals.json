@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795320136,
+  "updated_at": 1795320163,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "ENSOUSDT",
-      "tf": "15m",
-      "gap": 2.62,
-      "ts": 1795310009
-    },
-    {
-      "kind": "SELL",
-      "symbol": "ENSOUSDT",
-      "tf": "15m",
-      "gap": 1.15,
-      "ts": 1795310107
-    },
     {
       "kind": "SELL",
       "symbol": "CELRUSDT",
@@ -1402,15 +1388,43 @@
       "tf": "1h",
       "gap": 1.68,
       "ts": 1795320136
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795320140
+    },
+    {
+      "kind": "SELL",
+      "symbol": "AIGENSYNUSDT",
+      "tf": "4h",
+      "gap": 1.24,
+      "ts": 1795320163
     }
   ],
-  "trades": [],
+  "trades": [
+    {
+      "symbol": "AIGENSYNUSDT",
+      "side": "SELL",
+      "entry": 0.01513,
+      "tp": 0.01475175,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.01513,
+      "pnl": -0.24,
+      "tf": "1h"
+    }
+  ],
   "start": 1000.0,
   "session_start": 1795306140,
   "realized": -9.2955,
   "closed_n": 4,
-  "open_upnl": 0,
-  "equity": 990.7045,
+  "open_upnl": -0.24,
+  "equity": 990.4645,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
