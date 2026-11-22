@@ -6495,16 +6495,6 @@
   ],
   "pending": [
     {
-      "symbol": "BILLUSDT",
-      "tf": "1h",
-      "candle_ts": 1795114800,
-      "side": "SELL",
-      "upper": 0.00462984906474998,
-      "open": 0.00468,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "SAPIENUSDT",
       "tf": "1h",
       "candle_ts": 1795114800,
@@ -9485,6 +9475,16 @@
       "side": "LONG",
       "upper": 60591.64094690616,
       "open": 59474.3,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "BTCUSDT",
+      "tf": "15m",
+      "candle_ts": 1795317300,
+      "side": "LONG",
+      "upper": 60643.64306631735,
+      "open": 59299.1,
       "reported": false
     }
   ],
@@ -9795,20 +9795,13 @@
     "JUVUSDT": 1795345325,
     "BEMUSDT": 1795353374,
     "QUID1USDT": 1795354270,
-    "ATMUSDT": 1795358863
+    "ATMUSDT": 1795358863,
+    "ARROWUSDT": 1795360548,
+    "BARUSDT": 1795360559
   },
   "last_trade_report_ts": 1795316705,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795052847,
-      "kind": "gap_result",
-      "symbol": "IRYSUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
     {
       "ts": 1795053851,
       "kind": "gap_result",
@@ -13393,6 +13386,15 @@
     },
     {
       "ts": 1795316565,
+      "kind": "gap_result",
+      "symbol": "BTCUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795317383,
       "kind": "gap_result",
       "symbol": "BTCUSDT",
       "tf": "15m",
