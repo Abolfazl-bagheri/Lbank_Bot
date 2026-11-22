@@ -1,29 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795308437,
+  "updated_at": 1795308683,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795294840
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795294965
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795295111
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,35 +1381,42 @@
       "tf": "15m",
       "gap": 1.37,
       "ts": 1795308437
-    }
-  ],
-  "trades": [
+    },
     {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795308482
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795308560
+    },
+    {
+      "kind": "GAP",
       "symbol": "DCTYUSDT",
-      "side": "SELL",
-      "entry": 0.00405,
-      "tp": 0.00394875,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.00392,
-      "pnl": 6.1798,
-      "tf": "15m"
+      "tf": "1h",
+      "gap": 13.38,
+      "ts": 1795308683
     }
   ],
+  "trades": [],
   "start": 1000.0,
   "session_start": 1795306140,
-  "realized": -27.8531,
-  "closed_n": 1,
-  "open_upnl": 6.1798,
-  "equity": 978.3267,
+  "realized": -21.4334,
+  "closed_n": 2,
+  "open_upnl": 0,
+  "equity": 978.5666,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 0,
+    "profit": 6.4198,
     "loss": -27.8531,
-    "count": 1
+    "count": 2
   }
 }
