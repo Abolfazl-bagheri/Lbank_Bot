@@ -9456,7 +9456,8 @@
       "side": "SELL",
       "upper": 0.015091824935971263,
       "open": 0.01535,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "AIGENSYNUSDT",
@@ -9474,7 +9475,8 @@
       "side": "LONG",
       "upper": 0.006479342704216865,
       "open": 0.002799,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "DGAIUSDT",
@@ -9831,24 +9833,6 @@
   "last_trade_report_ts": 1795323081,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795057523,
-      "kind": "gap_result",
-      "symbol": "GOLDUSDT",
-      "tf": "5m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795057861,
-      "kind": "gap_result",
-      "symbol": "XAUTUSDT",
-      "tf": "5m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795057873,
       "kind": "gap_result",
@@ -13427,6 +13411,24 @@
       "kind": "gap_result",
       "symbol": "BLESSUSDT",
       "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795323741,
+      "kind": "gap_result",
+      "symbol": "AIGENSYNUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795323743,
+      "kind": "gap_result",
+      "symbol": "AKEUSDT",
+      "tf": "1h",
       "gap": 0.0,
       "filled": true,
       "note": "filled"
