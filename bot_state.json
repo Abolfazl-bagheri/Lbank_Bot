@@ -201,6 +201,31 @@
       "last_leg_candle_ts": 1795398300,
       "dry_run": true,
       "order_id": "PAPER-MINIMAXUSDT-1795398370"
+    },
+    {
+      "symbol": "LAOPUUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 33.91,
+      "qty": 5.898,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 33.06225,
+      "tf": "15m",
+      "opened_at": 1795398385,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 33.91,
+          "ts": 1795398385
+        }
+      ],
+      "entry_candle_ts": 1795398300,
+      "last_leg_candle_ts": 1795398300,
+      "dry_run": true,
+      "order_id": "PAPER-LAOPUUSDT-1795398385"
     }
   ],
   "trade_history": [
@@ -6657,16 +6682,6 @@
   ],
   "pending": [
     {
-      "symbol": "ELSAUSDT",
-      "tf": "1h",
-      "candle_ts": 1795186800,
-      "side": "SELL",
-      "upper": 0.06373048985535383,
-      "open": 0.06419,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "HUMAUSDT",
       "tf": "15m",
       "candle_ts": 1795186800,
@@ -9644,6 +9659,15 @@
       "side": "SELL",
       "upper": 13.011306211285001,
       "open": 12.97,
+      "reported": false
+    },
+    {
+      "symbol": "MINIMAXUSDT",
+      "tf": "15m",
+      "candle_ts": 1795398300,
+      "side": "SELL",
+      "upper": 12.88281211031163,
+      "open": 13.31,
       "reported": false
     }
   ],
