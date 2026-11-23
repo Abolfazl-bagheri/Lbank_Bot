@@ -75,16 +75,18 @@
       "symbol": "UMCUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 13.276584469955125,
-      "qty": 45.1924,
-      "margin": 30.0,
+      "entry": 13.414594572841208,
+      "qty": 104.364,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 12.944669858206247,
+      "tp_price": 13.079229708520177,
       "tf": "1h",
       "opened_at": 1795398358,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
+      "adds": 2,
+      "last_leg_margin": 40.0,
+      "used_res_levels": [
+        13.57
+      ],
       "steps": [
         {
           "px": 13.23,
@@ -93,10 +95,14 @@
         {
           "px": 13.3,
           "ts": 1795399337
+        },
+        {
+          "px": 13.52,
+          "ts": 1795425079
         }
       ],
       "entry_candle_ts": 1795398300,
-      "last_leg_candle_ts": 1795399200,
+      "last_leg_candle_ts": 1795425079,
       "dry_run": true,
       "order_id": "PAPER-UMCUSDT-1795398358"
     },
