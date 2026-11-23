@@ -9592,7 +9592,8 @@
       "side": "SELL",
       "upper": 0.019711899097784383,
       "open": 0.01963,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "MSTUUSDT",
@@ -9601,7 +9602,8 @@
       "side": "SELL",
       "upper": 10.634264542823269,
       "open": 10.48,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "TRUTHUSDT",
@@ -9610,7 +9612,8 @@
       "side": "SELL",
       "upper": 0.015243303546556258,
       "open": 0.015198,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "MSTUUSDT",
@@ -9619,7 +9622,8 @@
       "side": "SELL",
       "upper": 10.634264542823269,
       "open": 10.48,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -9950,42 +9954,6 @@
   "last_trade_report_ts": 1795426843,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795134749,
-      "kind": "gap_result",
-      "symbol": "IRYSUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795135666,
-      "kind": "gap_result",
-      "symbol": "PIPPINUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795140270,
-      "kind": "gap_result",
-      "symbol": "HUMAUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
-    {
-      "ts": 1795140278,
-      "kind": "gap_result",
-      "symbol": "XAUTUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795140282,
       "kind": "gap_result",
@@ -13543,6 +13511,42 @@
     },
     {
       "ts": 1795426316,
+      "kind": "gap_result",
+      "symbol": "MSTUUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795427201,
+      "kind": "gap_result",
+      "symbol": "ZCATUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795427203,
+      "kind": "gap_result",
+      "symbol": "MSTUUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795427206,
+      "kind": "gap_result",
+      "symbol": "TRUTHUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
+    },
+    {
+      "ts": 1795427209,
       "kind": "gap_result",
       "symbol": "MSTUUSDT",
       "tf": "15m",
