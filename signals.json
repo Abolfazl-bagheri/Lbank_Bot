@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795420850,
+  "updated_at": 1795420861,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "UNITREEUSDT",
-      "tf": "1h",
-      "gap": 1.72,
-      "ts": 1795398859
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795398995
-    },
     {
       "kind": "HEARTBEAT",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "1h",
       "gap": 1.69,
       "ts": 1795420850
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795420858
+    },
+    {
+      "kind": "SELL",
+      "symbol": "TAUSDT",
+      "tf": "1h",
+      "gap": 1.17,
+      "ts": 1795420861
     }
   ],
   "trades": [
@@ -1469,14 +1469,27 @@
       "px": 0.13789,
       "pnl": 14.3153,
       "tf": "15m"
+    },
+    {
+      "symbol": "ARIAUSDT",
+      "side": "SELL",
+      "entry": 0.3257,
+      "tp": 0.3175575,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.3257,
+      "pnl": -0.24,
+      "tf": "1h"
     }
   ],
   "start": 1000.0,
   "session_start": 1795392398,
   "realized": 93.8877,
   "closed_n": 15,
-  "open_upnl": -3.5663,
-  "equity": 1090.3214,
+  "open_upnl": -3.8063,
+  "equity": 1090.0814,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
