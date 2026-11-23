@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795474837,
+  "updated_at": 1795474890,
   "signals": [
-    {
-      "kind": "HEARTBEAT",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795428703
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795428998
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "15m",
       "gap": 1.82,
       "ts": 1795474837
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795474844
+    },
+    {
+      "kind": "SELL",
+      "symbol": "FLNCUSDT",
+      "tf": "1h",
+      "gap": 1.21,
+      "ts": 1795474890
     }
   ],
   "trades": [
@@ -1460,14 +1460,14 @@
     {
       "symbol": "RAMUSDT",
       "side": "SELL",
-      "entry": 4.968996380085252,
-      "tp": 4.844771470583121,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
+      "entry": 4.962134205558583,
+      "tp": 4.838080850419619,
+      "adds": 2,
+      "pele": 3,
+      "margin": 70.0,
       "lev": 20,
       "px": 4.957,
-      "pnl": 0.7285,
+      "pnl": -0.2315,
       "tf": "15m"
     }
   ],
@@ -1475,8 +1475,8 @@
   "session_start": 1795392398,
   "realized": 73.2294,
   "closed_n": 24,
-  "open_upnl": -49.4458,
-  "equity": 1023.7836,
+  "open_upnl": -50.4058,
+  "equity": 1022.8236,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
