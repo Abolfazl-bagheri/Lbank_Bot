@@ -159,6 +159,31 @@
       "last_leg_candle_ts": 1795421174,
       "dry_run": true,
       "order_id": "PAPER-UNITREEUSDT-1795420905"
+    },
+    {
+      "symbol": "CYSUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.04777,
+      "qty": 4186.7281,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.04657575,
+      "tf": "1h",
+      "opened_at": 1795424454,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.04777,
+          "ts": 1795424454
+        }
+      ],
+      "entry_candle_ts": 1795424400,
+      "last_leg_candle_ts": 1795424400,
+      "dry_run": true,
+      "order_id": "PAPER-CYSUSDT-1795424454"
     }
   ],
   "trade_history": [
@@ -6639,16 +6664,6 @@
   ],
   "pending": [
     {
-      "symbol": "SOXSUSDT",
-      "tf": "1h",
-      "candle_ts": 1795194000,
-      "side": "SELL",
-      "upper": 76.89547457684287,
-      "open": 78.0,
-      "reported": true,
-      "filled": false
-    },
-    {
       "symbol": "SKDDUSDT",
       "tf": "1h",
       "candle_ts": 1795194000,
@@ -9627,6 +9642,15 @@
       "upper": 0.10785638520668334,
       "open": 0.10849,
       "reported": false
+    },
+    {
+      "symbol": "HUSDT",
+      "tf": "1h",
+      "candle_ts": 1795424400,
+      "side": "SELL",
+      "upper": 0.013544086589762224,
+      "open": 0.01364,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -9953,7 +9977,7 @@
     "XVGUSDT": 1795464331,
     "1000000BABYDOGEUSDT": 1795464332
   },
-  "last_trade_report_ts": 1795422997,
+  "last_trade_report_ts": 1795424118,
   "last_known_version": "2.10.0",
   "lessons": [
     {
