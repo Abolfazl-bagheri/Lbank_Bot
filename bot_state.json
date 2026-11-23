@@ -9640,7 +9640,8 @@
       "side": "SELL",
       "upper": 50.959986049167895,
       "open": 50.94,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -9967,18 +9968,9 @@
     "XVGUSDT": 1795464331,
     "1000000BABYDOGEUSDT": 1795464332
   },
-  "last_trade_report_ts": 1795424118,
+  "last_trade_report_ts": 1795425030,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795132106,
-      "kind": "gap_result",
-      "symbol": "SILVERUSDT",
-      "tf": "5m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795132109,
       "kind": "gap_result",
@@ -13566,6 +13558,15 @@
       "kind": "gap_result",
       "symbol": "ELSAUSDT",
       "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795425025,
+      "kind": "gap_result",
+      "symbol": "CRCLUSDT",
+      "tf": "5m",
       "gap": 0.0,
       "filled": true,
       "note": "filled"
