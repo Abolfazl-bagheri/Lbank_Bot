@@ -130,42 +130,6 @@
       "order_id": "PAPER-LAOPUUSDT-1795398385"
     },
     {
-      "symbol": "ZESTUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.13948362791598248,
-      "qty": 10037.020199999999,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 0.1359965372180829,
-      "tf": "15m",
-      "opened_at": 1795402046,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [
-        0.14253,
-        0.13938
-      ],
-      "steps": [
-        {
-          "px": 0.13678,
-          "ts": 1795402046
-        },
-        {
-          "px": 0.14204,
-          "ts": 1795415797
-        },
-        {
-          "px": 0.13892,
-          "ts": 1795419232
-        }
-      ],
-      "entry_candle_ts": 1795401900,
-      "last_leg_candle_ts": 1795419232,
-      "dry_run": true,
-      "order_id": "PAPER-ZESTUSDT-1795402046"
-    },
-    {
       "symbol": "ARIAUSDT",
       "side": "SELL",
       "status": "open",
@@ -223,36 +187,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "KGENUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.07627,
-      "qty": 2622.263,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.07436325,
-      "tf": "15m",
-      "opened_at": 1794412059,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.07627,
-          "ts": 1794412059
-        }
-      ],
-      "entry_candle_ts": 1794411900,
-      "last_leg_candle_ts": 1794411900,
-      "dry_run": true,
-      "order_id": "PAPER-KGENUSDT-1794412059",
-      "closed_at": 1794415745,
-      "close_px": 0.07307,
-      "pnl_usdt": 8.391241641536668,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "AGTUSDT",
       "side": "SELL",
@@ -6683,6 +6617,47 @@
       "closed_at": 1795421202,
       "close_px": 0.01309,
       "pnl_usdt": 6.6469719350073975,
+      "close_reason": "TP50",
+      "why": "TP50"
+    },
+    {
+      "symbol": "ZESTUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.13948362791598248,
+      "qty": 10037.020199999999,
+      "margin": 70.0,
+      "leverage": 20,
+      "tp_price": 0.1359965372180829,
+      "tf": "15m",
+      "opened_at": 1795402046,
+      "adds": 2,
+      "last_leg_margin": 40.0,
+      "used_res_levels": [
+        0.14253,
+        0.13938
+      ],
+      "steps": [
+        {
+          "px": 0.13678,
+          "ts": 1795402046
+        },
+        {
+          "px": 0.14204,
+          "ts": 1795415797
+        },
+        {
+          "px": 0.13892,
+          "ts": 1795419232
+        }
+      ],
+      "entry_candle_ts": 1795401900,
+      "last_leg_candle_ts": 1795419232,
+      "dry_run": true,
+      "order_id": "PAPER-ZESTUSDT-1795402046",
+      "closed_at": 1795422016,
+      "close_px": 0.13594,
+      "pnl_usdt": 35.56746520361343,
       "close_reason": "TP50",
       "why": "TP50"
     }
