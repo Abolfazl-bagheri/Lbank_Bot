@@ -135,24 +135,28 @@
       "symbol": "LAOPUUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 33.91,
-      "qty": 5.898,
-      "margin": 10.0,
+      "entry": 33.8699765168108,
+      "qty": 17.7148,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 33.06225,
-      "tf": "15m",
+      "tp_price": 33.023227103890534,
+      "tf": "1h",
       "opened_at": 1795398385,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 33.91,
           "ts": 1795398385
+        },
+        {
+          "px": 33.85,
+          "ts": 1795399361
         }
       ],
       "entry_candle_ts": 1795398300,
-      "last_leg_candle_ts": 1795398300,
+      "last_leg_candle_ts": 1795399200,
       "dry_run": true,
       "order_id": "PAPER-LAOPUUSDT-1795398385"
     },
@@ -6678,26 +6682,6 @@
   ],
   "pending": [
     {
-      "symbol": "TEAMUSDT",
-      "tf": "15m",
-      "candle_ts": 1795187700,
-      "side": "SELL",
-      "upper": 140.10505035904603,
-      "open": 141.62,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "UNHUSDT",
-      "tf": "15m",
-      "candle_ts": 1795187700,
-      "side": "SELL",
-      "upper": 342.15407623710087,
-      "open": 341.94,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "XAUTUSDT",
       "tf": "5m",
       "candle_ts": 1795188000,
@@ -9659,6 +9643,24 @@
       "side": "SELL",
       "upper": 0.02137576254834951,
       "open": 0.02175,
+      "reported": false
+    },
+    {
+      "symbol": "UMCUSDT",
+      "tf": "1h",
+      "candle_ts": 1795399200,
+      "side": "SELL",
+      "upper": 13.035152485998395,
+      "open": 13.33,
+      "reported": false
+    },
+    {
+      "symbol": "UNITREEUSDT",
+      "tf": "15m",
+      "candle_ts": 1795399200,
+      "side": "SELL",
+      "upper": 93.9828053875755,
+      "open": 94.473,
       "reported": false
     }
   ],
