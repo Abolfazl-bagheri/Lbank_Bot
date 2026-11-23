@@ -9584,7 +9584,8 @@
       "side": "LONG",
       "upper": 69.7700004723308,
       "open": 69.77,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -9911,15 +9912,6 @@
   "last_trade_report_ts": 1795472505,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795158308,
-      "kind": "gap_result",
-      "symbol": "BLESSUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
     {
       "ts": 1795158312,
       "kind": "gap_result",
@@ -13504,6 +13496,15 @@
     },
     {
       "ts": 1795472260,
+      "kind": "gap_result",
+      "symbol": "TTMIUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795473147,
       "kind": "gap_result",
       "symbol": "TTMIUSDT",
       "tf": "15m",
