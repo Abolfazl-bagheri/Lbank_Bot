@@ -103,31 +103,6 @@
       "order_id": "PAPER-KUAISHOUUSDT-1795397489"
     },
     {
-      "symbol": "ZHONGJIUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 66.68,
-      "qty": 2.9994,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 65.013,
-      "tf": "15m",
-      "opened_at": 1795398329,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 66.68,
-          "ts": 1795398329
-        }
-      ],
-      "entry_candle_ts": 1795398300,
-      "last_leg_candle_ts": 1795398300,
-      "dry_run": true,
-      "order_id": "PAPER-ZHONGJIUSDT-1795398329"
-    },
-    {
       "symbol": "ZHIPUUSDT",
       "side": "SELL",
       "status": "open",
@@ -229,36 +204,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "JCTUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.005851,
-      "qty": 34182.1911,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.005704725,
-      "tf": "15m",
-      "opened_at": 1794366167,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.005851,
-          "ts": 1794366167
-        }
-      ],
-      "entry_candle_ts": 1794366000,
-      "last_leg_candle_ts": 1794366000,
-      "dry_run": true,
-      "order_id": "PAPER-JCTUSDT-1794366167",
-      "closed_at": 1794399514,
-      "close_px": 0.00664,
-      "pnl_usdt": -26.96974876089556,
-      "close_reason": "STOP",
-      "why": "STOP"
-    },
     {
       "symbol": "ARIAUSDT",
       "side": "SELL",
@@ -6678,6 +6623,36 @@
       "pnl_usdt": -9.205287466157056,
       "close_reason": "STOP",
       "why": "STOP"
+    },
+    {
+      "symbol": "ZHONGJIUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 66.68,
+      "qty": 2.9994,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 65.013,
+      "tf": "15m",
+      "opened_at": 1795398329,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 66.68,
+          "ts": 1795398329
+        }
+      ],
+      "entry_candle_ts": 1795398300,
+      "last_leg_candle_ts": 1795398300,
+      "dry_run": true,
+      "order_id": "PAPER-ZHONGJIUSDT-1795398329",
+      "closed_at": 1795398989,
+      "close_px": 64.7,
+      "pnl_usdt": 5.938812237552501,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
