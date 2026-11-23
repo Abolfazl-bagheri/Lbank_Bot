@@ -214,6 +214,31 @@
       "last_leg_candle_ts": 1795420800,
       "dry_run": true,
       "order_id": "PAPER-HUSDT-1795420872"
+    },
+    {
+      "symbol": "UNITREEUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 106.19,
+      "qty": 1.8834,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 103.53524999999999,
+      "tf": "4h",
+      "opened_at": 1795420905,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 106.19,
+          "ts": 1795420905
+        }
+      ],
+      "entry_candle_ts": 1795420800,
+      "last_leg_candle_ts": 1795420800,
+      "dry_run": true,
+      "order_id": "PAPER-UNITREEUSDT-1795420905"
     }
   ],
   "trade_history": [
@@ -6683,36 +6708,6 @@
   ],
   "pending": [
     {
-      "symbol": "DOGSUSDT",
-      "tf": "15m",
-      "candle_ts": 1795189500,
-      "side": "LONG",
-      "upper": 2.6792991272593205e-05,
-      "open": 2.462e-05,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "RATSUSDT",
-      "tf": "15m",
-      "candle_ts": 1795189500,
-      "side": "LONG",
-      "upper": 1.183363670582306e-05,
-      "open": 1.074e-05,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "SKDDUSDT",
-      "tf": "1h",
-      "candle_ts": 1795190400,
-      "side": "SELL",
-      "upper": 13.722215817334495,
-      "open": 14.036,
-      "reported": true,
-      "filled": false
-    },
-    {
       "symbol": "SOXSUSDT",
       "tf": "1h",
       "candle_ts": 1795190400,
@@ -9672,6 +9667,33 @@
       "side": "SELL",
       "upper": 0.10660102280191795,
       "open": 0.10753,
+      "reported": false
+    },
+    {
+      "symbol": "HUSDT",
+      "tf": "1h",
+      "candle_ts": 1795420800,
+      "side": "SELL",
+      "upper": 0.013176212235817632,
+      "open": 0.01342,
+      "reported": false
+    },
+    {
+      "symbol": "BLURUSDT",
+      "tf": "4h",
+      "candle_ts": 1795420800,
+      "side": "SELL",
+      "upper": 0.007870018276271757,
+      "open": 0.00799,
+      "reported": false
+    },
+    {
+      "symbol": "ARIAUSDT",
+      "tf": "4h",
+      "candle_ts": 1795420800,
+      "side": "SELL",
+      "upper": 0.31093635551477555,
+      "open": 0.32302,
       "reported": false
     }
   ],
