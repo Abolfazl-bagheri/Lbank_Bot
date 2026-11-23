@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795392925,
+  "updated_at": 1795392937,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795371713
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795371934
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,15 +1388,43 @@
       "tf": "15m",
       "gap": 1.89,
       "ts": 1795392925
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795392930
+    },
+    {
+      "kind": "SELL",
+      "symbol": "CSOPSKHYNIX2LUSDT",
+      "tf": "15m",
+      "gap": 1.14,
+      "ts": 1795392937
     }
   ],
-  "trades": [],
+  "trades": [
+    {
+      "symbol": "SKUUUSDT",
+      "side": "SELL",
+      "entry": 9.08,
+      "tp": 8.853,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 9.08,
+      "pnl": -0.24,
+      "tf": "15m"
+    }
+  ],
   "start": 1000.0,
   "session_start": 1795392398,
   "realized": 0,
   "closed_n": 0,
-  "open_upnl": 0,
-  "equity": 1000.0,
+  "open_upnl": -0.24,
+  "equity": 999.76,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
