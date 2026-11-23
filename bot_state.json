@@ -170,24 +170,30 @@
       "symbol": "VELVETUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.07971,
-      "qty": 2509.0955,
-      "margin": 10.0,
+      "entry": 0.08144425958432995,
+      "qty": 7367.001700000001,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.07771725,
+      "tp_price": 0.0794081530947217,
       "tf": "1h",
       "opened_at": 1795431674,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.08263
+      ],
       "steps": [
         {
           "px": 0.07971,
           "ts": 1795431674
+        },
+        {
+          "px": 0.08234,
+          "ts": 1795434978
         }
       ],
       "entry_candle_ts": 1795431600,
-      "last_leg_candle_ts": 1795431600,
+      "last_leg_candle_ts": 1795434978,
       "dry_run": true,
       "order_id": "PAPER-VELVETUSDT-1795431674"
     }
@@ -9903,7 +9909,6 @@
     "BBXUSDT": 1795114016,
     "SPORTFUNUSDT": 1795118680,
     "TQQQUSDT": 1795133106,
-    "LWLGUSDT": 1795159020,
     "SPACE1USDT": 1795193226,
     "FUTUUSDT": 1795202410,
     "APROUSDT": 1795234598,
