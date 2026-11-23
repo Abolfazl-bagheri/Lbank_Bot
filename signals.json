@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795393733,
+  "updated_at": 1795393875,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795373418
-    },
     {
       "kind": "GAP",
       "symbol": "AGTUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 1.11,
       "ts": 1795393733
+    },
+    {
+      "kind": "SELL",
+      "symbol": "MOGUSDT",
+      "tf": "15m",
+      "gap": 1.11,
+      "ts": 1795393875
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 9.001,
-      "pnl": 1.5001,
+      "px": 9.023,
+      "pnl": 1.0155,
       "tf": "15m"
     },
     {
@@ -1427,8 +1427,8 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 4.037,
-      "pnl": 2.3641,
+      "px": 4.041,
+      "pnl": 1.7727,
       "tf": "15m"
     }
   ],
@@ -1436,8 +1436,8 @@
   "session_start": 1795392398,
   "realized": 0,
   "closed_n": 0,
-  "open_upnl": 3.8642,
-  "equity": 1003.8642,
+  "open_upnl": 2.7882,
+  "equity": 1002.7882,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
