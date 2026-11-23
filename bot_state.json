@@ -164,74 +164,9 @@
       "last_leg_candle_ts": 1795419232,
       "dry_run": true,
       "order_id": "PAPER-ZESTUSDT-1795402046"
-    },
-    {
-      "symbol": "CLAUDIAUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.01100318160653712,
-      "qty": 127235.9259,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 0.010728102066373691,
-      "tf": "15m",
-      "opened_at": 1795418180,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [
-        0.010999
-      ],
-      "steps": [
-        {
-          "px": 0.011108,
-          "ts": 1795418180
-        },
-        {
-          "px": 0.011032,
-          "ts": 1795419043
-        },
-        {
-          "px": 0.010963,
-          "ts": 1795419338
-        }
-      ],
-      "entry_candle_ts": 1795418100,
-      "last_leg_candle_ts": 1795419338,
-      "dry_run": true,
-      "order_id": "PAPER-CLAUDIAUSDT-1795418180"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "OPGUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.1562,
-      "qty": 1280.4097,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.152295,
-      "tf": "1h",
-      "opened_at": 1794412919,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.1562,
-          "ts": 1794412919
-        }
-      ],
-      "entry_candle_ts": 1794412800,
-      "last_leg_candle_ts": 1794412800,
-      "dry_run": true,
-      "order_id": "PAPER-OPGUSDT-1794412919",
-      "closed_at": 1794414844,
-      "close_px": 0.1507,
-      "pnl_usdt": 7.042253521126765,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "ANSEMUSDT",
       "side": "SELL",
@@ -6654,19 +6589,49 @@
       "pnl_usdt": 33.22637687237245,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "CLAUDIAUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.01100318160653712,
+      "qty": 127235.9259,
+      "margin": 70.0,
+      "leverage": 20,
+      "tp_price": 0.010728102066373691,
+      "tf": "15m",
+      "opened_at": 1795418180,
+      "adds": 2,
+      "last_leg_margin": 40.0,
+      "used_res_levels": [
+        0.010999
+      ],
+      "steps": [
+        {
+          "px": 0.011108,
+          "ts": 1795418180
+        },
+        {
+          "px": 0.011032,
+          "ts": 1795419043
+        },
+        {
+          "px": 0.010963,
+          "ts": 1795419338
+        }
+      ],
+      "entry_candle_ts": 1795418100,
+      "last_leg_candle_ts": 1795419338,
+      "dry_run": true,
+      "order_id": "PAPER-CLAUDIAUSDT-1795418180",
+      "closed_at": 1795420026,
+      "close_px": 0.010549,
+      "pnl_usdt": 57.78821725292621,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
-    {
-      "symbol": "DODOUSDT",
-      "tf": "15m",
-      "candle_ts": 1795189500,
-      "side": "SELL",
-      "upper": 0.03353130192475628,
-      "open": 0.03414,
-      "reported": true,
-      "filled": true
-    },
     {
       "symbol": "EVAAUSDT",
       "tf": "15m",
@@ -9649,6 +9614,16 @@
       "side": "SELL",
       "upper": 0.010813790126115922,
       "open": 0.010571,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "BULLAUSDT",
+      "tf": "15m",
+      "candle_ts": 1795419900,
+      "side": "SELL",
+      "upper": 0.023130016125481444,
+      "open": 0.02348,
       "reported": false
     }
   ],
@@ -9971,15 +9946,6 @@
   "last_trade_report_ts": 1795418778,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795123966,
-      "kind": "gap_result",
-      "symbol": "NAORISUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795123969,
       "kind": "gap_result",
@@ -13564,6 +13530,15 @@
     },
     {
       "ts": 1795419124,
+      "kind": "gap_result",
+      "symbol": "CLAUDIAUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795420023,
       "kind": "gap_result",
       "symbol": "CLAUDIAUSDT",
       "tf": "15m",
