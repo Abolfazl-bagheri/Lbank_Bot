@@ -6515,46 +6515,6 @@
   ],
   "pending": [
     {
-      "symbol": "TACUSDT",
-      "tf": "15m",
-      "candle_ts": 1795146300,
-      "side": "SELL",
-      "upper": 0.001293281396830532,
-      "open": 0.001309,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "BARDUSDT",
-      "tf": "15m",
-      "candle_ts": 1795146300,
-      "side": "SELL",
-      "upper": 0.09884613331650442,
-      "open": 0.1005,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "BARDUSDT",
-      "tf": "1h",
-      "candle_ts": 1795147200,
-      "side": "SELL",
-      "upper": 0.09726333683083573,
-      "open": 0.1022,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "IRYSUSDT",
-      "tf": "1h",
-      "candle_ts": 1795150800,
-      "side": "LONG",
-      "upper": 0.023888613416379226,
-      "open": 0.01928,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "CASHCATUSDT",
       "tf": "15m",
       "candle_ts": 1795151700,
@@ -9419,7 +9379,8 @@
       "side": "SELL",
       "upper": 0.024261924100453962,
       "open": 0.024518,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CSOPSKHYNIX2LUSDT",
@@ -9428,7 +9389,8 @@
       "side": "SELL",
       "upper": 1.5265357627437017,
       "open": 1.529,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "BULLAUSDT",
@@ -9446,7 +9408,8 @@
       "side": "SELL",
       "upper": 3.962469099740392,
       "open": 3.965,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CSOPSAMSUNG2LUSDT",
@@ -9455,7 +9418,8 @@
       "side": "SELL",
       "upper": 3.791327776025543,
       "open": 3.814,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "SAMSUNGEMUSDT",
@@ -9464,7 +9428,8 @@
       "side": "SELL",
       "upper": 562.7950195968431,
       "open": 567.4,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "SAMSUNGEMUSDT",
@@ -9500,6 +9465,42 @@
       "side": "SELL",
       "upper": 574.6539891226876,
       "open": 581.6,
+      "reported": false
+    },
+    {
+      "symbol": "RAMUSDT",
+      "tf": "15m",
+      "candle_ts": 1795392900,
+      "side": "SELL",
+      "upper": 3.9667324237961337,
+      "open": 3.965,
+      "reported": false
+    },
+    {
+      "symbol": "HANMIUSDT",
+      "tf": "15m",
+      "candle_ts": 1795392900,
+      "side": "SELL",
+      "upper": 114.41587487936255,
+      "open": 116.18,
+      "reported": false
+    },
+    {
+      "symbol": "CSOPSAMSUNG2LUSDT",
+      "tf": "15m",
+      "candle_ts": 1795392900,
+      "side": "SELL",
+      "upper": 3.8136992419390334,
+      "open": 3.84,
+      "reported": false
+    },
+    {
+      "symbol": "MOGUSDT",
+      "tf": "15m",
+      "candle_ts": 1795392900,
+      "side": "SELL",
+      "upper": 8.02e-08,
+      "open": 8.02e-08,
       "reported": false
     }
   ],
@@ -9830,51 +9831,6 @@
   "last_trade_report_ts": 1795392629,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795081635,
-      "kind": "gap_result",
-      "symbol": "XAUTUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795081642,
-      "kind": "gap_result",
-      "symbol": "NAORISUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795082641,
-      "kind": "gap_result",
-      "symbol": "INITUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795082644,
-      "kind": "gap_result",
-      "symbol": "ICNTUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
-    {
-      "ts": 1795082646,
-      "kind": "gap_result",
-      "symbol": "NAORISUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
     {
       "ts": 1795082648,
       "kind": "gap_result",
@@ -13429,6 +13385,51 @@
       "gap": 0.0,
       "filled": true,
       "note": "filled"
+    },
+    {
+      "ts": 1795393058,
+      "kind": "gap_result",
+      "symbol": "BULLAUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795393061,
+      "kind": "gap_result",
+      "symbol": "CSOPSKHYNIX2LUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
+    },
+    {
+      "ts": 1795393072,
+      "kind": "gap_result",
+      "symbol": "RAMUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795393088,
+      "kind": "gap_result",
+      "symbol": "CSOPSAMSUNG2LUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
+    },
+    {
+      "ts": 1795393090,
+      "kind": "gap_result",
+      "symbol": "SAMSUNGEMUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
     }
   ],
   "tune_history": [],
