@@ -6659,46 +6659,6 @@
   ],
   "pending": [
     {
-      "symbol": "CLAUDIAUSDT",
-      "tf": "15m",
-      "candle_ts": 1795197600,
-      "side": "SELL",
-      "upper": 0.007270848834948814,
-      "open": 0.007858,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "SKDDUSDT",
-      "tf": "1h",
-      "candle_ts": 1795197600,
-      "side": "SELL",
-      "upper": 14.689935278635089,
-      "open": 14.872,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "SOXSUSDT",
-      "tf": "1h",
-      "candle_ts": 1795197600,
-      "side": "SELL",
-      "upper": 78.87728223690993,
-      "open": 79.46,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "CLAUDIAUSDT",
-      "tf": "1h",
-      "candle_ts": 1795197600,
-      "side": "SELL",
-      "upper": 0.007342122278523387,
-      "open": 0.007858,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "SOPHUSDT",
       "tf": "1h",
       "candle_ts": 1795197600,
@@ -9628,7 +9588,8 @@
       "side": "SELL",
       "upper": 0.022988984812166616,
       "open": 0.02325,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "MUBARAKUSDT",
@@ -9648,6 +9609,42 @@
       "open": 50.94,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "MSTUUSDT",
+      "tf": "15m",
+      "candle_ts": 1795425300,
+      "side": "SELL",
+      "upper": 10.642953540274782,
+      "open": 10.48,
+      "reported": false
+    },
+    {
+      "symbol": "CRCLUSDT",
+      "tf": "5m",
+      "candle_ts": 1795425300,
+      "side": "SELL",
+      "upper": 51.205751743853256,
+      "open": 51.27,
+      "reported": false
+    },
+    {
+      "symbol": "CRCLUSDT",
+      "tf": "15m",
+      "candle_ts": 1795425300,
+      "side": "SELL",
+      "upper": 51.20977166034012,
+      "open": 51.27,
+      "reported": false
+    },
+    {
+      "symbol": "MSTUUSDT",
+      "tf": "15m",
+      "candle_ts": 1795425300,
+      "side": "SELL",
+      "upper": 10.642953540274782,
+      "open": 10.48,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -9977,15 +9974,6 @@
   "last_trade_report_ts": 1795425030,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795132109,
-      "kind": "gap_result",
-      "symbol": "GOLDUSDT",
-      "tf": "5m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795132111,
       "kind": "gap_result",
@@ -13573,6 +13561,15 @@
       "kind": "gap_result",
       "symbol": "CRCLUSDT",
       "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795425411,
+      "kind": "gap_result",
+      "symbol": "MUBARAKUSDT",
+      "tf": "15m",
       "gap": 0.0,
       "filled": true,
       "note": "filled"
