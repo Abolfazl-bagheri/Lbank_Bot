@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795398384,
+  "updated_at": 1795398394,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "XAUTUSDT",
-      "tf": "15m",
-      "gap": 0.22,
-      "ts": 1795389218
-    },
-    {
-      "kind": "GAP",
-      "symbol": "SILVERUSDT",
-      "tf": "15m",
-      "gap": 0.62,
-      "ts": 1795389222
-    },
     {
       "kind": "SELL",
       "symbol": "XAUTUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "15m",
       "gap": 1.68,
       "ts": 1795398384
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795398388
+    },
+    {
+      "kind": "SELL",
+      "symbol": "KUAISHOUUSDT",
+      "tf": "15m",
+      "gap": 1.07,
+      "ts": 1795398394
     }
   ],
   "trades": [
@@ -1495,14 +1495,27 @@
       "px": 13.32,
       "pnl": -0.24,
       "tf": "15m"
+    },
+    {
+      "symbol": "LAOPUUSDT",
+      "side": "SELL",
+      "entry": 33.91,
+      "tp": 33.06225,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 33.91,
+      "pnl": -0.24,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1795392398,
   "realized": 12.6521,
   "closed_n": 6,
-  "open_upnl": -4.6579,
-  "equity": 1007.9942,
+  "open_upnl": -4.8979,
+  "equity": 1007.7542,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
