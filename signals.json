@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795398356,
+  "updated_at": 1795398368,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795389048
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795389084
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "15m",
       "gap": 1.65,
       "ts": 1795398356
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795398361
+    },
+    {
+      "kind": "SELL",
+      "symbol": "MINIMAXUSDT",
+      "tf": "15m",
+      "gap": 3.28,
+      "ts": 1795398368
     }
   ],
   "trades": [
@@ -1469,14 +1469,27 @@
       "px": 44.66,
       "pnl": -0.24,
       "tf": "15m"
+    },
+    {
+      "symbol": "UMCUSDT",
+      "side": "SELL",
+      "entry": 13.23,
+      "tp": 12.89925,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 13.23,
+      "pnl": -0.24,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1795392398,
   "realized": 12.6521,
   "closed_n": 6,
-  "open_upnl": -4.1779,
-  "equity": 1008.4742,
+  "open_upnl": -4.4179,
+  "equity": 1008.2342,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
