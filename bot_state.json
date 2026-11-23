@@ -190,6 +190,31 @@
       "last_leg_candle_ts": 1795431600,
       "dry_run": true,
       "order_id": "PAPER-TAUSDT-1795431635"
+    },
+    {
+      "symbol": "VELVETUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.07971,
+      "qty": 2509.0955,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.07771725,
+      "tf": "1h",
+      "opened_at": 1795431674,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.07971,
+          "ts": 1795431674
+        }
+      ],
+      "entry_candle_ts": 1795431600,
+      "last_leg_candle_ts": 1795431600,
+      "dry_run": true,
+      "order_id": "PAPER-VELVETUSDT-1795431674"
     }
   ],
   "trade_history": [
@@ -6659,16 +6684,6 @@
   ],
   "pending": [
     {
-      "symbol": "MOGUSDT",
-      "tf": "15m",
-      "candle_ts": 1795212900,
-      "side": "SELL",
-      "upper": 7.583421751676007e-08,
-      "open": 7.51e-08,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "DNAUSDT",
       "tf": "15m",
       "candle_ts": 1795212900,
@@ -9647,6 +9662,15 @@
       "side": "SELL",
       "upper": 0.06592508332898481,
       "open": 0.0668,
+      "reported": false
+    },
+    {
+      "symbol": "TAUSDT",
+      "tf": "1h",
+      "candle_ts": 1795431600,
+      "side": "SELL",
+      "upper": 0.11484967609275847,
+      "open": 0.1166,
       "reported": false
     }
   ],
