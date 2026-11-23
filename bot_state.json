@@ -9601,7 +9601,8 @@
       "side": "SELL",
       "upper": 4.866994947377268,
       "open": 4.822,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "FLNCUSDT",
@@ -9941,20 +9942,12 @@
     "MEMECOINUSDT": 1795514717,
     "CZUSDT": 1795514715,
     "PIPEDOGUSDT": 1795514733,
-    "MANCERUSDT": 1795514720
+    "MANCERUSDT": 1795514720,
+    "FIGHT1USDT": 1795519022
   },
   "last_trade_report_ts": 1795475490,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795183542,
-      "kind": "gap_result",
-      "symbol": "BLESSUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795183544,
       "kind": "gap_result",
@@ -13545,6 +13538,15 @@
       "gap": 0.0,
       "filled": true,
       "note": "filled"
+    },
+    {
+      "ts": 1795475853,
+      "kind": "gap_result",
+      "symbol": "RAMUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
     }
   ],
   "tune_history": [],
