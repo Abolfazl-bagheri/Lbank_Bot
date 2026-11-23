@@ -95,68 +95,9 @@
       "last_leg_candle_ts": 1795396500,
       "dry_run": true,
       "order_id": "PAPER-UMCUSDT-1795396544"
-    },
-    {
-      "symbol": "CYPHUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 1.614,
-      "qty": 123.9157,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 1.57365,
-      "tf": "15m",
-      "opened_at": 1795396679,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 1.614,
-          "ts": 1795396679
-        }
-      ],
-      "entry_candle_ts": 1795396500,
-      "last_leg_candle_ts": 1795396500,
-      "dry_run": true,
-      "order_id": "PAPER-CYPHUSDT-1795396679"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "MERLUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.035869727323355756,
-      "qty": 16727.197200000002,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.03497298414027186,
-      "tf": "1h",
-      "opened_at": 1794339031,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.03601,
-          "ts": 1794339031
-        },
-        {
-          "px": 0.0358,
-          "ts": 1794340850
-        }
-      ],
-      "entry_candle_ts": 1794339000,
-      "last_leg_candle_ts": 1794340800,
-      "dry_run": true,
-      "order_id": "PAPER-MERLUSDT-1794339031",
-      "closed_at": 1794341937,
-      "close_px": 0.03331,
-      "pnl_usdt": 42.81706354130629,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "ARIAUSDT",
       "side": "SELL",
@@ -6584,48 +6525,39 @@
       "pnl_usdt": 16.243766813163656,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "CYPHUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 1.614,
+      "qty": 123.9157,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 1.57365,
+      "tf": "15m",
+      "opened_at": 1795396679,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 1.614,
+          "ts": 1795396679
+        }
+      ],
+      "entry_candle_ts": 1795396500,
+      "last_leg_candle_ts": 1795396500,
+      "dry_run": true,
+      "order_id": "PAPER-CYPHUSDT-1795396679",
+      "closed_at": 1795396868,
+      "close_px": 1.556,
+      "pnl_usdt": 7.187112763320949,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
-    {
-      "symbol": "CRCLUSDT",
-      "tf": "5m",
-      "candle_ts": 1795159500,
-      "side": "LONG",
-      "upper": 51.296488919344654,
-      "open": 50.94,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "SILVERUSDT",
-      "tf": "5m",
-      "candle_ts": 1795159500,
-      "side": "LONG",
-      "upper": 42.38337416178168,
-      "open": 41.83,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "FOLKSUSDT",
-      "tf": "15m",
-      "candle_ts": 1795159800,
-      "side": "SELL",
-      "upper": 2.2692324327501256,
-      "open": 2.292,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "XAUTUSDT",
-      "tf": "5m",
-      "candle_ts": 1795160100,
-      "side": "LONG",
-      "upper": 3563.0311059644364,
-      "open": 3542.87,
-      "reported": false
-    },
     {
       "symbol": "XAUTUSDT",
       "tf": "5m",
@@ -9579,6 +9511,42 @@
       "upper": 1.5824564433292712,
       "open": 1.591,
       "reported": false
+    },
+    {
+      "symbol": "GOLDUSDT",
+      "tf": "5m",
+      "candle_ts": 1795396800,
+      "side": "SELL",
+      "upper": 3626.3678834068014,
+      "open": 3628.82,
+      "reported": false
+    },
+    {
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
+      "candle_ts": 1795396800,
+      "side": "SELL",
+      "upper": 3612.882521631427,
+      "open": 3615.47,
+      "reported": false
+    },
+    {
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
+      "candle_ts": 1795396800,
+      "side": "SELL",
+      "upper": 3611.813576269022,
+      "open": 3615.47,
+      "reported": false
+    },
+    {
+      "symbol": "GOLDUSDT",
+      "tf": "5m",
+      "candle_ts": 1795396800,
+      "side": "SELL",
+      "upper": 3624.997483305149,
+      "open": 3628.82,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -9874,7 +9842,6 @@
     "OFCUSDT": 1795367824,
     "TRUMPSOLUSDT": 1795369657,
     "RIOTUSDT": 1795369657,
-    "FRONGUSDT": 1795396606,
     "OROCHIUSDT": 1795396613,
     "FIGUSDT": 1795400232,
     "UP2USDT": 1795403070,
@@ -9905,7 +9872,7 @@
     "BEMUSDT": 1795435543,
     "KNTQUSDT": 1795435456
   },
-  "last_trade_report_ts": 1795395833,
+  "last_trade_report_ts": 1795396788,
   "last_known_version": "2.10.0",
   "lessons": [
     {
