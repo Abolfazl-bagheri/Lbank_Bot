@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795431634,
+  "updated_at": 1795431673,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "GOLDUSDT",
-      "tf": "5m",
-      "gap": 0.07,
-      "ts": 1795421190
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795421202
-    },
     {
       "kind": "SELL",
       "symbol": "XAUTUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "1h",
       "gap": 1.63,
       "ts": 1795431634
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795431641
+    },
+    {
+      "kind": "SELL",
+      "symbol": "VELVETUSDT",
+      "tf": "1h",
+      "gap": 2.09,
+      "ts": 1795431673
     }
   ],
   "trades": [
@@ -1469,14 +1469,27 @@
       "px": 106.66,
       "pnl": -3.3756,
       "tf": "4h"
+    },
+    {
+      "symbol": "TAUSDT",
+      "side": "SELL",
+      "entry": 0.11675,
+      "tp": 0.11383125000000001,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.11675,
+      "pnl": -0.24,
+      "tf": "1h"
     }
   ],
   "start": 1000.0,
   "session_start": 1795392398,
   "realized": 147.4632,
   "closed_n": 21,
-  "open_upnl": -30.4037,
-  "equity": 1117.0595,
+  "open_upnl": -30.6437,
+  "equity": 1116.8195,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
