@@ -9584,7 +9584,8 @@
       "side": "LONG",
       "upper": 3651.873890524253,
       "open": 3628.96,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "XAUTUSDT",
@@ -9593,7 +9594,8 @@
       "side": "LONG",
       "upper": 3635.7457373387642,
       "open": 3615.49,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -9891,7 +9893,6 @@
     "UP2USDT": 1795458656,
     "DRVUSDT": 1795458666,
     "QUACKAIUSDT": 1795458844,
-    "NIULAIUSDT": 1795464182,
     "HAJIMIUSDT": 1795464185,
     "FONEUSDT": 1795464340,
     "DODOUSDT": 1795464261,
@@ -9919,24 +9920,6 @@
   "last_trade_report_ts": 1795477737,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795186058,
-      "kind": "gap_result",
-      "symbol": "CRCLUSDT",
-      "tf": "5m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795187101,
-      "kind": "gap_result",
-      "symbol": "PROMUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795187104,
       "kind": "gap_result",
@@ -13512,6 +13495,24 @@
     },
     {
       "ts": 1795477730,
+      "kind": "gap_result",
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795478169,
+      "kind": "gap_result",
+      "symbol": "GOLDUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795478181,
       "kind": "gap_result",
       "symbol": "XAUTUSDT",
       "tf": "5m",
