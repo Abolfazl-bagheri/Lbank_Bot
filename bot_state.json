@@ -6683,26 +6683,6 @@
   "pending": [
     {
       "symbol": "HUMAUSDT",
-      "tf": "15m",
-      "candle_ts": 1795186800,
-      "side": "SELL",
-      "upper": 0.010446246429652126,
-      "open": 0.01053,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "MRNAUSDT",
-      "tf": "15m",
-      "candle_ts": 1795186800,
-      "side": "SELL",
-      "upper": 205.58844798002556,
-      "open": 208.46,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "HUMAUSDT",
       "tf": "1h",
       "candle_ts": 1795186800,
       "side": "SELL",
@@ -9587,7 +9567,8 @@
       "side": "SELL",
       "upper": 12.214819326424351,
       "open": 11.95,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ZHONGJIUSDT",
@@ -9596,7 +9577,8 @@
       "side": "SELL",
       "upper": 61.78886518736335,
       "open": 60.87,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "GIGADEVUSDT",
@@ -9605,7 +9587,8 @@
       "side": "SELL",
       "upper": 28.889134712216915,
       "open": 28.5,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "KUAISHOUUSDT",
@@ -9614,7 +9597,8 @@
       "side": "SELL",
       "upper": 2.5257689831175707,
       "open": 2.542,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "BMTUSDT",
@@ -9623,7 +9607,8 @@
       "side": "SELL",
       "upper": 0.02120444819457874,
       "open": 0.02142,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "GIGADEVUSDT",
@@ -9668,6 +9653,24 @@
       "side": "SELL",
       "upper": 12.88281211031163,
       "open": 13.31,
+      "reported": false
+    },
+    {
+      "symbol": "LAOPUUSDT",
+      "tf": "15m",
+      "candle_ts": 1795398300,
+      "side": "SELL",
+      "upper": 33.341259886633416,
+      "open": 33.4,
+      "reported": false
+    },
+    {
+      "symbol": "KUAISHOUUSDT",
+      "tf": "15m",
+      "candle_ts": 1795398300,
+      "side": "SELL",
+      "upper": 2.559275275649832,
+      "open": 2.587,
       "reported": false
     }
   ],
@@ -9992,56 +9995,12 @@
     "STONKBROKERUSDT": 1795424588,
     "NIUBIUSDT": 1795435359,
     "BEMUSDT": 1795435543,
-    "KNTQUSDT": 1795435456
+    "KNTQUSDT": 1795435456,
+    "FRONGUSDT": 1795441651
   },
   "last_trade_report_ts": 1795397745,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795115126,
-      "kind": "gap_result",
-      "symbol": "NESUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795115129,
-      "kind": "gap_result",
-      "symbol": "ESPORTSUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795115132,
-      "kind": "gap_result",
-      "symbol": "PDDUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795115135,
-      "kind": "gap_result",
-      "symbol": "GOLDUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795115141,
-      "kind": "gap_result",
-      "symbol": "SILVERUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795115152,
       "kind": "gap_result",
@@ -13596,6 +13555,51 @@
       "gap": 0.0,
       "filled": true,
       "note": "filled"
+    },
+    {
+      "ts": 1795398481,
+      "kind": "gap_result",
+      "symbol": "MINIMAXUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795398485,
+      "kind": "gap_result",
+      "symbol": "ZHONGJIUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795398488,
+      "kind": "gap_result",
+      "symbol": "GIGADEVUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795398496,
+      "kind": "gap_result",
+      "symbol": "KUAISHOUUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
+    },
+    {
+      "ts": 1795398499,
+      "kind": "gap_result",
+      "symbol": "BMTUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
     }
   ],
   "tune_history": [],
