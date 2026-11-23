@@ -163,6 +163,31 @@
       "last_leg_candle_ts": 1795392000,
       "dry_run": true,
       "order_id": "PAPER-BULLAUSDT-1795392076"
+    },
+    {
+      "symbol": "RAMUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 4.047,
+      "qty": 49.4193,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 3.9458249999999997,
+      "tf": "15m",
+      "opened_at": 1795392095,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 4.047,
+          "ts": 1795392095
+        }
+      ],
+      "entry_candle_ts": 1795392000,
+      "last_leg_candle_ts": 1795392000,
+      "dry_run": true,
+      "order_id": "PAPER-RAMUSDT-1795392095"
     }
   ],
   "trade_history": [
@@ -6629,16 +6654,6 @@
   ],
   "pending": [
     {
-      "symbol": "SILVERUSDT",
-      "tf": "15m",
-      "candle_ts": 1795141800,
-      "side": "LONG",
-      "upper": 43.64835715140834,
-      "open": 41.69,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "XAUTUSDT",
       "tf": "15m",
       "candle_ts": 1795141800,
@@ -9618,6 +9633,15 @@
       "side": "SELL",
       "upper": 1.5265357627437017,
       "open": 1.529,
+      "reported": false
+    },
+    {
+      "symbol": "BULLAUSDT",
+      "tf": "4h",
+      "candle_ts": 1795392000,
+      "side": "SELL",
+      "upper": 0.022960390983924606,
+      "open": 0.024518,
       "reported": false
     }
   ],
