@@ -170,15 +170,15 @@
       "symbol": "VELVETUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.08144425958432995,
-      "qty": 7367.001700000001,
-      "margin": 30.0,
+      "entry": 0.08204420684055998,
+      "qty": 17063.971400000002,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 0.0794081530947217,
+      "tp_price": 0.07999310166954597,
       "tf": "1h",
       "opened_at": 1795431674,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [
         0.08263
       ],
@@ -190,10 +190,14 @@
         {
           "px": 0.08234,
           "ts": 1795434978
+        },
+        {
+          "px": 0.0825,
+          "ts": 1795435244
         }
       ],
       "entry_candle_ts": 1795431600,
-      "last_leg_candle_ts": 1795434978,
+      "last_leg_candle_ts": 1795435200,
       "dry_run": true,
       "order_id": "PAPER-VELVETUSDT-1795431674"
     }
@@ -6654,16 +6658,6 @@
   ],
   "pending": [
     {
-      "symbol": "DNAUSDT",
-      "tf": "15m",
-      "candle_ts": 1795214700,
-      "side": "SELL",
-      "upper": 0.1641308432025649,
-      "open": 0.165,
-      "reported": true,
-      "filled": false
-    },
-    {
       "symbol": "ZSUSDT",
       "tf": "1h",
       "candle_ts": 1795215600,
@@ -9645,6 +9639,15 @@
       "open": 5.906,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "PROMUSDT",
+      "tf": "1h",
+      "candle_ts": 1795435200,
+      "side": "SELL",
+      "upper": 5.751616748778673,
+      "open": 6.077,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -9970,7 +9973,7 @@
     "1000LUNCUSDT": 1795474104,
     "FLYUSDT": 1795475781
   },
-  "last_trade_report_ts": 1795433737,
+  "last_trade_report_ts": 1795434983,
   "last_known_version": "2.10.0",
   "lessons": [
     {
