@@ -72,31 +72,6 @@
       "order_id": "PAPER-XAUTUSDT-1795396282"
     },
     {
-      "symbol": "ZHONGJIUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 62.79,
-      "qty": 3.1852,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 61.22025,
-      "tf": "15m",
-      "opened_at": 1795397438,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 62.79,
-          "ts": 1795397438
-        }
-      ],
-      "entry_candle_ts": 1795397400,
-      "last_leg_candle_ts": 1795397400,
-      "dry_run": true,
-      "order_id": "PAPER-ZHONGJIUSDT-1795397438"
-    },
-    {
       "symbol": "KUAISHOUUSDT",
       "side": "SELL",
       "status": "open",
@@ -123,44 +98,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "ZCATUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.02302443174785545,
-      "qty": 60804.9751,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 0.022448820954159062,
-      "tf": "15m",
-      "opened_at": 1794357055,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.02146,
-          "ts": 1794357055
-        },
-        {
-          "px": 0.0228,
-          "ts": 1794357922
-        },
-        {
-          "px": 0.02357,
-          "ts": 1794358854
-        }
-      ],
-      "entry_candle_ts": 1794357000,
-      "last_leg_candle_ts": 1794358800,
-      "dry_run": true,
-      "order_id": "PAPER-ZCATUSDT-1794357055",
-      "closed_at": 1794361677,
-      "close_px": 0.02148,
-      "pnl_usdt": 93.90913403102871,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "JCTUSDT",
       "side": "SELL",
@@ -6580,6 +6517,36 @@
       "pnl_usdt": -13.322632423755994,
       "close_reason": "STOP",
       "why": "STOP"
+    },
+    {
+      "symbol": "ZHONGJIUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 62.79,
+      "qty": 3.1852,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 61.22025,
+      "tf": "15m",
+      "opened_at": 1795397438,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 62.79,
+          "ts": 1795397438
+        }
+      ],
+      "entry_candle_ts": 1795397400,
+      "last_leg_candle_ts": 1795397400,
+      "dry_run": true,
+      "order_id": "PAPER-ZHONGJIUSDT-1795397438",
+      "closed_at": 1795397741,
+      "close_px": 65.68,
+      "pnl_usdt": -9.205287466157056,
+      "close_reason": "STOP",
+      "why": "STOP"
     }
   ],
   "pending": [
@@ -9901,7 +9868,7 @@
     "BEMUSDT": 1795435543,
     "KNTQUSDT": 1795435456
   },
-  "last_trade_report_ts": 1795396788,
+  "last_trade_report_ts": 1795397745,
   "last_known_version": "2.10.0",
   "lessons": [
     {
