@@ -9610,7 +9610,8 @@
       "side": "LONG",
       "upper": 3632.9668867504543,
       "open": 3624.89,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "XAUTUSDT",
@@ -9619,7 +9620,8 @@
       "side": "LONG",
       "upper": 3633.1763860289752,
       "open": 3624.89,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -9946,24 +9948,6 @@
   "last_trade_report_ts": 1795475490,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795183544,
-      "kind": "gap_result",
-      "symbol": "FOLKSUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795185147,
-      "kind": "gap_result",
-      "symbol": "HUMAUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795185648,
       "kind": "gap_result",
@@ -13545,6 +13529,24 @@
       "gap": 0.0,
       "filled": false,
       "note": "miss"
+    },
+    {
+      "ts": 1795476333,
+      "kind": "gap_result",
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795476345,
+      "kind": "gap_result",
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
     }
   ],
   "tune_history": [],
