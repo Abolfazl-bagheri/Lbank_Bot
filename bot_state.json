@@ -101,6 +101,31 @@
       "last_leg_candle_ts": 1795398058,
       "dry_run": true,
       "order_id": "PAPER-KUAISHOUUSDT-1795397489"
+    },
+    {
+      "symbol": "ZHONGJIUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 66.68,
+      "qty": 2.9994,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 65.013,
+      "tf": "15m",
+      "opened_at": 1795398329,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 66.68,
+          "ts": 1795398329
+        }
+      ],
+      "entry_candle_ts": 1795398300,
+      "last_leg_candle_ts": 1795398300,
+      "dry_run": true,
+      "order_id": "PAPER-ZHONGJIUSDT-1795398329"
     }
   ],
   "trade_history": [
@@ -6557,16 +6582,6 @@
   ],
   "pending": [
     {
-      "symbol": "RAREUSDT",
-      "tf": "15m",
-      "candle_ts": 1795185900,
-      "side": "SELL",
-      "upper": 0.012815794378511587,
-      "open": 0.01313,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "SKDDUSDT",
       "tf": "15m",
       "candle_ts": 1795185900,
@@ -9548,6 +9563,15 @@
       "side": "SELL",
       "upper": 0.02120444819457874,
       "open": 0.02142,
+      "reported": false
+    },
+    {
+      "symbol": "GIGADEVUSDT",
+      "tf": "15m",
+      "candle_ts": 1795398300,
+      "side": "SELL",
+      "upper": 29.581612675447698,
+      "open": 30.1,
       "reported": false
     }
   ],
