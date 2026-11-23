@@ -133,24 +133,28 @@
       "symbol": "EWZSUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 10.41,
-      "qty": 19.2123,
-      "margin": 10.0,
+      "entry": 10.522719753768447,
+      "qty": 57.0195,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 10.14975,
+      "tp_price": 10.259651759924235,
       "tf": "15m",
       "opened_at": 1795401067,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 10.41,
           "ts": 1795401067
+        },
+        {
+          "px": 10.58,
+          "ts": 1795402076
         }
       ],
       "entry_candle_ts": 1795401000,
-      "last_leg_candle_ts": 1795401000,
+      "last_leg_candle_ts": 1795401900,
       "dry_run": true,
       "order_id": "PAPER-EWZSUSDT-1795401067"
     },
@@ -6641,16 +6645,6 @@
   ],
   "pending": [
     {
-      "symbol": "SKDDUSDT",
-      "tf": "15m",
-      "candle_ts": 1795188600,
-      "side": "SELL",
-      "upper": 13.629334002458554,
-      "open": 13.711,
-      "reported": true,
-      "filled": false
-    },
-    {
       "symbol": "NOWUSDT",
       "tf": "15m",
       "candle_ts": 1795188600,
@@ -9625,6 +9619,15 @@
       "side": "LONG",
       "upper": 50.7500742905745,
       "open": 49.53,
+      "reported": false
+    },
+    {
+      "symbol": "ZESTUSDT",
+      "tf": "15m",
+      "candle_ts": 1795401900,
+      "side": "SELL",
+      "upper": 0.13382451198312573,
+      "open": 0.13484,
       "reported": false
     }
   ],
