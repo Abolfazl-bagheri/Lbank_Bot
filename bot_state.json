@@ -4,15 +4,15 @@
       "symbol": "GOLDUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 3606.9579454747663,
-      "qty": 0.166345,
-      "margin": 30.0,
+      "entry": 3617.774739468394,
+      "qty": 0.386978,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 3516.783996837897,
-      "tf": "5m",
+      "tp_price": 3527.3303709816837,
+      "tf": "15m",
       "opened_at": 1795396217,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [
         3613.02
       ],
@@ -24,10 +24,14 @@
         {
           "px": 3605.04,
           "ts": 1795396320
+        },
+        {
+          "px": 3625.93,
+          "ts": 1795396616
         }
       ],
       "entry_candle_ts": 1795396200,
-      "last_leg_candle_ts": 1795396320,
+      "last_leg_candle_ts": 1795396500,
       "dry_run": true,
       "order_id": "PAPER-GOLDUSDT-1795396217"
     },
@@ -6554,16 +6558,6 @@
   ],
   "pending": [
     {
-      "symbol": "BLESSUSDT",
-      "tf": "15m",
-      "candle_ts": 1795157100,
-      "side": "SELL",
-      "upper": 0.01344671287754432,
-      "open": 0.013661,
-      "reported": true,
-      "filled": false
-    },
-    {
       "symbol": "AKEUSDT",
       "tf": "15m",
       "candle_ts": 1795157100,
@@ -9545,6 +9539,15 @@
       "side": "SELL",
       "upper": 3591.8256203377523,
       "open": 3599.26,
+      "reported": false
+    },
+    {
+      "symbol": "UMCUSDT",
+      "tf": "15m",
+      "candle_ts": 1795396500,
+      "side": "SELL",
+      "upper": 12.897735955620744,
+      "open": 13.11,
       "reported": false
     }
   ],
