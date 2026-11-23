@@ -184,75 +184,9 @@
       "last_leg_candle_ts": 1795424400,
       "dry_run": true,
       "order_id": "PAPER-CYSUSDT-1795424454"
-    },
-    {
-      "symbol": "MUBARAKUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.02308,
-      "qty": 8665.5113,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.022503,
-      "tf": "1h",
-      "opened_at": 1795424497,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.02308,
-          "ts": 1795424497
-        }
-      ],
-      "entry_candle_ts": 1795424400,
-      "last_leg_candle_ts": 1795424400,
-      "dry_run": true,
-      "order_id": "PAPER-MUBARAKUSDT-1795424497"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "RUMUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 6.010264832363034,
-      "qty": 232.9349,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 5.860008211553958,
-      "tf": "1h",
-      "opened_at": 1794412907,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [
-        5.935,
-        6.103
-      ],
-      "steps": [
-        {
-          "px": 5.921,
-          "ts": 1794412907
-        },
-        {
-          "px": 5.921,
-          "ts": 1794413400
-        },
-        {
-          "px": 6.079,
-          "ts": 1794414839
-        }
-      ],
-      "entry_candle_ts": 1794412800,
-      "last_leg_candle_ts": 1794414839,
-      "dry_run": true,
-      "order_id": "PAPER-RUMUSDT-1794412907",
-      "closed_at": 1794417554,
-      "close_px": 5.825,
-      "pnl_usdt": 43.154631708012666,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "AEONUSDT",
       "side": "SELL",
@@ -6683,6 +6617,36 @@
       "closed_at": 1795422704,
       "close_px": 0.3164,
       "pnl_usdt": 5.710776788455619,
+      "close_reason": "TP50",
+      "why": "TP50"
+    },
+    {
+      "symbol": "MUBARAKUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.02308,
+      "qty": 8665.5113,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.022503,
+      "tf": "1h",
+      "opened_at": 1795424497,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.02308,
+          "ts": 1795424497
+        }
+      ],
+      "entry_candle_ts": 1795424400,
+      "last_leg_candle_ts": 1795424400,
+      "dry_run": true,
+      "order_id": "PAPER-MUBARAKUSDT-1795424497",
+      "closed_at": 1795424759,
+      "close_px": 0.0225,
+      "pnl_usdt": 5.0259965337954995,
       "close_reason": "TP50",
       "why": "TP50"
     }
