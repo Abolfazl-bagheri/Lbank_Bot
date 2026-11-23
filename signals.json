@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795435243,
+  "updated_at": 1795435258,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "CRCLUSDT",
-      "tf": "5m",
-      "gap": 0.18,
-      "ts": 1795424769
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795424784
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "1h",
       "gap": 1.94,
       "ts": 1795435243
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795435250
+    },
+    {
+      "kind": "SELL",
+      "symbol": "ALGOUSDT",
+      "tf": "4h",
+      "gap": 2.1,
+      "ts": 1795435258
     }
   ],
   "trades": [
@@ -1473,14 +1473,14 @@
     {
       "symbol": "VELVETUSDT",
       "side": "SELL",
-      "entry": 0.08144425958432995,
-      "tp": 0.0794081530947217,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
+      "entry": 0.08204420684055998,
+      "tp": 0.07999310166954597,
+      "adds": 2,
+      "pele": 3,
+      "margin": 70.0,
       "lev": 20,
       "px": 0.0825,
-      "pnl": -8.4976,
+      "pnl": -9.4576,
       "tf": "1h"
     }
   ],
@@ -1488,8 +1488,8 @@
   "session_start": 1795392398,
   "realized": 152.4653,
   "closed_n": 22,
-  "open_upnl": -24.6601,
-  "equity": 1127.8052,
+  "open_upnl": -25.6201,
+  "equity": 1126.8452,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
