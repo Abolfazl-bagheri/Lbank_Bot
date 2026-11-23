@@ -191,31 +191,6 @@
       "order_id": "PAPER-ARIAUSDT-1795420852"
     },
     {
-      "symbol": "HUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.01354,
-      "qty": 14771.0487,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.0132015,
-      "tf": "1h",
-      "opened_at": 1795420872,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.01354,
-          "ts": 1795420872
-        }
-      ],
-      "entry_candle_ts": 1795420800,
-      "last_leg_candle_ts": 1795420800,
-      "dry_run": true,
-      "order_id": "PAPER-HUSDT-1795420872"
-    },
-    {
       "symbol": "UNITREEUSDT",
       "side": "SELL",
       "status": "open",
@@ -248,36 +223,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "ANSEMUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.06591,
-      "qty": 3034.4409,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.06426224999999999,
-      "tf": "4h",
-      "opened_at": 1794412942,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.06591,
-          "ts": 1794412942
-        }
-      ],
-      "entry_candle_ts": 1794412800,
-      "last_leg_candle_ts": 1794412800,
-      "dry_run": true,
-      "order_id": "PAPER-ANSEMUSDT-1794412942",
-      "closed_at": 1794414844,
-      "close_px": 0.06173,
-      "pnl_usdt": 12.683962979820954,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "KGENUSDT",
       "side": "SELL",
@@ -6710,109 +6655,39 @@
       "pnl_usdt": 57.78821725292621,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "HUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.01354,
+      "qty": 14771.0487,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0132015,
+      "tf": "1h",
+      "opened_at": 1795420872,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.01354,
+          "ts": 1795420872
+        }
+      ],
+      "entry_candle_ts": 1795420800,
+      "last_leg_candle_ts": 1795420800,
+      "dry_run": true,
+      "order_id": "PAPER-HUSDT-1795420872",
+      "closed_at": 1795421202,
+      "close_px": 0.01309,
+      "pnl_usdt": 6.6469719350073975,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
-    {
-      "symbol": "ACNUSDT",
-      "tf": "1h",
-      "candle_ts": 1795190400,
-      "side": "SELL",
-      "upper": 225.58938328474437,
-      "open": 227.6,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "CHEEMSUSDT",
-      "tf": "4h",
-      "candle_ts": 1795190400,
-      "side": "LONG",
-      "upper": 3.1621045492992164e-07,
-      "open": 2.806e-07,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "SHIBUSDT",
-      "tf": "4h",
-      "candle_ts": 1795190400,
-      "side": "LONG",
-      "upper": 3.979664666051999e-06,
-      "open": 3.543e-06,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "FLOKIUSDT",
-      "tf": "4h",
-      "candle_ts": 1795190400,
-      "side": "LONG",
-      "upper": 1.8628020019756857e-05,
-      "open": 1.616e-05,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "BONKUSDT",
-      "tf": "4h",
-      "candle_ts": 1795190400,
-      "side": "LONG",
-      "upper": 2.4999651706334683e-06,
-      "open": 2.068e-06,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "AKEUSDT",
-      "tf": "4h",
-      "candle_ts": 1795190400,
-      "side": "LONG",
-      "upper": 0.013199446968099753,
-      "open": 0.005032,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "ANKRUSDT",
-      "tf": "4h",
-      "candle_ts": 1795190400,
-      "side": "LONG",
-      "upper": 0.003403857331646995,
-      "open": 0.003018,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "DOGSUSDT",
-      "tf": "4h",
-      "candle_ts": 1795190400,
-      "side": "LONG",
-      "upper": 2.7927463178522817e-05,
-      "open": 2.468e-05,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "TOSHIUSDT",
-      "tf": "4h",
-      "candle_ts": 1795190400,
-      "side": "LONG",
-      "upper": 8.310988905317827e-05,
-      "open": 7.4e-05,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "GALAUSDT",
-      "tf": "4h",
-      "candle_ts": 1795190400,
-      "side": "LONG",
-      "upper": 0.0014032116125737282,
-      "open": 0.001241,
-      "reported": true,
-      "filled": true
-    },
     {
       "symbol": "JCTUSDT",
       "tf": "4h",
@@ -9703,6 +9578,105 @@
       "upper": 5.413756809887883,
       "open": 5.371,
       "reported": false
+    },
+    {
+      "symbol": "SILVERUSDT",
+      "tf": "5m",
+      "candle_ts": 1795421100,
+      "side": "LONG",
+      "upper": 43.00802376796105,
+      "open": 42.52,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "GOLDUSDT",
+      "tf": "5m",
+      "candle_ts": 1795421100,
+      "side": "LONG",
+      "upper": 3645.150051221873,
+      "open": 3617.04,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
+      "candle_ts": 1795421400,
+      "side": "LONG",
+      "upper": 3633.8832017850705,
+      "open": 3599.86,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
+      "candle_ts": 1795421400,
+      "side": "LONG",
+      "upper": 3634.0434121231883,
+      "open": 3599.86,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "SILVERUSDT",
+      "tf": "5m",
+      "candle_ts": 1795421400,
+      "side": "LONG",
+      "upper": 43.052151066756906,
+      "open": 42.42,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "SILVERUSDT",
+      "tf": "5m",
+      "candle_ts": 1795421400,
+      "side": "LONG",
+      "upper": 43.055886779986785,
+      "open": 42.42,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
+      "candle_ts": 1795421400,
+      "side": "LONG",
+      "upper": 3634.2164127265883,
+      "open": 3599.86,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "GOLDUSDT",
+      "tf": "5m",
+      "candle_ts": 1795421400,
+      "side": "LONG",
+      "upper": 3647.316390696938,
+      "open": 3613.47,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "SILVERUSDT",
+      "tf": "5m",
+      "candle_ts": 1795421400,
+      "side": "LONG",
+      "upper": 43.06389026487484,
+      "open": 42.42,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "CYSUSDT",
+      "tf": "15m",
+      "candle_ts": 1795421700,
+      "side": "SELL",
+      "upper": 0.0467566650126141,
+      "open": 0.0474,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -10029,90 +10003,9 @@
     "XVGUSDT": 1795464331,
     "1000000BABYDOGEUSDT": 1795464332
   },
-  "last_trade_report_ts": 1795420030,
+  "last_trade_report_ts": 1795421180,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795124469,
-      "kind": "gap_result",
-      "symbol": "GOLDUSDT",
-      "tf": "5m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795124873,
-      "kind": "gap_result",
-      "symbol": "NAORISUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795124884,
-      "kind": "gap_result",
-      "symbol": "SILVERUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795124887,
-      "kind": "gap_result",
-      "symbol": "XAUTUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795124898,
-      "kind": "gap_result",
-      "symbol": "GOLDUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795124904,
-      "kind": "gap_result",
-      "symbol": "XAUTUSDT",
-      "tf": "5m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795125857,
-      "kind": "gap_result",
-      "symbol": "RAREUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795125860,
-      "kind": "gap_result",
-      "symbol": "NAORISUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795125869,
-      "kind": "gap_result",
-      "symbol": "SILVERUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795125872,
       "kind": "gap_result",
@@ -13628,6 +13521,87 @@
       "kind": "gap_result",
       "symbol": "BULLAUSDT",
       "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795421420,
+      "kind": "gap_result",
+      "symbol": "SILVERUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795421422,
+      "kind": "gap_result",
+      "symbol": "GOLDUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795421821,
+      "kind": "gap_result",
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795421823,
+      "kind": "gap_result",
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795421826,
+      "kind": "gap_result",
+      "symbol": "SILVERUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795421829,
+      "kind": "gap_result",
+      "symbol": "SILVERUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795421831,
+      "kind": "gap_result",
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795421834,
+      "kind": "gap_result",
+      "symbol": "GOLDUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795421836,
+      "kind": "gap_result",
+      "symbol": "SILVERUSDT",
+      "tf": "5m",
       "gap": 0.0,
       "filled": true,
       "note": "filled"
