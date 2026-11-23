@@ -9619,7 +9619,8 @@
       "side": "SELL",
       "upper": 43.45353258709652,
       "open": 43.47,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -9894,7 +9895,6 @@
     "XTIUSDT": 1795291473,
     "COPSTOCKUSDT": 1795291586,
     "XBRUSDT": 1795293074,
-    "FIGHT1USDT": 1795299560,
     "PORUSDT": 1795328144,
     "ZZZUSDT": 1795329982,
     "B3USDT": 1795329999,
@@ -9946,15 +9946,6 @@
   "last_trade_report_ts": 1795474573,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795160023,
-      "kind": "gap_result",
-      "symbol": "SILVERUSDT",
-      "tf": "5m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795183542,
       "kind": "gap_result",
@@ -13542,6 +13533,15 @@
       "kind": "gap_result",
       "symbol": "RAMUSDT",
       "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795475429,
+      "kind": "gap_result",
+      "symbol": "SILVERUSDT",
+      "tf": "5m",
       "gap": 0.0,
       "filled": true,
       "note": "filled"
