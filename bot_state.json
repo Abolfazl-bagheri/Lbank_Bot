@@ -165,64 +165,9 @@
       "last_leg_candle_ts": 1795421174,
       "dry_run": true,
       "order_id": "PAPER-UNITREEUSDT-1795420905"
-    },
-    {
-      "symbol": "AIOTUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.06699,
-      "qty": 2985.5202,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.06531524999999999,
-      "tf": "15m",
-      "opened_at": 1795430757,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.06699,
-          "ts": 1795430757
-        }
-      ],
-      "entry_candle_ts": 1795430700,
-      "last_leg_candle_ts": 1795430700,
-      "dry_run": true,
-      "order_id": "PAPER-AIOTUSDT-1795430757"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "ZZZUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.00511,
-      "qty": 39138.9432,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.00498225,
-      "tf": "15m",
-      "opened_at": 1794417352,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.00511,
-          "ts": 1794417352
-        }
-      ],
-      "entry_candle_ts": 1794417300,
-      "last_leg_candle_ts": 1794417300,
-      "dry_run": true,
-      "order_id": "PAPER-ZZZUSDT-1794417352",
-      "closed_at": 1794418460,
-      "close_px": 0.00533,
-      "pnl_usdt": -8.610567514677092,
-      "close_reason": "STOP",
-      "why": "STOP"
-    },
     {
       "symbol": "AXTIUSDT",
       "side": "SELL",
@@ -6655,6 +6600,36 @@
       "pnl_usdt": -8.750261670504507,
       "close_reason": "STOP",
       "why": "STOP"
+    },
+    {
+      "symbol": "AIOTUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.06699,
+      "qty": 2985.5202,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.06531524999999999,
+      "tf": "15m",
+      "opened_at": 1795430757,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.06699,
+          "ts": 1795430757
+        }
+      ],
+      "entry_candle_ts": 1795430700,
+      "last_leg_candle_ts": 1795430700,
+      "dry_run": true,
+      "order_id": "PAPER-AIOTUSDT-1795430757",
+      "closed_at": 1795431396,
+      "close_px": 0.06385,
+      "pnl_usdt": 9.374533512464518,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
