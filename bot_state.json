@@ -24,6 +24,31 @@
       "last_leg_candle_ts": 1795392900,
       "dry_run": true,
       "order_id": "PAPER-SKUUUSDT-1795392927"
+    },
+    {
+      "symbol": "RAMUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 4.092,
+      "qty": 48.8759,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 3.9896999999999996,
+      "tf": "15m",
+      "opened_at": 1795392959,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 4.092,
+          "ts": 1795392959
+        }
+      ],
+      "entry_candle_ts": 1795392900,
+      "last_leg_candle_ts": 1795392900,
+      "dry_run": true,
+      "order_id": "PAPER-RAMUSDT-1795392959"
     }
   ],
   "trade_history": [
@@ -6490,36 +6515,6 @@
   ],
   "pending": [
     {
-      "symbol": "SILVERUSDT",
-      "tf": "5m",
-      "candle_ts": 1795143900,
-      "side": "LONG",
-      "upper": 42.405757655125214,
-      "open": 41.42,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "BARDUSDT",
-      "tf": "15m",
-      "candle_ts": 1795144500,
-      "side": "SELL",
-      "upper": 0.09203767679314737,
-      "open": 0.0931,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "BARDUSDT",
-      "tf": "15m",
-      "candle_ts": 1795145400,
-      "side": "SELL",
-      "upper": 0.09574032332007655,
-      "open": 0.0981,
-      "reported": true,
-      "filled": false
-    },
-    {
       "symbol": "TACUSDT",
       "tf": "15m",
       "candle_ts": 1795146300,
@@ -9478,6 +9473,33 @@
       "side": "SELL",
       "upper": 563.517758662594,
       "open": 567.4,
+      "reported": false
+    },
+    {
+      "symbol": "SKUUUSDT",
+      "tf": "15m",
+      "candle_ts": 1795392900,
+      "side": "SELL",
+      "upper": 8.90842134871932,
+      "open": 9.0,
+      "reported": false
+    },
+    {
+      "symbol": "CSOPSKHYNIX2LUSDT",
+      "tf": "15m",
+      "candle_ts": 1795392900,
+      "side": "SELL",
+      "upper": 1.574809691682425,
+      "open": 1.6,
+      "reported": false
+    },
+    {
+      "symbol": "SAMSUNGEMUSDT",
+      "tf": "15m",
+      "candle_ts": 1795392900,
+      "side": "SELL",
+      "upper": 574.6539891226876,
+      "open": 581.6,
       "reported": false
     }
   ],
