@@ -176,6 +176,31 @@
       "last_leg_candle_ts": 1795398300,
       "dry_run": true,
       "order_id": "PAPER-UMCUSDT-1795398358"
+    },
+    {
+      "symbol": "MINIMAXUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 13.32,
+      "qty": 15.015,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 12.987,
+      "tf": "15m",
+      "opened_at": 1795398370,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 13.32,
+          "ts": 1795398370
+        }
+      ],
+      "entry_candle_ts": 1795398300,
+      "last_leg_candle_ts": 1795398300,
+      "dry_run": true,
+      "order_id": "PAPER-MINIMAXUSDT-1795398370"
     }
   ],
   "trade_history": [
@@ -6632,16 +6657,6 @@
   ],
   "pending": [
     {
-      "symbol": "FOLKSUSDT",
-      "tf": "15m",
-      "candle_ts": 1795186800,
-      "side": "SELL",
-      "upper": 2.521242982213293,
-      "open": 2.535,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "ELSAUSDT",
       "tf": "1h",
       "candle_ts": 1795186800,
@@ -9620,6 +9635,15 @@
       "side": "SELL",
       "upper": 43.149948582940716,
       "open": 44.73,
+      "reported": false
+    },
+    {
+      "symbol": "UMCUSDT",
+      "tf": "15m",
+      "candle_ts": 1795398300,
+      "side": "SELL",
+      "upper": 13.011306211285001,
+      "open": 12.97,
       "reported": false
     }
   ],
