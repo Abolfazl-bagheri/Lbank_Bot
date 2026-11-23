@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795471355,
+  "updated_at": 1795471588,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "MSTUUSDT",
-      "tf": "15m",
-      "gap": 1.17,
-      "ts": 1795426354
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1395,13 @@
       "tf": "15m",
       "gap": 1.1,
       "ts": 1795471355
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795471588
     }
   ],
   "trades": [
@@ -1432,19 +1432,6 @@
       "tf": "5m"
     },
     {
-      "symbol": "UMCUSDT",
-      "side": "SELL",
-      "entry": 13.414594572841208,
-      "tp": 13.079229708520177,
-      "adds": 2,
-      "pele": 3,
-      "margin": 70.0,
-      "lev": 20,
-      "px": 14.58,
-      "pnl": -123.3063,
-      "tf": "1h"
-    },
-    {
       "symbol": "LAOPUUSDT",
       "side": "SELL",
       "entry": 33.8699765168108,
@@ -1469,33 +1456,20 @@
       "px": 108.56,
       "pnl": -29.6274,
       "tf": "4h"
-    },
-    {
-      "symbol": "VELVETUSDT",
-      "side": "SELL",
-      "entry": 0.08204420684055998,
-      "tp": 0.07999310166954597,
-      "adds": 2,
-      "pele": 3,
-      "margin": 70.0,
-      "lev": 20,
-      "px": 0.07956,
-      "pnl": 40.7104,
-      "tf": "1h"
     }
   ],
   "start": 1000.0,
   "session_start": 1795392398,
-  "realized": 152.4653,
-  "closed_n": 22,
-  "open_upnl": -123.6046,
-  "equity": 1028.8607,
+  "realized": 73.2294,
+  "closed_n": 24,
+  "open_upnl": -41.0087,
+  "equity": 1032.2207,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 255.7079,
-    "loss": -103.2426,
-    "count": 22
+    "profit": 298.0984,
+    "loss": -224.8689,
+    "count": 24
   }
 }
