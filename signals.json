@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795395126,
+  "updated_at": 1795395324,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795381816
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1395,13 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1795395126
+    },
+    {
+      "kind": "GAP",
+      "symbol": "SAMSUNGEMUSDT",
+      "tf": "1h",
+      "gap": 1.01,
+      "ts": 1795395324
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 8.901,
-      "pnl": 3.7027,
+      "px": 8.925,
+      "pnl": 3.1741,
       "tf": "15m"
     },
     {
@@ -1427,8 +1427,8 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 4.005,
-      "pnl": 7.0957,
+      "px": 4.021,
+      "pnl": 4.7299,
       "tf": "15m"
     }
   ],
@@ -1436,8 +1436,8 @@
   "session_start": 1795392398,
   "realized": 0,
   "closed_n": 0,
-  "open_upnl": 10.7984,
-  "equity": 1010.7984,
+  "open_upnl": 7.904,
+  "equity": 1007.904,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
