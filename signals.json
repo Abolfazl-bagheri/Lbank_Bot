@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795392958,
+  "updated_at": 1795392965,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795372001
-    },
-    {
-      "kind": "GAP",
-      "symbol": "BULLAUSDT",
-      "tf": "15m",
-      "gap": 2.08,
-      "ts": 1795372129
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "15m",
       "gap": 3.06,
       "ts": 1795392958
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795392962
+    },
+    {
+      "kind": "SELL",
+      "symbol": "HANMIUSDT",
+      "tf": "15m",
+      "gap": 1.43,
+      "ts": 1795392965
     }
   ],
   "trades": [
@@ -1417,14 +1417,27 @@
       "px": 9.08,
       "pnl": -0.24,
       "tf": "15m"
+    },
+    {
+      "symbol": "RAMUSDT",
+      "side": "SELL",
+      "entry": 4.092,
+      "tp": 3.9896999999999996,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 4.092,
+      "pnl": -0.24,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1795392398,
   "realized": 0,
   "closed_n": 0,
-  "open_upnl": -0.24,
-  "equity": 999.76,
+  "open_upnl": -0.48,
+  "equity": 999.52,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
