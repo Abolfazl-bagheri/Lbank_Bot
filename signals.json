@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795398328,
+  "updated_at": 1795398340,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795388747
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795388748
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "15m",
       "gap": 2.84,
       "ts": 1795398328
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795398334
+    },
+    {
+      "kind": "SELL",
+      "symbol": "ZHIPUUSDT",
+      "tf": "15m",
+      "gap": 3.38,
+      "ts": 1795398340
     }
   ],
   "trades": [
@@ -1443,14 +1443,27 @@
       "px": 2.585,
       "pnl": -2.2738,
       "tf": "15m"
+    },
+    {
+      "symbol": "ZHONGJIUSDT",
+      "side": "SELL",
+      "entry": 66.68,
+      "tp": 65.013,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 66.68,
+      "pnl": -0.24,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1795392398,
   "realized": 12.6521,
   "closed_n": 6,
-  "open_upnl": -3.6979,
-  "equity": 1008.9542,
+  "open_upnl": -3.9379,
+  "equity": 1008.7142,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
