@@ -133,24 +133,30 @@
       "symbol": "ZESTUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.13678,
-      "qty": 1462.2021,
-      "margin": 10.0,
+      "entry": 0.1402422848539594,
+      "qty": 4278.3102,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.13336050000000002,
+      "tp_price": 0.1367362277326104,
       "tf": "15m",
       "opened_at": 1795402046,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.14253
+      ],
       "steps": [
         {
           "px": 0.13678,
           "ts": 1795402046
+        },
+        {
+          "px": 0.14204,
+          "ts": 1795415797
         }
       ],
       "entry_candle_ts": 1795401900,
-      "last_leg_candle_ts": 1795401900,
+      "last_leg_candle_ts": 1795415797,
       "dry_run": true,
       "order_id": "PAPER-ZESTUSDT-1795402046"
     }
