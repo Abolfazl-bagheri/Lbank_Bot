@@ -1,29 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795395831,
+  "updated_at": 1795395938,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795381889
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795381909
-    },
-    {
-      "kind": "GAP",
-      "symbol": "ARIAUSDT",
-      "tf": "15m",
-      "gap": 1.25,
-      "ts": 1795382029
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,48 +1381,42 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1795395831
-    }
-  ],
-  "trades": [
-    {
-      "symbol": "SKUUUSDT",
-      "side": "SELL",
-      "entry": 9.08,
-      "tp": 8.853,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 8.985,
-      "pnl": 1.8525,
-      "tf": "15m"
     },
     {
-      "symbol": "RAMUSDT",
-      "side": "SELL",
-      "entry": 4.057858169784792,
-      "tp": 3.956411715540172,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
-      "lev": 20,
-      "px": 4.031,
-      "pnl": 3.2513,
-      "tf": "15m"
+      "kind": "HEARTBEAT",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795395833
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795395929
+    },
+    {
+      "kind": "SELL",
+      "symbol": "CRCLUSDT",
+      "tf": "5m",
+      "gap": 0.13,
+      "ts": 1795395938
     }
   ],
+  "trades": [],
   "start": 1000.0,
   "session_start": 1795392398,
-  "realized": 0,
-  "closed_n": 0,
-  "open_upnl": 5.1038,
-  "equity": 1005.1038,
+  "realized": 22.7416,
+  "closed_n": 2,
+  "open_upnl": 0,
+  "equity": 1022.7416,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 0,
+    "profit": 22.7416,
     "loss": 0,
-    "count": 0
+    "count": 2
   }
 }
