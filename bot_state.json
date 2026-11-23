@@ -6659,16 +6659,6 @@
   ],
   "pending": [
     {
-      "symbol": "SOPHUSDT",
-      "tf": "1h",
-      "candle_ts": 1795197600,
-      "side": "SELL",
-      "upper": 0.0010889231473106553,
-      "open": 0.001103,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "JELLYJELLYUSDT",
       "tf": "1h",
       "candle_ts": 1795197600,
@@ -9626,7 +9616,8 @@
       "side": "SELL",
       "upper": 51.205751743853256,
       "open": 51.27,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "CRCLUSDT",
@@ -9644,6 +9635,15 @@
       "side": "SELL",
       "upper": 10.642953540274782,
       "open": 10.48,
+      "reported": false
+    },
+    {
+      "symbol": "CRCLUSDT",
+      "tf": "5m",
+      "candle_ts": 1795425600,
+      "side": "SELL",
+      "upper": 51.38192029190798,
+      "open": 51.43,
       "reported": false
     }
   ],
@@ -9974,15 +9974,6 @@
   "last_trade_report_ts": 1795425030,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795132111,
-      "kind": "gap_result",
-      "symbol": "CRCLUSDT",
-      "tf": "5m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795133177,
       "kind": "gap_result",
@@ -13573,6 +13564,15 @@
       "gap": 0.0,
       "filled": true,
       "note": "filled"
+    },
+    {
+      "ts": 1795425632,
+      "kind": "gap_result",
+      "symbol": "CRCLUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
     }
   ],
   "tune_history": [],
