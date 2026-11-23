@@ -167,31 +167,6 @@
       "order_id": "PAPER-UNITREEUSDT-1795420905"
     },
     {
-      "symbol": "TAUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.11675,
-      "qty": 1713.0621,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.11383125000000001,
-      "tf": "1h",
-      "opened_at": 1795431635,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.11675,
-          "ts": 1795431635
-        }
-      ],
-      "entry_candle_ts": 1795431600,
-      "last_leg_candle_ts": 1795431600,
-      "dry_run": true,
-      "order_id": "PAPER-TAUSDT-1795431635"
-    },
-    {
       "symbol": "VELVETUSDT",
       "side": "SELL",
       "status": "open",
@@ -218,47 +193,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "AXTIUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 48.81666044834669,
-      "qty": 28.6787,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 47.59624393713802,
-      "tf": "1h",
-      "opened_at": 1794412873,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [
-        48.76,
-        49.06
-      ],
-      "steps": [
-        {
-          "px": 48.64,
-          "ts": 1794412873
-        },
-        {
-          "px": 48.64,
-          "ts": 1794413393
-        },
-        {
-          "px": 48.95,
-          "ts": 1794418454
-        }
-      ],
-      "entry_candle_ts": 1794412800,
-      "last_leg_candle_ts": 1794418454,
-      "dry_run": true,
-      "order_id": "PAPER-AXTIUSDT-1794412873",
-      "closed_at": 1794425839,
-      "close_px": 47.56,
-      "pnl_usdt": 36.03943021761835,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "CLAUDIAUSDT",
       "side": "SELL",
@@ -6678,6 +6612,36 @@
       "closed_at": 1795431396,
       "close_px": 0.06385,
       "pnl_usdt": 9.374533512464518,
+      "close_reason": "TP50",
+      "why": "TP50"
+    },
+    {
+      "symbol": "TAUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.11675,
+      "qty": 1713.0621,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.11383125000000001,
+      "tf": "1h",
+      "opened_at": 1795431635,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.11675,
+          "ts": 1795431635
+        }
+      ],
+      "entry_candle_ts": 1795431600,
+      "last_leg_candle_ts": 1795431600,
+      "dry_run": true,
+      "order_id": "PAPER-TAUSDT-1795431635",
+      "closed_at": 1795433604,
+      "close_px": 0.11383,
+      "pnl_usdt": 5.002141327623137,
       "close_reason": "TP50",
       "why": "TP50"
     }
