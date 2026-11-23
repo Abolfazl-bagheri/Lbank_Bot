@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795397436,
+  "updated_at": 1795397466,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795386830
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795386922
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "15m",
       "gap": 1.59,
       "ts": 1795397436
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795397441
+    },
+    {
+      "kind": "SELL",
+      "symbol": "GIGADEVUSDT",
+      "tf": "15m",
+      "gap": 1.27,
+      "ts": 1795397466
     }
   ],
   "trades": [
@@ -1443,14 +1443,27 @@
       "px": 12.46,
       "pnl": -0.24,
       "tf": "15m"
+    },
+    {
+      "symbol": "ZHONGJIUSDT",
+      "side": "SELL",
+      "entry": 62.79,
+      "tp": 61.22025,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 62.79,
+      "pnl": -0.24,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1795392398,
   "realized": 35.18,
   "closed_n": 4,
-  "open_upnl": -9.5257,
-  "equity": 1025.6543,
+  "open_upnl": -9.7657,
+  "equity": 1025.4143,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
