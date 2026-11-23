@@ -138,6 +138,31 @@
       "last_leg_candle_ts": 1795389300,
       "dry_run": true,
       "order_id": "PAPER-SILVERUSDT-1795388723"
+    },
+    {
+      "symbol": "BULLAUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.02431,
+      "qty": 8227.0671,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.023702249999999998,
+      "tf": "4h",
+      "opened_at": 1795392076,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.02431,
+          "ts": 1795392076
+        }
+      ],
+      "entry_candle_ts": 1795392000,
+      "last_leg_candle_ts": 1795392000,
+      "dry_run": true,
+      "order_id": "PAPER-BULLAUSDT-1795392076"
     }
   ],
   "trade_history": [
@@ -6604,26 +6629,6 @@
   ],
   "pending": [
     {
-      "symbol": "XAUTUSDT",
-      "tf": "5m",
-      "candle_ts": 1795140600,
-      "side": "LONG",
-      "upper": 3614.829173772408,
-      "open": 3544.73,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "RAVEUSDT",
-      "tf": "15m",
-      "candle_ts": 1795141800,
-      "side": "LONG",
-      "upper": 0.13686147525871645,
-      "open": 0.1208,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "SILVERUSDT",
       "tf": "15m",
       "candle_ts": 1795141800,
@@ -9596,6 +9601,24 @@
       "upper": 0.023874675896984814,
       "open": 0.024615,
       "reported": false
+    },
+    {
+      "symbol": "BULLAUSDT",
+      "tf": "15m",
+      "candle_ts": 1795392000,
+      "side": "SELL",
+      "upper": 0.024261924100453962,
+      "open": 0.024518,
+      "reported": false
+    },
+    {
+      "symbol": "CSOPSKHYNIX2LUSDT",
+      "tf": "15m",
+      "candle_ts": 1795392000,
+      "side": "SELL",
+      "upper": 1.5265357627437017,
+      "open": 1.529,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -9873,7 +9896,6 @@
     "SIMOUSDT": 1795336272,
     "BONERUSDT": 1795342752,
     "JUVUSDT": 1795345325,
-    "BEMUSDT": 1795353374,
     "QUID1USDT": 1795354270,
     "BARUSDT": 1795360559,
     "GSTOCKUSDT": 1795367820,
