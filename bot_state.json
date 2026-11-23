@@ -151,6 +151,31 @@
       "last_leg_candle_ts": 1795398300,
       "dry_run": true,
       "order_id": "PAPER-ZHIPUUSDT-1795398341"
+    },
+    {
+      "symbol": "UMCUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 13.23,
+      "qty": 15.1172,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 12.89925,
+      "tf": "15m",
+      "opened_at": 1795398358,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 13.23,
+          "ts": 1795398358
+        }
+      ],
+      "entry_candle_ts": 1795398300,
+      "last_leg_candle_ts": 1795398300,
+      "dry_run": true,
+      "order_id": "PAPER-UMCUSDT-1795398358"
     }
   ],
   "trade_history": [
@@ -6607,16 +6632,6 @@
   ],
   "pending": [
     {
-      "symbol": "SKDDUSDT",
-      "tf": "15m",
-      "candle_ts": 1795185900,
-      "side": "SELL",
-      "upper": 13.332392612607821,
-      "open": 13.474,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "FOLKSUSDT",
       "tf": "15m",
       "candle_ts": 1795186800,
@@ -9596,6 +9611,15 @@
       "side": "SELL",
       "upper": 64.78699245152497,
       "open": 66.62,
+      "reported": false
+    },
+    {
+      "symbol": "ZHIPUUSDT",
+      "tf": "15m",
+      "candle_ts": 1795398300,
+      "side": "SELL",
+      "upper": 43.149948582940716,
+      "open": 44.73,
       "reported": false
     }
   ],
