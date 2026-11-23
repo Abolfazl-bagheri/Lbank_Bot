@@ -6670,16 +6670,6 @@
   ],
   "pending": [
     {
-      "symbol": "XAUTUSDT",
-      "tf": "5m",
-      "candle_ts": 1795188300,
-      "side": "LONG",
-      "upper": 3593.0677107795054,
-      "open": 3531.86,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "GOLDUSDT",
       "tf": "5m",
       "candle_ts": 1795188300,
@@ -9656,6 +9646,16 @@
       "side": "SELL",
       "upper": 0.08963687659805468,
       "open": 0.0907,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "EWZSUSDT",
+      "tf": "15m",
+      "candle_ts": 1795401000,
+      "side": "SELL",
+      "upper": 10.23321951045727,
+      "open": 10.187,
       "reported": false
     }
   ],
@@ -9983,18 +9983,9 @@
     "KNTQUSDT": 1795435456,
     "FRONGUSDT": 1795441651
   },
-  "last_trade_report_ts": 1795399901,
+  "last_trade_report_ts": 1795401152,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795118781,
-      "kind": "gap_result",
-      "symbol": "BILLUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795118784,
       "kind": "gap_result",
@@ -13585,6 +13576,15 @@
       "gap": 0.0,
       "filled": false,
       "note": "miss"
+    },
+    {
+      "ts": 1795401146,
+      "kind": "gap_result",
+      "symbol": "ELSAUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
     }
   ],
   "tune_history": [],
