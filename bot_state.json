@@ -72,37 +72,6 @@
       "order_id": "PAPER-XAUTUSDT-1795396282"
     },
     {
-      "symbol": "KUAISHOUUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 2.578322891554875,
-      "qty": 232.70940000000002,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 2.513864819266003,
-      "tf": "15m",
-      "opened_at": 1795397489,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        2.588
-      ],
-      "steps": [
-        {
-          "px": 2.571,
-          "ts": 1795397489
-        },
-        {
-          "px": 2.582,
-          "ts": 1795398058
-        }
-      ],
-      "entry_candle_ts": 1795397400,
-      "last_leg_candle_ts": 1795398058,
-      "dry_run": true,
-      "order_id": "PAPER-KUAISHOUUSDT-1795397489"
-    },
-    {
       "symbol": "UMCUSDT",
       "side": "SELL",
       "status": "open",
@@ -218,40 +187,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "ANSEMUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.06714907105762796,
-      "qty": 8935.3433,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.06547034428118727,
-      "tf": "15m",
-      "opened_at": 1794403832,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.06538,
-          "ts": 1794403832
-        },
-        {
-          "px": 0.06807,
-          "ts": 1794404738
-        }
-      ],
-      "entry_candle_ts": 1794403800,
-      "last_leg_candle_ts": 1794404700,
-      "dry_run": true,
-      "order_id": "PAPER-ANSEMUSDT-1794403832",
-      "closed_at": 1794406738,
-      "close_px": 0.06432,
-      "pnl_usdt": 25.27872102832242,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "MEMEUSDT",
       "side": "SELL",
@@ -6670,6 +6605,42 @@
       "pnl_usdt": -71.96445034642522,
       "close_reason": "STOP",
       "why": "STOP"
+    },
+    {
+      "symbol": "KUAISHOUUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 2.578322891554875,
+      "qty": 232.70940000000002,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 2.513864819266003,
+      "tf": "15m",
+      "opened_at": 1795397489,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        2.588
+      ],
+      "steps": [
+        {
+          "px": 2.571,
+          "ts": 1795397489
+        },
+        {
+          "px": 2.582,
+          "ts": 1795398058
+        }
+      ],
+      "entry_candle_ts": 1795397400,
+      "last_leg_candle_ts": 1795398058,
+      "dry_run": true,
+      "order_id": "PAPER-KUAISHOUUSDT-1795397489",
+      "closed_at": 1795400459,
+      "close_px": 2.509,
+      "pnl_usdt": 16.132089223255342,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
