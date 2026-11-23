@@ -1,31 +1,6 @@
 {
   "open_trades": [
     {
-      "symbol": "SKUUUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 9.08,
-      "qty": 22.0264,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 8.853,
-      "tf": "15m",
-      "opened_at": 1795392927,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 9.08,
-          "ts": 1795392927
-        }
-      ],
-      "entry_candle_ts": 1795392900,
-      "last_leg_candle_ts": 1795392900,
-      "dry_run": true,
-      "order_id": "PAPER-SKUUUSDT-1795392927"
-    },
-    {
       "symbol": "RAMUSDT",
       "side": "SELL",
       "status": "open",
@@ -58,36 +33,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "SECZUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 9.35,
-      "qty": 21.3904,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 9.116249999999999,
-      "tf": "4h",
-      "opened_at": 1794326541,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 9.35,
-          "ts": 1794326541
-        }
-      ],
-      "entry_candle_ts": 1794326400,
-      "last_leg_candle_ts": 1794326400,
-      "dry_run": true,
-      "order_id": "PAPER-SECZUSDT-1794326541",
-      "closed_at": 1794332110,
-      "close_px": 8.66,
-      "pnl_usdt": 14.759358288770045,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "INITUSDT",
       "side": "SELL",
@@ -6517,6 +6462,36 @@
       "pnl_usdt": 10.96224116930573,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "SKUUUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 9.08,
+      "qty": 22.0264,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 8.853,
+      "tf": "15m",
+      "opened_at": 1795392927,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 9.08,
+          "ts": 1795392927
+        }
+      ],
+      "entry_candle_ts": 1795392900,
+      "last_leg_candle_ts": 1795392900,
+      "dry_run": true,
+      "order_id": "PAPER-SKUUUSDT-1795392927",
+      "closed_at": 1795395926,
+      "close_px": 8.785,
+      "pnl_usdt": 6.497797356828191,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -9414,7 +9389,8 @@
       "side": "SELL",
       "upper": 563.517758662594,
       "open": 567.4,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "SKUUUSDT",
@@ -9503,7 +9479,8 @@
       "side": "SELL",
       "upper": 0.0195953094546242,
       "open": 0.01982,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "CATEUSDT",
@@ -9512,7 +9489,8 @@
       "side": "SELL",
       "upper": 0.019561429387483027,
       "open": 0.01976,
-      "reported": false
+      "reported": true,
+      "filled": false
     }
   ],
   "paper_days": [
@@ -9839,36 +9817,9 @@
     "BEMUSDT": 1795435543,
     "KNTQUSDT": 1795435456
   },
-  "last_trade_report_ts": 1795394465,
+  "last_trade_report_ts": 1795395833,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795087933,
-      "kind": "gap_result",
-      "symbol": "NESUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795087935,
-      "kind": "gap_result",
-      "symbol": "BMTUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795088855,
-      "kind": "gap_result",
-      "symbol": "NESUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
     {
       "ts": 1795088857,
       "kind": "gap_result",
@@ -13441,6 +13392,33 @@
       "gap": 0.0,
       "filled": true,
       "note": "filled"
+    },
+    {
+      "ts": 1795395819,
+      "kind": "gap_result",
+      "symbol": "SAMSUNGEMUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
+    },
+    {
+      "ts": 1795395824,
+      "kind": "gap_result",
+      "symbol": "CATEUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
+    },
+    {
+      "ts": 1795395827,
+      "kind": "gap_result",
+      "symbol": "CATEUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
     }
   ],
   "tune_history": [],
