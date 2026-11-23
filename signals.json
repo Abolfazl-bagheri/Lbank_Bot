@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795397487,
+  "updated_at": 1795397503,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795386978
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795387024
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "15m",
       "gap": 1.76,
       "ts": 1795397487
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795397494
+    },
+    {
+      "kind": "SELL",
+      "symbol": "BMTUSDT",
+      "tf": "15m",
+      "gap": 1.05,
+      "ts": 1795397503
     }
   ],
   "trades": [
@@ -1456,14 +1456,27 @@
       "px": 62.79,
       "pnl": -0.24,
       "tf": "15m"
+    },
+    {
+      "symbol": "KUAISHOUUSDT",
+      "side": "SELL",
+      "entry": 2.571,
+      "tp": 2.5067250000000003,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 2.571,
+      "pnl": -0.24,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1795392398,
   "realized": 35.18,
   "closed_n": 4,
-  "open_upnl": -9.7657,
-  "equity": 1025.4143,
+  "open_upnl": -10.0057,
+  "equity": 1025.1743,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
