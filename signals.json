@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795392094,
+  "updated_at": 1795392124,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795370739
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795370759
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "15m",
       "gap": 2.09,
       "ts": 1795392094
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795392098
+    },
+    {
+      "kind": "SELL",
+      "symbol": "CSOPSAMSUNG2LUSDT",
+      "tf": "15m",
+      "gap": 1.16,
+      "ts": 1795392124
     }
   ],
   "trades": [
@@ -1469,14 +1469,27 @@
       "px": 0.02431,
       "pnl": -0.24,
       "tf": "4h"
+    },
+    {
+      "symbol": "RAMUSDT",
+      "side": "SELL",
+      "entry": 4.047,
+      "tp": 3.9458249999999997,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 4.047,
+      "pnl": -0.24,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1795306140,
   "realized": 107.5224,
   "closed_n": 18,
-  "open_upnl": -3.9096,
-  "equity": 1103.6128,
+  "open_upnl": -4.1496,
+  "equity": 1103.3728,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
