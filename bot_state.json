@@ -6634,36 +6634,6 @@
   ],
   "pending": [
     {
-      "symbol": "GOLDUSDT",
-      "tf": "5m",
-      "candle_ts": 1795200300,
-      "side": "LONG",
-      "upper": 3547.4781092082117,
-      "open": 3514.78,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "BTCUSDT",
-      "tf": "1h",
-      "candle_ts": 1795201200,
-      "side": "LONG",
-      "upper": 63783.450603978556,
-      "open": 58375.2,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "RAREUSDT",
-      "tf": "15m",
-      "candle_ts": 1795203000,
-      "side": "SELL",
-      "upper": 0.014005519216138169,
-      "open": 0.01437,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "RAREUSDT",
       "tf": "15m",
       "candle_ts": 1795203900,
@@ -9495,7 +9465,8 @@
       "side": "SELL",
       "upper": 0.013544086589762224,
       "open": 0.01364,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CYSUSDT",
@@ -9504,7 +9475,8 @@
       "side": "SELL",
       "upper": 0.04662710993816699,
       "open": 0.0479,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "MUBARAKUSDT",
@@ -9523,7 +9495,8 @@
       "side": "SELL",
       "upper": 0.02258357385519207,
       "open": 0.02325,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CRCLUSDT",
@@ -9624,6 +9597,33 @@
       "open": 10.48,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "ARIAUSDT",
+      "tf": "1h",
+      "candle_ts": 1795428000,
+      "side": "SELL",
+      "upper": 0.3396306051078511,
+      "open": 0.34174,
+      "reported": false
+    },
+    {
+      "symbol": "VELVETUSDT",
+      "tf": "1h",
+      "candle_ts": 1795428000,
+      "side": "SELL",
+      "upper": 0.07540035149531069,
+      "open": 0.07635,
+      "reported": false
+    },
+    {
+      "symbol": "QNTUSDT",
+      "tf": "1h",
+      "candle_ts": 1795428000,
+      "side": "SELL",
+      "upper": 151.1267541513903,
+      "open": 152.82,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -9951,36 +9951,9 @@
     "1000000BABYDOGEUSDT": 1795464332,
     "FWDIUSDT": 1795469602
   },
-  "last_trade_report_ts": 1795426843,
+  "last_trade_report_ts": 1795427789,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795140282,
-      "kind": "gap_result",
-      "symbol": "CRCLUSDT",
-      "tf": "5m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795141066,
-      "kind": "gap_result",
-      "symbol": "XAUTUSDT",
-      "tf": "5m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795142889,
-      "kind": "gap_result",
-      "symbol": "RAVEUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795142892,
       "kind": "gap_result",
@@ -13550,6 +13523,33 @@
       "kind": "gap_result",
       "symbol": "MSTUUSDT",
       "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795428193,
+      "kind": "gap_result",
+      "symbol": "HUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795428196,
+      "kind": "gap_result",
+      "symbol": "CYSUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795428198,
+      "kind": "gap_result",
+      "symbol": "MUBARAKUSDT",
+      "tf": "1h",
       "gap": 0.0,
       "filled": true,
       "note": "filled"
