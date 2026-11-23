@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795402044,
+  "updated_at": 1795402074,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795393228
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795393266
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "15m",
       "gap": 2.16,
       "ts": 1795402044
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795402049
+    },
+    {
+      "kind": "SELL",
+      "symbol": "EWZSUSDT",
+      "tf": "15m",
+      "gap": 1.8,
+      "ts": 1795402074
     }
   ],
   "trades": [
@@ -1469,14 +1469,27 @@
       "px": 10.58,
       "pnl": -3.5061,
       "tf": "15m"
+    },
+    {
+      "symbol": "ZESTUSDT",
+      "side": "SELL",
+      "entry": 0.13678,
+      "tp": 0.13336050000000002,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.13678,
+      "pnl": -0.24,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1795392398,
   "realized": 2.8731,
   "closed_n": 13,
-  "open_upnl": 29.5624,
-  "equity": 1032.4355,
+  "open_upnl": 29.3224,
+  "equity": 1032.1955,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
