@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795424453,
+  "updated_at": 1795424465,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795414832
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795414856
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "1h",
       "gap": 2.39,
       "ts": 1795424453
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795424460
+    },
+    {
+      "kind": "SELL",
+      "symbol": "MUBARAKUSDT",
+      "tf": "15m",
+      "gap": 1.12,
+      "ts": 1795424465
     }
   ],
   "trades": [
@@ -1469,14 +1469,27 @@
       "px": 107.13,
       "pnl": -6.0312,
       "tf": "4h"
+    },
+    {
+      "symbol": "CYSUSDT",
+      "side": "SELL",
+      "entry": 0.04777,
+      "tp": 0.04657575,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.04777,
+      "pnl": -0.24,
+      "tf": "1h"
     }
   ],
   "start": 1000.0,
   "session_start": 1795392398,
   "realized": 141.8129,
   "closed_n": 18,
-  "open_upnl": -21.9567,
-  "equity": 1119.8562,
+  "open_upnl": -22.1967,
+  "equity": 1119.6162,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
