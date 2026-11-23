@@ -139,24 +139,30 @@
       "symbol": "RAMUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 4.975,
-      "qty": 40.201,
-      "margin": 10.0,
+      "entry": 4.968996380085252,
+      "qty": 120.74870000000001,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 4.850625,
+      "tp_price": 4.844771470583121,
       "tf": "15m",
       "opened_at": 1795473928,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        4.975
+      ],
       "steps": [
         {
           "px": 4.975,
           "ts": 1795473928
+        },
+        {
+          "px": 4.966,
+          "ts": 1795474192
         }
       ],
       "entry_candle_ts": 1795473900,
-      "last_leg_candle_ts": 1795473900,
+      "last_leg_candle_ts": 1795474192,
       "dry_run": true,
       "order_id": "PAPER-RAMUSDT-1795473928"
     }
