@@ -1,195 +1,5 @@
 {
-  "open_trades": [
-    {
-      "symbol": "NIGHTUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.04947483171856906,
-      "qty": 28297.216,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 0.04823796092560483,
-      "tf": "1h",
-      "opened_at": 1795356080,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [
-        0.04915,
-        0.04997
-      ],
-      "steps": [
-        {
-          "px": 0.04893,
-          "ts": 1795356080
-        },
-        {
-          "px": 0.04901,
-          "ts": 1795356702
-        },
-        {
-          "px": 0.04985,
-          "ts": 1795367194
-        }
-      ],
-      "entry_candle_ts": 1795356000,
-      "last_leg_candle_ts": 1795367194,
-      "dry_run": true,
-      "order_id": "PAPER-NIGHTUSDT-1795356080"
-    },
-    {
-      "symbol": "GOLDUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 3584.999878852905,
-      "qty": 0.390517,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 3495.3748818815825,
-      "tf": "15m",
-      "opened_at": 1795388706,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [
-        3592.46
-      ],
-      "steps": [
-        {
-          "px": 3584.24,
-          "ts": 1795388706
-        },
-        {
-          "px": 3584.24,
-          "ts": 1795388743
-        },
-        {
-          "px": 3585.57,
-          "ts": 1795389415
-        }
-      ],
-      "entry_candle_ts": 1795388700,
-      "last_leg_candle_ts": 1795389300,
-      "dry_run": true,
-      "order_id": "PAPER-GOLDUSDT-1795388706"
-    },
-    {
-      "symbol": "XAUTUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 3571.5195162631694,
-      "qty": 0.39199000000000006,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 3482.23152835659,
-      "tf": "15m",
-      "opened_at": 1795388715,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [
-        3581.87
-      ],
-      "steps": [
-        {
-          "px": 3570.0,
-          "ts": 1795388715
-        },
-        {
-          "px": 3570.0,
-          "ts": 1795388745
-        },
-        {
-          "px": 3572.66,
-          "ts": 1795389405
-        }
-      ],
-      "entry_candle_ts": 1795388700,
-      "last_leg_candle_ts": 1795389300,
-      "dry_run": true,
-      "order_id": "PAPER-XAUTUSDT-1795388715"
-    },
-    {
-      "symbol": "SILVERUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 42.41110453738541,
-      "qty": 33.0102,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 41.35082692395078,
-      "tf": "5m",
-      "opened_at": 1795388723,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 42.22,
-          "ts": 1795388723
-        },
-        {
-          "px": 42.31,
-          "ts": 1795389423
-        },
-        {
-          "px": 42.51,
-          "ts": 1795389671
-        }
-      ],
-      "entry_candle_ts": 1795388700,
-      "last_leg_candle_ts": 1795389300,
-      "dry_run": true,
-      "order_id": "PAPER-SILVERUSDT-1795388723"
-    },
-    {
-      "symbol": "BULLAUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.02431,
-      "qty": 8227.0671,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.023702249999999998,
-      "tf": "4h",
-      "opened_at": 1795392076,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.02431,
-          "ts": 1795392076
-        }
-      ],
-      "entry_candle_ts": 1795392000,
-      "last_leg_candle_ts": 1795392000,
-      "dry_run": true,
-      "order_id": "PAPER-BULLAUSDT-1795392076"
-    },
-    {
-      "symbol": "RAMUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 4.047,
-      "qty": 49.4193,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 3.9458249999999997,
-      "tf": "15m",
-      "opened_at": 1795392095,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 4.047,
-          "ts": 1795392095
-        }
-      ],
-      "entry_candle_ts": 1795392000,
-      "last_leg_candle_ts": 1795392000,
-      "dry_run": true,
-      "order_id": "PAPER-RAMUSDT-1795392095"
-    }
-  ],
+  "open_trades": [],
   "trade_history": [
     {
       "symbol": "SECZUSDT",
@@ -6654,46 +6464,6 @@
   ],
   "pending": [
     {
-      "symbol": "XAUTUSDT",
-      "tf": "15m",
-      "candle_ts": 1795141800,
-      "side": "LONG",
-      "upper": 3663.543047481526,
-      "open": 3530.05,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "GOLDUSDT",
-      "tf": "15m",
-      "candle_ts": 1795141800,
-      "side": "LONG",
-      "upper": 3674.1737067299982,
-      "open": 3539.06,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "CRCLUSDT",
-      "tf": "15m",
-      "candle_ts": 1795141800,
-      "side": "LONG",
-      "upper": 52.171705343485506,
-      "open": 50.63,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "UNITREEUSDT",
-      "tf": "15m",
-      "candle_ts": 1795142700,
-      "side": "SELL",
-      "upper": 91.30352556156896,
-      "open": 92.16,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "SILVERUSDT",
       "tf": "5m",
       "candle_ts": 1795143900,
@@ -9298,7 +9068,8 @@
       "side": "SELL",
       "upper": 0.018087163126538193,
       "open": 0.018743,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "ZCATUSDT",
@@ -9317,7 +9088,8 @@
       "side": "SELL",
       "upper": 0.9474553391648285,
       "open": 0.9824,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "NIULAIUSDT",
@@ -9336,7 +9108,8 @@
       "side": "SELL",
       "upper": 0.12610659811277627,
       "open": 0.12708,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "BLURUSDT",
@@ -9615,7 +9388,8 @@
       "side": "SELL",
       "upper": 0.023874675896984814,
       "open": 0.024615,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "BULLAUSDT",
@@ -9642,6 +9416,42 @@
       "side": "SELL",
       "upper": 0.022960390983924606,
       "open": 0.024518,
+      "reported": false
+    },
+    {
+      "symbol": "RAMUSDT",
+      "tf": "15m",
+      "candle_ts": 1795392000,
+      "side": "SELL",
+      "upper": 3.962469099740392,
+      "open": 3.965,
+      "reported": false
+    },
+    {
+      "symbol": "CSOPSAMSUNG2LUSDT",
+      "tf": "15m",
+      "candle_ts": 1795392000,
+      "side": "SELL",
+      "upper": 3.791327776025543,
+      "open": 3.814,
+      "reported": false
+    },
+    {
+      "symbol": "SAMSUNGEMUSDT",
+      "tf": "15m",
+      "candle_ts": 1795392000,
+      "side": "SELL",
+      "upper": 562.7950195968431,
+      "open": 567.4,
+      "reported": false
+    },
+    {
+      "symbol": "SAMSUNGEMUSDT",
+      "tf": "1h",
+      "candle_ts": 1795392000,
+      "side": "SELL",
+      "upper": 563.517758662594,
+      "open": 567.4,
       "reported": false
     }
   ],
@@ -9862,10 +9672,21 @@
       "trades": 31,
       "tp_trades": 27,
       "reset_trades": 4
+    },
+    {
+      "from": 1795306140,
+      "to": 1795392397,
+      "start": 1000.0,
+      "realized": 107.5224,
+      "unrealized_closed": 2.5659,
+      "net": 110.0883,
+      "trades": 24,
+      "tp_trades": 18,
+      "reset_trades": 6
     }
   ],
-  "paper_session_start": 1795306140,
-  "last_daily_report_date": "2026-11-22",
+  "paper_session_start": 1795392398,
+  "last_daily_report_date": "2026-11-23",
   "kline_blacklist": {
     "EURUSDT": 1793385188,
     "AXLUSDT": 1793502358,
@@ -9953,47 +9774,14 @@
     "FONEUSDT": 1795412071,
     "ARROWUSDT": 1795412096,
     "QUACKAIUSDT": 1795415523,
-    "STONKBROKERUSDT": 1795424588
+    "STONKBROKERUSDT": 1795424588,
+    "NIUBIUSDT": 1795435359,
+    "BEMUSDT": 1795435543,
+    "KNTQUSDT": 1795435456
   },
   "last_trade_report_ts": 1795391509,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795080731,
-      "kind": "gap_result",
-      "symbol": "XAUTUSDT",
-      "tf": "5m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795080733,
-      "kind": "gap_result",
-      "symbol": "GOLDUSDT",
-      "tf": "5m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795080735,
-      "kind": "gap_result",
-      "symbol": "XAUTUSDT",
-      "tf": "5m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795081633,
-      "kind": "gap_result",
-      "symbol": "NAORISUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795081635,
       "kind": "gap_result",
@@ -13557,12 +13345,48 @@
       "gap": 0.0,
       "filled": true,
       "note": "filled"
+    },
+    {
+      "ts": 1795392370,
+      "kind": "gap_result",
+      "symbol": "BULLAUSDT",
+      "tf": "4h",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
+    },
+    {
+      "ts": 1795392376,
+      "kind": "gap_result",
+      "symbol": "DGAIUSDT",
+      "tf": "4h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795392384,
+      "kind": "gap_result",
+      "symbol": "ZESTUSDT",
+      "tf": "4h",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
+    },
+    {
+      "ts": 1795392388,
+      "kind": "gap_result",
+      "symbol": "BULLAUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
     }
   ],
   "tune_history": [],
   "tune_params": {
     "min_gap": 1.0,
-    "entry_gap": 1.5999999999999996,
+    "entry_gap": 1.5,
     "max_adds": 2
   },
   "paper_strategy_tag": "v2_1000_10u_20x_tp50"
