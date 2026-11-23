@@ -153,6 +153,31 @@
       "last_leg_candle_ts": 1795401000,
       "dry_run": true,
       "order_id": "PAPER-EWZSUSDT-1795401067"
+    },
+    {
+      "symbol": "ZESTUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.13678,
+      "qty": 1462.2021,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.13336050000000002,
+      "tf": "15m",
+      "opened_at": 1795402046,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.13678,
+          "ts": 1795402046
+        }
+      ],
+      "entry_candle_ts": 1795401900,
+      "last_leg_candle_ts": 1795401900,
+      "dry_run": true,
+      "order_id": "PAPER-ZESTUSDT-1795402046"
     }
   ],
   "trade_history": [
@@ -6616,36 +6641,6 @@
   ],
   "pending": [
     {
-      "symbol": "GOLDUSDT",
-      "tf": "5m",
-      "candle_ts": 1795188300,
-      "side": "LONG",
-      "upper": 3601.53650895417,
-      "open": 3541.0,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "SILVERUSDT",
-      "tf": "5m",
-      "candle_ts": 1795188300,
-      "side": "LONG",
-      "upper": 42.69239672431846,
-      "open": 41.54,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "SOXSUSDT",
-      "tf": "15m",
-      "candle_ts": 1795188600,
-      "side": "SELL",
-      "upper": 73.55477571312717,
-      "open": 74.0,
-      "reported": true,
-      "filled": false
-    },
-    {
       "symbol": "SKDDUSDT",
       "tf": "15m",
       "candle_ts": 1795188600,
@@ -9602,6 +9597,34 @@
       "side": "SELL",
       "upper": 10.23321951045727,
       "open": 10.187,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "ZESTUSDT",
+      "tf": "15m",
+      "candle_ts": 1795401900,
+      "side": "SELL",
+      "upper": 0.13331399721701298,
+      "open": 0.13484,
+      "reported": false
+    },
+    {
+      "symbol": "EWZSUSDT",
+      "tf": "15m",
+      "candle_ts": 1795401900,
+      "side": "SELL",
+      "upper": 10.265851878238708,
+      "open": 10.187,
+      "reported": false
+    },
+    {
+      "symbol": "CRCLUSDT",
+      "tf": "15m",
+      "candle_ts": 1795401900,
+      "side": "LONG",
+      "upper": 50.7500742905745,
+      "open": 49.53,
       "reported": false
     }
   ],
@@ -9932,15 +9955,6 @@
   "last_trade_report_ts": 1795401152,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795118784,
-      "kind": "gap_result",
-      "symbol": "SAPIENUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795118787,
       "kind": "gap_result",
@@ -13527,6 +13541,15 @@
       "ts": 1795401146,
       "kind": "gap_result",
       "symbol": "ELSAUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795402029,
+      "kind": "gap_result",
+      "symbol": "EWZSUSDT",
       "tf": "15m",
       "gap": 0.0,
       "filled": true,
