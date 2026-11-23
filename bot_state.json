@@ -220,24 +220,30 @@
       "symbol": "ZHIPUUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 43.39,
-      "qty": 4.6094,
-      "margin": 10.0,
+      "entry": 42.785824122538045,
+      "qty": 14.023399999999999,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 42.30525,
+      "tp_price": 41.716178519474596,
       "tf": "1h",
       "opened_at": 1795399279,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        42.66
+      ],
       "steps": [
         {
           "px": 43.39,
           "ts": 1795399279
+        },
+        {
+          "px": 42.49,
+          "ts": 1795399830
         }
       ],
       "entry_candle_ts": 1795399200,
-      "last_leg_candle_ts": 1795399200,
+      "last_leg_candle_ts": 1795399830,
       "dry_run": true,
       "order_id": "PAPER-ZHIPUUSDT-1795399279"
     }
