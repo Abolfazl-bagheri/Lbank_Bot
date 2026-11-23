@@ -184,6 +184,31 @@
       "last_leg_candle_ts": 1795424400,
       "dry_run": true,
       "order_id": "PAPER-CYSUSDT-1795424454"
+    },
+    {
+      "symbol": "MUBARAKUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.02308,
+      "qty": 8665.5113,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.022503,
+      "tf": "1h",
+      "opened_at": 1795424497,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.02308,
+          "ts": 1795424497
+        }
+      ],
+      "entry_candle_ts": 1795424400,
+      "last_leg_candle_ts": 1795424400,
+      "dry_run": true,
+      "order_id": "PAPER-MUBARAKUSDT-1795424497"
     }
   ],
   "trade_history": [
@@ -6664,26 +6689,6 @@
   ],
   "pending": [
     {
-      "symbol": "SKDDUSDT",
-      "tf": "1h",
-      "candle_ts": 1795194000,
-      "side": "SELL",
-      "upper": 14.208737664554032,
-      "open": 14.486,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "BANUSDT",
-      "tf": "1h",
-      "candle_ts": 1795194000,
-      "side": "SELL",
-      "upper": 0.04075020420306064,
-      "open": 0.04125,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "BTCUSDT",
       "tf": "1h",
       "candle_ts": 1795194000,
@@ -9650,6 +9655,24 @@
       "side": "SELL",
       "upper": 0.013544086589762224,
       "open": 0.01364,
+      "reported": false
+    },
+    {
+      "symbol": "CYSUSDT",
+      "tf": "1h",
+      "candle_ts": 1795424400,
+      "side": "SELL",
+      "upper": 0.04662710993816699,
+      "open": 0.0479,
+      "reported": false
+    },
+    {
+      "symbol": "MUBARAKUSDT",
+      "tf": "15m",
+      "candle_ts": 1795424400,
+      "side": "SELL",
+      "upper": 0.022988984812166616,
+      "open": 0.02325,
       "reported": false
     }
   ],
