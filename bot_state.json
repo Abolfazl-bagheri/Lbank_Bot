@@ -134,74 +134,9 @@
       "last_leg_candle_ts": 1795435200,
       "dry_run": true,
       "order_id": "PAPER-UNITREEUSDT-1795420905"
-    },
-    {
-      "symbol": "VELVETUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.08204420684055998,
-      "qty": 17063.971400000002,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 0.07999310166954597,
-      "tf": "1h",
-      "opened_at": 1795431674,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [
-        0.08263
-      ],
-      "steps": [
-        {
-          "px": 0.07971,
-          "ts": 1795431674
-        },
-        {
-          "px": 0.08234,
-          "ts": 1795434978
-        },
-        {
-          "px": 0.0825,
-          "ts": 1795435244
-        }
-      ],
-      "entry_candle_ts": 1795431600,
-      "last_leg_candle_ts": 1795435200,
-      "dry_run": true,
-      "order_id": "PAPER-VELVETUSDT-1795431674"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "KGENUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.08067,
-      "qty": 2479.2364,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.07865325000000001,
-      "tf": "1h",
-      "opened_at": 1794420104,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.08067,
-          "ts": 1794420104
-        }
-      ],
-      "entry_candle_ts": 1794420000,
-      "last_leg_candle_ts": 1794420000,
-      "dry_run": true,
-      "order_id": "PAPER-KGENUSDT-1794420104",
-      "closed_at": 1794426060,
-      "close_px": 0.07858,
-      "pnl_usdt": 5.18160406594771,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "MEMEUSDT",
       "side": "SELL",
@@ -6623,6 +6558,46 @@
       "pnl_usdt": -121.62630701680182,
       "close_reason": "STOP",
       "why": "STOP"
+    },
+    {
+      "symbol": "VELVETUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.08204420684055998,
+      "qty": 17063.971400000002,
+      "margin": 70.0,
+      "leverage": 20,
+      "tp_price": 0.07999310166954597,
+      "tf": "1h",
+      "opened_at": 1795431674,
+      "adds": 2,
+      "last_leg_margin": 40.0,
+      "used_res_levels": [
+        0.08263
+      ],
+      "steps": [
+        {
+          "px": 0.07971,
+          "ts": 1795431674
+        },
+        {
+          "px": 0.08234,
+          "ts": 1795434978
+        },
+        {
+          "px": 0.0825,
+          "ts": 1795435244
+        }
+      ],
+      "entry_candle_ts": 1795431600,
+      "last_leg_candle_ts": 1795435200,
+      "dry_run": true,
+      "order_id": "PAPER-VELVETUSDT-1795431674",
+      "closed_at": 1795471585,
+      "close_px": 0.07956,
+      "pnl_usdt": 42.39043450737103,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -9932,7 +9907,7 @@
     "PIPEDOGUSDT": 1795514733,
     "MANCERUSDT": 1795514720
   },
-  "last_trade_report_ts": 1795435893,
+  "last_trade_report_ts": 1795471590,
   "last_known_version": "2.10.0",
   "lessons": [
     {
