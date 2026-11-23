@@ -126,6 +126,31 @@
       "last_leg_candle_ts": 1795398300,
       "dry_run": true,
       "order_id": "PAPER-ZHONGJIUSDT-1795398329"
+    },
+    {
+      "symbol": "ZHIPUUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 44.66,
+      "qty": 4.4783,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 43.543499999999995,
+      "tf": "15m",
+      "opened_at": 1795398341,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 44.66,
+          "ts": 1795398341
+        }
+      ],
+      "entry_candle_ts": 1795398300,
+      "last_leg_candle_ts": 1795398300,
+      "dry_run": true,
+      "order_id": "PAPER-ZHIPUUSDT-1795398341"
     }
   ],
   "trade_history": [
@@ -6586,16 +6611,6 @@
       "tf": "15m",
       "candle_ts": 1795185900,
       "side": "SELL",
-      "upper": 13.347779627044629,
-      "open": 13.474,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "SKDDUSDT",
-      "tf": "15m",
-      "candle_ts": 1795185900,
-      "side": "SELL",
       "upper": 13.332392612607821,
       "open": 13.474,
       "reported": true,
@@ -9572,6 +9587,15 @@
       "side": "SELL",
       "upper": 29.581612675447698,
       "open": 30.1,
+      "reported": false
+    },
+    {
+      "symbol": "ZHONGJIUSDT",
+      "tf": "15m",
+      "candle_ts": 1795398300,
+      "side": "SELL",
+      "upper": 64.78699245152497,
+      "open": 66.62,
       "reported": false
     }
   ],
