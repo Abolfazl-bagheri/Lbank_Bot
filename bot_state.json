@@ -95,6 +95,31 @@
       "last_leg_candle_ts": 1795397400,
       "dry_run": true,
       "order_id": "PAPER-MINIMAXUSDT-1795397425"
+    },
+    {
+      "symbol": "ZHONGJIUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 62.79,
+      "qty": 3.1852,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 61.22025,
+      "tf": "15m",
+      "opened_at": 1795397438,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 62.79,
+          "ts": 1795397438
+        }
+      ],
+      "entry_candle_ts": 1795397400,
+      "last_leg_candle_ts": 1795397400,
+      "dry_run": true,
+      "order_id": "PAPER-ZHONGJIUSDT-1795397438"
     }
   ],
   "trade_history": [
@@ -6559,16 +6584,6 @@
   ],
   "pending": [
     {
-      "symbol": "ELSAUSDT",
-      "tf": "1h",
-      "candle_ts": 1795183200,
-      "side": "SELL",
-      "upper": 0.06219521882438743,
-      "open": 0.06329,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "HUMAUSDT",
       "tf": "15m",
       "candle_ts": 1795184100,
@@ -9552,6 +9567,15 @@
       "open": 3615.47,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "MINIMAXUSDT",
+      "tf": "15m",
+      "candle_ts": 1795397400,
+      "side": "SELL",
+      "upper": 12.214819326424351,
+      "open": 11.95,
+      "reported": false
     }
   ],
   "paper_days": [
