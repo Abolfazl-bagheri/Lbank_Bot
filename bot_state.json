@@ -6602,16 +6602,6 @@
   ],
   "pending": [
     {
-      "symbol": "FLOKIUSDT",
-      "tf": "15m",
-      "candle_ts": 1795232700,
-      "side": "LONG",
-      "upper": 1.6365741002833797e-05,
-      "open": 1.533e-05,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "RATSUSDT",
       "tf": "15m",
       "candle_ts": 1795232700,
@@ -9556,7 +9546,8 @@
       "side": "SELL",
       "upper": 4.2640079663803085,
       "open": 4.346,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "FLNCUSDT",
@@ -9580,6 +9571,16 @@
       "symbol": "TTMIUSDT",
       "tf": "15m",
       "candle_ts": 1795471200,
+      "side": "LONG",
+      "upper": 69.7700004723308,
+      "open": 69.77,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "TTMIUSDT",
+      "tf": "15m",
+      "candle_ts": 1795472100,
       "side": "LONG",
       "upper": 69.7700004723308,
       "open": 69.77,
@@ -9910,24 +9911,6 @@
   "last_trade_report_ts": 1795471590,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795157282,
-      "kind": "gap_result",
-      "symbol": "AKEUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795158305,
-      "kind": "gap_result",
-      "symbol": "ONEUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795158308,
       "kind": "gap_result",
@@ -13506,6 +13489,24 @@
       "kind": "gap_result",
       "symbol": "AIOTUSDT",
       "tf": "1h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795472256,
+      "kind": "gap_result",
+      "symbol": "FLNCUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
+    },
+    {
+      "ts": 1795472260,
+      "kind": "gap_result",
+      "symbol": "TTMIUSDT",
+      "tf": "15m",
       "gap": 0.0,
       "filled": true,
       "note": "filled"
