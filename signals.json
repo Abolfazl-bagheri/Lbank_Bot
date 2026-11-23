@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795399335,
+  "updated_at": 1795399355,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795390926
-    },
-    {
-      "kind": "GAP",
-      "symbol": "BULLAUSDT",
-      "tf": "15m",
-      "gap": 4.94,
-      "ts": 1795391110
-    },
     {
       "kind": "SELL",
       "symbol": "BULLAUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "1h",
       "gap": 1.99,
       "ts": 1795399335
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795399344
+    },
+    {
+      "kind": "SELL",
+      "symbol": "UNITREEUSDT",
+      "tf": "15m",
+      "gap": 1.37,
+      "ts": 1795399355
     }
   ],
   "trades": [
@@ -1447,15 +1447,15 @@
     {
       "symbol": "UMCUSDT",
       "side": "SELL",
-      "entry": 13.23,
-      "tp": 12.89925,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
+      "entry": 13.276584469955125,
+      "tp": 12.944669858206247,
+      "adds": 1,
+      "pele": 2,
+      "margin": 30.0,
       "lev": 20,
       "px": 13.3,
-      "pnl": -1.2982,
-      "tf": "15m"
+      "pnl": -1.7782,
+      "tf": "1h"
     },
     {
       "symbol": "LAOPUUSDT",
@@ -1514,8 +1514,8 @@
   "session_start": 1795392398,
   "realized": 32.3654,
   "closed_n": 9,
-  "open_upnl": 9.8044,
-  "equity": 1042.1698,
+  "open_upnl": 9.3244,
+  "equity": 1041.6898,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
