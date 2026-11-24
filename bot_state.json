@@ -6539,16 +6539,6 @@
   ],
   "pending": [
     {
-      "symbol": "CELRUSDT",
-      "tf": "15m",
-      "candle_ts": 1795311900,
-      "side": "LONG",
-      "upper": 0.0019280000324953498,
-      "open": 0.001928,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "VELVETUSDT",
       "tf": "15m",
       "candle_ts": 1795312800,
@@ -9516,7 +9506,8 @@
       "side": "SELL",
       "upper": 0.6722548817657896,
       "open": 0.6805,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "PROSUSDT",
@@ -9525,6 +9516,16 @@
       "side": "SELL",
       "upper": 0.6738560464493111,
       "open": 0.6805,
+      "reported": true,
+      "filled": false
+    },
+    {
+      "symbol": "PROSUSDT",
+      "tf": "15m",
+      "candle_ts": 1795520700,
+      "side": "SELL",
+      "upper": 0.6979664091524619,
+      "open": 0.7083,
       "reported": false
     }
   ],
@@ -9865,24 +9866,6 @@
   "last_trade_report_ts": 1795520121,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795219551,
-      "kind": "gap_result",
-      "symbol": "JCTUSDT",
-      "tf": "4h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795219555,
-      "kind": "gap_result",
-      "symbol": "ZSUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
     {
       "ts": 1795219560,
       "kind": "gap_result",
@@ -13464,6 +13447,24 @@
       "gap": 0.0,
       "filled": true,
       "note": "filled"
+    },
+    {
+      "ts": 1795520873,
+      "kind": "gap_result",
+      "symbol": "PROSUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
+    },
+    {
+      "ts": 1795520876,
+      "kind": "gap_result",
+      "symbol": "PROSUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
     }
   ],
   "tune_history": [],
