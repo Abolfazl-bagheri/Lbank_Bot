@@ -24,64 +24,9 @@
       "last_leg_candle_ts": 1795518000,
       "dry_run": true,
       "order_id": "PAPER-AIOTUSDT-1795518048"
-    },
-    {
-      "symbol": "PROSUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.6819,
-      "qty": 293.2981,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.6648525,
-      "tf": "15m",
-      "opened_at": 1795518919,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.6819,
-          "ts": 1795518919
-        }
-      ],
-      "entry_candle_ts": 1795518900,
-      "last_leg_candle_ts": 1795518900,
-      "dry_run": true,
-      "order_id": "PAPER-PROSUSDT-1795518919"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "FHEUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.01706,
-      "qty": 11723.3294,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.0166335,
-      "tf": "1m",
-      "opened_at": 1794914533,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.01706,
-          "ts": 1794914533
-        }
-      ],
-      "entry_candle_ts": 1794914520,
-      "last_leg_candle_ts": 1794914100,
-      "dry_run": true,
-      "order_id": "PAPER-FHEUSDT-1794914533",
-      "closed_at": 1794914855,
-      "close_px": 0.0178,
-      "pnl_usdt": -8.675263774912088,
-      "close_reason": "STOP",
-      "why": "STOP"
-    },
     {
       "symbol": "FHEUSDT",
       "side": "SELL",
@@ -6531,6 +6476,36 @@
       "pnl_usdt": -10.199203187250989,
       "close_reason": "STOP",
       "why": "STOP"
+    },
+    {
+      "symbol": "PROSUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.6819,
+      "qty": 293.2981,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.6648525,
+      "tf": "15m",
+      "opened_at": 1795518919,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.6819,
+          "ts": 1795518919
+        }
+      ],
+      "entry_candle_ts": 1795518900,
+      "last_leg_candle_ts": 1795518900,
+      "dry_run": true,
+      "order_id": "PAPER-PROSUSDT-1795518919",
+      "closed_at": 1795519118,
+      "close_px": 0.6605,
+      "pnl_usdt": 6.276580143716081,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -9826,7 +9801,6 @@
     "LONGXIAUSDT": 1795478641,
     "ARGUSUSDT": 1795514584,
     "AI1USDT": 1795514612,
-    "FIGHT1USDT": 1795519022,
     "HK0992USDT": 1795521793,
     "LYTEUSDT": 1795521797,
     "MUSTOCKUSDT": 1795521852,
@@ -9857,7 +9831,8 @@
     "PIPEDOGUSDT": 1795558629,
     "SPACE1USDT": 1795559487,
     "CAPETHUSDT": 1795559491,
-    "CITYUSDT": 1795561399
+    "CITYUSDT": 1795561399,
+    "FIGHT1USDT": 1795562282
   },
   "last_trade_report_ts": 1795518236,
   "last_known_version": "2.10.0",
