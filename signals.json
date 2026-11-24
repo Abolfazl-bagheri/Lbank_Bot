@@ -1,29 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795478821,
+  "updated_at": 1795479024,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "PROMUSDT",
-      "tf": "15m",
-      "gap": 1.05,
-      "ts": 1795433310
-    },
-    {
-      "kind": "SELL",
-      "symbol": "PROMUSDT",
-      "tf": "15m",
-      "gap": 1.35,
-      "ts": 1795433420
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795433510
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,100 +1381,42 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1795478821
+    },
+    {
+      "kind": "HEARTBEAT",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795478823
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795478826
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795479024
     }
   ],
-  "trades": [
-    {
-      "symbol": "GOLDUSDT",
-      "side": "SELL",
-      "entry": 3617.774739468394,
-      "tp": 3527.3303709816837,
-      "adds": 2,
-      "pele": 3,
-      "margin": 70.0,
-      "lev": 20,
-      "px": 3637.84,
-      "pnl": -9.4448,
-      "tf": "15m"
-    },
-    {
-      "symbol": "XAUTUSDT",
-      "side": "SELL",
-      "entry": 3605.0271999011197,
-      "tp": 3514.9015199035916,
-      "adds": 2,
-      "pele": 3,
-      "margin": 70.0,
-      "lev": 20,
-      "px": 3621.43,
-      "pnl": -8.05,
-      "tf": "5m"
-    },
-    {
-      "symbol": "LAOPUUSDT",
-      "side": "SELL",
-      "entry": 33.8699765168108,
-      "tp": 33.023227103890534,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
-      "lev": 20,
-      "px": 33.49,
-      "pnl": 6.0112,
-      "tf": "1h"
-    },
-    {
-      "symbol": "UNITREEUSDT",
-      "side": "SELL",
-      "entry": 106.43528977078343,
-      "tp": 103.77440752651384,
-      "adds": 2,
-      "pele": 3,
-      "margin": 70.0,
-      "lev": 20,
-      "px": 109.35,
-      "pnl": -40.0187,
-      "tf": "4h"
-    },
-    {
-      "symbol": "CYSUSDT",
-      "side": "SELL",
-      "entry": 0.05986,
-      "tp": 0.0583635,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.05986,
-      "pnl": -0.24,
-      "tf": "4h"
-    },
-    {
-      "symbol": "FLNCUSDT",
-      "side": "SELL",
-      "entry": 4.333,
-      "tp": 4.224675,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 4.333,
-      "pnl": -0.24,
-      "tf": "4h"
-    }
-  ],
+  "trades": [],
   "start": 1000.0,
-  "session_start": 1795392398,
-  "realized": 114.7414,
-  "closed_n": 25,
-  "open_upnl": -51.9823,
-  "equity": 1062.7591,
+  "session_start": 1795478826,
+  "realized": 0,
+  "closed_n": 0,
+  "open_upnl": 0,
+  "equity": 1000.0,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 339.6103,
-    "loss": -224.8689,
-    "count": 25
+    "profit": 0,
+    "loss": 0,
+    "count": 0
   }
 }
