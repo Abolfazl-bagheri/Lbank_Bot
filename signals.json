@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795520752,
+  "updated_at": 1795520778,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "FLNCUSDT",
-      "tf": "4h",
-      "gap": 4.33,
-      "ts": 1795491694
-    },
     {
       "kind": "GAP",
       "symbol": "AGPUUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "4h",
       "gap": 2.85,
       "ts": 1795520752
+    },
+    {
+      "kind": "SELL",
+      "symbol": "PROSUSDT",
+      "tf": "15m",
+      "gap": 1.5,
+      "ts": 1795520778
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.08963,
-      "pnl": 1.5293,
+      "px": 0.08889,
+      "pnl": 3.1659,
       "tf": "1h"
     },
     {
@@ -1427,8 +1427,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.7105,
-      "pnl": -5.8542,
+      "px": 0.7086,
+      "pnl": -5.3044,
       "tf": "15m"
     }
   ],
@@ -1436,8 +1436,8 @@
   "session_start": 1795478826,
   "realized": 128.1869,
   "closed_n": 7,
-  "open_upnl": -4.3249,
-  "equity": 1123.862,
+  "open_upnl": -2.1385,
+  "equity": 1126.0484,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
