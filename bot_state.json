@@ -147,17 +147,18 @@
       "symbol": "OPGUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.1612666528837434,
-      "qty": 3720.5460000000003,
-      "margin": 30.0,
+      "entry": 0.16230920033004878,
+      "qty": 8625.5123,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 0.1572349865616498,
+      "tp_price": 0.15825147032179757,
       "tf": "1h",
       "opened_at": 1795554051,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [
-        0.1619
+        0.1619,
+        0.1636
       ],
       "steps": [
         {
@@ -167,10 +168,14 @@
         {
           "px": 0.1613,
           "ts": 1795554436
+        },
+        {
+          "px": 0.1631,
+          "ts": 1795556857
         }
       ],
       "entry_candle_ts": 1795554000,
-      "last_leg_candle_ts": 1795554436,
+      "last_leg_candle_ts": 1795556857,
       "dry_run": true,
       "order_id": "PAPER-OPGUSDT-1795554051"
     }
@@ -6681,16 +6686,6 @@
       "tf": "15m",
       "candle_ts": 1795358700,
       "side": "SELL",
-      "upper": 0.1283957755593867,
-      "open": 0.12987,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "ZESTUSDT",
-      "tf": "15m",
-      "candle_ts": 1795358700,
-      "side": "SELL",
       "upper": 0.12818748201996574,
       "open": 0.12987,
       "reported": true,
@@ -9669,6 +9664,15 @@
       "open": 12.69,
       "reported": true,
       "filled": false
+    },
+    {
+      "symbol": "GTLBUSDT",
+      "tf": "15m",
+      "candle_ts": 1795556700,
+      "side": "LONG",
+      "upper": 46.38003902354643,
+      "open": 46.09,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -10000,7 +10004,8 @@
     "IBBETFUSDT": 1795572180,
     "BTCDOMUSDT": 1795574028,
     "OROCHIUSDT": 1795595636,
-    "1000LUNCUSDT": 1795598199
+    "1000LUNCUSDT": 1795598199,
+    "UP2USDT": 1795600030
   },
   "last_trade_report_ts": 1795556095,
   "last_known_version": "2.10.0",
