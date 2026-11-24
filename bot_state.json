@@ -9466,7 +9466,8 @@
       "side": "LONG",
       "upper": 90.11472967754811,
       "open": 89.28,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -9804,18 +9805,9 @@
     "SPACE1USDT": 1795559487,
     "CAPETHUSDT": 1795559491
   },
-  "last_trade_report_ts": 1795516313,
+  "last_trade_report_ts": 1795517298,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795219509,
-      "kind": "gap_result",
-      "symbol": "SKDDUSDT",
-      "tf": "4h",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
     {
       "ts": 1795219512,
       "kind": "gap_result",
@@ -13400,6 +13392,15 @@
     },
     {
       "ts": 1795516311,
+      "kind": "gap_result",
+      "symbol": "EWTUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795517204,
       "kind": "gap_result",
       "symbol": "EWTUSDT",
       "tf": "15m",
