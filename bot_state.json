@@ -6565,26 +6565,6 @@
   "pending": [
     {
       "symbol": "CLAUDIAUSDT",
-      "tf": "15m",
-      "candle_ts": 1795283100,
-      "side": "SELL",
-      "upper": 0.01042101132882308,
-      "open": 0.01033,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "BULLAUSDT",
-      "tf": "1h",
-      "candle_ts": 1795284000,
-      "side": "SELL",
-      "upper": 0.015117005530172534,
-      "open": 0.015232,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "CLAUDIAUSDT",
       "tf": "1h",
       "candle_ts": 1795284000,
       "side": "SELL",
@@ -9555,6 +9535,25 @@
       "side": "LONG",
       "upper": 61715.58850136562,
       "open": 60623.6,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "BTCUSDT",
+      "tf": "15m",
+      "candle_ts": 1795488300,
+      "side": "LONG",
+      "upper": 61845.42330885063,
+      "open": 60310.6,
+      "reported": false
+    },
+    {
+      "symbol": "CRCLUSDT",
+      "tf": "15m",
+      "candle_ts": 1795488300,
+      "side": "LONG",
+      "upper": 52.53395847685195,
+      "open": 50.95,
       "reported": false
     }
   ],
@@ -9890,20 +9889,12 @@
     "LWLGUSDT": 1795522602,
     "POETUSDT": 1795522606,
     "MURATAUSDT": 1795522736,
-    "LIGHT1USDT": 1795523511
+    "LIGHT1USDT": 1795523511,
+    "OROCHIUSDT": 1795531561
   },
   "last_trade_report_ts": 1795487729,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795190802,
-      "kind": "gap_result",
-      "symbol": "SOXSUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795190805,
       "kind": "gap_result",
@@ -13490,6 +13481,15 @@
       "ts": 1795487545,
       "kind": "gap_result",
       "symbol": "AKEUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795488444,
+      "kind": "gap_result",
+      "symbol": "BTCUSDT",
       "tf": "15m",
       "gap": 0.0,
       "filled": true,
