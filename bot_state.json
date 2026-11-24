@@ -59,6 +59,31 @@
       "last_leg_candle_ts": 1795531500,
       "dry_run": true,
       "order_id": "PAPER-VKTXUSDT-1795531528"
+    },
+    {
+      "symbol": "ZMUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 91.59,
+      "qty": 2.1836,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 89.30025,
+      "tf": "15m",
+      "opened_at": 1795531536,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 91.59,
+          "ts": 1795531536
+        }
+      ],
+      "entry_candle_ts": 1795531500,
+      "last_leg_candle_ts": 1795531500,
+      "dry_run": true,
+      "order_id": "PAPER-ZMUSDT-1795531536"
     }
   ],
   "trade_history": [
@@ -6553,16 +6578,6 @@
   ],
   "pending": [
     {
-      "symbol": "CARDSUSDT",
-      "tf": "15m",
-      "candle_ts": 1795319100,
-      "side": "LONG",
-      "upper": 0.15939452194217335,
-      "open": 0.15386,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "DGAIUSDT",
       "tf": "4h",
       "candle_ts": 1795320000,
@@ -9542,6 +9557,15 @@
       "side": "SELL",
       "upper": 10.395226396703862,
       "open": 10.596,
+      "reported": false
+    },
+    {
+      "symbol": "VKTXUSDT",
+      "tf": "15m",
+      "candle_ts": 1795531500,
+      "side": "SELL",
+      "upper": 27.639111598842522,
+      "open": 27.71,
       "reported": false
     }
   ],
