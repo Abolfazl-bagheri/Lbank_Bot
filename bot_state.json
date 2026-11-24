@@ -6518,16 +6518,6 @@
   ],
   "pending": [
     {
-      "symbol": "CLAUDIAUSDT",
-      "tf": "15m",
-      "candle_ts": 1795315500,
-      "side": "SELL",
-      "upper": 0.010554389221459468,
-      "open": 0.01045,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "BTCUSDT",
       "tf": "15m",
       "candle_ts": 1795315500,
@@ -9489,7 +9479,8 @@
       "side": "LONG",
       "upper": 0.24021661495137228,
       "open": 0.2243,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "EWZSUSDT",
@@ -9498,7 +9489,8 @@
       "side": "SELL",
       "upper": 10.186686036282703,
       "open": 10.149,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "MMTUSDT",
@@ -9507,6 +9499,15 @@
       "side": "LONG",
       "upper": 0.2429139657575713,
       "open": 0.2178,
+      "reported": false
+    },
+    {
+      "symbol": "EWZSUSDT",
+      "tf": "15m",
+      "candle_ts": 1795529700,
+      "side": "SELL",
+      "upper": 10.186727467915155,
+      "open": 10.149,
       "reported": false
     }
   ],
@@ -9845,24 +9846,6 @@
   "last_trade_report_ts": 1795528999,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795230240,
-      "kind": "gap_result",
-      "symbol": "ENSOUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795231914,
-      "kind": "gap_result",
-      "symbol": "BREVUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795232831,
       "kind": "gap_result",
@@ -13441,6 +13424,24 @@
       "kind": "gap_result",
       "symbol": "PROSUSDT",
       "tf": "1h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795529824,
+      "kind": "gap_result",
+      "symbol": "MMTUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795529826,
+      "kind": "gap_result",
+      "symbol": "EWZSUSDT",
+      "tf": "15m",
       "gap": 0.0,
       "filled": true,
       "note": "filled"
