@@ -1,36 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795480316,
+  "updated_at": 1795480465,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "FLUXUSDT",
-      "tf": "4h",
-      "gap": 1.15,
-      "ts": 1795434121
-    },
-    {
-      "kind": "GAP",
-      "symbol": "GOLDUSDT",
-      "tf": "4h",
-      "gap": 0.06,
-      "ts": 1795434126
-    },
-    {
-      "kind": "GAP",
-      "symbol": "PROMUSDT",
-      "tf": "15m",
-      "gap": 1.71,
-      "ts": 1795434298
-    },
-    {
-      "kind": "GAP",
-      "symbol": "PROMUSDT",
-      "tf": "4h",
-      "gap": 3.97,
-      "ts": 1795434300
-    },
     {
       "kind": "GAP",
       "symbol": "BULLAUSDT",
@@ -1402,15 +1374,57 @@
       "tf": "15m",
       "gap": 0.16,
       "ts": 1795480316
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795480321
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795480344
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795480450
+    },
+    {
+      "kind": "GAP",
+      "symbol": "GOLDUSDT",
+      "tf": "5m",
+      "gap": 0.12,
+      "ts": 1795480465
     }
   ],
-  "trades": [],
+  "trades": [
+    {
+      "symbol": "SILVERUSDT",
+      "side": "SELL",
+      "entry": 43.69,
+      "tp": 42.59775,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 43.91,
+      "pnl": -1.2471,
+      "tf": "15m"
+    }
+  ],
   "start": 1000.0,
   "session_start": 1795478826,
   "realized": 0,
   "closed_n": 0,
-  "open_upnl": 0,
-  "equity": 1000.0,
+  "open_upnl": -1.2471,
+  "equity": 998.7529,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
