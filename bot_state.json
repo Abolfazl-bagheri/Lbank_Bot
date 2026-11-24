@@ -6568,16 +6568,6 @@
       "tf": "15m",
       "candle_ts": 1795282200,
       "side": "SELL",
-      "upper": 3.342152860725209,
-      "open": 3.3844,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "PIEVERSEUSDT",
-      "tf": "15m",
-      "candle_ts": 1795282200,
-      "side": "SELL",
       "upper": 3.34399054230227,
       "open": 3.3844,
       "reported": true,
@@ -9555,6 +9545,16 @@
       "side": "LONG",
       "upper": 0.002570077556400729,
       "open": 0.0022168,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "AKEUSDT",
+      "tf": "15m",
+      "candle_ts": 1795486500,
+      "side": "LONG",
+      "upper": 0.0026183562074993667,
+      "open": 0.0021226,
       "reported": false
     }
   ],
@@ -9896,15 +9896,6 @@
   "last_trade_report_ts": 1795485842,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795190796,
-      "kind": "gap_result",
-      "symbol": "MONUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795190800,
       "kind": "gap_result",
@@ -13491,6 +13482,15 @@
       "ts": 1795485836,
       "kind": "gap_result",
       "symbol": "CYSUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795486653,
+      "kind": "gap_result",
+      "symbol": "AKEUSDT",
       "tf": "15m",
       "gap": 0.0,
       "filled": true,
