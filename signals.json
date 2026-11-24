@@ -1,29 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795514763,
+  "updated_at": 1795515021,
   "signals": [
-    {
-      "kind": "HEARTBEAT",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795483612
-    },
-    {
-      "kind": "GAP",
-      "symbol": "MINIMAXUSDT",
-      "tf": "15m",
-      "gap": 1.23,
-      "ts": 1795483732
-    },
-    {
-      "kind": "GAP",
-      "symbol": "LGELECTRONICSUSDT",
-      "tf": "15m",
-      "gap": 1.04,
-      "ts": 1795483737
-    },
     {
       "kind": "SELL",
       "symbol": "ZHIPUUSDT",
@@ -1402,35 +1381,42 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1795514763
-    }
-  ],
-  "trades": [
+    },
     {
-      "symbol": "AIOTUSDT",
-      "side": "SELL",
-      "entry": 0.08785,
-      "tp": 0.08565375,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.0894,
-      "pnl": -3.7687,
-      "tf": "1h"
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795514787
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795514808
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795515021
     }
   ],
+  "trades": [],
   "start": 1000.0,
   "session_start": 1795478826,
-  "realized": 132.1095,
-  "closed_n": 5,
-  "open_upnl": -3.7687,
-  "equity": 1128.3408,
+  "realized": 121.9103,
+  "closed_n": 6,
+  "open_upnl": 0,
+  "equity": 1121.9103,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
     "profit": 132.1095,
-    "loss": 0,
-    "count": 5
+    "loss": -10.1992,
+    "count": 6
   }
 }
