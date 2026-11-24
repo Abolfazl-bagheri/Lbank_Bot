@@ -6657,16 +6657,6 @@
   ],
   "pending": [
     {
-      "symbol": "DGAIUSDT",
-      "tf": "4h",
-      "candle_ts": 1795363200,
-      "side": "SELL",
-      "upper": 0.9474553391648285,
-      "open": 0.9824,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "NIULAIUSDT",
       "tf": "1h",
       "candle_ts": 1795363200,
@@ -9638,7 +9628,8 @@
       "side": "LONG",
       "upper": 171.94,
       "open": 171.94,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "GTLBUSDT",
@@ -9647,6 +9638,16 @@
       "side": "LONG",
       "upper": 46.09,
       "open": 46.09,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "SSPCUSDT",
+      "tf": "15m",
+      "candle_ts": 1795563900,
+      "side": "SELL",
+      "upper": 9.969000125832649,
+      "open": 9.969,
       "reported": false
     }
   ],
@@ -9986,24 +9987,6 @@
   "last_trade_report_ts": 1795563291,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795254411,
-      "kind": "gap_result",
-      "symbol": "SKYAIUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
-    {
-      "ts": 1795255382,
-      "kind": "gap_result",
-      "symbol": "BLESSUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795255393,
       "kind": "gap_result",
@@ -13579,6 +13562,24 @@
     },
     {
       "ts": 1795563151,
+      "kind": "gap_result",
+      "symbol": "GTLBUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795564074,
+      "kind": "gap_result",
+      "symbol": "FRHCUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795564077,
       "kind": "gap_result",
       "symbol": "GTLBUSDT",
       "tf": "15m",
