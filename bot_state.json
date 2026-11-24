@@ -142,75 +142,9 @@
       "last_leg_candle_ts": 1795553809,
       "dry_run": true,
       "order_id": "PAPER-GILDUSDT-1795531604"
-    },
-    {
-      "symbol": "OPGUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.16230920033004878,
-      "qty": 8625.5123,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 0.15825147032179757,
-      "tf": "1h",
-      "opened_at": 1795554051,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [
-        0.1619,
-        0.1636
-      ],
-      "steps": [
-        {
-          "px": 0.1612,
-          "ts": 1795554051
-        },
-        {
-          "px": 0.1613,
-          "ts": 1795554436
-        },
-        {
-          "px": 0.1631,
-          "ts": 1795556857
-        }
-      ],
-      "entry_candle_ts": 1795554000,
-      "last_leg_candle_ts": 1795556857,
-      "dry_run": true,
-      "order_id": "PAPER-OPGUSDT-1795554051"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "BREVUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.0657,
-      "qty": 3044.14,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.06405749999999999,
-      "tf": "15m",
-      "opened_at": 1794920424,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.0657,
-          "ts": 1794920424
-        }
-      ],
-      "entry_candle_ts": 1794920400,
-      "last_leg_candle_ts": 1794920400,
-      "dry_run": true,
-      "order_id": "PAPER-BREVUSDT-1794920424",
-      "closed_at": 1794921049,
-      "close_px": 0.0683,
-      "pnl_usdt": -7.914764079147658,
-      "close_reason": "STOP",
-      "why": "STOP"
-    },
     {
       "symbol": "BREVUSDT",
       "side": "SELL",
@@ -6678,6 +6612,47 @@
       "pnl_usdt": 6.4199148378643915,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "OPGUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.16230920033004878,
+      "qty": 8625.5123,
+      "margin": 70.0,
+      "leverage": 20,
+      "tp_price": 0.15825147032179757,
+      "tf": "1h",
+      "opened_at": 1795554051,
+      "adds": 2,
+      "last_leg_margin": 40.0,
+      "used_res_levels": [
+        0.1619,
+        0.1636
+      ],
+      "steps": [
+        {
+          "px": 0.1612,
+          "ts": 1795554051
+        },
+        {
+          "px": 0.1613,
+          "ts": 1795554436
+        },
+        {
+          "px": 0.1631,
+          "ts": 1795556857
+        }
+      ],
+      "entry_candle_ts": 1795554000,
+      "last_leg_candle_ts": 1795556857,
+      "dry_run": true,
+      "order_id": "PAPER-OPGUSDT-1795554051",
+      "closed_at": 1795558832,
+      "close_px": 0.1691,
+      "pnl_usdt": -58.57412591892135,
+      "close_reason": "STOP",
+      "why": "STOP"
     }
   ],
   "pending": [
@@ -9980,17 +9955,9 @@
     "ARROWUSDT": 1795554312,
     "APEXUSDT": 1795554319,
     "TSMONUSDT": 1795556797,
-    "CZUSDT": 1795558563,
     "IRENONUSDT": 1795558583,
     "AEHRUSDT": 1795558604,
     "SIMOUSDT": 1795558605,
-    "ATMUSDT": 1795558612,
-    "1000WOJAKUSDT": 1795558614,
-    "1000SATSUSDT": 1795558624,
-    "NEIRO1USDT": 1795558625,
-    "MANCERUSDT": 1795558627,
-    "MEMECOINUSDT": 1795558628,
-    "PIPEDOGUSDT": 1795558629,
     "SPACE1USDT": 1795559487,
     "CAPETHUSDT": 1795559491,
     "CITYUSDT": 1795561399,
@@ -10005,7 +9972,15 @@
     "OROCHIUSDT": 1795595636,
     "1000LUNCUSDT": 1795598199,
     "UP2USDT": 1795600030,
-    "OGFANUSDT": 1795601837
+    "OGFANUSDT": 1795601837,
+    "ATMUSDT": 1795601939,
+    "CZUSDT": 1795601960,
+    "1000SATSUSDT": 1795602006,
+    "MEMECOINUSDT": 1795602009,
+    "MANCERUSDT": 1795602010,
+    "1000WOJAKUSDT": 1795602012,
+    "PIPEDOGUSDT": 1795602013,
+    "NEIRO1USDT": 1795602014
   },
   "last_trade_report_ts": 1795558302,
   "last_known_version": "2.10.0",
