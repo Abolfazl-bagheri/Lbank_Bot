@@ -1,29 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795520778,
+  "updated_at": 1795520967,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "AGPUUSDT",
-      "tf": "4h",
-      "gap": 1.25,
-      "ts": 1795491698
-    },
-    {
-      "kind": "GAP",
-      "symbol": "CYSUSDT",
-      "tf": "4h",
-      "gap": 4.67,
-      "ts": 1795491703
-    },
-    {
-      "kind": "GAP",
-      "symbol": "LGELECTRONICSUSDT",
-      "tf": "4h",
-      "gap": 6.4,
-      "ts": 1795491707
-    },
     {
       "kind": "GAP",
       "symbol": "SAHARAUSDT",
@@ -1402,6 +1381,27 @@
       "tf": "15m",
       "gap": 1.5,
       "ts": 1795520778
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795520783
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795520878
+    },
+    {
+      "kind": "GAP",
+      "symbol": "ARXUSDT",
+      "tf": "4h",
+      "gap": 1.03,
+      "ts": 1795520967
     }
   ],
   "trades": [
@@ -1414,21 +1414,21 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.08889,
-      "pnl": 3.1659,
+      "px": 0.08707,
+      "pnl": 7.1912,
       "tf": "1h"
     },
     {
       "symbol": "PROSUSDT",
       "side": "SELL",
-      "entry": 0.6911,
-      "tp": 0.6738225,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
+      "entry": 0.7026690171452409,
+      "tp": 0.6851022917166099,
+      "adds": 1,
+      "pele": 2,
+      "margin": 30.0,
       "lev": 20,
-      "px": 0.7086,
-      "pnl": -5.3044,
+      "px": 0.714,
+      "pnl": -10.3954,
       "tf": "15m"
     }
   ],
@@ -1436,8 +1436,8 @@
   "session_start": 1795478826,
   "realized": 128.1869,
   "closed_n": 7,
-  "open_upnl": -2.1385,
-  "equity": 1126.0484,
+  "open_upnl": -3.2042,
+  "equity": 1124.9827,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
