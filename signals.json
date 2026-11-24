@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795511808,
+  "updated_at": 1795511868,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "GOLDUSDT",
-      "tf": "5m",
-      "gap": 0.06,
-      "ts": 1795480740
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795480837
-    },
     {
       "kind": "HEARTBEAT",
       "symbol": "—",
@@ -1402,35 +1388,35 @@
       "tf": "15m",
       "gap": 0.26,
       "ts": 1795511808
-    }
-  ],
-  "trades": [
+    },
     {
-      "symbol": "UMCUSDT",
-      "side": "SELL",
-      "entry": 14.893635393617021,
-      "tp": 14.521294508776595,
-      "adds": 2,
-      "pele": 3,
-      "margin": 70.0,
-      "lev": 20,
-      "px": 14.5,
-      "pnl": 35.3217,
-      "tf": "15m"
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795511846
+    },
+    {
+      "kind": "SELL",
+      "symbol": "NVDLUSDT",
+      "tf": "15m",
+      "gap": 1.66,
+      "ts": 1795511868
     }
   ],
+  "trades": [],
   "start": 1000.0,
   "session_start": 1795478826,
-  "realized": 95.1078,
-  "closed_n": 4,
-  "open_upnl": 35.3217,
-  "equity": 1130.4295,
+  "realized": 132.1095,
+  "closed_n": 5,
+  "open_upnl": 0,
+  "equity": 1132.1095,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 95.1078,
+    "profit": 132.1095,
     "loss": 0,
-    "count": 4
+    "count": 5
   }
 }
