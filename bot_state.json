@@ -4,24 +4,30 @@
       "symbol": "SILVERUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 43.69,
-      "qty": 4.5777,
-      "margin": 10.0,
+      "entry": 43.49623779387138,
+      "qty": 13.7943,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 42.59775,
+      "tp_price": 42.408831849024594,
       "tf": "15m",
       "opened_at": 1795480317,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        43.53
+      ],
       "steps": [
         {
           "px": 43.69,
           "ts": 1795480317
+        },
+        {
+          "px": 43.4,
+          "ts": 1795485837
         }
       ],
       "entry_candle_ts": 1795480200,
-      "last_leg_candle_ts": 1795480200,
+      "last_leg_candle_ts": 1795485837,
       "dry_run": true,
       "order_id": "PAPER-SILVERUSDT-1795480317"
     },
@@ -6546,16 +6552,6 @@
   ],
   "pending": [
     {
-      "symbol": "CLAUDIAUSDT",
-      "tf": "15m",
-      "candle_ts": 1795282200,
-      "side": "SELL",
-      "upper": 0.010099028332356614,
-      "open": 0.010283,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "PIEVERSEUSDT",
       "tf": "15m",
       "candle_ts": 1795282200,
@@ -9537,6 +9533,16 @@
       "side": "LONG",
       "upper": 0.061734804748695714,
       "open": 0.0536,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "AKEUSDT",
+      "tf": "15m",
+      "candle_ts": 1795485600,
+      "side": "LONG",
+      "upper": 0.002570077556400729,
+      "open": 0.0022168,
       "reported": false
     }
   ],
@@ -9878,15 +9884,6 @@
   "last_trade_report_ts": 1795484860,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795190785,
-      "kind": "gap_result",
-      "symbol": "DJTUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795190796,
       "kind": "gap_result",
@@ -13473,6 +13470,15 @@
       "ts": 1795484857,
       "kind": "gap_result",
       "symbol": "UMCUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795485836,
+      "kind": "gap_result",
+      "symbol": "CYSUSDT",
       "tf": "15m",
       "gap": 0.0,
       "filled": true,
