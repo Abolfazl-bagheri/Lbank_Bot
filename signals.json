@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795482970,
+  "updated_at": 1795483018,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "FLNCUSDT",
-      "tf": "15m",
-      "gap": 2.02,
-      "ts": 1795471257
-    },
-    {
-      "kind": "SELL",
-      "symbol": "FLNCUSDT",
-      "tf": "1h",
-      "gap": 2.92,
-      "ts": 1795471283
-    },
     {
       "kind": "SELL",
       "symbol": "ACEUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "15m",
       "gap": 1.77,
       "ts": 1795482970
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795482977
+    },
+    {
+      "kind": "SELL",
+      "symbol": "CRCLUSDT",
+      "tf": "15m",
+      "gap": 0.19,
+      "ts": 1795483018
     }
   ],
   "trades": [
@@ -1430,14 +1430,27 @@
       "px": 52.45,
       "pnl": -0.6986,
       "tf": "5m"
+    },
+    {
+      "symbol": "UMCUSDT",
+      "side": "SELL",
+      "entry": 15.04,
+      "tp": 14.664,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 15.04,
+      "pnl": -0.24,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1795478826,
   "realized": 0,
   "closed_n": 0,
-  "open_upnl": -0.7097,
-  "equity": 999.2903,
+  "open_upnl": -0.9497,
+  "equity": 999.0503,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
