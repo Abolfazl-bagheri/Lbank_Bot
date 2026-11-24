@@ -1,73 +1,6 @@
 {
-  "open_trades": [
-    {
-      "symbol": "UMCUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 14.893635393617021,
-      "qty": 94.0,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 14.521294508776595,
-      "tf": "15m",
-      "opened_at": 1795482972,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [
-        15.05,
-        14.85
-      ],
-      "steps": [
-        {
-          "px": 15.04,
-          "ts": 1795482972
-        },
-        {
-          "px": 14.99,
-          "ts": 1795486265
-        },
-        {
-          "px": 14.81,
-          "ts": 1795491285
-        }
-      ],
-      "entry_candle_ts": 1795482900,
-      "last_leg_candle_ts": 1795491285,
-      "dry_run": true,
-      "order_id": "PAPER-UMCUSDT-1795482972"
-    }
-  ],
+  "open_trades": [],
   "trade_history": [
-    {
-      "symbol": "HAEDALUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.02131,
-      "qty": 9385.2651,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.020777249999999997,
-      "tf": "15m",
-      "opened_at": 1794906178,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.02131,
-          "ts": 1794906178
-        }
-      ],
-      "entry_candle_ts": 1794906000,
-      "last_leg_candle_ts": 1794906000,
-      "dry_run": true,
-      "order_id": "PAPER-HAEDALUSDT-1794906178",
-      "closed_at": 1794906775,
-      "close_px": 0.02005,
-      "pnl_usdt": 11.825434068512443,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "PREDICTUSDT",
       "side": "SELL",
@@ -6506,159 +6439,50 @@
       "pnl_usdt": 36.389308809999136,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "UMCUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 14.893635393617021,
+      "qty": 94.0,
+      "margin": 70.0,
+      "leverage": 20,
+      "tp_price": 14.521294508776595,
+      "tf": "15m",
+      "opened_at": 1795482972,
+      "adds": 2,
+      "last_leg_margin": 40.0,
+      "used_res_levels": [
+        15.05,
+        14.85
+      ],
+      "steps": [
+        {
+          "px": 15.04,
+          "ts": 1795482972
+        },
+        {
+          "px": 14.99,
+          "ts": 1795486265
+        },
+        {
+          "px": 14.81,
+          "ts": 1795491285
+        }
+      ],
+      "entry_candle_ts": 1795482900,
+      "last_leg_candle_ts": 1795491285,
+      "dry_run": true,
+      "order_id": "PAPER-UMCUSDT-1795482972",
+      "closed_at": 1795511844,
+      "close_px": 14.5,
+      "pnl_usdt": 37.001681355783084,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
-    {
-      "symbol": "IDOLUSDT",
-      "tf": "1h",
-      "candle_ts": 1795287600,
-      "side": "SELL",
-      "upper": 0.03273679419225322,
-      "open": 0.033444,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "ANSEMUSDT",
-      "tf": "1h",
-      "candle_ts": 1795287600,
-      "side": "SELL",
-      "upper": 0.036894194164826234,
-      "open": 0.03776,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "BULLAUSDT",
-      "tf": "1h",
-      "candle_ts": 1795287600,
-      "side": "SELL",
-      "upper": 0.015477216030572562,
-      "open": 0.015612,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "RAYUSDT",
-      "tf": "15m",
-      "candle_ts": 1795287600,
-      "side": "SELL",
-      "upper": 1.353909044899419,
-      "open": 1.3693,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "YBUSDT",
-      "tf": "15m",
-      "candle_ts": 1795290300,
-      "side": "SELL",
-      "upper": 0.0551567591211166,
-      "open": 0.0552,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "IDOLUSDT",
-      "tf": "1h",
-      "candle_ts": 1795291200,
-      "side": "SELL",
-      "upper": 0.03602388881762586,
-      "open": 0.03724,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "CLAUDIAUSDT",
-      "tf": "4h",
-      "candle_ts": 1795291200,
-      "side": "SELL",
-      "upper": 0.009445755553961759,
-      "open": 0.010156,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "IDOLUSDT",
-      "tf": "4h",
-      "candle_ts": 1795291200,
-      "side": "SELL",
-      "upper": 0.03426257909096174,
-      "open": 0.03724,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "DGAIUSDT",
-      "tf": "4h",
-      "candle_ts": 1795291200,
-      "side": "SELL",
-      "upper": 0.7588904308495458,
-      "open": 0.772,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "IDOLUSDT",
-      "tf": "1h",
-      "candle_ts": 1795294800,
-      "side": "SELL",
-      "upper": 0.03984275621657736,
-      "open": 0.041653,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "CATEUSDT",
-      "tf": "15m",
-      "candle_ts": 1795297500,
-      "side": "LONG",
-      "upper": 0.01810919194269552,
-      "open": 0.01803,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "INITUSDT",
-      "tf": "15m",
-      "candle_ts": 1795297500,
-      "side": "SELL",
-      "upper": 0.09204540385900523,
-      "open": 0.09364,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "COOKIEUSDT",
-      "tf": "15m",
-      "candle_ts": 1795297500,
-      "side": "SELL",
-      "upper": 0.007777424343097118,
-      "open": 0.00788,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "DOGSUSDT",
-      "tf": "15m",
-      "candle_ts": 1795297500,
-      "side": "LONG",
-      "upper": 2.486904551405211e-05,
-      "open": 2.481e-05,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "COOKIEUSDT",
-      "tf": "15m",
-      "candle_ts": 1795297500,
-      "side": "SELL",
-      "upper": 0.007750777381184943,
-      "open": 0.00788,
-      "reported": true,
-      "filled": false
-    },
     {
       "symbol": "IDOLUSDT",
       "tf": "1h",
@@ -9451,7 +9275,8 @@
       "side": "LONG",
       "upper": 44.19997405025993,
       "open": 40.59,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "SOXLUSDT",
@@ -9469,7 +9294,8 @@
       "side": "LONG",
       "upper": 4.476975622291865,
       "open": 4.333,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "RAMUSDT",
@@ -9478,7 +9304,8 @@
       "side": "LONG",
       "upper": 4.942284947477354,
       "open": 4.515,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "SKUUUSDT",
@@ -9496,6 +9323,148 @@
       "side": "LONG",
       "upper": 4.646276460849247,
       "open": 4.333,
+      "reported": false
+    },
+    {
+      "symbol": "CRCLUSDT",
+      "tf": "5m",
+      "candle_ts": 1795511100,
+      "side": "LONG",
+      "upper": 50.98903704158502,
+      "open": 50.03,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "CRCLUSDT",
+      "tf": "5m",
+      "candle_ts": 1795511100,
+      "side": "LONG",
+      "upper": 50.994888822583945,
+      "open": 50.03,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "CRCLUSDT",
+      "tf": "5m",
+      "candle_ts": 1795511100,
+      "side": "LONG",
+      "upper": 51.00741202046719,
+      "open": 50.03,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "CRCLUSDT",
+      "tf": "5m",
+      "candle_ts": 1795511400,
+      "side": "LONG",
+      "upper": 51.037737373743745,
+      "open": 49.89,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "CRCLUSDT",
+      "tf": "5m",
+      "candle_ts": 1795511400,
+      "side": "LONG",
+      "upper": 51.037737373743745,
+      "open": 49.89,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "CRCLUSDT",
+      "tf": "5m",
+      "candle_ts": 1795511400,
+      "side": "LONG",
+      "upper": 51.03589165008051,
+      "open": 49.89,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "CRCLUSDT",
+      "tf": "5m",
+      "candle_ts": 1795511400,
+      "side": "LONG",
+      "upper": 51.0415084826796,
+      "open": 49.89,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "NVDLUSDT",
+      "tf": "15m",
+      "candle_ts": 1795511700,
+      "side": "LONG",
+      "upper": 16.89396297561791,
+      "open": 15.42,
+      "reported": false
+    },
+    {
+      "symbol": "EWTUSDT",
+      "tf": "15m",
+      "candle_ts": 1795511700,
+      "side": "LONG",
+      "upper": 90.11997190922578,
+      "open": 89.28,
+      "reported": false
+    },
+    {
+      "symbol": "ARTYUSDT",
+      "tf": "15m",
+      "candle_ts": 1795511700,
+      "side": "LONG",
+      "upper": 60.65,
+      "open": 60.65,
+      "reported": false
+    },
+    {
+      "symbol": "MUUUSDT",
+      "tf": "15m",
+      "candle_ts": 1795511700,
+      "side": "LONG",
+      "upper": 13.726782946766152,
+      "open": 12.08,
+      "reported": false
+    },
+    {
+      "symbol": "SOFTBANKUSDT",
+      "tf": "15m",
+      "candle_ts": 1795511700,
+      "side": "LONG",
+      "upper": 20.415579231837334,
+      "open": 20.13,
+      "reported": false
+    },
+    {
+      "symbol": "SOXLUSDT",
+      "tf": "15m",
+      "candle_ts": 1795511700,
+      "side": "LONG",
+      "upper": 44.601544388757226,
+      "open": 39.55,
+      "reported": false
+    },
+    {
+      "symbol": "BTCUSDT",
+      "tf": "15m",
+      "candle_ts": 1795511700,
+      "side": "LONG",
+      "upper": 60799.93985704353,
+      "open": 59842.1,
+      "reported": false
+    },
+    {
+      "symbol": "CRCLUSDT",
+      "tf": "15m",
+      "candle_ts": 1795511700,
+      "side": "LONG",
+      "upper": 51.52677021983054,
+      "open": 49.94,
       "reported": false
     }
   ],
@@ -9835,99 +9804,9 @@
     "ARROWUSDT": 1795554312,
     "APEXUSDT": 1795554319
   },
-  "last_trade_report_ts": 1795510576,
+  "last_trade_report_ts": 1795511477,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795190822,
-      "kind": "gap_result",
-      "symbol": "DOGSUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795190825,
-      "kind": "gap_result",
-      "symbol": "RATSUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795194260,
-      "kind": "gap_result",
-      "symbol": "SKDDUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
-    {
-      "ts": 1795194263,
-      "kind": "gap_result",
-      "symbol": "SOXSUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
-    {
-      "ts": 1795194265,
-      "kind": "gap_result",
-      "symbol": "ACNUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
-    {
-      "ts": 1795197849,
-      "kind": "gap_result",
-      "symbol": "SOXSUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
-    {
-      "ts": 1795197851,
-      "kind": "gap_result",
-      "symbol": "SKDDUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
-    {
-      "ts": 1795197855,
-      "kind": "gap_result",
-      "symbol": "BANUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795197857,
-      "kind": "gap_result",
-      "symbol": "BTCUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795197860,
-      "kind": "gap_result",
-      "symbol": "CLAUDIAUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795198650,
       "kind": "gap_result",
@@ -13434,6 +13313,96 @@
       "kind": "gap_result",
       "symbol": "CRCLUSDT",
       "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795511423,
+      "kind": "gap_result",
+      "symbol": "CRCLUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795511425,
+      "kind": "gap_result",
+      "symbol": "CRCLUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795511427,
+      "kind": "gap_result",
+      "symbol": "CRCLUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795511828,
+      "kind": "gap_result",
+      "symbol": "SOXLUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795511830,
+      "kind": "gap_result",
+      "symbol": "CSOPSAMSUNG2LUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795511833,
+      "kind": "gap_result",
+      "symbol": "RAMUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795511835,
+      "kind": "gap_result",
+      "symbol": "CRCLUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795511837,
+      "kind": "gap_result",
+      "symbol": "CRCLUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795511840,
+      "kind": "gap_result",
+      "symbol": "CRCLUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795511842,
+      "kind": "gap_result",
+      "symbol": "CRCLUSDT",
+      "tf": "5m",
       "gap": 0.0,
       "filled": true,
       "note": "filled"
