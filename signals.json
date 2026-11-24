@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795478490,
+  "updated_at": 1795478519,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795433140
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795433157
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "4h",
       "gap": 3.27,
       "ts": 1795478490
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795478498
+    },
+    {
+      "kind": "SELL",
+      "symbol": "FLNCUSDT",
+      "tf": "4h",
+      "gap": 3.48,
+      "ts": 1795478519
     }
   ],
   "trades": [
@@ -1456,14 +1456,27 @@
       "px": 109.35,
       "pnl": -40.0187,
       "tf": "4h"
+    },
+    {
+      "symbol": "CYSUSDT",
+      "side": "SELL",
+      "entry": 0.05986,
+      "tp": 0.0583635,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.05986,
+      "pnl": -0.24,
+      "tf": "4h"
     }
   ],
   "start": 1000.0,
   "session_start": 1795392398,
   "realized": 114.7414,
   "closed_n": 25,
-  "open_upnl": -51.5023,
-  "equity": 1063.2391,
+  "open_upnl": -51.7423,
+  "equity": 1062.9991,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
