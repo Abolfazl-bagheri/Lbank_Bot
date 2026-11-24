@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795531535,
+  "updated_at": 1795531544,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795519565
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795519589
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "15m",
       "gap": 1.83,
       "ts": 1795531535
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795531540
+    },
+    {
+      "kind": "SELL",
+      "symbol": "XBIUSDT",
+      "tf": "15m",
+      "gap": 2.65,
+      "ts": 1795531544
     }
   ],
   "trades": [
@@ -1430,14 +1430,27 @@
       "px": 28.94,
       "pnl": -0.24,
       "tf": "15m"
+    },
+    {
+      "symbol": "ZMUSDT",
+      "side": "SELL",
+      "entry": 91.59,
+      "tp": 89.30025,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 91.59,
+      "pnl": -0.24,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1795478826,
   "realized": 170.2104,
   "closed_n": 9,
-  "open_upnl": -13.9412,
-  "equity": 1156.2692,
+  "open_upnl": -14.1812,
+  "equity": 1156.0292,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
