@@ -110,24 +110,30 @@
       "symbol": "GILDUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 175.75,
-      "qty": 1.138,
-      "margin": 10.0,
+      "entry": 177.27005879398467,
+      "qty": 3.3847,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 171.35625,
+      "tp_price": 172.83830732413506,
       "tf": "15m",
       "opened_at": 1795531604,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        178.43
+      ],
       "steps": [
         {
           "px": 175.75,
           "ts": 1795531604
+        },
+        {
+          "px": 178.04,
+          "ts": 1795553809
         }
       ],
       "entry_candle_ts": 1795531500,
-      "last_leg_candle_ts": 1795531500,
+      "last_leg_candle_ts": 1795553809,
       "dry_run": true,
       "order_id": "PAPER-GILDUSDT-1795531604"
     }
