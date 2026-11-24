@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795518046,
+  "updated_at": 1795518099,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795487548
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795487663
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,15 +1388,43 @@
       "tf": "1h",
       "gap": 1.59,
       "ts": 1795518046
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795518051
+    },
+    {
+      "kind": "SELL",
+      "symbol": "DODOUSDT",
+      "tf": "1h",
+      "gap": 1.3,
+      "ts": 1795518099
     }
   ],
-  "trades": [],
+  "trades": [
+    {
+      "symbol": "AIOTUSDT",
+      "side": "SELL",
+      "entry": 0.09043,
+      "tp": 0.08816924999999999,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.09043,
+      "pnl": -0.24,
+      "tf": "1h"
+    }
+  ],
   "start": 1000.0,
   "session_start": 1795478826,
   "realized": 121.9103,
   "closed_n": 6,
-  "open_upnl": 0,
-  "equity": 1121.9103,
+  "open_upnl": -0.24,
+  "equity": 1121.6703,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
