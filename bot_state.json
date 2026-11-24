@@ -26,31 +26,6 @@
       "order_id": "PAPER-VKTXUSDT-1795531528"
     },
     {
-      "symbol": "ZMUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 91.59,
-      "qty": 2.1836,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 89.30025,
-      "tf": "15m",
-      "opened_at": 1795531536,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 91.59,
-          "ts": 1795531536
-        }
-      ],
-      "entry_candle_ts": 1795531500,
-      "last_leg_candle_ts": 1795531500,
-      "dry_run": true,
-      "order_id": "PAPER-ZMUSDT-1795531536"
-    },
-    {
       "symbol": "XBIUSDT",
       "side": "SELL",
       "status": "open",
@@ -152,36 +127,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "CLAUDIAUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.00745,
-      "qty": 26845.6376,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.00726375,
-      "tf": "4h",
-      "opened_at": 1794916925,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.00745,
-          "ts": 1794916925
-        }
-      ],
-      "entry_candle_ts": 1794916800,
-      "last_leg_candle_ts": 1794916800,
-      "dry_run": true,
-      "order_id": "PAPER-CLAUDIAUSDT-1794916925",
-      "closed_at": 1794918021,
-      "close_px": 0.007121,
-      "pnl_usdt": 8.83221476510068,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "BREVUSDT",
       "side": "SELL",
@@ -6649,49 +6594,39 @@
       "pnl_usdt": 36.897118968642324,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "ZMUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 91.59,
+      "qty": 2.1836,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 89.30025,
+      "tf": "15m",
+      "opened_at": 1795531536,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 91.59,
+          "ts": 1795531536
+        }
+      ],
+      "entry_candle_ts": 1795531500,
+      "last_leg_candle_ts": 1795531500,
+      "dry_run": true,
+      "order_id": "PAPER-ZMUSDT-1795531536",
+      "closed_at": 1795552506,
+      "close_px": 88.65,
+      "pnl_usdt": 6.4199148378643915,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
-    {
-      "symbol": "AIGENSYNUSDT",
-      "tf": "15m",
-      "candle_ts": 1795326300,
-      "side": "SELL",
-      "upper": 0.016440889643810665,
-      "open": 0.0168,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "CLAUDIAUSDT",
-      "tf": "15m",
-      "candle_ts": 1795327200,
-      "side": "SELL",
-      "upper": 0.010577207671609376,
-      "open": 0.010573,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "AIGENSYNUSDT",
-      "tf": "1h",
-      "candle_ts": 1795327200,
-      "side": "SELL",
-      "upper": 0.015818069332067773,
-      "open": 0.01592,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "BLESSUSDT",
-      "tf": "15m",
-      "candle_ts": 1795356000,
-      "side": "SELL",
-      "upper": 0.015568059906440286,
-      "open": 0.015645,
-      "reported": true,
-      "filled": true
-    },
     {
       "symbol": "BLESSUSDT",
       "tf": "1h",
@@ -9646,6 +9581,45 @@
       "open": 170.61,
       "reported": true,
       "filled": false
+    },
+    {
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
+      "candle_ts": 1795552500,
+      "side": "LONG",
+      "upper": 3557.674402001625,
+      "open": 3544.38,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
+      "candle_ts": 1795552500,
+      "side": "LONG",
+      "upper": 3557.683843645538,
+      "open": 3544.38,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
+      "candle_ts": 1795552500,
+      "side": "LONG",
+      "upper": 3557.6619511689482,
+      "open": 3544.38,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
+      "candle_ts": 1795552800,
+      "side": "LONG",
+      "upper": 3558.2947986725253,
+      "open": 3543.88,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -9934,7 +9908,6 @@
     "STONKBROKERUSDT": 1795424588,
     "BEMUSDT": 1795435543,
     "FRONGUSDT": 1795441651,
-    "UP2USDT": 1795458656,
     "DRVUSDT": 1795458666,
     "QUACKAIUSDT": 1795458844,
     "HAJIMIUSDT": 1795464185,
@@ -9980,36 +9953,9 @@
     "BTCDOMUSDT": 1795574028,
     "OROCHIUSDT": 1795595636
   },
-  "last_trade_report_ts": 1795531780,
+  "last_trade_report_ts": 1795552510,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795241101,
-      "kind": "gap_result",
-      "symbol": "POLYMARKETUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795241104,
-      "kind": "gap_result",
-      "symbol": "POLYMARKETUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795245425,
-      "kind": "gap_result",
-      "symbol": "BLESSUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795245436,
       "kind": "gap_result",
@@ -13582,6 +13528,33 @@
       "gap": 0.0,
       "filled": false,
       "note": "miss"
+    },
+    {
+      "ts": 1795552827,
+      "kind": "gap_result",
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795552830,
+      "kind": "gap_result",
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795552833,
+      "kind": "gap_result",
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
     }
   ],
   "tune_history": [],
