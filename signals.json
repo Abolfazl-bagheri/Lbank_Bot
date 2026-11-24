@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795531582,
+  "updated_at": 1795531591,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795520025
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795520119
-    },
     {
       "kind": "HEARTBEAT",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "15m",
       "gap": 2.71,
       "ts": 1795531582
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795531587
+    },
+    {
+      "kind": "SELL",
+      "symbol": "ACNUSDT",
+      "tf": "15m",
+      "gap": 1.17,
+      "ts": 1795531591
     }
   ],
   "trades": [
@@ -1469,14 +1469,27 @@
       "px": 12.85,
       "pnl": -0.24,
       "tf": "15m"
+    },
+    {
+      "symbol": "FOXAUSDT",
+      "side": "SELL",
+      "entry": 65.24,
+      "tp": 63.608999999999995,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 65.24,
+      "pnl": -0.24,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1795478826,
   "realized": 170.2104,
   "closed_n": 9,
-  "open_upnl": -14.6612,
-  "equity": 1155.5492,
+  "open_upnl": -14.9012,
+  "equity": 1155.3092,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
