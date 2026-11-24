@@ -4,24 +4,30 @@
       "symbol": "VKTXUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 28.94,
-      "qty": 6.9109,
-      "margin": 10.0,
+      "entry": 29.317520277929795,
+      "qty": 20.465600000000002,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 28.2165,
+      "tp_price": 28.58458227098155,
       "tf": "15m",
       "opened_at": 1795531528,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        29.59
+      ],
       "steps": [
         {
           "px": 28.94,
           "ts": 1795531528
+        },
+        {
+          "px": 29.51,
+          "ts": 1795554326
         }
       ],
       "entry_candle_ts": 1795531500,
-      "last_leg_candle_ts": 1795531500,
+      "last_leg_candle_ts": 1795554326,
       "dry_run": true,
       "order_id": "PAPER-VKTXUSDT-1795531528"
     },
@@ -9960,7 +9966,6 @@
     "LWLGUSDT": 1795522602,
     "POETUSDT": 1795522606,
     "FIGUSDT": 1795533416,
-    "1000LUNCUSDT": 1795554137,
     "ARROWUSDT": 1795554312,
     "APEXUSDT": 1795554319,
     "TSMONUSDT": 1795556797,
