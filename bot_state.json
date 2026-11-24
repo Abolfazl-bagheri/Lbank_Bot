@@ -4,16 +4,18 @@
       "symbol": "EWZSUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 10.534998393414934,
-      "qty": 56.95309999999999,
-      "margin": 30.0,
+      "entry": 10.589075997755119,
+      "qty": 132.21179999999998,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 10.271623433579562,
+      "tp_price": 10.32434909781124,
       "tf": "15m",
       "opened_at": 1795529750,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
+      "adds": 2,
+      "last_leg_margin": 40.0,
+      "used_res_levels": [
+        10.656
+      ],
       "steps": [
         {
           "px": 10.35,
@@ -22,10 +24,14 @@
         {
           "px": 10.63,
           "ts": 1795530765
+        },
+        {
+          "px": 10.63,
+          "ts": 1795530841
         }
       ],
       "entry_candle_ts": 1795529700,
-      "last_leg_candle_ts": 1795530600,
+      "last_leg_candle_ts": 1795530841,
       "dry_run": true,
       "order_id": "PAPER-EWZSUSDT-1795529750"
     }
@@ -6522,16 +6528,6 @@
   ],
   "pending": [
     {
-      "symbol": "BTCUSDT",
-      "tf": "15m",
-      "candle_ts": 1795317300,
-      "side": "LONG",
-      "upper": 60643.64306631735,
-      "open": 59299.1,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "CARDSUSDT",
       "tf": "15m",
       "candle_ts": 1795319100,
@@ -9513,6 +9509,15 @@
       "upper": 0.018547430776077612,
       "open": 0.01876,
       "reported": false
+    },
+    {
+      "symbol": "EWZSUSDT",
+      "tf": "15m",
+      "candle_ts": 1795530600,
+      "side": "SELL",
+      "upper": 10.395226396703862,
+      "open": 10.596,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -9844,7 +9849,8 @@
     "MURATAUSDT": 1795566654,
     "LIGHT1USDT": 1795566784,
     "O1USDT": 1795571202,
-    "IBBETFUSDT": 1795572180
+    "IBBETFUSDT": 1795572180,
+    "BTCDOMUSDT": 1795574028
   },
   "last_trade_report_ts": 1795529934,
   "last_known_version": "2.10.0",
