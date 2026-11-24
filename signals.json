@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795514451,
+  "updated_at": 1795514462,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "MINIMAXUSDT",
-      "tf": "15m",
-      "gap": 1.29,
-      "ts": 1795482924
-    },
-    {
-      "kind": "SELL",
-      "symbol": "CARDSUSDT",
-      "tf": "15m",
-      "gap": 1.45,
-      "ts": 1795482966
-    },
     {
       "kind": "SELL",
       "symbol": "UMCUSDT",
@@ -1402,15 +1388,43 @@
       "tf": "1h",
       "gap": 2.04,
       "ts": 1795514451
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795514456
+    },
+    {
+      "kind": "SELL",
+      "symbol": "MVLLUSDT",
+      "tf": "1h",
+      "gap": 1.19,
+      "ts": 1795514462
     }
   ],
-  "trades": [],
+  "trades": [
+    {
+      "symbol": "AIOTUSDT",
+      "side": "SELL",
+      "entry": 0.08785,
+      "tp": 0.08565375,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.08785,
+      "pnl": -0.24,
+      "tf": "1h"
+    }
+  ],
   "start": 1000.0,
   "session_start": 1795478826,
   "realized": 132.1095,
   "closed_n": 5,
-  "open_upnl": 0,
-  "equity": 1132.1095,
+  "open_upnl": -0.24,
+  "equity": 1131.8695,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
