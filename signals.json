@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795521628,
+  "updated_at": 1795521661,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "SAHARAUSDT",
-      "tf": "1h",
-      "gap": 2.41,
-      "ts": 1795492486
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795510468
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,29 +1388,43 @@
       "tf": "1h",
       "gap": 2.56,
       "ts": 1795521628
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795521632
+    },
+    {
+      "kind": "SELL",
+      "symbol": "PROSUSDT",
+      "tf": "4h",
+      "gap": 3.38,
+      "ts": 1795521661
     }
   ],
   "trades": [
     {
       "symbol": "PROSUSDT",
       "side": "SELL",
-      "entry": 0.7026690171452409,
-      "tp": 0.6851022917166099,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
+      "entry": 0.6829666385772244,
+      "tp": 0.6658924726127937,
+      "adds": 2,
+      "pele": 3,
+      "margin": 70.0,
       "lev": 20,
       "px": 0.6689,
-      "pnl": 28.1149,
-      "tf": "15m"
+      "pnl": 27.1549,
+      "tf": "1h"
     }
   ],
   "start": 1000.0,
   "session_start": 1795478826,
   "realized": 135.0209,
   "closed_n": 8,
-  "open_upnl": 28.1149,
-  "equity": 1163.1358,
+  "open_upnl": 27.1549,
+  "equity": 1162.1758,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
