@@ -109,6 +109,31 @@
       "last_leg_candle_ts": 1795531500,
       "dry_run": true,
       "order_id": "PAPER-XBIUSDT-1795531546"
+    },
+    {
+      "symbol": "PAYPUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 12.85,
+      "qty": 15.5642,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 12.528749999999999,
+      "tf": "15m",
+      "opened_at": 1795531559,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 12.85,
+          "ts": 1795531559
+        }
+      ],
+      "entry_candle_ts": 1795531500,
+      "last_leg_candle_ts": 1795531500,
+      "dry_run": true,
+      "order_id": "PAPER-PAYPUSDT-1795531559"
     }
   ],
   "trade_history": [
@@ -6603,26 +6628,6 @@
   ],
   "pending": [
     {
-      "symbol": "AIGENSYNUSDT",
-      "tf": "1h",
-      "candle_ts": 1795320000,
-      "side": "SELL",
-      "upper": 0.015091824935971263,
-      "open": 0.01535,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "AIGENSYNUSDT",
-      "tf": "4h",
-      "candle_ts": 1795320000,
-      "side": "SELL",
-      "upper": 0.014942700466233446,
-      "open": 0.01535,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "AKEUSDT",
       "tf": "1h",
       "candle_ts": 1795320000,
@@ -9590,6 +9595,24 @@
       "side": "SELL",
       "upper": 89.9156410158775,
       "open": 91.73,
+      "reported": false
+    },
+    {
+      "symbol": "XBIUSDT",
+      "tf": "15m",
+      "candle_ts": 1795531500,
+      "side": "SELL",
+      "upper": 148.64531487148082,
+      "open": 148.23,
+      "reported": false
+    },
+    {
+      "symbol": "EWZSUSDT",
+      "tf": "15m",
+      "candle_ts": 1795531500,
+      "side": "SELL",
+      "upper": 10.464758795691775,
+      "open": 10.538,
       "reported": false
     }
   ],
