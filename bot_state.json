@@ -49,6 +49,31 @@
       "last_leg_candle_ts": 1795482000,
       "dry_run": true,
       "order_id": "PAPER-CRCLUSDT-1795482362"
+    },
+    {
+      "symbol": "UMCUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 15.04,
+      "qty": 13.2979,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 14.664,
+      "tf": "15m",
+      "opened_at": 1795482972,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 15.04,
+          "ts": 1795482972
+        }
+      ],
+      "entry_candle_ts": 1795482900,
+      "last_leg_candle_ts": 1795482900,
+      "dry_run": true,
+      "order_id": "PAPER-UMCUSDT-1795482972"
     }
   ],
   "trade_history": [
@@ -6529,26 +6554,6 @@
     {
       "symbol": "SKYAIUSDT",
       "tf": "15m",
-      "candle_ts": 1795252500,
-      "side": "SELL",
-      "upper": 0.030408945887955882,
-      "open": 0.03201,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "SKYAIUSDT",
-      "tf": "15m",
-      "candle_ts": 1795253400,
-      "side": "SELL",
-      "upper": 0.033743269331828814,
-      "open": 0.03555,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "SKYAIUSDT",
-      "tf": "15m",
       "candle_ts": 1795254300,
       "side": "SELL",
       "upper": 0.03455192676895059,
@@ -9517,6 +9522,24 @@
       "side": "SELL",
       "upper": 52.39589388081129,
       "open": 52.42,
+      "reported": false
+    },
+    {
+      "symbol": "MINIMAXUSDT",
+      "tf": "15m",
+      "candle_ts": 1795482900,
+      "side": "SELL",
+      "upper": 14.539344743133572,
+      "open": 14.63,
+      "reported": false
+    },
+    {
+      "symbol": "CARDSUSDT",
+      "tf": "15m",
+      "candle_ts": 1795482900,
+      "side": "SELL",
+      "upper": 0.17945883223875503,
+      "open": 0.18072,
       "reported": false
     }
   ],
