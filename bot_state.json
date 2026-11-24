@@ -29,24 +29,28 @@
       "symbol": "CRCLUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 52.33,
-      "qty": 3.8219,
-      "margin": 10.0,
+      "entry": 52.409938855016506,
+      "qty": 11.4482,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 51.02175,
-      "tf": "5m",
+      "tp_price": 51.09969038364109,
+      "tf": "15m",
       "opened_at": 1795482362,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 52.33,
           "ts": 1795482362
+        },
+        {
+          "px": 52.45,
+          "ts": 1795483020
         }
       ],
       "entry_candle_ts": 1795482300,
-      "last_leg_candle_ts": 1795482000,
+      "last_leg_candle_ts": 1795482900,
       "dry_run": true,
       "order_id": "PAPER-CRCLUSDT-1795482362"
     },
@@ -6553,16 +6557,6 @@
   "pending": [
     {
       "symbol": "SKYAIUSDT",
-      "tf": "15m",
-      "candle_ts": 1795254300,
-      "side": "SELL",
-      "upper": 0.03455192676895059,
-      "open": 0.03456,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "SKYAIUSDT",
       "tf": "1h",
       "candle_ts": 1795255200,
       "side": "SELL",
@@ -9540,6 +9534,15 @@
       "side": "SELL",
       "upper": 0.17945883223875503,
       "open": 0.18072,
+      "reported": false
+    },
+    {
+      "symbol": "UMCUSDT",
+      "tf": "15m",
+      "candle_ts": 1795482900,
+      "side": "SELL",
+      "upper": 14.774144592081331,
+      "open": 14.83,
       "reported": false
     }
   ],
