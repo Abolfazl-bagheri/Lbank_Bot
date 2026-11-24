@@ -9667,7 +9667,8 @@
       "side": "SELL",
       "upper": 12.69000006209683,
       "open": 12.69,
-      "reported": false
+      "reported": true,
+      "filled": false
     }
   ],
   "paper_days": [
@@ -10001,18 +10002,9 @@
     "OROCHIUSDT": 1795595636,
     "1000LUNCUSDT": 1795598199
   },
-  "last_trade_report_ts": 1795555084,
+  "last_trade_report_ts": 1795556095,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795248290,
-      "kind": "gap_result",
-      "symbol": "ENSOUSDT",
-      "tf": "4h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795248295,
       "kind": "gap_result",
@@ -13603,6 +13595,15 @@
       "gap": 0.0,
       "filled": true,
       "note": "filled"
+    },
+    {
+      "ts": 1795555956,
+      "kind": "gap_result",
+      "symbol": "PAYPUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
     }
   ],
   "tune_history": [],
