@@ -6546,16 +6546,6 @@
   ],
   "pending": [
     {
-      "symbol": "PIEVERSEUSDT",
-      "tf": "15m",
-      "candle_ts": 1795281300,
-      "side": "SELL",
-      "upper": 3.268835266433442,
-      "open": 3.3292,
-      "reported": true,
-      "filled": false
-    },
-    {
       "symbol": "CLAUDIAUSDT",
       "tf": "15m",
       "candle_ts": 1795282200,
@@ -9517,7 +9507,8 @@
       "side": "SELL",
       "upper": 48.080821197021706,
       "open": 48.36,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "MINIMAXUSDT",
@@ -9526,7 +9517,8 @@
       "side": "SELL",
       "upper": 14.549217607221522,
       "open": 14.71,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "UMCUSDT",
@@ -9535,6 +9527,16 @@
       "side": "SELL",
       "upper": 14.808575973478716,
       "open": 14.77,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "CYSUSDT",
+      "tf": "15m",
+      "candle_ts": 1795484700,
+      "side": "LONG",
+      "upper": 0.061734804748695714,
+      "open": 0.0536,
       "reported": false
     }
   ],
@@ -9873,36 +9875,9 @@
     "MURATAUSDT": 1795522736,
     "LIGHT1USDT": 1795523511
   },
-  "last_trade_report_ts": 1795483609,
+  "last_trade_report_ts": 1795484860,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795190777,
-      "kind": "gap_result",
-      "symbol": "ELSAUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795190780,
-      "kind": "gap_result",
-      "symbol": "HUMAUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795190782,
-      "kind": "gap_result",
-      "symbol": "MRNAUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795190785,
       "kind": "gap_result",
@@ -13471,6 +13446,33 @@
       "ts": 1795483978,
       "kind": "gap_result",
       "symbol": "CRCLUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795484849,
+      "kind": "gap_result",
+      "symbol": "ZHIPUUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795484854,
+      "kind": "gap_result",
+      "symbol": "MINIMAXUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795484857,
+      "kind": "gap_result",
+      "symbol": "UMCUSDT",
       "tf": "15m",
       "gap": 0.0,
       "filled": true,
