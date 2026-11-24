@@ -1,5 +1,31 @@
 {
-  "open_trades": [],
+  "open_trades": [
+    {
+      "symbol": "EWZSUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 10.35,
+      "qty": 19.3237,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 10.091249999999999,
+      "tf": "15m",
+      "opened_at": 1795529750,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 10.35,
+          "ts": 1795529750
+        }
+      ],
+      "entry_candle_ts": 1795529700,
+      "last_leg_candle_ts": 1795529700,
+      "dry_run": true,
+      "order_id": "PAPER-EWZSUSDT-1795529750"
+    }
+  ],
   "trade_history": [
     {
       "symbol": "SOONUSDT",
@@ -6492,16 +6518,6 @@
   ],
   "pending": [
     {
-      "symbol": "AKEUSDT",
-      "tf": "15m",
-      "candle_ts": 1795314600,
-      "side": "LONG",
-      "upper": 0.0059656015431727915,
-      "open": 0.0037101,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "CLAUDIAUSDT",
       "tf": "15m",
       "candle_ts": 1795315500,
@@ -9482,6 +9498,15 @@
       "side": "SELL",
       "upper": 10.186686036282703,
       "open": 10.149,
+      "reported": false
+    },
+    {
+      "symbol": "MMTUSDT",
+      "tf": "15m",
+      "candle_ts": 1795529700,
+      "side": "LONG",
+      "upper": 0.2429139657575713,
+      "open": 0.2178,
       "reported": false
     }
   ],
