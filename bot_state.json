@@ -6657,26 +6657,6 @@
   ],
   "pending": [
     {
-      "symbol": "BULLAUSDT",
-      "tf": "4h",
-      "candle_ts": 1795363200,
-      "side": "SELL",
-      "upper": 0.018087163126538193,
-      "open": 0.018743,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "ZCATUSDT",
-      "tf": "1h",
-      "candle_ts": 1795363200,
-      "side": "SELL",
-      "upper": 0.019734783033313958,
-      "open": 0.01922,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "DGAIUSDT",
       "tf": "4h",
       "candle_ts": 1795363200,
@@ -9638,7 +9618,8 @@
       "side": "LONG",
       "upper": 171.9598606797274,
       "open": 171.94,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "GTLBUSDT",
@@ -9646,6 +9627,25 @@
       "candle_ts": 1795562100,
       "side": "LONG",
       "upper": 46.159609903367716,
+      "open": 46.09,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "FRHCUSDT",
+      "tf": "15m",
+      "candle_ts": 1795563000,
+      "side": "LONG",
+      "upper": 171.94,
+      "open": 171.94,
+      "reported": false
+    },
+    {
+      "symbol": "GTLBUSDT",
+      "tf": "15m",
+      "candle_ts": 1795563000,
+      "side": "LONG",
+      "upper": 46.09,
       "open": 46.09,
       "reported": false
     }
@@ -9985,24 +9985,6 @@
   "last_trade_report_ts": 1795562384,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795252612,
-      "kind": "gap_result",
-      "symbol": "NAORISUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
-    {
-      "ts": 1795253504,
-      "kind": "gap_result",
-      "symbol": "SKYAIUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795254411,
       "kind": "gap_result",
@@ -13584,6 +13566,24 @@
       "gap": 0.0,
       "filled": false,
       "note": "miss"
+    },
+    {
+      "ts": 1795563148,
+      "kind": "gap_result",
+      "symbol": "FRHCUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795563151,
+      "kind": "gap_result",
+      "symbol": "GTLBUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
     }
   ],
   "tune_history": [],
