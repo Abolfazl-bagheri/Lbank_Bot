@@ -6564,16 +6564,6 @@
   ],
   "pending": [
     {
-      "symbol": "PIEVERSEUSDT",
-      "tf": "15m",
-      "candle_ts": 1795282200,
-      "side": "SELL",
-      "upper": 3.34399054230227,
-      "open": 3.3844,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "CLAUDIAUSDT",
       "tf": "15m",
       "candle_ts": 1795283100,
@@ -9555,6 +9545,16 @@
       "side": "LONG",
       "upper": 0.0026183562074993667,
       "open": 0.0021226,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "BTCUSDT",
+      "tf": "15m",
+      "candle_ts": 1795487400,
+      "side": "LONG",
+      "upper": 61715.58850136562,
+      "open": 60623.6,
       "reported": false
     }
   ],
@@ -9896,15 +9896,6 @@
   "last_trade_report_ts": 1795486771,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795190800,
-      "kind": "gap_result",
-      "symbol": "TEAMUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
     {
       "ts": 1795190802,
       "kind": "gap_result",
@@ -13489,6 +13480,15 @@
     },
     {
       "ts": 1795486653,
+      "kind": "gap_result",
+      "symbol": "AKEUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795487545,
       "kind": "gap_result",
       "symbol": "AKEUSDT",
       "tf": "15m",
