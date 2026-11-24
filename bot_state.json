@@ -159,6 +159,31 @@
       "last_leg_candle_ts": 1795531500,
       "dry_run": true,
       "order_id": "PAPER-FOXAUSDT-1795531583"
+    },
+    {
+      "symbol": "GILDUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 175.75,
+      "qty": 1.138,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 171.35625,
+      "tf": "15m",
+      "opened_at": 1795531604,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 175.75,
+          "ts": 1795531604
+        }
+      ],
+      "entry_candle_ts": 1795531500,
+      "last_leg_candle_ts": 1795531500,
+      "dry_run": true,
+      "order_id": "PAPER-GILDUSDT-1795531604"
     }
   ],
   "trade_history": [
@@ -6653,26 +6678,6 @@
   ],
   "pending": [
     {
-      "symbol": "AIGENSYNUSDT",
-      "tf": "4h",
-      "candle_ts": 1795320000,
-      "side": "SELL",
-      "upper": 0.014942700466233446,
-      "open": 0.01535,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "BLESSUSDT",
-      "tf": "15m",
-      "candle_ts": 1795320900,
-      "side": "SELL",
-      "upper": 0.013423786678639587,
-      "open": 0.013554,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "BLESSUSDT",
       "tf": "15m",
       "candle_ts": 1795320900,
@@ -9636,6 +9641,24 @@
       "side": "SELL",
       "upper": 188.50906454129301,
       "open": 188.46,
+      "reported": false
+    },
+    {
+      "symbol": "FOXAUSDT",
+      "tf": "15m",
+      "candle_ts": 1795531500,
+      "side": "SELL",
+      "upper": 63.47,
+      "open": 63.47,
+      "reported": false
+    },
+    {
+      "symbol": "ACNUSDT",
+      "tf": "15m",
+      "candle_ts": 1795531500,
+      "side": "SELL",
+      "upper": 228.83100489898536,
+      "open": 230.52,
       "reported": false
     }
   ],
