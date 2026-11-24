@@ -9545,7 +9545,8 @@
       "side": "LONG",
       "upper": 61845.42330885063,
       "open": 60310.6,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CRCLUSDT",
@@ -9554,7 +9555,8 @@
       "side": "LONG",
       "upper": 52.53395847685195,
       "open": 50.95,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -9895,24 +9897,6 @@
   "last_trade_report_ts": 1795488950,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795190805,
-      "kind": "gap_result",
-      "symbol": "SKDDUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795190814,
-      "kind": "gap_result",
-      "symbol": "DODOUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795190817,
       "kind": "gap_result",
@@ -13490,6 +13474,24 @@
       "ts": 1795488444,
       "kind": "gap_result",
       "symbol": "BTCUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795489433,
+      "kind": "gap_result",
+      "symbol": "BTCUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795489437,
+      "kind": "gap_result",
+      "symbol": "CRCLUSDT",
       "tf": "15m",
       "gap": 0.0,
       "filled": true,
