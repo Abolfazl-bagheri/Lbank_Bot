@@ -6492,16 +6492,6 @@
   ],
   "pending": [
     {
-      "symbol": "CATEUSDT",
-      "tf": "15m",
-      "candle_ts": 1795313700,
-      "side": "SELL",
-      "upper": 0.018506975158774593,
-      "open": 0.01879,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "AKEUSDT",
       "tf": "15m",
       "candle_ts": 1795313700,
@@ -9455,7 +9445,8 @@
       "side": "SELL",
       "upper": 0.651796692720318,
       "open": 0.6685,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "PROSUSDT",
@@ -9482,6 +9473,16 @@
       "side": "SELL",
       "upper": 3649.132109906722,
       "open": 3650.31,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "PROSUSDT",
+      "tf": "1h",
+      "candle_ts": 1795525200,
+      "side": "SELL",
+      "upper": 0.6659514105828437,
+      "open": 0.6717,
       "reported": false
     }
   ],
@@ -9817,27 +9818,9 @@
     "MURATAUSDT": 1795566654,
     "LIGHT1USDT": 1795566784
   },
-  "last_trade_report_ts": 1795524025,
+  "last_trade_report_ts": 1795524927,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795229234,
-      "kind": "gap_result",
-      "symbol": "ENSOUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
-    {
-      "ts": 1795230225,
-      "kind": "gap_result",
-      "symbol": "ENSOUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
     {
       "ts": 1795230228,
       "kind": "gap_result",
@@ -13415,6 +13398,24 @@
       "ts": 1795521910,
       "kind": "gap_result",
       "symbol": "PROSUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795525394,
+      "kind": "gap_result",
+      "symbol": "PROSUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
+    },
+    {
+      "ts": 1795525396,
+      "kind": "gap_result",
+      "symbol": "GOLDUSDT",
       "tf": "15m",
       "gap": 0.0,
       "filled": true,
