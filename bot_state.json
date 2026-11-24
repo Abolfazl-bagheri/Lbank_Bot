@@ -6677,16 +6677,6 @@
   ],
   "pending": [
     {
-      "symbol": "XVGUSDT",
-      "tf": "15m",
-      "candle_ts": 1795358700,
-      "side": "SELL",
-      "upper": 0.0016747607996300804,
-      "open": 0.001748,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "ZESTUSDT",
       "tf": "15m",
       "candle_ts": 1795358700,
@@ -9667,6 +9657,16 @@
       "side": "SELL",
       "upper": 12.690000094599059,
       "open": 12.69,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "PAYPUSDT",
+      "tf": "15m",
+      "candle_ts": 1795554900,
+      "side": "SELL",
+      "upper": 12.69000006209683,
+      "open": 12.69,
       "reported": false
     }
   ],
@@ -9998,20 +9998,12 @@
     "O1USDT": 1795571202,
     "IBBETFUSDT": 1795572180,
     "BTCDOMUSDT": 1795574028,
-    "OROCHIUSDT": 1795595636
+    "OROCHIUSDT": 1795595636,
+    "1000LUNCUSDT": 1795598199
   },
-  "last_trade_report_ts": 1795553812,
+  "last_trade_report_ts": 1795555084,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795247275,
-      "kind": "gap_result",
-      "symbol": "CLAUDIAUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795248290,
       "kind": "gap_result",
@@ -13599,6 +13591,15 @@
       "kind": "gap_result",
       "symbol": "XAUTUSDT",
       "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795555078,
+      "kind": "gap_result",
+      "symbol": "PAYPUSDT",
+      "tf": "15m",
       "gap": 0.0,
       "filled": true,
       "note": "filled"
