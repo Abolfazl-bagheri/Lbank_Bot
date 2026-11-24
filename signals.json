@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795478519,
+  "updated_at": 1795478821,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795433183
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795433201
-    },
     {
       "kind": "GAP",
       "symbol": "PROMUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "4h",
       "gap": 3.48,
       "ts": 1795478519
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795478524
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795478821
     }
   ],
   "trades": [
@@ -1469,14 +1469,27 @@
       "px": 0.05986,
       "pnl": -0.24,
       "tf": "4h"
+    },
+    {
+      "symbol": "FLNCUSDT",
+      "side": "SELL",
+      "entry": 4.333,
+      "tp": 4.224675,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 4.333,
+      "pnl": -0.24,
+      "tf": "4h"
     }
   ],
   "start": 1000.0,
   "session_start": 1795392398,
   "realized": 114.7414,
   "closed_n": 25,
-  "open_upnl": -51.7423,
-  "equity": 1062.9991,
+  "open_upnl": -51.9823,
+  "equity": 1062.7591,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
