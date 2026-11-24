@@ -134,6 +134,31 @@
       "last_leg_candle_ts": 1795531500,
       "dry_run": true,
       "order_id": "PAPER-PAYPUSDT-1795531559"
+    },
+    {
+      "symbol": "FOXAUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 65.24,
+      "qty": 3.0656,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 63.608999999999995,
+      "tf": "15m",
+      "opened_at": 1795531583,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 65.24,
+          "ts": 1795531583
+        }
+      ],
+      "entry_candle_ts": 1795531500,
+      "last_leg_candle_ts": 1795531500,
+      "dry_run": true,
+      "order_id": "PAPER-FOXAUSDT-1795531583"
     }
   ],
   "trade_history": [
@@ -6628,26 +6653,6 @@
   ],
   "pending": [
     {
-      "symbol": "AKEUSDT",
-      "tf": "1h",
-      "candle_ts": 1795320000,
-      "side": "LONG",
-      "upper": 0.006479342704216865,
-      "open": 0.002799,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "DGAIUSDT",
-      "tf": "4h",
-      "candle_ts": 1795320000,
-      "side": "SELL",
-      "upper": 0.8136579619810373,
-      "open": 0.8207,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "AIGENSYNUSDT",
       "tf": "4h",
       "candle_ts": 1795320000,
@@ -9613,6 +9618,24 @@
       "side": "SELL",
       "upper": 10.464758795691775,
       "open": 10.538,
+      "reported": false
+    },
+    {
+      "symbol": "PAYPUSDT",
+      "tf": "15m",
+      "candle_ts": 1795531500,
+      "side": "SELL",
+      "upper": 12.50739772810882,
+      "open": 12.59,
+      "reported": false
+    },
+    {
+      "symbol": "CRMUSDT",
+      "tf": "15m",
+      "candle_ts": 1795531500,
+      "side": "SELL",
+      "upper": 188.50906454129301,
+      "open": 188.46,
       "reported": false
     }
   ],
