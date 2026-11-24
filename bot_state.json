@@ -6484,16 +6484,6 @@
   ],
   "pending": [
     {
-      "symbol": "COOKIEUSDT",
-      "tf": "1h",
-      "candle_ts": 1795298400,
-      "side": "SELL",
-      "upper": 0.007712166011967245,
-      "open": 0.00787,
-      "reported": true,
-      "filled": false
-    },
-    {
       "symbol": "INITUSDT",
       "tf": "1h",
       "candle_ts": 1795298400,
@@ -9472,6 +9462,16 @@
       "side": "LONG",
       "upper": 90.12611124092629,
       "open": 89.28,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "EWTUSDT",
+      "tf": "15m",
+      "candle_ts": 1795513500,
+      "side": "LONG",
+      "upper": 90.13203212465204,
+      "open": 89.28,
       "reported": false
     }
   ],
@@ -9734,7 +9734,6 @@
     "UBIKUSDT": 1794387803,
     "MARRIOTTUSDT": 1794387810,
     "ONSEMIUSDT": 1794406599,
-    "TSMONUSDT": 1794407661,
     "NEXUSDT": 1794441907,
     "KOPNUSDT": 1794454330,
     "AMCUSDT": 1794985408,
@@ -9808,20 +9807,12 @@
     "FIGUSDT": 1795533416,
     "1000LUNCUSDT": 1795554137,
     "ARROWUSDT": 1795554312,
-    "APEXUSDT": 1795554319
+    "APEXUSDT": 1795554319,
+    "TSMONUSDT": 1795556797
   },
   "last_trade_report_ts": 1795513287,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795201437,
-      "kind": "gap_result",
-      "symbol": "BTCUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795204055,
       "kind": "gap_result",
@@ -13408,6 +13399,15 @@
       "ts": 1795512735,
       "kind": "gap_result",
       "symbol": "NVDLUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795513619,
+      "kind": "gap_result",
+      "symbol": "EWTUSDT",
       "tf": "15m",
       "gap": 0.0,
       "filled": true,
