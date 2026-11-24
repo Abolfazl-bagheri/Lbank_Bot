@@ -6682,16 +6682,6 @@
   ],
   "pending": [
     {
-      "symbol": "BLESSUSDT",
-      "tf": "1h",
-      "candle_ts": 1795359600,
-      "side": "SELL",
-      "upper": 0.016447285753598374,
-      "open": 0.01699,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "XVGUSDT",
       "tf": "1h",
       "candle_ts": 1795359600,
@@ -9672,6 +9662,16 @@
       "side": "LONG",
       "upper": 46.36381811916492,
       "open": 46.09,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "GTLBUSDT",
+      "tf": "15m",
+      "candle_ts": 1795558500,
+      "side": "LONG",
+      "upper": 46.34003213558143,
+      "open": 46.09,
       "reported": false
     }
   ],
@@ -10004,20 +10004,12 @@
     "BTCDOMUSDT": 1795574028,
     "OROCHIUSDT": 1795595636,
     "1000LUNCUSDT": 1795598199,
-    "UP2USDT": 1795600030
+    "UP2USDT": 1795600030,
+    "OGFANUSDT": 1795601837
   },
   "last_trade_report_ts": 1795558302,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795250788,
-      "kind": "gap_result",
-      "symbol": "BLESSUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795251785,
       "kind": "gap_result",
@@ -13602,6 +13594,15 @@
     },
     {
       "ts": 1795557869,
+      "kind": "gap_result",
+      "symbol": "GTLBUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795558661,
       "kind": "gap_result",
       "symbol": "GTLBUSDT",
       "tf": "15m",
