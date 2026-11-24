@@ -147,24 +147,30 @@
       "symbol": "OPGUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.1612,
-      "qty": 1240.6948,
-      "margin": 10.0,
+      "entry": 0.1612666528837434,
+      "qty": 3720.5460000000003,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.15717,
+      "tp_price": 0.1572349865616498,
       "tf": "1h",
       "opened_at": 1795554051,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.1619
+      ],
       "steps": [
         {
           "px": 0.1612,
           "ts": 1795554051
+        },
+        {
+          "px": 0.1613,
+          "ts": 1795554436
         }
       ],
       "entry_candle_ts": 1795554000,
-      "last_leg_candle_ts": 1795554000,
+      "last_leg_candle_ts": 1795554436,
       "dry_run": true,
       "order_id": "PAPER-OPGUSDT-1795554051"
     }
