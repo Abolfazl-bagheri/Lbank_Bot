@@ -1,29 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795519930,
+  "updated_at": 1795520119,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795490484
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795490514
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795490741
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1381,27 @@
       "tf": "15m",
       "gap": 2.5,
       "ts": 1795519930
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795519935
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795520025
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795520119
     }
   ],
   "trades": [
@@ -1414,17 +1414,30 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.08905,
-      "pnl": 2.8121,
+      "px": 0.08994,
+      "pnl": 0.8437,
       "tf": "1h"
+    },
+    {
+      "symbol": "PROSUSDT",
+      "side": "SELL",
+      "entry": 0.6911,
+      "tp": 0.6738225,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.6986,
+      "pnl": -2.4105,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1795478826,
   "realized": 128.1869,
   "closed_n": 7,
-  "open_upnl": 2.8121,
-  "equity": 1130.999,
+  "open_upnl": -1.5668,
+  "equity": 1126.6201,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
