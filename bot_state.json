@@ -9647,7 +9647,8 @@
       "side": "LONG",
       "upper": 46.34003213558143,
       "open": 46.09,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -9958,7 +9959,6 @@
     "IRENONUSDT": 1795558583,
     "AEHRUSDT": 1795558604,
     "SIMOUSDT": 1795558605,
-    "SPACE1USDT": 1795559487,
     "CAPETHUSDT": 1795559491,
     "CITYUSDT": 1795561399,
     "FIGHT1USDT": 1795562282,
@@ -9980,20 +9980,12 @@
     "MANCERUSDT": 1795602010,
     "1000WOJAKUSDT": 1795602012,
     "PIPEDOGUSDT": 1795602013,
-    "NEIRO1USDT": 1795602014
+    "NEIRO1USDT": 1795602014,
+    "SPACE1USDT": 1795602877
   },
-  "last_trade_report_ts": 1795558302,
+  "last_trade_report_ts": 1795559564,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795251785,
-      "kind": "gap_result",
-      "symbol": "YBUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795251795,
       "kind": "gap_result",
@@ -13578,6 +13570,15 @@
     },
     {
       "ts": 1795558661,
+      "kind": "gap_result",
+      "symbol": "GTLBUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795559558,
       "kind": "gap_result",
       "symbol": "GTLBUSDT",
       "tf": "15m",
