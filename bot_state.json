@@ -6496,26 +6496,6 @@
       "tf": "15m",
       "candle_ts": 1795314600,
       "side": "LONG",
-      "upper": 0.005925414330421373,
-      "open": 0.0037101,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "CATEUSDT",
-      "tf": "15m",
-      "candle_ts": 1795314600,
-      "side": "SELL",
-      "upper": 0.01899690668054848,
-      "open": 0.01928,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "AKEUSDT",
-      "tf": "15m",
-      "candle_ts": 1795314600,
-      "side": "LONG",
       "upper": 0.0059656015431727915,
       "open": 0.0037101,
       "reported": true,
@@ -9463,7 +9443,8 @@
       "side": "SELL",
       "upper": 0.6659514105828437,
       "open": 0.6717,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CRCLUSDT",
@@ -9484,6 +9465,24 @@
       "open": 49.82,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "MMTUSDT",
+      "tf": "15m",
+      "candle_ts": 1795528800,
+      "side": "LONG",
+      "upper": 0.24021661495137228,
+      "open": 0.2243,
+      "reported": false
+    },
+    {
+      "symbol": "EWZSUSDT",
+      "tf": "15m",
+      "candle_ts": 1795528800,
+      "side": "SELL",
+      "upper": 10.186686036282703,
+      "open": 10.149,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -9755,7 +9754,6 @@
     "GALUSDT": 1795239096,
     "CYBERLEEKUSDT": 1795245508,
     "CADUSDT": 1795261624,
-    "NGASUSDT": 1795262595,
     "AINBSCUSDT": 1795269926,
     "BTCDOMUSDT": 1795270613,
     "SKY1USDT": 1795287885,
@@ -9817,20 +9815,12 @@
     "BARUSDT": 1795565915,
     "MURATAUSDT": 1795566654,
     "LIGHT1USDT": 1795566784,
-    "O1USDT": 1795571202
+    "O1USDT": 1795571202,
+    "IBBETFUSDT": 1795572180
   },
-  "last_trade_report_ts": 1795527664,
+  "last_trade_report_ts": 1795528999,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795230237,
-      "kind": "gap_result",
-      "symbol": "BTCUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795230240,
       "kind": "gap_result",
@@ -13418,6 +13408,15 @@
       "kind": "gap_result",
       "symbol": "CRCLUSDT",
       "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795528998,
+      "kind": "gap_result",
+      "symbol": "PROSUSDT",
+      "tf": "1h",
       "gap": 0.0,
       "filled": true,
       "note": "filled"
