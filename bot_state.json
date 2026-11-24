@@ -6682,26 +6682,6 @@
   ],
   "pending": [
     {
-      "symbol": "ZESTUSDT",
-      "tf": "15m",
-      "candle_ts": 1795358700,
-      "side": "SELL",
-      "upper": 0.12818748201996574,
-      "open": 0.12987,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "ZESTUSDT",
-      "tf": "1h",
-      "candle_ts": 1795359600,
-      "side": "SELL",
-      "upper": 0.12806353165162085,
-      "open": 0.13039,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "BLESSUSDT",
       "tf": "1h",
       "candle_ts": 1795359600,
@@ -9643,7 +9623,8 @@
       "side": "SELL",
       "upper": 0.15666271205463034,
       "open": 0.1603,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "PAYPUSDT",
@@ -9671,6 +9652,25 @@
       "candle_ts": 1795556700,
       "side": "LONG",
       "upper": 46.38003902354643,
+      "open": 46.09,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "OPGUSDT",
+      "tf": "1h",
+      "candle_ts": 1795557600,
+      "side": "SELL",
+      "upper": 0.1629206799452652,
+      "open": 0.1663,
+      "reported": false
+    },
+    {
+      "symbol": "GTLBUSDT",
+      "tf": "15m",
+      "candle_ts": 1795557600,
+      "side": "LONG",
+      "upper": 46.36381811916492,
       "open": 46.09,
       "reported": false
     }
@@ -10010,24 +10010,6 @@
   "last_trade_report_ts": 1795557382,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795248295,
-      "kind": "gap_result",
-      "symbol": "BLESSUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795248300,
-      "kind": "gap_result",
-      "symbol": "YBUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
     {
       "ts": 1795250788,
       "kind": "gap_result",
@@ -13609,6 +13591,24 @@
       "gap": 0.0,
       "filled": false,
       "note": "miss"
+    },
+    {
+      "ts": 1795557857,
+      "kind": "gap_result",
+      "symbol": "OPGUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
+    },
+    {
+      "ts": 1795557869,
+      "kind": "gap_result",
+      "symbol": "GTLBUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
     }
   ],
   "tune_history": [],
