@@ -78,74 +78,9 @@
       "last_leg_candle_ts": 1795482900,
       "dry_run": true,
       "order_id": "PAPER-UMCUSDT-1795482972"
-    },
-    {
-      "symbol": "MINIMAXUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 14.9,
-      "qty": 13.4228,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 14.5275,
-      "tf": "15m",
-      "opened_at": 1795483874,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 14.9,
-          "ts": 1795483874
-        }
-      ],
-      "entry_candle_ts": 1795483800,
-      "last_leg_candle_ts": 1795483800,
-      "dry_run": true,
-      "order_id": "PAPER-MINIMAXUSDT-1795483874"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "RAMUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 6.776139377524114,
-      "qty": 206.60719999999998,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 6.606735893086011,
-      "tf": "15m",
-      "opened_at": 1794411013,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [
-        6.804
-      ],
-      "steps": [
-        {
-          "px": 6.652,
-          "ts": 1794411013
-        },
-        {
-          "px": 6.824,
-          "ts": 1794412888
-        },
-        {
-          "px": 6.784,
-          "ts": 1794413946
-        }
-      ],
-      "entry_candle_ts": 1794411000,
-      "last_leg_candle_ts": 1794413946,
-      "dry_run": true,
-      "order_id": "PAPER-RAMUSDT-1794411013",
-      "closed_at": 1794435613,
-      "close_px": 6.603,
-      "pnl_usdt": 35.77186286010647,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "SILVERUSDT",
       "side": "SELL",
@@ -6575,6 +6510,36 @@
       "closed_at": 1795484093,
       "close_px": 46.65,
       "pnl_usdt": 10.442909386428283,
+      "close_reason": "TP50",
+      "why": "TP50"
+    },
+    {
+      "symbol": "MINIMAXUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 14.9,
+      "qty": 13.4228,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 14.5275,
+      "tf": "15m",
+      "opened_at": 1795483874,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 14.9,
+          "ts": 1795483874
+        }
+      ],
+      "entry_candle_ts": 1795483800,
+      "last_leg_candle_ts": 1795483800,
+      "dry_run": true,
+      "order_id": "PAPER-MINIMAXUSDT-1795483874",
+      "closed_at": 1795484095,
+      "close_px": 14.15,
+      "pnl_usdt": 10.06711409395973,
       "close_reason": "TP50",
       "why": "TP50"
     }
