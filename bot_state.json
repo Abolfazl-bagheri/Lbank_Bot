@@ -6606,26 +6606,6 @@
   ],
   "pending": [
     {
-      "symbol": "SKYAIUSDT",
-      "tf": "1h",
-      "candle_ts": 1795258800,
-      "side": "SELL",
-      "upper": 0.03418667945522789,
-      "open": 0.0347,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "AKEUSDT",
-      "tf": "15m",
-      "candle_ts": 1795261500,
-      "side": "LONG",
-      "upper": 0.005328366314820044,
-      "open": 0.0048691,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "PIEVERSEUSDT",
       "tf": "15m",
       "candle_ts": 1795281300,
@@ -9557,7 +9537,8 @@
       "side": "SELL",
       "upper": 14.539344743133572,
       "open": 14.63,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CARDSUSDT",
@@ -9566,7 +9547,8 @@
       "side": "SELL",
       "upper": 0.17945883223875503,
       "open": 0.18072,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "UMCUSDT",
@@ -9575,7 +9557,8 @@
       "side": "SELL",
       "upper": 14.774144592081331,
       "open": 14.83,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CRCLUSDT",
@@ -9584,7 +9567,8 @@
       "side": "SELL",
       "upper": 52.34774876753086,
       "open": 52.46,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ZHIPUUSDT",
@@ -9593,6 +9577,24 @@
       "side": "SELL",
       "upper": 48.080821197021706,
       "open": 48.36,
+      "reported": false
+    },
+    {
+      "symbol": "MINIMAXUSDT",
+      "tf": "15m",
+      "candle_ts": 1795483800,
+      "side": "SELL",
+      "upper": 14.549217607221522,
+      "open": 14.71,
+      "reported": false
+    },
+    {
+      "symbol": "UMCUSDT",
+      "tf": "15m",
+      "candle_ts": 1795483800,
+      "side": "SELL",
+      "upper": 14.808575973478716,
+      "open": 14.77,
       "reported": false
     }
   ],
@@ -9934,42 +9936,6 @@
   "last_trade_report_ts": 1795483609,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795189782,
-      "kind": "gap_result",
-      "symbol": "CHEEMSUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795189784,
-      "kind": "gap_result",
-      "symbol": "BTCUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795189788,
-      "kind": "gap_result",
-      "symbol": "GOLDUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795189790,
-      "kind": "gap_result",
-      "symbol": "XAUTUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795190777,
       "kind": "gap_result",
@@ -13530,6 +13496,42 @@
       "kind": "gap_result",
       "symbol": "CRCLUSDT",
       "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795483966,
+      "kind": "gap_result",
+      "symbol": "MINIMAXUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795483969,
+      "kind": "gap_result",
+      "symbol": "CARDSUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795483974,
+      "kind": "gap_result",
+      "symbol": "UMCUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795483978,
+      "kind": "gap_result",
+      "symbol": "CRCLUSDT",
+      "tf": "15m",
       "gap": 0.0,
       "filled": true,
       "note": "filled"
