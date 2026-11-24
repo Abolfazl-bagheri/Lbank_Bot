@@ -9472,7 +9472,8 @@
       "side": "LONG",
       "upper": 50.612859265821946,
       "open": 49.82,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CRCLUSDT",
@@ -9481,7 +9482,8 @@
       "side": "LONG",
       "upper": 50.64095494647068,
       "open": 49.82,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -9819,24 +9821,6 @@
   "last_trade_report_ts": 1795525844,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795230228,
-      "kind": "gap_result",
-      "symbol": "ENSOUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795230232,
-      "kind": "gap_result",
-      "symbol": "SIRENUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
     {
       "ts": 1795230237,
       "kind": "gap_result",
@@ -13415,6 +13399,24 @@
       "kind": "gap_result",
       "symbol": "GOLDUSDT",
       "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795526217,
+      "kind": "gap_result",
+      "symbol": "CRCLUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795526220,
+      "kind": "gap_result",
+      "symbol": "CRCLUSDT",
+      "tf": "5m",
       "gap": 0.0,
       "filled": true,
       "note": "filled"
