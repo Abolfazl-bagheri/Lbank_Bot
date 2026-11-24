@@ -6558,16 +6558,6 @@
     {
       "symbol": "SKYAIUSDT",
       "tf": "1h",
-      "candle_ts": 1795255200,
-      "side": "SELL",
-      "upper": 0.03345717601087273,
-      "open": 0.03527,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "SKYAIUSDT",
-      "tf": "1h",
       "candle_ts": 1795258800,
       "side": "SELL",
       "upper": 0.03421683221187426,
@@ -9507,7 +9497,8 @@
       "side": "SELL",
       "upper": 52.381720253513826,
       "open": 52.42,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CRCLUSDT",
@@ -9516,7 +9507,8 @@
       "side": "SELL",
       "upper": 52.39589388081129,
       "open": 52.42,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "MINIMAXUSDT",
@@ -9543,6 +9535,15 @@
       "side": "SELL",
       "upper": 14.774144592081331,
       "open": 14.83,
+      "reported": false
+    },
+    {
+      "symbol": "CRCLUSDT",
+      "tf": "15m",
+      "candle_ts": 1795482900,
+      "side": "SELL",
+      "upper": 52.34774876753086,
+      "open": 52.46,
       "reported": false
     }
   ],
@@ -9884,24 +9885,6 @@
   "last_trade_report_ts": 1795482675,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795189776,
-      "kind": "gap_result",
-      "symbol": "SKDDUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
-    {
-      "ts": 1795189779,
-      "kind": "gap_result",
-      "symbol": "NOWUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
     {
       "ts": 1795189782,
       "kind": "gap_result",
@@ -13477,6 +13460,24 @@
     },
     {
       "ts": 1795482637,
+      "kind": "gap_result",
+      "symbol": "CRCLUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795483051,
+      "kind": "gap_result",
+      "symbol": "CRCLUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795483056,
       "kind": "gap_result",
       "symbol": "CRCLUSDT",
       "tf": "5m",
