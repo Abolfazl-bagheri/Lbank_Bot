@@ -6502,16 +6502,6 @@
   ],
   "pending": [
     {
-      "symbol": "CLAUDIAUSDT",
-      "tf": "15m",
-      "candle_ts": 1795246200,
-      "side": "SELL",
-      "upper": 0.006892520642431686,
-      "open": 0.006905,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "YBUSDT",
       "tf": "1h",
       "candle_ts": 1795248000,
@@ -9492,7 +9482,18 @@
       "side": "SELL",
       "upper": 3659.280630415572,
       "open": 3660.41,
-      "reported": false
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "GOLDUSDT",
+      "tf": "5m",
+      "candle_ts": 1795480500,
+      "side": "SELL",
+      "upper": 3660.076990668911,
+      "open": 3660.41,
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -9831,27 +9832,9 @@
     "MURATAUSDT": 1795522736,
     "LIGHT1USDT": 1795523511
   },
-  "last_trade_report_ts": 1795479724,
+  "last_trade_report_ts": 1795480837,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795188352,
-      "kind": "gap_result",
-      "symbol": "GOLDUSDT",
-      "tf": "5m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795188762,
-      "kind": "gap_result",
-      "symbol": "ACNUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795188764,
       "kind": "gap_result",
@@ -13430,6 +13413,24 @@
       "kind": "gap_result",
       "symbol": "INXUSDT",
       "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795480831,
+      "kind": "gap_result",
+      "symbol": "GOLDUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795480835,
+      "kind": "gap_result",
+      "symbol": "GOLDUSDT",
+      "tf": "5m",
       "gap": 0.0,
       "filled": true,
       "note": "filled"
