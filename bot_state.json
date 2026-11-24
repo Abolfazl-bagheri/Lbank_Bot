@@ -37,41 +37,6 @@
       "order_id": "PAPER-SILVERUSDT-1795480317"
     },
     {
-      "symbol": "CRCLUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 51.7524152092829,
-      "qty": 27.0519,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 50.45860482905083,
-      "tf": "15m",
-      "opened_at": 1795482362,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [
-        51.44
-      ],
-      "steps": [
-        {
-          "px": 52.33,
-          "ts": 1795482362
-        },
-        {
-          "px": 52.45,
-          "ts": 1795483020
-        },
-        {
-          "px": 51.27,
-          "ts": 1795485939
-        }
-      ],
-      "entry_candle_ts": 1795482300,
-      "last_leg_candle_ts": 1795485939,
-      "dry_run": true,
-      "order_id": "PAPER-CRCLUSDT-1795482362"
-    },
-    {
       "symbol": "UMCUSDT",
       "side": "SELL",
       "status": "open",
@@ -104,46 +69,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "SILVERUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 50.727136775053815,
-      "qty": 27.598599999999998,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 49.45895835567747,
-      "tf": "15m",
-      "opened_at": 1794533142,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [
-        50.83
-      ],
-      "steps": [
-        {
-          "px": 50.77,
-          "ts": 1794533142
-        },
-        {
-          "px": 50.72,
-          "ts": 1794533325
-        },
-        {
-          "px": 50.72,
-          "ts": 1794533448
-        }
-      ],
-      "entry_candle_ts": 1794533100,
-      "last_leg_candle_ts": 1794533400,
-      "dry_run": true,
-      "order_id": "PAPER-SILVERUSDT-1794533142",
-      "closed_at": 1794583295,
-      "close_px": 49.43,
-      "pnl_usdt": 35.79921124127776,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "CLAUDIAUSDT",
       "side": "SELL",
@@ -6565,6 +6490,46 @@
       "pnl_usdt": 10.06711409395973,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "CRCLUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 51.7524152092829,
+      "qty": 27.0519,
+      "margin": 70.0,
+      "leverage": 20,
+      "tp_price": 50.45860482905083,
+      "tf": "15m",
+      "opened_at": 1795482362,
+      "adds": 2,
+      "last_leg_margin": 40.0,
+      "used_res_levels": [
+        51.44
+      ],
+      "steps": [
+        {
+          "px": 52.33,
+          "ts": 1795482362
+        },
+        {
+          "px": 52.45,
+          "ts": 1795483020
+        },
+        {
+          "px": 51.27,
+          "ts": 1795485939
+        }
+      ],
+      "entry_candle_ts": 1795482300,
+      "last_leg_candle_ts": 1795485939,
+      "dry_run": true,
+      "order_id": "PAPER-CRCLUSDT-1795482362",
+      "closed_at": 1795489612,
+      "close_px": 50.34,
+      "pnl_usdt": 38.20848331425065,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -9899,7 +9864,7 @@
     "LIGHT1USDT": 1795523511,
     "OROCHIUSDT": 1795531561
   },
-  "last_trade_report_ts": 1795488950,
+  "last_trade_report_ts": 1795489862,
   "last_known_version": "2.10.0",
   "lessons": [
     {
