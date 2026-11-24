@@ -1,5 +1,31 @@
 {
-  "open_trades": [],
+  "open_trades": [
+    {
+      "symbol": "SILVERUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 43.69,
+      "qty": 4.5777,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 42.59775,
+      "tf": "15m",
+      "opened_at": 1795480317,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 43.69,
+          "ts": 1795480317
+        }
+      ],
+      "entry_candle_ts": 1795480200,
+      "last_leg_candle_ts": 1795480200,
+      "dry_run": true,
+      "order_id": "PAPER-SILVERUSDT-1795480317"
+    }
+  ],
   "trade_history": [
     {
       "symbol": "DJTUSDT",
@@ -9804,7 +9830,8 @@
     "1000000BABYDOGEUSDT": 1795521941,
     "LWLGUSDT": 1795522602,
     "POETUSDT": 1795522606,
-    "MURATAUSDT": 1795522736
+    "MURATAUSDT": 1795522736,
+    "LIGHT1USDT": 1795523511
   },
   "last_trade_report_ts": 1795479724,
   "last_known_version": "2.10.0",
