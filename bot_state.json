@@ -84,6 +84,31 @@
       "last_leg_candle_ts": 1795531500,
       "dry_run": true,
       "order_id": "PAPER-ZMUSDT-1795531536"
+    },
+    {
+      "symbol": "XBIUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 152.69,
+      "qty": 1.3098,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 148.87275,
+      "tf": "15m",
+      "opened_at": 1795531546,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 152.69,
+          "ts": 1795531546
+        }
+      ],
+      "entry_candle_ts": 1795531500,
+      "last_leg_candle_ts": 1795531500,
+      "dry_run": true,
+      "order_id": "PAPER-XBIUSDT-1795531546"
     }
   ],
   "trade_history": [
@@ -6578,16 +6603,6 @@
   ],
   "pending": [
     {
-      "symbol": "DGAIUSDT",
-      "tf": "4h",
-      "candle_ts": 1795320000,
-      "side": "SELL",
-      "upper": 0.8113669446910627,
-      "open": 0.8207,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "AIGENSYNUSDT",
       "tf": "1h",
       "candle_ts": 1795320000,
@@ -9566,6 +9581,15 @@
       "side": "SELL",
       "upper": 27.639111598842522,
       "open": 27.71,
+      "reported": false
+    },
+    {
+      "symbol": "ZMUSDT",
+      "tf": "15m",
+      "candle_ts": 1795531500,
+      "side": "SELL",
+      "upper": 89.9156410158775,
+      "open": 91.73,
       "reported": false
     }
   ],
