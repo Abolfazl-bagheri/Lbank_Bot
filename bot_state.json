@@ -35,16 +35,18 @@
       "symbol": "CRCLUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 52.409938855016506,
-      "qty": 11.4482,
-      "margin": 30.0,
+      "entry": 51.7524152092829,
+      "qty": 27.0519,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 51.09969038364109,
+      "tp_price": 50.45860482905083,
       "tf": "15m",
       "opened_at": 1795482362,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
+      "adds": 2,
+      "last_leg_margin": 40.0,
+      "used_res_levels": [
+        51.44
+      ],
       "steps": [
         {
           "px": 52.33,
@@ -53,10 +55,14 @@
         {
           "px": 52.45,
           "ts": 1795483020
+        },
+        {
+          "px": 51.27,
+          "ts": 1795485939
         }
       ],
       "entry_candle_ts": 1795482300,
-      "last_leg_candle_ts": 1795482900,
+      "last_leg_candle_ts": 1795485939,
       "dry_run": true,
       "order_id": "PAPER-CRCLUSDT-1795482362"
     },
@@ -9881,7 +9887,7 @@
     "MURATAUSDT": 1795522736,
     "LIGHT1USDT": 1795523511
   },
-  "last_trade_report_ts": 1795484860,
+  "last_trade_report_ts": 1795485842,
   "last_known_version": "2.10.0",
   "lessons": [
     {
