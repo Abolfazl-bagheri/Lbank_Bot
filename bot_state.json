@@ -159,6 +159,31 @@
       "last_leg_candle_ts": 1795478400,
       "dry_run": true,
       "order_id": "PAPER-CYSUSDT-1795478492"
+    },
+    {
+      "symbol": "FLNCUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 4.333,
+      "qty": 46.1574,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 4.224675,
+      "tf": "4h",
+      "opened_at": 1795478521,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 4.333,
+          "ts": 1795478521
+        }
+      ],
+      "entry_candle_ts": 1795478400,
+      "last_leg_candle_ts": 1795478400,
+      "dry_run": true,
+      "order_id": "PAPER-FLNCUSDT-1795478521"
     }
   ],
   "trade_history": [
@@ -6637,16 +6662,6 @@
   ],
   "pending": [
     {
-      "symbol": "VVVUSDT",
-      "tf": "15m",
-      "candle_ts": 1795244400,
-      "side": "SELL",
-      "upper": 21.766246329003067,
-      "open": 21.967,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "YBUSDT",
       "tf": "1h",
       "candle_ts": 1795244400,
@@ -9621,6 +9636,15 @@
       "open": 3615.49,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "CYSUSDT",
+      "tf": "4h",
+      "candle_ts": 1795478400,
+      "side": "SELL",
+      "upper": 0.05790368114203158,
+      "open": 0.0598,
+      "reported": false
     }
   ],
   "paper_days": [
