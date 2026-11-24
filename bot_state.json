@@ -9628,7 +9628,8 @@
       "side": "SELL",
       "upper": 0.1629206799452652,
       "open": 0.1663,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "GTLBUSDT",
@@ -9952,7 +9953,6 @@
     "NIULAIUSDT": 1795521859,
     "LWLGUSDT": 1795522602,
     "POETUSDT": 1795522606,
-    "FIGUSDT": 1795533416,
     "ARROWUSDT": 1795554312,
     "APEXUSDT": 1795554319,
     "TSMONUSDT": 1795556797,
@@ -9981,20 +9981,12 @@
     "1000WOJAKUSDT": 1795602012,
     "PIPEDOGUSDT": 1795602013,
     "NEIRO1USDT": 1795602014,
-    "SPACE1USDT": 1795602877
+    "SPACE1USDT": 1795602877,
+    "FIGUSDT": 1795604649
   },
-  "last_trade_report_ts": 1795560582,
+  "last_trade_report_ts": 1795561484,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795251795,
-      "kind": "gap_result",
-      "symbol": "MERLUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795252612,
       "kind": "gap_result",
@@ -13585,6 +13577,15 @@
       "gap": 0.0,
       "filled": true,
       "note": "filled"
+    },
+    {
+      "ts": 1795561476,
+      "kind": "gap_result",
+      "symbol": "OPGUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
     }
   ],
   "tune_history": [],
