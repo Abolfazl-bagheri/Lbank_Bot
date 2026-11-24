@@ -1,42 +1,6 @@
 {
   "open_trades": [
     {
-      "symbol": "SILVERUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 43.182412971999284,
-      "qty": 32.4206,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 42.1028526476993,
-      "tf": "15m",
-      "opened_at": 1795480317,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [
-        43.53,
-        43.01
-      ],
-      "steps": [
-        {
-          "px": 43.69,
-          "ts": 1795480317
-        },
-        {
-          "px": 43.4,
-          "ts": 1795485837
-        },
-        {
-          "px": 42.95,
-          "ts": 1795489609
-        }
-      ],
-      "entry_candle_ts": 1795480200,
-      "last_leg_candle_ts": 1795489609,
-      "dry_run": true,
-      "order_id": "PAPER-SILVERUSDT-1795480317"
-    },
-    {
       "symbol": "UMCUSDT",
       "side": "SELL",
       "status": "open",
@@ -74,40 +38,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "CLAUDIAUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.007859759612216806,
-      "qty": 76338.2126,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.007663265621911386,
-      "tf": "5m",
-      "opened_at": 1794902556,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.007383,
-          "ts": 1794902556
-        },
-        {
-          "px": 0.008122,
-          "ts": 1794903060
-        }
-      ],
-      "entry_candle_ts": 1794902400,
-      "last_leg_candle_ts": 1794902400,
-      "dry_run": true,
-      "order_id": "PAPER-CLAUDIAUSDT-1794902556",
-      "closed_at": 1794903814,
-      "close_px": 0.007421,
-      "pnl_usdt": 33.49412454305759,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "HAEDALUSDT",
       "side": "SELL",
@@ -6535,6 +6465,47 @@
       "pnl_usdt": 38.20848331425065,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "SILVERUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 43.182412971999284,
+      "qty": 32.4206,
+      "margin": 70.0,
+      "leverage": 20,
+      "tp_price": 42.1028526476993,
+      "tf": "15m",
+      "opened_at": 1795480317,
+      "adds": 2,
+      "last_leg_margin": 40.0,
+      "used_res_levels": [
+        43.53,
+        43.01
+      ],
+      "steps": [
+        {
+          "px": 43.69,
+          "ts": 1795480317
+        },
+        {
+          "px": 43.4,
+          "ts": 1795485837
+        },
+        {
+          "px": 42.95,
+          "ts": 1795489609
+        }
+      ],
+      "entry_candle_ts": 1795480200,
+      "last_leg_candle_ts": 1795489609,
+      "dry_run": true,
+      "order_id": "PAPER-SILVERUSDT-1795480317",
+      "closed_at": 1795511127,
+      "close_px": 42.06,
+      "pnl_usdt": 36.389308809999136,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -9819,9 +9790,7 @@
     "TRUMPSOLUSDT": 1795369657,
     "RIOTUSDT": 1795369657,
     "ANSEMUSDT": 1795406548,
-    "APEXUSDT": 1795407410,
     "CAPETHUSDT": 1795408321,
-    "ARROWUSDT": 1795412096,
     "STONKBROKERUSDT": 1795424588,
     "BEMUSDT": 1795435543,
     "KNTQUSDT": 1795435456,
@@ -9862,7 +9831,9 @@
     "LIGHT1USDT": 1795523511,
     "OROCHIUSDT": 1795531561,
     "FIGUSDT": 1795533416,
-    "1000LUNCUSDT": 1795554137
+    "1000LUNCUSDT": 1795554137,
+    "ARROWUSDT": 1795554312,
+    "APEXUSDT": 1795554319
   },
   "last_trade_report_ts": 1795510576,
   "last_known_version": "2.10.0",
