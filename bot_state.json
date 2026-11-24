@@ -1,5 +1,31 @@
 {
-  "open_trades": [],
+  "open_trades": [
+    {
+      "symbol": "AIOTUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.09043,
+      "qty": 2211.6554,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.08816924999999999,
+      "tf": "1h",
+      "opened_at": 1795518048,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.09043,
+          "ts": 1795518048
+        }
+      ],
+      "entry_candle_ts": 1795518000,
+      "last_leg_candle_ts": 1795518000,
+      "dry_run": true,
+      "order_id": "PAPER-AIOTUSDT-1795518048"
+    }
+  ],
   "trade_history": [
     {
       "symbol": "FHEUSDT",
@@ -6484,16 +6510,6 @@
   ],
   "pending": [
     {
-      "symbol": "ENSOUSDT",
-      "tf": "15m",
-      "candle_ts": 1795310100,
-      "side": "SELL",
-      "upper": 0.5127591618926849,
-      "open": 0.5172,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "CELRUSDT",
       "tf": "15m",
       "candle_ts": 1795310100,
@@ -9468,6 +9484,15 @@
       "open": 89.28,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "NVDLUSDT",
+      "tf": "1h",
+      "candle_ts": 1795518000,
+      "side": "LONG",
+      "upper": 17.641702016457206,
+      "open": 14.94,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -9750,7 +9775,6 @@
     "ZZZUSDT": 1795329982,
     "B3USDT": 1795329999,
     "BONERUSDT": 1795342752,
-    "JUVUSDT": 1795345325,
     "QUID1USDT": 1795354270,
     "BARUSDT": 1795360559,
     "GSTOCKUSDT": 1795367820,
