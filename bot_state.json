@@ -6517,16 +6517,6 @@
   ],
   "pending": [
     {
-      "symbol": "SILVERUSDT",
-      "tf": "5m",
-      "candle_ts": 1795388700,
-      "side": "SELL",
-      "upper": 42.058811412999134,
-      "open": 42.21,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "XAUTUSDT",
       "tf": "15m",
       "candle_ts": 1795389300,
@@ -9468,7 +9458,8 @@
       "side": "SELL",
       "upper": 0.017255444587828066,
       "open": 0.01749,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "INITUSDT",
@@ -9477,7 +9468,8 @@
       "side": "SELL",
       "upper": 0.08859402688716088,
       "open": 0.08905,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "IRYSUSDT",
@@ -9486,7 +9478,8 @@
       "side": "SELL",
       "upper": 0.01723236883725185,
       "open": 0.01749,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "XAUTUSDT",
@@ -9507,6 +9500,15 @@
       "open": 3532.3,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "IRYSUSDT",
+      "tf": "15m",
+      "candle_ts": 1795570200,
+      "side": "SELL",
+      "upper": 0.017608067418296982,
+      "open": 0.0178,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -9858,33 +9860,6 @@
   "last_trade_report_ts": 1795569586,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795288584,
-      "kind": "gap_result",
-      "symbol": "RAYUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795291462,
-      "kind": "gap_result",
-      "symbol": "ENSOUSDT",
-      "tf": "4h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795291464,
-      "kind": "gap_result",
-      "symbol": "BLESSUSDT",
-      "tf": "4h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795291466,
       "kind": "gap_result",
@@ -13457,6 +13432,33 @@
       "gap": 0.0,
       "filled": true,
       "note": "filled"
+    },
+    {
+      "ts": 1795570349,
+      "kind": "gap_result",
+      "symbol": "IRYSUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
+    },
+    {
+      "ts": 1795570352,
+      "kind": "gap_result",
+      "symbol": "INITUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795570355,
+      "kind": "gap_result",
+      "symbol": "IRYSUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
     }
   ],
   "tune_history": [],
