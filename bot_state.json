@@ -6723,16 +6723,6 @@
   ],
   "pending": [
     {
-      "symbol": "ELSAUSDT",
-      "tf": "15m",
-      "candle_ts": 1795423500,
-      "side": "SELL",
-      "upper": 0.10785638520668334,
-      "open": 0.10849,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "HUSDT",
       "tf": "1h",
       "candle_ts": 1795424400,
@@ -9689,7 +9679,8 @@
       "side": "SELL",
       "upper": 0.11330720032437744,
       "open": 0.1144,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "SYNUSDT",
@@ -9698,6 +9689,16 @@
       "side": "SELL",
       "upper": 0.11343825370714664,
       "open": 0.1144,
+      "reported": true,
+      "filled": false
+    },
+    {
+      "symbol": "SYNUSDT",
+      "tf": "15m",
+      "candle_ts": 1795646700,
+      "side": "SELL",
+      "upper": 0.11565907091004952,
+      "open": 0.117,
       "reported": false
     }
   ],
@@ -10036,29 +10037,18 @@
     "PORUSDT": 1795681903,
     "DRVUSDT": 1795683812,
     "O1USDT": 1795687388,
-    "AI1USDT": 1795688192
+    "AI1USDT": 1795688192,
+    "PIPEDOGUSDT": 1795690001,
+    "1000WOJAKUSDT": 1795690002,
+    "1000SATSUSDT": 1795690003,
+    "NEIRO1USDT": 1795690004,
+    "MEMECOINUSDT": 1795690007,
+    "CZUSDT": 1795690010,
+    "MANCERUSDT": 1795690011
   },
   "last_trade_report_ts": 1795646143,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795366026,
-      "kind": "gap_result",
-      "symbol": "ZCATUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795367031,
-      "kind": "gap_result",
-      "symbol": "ZCATUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795367034,
       "kind": "gap_result",
@@ -13637,6 +13627,24 @@
       "kind": "gap_result",
       "symbol": "VKTXUSDT",
       "tf": "1h",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
+    },
+    {
+      "ts": 1795646828,
+      "kind": "gap_result",
+      "symbol": "SYNUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
+    },
+    {
+      "ts": 1795646830,
+      "kind": "gap_result",
+      "symbol": "SYNUSDT",
+      "tf": "15m",
       "gap": 0.0,
       "filled": false,
       "note": "miss"
