@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795608057,
+  "updated_at": 1795608066,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795595142
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795595182
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "4h",
       "gap": 2.05,
       "ts": 1795608057
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795608062
+    },
+    {
+      "kind": "SELL",
+      "symbol": "BIGTIMEUSDT",
+      "tf": "4h",
+      "gap": 4.08,
+      "ts": 1795608066
     }
   ],
   "trades": [
@@ -1417,14 +1417,27 @@
       "px": 0.009452,
       "pnl": -1.154,
       "tf": "15m"
+    },
+    {
+      "symbol": "MANTRAUSDT",
+      "side": "SELL",
+      "entry": 0.00218,
+      "tp": 0.0021255000000000002,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.00218,
+      "pnl": -0.24,
+      "tf": "4h"
     }
   ],
   "start": 1000.0,
   "session_start": 1795565212,
   "realized": -48.4271,
   "closed_n": 11,
-  "open_upnl": -1.154,
-  "equity": 950.4189,
+  "open_upnl": -1.394,
+  "equity": 950.1789,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
