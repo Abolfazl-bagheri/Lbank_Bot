@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795602618,
+  "updated_at": 1795602626,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "IRYSUSDT",
-      "tf": "15m",
-      "gap": 1.39,
-      "ts": 1795571117
-    },
-    {
-      "kind": "SELL",
-      "symbol": "PROSUSDT",
-      "tf": "15m",
-      "gap": 1.42,
-      "ts": 1795571136
-    },
     {
       "kind": "SELL",
       "symbol": "JDUSDT",
@@ -1402,15 +1388,43 @@
       "tf": "15m",
       "gap": 2.13,
       "ts": 1795602618
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795602622
+    },
+    {
+      "kind": "SELL",
+      "symbol": "MOODENGUSDT",
+      "tf": "15m",
+      "gap": 2.47,
+      "ts": 1795602626
     }
   ],
-  "trades": [],
+  "trades": [
+    {
+      "symbol": "BLURUSDT",
+      "side": "SELL",
+      "entry": 0.009409,
+      "tp": 0.009173775,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.009409,
+      "pnl": -0.24,
+      "tf": "15m"
+    }
+  ],
   "start": 1000.0,
   "session_start": 1795565212,
   "realized": -24.7156,
   "closed_n": 8,
-  "open_upnl": 0,
-  "equity": 975.2844,
+  "open_upnl": -0.24,
+  "equity": 975.0444,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
