@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795568438,
+  "updated_at": 1795568658,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "PIPPINUSDT",
-      "tf": "1h",
-      "gap": 2.18,
-      "ts": 1795531934
-    },
-    {
-      "kind": "GAP",
-      "symbol": "XBIUSDT",
-      "tf": "1h",
-      "gap": 2.79,
-      "ts": 1795531940
-    },
     {
       "kind": "GAP",
       "symbol": "FOXAUSDT",
@@ -1402,29 +1388,43 @@
       "tf": "1h",
       "gap": 1.98,
       "ts": 1795568438
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795568442
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795568658
     }
   ],
   "trades": [
     {
       "symbol": "BIGTIMEUSDT",
       "side": "SELL",
-      "entry": 0.00449,
-      "tp": 0.00437775,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
+      "entry": 0.004488666468666102,
+      "tp": 0.004376449806949449,
+      "adds": 1,
+      "pele": 2,
+      "margin": 30.0,
       "lev": 20,
       "px": 0.004488,
-      "pnl": -0.1509,
-      "tf": "15m"
+      "pnl": -0.6309,
+      "tf": "1h"
     }
   ],
   "start": 1000.0,
   "session_start": 1795565212,
   "realized": 0,
   "closed_n": 0,
-  "open_upnl": -0.1509,
-  "equity": 999.8491,
+  "open_upnl": -0.6309,
+  "equity": 999.3691,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
