@@ -6525,36 +6525,6 @@
   ],
   "pending": [
     {
-      "symbol": "CSOPSKHYNIX2LUSDT",
-      "tf": "15m",
-      "candle_ts": 1795392000,
-      "side": "SELL",
-      "upper": 1.5265357627437017,
-      "open": 1.529,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "BULLAUSDT",
-      "tf": "4h",
-      "candle_ts": 1795392000,
-      "side": "SELL",
-      "upper": 0.022960390983924606,
-      "open": 0.024518,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "RAMUSDT",
-      "tf": "15m",
-      "candle_ts": 1795392000,
-      "side": "SELL",
-      "upper": 3.962469099740392,
-      "open": 3.965,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "CSOPSAMSUNG2LUSDT",
       "tf": "15m",
       "candle_ts": 1795392000,
@@ -9504,7 +9474,8 @@
       "side": "SELL",
       "upper": 0.7243024767229403,
       "open": 0.7276,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "FRHCUSDT",
@@ -9513,6 +9484,34 @@
       "side": "LONG",
       "upper": 171.00000141604366,
       "open": 171.0,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "GPROUSDT",
+      "tf": "15m",
+      "candle_ts": 1795592700,
+      "side": "LONG",
+      "upper": 0.5205738853758357,
+      "open": 0.5047,
+      "reported": false
+    },
+    {
+      "symbol": "JCTUSDT",
+      "tf": "15m",
+      "candle_ts": 1795592700,
+      "side": "LONG",
+      "upper": 0.0014650416025563243,
+      "open": 0.001362,
+      "reported": false
+    },
+    {
+      "symbol": "CRCLUSDT",
+      "tf": "15m",
+      "candle_ts": 1795592700,
+      "side": "LONG",
+      "upper": 47.69587850300786,
+      "open": 46.64,
       "reported": false
     }
   ],
@@ -9861,29 +9860,12 @@
     "O1USDT": 1795614610,
     "IBBETFUSDT": 1795616204,
     "GALUSDT": 1795635139,
-    "GOATSEUSUSDT": 1795635143
+    "GOATSEUSUSDT": 1795635143,
+    "ARGUSDT": 1795635981
   },
   "last_trade_report_ts": 1795591993,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795298575,
-      "kind": "gap_result",
-      "symbol": "CATEUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795298577,
-      "kind": "gap_result",
-      "symbol": "INITUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795298579,
       "kind": "gap_result",
@@ -13461,6 +13443,24 @@
       "ts": 1795591990,
       "kind": "gap_result",
       "symbol": "SSPCUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795592850,
+      "kind": "gap_result",
+      "symbol": "PROSUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795592853,
+      "kind": "gap_result",
+      "symbol": "FRHCUSDT",
       "tf": "15m",
       "gap": 0.0,
       "filled": true,
