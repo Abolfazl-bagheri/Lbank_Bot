@@ -6557,16 +6557,6 @@
     {
       "symbol": "MOGUSDT",
       "tf": "15m",
-      "candle_ts": 1795392900,
-      "side": "SELL",
-      "upper": 8.02e-08,
-      "open": 8.02e-08,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "MOGUSDT",
-      "tf": "15m",
       "candle_ts": 1795393800,
       "side": "SELL",
       "upper": 8.020000045278889e-08,
@@ -9524,7 +9514,8 @@
       "side": "SELL",
       "upper": 1.6933032966609258,
       "open": 1.702,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "PIPPINUSDT",
@@ -9542,6 +9533,15 @@
       "side": "SELL",
       "upper": 1.675804217781383,
       "open": 1.702,
+      "reported": false
+    },
+    {
+      "symbol": "SSVUSDT",
+      "tf": "15m",
+      "candle_ts": 1795598100,
+      "side": "SELL",
+      "upper": 1.7270955788496356,
+      "open": 1.743,
       "reported": false
     }
   ],
@@ -9895,15 +9895,6 @@
   "last_trade_report_ts": 1795597444,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795302162,
-      "kind": "gap_result",
-      "symbol": "INITUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795307493,
       "kind": "gap_result",
@@ -13491,6 +13482,15 @@
       "kind": "gap_result",
       "symbol": "ALICEUSDT",
       "tf": "1h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795598235,
+      "kind": "gap_result",
+      "symbol": "SSVUSDT",
+      "tf": "15m",
       "gap": 0.0,
       "filled": true,
       "note": "filled"
