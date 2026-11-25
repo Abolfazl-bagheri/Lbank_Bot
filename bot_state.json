@@ -30,70 +30,9 @@
       "last_leg_candle_ts": 1795573057,
       "dry_run": true,
       "order_id": "PAPER-JDUSDT-1795571170"
-    },
-    {
-      "symbol": "IRYSUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.01809,
-      "qty": 33167.4959,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.017637749999999997,
-      "tf": "1h",
-      "opened_at": 1795572067,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        0.01812
-      ],
-      "steps": [
-        {
-          "px": 0.01809,
-          "ts": 1795572067
-        },
-        {
-          "px": 0.01809,
-          "ts": 1795572299
-        }
-      ],
-      "entry_candle_ts": 1795572000,
-      "last_leg_candle_ts": 1795572299,
-      "dry_run": true,
-      "order_id": "PAPER-IRYSUSDT-1795572067"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "BREVUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.07616,
-      "qty": 2626.0504,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.074256,
-      "tf": "15m",
-      "opened_at": 1794922224,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.07616,
-          "ts": 1794922224
-        }
-      ],
-      "entry_candle_ts": 1794922200,
-      "last_leg_candle_ts": 1794922200,
-      "dry_run": true,
-      "order_id": "PAPER-BREVUSDT-1794922224",
-      "closed_at": 1794922606,
-      "close_px": 0.07916,
-      "pnl_usdt": -7.878151260504172,
-      "close_reason": "STOP",
-      "why": "STOP"
-    },
     {
       "symbol": "BREVUSDT",
       "side": "SELL",
@@ -6574,6 +6513,42 @@
       "closed_at": 1795569076,
       "close_px": 0.004322,
       "pnl_usdt": 22.27830512641721,
+      "close_reason": "TP50",
+      "why": "TP50"
+    },
+    {
+      "symbol": "IRYSUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.01809,
+      "qty": 33167.4959,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 0.017637749999999997,
+      "tf": "1h",
+      "opened_at": 1795572067,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.01812
+      ],
+      "steps": [
+        {
+          "px": 0.01809,
+          "ts": 1795572067
+        },
+        {
+          "px": 0.01809,
+          "ts": 1795572299
+        }
+      ],
+      "entry_candle_ts": 1795572000,
+      "last_leg_candle_ts": 1795572299,
+      "dry_run": true,
+      "order_id": "PAPER-IRYSUSDT-1795572067",
+      "closed_at": 1795573193,
+      "close_px": 0.01721,
+      "pnl_usdt": 29.18739635157542,
       "close_reason": "TP50",
       "why": "TP50"
     }
