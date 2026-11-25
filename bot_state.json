@@ -74,6 +74,31 @@
       "last_leg_candle_ts": 1795608000,
       "dry_run": true,
       "order_id": "PAPER-BIGTIMEUSDT-1795608068"
+    },
+    {
+      "symbol": "SSVUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 1.809,
+      "qty": 110.5583,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 1.7637749999999999,
+      "tf": "4h",
+      "opened_at": 1795608076,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 1.809,
+          "ts": 1795608076
+        }
+      ],
+      "entry_candle_ts": 1795608000,
+      "last_leg_candle_ts": 1795608000,
+      "dry_run": true,
+      "order_id": "PAPER-SSVUSDT-1795608076"
     }
   ],
   "trade_history": [
@@ -6604,16 +6629,6 @@
   ],
   "pending": [
     {
-      "symbol": "UMCUSDT",
-      "tf": "15m",
-      "candle_ts": 1795398300,
-      "side": "SELL",
-      "upper": 13.011306211285001,
-      "open": 12.97,
-      "reported": true,
-      "filled": false
-    },
-    {
       "symbol": "MINIMAXUSDT",
       "tf": "15m",
       "candle_ts": 1795398300,
@@ -9585,6 +9600,15 @@
       "side": "SELL",
       "upper": 0.0021352805966601282,
       "open": 0.00217,
+      "reported": false
+    },
+    {
+      "symbol": "BIGTIMEUSDT",
+      "tf": "4h",
+      "candle_ts": 1795608000,
+      "side": "SELL",
+      "upper": 0.006176018444453953,
+      "open": 0.006584,
       "reported": false
     }
   ],
