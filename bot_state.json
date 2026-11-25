@@ -6517,16 +6517,6 @@
   ],
   "pending": [
     {
-      "symbol": "ZCATUSDT",
-      "tf": "15m",
-      "candle_ts": 1795369500,
-      "side": "SELL",
-      "upper": 0.020571958929353176,
-      "open": 0.01968,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "BULLAUSDT",
       "tf": "1h",
       "candle_ts": 1795370400,
@@ -9508,6 +9498,16 @@
       "side": "LONG",
       "upper": 3554.6478149155814,
       "open": 3535.1,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "IRYSUSDT",
+      "tf": "15m",
+      "candle_ts": 1795569300,
+      "side": "SELL",
+      "upper": 0.017255444587828066,
+      "open": 0.01749,
       "reported": false
     }
   ],
@@ -9860,15 +9860,6 @@
   "last_trade_report_ts": 1795568660,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795287790,
-      "kind": "gap_result",
-      "symbol": "NIGHTUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795287792,
       "kind": "gap_result",
@@ -13456,6 +13447,15 @@
       "kind": "gap_result",
       "symbol": "FRHCUSDT",
       "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795569449,
+      "kind": "gap_result",
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
       "gap": 0.0,
       "filled": true,
       "note": "filled"
