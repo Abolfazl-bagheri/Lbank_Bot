@@ -4,24 +4,30 @@
       "symbol": "BLURUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.009409,
-      "qty": 21256.244,
-      "margin": 10.0,
+      "entry": 0.009628411554638203,
+      "qty": 62315.5747,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.009173775,
+      "tp_price": 0.009387701265772248,
       "tf": "15m",
       "opened_at": 1795602619,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.00976
+      ],
       "steps": [
         {
           "px": 0.009409,
           "ts": 1795602619
+        },
+        {
+          "px": 0.009742,
+          "ts": 1795610133
         }
       ],
       "entry_candle_ts": 1795602600,
-      "last_leg_candle_ts": 1795602600,
+      "last_leg_candle_ts": 1795610133,
       "dry_run": true,
       "order_id": "PAPER-BLURUSDT-1795602619"
     },
@@ -9992,7 +9998,8 @@
     "SPACE1USDT": 1795646813,
     "PORTALUSDT": 1795651456,
     "APEXUSDT": 1795652213,
-    "SKY1USDT": 1795652336
+    "SKY1USDT": 1795652336,
+    "XTIUSDT": 1795653243
   },
   "last_trade_report_ts": 1795609532,
   "last_known_version": "2.10.0",
