@@ -1,37 +1,6 @@
 {
   "open_trades": [
     {
-      "symbol": "BLURUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.009628411554638203,
-      "qty": 62315.5747,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.009387701265772248,
-      "tf": "15m",
-      "opened_at": 1795602619,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        0.00976
-      ],
-      "steps": [
-        {
-          "px": 0.009409,
-          "ts": 1795602619
-        },
-        {
-          "px": 0.009742,
-          "ts": 1795610133
-        }
-      ],
-      "entry_candle_ts": 1795602600,
-      "last_leg_candle_ts": 1795610133,
-      "dry_run": true,
-      "order_id": "PAPER-BLURUSDT-1795602619"
-    },
-    {
       "symbol": "UVXYUSDT",
       "side": "SELL",
       "status": "open",
@@ -64,36 +33,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "MMTUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.142,
-      "qty": 1408.4507,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.13845,
-      "tf": "4h",
-      "opened_at": 1794945681,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.142,
-          "ts": 1794945681
-        }
-      ],
-      "entry_candle_ts": 1794945600,
-      "last_leg_candle_ts": 1794945600,
-      "dry_run": true,
-      "order_id": "PAPER-MMTUSDT-1794945681",
-      "closed_at": 1794946321,
-      "close_px": 0.1383,
-      "pnl_usdt": 5.2112676056337754,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "BREVUSDT",
       "side": "SELL",
@@ -6587,6 +6526,42 @@
       "pnl_usdt": 7.257448433918987,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "BLURUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.009628411554638203,
+      "qty": 62315.5747,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 0.009387701265772248,
+      "tf": "15m",
+      "opened_at": 1795602619,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.00976
+      ],
+      "steps": [
+        {
+          "px": 0.009409,
+          "ts": 1795602619
+        },
+        {
+          "px": 0.009742,
+          "ts": 1795610133
+        }
+      ],
+      "entry_candle_ts": 1795602600,
+      "last_leg_candle_ts": 1795610133,
+      "dry_run": true,
+      "order_id": "PAPER-BLURUSDT-1795602619",
+      "closed_at": 1795612755,
+      "close_px": 0.009277,
+      "pnl_usdt": 21.898413002646567,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -9571,7 +9546,8 @@
       "side": "SELL",
       "upper": 0.04675966561303841,
       "open": 0.04735,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "LAYERUSDT",
@@ -9928,15 +9904,6 @@
   "last_trade_report_ts": 1795611836,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795320238,
-      "kind": "gap_result",
-      "symbol": "DGAIUSDT",
-      "tf": "4h",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
     {
       "ts": 1795320240,
       "kind": "gap_result",
@@ -13527,6 +13494,15 @@
       "gap": 0.0,
       "filled": false,
       "note": "miss"
+    },
+    {
+      "ts": 1795612644,
+      "kind": "gap_result",
+      "symbol": "LAYERUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
     }
   ],
   "tune_history": [],
