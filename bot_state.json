@@ -6560,16 +6560,6 @@
   ],
   "pending": [
     {
-      "symbol": "CRCLUSDT",
-      "tf": "5m",
-      "candle_ts": 1795395900,
-      "side": "LONG",
-      "upper": 50.652961368381035,
-      "open": 50.12,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "GOLDUSDT",
       "tf": "5m",
       "candle_ts": 1795395900,
@@ -9538,7 +9528,8 @@
       "side": "SELL",
       "upper": 0.009209049666747376,
       "open": 0.00939,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "MOODENGUSDT",
@@ -9547,6 +9538,16 @@
       "side": "SELL",
       "upper": 0.02940591521153728,
       "open": 0.03049,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "BLURUSDT",
+      "tf": "15m",
+      "candle_ts": 1795603500,
+      "side": "SELL",
+      "upper": 0.009444026719477545,
+      "open": 0.00957,
       "reported": false
     }
   ],
@@ -9893,29 +9894,12 @@
     "CZUSDT": 1795645934,
     "MANCERUSDT": 1795645935,
     "PIPEDOGUSDT": 1795645945,
-    "ATMUSDT": 1795646082
+    "ATMUSDT": 1795646082,
+    "SPACE1USDT": 1795646813
   },
   "last_trade_report_ts": 1795603260,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795309356,
-      "kind": "gap_result",
-      "symbol": "COOKIEUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
-    {
-      "ts": 1795309358,
-      "kind": "gap_result",
-      "symbol": "DCTYUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795309360,
       "kind": "gap_result",
@@ -13491,6 +13475,24 @@
     },
     {
       "ts": 1795602783,
+      "kind": "gap_result",
+      "symbol": "MOODENGUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795603641,
+      "kind": "gap_result",
+      "symbol": "BLURUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795603644,
       "kind": "gap_result",
       "symbol": "MOODENGUSDT",
       "tf": "15m",
