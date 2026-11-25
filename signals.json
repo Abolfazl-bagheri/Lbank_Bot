@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795639620,
+  "updated_at": 1795639883,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "BIGTIMEUSDT",
-      "tf": "4h",
-      "gap": 4.08,
-      "ts": 1795608066
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795608070
-    },
     {
       "kind": "SELL",
       "symbol": "SSVUSDT",
@@ -1402,22 +1388,23 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1795639620
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795639721
+    },
+    {
+      "kind": "GAP",
+      "symbol": "BULLAUSDT",
+      "tf": "1h",
+      "gap": 4.4,
+      "ts": 1795639883
     }
   ],
   "trades": [
-    {
-      "symbol": "NESUSDT",
-      "side": "SELL",
-      "entry": 0.2216,
-      "tp": 0.21605999999999997,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.2283,
-      "pnl": -6.2869,
-      "tf": "1h"
-    },
     {
       "symbol": "SSVUSDT",
       "side": "SELL",
@@ -1427,8 +1414,8 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 2.213,
-      "pnl": 12.0907,
+      "px": 2.201,
+      "pnl": 15.2748,
       "tf": "4h"
     },
     {
@@ -1440,8 +1427,8 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 27.52,
-      "pnl": 10.5539,
+      "px": 27.316,
+      "pnl": 14.918,
       "tf": "1h"
     },
     {
@@ -1453,8 +1440,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.010718,
-      "pnl": 2.2842,
+      "px": 0.010544,
+      "pnl": 5.4901,
       "tf": "4h"
     },
     {
@@ -1466,8 +1453,8 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 0.003283,
-      "pnl": -12.8015,
+      "px": 0.003171,
+      "pnl": 8.0798,
       "tf": "4h"
     },
     {
@@ -1479,8 +1466,8 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 0.542,
-      "pnl": 4.7645,
+      "px": 0.544,
+      "pnl": 2.5707,
       "tf": "15m"
     },
     {
@@ -1492,23 +1479,23 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.008826,
-      "pnl": 3.7573,
+      "px": 0.008775,
+      "pnl": 4.8899,
       "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1795565212,
-  "realized": -16.9827,
-  "closed_n": 19,
-  "open_upnl": 14.3622,
-  "equity": 997.3795,
+  "realized": -25.1957,
+  "closed_n": 20,
+  "open_upnl": 51.2233,
+  "equity": 1026.0276,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
     "profit": 161.5447,
-    "loss": -178.5274,
-    "count": 19
+    "loss": -186.7403,
+    "count": 20
   }
 }
