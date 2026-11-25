@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795568175,
+  "updated_at": 1795568412,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "EWZSUSDT",
-      "tf": "1h",
-      "gap": 2.05,
-      "ts": 1795531927
-    },
     {
       "kind": "GAP",
       "symbol": "NVOUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1795568175
+    },
+    {
+      "kind": "GAP",
+      "symbol": "BIGTIMEUSDT",
+      "tf": "15m",
+      "gap": 1.76,
+      "ts": 1795568412
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.004449,
-      "pnl": 1.5863,
+      "px": 0.00449,
+      "pnl": -0.24,
       "tf": "15m"
     }
   ],
@@ -1423,8 +1423,8 @@
   "session_start": 1795565212,
   "realized": 0,
   "closed_n": 0,
-  "open_upnl": 1.5863,
-  "equity": 1001.5863,
+  "open_upnl": -0.24,
+  "equity": 999.76,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
