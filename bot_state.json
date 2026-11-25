@@ -198,6 +198,31 @@
       "last_leg_candle_ts": 1795640400,
       "dry_run": true,
       "order_id": "PAPER-NESUSDT-1795640469"
+    },
+    {
+      "symbol": "BSPUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 46.36,
+      "qty": 4.3141,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 45.201,
+      "tf": "1h",
+      "opened_at": 1795640506,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 46.36,
+          "ts": 1795640506
+        }
+      ],
+      "entry_candle_ts": 1795640400,
+      "last_leg_candle_ts": 1795640400,
+      "dry_run": true,
+      "order_id": "PAPER-BSPUSDT-1795640506"
     }
   ],
   "trade_history": [
@@ -6734,36 +6759,6 @@
   ],
   "pending": [
     {
-      "symbol": "UNITREEUSDT",
-      "tf": "4h",
-      "candle_ts": 1795420800,
-      "side": "SELL",
-      "upper": 102.29280615251427,
-      "open": 106.209,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "AVAAIUSDT",
-      "tf": "4h",
-      "candle_ts": 1795420800,
-      "side": "SELL",
-      "upper": 0.006668980544914902,
-      "open": 0.006905,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "CYSUSDT",
-      "tf": "1h",
-      "candle_ts": 1795420800,
-      "side": "SELL",
-      "upper": 0.0447740116476775,
-      "open": 0.0455,
-      "reported": true,
-      "filled": false
-    },
-    {
       "symbol": "WUXIBIOUSDT",
       "tf": "4h",
       "candle_ts": 1795420800,
@@ -9707,6 +9702,33 @@
       "side": "SELL",
       "upper": 0.0326445333428907,
       "open": 0.03327,
+      "reported": false
+    },
+    {
+      "symbol": "NESUSDT",
+      "tf": "1h",
+      "candle_ts": 1795640400,
+      "side": "SELL",
+      "upper": 0.22524229073350457,
+      "open": 0.2301,
+      "reported": false
+    },
+    {
+      "symbol": "CFGUSDT",
+      "tf": "1h",
+      "candle_ts": 1795640400,
+      "side": "SELL",
+      "upper": 0.05441678572759872,
+      "open": 0.05718,
+      "reported": false
+    },
+    {
+      "symbol": "STOUSDT",
+      "tf": "1h",
+      "candle_ts": 1795640400,
+      "side": "SELL",
+      "upper": 0.02227631033941048,
+      "open": 0.02244,
       "reported": false
     }
   ],
