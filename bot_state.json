@@ -9495,7 +9495,8 @@
       "side": "LONG",
       "upper": 3553.5336485893145,
       "open": 3532.3,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "XAUTUSDT",
@@ -9504,7 +9505,8 @@
       "side": "LONG",
       "upper": 3553.596514767035,
       "open": 3532.3,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -9856,24 +9858,6 @@
   "last_trade_report_ts": 1795569586,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795287792,
-      "kind": "gap_result",
-      "symbol": "ZCATUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
-    {
-      "ts": 1795287794,
-      "kind": "gap_result",
-      "symbol": "ANSEMUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795288584,
       "kind": "gap_result",
@@ -13449,6 +13433,24 @@
     },
     {
       "ts": 1795569449,
+      "kind": "gap_result",
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795569926,
+      "kind": "gap_result",
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795569932,
       "kind": "gap_result",
       "symbol": "XAUTUSDT",
       "tf": "5m",
