@@ -6560,16 +6560,6 @@
   ],
   "pending": [
     {
-      "symbol": "MOGUSDT",
-      "tf": "15m",
-      "candle_ts": 1795393800,
-      "side": "SELL",
-      "upper": 8.020000045278889e-08,
-      "open": 8.02e-08,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "CATEUSDT",
       "tf": "15m",
       "candle_ts": 1795394700,
@@ -9547,6 +9537,16 @@
       "side": "SELL",
       "upper": 1.7270955788496356,
       "open": 1.743,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "SSVUSDT",
+      "tf": "15m",
+      "candle_ts": 1795599000,
+      "side": "SELL",
+      "upper": 1.7598243347587315,
+      "open": 1.757,
       "reported": false
     }
   ],
@@ -9900,15 +9900,6 @@
   "last_trade_report_ts": 1795598351,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795307493,
-      "kind": "gap_result",
-      "symbol": "DCTYUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
     {
       "ts": 1795307495,
       "kind": "gap_result",
@@ -13493,6 +13484,15 @@
     },
     {
       "ts": 1795598235,
+      "kind": "gap_result",
+      "symbol": "SSVUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795599133,
       "kind": "gap_result",
       "symbol": "SSVUSDT",
       "tf": "15m",
