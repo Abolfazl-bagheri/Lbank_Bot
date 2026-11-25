@@ -49,6 +49,31 @@
       "last_leg_candle_ts": 1795608000,
       "dry_run": true,
       "order_id": "PAPER-MANTRAUSDT-1795608059"
+    },
+    {
+      "symbol": "BIGTIMEUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.006439,
+      "qty": 31060.7237,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0062780250000000004,
+      "tf": "4h",
+      "opened_at": 1795608068,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.006439,
+          "ts": 1795608068
+        }
+      ],
+      "entry_candle_ts": 1795608000,
+      "last_leg_candle_ts": 1795608000,
+      "dry_run": true,
+      "order_id": "PAPER-BIGTIMEUSDT-1795608068"
     }
   ],
   "trade_history": [
@@ -6579,16 +6604,6 @@
   ],
   "pending": [
     {
-      "symbol": "ZHIPUUSDT",
-      "tf": "15m",
-      "candle_ts": 1795398300,
-      "side": "SELL",
-      "upper": 43.149948582940716,
-      "open": 44.73,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "UMCUSDT",
       "tf": "15m",
       "candle_ts": 1795398300,
@@ -9561,6 +9576,15 @@
       "side": "LONG",
       "upper": 3535.566901676569,
       "open": 3507.47,
+      "reported": false
+    },
+    {
+      "symbol": "MANTRAUSDT",
+      "tf": "4h",
+      "candle_ts": 1795608000,
+      "side": "SELL",
+      "upper": 0.0021352805966601282,
+      "open": 0.00217,
       "reported": false
     }
   ],
