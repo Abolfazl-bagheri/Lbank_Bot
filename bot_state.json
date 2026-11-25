@@ -6585,16 +6585,6 @@
   ],
   "pending": [
     {
-      "symbol": "GOLDUSDT",
-      "tf": "5m",
-      "candle_ts": 1795395900,
-      "side": "SELL",
-      "upper": 3596.714078678938,
-      "open": 3593.96,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "CRCLUSDT",
       "tf": "5m",
       "candle_ts": 1795395900,
@@ -9563,7 +9553,8 @@
       "side": "SELL",
       "upper": 0.028466598476620995,
       "open": 0.02792,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "BLURUSDT",
@@ -9572,6 +9563,15 @@
       "side": "SELL",
       "upper": 0.009209049666747376,
       "open": 0.00939,
+      "reported": false
+    },
+    {
+      "symbol": "MOODENGUSDT",
+      "tf": "15m",
+      "candle_ts": 1795602600,
+      "side": "SELL",
+      "upper": 0.02940591521153728,
+      "open": 0.03049,
       "reported": false
     }
   ],
@@ -9911,20 +9911,18 @@
     "ARGUSDT": 1795635981,
     "PORUSDT": 1795637021,
     "DODOUSDT": 1795636934,
-    "DRVUSDT": 1795639720
+    "DRVUSDT": 1795639720,
+    "1000WOJAKUSDT": 1795645930,
+    "1000SATSUSDT": 1795645931,
+    "MEMECOINUSDT": 1795645932,
+    "NEIRO1USDT": 1795645933,
+    "CZUSDT": 1795645934,
+    "MANCERUSDT": 1795645935,
+    "PIPEDOGUSDT": 1795645945
   },
   "last_trade_report_ts": 1795602343,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795308396,
-      "kind": "gap_result",
-      "symbol": "IDOLUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795309356,
       "kind": "gap_result",
@@ -13515,6 +13513,15 @@
       "gap": 0.0,
       "filled": false,
       "note": "miss"
+    },
+    {
+      "ts": 1795602783,
+      "kind": "gap_result",
+      "symbol": "MOODENGUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
     }
   ],
   "tune_history": [],
