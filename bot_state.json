@@ -1,73 +1,6 @@
 {
-  "open_trades": [
-    {
-      "symbol": "SSVUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 1.7368221854980797,
-      "qty": 806.0698,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 1.6934016308606277,
-      "tf": "1h",
-      "opened_at": 1795597249,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [
-        1.726,
-        1.756
-      ],
-      "steps": [
-        {
-          "px": 1.711,
-          "ts": 1795597249
-        },
-        {
-          "px": 1.72,
-          "ts": 1795597853
-        },
-        {
-          "px": 1.752,
-          "ts": 1795598532
-        }
-      ],
-      "entry_candle_ts": 1795597200,
-      "last_leg_candle_ts": 1795598532,
-      "dry_run": true,
-      "order_id": "PAPER-SSVUSDT-1795597249"
-    }
-  ],
+  "open_trades": [],
   "trade_history": [
-    {
-      "symbol": "FONEUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.00086,
-      "qty": 232558.1395,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.0008384999999999999,
-      "tf": "15m",
-      "opened_at": 1794926767,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.00086,
-          "ts": 1794926767
-        }
-      ],
-      "entry_candle_ts": 1794926700,
-      "last_leg_candle_ts": 1794926700,
-      "dry_run": true,
-      "order_id": "PAPER-FONEUSDT-1794926767",
-      "closed_at": 1794929163,
-      "close_px": 0.0009,
-      "pnl_usdt": -9.30232558139535,
-      "close_reason": "STOP",
-      "why": "STOP"
-    },
     {
       "symbol": "UVXYUSDT",
       "side": "SELL",
@@ -6556,19 +6489,50 @@
       "pnl_usdt": -28.970274265068067,
       "close_reason": "STOP",
       "why": "STOP"
+    },
+    {
+      "symbol": "SSVUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 1.7368221854980797,
+      "qty": 806.0698,
+      "margin": 70.0,
+      "leverage": 20,
+      "tp_price": 1.6934016308606277,
+      "tf": "1h",
+      "opened_at": 1795597249,
+      "adds": 2,
+      "last_leg_margin": 40.0,
+      "used_res_levels": [
+        1.726,
+        1.756
+      ],
+      "steps": [
+        {
+          "px": 1.711,
+          "ts": 1795597249
+        },
+        {
+          "px": 1.72,
+          "ts": 1795597853
+        },
+        {
+          "px": 1.752,
+          "ts": 1795598532
+        }
+      ],
+      "entry_candle_ts": 1795597200,
+      "last_leg_candle_ts": 1795598532,
+      "dry_run": true,
+      "order_id": "PAPER-SSVUSDT-1795597249",
+      "closed_at": 1795601133,
+      "close_px": 1.818,
+      "pnl_usdt": -65.4349888270783,
+      "close_reason": "STOP",
+      "why": "STOP"
     }
   ],
   "pending": [
-    {
-      "symbol": "CATEUSDT",
-      "tf": "15m",
-      "candle_ts": 1795394700,
-      "side": "SELL",
-      "upper": 0.0195953094546242,
-      "open": 0.01982,
-      "reported": true,
-      "filled": false
-    },
     {
       "symbol": "CATEUSDT",
       "tf": "15m",
@@ -9519,7 +9483,8 @@
       "side": "SELL",
       "upper": 0.019665007076706827,
       "open": 0.01992,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "SSVUSDT",
@@ -9528,7 +9493,8 @@
       "side": "SELL",
       "upper": 1.675804217781383,
       "open": 1.702,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "SSVUSDT",
@@ -9549,6 +9515,15 @@
       "open": 1.757,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "SSVUSDT",
+      "tf": "1h",
+      "candle_ts": 1795600800,
+      "side": "SELL",
+      "upper": 1.7396105801392785,
+      "open": 1.772,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -9812,7 +9787,6 @@
     "METEORAUSDT": 1794163747,
     "1000BTTCUSDT": 1794189823,
     "BIO1USDT": 1794262616,
-    "TSTUSDT": 1794312277,
     "RGTIUSDT": 1794342903,
     "OSCRUSDT": 1794367943,
     "SXTUSDT": 1794369881,
@@ -9901,24 +9875,6 @@
   "last_trade_report_ts": 1795600329,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795308392,
-      "kind": "gap_result",
-      "symbol": "DCTYUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
-    {
-      "ts": 1795308394,
-      "kind": "gap_result",
-      "symbol": "CELRUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795308396,
       "kind": "gap_result",
@@ -13500,6 +13456,24 @@
       "gap": 0.0,
       "filled": true,
       "note": "filled"
+    },
+    {
+      "ts": 1795601020,
+      "kind": "gap_result",
+      "symbol": "PIPPINUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795601023,
+      "kind": "gap_result",
+      "symbol": "SSVUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
     }
   ],
   "tune_history": [],
