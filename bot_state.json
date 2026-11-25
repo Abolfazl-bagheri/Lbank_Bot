@@ -63,31 +63,6 @@
       "order_id": "PAPER-VVVUSDT-1795636901"
     },
     {
-      "symbol": "BLURUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.010855,
-      "qty": 18424.6891,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.010583625,
-      "tf": "4h",
-      "opened_at": 1795636911,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.010855,
-          "ts": 1795636911
-        }
-      ],
-      "entry_candle_ts": 1795636800,
-      "last_leg_candle_ts": 1795636800,
-      "dry_run": true,
-      "order_id": "PAPER-BLURUSDT-1795636911"
-    },
-    {
       "symbol": "MANTRAUSDT",
       "side": "SELL",
       "status": "open",
@@ -176,36 +151,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "MVLLUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 10.14,
-      "qty": 19.7239,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 9.8865,
-      "tf": "15m",
-      "opened_at": 1794951019,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 10.14,
-          "ts": 1794951019
-        }
-      ],
-      "entry_candle_ts": 1794951000,
-      "last_leg_candle_ts": 1794951000,
-      "dry_run": true,
-      "order_id": "PAPER-MVLLUSDT-1794951019",
-      "closed_at": 1794951668,
-      "close_px": 9.88,
-      "pnl_usdt": 5.128205128205124,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "CRDOUSDT",
       "side": "SELL",
@@ -6705,6 +6650,36 @@
       "pnl_usdt": -8.212996389891693,
       "close_reason": "STOP",
       "why": "STOP"
+    },
+    {
+      "symbol": "BLURUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.010855,
+      "qty": 18424.6891,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.010583625,
+      "tf": "4h",
+      "opened_at": 1795636911,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.010855,
+          "ts": 1795636911
+        }
+      ],
+      "entry_candle_ts": 1795636800,
+      "last_leg_candle_ts": 1795636800,
+      "dry_run": true,
+      "order_id": "PAPER-BLURUSDT-1795636911",
+      "closed_at": 1795640146,
+      "close_px": 0.010495,
+      "pnl_usdt": 6.632888070013805,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -10007,7 +9982,6 @@
     "IBBETFUSDT": 1795616204,
     "GALUSDT": 1795635139,
     "DODOUSDT": 1795636934,
-    "DRVUSDT": 1795639720,
     "1000WOJAKUSDT": 1795645930,
     "1000SATSUSDT": 1795645931,
     "MEMECOINUSDT": 1795645932,
