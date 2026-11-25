@@ -1,5 +1,31 @@
 {
-  "open_trades": [],
+  "open_trades": [
+    {
+      "symbol": "SSVUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 1.711,
+      "qty": 116.8907,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 1.668225,
+      "tf": "1h",
+      "opened_at": 1795597249,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 1.711,
+          "ts": 1795597249
+        }
+      ],
+      "entry_candle_ts": 1795597200,
+      "last_leg_candle_ts": 1795597200,
+      "dry_run": true,
+      "order_id": "PAPER-SSVUSDT-1795597249"
+    }
+  ],
   "trade_history": [
     {
       "symbol": "FONEUSDT",
@@ -6523,26 +6549,6 @@
   ],
   "pending": [
     {
-      "symbol": "RAMUSDT",
-      "tf": "15m",
-      "candle_ts": 1795392900,
-      "side": "SELL",
-      "upper": 3.9667324237961337,
-      "open": 3.965,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "HANMIUSDT",
-      "tf": "15m",
-      "candle_ts": 1795392900,
-      "side": "SELL",
-      "upper": 114.41587487936255,
-      "open": 116.18,
-      "reported": true,
-      "filled": false
-    },
-    {
       "symbol": "CSOPSAMSUNG2LUSDT",
       "tf": "15m",
       "candle_ts": 1795392900,
@@ -9512,6 +9518,24 @@
       "upper": 0.0986506830286682,
       "open": 0.1007,
       "reported": false
+    },
+    {
+      "symbol": "SSVUSDT",
+      "tf": "15m",
+      "candle_ts": 1795597200,
+      "side": "SELL",
+      "upper": 1.6933032966609258,
+      "open": 1.702,
+      "reported": false
+    },
+    {
+      "symbol": "PIPPINUSDT",
+      "tf": "1h",
+      "candle_ts": 1795597200,
+      "side": "SELL",
+      "upper": 0.019665007076706827,
+      "open": 0.01992,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -9803,7 +9827,6 @@
     "OFCUSDT": 1795367824,
     "TRUMPSOLUSDT": 1795369657,
     "RIOTUSDT": 1795369657,
-    "ANSEMUSDT": 1795406548,
     "STONKBROKERUSDT": 1795424588,
     "BEMUSDT": 1795435543,
     "FRONGUSDT": 1795441651,
