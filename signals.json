@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795608123,
+  "updated_at": 1795608152,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795595788
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795595819
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "1h",
       "gap": 1.77,
       "ts": 1795608123
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795608129
+    },
+    {
+      "kind": "SELL",
+      "symbol": "VKTXUSDT",
+      "tf": "15m",
+      "gap": 1.09,
+      "ts": 1795608152
     }
   ],
   "trades": [
@@ -1469,14 +1469,27 @@
       "px": 0.2618,
       "pnl": -0.24,
       "tf": "1h"
+    },
+    {
+      "symbol": "UVXYUSDT",
+      "side": "SELL",
+      "entry": 27.37,
+      "tp": 26.68575,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 27.37,
+      "pnl": -0.24,
+      "tf": "1h"
     }
   ],
   "start": 1000.0,
   "session_start": 1795565212,
   "realized": -48.4271,
   "closed_n": 11,
-  "open_upnl": -2.114,
-  "equity": 949.4589,
+  "open_upnl": -2.354,
+  "equity": 949.2189,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
