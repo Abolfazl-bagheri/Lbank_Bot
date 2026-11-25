@@ -1,29 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795571168,
+  "updated_at": 1795571432,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795554632
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795554668
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795554702
-    },
     {
       "kind": "GAP",
       "symbol": "PAYPUSDT",
@@ -1402,15 +1381,50 @@
       "tf": "15m",
       "gap": 1.57,
       "ts": 1795571168
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795571172
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795571292
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795571432
     }
   ],
-  "trades": [],
+  "trades": [
+    {
+      "symbol": "JDUSDT",
+      "side": "SELL",
+      "entry": 26.4,
+      "tp": 25.74,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 26.4,
+      "pnl": -0.24,
+      "tf": "15m"
+    }
+  ],
   "start": 1000.0,
   "session_start": 1795565212,
   "realized": 22.2783,
   "closed_n": 1,
-  "open_upnl": 0,
-  "equity": 1022.2783,
+  "open_upnl": -0.24,
+  "equity": 1022.0383,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
