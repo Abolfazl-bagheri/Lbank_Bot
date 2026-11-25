@@ -142,6 +142,31 @@
       "last_leg_candle_ts": 1795553809,
       "dry_run": true,
       "order_id": "PAPER-GILDUSDT-1795531604"
+    },
+    {
+      "symbol": "OPGUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.1695,
+      "qty": 1179.941,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.1652625,
+      "tf": "4h",
+      "opened_at": 1795564906,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.1695,
+          "ts": 1795564906
+        }
+      ],
+      "entry_candle_ts": 1795564800,
+      "last_leg_candle_ts": 1795564800,
+      "dry_run": true,
+      "order_id": "PAPER-OPGUSDT-1795564906"
     }
   ],
   "trade_history": [
@@ -6657,26 +6682,6 @@
   ],
   "pending": [
     {
-      "symbol": "NIULAIUSDT",
-      "tf": "1h",
-      "candle_ts": 1795363200,
-      "side": "SELL",
-      "upper": 0.03993840356156578,
-      "open": 0.04037,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "ZESTUSDT",
-      "tf": "4h",
-      "candle_ts": 1795363200,
-      "side": "SELL",
-      "upper": 0.12610659811277627,
-      "open": 0.12708,
-      "reported": true,
-      "filled": false
-    },
-    {
       "symbol": "BLURUSDT",
       "tf": "15m",
       "candle_ts": 1795364100,
@@ -9649,6 +9654,24 @@
       "upper": 9.969000125832649,
       "open": 9.969,
       "reported": false
+    },
+    {
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
+      "candle_ts": 1795564500,
+      "side": "LONG",
+      "upper": 3563.254235813902,
+      "open": 3545.75,
+      "reported": false
+    },
+    {
+      "symbol": "SSPCUSDT",
+      "tf": "15m",
+      "candle_ts": 1795564800,
+      "side": "SELL",
+      "upper": 9.969000110820312,
+      "open": 9.969,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -9984,7 +10007,7 @@
     "FIGUSDT": 1795604649,
     "AMCUSDT": 1795606471
   },
-  "last_trade_report_ts": 1795563291,
+  "last_trade_report_ts": 1795564557,
   "last_known_version": "2.10.0",
   "lessons": [
     {
