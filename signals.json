@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795606558,
+  "updated_at": 1795606587,
   "signals": [
-    {
-      "kind": "HEARTBEAT",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795593086
-    },
-    {
-      "kind": "GAP",
-      "symbol": "PROSUSDT",
-      "tf": "1h",
-      "gap": 4.19,
-      "ts": 1795593264
-    },
     {
       "kind": "GAP",
       "symbol": "DODOUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "5m",
       "gap": 0.08,
       "ts": 1795606558
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795606581
+    },
+    {
+      "kind": "SELL",
+      "symbol": "SILVERUSDT",
+      "tf": "5m",
+      "gap": 0.26,
+      "ts": 1795606587
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.009419,
-      "pnl": -0.4526,
+      "px": 0.009433,
+      "pnl": -0.7501,
       "tf": "15m"
     },
     {
@@ -1427,8 +1427,8 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 0.2489,
-      "pnl": 1.0371,
+      "px": 0.2499,
+      "pnl": -1.3664,
       "tf": "1h"
     }
   ],
@@ -1436,8 +1436,8 @@
   "session_start": 1795565212,
   "realized": -11.0064,
   "closed_n": 10,
-  "open_upnl": 0.5845,
-  "equity": 989.5781,
+  "open_upnl": -2.1165,
+  "equity": 986.8771,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
