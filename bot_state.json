@@ -167,6 +167,31 @@
       "last_leg_candle_ts": 1795638025,
       "dry_run": true,
       "order_id": "PAPER-GPROUSDT-1795637765"
+    },
+    {
+      "symbol": "CLAUDIAUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.009006,
+      "qty": 22207.4173,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.00878085,
+      "tf": "15m",
+      "opened_at": 1795638665,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.009006,
+          "ts": 1795638665
+        }
+      ],
+      "entry_candle_ts": 1795638600,
+      "last_leg_candle_ts": 1795638600,
+      "dry_run": true,
+      "order_id": "PAPER-CLAUDIAUSDT-1795638665"
     }
   ],
   "trade_history": [
@@ -6703,16 +6728,6 @@
   ],
   "pending": [
     {
-      "symbol": "ARIAUSDT",
-      "tf": "1h",
-      "candle_ts": 1795420800,
-      "side": "SELL",
-      "upper": 0.32019028144190526,
-      "open": 0.32302,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "TAUSDT",
       "tf": "1h",
       "candle_ts": 1795420800,
@@ -9678,6 +9693,15 @@
       "open": 3578.09,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "MMTUSDT",
+      "tf": "15m",
+      "candle_ts": 1795638600,
+      "side": "SELL",
+      "upper": 0.32104265689938294,
+      "open": 0.324,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -9979,7 +10003,6 @@
     "NIULAIUSDT": 1795521859,
     "LWLGUSDT": 1795522602,
     "POETUSDT": 1795522606,
-    "ARROWUSDT": 1795554312,
     "TSMONUSDT": 1795556797,
     "IRENONUSDT": 1795558583,
     "AEHRUSDT": 1795558604,
