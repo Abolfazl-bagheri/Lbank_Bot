@@ -105,6 +105,31 @@
       "last_leg_candle_ts": 1795636800,
       "dry_run": true,
       "order_id": "PAPER-BULLAUSDT-1795636889"
+    },
+    {
+      "symbol": "VVVUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 28.037,
+      "qty": 7.1334,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 27.336074999999997,
+      "tf": "1h",
+      "opened_at": 1795636901,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 28.037,
+          "ts": 1795636901
+        }
+      ],
+      "entry_candle_ts": 1795636800,
+      "last_leg_candle_ts": 1795636800,
+      "dry_run": true,
+      "order_id": "PAPER-VVVUSDT-1795636901"
     }
   ],
   "trade_history": [
@@ -6641,16 +6666,6 @@
   ],
   "pending": [
     {
-      "symbol": "GIGADEVUSDT",
-      "tf": "1h",
-      "candle_ts": 1795399200,
-      "side": "SELL",
-      "upper": 29.306032786444685,
-      "open": 29.73,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "HK0992USDT",
       "tf": "1h",
       "candle_ts": 1795399200,
@@ -9629,6 +9644,15 @@
       "side": "SELL",
       "upper": 2.10829466867776,
       "open": 2.239,
+      "reported": false
+    },
+    {
+      "symbol": "BULLAUSDT",
+      "tf": "1h",
+      "candle_ts": 1795636800,
+      "side": "SELL",
+      "upper": 0.03134282444351599,
+      "open": 0.03243,
       "reported": false
     }
   ],
