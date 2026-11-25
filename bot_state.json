@@ -173,6 +173,31 @@
       "last_leg_candle_ts": 1795640400,
       "dry_run": true,
       "order_id": "PAPER-BULLAUSDT-1795640455"
+    },
+    {
+      "symbol": "NESUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.2312,
+      "qty": 865.0519,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.22541999999999998,
+      "tf": "1h",
+      "opened_at": 1795640469,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.2312,
+          "ts": 1795640469
+        }
+      ],
+      "entry_candle_ts": 1795640400,
+      "last_leg_candle_ts": 1795640400,
+      "dry_run": true,
+      "order_id": "PAPER-NESUSDT-1795640469"
     }
   ],
   "trade_history": [
@@ -6709,16 +6734,6 @@
   ],
   "pending": [
     {
-      "symbol": "ARIAUSDT",
-      "tf": "4h",
-      "candle_ts": 1795420800,
-      "side": "SELL",
-      "upper": 0.31093635551477555,
-      "open": 0.32302,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "UNITREEUSDT",
       "tf": "4h",
       "candle_ts": 1795420800,
@@ -9683,6 +9698,15 @@
       "side": "SELL",
       "upper": 0.05619785385772937,
       "open": 0.05718,
+      "reported": false
+    },
+    {
+      "symbol": "BULLAUSDT",
+      "tf": "1h",
+      "candle_ts": 1795640400,
+      "side": "SELL",
+      "upper": 0.0326445333428907,
+      "open": 0.03327,
       "reported": false
     }
   ],
