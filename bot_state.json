@@ -9547,7 +9547,8 @@
       "side": "SELL",
       "upper": 1.7598243347587315,
       "open": 1.757,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -9900,15 +9901,6 @@
   "last_trade_report_ts": 1795599361,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795307495,
-      "kind": "gap_result",
-      "symbol": "AKEUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795308392,
       "kind": "gap_result",
@@ -13493,6 +13485,15 @@
     },
     {
       "ts": 1795599133,
+      "kind": "gap_result",
+      "symbol": "SSVUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795600035,
       "kind": "gap_result",
       "symbol": "SSVUSDT",
       "tf": "15m",
