@@ -29,24 +29,30 @@
       "symbol": "SSVUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 2.246,
-      "qty": 89.0472,
-      "margin": 10.0,
+      "entry": 2.2612811707256038,
+      "qty": 265.3363,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 2.18985,
+      "tp_price": 2.2047491414574636,
       "tf": "4h",
       "opened_at": 1795636880,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        2.278
+      ],
       "steps": [
         {
           "px": 2.246,
           "ts": 1795636880
+        },
+        {
+          "px": 2.269,
+          "ts": 1795638018
         }
       ],
       "entry_candle_ts": 1795636800,
-      "last_leg_candle_ts": 1795636800,
+      "last_leg_candle_ts": 1795638018,
       "dry_run": true,
       "order_id": "PAPER-SSVUSDT-1795636880"
     },
