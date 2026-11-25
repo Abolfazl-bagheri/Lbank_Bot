@@ -6549,16 +6549,6 @@
   ],
   "pending": [
     {
-      "symbol": "CSOPSAMSUNG2LUSDT",
-      "tf": "15m",
-      "candle_ts": 1795392900,
-      "side": "SELL",
-      "upper": 3.8136992419390334,
-      "open": 3.84,
-      "reported": true,
-      "filled": false
-    },
-    {
       "symbol": "MOGUSDT",
       "tf": "15m",
       "candle_ts": 1795392900,
@@ -9472,7 +9462,8 @@
       "side": "SELL",
       "upper": 0.7311533226968673,
       "open": 0.7479,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "MANTRAUSDT",
@@ -9508,7 +9499,8 @@
       "side": "SELL",
       "upper": 0.09898760154020772,
       "open": 0.1007,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ALICEUSDT",
@@ -9535,6 +9527,15 @@
       "side": "SELL",
       "upper": 0.019665007076706827,
       "open": 0.01992,
+      "reported": false
+    },
+    {
+      "symbol": "SSVUSDT",
+      "tf": "1h",
+      "candle_ts": 1795597200,
+      "side": "SELL",
+      "upper": 1.675804217781383,
+      "open": 1.702,
       "reported": false
     }
   ],
@@ -9885,27 +9886,9 @@
     "DODOUSDT": 1795636934,
     "DRVUSDT": 1795639720
   },
-  "last_trade_report_ts": 1795596034,
+  "last_trade_report_ts": 1795597444,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795302158,
-      "kind": "gap_result",
-      "symbol": "IDOLUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795302160,
-      "kind": "gap_result",
-      "symbol": "COOKIEUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
     {
       "ts": 1795302162,
       "kind": "gap_result",
@@ -13484,6 +13467,24 @@
       "kind": "gap_result",
       "symbol": "CRCLUSDT",
       "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795597436,
+      "kind": "gap_result",
+      "symbol": "PROSUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795597441,
+      "kind": "gap_result",
+      "symbol": "ALICEUSDT",
+      "tf": "1h",
       "gap": 0.0,
       "filled": true,
       "note": "filled"
