@@ -99,6 +99,31 @@
       "last_leg_candle_ts": 1795608000,
       "dry_run": true,
       "order_id": "PAPER-SSVUSDT-1795608076"
+    },
+    {
+      "symbol": "MMTUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.2618,
+      "qty": 763.9419,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.25525499999999995,
+      "tf": "1h",
+      "opened_at": 1795608111,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.2618,
+          "ts": 1795608111
+        }
+      ],
+      "entry_candle_ts": 1795608000,
+      "last_leg_candle_ts": 1795608000,
+      "dry_run": true,
+      "order_id": "PAPER-MMTUSDT-1795608111"
     }
   ],
   "trade_history": [
@@ -6629,16 +6654,6 @@
   ],
   "pending": [
     {
-      "symbol": "MINIMAXUSDT",
-      "tf": "15m",
-      "candle_ts": 1795398300,
-      "side": "SELL",
-      "upper": 12.88281211031163,
-      "open": 13.31,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "LAOPUUSDT",
       "tf": "15m",
       "candle_ts": 1795398300,
@@ -9609,6 +9624,15 @@
       "side": "SELL",
       "upper": 0.006176018444453953,
       "open": 0.006584,
+      "reported": false
+    },
+    {
+      "symbol": "SSVUSDT",
+      "tf": "4h",
+      "candle_ts": 1795608000,
+      "side": "SELL",
+      "upper": 1.7511098648251726,
+      "open": 1.809,
       "reported": false
     }
   ],
