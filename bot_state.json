@@ -167,23 +167,29 @@
       "side": "SELL",
       "status": "open",
       "entry": 0.547,
-      "qty": 365.6307,
-      "margin": 10.0,
+      "qty": 1096.8921,
+      "margin": 30.0,
       "leverage": 20,
       "tp_price": 0.533325,
       "tf": "15m",
       "opened_at": 1795637765,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.5489
+      ],
       "steps": [
         {
           "px": 0.547,
           "ts": 1795637765
+        },
+        {
+          "px": 0.547,
+          "ts": 1795638025
         }
       ],
       "entry_candle_ts": 1795637700,
-      "last_leg_candle_ts": 1795637700,
+      "last_leg_candle_ts": 1795638025,
       "dry_run": true,
       "order_id": "PAPER-GPROUSDT-1795637765"
     }
