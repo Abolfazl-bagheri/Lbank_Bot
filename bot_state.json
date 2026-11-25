@@ -6545,16 +6545,6 @@
     {
       "symbol": "ZCATUSDT",
       "tf": "15m",
-      "candle_ts": 1795368600,
-      "side": "SELL",
-      "upper": 0.020624671495328317,
-      "open": 0.01991,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "ZCATUSDT",
-      "tf": "15m",
       "candle_ts": 1795369500,
       "side": "SELL",
       "upper": 0.02058954773053152,
@@ -9525,7 +9515,8 @@
       "side": "SELL",
       "upper": 0.004400849367021548,
       "open": 0.004491,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "FRHCUSDT",
@@ -9534,6 +9525,16 @@
       "side": "LONG",
       "upper": 171.94,
       "open": 171.94,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "BIGTIMEUSDT",
+      "tf": "1h",
+      "candle_ts": 1795568400,
+      "side": "SELL",
+      "upper": 0.0043990351219119405,
+      "open": 0.004506,
       "reported": false
     }
   ],
@@ -9883,27 +9884,9 @@
     "CYBERLEEKUSDT": 1795609022,
     "SKY1USDT": 1795609028
   },
-  "last_trade_report_ts": 1795567317,
+  "last_trade_report_ts": 1795568660,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795287786,
-      "kind": "gap_result",
-      "symbol": "CLAUDIAUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795287788,
-      "kind": "gap_result",
-      "symbol": "PIEVERSEUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795287790,
       "kind": "gap_result",
@@ -13479,6 +13462,24 @@
     },
     {
       "ts": 1795567654,
+      "kind": "gap_result",
+      "symbol": "FRHCUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795568653,
+      "kind": "gap_result",
+      "symbol": "BIGTIMEUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795568656,
       "kind": "gap_result",
       "symbol": "FRHCUSDT",
       "tf": "15m",
