@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795636878,
+  "updated_at": 1795636887,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "SSVUSDT",
-      "tf": "1h",
-      "gap": 2.87,
-      "ts": 1795603943
-    },
-    {
-      "kind": "GAP",
-      "symbol": "MMTUSDT",
-      "tf": "1h",
-      "gap": 1.05,
-      "ts": 1795604045
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "4h",
       "gap": 6.13,
       "ts": 1795636878
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795636883
+    },
+    {
+      "kind": "SELL",
+      "symbol": "BULLAUSDT",
+      "tf": "1h",
+      "gap": 3.56,
+      "ts": 1795636887
     }
   ],
   "trades": [
@@ -1430,14 +1430,27 @@
       "px": 0.2216,
       "pnl": -0.24,
       "tf": "1h"
+    },
+    {
+      "symbol": "SSVUSDT",
+      "side": "SELL",
+      "entry": 2.246,
+      "tp": 2.18985,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 2.246,
+      "pnl": -0.24,
+      "tf": "4h"
     }
   ],
   "start": 1000.0,
   "session_start": 1795565212,
   "realized": -31.0468,
   "closed_n": 16,
-  "open_upnl": 30.169,
-  "equity": 999.1222,
+  "open_upnl": 29.929,
+  "equity": 998.8822,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
