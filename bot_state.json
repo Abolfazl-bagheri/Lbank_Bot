@@ -51,31 +51,6 @@
       "order_id": "PAPER-MANTRAUSDT-1795608059"
     },
     {
-      "symbol": "BIGTIMEUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.006439,
-      "qty": 31060.7237,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.0062780250000000004,
-      "tf": "4h",
-      "opened_at": 1795608068,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.006439,
-          "ts": 1795608068
-        }
-      ],
-      "entry_candle_ts": 1795608000,
-      "last_leg_candle_ts": 1795608000,
-      "dry_run": true,
-      "order_id": "PAPER-BIGTIMEUSDT-1795608068"
-    },
-    {
       "symbol": "SSVUSDT",
       "side": "SELL",
       "status": "open",
@@ -158,36 +133,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "NESUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.2043,
-      "qty": 978.9525,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.1991925,
-      "tf": "15m",
-      "opened_at": 1794925835,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.2043,
-          "ts": 1794925835
-        }
-      ],
-      "entry_candle_ts": 1794925800,
-      "last_leg_candle_ts": 1794925800,
-      "dry_run": true,
-      "order_id": "PAPER-NESUSDT-1794925835",
-      "closed_at": 1794933651,
-      "close_px": 0.199,
-      "pnl_usdt": 5.188448360254526,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "BREVUSDT",
       "side": "SELL",
@@ -6681,6 +6626,36 @@
       "pnl_usdt": -37.42068168802373,
       "close_reason": "STOP",
       "why": "STOP"
+    },
+    {
+      "symbol": "BIGTIMEUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.006439,
+      "qty": 31060.7237,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0062780250000000004,
+      "tf": "4h",
+      "opened_at": 1795608068,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.006439,
+          "ts": 1795608068
+        }
+      ],
+      "entry_candle_ts": 1795608000,
+      "last_leg_candle_ts": 1795608000,
+      "dry_run": true,
+      "order_id": "PAPER-BIGTIMEUSDT-1795608068",
+      "closed_at": 1795609059,
+      "close_px": 0.006723,
+      "pnl_usdt": -8.821245535020951,
+      "close_reason": "STOP",
+      "why": "STOP"
     }
   ],
   "pending": [
@@ -9673,7 +9648,8 @@
       "side": "LONG",
       "upper": 29.218611496210144,
       "open": 29.19,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -10017,20 +9993,12 @@
     "PIPEDOGUSDT": 1795645945,
     "ATMUSDT": 1795646082,
     "SPACE1USDT": 1795646813,
-    "PORTALUSDT": 1795651456
+    "PORTALUSDT": 1795651456,
+    "APEXUSDT": 1795652213
   },
   "last_trade_report_ts": 1795608438,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795318281,
-      "kind": "gap_result",
-      "symbol": "BTCUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795320233,
       "kind": "gap_result",
@@ -13617,6 +13585,15 @@
       "ts": 1795608428,
       "kind": "gap_result",
       "symbol": "XAUTUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795609057,
+      "kind": "gap_result",
+      "symbol": "VKTXUSDT",
       "tf": "15m",
       "gap": 0.0,
       "filled": true,
