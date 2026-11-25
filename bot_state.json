@@ -40,17 +40,18 @@
       "symbol": "VVVUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 28.046998223684824,
-      "qty": 21.3926,
-      "margin": 30.0,
+      "entry": 28.256109200007263,
+      "qty": 49.5467,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 27.3458232680927,
+      "tp_price": 27.54970647000708,
       "tf": "1h",
       "opened_at": 1795636901,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [
-        28.16
+        28.16,
+        28.523
       ],
       "steps": [
         {
@@ -60,10 +61,14 @@
         {
           "px": 28.052,
           "ts": 1795637492
+        },
+        {
+          "px": 28.415,
+          "ts": 1795641917
         }
       ],
       "entry_candle_ts": 1795636800,
-      "last_leg_candle_ts": 1795637492,
+      "last_leg_candle_ts": 1795641917,
       "dry_run": true,
       "order_id": "PAPER-VVVUSDT-1795636901"
     },
