@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795636932,
+  "updated_at": 1795636942,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795604673
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795604722
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "4h",
       "gap": 1.81,
       "ts": 1795636932
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795636938
+    },
+    {
+      "kind": "SELL",
+      "symbol": "NESUSDT",
+      "tf": "4h",
+      "gap": 4.65,
+      "ts": 1795636942
     }
   ],
   "trades": [
@@ -1495,14 +1495,27 @@
       "px": 0.003189,
       "pnl": -0.24,
       "tf": "4h"
+    },
+    {
+      "symbol": "MMTUSDT",
+      "side": "SELL",
+      "entry": 0.3082,
+      "tp": 0.30049499999999996,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.3082,
+      "pnl": -0.24,
+      "tf": "4h"
     }
   ],
   "start": 1000.0,
   "session_start": 1795565212,
   "realized": -31.0468,
   "closed_n": 16,
-  "open_upnl": 28.969,
-  "equity": 997.9222,
+  "open_upnl": 28.729,
+  "equity": 997.6822,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
