@@ -9665,7 +9665,8 @@
       "side": "SELL",
       "upper": 0.006973575467486445,
       "open": 0.00693,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -10016,15 +10017,6 @@
   "last_trade_report_ts": 1795642910,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795363584,
-      "kind": "gap_result",
-      "symbol": "DGAIUSDT",
-      "tf": "4h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795363586,
       "kind": "gap_result",
@@ -13611,6 +13603,15 @@
       "ts": 1795642315,
       "kind": "gap_result",
       "symbol": "AIOTUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795643208,
+      "kind": "gap_result",
+      "symbol": "BIGTIMEUSDT",
       "tf": "15m",
       "gap": 0.0,
       "filled": true,
