@@ -24,6 +24,31 @@
       "last_leg_candle_ts": 1795593600,
       "dry_run": true,
       "order_id": "PAPER-PROSUSDT-1795593651"
+    },
+    {
+      "symbol": "MANTRAUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.002119,
+      "qty": 94384.1435,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0020660249999999995,
+      "tf": "4h",
+      "opened_at": 1795593668,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.002119,
+          "ts": 1795593668
+        }
+      ],
+      "entry_candle_ts": 1795593600,
+      "last_leg_candle_ts": 1795593600,
+      "dry_run": true,
+      "order_id": "PAPER-MANTRAUSDT-1795593668"
     }
   ],
   "trade_history": [
@@ -6551,16 +6576,6 @@
   ],
   "pending": [
     {
-      "symbol": "CSOPSAMSUNG2LUSDT",
-      "tf": "15m",
-      "candle_ts": 1795392000,
-      "side": "SELL",
-      "upper": 3.791327776025543,
-      "open": 3.814,
-      "reported": true,
-      "filled": false
-    },
-    {
       "symbol": "SAMSUNGEMUSDT",
       "tf": "15m",
       "candle_ts": 1795392000,
@@ -9538,6 +9553,15 @@
       "side": "LONG",
       "upper": 47.69587850300786,
       "open": 46.64,
+      "reported": false
+    },
+    {
+      "symbol": "PROSUSDT",
+      "tf": "1h",
+      "candle_ts": 1795593600,
+      "side": "SELL",
+      "upper": 0.7311533226968673,
+      "open": 0.7479,
       "reported": false
     }
   ],
