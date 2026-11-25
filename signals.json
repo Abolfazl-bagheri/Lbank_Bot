@@ -1,29 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795569054,
+  "updated_at": 1795569238,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "GILDUSDT",
-      "tf": "1h",
-      "gap": 2.71,
-      "ts": 1795531964
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795552334
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795552510
-    },
     {
       "kind": "HEARTBEAT",
       "symbol": "—",
@@ -1402,35 +1381,42 @@
       "tf": "5m",
       "gap": 0.09,
       "ts": 1795569054
-    }
-  ],
-  "trades": [
+    },
     {
-      "symbol": "BIGTIMEUSDT",
-      "side": "SELL",
-      "entry": 0.004488666468666102,
-      "tp": 0.004376449806949449,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
-      "lev": 20,
-      "px": 0.004322,
-      "pnl": 21.5583,
-      "tf": "1h"
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795569076
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795569103
+    },
+    {
+      "kind": "GAP",
+      "symbol": "IRYSUSDT",
+      "tf": "15m",
+      "gap": 1.62,
+      "ts": 1795569238
     }
   ],
+  "trades": [],
   "start": 1000.0,
   "session_start": 1795565212,
-  "realized": 0,
-  "closed_n": 0,
-  "open_upnl": 21.5583,
-  "equity": 1021.5583,
+  "realized": 22.2783,
+  "closed_n": 1,
+  "open_upnl": 0,
+  "equity": 1022.2783,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 0,
+    "profit": 22.2783,
     "loss": 0,
-    "count": 0
+    "count": 1
   }
 }
