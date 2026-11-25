@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795571432,
+  "updated_at": 1795571543,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "PAYPUSDT",
-      "tf": "15m",
-      "gap": 1.32,
-      "ts": 1795554842
-    },
-    {
-      "kind": "SELL",
-      "symbol": "PAYPUSDT",
-      "tf": "15m",
-      "gap": 1.25,
-      "ts": 1795554986
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1795571432
+    },
+    {
+      "kind": "HEARTBEAT",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795571434
+    },
+    {
+      "kind": "GAP",
+      "symbol": "IRYSUSDT",
+      "tf": "1h",
+      "gap": 4.03,
+      "ts": 1795571543
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 26.4,
-      "pnl": -0.24,
+      "px": 26.35,
+      "pnl": 0.1388,
       "tf": "15m"
     }
   ],
@@ -1423,8 +1423,8 @@
   "session_start": 1795565212,
   "realized": 22.2783,
   "closed_n": 1,
-  "open_upnl": -0.24,
-  "equity": 1022.0383,
+  "open_upnl": 0.1388,
+  "equity": 1022.4171,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
