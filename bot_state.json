@@ -155,6 +155,31 @@
       "last_leg_candle_ts": 1795636800,
       "dry_run": true,
       "order_id": "PAPER-BLURUSDT-1795636911"
+    },
+    {
+      "symbol": "MANTRAUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.003189,
+      "qty": 62715.5848,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.003109275,
+      "tf": "4h",
+      "opened_at": 1795636920,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.003189,
+          "ts": 1795636920
+        }
+      ],
+      "entry_candle_ts": 1795636800,
+      "last_leg_candle_ts": 1795636800,
+      "dry_run": true,
+      "order_id": "PAPER-MANTRAUSDT-1795636920"
     }
   ],
   "trade_history": [
@@ -6691,16 +6716,6 @@
   ],
   "pending": [
     {
-      "symbol": "BMTUSDT",
-      "tf": "1h",
-      "candle_ts": 1795399200,
-      "side": "SELL",
-      "upper": 0.02137576254834951,
-      "open": 0.02175,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "UMCUSDT",
       "tf": "1h",
       "candle_ts": 1795399200,
@@ -9677,6 +9692,15 @@
       "side": "SELL",
       "upper": 27.4107457148278,
       "open": 27.947,
+      "reported": false
+    },
+    {
+      "symbol": "BLURUSDT",
+      "tf": "4h",
+      "candle_ts": 1795636800,
+      "side": "SELL",
+      "upper": 0.010529478994448753,
+      "open": 0.01083,
       "reported": false
     }
   ],
