@@ -1,5 +1,31 @@
 {
-  "open_trades": [],
+  "open_trades": [
+    {
+      "symbol": "PROSUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.7501,
+      "qty": 266.6311,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.7313474999999999,
+      "tf": "1h",
+      "opened_at": 1795593651,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.7501,
+          "ts": 1795593651
+        }
+      ],
+      "entry_candle_ts": 1795593600,
+      "last_leg_candle_ts": 1795593600,
+      "dry_run": true,
+      "order_id": "PAPER-PROSUSDT-1795593651"
+    }
+  ],
   "trade_history": [
     {
       "symbol": "FONEUSDT",
@@ -9796,7 +9822,6 @@
     "XTIUSDT": 1795291473,
     "COPSTOCKUSDT": 1795291586,
     "XBRUSDT": 1795293074,
-    "PORUSDT": 1795328144,
     "ZZZUSDT": 1795329982,
     "B3USDT": 1795329999,
     "BONERUSDT": 1795342752,
@@ -9863,7 +9888,7 @@
     "GOATSEUSUSDT": 1795635143,
     "ARGUSDT": 1795635981
   },
-  "last_trade_report_ts": 1795591993,
+  "last_trade_report_ts": 1795593086,
   "last_known_version": "2.10.0",
   "lessons": [
     {
