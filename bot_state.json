@@ -9707,7 +9707,8 @@
       "side": "LONG",
       "upper": 3594.1737189495952,
       "open": 3570.4,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -10057,15 +10058,6 @@
   "last_trade_report_ts": 1795649147,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795374221,
-      "kind": "gap_result",
-      "symbol": "BULLAUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795389039,
       "kind": "gap_result",
@@ -13650,6 +13642,15 @@
     },
     {
       "ts": 1795648818,
+      "kind": "gap_result",
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795649718,
       "kind": "gap_result",
       "symbol": "XAUTUSDT",
       "tf": "5m",
