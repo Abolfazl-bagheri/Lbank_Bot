@@ -6515,36 +6515,6 @@
     {
       "symbol": "ZCATUSDT",
       "tf": "15m",
-      "candle_ts": 1795364100,
-      "side": "SELL",
-      "upper": 0.02024751459029244,
-      "open": 0.01929,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "ZCATUSDT",
-      "tf": "15m",
-      "candle_ts": 1795365000,
-      "side": "SELL",
-      "upper": 0.02029372487092799,
-      "open": 0.01936,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "ZCATUSDT",
-      "tf": "15m",
-      "candle_ts": 1795365900,
-      "side": "SELL",
-      "upper": 0.02046026370359662,
-      "open": 0.0197,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "ZCATUSDT",
-      "tf": "15m",
       "candle_ts": 1795365900,
       "side": "SELL",
       "upper": 0.02045049388859067,
@@ -9496,7 +9466,8 @@
       "side": "SELL",
       "upper": 9.969000110820312,
       "open": 9.969,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "OPGUSDT",
@@ -9505,6 +9476,33 @@
       "side": "SELL",
       "upper": 0.1609716427107409,
       "open": 0.168,
+      "reported": false
+    },
+    {
+      "symbol": "SSPCUSDT",
+      "tf": "15m",
+      "candle_ts": 1795565700,
+      "side": "SELL",
+      "upper": 9.969000110820312,
+      "open": 9.969,
+      "reported": false
+    },
+    {
+      "symbol": "SAHARAUSDT",
+      "tf": "15m",
+      "candle_ts": 1795565700,
+      "side": "LONG",
+      "upper": 0.005846746206258397,
+      "open": 0.00545,
+      "reported": false
+    },
+    {
+      "symbol": "FRHCUSDT",
+      "tf": "15m",
+      "candle_ts": 1795565700,
+      "side": "LONG",
+      "upper": 171.94000156572292,
+      "open": 171.94,
       "reported": false
     }
   ],
@@ -9850,20 +9848,13 @@
     "AMCUSDT": 1795606471,
     "NGASUSDT": 1795608262,
     "HOTUSDT": 1795608358,
-    "1000000BABYDOGEUSDT": 1795608360
+    "1000000BABYDOGEUSDT": 1795608360,
+    "CYBERLEEKUSDT": 1795609022,
+    "SKY1USDT": 1795609028
   },
   "last_trade_report_ts": 1795565481,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795283203,
-      "kind": "gap_result",
-      "symbol": "CLAUDIAUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795283205,
       "kind": "gap_result",
@@ -13451,6 +13442,15 @@
       "kind": "gap_result",
       "symbol": "XAUTUSDT",
       "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795565864,
+      "kind": "gap_result",
+      "symbol": "SSPCUSDT",
+      "tf": "15m",
       "gap": 0.0,
       "filled": true,
       "note": "filled"
