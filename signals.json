@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795594412,
+  "updated_at": 1795594627,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795563289
-    },
     {
       "kind": "HEARTBEAT",
       "symbol": "—",
@@ -1402,22 +1395,16 @@
       "tf": "15m",
       "gap": 1.24,
       "ts": 1795594412
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795594627
     }
   ],
   "trades": [
-    {
-      "symbol": "PROSUSDT",
-      "side": "SELL",
-      "entry": 0.7501,
-      "tp": 0.7313474999999999,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.7356,
-      "pnl": 3.6262,
-      "tf": "1h"
-    },
     {
       "symbol": "BIGTIMEUSDT",
       "side": "SELL",
@@ -1427,23 +1414,23 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 0.006184,
-      "pnl": -10.0811,
+      "px": 0.006221,
+      "pnl": -13.7271,
       "tf": "4h"
     }
   ],
   "start": 1000.0,
   "session_start": 1795565212,
-  "realized": 57.6698,
-  "closed_n": 4,
-  "open_upnl": -6.4549,
-  "equity": 1051.2149,
+  "realized": 63.7757,
+  "closed_n": 5,
+  "open_upnl": -13.7271,
+  "equity": 1050.0486,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 69.751,
+    "profit": 75.8569,
     "loss": -12.0812,
-    "count": 4
+    "count": 5
   }
 }
