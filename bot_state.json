@@ -32,31 +32,6 @@
       "order_id": "PAPER-BLURUSDT-1795602619"
     },
     {
-      "symbol": "SSVUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 1.809,
-      "qty": 110.5583,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 1.7637749999999999,
-      "tf": "4h",
-      "opened_at": 1795608076,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 1.809,
-          "ts": 1795608076
-        }
-      ],
-      "entry_candle_ts": 1795608000,
-      "last_leg_candle_ts": 1795608000,
-      "dry_run": true,
-      "order_id": "PAPER-SSVUSDT-1795608076"
-    },
-    {
       "symbol": "MMTUSDT",
       "side": "SELL",
       "status": "open",
@@ -114,36 +89,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "UVXYUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 22.33,
-      "qty": 8.9566,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 21.771749999999997,
-      "tf": "1h",
-      "opened_at": 1794934852,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 22.33,
-          "ts": 1794934852
-        }
-      ],
-      "entry_candle_ts": 1794934800,
-      "last_leg_candle_ts": 1794934800,
-      "dry_run": true,
-      "order_id": "PAPER-UVXYUSDT-1794934852",
-      "closed_at": 1794935921,
-      "close_px": 21.75,
-      "pnl_usdt": 5.19480519480518,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "MMTUSDT",
       "side": "SELL",
@@ -6637,6 +6582,36 @@
       "pnl_usdt": 5.779816513761479,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "SSVUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 1.809,
+      "qty": 110.5583,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 1.7637749999999999,
+      "tf": "4h",
+      "opened_at": 1795608076,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 1.809,
+          "ts": 1795608076
+        }
+      ],
+      "entry_candle_ts": 1795608000,
+      "last_leg_candle_ts": 1795608000,
+      "dry_run": true,
+      "order_id": "PAPER-SSVUSDT-1795608076",
+      "closed_at": 1795610946,
+      "close_px": 1.888,
+      "pnl_usdt": -8.734107241569923,
+      "close_reason": "STOP",
+      "why": "STOP"
     }
   ],
   "pending": [
