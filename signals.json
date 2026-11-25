@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795567538,
+  "updated_at": 1795567573,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "NKEUSDT",
-      "tf": "1h",
-      "gap": 1.26,
-      "ts": 1795531902
-    },
-    {
-      "kind": "GAP",
-      "symbol": "XPSTOCKUSDT",
-      "tf": "1h",
-      "gap": 1.8,
-      "ts": 1795531905
-    },
     {
       "kind": "GAP",
       "symbol": "ADBEUSDT",
@@ -1402,15 +1388,43 @@
       "tf": "15m",
       "gap": 1.99,
       "ts": 1795567538
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795567542
+    },
+    {
+      "kind": "SELL",
+      "symbol": "FRHCUSDT",
+      "tf": "15m",
+      "gap": 1.24,
+      "ts": 1795567573
     }
   ],
-  "trades": [],
+  "trades": [
+    {
+      "symbol": "BIGTIMEUSDT",
+      "side": "SELL",
+      "entry": 0.00449,
+      "tp": 0.00437775,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.00449,
+      "pnl": -0.24,
+      "tf": "15m"
+    }
+  ],
   "start": 1000.0,
   "session_start": 1795565212,
   "realized": 0,
   "closed_n": 0,
-  "open_upnl": 0,
-  "equity": 1000.0,
+  "open_upnl": -0.24,
+  "equity": 999.76,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
