@@ -55,6 +55,31 @@
       "last_leg_candle_ts": 1795636800,
       "dry_run": true,
       "order_id": "PAPER-NESUSDT-1795636869"
+    },
+    {
+      "symbol": "SSVUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 2.246,
+      "qty": 89.0472,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 2.18985,
+      "tf": "4h",
+      "opened_at": 1795636880,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 2.246,
+          "ts": 1795636880
+        }
+      ],
+      "entry_candle_ts": 1795636800,
+      "last_leg_candle_ts": 1795636800,
+      "dry_run": true,
+      "order_id": "PAPER-SSVUSDT-1795636880"
     }
   ],
   "trade_history": [
@@ -6591,16 +6616,6 @@
   ],
   "pending": [
     {
-      "symbol": "MINIMAXUSDT",
-      "tf": "1h",
-      "candle_ts": 1795399200,
-      "side": "SELL",
-      "upper": 12.611000747019023,
-      "open": 12.92,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "LAOPUUSDT",
       "tf": "15m",
       "candle_ts": 1795399200,
@@ -9581,6 +9596,15 @@
       "side": "SELL",
       "upper": 0.04640961431159631,
       "open": 0.04735,
+      "reported": false
+    },
+    {
+      "symbol": "NESUSDT",
+      "tf": "1h",
+      "candle_ts": 1795636800,
+      "side": "SELL",
+      "upper": 0.2128804073390951,
+      "open": 0.2202,
       "reported": false
     }
   ],
