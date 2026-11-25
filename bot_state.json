@@ -130,6 +130,31 @@
       "last_leg_candle_ts": 1795636800,
       "dry_run": true,
       "order_id": "PAPER-VVVUSDT-1795636901"
+    },
+    {
+      "symbol": "BLURUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.010855,
+      "qty": 18424.6891,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.010583625,
+      "tf": "4h",
+      "opened_at": 1795636911,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.010855,
+          "ts": 1795636911
+        }
+      ],
+      "entry_candle_ts": 1795636800,
+      "last_leg_candle_ts": 1795636800,
+      "dry_run": true,
+      "order_id": "PAPER-BLURUSDT-1795636911"
     }
   ],
   "trade_history": [
@@ -6666,16 +6691,6 @@
   ],
   "pending": [
     {
-      "symbol": "HK0992USDT",
-      "tf": "1h",
-      "candle_ts": 1795399200,
-      "side": "SELL",
-      "upper": 16.47124037279383,
-      "open": 16.67,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "BMTUSDT",
       "tf": "1h",
       "candle_ts": 1795399200,
@@ -9653,6 +9668,15 @@
       "side": "SELL",
       "upper": 0.03134282444351599,
       "open": 0.03243,
+      "reported": false
+    },
+    {
+      "symbol": "VVVUSDT",
+      "tf": "1h",
+      "candle_ts": 1795636800,
+      "side": "SELL",
+      "upper": 27.4107457148278,
+      "open": 27.947,
       "reported": false
     }
   ],
