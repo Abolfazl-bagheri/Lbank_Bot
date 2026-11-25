@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795640504,
+  "updated_at": 1795640536,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795610172
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795610223
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "1h",
       "gap": 2.1,
       "ts": 1795640504
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795640512
+    },
+    {
+      "kind": "SELL",
+      "symbol": "GPROUSDT",
+      "tf": "1h",
+      "gap": 1.08,
+      "ts": 1795640536
     }
   ],
   "trades": [
@@ -1495,14 +1495,27 @@
       "px": 0.2312,
       "pnl": -0.24,
       "tf": "1h"
+    },
+    {
+      "symbol": "BSPUSDT",
+      "side": "SELL",
+      "entry": 46.36,
+      "tp": 45.201,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 46.36,
+      "pnl": -0.24,
+      "tf": "1h"
     }
   ],
   "start": 1000.0,
   "session_start": 1795565212,
   "realized": -11.0345,
   "closed_n": 22,
-  "open_upnl": 14.8937,
-  "equity": 1003.8592,
+  "open_upnl": 14.6537,
+  "equity": 1003.6192,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
