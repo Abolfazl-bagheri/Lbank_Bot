@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795644043,
+  "updated_at": 1795644068,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "ASTSUSDT",
-      "tf": "1h",
-      "gap": 2.34,
-      "ts": 1795636559
-    },
-    {
-      "kind": "GAP",
-      "symbol": "QNTXUSDT",
-      "tf": "1h",
-      "gap": 1.43,
-      "ts": 1795636563
-    },
     {
       "kind": "GAP",
       "symbol": "COLLECTUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "1h",
       "gap": 1.74,
       "ts": 1795644043
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795644049
+    },
+    {
+      "kind": "SELL",
+      "symbol": "SQDUSDT",
+      "tf": "1h",
+      "gap": 1.14,
+      "ts": 1795644068
     }
   ],
   "trades": [
@@ -1482,14 +1482,27 @@
       "px": 0.03522,
       "pnl": -0.24,
       "tf": "1h"
+    },
+    {
+      "symbol": "NESUSDT",
+      "side": "SELL",
+      "entry": 0.2405,
+      "tp": 0.2344875,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.2405,
+      "pnl": -0.24,
+      "tf": "1h"
     }
   ],
   "start": 1000.0,
   "session_start": 1795565212,
   "realized": -7.5594,
   "closed_n": 26,
-  "open_upnl": -65.3614,
-  "equity": 927.0792,
+  "open_upnl": -65.6014,
+  "equity": 926.8392,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
