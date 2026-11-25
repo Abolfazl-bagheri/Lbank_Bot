@@ -4,24 +4,30 @@
       "symbol": "JDUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 26.4,
-      "qty": 7.5758,
-      "margin": 10.0,
+      "entry": 26.466582414722478,
+      "qty": 22.6701,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 25.74,
+      "tp_price": 25.804917854354414,
       "tf": "15m",
       "opened_at": 1795571170,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        26.592
+      ],
       "steps": [
         {
           "px": 26.4,
           "ts": 1795571170
+        },
+        {
+          "px": 26.5,
+          "ts": 1795573057
         }
       ],
       "entry_candle_ts": 1795571100,
-      "last_leg_candle_ts": 1795571100,
+      "last_leg_candle_ts": 1795573057,
       "dry_run": true,
       "order_id": "PAPER-JDUSDT-1795571170"
     },
@@ -6574,26 +6580,6 @@
   ],
   "pending": [
     {
-      "symbol": "SILVERUSDT",
-      "tf": "15m",
-      "candle_ts": 1795390200,
-      "side": "SELL",
-      "upper": 42.17279707224037,
-      "open": 42.24,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "GOLDUSDT",
-      "tf": "15m",
-      "candle_ts": 1795390200,
-      "side": "SELL",
-      "upper": 3581.9031974246172,
-      "open": 3582.53,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "BULLAUSDT",
       "tf": "15m",
       "candle_ts": 1795390200,
@@ -9565,6 +9551,24 @@
       "upper": 27.942102470383766,
       "open": 28.31,
       "reported": false
+    },
+    {
+      "symbol": "GUAUSDT",
+      "tf": "15m",
+      "candle_ts": 1795572900,
+      "side": "LONG",
+      "upper": 0.042926412471772146,
+      "open": 0.03549,
+      "reported": false
+    },
+    {
+      "symbol": "NESUSDT",
+      "tf": "15m",
+      "candle_ts": 1795572900,
+      "side": "SELL",
+      "upper": 0.1814122668424817,
+      "open": 0.1829,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -9910,7 +9914,8 @@
     "1000000BABYDOGEUSDT": 1795608360,
     "CYBERLEEKUSDT": 1795609022,
     "SKY1USDT": 1795609028,
-    "O1USDT": 1795614610
+    "O1USDT": 1795614610,
+    "IBBETFUSDT": 1795616204
   },
   "last_trade_report_ts": 1795572362,
   "last_known_version": "2.10.0",
