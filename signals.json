@@ -1,29 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795601025,
+  "updated_at": 1795601216,
   "signals": [
-    {
-      "kind": "HEARTBEAT",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795569589
-    },
-    {
-      "kind": "SELL",
-      "symbol": "XAUTUSDT",
-      "tf": "5m",
-      "gap": 0.06,
-      "ts": 1795569623
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795569640
-    },
     {
       "kind": "SELL",
       "symbol": "XAUTUSDT",
@@ -1402,35 +1381,42 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1795601025
-    }
-  ],
-  "trades": [
+    },
     {
-      "symbol": "SSVUSDT",
-      "side": "SELL",
-      "entry": 1.7368221854980797,
-      "tp": 1.6934016308606277,
-      "adds": 2,
-      "pele": 3,
-      "margin": 70.0,
-      "lev": 20,
-      "px": 1.776,
-      "pnl": -33.2601,
-      "tf": "1h"
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795601137
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795601174
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795601216
     }
   ],
+  "trades": [],
   "start": 1000.0,
   "session_start": 1795565212,
-  "realized": 34.8054,
-  "closed_n": 6,
-  "open_upnl": -33.2601,
-  "equity": 1001.5453,
+  "realized": -30.6296,
+  "closed_n": 7,
+  "open_upnl": 0,
+  "equity": 969.3704,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
     "profit": 75.8569,
-    "loss": -41.0514,
-    "count": 6
+    "loss": -106.4864,
+    "count": 7
   }
 }
