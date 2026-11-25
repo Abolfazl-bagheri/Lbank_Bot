@@ -49,6 +49,31 @@
       "last_leg_candle_ts": 1795593600,
       "dry_run": true,
       "order_id": "PAPER-MANTRAUSDT-1795593668"
+    },
+    {
+      "symbol": "BIGTIMEUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.006089,
+      "qty": 32846.1159,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.005936775,
+      "tf": "4h",
+      "opened_at": 1795593710,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.006089,
+          "ts": 1795593710
+        }
+      ],
+      "entry_candle_ts": 1795593600,
+      "last_leg_candle_ts": 1795593600,
+      "dry_run": true,
+      "order_id": "PAPER-BIGTIMEUSDT-1795593710"
     }
   ],
   "trade_history": [
@@ -6576,26 +6601,6 @@
   ],
   "pending": [
     {
-      "symbol": "SAMSUNGEMUSDT",
-      "tf": "15m",
-      "candle_ts": 1795392000,
-      "side": "SELL",
-      "upper": 562.7950195968431,
-      "open": 567.4,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "SAMSUNGEMUSDT",
-      "tf": "1h",
-      "candle_ts": 1795392000,
-      "side": "SELL",
-      "upper": 563.517758662594,
-      "open": 567.4,
-      "reported": true,
-      "filled": false
-    },
-    {
       "symbol": "SKUUUSDT",
       "tf": "15m",
       "candle_ts": 1795392900,
@@ -9563,6 +9568,24 @@
       "upper": 0.7311533226968673,
       "open": 0.7479,
       "reported": false
+    },
+    {
+      "symbol": "MANTRAUSDT",
+      "tf": "4h",
+      "candle_ts": 1795593600,
+      "side": "SELL",
+      "upper": 0.002057796061869392,
+      "open": 0.002118,
+      "reported": false
+    },
+    {
+      "symbol": "PROSUSDT",
+      "tf": "4h",
+      "candle_ts": 1795593600,
+      "side": "SELL",
+      "upper": 0.7352163265790163,
+      "open": 0.7479,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -9910,7 +9933,8 @@
     "IBBETFUSDT": 1795616204,
     "GALUSDT": 1795635139,
     "GOATSEUSUSDT": 1795635143,
-    "ARGUSDT": 1795635981
+    "ARGUSDT": 1795635981,
+    "PORUSDT": 1795636881
   },
   "last_trade_report_ts": 1795593086,
   "last_known_version": "2.10.0",
