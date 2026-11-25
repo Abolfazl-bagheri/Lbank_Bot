@@ -6539,26 +6539,6 @@
   ],
   "pending": [
     {
-      "symbol": "BEATUSDT",
-      "tf": "15m",
-      "candle_ts": 1795367700,
-      "side": "SELL",
-      "upper": 0.07729844867690526,
-      "open": 0.0776,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "ZCATUSDT",
-      "tf": "15m",
-      "candle_ts": 1795367700,
-      "side": "SELL",
-      "upper": 0.020635594914714124,
-      "open": 0.02057,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "ZCATUSDT",
       "tf": "15m",
       "candle_ts": 1795368600,
@@ -9521,12 +9501,32 @@
       "side": "LONG",
       "upper": 0.00593507785551837,
       "open": 0.00527,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "FRHCUSDT",
       "tf": "15m",
       "candle_ts": 1795566600,
+      "side": "LONG",
+      "upper": 171.94,
+      "open": 171.94,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "BIGTIMEUSDT",
+      "tf": "15m",
+      "candle_ts": 1795567500,
+      "side": "SELL",
+      "upper": 0.004400849367021548,
+      "open": 0.004491,
+      "reported": false
+    },
+    {
+      "symbol": "FRHCUSDT",
+      "tf": "15m",
+      "candle_ts": 1795567500,
       "side": "LONG",
       "upper": 171.94,
       "open": 171.94,
@@ -9882,24 +9882,6 @@
   "last_trade_report_ts": 1795567317,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795286814,
-      "kind": "gap_result",
-      "symbol": "ANSEMUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
-    {
-      "ts": 1795287784,
-      "kind": "gap_result",
-      "symbol": "BULLAUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795287786,
       "kind": "gap_result",
@@ -13475,6 +13457,24 @@
     },
     {
       "ts": 1795566768,
+      "kind": "gap_result",
+      "symbol": "FRHCUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795567651,
+      "kind": "gap_result",
+      "symbol": "SAHARAUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795567654,
       "kind": "gap_result",
       "symbol": "FRHCUSDT",
       "tf": "15m",
