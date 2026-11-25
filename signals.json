@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795606590,
+  "updated_at": 1795606890,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "MANTRAUSDT",
-      "tf": "1h",
-      "gap": 1.47,
-      "ts": 1795593271
-    },
-    {
-      "kind": "GAP",
-      "symbol": "BIGTIMEUSDT",
-      "tf": "1h",
-      "gap": 2.5,
-      "ts": 1795593275
-    },
     {
       "kind": "GAP",
       "symbol": "ALICEUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "5m",
       "gap": 0.09,
       "ts": 1795606590
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795606610
+    },
+    {
+      "kind": "GAP",
+      "symbol": "MANTRAUSDT",
+      "tf": "4h",
+      "gap": 4.54,
+      "ts": 1795606890
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.009433,
-      "pnl": -0.7501,
+      "px": 0.009342,
+      "pnl": 1.1842,
       "tf": "15m"
     },
     {
@@ -1427,8 +1427,8 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 0.2499,
-      "pnl": -1.3664,
+      "px": 0.2495,
+      "pnl": -0.405,
       "tf": "1h"
     }
   ],
@@ -1436,8 +1436,8 @@
   "session_start": 1795565212,
   "realized": -11.0064,
   "closed_n": 10,
-  "open_upnl": -2.1165,
-  "equity": 986.8771,
+  "open_upnl": 0.7792,
+  "equity": 989.7728,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
