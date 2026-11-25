@@ -183,6 +183,31 @@
       "last_leg_candle_ts": 1795644000,
       "dry_run": true,
       "order_id": "PAPER-NESUSDT-1795644045"
+    },
+    {
+      "symbol": "SYNUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.1197,
+      "qty": 1670.8438,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.11670749999999999,
+      "tf": "1h",
+      "opened_at": 1795647679,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.1197,
+          "ts": 1795647679
+        }
+      ],
+      "entry_candle_ts": 1795647600,
+      "last_leg_candle_ts": 1795647600,
+      "dry_run": true,
+      "order_id": "PAPER-SYNUSDT-1795647679"
     }
   ],
   "trade_history": [
@@ -6723,16 +6748,6 @@
   ],
   "pending": [
     {
-      "symbol": "HUSDT",
-      "tf": "1h",
-      "candle_ts": 1795424400,
-      "side": "SELL",
-      "upper": 0.013544086589762224,
-      "open": 0.01364,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "CYSUSDT",
       "tf": "1h",
       "candle_ts": 1795424400,
@@ -9700,6 +9715,15 @@
       "upper": 0.11565907091004952,
       "open": 0.117,
       "reported": false
+    },
+    {
+      "symbol": "SYNUSDT",
+      "tf": "15m",
+      "candle_ts": 1795647600,
+      "side": "SELL",
+      "upper": 0.11849005546021571,
+      "open": 0.12,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -10020,7 +10044,6 @@
     "GALUSDT": 1795635139,
     "DODOUSDT": 1795636934,
     "ATMUSDT": 1795646082,
-    "SPACE1USDT": 1795646813,
     "PORTALUSDT": 1795651456,
     "APEXUSDT": 1795652213,
     "SKY1USDT": 1795652336,
@@ -10044,9 +10067,10 @@
     "NEIRO1USDT": 1795690004,
     "MEMECOINUSDT": 1795690007,
     "CZUSDT": 1795690010,
-    "MANCERUSDT": 1795690011
+    "MANCERUSDT": 1795690011,
+    "SPACE1USDT": 1795690122
   },
-  "last_trade_report_ts": 1795646143,
+  "last_trade_report_ts": 1795647118,
   "last_known_version": "2.10.0",
   "lessons": [
     {
