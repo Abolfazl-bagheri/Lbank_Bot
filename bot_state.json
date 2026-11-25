@@ -1,66 +1,6 @@
 {
-  "open_trades": [
-    {
-      "symbol": "BIGTIMEUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.004488666468666102,
-      "qty": 133669.9895,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.004376449806949449,
-      "tf": "1h",
-      "opened_at": 1795567539,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.00449,
-          "ts": 1795567539
-        },
-        {
-          "px": 0.004488,
-          "ts": 1795568440
-        }
-      ],
-      "entry_candle_ts": 1795567500,
-      "last_leg_candle_ts": 1795568400,
-      "dry_run": true,
-      "order_id": "PAPER-BIGTIMEUSDT-1795567539"
-    }
-  ],
+  "open_trades": [],
   "trade_history": [
-    {
-      "symbol": "BREVUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.07216,
-      "qty": 2771.6186,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.070356,
-      "tf": "15m",
-      "opened_at": 1794921320,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.07216,
-          "ts": 1794921320
-        }
-      ],
-      "entry_candle_ts": 1794921300,
-      "last_leg_candle_ts": 1794921300,
-      "dry_run": true,
-      "order_id": "PAPER-BREVUSDT-1794921320",
-      "closed_at": 1794921935,
-      "close_px": 0.07507,
-      "pnl_usdt": -8.06541019955653,
-      "close_reason": "STOP",
-      "why": "STOP"
-    },
     {
       "symbol": "BREVUSDT",
       "side": "SELL",
@@ -6539,19 +6479,43 @@
       "pnl_usdt": -58.57412591892135,
       "close_reason": "STOP",
       "why": "STOP"
+    },
+    {
+      "symbol": "BIGTIMEUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.004488666468666102,
+      "qty": 133669.9895,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 0.004376449806949449,
+      "tf": "1h",
+      "opened_at": 1795567539,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.00449,
+          "ts": 1795567539
+        },
+        {
+          "px": 0.004488,
+          "ts": 1795568440
+        }
+      ],
+      "entry_candle_ts": 1795567500,
+      "last_leg_candle_ts": 1795568400,
+      "dry_run": true,
+      "order_id": "PAPER-BIGTIMEUSDT-1795567539",
+      "closed_at": 1795569076,
+      "close_px": 0.004322,
+      "pnl_usdt": 22.27830512641721,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
-    {
-      "symbol": "ZCATUSDT",
-      "tf": "15m",
-      "candle_ts": 1795369500,
-      "side": "SELL",
-      "upper": 0.02058954773053152,
-      "open": 0.01979,
-      "reported": true,
-      "filled": true
-    },
     {
       "symbol": "ZCATUSDT",
       "tf": "15m",
@@ -9535,6 +9499,15 @@
       "side": "SELL",
       "upper": 0.0043990351219119405,
       "open": 0.004506,
+      "reported": false
+    },
+    {
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
+      "candle_ts": 1795569000,
+      "side": "LONG",
+      "upper": 3554.6478149155814,
+      "open": 3535.1,
       "reported": false
     }
   ],
