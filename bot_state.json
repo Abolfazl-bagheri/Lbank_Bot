@@ -173,6 +173,31 @@
       "last_leg_candle_ts": 1795640400,
       "dry_run": true,
       "order_id": "PAPER-BSPUSDT-1795640506"
+    },
+    {
+      "symbol": "AIOTUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.09469,
+      "qty": 2112.1555,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.09232275,
+      "tf": "15m",
+      "opened_at": 1795641450,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.09469,
+          "ts": 1795641450
+        }
+      ],
+      "entry_candle_ts": 1795641300,
+      "last_leg_candle_ts": 1795641300,
+      "dry_run": true,
+      "order_id": "PAPER-AIOTUSDT-1795641450"
     }
   ],
   "trade_history": [
@@ -9619,7 +9644,8 @@
       "side": "SELL",
       "upper": 0.05619785385772937,
       "open": 0.05718,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "BULLAUSDT",
@@ -10033,15 +10059,6 @@
   "last_trade_report_ts": 1795641068,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795363579,
-      "kind": "gap_result",
-      "symbol": "DGAIUSDT",
-      "tf": "4h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795363582,
       "kind": "gap_result",
@@ -13632,6 +13649,15 @@
       "gap": 0.0,
       "filled": false,
       "note": "miss"
+    },
+    {
+      "ts": 1795641402,
+      "kind": "gap_result",
+      "symbol": "CFGUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
     }
   ],
   "tune_history": [],
