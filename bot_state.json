@@ -24,76 +24,9 @@
       "last_leg_candle_ts": 1795602600,
       "dry_run": true,
       "order_id": "PAPER-BLURUSDT-1795602619"
-    },
-    {
-      "symbol": "MMTUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.24963105931645777,
-      "qty": 2403.5471,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.24339028283354633,
-      "tf": "1h",
-      "opened_at": 1795604457,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        0.2499
-      ],
-      "steps": [
-        {
-          "px": 0.2507,
-          "ts": 1795604457
-        },
-        {
-          "px": 0.2491,
-          "ts": 1795604789
-        }
-      ],
-      "entry_candle_ts": 1795604400,
-      "last_leg_candle_ts": 1795604789,
-      "dry_run": true,
-      "order_id": "PAPER-MMTUSDT-1795604457"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "CYPHUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 2.1171405724960137,
-      "qty": 283.4011,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 2.0642120581836134,
-      "tf": "1h",
-      "opened_at": 1794927657,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        2.111
-      ],
-      "steps": [
-        {
-          "px": 2.146,
-          "ts": 1794927657
-        },
-        {
-          "px": 2.103,
-          "ts": 1794928234
-        }
-      ],
-      "entry_candle_ts": 1794927600,
-      "last_leg_candle_ts": 1794928234,
-      "dry_run": true,
-      "order_id": "PAPER-CYPHUSDT-1794927657",
-      "closed_at": 1794932807,
-      "close_px": 2.054,
-      "pnl_usdt": 17.894108681193714,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "NESUSDT",
       "side": "SELL",
@@ -6581,6 +6514,42 @@
       "pnl_usdt": 7.341021887385281,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "MMTUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.24963105931645777,
+      "qty": 2403.5471,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 0.24339028283354633,
+      "tf": "1h",
+      "opened_at": 1795604457,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.2499
+      ],
+      "steps": [
+        {
+          "px": 0.2507,
+          "ts": 1795604457
+        },
+        {
+          "px": 0.2491,
+          "ts": 1795604789
+        }
+      ],
+      "entry_candle_ts": 1795604400,
+      "last_leg_candle_ts": 1795604789,
+      "dry_run": true,
+      "order_id": "PAPER-MMTUSDT-1795604457",
+      "closed_at": 1795607745,
+      "close_px": 0.2652,
+      "pnl_usdt": -37.42068168802373,
+      "close_reason": "STOP",
+      "why": "STOP"
     }
   ],
   "pending": [
