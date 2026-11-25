@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795610834,
+  "updated_at": 1795611089,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795598236
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795598349
-    },
     {
       "kind": "HEARTBEAT",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1795610834
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795610949
+    },
+    {
+      "kind": "GAP",
+      "symbol": "UVXYUSDT",
+      "tf": "1h",
+      "gap": 2.13,
+      "ts": 1795611089
     }
   ],
   "trades": [
@@ -1414,22 +1414,9 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 0.009553,
-      "pnl": 3.9793,
+      "px": 0.009643,
+      "pnl": -1.6291,
       "tf": "15m"
-    },
-    {
-      "symbol": "SSVUSDT",
-      "side": "SELL",
-      "entry": 1.809,
-      "tp": 1.7637749999999999,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 1.877,
-      "pnl": -7.758,
-      "tf": "4h"
     },
     {
       "symbol": "MMTUSDT",
@@ -1440,8 +1427,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.2584,
-      "pnl": 2.3574,
+      "px": 0.2563,
+      "pnl": 3.9617,
       "tf": "1h"
     },
     {
@@ -1453,23 +1440,23 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 27.45,
-      "pnl": -2.4737,
+      "px": 27.53,
+      "pnl": -4.2275,
       "tf": "1h"
     }
   ],
   "start": 1000.0,
   "session_start": 1795565212,
-  "realized": -51.4685,
-  "closed_n": 13,
-  "open_upnl": -3.895,
-  "equity": 944.6365,
+  "realized": -60.2026,
+  "closed_n": 14,
+  "open_upnl": -1.8949,
+  "equity": 937.9025,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
     "profit": 101.2598,
-    "loss": -152.7284,
-    "count": 13
+    "loss": -161.4625,
+    "count": 14
   }
 }
