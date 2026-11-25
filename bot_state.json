@@ -1,31 +1,6 @@
 {
   "open_trades": [
     {
-      "symbol": "NESUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.2216,
-      "qty": 902.5271,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.21605999999999997,
-      "tf": "1h",
-      "opened_at": 1795636869,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.2216,
-          "ts": 1795636869
-        }
-      ],
-      "entry_candle_ts": 1795636800,
-      "last_leg_candle_ts": 1795636800,
-      "dry_run": true,
-      "order_id": "PAPER-NESUSDT-1795636869"
-    },
-    {
       "symbol": "SSVUSDT",
       "side": "SELL",
       "status": "open",
@@ -201,36 +176,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "NVDLUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 17.38,
-      "qty": 11.5075,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 16.9455,
-      "tf": "15m",
-      "opened_at": 1794951095,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 17.38,
-          "ts": 1794951095
-        }
-      ],
-      "entry_candle_ts": 1794951000,
-      "last_leg_candle_ts": 1794951000,
-      "dry_run": true,
-      "order_id": "PAPER-NVDLUSDT-1794951095",
-      "closed_at": 1794951383,
-      "close_px": 16.92,
-      "pnl_usdt": 5.293440736478679,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "MVLLUSDT",
       "side": "SELL",
@@ -6730,6 +6675,36 @@
       "pnl_usdt": -8.69565217391306,
       "close_reason": "STOP",
       "why": "STOP"
+    },
+    {
+      "symbol": "NESUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.2216,
+      "qty": 902.5271,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.21605999999999997,
+      "tf": "1h",
+      "opened_at": 1795636869,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.2216,
+          "ts": 1795636869
+        }
+      ],
+      "entry_candle_ts": 1795636800,
+      "last_leg_candle_ts": 1795636800,
+      "dry_run": true,
+      "order_id": "PAPER-NESUSDT-1795636869",
+      "closed_at": 1795639715,
+      "close_px": 0.2307,
+      "pnl_usdt": -8.212996389891693,
+      "close_reason": "STOP",
+      "why": "STOP"
     }
   ],
   "pending": [
@@ -9688,7 +9663,8 @@
       "side": "SELL",
       "upper": 0.32104265689938294,
       "open": 0.324,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CLAUDIAUSDT",
@@ -9697,7 +9673,8 @@
       "side": "SELL",
       "upper": 0.008850161946879917,
       "open": 0.008477,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "MMTUSDT",
@@ -9706,7 +9683,8 @@
       "side": "SELL",
       "upper": 0.32180951096404237,
       "open": 0.324,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -10057,33 +10035,6 @@
   "last_trade_report_ts": 1795639246,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795356260,
-      "kind": "gap_result",
-      "symbol": "AIGENSYNUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795357077,
-      "kind": "gap_result",
-      "symbol": "BLESSUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795357926,
-      "kind": "gap_result",
-      "symbol": "BLESSUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795359890,
       "kind": "gap_result",
@@ -13656,6 +13607,33 @@
       "gap": 0.0,
       "filled": false,
       "note": "miss"
+    },
+    {
+      "ts": 1795639610,
+      "kind": "gap_result",
+      "symbol": "MMTUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795639612,
+      "kind": "gap_result",
+      "symbol": "CLAUDIAUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795639614,
+      "kind": "gap_result",
+      "symbol": "MMTUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
     }
   ],
   "tune_history": [],
