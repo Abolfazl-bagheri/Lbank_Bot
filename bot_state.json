@@ -1,5 +1,31 @@
 {
-  "open_trades": [],
+  "open_trades": [
+    {
+      "symbol": "JDUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 26.4,
+      "qty": 7.5758,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 25.74,
+      "tf": "15m",
+      "opened_at": 1795571170,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 26.4,
+          "ts": 1795571170
+        }
+      ],
+      "entry_candle_ts": 1795571100,
+      "last_leg_candle_ts": 1795571100,
+      "dry_run": true,
+      "order_id": "PAPER-JDUSDT-1795571170"
+    }
+  ],
   "trade_history": [
     {
       "symbol": "BREVUSDT",
@@ -6517,16 +6543,6 @@
   ],
   "pending": [
     {
-      "symbol": "GOLDUSDT",
-      "tf": "15m",
-      "candle_ts": 1795389300,
-      "side": "SELL",
-      "upper": 3580.264019541673,
-      "open": 3584.88,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "SILVERUSDT",
       "tf": "15m",
       "candle_ts": 1795389300,
@@ -9507,6 +9523,15 @@
       "side": "SELL",
       "upper": 0.01760201143301589,
       "open": 0.0178,
+      "reported": false
+    },
+    {
+      "symbol": "PROSUSDT",
+      "tf": "15m",
+      "candle_ts": 1795571100,
+      "side": "LONG",
+      "upper": 0.6956265764061376,
+      "open": 0.6464,
       "reported": false
     }
   ],
