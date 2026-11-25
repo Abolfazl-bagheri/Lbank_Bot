@@ -80,6 +80,31 @@
       "last_leg_candle_ts": 1795636800,
       "dry_run": true,
       "order_id": "PAPER-SSVUSDT-1795636880"
+    },
+    {
+      "symbol": "BULLAUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.0325,
+      "qty": 6153.8462,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0316875,
+      "tf": "1h",
+      "opened_at": 1795636889,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.0325,
+          "ts": 1795636889
+        }
+      ],
+      "entry_candle_ts": 1795636800,
+      "last_leg_candle_ts": 1795636800,
+      "dry_run": true,
+      "order_id": "PAPER-BULLAUSDT-1795636889"
     }
   ],
   "trade_history": [
@@ -6616,16 +6641,6 @@
   ],
   "pending": [
     {
-      "symbol": "LAOPUUSDT",
-      "tf": "15m",
-      "candle_ts": 1795399200,
-      "side": "SELL",
-      "upper": 33.48139521621948,
-      "open": 33.4,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "GIGADEVUSDT",
       "tf": "1h",
       "candle_ts": 1795399200,
@@ -9605,6 +9620,15 @@
       "side": "SELL",
       "upper": 0.2128804073390951,
       "open": 0.2202,
+      "reported": false
+    },
+    {
+      "symbol": "SSVUSDT",
+      "tf": "4h",
+      "candle_ts": 1795636800,
+      "side": "SELL",
+      "upper": 2.10829466867776,
+      "open": 2.239,
       "reported": false
     }
   ],
