@@ -6728,16 +6728,6 @@
   ],
   "pending": [
     {
-      "symbol": "TAUSDT",
-      "tf": "1h",
-      "candle_ts": 1795420800,
-      "side": "SELL",
-      "upper": 0.10660102280191795,
-      "open": 0.10753,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "HUSDT",
       "tf": "1h",
       "candle_ts": 1795420800,
@@ -9662,7 +9652,8 @@
       "side": "SELL",
       "upper": 0.5371690569401928,
       "open": 0.5232,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "GOLDUSDT",
@@ -9701,6 +9692,15 @@
       "side": "SELL",
       "upper": 0.32104265689938294,
       "open": 0.324,
+      "reported": false
+    },
+    {
+      "symbol": "CLAUDIAUSDT",
+      "tf": "15m",
+      "candle_ts": 1795638600,
+      "side": "SELL",
+      "upper": 0.008850161946879917,
+      "open": 0.008477,
       "reported": false
     }
   ],
@@ -10045,20 +10045,13 @@
     "XVGUSDT": 1795680340,
     "HOTUSDT": 1795680399,
     "1000000BABYDOGEUSDT": 1795680400,
-    "AMCUSDT": 1795681001
+    "AMCUSDT": 1795681001,
+    "ARROWUSDT": 1795681889,
+    "PORUSDT": 1795681903
   },
   "last_trade_report_ts": 1795638327,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795353452,
-      "kind": "gap_result",
-      "symbol": "CLAUDIAUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795356260,
       "kind": "gap_result",
@@ -13649,6 +13642,15 @@
       "gap": 0.0,
       "filled": true,
       "note": "filled"
+    },
+    {
+      "ts": 1795638727,
+      "kind": "gap_result",
+      "symbol": "GPROUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
     }
   ],
   "tune_history": [],
