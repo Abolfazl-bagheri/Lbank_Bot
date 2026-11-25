@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795636887,
+  "updated_at": 1795636900,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795604171
-    },
-    {
-      "kind": "HEARTBEAT",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795604174
-    },
     {
       "kind": "GAP",
       "symbol": "BLURUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "1h",
       "gap": 3.56,
       "ts": 1795636887
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795636893
+    },
+    {
+      "kind": "SELL",
+      "symbol": "VVVUSDT",
+      "tf": "1h",
+      "gap": 2.23,
+      "ts": 1795636900
     }
   ],
   "trades": [
@@ -1443,14 +1443,27 @@
       "px": 2.246,
       "pnl": -0.24,
       "tf": "4h"
+    },
+    {
+      "symbol": "BULLAUSDT",
+      "side": "SELL",
+      "entry": 0.0325,
+      "tp": 0.0316875,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.0325,
+      "pnl": -0.24,
+      "tf": "1h"
     }
   ],
   "start": 1000.0,
   "session_start": 1795565212,
   "realized": -31.0468,
   "closed_n": 16,
-  "open_upnl": 29.929,
-  "equity": 998.8822,
+  "open_upnl": 29.689,
+  "equity": 998.6422,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
