@@ -30,23 +30,29 @@
       "side": "SELL",
       "status": "open",
       "entry": 0.01809,
-      "qty": 11055.832,
-      "margin": 10.0,
+      "qty": 33167.4959,
+      "margin": 30.0,
       "leverage": 20,
       "tp_price": 0.017637749999999997,
       "tf": "1h",
       "opened_at": 1795572067,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.01812
+      ],
       "steps": [
         {
           "px": 0.01809,
           "ts": 1795572067
+        },
+        {
+          "px": 0.01809,
+          "ts": 1795572299
         }
       ],
       "entry_candle_ts": 1795572000,
-      "last_leg_candle_ts": 1795572000,
+      "last_leg_candle_ts": 1795572299,
       "dry_run": true,
       "order_id": "PAPER-IRYSUSDT-1795572067"
     }
@@ -6569,36 +6575,6 @@
   "pending": [
     {
       "symbol": "SILVERUSDT",
-      "tf": "5m",
-      "candle_ts": 1795389600,
-      "side": "SELL",
-      "upper": 42.39960681646159,
-      "open": 42.46,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "SILVERUSDT",
-      "tf": "5m",
-      "candle_ts": 1795389600,
-      "side": "SELL",
-      "upper": 42.39960681646159,
-      "open": 42.46,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "SILVERUSDT",
-      "tf": "5m",
-      "candle_ts": 1795389600,
-      "side": "SELL",
-      "upper": 42.43161326519586,
-      "open": 42.46,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "SILVERUSDT",
       "tf": "15m",
       "candle_ts": 1795390200,
       "side": "SELL",
@@ -9460,7 +9436,8 @@
       "side": "SELL",
       "upper": 0.0043990351219119405,
       "open": 0.004506,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "XAUTUSDT",
@@ -9549,7 +9526,8 @@
       "side": "LONG",
       "upper": 0.6956265764061376,
       "open": 0.6464,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "JDUSDT",
@@ -9558,6 +9536,34 @@
       "side": "SELL",
       "upper": 25.986773999866827,
       "open": 25.98,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "IRYSUSDT",
+      "tf": "1h",
+      "candle_ts": 1795572000,
+      "side": "SELL",
+      "upper": 0.017689425879545702,
+      "open": 0.01816,
+      "reported": false
+    },
+    {
+      "symbol": "KUAISHOUUSDT",
+      "tf": "1h",
+      "candle_ts": 1795572000,
+      "side": "SELL",
+      "upper": 2.598272492818289,
+      "open": 2.63,
+      "reported": false
+    },
+    {
+      "symbol": "HK1810USDT",
+      "tf": "1h",
+      "candle_ts": 1795572000,
+      "side": "SELL",
+      "upper": 27.942102470383766,
+      "open": 28.31,
       "reported": false
     }
   ],
@@ -9910,33 +9916,6 @@
   "last_trade_report_ts": 1795571434,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795291470,
-      "kind": "gap_result",
-      "symbol": "IDOLUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795291472,
-      "kind": "gap_result",
-      "symbol": "ANSEMUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795291474,
-      "kind": "gap_result",
-      "symbol": "BULLAUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795291476,
       "kind": "gap_result",
@@ -13505,6 +13484,33 @@
       "ts": 1795571290,
       "kind": "gap_result",
       "symbol": "IRYSUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795572279,
+      "kind": "gap_result",
+      "symbol": "BIGTIMEUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795572290,
+      "kind": "gap_result",
+      "symbol": "PROSUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795572296,
+      "kind": "gap_result",
+      "symbol": "JDUSDT",
       "tf": "15m",
       "gap": 0.0,
       "filled": true,
