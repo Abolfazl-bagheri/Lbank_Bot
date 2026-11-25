@@ -6591,26 +6591,6 @@
   ],
   "pending": [
     {
-      "symbol": "ZHONGJIUSDT",
-      "tf": "1h",
-      "candle_ts": 1795399200,
-      "side": "SELL",
-      "upper": 63.59548927373338,
-      "open": 64.77,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "ZHIPUUSDT",
-      "tf": "1h",
-      "candle_ts": 1795399200,
-      "side": "SELL",
-      "upper": 42.134310521720366,
-      "open": 43.33,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "MINIMAXUSDT",
       "tf": "1h",
       "candle_ts": 1795399200,
@@ -9561,7 +9541,8 @@
       "side": "SELL",
       "upper": 0.25624945775099056,
       "open": 0.2624,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "UVXYUSDT",
@@ -9570,7 +9551,8 @@
       "side": "SELL",
       "upper": 26.886607375943814,
       "open": 27.19,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "VKTXUSDT",
@@ -9581,6 +9563,24 @@
       "open": 29.19,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "LAYERUSDT",
+      "tf": "15m",
+      "candle_ts": 1795611600,
+      "side": "SELL",
+      "upper": 0.04675966561303841,
+      "open": 0.04735,
+      "reported": false
+    },
+    {
+      "symbol": "LAYERUSDT",
+      "tf": "1h",
+      "candle_ts": 1795611600,
+      "side": "SELL",
+      "upper": 0.04640961431159631,
+      "open": 0.04735,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -9925,27 +9925,9 @@
     "SKY1USDT": 1795652336,
     "XTIUSDT": 1795653243
   },
-  "last_trade_report_ts": 1795610457,
+  "last_trade_report_ts": 1795611836,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795320233,
-      "kind": "gap_result",
-      "symbol": "CLAUDIAUSDT",
-      "tf": "4h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795320236,
-      "kind": "gap_result",
-      "symbol": "IDOLUSDT",
-      "tf": "4h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795320238,
       "kind": "gap_result",
@@ -13527,6 +13509,24 @@
       "gap": 0.0,
       "filled": true,
       "note": "filled"
+    },
+    {
+      "ts": 1795611829,
+      "kind": "gap_result",
+      "symbol": "MMTUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795611832,
+      "kind": "gap_result",
+      "symbol": "UVXYUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
     }
   ],
   "tune_history": [],
