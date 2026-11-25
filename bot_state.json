@@ -24,6 +24,31 @@
       "last_leg_candle_ts": 1795602600,
       "dry_run": true,
       "order_id": "PAPER-BLURUSDT-1795602619"
+    },
+    {
+      "symbol": "MOODENGUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.03015,
+      "qty": 6633.4992,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.02939625,
+      "tf": "15m",
+      "opened_at": 1795602628,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.03015,
+          "ts": 1795602628
+        }
+      ],
+      "entry_candle_ts": 1795602600,
+      "last_leg_candle_ts": 1795602600,
+      "dry_run": true,
+      "order_id": "PAPER-MOODENGUSDT-1795602628"
     }
   ],
   "trade_history": [
@@ -6560,16 +6585,6 @@
   ],
   "pending": [
     {
-      "symbol": "CRCLUSDT",
-      "tf": "5m",
-      "candle_ts": 1795395900,
-      "side": "LONG",
-      "upper": 50.65465362628013,
-      "open": 50.12,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "GOLDUSDT",
       "tf": "5m",
       "candle_ts": 1795395900,
@@ -9548,6 +9563,15 @@
       "side": "SELL",
       "upper": 0.028466598476620995,
       "open": 0.02792,
+      "reported": false
+    },
+    {
+      "symbol": "BLURUSDT",
+      "tf": "15m",
+      "candle_ts": 1795602600,
+      "side": "SELL",
+      "upper": 0.009209049666747376,
+      "open": 0.00939,
       "reported": false
     }
   ],
