@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795611100,
+  "updated_at": 1795611346,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795598490
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 2.19,
       "ts": 1795611100
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795611346
     }
   ],
   "trades": [
@@ -1414,22 +1414,9 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 0.009643,
-      "pnl": -1.6291,
+      "px": 0.009758,
+      "pnl": -8.7954,
       "tf": "15m"
-    },
-    {
-      "symbol": "MMTUSDT",
-      "side": "SELL",
-      "entry": 0.2618,
-      "tp": 0.25525499999999995,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.2563,
-      "pnl": 3.9617,
-      "tf": "1h"
     },
     {
       "symbol": "UVXYUSDT",
@@ -1440,23 +1427,23 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 27.53,
-      "pnl": -4.2275,
+      "px": 27.58,
+      "pnl": -5.3236,
       "tf": "1h"
     }
   ],
   "start": 1000.0,
   "session_start": 1795565212,
-  "realized": -60.2026,
-  "closed_n": 14,
-  "open_upnl": -1.8949,
-  "equity": 937.9025,
+  "realized": -52.9452,
+  "closed_n": 15,
+  "open_upnl": -14.119,
+  "equity": 932.9358,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 101.2598,
+    "profit": 108.5173,
     "loss": -161.4625,
-    "count": 14
+    "count": 15
   }
 }
