@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795572065,
+  "updated_at": 1795572123,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795555962
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795556095
-    },
     {
       "kind": "HEARTBEAT",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "1h",
       "gap": 2.21,
       "ts": 1795572065
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795572071
+    },
+    {
+      "kind": "SELL",
+      "symbol": "KUAISHOUUSDT",
+      "tf": "1h",
+      "gap": 1.43,
+      "ts": 1795572123
     }
   ],
   "trades": [
@@ -1417,14 +1417,27 @@
       "px": 26.29,
       "pnl": 0.5933,
       "tf": "15m"
+    },
+    {
+      "symbol": "IRYSUSDT",
+      "side": "SELL",
+      "entry": 0.01809,
+      "tp": 0.017637749999999997,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.01809,
+      "pnl": -0.24,
+      "tf": "1h"
     }
   ],
   "start": 1000.0,
   "session_start": 1795565212,
   "realized": 22.2783,
   "closed_n": 1,
-  "open_upnl": 0.5933,
-  "equity": 1022.8716,
+  "open_upnl": 0.3533,
+  "equity": 1022.6316,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
