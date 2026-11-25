@@ -32,31 +32,6 @@
       "order_id": "PAPER-BLURUSDT-1795602619"
     },
     {
-      "symbol": "MANTRAUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.00218,
-      "qty": 91743.1193,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.0021255000000000002,
-      "tf": "4h",
-      "opened_at": 1795608059,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.00218,
-          "ts": 1795608059
-        }
-      ],
-      "entry_candle_ts": 1795608000,
-      "last_leg_candle_ts": 1795608000,
-      "dry_run": true,
-      "order_id": "PAPER-MANTRAUSDT-1795608059"
-    },
-    {
       "symbol": "SSVUSDT",
       "side": "SELL",
       "status": "open",
@@ -139,36 +114,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "BREVUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.09783,
-      "qty": 2044.3627,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.09538425,
-      "tf": "1h",
-      "opened_at": 1794931274,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.09783,
-          "ts": 1794931274
-        }
-      ],
-      "entry_candle_ts": 1794931200,
-      "last_leg_candle_ts": 1794931200,
-      "dry_run": true,
-      "order_id": "PAPER-BREVUSDT-1794931274",
-      "closed_at": 1794933717,
-      "close_px": 0.095,
-      "pnl_usdt": 5.785546355923539,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "UVXYUSDT",
       "side": "SELL",
@@ -6662,6 +6607,36 @@
       "pnl_usdt": -8.821245535020951,
       "close_reason": "STOP",
       "why": "STOP"
+    },
+    {
+      "symbol": "MANTRAUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.00218,
+      "qty": 91743.1193,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0021255000000000002,
+      "tf": "4h",
+      "opened_at": 1795608059,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.00218,
+          "ts": 1795608059
+        }
+      ],
+      "entry_candle_ts": 1795608000,
+      "last_leg_candle_ts": 1795608000,
+      "dry_run": true,
+      "order_id": "PAPER-MANTRAUSDT-1795608059",
+      "closed_at": 1795610169,
+      "close_px": 0.002117,
+      "pnl_usdt": 5.779816513761479,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
