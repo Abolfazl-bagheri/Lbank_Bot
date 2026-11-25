@@ -1,29 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795612647,
+  "updated_at": 1795612830,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795599635
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795599664
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795599691
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,22 +1381,30 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1795612647
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795612758
+    },
+    {
+      "kind": "HEARTBEAT",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795612758
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795612830
     }
   ],
   "trades": [
-    {
-      "symbol": "BLURUSDT",
-      "side": "SELL",
-      "entry": 0.009628411554638203,
-      "tp": 0.009387701265772248,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
-      "lev": 20,
-      "px": 0.009536,
-      "pnl": 5.0387,
-      "tf": "15m"
-    },
     {
       "symbol": "UVXYUSDT",
       "side": "SELL",
@@ -1427,23 +1414,23 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 27.25,
-      "pnl": 1.9106,
+      "px": 27.41,
+      "pnl": -1.5969,
       "tf": "1h"
     }
   ],
   "start": 1000.0,
   "session_start": 1795565212,
-  "realized": -52.9452,
-  "closed_n": 15,
-  "open_upnl": 6.9493,
-  "equity": 954.0041,
+  "realized": -31.0468,
+  "closed_n": 16,
+  "open_upnl": -1.5969,
+  "equity": 967.3563,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 108.5173,
+    "profit": 130.4157,
     "loss": -161.4625,
-    "count": 15
+    "count": 16
   }
 }
