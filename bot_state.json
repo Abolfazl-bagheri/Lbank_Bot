@@ -180,6 +180,31 @@
       "last_leg_candle_ts": 1795636800,
       "dry_run": true,
       "order_id": "PAPER-MANTRAUSDT-1795636920"
+    },
+    {
+      "symbol": "MMTUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.3082,
+      "qty": 648.9293,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.30049499999999996,
+      "tf": "4h",
+      "opened_at": 1795636934,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.3082,
+          "ts": 1795636934
+        }
+      ],
+      "entry_candle_ts": 1795636800,
+      "last_leg_candle_ts": 1795636800,
+      "dry_run": true,
+      "order_id": "PAPER-MMTUSDT-1795636934"
     }
   ],
   "trade_history": [
@@ -6716,16 +6741,6 @@
   ],
   "pending": [
     {
-      "symbol": "UMCUSDT",
-      "tf": "1h",
-      "candle_ts": 1795399200,
-      "side": "SELL",
-      "upper": 13.035152485998395,
-      "open": 13.33,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "UNITREEUSDT",
       "tf": "15m",
       "candle_ts": 1795399200,
@@ -9701,6 +9716,15 @@
       "side": "SELL",
       "upper": 0.010529478994448753,
       "open": 0.01083,
+      "reported": false
+    },
+    {
+      "symbol": "MANTRAUSDT",
+      "tf": "4h",
+      "candle_ts": 1795636800,
+      "side": "SELL",
+      "upper": 0.0029251845833977285,
+      "open": 0.003242,
       "reported": false
     }
   ],
