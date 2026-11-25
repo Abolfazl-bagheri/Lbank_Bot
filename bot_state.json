@@ -24,64 +24,9 @@
       "last_leg_candle_ts": 1795602600,
       "dry_run": true,
       "order_id": "PAPER-BLURUSDT-1795602619"
-    },
-    {
-      "symbol": "MOODENGUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.03015,
-      "qty": 6633.4992,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.02939625,
-      "tf": "15m",
-      "opened_at": 1795602628,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.03015,
-          "ts": 1795602628
-        }
-      ],
-      "entry_candle_ts": 1795602600,
-      "last_leg_candle_ts": 1795602600,
-      "dry_run": true,
-      "order_id": "PAPER-MOODENGUSDT-1795602628"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "CATEUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.022,
-      "qty": 9090.9091,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.021449999999999997,
-      "tf": "4h",
-      "opened_at": 1794931310,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.022,
-          "ts": 1794931310
-        }
-      ],
-      "entry_candle_ts": 1794931200,
-      "last_leg_candle_ts": 1794931200,
-      "dry_run": true,
-      "order_id": "PAPER-CATEUSDT-1794931310",
-      "closed_at": 1794931854,
-      "close_px": 0.02135,
-      "pnl_usdt": 5.90909090909089,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "PREDICTUSDT",
       "side": "SELL",
@@ -6581,6 +6526,36 @@
       "pnl_usdt": 5.91397849462367,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "MOODENGUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.03015,
+      "qty": 6633.4992,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.02939625,
+      "tf": "15m",
+      "opened_at": 1795602628,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.03015,
+          "ts": 1795602628
+        }
+      ],
+      "entry_candle_ts": 1795602600,
+      "last_leg_candle_ts": 1795602600,
+      "dry_run": true,
+      "order_id": "PAPER-MOODENGUSDT-1795602628",
+      "closed_at": 1795602928,
+      "close_px": 0.02919,
+      "pnl_usdt": 6.368159203980093,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -9896,7 +9871,6 @@
     "1000LUNCUSDT": 1795598199,
     "UP2USDT": 1795600030,
     "OGFANUSDT": 1795601837,
-    "SPACE1USDT": 1795602877,
     "FIGUSDT": 1795604649,
     "AMCUSDT": 1795606471,
     "NGASUSDT": 1795608262,
@@ -9918,7 +9892,8 @@
     "NEIRO1USDT": 1795645933,
     "CZUSDT": 1795645934,
     "MANCERUSDT": 1795645935,
-    "PIPEDOGUSDT": 1795645945
+    "PIPEDOGUSDT": 1795645945,
+    "ATMUSDT": 1795646082
   },
   "last_trade_report_ts": 1795602343,
   "last_known_version": "2.10.0",
