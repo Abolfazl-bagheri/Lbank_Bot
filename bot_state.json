@@ -1,5 +1,31 @@
 {
-  "open_trades": [],
+  "open_trades": [
+    {
+      "symbol": "BIGTIMEUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.00449,
+      "qty": 44543.4298,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.00437775,
+      "tf": "15m",
+      "opened_at": 1795567539,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.00449,
+          "ts": 1795567539
+        }
+      ],
+      "entry_candle_ts": 1795567500,
+      "last_leg_candle_ts": 1795567500,
+      "dry_run": true,
+      "order_id": "PAPER-BIGTIMEUSDT-1795567539"
+    }
+  ],
   "trade_history": [
     {
       "symbol": "BREVUSDT",
