@@ -1,72 +1,6 @@
 {
-  "open_trades": [
-    {
-      "symbol": "JDUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 26.466582414722478,
-      "qty": 22.6701,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 25.804917854354414,
-      "tf": "15m",
-      "opened_at": 1795571170,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        26.592
-      ],
-      "steps": [
-        {
-          "px": 26.4,
-          "ts": 1795571170
-        },
-        {
-          "px": 26.5,
-          "ts": 1795573057
-        }
-      ],
-      "entry_candle_ts": 1795571100,
-      "last_leg_candle_ts": 1795573057,
-      "dry_run": true,
-      "order_id": "PAPER-JDUSDT-1795571170"
-    }
-  ],
+  "open_trades": [],
   "trade_history": [
-    {
-      "symbol": "BREVUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.08283706399519346,
-      "qty": 7243.1346,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.08076613739531362,
-      "tf": "1h",
-      "opened_at": 1794923128,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.08055,
-          "ts": 1794923128
-        },
-        {
-          "px": 0.08403,
-          "ts": 1794924061
-        }
-      ],
-      "entry_candle_ts": 1794923100,
-      "last_leg_candle_ts": 1794924000,
-      "dry_run": true,
-      "order_id": "PAPER-BREVUSDT-1794923128",
-      "closed_at": 1794924632,
-      "close_px": 0.08643,
-      "pnl_usdt": -26.024118901763778,
-      "close_reason": "STOP",
-      "why": "STOP"
-    },
     {
       "symbol": "FONEUSDT",
       "side": "SELL",
@@ -6551,29 +6485,45 @@
       "pnl_usdt": 29.18739635157542,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "JDUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 26.466582414722478,
+      "qty": 22.6701,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 25.804917854354414,
+      "tf": "15m",
+      "opened_at": 1795571170,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        26.592
+      ],
+      "steps": [
+        {
+          "px": 26.4,
+          "ts": 1795571170
+        },
+        {
+          "px": 26.5,
+          "ts": 1795573057
+        }
+      ],
+      "entry_candle_ts": 1795571100,
+      "last_leg_candle_ts": 1795573057,
+      "dry_run": true,
+      "order_id": "PAPER-JDUSDT-1795571170",
+      "closed_at": 1795591991,
+      "close_px": 25.66,
+      "pnl_usdt": 18.285301866714818,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
-    {
-      "symbol": "BULLAUSDT",
-      "tf": "15m",
-      "candle_ts": 1795391100,
-      "side": "SELL",
-      "upper": 0.023874675896984814,
-      "open": 0.024615,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "BULLAUSDT",
-      "tf": "15m",
-      "candle_ts": 1795392000,
-      "side": "SELL",
-      "upper": 0.024261924100453962,
-      "open": 0.024518,
-      "reported": true,
-      "filled": true
-    },
     {
       "symbol": "CSOPSKHYNIX2LUSDT",
       "tf": "15m",
@@ -9524,7 +9474,8 @@
       "side": "LONG",
       "upper": 0.042926412471772146,
       "open": 0.03549,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "NESUSDT",
@@ -9533,7 +9484,8 @@
       "side": "SELL",
       "upper": 0.1814122668424817,
       "open": 0.1829,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "SSPCUSDT",
@@ -9542,6 +9494,25 @@
       "side": "SELL",
       "upper": 10.202474687869062,
       "open": 10.122,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "PROSUSDT",
+      "tf": "15m",
+      "candle_ts": 1795591800,
+      "side": "SELL",
+      "upper": 0.7243024767229403,
+      "open": 0.7276,
+      "reported": false
+    },
+    {
+      "symbol": "FRHCUSDT",
+      "tf": "15m",
+      "candle_ts": 1795591800,
+      "side": "LONG",
+      "upper": 171.00000141604366,
+      "open": 171.0,
       "reported": false
     }
   ],
@@ -9821,7 +9792,6 @@
     "SPORTFUNUSDT": 1795118680,
     "FUTUUSDT": 1795202410,
     "APROUSDT": 1795234598,
-    "GALUSDT": 1795239096,
     "CADUSDT": 1795261624,
     "AINBSCUSDT": 1795269926,
     "XTIUSDT": 1795291473,
@@ -9889,38 +9859,13 @@
     "CYBERLEEKUSDT": 1795609022,
     "SKY1USDT": 1795609028,
     "O1USDT": 1795614610,
-    "IBBETFUSDT": 1795616204
+    "IBBETFUSDT": 1795616204,
+    "GALUSDT": 1795635139,
+    "GOATSEUSUSDT": 1795635143
   },
   "last_trade_report_ts": 1795573279,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795291476,
-      "kind": "gap_result",
-      "symbol": "YBUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795294962,
-      "kind": "gap_result",
-      "symbol": "IDOLUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
-    {
-      "ts": 1795298573,
-      "kind": "gap_result",
-      "symbol": "IDOLUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
     {
       "ts": 1795298575,
       "kind": "gap_result",
@@ -13489,6 +13434,33 @@
       "ts": 1795572296,
       "kind": "gap_result",
       "symbol": "JDUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795591981,
+      "kind": "gap_result",
+      "symbol": "GUAUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795591987,
+      "kind": "gap_result",
+      "symbol": "NESUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795591990,
+      "kind": "gap_result",
+      "symbol": "SSPCUSDT",
       "tf": "15m",
       "gap": 0.0,
       "filled": true,
