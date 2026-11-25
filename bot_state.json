@@ -1,31 +1,6 @@
 {
   "open_trades": [
     {
-      "symbol": "PROSUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.7501,
-      "qty": 266.6311,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.7313474999999999,
-      "tf": "1h",
-      "opened_at": 1795593651,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.7501,
-          "ts": 1795593651
-        }
-      ],
-      "entry_candle_ts": 1795593600,
-      "last_leg_candle_ts": 1795593600,
-      "dry_run": true,
-      "order_id": "PAPER-PROSUSDT-1795593651"
-    },
-    {
       "symbol": "BIGTIMEUSDT",
       "side": "SELL",
       "status": "open",
@@ -58,36 +33,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "BREVUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.09892,
-      "qty": 2021.8358,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.09644699999999999,
-      "tf": "1h",
-      "opened_at": 1794927667,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.09892,
-          "ts": 1794927667
-        }
-      ],
-      "entry_candle_ts": 1794927600,
-      "last_leg_candle_ts": 1794927600,
-      "dry_run": true,
-      "order_id": "PAPER-BREVUSDT-1794927667",
-      "closed_at": 1794928237,
-      "close_px": 0.10589,
-      "pnl_usdt": -14.092195713708053,
-      "close_reason": "STOP",
-      "why": "STOP"
-    },
     {
       "symbol": "CATEUSDT",
       "side": "SELL",
@@ -6570,6 +6515,36 @@
       "pnl_usdt": -12.08117036337896,
       "close_reason": "STOP",
       "why": "STOP"
+    },
+    {
+      "symbol": "PROSUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.7501,
+      "qty": 266.6311,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.7313474999999999,
+      "tf": "1h",
+      "opened_at": 1795593651,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.7501,
+          "ts": 1795593651
+        }
+      ],
+      "entry_candle_ts": 1795593600,
+      "last_leg_candle_ts": 1795593600,
+      "dry_run": true,
+      "order_id": "PAPER-PROSUSDT-1795593651",
+      "closed_at": 1795594624,
+      "close_px": 0.7272,
+      "pnl_usdt": 6.105852552992943,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
