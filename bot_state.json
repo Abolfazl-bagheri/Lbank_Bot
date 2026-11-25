@@ -49,6 +49,31 @@
       "last_leg_candle_ts": 1795604400,
       "dry_run": true,
       "order_id": "PAPER-EVAAUSDT-1795604447"
+    },
+    {
+      "symbol": "MMTUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.2507,
+      "qty": 797.7663,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.24443249999999997,
+      "tf": "1h",
+      "opened_at": 1795604457,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.2507,
+          "ts": 1795604457
+        }
+      ],
+      "entry_candle_ts": 1795604400,
+      "last_leg_candle_ts": 1795604400,
+      "dry_run": true,
+      "order_id": "PAPER-MMTUSDT-1795604457"
     }
   ],
   "trade_history": [
@@ -6589,26 +6614,6 @@
       "tf": "5m",
       "candle_ts": 1795396200,
       "side": "SELL",
-      "upper": 3593.360324524972,
-      "open": 3599.26,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "GOLDUSDT",
-      "tf": "5m",
-      "candle_ts": 1795396200,
-      "side": "SELL",
-      "upper": 3605.922603974294,
-      "open": 3611.36,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "XAUTUSDT",
-      "tf": "5m",
-      "candle_ts": 1795396200,
-      "side": "SELL",
       "upper": 3591.8256203377523,
       "open": 3599.26,
       "reported": true,
@@ -9572,6 +9577,24 @@
       "side": "SELL",
       "upper": 0.00943528077340857,
       "open": 0.00957,
+      "reported": false
+    },
+    {
+      "symbol": "EVAAUSDT",
+      "tf": "1h",
+      "candle_ts": 1795604400,
+      "side": "SELL",
+      "upper": 2.7027502143116733,
+      "open": 2.8091,
+      "reported": false
+    },
+    {
+      "symbol": "SSVUSDT",
+      "tf": "1h",
+      "candle_ts": 1795604400,
+      "side": "SELL",
+      "upper": 1.788155596454095,
+      "open": 1.805,
       "reported": false
     }
   ],
