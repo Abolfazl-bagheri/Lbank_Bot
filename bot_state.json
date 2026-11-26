@@ -95,64 +95,9 @@
       "last_leg_candle_ts": 1795654800,
       "dry_run": true,
       "order_id": "PAPER-KIOXIAUSDT-1795654868"
-    },
-    {
-      "symbol": "AKEUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.002106,
-      "qty": 94966.7616,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.00205335,
-      "tf": "15m",
-      "opened_at": 1795655769,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.002106,
-          "ts": 1795655769
-        }
-      ],
-      "entry_candle_ts": 1795655700,
-      "last_leg_candle_ts": 1795655700,
-      "dry_run": true,
-      "order_id": "PAPER-AKEUSDT-1795655769"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "BLESSUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.012798,
-      "qty": 15627.4418,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.01247805,
-      "tf": "15m",
-      "opened_at": 1794987168,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.012798,
-          "ts": 1794987168
-        }
-      ],
-      "entry_candle_ts": 1794987000,
-      "last_leg_candle_ts": 1794987000,
-      "dry_run": true,
-      "order_id": "PAPER-BLESSUSDT-1794987168",
-      "closed_at": 1794988088,
-      "close_px": 0.011398,
-      "pnl_usdt": 21.87841850289108,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "PIPPINUSDT",
       "side": "SELL",
@@ -6667,6 +6612,36 @@
       "pnl_usdt": 5.3291038858049085,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "AKEUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.002106,
+      "qty": 94966.7616,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.00205335,
+      "tf": "15m",
+      "opened_at": 1795655769,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.002106,
+          "ts": 1795655769
+        }
+      ],
+      "entry_candle_ts": 1795655700,
+      "last_leg_candle_ts": 1795655700,
+      "dry_run": true,
+      "order_id": "PAPER-AKEUSDT-1795655769",
+      "closed_at": 1795656323,
+      "close_px": 0.001974,
+      "pnl_usdt": 12.535612535612513,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -10006,7 +9981,7 @@
     "TRUMPSOLUSDT": 1795698304,
     "MURATAUSDT": 1795698991
   },
-  "last_trade_report_ts": 1795655446,
+  "last_trade_report_ts": 1795656364,
   "last_known_version": "2.10.0",
   "lessons": [
     {
