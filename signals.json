@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795723258,
+  "updated_at": 1795723275,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "AIOTUSDT",
-      "tf": "1h",
-      "gap": 2.72,
-      "ts": 1795711896
-    },
-    {
-      "kind": "GAP",
-      "symbol": "BULLAUSDT",
-      "tf": "1h",
-      "gap": 6.0,
-      "ts": 1795711901
-    },
     {
       "kind": "GAP",
       "symbol": "ONEUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "1h",
       "gap": 3.11,
       "ts": 1795723258
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795723267
+    },
+    {
+      "kind": "SELL",
+      "symbol": "INITUSDT",
+      "tf": "4h",
+      "gap": 4.42,
+      "ts": 1795723275
     }
   ],
   "trades": [
@@ -1460,15 +1460,15 @@
     {
       "symbol": "IDOLUSDT",
       "side": "SELL",
-      "entry": 0.018539242050108068,
-      "tp": 0.018075760998855366,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
+      "entry": 0.018594977780235472,
+      "tp": 0.018130103335729585,
+      "adds": 2,
+      "pele": 3,
+      "margin": 70.0,
       "lev": 20,
       "px": 0.018637,
-      "pnl": -3.8838,
-      "tf": "15m"
+      "pnl": -4.8438,
+      "tf": "1h"
     },
     {
       "symbol": "NESUSDT",
@@ -1488,8 +1488,8 @@
   "session_start": 1795651554,
   "realized": -86.2716,
   "closed_n": 26,
-  "open_upnl": 21.8332,
-  "equity": 935.5616,
+  "open_upnl": 20.8732,
+  "equity": 934.6016,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
