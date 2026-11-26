@@ -143,15 +143,15 @@
       "symbol": "IDOLUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.018539242050108068,
-      "qty": 32363.782700000003,
-      "margin": 30.0,
+      "entry": 0.018594977780235472,
+      "qty": 75289.1462,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 0.018075760998855366,
-      "tf": "15m",
+      "tp_price": 0.018130103335729585,
+      "tf": "1h",
       "opened_at": 1795720652,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [],
       "steps": [
         {
@@ -161,10 +161,14 @@
         {
           "px": 0.01872,
           "ts": 1795721557
+        },
+        {
+          "px": 0.018637,
+          "ts": 1795723260
         }
       ],
       "entry_candle_ts": 1795720500,
-      "last_leg_candle_ts": 1795721400,
+      "last_leg_candle_ts": 1795723200,
       "dry_run": true,
       "order_id": "PAPER-IDOLUSDT-1795720652"
     },
@@ -6755,16 +6759,6 @@
   ],
   "pending": [
     {
-      "symbol": "PIPPINUSDT",
-      "tf": "15m",
-      "candle_ts": 1795530600,
-      "side": "SELL",
-      "upper": 0.018547430776077612,
-      "open": 0.01876,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "EWZSUSDT",
       "tf": "15m",
       "candle_ts": 1795530600,
@@ -9747,6 +9741,15 @@
       "upper": 0.009234075485001695,
       "open": 0.009059,
       "reported": false
+    },
+    {
+      "symbol": "KNTQUSDT",
+      "tf": "1h",
+      "candle_ts": 1795723200,
+      "side": "SELL",
+      "upper": 0.18039042525778945,
+      "open": 0.184,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -10104,7 +10107,7 @@
     "STONKBROKERUSDT": 1795760199,
     "FRONGUSDT": 1795761990
   },
-  "last_trade_report_ts": 1795721738,
+  "last_trade_report_ts": 1795722669,
   "last_known_version": "2.10.0",
   "lessons": [
     {
