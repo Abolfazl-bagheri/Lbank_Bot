@@ -6720,16 +6720,6 @@
   ],
   "pending": [
     {
-      "symbol": "MMTUSDT",
-      "tf": "15m",
-      "candle_ts": 1795529700,
-      "side": "LONG",
-      "upper": 0.2429139657575713,
-      "open": 0.2178,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "EWZSUSDT",
       "tf": "15m",
       "candle_ts": 1795529700,
@@ -9652,7 +9642,8 @@
       "side": "SELL",
       "upper": 0.017833603984223335,
       "open": 0.018407,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "IDOLUSDT",
@@ -9661,7 +9652,8 @@
       "side": "SELL",
       "upper": 0.017840621572463786,
       "open": 0.018407,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "XAUTUSDT",
@@ -9680,7 +9672,8 @@
       "side": "LONG",
       "upper": 3567.6439409973705,
       "open": 3563.75,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "XAUTUSDT",
@@ -9689,7 +9682,8 @@
       "side": "LONG",
       "upper": 3567.653535349444,
       "open": 3563.75,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "XAUTUSDT",
@@ -9698,7 +9692,8 @@
       "side": "LONG",
       "upper": 3567.6429139026445,
       "open": 3563.75,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "XAUTUSDT",
@@ -9707,6 +9702,16 @@
       "side": "LONG",
       "upper": 3567.653535349444,
       "open": 3563.75,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "IDOLUSDT",
+      "tf": "15m",
+      "candle_ts": 1795721400,
+      "side": "SELL",
+      "upper": 0.018347186519173664,
+      "open": 0.018469,
       "reported": false
     }
   ],
@@ -10068,60 +10073,6 @@
   "last_trade_report_ts": 1795720838,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795471561,
-      "kind": "gap_result",
-      "symbol": "AIOTUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795472256,
-      "kind": "gap_result",
-      "symbol": "FLNCUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
-    {
-      "ts": 1795472260,
-      "kind": "gap_result",
-      "symbol": "TTMIUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795473147,
-      "kind": "gap_result",
-      "symbol": "TTMIUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795475083,
-      "kind": "gap_result",
-      "symbol": "FLNCUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
-    {
-      "ts": 1795475086,
-      "kind": "gap_result",
-      "symbol": "ACEUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795475097,
       "kind": "gap_result",
@@ -13661,6 +13612,60 @@
     },
     {
       "ts": 1795721119,
+      "kind": "gap_result",
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795721518,
+      "kind": "gap_result",
+      "symbol": "IDOLUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795721520,
+      "kind": "gap_result",
+      "symbol": "IDOLUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795721522,
+      "kind": "gap_result",
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795721524,
+      "kind": "gap_result",
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795721527,
+      "kind": "gap_result",
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795721529,
       "kind": "gap_result",
       "symbol": "XAUTUSDT",
       "tf": "5m",
