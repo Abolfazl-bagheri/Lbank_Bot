@@ -100,17 +100,18 @@
       "symbol": "SILVERUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 41.89549943091758,
-      "qty": 14.3213,
-      "margin": 30.0,
+      "entry": 42.02917913785908,
+      "qty": 33.310100000000006,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 40.848111945144645,
+      "tp_price": 40.978449659412604,
       "tf": "15m",
       "opened_at": 1795661221,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [
-        41.79
+        41.79,
+        42.29
       ],
       "steps": [
         {
@@ -120,10 +121,14 @@
         {
           "px": 41.74,
           "ts": 1795663234
+        },
+        {
+          "px": 42.13,
+          "ts": 1795670446
         }
       ],
       "entry_candle_ts": 1795661100,
-      "last_leg_candle_ts": 1795663234,
+      "last_leg_candle_ts": 1795670446,
       "dry_run": true,
       "order_id": "PAPER-SILVERUSDT-1795661221"
     },
