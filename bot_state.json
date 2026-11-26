@@ -127,64 +127,9 @@
       "last_leg_candle_ts": 1795666051,
       "dry_run": true,
       "order_id": "PAPER-MUSDT-1795665776"
-    },
-    {
-      "symbol": "CLAUDIAUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.00928,
-      "qty": 21551.7241,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.009048,
-      "tf": "15m",
-      "opened_at": 1795673745,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.00928,
-          "ts": 1795673745
-        }
-      ],
-      "entry_candle_ts": 1795673700,
-      "last_leg_candle_ts": 1795673700,
-      "dry_run": true,
-      "order_id": "PAPER-CLAUDIAUSDT-1795673745"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "ZKCUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.02713,
-      "qty": 7371.913,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.02645175,
-      "tf": "1h",
-      "opened_at": 1794992440,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.02713,
-          "ts": 1794992440
-        }
-      ],
-      "entry_candle_ts": 1794992400,
-      "last_leg_candle_ts": 1794992400,
-      "dry_run": true,
-      "order_id": "PAPER-ZKCUSDT-1794992440",
-      "closed_at": 1794993039,
-      "close_px": 0.02829,
-      "pnl_usdt": -8.551419093254683,
-      "close_reason": "STOP",
-      "why": "STOP"
-    },
     {
       "symbol": "PIPPINUSDT",
       "side": "SELL",
@@ -6703,6 +6648,36 @@
       "closed_at": 1795672539,
       "close_px": 0.005955,
       "pnl_usdt": 35.14285113226594,
+      "close_reason": "TP50",
+      "why": "TP50"
+    },
+    {
+      "symbol": "CLAUDIAUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.00928,
+      "qty": 21551.7241,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.009048,
+      "tf": "15m",
+      "opened_at": 1795673745,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.00928,
+          "ts": 1795673745
+        }
+      ],
+      "entry_candle_ts": 1795673700,
+      "last_leg_candle_ts": 1795673700,
+      "dry_run": true,
+      "order_id": "PAPER-CLAUDIAUSDT-1795673745",
+      "closed_at": 1795673964,
+      "close_px": 0.008938,
+      "pnl_usdt": 7.37068965517242,
       "close_reason": "TP50",
       "why": "TP50"
     }
