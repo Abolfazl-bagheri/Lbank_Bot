@@ -9615,7 +9615,8 @@
       "side": "SELL",
       "upper": 0.002068888722924526,
       "open": 0.0021197,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "PROMUSDT",
@@ -9624,7 +9625,8 @@
       "side": "LONG",
       "upper": 5.326892368652597,
       "open": 5.109,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -9984,24 +9986,6 @@
   "last_trade_report_ts": 1795656364,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795396268,
-      "kind": "gap_result",
-      "symbol": "GOLDUSDT",
-      "tf": "5m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795396648,
-      "kind": "gap_result",
-      "symbol": "XAUTUSDT",
-      "tf": "5m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795396657,
       "kind": "gap_result",
@@ -13580,6 +13564,24 @@
       "kind": "gap_result",
       "symbol": "SILVERUSDT",
       "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795656708,
+      "kind": "gap_result",
+      "symbol": "AKEUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795656710,
+      "kind": "gap_result",
+      "symbol": "PROMUSDT",
+      "tf": "15m",
       "gap": 0.0,
       "filled": true,
       "note": "filled"
