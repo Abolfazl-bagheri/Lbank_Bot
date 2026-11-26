@@ -9759,7 +9759,8 @@
       "side": "SELL",
       "upper": 0.1690118521548298,
       "open": 0.1703,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "KNTQUSDT",
@@ -9777,7 +9778,8 @@
       "side": "LONG",
       "upper": 1.4708714571237627,
       "open": 1.465,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -10103,9 +10105,7 @@
     "O1USDT": 1795687388,
     "SYNUSDT": 1795694599,
     "TRUMPSOLUSDT": 1795698304,
-    "MURATAUSDT": 1795698991,
     "OFCUSDT": 1795704577,
-    "RGTIUSDT": 1795713415,
     "OROCHIUSDT": 1795717003,
     "FRONGUSDT": 1795718052,
     "UP2USDT": 1795723521,
@@ -10133,29 +10133,14 @@
     "1000000BABYDOGEUSDT": 1795752324,
     "HOTUSDT": 1795752325,
     "DRVUSDT": 1795754027,
-    "FONEUSDT": 1795755786
+    "FONEUSDT": 1795755786,
+    "SPACE1USDT": 1795756595,
+    "MURATAUSDT": 1795756709,
+    "RGTIUSDT": 1795756710
   },
   "last_trade_report_ts": 1795713040,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795435548,
-      "kind": "gap_result",
-      "symbol": "TAUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795435559,
-      "kind": "gap_result",
-      "symbol": "VELVETUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
     {
       "ts": 1795436216,
       "kind": "gap_result",
@@ -13733,6 +13718,24 @@
       "ts": 1795712629,
       "kind": "gap_result",
       "symbol": "INITUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795713411,
+      "kind": "gap_result",
+      "symbol": "KNTQUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795713413,
+      "kind": "gap_result",
+      "symbol": "CSOPSKHYNIX2LUSDT",
       "tf": "15m",
       "gap": 0.0,
       "filled": true,
