@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795673744,
+  "updated_at": 1795673753,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "MOVEUSDT",
-      "tf": "1h",
-      "gap": 1.8,
-      "ts": 1795661619
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795661757
-    },
     {
       "kind": "SELL",
       "symbol": "SLXUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "15m",
       "gap": 3.01,
       "ts": 1795673744
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795673751
+    },
+    {
+      "kind": "SELL",
+      "symbol": "ZCATUSDT",
+      "tf": "15m",
+      "gap": 1.68,
+      "ts": 1795673753
     }
   ],
   "trades": [
@@ -1456,14 +1456,27 @@
       "px": 0.8533,
       "pnl": -2.9077,
       "tf": "4h"
+    },
+    {
+      "symbol": "CLAUDIAUSDT",
+      "side": "SELL",
+      "entry": 0.00928,
+      "tp": 0.009048,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.00928,
+      "pnl": -0.24,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1795651554,
   "realized": -11.8039,
   "closed_n": 14,
-  "open_upnl": 7.895,
-  "equity": 996.0911,
+  "open_upnl": 7.655,
+  "equity": 995.8511,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
