@@ -6671,26 +6671,6 @@
   ],
   "pending": [
     {
-      "symbol": "SILVERUSDT",
-      "tf": "5m",
-      "candle_ts": 1795475100,
-      "side": "SELL",
-      "upper": 43.45353258709652,
-      "open": 43.47,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "XAUTUSDT",
-      "tf": "5m",
-      "candle_ts": 1795476000,
-      "side": "LONG",
-      "upper": 3632.9668867504543,
-      "open": 3624.89,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "XAUTUSDT",
       "tf": "5m",
       "candle_ts": 1795476000,
@@ -9630,7 +9610,8 @@
       "side": "LONG",
       "upper": 3593.681994998832,
       "open": 3557.02,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "MANTRAUSDT",
@@ -9647,6 +9628,24 @@
       "candle_ts": 1795661100,
       "side": "SELL",
       "upper": 0.03673840740430208,
+      "open": 0.0372,
+      "reported": false
+    },
+    {
+      "symbol": "SILVERUSDT",
+      "tf": "15m",
+      "candle_ts": 1795661100,
+      "side": "SELL",
+      "upper": 42.10383167289066,
+      "open": 42.27,
+      "reported": false
+    },
+    {
+      "symbol": "SLXUSDT",
+      "tf": "15m",
+      "candle_ts": 1795661100,
+      "side": "SELL",
+      "upper": 0.036883904915571544,
       "open": 0.0372,
       "reported": false
     }
@@ -9943,7 +9942,6 @@
     "BONERUSDT": 1795342752,
     "QUID1USDT": 1795354270,
     "GSTOCKUSDT": 1795367820,
-    "OFCUSDT": 1795367824,
     "RIOTUSDT": 1795369657,
     "STONKBROKERUSDT": 1795424588,
     "BEMUSDT": 1795435543,
@@ -10003,20 +10001,12 @@
     "NIULAIUSDT": 1795694598,
     "SYNUSDT": 1795694599,
     "TRUMPSOLUSDT": 1795698304,
-    "MURATAUSDT": 1795698991
+    "MURATAUSDT": 1795698991,
+    "OFCUSDT": 1795704577
   },
   "last_trade_report_ts": 1795660916,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795396657,
-      "kind": "gap_result",
-      "symbol": "GOLDUSDT",
-      "tf": "5m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795396665,
       "kind": "gap_result",
@@ -13603,6 +13593,15 @@
       "ts": 1795656710,
       "kind": "gap_result",
       "symbol": "PROMUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795661253,
+      "kind": "gap_result",
+      "symbol": "XAUTUSDT",
       "tf": "15m",
       "gap": 0.0,
       "filled": true,
