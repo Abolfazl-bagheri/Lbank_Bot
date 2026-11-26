@@ -9688,7 +9688,8 @@
       "side": "LONG",
       "upper": 0.061688573260510624,
       "open": 0.036427,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -10046,18 +10047,9 @@
     "RGTIUSDT": 1795756710,
     "STONKBROKERUSDT": 1795760199
   },
-  "last_trade_report_ts": 1795717120,
+  "last_trade_report_ts": 1795718021,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795436237,
-      "kind": "gap_result",
-      "symbol": "SILVERUSDT",
-      "tf": "5m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795471547,
       "kind": "gap_result",
@@ -13645,6 +13637,15 @@
       "kind": "gap_result",
       "symbol": "KNTQUSDT",
       "tf": "1h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795717913,
+      "kind": "gap_result",
+      "symbol": "BULLAUSDT",
+      "tf": "15m",
       "gap": 0.0,
       "filled": true,
       "note": "filled"
