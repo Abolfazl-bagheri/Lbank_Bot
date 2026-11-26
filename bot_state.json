@@ -185,31 +185,6 @@
       "order_id": "PAPER-AIOTUSDT-1795708847"
     },
     {
-      "symbol": "INITUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.13231,
-      "qty": 1511.6015,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.12900225,
-      "tf": "4h",
-      "opened_at": 1795708875,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.13231,
-          "ts": 1795708875
-        }
-      ],
-      "entry_candle_ts": 1795708800,
-      "last_leg_candle_ts": 1795708800,
-      "dry_run": true,
-      "order_id": "PAPER-INITUSDT-1795708875"
-    },
-    {
       "symbol": "STBLUSDT",
       "side": "SELL",
       "status": "open",
@@ -242,36 +217,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "PIEVERSEUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 2.4631,
-      "qty": 81.1985,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 2.4015225,
-      "tf": "1h",
-      "opened_at": 1794999658,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 2.4631,
-          "ts": 1794999658
-        }
-      ],
-      "entry_candle_ts": 1794999600,
-      "last_leg_candle_ts": 1794999600,
-      "dry_run": true,
-      "order_id": "PAPER-PIEVERSEUSDT-1794999658",
-      "closed_at": 1795002941,
-      "close_px": 2.3875,
-      "pnl_usdt": 6.1386058219316855,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "PIPPINUSDT",
       "side": "SELL",
@@ -6796,6 +6741,36 @@
       "pnl_usdt": 5.410628019323652,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "INITUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.13231,
+      "qty": 1511.6015,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.12900225,
+      "tf": "4h",
+      "opened_at": 1795708875,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.13231,
+          "ts": 1795708875
+        }
+      ],
+      "entry_candle_ts": 1795708800,
+      "last_leg_candle_ts": 1795708800,
+      "dry_run": true,
+      "order_id": "PAPER-INITUSDT-1795708875",
+      "closed_at": 1795709194,
+      "close_px": 0.12892,
+      "pnl_usdt": 5.124329226815817,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -10123,7 +10098,6 @@
     "MURATAUSDT": 1795698991,
     "OFCUSDT": 1795704577,
     "FONEUSDT": 1795709158,
-    "HAJIMIUSDT": 1795709068,
     "RGTIUSDT": 1795713415,
     "OROCHIUSDT": 1795717003,
     "FRONGUSDT": 1795718052,
@@ -10152,7 +10126,7 @@
     "1000000BABYDOGEUSDT": 1795752324,
     "HOTUSDT": 1795752325
   },
-  "last_trade_report_ts": 1795708040,
+  "last_trade_report_ts": 1795709159,
   "last_known_version": "2.10.0",
   "lessons": [
     {
