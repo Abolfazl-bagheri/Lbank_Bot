@@ -163,24 +163,30 @@
       "symbol": "AIOTUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.11435,
-      "qty": 1749.0162,
-      "margin": 10.0,
+      "entry": 0.115312597960935,
+      "qty": 5203.247600000001,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.11149124999999999,
+      "tp_price": 0.11242978301191163,
       "tf": "1h",
       "opened_at": 1795708847,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.1162
+      ],
       "steps": [
         {
           "px": 0.11435,
           "ts": 1795708847
+        },
+        {
+          "px": 0.1158,
+          "ts": 1795709498
         }
       ],
       "entry_candle_ts": 1795708800,
-      "last_leg_candle_ts": 1795708800,
+      "last_leg_candle_ts": 1795709498,
       "dry_run": true,
       "order_id": "PAPER-AIOTUSDT-1795708847"
     },
@@ -10097,7 +10103,6 @@
     "TRUMPSOLUSDT": 1795698304,
     "MURATAUSDT": 1795698991,
     "OFCUSDT": 1795704577,
-    "FONEUSDT": 1795709158,
     "RGTIUSDT": 1795713415,
     "OROCHIUSDT": 1795717003,
     "FRONGUSDT": 1795718052,
