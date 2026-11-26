@@ -189,70 +189,9 @@
       "last_leg_candle_ts": 1795709498,
       "dry_run": true,
       "order_id": "PAPER-AIOTUSDT-1795708847"
-    },
-    {
-      "symbol": "STBLUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.02137,
-      "qty": 28076.7431,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.02083575,
-      "tf": "1h",
-      "opened_at": 1795708913,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        0.02142
-      ],
-      "steps": [
-        {
-          "px": 0.02137,
-          "ts": 1795708913
-        },
-        {
-          "px": 0.02137,
-          "ts": 1795709152
-        }
-      ],
-      "entry_candle_ts": 1795708800,
-      "last_leg_candle_ts": 1795709152,
-      "dry_run": true,
-      "order_id": "PAPER-STBLUSDT-1795708913"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "PIPPINUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.0198,
-      "qty": 10101.0101,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.019305000000000003,
-      "tf": "4h",
-      "opened_at": 1795003263,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.0198,
-          "ts": 1795003263
-        }
-      ],
-      "entry_candle_ts": 1795003200,
-      "last_leg_candle_ts": 1795003200,
-      "dry_run": true,
-      "order_id": "PAPER-PIPPINUSDT-1795003263",
-      "closed_at": 1795003816,
-      "close_px": 0.01904,
-      "pnl_usdt": 7.676767676767678,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "IRYSUSDT",
       "side": "SELL",
@@ -6775,6 +6714,42 @@
       "closed_at": 1795709194,
       "close_px": 0.12892,
       "pnl_usdt": 5.124329226815817,
+      "close_reason": "TP50",
+      "why": "TP50"
+    },
+    {
+      "symbol": "STBLUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.02137,
+      "qty": 28076.7431,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 0.02083575,
+      "tf": "1h",
+      "opened_at": 1795708913,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.02142
+      ],
+      "steps": [
+        {
+          "px": 0.02137,
+          "ts": 1795708913
+        },
+        {
+          "px": 0.02137,
+          "ts": 1795709152
+        }
+      ],
+      "entry_candle_ts": 1795708800,
+      "last_leg_candle_ts": 1795709152,
+      "dry_run": true,
+      "order_id": "PAPER-STBLUSDT-1795708913",
+      "closed_at": 1795709500,
+      "close_px": 0.02082,
+      "pnl_usdt": 15.442208703790318,
       "close_reason": "TP50",
       "why": "TP50"
     }
