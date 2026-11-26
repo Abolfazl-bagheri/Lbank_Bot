@@ -126,64 +126,9 @@
       "last_leg_candle_ts": 1795663234,
       "dry_run": true,
       "order_id": "PAPER-SILVERUSDT-1795661221"
-    },
-    {
-      "symbol": "ELSAUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.09204,
-      "qty": 2172.9683,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.089739,
-      "tf": "15m",
-      "opened_at": 1795663829,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.09204,
-          "ts": 1795663829
-        }
-      ],
-      "entry_candle_ts": 1795663800,
-      "last_leg_candle_ts": 1795663800,
-      "dry_run": true,
-      "order_id": "PAPER-ELSAUSDT-1795663829"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "PIPPINUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.01383,
-      "qty": 14461.316,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.01348425,
-      "tf": "15m",
-      "opened_at": 1794987970,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.01383,
-          "ts": 1794987970
-        }
-      ],
-      "entry_candle_ts": 1794987900,
-      "last_leg_candle_ts": 1794987900,
-      "dry_run": true,
-      "order_id": "PAPER-PIPPINUSDT-1794987970",
-      "closed_at": 1794988553,
-      "close_px": 0.01471,
-      "pnl_usdt": -12.725958062183667,
-      "close_reason": "STOP",
-      "why": "STOP"
-    },
     {
       "symbol": "ZKPUSDT",
       "side": "SELL",
@@ -6698,6 +6643,36 @@
       "pnl_usdt": 12.535612535612513,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "ELSAUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.09204,
+      "qty": 2172.9683,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.089739,
+      "tf": "15m",
+      "opened_at": 1795663829,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.09204,
+          "ts": 1795663829
+        }
+      ],
+      "entry_candle_ts": 1795663800,
+      "last_leg_candle_ts": 1795663800,
+      "dry_run": true,
+      "order_id": "PAPER-ELSAUSDT-1795663829",
+      "closed_at": 1795664053,
+      "close_px": 0.09786,
+      "pnl_usdt": -12.646675358539778,
+      "close_reason": "STOP",
+      "why": "STOP"
     }
   ],
   "pending": [
