@@ -172,24 +172,30 @@
       "symbol": "NESUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.2889,
-      "qty": 692.2811,
-      "margin": 10.0,
+      "entry": 0.2906944099029507,
+      "qty": 2064.0232,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.28167749999999997,
+      "tp_price": 0.2834270496553769,
       "tf": "15m",
       "opened_at": 1795721565,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.2925
+      ],
       "steps": [
         {
           "px": 0.2889,
           "ts": 1795721565
+        },
+        {
+          "px": 0.2916,
+          "ts": 1795721777
         }
       ],
       "entry_candle_ts": 1795721400,
-      "last_leg_candle_ts": 1795721400,
+      "last_leg_candle_ts": 1795721777,
       "dry_run": true,
       "order_id": "PAPER-NESUSDT-1795721565"
     }
@@ -10097,7 +10103,7 @@
     "STONKBROKERUSDT": 1795760199,
     "FRONGUSDT": 1795761990
   },
-  "last_trade_report_ts": 1795720838,
+  "last_trade_report_ts": 1795721738,
   "last_known_version": "2.10.0",
   "lessons": [
     {
