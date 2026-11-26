@@ -74,6 +74,31 @@
       "last_leg_candle_ts": 1795652100,
       "dry_run": true,
       "order_id": "PAPER-CKBUSDT-1795652160"
+    },
+    {
+      "symbol": "MOCAUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.006059,
+      "qty": 33008.7473,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.005907525,
+      "tf": "15m",
+      "opened_at": 1795652191,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.006059,
+          "ts": 1795652191
+        }
+      ],
+      "entry_candle_ts": 1795652100,
+      "last_leg_candle_ts": 1795652100,
+      "dry_run": true,
+      "order_id": "PAPER-MOCAUSDT-1795652191"
     }
   ],
   "trade_history": [
@@ -6625,26 +6650,6 @@
   ],
   "pending": [
     {
-      "symbol": "PROMUSDT",
-      "tf": "4h",
-      "candle_ts": 1795435200,
-      "side": "SELL",
-      "upper": 5.9306201047004645,
-      "open": 6.077,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "UNITREEUSDT",
-      "tf": "4h",
-      "candle_ts": 1795435200,
-      "side": "SELL",
-      "upper": 105.01689416402385,
-      "open": 106.434,
-      "reported": true,
-      "filled": false
-    },
-    {
       "symbol": "AVAAIUSDT",
       "tf": "4h",
       "candle_ts": 1795435200,
@@ -9602,6 +9607,24 @@
       "side": "LONG",
       "upper": 0.03494768439463794,
       "open": 0.03185,
+      "reported": false
+    },
+    {
+      "symbol": "CKBUSDT",
+      "tf": "15m",
+      "candle_ts": 1795652100,
+      "side": "SELL",
+      "upper": 0.000816295545795629,
+      "open": 0.000821,
+      "reported": false
+    },
+    {
+      "symbol": "VANAUSDT",
+      "tf": "15m",
+      "candle_ts": 1795652100,
+      "side": "SELL",
+      "upper": 0.596178744273279,
+      "open": 0.6,
       "reported": false
     }
   ],
