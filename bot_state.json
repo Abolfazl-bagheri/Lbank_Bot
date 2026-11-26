@@ -115,6 +115,31 @@
       "last_leg_candle_ts": 1795654800,
       "dry_run": true,
       "order_id": "PAPER-KIOXIAUSDT-1795654868"
+    },
+    {
+      "symbol": "AKEUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.001901,
+      "qty": 105207.7854,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0018534749999999998,
+      "tf": "1h",
+      "opened_at": 1795654953,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.001901,
+          "ts": 1795654953
+        }
+      ],
+      "entry_candle_ts": 1795654800,
+      "last_leg_candle_ts": 1795654800,
+      "dry_run": true,
+      "order_id": "PAPER-AKEUSDT-1795654953"
     }
   ],
   "trade_history": [
@@ -6672,33 +6697,6 @@
   ],
   "pending": [
     {
-      "symbol": "TTMIUSDT",
-      "tf": "15m",
-      "candle_ts": 1795436100,
-      "side": "SELL",
-      "upper": 62.92,
-      "open": 62.92,
-      "reported": false
-    },
-    {
-      "symbol": "XAUTUSDT",
-      "tf": "5m",
-      "candle_ts": 1795436100,
-      "side": "LONG",
-      "upper": 3619.447402443964,
-      "open": 3608.84,
-      "reported": false
-    },
-    {
-      "symbol": "SILVERUSDT",
-      "tf": "5m",
-      "candle_ts": 1795436100,
-      "side": "LONG",
-      "upper": 42.7972950123187,
-      "open": 42.47,
-      "reported": false
-    },
-    {
       "symbol": "FLNCUSDT",
       "tf": "15m",
       "candle_ts": 1795471200,
@@ -9650,6 +9648,33 @@
       "side": "SELL",
       "upper": 0.04849946534352306,
       "open": 0.04911,
+      "reported": false
+    },
+    {
+      "symbol": "KIOXIAUSDT",
+      "tf": "1h",
+      "candle_ts": 1795654800,
+      "side": "SELL",
+      "upper": 48.26545109365092,
+      "open": 48.98,
+      "reported": false
+    },
+    {
+      "symbol": "MEUSDT",
+      "tf": "1h",
+      "candle_ts": 1795654800,
+      "side": "SELL",
+      "upper": 0.03936800678952568,
+      "open": 0.0398,
+      "reported": false
+    },
+    {
+      "symbol": "MOCAUSDT",
+      "tf": "1h",
+      "candle_ts": 1795654800,
+      "side": "SELL",
+      "upper": 0.006014668753415818,
+      "open": 0.00605,
       "reported": false
     }
   ],
