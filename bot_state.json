@@ -140,31 +140,6 @@
       "order_id": "PAPER-MUSDT-1795665776"
     },
     {
-      "symbol": "BUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.0995,
-      "qty": 2010.0503,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.0970125,
-      "tf": "4h",
-      "opened_at": 1795680130,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.0995,
-          "ts": 1795680130
-        }
-      ],
-      "entry_candle_ts": 1795680000,
-      "last_leg_candle_ts": 1795680000,
-      "dry_run": true,
-      "order_id": "PAPER-BUSDT-1795680130"
-    },
-    {
       "symbol": "AIOTUSDT",
       "side": "SELL",
       "status": "open",
@@ -222,36 +197,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "ZKCUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.02887,
-      "qty": 6927.6065,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.02814825,
-      "tf": "4h",
-      "opened_at": 1795003289,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.02887,
-          "ts": 1795003289
-        }
-      ],
-      "entry_candle_ts": 1795003200,
-      "last_leg_candle_ts": 1795003200,
-      "dry_run": true,
-      "order_id": "PAPER-ZKCUSDT-1795003289",
-      "closed_at": 1795004233,
-      "close_px": 0.0281,
-      "pnl_usdt": 5.334257014201594,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "PIEVERSEUSDT",
       "side": "SELL",
@@ -6782,6 +6727,36 @@
       "pnl_usdt": 9.456040480708431,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "BUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.0995,
+      "qty": 2010.0503,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0970125,
+      "tf": "4h",
+      "opened_at": 1795680130,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.0995,
+          "ts": 1795680130
+        }
+      ],
+      "entry_candle_ts": 1795680000,
+      "last_leg_candle_ts": 1795680000,
+      "dry_run": true,
+      "order_id": "PAPER-BUSDT-1795680130",
+      "closed_at": 1795714515,
+      "close_px": 0.1037,
+      "pnl_usdt": -8.442211055276372,
+      "close_reason": "STOP",
+      "why": "STOP"
     }
   ],
   "pending": [
