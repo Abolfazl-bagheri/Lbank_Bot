@@ -4,17 +4,18 @@
       "symbol": "CKBUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.0008256938111930302,
-      "qty": 726661.6170000001,
-      "margin": 30.0,
+      "entry": 0.0008294558764696196,
+      "qty": 1687853.4949,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 0.0008050514659132045,
+      "tp_price": 0.0008087194795578791,
       "tf": "15m",
       "opened_at": 1795652160,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [
-        0.000826
+        0.000826,
+        0.000834
       ],
       "steps": [
         {
@@ -24,10 +25,14 @@
         {
           "px": 0.0008241,
           "ts": 1795652509
+        },
+        {
+          "px": 0.0008323,
+          "ts": 1795656317
         }
       ],
       "entry_candle_ts": 1795652100,
-      "last_leg_candle_ts": 1795652509,
+      "last_leg_candle_ts": 1795656317,
       "dry_run": true,
       "order_id": "PAPER-CKBUSDT-1795652160"
     },
