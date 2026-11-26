@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795652190,
+  "updated_at": 1795652209,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795642013
-    },
-    {
-      "kind": "GAP",
-      "symbol": "ARIAUSDT",
-      "tf": "15m",
-      "gap": 1.27,
-      "ts": 1795642126
-    },
     {
       "kind": "SELL",
       "symbol": "BIGTIMEUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "15m",
       "gap": 1.71,
       "ts": 1795652190
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795652196
+    },
+    {
+      "kind": "SELL",
+      "symbol": "AKEUSDT",
+      "tf": "15m",
+      "gap": 1.63,
+      "ts": 1795652209
     }
   ],
   "trades": [
@@ -1443,14 +1443,27 @@
       "px": 0.0008289,
       "pnl": -0.24,
       "tf": "15m"
+    },
+    {
+      "symbol": "MOCAUSDT",
+      "side": "SELL",
+      "entry": 0.006059,
+      "tp": 0.005907525,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.006059,
+      "pnl": -0.24,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1795651554,
   "realized": 0,
   "closed_n": 0,
-  "open_upnl": -0.72,
-  "equity": 999.28,
+  "open_upnl": -0.96,
+  "equity": 999.04,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
