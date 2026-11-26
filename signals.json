@@ -1,29 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795655767,
+  "updated_at": 1795655852,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "XAUTUSDT",
-      "tf": "5m",
-      "gap": 0.07,
-      "ts": 1795647979
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795647998
-    },
-    {
-      "kind": "SELL",
-      "symbol": "XAUTUSDT",
-      "tf": "5m",
-      "gap": 0.11,
-      "ts": 1795648206
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1381,27 @@
       "tf": "15m",
       "gap": 1.76,
       "ts": 1795655767
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795655774
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795655819
+    },
+    {
+      "kind": "SELL",
+      "symbol": "PROMUSDT",
+      "tf": "15m",
+      "gap": 1.02,
+      "ts": 1795655852
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 0.0008222,
-      "pnl": 1.8188,
+      "px": 0.0008241,
+      "pnl": 0.4382,
       "tf": "15m"
     },
     {
@@ -1427,8 +1427,8 @@
       "pele": 3,
       "margin": 70.0,
       "lev": 20,
-      "px": 0.006099,
-      "pnl": 0.4587,
+      "px": 0.006121,
+      "pnl": -4.5835,
       "tf": "15m"
     },
     {
@@ -1440,17 +1440,30 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 49.26,
-      "pnl": 0.5285,
+      "px": 49.07,
+      "pnl": 1.2969,
       "tf": "1h"
+    },
+    {
+      "symbol": "AKEUSDT",
+      "side": "SELL",
+      "entry": 0.002106,
+      "tp": 0.00205335,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.00217,
+      "pnl": -6.3179,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1795651554,
   "realized": -59.9223,
   "closed_n": 7,
-  "open_upnl": 2.806,
-  "equity": 942.8837,
+  "open_upnl": -9.1663,
+  "equity": 930.9114,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
