@@ -167,6 +167,31 @@
       "last_leg_candle_ts": 1795721400,
       "dry_run": true,
       "order_id": "PAPER-IDOLUSDT-1795720652"
+    },
+    {
+      "symbol": "NESUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.2889,
+      "qty": 692.2811,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.28167749999999997,
+      "tf": "15m",
+      "opened_at": 1795721565,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.2889,
+          "ts": 1795721565
+        }
+      ],
+      "entry_candle_ts": 1795721400,
+      "last_leg_candle_ts": 1795721400,
+      "dry_run": true,
+      "order_id": "PAPER-NESUSDT-1795721565"
     }
   ],
   "trade_history": [
@@ -6724,16 +6749,6 @@
   ],
   "pending": [
     {
-      "symbol": "EWZSUSDT",
-      "tf": "15m",
-      "candle_ts": 1795529700,
-      "side": "SELL",
-      "upper": 10.186727467915155,
-      "open": 10.149,
-      "reported": true,
-      "filled": false
-    },
-    {
       "symbol": "MMTUSDT",
       "tf": "15m",
       "candle_ts": 1795529700,
@@ -9715,6 +9730,15 @@
       "candle_ts": 1795721400,
       "side": "SELL",
       "upper": 0.018347186519173664,
+      "open": 0.018469,
+      "reported": false
+    },
+    {
+      "symbol": "IDOLUSDT",
+      "tf": "15m",
+      "candle_ts": 1795721400,
+      "side": "SELL",
+      "upper": 0.018378651860660872,
       "open": 0.018469,
       "reported": false
     }
