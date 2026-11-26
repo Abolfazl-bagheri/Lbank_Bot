@@ -135,35 +135,6 @@
       "order_id": "PAPER-MUSDT-1795665776"
     },
     {
-      "symbol": "BULLAUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.042186224675169935,
-      "qty": 14222.6522,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.041131569058290685,
-      "tf": "4h",
-      "opened_at": 1795678220,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.04238,
-          "ts": 1795678220
-        },
-        {
-          "px": 0.04209,
-          "ts": 1795680069
-        }
-      ],
-      "entry_candle_ts": 1795678200,
-      "last_leg_candle_ts": 1795680000,
-      "dry_run": true,
-      "order_id": "PAPER-BULLAUSDT-1795678220"
-    },
-    {
       "symbol": "BUSDT",
       "side": "SELL",
       "status": "open",
@@ -187,39 +158,34 @@
       "last_leg_candle_ts": 1795680000,
       "dry_run": true,
       "order_id": "PAPER-BUSDT-1795680130"
-    }
-  ],
-  "trade_history": [
+    },
     {
-      "symbol": "ZKCUSDT",
+      "symbol": "STBLUSDT",
       "side": "SELL",
-      "status": "closed",
-      "entry": 0.03004,
-      "qty": 6657.7896,
+      "status": "open",
+      "entry": 0.0207,
+      "qty": 9661.8357,
       "margin": 10.0,
       "leverage": 20,
-      "tp_price": 0.029289,
-      "tf": "1h",
-      "opened_at": 1794996059,
+      "tp_price": 0.0201825,
+      "tf": "15m",
+      "opened_at": 1795705262,
       "adds": 0,
       "last_leg_margin": 10.0,
       "used_res_levels": [],
       "steps": [
         {
-          "px": 0.03004,
-          "ts": 1794996059
+          "px": 0.0207,
+          "ts": 1795705262
         }
       ],
-      "entry_candle_ts": 1794996000,
-      "last_leg_candle_ts": 1794996000,
+      "entry_candle_ts": 1795705200,
+      "last_leg_candle_ts": 1795705200,
       "dry_run": true,
-      "order_id": "PAPER-ZKCUSDT-1794996059",
-      "closed_at": 1794998438,
-      "close_px": 0.02917,
-      "pnl_usdt": 5.79227696404793,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
+      "order_id": "PAPER-STBLUSDT-1795705262"
+    }
+  ],
+  "trade_history": [
     {
       "symbol": "PIPPINUSDT",
       "side": "SELL",
@@ -6740,6 +6706,40 @@
       "pnl_usdt": 6.775138301334192,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "BULLAUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.042186224675169935,
+      "qty": 14222.6522,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 0.041131569058290685,
+      "tf": "4h",
+      "opened_at": 1795678220,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.04238,
+          "ts": 1795678220
+        },
+        {
+          "px": 0.04209,
+          "ts": 1795680069
+        }
+      ],
+      "entry_candle_ts": 1795678200,
+      "last_leg_candle_ts": 1795680000,
+      "dry_run": true,
+      "order_id": "PAPER-BULLAUSDT-1795678220",
+      "closed_at": 1795704989,
+      "close_px": 0.04891,
+      "pnl_usdt": -95.62991772697161,
+      "close_reason": "STOP",
+      "why": "STOP"
     }
   ],
   "pending": [
@@ -10082,7 +10082,7 @@
     "ARROWUSDT": 1795725219,
     "SIMOUSDT": 1795725261
   },
-  "last_trade_report_ts": 1795682423,
+  "last_trade_report_ts": 1795704990,
   "last_known_version": "2.10.0",
   "lessons": [
     {
