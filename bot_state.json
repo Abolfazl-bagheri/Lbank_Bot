@@ -214,23 +214,29 @@
       "side": "SELL",
       "status": "open",
       "entry": 0.02137,
-      "qty": 9358.9144,
-      "margin": 10.0,
+      "qty": 28076.7431,
+      "margin": 30.0,
       "leverage": 20,
       "tp_price": 0.02083575,
       "tf": "1h",
       "opened_at": 1795708913,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.02142
+      ],
       "steps": [
         {
           "px": 0.02137,
           "ts": 1795708913
+        },
+        {
+          "px": 0.02137,
+          "ts": 1795709152
         }
       ],
       "entry_candle_ts": 1795708800,
-      "last_leg_candle_ts": 1795708800,
+      "last_leg_candle_ts": 1795709152,
       "dry_run": true,
       "order_id": "PAPER-STBLUSDT-1795708913"
     }
@@ -6794,26 +6800,6 @@
   ],
   "pending": [
     {
-      "symbol": "EWTUSDT",
-      "tf": "15m",
-      "candle_ts": 1795514400,
-      "side": "LONG",
-      "upper": 90.13296883982096,
-      "open": 89.28,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "MUUUSDT",
-      "tf": "1h",
-      "candle_ts": 1795514400,
-      "side": "LONG",
-      "upper": 13.983252180913894,
-      "open": 11.91,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "ARTYUSDT",
       "tf": "15m",
       "candle_ts": 1795514400,
@@ -9590,7 +9576,8 @@
       "side": "SELL",
       "upper": 0.040452976775158835,
       "open": 0.041856,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "ZCATUSDT",
@@ -9609,7 +9596,8 @@
       "side": "SELL",
       "upper": 0.8514455480288753,
       "open": 0.8554,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "BUSDT",
@@ -9618,7 +9606,8 @@
       "side": "SELL",
       "upper": 0.09735398843324965,
       "open": 0.0991,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "HMSTRUSDT",
@@ -9677,7 +9666,8 @@
       "side": "SELL",
       "upper": 0.017829585246200066,
       "open": 0.01803,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "STBLUSDT",
@@ -9686,7 +9676,8 @@
       "side": "SELL",
       "upper": 0.020382163645101457,
       "open": 0.02076,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CRCLUSDT",
@@ -9783,6 +9774,24 @@
       "side": "SELL",
       "upper": 0.11268174447578687,
       "open": 0.11348,
+      "reported": false
+    },
+    {
+      "symbol": "STBLUSDT",
+      "tf": "1h",
+      "candle_ts": 1795708800,
+      "side": "SELL",
+      "upper": 0.020932898794503073,
+      "open": 0.02136,
+      "reported": false
+    },
+    {
+      "symbol": "STBLUSDT",
+      "tf": "4h",
+      "candle_ts": 1795708800,
+      "side": "SELL",
+      "upper": 0.02088942228085303,
+      "open": 0.02136,
       "reported": false
     }
   ],
@@ -10138,56 +10147,14 @@
     "PIPEDOGUSDT": 1795748680,
     "CZUSDT": 1795748681,
     "MANCERUSDT": 1795748683,
-    "IRENONUSDT": 1795749393
+    "IRENONUSDT": 1795749393,
+    "TQQQUSDT": 1795752214,
+    "1000000BABYDOGEUSDT": 1795752324,
+    "HOTUSDT": 1795752325
   },
   "last_trade_report_ts": 1795708040,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795428193,
-      "kind": "gap_result",
-      "symbol": "HUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795428196,
-      "kind": "gap_result",
-      "symbol": "CYSUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795428198,
-      "kind": "gap_result",
-      "symbol": "MUBARAKUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795431797,
-      "kind": "gap_result",
-      "symbol": "ARIAUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795431800,
-      "kind": "gap_result",
-      "symbol": "VELVETUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795431802,
       "kind": "gap_result",
@@ -13739,6 +13706,51 @@
       "kind": "gap_result",
       "symbol": "RAMUSDT",
       "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795709138,
+      "kind": "gap_result",
+      "symbol": "BULLAUSDT",
+      "tf": "4h",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
+    },
+    {
+      "ts": 1795709140,
+      "kind": "gap_result",
+      "symbol": "MUSDT",
+      "tf": "4h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795709142,
+      "kind": "gap_result",
+      "symbol": "BUSDT",
+      "tf": "4h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795709144,
+      "kind": "gap_result",
+      "symbol": "2ZUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795709146,
+      "kind": "gap_result",
+      "symbol": "STBLUSDT",
+      "tf": "1h",
       "gap": 0.0,
       "filled": true,
       "note": "filled"
