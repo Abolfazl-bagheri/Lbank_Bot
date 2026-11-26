@@ -65,6 +65,31 @@
       "last_leg_candle_ts": 1795653000,
       "dry_run": true,
       "order_id": "PAPER-MOCAUSDT-1795652191"
+    },
+    {
+      "symbol": "MOVEUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.006305,
+      "qty": 31720.8565,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.006147375,
+      "tf": "1h",
+      "opened_at": 1795654822,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.006305,
+          "ts": 1795654822
+        }
+      ],
+      "entry_candle_ts": 1795654800,
+      "last_leg_candle_ts": 1795654800,
+      "dry_run": true,
+      "order_id": "PAPER-MOVEUSDT-1795654822"
     }
   ],
   "trade_history": [
@@ -6622,16 +6647,6 @@
   ],
   "pending": [
     {
-      "symbol": "SILVERUSDT",
-      "tf": "5m",
-      "candle_ts": 1795435800,
-      "side": "LONG",
-      "upper": 42.78354099715735,
-      "open": 42.51,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "XAUTUSDT",
       "tf": "5m",
       "candle_ts": 1795435800,
@@ -9604,6 +9619,15 @@
       "upper": 0.047775276872036254,
       "open": 0.04844,
       "reported": false
+    },
+    {
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
+      "candle_ts": 1795654500,
+      "side": "LONG",
+      "upper": 3585.216742666214,
+      "open": 3562.72,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -9960,7 +9984,7 @@
     "NIULAIUSDT": 1795694598,
     "SYNUSDT": 1795694599
   },
-  "last_trade_report_ts": 1795653367,
+  "last_trade_report_ts": 1795654532,
   "last_known_version": "2.10.0",
   "lessons": [
     {
