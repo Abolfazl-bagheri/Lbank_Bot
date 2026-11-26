@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795721555,
+  "updated_at": 1795721563,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795710079
-    },
-    {
-      "kind": "HEARTBEAT",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795710079
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "15m",
       "gap": 1.82,
       "ts": 1795721555
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795721560
+    },
+    {
+      "kind": "SELL",
+      "symbol": "NESUSDT",
+      "tf": "15m",
+      "gap": 2.68,
+      "ts": 1795721563
     }
   ],
   "trades": [
@@ -1460,14 +1460,14 @@
     {
       "symbol": "IDOLUSDT",
       "side": "SELL",
-      "entry": 0.018188,
-      "tp": 0.0177333,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
+      "entry": 0.018539242050108068,
+      "tp": 0.018075760998855366,
+      "adds": 1,
+      "pele": 2,
+      "margin": 30.0,
       "lev": 20,
       "px": 0.01872,
-      "pnl": -6.09,
+      "pnl": -6.57,
       "tf": "15m"
     }
   ],
@@ -1475,8 +1475,8 @@
   "session_start": 1795651554,
   "realized": -86.2716,
   "closed_n": 26,
-  "open_upnl": 0.0493,
-  "equity": 913.7777,
+  "open_upnl": -0.4307,
+  "equity": 913.2977,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
