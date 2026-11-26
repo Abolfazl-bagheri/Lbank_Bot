@@ -6705,16 +6705,6 @@
   ],
   "pending": [
     {
-      "symbol": "GILDUSDT",
-      "tf": "15m",
-      "candle_ts": 1795531500,
-      "side": "SELL",
-      "upper": 170.63862348045075,
-      "open": 170.61,
-      "reported": true,
-      "filled": false
-    },
-    {
       "symbol": "XAUTUSDT",
       "tf": "5m",
       "candle_ts": 1795552500,
@@ -9675,7 +9665,8 @@
       "side": "LONG",
       "upper": 18.819834147164897,
       "open": 18.5,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "XAUTUSDT",
@@ -9684,7 +9675,8 @@
       "side": "LONG",
       "upper": 3573.6251224782573,
       "open": 3562.56,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "XAUTUSDT",
@@ -9693,6 +9685,16 @@
       "side": "LONG",
       "upper": 3573.5874984556035,
       "open": 3562.56,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "PBRUSDT",
+      "tf": "15m",
+      "candle_ts": 1795736700,
+      "side": "SELL",
+      "upper": 17.028253087374342,
+      "open": 17.25,
       "reported": false
     }
   ],
@@ -10051,38 +10053,12 @@
     "NIULAIUSDT": 1795766538,
     "UP2USDT": 1795767362,
     "ARGUSUSDT": 1795768355,
-    "GOATSEUSUSDT": 1795779209
+    "GOATSEUSUSDT": 1795779209,
+    "SAFE1USDT": 1795780009
   },
   "last_trade_report_ts": 1795736020,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795478758,
-      "kind": "gap_result",
-      "symbol": "TAUSDT",
-      "tf": "4h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795478761,
-      "kind": "gap_result",
-      "symbol": "ARIAUSDT",
-      "tf": "4h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795478764,
-      "kind": "gap_result",
-      "symbol": "PROMUSDT",
-      "tf": "4h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795478769,
       "kind": "gap_result",
@@ -13651,6 +13627,33 @@
       "ts": 1795725108,
       "kind": "gap_result",
       "symbol": "CLAUDIAUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795736509,
+      "kind": "gap_result",
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795736512,
+      "kind": "gap_result",
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795736819,
+      "kind": "gap_result",
+      "symbol": "SOFTBANKUSDT",
       "tf": "15m",
       "gap": 0.0,
       "filled": true,
