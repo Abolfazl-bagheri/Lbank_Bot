@@ -95,6 +95,31 @@
       "last_leg_candle_ts": 1795654800,
       "dry_run": true,
       "order_id": "PAPER-KIOXIAUSDT-1795654868"
+    },
+    {
+      "symbol": "SILVERUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 42.21,
+      "qty": 4.7382,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 41.15475,
+      "tf": "15m",
+      "opened_at": 1795661221,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 42.21,
+          "ts": 1795661221
+        }
+      ],
+      "entry_candle_ts": 1795661100,
+      "last_leg_candle_ts": 1795661100,
+      "dry_run": true,
+      "order_id": "PAPER-SILVERUSDT-1795661221"
     }
   ],
   "trade_history": [
@@ -6646,26 +6671,6 @@
   ],
   "pending": [
     {
-      "symbol": "RAMUSDT",
-      "tf": "15m",
-      "candle_ts": 1795474800,
-      "side": "SELL",
-      "upper": 4.866994947377268,
-      "open": 4.822,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "FLNCUSDT",
-      "tf": "1h",
-      "candle_ts": 1795474800,
-      "side": "SELL",
-      "upper": 4.314329726291876,
-      "open": 4.358,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "SILVERUSDT",
       "tf": "5m",
       "candle_ts": 1795475100,
@@ -9626,6 +9631,24 @@
       "upper": 3593.681994998832,
       "open": 3557.02,
       "reported": false
+    },
+    {
+      "symbol": "MANTRAUSDT",
+      "tf": "15m",
+      "candle_ts": 1795661100,
+      "side": "LONG",
+      "upper": 0.0036922184523883917,
+      "open": 0.002668,
+      "reported": false
+    },
+    {
+      "symbol": "SLXUSDT",
+      "tf": "15m",
+      "candle_ts": 1795661100,
+      "side": "SELL",
+      "upper": 0.03673840740430208,
+      "open": 0.0372,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -9982,7 +10005,7 @@
     "TRUMPSOLUSDT": 1795698304,
     "MURATAUSDT": 1795698991
   },
-  "last_trade_report_ts": 1795657287,
+  "last_trade_report_ts": 1795660916,
   "last_known_version": "2.10.0",
   "lessons": [
     {
