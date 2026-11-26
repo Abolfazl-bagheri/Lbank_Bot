@@ -9684,7 +9684,8 @@
       "side": "LONG",
       "upper": 0.33864689073227733,
       "open": 0.278,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "BIRBUSDT",
@@ -9693,7 +9694,8 @@
       "side": "SELL",
       "upper": 0.05849668242451989,
       "open": 0.05933,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "MMTUSDT",
@@ -9702,7 +9704,8 @@
       "side": "LONG",
       "upper": 0.3393820412100085,
       "open": 0.278,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "BIRBUSDT",
@@ -9711,7 +9714,8 @@
       "side": "SELL",
       "upper": 0.05838240705562216,
       "open": 0.05933,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "PROSUSDT",
@@ -9720,7 +9724,8 @@
       "side": "SELL",
       "upper": 0.7172187216709245,
       "open": 0.7128,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -10079,51 +10084,6 @@
   "last_trade_report_ts": 1795668026,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795400260,
-      "kind": "gap_result",
-      "symbol": "UNITREEUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
-    {
-      "ts": 1795401146,
-      "kind": "gap_result",
-      "symbol": "ELSAUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795402029,
-      "kind": "gap_result",
-      "symbol": "EWZSUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795415550,
-      "kind": "gap_result",
-      "symbol": "ZESTUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795415553,
-      "kind": "gap_result",
-      "symbol": "EWZSUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795415555,
       "kind": "gap_result",
@@ -13678,6 +13638,51 @@
       "gap": 0.0,
       "filled": false,
       "note": "miss"
+    },
+    {
+      "ts": 1795668435,
+      "kind": "gap_result",
+      "symbol": "MMTUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795668438,
+      "kind": "gap_result",
+      "symbol": "BIRBUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795668449,
+      "kind": "gap_result",
+      "symbol": "MMTUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795668460,
+      "kind": "gap_result",
+      "symbol": "BIRBUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795668463,
+      "kind": "gap_result",
+      "symbol": "PROSUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
     }
   ],
   "tune_history": [],
