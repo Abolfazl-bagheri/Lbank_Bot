@@ -6702,16 +6702,6 @@
   ],
   "pending": [
     {
-      "symbol": "XAUTUSDT",
-      "tf": "5m",
-      "candle_ts": 1795476900,
-      "side": "LONG",
-      "upper": 3633.0572869377565,
-      "open": 3623.68,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "INXUSDT",
       "tf": "15m",
       "candle_ts": 1795477500,
@@ -9686,6 +9676,16 @@
       "side": "SELL",
       "upper": 0.08814701667797822,
       "open": 0.08764,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "ELSAUSDT",
+      "tf": "15m",
+      "candle_ts": 1795664700,
+      "side": "SELL",
+      "upper": 0.10064618991571272,
+      "open": 0.10596,
       "reported": false
     }
   ],
@@ -10044,15 +10044,6 @@
   "last_trade_report_ts": 1795664150,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795397590,
-      "kind": "gap_result",
-      "symbol": "CYPHUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795398481,
       "kind": "gap_result",
@@ -13639,6 +13630,15 @@
       "ts": 1795662271,
       "kind": "gap_result",
       "symbol": "SLXUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795664883,
+      "kind": "gap_result",
+      "symbol": "ELSAUSDT",
       "tf": "15m",
       "gap": 0.0,
       "filled": true,
