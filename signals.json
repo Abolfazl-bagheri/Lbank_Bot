@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795651258,
+  "updated_at": 1795651270,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "CFGUSDT",
-      "tf": "15m",
-      "gap": 2.16,
-      "ts": 1795640431
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795640438
-    },
     {
       "kind": "SELL",
       "symbol": "BULLAUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "4h",
       "gap": 2.07,
       "ts": 1795651258
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795651266
+    },
+    {
+      "kind": "SELL",
+      "symbol": "NESUSDT",
+      "tf": "4h",
+      "gap": 5.28,
+      "ts": 1795651270
     }
   ],
   "trades": [
@@ -1469,14 +1469,27 @@
       "px": 0.1181,
       "pnl": 2.4334,
       "tf": "1h"
+    },
+    {
+      "symbol": "MANTRAUSDT",
+      "side": "SELL",
+      "entry": 0.003152,
+      "tp": 0.0030732,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.003152,
+      "pnl": -0.24,
+      "tf": "4h"
     }
   ],
   "start": 1000.0,
   "session_start": 1795565212,
   "realized": 5.9739,
   "closed_n": 29,
-  "open_upnl": -65.7068,
-  "equity": 940.2671,
+  "open_upnl": -65.9468,
+  "equity": 940.0271,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
