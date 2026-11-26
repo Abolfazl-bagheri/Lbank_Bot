@@ -6709,16 +6709,6 @@
   ],
   "pending": [
     {
-      "symbol": "UMCUSDT",
-      "tf": "15m",
-      "candle_ts": 1795482900,
-      "side": "SELL",
-      "upper": 14.774144592081331,
-      "open": 14.83,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "CRCLUSDT",
       "tf": "15m",
       "candle_ts": 1795482900,
@@ -9670,7 +9660,8 @@
       "side": "SELL",
       "upper": 0.039168383139439024,
       "open": 0.039757,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "STOUSDT",
@@ -9679,7 +9670,8 @@
       "side": "SELL",
       "upper": 0.023575154029179236,
       "open": 0.02382,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "SILVERUSDT",
@@ -9700,6 +9692,15 @@
       "open": 42.36,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "CHRUSDT",
+      "tf": "15m",
+      "candle_ts": 1795671900,
+      "side": "SELL",
+      "upper": 0.013222677531547572,
+      "open": 0.01321,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -10059,24 +10060,6 @@
   "last_trade_report_ts": 1795671676,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795417407,
-      "kind": "gap_result",
-      "symbol": "ZHIPUUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795417412,
-      "kind": "gap_result",
-      "symbol": "MINIMAXUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795417415,
       "kind": "gap_result",
@@ -13655,6 +13638,24 @@
       "kind": "gap_result",
       "symbol": "SILVERUSDT",
       "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795672031,
+      "kind": "gap_result",
+      "symbol": "BULLAUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795672040,
+      "kind": "gap_result",
+      "symbol": "STOUSDT",
+      "tf": "15m",
       "gap": 0.0,
       "filled": true,
       "note": "filled"
