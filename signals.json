@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795652158,
+  "updated_at": 1795652174,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795641966
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795641992
-    },
     {
       "kind": "HEARTBEAT",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "15m",
       "gap": 1.52,
       "ts": 1795652158
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795652163
+    },
+    {
+      "kind": "SELL",
+      "symbol": "VANAUSDT",
+      "tf": "15m",
+      "gap": 1.21,
+      "ts": 1795652174
     }
   ],
   "trades": [
@@ -1430,14 +1430,27 @@
       "px": 0.04195,
       "pnl": -0.24,
       "tf": "15m"
+    },
+    {
+      "symbol": "CKBUSDT",
+      "side": "SELL",
+      "entry": 0.0008289,
+      "tp": 0.0008081775,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.0008289,
+      "pnl": -0.24,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1795651554,
   "realized": 0,
   "closed_n": 0,
-  "open_upnl": -0.48,
-  "equity": 999.52,
+  "open_upnl": -0.72,
+  "equity": 999.28,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
