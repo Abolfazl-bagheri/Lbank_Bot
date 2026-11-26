@@ -127,64 +127,9 @@
       "last_leg_candle_ts": 1795666051,
       "dry_run": true,
       "order_id": "PAPER-MUSDT-1795665776"
-    },
-    {
-      "symbol": "EVAAUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 3.1247,
-      "qty": 64.0061,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 3.0465824999999995,
-      "tf": "15m",
-      "opened_at": 1795674759,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 3.1247,
-          "ts": 1795674759
-        }
-      ],
-      "entry_candle_ts": 1795674600,
-      "last_leg_candle_ts": 1795674600,
-      "dry_run": true,
-      "order_id": "PAPER-EVAAUSDT-1795674759"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "PIPPINUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.0164,
-      "qty": 12195.122,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.01599,
-      "tf": "1h",
-      "opened_at": 1794992452,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.0164,
-          "ts": 1794992452
-        }
-      ],
-      "entry_candle_ts": 1794992400,
-      "last_leg_candle_ts": 1794992400,
-      "dry_run": true,
-      "order_id": "PAPER-PIPPINUSDT-1794992452",
-      "closed_at": 1794995223,
-      "close_px": 0.01713,
-      "pnl_usdt": -8.902439024390219,
-      "close_reason": "STOP",
-      "why": "STOP"
-    },
     {
       "symbol": "PIPPINUSDT",
       "side": "SELL",
@@ -6705,6 +6650,36 @@
       "pnl_usdt": 7.37068965517242,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "EVAAUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 3.1247,
+      "qty": 64.0061,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 3.0465824999999995,
+      "tf": "15m",
+      "opened_at": 1795674759,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 3.1247,
+          "ts": 1795674759
+        }
+      ],
+      "entry_candle_ts": 1795674600,
+      "last_leg_candle_ts": 1795674600,
+      "dry_run": true,
+      "order_id": "PAPER-EVAAUSDT-1795674759",
+      "closed_at": 1795674975,
+      "close_px": 2.9721,
+      "pnl_usdt": 9.767337664415761,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -10024,7 +9999,6 @@
     "ATMUSDT": 1795646082,
     "PORTALUSDT": 1795651456,
     "APEXUSDT": 1795652213,
-    "SKY1USDT": 1795652336,
     "XTIUSDT": 1795653243,
     "ARGUSDT": 1795680294,
     "APROUSDT": 1795680342,
