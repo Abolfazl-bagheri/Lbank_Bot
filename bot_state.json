@@ -9690,7 +9690,8 @@
       "side": "LONG",
       "upper": 3.768,
       "open": 3.768,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "AKEUSDT",
@@ -9699,7 +9700,8 @@
       "side": "LONG",
       "upper": 0.0015314054857276226,
       "open": 0.0013641,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "RAMUSDT",
@@ -9708,7 +9710,8 @@
       "side": "LONG",
       "upper": 3.768,
       "open": 3.768,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -10065,36 +10068,9 @@
     "MANCERUSDT": 1795748683,
     "IRENONUSDT": 1795749393
   },
-  "last_trade_report_ts": 1795707134,
+  "last_trade_report_ts": 1795708040,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795427203,
-      "kind": "gap_result",
-      "symbol": "MSTUUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795427206,
-      "kind": "gap_result",
-      "symbol": "TRUTHUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
-    {
-      "ts": 1795427209,
-      "kind": "gap_result",
-      "symbol": "MSTUUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795428193,
       "kind": "gap_result",
@@ -13663,6 +13639,33 @@
       "ts": 1795707129,
       "kind": "gap_result",
       "symbol": "CRCLUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795708031,
+      "kind": "gap_result",
+      "symbol": "RAMUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795708033,
+      "kind": "gap_result",
+      "symbol": "AKEUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795708035,
+      "kind": "gap_result",
+      "symbol": "RAMUSDT",
       "tf": "15m",
       "gap": 0.0,
       "filled": true,
