@@ -194,6 +194,31 @@
       "last_leg_candle_ts": 1795709498,
       "dry_run": true,
       "order_id": "PAPER-AIOTUSDT-1795708847"
+    },
+    {
+      "symbol": "BULLAUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.06324,
+      "qty": 3162.5553,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.061659000000000005,
+      "tf": "15m",
+      "opened_at": 1795711528,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.06324,
+          "ts": 1795711528
+        }
+      ],
+      "entry_candle_ts": 1795711500,
+      "last_leg_candle_ts": 1795711500,
+      "dry_run": true,
+      "order_id": "PAPER-BULLAUSDT-1795711528"
     }
   ],
   "trade_history": [
@@ -6761,16 +6786,6 @@
   ],
   "pending": [
     {
-      "symbol": "ARTYUSDT",
-      "tf": "1h",
-      "candle_ts": 1795514400,
-      "side": "LONG",
-      "upper": 60.70163776740466,
-      "open": 60.65,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "SKUUUSDT",
       "tf": "1h",
       "candle_ts": 1795514400,
@@ -9750,6 +9765,15 @@
       "side": "LONG",
       "upper": 1.4735429140735483,
       "open": 1.465,
+      "reported": false
+    },
+    {
+      "symbol": "INITUSDT",
+      "tf": "15m",
+      "candle_ts": 1795711500,
+      "side": "SELL",
+      "upper": 0.14427892518422514,
+      "open": 0.1458,
       "reported": false
     }
   ],
