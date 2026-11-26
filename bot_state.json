@@ -6738,16 +6738,6 @@
   ],
   "pending": [
     {
-      "symbol": "CRCLUSDT",
-      "tf": "5m",
-      "candle_ts": 1795511400,
-      "side": "LONG",
-      "upper": 51.0415084826796,
-      "open": 49.89,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "NVDLUSDT",
       "tf": "15m",
       "candle_ts": 1795511700,
@@ -9344,7 +9334,8 @@
       "side": "SELL",
       "upper": 0.03641829842810555,
       "open": 0.0368,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "MOVEUSDT",
@@ -9353,7 +9344,8 @@
       "side": "SELL",
       "upper": 0.005481048851418779,
       "open": 0.00569,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "LAYERUSDT",
@@ -9362,7 +9354,8 @@
       "side": "SELL",
       "upper": 0.0465102649302248,
       "open": 0.04713,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "MUSDT",
@@ -9371,7 +9364,8 @@
       "side": "SELL",
       "upper": 0.8367675043007908,
       "open": 0.847,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "MMTUSDT",
@@ -9650,7 +9644,8 @@
       "side": "SELL",
       "upper": 3.025099697727712,
       "open": 3.0731,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ZCATUSDT",
@@ -9727,6 +9722,15 @@
       "side": "SELL",
       "upper": 0.8514455480288753,
       "open": 0.8554,
+      "reported": false
+    },
+    {
+      "symbol": "BUSDT",
+      "tf": "4h",
+      "candle_ts": 1795680000,
+      "side": "SELL",
+      "upper": 0.09735398843324965,
+      "open": 0.0991,
       "reported": false
     }
   ],
@@ -10052,13 +10056,9 @@
     "PORTALUSDT": 1795651456,
     "APEXUSDT": 1795652213,
     "XTIUSDT": 1795653243,
-    "ARGUSDT": 1795680294,
-    "APROUSDT": 1795680342,
     "GOATSEUSUSDT": 1795680400,
     "TSTUSDT": 1795680316,
     "XVGUSDT": 1795680340,
-    "HOTUSDT": 1795680399,
-    "1000000BABYDOGEUSDT": 1795680400,
     "AMCUSDT": 1795681001,
     "ARROWUSDT": 1795681889,
     "PORUSDT": 1795681903,
@@ -10082,56 +10082,14 @@
     "HAJIMIUSDT": 1795709068,
     "RGTIUSDT": 1795713415,
     "OROCHIUSDT": 1795717003,
-    "FRONGUSDT": 1795718052
+    "FRONGUSDT": 1795718052,
+    "UP2USDT": 1795723521,
+    "ADISTOCKUSDT": 1795723431,
+    "AMDLUSDT": 1795723489
   },
-  "last_trade_report_ts": 1795679274,
+  "last_trade_report_ts": 1795680405,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795421836,
-      "kind": "gap_result",
-      "symbol": "SILVERUSDT",
-      "tf": "5m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795422702,
-      "kind": "gap_result",
-      "symbol": "CYSUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795424615,
-      "kind": "gap_result",
-      "symbol": "ARIAUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795424618,
-      "kind": "gap_result",
-      "symbol": "TAUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795424628,
-      "kind": "gap_result",
-      "symbol": "HUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795424632,
       "kind": "gap_result",
@@ -13686,6 +13644,51 @@
       "gap": 0.0,
       "filled": false,
       "note": "miss"
+    },
+    {
+      "ts": 1795680361,
+      "kind": "gap_result",
+      "symbol": "BULLAUSDT",
+      "tf": "4h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795680367,
+      "kind": "gap_result",
+      "symbol": "MOVEUSDT",
+      "tf": "4h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795680374,
+      "kind": "gap_result",
+      "symbol": "LAYERUSDT",
+      "tf": "4h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795680378,
+      "kind": "gap_result",
+      "symbol": "MUSDT",
+      "tf": "4h",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
+    },
+    {
+      "ts": 1795680397,
+      "kind": "gap_result",
+      "symbol": "EVAAUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
     }
   ],
   "tune_history": [],
