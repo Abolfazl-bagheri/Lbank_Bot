@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795676450,
+  "updated_at": 1795676495,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "MOCAUSDT",
-      "tf": "4h",
-      "gap": 2.56,
-      "ts": 1795664531
-    },
-    {
-      "kind": "GAP",
-      "symbol": "MUSDT",
-      "tf": "4h",
-      "gap": 2.38,
-      "ts": 1795664534
-    },
     {
       "kind": "GAP",
       "symbol": "AIXBTUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "1h",
       "gap": 1.56,
       "ts": 1795676450
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795676457
+    },
+    {
+      "kind": "SELL",
+      "symbol": "ZCATUSDT",
+      "tf": "15m",
+      "gap": 1.35,
+      "ts": 1795676495
     }
   ],
   "trades": [
@@ -1456,14 +1456,27 @@
       "px": 0.8505,
       "pnl": -0.9317,
       "tf": "4h"
+    },
+    {
+      "symbol": "EVAAUSDT",
+      "side": "SELL",
+      "entry": 3.073,
+      "tp": 2.996175,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 3.073,
+      "pnl": -0.24,
+      "tf": "1h"
     }
   ],
   "start": 1000.0,
   "session_start": 1795651554,
   "realized": 5.3341,
   "closed_n": 16,
-  "open_upnl": 17.8574,
-  "equity": 1023.1915,
+  "open_upnl": 17.6174,
+  "equity": 1022.9515,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
