@@ -107,17 +107,18 @@
       "symbol": "MUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.8502,
-      "qty": 705.7163,
-      "margin": 30.0,
+      "entry": 0.8457828551055561,
+      "qty": 1655.2712000000001,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 0.8289449999999999,
+      "tp_price": 0.8246382837279171,
       "tf": "4h",
       "opened_at": 1795665776,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [
-        0.8535
+        0.8535,
+        0.8438
       ],
       "steps": [
         {
@@ -127,10 +128,14 @@
         {
           "px": 0.8502,
           "ts": 1795666051
+        },
+        {
+          "px": 0.8425,
+          "ts": 1795711215
         }
       ],
       "entry_candle_ts": 1795665600,
-      "last_leg_candle_ts": 1795666051,
+      "last_leg_candle_ts": 1795711215,
       "dry_run": true,
       "order_id": "PAPER-MUSDT-1795665776"
     },
@@ -10103,7 +10108,7 @@
     "HOTUSDT": 1795752325,
     "DRVUSDT": 1795754027
   },
-  "last_trade_report_ts": 1795710079,
+  "last_trade_report_ts": 1795710981,
   "last_known_version": "2.10.0",
   "lessons": [
     {
