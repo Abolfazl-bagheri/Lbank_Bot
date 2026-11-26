@@ -1,31 +1,6 @@
 {
   "open_trades": [
     {
-      "symbol": "MEUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.04195,
-      "qty": 4767.5805,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.04090125,
-      "tf": "15m",
-      "opened_at": 1795652130,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.04195,
-          "ts": 1795652130
-        }
-      ],
-      "entry_candle_ts": 1795652100,
-      "last_leg_candle_ts": 1795652100,
-      "dry_run": true,
-      "order_id": "PAPER-MEUSDT-1795652130"
-    },
-    {
       "symbol": "CKBUSDT",
       "side": "SELL",
       "status": "open",
@@ -143,36 +118,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "FHEUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.01659,
-      "qty": 12055.4551,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.01617525,
-      "tf": "1h",
-      "opened_at": 1794981691,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.01659,
-          "ts": 1794981691
-        }
-      ],
-      "entry_candle_ts": 1794981600,
-      "last_leg_candle_ts": 1794981600,
-      "dry_run": true,
-      "order_id": "PAPER-FHEUSDT-1794981691",
-      "closed_at": 1794982858,
-      "close_px": 0.01616,
-      "pnl_usdt": 5.1838456901748025,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "BLESSUSDT",
       "side": "SELL",
@@ -6693,6 +6638,36 @@
       "pnl_usdt": -8.66425992779784,
       "close_reason": "STOP",
       "why": "STOP"
+    },
+    {
+      "symbol": "MEUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.04195,
+      "qty": 4767.5805,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.04090125,
+      "tf": "15m",
+      "opened_at": 1795652130,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.04195,
+          "ts": 1795652130
+        }
+      ],
+      "entry_candle_ts": 1795652100,
+      "last_leg_candle_ts": 1795652100,
+      "dry_run": true,
+      "order_id": "PAPER-MEUSDT-1795652130",
+      "closed_at": 1795653318,
+      "close_px": 0.04049,
+      "pnl_usdt": 6.960667461263423,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
