@@ -6755,26 +6755,6 @@
   ],
   "pending": [
     {
-      "symbol": "BWETUSDT",
-      "tf": "15m",
-      "candle_ts": 1795529700,
-      "side": "SELL",
-      "upper": 776.6369729312581,
-      "open": 781.46,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "EWZSUSDT",
-      "tf": "15m",
-      "candle_ts": 1795530600,
-      "side": "SELL",
-      "upper": 10.445846100811588,
-      "open": 10.596,
-      "reported": true,
-      "filled": false
-    },
-    {
       "symbol": "PIPPINUSDT",
       "tf": "15m",
       "candle_ts": 1795530600,
@@ -9727,7 +9707,8 @@
       "side": "SELL",
       "upper": 0.018347186519173664,
       "open": 0.018469,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "IDOLUSDT",
@@ -9736,7 +9717,8 @@
       "side": "SELL",
       "upper": 0.018378651860660872,
       "open": 0.018469,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "NESUSDT",
@@ -9745,6 +9727,25 @@
       "side": "SELL",
       "upper": 0.2811526960608472,
       "open": 0.2731,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "KNTQUSDT",
+      "tf": "15m",
+      "candle_ts": 1795722300,
+      "side": "SELL",
+      "upper": 0.18275822990803123,
+      "open": 0.1821,
+      "reported": false
+    },
+    {
+      "symbol": "CLAUDIAUSDT",
+      "tf": "15m",
+      "candle_ts": 1795722300,
+      "side": "SELL",
+      "upper": 0.009234075485001695,
+      "open": 0.009059,
       "reported": false
     }
   ],
@@ -10106,33 +10107,6 @@
   "last_trade_report_ts": 1795721738,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795475097,
-      "kind": "gap_result",
-      "symbol": "RAMUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795475429,
-      "kind": "gap_result",
-      "symbol": "SILVERUSDT",
-      "tf": "5m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795475853,
-      "kind": "gap_result",
-      "symbol": "RAMUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
     {
       "ts": 1795476333,
       "kind": "gap_result",
@@ -13702,6 +13676,33 @@
       "kind": "gap_result",
       "symbol": "XAUTUSDT",
       "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795722437,
+      "kind": "gap_result",
+      "symbol": "IDOLUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795722440,
+      "kind": "gap_result",
+      "symbol": "IDOLUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795722442,
+      "kind": "gap_result",
+      "symbol": "NESUSDT",
+      "tf": "15m",
       "gap": 0.0,
       "filled": true,
       "note": "filled"
