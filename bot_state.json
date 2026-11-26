@@ -6684,26 +6684,6 @@
   ],
   "pending": [
     {
-      "symbol": "CRCLUSDT",
-      "tf": "15m",
-      "candle_ts": 1795482900,
-      "side": "SELL",
-      "upper": 52.34774876753086,
-      "open": 52.46,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "ZHIPUUSDT",
-      "tf": "15m",
-      "candle_ts": 1795483800,
-      "side": "SELL",
-      "upper": 48.080821197021706,
-      "open": 48.36,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "MINIMAXUSDT",
       "tf": "15m",
       "candle_ts": 1795483800,
@@ -9616,7 +9596,8 @@
       "side": "SELL",
       "upper": 0.1081646280033515,
       "open": 0.11009,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "MMTUSDT",
@@ -9674,6 +9655,25 @@
       "candle_ts": 1795671900,
       "side": "SELL",
       "upper": 0.013222677531547572,
+      "open": 0.01321,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "BABYUSDT",
+      "tf": "1h",
+      "candle_ts": 1795672800,
+      "side": "SELL",
+      "upper": 0.009508344971287615,
+      "open": 0.0096,
+      "reported": false
+    },
+    {
+      "symbol": "CHRUSDT",
+      "tf": "15m",
+      "candle_ts": 1795672800,
+      "side": "SELL",
+      "upper": 0.01322214206777061,
       "open": 0.01321,
       "reported": false
     }
@@ -10032,27 +10032,9 @@
     "HAJIMIUSDT": 1795709068,
     "RGTIUSDT": 1795713415
   },
-  "last_trade_report_ts": 1795671676,
+  "last_trade_report_ts": 1795673030,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795417415,
-      "kind": "gap_result",
-      "symbol": "GIGADEVUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795417418,
-      "kind": "gap_result",
-      "symbol": "HK0992USDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795417420,
       "kind": "gap_result",
@@ -13630,6 +13612,24 @@
       "ts": 1795672040,
       "kind": "gap_result",
       "symbol": "STOUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795673022,
+      "kind": "gap_result",
+      "symbol": "ELSAUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795673026,
+      "kind": "gap_result",
+      "symbol": "CHRUSDT",
       "tf": "15m",
       "gap": 0.0,
       "filled": true,
