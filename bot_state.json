@@ -177,6 +177,31 @@
       "last_leg_candle_ts": 1795651200,
       "dry_run": true,
       "order_id": "PAPER-MANTRAUSDT-1795651260"
+    },
+    {
+      "symbol": "NESUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.2447,
+      "qty": 817.3273,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.2385825,
+      "tf": "4h",
+      "opened_at": 1795651271,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.2447,
+          "ts": 1795651271
+        }
+      ],
+      "entry_candle_ts": 1795651200,
+      "last_leg_candle_ts": 1795651200,
+      "dry_run": true,
+      "order_id": "PAPER-NESUSDT-1795651271"
     }
   ],
   "trade_history": [
@@ -6728,16 +6753,6 @@
   ],
   "pending": [
     {
-      "symbol": "MSTUUSDT",
-      "tf": "15m",
-      "candle_ts": 1795426200,
-      "side": "SELL",
-      "upper": 10.634264542823269,
-      "open": 10.48,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "TRUTHUSDT",
       "tf": "15m",
       "candle_ts": 1795426200,
@@ -9706,6 +9721,15 @@
       "side": "SELL",
       "upper": 2.253942378528924,
       "open": 2.321,
+      "reported": false
+    },
+    {
+      "symbol": "MANTRAUSDT",
+      "tf": "4h",
+      "candle_ts": 1795651200,
+      "side": "SELL",
+      "upper": 0.0031407076889449844,
+      "open": 0.003207,
       "reported": false
     }
   ],
