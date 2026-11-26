@@ -138,64 +138,9 @@
       "last_leg_candle_ts": 1795711215,
       "dry_run": true,
       "order_id": "PAPER-MUSDT-1795665776"
-    },
-    {
-      "symbol": "AKEUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.001605,
-      "qty": 124610.5919,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.001564875,
-      "tf": "15m",
-      "opened_at": 1795719741,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.001605,
-          "ts": 1795719741
-        }
-      ],
-      "entry_candle_ts": 1795719600,
-      "last_leg_candle_ts": 1795719600,
-      "dry_run": true,
-      "order_id": "PAPER-AKEUSDT-1795719741"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "MMTUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.2532,
-      "qty": 789.8894,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.24686999999999998,
-      "tf": "4h",
-      "opened_at": 1795003276,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.2532,
-          "ts": 1795003276
-        }
-      ],
-      "entry_candle_ts": 1795003200,
-      "last_leg_candle_ts": 1795003200,
-      "dry_run": true,
-      "order_id": "PAPER-MMTUSDT-1795003276",
-      "closed_at": 1795006193,
-      "close_px": 0.2452,
-      "pnl_usdt": 6.3191153238546445,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "MOCAUSDT",
       "side": "SELL",
@@ -6716,19 +6661,39 @@
       "pnl_usdt": -27.355564606285625,
       "close_reason": "STOP",
       "why": "STOP"
+    },
+    {
+      "symbol": "AKEUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.001605,
+      "qty": 124610.5919,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.001564875,
+      "tf": "15m",
+      "opened_at": 1795719741,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.001605,
+          "ts": 1795719741
+        }
+      ],
+      "entry_candle_ts": 1795719600,
+      "last_leg_candle_ts": 1795719600,
+      "dry_run": true,
+      "order_id": "PAPER-AKEUSDT-1795719741",
+      "closed_at": 1795720625,
+      "close_px": 0.001675,
+      "pnl_usdt": -8.722741433021802,
+      "close_reason": "STOP",
+      "why": "STOP"
     }
   ],
   "pending": [
-    {
-      "symbol": "HMSTRUSDT",
-      "tf": "4h",
-      "candle_ts": 1795521600,
-      "side": "LONG",
-      "upper": 0.00015499231925968077,
-      "open": 0.0001332,
-      "reported": true,
-      "filled": true
-    },
     {
       "symbol": "GOLDUSDT",
       "tf": "15m",
@@ -9712,6 +9677,16 @@
       "side": "SELL",
       "upper": 0.0015784381298166604,
       "open": 0.0016155,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "IDOLUSDT",
+      "tf": "15m",
+      "candle_ts": 1795720500,
+      "side": "SELL",
+      "upper": 0.017833603984223335,
+      "open": 0.018407,
       "reported": false
     }
   ],
@@ -10073,15 +10048,6 @@
   "last_trade_report_ts": 1795719929,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795471547,
-      "kind": "gap_result",
-      "symbol": "PROMUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795471550,
       "kind": "gap_result",
@@ -13668,6 +13634,15 @@
       "ts": 1795717913,
       "kind": "gap_result",
       "symbol": "BULLAUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795720623,
+      "kind": "gap_result",
+      "symbol": "AKEUSDT",
       "tf": "15m",
       "gap": 0.0,
       "filled": true,
