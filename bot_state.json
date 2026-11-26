@@ -90,6 +90,31 @@
       "last_leg_candle_ts": 1795654800,
       "dry_run": true,
       "order_id": "PAPER-MOVEUSDT-1795654822"
+    },
+    {
+      "symbol": "KIOXIAUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 49.45,
+      "qty": 4.0445,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 48.213750000000005,
+      "tf": "1h",
+      "opened_at": 1795654868,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 49.45,
+          "ts": 1795654868
+        }
+      ],
+      "entry_candle_ts": 1795654800,
+      "last_leg_candle_ts": 1795654800,
+      "dry_run": true,
+      "order_id": "PAPER-KIOXIAUSDT-1795654868"
     }
   ],
   "trade_history": [
@@ -6647,26 +6672,6 @@
   ],
   "pending": [
     {
-      "symbol": "XAUTUSDT",
-      "tf": "5m",
-      "candle_ts": 1795435800,
-      "side": "LONG",
-      "upper": 3618.3904842931524,
-      "open": 3611.09,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "SILVERUSDT",
-      "tf": "5m",
-      "candle_ts": 1795435800,
-      "side": "LONG",
-      "upper": 42.78140786118125,
-      "open": 42.51,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "TTMIUSDT",
       "tf": "15m",
       "candle_ts": 1795436100,
@@ -9627,6 +9632,24 @@
       "side": "LONG",
       "upper": 3585.216742666214,
       "open": 3562.72,
+      "reported": false
+    },
+    {
+      "symbol": "MOVEUSDT",
+      "tf": "1h",
+      "candle_ts": 1795654800,
+      "side": "SELL",
+      "upper": 0.005923882079732364,
+      "open": 0.00628,
+      "reported": false
+    },
+    {
+      "symbol": "LAYERUSDT",
+      "tf": "1h",
+      "candle_ts": 1795654800,
+      "side": "SELL",
+      "upper": 0.04849946534352306,
+      "open": 0.04911,
       "reported": false
     }
   ],
