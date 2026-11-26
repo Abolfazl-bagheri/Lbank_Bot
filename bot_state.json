@@ -156,6 +156,31 @@
       "last_leg_candle_ts": 1795680000,
       "dry_run": true,
       "order_id": "PAPER-BULLAUSDT-1795678220"
+    },
+    {
+      "symbol": "BUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.0995,
+      "qty": 2010.0503,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0970125,
+      "tf": "4h",
+      "opened_at": 1795680130,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.0995,
+          "ts": 1795680130
+        }
+      ],
+      "entry_candle_ts": 1795680000,
+      "last_leg_candle_ts": 1795680000,
+      "dry_run": true,
+      "order_id": "PAPER-BUSDT-1795680130"
     }
   ],
   "trade_history": [
@@ -6717,36 +6742,6 @@
       "tf": "5m",
       "candle_ts": 1795511400,
       "side": "LONG",
-      "upper": 51.037737373743745,
-      "open": 49.89,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "CRCLUSDT",
-      "tf": "5m",
-      "candle_ts": 1795511400,
-      "side": "LONG",
-      "upper": 51.037737373743745,
-      "open": 49.89,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "CRCLUSDT",
-      "tf": "5m",
-      "candle_ts": 1795511400,
-      "side": "LONG",
-      "upper": 51.03589165008051,
-      "open": 49.89,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "CRCLUSDT",
-      "tf": "5m",
-      "candle_ts": 1795511400,
-      "side": "LONG",
       "upper": 51.0415084826796,
       "open": 49.89,
       "reported": true,
@@ -9706,6 +9701,33 @@
       "open": 0.042399,
       "reported": true,
       "filled": false
+    },
+    {
+      "symbol": "BULLAUSDT",
+      "tf": "4h",
+      "candle_ts": 1795680000,
+      "side": "SELL",
+      "upper": 0.040452976775158835,
+      "open": 0.041856,
+      "reported": false
+    },
+    {
+      "symbol": "ZCATUSDT",
+      "tf": "15m",
+      "candle_ts": 1795680000,
+      "side": "LONG",
+      "upper": 0.017772089638477512,
+      "open": 0.01731,
+      "reported": false
+    },
+    {
+      "symbol": "MUSDT",
+      "tf": "4h",
+      "candle_ts": 1795680000,
+      "side": "SELL",
+      "upper": 0.8514455480288753,
+      "open": 0.8554,
+      "reported": false
     }
   ],
   "paper_days": [
