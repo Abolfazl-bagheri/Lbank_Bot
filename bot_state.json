@@ -9695,7 +9695,8 @@
       "side": "LONG",
       "upper": 0.34864434113356496,
       "open": 0.2567,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -10049,20 +10050,12 @@
     "MURATAUSDT": 1795698991,
     "OFCUSDT": 1795704577,
     "FONEUSDT": 1795709158,
-    "HAJIMIUSDT": 1795709068
+    "HAJIMIUSDT": 1795709068,
+    "RGTIUSDT": 1795713415
   },
   "last_trade_report_ts": 1795669864,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795415558,
-      "kind": "gap_result",
-      "symbol": "ZESTUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795415560,
       "kind": "gap_result",
@@ -13653,6 +13646,15 @@
       "gap": 0.0,
       "filled": false,
       "note": "miss"
+    },
+    {
+      "ts": 1795670232,
+      "kind": "gap_result",
+      "symbol": "MMTUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
     }
   ],
   "tune_history": [],
