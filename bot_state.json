@@ -6738,16 +6738,6 @@
   ],
   "pending": [
     {
-      "symbol": "MUUUSDT",
-      "tf": "15m",
-      "candle_ts": 1795511700,
-      "side": "LONG",
-      "upper": 13.726782946766152,
-      "open": 12.08,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "SOFTBANKUSDT",
       "tf": "15m",
       "candle_ts": 1795511700,
@@ -9711,7 +9701,8 @@
       "side": "LONG",
       "upper": 0.00014298120892940297,
       "open": 0.0001325,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ZCATUSDT",
@@ -9720,7 +9711,8 @@
       "side": "LONG",
       "upper": 0.01777417229370236,
       "open": 0.01746,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "XAUTUSDT",
@@ -9729,6 +9721,16 @@
       "side": "LONG",
       "upper": 3572.846835508539,
       "open": 3563.12,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "INITUSDT",
+      "tf": "15m",
+      "candle_ts": 1795681800,
+      "side": "SELL",
+      "upper": 0.0931162134260092,
+      "open": 0.09264,
       "reported": false
     }
   ],
@@ -10030,7 +10032,6 @@
     "ARCSOLUSDT": 1795464273,
     "FWDIUSDT": 1795469602,
     "FLYUSDT": 1795475781,
-    "ARGUSUSDT": 1795514584,
     "LYTEUSDT": 1795521797,
     "LWLGUSDT": 1795522602,
     "POETUSDT": 1795522606,
@@ -10085,38 +10086,12 @@
     "AMDLUSDT": 1795723489,
     "ARGUSDT": 1795724151,
     "APROUSDT": 1795724183,
-    "AMCUSDT": 1795724336
+    "AMCUSDT": 1795724336,
+    "ARGUSUSDT": 1795725109
   },
   "last_trade_report_ts": 1795681522,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795424634,
-      "kind": "gap_result",
-      "symbol": "ELSAUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795425025,
-      "kind": "gap_result",
-      "symbol": "CRCLUSDT",
-      "tf": "5m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795425411,
-      "kind": "gap_result",
-      "symbol": "MUBARAKUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795425632,
       "kind": "gap_result",
@@ -13686,6 +13661,33 @@
       "kind": "gap_result",
       "symbol": "ZCATUSDT",
       "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795681939,
+      "kind": "gap_result",
+      "symbol": "HMSTRUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795681946,
+      "kind": "gap_result",
+      "symbol": "ZCATUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795681949,
+      "kind": "gap_result",
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
       "gap": 0.0,
       "filled": true,
       "note": "filled"
