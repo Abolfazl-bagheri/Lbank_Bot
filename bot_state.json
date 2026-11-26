@@ -6684,26 +6684,6 @@
   ],
   "pending": [
     {
-      "symbol": "CSOPSAMSUNG2LUSDT",
-      "tf": "1h",
-      "candle_ts": 1795510800,
-      "side": "LONG",
-      "upper": 4.646276460849247,
-      "open": 4.333,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "CRCLUSDT",
-      "tf": "5m",
-      "candle_ts": 1795511100,
-      "side": "LONG",
-      "upper": 50.98903704158502,
-      "open": 50.03,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "CRCLUSDT",
       "tf": "5m",
       "candle_ts": 1795511100,
@@ -9675,6 +9655,25 @@
       "side": "LONG",
       "upper": 0.017784287614315334,
       "open": 0.01731,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "MANTRAUSDT",
+      "tf": "15m",
+      "candle_ts": 1795677300,
+      "side": "SELL",
+      "upper": 0.0028239760258567084,
+      "open": 0.002866,
+      "reported": false
+    },
+    {
+      "symbol": "ZCATUSDT",
+      "tf": "15m",
+      "candle_ts": 1795677300,
+      "side": "LONG",
+      "upper": 0.017782626291706356,
+      "open": 0.01732,
       "reported": false
     }
   ],
@@ -10036,15 +10035,6 @@
   "last_trade_report_ts": 1795677043,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795421823,
-      "kind": "gap_result",
-      "symbol": "XAUTUSDT",
-      "tf": "5m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795421826,
       "kind": "gap_result",
@@ -13629,6 +13619,15 @@
     },
     {
       "ts": 1795676637,
+      "kind": "gap_result",
+      "symbol": "ZCATUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795677429,
       "kind": "gap_result",
       "symbol": "ZCATUSDT",
       "tf": "15m",
