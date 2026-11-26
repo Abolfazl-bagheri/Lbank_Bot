@@ -128,31 +128,6 @@
       "order_id": "PAPER-SILVERUSDT-1795661221"
     },
     {
-      "symbol": "MOVEUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.005733,
-      "qty": 34885.7492,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.0055896750000000005,
-      "tf": "4h",
-      "opened_at": 1795665696,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.005733,
-          "ts": 1795665696
-        }
-      ],
-      "entry_candle_ts": 1795665600,
-      "last_leg_candle_ts": 1795665600,
-      "dry_run": true,
-      "order_id": "PAPER-MOVEUSDT-1795665696"
-    },
-    {
       "symbol": "MUSDT",
       "side": "SELL",
       "status": "open",
@@ -210,36 +185,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "ZORAUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.005199,
-      "qty": 38468.9363,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.005069025,
-      "tf": "4h",
-      "opened_at": 1794988905,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.005199,
-          "ts": 1794988905
-        }
-      ],
-      "entry_candle_ts": 1794988800,
-      "last_leg_candle_ts": 1794988800,
-      "dry_run": true,
-      "order_id": "PAPER-ZORAUSDT-1794988905",
-      "closed_at": 1794989961,
-      "close_px": 0.005058,
-      "pnl_usdt": 5.424120023081349,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "PIPPINUSDT",
       "side": "SELL",
@@ -6754,29 +6699,39 @@
       "pnl_usdt": 7.253072966611472,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "MOVEUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.005733,
+      "qty": 34885.7492,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0055896750000000005,
+      "tf": "4h",
+      "opened_at": 1795665696,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.005733,
+          "ts": 1795665696
+        }
+      ],
+      "entry_candle_ts": 1795665600,
+      "last_leg_candle_ts": 1795665600,
+      "dry_run": true,
+      "order_id": "PAPER-MOVEUSDT-1795665696",
+      "closed_at": 1795669445,
+      "close_px": 0.005555,
+      "pnl_usdt": 6.2096633525205025,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
-    {
-      "symbol": "CRCLUSDT",
-      "tf": "5m",
-      "candle_ts": 1795482300,
-      "side": "SELL",
-      "upper": 52.204722709695055,
-      "open": 52.23,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "CRCLUSDT",
-      "tf": "5m",
-      "candle_ts": 1795482300,
-      "side": "SELL",
-      "upper": 52.23096415674502,
-      "open": 52.23,
-      "reported": true,
-      "filled": true
-    },
     {
       "symbol": "CRCLUSDT",
       "tf": "5m",
@@ -9664,7 +9619,8 @@
       "side": "SELL",
       "upper": 0.10553895248707444,
       "open": 0.11397,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "BULLAUSDT",
@@ -9751,6 +9707,24 @@
       "open": 0.7128,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "ELSAUSDT",
+      "tf": "1h",
+      "candle_ts": 1795669200,
+      "side": "SELL",
+      "upper": 0.1081646280033515,
+      "open": 0.11009,
+      "reported": false
+    },
+    {
+      "symbol": "MMTUSDT",
+      "tf": "15m",
+      "candle_ts": 1795669200,
+      "side": "LONG",
+      "upper": 0.34864434113356496,
+      "open": 0.2567,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -10109,15 +10083,6 @@
   "last_trade_report_ts": 1795668950,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795415555,
-      "kind": "gap_result",
-      "symbol": "CRCLUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795415558,
       "kind": "gap_result",
@@ -13708,6 +13673,15 @@
       "gap": 0.0,
       "filled": true,
       "note": "filled"
+    },
+    {
+      "ts": 1795669443,
+      "kind": "gap_result",
+      "symbol": "ELSAUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
     }
   ],
   "tune_history": [],
