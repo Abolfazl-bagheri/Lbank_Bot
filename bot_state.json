@@ -49,6 +49,31 @@
       "last_leg_candle_ts": 1795652100,
       "dry_run": true,
       "order_id": "PAPER-MEUSDT-1795652130"
+    },
+    {
+      "symbol": "CKBUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.0008289,
+      "qty": 241283.6289,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0008081775,
+      "tf": "15m",
+      "opened_at": 1795652160,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.0008289,
+          "ts": 1795652160
+        }
+      ],
+      "entry_candle_ts": 1795652100,
+      "last_leg_candle_ts": 1795652100,
+      "dry_run": true,
+      "order_id": "PAPER-CKBUSDT-1795652160"
     }
   ],
   "trade_history": [
@@ -6600,26 +6625,6 @@
   ],
   "pending": [
     {
-      "symbol": "TAUSDT",
-      "tf": "4h",
-      "candle_ts": 1795435200,
-      "side": "SELL",
-      "upper": 0.11261618583527515,
-      "open": 0.11424,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "ARIAUSDT",
-      "tf": "4h",
-      "candle_ts": 1795435200,
-      "side": "SELL",
-      "upper": 0.3374211403566508,
-      "open": 0.351,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "PROMUSDT",
       "tf": "4h",
       "candle_ts": 1795435200,
@@ -9579,6 +9584,24 @@
       "side": "SELL",
       "upper": 0.00602937573393493,
       "open": 0.00644,
+      "reported": false
+    },
+    {
+      "symbol": "MEUSDT",
+      "tf": "15m",
+      "candle_ts": 1795652100,
+      "side": "SELL",
+      "upper": 0.04060238410406415,
+      "open": 0.0422,
+      "reported": false
+    },
+    {
+      "symbol": "SLXUSDT",
+      "tf": "15m",
+      "candle_ts": 1795652100,
+      "side": "LONG",
+      "upper": 0.03494768439463794,
+      "open": 0.03185,
       "reported": false
     }
   ],
