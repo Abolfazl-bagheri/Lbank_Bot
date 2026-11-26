@@ -9700,7 +9700,8 @@
       "side": "SELL",
       "upper": 0.0416664435821367,
       "open": 0.042399,
-      "reported": false
+      "reported": true,
+      "filled": false
     }
   ],
   "paper_days": [
@@ -10057,18 +10058,9 @@
     "OROCHIUSDT": 1795717003,
     "FRONGUSDT": 1795718052
   },
-  "last_trade_report_ts": 1795677950,
+  "last_trade_report_ts": 1795679274,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795421834,
-      "kind": "gap_result",
-      "symbol": "GOLDUSDT",
-      "tf": "5m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795421836,
       "kind": "gap_result",
@@ -13659,6 +13651,15 @@
       "gap": 0.0,
       "filled": true,
       "note": "filled"
+    },
+    {
+      "ts": 1795679269,
+      "kind": "gap_result",
+      "symbol": "BULLAUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
     }
   ],
   "tune_history": [],
