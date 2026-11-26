@@ -1,50 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795652463,
+  "updated_at": 1795652719,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795642845
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795642865
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795642890
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795642910
-    },
-    {
-      "kind": "HEARTBEAT",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795642913
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795643212
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,22 +1360,51 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1795652463
+    },
+    {
+      "kind": "HEARTBEAT",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795652465
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795652488
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795652488
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795652513
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795652513
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795652719
     }
   ],
   "trades": [
-    {
-      "symbol": "MOVEUSDT",
-      "side": "SELL",
-      "entry": 0.006371,
-      "tp": 0.0062117249999999995,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.006567,
-      "pnl": -6.3929,
-      "tf": "15m"
-    },
     {
       "symbol": "MEUSDT",
       "side": "SELL",
@@ -1427,34 +1414,34 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.04166,
-      "pnl": 1.1426,
+      "px": 0.04164,
+      "pnl": 1.2379,
       "tf": "15m"
     },
     {
       "symbol": "CKBUSDT",
       "side": "SELL",
-      "entry": 0.0008289,
-      "tp": 0.0008081775,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
+      "entry": 0.0008256938111930302,
+      "tp": 0.0008050514659132045,
+      "adds": 1,
+      "pele": 2,
+      "margin": 30.0,
       "lev": 20,
-      "px": 0.0008239,
-      "pnl": 0.9664,
+      "px": 0.0008218,
+      "pnl": 2.1095,
       "tf": "15m"
     },
     {
       "symbol": "MOCAUSDT",
       "side": "SELL",
-      "entry": 0.006059,
-      "tp": 0.005907525,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
+      "entry": 0.006083616558695586,
+      "tp": 0.005931526144728197,
+      "adds": 1,
+      "pele": 2,
+      "margin": 30.0,
       "lev": 20,
-      "px": 0.006085,
-      "pnl": -1.0982,
+      "px": 0.006145,
+      "pnl": -6.774,
       "tf": "15m"
     },
     {
@@ -1466,23 +1453,23 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 10.06,
-      "pnl": 2.3115,
+      "px": 10.02,
+      "pnl": 3.0966,
       "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1795651554,
-  "realized": -55.2288,
-  "closed_n": 1,
-  "open_upnl": -3.0706,
-  "equity": 941.7006,
+  "realized": -63.893,
+  "closed_n": 2,
+  "open_upnl": -0.33,
+  "equity": 935.777,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
     "profit": 0,
-    "loss": -55.2288,
-    "count": 1
+    "loss": -63.893,
+    "count": 2
   }
 }
