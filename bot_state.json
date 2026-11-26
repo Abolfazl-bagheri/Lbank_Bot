@@ -132,24 +132,28 @@
       "symbol": "BULLAUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.04238,
-      "qty": 4719.2072,
-      "margin": 10.0,
+      "entry": 0.042186224675169935,
+      "qty": 14222.6522,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.0413205,
-      "tf": "15m",
+      "tp_price": 0.041131569058290685,
+      "tf": "4h",
       "opened_at": 1795678220,
-      "adds": 0,
-      "last_leg_margin": 10.0,
+      "adds": 1,
+      "last_leg_margin": 20.0,
       "used_res_levels": [],
       "steps": [
         {
           "px": 0.04238,
           "ts": 1795678220
+        },
+        {
+          "px": 0.04209,
+          "ts": 1795680069
         }
       ],
       "entry_candle_ts": 1795678200,
-      "last_leg_candle_ts": 1795678200,
+      "last_leg_candle_ts": 1795680000,
       "dry_run": true,
       "order_id": "PAPER-BULLAUSDT-1795678220"
     }
