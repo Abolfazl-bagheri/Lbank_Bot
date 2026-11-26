@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795654866,
+  "updated_at": 1795654876,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795646444
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795646464
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "1h",
       "gap": 2.4,
       "ts": 1795654866
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795654871
+    },
+    {
+      "kind": "SELL",
+      "symbol": "MEUSDT",
+      "tf": "1h",
+      "gap": 1.09,
+      "ts": 1795654876
     }
   ],
   "trades": [
@@ -1443,14 +1443,27 @@
       "px": 0.006305,
       "pnl": -0.24,
       "tf": "1h"
+    },
+    {
+      "symbol": "KIOXIAUSDT",
+      "side": "SELL",
+      "entry": 49.45,
+      "tp": 48.213750000000005,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 49.45,
+      "pnl": -0.24,
+      "tf": "1h"
     }
   ],
   "start": 1000.0,
   "session_start": 1795651554,
   "realized": -46.314,
   "closed_n": 5,
-  "open_upnl": 10.2883,
-  "equity": 963.9743,
+  "open_upnl": 10.0483,
+  "equity": 963.7343,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
