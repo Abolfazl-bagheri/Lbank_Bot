@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795665629,
+  "updated_at": 1795665667,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795652370
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795652416
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "15m",
       "gap": 5.27,
       "ts": 1795665629
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795665636
+    },
+    {
+      "kind": "SELL",
+      "symbol": "ELSAUSDT",
+      "tf": "1h",
+      "gap": 7.99,
+      "ts": 1795665667
     }
   ],
   "trades": [
@@ -1456,14 +1456,27 @@
       "px": 41.76,
       "pnl": 1.2205,
       "tf": "15m"
+    },
+    {
+      "symbol": "ELSAUSDT",
+      "side": "SELL",
+      "entry": 0.11471,
+      "tp": 0.11184225,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.11471,
+      "pnl": -0.24,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1795651554,
   "realized": -72.5357,
   "closed_n": 10,
-  "open_upnl": 11.7561,
-  "equity": 939.2204,
+  "open_upnl": 11.5161,
+  "equity": 938.9804,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
