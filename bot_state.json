@@ -176,6 +176,31 @@
       "last_leg_candle_ts": 1795665600,
       "dry_run": true,
       "order_id": "PAPER-MOVEUSDT-1795665696"
+    },
+    {
+      "symbol": "MUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.8502,
+      "qty": 235.2388,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.8289449999999999,
+      "tf": "4h",
+      "opened_at": 1795665776,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.8502,
+          "ts": 1795665776
+        }
+      ],
+      "entry_candle_ts": 1795665600,
+      "last_leg_candle_ts": 1795665600,
+      "dry_run": true,
+      "order_id": "PAPER-MUSDT-1795665776"
     }
   ],
   "trade_history": [
@@ -6727,26 +6752,6 @@
   ],
   "pending": [
     {
-      "symbol": "CYSUSDT",
-      "tf": "4h",
-      "candle_ts": 1795478400,
-      "side": "SELL",
-      "upper": 0.05790368114203158,
-      "open": 0.0598,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "FLNCUSDT",
-      "tf": "4h",
-      "candle_ts": 1795478400,
-      "side": "SELL",
-      "upper": 4.182405620419317,
-      "open": 4.328,
-      "reported": true,
-      "filled": false
-    },
-    {
       "symbol": "SILVERUSDT",
       "tf": "15m",
       "candle_ts": 1795480200,
@@ -9708,6 +9713,24 @@
       "side": "SELL",
       "upper": 0.03641829842810555,
       "open": 0.0368,
+      "reported": false
+    },
+    {
+      "symbol": "MOVEUSDT",
+      "tf": "4h",
+      "candle_ts": 1795665600,
+      "side": "SELL",
+      "upper": 0.005481048851418779,
+      "open": 0.00569,
+      "reported": false
+    },
+    {
+      "symbol": "LAYERUSDT",
+      "tf": "4h",
+      "candle_ts": 1795665600,
+      "side": "SELL",
+      "upper": 0.0465102649302248,
+      "open": 0.04713,
       "reported": false
     }
   ],
