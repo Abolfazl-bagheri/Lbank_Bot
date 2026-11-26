@@ -6738,16 +6738,6 @@
   ],
   "pending": [
     {
-      "symbol": "NVDLUSDT",
-      "tf": "15m",
-      "candle_ts": 1795511700,
-      "side": "LONG",
-      "upper": 16.89396297561791,
-      "open": 15.42,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "EWTUSDT",
       "tf": "15m",
       "candle_ts": 1795511700,
@@ -9713,7 +9703,8 @@
       "side": "LONG",
       "upper": 0.017772089638477512,
       "open": 0.01731,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "MUSDT",
@@ -9731,6 +9722,15 @@
       "side": "SELL",
       "upper": 0.09735398843324965,
       "open": 0.0991,
+      "reported": false
+    },
+    {
+      "symbol": "HMSTRUSDT",
+      "tf": "15m",
+      "candle_ts": 1795680900,
+      "side": "LONG",
+      "upper": 0.00014298120892940297,
+      "open": 0.0001325,
       "reported": false
     }
   ],
@@ -10085,20 +10085,13 @@
     "FRONGUSDT": 1795718052,
     "UP2USDT": 1795723521,
     "ADISTOCKUSDT": 1795723431,
-    "AMDLUSDT": 1795723489
+    "AMDLUSDT": 1795723489,
+    "ARGUSDT": 1795724151,
+    "APROUSDT": 1795724183
   },
   "last_trade_report_ts": 1795680405,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795424632,
-      "kind": "gap_result",
-      "symbol": "CYSUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
     {
       "ts": 1795424634,
       "kind": "gap_result",
@@ -13686,6 +13679,15 @@
       "kind": "gap_result",
       "symbol": "EVAAUSDT",
       "tf": "1h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795681035,
+      "kind": "gap_result",
+      "symbol": "ZCATUSDT",
+      "tf": "15m",
       "gap": 0.0,
       "filled": true,
       "note": "filled"
