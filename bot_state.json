@@ -6709,26 +6709,6 @@
   ],
   "pending": [
     {
-      "symbol": "RAMUSDT",
-      "tf": "15m",
-      "candle_ts": 1795510800,
-      "side": "LONG",
-      "upper": 4.942284947477354,
-      "open": 4.515,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "SKUUUSDT",
-      "tf": "1h",
-      "candle_ts": 1795510800,
-      "side": "LONG",
-      "upper": 11.158685279424354,
-      "open": 9.928,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "CSOPSAMSUNG2LUSDT",
       "tf": "1h",
       "candle_ts": 1795510800,
@@ -9561,7 +9541,8 @@
       "side": "SELL",
       "upper": 0.009508344971287615,
       "open": 0.0096,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "CHRUSDT",
@@ -9699,6 +9680,25 @@
       "candle_ts": 1795675500,
       "side": "LONG",
       "upper": 0.017781514463240913,
+      "open": 0.01731,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "EVAAUSDT",
+      "tf": "1h",
+      "candle_ts": 1795676400,
+      "side": "SELL",
+      "upper": 3.025099697727712,
+      "open": 3.0731,
+      "reported": false
+    },
+    {
+      "symbol": "ZCATUSDT",
+      "tf": "15m",
+      "candle_ts": 1795676400,
+      "side": "LONG",
+      "upper": 0.017784287614315334,
       "open": 0.01731,
       "reported": false
     }
@@ -10061,24 +10061,6 @@
   "last_trade_report_ts": 1795676142,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795421422,
-      "kind": "gap_result",
-      "symbol": "GOLDUSDT",
-      "tf": "5m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795421821,
-      "kind": "gap_result",
-      "symbol": "XAUTUSDT",
-      "tf": "5m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795421823,
       "kind": "gap_result",
@@ -13656,6 +13638,24 @@
       "ts": 1795675632,
       "kind": "gap_result",
       "symbol": "EVAAUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795676622,
+      "kind": "gap_result",
+      "symbol": "BABYUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
+    },
+    {
+      "ts": 1795676637,
+      "kind": "gap_result",
+      "symbol": "ZCATUSDT",
       "tf": "15m",
       "gap": 0.0,
       "filled": true,
