@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795653057,
+  "updated_at": 1795653092,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "VVVUSDT",
-      "tf": "1h",
-      "gap": 1.06,
-      "ts": 1795644040
-    },
-    {
-      "kind": "SELL",
-      "symbol": "NESUSDT",
-      "tf": "1h",
-      "gap": 1.74,
-      "ts": 1795644043
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "15m",
       "gap": 1.51,
       "ts": 1795653057
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795653061
+    },
+    {
+      "kind": "SELL",
+      "symbol": "AKEUSDT",
+      "tf": "15m",
+      "gap": 1.22,
+      "ts": 1795653092
     }
   ],
   "trades": [
@@ -1434,14 +1434,14 @@
     {
       "symbol": "MOCAUSDT",
       "side": "SELL",
-      "entry": 0.006083616558695586,
-      "tp": 0.005931526144728197,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
+      "entry": 0.006108331561963284,
+      "tp": 0.005955623272914202,
+      "adds": 2,
+      "pele": 3,
+      "margin": 70.0,
       "lev": 20,
       "px": 0.006127,
-      "pnl": -4.9987,
+      "pnl": -5.9587,
       "tf": "15m"
     },
     {
@@ -1475,8 +1475,8 @@
   "session_start": 1795651554,
   "realized": -63.893,
   "closed_n": 2,
-  "open_upnl": 4.3446,
-  "equity": 940.4516,
+  "open_upnl": 3.3846,
+  "equity": 939.4916,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
