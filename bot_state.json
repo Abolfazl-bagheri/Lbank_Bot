@@ -169,74 +169,9 @@
       "last_leg_candle_ts": 1795709498,
       "dry_run": true,
       "order_id": "PAPER-AIOTUSDT-1795708847"
-    },
-    {
-      "symbol": "KNTQUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.1736,
-      "qty": 1152.0737,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.16926,
-      "tf": "15m",
-      "opened_at": 1795712422,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.1736,
-          "ts": 1795712422
-        }
-      ],
-      "entry_candle_ts": 1795712400,
-      "last_leg_candle_ts": 1795712400,
-      "dry_run": true,
-      "order_id": "PAPER-KNTQUSDT-1795712422"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "PIEVERSEUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 2.6802780573648497,
-      "qty": 522.3338,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 2.6132711059307283,
-      "tf": "15m",
-      "opened_at": 1795003283,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [
-        2.555
-      ],
-      "steps": [
-        {
-          "px": 2.4539,
-          "ts": 1795003283
-        },
-        {
-          "px": 2.5479,
-          "ts": 1795003819
-        },
-        {
-          "px": 2.8185,
-          "ts": 1795004255
-        }
-      ],
-      "entry_candle_ts": 1795003200,
-      "last_leg_candle_ts": 1795004100,
-      "dry_run": true,
-      "order_id": "PAPER-PIEVERSEUSDT-1795003283",
-      "closed_at": 1795004361,
-      "close_px": 2.8185,
-      "pnl_usdt": -72.19800168026697,
-      "close_reason": "STOP",
-      "why": "STOP"
-    },
     {
       "symbol": "MOCAUSDT",
       "side": "SELL",
@@ -6757,6 +6692,36 @@
       "pnl_usdt": -8.442211055276372,
       "close_reason": "STOP",
       "why": "STOP"
+    },
+    {
+      "symbol": "KNTQUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.1736,
+      "qty": 1152.0737,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.16926,
+      "tf": "15m",
+      "opened_at": 1795712422,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.1736,
+          "ts": 1795712422
+        }
+      ],
+      "entry_candle_ts": 1795712400,
+      "last_leg_candle_ts": 1795712400,
+      "dry_run": true,
+      "order_id": "PAPER-KNTQUSDT-1795712422",
+      "closed_at": 1795714582,
+      "close_px": 0.1681,
+      "pnl_usdt": 6.336405529953923,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
