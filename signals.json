@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795651284,
+  "updated_at": 1795651298,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795640472
-    },
-    {
-      "kind": "SELL",
-      "symbol": "CFGUSDT",
-      "tf": "1h",
-      "gap": 5.26,
-      "ts": 1795640477
-    },
     {
       "kind": "SELL",
       "symbol": "STOUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "4h",
       "gap": 4.18,
       "ts": 1795651284
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795651290
+    },
+    {
+      "kind": "SELL",
+      "symbol": "NIULAIUSDT",
+      "tf": "15m",
+      "gap": 2.82,
+      "ts": 1795651298
     }
   ],
   "trades": [
@@ -1495,14 +1495,27 @@
       "px": 0.2447,
       "pnl": -0.24,
       "tf": "4h"
+    },
+    {
+      "symbol": "BULLAUSDT",
+      "side": "SELL",
+      "entry": 0.03553,
+      "tp": 0.03464175,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.03553,
+      "pnl": -0.24,
+      "tf": "4h"
     }
   ],
   "start": 1000.0,
   "session_start": 1795565212,
   "realized": 5.9739,
   "closed_n": 29,
-  "open_upnl": -66.1868,
-  "equity": 939.7871,
+  "open_upnl": -66.4268,
+  "equity": 939.5471,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
