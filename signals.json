@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795711526,
+  "updated_at": 1795711553,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795677692
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795677717
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "15m",
       "gap": 3.53,
       "ts": 1795711526
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795711536
+    },
+    {
+      "kind": "SELL",
+      "symbol": "CSOPSKHYNIX2LUSDT",
+      "tf": "15m",
+      "gap": 1.47,
+      "ts": 1795711553
     }
   ],
   "trades": [
@@ -1482,14 +1482,27 @@
       "px": 0.11571,
       "pnl": -2.7878,
       "tf": "1h"
+    },
+    {
+      "symbol": "BULLAUSDT",
+      "side": "SELL",
+      "entry": 0.06324,
+      "tp": 0.061659000000000005,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.06324,
+      "pnl": -0.24,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1795651554,
   "realized": -57.5435,
   "closed_n": 21,
-  "open_upnl": -6.9195,
-  "equity": 935.537,
+  "open_upnl": -7.1595,
+  "equity": 935.297,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
