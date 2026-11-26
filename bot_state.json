@@ -6709,26 +6709,6 @@
   ],
   "pending": [
     {
-      "symbol": "BTCUSDT",
-      "tf": "15m",
-      "candle_ts": 1795490100,
-      "side": "LONG",
-      "upper": 62211.50960172731,
-      "open": 59591.5,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "CRCLUSDT",
-      "tf": "15m",
-      "candle_ts": 1795490100,
-      "side": "LONG",
-      "upper": 52.83040237717717,
-      "open": 50.26,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "SOXLUSDT",
       "tf": "15m",
       "candle_ts": 1795510800,
@@ -9620,7 +9600,8 @@
       "side": "SELL",
       "upper": 0.01322214206777061,
       "open": 0.01321,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "CRCLUSDT",
@@ -9659,7 +9640,8 @@
       "side": "LONG",
       "upper": 49.54745265679511,
       "open": 48.79,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "XAUTUSDT",
@@ -9668,7 +9650,8 @@
       "side": "LONG",
       "upper": 3606.7811673119336,
       "open": 3572.36,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CRCLUSDT",
@@ -9677,7 +9660,8 @@
       "side": "LONG",
       "upper": 49.55511565159061,
       "open": 48.79,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CRCLUSDT",
@@ -9686,7 +9670,8 @@
       "side": "LONG",
       "upper": 49.553144017030675,
       "open": 48.79,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "EVAAUSDT",
@@ -9695,6 +9680,24 @@
       "side": "SELL",
       "upper": 2.9449257608418997,
       "open": 2.9727,
+      "reported": false
+    },
+    {
+      "symbol": "CLAUDIAUSDT",
+      "tf": "15m",
+      "candle_ts": 1795673700,
+      "side": "SELL",
+      "upper": 0.009000414334070271,
+      "open": 0.0089,
+      "reported": false
+    },
+    {
+      "symbol": "ZCATUSDT",
+      "tf": "15m",
+      "candle_ts": 1795673700,
+      "side": "LONG",
+      "upper": 0.017815845535916284,
+      "open": 0.01731,
       "reported": false
     }
   ],
@@ -10050,56 +10053,12 @@
     "OFCUSDT": 1795704577,
     "FONEUSDT": 1795709158,
     "HAJIMIUSDT": 1795709068,
-    "RGTIUSDT": 1795713415
+    "RGTIUSDT": 1795713415,
+    "OROCHIUSDT": 1795717003
   },
   "last_trade_report_ts": 1795673030,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795417428,
-      "kind": "gap_result",
-      "symbol": "UNITREEUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795419124,
-      "kind": "gap_result",
-      "symbol": "CLAUDIAUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795420023,
-      "kind": "gap_result",
-      "symbol": "CLAUDIAUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795421153,
-      "kind": "gap_result",
-      "symbol": "BULLAUSDT",
-      "tf": "4h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795421156,
-      "kind": "gap_result",
-      "symbol": "AVAAIUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795421160,
       "kind": "gap_result",
@@ -13648,6 +13607,51 @@
     },
     {
       "ts": 1795673440,
+      "kind": "gap_result",
+      "symbol": "CRCLUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795673839,
+      "kind": "gap_result",
+      "symbol": "CHRUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
+    },
+    {
+      "ts": 1795673842,
+      "kind": "gap_result",
+      "symbol": "CRCLUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795673846,
+      "kind": "gap_result",
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795673849,
+      "kind": "gap_result",
+      "symbol": "CRCLUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795673853,
       "kind": "gap_result",
       "symbol": "CRCLUSDT",
       "tf": "5m",
