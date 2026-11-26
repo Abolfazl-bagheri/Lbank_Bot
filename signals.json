@@ -1,29 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795678218,
+  "updated_at": 1795678478,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795666263
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795666286
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795666310
-    },
     {
       "kind": "GAP",
       "symbol": "BIRBUSDT",
@@ -1402,6 +1381,27 @@
       "tf": "15m",
       "gap": 1.68,
       "ts": 1795678218
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795678226
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795678367
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795678478
     }
   ],
   "trades": [
@@ -1427,8 +1427,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 49.03,
-      "pnl": 1.4587,
+      "px": 48.98,
+      "pnl": 1.6609,
       "tf": "1h"
     },
     {
@@ -1440,8 +1440,8 @@
       "pele": 3,
       "margin": 70.0,
       "lev": 20,
-      "px": 41.5,
-      "pnl": 15.9471,
+      "px": 41.52,
+      "pnl": 15.2809,
       "tf": "15m"
     },
     {
@@ -1453,17 +1453,30 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 0.8486,
-      "pnl": 0.4091,
+      "px": 0.8519,
+      "pnl": -1.9197,
       "tf": "4h"
+    },
+    {
+      "symbol": "BULLAUSDT",
+      "side": "SELL",
+      "entry": 0.04238,
+      "tp": 0.0413205,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.04213,
+      "pnl": 0.9398,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1795651554,
   "realized": 12.1093,
   "closed_n": 17,
-  "open_upnl": 7.9587,
-  "equity": 1020.068,
+  "open_upnl": 6.1057,
+  "equity": 1018.215,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
