@@ -157,68 +157,9 @@
       "last_leg_candle_ts": 1795666051,
       "dry_run": true,
       "order_id": "PAPER-MUSDT-1795665776"
-    },
-    {
-      "symbol": "ELSAUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.10902,
-      "qty": 1834.5258,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.1062945,
-      "tf": "1h",
-      "opened_at": 1795669241,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.10902,
-          "ts": 1795669241
-        }
-      ],
-      "entry_candle_ts": 1795669200,
-      "last_leg_candle_ts": 1795669200,
-      "dry_run": true,
-      "order_id": "PAPER-ELSAUSDT-1795669241"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "PIPPINUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.01656481654148221,
-      "qty": 36221.349,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.016150696127945154,
-      "tf": "15m",
-      "opened_at": 1794988825,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.01632,
-          "ts": 1794988825
-        },
-        {
-          "px": 0.01669,
-          "ts": 1794989749
-        }
-      ],
-      "entry_candle_ts": 1794988800,
-      "last_leg_candle_ts": 1794989700,
-      "dry_run": true,
-      "order_id": "PAPER-PIPPINUSDT-1794988825",
-      "closed_at": 1794990016,
-      "close_px": 0.01762,
-      "pnl_usdt": -38.22016824184062,
-      "close_reason": "STOP",
-      "why": "STOP"
-    },
     {
       "symbol": "MMTUSDT",
       "side": "SELL",
@@ -6727,6 +6668,36 @@
       "closed_at": 1795669445,
       "close_px": 0.005555,
       "pnl_usdt": 6.2096633525205025,
+      "close_reason": "TP50",
+      "why": "TP50"
+    },
+    {
+      "symbol": "ELSAUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.10902,
+      "qty": 1834.5258,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.1062945,
+      "tf": "1h",
+      "opened_at": 1795669241,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.10902,
+          "ts": 1795669241
+        }
+      ],
+      "entry_candle_ts": 1795669200,
+      "last_leg_candle_ts": 1795669200,
+      "dry_run": true,
+      "order_id": "PAPER-ELSAUSDT-1795669241",
+      "closed_at": 1795669822,
+      "close_px": 0.10241,
+      "pnl_usdt": 12.126215373326003,
       "close_reason": "TP50",
       "why": "TP50"
     }
