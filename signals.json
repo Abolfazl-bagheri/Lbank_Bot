@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795712420,
+  "updated_at": 1795712466,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795678598
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795678832
-    },
     {
       "kind": "GAP",
       "symbol": "BULLAUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "15m",
       "gap": 2.64,
       "ts": 1795712420
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795712429
+    },
+    {
+      "kind": "SELL",
+      "symbol": "KNTQUSDT",
+      "tf": "1h",
+      "gap": 3.25,
+      "ts": 1795712466
     }
   ],
   "trades": [
@@ -1482,14 +1482,27 @@
       "px": 0.11501,
       "pnl": 0.8545,
       "tf": "1h"
+    },
+    {
+      "symbol": "KNTQUSDT",
+      "side": "SELL",
+      "entry": 0.1736,
+      "tp": 0.16926,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.1736,
+      "pnl": -0.24,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1795651554,
   "realized": -48.0874,
   "closed_n": 22,
-  "open_upnl": -5.7667,
-  "equity": 946.1459,
+  "open_upnl": -6.0067,
+  "equity": 945.9059,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
