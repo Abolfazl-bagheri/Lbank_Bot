@@ -127,6 +127,31 @@
       "last_leg_candle_ts": 1795666051,
       "dry_run": true,
       "order_id": "PAPER-MUSDT-1795665776"
+    },
+    {
+      "symbol": "CLAUDIAUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.00928,
+      "qty": 21551.7241,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.009048,
+      "tf": "15m",
+      "opened_at": 1795673745,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.00928,
+          "ts": 1795673745
+        }
+      ],
+      "entry_candle_ts": 1795673700,
+      "last_leg_candle_ts": 1795673700,
+      "dry_run": true,
+      "order_id": "PAPER-CLAUDIAUSDT-1795673745"
     }
   ],
   "trade_history": [
@@ -6684,16 +6709,6 @@
   ],
   "pending": [
     {
-      "symbol": "CRCLUSDT",
-      "tf": "15m",
-      "candle_ts": 1795488300,
-      "side": "LONG",
-      "upper": 52.53395847685195,
-      "open": 50.95,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "BTCUSDT",
       "tf": "15m",
       "candle_ts": 1795490100,
@@ -9671,6 +9686,15 @@
       "side": "LONG",
       "upper": 49.553144017030675,
       "open": 48.79,
+      "reported": false
+    },
+    {
+      "symbol": "EVAAUSDT",
+      "tf": "15m",
+      "candle_ts": 1795673700,
+      "side": "SELL",
+      "upper": 2.9449257608418997,
+      "open": 2.9727,
       "reported": false
     }
   ],
