@@ -24,6 +24,31 @@
       "last_leg_candle_ts": 1795652100,
       "dry_run": true,
       "order_id": "PAPER-MOVEUSDT-1795652121"
+    },
+    {
+      "symbol": "MEUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.04195,
+      "qty": 4767.5805,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.04090125,
+      "tf": "15m",
+      "opened_at": 1795652130,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.04195,
+          "ts": 1795652130
+        }
+      ],
+      "entry_candle_ts": 1795652100,
+      "last_leg_candle_ts": 1795652100,
+      "dry_run": true,
+      "order_id": "PAPER-MEUSDT-1795652130"
     }
   ],
   "trade_history": [
@@ -6575,16 +6600,6 @@
   ],
   "pending": [
     {
-      "symbol": "ALGOUSDT",
-      "tf": "4h",
-      "candle_ts": 1795435200,
-      "side": "SELL",
-      "upper": 0.08181397040637804,
-      "open": 0.08352,
-      "reported": true,
-      "filled": false
-    },
-    {
       "symbol": "TAUSDT",
       "tf": "4h",
       "candle_ts": 1795435200,
@@ -9555,6 +9570,15 @@
       "side": "LONG",
       "upper": 0.007150816194675237,
       "open": 0.00612,
+      "reported": false
+    },
+    {
+      "symbol": "MOVEUSDT",
+      "tf": "15m",
+      "candle_ts": 1795652100,
+      "side": "SELL",
+      "upper": 0.00602937573393493,
+      "open": 0.00644,
       "reported": false
     }
   ],
