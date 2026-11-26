@@ -208,6 +208,31 @@
       "last_leg_candle_ts": 1795708800,
       "dry_run": true,
       "order_id": "PAPER-INITUSDT-1795708875"
+    },
+    {
+      "symbol": "STBLUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.02137,
+      "qty": 9358.9144,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.02083575,
+      "tf": "1h",
+      "opened_at": 1795708913,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.02137,
+          "ts": 1795708913
+        }
+      ],
+      "entry_candle_ts": 1795708800,
+      "last_leg_candle_ts": 1795708800,
+      "dry_run": true,
+      "order_id": "PAPER-STBLUSDT-1795708913"
     }
   ],
   "trade_history": [
@@ -6769,26 +6794,6 @@
   ],
   "pending": [
     {
-      "symbol": "AIOTUSDT",
-      "tf": "1h",
-      "candle_ts": 1795514400,
-      "side": "SELL",
-      "upper": 0.08605984777369176,
-      "open": 0.08799,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "MVLLUSDT",
-      "tf": "1h",
-      "candle_ts": 1795514400,
-      "side": "LONG",
-      "upper": 8.855278236099885,
-      "open": 7.71,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "EWTUSDT",
       "tf": "15m",
       "candle_ts": 1795514400,
@@ -9759,6 +9764,24 @@
       "candle_ts": 1795708800,
       "side": "SELL",
       "upper": 0.11223053436208677,
+      "open": 0.11348,
+      "reported": false
+    },
+    {
+      "symbol": "INITUSDT",
+      "tf": "4h",
+      "candle_ts": 1795708800,
+      "side": "SELL",
+      "upper": 0.12152808423982987,
+      "open": 0.12959,
+      "reported": false
+    },
+    {
+      "symbol": "AIOTUSDT",
+      "tf": "4h",
+      "candle_ts": 1795708800,
+      "side": "SELL",
+      "upper": 0.11268174447578687,
       "open": 0.11348,
       "reported": false
     }
