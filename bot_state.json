@@ -101,37 +101,6 @@
       "order_id": "PAPER-MOCAUSDT-1795652191"
     },
     {
-      "symbol": "AKEUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.0018359999999999997,
-      "qty": 326797.38560000004,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.0017900999999999998,
-      "tf": "15m",
-      "opened_at": 1795652210,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        0.0018421
-      ],
-      "steps": [
-        {
-          "px": 0.001836,
-          "ts": 1795652210
-        },
-        {
-          "px": 0.001836,
-          "ts": 1795652258
-        }
-      ],
-      "entry_candle_ts": 1795652100,
-      "last_leg_candle_ts": 1795652258,
-      "dry_run": true,
-      "order_id": "PAPER-AKEUSDT-1795652210"
-    },
-    {
       "symbol": "MSTUUSDT",
       "side": "SELL",
       "status": "open",
@@ -158,36 +127,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "MMTUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.2182,
-      "qty": 916.5903,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.212745,
-      "tf": "15m",
-      "opened_at": 1794981660,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.2182,
-          "ts": 1794981660
-        }
-      ],
-      "entry_candle_ts": 1794981600,
-      "last_leg_candle_ts": 1794981600,
-      "dry_run": true,
-      "order_id": "PAPER-MMTUSDT-1794981660",
-      "closed_at": 1794982031,
-      "close_px": 0.212,
-      "pnl_usdt": 5.682859761686537,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "ZKPUSDT",
       "side": "SELL",
@@ -6702,19 +6641,45 @@
       "pnl_usdt": 35.3512515841101,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "AKEUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.0018359999999999997,
+      "qty": 326797.38560000004,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 0.0017900999999999998,
+      "tf": "15m",
+      "opened_at": 1795652210,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.0018421
+      ],
+      "steps": [
+        {
+          "px": 0.001836,
+          "ts": 1795652210
+        },
+        {
+          "px": 0.001836,
+          "ts": 1795652258
+        }
+      ],
+      "entry_candle_ts": 1795652100,
+      "last_leg_candle_ts": 1795652258,
+      "dry_run": true,
+      "order_id": "PAPER-AKEUSDT-1795652210",
+      "closed_at": 1795652367,
+      "close_px": 0.002005,
+      "pnl_usdt": -55.228758169934686,
+      "close_reason": "STOP",
+      "why": "STOP"
     }
   ],
   "pending": [
-    {
-      "symbol": "VELVETUSDT",
-      "tf": "4h",
-      "candle_ts": 1795435200,
-      "side": "SELL",
-      "upper": 0.0805357163043029,
-      "open": 0.08246,
-      "reported": true,
-      "filled": true
-    },
     {
       "symbol": "YOFCUSDT",
       "tf": "4h",
@@ -9680,6 +9645,15 @@
       "side": "SELL",
       "upper": 0.0018061420327615194,
       "open": 0.0018352,
+      "reported": false
+    },
+    {
+      "symbol": "MSTUUSDT",
+      "tf": "15m",
+      "candle_ts": 1795652100,
+      "side": "SELL",
+      "upper": 9.987938732273712,
+      "open": 10.0,
       "reported": false
     }
   ],
