@@ -104,24 +104,30 @@
       "symbol": "AKEUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.001836,
-      "qty": 108932.4619,
-      "margin": 10.0,
+      "entry": 0.0018359999999999997,
+      "qty": 326797.38560000004,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.0017901,
+      "tp_price": 0.0017900999999999998,
       "tf": "15m",
       "opened_at": 1795652210,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.0018421
+      ],
       "steps": [
         {
           "px": 0.001836,
           "ts": 1795652210
+        },
+        {
+          "px": 0.001836,
+          "ts": 1795652258
         }
       ],
       "entry_candle_ts": 1795652100,
-      "last_leg_candle_ts": 1795652100,
+      "last_leg_candle_ts": 1795652258,
       "dry_run": true,
       "order_id": "PAPER-AKEUSDT-1795652210"
     }
@@ -6675,16 +6681,6 @@
   ],
   "pending": [
     {
-      "symbol": "MUBARAKUSDT",
-      "tf": "4h",
-      "candle_ts": 1795435200,
-      "side": "SELL",
-      "upper": 0.023526215186596963,
-      "open": 0.02383,
-      "reported": true,
-      "filled": false
-    },
-    {
       "symbol": "VELVETUSDT",
       "tf": "4h",
       "candle_ts": 1795435200,
@@ -9523,7 +9519,8 @@
       "side": "SELL",
       "upper": 0.043412094759782374,
       "open": 0.04507,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "NIULAIUSDT",
@@ -9649,6 +9646,15 @@
       "side": "SELL",
       "upper": 0.005955441063897923,
       "open": 0.00605,
+      "reported": false
+    },
+    {
+      "symbol": "AKEUSDT",
+      "tf": "15m",
+      "candle_ts": 1795652100,
+      "side": "SELL",
+      "upper": 0.0018061420327615194,
+      "open": 0.0018352,
       "reported": false
     }
   ],
@@ -10010,15 +10016,6 @@
   "last_trade_report_ts": 1795651549,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795392388,
-      "kind": "gap_result",
-      "symbol": "BULLAUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795393058,
       "kind": "gap_result",
@@ -13605,6 +13602,15 @@
       "ts": 1795651540,
       "kind": "gap_result",
       "symbol": "BIGTIMEUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795652255,
+      "kind": "gap_result",
+      "symbol": "NIULAIUSDT",
       "tf": "15m",
       "gap": 0.0,
       "filled": true,
