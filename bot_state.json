@@ -9679,7 +9679,8 @@
       "side": "SELL",
       "upper": 0.10866586228586848,
       "open": 0.11397,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "ELSAUSDT",
@@ -10084,15 +10085,6 @@
   "last_trade_report_ts": 1795666055,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795400251,
-      "kind": "gap_result",
-      "symbol": "LAOPUUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795400260,
       "kind": "gap_result",
@@ -13677,6 +13669,15 @@
     },
     {
       "ts": 1795666045,
+      "kind": "gap_result",
+      "symbol": "ELSAUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
+    },
+    {
+      "ts": 1795666625,
       "kind": "gap_result",
       "symbol": "ELSAUSDT",
       "tf": "15m",
