@@ -152,6 +152,31 @@
       "last_leg_candle_ts": 1795647600,
       "dry_run": true,
       "order_id": "PAPER-SYNUSDT-1795647679"
+    },
+    {
+      "symbol": "MANTRAUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.003152,
+      "qty": 63451.7766,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0030732,
+      "tf": "4h",
+      "opened_at": 1795651260,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.003152,
+          "ts": 1795651260
+        }
+      ],
+      "entry_candle_ts": 1795651200,
+      "last_leg_candle_ts": 1795651200,
+      "dry_run": true,
+      "order_id": "PAPER-MANTRAUSDT-1795651260"
     }
   ],
   "trade_history": [
@@ -6703,16 +6728,6 @@
   ],
   "pending": [
     {
-      "symbol": "ZCATUSDT",
-      "tf": "15m",
-      "candle_ts": 1795426200,
-      "side": "SELL",
-      "upper": 0.019711899097784383,
-      "open": 0.01963,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "MSTUUSDT",
       "tf": "15m",
       "candle_ts": 1795426200,
@@ -9683,6 +9698,15 @@
       "upper": 0.007002035895899431,
       "open": 0.00646,
       "reported": false
+    },
+    {
+      "symbol": "SSVUSDT",
+      "tf": "4h",
+      "candle_ts": 1795651200,
+      "side": "SELL",
+      "upper": 2.253942378528924,
+      "open": 2.321,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -9980,7 +10004,6 @@
     "FLYUSDT": 1795475781,
     "ARGUSUSDT": 1795514584,
     "LYTEUSDT": 1795521797,
-    "NIULAIUSDT": 1795521859,
     "LWLGUSDT": 1795522602,
     "POETUSDT": 1795522606,
     "TSMONUSDT": 1795556797,
@@ -10029,7 +10052,7 @@
     "MANCERUSDT": 1795690011,
     "SPACE1USDT": 1795690122
   },
-  "last_trade_report_ts": 1795649147,
+  "last_trade_report_ts": 1795650431,
   "last_known_version": "2.10.0",
   "lessons": [
     {
