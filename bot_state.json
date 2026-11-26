@@ -1,31 +1,6 @@
 {
   "open_trades": [
     {
-      "symbol": "MOVEUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.006371,
-      "qty": 31392.2461,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.0062117249999999995,
-      "tf": "15m",
-      "opened_at": 1795652121,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.006371,
-          "ts": 1795652121
-        }
-      ],
-      "entry_candle_ts": 1795652100,
-      "last_leg_candle_ts": 1795652100,
-      "dry_run": true,
-      "order_id": "PAPER-MOVEUSDT-1795652121"
-    },
-    {
       "symbol": "MEUSDT",
       "side": "SELL",
       "status": "open",
@@ -79,24 +54,30 @@
       "symbol": "MOCAUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.006059,
-      "qty": 33008.7473,
-      "margin": 10.0,
+      "entry": 0.006083616558695586,
+      "qty": 98625.54520000001,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.005907525,
+      "tp_price": 0.005931526144728197,
       "tf": "15m",
       "opened_at": 1795652191,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.00612
+      ],
       "steps": [
         {
           "px": 0.006059,
           "ts": 1795652191
+        },
+        {
+          "px": 0.006096,
+          "ts": 1795652485
         }
       ],
       "entry_candle_ts": 1795652100,
-      "last_leg_candle_ts": 1795652100,
+      "last_leg_candle_ts": 1795652485,
       "dry_run": true,
       "order_id": "PAPER-MOCAUSDT-1795652191"
     },
@@ -127,36 +108,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "ZKPUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.03731,
-      "qty": 5360.4932,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.03637725,
-      "tf": "15m",
-      "opened_at": 1794981647,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.03731,
-          "ts": 1794981647
-        }
-      ],
-      "entry_candle_ts": 1794981600,
-      "last_leg_candle_ts": 1794981600,
-      "dry_run": true,
-      "order_id": "PAPER-ZKPUSDT-1794981647",
-      "closed_at": 1794982702,
-      "close_px": 0.03569,
-      "pnl_usdt": 8.683998927901385,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "FHEUSDT",
       "side": "SELL",
@@ -6677,6 +6628,36 @@
       "pnl_usdt": -55.228758169934686,
       "close_reason": "STOP",
       "why": "STOP"
+    },
+    {
+      "symbol": "MOVEUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.006371,
+      "qty": 31392.2461,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0062117249999999995,
+      "tf": "15m",
+      "opened_at": 1795652121,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.006371,
+          "ts": 1795652121
+        }
+      ],
+      "entry_candle_ts": 1795652100,
+      "last_leg_candle_ts": 1795652100,
+      "dry_run": true,
+      "order_id": "PAPER-MOVEUSDT-1795652121",
+      "closed_at": 1795652485,
+      "close_px": 0.006647,
+      "pnl_usdt": -8.66425992779784,
+      "close_reason": "STOP",
+      "why": "STOP"
     }
   ],
   "pending": [
@@ -10011,7 +9992,7 @@
     "NIULAIUSDT": 1795694598,
     "SYNUSDT": 1795694599
   },
-  "last_trade_report_ts": 1795651549,
+  "last_trade_report_ts": 1795652465,
   "last_known_version": "2.10.0",
   "lessons": [
     {
