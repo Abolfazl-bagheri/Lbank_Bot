@@ -6684,16 +6684,6 @@
   ],
   "pending": [
     {
-      "symbol": "CSOPSAMSUNG2LUSDT",
-      "tf": "15m",
-      "candle_ts": 1795510800,
-      "side": "LONG",
-      "upper": 4.476975622291865,
-      "open": 4.333,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "RAMUSDT",
       "tf": "15m",
       "candle_ts": 1795510800,
@@ -9665,7 +9655,8 @@
       "side": "LONG",
       "upper": 0.01777315744773853,
       "open": 0.01731,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "EVAAUSDT",
@@ -9674,6 +9665,16 @@
       "side": "SELL",
       "upper": 3.0354948492584595,
       "open": 3.026,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "ZCATUSDT",
+      "tf": "15m",
+      "candle_ts": 1795675500,
+      "side": "LONG",
+      "upper": 0.017781514463240913,
+      "open": 0.01731,
       "reported": false
     }
   ],
@@ -10035,24 +10036,6 @@
   "last_trade_report_ts": 1795674920,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795421169,
-      "kind": "gap_result",
-      "symbol": "BULLAUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795421420,
-      "kind": "gap_result",
-      "symbol": "SILVERUSDT",
-      "tf": "5m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795421422,
       "kind": "gap_result",
@@ -13630,6 +13613,24 @@
       "ts": 1795674743,
       "kind": "gap_result",
       "symbol": "ZCATUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795675621,
+      "kind": "gap_result",
+      "symbol": "ZCATUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795675632,
+      "kind": "gap_result",
+      "symbol": "EVAAUSDT",
       "tf": "15m",
       "gap": 0.0,
       "filled": true,
