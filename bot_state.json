@@ -6744,16 +6744,6 @@
   ],
   "pending": [
     {
-      "symbol": "NVDLUSDT",
-      "tf": "15m",
-      "candle_ts": 1795511700,
-      "side": "LONG",
-      "upper": 16.88719802599974,
-      "open": 15.42,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "EWTUSDT",
       "tf": "15m",
       "candle_ts": 1795512600,
@@ -9734,6 +9724,16 @@
       "side": "LONG",
       "upper": 49.341942953286235,
       "open": 48.5,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "CRCLUSDT",
+      "tf": "5m",
+      "candle_ts": 1795705800,
+      "side": "LONG",
+      "upper": 49.460194397269824,
+      "open": 48.28,
       "reported": false
     }
   ],
@@ -10093,15 +10093,6 @@
   "last_trade_report_ts": 1795704990,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795425926,
-      "kind": "gap_result",
-      "symbol": "CRCLUSDT",
-      "tf": "5m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795426310,
       "kind": "gap_result",
@@ -13689,6 +13680,15 @@
       "kind": "gap_result",
       "symbol": "INITUSDT",
       "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795705818,
+      "kind": "gap_result",
+      "symbol": "CRCLUSDT",
+      "tf": "5m",
       "gap": 0.0,
       "filled": true,
       "note": "filled"
