@@ -9688,7 +9688,8 @@
       "side": "SELL",
       "upper": 42.309503981326785,
       "open": 42.36,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "SILVERUSDT",
@@ -9697,7 +9698,8 @@
       "side": "SELL",
       "upper": 42.2898477357586,
       "open": 42.36,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -10054,27 +10056,9 @@
     "HAJIMIUSDT": 1795709068,
     "RGTIUSDT": 1795713415
   },
-  "last_trade_report_ts": 1795670766,
+  "last_trade_report_ts": 1795671676,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795415560,
-      "kind": "gap_result",
-      "symbol": "EWZSUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795417405,
-      "kind": "gap_result",
-      "symbol": "ZHONGJIUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795417407,
       "kind": "gap_result",
@@ -13653,6 +13637,24 @@
       "kind": "gap_result",
       "symbol": "MMTUSDT",
       "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795671623,
+      "kind": "gap_result",
+      "symbol": "SILVERUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795671627,
+      "kind": "gap_result",
+      "symbol": "SILVERUSDT",
+      "tf": "5m",
       "gap": 0.0,
       "filled": true,
       "note": "filled"
