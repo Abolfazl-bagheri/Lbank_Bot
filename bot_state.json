@@ -9610,7 +9610,8 @@
       "side": "LONG",
       "upper": 41.76784782258799,
       "open": 41.14,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "SILVERUSDT",
@@ -9619,7 +9620,8 @@
       "side": "LONG",
       "upper": 41.76431008596998,
       "open": 41.14,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -9976,27 +9978,9 @@
     "SYNUSDT": 1795694599,
     "TRUMPSOLUSDT": 1795698304
   },
-  "last_trade_report_ts": 1795654532,
+  "last_trade_report_ts": 1795655446,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795396250,
-      "kind": "gap_result",
-      "symbol": "GOLDUSDT",
-      "tf": "5m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795396262,
-      "kind": "gap_result",
-      "symbol": "CRCLUSDT",
-      "tf": "5m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795396268,
       "kind": "gap_result",
@@ -13574,6 +13558,24 @@
       "ts": 1795655011,
       "kind": "gap_result",
       "symbol": "XAUTUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795655419,
+      "kind": "gap_result",
+      "symbol": "SILVERUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795655421,
+      "kind": "gap_result",
+      "symbol": "SILVERUSDT",
       "tf": "5m",
       "gap": 0.0,
       "filled": true,
