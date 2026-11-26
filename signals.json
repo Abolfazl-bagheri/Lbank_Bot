@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795723315,
+  "updated_at": 1795723542,
   "signals": [
-    {
-      "kind": "HEARTBEAT",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795712138
-    },
     {
       "kind": "GAP",
       "symbol": "SSVUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 1.11,
       "ts": 1795723315
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795723542
     }
   ],
   "trades": [
@@ -1469,33 +1469,20 @@
       "px": 0.018637,
       "pnl": -4.8438,
       "tf": "1h"
-    },
-    {
-      "symbol": "NESUSDT",
-      "side": "SELL",
-      "entry": 0.2906944099029507,
-      "tp": 0.2834270496553769,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
-      "lev": 20,
-      "px": 0.2819,
-      "pnl": 17.4319,
-      "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1795651554,
-  "realized": -86.2716,
-  "closed_n": 26,
-  "open_upnl": 20.8732,
-  "equity": 934.6016,
+  "realized": -68.1197,
+  "closed_n": 27,
+  "open_upnl": 3.4413,
+  "equity": 935.3216,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 161.8583,
+    "profit": 180.0101,
     "loss": -248.1298,
-    "count": 26
+    "count": 27
   }
 }
