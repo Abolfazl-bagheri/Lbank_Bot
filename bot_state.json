@@ -138,76 +138,9 @@
       "last_leg_candle_ts": 1795711215,
       "dry_run": true,
       "order_id": "PAPER-MUSDT-1795665776"
-    },
-    {
-      "symbol": "AIOTUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.115312597960935,
-      "qty": 5203.247600000001,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.11242978301191163,
-      "tf": "1h",
-      "opened_at": 1795708847,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        0.1162
-      ],
-      "steps": [
-        {
-          "px": 0.11435,
-          "ts": 1795708847
-        },
-        {
-          "px": 0.1158,
-          "ts": 1795709498
-        }
-      ],
-      "entry_candle_ts": 1795708800,
-      "last_leg_candle_ts": 1795709498,
-      "dry_run": true,
-      "order_id": "PAPER-AIOTUSDT-1795708847"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "MOCAUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.00694,
-      "qty": 86455.3314,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.0067665,
-      "tf": "15m",
-      "opened_at": 1795004117,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        0.00696
-      ],
-      "steps": [
-        {
-          "px": 0.00694,
-          "ts": 1795004117
-        },
-        {
-          "px": 0.00694,
-          "ts": 1795004236
-        }
-      ],
-      "entry_candle_ts": 1795004100,
-      "last_leg_candle_ts": 1795004236,
-      "dry_run": true,
-      "order_id": "PAPER-MOCAUSDT-1795004117",
-      "closed_at": 1795004363,
-      "close_px": 0.00676,
-      "pnl_usdt": 15.56195965417864,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "MMTUSDT",
       "side": "SELL",
@@ -6722,6 +6655,42 @@
       "pnl_usdt": 6.336405529953923,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "AIOTUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.115312597960935,
+      "qty": 5203.247600000001,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 0.11242978301191163,
+      "tf": "1h",
+      "opened_at": 1795708847,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.1162
+      ],
+      "steps": [
+        {
+          "px": 0.11435,
+          "ts": 1795708847
+        },
+        {
+          "px": 0.1158,
+          "ts": 1795709498
+        }
+      ],
+      "entry_candle_ts": 1795708800,
+      "last_leg_candle_ts": 1795709498,
+      "dry_run": true,
+      "order_id": "PAPER-AIOTUSDT-1795708847",
+      "closed_at": 1795716614,
+      "close_px": 0.12057,
+      "pnl_usdt": -27.355564606285625,
+      "close_reason": "STOP",
+      "why": "STOP"
     }
   ],
   "pending": [
