@@ -6719,26 +6719,6 @@
   ],
   "pending": [
     {
-      "symbol": "AIOTUSDT",
-      "tf": "15m",
-      "candle_ts": 1795513500,
-      "side": "SELL",
-      "upper": 0.08652484256894888,
-      "open": 0.08722,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "EWTUSDT",
-      "tf": "15m",
-      "candle_ts": 1795513500,
-      "side": "LONG",
-      "upper": 90.13203212465204,
-      "open": 89.28,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "ARTYUSDT",
       "tf": "15m",
       "candle_ts": 1795513500,
@@ -9700,7 +9680,8 @@
       "side": "LONG",
       "upper": 61045.25561476537,
       "open": 60201.6,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CRCLUSDT",
@@ -9709,6 +9690,25 @@
       "side": "LONG",
       "upper": 49.339307115277364,
       "open": 48.45,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "RAMUSDT",
+      "tf": "15m",
+      "candle_ts": 1795707000,
+      "side": "LONG",
+      "upper": 3.768,
+      "open": 3.768,
+      "reported": false
+    },
+    {
+      "symbol": "AKEUSDT",
+      "tf": "15m",
+      "candle_ts": 1795707000,
+      "side": "LONG",
+      "upper": 0.0015314054857276226,
+      "open": 0.0013641,
       "reported": false
     }
   ],
@@ -10066,27 +10066,9 @@
     "MANCERUSDT": 1795748683,
     "IRENONUSDT": 1795749393
   },
-  "last_trade_report_ts": 1795705904,
+  "last_trade_report_ts": 1795707134,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795426316,
-      "kind": "gap_result",
-      "symbol": "MSTUUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795427201,
-      "kind": "gap_result",
-      "symbol": "ZCATUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795427203,
       "kind": "gap_result",
@@ -13665,6 +13647,24 @@
       "kind": "gap_result",
       "symbol": "CRCLUSDT",
       "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795707127,
+      "kind": "gap_result",
+      "symbol": "BTCUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795707129,
+      "kind": "gap_result",
+      "symbol": "CRCLUSDT",
+      "tf": "15m",
       "gap": 0.0,
       "filled": true,
       "note": "filled"
