@@ -9695,7 +9695,8 @@
       "side": "SELL",
       "upper": 0.009287725232460397,
       "open": 0.009026,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -10026,7 +10027,6 @@
     "ARGUSDT": 1795724151,
     "APROUSDT": 1795724183,
     "AMCUSDT": 1795724336,
-    "ARGUSUSDT": 1795725109,
     "ARROWUSDT": 1795725219,
     "SIMOUSDT": 1795725261,
     "SKY1USDT": 1795748557,
@@ -10054,20 +10054,12 @@
     "KNTQUSDT": 1795766532,
     "HAJIMIUSDT": 1795766536,
     "NIULAIUSDT": 1795766538,
-    "UP2USDT": 1795767362
+    "UP2USDT": 1795767362,
+    "ARGUSUSDT": 1795768355
   },
   "last_trade_report_ts": 1795724497,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795478755,
-      "kind": "gap_result",
-      "symbol": "ALGOUSDT",
-      "tf": "4h",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
     {
       "ts": 1795478758,
       "kind": "gap_result",
@@ -13652,6 +13644,15 @@
     },
     {
       "ts": 1795723532,
+      "kind": "gap_result",
+      "symbol": "CLAUDIAUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795725108,
       "kind": "gap_result",
       "symbol": "CLAUDIAUSDT",
       "tf": "15m",
