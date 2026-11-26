@@ -194,64 +194,9 @@
       "last_leg_candle_ts": 1795709498,
       "dry_run": true,
       "order_id": "PAPER-AIOTUSDT-1795708847"
-    },
-    {
-      "symbol": "BULLAUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.06324,
-      "qty": 3162.5553,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.061659000000000005,
-      "tf": "15m",
-      "opened_at": 1795711528,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.06324,
-          "ts": 1795711528
-        }
-      ],
-      "entry_candle_ts": 1795711500,
-      "last_leg_candle_ts": 1795711500,
-      "dry_run": true,
-      "order_id": "PAPER-BULLAUSDT-1795711528"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "IRYSUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.01781,
-      "qty": 11229.6463,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.017364749999999998,
-      "tf": "4h",
-      "opened_at": 1795003300,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.01781,
-          "ts": 1795003300
-        }
-      ],
-      "entry_candle_ts": 1795003200,
-      "last_leg_candle_ts": 1795003200,
-      "dry_run": true,
-      "order_id": "PAPER-IRYSUSDT-1795003300",
-      "closed_at": 1795003824,
-      "close_px": 0.01718,
-      "pnl_usdt": 7.074677147669832,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "ZKCUSDT",
       "side": "SELL",
@@ -6782,19 +6727,39 @@
       "pnl_usdt": 15.442208703790318,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "BULLAUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.06324,
+      "qty": 3162.5553,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.061659000000000005,
+      "tf": "15m",
+      "opened_at": 1795711528,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.06324,
+          "ts": 1795711528
+        }
+      ],
+      "entry_candle_ts": 1795711500,
+      "last_leg_candle_ts": 1795711500,
+      "dry_run": true,
+      "order_id": "PAPER-BULLAUSDT-1795711528",
+      "closed_at": 1795711752,
+      "close_px": 0.06025,
+      "pnl_usdt": 9.456040480708431,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
-    {
-      "symbol": "EWTUSDT",
-      "tf": "15m",
-      "candle_ts": 1795515300,
-      "side": "LONG",
-      "upper": 90.12693490432689,
-      "open": 89.28,
-      "reported": true,
-      "filled": true
-    },
     {
       "symbol": "EWTUSDT",
       "tf": "15m",
@@ -9775,6 +9740,15 @@
       "side": "LONG",
       "upper": 1.472578673851244,
       "open": 1.465,
+      "reported": false
+    },
+    {
+      "symbol": "INITUSDT",
+      "tf": "15m",
+      "candle_ts": 1795711500,
+      "side": "SELL",
+      "upper": 0.14454541862602063,
+      "open": 0.1458,
       "reported": false
     }
   ],
