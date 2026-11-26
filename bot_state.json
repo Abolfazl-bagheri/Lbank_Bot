@@ -67,31 +67,6 @@
       "order_id": "PAPER-MOCAUSDT-1795652191"
     },
     {
-      "symbol": "MSTUUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 10.19,
-      "qty": 19.6271,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 9.93525,
-      "tf": "15m",
-      "opened_at": 1795652279,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 10.19,
-          "ts": 1795652279
-        }
-      ],
-      "entry_candle_ts": 1795652100,
-      "last_leg_candle_ts": 1795652100,
-      "dry_run": true,
-      "order_id": "PAPER-MSTUUSDT-1795652279"
-    },
-    {
       "symbol": "MOVEUSDT",
       "side": "SELL",
       "status": "open",
@@ -118,36 +93,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "BLESSUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.011999,
-      "qty": 16668.0557,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.011699024999999998,
-      "tf": "1h",
-      "opened_at": 1794985288,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.011999,
-          "ts": 1794985288
-        }
-      ],
-      "entry_candle_ts": 1794985200,
-      "last_leg_candle_ts": 1794985200,
-      "dry_run": true,
-      "order_id": "PAPER-BLESSUSDT-1794985288",
-      "closed_at": 1794985825,
-      "close_px": 0.011671,
-      "pnl_usdt": 5.467122260188323,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "MMTUSDT",
       "side": "SELL",
@@ -6668,6 +6613,36 @@
       "pnl_usdt": 6.960667461263423,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "MSTUUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 10.19,
+      "qty": 19.6271,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 9.93525,
+      "tf": "15m",
+      "opened_at": 1795652279,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 10.19,
+          "ts": 1795652279
+        }
+      ],
+      "entry_candle_ts": 1795652100,
+      "last_leg_candle_ts": 1795652100,
+      "dry_run": true,
+      "order_id": "PAPER-MSTUUSDT-1795652279",
+      "closed_at": 1795653345,
+      "close_px": 9.92,
+      "pnl_usdt": 5.299313052011769,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -10006,7 +9981,7 @@
     "NIULAIUSDT": 1795694598,
     "SYNUSDT": 1795694599
   },
-  "last_trade_report_ts": 1795652465,
+  "last_trade_report_ts": 1795653367,
   "last_known_version": "2.10.0",
   "lessons": [
     {
