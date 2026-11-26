@@ -6744,46 +6744,6 @@
   ],
   "pending": [
     {
-      "symbol": "SOFTBANKUSDT",
-      "tf": "15m",
-      "candle_ts": 1795511700,
-      "side": "LONG",
-      "upper": 20.415579231837334,
-      "open": 20.13,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "SOXLUSDT",
-      "tf": "15m",
-      "candle_ts": 1795511700,
-      "side": "LONG",
-      "upper": 44.601544388757226,
-      "open": 39.55,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "BTCUSDT",
-      "tf": "15m",
-      "candle_ts": 1795511700,
-      "side": "LONG",
-      "upper": 60799.93985704353,
-      "open": 59842.1,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "CRCLUSDT",
-      "tf": "15m",
-      "candle_ts": 1795511700,
-      "side": "LONG",
-      "upper": 51.52677021983054,
-      "open": 49.94,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "NVDLUSDT",
       "tf": "15m",
       "candle_ts": 1795511700,
@@ -9737,6 +9697,43 @@
       "side": "SELL",
       "upper": 0.0931162134260092,
       "open": 0.09264,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "STBLUSDT",
+      "tf": "15m",
+      "candle_ts": 1795705200,
+      "side": "SELL",
+      "upper": 0.020378091455345956,
+      "open": 0.02076,
+      "reported": false
+    },
+    {
+      "symbol": "2ZUSDT",
+      "tf": "1h",
+      "candle_ts": 1795705200,
+      "side": "SELL",
+      "upper": 0.017829585246200066,
+      "open": 0.01803,
+      "reported": false
+    },
+    {
+      "symbol": "STBLUSDT",
+      "tf": "1h",
+      "candle_ts": 1795705200,
+      "side": "SELL",
+      "upper": 0.020382163645101457,
+      "open": 0.02076,
+      "reported": false
+    },
+    {
+      "symbol": "CRCLUSDT",
+      "tf": "5m",
+      "candle_ts": 1795705500,
+      "side": "LONG",
+      "upper": 49.341942953286235,
+      "open": 48.5,
       "reported": false
     }
   ],
@@ -10080,20 +10077,22 @@
     "AMCUSDT": 1795724336,
     "ARGUSUSDT": 1795725109,
     "ARROWUSDT": 1795725219,
-    "SIMOUSDT": 1795725261
+    "SIMOUSDT": 1795725261,
+    "SKY1USDT": 1795748557,
+    "AI1USDT": 1795748569,
+    "AINBSCUSDT": 1795748601,
+    "AEHRUSDT": 1795748652,
+    "1000SATSUSDT": 1795748668,
+    "1000WOJAKUSDT": 1795748677,
+    "NEIRO1USDT": 1795748678,
+    "MEMECOINUSDT": 1795748674,
+    "PIPEDOGUSDT": 1795748680,
+    "CZUSDT": 1795748681,
+    "MANCERUSDT": 1795748683
   },
   "last_trade_report_ts": 1795704990,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795425632,
-      "kind": "gap_result",
-      "symbol": "CRCLUSDT",
-      "tf": "5m",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
     {
       "ts": 1795425926,
       "kind": "gap_result",
@@ -13681,6 +13680,15 @@
       "kind": "gap_result",
       "symbol": "XAUTUSDT",
       "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795705495,
+      "kind": "gap_result",
+      "symbol": "INITUSDT",
+      "tf": "15m",
       "gap": 0.0,
       "filled": true,
       "note": "filled"
