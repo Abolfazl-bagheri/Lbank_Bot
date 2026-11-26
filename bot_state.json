@@ -99,6 +99,31 @@
       "last_leg_candle_ts": 1795652100,
       "dry_run": true,
       "order_id": "PAPER-MOCAUSDT-1795652191"
+    },
+    {
+      "symbol": "AKEUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.001836,
+      "qty": 108932.4619,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0017901,
+      "tf": "15m",
+      "opened_at": 1795652210,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.001836,
+          "ts": 1795652210
+        }
+      ],
+      "entry_candle_ts": 1795652100,
+      "last_leg_candle_ts": 1795652100,
+      "dry_run": true,
+      "order_id": "PAPER-AKEUSDT-1795652210"
     }
   ],
   "trade_history": [
@@ -6650,16 +6675,6 @@
   ],
   "pending": [
     {
-      "symbol": "AVAAIUSDT",
-      "tf": "4h",
-      "candle_ts": 1795435200,
-      "side": "SELL",
-      "upper": 0.006950800086141454,
-      "open": 0.006997,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "MUBARAKUSDT",
       "tf": "4h",
       "candle_ts": 1795435200,
@@ -9625,6 +9640,15 @@
       "side": "SELL",
       "upper": 0.596178744273279,
       "open": 0.6,
+      "reported": false
+    },
+    {
+      "symbol": "MOCAUSDT",
+      "tf": "15m",
+      "candle_ts": 1795652100,
+      "side": "SELL",
+      "upper": 0.005955441063897923,
+      "open": 0.00605,
       "reported": false
     }
   ],
