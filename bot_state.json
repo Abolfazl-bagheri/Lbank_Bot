@@ -158,64 +158,9 @@
       "last_leg_candle_ts": 1795680000,
       "dry_run": true,
       "order_id": "PAPER-BUSDT-1795680130"
-    },
-    {
-      "symbol": "STBLUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.0207,
-      "qty": 9661.8357,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.0201825,
-      "tf": "15m",
-      "opened_at": 1795705262,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.0207,
-          "ts": 1795705262
-        }
-      ],
-      "entry_candle_ts": 1795705200,
-      "last_leg_candle_ts": 1795705200,
-      "dry_run": true,
-      "order_id": "PAPER-STBLUSDT-1795705262"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "PIPPINUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.02091,
-      "qty": 9564.8015,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.020387250000000003,
-      "tf": "1h",
-      "opened_at": 1794999651,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.02091,
-          "ts": 1794999651
-        }
-      ],
-      "entry_candle_ts": 1794999600,
-      "last_leg_candle_ts": 1794999600,
-      "dry_run": true,
-      "order_id": "PAPER-PIPPINUSDT-1794999651",
-      "closed_at": 1794999999,
-      "close_px": 0.0202,
-      "pnl_usdt": 6.791009086561475,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "PIEVERSEUSDT",
       "side": "SELL",
@@ -6740,29 +6685,39 @@
       "pnl_usdt": -95.62991772697161,
       "close_reason": "STOP",
       "why": "STOP"
+    },
+    {
+      "symbol": "STBLUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.0207,
+      "qty": 9661.8357,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0201825,
+      "tf": "15m",
+      "opened_at": 1795705262,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.0207,
+          "ts": 1795705262
+        }
+      ],
+      "entry_candle_ts": 1795705200,
+      "last_leg_candle_ts": 1795705200,
+      "dry_run": true,
+      "order_id": "PAPER-STBLUSDT-1795705262",
+      "closed_at": 1795706353,
+      "close_px": 0.02014,
+      "pnl_usdt": 5.410628019323652,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
-    {
-      "symbol": "EWTUSDT",
-      "tf": "15m",
-      "candle_ts": 1795512600,
-      "side": "LONG",
-      "upper": 90.12611124092629,
-      "open": 89.28,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "EWTUSDT",
-      "tf": "15m",
-      "candle_ts": 1795513500,
-      "side": "LONG",
-      "upper": 90.13203212465204,
-      "open": 89.28,
-      "reported": true,
-      "filled": true
-    },
     {
       "symbol": "AIOTUSDT",
       "tf": "15m",
@@ -9697,7 +9652,8 @@
       "side": "SELL",
       "upper": 0.020378091455345956,
       "open": 0.02076,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "2ZUSDT",
@@ -9734,6 +9690,25 @@
       "side": "LONG",
       "upper": 49.460194397269824,
       "open": 48.28,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "BTCUSDT",
+      "tf": "15m",
+      "candle_ts": 1795706100,
+      "side": "LONG",
+      "upper": 61045.25561476537,
+      "open": 60201.6,
+      "reported": false
+    },
+    {
+      "symbol": "CRCLUSDT",
+      "tf": "15m",
+      "candle_ts": 1795706100,
+      "side": "LONG",
+      "upper": 49.339307115277364,
+      "open": 48.45,
       "reported": false
     }
   ],
@@ -10088,29 +10063,12 @@
     "MEMECOINUSDT": 1795748674,
     "PIPEDOGUSDT": 1795748680,
     "CZUSDT": 1795748681,
-    "MANCERUSDT": 1795748683
+    "MANCERUSDT": 1795748683,
+    "IRENONUSDT": 1795749393
   },
-  "last_trade_report_ts": 1795704990,
+  "last_trade_report_ts": 1795705904,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795426310,
-      "kind": "gap_result",
-      "symbol": "MSTUUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795426312,
-      "kind": "gap_result",
-      "symbol": "CRCLUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795426316,
       "kind": "gap_result",
@@ -13686,6 +13644,24 @@
     },
     {
       "ts": 1795705818,
+      "kind": "gap_result",
+      "symbol": "CRCLUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795706238,
+      "kind": "gap_result",
+      "symbol": "STBLUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795706240,
       "kind": "gap_result",
       "symbol": "CRCLUSDT",
       "tf": "5m",
