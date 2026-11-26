@@ -37,41 +37,6 @@
       "order_id": "PAPER-CKBUSDT-1795652160"
     },
     {
-      "symbol": "MOCAUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.006108331561963284,
-      "qty": 229195.1551,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 0.005955623272914202,
-      "tf": "15m",
-      "opened_at": 1795652191,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [
-        0.00612
-      ],
-      "steps": [
-        {
-          "px": 0.006059,
-          "ts": 1795652191
-        },
-        {
-          "px": 0.006096,
-          "ts": 1795652485
-        },
-        {
-          "px": 0.006127,
-          "ts": 1795653058
-        }
-      ],
-      "entry_candle_ts": 1795652100,
-      "last_leg_candle_ts": 1795653000,
-      "dry_run": true,
-      "order_id": "PAPER-MOCAUSDT-1795652191"
-    },
-    {
       "symbol": "KIOXIAUSDT",
       "side": "SELL",
       "status": "open",
@@ -165,36 +130,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "MMTUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.2351,
-      "qty": 850.7018,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.2292225,
-      "tf": "4h",
-      "opened_at": 1794988879,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.2351,
-          "ts": 1794988879
-        }
-      ],
-      "entry_candle_ts": 1794988800,
-      "last_leg_candle_ts": 1794988800,
-      "dry_run": true,
-      "order_id": "PAPER-MMTUSDT-1794988879",
-      "closed_at": 1794992717,
-      "close_px": 0.2486,
-      "pnl_usdt": -11.484474691620575,
-      "close_reason": "STOP",
-      "why": "STOP"
-    },
     {
       "symbol": "ZKCUSDT",
       "side": "SELL",
@@ -6703,6 +6638,46 @@
       "closed_at": 1795669822,
       "close_px": 0.10241,
       "pnl_usdt": 12.126215373326003,
+      "close_reason": "TP50",
+      "why": "TP50"
+    },
+    {
+      "symbol": "MOCAUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.006108331561963284,
+      "qty": 229195.1551,
+      "margin": 70.0,
+      "leverage": 20,
+      "tp_price": 0.005955623272914202,
+      "tf": "15m",
+      "opened_at": 1795652191,
+      "adds": 2,
+      "last_leg_margin": 40.0,
+      "used_res_levels": [
+        0.00612
+      ],
+      "steps": [
+        {
+          "px": 0.006059,
+          "ts": 1795652191
+        },
+        {
+          "px": 0.006096,
+          "ts": 1795652485
+        },
+        {
+          "px": 0.006127,
+          "ts": 1795653058
+        }
+      ],
+      "entry_candle_ts": 1795652100,
+      "last_leg_candle_ts": 1795653000,
+      "dry_run": true,
+      "order_id": "PAPER-MOCAUSDT-1795652191",
+      "closed_at": 1795672539,
+      "close_px": 0.005955,
+      "pnl_usdt": 35.14285113226594,
       "close_reason": "TP50",
       "why": "TP50"
     }
