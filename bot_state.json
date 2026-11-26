@@ -1,5 +1,31 @@
 {
-  "open_trades": [],
+  "open_trades": [
+    {
+      "symbol": "MOVEUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.006371,
+      "qty": 31392.2461,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0062117249999999995,
+      "tf": "15m",
+      "opened_at": 1795652121,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.006371,
+          "ts": 1795652121
+        }
+      ],
+      "entry_candle_ts": 1795652100,
+      "last_leg_candle_ts": 1795652100,
+      "dry_run": true,
+      "order_id": "PAPER-MOVEUSDT-1795652121"
+    }
+  ],
   "trade_history": [
     {
       "symbol": "MMTUSDT",
@@ -6549,16 +6575,6 @@
   ],
   "pending": [
     {
-      "symbol": "VELVETUSDT",
-      "tf": "1h",
-      "candle_ts": 1795435200,
-      "side": "SELL",
-      "upper": 0.08089748707323502,
-      "open": 0.08246,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "ALGOUSDT",
       "tf": "4h",
       "candle_ts": 1795435200,
@@ -9531,6 +9547,15 @@
       "upper": 0.1514947755861897,
       "open": 0.1525,
       "reported": false
+    },
+    {
+      "symbol": "BIGTIMEUSDT",
+      "tf": "15m",
+      "candle_ts": 1795652100,
+      "side": "LONG",
+      "upper": 0.007150816194675237,
+      "open": 0.00612,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -9800,7 +9825,6 @@
   "last_daily_report_date": "2026-11-26",
   "kline_blacklist": {
     "EURUSDT": 1793385188,
-    "AXLUSDT": 1793502358,
     "CANTONUSDT": 1793952369,
     "METEORAUSDT": 1794163747,
     "1000BTTCUSDT": 1794189823,
