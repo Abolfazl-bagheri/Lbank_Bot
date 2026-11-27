@@ -170,24 +170,30 @@
       "symbol": "ONEUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.0011131,
-      "qty": 179678.3757,
-      "margin": 10.0,
+      "entry": 0.0011190838724128582,
+      "qty": 536152.8432,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.0010852725,
+      "tp_price": 0.0010911067756025367,
       "tf": "1h",
       "opened_at": 1795748424,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.001124
+      ],
       "steps": [
         {
           "px": 0.0011131,
           "ts": 1795748424
+        },
+        {
+          "px": 0.0011221,
+          "ts": 1795748725
         }
       ],
       "entry_candle_ts": 1795748400,
-      "last_leg_candle_ts": 1795748400,
+      "last_leg_candle_ts": 1795748725,
       "dry_run": true,
       "order_id": "PAPER-ONEUSDT-1795748424"
     },
@@ -10125,9 +10131,7 @@
     "APROUSDT": 1795724183,
     "AMCUSDT": 1795724336,
     "SIMOUSDT": 1795725261,
-    "SKY1USDT": 1795748557,
     "AI1USDT": 1795748569,
-    "AINBSCUSDT": 1795748601,
     "AEHRUSDT": 1795748652,
     "1000SATSUSDT": 1795748668,
     "1000WOJAKUSDT": 1795748677,
@@ -10157,7 +10161,9 @@
     "ARROWUSDT": 1795781032,
     "CITYUSDT": 1795781784,
     "OFCUSDT": 1795782668,
-    "ARGUSDT": 1795784552
+    "ARGUSDT": 1795784552,
+    "SKY1USDT": 1795791880,
+    "AINBSCUSDT": 1795791911
   },
   "last_trade_report_ts": 1795748148,
   "last_known_version": "2.10.0",
