@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795745723,
+  "updated_at": 1795745793,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795738213
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795738231
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "15m",
       "gap": 3.1,
       "ts": 1795745723
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795745730
+    },
+    {
+      "kind": "SELL",
+      "symbol": "BTCUSDT",
+      "tf": "15m",
+      "gap": 0.15,
+      "ts": 1795745793
     }
   ],
   "trades": [
@@ -1469,14 +1469,27 @@
       "px": 49.6,
       "pnl": 0.4464,
       "tf": "5m"
+    },
+    {
+      "symbol": "BIGTIMEUSDT",
+      "side": "SELL",
+      "entry": 0.00681,
+      "tp": 0.00663975,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.00681,
+      "pnl": -0.24,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1795737865,
   "realized": 14.9922,
   "closed_n": 2,
-  "open_upnl": -39.3109,
-  "equity": 975.6813,
+  "open_upnl": -39.5509,
+  "equity": 975.4413,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
