@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795740318,
+  "updated_at": 1795740334,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795720277
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795720295
-    },
     {
       "kind": "GAP",
       "symbol": "IDOLUSDT",
@@ -1402,15 +1388,43 @@
       "tf": "15m",
       "gap": 1.83,
       "ts": 1795740318
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795740322
+    },
+    {
+      "kind": "SELL",
+      "symbol": "MEUSDT",
+      "tf": "15m",
+      "gap": 1.08,
+      "ts": 1795740334
     }
   ],
-  "trades": [],
+  "trades": [
+    {
+      "symbol": "GRVTUSDT",
+      "side": "SELL",
+      "entry": 0.1352,
+      "tp": 0.13182,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.1352,
+      "pnl": -0.24,
+      "tf": "15m"
+    }
+  ],
   "start": 1000.0,
   "session_start": 1795737865,
   "realized": 9.075,
   "closed_n": 1,
-  "open_upnl": 0,
-  "equity": 1009.075,
+  "open_upnl": -0.24,
+  "equity": 1008.835,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
