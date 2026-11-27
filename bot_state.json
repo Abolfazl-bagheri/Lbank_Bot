@@ -6749,26 +6749,6 @@
   ],
   "pending": [
     {
-      "symbol": "XAUTUSDT",
-      "tf": "15m",
-      "candle_ts": 1795657500,
-      "side": "LONG",
-      "upper": 3593.681994998832,
-      "open": 3557.02,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "MANTRAUSDT",
-      "tf": "15m",
-      "candle_ts": 1795661100,
-      "side": "LONG",
-      "upper": 0.0036922184523883917,
-      "open": 0.002668,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "SLXUSDT",
       "tf": "15m",
       "candle_ts": 1795661100,
@@ -9731,7 +9711,8 @@
       "side": "SELL",
       "upper": 54.3121159053884,
       "open": 54.24,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "LAOPUUSDT",
@@ -9739,6 +9720,25 @@
       "candle_ts": 1795810500,
       "side": "LONG",
       "upper": 35.48746372110099,
+      "open": 35.02,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "YOFCUSDT",
+      "tf": "15m",
+      "candle_ts": 1795811400,
+      "side": "SELL",
+      "upper": 9.881,
+      "open": 9.881,
+      "reported": false
+    },
+    {
+      "symbol": "LAOPUUSDT",
+      "tf": "15m",
+      "candle_ts": 1795811400,
+      "side": "LONG",
+      "upper": 35.49202276877073,
       "open": 35.02,
       "reported": false
     }
@@ -10108,29 +10108,12 @@
     "XPSTOCKUSDT": 1795852925,
     "SKY1USDT": 1795853154,
     "TSTUSDT": 1795853065,
-    "WOTAMALAILEUSDT": 1795853070
+    "WOTAMALAILEUSDT": 1795853070,
+    "SIMOUSDT": 1795854719
   },
   "last_trade_report_ts": 1795810899,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795608386,
-      "kind": "gap_result",
-      "symbol": "MMTUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795608390,
-      "kind": "gap_result",
-      "symbol": "VELVETUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795608395,
       "kind": "gap_result",
@@ -13712,6 +13695,24 @@
       "gap": 0.0,
       "filled": false,
       "note": "miss"
+    },
+    {
+      "ts": 1795811541,
+      "kind": "gap_result",
+      "symbol": "VISTUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795811544,
+      "kind": "gap_result",
+      "symbol": "LAOPUUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
     }
   ],
   "tune_history": [],
