@@ -6749,46 +6749,6 @@
   ],
   "pending": [
     {
-      "symbol": "MOCAUSDT",
-      "tf": "1h",
-      "candle_ts": 1795654800,
-      "side": "SELL",
-      "upper": 0.006014668753415818,
-      "open": 0.00605,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "AKEUSDT",
-      "tf": "1h",
-      "candle_ts": 1795654800,
-      "side": "SELL",
-      "upper": 0.001837690376887522,
-      "open": 0.0018891,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "SILVERUSDT",
-      "tf": "5m",
-      "candle_ts": 1795655100,
-      "side": "LONG",
-      "upper": 41.76784782258799,
-      "open": 41.14,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "SILVERUSDT",
-      "tf": "5m",
-      "candle_ts": 1795655100,
-      "side": "LONG",
-      "upper": 41.76431008596998,
-      "open": 41.14,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "AKEUSDT",
       "tf": "15m",
       "candle_ts": 1795655700,
@@ -9625,7 +9585,8 @@
       "side": "SELL",
       "upper": 0.1052636960785149,
       "open": 0.1071,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "MEITUANUSDT",
@@ -9634,7 +9595,8 @@
       "side": "SELL",
       "upper": 8.87309876373265,
       "open": 8.952,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "XPINUSDT",
@@ -9643,7 +9605,8 @@
       "side": "SELL",
       "upper": 0.0007633681517065341,
       "open": 0.0007726,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "KAVAUSDT",
@@ -9662,7 +9625,8 @@
       "side": "SELL",
       "upper": 0.026009963590722968,
       "open": 0.02638,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "AKEUSDT",
@@ -9721,7 +9685,8 @@
       "side": "SELL",
       "upper": 0.026575222944180545,
       "open": 0.02702,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "ARXUSDT",
@@ -9730,7 +9695,8 @@
       "side": "SELL",
       "upper": 0.16474852808165355,
       "open": 0.167,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "THEUSDT",
@@ -9739,6 +9705,43 @@
       "side": "SELL",
       "upper": 0.03789867500038399,
       "open": 0.0413,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "THEUSDT",
+      "tf": "1h",
+      "candle_ts": 1795809600,
+      "side": "SELL",
+      "upper": 0.03169473122336112,
+      "open": 0.034,
+      "reported": false
+    },
+    {
+      "symbol": "VELVETUSDT",
+      "tf": "4h",
+      "candle_ts": 1795809600,
+      "side": "SELL",
+      "upper": 0.10323649166772465,
+      "open": 0.1049,
+      "reported": false
+    },
+    {
+      "symbol": "THEUSDT",
+      "tf": "4h",
+      "candle_ts": 1795809600,
+      "side": "SELL",
+      "upper": 0.03163108449411501,
+      "open": 0.034,
+      "reported": false
+    },
+    {
+      "symbol": "AVAUSDT",
+      "tf": "4h",
+      "candle_ts": 1795809600,
+      "side": "SELL",
+      "upper": 0.22706665573813706,
+      "open": 0.2272,
       "reported": false
     }
   ],
@@ -10080,14 +10083,9 @@
     "ARROWUSDT": 1795781032,
     "CITYUSDT": 1795781784,
     "ARGUSDT": 1795784552,
-    "SKY1USDT": 1795791880,
     "AINBSCUSDT": 1795791911,
     "DRVUSDT": 1795808868,
     "FONEUSDT": 1795809877,
-    "LYTEUSDT": 1795809784,
-    "HK0992USDT": 1795809814,
-    "HOTUSDT": 1795809917,
-    "1000000BABYDOGEUSDT": 1795809920,
     "UP2USDT": 1795810723,
     "FIGUSDT": 1795810726,
     "ARGUSUSDT": 1795812354,
@@ -10108,74 +10106,16 @@
     "NEIRO1USDT": 1795851161,
     "MEMECOINUSDT": 1795851164,
     "MANCERUSDT": 1795851168,
-    "PIPEDOGUSDT": 1795851170
+    "PIPEDOGUSDT": 1795851170,
+    "AI1USDT": 1795851998,
+    "XPSTOCKUSDT": 1795852925,
+    "SKY1USDT": 1795853154,
+    "TSTUSDT": 1795853065,
+    "WOTAMALAILEUSDT": 1795853070
   },
-  "last_trade_report_ts": 1795807522,
+  "last_trade_report_ts": 1795809991,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795607269,
-      "kind": "gap_result",
-      "symbol": "GOLDUSDT",
-      "tf": "5m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795608363,
-      "kind": "gap_result",
-      "symbol": "MANTRAUSDT",
-      "tf": "4h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795608366,
-      "kind": "gap_result",
-      "symbol": "PROSUSDT",
-      "tf": "4h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795608373,
-      "kind": "gap_result",
-      "symbol": "BIGTIMEUSDT",
-      "tf": "4h",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
-    {
-      "ts": 1795608376,
-      "kind": "gap_result",
-      "symbol": "ALICEUSDT",
-      "tf": "4h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795608380,
-      "kind": "gap_result",
-      "symbol": "EVAAUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795608384,
-      "kind": "gap_result",
-      "symbol": "SSVUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795608386,
       "kind": "gap_result",
@@ -13712,6 +13652,69 @@
       "gap": 0.0,
       "filled": true,
       "note": "filled"
+    },
+    {
+      "ts": 1795808859,
+      "kind": "gap_result",
+      "symbol": "THEUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795809968,
+      "kind": "gap_result",
+      "symbol": "PONSUSDT",
+      "tf": "4h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795809971,
+      "kind": "gap_result",
+      "symbol": "MEITUANUSDT",
+      "tf": "4h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795809975,
+      "kind": "gap_result",
+      "symbol": "XPINUSDT",
+      "tf": "4h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795809977,
+      "kind": "gap_result",
+      "symbol": "KAVAUSDT",
+      "tf": "4h",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
+    },
+    {
+      "ts": 1795809980,
+      "kind": "gap_result",
+      "symbol": "KAVAUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
+    },
+    {
+      "ts": 1795809984,
+      "kind": "gap_result",
+      "symbol": "ARXUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
     }
   ],
   "tune_history": [],
