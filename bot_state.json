@@ -146,15 +146,15 @@
       "symbol": "SILVERUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 43.50988506163886,
-      "qty": 13.790000000000001,
-      "margin": 30.0,
+      "entry": 43.77162126925169,
+      "qty": 31.9842,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 42.422137935097886,
-      "tf": "1h",
+      "tp_price": 42.67733073752039,
+      "tf": "5m",
       "opened_at": 1795747604,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [],
       "steps": [
         {
@@ -164,10 +164,14 @@
         {
           "px": 43.46,
           "ts": 1795748580
+        },
+        {
+          "px": 43.97,
+          "ts": 1795757146
         }
       ],
       "entry_candle_ts": 1795747500,
-      "last_leg_candle_ts": 1795748400,
+      "last_leg_candle_ts": 1795756500,
       "dry_run": true,
       "order_id": "PAPER-SILVERUSDT-1795747604"
     },
@@ -6776,26 +6780,6 @@
   ],
   "pending": [
     {
-      "symbol": "NESUSDT",
-      "tf": "1h",
-      "candle_ts": 1795640400,
-      "side": "SELL",
-      "upper": 0.22524229073350457,
-      "open": 0.2301,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "CFGUSDT",
-      "tf": "1h",
-      "candle_ts": 1795640400,
-      "side": "SELL",
-      "upper": 0.05441678572759872,
-      "open": 0.05718,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "STOUSDT",
       "tf": "1h",
       "candle_ts": 1795640400,
@@ -9761,6 +9745,24 @@
       "side": "SELL",
       "upper": 110.10960772348639,
       "open": 111.472,
+      "reported": false
+    },
+    {
+      "symbol": "SILVERUSDT",
+      "tf": "5m",
+      "candle_ts": 1795757100,
+      "side": "SELL",
+      "upper": 43.879459615359075,
+      "open": 43.93,
+      "reported": false
+    },
+    {
+      "symbol": "SILVERUSDT",
+      "tf": "5m",
+      "candle_ts": 1795757100,
+      "side": "SELL",
+      "upper": 43.88255220493899,
+      "open": 43.93,
       "reported": false
     }
   ],
