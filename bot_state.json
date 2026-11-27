@@ -9715,7 +9715,8 @@
       "side": "SELL",
       "upper": 51.124069290081955,
       "open": 51.19,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "GOLDUSDT",
@@ -9724,7 +9725,8 @@
       "side": "SELL",
       "upper": 3680.9545785057985,
       "open": 3682.66,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "GOLDUSDT",
@@ -9733,7 +9735,8 @@
       "side": "SELL",
       "upper": 3681.6647322179438,
       "open": 3682.66,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -10108,36 +10111,9 @@
     "UP2USDT": 1795810723,
     "FIGUSDT": 1795810726
   },
-  "last_trade_report_ts": 1795767033,
+  "last_trade_report_ts": 1795767942,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795571290,
-      "kind": "gap_result",
-      "symbol": "IRYSUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795572279,
-      "kind": "gap_result",
-      "symbol": "BIGTIMEUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795572290,
-      "kind": "gap_result",
-      "symbol": "PROSUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795572296,
       "kind": "gap_result",
@@ -13707,6 +13683,33 @@
       "kind": "gap_result",
       "symbol": "AKEUSDT",
       "tf": "1h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795767919,
+      "kind": "gap_result",
+      "symbol": "CRCLUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795767930,
+      "kind": "gap_result",
+      "symbol": "GOLDUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795767935,
+      "kind": "gap_result",
+      "symbol": "GOLDUSDT",
+      "tf": "5m",
       "gap": 0.0,
       "filled": true,
       "note": "filled"
