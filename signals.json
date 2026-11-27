@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795745403,
+  "updated_at": 1795745412,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795736515
-    },
-    {
-      "kind": "GAP",
-      "symbol": "ONEUSDT",
-      "tf": "15m",
-      "gap": 1.18,
-      "ts": 1795736727
-    },
     {
       "kind": "SELL",
       "symbol": "PBRUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "5m",
       "gap": 0.15,
       "ts": 1795745403
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795745409
+    },
+    {
+      "kind": "SELL",
+      "symbol": "CRCLUSDT",
+      "tf": "5m",
+      "gap": 0.19,
+      "ts": 1795745412
     }
   ],
   "trades": [
@@ -1434,15 +1434,15 @@
     {
       "symbol": "XAUTUSDT",
       "side": "SELL",
-      "entry": 3593.1344702218767,
-      "tp": 3503.3061084663295,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
+      "entry": 3602.8550206777995,
+      "tp": 3512.7836451608546,
+      "adds": 2,
+      "pele": 3,
+      "margin": 70.0,
       "lev": 20,
       "px": 3610.18,
-      "pnl": -3.5663,
-      "tf": "15m"
+      "pnl": -4.5263,
+      "tf": "5m"
     },
     {
       "symbol": "GOLDUSDT",
@@ -1462,8 +1462,8 @@
   "session_start": 1795737865,
   "realized": 14.9922,
   "closed_n": 2,
-  "open_upnl": -48.7912,
-  "equity": 966.201,
+  "open_upnl": -49.7512,
+  "equity": 965.241,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
