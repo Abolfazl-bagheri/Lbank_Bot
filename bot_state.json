@@ -186,6 +186,31 @@
       "last_leg_candle_ts": 1795748400,
       "dry_run": true,
       "order_id": "PAPER-ONEUSDT-1795748424"
+    },
+    {
+      "symbol": "BULLAUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.08159,
+      "qty": 2451.2808,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.07955024999999999,
+      "tf": "1h",
+      "opened_at": 1795748439,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.08159,
+          "ts": 1795748439
+        }
+      ],
+      "entry_candle_ts": 1795748400,
+      "last_leg_candle_ts": 1795748400,
+      "dry_run": true,
+      "order_id": "PAPER-BULLAUSDT-1795748439"
     }
   ],
   "trade_history": [
@@ -6758,16 +6783,6 @@
   "pending": [
     {
       "symbol": "SSVUSDT",
-      "tf": "1h",
-      "candle_ts": 1795597200,
-      "side": "SELL",
-      "upper": 1.675804217781383,
-      "open": 1.702,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "SSVUSDT",
       "tf": "15m",
       "candle_ts": 1795598100,
       "side": "SELL",
@@ -9738,6 +9753,15 @@
       "side": "SELL",
       "upper": 0.001564281586454717,
       "open": 0.001556,
+      "reported": false
+    },
+    {
+      "symbol": "ONEUSDT",
+      "tf": "1h",
+      "candle_ts": 1795748400,
+      "side": "SELL",
+      "upper": 0.0010953144534388897,
+      "open": 0.001109,
       "reported": false
     }
   ],
