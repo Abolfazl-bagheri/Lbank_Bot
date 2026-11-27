@@ -6749,16 +6749,6 @@
   ],
   "pending": [
     {
-      "symbol": "RUNEUSDT",
-      "tf": "4h",
-      "candle_ts": 1795651200,
-      "side": "SELL",
-      "upper": 0.5450513250084569,
-      "open": 0.551,
-      "reported": true,
-      "filled": false
-    },
-    {
       "symbol": "MUSDT",
       "tf": "4h",
       "candle_ts": 1795651200,
@@ -9667,7 +9657,8 @@
       "side": "SELL",
       "upper": 0.05954951236672418,
       "open": 0.06173,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "XAUTUSDT",
@@ -9738,6 +9729,15 @@
       "open": 0.02012,
       "reported": true,
       "filled": false
+    },
+    {
+      "symbol": "PORTALUSDT",
+      "tf": "1h",
+      "candle_ts": 1795777200,
+      "side": "SELL",
+      "upper": 0.01942805935978406,
+      "open": 0.02119,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -10110,18 +10110,9 @@
     "FRONGUSDT": 1795817816,
     "HK1888USDT": 1795819594
   },
-  "last_trade_report_ts": 1795775723,
+  "last_trade_report_ts": 1795776712,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795594009,
-      "kind": "gap_result",
-      "symbol": "CRCLUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795597436,
       "kind": "gap_result",
@@ -13712,6 +13703,15 @@
       "gap": 0.0,
       "filled": false,
       "note": "miss"
+    },
+    {
+      "ts": 1795777416,
+      "kind": "gap_result",
+      "symbol": "CFGUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
     }
   ],
   "tune_history": [],
