@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795745419,
+  "updated_at": 1795745426,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "PBRUSDT",
-      "tf": "4h",
-      "gap": 1.99,
-      "ts": 1795736896
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795737079
-    },
     {
       "kind": "HEARTBEAT",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "5m",
       "gap": 0.13,
       "ts": 1795745419
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795745423
+    },
+    {
+      "kind": "SELL",
+      "symbol": "SILVERUSDT",
+      "tf": "5m",
+      "gap": 0.21,
+      "ts": 1795745426
     }
   ],
   "trades": [
@@ -1447,14 +1447,14 @@
     {
       "symbol": "GOLDUSDT",
       "side": "SELL",
-      "entry": 3614.58,
-      "tp": 3524.2155,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
+      "entry": 3619.249760301949,
+      "tp": 3528.7685162944003,
+      "adds": 2,
+      "pele": 3,
+      "margin": 70.0,
       "lev": 20,
       "px": 3622.76,
-      "pnl": -2.0778,
+      "pnl": -3.0378,
       "tf": "5m"
     },
     {
@@ -1475,8 +1475,8 @@
   "session_start": 1795737865,
   "realized": 14.9922,
   "closed_n": 2,
-  "open_upnl": -49.9912,
-  "equity": 965.001,
+  "open_upnl": -50.9512,
+  "equity": 964.041,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
