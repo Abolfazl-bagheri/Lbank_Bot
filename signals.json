@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795757145,
+  "updated_at": 1795757152,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795750324
-    },
-    {
-      "kind": "SELL",
-      "symbol": "COLLECTUSDT",
-      "tf": "15m",
-      "gap": 1.2,
-      "ts": 1795750346
-    },
     {
       "kind": "SELL",
       "symbol": "SKUUUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "5m",
       "gap": 0.15,
       "ts": 1795757145
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795757149
+    },
+    {
+      "kind": "SELL",
+      "symbol": "GOLDUSDT",
+      "tf": "5m",
+      "gap": 0.09,
+      "ts": 1795757152
     }
   ],
   "trades": [
@@ -1460,15 +1460,15 @@
     {
       "symbol": "SILVERUSDT",
       "side": "SELL",
-      "entry": 43.50988506163886,
-      "tp": 42.422137935097886,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
+      "entry": 43.77162126925169,
+      "tp": 42.67733073752039,
+      "adds": 2,
+      "pele": 3,
+      "margin": 70.0,
       "lev": 20,
       "px": 43.97,
-      "pnl": -7.065,
-      "tf": "1h"
+      "pnl": -8.025,
+      "tf": "5m"
     },
     {
       "symbol": "ONEUSDT",
@@ -1488,8 +1488,8 @@
   "session_start": 1795737865,
   "realized": -16.6072,
   "closed_n": 8,
-  "open_upnl": -88.6548,
-  "equity": 894.738,
+  "open_upnl": -89.6148,
+  "equity": 893.778,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
