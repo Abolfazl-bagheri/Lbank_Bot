@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795748438,
+  "updated_at": 1795748451,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "EWZSUSDT",
-      "tf": "15m",
-      "gap": 1.03,
-      "ts": 1795743032
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795743091
-    },
     {
       "kind": "SELL",
       "symbol": "ONEUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "1h",
       "gap": 6.43,
       "ts": 1795748438
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795748442
+    },
+    {
+      "kind": "SELL",
+      "symbol": "BIGTIMEUSDT",
+      "tf": "1h",
+      "gap": 5.14,
+      "ts": 1795748451
     }
   ],
   "trades": [
@@ -1482,14 +1482,27 @@
       "px": 0.0011131,
       "pnl": -0.24,
       "tf": "1h"
+    },
+    {
+      "symbol": "BULLAUSDT",
+      "side": "SELL",
+      "entry": 0.08159,
+      "tp": 0.07955024999999999,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.08159,
+      "pnl": -0.24,
+      "tf": "1h"
     }
   ],
   "start": 1000.0,
   "session_start": 1795737865,
   "realized": -32.396,
   "closed_n": 6,
-  "open_upnl": -11.2565,
-  "equity": 956.3475,
+  "open_upnl": -11.4965,
+  "equity": 956.1075,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
