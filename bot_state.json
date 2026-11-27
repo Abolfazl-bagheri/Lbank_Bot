@@ -221,64 +221,9 @@
       "last_leg_candle_ts": 1795748400,
       "dry_run": true,
       "order_id": "PAPER-BULLAUSDT-1795748439"
-    },
-    {
-      "symbol": "BIGTIMEUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.007064,
-      "qty": 28312.5708,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.0068874,
-      "tf": "1h",
-      "opened_at": 1795748453,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.007064,
-          "ts": 1795748453
-        }
-      ],
-      "entry_candle_ts": 1795748400,
-      "last_leg_candle_ts": 1795748400,
-      "dry_run": true,
-      "order_id": "PAPER-BIGTIMEUSDT-1795748453"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "PROSUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.5568,
-      "qty": 359.1954,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.5428799999999999,
-      "tf": "15m",
-      "opened_at": 1795014936,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.5568,
-          "ts": 1795014936
-        }
-      ],
-      "entry_candle_ts": 1795014900,
-      "last_leg_candle_ts": 1795014900,
-      "dry_run": true,
-      "order_id": "PAPER-PROSUSDT-1795014936",
-      "closed_at": 1795015190,
-      "close_px": 0.5799,
-      "pnl_usdt": -8.297413793103452,
-      "close_reason": "STOP",
-      "why": "STOP"
-    },
     {
       "symbol": "TWSTUSDT",
       "side": "SELL",
@@ -6813,6 +6758,36 @@
       "pnl_usdt": 12.930507438353366,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "BIGTIMEUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.007064,
+      "qty": 28312.5708,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0068874,
+      "tf": "1h",
+      "opened_at": 1795748453,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.007064,
+          "ts": 1795748453
+        }
+      ],
+      "entry_candle_ts": 1795748400,
+      "last_leg_candle_ts": 1795748400,
+      "dry_run": true,
+      "order_id": "PAPER-BIGTIMEUSDT-1795748453",
+      "closed_at": 1795748746,
+      "close_px": 0.006844,
+      "pnl_usdt": 6.228765571913922,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -10133,13 +10108,6 @@
     "SIMOUSDT": 1795725261,
     "AI1USDT": 1795748569,
     "AEHRUSDT": 1795748652,
-    "1000SATSUSDT": 1795748668,
-    "1000WOJAKUSDT": 1795748677,
-    "NEIRO1USDT": 1795748678,
-    "MEMECOINUSDT": 1795748674,
-    "PIPEDOGUSDT": 1795748680,
-    "CZUSDT": 1795748681,
-    "MANCERUSDT": 1795748683,
     "IRENONUSDT": 1795749393,
     "TQQQUSDT": 1795752214,
     "1000000BABYDOGEUSDT": 1795752324,
