@@ -9735,7 +9735,8 @@
       "side": "SELL",
       "upper": 0.013100214004439793,
       "open": 0.01325,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -10102,20 +10103,12 @@
     "MANCERUSDT": 1795792612,
     "BEMUSDT": 1795793492,
     "XPSTOCKUSDT": 1795795428,
-    "SPACE1USDT": 1795799878
+    "SPACE1USDT": 1795799878,
+    "AI1USDT": 1795807888
   },
-  "last_trade_report_ts": 1795763898,
+  "last_trade_report_ts": 1795764856,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795567651,
-      "kind": "gap_result",
-      "symbol": "SAHARAUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795567654,
       "kind": "gap_result",
@@ -13703,6 +13696,15 @@
       "kind": "gap_result",
       "symbol": "XAUTUSDT",
       "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795764740,
+      "kind": "gap_result",
+      "symbol": "SPKUSDT",
+      "tf": "15m",
       "gap": 0.0,
       "filled": true,
       "note": "filled"
