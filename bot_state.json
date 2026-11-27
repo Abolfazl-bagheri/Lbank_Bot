@@ -61,23 +61,29 @@
       "side": "SELL",
       "status": "open",
       "entry": 41.96,
-      "qty": 4.7664,
-      "margin": 10.0,
+      "qty": 14.299299999999999,
+      "margin": 30.0,
       "leverage": 20,
       "tp_price": 40.911,
       "tf": "5m",
       "opened_at": 1795741843,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        42.05
+      ],
       "steps": [
         {
           "px": 41.96,
           "ts": 1795741843
+        },
+        {
+          "px": 41.96,
+          "ts": 1795741907
         }
       ],
       "entry_candle_ts": 1795741800,
-      "last_leg_candle_ts": 1795741200,
+      "last_leg_candle_ts": 1795741907,
       "dry_run": true,
       "order_id": "PAPER-SILVERUSDT-1795741843"
     }
