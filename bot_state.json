@@ -174,80 +174,9 @@
       "last_leg_candle_ts": 1795756500,
       "dry_run": true,
       "order_id": "PAPER-SILVERUSDT-1795747604"
-    },
-    {
-      "symbol": "ONEUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.0011090257416060895,
-      "qty": 1262369.2557,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 0.0010813000980659372,
-      "tf": "4h",
-      "opened_at": 1795748424,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [
-        0.001124
-      ],
-      "steps": [
-        {
-          "px": 0.0011131,
-          "ts": 1795748424
-        },
-        {
-          "px": 0.0011221,
-          "ts": 1795748725
-        },
-        {
-          "px": 0.0011016,
-          "ts": 1795752062
-        }
-      ],
-      "entry_candle_ts": 1795748400,
-      "last_leg_candle_ts": 1795752000,
-      "dry_run": true,
-      "order_id": "PAPER-ONEUSDT-1795748424"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "MPUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 37.8998686138764,
-      "qty": 15.831199999999999,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 36.95237189852949,
-      "tf": "15m",
-      "opened_at": 1795014153,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        38.0
-      ],
-      "steps": [
-        {
-          "px": 38.0,
-          "ts": 1795014153
-        },
-        {
-          "px": 37.85,
-          "ts": 1795015232
-        }
-      ],
-      "entry_candle_ts": 1795014000,
-      "last_leg_candle_ts": 1795015232,
-      "dry_run": true,
-      "order_id": "PAPER-MPUSDT-1795014153",
-      "closed_at": 1795016838,
-      "close_px": 36.9,
-      "pnl_usdt": 15.829109447260453,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "PROSUSDT",
       "side": "SELL",
@@ -6776,19 +6705,49 @@
       "pnl_usdt": 9.559995097438414,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "ONEUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.0011090257416060895,
+      "qty": 1262369.2557,
+      "margin": 70.0,
+      "leverage": 20,
+      "tp_price": 0.0010813000980659372,
+      "tf": "4h",
+      "opened_at": 1795748424,
+      "adds": 2,
+      "last_leg_margin": 40.0,
+      "used_res_levels": [
+        0.001124
+      ],
+      "steps": [
+        {
+          "px": 0.0011131,
+          "ts": 1795748424
+        },
+        {
+          "px": 0.0011221,
+          "ts": 1795748725
+        },
+        {
+          "px": 0.0011016,
+          "ts": 1795752062
+        }
+      ],
+      "entry_candle_ts": 1795748400,
+      "last_leg_candle_ts": 1795752000,
+      "dry_run": true,
+      "order_id": "PAPER-ONEUSDT-1795748424",
+      "closed_at": 1795763891,
+      "close_px": 0.0010569,
+      "pnl_usdt": 65.8019336348691,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
-    {
-      "symbol": "NESUSDT",
-      "tf": "1h",
-      "candle_ts": 1795644000,
-      "side": "SELL",
-      "upper": 0.23630843868055437,
-      "open": 0.239,
-      "reported": true,
-      "filled": true
-    },
     {
       "symbol": "SQDUSDT",
       "tf": "1h",
@@ -9656,7 +9615,8 @@
       "side": "SELL",
       "upper": 110.02752604799089,
       "open": 111.472,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "UNITREEUSDT",
@@ -9665,7 +9625,8 @@
       "side": "SELL",
       "upper": 110.10960772348639,
       "open": 111.472,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "SILVERUSDT",
@@ -9674,7 +9635,8 @@
       "side": "SELL",
       "upper": 43.879459615359075,
       "open": 43.93,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "SILVERUSDT",
@@ -9683,7 +9645,8 @@
       "side": "SELL",
       "upper": 43.88255220493899,
       "open": 43.93,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "SILVERUSDT",
@@ -9692,7 +9655,8 @@
       "side": "SELL",
       "upper": 43.90222018021449,
       "open": 43.93,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "GOLDUSDT",
@@ -9701,7 +9665,8 @@
       "side": "SELL",
       "upper": 3654.131042065712,
       "open": 3654.72,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "GOLDUSDT",
@@ -9710,7 +9675,8 @@
       "side": "SELL",
       "upper": 3654.2227268608563,
       "open": 3654.72,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CLAUDIAUSDT",
@@ -9719,7 +9685,8 @@
       "side": "SELL",
       "upper": 0.009068650531905148,
       "open": 0.00891,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "UNITREEUSDT",
@@ -9728,7 +9695,8 @@
       "side": "SELL",
       "upper": 112.54320566988645,
       "open": 113.613,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CXMTUSDT",
@@ -9737,7 +9705,8 @@
       "side": "SELL",
       "upper": 5.382941591580026,
       "open": 5.447,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ICNTUSDT",
@@ -9746,7 +9715,8 @@
       "side": "SELL",
       "upper": 0.29985956663763447,
       "open": 0.3063,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "XAUTUSDT",
@@ -9755,6 +9725,16 @@
       "side": "SELL",
       "upper": 3649.8717519382863,
       "open": 3650.58,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "SPKUSDT",
+      "tf": "15m",
+      "candle_ts": 1795763700,
+      "side": "SELL",
+      "upper": 0.013100214004439793,
+      "open": 0.01325,
       "reported": false
     }
   ],
@@ -10128,114 +10108,6 @@
   "last_trade_report_ts": 1795757161,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795564074,
-      "kind": "gap_result",
-      "symbol": "FRHCUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795564077,
-      "kind": "gap_result",
-      "symbol": "GTLBUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795565193,
-      "kind": "gap_result",
-      "symbol": "PROSUSDT",
-      "tf": "4h",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
-    {
-      "ts": 1795565196,
-      "kind": "gap_result",
-      "symbol": "HMSTRUSDT",
-      "tf": "4h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795565199,
-      "kind": "gap_result",
-      "symbol": "SSPCUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795565201,
-      "kind": "gap_result",
-      "symbol": "XAUTUSDT",
-      "tf": "5m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795565864,
-      "kind": "gap_result",
-      "symbol": "SSPCUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795566327,
-      "kind": "gap_result",
-      "symbol": "XAUTUSDT",
-      "tf": "5m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795566330,
-      "kind": "gap_result",
-      "symbol": "XAUTUSDT",
-      "tf": "5m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795566745,
-      "kind": "gap_result",
-      "symbol": "SSPCUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
-    {
-      "ts": 1795566765,
-      "kind": "gap_result",
-      "symbol": "SAHARAUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795566768,
-      "kind": "gap_result",
-      "symbol": "FRHCUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795567651,
       "kind": "gap_result",
@@ -13723,6 +13595,114 @@
       "ts": 1795756615,
       "kind": "gap_result",
       "symbol": "CRCLUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795763842,
+      "kind": "gap_result",
+      "symbol": "UNITREEUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795763845,
+      "kind": "gap_result",
+      "symbol": "UNITREEUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795763849,
+      "kind": "gap_result",
+      "symbol": "SILVERUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
+    },
+    {
+      "ts": 1795763860,
+      "kind": "gap_result",
+      "symbol": "SILVERUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
+    },
+    {
+      "ts": 1795763864,
+      "kind": "gap_result",
+      "symbol": "SILVERUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795763870,
+      "kind": "gap_result",
+      "symbol": "GOLDUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795763873,
+      "kind": "gap_result",
+      "symbol": "GOLDUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795763876,
+      "kind": "gap_result",
+      "symbol": "CLAUDIAUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795763879,
+      "kind": "gap_result",
+      "symbol": "UNITREEUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795763882,
+      "kind": "gap_result",
+      "symbol": "CXMTUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795763887,
+      "kind": "gap_result",
+      "symbol": "ICNTUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
+    },
+    {
+      "ts": 1795763890,
+      "kind": "gap_result",
+      "symbol": "XAUTUSDT",
       "tf": "5m",
       "gap": 0.0,
       "filled": true,
