@@ -186,6 +186,31 @@
       "last_leg_candle_ts": 1795747500,
       "dry_run": true,
       "order_id": "PAPER-IDOLUSDT-1795747533"
+    },
+    {
+      "symbol": "SILVERUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 43.61,
+      "qty": 4.5861,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 42.51975,
+      "tf": "15m",
+      "opened_at": 1795747604,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 43.61,
+          "ts": 1795747604
+        }
+      ],
+      "entry_candle_ts": 1795747500,
+      "last_leg_candle_ts": 1795747500,
+      "dry_run": true,
+      "order_id": "PAPER-SILVERUSDT-1795747604"
     }
   ],
   "trade_history": [
@@ -6757,56 +6782,6 @@
   ],
   "pending": [
     {
-      "symbol": "MANTRAUSDT",
-      "tf": "4h",
-      "candle_ts": 1795593600,
-      "side": "SELL",
-      "upper": 0.002057796061869392,
-      "open": 0.002118,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "PROSUSDT",
-      "tf": "4h",
-      "candle_ts": 1795593600,
-      "side": "SELL",
-      "upper": 0.7352163265790163,
-      "open": 0.7479,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "BIGTIMEUSDT",
-      "tf": "4h",
-      "candle_ts": 1795593600,
-      "side": "SELL",
-      "upper": 0.005589899075254664,
-      "open": 0.00628,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "ALICEUSDT",
-      "tf": "1h",
-      "candle_ts": 1795593600,
-      "side": "SELL",
-      "upper": 0.09898760154020772,
-      "open": 0.1007,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "ALICEUSDT",
-      "tf": "4h",
-      "candle_ts": 1795593600,
-      "side": "SELL",
-      "upper": 0.0986506830286682,
-      "open": 0.1007,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "SSVUSDT",
       "tf": "15m",
       "candle_ts": 1795597200,
@@ -9739,6 +9714,51 @@
       "side": "SELL",
       "upper": 0.08054185906622027,
       "open": 0.08363,
+      "reported": false
+    },
+    {
+      "symbol": "IDOLUSDT",
+      "tf": "15m",
+      "candle_ts": 1795747500,
+      "side": "SELL",
+      "upper": 0.018965574296855272,
+      "open": 0.019179,
+      "reported": false
+    },
+    {
+      "symbol": "PONSUSDT",
+      "tf": "15m",
+      "candle_ts": 1795747500,
+      "side": "SELL",
+      "upper": 0.09358118767409092,
+      "open": 0.0949,
+      "reported": false
+    },
+    {
+      "symbol": "CLAUDIAUSDT",
+      "tf": "15m",
+      "candle_ts": 1795747500,
+      "side": "SELL",
+      "upper": 0.009027317881680723,
+      "open": 0.008936,
+      "reported": false
+    },
+    {
+      "symbol": "XAUTUSDT",
+      "tf": "15m",
+      "candle_ts": 1795747500,
+      "side": "SELL",
+      "upper": 3622.0757060932874,
+      "open": 3625.3,
+      "reported": false
+    },
+    {
+      "symbol": "GOLDUSDT",
+      "tf": "15m",
+      "candle_ts": 1795747500,
+      "side": "SELL",
+      "upper": 3631.041926002851,
+      "open": 3634.03,
       "reported": false
     }
   ],
