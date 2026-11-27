@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795748578,
+  "updated_at": 1795748589,
   "signals": [
-    {
-      "kind": "HEARTBEAT",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795743683
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795743699
-    },
     {
       "kind": "GAP",
       "symbol": "ONEUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "1h",
       "gap": 0.59,
       "ts": 1795748578
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795748587
+    },
+    {
+      "kind": "SELL",
+      "symbol": "CRCLUSDT",
+      "tf": "1h",
+      "gap": 0.18,
+      "ts": 1795748589
     }
   ],
   "trades": [
@@ -1460,15 +1460,15 @@
     {
       "symbol": "SILVERUSDT",
       "side": "SELL",
-      "entry": 43.61,
-      "tp": 42.51975,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
+      "entry": 43.50988506163886,
+      "tp": 42.422137935097886,
+      "adds": 1,
+      "pele": 2,
+      "margin": 30.0,
       "lev": 20,
       "px": 43.46,
-      "pnl": 0.4479,
-      "tf": "15m"
+      "pnl": -0.0321,
+      "tf": "1h"
     },
     {
       "symbol": "ONEUSDT",
@@ -1514,8 +1514,8 @@
   "session_start": 1795737865,
   "realized": -32.396,
   "closed_n": 6,
-  "open_upnl": -11.7365,
-  "equity": 955.8675,
+  "open_upnl": -12.2165,
+  "equity": 955.3875,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
