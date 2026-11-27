@@ -138,6 +138,31 @@
       "last_leg_candle_ts": 1795711215,
       "dry_run": true,
       "order_id": "PAPER-MUSDT-1795665776"
+    },
+    {
+      "symbol": "INITUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.14189,
+      "qty": 1409.5426,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.13834275,
+      "tf": "4h",
+      "opened_at": 1795737661,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.14189,
+          "ts": 1795737661
+        }
+      ],
+      "entry_candle_ts": 1795737600,
+      "last_leg_candle_ts": 1795737600,
+      "dry_run": true,
+      "order_id": "PAPER-INITUSDT-1795737661"
     }
   ],
   "trade_history": [
@@ -6709,16 +6734,6 @@
       "tf": "5m",
       "candle_ts": 1795552500,
       "side": "LONG",
-      "upper": 3557.674402001625,
-      "open": 3544.38,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "XAUTUSDT",
-      "tf": "5m",
-      "candle_ts": 1795552500,
-      "side": "LONG",
       "upper": 3557.683843645538,
       "open": 3544.38,
       "reported": true,
@@ -9695,6 +9710,15 @@
       "side": "SELL",
       "upper": 17.028253087374342,
       "open": 17.25,
+      "reported": false
+    },
+    {
+      "symbol": "BULLAUSDT",
+      "tf": "4h",
+      "candle_ts": 1795737600,
+      "side": "SELL",
+      "upper": 0.05530475379463585,
+      "open": 0.055995,
       "reported": false
     }
   ],
