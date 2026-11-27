@@ -9625,7 +9625,8 @@
       "side": "SELL",
       "upper": 9.929608651614638,
       "open": 9.925,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "UNITREEUSDT",
@@ -9634,7 +9635,8 @@
       "side": "SELL",
       "upper": 116.29139040690548,
       "open": 117.168,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "CASHCATUSDT",
@@ -10111,27 +10113,9 @@
     "ARGUSUSDT": 1795812354,
     "STONKBROKERUSDT": 1795812420
   },
-  "last_trade_report_ts": 1795768852,
+  "last_trade_report_ts": 1795769758,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795572296,
-      "kind": "gap_result",
-      "symbol": "JDUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795591981,
-      "kind": "gap_result",
-      "symbol": "GUAUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795591987,
       "kind": "gap_result",
@@ -13710,6 +13694,24 @@
       "kind": "gap_result",
       "symbol": "GOLDUSDT",
       "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795770208,
+      "kind": "gap_result",
+      "symbol": "YOFCUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795770212,
+      "kind": "gap_result",
+      "symbol": "UNITREEUSDT",
+      "tf": "1h",
       "gap": 0.0,
       "filled": true,
       "note": "filled"
