@@ -6749,26 +6749,6 @@
   ],
   "pending": [
     {
-      "symbol": "MOVEUSDT",
-      "tf": "15m",
-      "candle_ts": 1795652100,
-      "side": "SELL",
-      "upper": 0.00602937573393493,
-      "open": 0.00644,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "MEUSDT",
-      "tf": "15m",
-      "candle_ts": 1795652100,
-      "side": "SELL",
-      "upper": 0.04060238410406415,
-      "open": 0.0422,
-      "reported": true,
-      "filled": false
-    },
-    {
       "symbol": "SLXUSDT",
       "tf": "15m",
       "candle_ts": 1795652100,
@@ -9716,7 +9696,8 @@
       "side": "LONG",
       "upper": 0.0709906638157557,
       "open": 0.0646,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "KAVAUSDT",
@@ -9725,7 +9706,8 @@
       "side": "SELL",
       "upper": 0.02611556113490565,
       "open": 0.02639,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "BULLAUSDT",
@@ -9734,6 +9716,25 @@
       "side": "LONG",
       "upper": 0.07086074749088857,
       "open": 0.0646,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "KAVAUSDT",
+      "tf": "15m",
+      "candle_ts": 1795779000,
+      "side": "SELL",
+      "upper": 0.02653275701001805,
+      "open": 0.02687,
+      "reported": false
+    },
+    {
+      "symbol": "XPINUSDT",
+      "tf": "15m",
+      "candle_ts": 1795779000,
+      "side": "SELL",
+      "upper": 0.0007667446458645376,
+      "open": 0.000771,
       "reported": false
     }
   ],
@@ -10110,33 +10111,6 @@
   "last_trade_report_ts": 1795778745,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795597436,
-      "kind": "gap_result",
-      "symbol": "PROSUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795597441,
-      "kind": "gap_result",
-      "symbol": "ALICEUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795598235,
-      "kind": "gap_result",
-      "symbol": "SSVUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795599133,
       "kind": "gap_result",
@@ -13706,6 +13680,33 @@
       "kind": "gap_result",
       "symbol": "CFGUSDT",
       "tf": "1h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795779124,
+      "kind": "gap_result",
+      "symbol": "BULLAUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795779129,
+      "kind": "gap_result",
+      "symbol": "KAVAUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
+    },
+    {
+      "ts": 1795779133,
+      "kind": "gap_result",
+      "symbol": "BULLAUSDT",
+      "tf": "15m",
       "gap": 0.0,
       "filled": true,
       "note": "filled"
