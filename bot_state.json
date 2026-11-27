@@ -6767,16 +6767,6 @@
   ],
   "pending": [
     {
-      "symbol": "MANTRAUSDT",
-      "tf": "4h",
-      "candle_ts": 1795608000,
-      "side": "SELL",
-      "upper": 0.0021352805966601282,
-      "open": 0.00217,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "BIGTIMEUSDT",
       "tf": "4h",
       "candle_ts": 1795608000,
@@ -9691,7 +9681,8 @@
       "side": "SELL",
       "upper": 0.03327387893412554,
       "open": 0.03378,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "CLAUDIAUSDT",
@@ -9700,7 +9691,8 @@
       "side": "SELL",
       "upper": 0.009013928427858038,
       "open": 0.008869,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "HAEDALUSDT",
@@ -9709,7 +9701,8 @@
       "side": "SELL",
       "upper": 0.02336819306921486,
       "open": 0.02412,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "SKUUUSDT",
@@ -9718,7 +9711,8 @@
       "side": "SELL",
       "upper": 9.284893412107328,
       "open": 9.083,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "COLLECTUSDT",
@@ -9727,7 +9721,8 @@
       "side": "SELL",
       "upper": 0.033293971900446175,
       "open": 0.03378,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "SKUUUSDT",
@@ -9736,6 +9731,16 @@
       "side": "SELL",
       "upper": 9.284893412107328,
       "open": 9.083,
+      "reported": true,
+      "filled": false
+    },
+    {
+      "symbol": "CLAUDIAUSDT",
+      "tf": "15m",
+      "candle_ts": 1795751100,
+      "side": "SELL",
+      "upper": 0.009030237834864407,
+      "open": 0.008869,
       "reported": false
     }
   ],
@@ -10108,63 +10113,9 @@
     "MANCERUSDT": 1795792612,
     "BEMUSDT": 1795793492
   },
-  "last_trade_report_ts": 1795749951,
+  "last_trade_report_ts": 1795751287,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795518228,
-      "kind": "gap_result",
-      "symbol": "SOXLUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795518230,
-      "kind": "gap_result",
-      "symbol": "ARTYUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795518232,
-      "kind": "gap_result",
-      "symbol": "SKUUUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795518234,
-      "kind": "gap_result",
-      "symbol": "HMSTRUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795519917,
-      "kind": "gap_result",
-      "symbol": "PROSUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795520873,
-      "kind": "gap_result",
-      "symbol": "PROSUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
     {
       "ts": 1795520876,
       "kind": "gap_result",
@@ -13710,6 +13661,60 @@
       "gap": 0.0,
       "filled": true,
       "note": "filled"
+    },
+    {
+      "ts": 1795751271,
+      "kind": "gap_result",
+      "symbol": "COLLECTUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
+    },
+    {
+      "ts": 1795751273,
+      "kind": "gap_result",
+      "symbol": "CLAUDIAUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795751275,
+      "kind": "gap_result",
+      "symbol": "HAEDALUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795751277,
+      "kind": "gap_result",
+      "symbol": "SKUUUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
+    },
+    {
+      "ts": 1795751280,
+      "kind": "gap_result",
+      "symbol": "COLLECTUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795751282,
+      "kind": "gap_result",
+      "symbol": "SKUUUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
     }
   ],
   "tune_history": [],
