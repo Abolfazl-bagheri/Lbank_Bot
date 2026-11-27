@@ -6749,36 +6749,6 @@
   ],
   "pending": [
     {
-      "symbol": "BULLAUSDT",
-      "tf": "15m",
-      "candle_ts": 1795671000,
-      "side": "SELL",
-      "upper": 0.039168383139439024,
-      "open": 0.039757,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "STOUSDT",
-      "tf": "15m",
-      "candle_ts": 1795671000,
-      "side": "SELL",
-      "upper": 0.023575154029179236,
-      "open": 0.02382,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "SILVERUSDT",
-      "tf": "5m",
-      "candle_ts": 1795671300,
-      "side": "SELL",
-      "upper": 42.309503981326785,
-      "open": 42.36,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "SILVERUSDT",
       "tf": "5m",
       "candle_ts": 1795671300,
@@ -9742,6 +9712,34 @@
       "side": "SELL",
       "upper": 9.881000066178075,
       "open": 9.881,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "ACEUSDT",
+      "tf": "15m",
+      "candle_ts": 1795820400,
+      "side": "SELL",
+      "upper": 0.07993836793007435,
+      "open": 0.08218,
+      "reported": false
+    },
+    {
+      "symbol": "ACEUSDT",
+      "tf": "1h",
+      "candle_ts": 1795820400,
+      "side": "SELL",
+      "upper": 0.07960389408620391,
+      "open": 0.08218,
+      "reported": false
+    },
+    {
+      "symbol": "YOFCUSDT",
+      "tf": "15m",
+      "candle_ts": 1795820400,
+      "side": "SELL",
+      "upper": 9.881,
+      "open": 9.881,
       "reported": false
     }
   ],
@@ -10115,18 +10113,9 @@
     "FIGUSDT": 1795856630,
     "KOPNUSDT": 1795861919
   },
-  "last_trade_report_ts": 1795818877,
+  "last_trade_report_ts": 1795820157,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795640641,
-      "kind": "gap_result",
-      "symbol": "VVVUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795640643,
       "kind": "gap_result",
@@ -13711,6 +13700,15 @@
     },
     {
       "ts": 1795819633,
+      "kind": "gap_result",
+      "symbol": "YOFCUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795820646,
       "kind": "gap_result",
       "symbol": "YOFCUSDT",
       "tf": "15m",
