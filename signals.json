@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795742102,
+  "updated_at": 1795742172,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "INITUSDT",
-      "tf": "4h",
-      "gap": 10.76,
-      "ts": 1795722103
-    },
     {
       "kind": "GAP",
       "symbol": "IDOLUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "5m",
       "gap": 0.18,
       "ts": 1795742102
+    },
+    {
+      "kind": "SELL",
+      "symbol": "SILVERUSDT",
+      "tf": "5m",
+      "gap": 0.09,
+      "ts": 1795742172
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.1326,
-      "pnl": 3.6062,
+      "px": 0.1325,
+      "pnl": 3.7541,
       "tf": "15m"
     },
     {
@@ -1427,8 +1427,8 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 106.56,
-      "pnl": 2.0383,
+      "px": 106.54,
+      "pnl": 2.1504,
       "tf": "15m"
     },
     {
@@ -1440,8 +1440,8 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 41.92,
-      "pnl": -0.148,
+      "px": 41.9,
+      "pnl": 0.138,
       "tf": "5m"
     }
   ],
@@ -1449,8 +1449,8 @@
   "session_start": 1795737865,
   "realized": 9.075,
   "closed_n": 1,
-  "open_upnl": 5.4965,
-  "equity": 1014.5715,
+  "open_upnl": 6.0425,
+  "equity": 1015.1175,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
