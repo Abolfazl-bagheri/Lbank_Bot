@@ -138,31 +138,6 @@
       "order_id": "PAPER-CRCLUSDT-1795745414"
     },
     {
-      "symbol": "IDOLUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.019628,
-      "qty": 10189.5252,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.0191373,
-      "tf": "15m",
-      "opened_at": 1795747533,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.019628,
-          "ts": 1795747533
-        }
-      ],
-      "entry_candle_ts": 1795747500,
-      "last_leg_candle_ts": 1795747500,
-      "dry_run": true,
-      "order_id": "PAPER-IDOLUSDT-1795747533"
-    },
-    {
       "symbol": "SILVERUSDT",
       "side": "SELL",
       "status": "open",
@@ -186,39 +161,34 @@
       "last_leg_candle_ts": 1795747500,
       "dry_run": true,
       "order_id": "PAPER-SILVERUSDT-1795747604"
-    }
-  ],
-  "trade_history": [
+    },
     {
-      "symbol": "ZILUSDT",
+      "symbol": "ONEUSDT",
       "side": "SELL",
-      "status": "closed",
-      "entry": 0.001265,
-      "qty": 158102.7668,
+      "status": "open",
+      "entry": 0.0011131,
+      "qty": 179678.3757,
       "margin": 10.0,
       "leverage": 20,
-      "tp_price": 0.001233375,
-      "tf": "15m",
-      "opened_at": 1795014923,
+      "tp_price": 0.0010852725,
+      "tf": "1h",
+      "opened_at": 1795748424,
       "adds": 0,
       "last_leg_margin": 10.0,
       "used_res_levels": [],
       "steps": [
         {
-          "px": 0.001265,
-          "ts": 1795014923
+          "px": 0.0011131,
+          "ts": 1795748424
         }
       ],
-      "entry_candle_ts": 1795014900,
-      "last_leg_candle_ts": 1795014900,
+      "entry_candle_ts": 1795748400,
+      "last_leg_candle_ts": 1795748400,
       "dry_run": true,
-      "order_id": "PAPER-ZILUSDT-1795014923",
-      "closed_at": 1795015190,
-      "close_px": 0.00122,
-      "pnl_usdt": 7.114624505928871,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
+      "order_id": "PAPER-ONEUSDT-1795748424"
+    }
+  ],
+  "trade_history": [
     {
       "symbol": "PROSUSDT",
       "side": "SELL",
@@ -6753,6 +6723,36 @@
       "pnl_usdt": 5.520372804397197,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "IDOLUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.019628,
+      "qty": 10189.5252,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0191373,
+      "tf": "15m",
+      "opened_at": 1795747533,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.019628,
+          "ts": 1795747533
+        }
+      ],
+      "entry_candle_ts": 1795747500,
+      "last_leg_candle_ts": 1795747500,
+      "dry_run": true,
+      "order_id": "PAPER-IDOLUSDT-1795747533",
+      "closed_at": 1795748145,
+      "close_px": 0.018359,
+      "pnl_usdt": 12.930507438353366,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -10111,7 +10111,7 @@
     "OFCUSDT": 1795782668,
     "ARGUSDT": 1795784552
   },
-  "last_trade_report_ts": 1795746917,
+  "last_trade_report_ts": 1795748148,
   "last_known_version": "2.10.0",
   "lessons": [
     {
