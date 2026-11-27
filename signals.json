@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795744280,
+  "updated_at": 1795744288,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795724793
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1395,13 @@
       "tf": "1h",
       "gap": 0.4,
       "ts": 1795744280
+    },
+    {
+      "kind": "SELL",
+      "symbol": "SILVERUSDT",
+      "tf": "5m",
+      "gap": 0.13,
+      "ts": 1795744288
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 107.38,
-      "pnl": -2.5576,
+      "px": 107.12,
+      "pnl": -1.1004,
       "tf": "15m"
     },
     {
@@ -1427,8 +1427,8 @@
       "pele": 3,
       "margin": 70.0,
       "lev": 20,
-      "px": 42.24,
-      "pnl": -7.0118,
+      "px": 42.23,
+      "pnl": -6.6791,
       "tf": "15m"
     }
   ],
@@ -1436,8 +1436,8 @@
   "session_start": 1795737865,
   "realized": 14.9922,
   "closed_n": 2,
-  "open_upnl": -9.5694,
-  "equity": 1005.4228,
+  "open_upnl": -7.7795,
+  "equity": 1007.2127,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
