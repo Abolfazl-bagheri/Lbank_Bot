@@ -6749,36 +6749,6 @@
   ],
   "pending": [
     {
-      "symbol": "MMTUSDT",
-      "tf": "15m",
-      "candle_ts": 1795667400,
-      "side": "LONG",
-      "upper": 0.33864689073227733,
-      "open": 0.278,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "BIRBUSDT",
-      "tf": "15m",
-      "candle_ts": 1795667400,
-      "side": "SELL",
-      "upper": 0.05849668242451989,
-      "open": 0.05933,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "MMTUSDT",
-      "tf": "15m",
-      "candle_ts": 1795667400,
-      "side": "LONG",
-      "upper": 0.3393820412100085,
-      "open": 0.278,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "BIRBUSDT",
       "tf": "15m",
       "candle_ts": 1795667400,
@@ -9732,12 +9702,41 @@
       "side": "SELL",
       "upper": 9.881,
       "open": 9.881,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "OUSTUSDT",
       "tf": "15m",
       "candle_ts": 1795816800,
+      "side": "SELL",
+      "upper": 27.91,
+      "open": 27.91,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "YOFCUSDT",
+      "tf": "15m",
+      "candle_ts": 1795817700,
+      "side": "SELL",
+      "upper": 9.8810000696204,
+      "open": 9.881,
+      "reported": false
+    },
+    {
+      "symbol": "LGELECTRONICSUSDT",
+      "tf": "15m",
+      "candle_ts": 1795817700,
+      "side": "LONG",
+      "upper": 110.18,
+      "open": 110.18,
+      "reported": false
+    },
+    {
+      "symbol": "OUSTUSDT",
+      "tf": "15m",
+      "candle_ts": 1795817700,
       "side": "SELL",
       "upper": 27.91,
       "open": 27.91,
@@ -10116,24 +10115,6 @@
   "last_trade_report_ts": 1795817035,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795638320,
-      "kind": "gap_result",
-      "symbol": "GOLDUSDT",
-      "tf": "5m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795638322,
-      "kind": "gap_result",
-      "symbol": "GOLDUSDT",
-      "tf": "5m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795638727,
       "kind": "gap_result",
@@ -13709,6 +13690,24 @@
     },
     {
       "ts": 1795817029,
+      "kind": "gap_result",
+      "symbol": "OUSTUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795817830,
+      "kind": "gap_result",
+      "symbol": "YOFCUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795817833,
       "kind": "gap_result",
       "symbol": "OUSTUSDT",
       "tf": "15m",
