@@ -4,17 +4,18 @@
       "symbol": "LGELECTRONICSUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 107.0521355291095,
-      "qty": 5.604699999999999,
-      "margin": 30.0,
+      "entry": 107.5803840627041,
+      "qty": 13.0135,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 104.37583214088177,
+      "tp_price": 104.89087446113649,
       "tf": "15m",
       "opened_at": 1795740354,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [
-        107.12
+        107.12,
+        108.34
       ],
       "steps": [
         {
@@ -24,10 +25,14 @@
         {
           "px": 106.8,
           "ts": 1795741521
+        },
+        {
+          "px": 107.98,
+          "ts": 1795754797
         }
       ],
       "entry_candle_ts": 1795740300,
-      "last_leg_candle_ts": 1795741521,
+      "last_leg_candle_ts": 1795754797,
       "dry_run": true,
       "order_id": "PAPER-LGELECTRONICSUSDT-1795740354"
     },
@@ -6771,16 +6776,6 @@
   ],
   "pending": [
     {
-      "symbol": "QNTXUSDT",
-      "tf": "4h",
-      "candle_ts": 1795636800,
-      "side": "SELL",
-      "upper": 32.48981429386882,
-      "open": 32.93,
-      "reported": true,
-      "filled": false
-    },
-    {
       "symbol": "BANDUSDT",
       "tf": "4h",
       "candle_ts": 1795636800,
@@ -9740,7 +9735,8 @@
       "side": "LONG",
       "upper": 0.0016402563325001642,
       "open": 0.001297,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "AKEUSDT",
@@ -9749,6 +9745,16 @@
       "side": "LONG",
       "upper": 0.001636785045935296,
       "open": 0.001297,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "AKEUSDT",
+      "tf": "15m",
+      "candle_ts": 1795754700,
+      "side": "LONG",
+      "upper": 0.0016704844428351187,
+      "open": 0.0012179,
       "reported": false
     }
   ],
@@ -10123,24 +10129,6 @@
   "last_trade_report_ts": 1795754168,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795552489,
-      "kind": "gap_result",
-      "symbol": "EWZSUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
-    {
-      "ts": 1795552492,
-      "kind": "gap_result",
-      "symbol": "PAYPUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
     {
       "ts": 1795552494,
       "kind": "gap_result",
@@ -13716,6 +13704,24 @@
     },
     {
       "ts": 1795753898,
+      "kind": "gap_result",
+      "symbol": "AKEUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795754793,
+      "kind": "gap_result",
+      "symbol": "AKEUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795754796,
       "kind": "gap_result",
       "symbol": "AKEUSDT",
       "tf": "15m",
