@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795816551,
+  "updated_at": 1795816661,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795782333
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1395,13 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1795816551
+    },
+    {
+      "kind": "GAP",
+      "symbol": "BANKUSDT",
+      "tf": "1h",
+      "gap": 2.89,
+      "ts": 1795816661
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 3,
       "margin": 70.0,
       "lev": 20,
-      "px": 109.6,
-      "pnl": -27.9623,
+      "px": 109.54,
+      "pnl": -27.1815,
       "tf": "15m"
     },
     {
@@ -1453,8 +1453,8 @@
       "pele": 3,
       "margin": 70.0,
       "lev": 20,
-      "px": 49.62,
-      "pnl": 4.3711,
+      "px": 49.61,
+      "pnl": 4.652,
       "tf": "5m"
     },
     {
@@ -1475,8 +1475,8 @@
   "session_start": 1795737865,
   "realized": 49.1947,
   "closed_n": 9,
-  "open_upnl": -62.9295,
-  "equity": 986.2652,
+  "open_upnl": -61.8678,
+  "equity": 987.3269,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
