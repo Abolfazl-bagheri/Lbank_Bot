@@ -6749,16 +6749,6 @@
   ],
   "pending": [
     {
-      "symbol": "SILVERUSDT",
-      "tf": "5m",
-      "candle_ts": 1795671300,
-      "side": "SELL",
-      "upper": 42.2898477357586,
-      "open": 42.36,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "CHRUSDT",
       "tf": "15m",
       "candle_ts": 1795671900,
@@ -9722,7 +9712,8 @@
       "side": "SELL",
       "upper": 0.07993836793007435,
       "open": 0.08218,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "ACEUSDT",
@@ -9740,6 +9731,16 @@
       "side": "SELL",
       "upper": 9.881,
       "open": 9.881,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "ACEUSDT",
+      "tf": "15m",
+      "candle_ts": 1795821300,
+      "side": "SELL",
+      "upper": 0.09211958655124573,
+      "open": 0.0996,
       "reported": false
     }
   ],
@@ -10116,24 +10117,6 @@
   "last_trade_report_ts": 1795821073,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795640643,
-      "kind": "gap_result",
-      "symbol": "STOUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
-    {
-      "ts": 1795640645,
-      "kind": "gap_result",
-      "symbol": "CFGUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
     {
       "ts": 1795640647,
       "kind": "gap_result",
@@ -13709,6 +13692,24 @@
     },
     {
       "ts": 1795820646,
+      "kind": "gap_result",
+      "symbol": "YOFCUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795821430,
+      "kind": "gap_result",
+      "symbol": "ACEUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
+    },
+    {
+      "ts": 1795821433,
       "kind": "gap_result",
       "symbol": "YOFCUSDT",
       "tf": "15m",
