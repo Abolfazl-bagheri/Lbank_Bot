@@ -161,6 +161,31 @@
       "last_leg_candle_ts": 1795747500,
       "dry_run": true,
       "order_id": "PAPER-BULLAUSDT-1795747515"
+    },
+    {
+      "symbol": "IDOLUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.019628,
+      "qty": 10189.5252,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0191373,
+      "tf": "15m",
+      "opened_at": 1795747533,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.019628,
+          "ts": 1795747533
+        }
+      ],
+      "entry_candle_ts": 1795747500,
+      "last_leg_candle_ts": 1795747500,
+      "dry_run": true,
+      "order_id": "PAPER-IDOLUSDT-1795747533"
     }
   ],
   "trade_history": [
@@ -6732,16 +6757,6 @@
   ],
   "pending": [
     {
-      "symbol": "PROSUSDT",
-      "tf": "1h",
-      "candle_ts": 1795593600,
-      "side": "SELL",
-      "upper": 0.7311533226968673,
-      "open": 0.7479,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "MANTRAUSDT",
       "tf": "4h",
       "candle_ts": 1795593600,
@@ -9715,6 +9730,15 @@
       "side": "SELL",
       "upper": 0.0015588282195853895,
       "open": 0.0015575,
+      "reported": false
+    },
+    {
+      "symbol": "BULLAUSDT",
+      "tf": "15m",
+      "candle_ts": 1795747500,
+      "side": "SELL",
+      "upper": 0.08054185906622027,
+      "open": 0.08363,
       "reported": false
     }
   ],
