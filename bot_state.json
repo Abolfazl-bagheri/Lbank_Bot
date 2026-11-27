@@ -6749,36 +6749,6 @@
   ],
   "pending": [
     {
-      "symbol": "SLXUSDT",
-      "tf": "15m",
-      "candle_ts": 1795652100,
-      "side": "LONG",
-      "upper": 0.03494768439463794,
-      "open": 0.03185,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "CKBUSDT",
-      "tf": "15m",
-      "candle_ts": 1795652100,
-      "side": "SELL",
-      "upper": 0.000816295545795629,
-      "open": 0.000821,
-      "reported": true,
-      "filled": false
-    },
-    {
-      "symbol": "VANAUSDT",
-      "tf": "15m",
-      "candle_ts": 1795652100,
-      "side": "SELL",
-      "upper": 0.596178744273279,
-      "open": 0.6,
-      "reported": true,
-      "filled": false
-    },
-    {
       "symbol": "MOCAUSDT",
       "tf": "15m",
       "candle_ts": 1795652100,
@@ -9738,6 +9708,36 @@
       "open": 0.000771,
       "reported": true,
       "filled": true
+    },
+    {
+      "symbol": "SILVERUSDT",
+      "tf": "5m",
+      "candle_ts": 1795780200,
+      "side": "LONG",
+      "upper": 44.53839005243582,
+      "open": 44.07,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "CRCLUSDT",
+      "tf": "5m",
+      "candle_ts": 1795780200,
+      "side": "LONG",
+      "upper": 51.119876079456525,
+      "open": 50.38,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
+      "candle_ts": 1795780200,
+      "side": "LONG",
+      "upper": 3675.061244171081,
+      "open": 3661.38,
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -10041,7 +10041,6 @@
     "QUID1USDT": 1795354270,
     "GSTOCKUSDT": 1795367820,
     "RIOTUSDT": 1795369657,
-    "QUACKAIUSDT": 1795458844,
     "ARCSOLUSDT": 1795464273,
     "FWDIUSDT": 1795469602,
     "FLYUSDT": 1795475781,
@@ -10079,7 +10078,6 @@
     "RGTIUSDT": 1795756710,
     "HAJIMIUSDT": 1795766536,
     "GOATSEUSUSDT": 1795779209,
-    "SAFE1USDT": 1795780009,
     "ARROWUSDT": 1795781032,
     "CITYUSDT": 1795781784,
     "OFCUSDT": 1795782668,
@@ -10113,33 +10111,6 @@
   "last_trade_report_ts": 1795780046,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795601020,
-      "kind": "gap_result",
-      "symbol": "PIPPINUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795601023,
-      "kind": "gap_result",
-      "symbol": "SSVUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
-    {
-      "ts": 1795602783,
-      "kind": "gap_result",
-      "symbol": "MOODENGUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795603641,
       "kind": "gap_result",
@@ -13709,6 +13680,33 @@
       "kind": "gap_result",
       "symbol": "XPINUSDT",
       "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795780539,
+      "kind": "gap_result",
+      "symbol": "SILVERUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795780546,
+      "kind": "gap_result",
+      "symbol": "CRCLUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795780557,
+      "kind": "gap_result",
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
       "gap": 0.0,
       "filled": true,
       "note": "filled"
