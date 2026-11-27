@@ -6749,16 +6749,6 @@
   ],
   "pending": [
     {
-      "symbol": "MINAUSDT",
-      "tf": "4h",
-      "candle_ts": 1795651200,
-      "side": "SELL",
-      "upper": 0.04347592955255106,
-      "open": 0.04393,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "RUNEUSDT",
       "tf": "4h",
       "candle_ts": 1795651200,
@@ -9736,6 +9726,16 @@
       "side": "SELL",
       "upper": 0.0180070756184992,
       "open": 0.01928,
+      "reported": true,
+      "filled": false
+    },
+    {
+      "symbol": "PORTALUSDT",
+      "tf": "15m",
+      "candle_ts": 1795775400,
+      "side": "SELL",
+      "upper": 0.019532356153110615,
+      "open": 0.02012,
       "reported": false
     }
   ],
@@ -10112,15 +10112,6 @@
   "last_trade_report_ts": 1795774764,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795593998,
-      "kind": "gap_result",
-      "symbol": "GPROUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795594001,
       "kind": "gap_result",
@@ -13711,6 +13702,15 @@
       "gap": 0.0,
       "filled": true,
       "note": "filled"
+    },
+    {
+      "ts": 1795775532,
+      "kind": "gap_result",
+      "symbol": "PORTALUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
     }
   ],
   "tune_history": [],
