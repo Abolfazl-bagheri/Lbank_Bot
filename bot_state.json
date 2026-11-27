@@ -6749,26 +6749,6 @@
   ],
   "pending": [
     {
-      "symbol": "AKEUSDT",
-      "tf": "15m",
-      "candle_ts": 1795653000,
-      "side": "SELL",
-      "upper": 0.001897533059901735,
-      "open": 0.0019446,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "LAYERUSDT",
-      "tf": "15m",
-      "candle_ts": 1795653900,
-      "side": "SELL",
-      "upper": 0.047775276872036254,
-      "open": 0.04844,
-      "reported": true,
-      "filled": false
-    },
-    {
       "symbol": "XAUTUSDT",
       "tf": "5m",
       "candle_ts": 1795654500,
@@ -9739,6 +9719,25 @@
       "side": "LONG",
       "upper": 0.001128367470134534,
       "open": 0.0010569,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "AKEUSDT",
+      "tf": "15m",
+      "candle_ts": 1795783500,
+      "side": "LONG",
+      "upper": 0.0011359679147048725,
+      "open": 0.0010384,
+      "reported": false
+    },
+    {
+      "symbol": "XAUTUSDT",
+      "tf": "15m",
+      "candle_ts": 1795783500,
+      "side": "LONG",
+      "upper": 3675.6372993833133,
+      "open": 3661.53,
       "reported": false
     }
   ],
@@ -10082,7 +10081,6 @@
     "GOATSEUSUSDT": 1795779209,
     "ARROWUSDT": 1795781032,
     "CITYUSDT": 1795781784,
-    "OFCUSDT": 1795782668,
     "ARGUSDT": 1795784552,
     "SKY1USDT": 1795791880,
     "AINBSCUSDT": 1795791911,
@@ -10112,20 +10110,12 @@
     "KNTQUSDT": 1795824116,
     "PORTALUSDT": 1795824128,
     "QUACKAIUSDT": 1795824326,
-    "SAFE1USDT": 1795824320
+    "SAFE1USDT": 1795824320,
+    "OFCUSDT": 1795826934
   },
   "last_trade_report_ts": 1795783012,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795607232,
-      "kind": "gap_result",
-      "symbol": "VKTXUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795607237,
       "kind": "gap_result",
@@ -13716,6 +13706,15 @@
       "gap": 0.0,
       "filled": false,
       "note": "miss"
+    },
+    {
+      "ts": 1795783631,
+      "kind": "gap_result",
+      "symbol": "AKEUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
     }
   ],
   "tune_history": [],
