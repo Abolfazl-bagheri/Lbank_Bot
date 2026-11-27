@@ -9589,7 +9589,8 @@
       "side": "SELL",
       "upper": 0.001044229005266848,
       "open": 0.001051,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "EWZSUSDT",
@@ -9598,7 +9599,8 @@
       "side": "SELL",
       "upper": 11.22268574343736,
       "open": 11.157,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "ONEUSDT",
@@ -9607,7 +9609,8 @@
       "side": "SELL",
       "upper": 0.001046087178713609,
       "open": 0.001051,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "EWZSUSDT",
@@ -9616,7 +9619,8 @@
       "side": "SELL",
       "upper": 11.22268574343736,
       "open": 11.157,
-      "reported": false
+      "reported": true,
+      "filled": false
     }
   ],
   "paper_days": [
@@ -9993,42 +9997,6 @@
   "last_trade_report_ts": 1795743681,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795484849,
-      "kind": "gap_result",
-      "symbol": "ZHIPUUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795484854,
-      "kind": "gap_result",
-      "symbol": "MINIMAXUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795484857,
-      "kind": "gap_result",
-      "symbol": "UMCUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795485836,
-      "kind": "gap_result",
-      "symbol": "CYSUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795486653,
       "kind": "gap_result",
@@ -13588,6 +13556,42 @@
       "ts": 1795743088,
       "kind": "gap_result",
       "symbol": "ONEUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
+    },
+    {
+      "ts": 1795743982,
+      "kind": "gap_result",
+      "symbol": "ONEUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795743984,
+      "kind": "gap_result",
+      "symbol": "EWZSUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
+    },
+    {
+      "ts": 1795743987,
+      "kind": "gap_result",
+      "symbol": "ONEUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795743989,
+      "kind": "gap_result",
+      "symbol": "EWZSUSDT",
       "tf": "15m",
       "gap": 0.0,
       "filled": false,
