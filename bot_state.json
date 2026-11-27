@@ -6749,16 +6749,6 @@
   ],
   "pending": [
     {
-      "symbol": "PROSUSDT",
-      "tf": "15m",
-      "candle_ts": 1795667400,
-      "side": "SELL",
-      "upper": 0.7172187216709245,
-      "open": 0.7128,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "ELSAUSDT",
       "tf": "1h",
       "candle_ts": 1795669200,
@@ -9712,7 +9702,8 @@
       "side": "SELL",
       "upper": 9.8810000696204,
       "open": 9.881,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "LGELECTRONICSUSDT",
@@ -9721,7 +9712,8 @@
       "side": "LONG",
       "upper": 110.18,
       "open": 110.18,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "OUSTUSDT",
@@ -9730,7 +9722,8 @@
       "side": "SELL",
       "upper": 27.91,
       "open": 27.91,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "YOFCUSDT",
@@ -9738,6 +9731,16 @@
       "candle_ts": 1795817700,
       "side": "SELL",
       "upper": 9.8810000696204,
+      "open": 9.881,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "YOFCUSDT",
+      "tf": "15m",
+      "candle_ts": 1795818600,
+      "side": "SELL",
+      "upper": 9.881,
       "open": 9.881,
       "reported": false
     }
@@ -10109,47 +10112,12 @@
     "WOTAMALAILEUSDT": 1795853070,
     "SIMOUSDT": 1795854719,
     "ARGUSUSDT": 1795855712,
-    "FIGUSDT": 1795856630
+    "FIGUSDT": 1795856630,
+    "KOPNUSDT": 1795861919
   },
   "last_trade_report_ts": 1795817960,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795638727,
-      "kind": "gap_result",
-      "symbol": "GPROUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
-    {
-      "ts": 1795639610,
-      "kind": "gap_result",
-      "symbol": "MMTUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795639612,
-      "kind": "gap_result",
-      "symbol": "CLAUDIAUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795639614,
-      "kind": "gap_result",
-      "symbol": "MMTUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795640637,
       "kind": "gap_result",
@@ -13709,6 +13677,42 @@
       "ts": 1795817833,
       "kind": "gap_result",
       "symbol": "OUSTUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795818734,
+      "kind": "gap_result",
+      "symbol": "YOFCUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795818739,
+      "kind": "gap_result",
+      "symbol": "LGELECTRONICSUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795818742,
+      "kind": "gap_result",
+      "symbol": "OUSTUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
+    },
+    {
+      "ts": 1795818753,
+      "kind": "gap_result",
+      "symbol": "YOFCUSDT",
       "tf": "15m",
       "gap": 0.0,
       "filled": true,
