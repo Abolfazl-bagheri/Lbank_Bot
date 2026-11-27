@@ -131,6 +131,31 @@
       "last_leg_candle_ts": 1795745157,
       "dry_run": true,
       "order_id": "PAPER-GOLDUSDT-1795745145"
+    },
+    {
+      "symbol": "CRCLUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 49.77,
+      "qty": 4.0185,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 48.52575,
+      "tf": "5m",
+      "opened_at": 1795745414,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 49.77,
+          "ts": 1795745414
+        }
+      ],
+      "entry_candle_ts": 1795745400,
+      "last_leg_candle_ts": 1795744800,
+      "dry_run": true,
+      "order_id": "PAPER-CRCLUSDT-1795745414"
     }
   ],
   "trade_history": [
@@ -6698,16 +6723,6 @@
   ],
   "pending": [
     {
-      "symbol": "XAUTUSDT",
-      "tf": "5m",
-      "candle_ts": 1795569600,
-      "side": "LONG",
-      "upper": 3553.596514767035,
-      "open": 3532.3,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "IRYSUSDT",
       "tf": "15m",
       "candle_ts": 1795570200,
@@ -9680,6 +9695,15 @@
       "side": "SELL",
       "upper": 3609.107669606653,
       "open": 3607.72,
+      "reported": false
+    },
+    {
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
+      "candle_ts": 1795745400,
+      "side": "SELL",
+      "upper": 3608.0243645285655,
+      "open": 3613.34,
       "reported": false
     }
   ],
