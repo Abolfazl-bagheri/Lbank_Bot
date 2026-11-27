@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795747514,
+  "updated_at": 1795747532,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795741523
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795741524
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "15m",
       "gap": 3.76,
       "ts": 1795747514
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795747520
+    },
+    {
+      "kind": "SELL",
+      "symbol": "IDOLUSDT",
+      "tf": "15m",
+      "gap": 3.37,
+      "ts": 1795747532
     }
   ],
   "trades": [
@@ -1456,14 +1456,27 @@
       "px": 49.89,
       "pnl": -3.2139,
       "tf": "5m"
+    },
+    {
+      "symbol": "BULLAUSDT",
+      "side": "SELL",
+      "entry": 0.08369,
+      "tp": 0.08159775,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.08369,
+      "pnl": -0.24,
+      "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1795737865,
   "realized": -50.8469,
   "closed_n": 4,
-  "open_upnl": -16.3767,
-  "equity": 932.7764,
+  "open_upnl": -16.6167,
+  "equity": 932.5364,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
