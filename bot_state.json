@@ -6771,16 +6771,6 @@
   ],
   "pending": [
     {
-      "symbol": "MOVEUSDT",
-      "tf": "4h",
-      "candle_ts": 1795636800,
-      "side": "SELL",
-      "upper": 0.0050136124250748345,
-      "open": 0.0051,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "COLLECTUSDT",
       "tf": "4h",
       "candle_ts": 1795636800,
@@ -9740,7 +9730,8 @@
       "side": "LONG",
       "upper": 0.0016154490173086967,
       "open": 0.0013428,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "AKEUSDT",
@@ -9749,6 +9740,16 @@
       "side": "LONG",
       "upper": 0.0016382779503427243,
       "open": 0.0013428,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "AKEUSDT",
+      "tf": "15m",
+      "candle_ts": 1795753800,
+      "side": "LONG",
+      "upper": 0.0016402563325001642,
+      "open": 0.001297,
       "reported": false
     }
   ],
@@ -10123,24 +10124,6 @@
   "last_trade_report_ts": 1795753250,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795552483,
-      "kind": "gap_result",
-      "symbol": "ZMUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795552486,
-      "kind": "gap_result",
-      "symbol": "XBIUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795552489,
       "kind": "gap_result",
@@ -13718,6 +13701,24 @@
       "ts": 1795752333,
       "kind": "gap_result",
       "symbol": "CLAUDIAUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795753896,
+      "kind": "gap_result",
+      "symbol": "AKEUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795753898,
+      "kind": "gap_result",
+      "symbol": "AKEUSDT",
       "tf": "15m",
       "gap": 0.0,
       "filled": true,
