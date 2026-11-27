@@ -6653,26 +6653,6 @@
   ],
   "pending": [
     {
-      "symbol": "GTLBUSDT",
-      "tf": "15m",
-      "candle_ts": 1795563000,
-      "side": "LONG",
-      "upper": 46.09,
-      "open": 46.09,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "SSPCUSDT",
-      "tf": "15m",
-      "candle_ts": 1795563900,
-      "side": "SELL",
-      "upper": 9.969000125832649,
-      "open": 9.969,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "XAUTUSDT",
       "tf": "5m",
       "candle_ts": 1795564500,
@@ -9605,7 +9585,8 @@
       "side": "LONG",
       "upper": 3575.1872481739947,
       "open": 3558.65,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "GOLDUSDT",
@@ -9614,7 +9595,8 @@
       "side": "LONG",
       "upper": 3585.264033321311,
       "open": 3568.72,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "XAUTUSDT",
@@ -9642,6 +9624,25 @@
       "side": "SELL",
       "upper": 41.85617634423386,
       "open": 41.84,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "SILVERUSDT",
+      "tf": "5m",
+      "candle_ts": 1795742100,
+      "side": "SELL",
+      "upper": 41.88420907166082,
+      "open": 41.92,
+      "reported": false
+    },
+    {
+      "symbol": "ONEUSDT",
+      "tf": "15m",
+      "candle_ts": 1795742100,
+      "side": "SELL",
+      "upper": 0.0010298020356715619,
+      "open": 0.001031,
       "reported": false
     }
   ],
@@ -10019,33 +10020,6 @@
   "last_trade_report_ts": 1795741856,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795483051,
-      "kind": "gap_result",
-      "symbol": "CRCLUSDT",
-      "tf": "5m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795483056,
-      "kind": "gap_result",
-      "symbol": "CRCLUSDT",
-      "tf": "5m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795483966,
-      "kind": "gap_result",
-      "symbol": "MINIMAXUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795483969,
       "kind": "gap_result",
@@ -13612,6 +13586,33 @@
     },
     {
       "ts": 1795741814,
+      "kind": "gap_result",
+      "symbol": "SILVERUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795742188,
+      "kind": "gap_result",
+      "symbol": "XAUTUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795742190,
+      "kind": "gap_result",
+      "symbol": "GOLDUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795742192,
       "kind": "gap_result",
       "symbol": "SILVERUSDT",
       "tf": "5m",
