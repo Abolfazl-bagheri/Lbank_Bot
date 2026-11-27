@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795742172,
+  "updated_at": 1795742216,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "IDOLUSDT",
-      "tf": "4h",
-      "gap": 3.23,
-      "ts": 1795722107
-    },
-    {
-      "kind": "GAP",
-      "symbol": "FETUSDT",
-      "tf": "4h",
-      "gap": 2.03,
-      "ts": 1795722112
-    },
     {
       "kind": "GAP",
       "symbol": "BUSDT",
@@ -1402,6 +1388,20 @@
       "tf": "5m",
       "gap": 0.09,
       "ts": 1795742172
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795742196
+    },
+    {
+      "kind": "SELL",
+      "symbol": "ONEUSDT",
+      "tf": "15m",
+      "gap": 1.09,
+      "ts": 1795742216
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.1325,
-      "pnl": 3.7541,
+      "px": 0.1332,
+      "pnl": 2.7186,
       "tf": "15m"
     },
     {
@@ -1427,8 +1427,8 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 106.54,
-      "pnl": 2.1504,
+      "px": 106.74,
+      "pnl": 1.0294,
       "tf": "15m"
     },
     {
@@ -1440,8 +1440,8 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 41.9,
-      "pnl": 0.138,
+      "px": 41.87,
+      "pnl": 0.5669,
       "tf": "5m"
     }
   ],
@@ -1449,8 +1449,8 @@
   "session_start": 1795737865,
   "realized": 9.075,
   "closed_n": 1,
-  "open_upnl": 6.0425,
-  "equity": 1015.1175,
+  "open_upnl": 4.3149,
+  "equity": 1013.3899,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
