@@ -6749,16 +6749,6 @@
   ],
   "pending": [
     {
-      "symbol": "CATIUSDT",
-      "tf": "4h",
-      "candle_ts": 1795651200,
-      "side": "SELL",
-      "upper": 0.03430387483110278,
-      "open": 0.0347,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "MINAUSDT",
       "tf": "4h",
       "candle_ts": 1795651200,
@@ -9677,7 +9667,8 @@
       "side": "SELL",
       "upper": 0.01602931213482095,
       "open": 0.01758,
-      "reported": false
+      "reported": true,
+      "filled": false
     },
     {
       "symbol": "CFGUSDT",
@@ -9735,6 +9726,16 @@
       "side": "LONG",
       "upper": 3679.805079978752,
       "open": 3662.53,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "PORTALUSDT",
+      "tf": "15m",
+      "candle_ts": 1795774500,
+      "side": "SELL",
+      "upper": 0.0180070756184992,
+      "open": 0.01928,
       "reported": false
     }
   ],
@@ -10105,29 +10106,12 @@
     "UP2USDT": 1795810723,
     "FIGUSDT": 1795810726,
     "ARGUSUSDT": 1795812354,
-    "STONKBROKERUSDT": 1795812420
+    "STONKBROKERUSDT": 1795812420,
+    "FRONGUSDT": 1795817816
   },
   "last_trade_report_ts": 1795773838,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795593991,
-      "kind": "gap_result",
-      "symbol": "KUAISHOUUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
-    {
-      "ts": 1795593994,
-      "kind": "gap_result",
-      "symbol": "HK1810USDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795593998,
       "kind": "gap_result",
@@ -13703,6 +13687,24 @@
     },
     {
       "ts": 1795774239,
+      "kind": "gap_result",
+      "symbol": "XAUTUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795774638,
+      "kind": "gap_result",
+      "symbol": "PORTALUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
+    },
+    {
+      "ts": 1795774647,
       "kind": "gap_result",
       "symbol": "XAUTUSDT",
       "tf": "5m",
