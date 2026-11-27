@@ -9731,7 +9731,8 @@
       "side": "SELL",
       "upper": 9.881,
       "open": 9.881,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "LAOPUUSDT",
@@ -9740,7 +9741,8 @@
       "side": "LONG",
       "upper": 35.49202276877073,
       "open": 35.02,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -10114,24 +10116,6 @@
   "last_trade_report_ts": 1795811815,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795608395,
-      "kind": "gap_result",
-      "symbol": "VKTXUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795608405,
-      "kind": "gap_result",
-      "symbol": "SILVERUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795608408,
       "kind": "gap_result",
@@ -13707,6 +13691,24 @@
     },
     {
       "ts": 1795811544,
+      "kind": "gap_result",
+      "symbol": "LAOPUUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795812439,
+      "kind": "gap_result",
+      "symbol": "YOFCUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795812442,
       "kind": "gap_result",
       "symbol": "LAOPUUSDT",
       "tf": "15m",
