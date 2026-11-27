@@ -102,23 +102,29 @@
       "side": "SELL",
       "status": "open",
       "entry": 3614.58,
-      "qty": 0.055331,
-      "margin": 10.0,
+      "qty": 0.165994,
+      "margin": 30.0,
       "leverage": 20,
       "tp_price": 3524.2155,
       "tf": "5m",
       "opened_at": 1795745145,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        3622.23
+      ],
       "steps": [
         {
           "px": 3614.58,
           "ts": 1795745145
+        },
+        {
+          "px": 3614.58,
+          "ts": 1795745157
         }
       ],
       "entry_candle_ts": 1795745100,
-      "last_leg_candle_ts": 1795744800,
+      "last_leg_candle_ts": 1795745157,
       "dry_run": true,
       "order_id": "PAPER-GOLDUSDT-1795745145"
     }
@@ -6692,16 +6698,6 @@
       "tf": "5m",
       "candle_ts": 1795569600,
       "side": "LONG",
-      "upper": 3553.5336485893145,
-      "open": 3532.3,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "XAUTUSDT",
-      "tf": "5m",
-      "candle_ts": 1795569600,
-      "side": "LONG",
       "upper": 3553.596514767035,
       "open": 3532.3,
       "reported": true,
@@ -9671,6 +9667,15 @@
       "side": "SELL",
       "upper": 42.856144418718486,
       "open": 42.79,
+      "reported": false
+    },
+    {
+      "symbol": "GOLDUSDT",
+      "tf": "5m",
+      "candle_ts": 1795745100,
+      "side": "SELL",
+      "upper": 3609.107669606653,
+      "open": 3607.72,
       "reported": false
     }
   ],
