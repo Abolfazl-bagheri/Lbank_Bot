@@ -9736,7 +9736,8 @@
       "side": "SELL",
       "upper": 0.019532356153110615,
       "open": 0.02012,
-      "reported": false
+      "reported": true,
+      "filled": false
     }
   ],
   "paper_days": [
@@ -10106,20 +10107,12 @@
     "FIGUSDT": 1795810726,
     "ARGUSUSDT": 1795812354,
     "STONKBROKERUSDT": 1795812420,
-    "FRONGUSDT": 1795817816
+    "FRONGUSDT": 1795817816,
+    "HK1888USDT": 1795819594
   },
   "last_trade_report_ts": 1795775723,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795594001,
-      "kind": "gap_result",
-      "symbol": "JCTUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795594009,
       "kind": "gap_result",
@@ -13704,6 +13697,15 @@
     },
     {
       "ts": 1795775532,
+      "kind": "gap_result",
+      "symbol": "PORTALUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
+    },
+    {
+      "ts": 1795776425,
       "kind": "gap_result",
       "symbol": "PORTALUSDT",
       "tf": "15m",
