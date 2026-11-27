@@ -166,64 +166,9 @@
       "last_leg_candle_ts": 1795745478,
       "dry_run": true,
       "order_id": "PAPER-CRCLUSDT-1795745414"
-    },
-    {
-      "symbol": "BIGTIMEUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.00681,
-      "qty": 29368.5756,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.00663975,
-      "tf": "15m",
-      "opened_at": 1795745725,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.00681,
-          "ts": 1795745725
-        }
-      ],
-      "entry_candle_ts": 1795745700,
-      "last_leg_candle_ts": 1795745700,
-      "dry_run": true,
-      "order_id": "PAPER-BIGTIMEUSDT-1795745725"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "ZILUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.001151,
-      "qty": 173761.9461,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.001122225,
-      "tf": "1h",
-      "opened_at": 1795014067,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.001151,
-          "ts": 1795014067
-        }
-      ],
-      "entry_candle_ts": 1795014000,
-      "last_leg_candle_ts": 1795014000,
-      "dry_run": true,
-      "order_id": "PAPER-ZILUSDT-1795014067",
-      "closed_at": 1795014329,
-      "close_px": 0.001198,
-      "pnl_usdt": -8.166811468288476,
-      "close_reason": "STOP",
-      "why": "STOP"
-    },
     {
       "symbol": "USARUSDT",
       "side": "SELL",
@@ -6754,6 +6699,36 @@
       "pnl_usdt": 5.917159763313574,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "BIGTIMEUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.00681,
+      "qty": 29368.5756,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.00663975,
+      "tf": "15m",
+      "opened_at": 1795745725,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.00681,
+          "ts": 1795745725
+        }
+      ],
+      "entry_candle_ts": 1795745700,
+      "last_leg_candle_ts": 1795745700,
+      "dry_run": true,
+      "order_id": "PAPER-BIGTIMEUSDT-1795745725",
+      "closed_at": 1795745919,
+      "close_px": 0.007171,
+      "pnl_usdt": -10.60205580029369,
+      "close_reason": "STOP",
+      "why": "STOP"
     }
   ],
   "pending": [
