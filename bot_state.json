@@ -6749,16 +6749,6 @@
   ],
   "pending": [
     {
-      "symbol": "MEUSDT",
-      "tf": "1h",
-      "candle_ts": 1795654800,
-      "side": "SELL",
-      "upper": 0.03936800678952568,
-      "open": 0.0398,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "MOCAUSDT",
       "tf": "1h",
       "candle_ts": 1795654800,
@@ -9721,7 +9711,8 @@
       "side": "SELL",
       "upper": 3.7956385233166383,
       "open": 3.794,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "KAVAUSDT",
@@ -9739,6 +9730,15 @@
       "side": "SELL",
       "upper": 0.16474852808165355,
       "open": 0.167,
+      "reported": false
+    },
+    {
+      "symbol": "THEUSDT",
+      "tf": "15m",
+      "candle_ts": 1795807800,
+      "side": "SELL",
+      "upper": 0.03789867500038399,
+      "open": 0.0413,
       "reported": false
     }
   ],
@@ -10099,20 +10099,21 @@
     "PORTALUSDT": 1795824128,
     "QUACKAIUSDT": 1795824326,
     "SAFE1USDT": 1795824320,
-    "OFCUSDT": 1795826934
+    "OFCUSDT": 1795826934,
+    "SPACE1USDT": 1795851080,
+    "CZUSDT": 1795851106,
+    "BEMUSDT": 1795851111,
+    "LWLGUSDT": 1795851126,
+    "1000WOJAKUSDT": 1795851156,
+    "1000SATSUSDT": 1795851160,
+    "NEIRO1USDT": 1795851161,
+    "MEMECOINUSDT": 1795851164,
+    "MANCERUSDT": 1795851168,
+    "PIPEDOGUSDT": 1795851170
   },
   "last_trade_report_ts": 1795807522,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795607265,
-      "kind": "gap_result",
-      "symbol": "SILVERUSDT",
-      "tf": "5m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795607269,
       "kind": "gap_result",
@@ -13700,6 +13701,15 @@
       "kind": "gap_result",
       "symbol": "XAUTUSDT",
       "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795807992,
+      "kind": "gap_result",
+      "symbol": "CSOPSAMSUNG2LUSDT",
+      "tf": "15m",
       "gap": 0.0,
       "filled": true,
       "note": "filled"
