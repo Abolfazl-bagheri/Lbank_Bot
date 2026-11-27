@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795752061,
+  "updated_at": 1795752081,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795746983
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795747001
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "4h",
       "gap": 2.19,
       "ts": 1795752061
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795752068
+    },
+    {
+      "kind": "SELL",
+      "symbol": "HAEDALUSDT",
+      "tf": "4h",
+      "gap": 4.92,
+      "ts": 1795752081
     }
   ],
   "trades": [
@@ -1473,23 +1473,23 @@
     {
       "symbol": "ONEUSDT",
       "side": "SELL",
-      "entry": 0.0011190838724128582,
-      "tp": 0.0010911067756025367,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
+      "entry": 0.0011090257416060895,
+      "tp": 0.0010813000980659372,
+      "adds": 2,
+      "pele": 3,
+      "margin": 70.0,
       "lev": 20,
       "px": 0.0011016,
-      "pnl": 8.654,
-      "tf": "1h"
+      "pnl": 7.694,
+      "tf": "4h"
     }
   ],
   "start": 1000.0,
   "session_start": 1795737865,
   "realized": -16.6072,
   "closed_n": 8,
-  "open_upnl": -23.7082,
-  "equity": 959.6846,
+  "open_upnl": -24.6682,
+  "equity": 958.7246,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
