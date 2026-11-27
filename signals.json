@@ -1,57 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795745143,
+  "updated_at": 1795745321,
   "signals": [
-    {
-      "kind": "SELL",
-      "symbol": "XAUTUSDT",
-      "tf": "5m",
-      "gap": 0.06,
-      "ts": 1795736138
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795736150
-    },
-    {
-      "kind": "SELL",
-      "symbol": "XAUTUSDT",
-      "tf": "5m",
-      "gap": 0.06,
-      "ts": 1795736156
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795736168
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795736186
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795736204
-    },
-    {
-      "kind": "GAP",
-      "symbol": "INITUSDT",
-      "tf": "4h",
-      "gap": 5.9,
-      "ts": 1795736471
-    },
     {
       "kind": "GAP",
       "symbol": "BULLAUSDT",
@@ -1402,6 +1353,55 @@
       "tf": "5m",
       "gap": 0.15,
       "ts": 1795745143
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795745147
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795745159
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795745160
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795745176
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795745194
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795745212
+    },
+    {
+      "kind": "GAP",
+      "symbol": "SILVERUSDT",
+      "tf": "5m",
+      "gap": 0.76,
+      "ts": 1795745321
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 107.06,
-      "pnl": -0.7641,
+      "px": 106.99,
+      "pnl": -0.3717,
       "tf": "15m"
     },
     {
@@ -1427,8 +1427,8 @@
       "pele": 3,
       "margin": 70.0,
       "lev": 20,
-      "px": 42.94,
-      "pnl": -30.3009,
+      "px": 43.28,
+      "pnl": -41.6127,
       "tf": "15m"
     },
     {
@@ -1440,17 +1440,30 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 3604.0,
-      "pnl": -2.5344,
+      "px": 3608.0,
+      "pnl": -3.2023,
       "tf": "15m"
+    },
+    {
+      "symbol": "GOLDUSDT",
+      "side": "SELL",
+      "entry": 3614.58,
+      "tp": 3524.2155,
+      "adds": 1,
+      "pele": 2,
+      "margin": 30.0,
+      "lev": 20,
+      "px": 3620.61,
+      "pnl": -1.7209,
+      "tf": "5m"
     }
   ],
   "start": 1000.0,
   "session_start": 1795737865,
   "realized": 14.9922,
   "closed_n": 2,
-  "open_upnl": -33.5994,
-  "equity": 981.3928,
+  "open_upnl": -46.9076,
+  "equity": 968.0846,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
