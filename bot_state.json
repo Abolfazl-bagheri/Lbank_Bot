@@ -70,24 +70,30 @@
       "symbol": "XAUTUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 3589.15,
-      "qty": 0.055723,
-      "margin": 10.0,
+      "entry": 3593.1344702218767,
+      "qty": 0.166985,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 3499.42125,
+      "tp_price": 3503.3061084663295,
       "tf": "15m",
       "opened_at": 1795744947,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        3605.8
+      ],
       "steps": [
         {
           "px": 3589.15,
           "ts": 1795744947
+        },
+        {
+          "px": 3595.13,
+          "ts": 1795745128
         }
       ],
       "entry_candle_ts": 1795744800,
-      "last_leg_candle_ts": 1795744800,
+      "last_leg_candle_ts": 1795745128,
       "dry_run": true,
       "order_id": "PAPER-XAUTUSDT-1795744947"
     }
@@ -6657,56 +6663,6 @@
   ],
   "pending": [
     {
-      "symbol": "BIGTIMEUSDT",
-      "tf": "15m",
-      "candle_ts": 1795567500,
-      "side": "SELL",
-      "upper": 0.004400849367021548,
-      "open": 0.004491,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "FRHCUSDT",
-      "tf": "15m",
-      "candle_ts": 1795567500,
-      "side": "LONG",
-      "upper": 171.94,
-      "open": 171.94,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "BIGTIMEUSDT",
-      "tf": "1h",
-      "candle_ts": 1795568400,
-      "side": "SELL",
-      "upper": 0.0043990351219119405,
-      "open": 0.004506,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "XAUTUSDT",
-      "tf": "5m",
-      "candle_ts": 1795569000,
-      "side": "LONG",
-      "upper": 3554.6478149155814,
-      "open": 3535.1,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "IRYSUSDT",
-      "tf": "15m",
-      "candle_ts": 1795569300,
-      "side": "SELL",
-      "upper": 0.017255444587828066,
-      "open": 0.01749,
-      "reported": true,
-      "filled": false
-    },
-    {
       "symbol": "INITUSDT",
       "tf": "15m",
       "candle_ts": 1795569300,
@@ -9509,7 +9465,8 @@
       "side": "LONG",
       "upper": 3578.1218129664508,
       "open": 3558.65,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "SILVERUSDT",
@@ -9608,7 +9565,8 @@
       "side": "SELL",
       "upper": 42.10493807485608,
       "open": 41.98,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "SILVERUSDT",
@@ -9645,6 +9603,51 @@
       "side": "SELL",
       "upper": 42.506723097622434,
       "open": 42.72,
+      "reported": false
+    },
+    {
+      "symbol": "XAUTUSDT",
+      "tf": "15m",
+      "candle_ts": 1795744800,
+      "side": "SELL",
+      "upper": 3587.1028183381613,
+      "open": 3591.67,
+      "reported": false
+    },
+    {
+      "symbol": "GOLDUSDT",
+      "tf": "15m",
+      "candle_ts": 1795744800,
+      "side": "SELL",
+      "upper": 3597.4705320843036,
+      "open": 3601.31,
+      "reported": false
+    },
+    {
+      "symbol": "XAUTUSDT",
+      "tf": "1h",
+      "candle_ts": 1795744800,
+      "side": "SELL",
+      "upper": 3589.494613822959,
+      "open": 3591.67,
+      "reported": false
+    },
+    {
+      "symbol": "SILVERUSDT",
+      "tf": "1h",
+      "candle_ts": 1795744800,
+      "side": "SELL",
+      "upper": 42.49793034095862,
+      "open": 42.72,
+      "reported": false
+    },
+    {
+      "symbol": "GOLDUSDT",
+      "tf": "1h",
+      "candle_ts": 1795744800,
+      "side": "SELL",
+      "upper": 3599.3058031719197,
+      "open": 3601.31,
       "reported": false
     }
   ],
@@ -10019,27 +10022,9 @@
     "OFCUSDT": 1795782668,
     "ARGUSDT": 1795784552
   },
-  "last_trade_report_ts": 1795743681,
+  "last_trade_report_ts": 1795744981,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795487545,
-      "kind": "gap_result",
-      "symbol": "AKEUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795488444,
-      "kind": "gap_result",
-      "symbol": "BTCUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795489433,
       "kind": "gap_result",
@@ -13618,6 +13603,24 @@
       "kind": "gap_result",
       "symbol": "SILVERUSDT",
       "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795744977,
+      "kind": "gap_result",
+      "symbol": "XAUTUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795744979,
+      "kind": "gap_result",
+      "symbol": "SILVERUSDT",
+      "tf": "15m",
       "gap": 0.0,
       "filled": true,
       "note": "filled"
