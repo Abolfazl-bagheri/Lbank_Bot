@@ -9634,7 +9634,8 @@
       "side": "SELL",
       "upper": 41.88420907166082,
       "open": 41.92,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ONEUSDT",
@@ -10020,15 +10021,6 @@
   "last_trade_report_ts": 1795741856,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795483969,
-      "kind": "gap_result",
-      "symbol": "CARDSUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795483974,
       "kind": "gap_result",
@@ -13613,6 +13605,15 @@
     },
     {
       "ts": 1795742192,
+      "kind": "gap_result",
+      "symbol": "SILVERUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795742415,
       "kind": "gap_result",
       "symbol": "SILVERUSDT",
       "tf": "5m",
