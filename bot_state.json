@@ -105,15 +105,15 @@
       "symbol": "GOLDUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 3614.58,
-      "qty": 0.165994,
-      "margin": 30.0,
+      "entry": 3619.249760301949,
+      "qty": 0.38682,
+      "margin": 70.0,
       "leverage": 20,
-      "tp_price": 3524.2155,
+      "tp_price": 3528.7685162944003,
       "tf": "5m",
       "opened_at": 1795745145,
-      "adds": 1,
-      "last_leg_margin": 20.0,
+      "adds": 2,
+      "last_leg_margin": 40.0,
       "used_res_levels": [
         3622.23
       ],
@@ -125,10 +125,14 @@
         {
           "px": 3614.58,
           "ts": 1795745157
+        },
+        {
+          "px": 3622.76,
+          "ts": 1795745421
         }
       ],
       "entry_candle_ts": 1795745100,
-      "last_leg_candle_ts": 1795745157,
+      "last_leg_candle_ts": 1795744800,
       "dry_run": true,
       "order_id": "PAPER-GOLDUSDT-1795745145"
     },
@@ -6727,16 +6731,6 @@
       "tf": "15m",
       "candle_ts": 1795570200,
       "side": "SELL",
-      "upper": 0.017608067418296982,
-      "open": 0.0178,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "IRYSUSDT",
-      "tf": "15m",
-      "candle_ts": 1795570200,
-      "side": "SELL",
       "upper": 0.01760201143301589,
       "open": 0.0178,
       "reported": true,
@@ -9704,6 +9698,15 @@
       "side": "SELL",
       "upper": 3608.0243645285655,
       "open": 3613.34,
+      "reported": false
+    },
+    {
+      "symbol": "CRCLUSDT",
+      "tf": "5m",
+      "candle_ts": 1795745400,
+      "side": "SELL",
+      "upper": 49.675333433584015,
+      "open": 49.83,
       "reported": false
     }
   ],
