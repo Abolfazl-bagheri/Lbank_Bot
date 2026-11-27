@@ -196,64 +196,9 @@
       "last_leg_candle_ts": 1795748725,
       "dry_run": true,
       "order_id": "PAPER-ONEUSDT-1795748424"
-    },
-    {
-      "symbol": "BULLAUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.08159,
-      "qty": 2451.2808,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.07955024999999999,
-      "tf": "1h",
-      "opened_at": 1795748439,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.08159,
-          "ts": 1795748439
-        }
-      ],
-      "entry_candle_ts": 1795748400,
-      "last_leg_candle_ts": 1795748400,
-      "dry_run": true,
-      "order_id": "PAPER-BULLAUSDT-1795748439"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "TWSTUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 116.65,
-      "qty": 1.7145,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 113.73375,
-      "tf": "15m",
-      "opened_at": 1795014086,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 116.65,
-          "ts": 1795014086
-        }
-      ],
-      "entry_candle_ts": 1795014000,
-      "last_leg_candle_ts": 1795014000,
-      "dry_run": true,
-      "order_id": "PAPER-TWSTUSDT-1795014086",
-      "closed_at": 1795016210,
-      "close_px": 113.57,
-      "pnl_usdt": 5.280754393484805,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "MPUSDT",
       "side": "SELL",
@@ -6788,6 +6733,36 @@
       "pnl_usdt": 6.228765571913922,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "BULLAUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.08159,
+      "qty": 2451.2808,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.07955024999999999,
+      "tf": "1h",
+      "opened_at": 1795748439,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.08159,
+          "ts": 1795748439
+        }
+      ],
+      "entry_candle_ts": 1795748400,
+      "last_leg_candle_ts": 1795748400,
+      "dry_run": true,
+      "order_id": "PAPER-BULLAUSDT-1795748439",
+      "closed_at": 1795749033,
+      "close_px": 0.07769,
+      "pnl_usdt": 9.559995097438414,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -10133,7 +10108,7 @@
     "SKY1USDT": 1795791880,
     "AINBSCUSDT": 1795791911
   },
-  "last_trade_report_ts": 1795748148,
+  "last_trade_report_ts": 1795749049,
   "last_known_version": "2.10.0",
   "lessons": [
     {
