@@ -9726,7 +9726,8 @@
       "side": "SELL",
       "upper": 0.02653275701001805,
       "open": 0.02687,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "XPINUSDT",
@@ -9735,7 +9736,8 @@
       "side": "SELL",
       "upper": 0.0007667446458645376,
       "open": 0.000771,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -10108,27 +10110,9 @@
     "FRONGUSDT": 1795817816,
     "HK1888USDT": 1795819594
   },
-  "last_trade_report_ts": 1795778745,
+  "last_trade_report_ts": 1795780046,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795599133,
-      "kind": "gap_result",
-      "symbol": "SSVUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795600035,
-      "kind": "gap_result",
-      "symbol": "SSVUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795601020,
       "kind": "gap_result",
@@ -13706,6 +13690,24 @@
       "ts": 1795779133,
       "kind": "gap_result",
       "symbol": "BULLAUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795780038,
+      "kind": "gap_result",
+      "symbol": "KAVAUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795780041,
+      "kind": "gap_result",
+      "symbol": "XPINUSDT",
       "tf": "15m",
       "gap": 0.0,
       "filled": true,
