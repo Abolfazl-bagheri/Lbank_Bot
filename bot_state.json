@@ -65,6 +65,31 @@
       "last_leg_candle_ts": 1795743900,
       "dry_run": true,
       "order_id": "PAPER-SILVERUSDT-1795741843"
+    },
+    {
+      "symbol": "XAUTUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 3589.15,
+      "qty": 0.055723,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 3499.42125,
+      "tf": "15m",
+      "opened_at": 1795744947,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 3589.15,
+          "ts": 1795744947
+        }
+      ],
+      "entry_candle_ts": 1795744800,
+      "last_leg_candle_ts": 1795744800,
+      "dry_run": true,
+      "order_id": "PAPER-XAUTUSDT-1795744947"
     }
   ],
   "trade_history": [
@@ -6632,46 +6657,6 @@
   ],
   "pending": [
     {
-      "symbol": "XAUTUSDT",
-      "tf": "5m",
-      "candle_ts": 1795566000,
-      "side": "LONG",
-      "upper": 3565.0514630223806,
-      "open": 3538.1,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "XAUTUSDT",
-      "tf": "5m",
-      "candle_ts": 1795566000,
-      "side": "LONG",
-      "upper": 3565.104597988469,
-      "open": 3538.1,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "SAHARAUSDT",
-      "tf": "15m",
-      "candle_ts": 1795566600,
-      "side": "LONG",
-      "upper": 0.00593507785551837,
-      "open": 0.00527,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "FRHCUSDT",
-      "tf": "15m",
-      "candle_ts": 1795566600,
-      "side": "LONG",
-      "upper": 171.94,
-      "open": 171.94,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "BIGTIMEUSDT",
       "tf": "15m",
       "candle_ts": 1795567500,
@@ -9624,6 +9609,43 @@
       "upper": 42.10493807485608,
       "open": 41.98,
       "reported": false
+    },
+    {
+      "symbol": "SILVERUSDT",
+      "tf": "5m",
+      "candle_ts": 1795744200,
+      "side": "SELL",
+      "upper": 42.233239505531905,
+      "open": 42.29,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "NESUSDT",
+      "tf": "15m",
+      "candle_ts": 1795744800,
+      "side": "LONG",
+      "upper": 0.2807374791426351,
+      "open": 0.2531,
+      "reported": false
+    },
+    {
+      "symbol": "BIRBUSDT",
+      "tf": "1h",
+      "candle_ts": 1795744800,
+      "side": "SELL",
+      "upper": 0.05560759656156851,
+      "open": 0.05616,
+      "reported": false
+    },
+    {
+      "symbol": "SILVERUSDT",
+      "tf": "15m",
+      "candle_ts": 1795744800,
+      "side": "SELL",
+      "upper": 42.506723097622434,
+      "open": 42.72,
+      "reported": false
     }
   ],
   "paper_days": [
@@ -10000,15 +10022,6 @@
   "last_trade_report_ts": 1795743681,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795486653,
-      "kind": "gap_result",
-      "symbol": "AKEUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795487545,
       "kind": "gap_result",
@@ -13599,6 +13612,15 @@
       "gap": 0.0,
       "filled": false,
       "note": "miss"
+    },
+    {
+      "ts": 1795744547,
+      "kind": "gap_result",
+      "symbol": "SILVERUSDT",
+      "tf": "5m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
     }
   ],
   "tune_history": [],
