@@ -6621,16 +6621,6 @@
   ],
   "pending": [
     {
-      "symbol": "KNTQUSDT",
-      "tf": "1h",
-      "candle_ts": 1795712400,
-      "side": "SELL",
-      "upper": 0.16796014695737044,
-      "open": 0.1703,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "CSOPSKHYNIX2LUSDT",
       "tf": "15m",
       "candle_ts": 1795712400,
@@ -9603,7 +9593,8 @@
       "side": "SELL",
       "upper": 52.4100004135187,
       "open": 52.41,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "TAGUSDT",
@@ -9612,6 +9603,15 @@
       "side": "SELL",
       "upper": 0.000495699212359407,
       "open": 0.000502,
+      "reported": false
+    },
+    {
+      "symbol": "VISTUSDT",
+      "tf": "15m",
+      "candle_ts": 1795851900,
+      "side": "SELL",
+      "upper": 52.4100004135187,
+      "open": 52.41,
       "reported": false
     }
   ],
@@ -9998,20 +9998,13 @@
     "NEIRO1USDT": 1795894453,
     "1000SATSUSDT": 1795894454,
     "CZUSDT": 1795894457,
-    "MANCERUSDT": 1795894458
+    "MANCERUSDT": 1795894458,
+    "POETUSDT": 1795895192,
+    "PIPEDOGUSDT": 1795895196
   },
-  "last_trade_report_ts": 1795850800,
+  "last_trade_report_ts": 1795852008,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795654031,
-      "kind": "gap_result",
-      "symbol": "LAYERUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
     {
       "ts": 1795654033,
       "kind": "gap_result",
@@ -13596,6 +13589,15 @@
     },
     {
       "ts": 1795851081,
+      "kind": "gap_result",
+      "symbol": "VISTUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795852006,
       "kind": "gap_result",
       "symbol": "VISTUSDT",
       "tf": "15m",
