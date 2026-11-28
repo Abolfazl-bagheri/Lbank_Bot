@@ -1,62 +1,6 @@
 {
-  "open_trades": [
-    {
-      "symbol": "KAVAUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.02872,
-      "qty": 6963.7883,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.028002,
-      "tf": "1h",
-      "opened_at": 1795849240,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.02872,
-          "ts": 1795849240
-        }
-      ],
-      "entry_candle_ts": 1795849200,
-      "last_leg_candle_ts": 1795849200,
-      "dry_run": true,
-      "order_id": "PAPER-KAVAUSDT-1795849240"
-    }
-  ],
+  "open_trades": [],
   "trade_history": [
-    {
-      "symbol": "PROSUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.626,
-      "qty": 319.4888,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.61035,
-      "tf": "1h",
-      "opened_at": 1795024885,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.626,
-          "ts": 1795024885
-        }
-      ],
-      "entry_candle_ts": 1795024800,
-      "last_leg_candle_ts": 1795024800,
-      "dry_run": true,
-      "order_id": "PAPER-PROSUSDT-1795024885",
-      "closed_at": 1795029016,
-      "close_px": 0.6523,
-      "pnl_usdt": -8.402555910543127,
-      "close_reason": "STOP",
-      "why": "STOP"
-    },
     {
       "symbol": "HUTUSDT",
       "side": "SELL",
@@ -6582,6 +6526,36 @@
       "closed_at": 1795848458,
       "close_px": 0.02875,
       "pnl_usdt": 6.070826306913983,
+      "close_reason": "TP50",
+      "why": "TP50"
+    },
+    {
+      "symbol": "KAVAUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.02872,
+      "qty": 6963.7883,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.028002,
+      "tf": "1h",
+      "opened_at": 1795849240,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.02872,
+          "ts": 1795849240
+        }
+      ],
+      "entry_candle_ts": 1795849200,
+      "last_leg_candle_ts": 1795849200,
+      "dry_run": true,
+      "order_id": "PAPER-KAVAUSDT-1795849240",
+      "closed_at": 1795849507,
+      "close_px": 0.02618,
+      "pnl_usdt": 17.688022284122567,
       "close_reason": "TP50",
       "why": "TP50"
     }
