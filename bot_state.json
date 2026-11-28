@@ -32,68 +32,9 @@
       "last_leg_candle_ts": 1795851900,
       "dry_run": true,
       "order_id": "PAPER-VISTUSDT-1795850130"
-    },
-    {
-      "symbol": "TAGUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.0006297,
-      "qty": 317611.5611,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.0006139575,
-      "tf": "15m",
-      "opened_at": 1795853710,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.0006297,
-          "ts": 1795853710
-        }
-      ],
-      "entry_candle_ts": 1795853700,
-      "last_leg_candle_ts": 1795853700,
-      "dry_run": true,
-      "order_id": "PAPER-TAGUSDT-1795853710"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "PAIDUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.0014176641562720195,
-      "qty": 423231.4102,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.0013822225523652191,
-      "tf": "15m",
-      "opened_at": 1795042861,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.001415,
-          "ts": 1795042861
-        },
-        {
-          "px": 0.001419,
-          "ts": 1795043734
-        }
-      ],
-      "entry_candle_ts": 1795042800,
-      "last_leg_candle_ts": 1795043700,
-      "dry_run": true,
-      "order_id": "PAPER-PAIDUSDT-1795042861",
-      "closed_at": 1795044088,
-      "close_px": 0.001363,
-      "pnl_usdt": 23.13558794451057,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "ZKCUSDT",
       "side": "SELL",
@@ -6599,19 +6540,39 @@
       "pnl_usdt": 6.039807824296492,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "TAGUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.0006297,
+      "qty": 317611.5611,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0006139575,
+      "tf": "15m",
+      "opened_at": 1795853710,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.0006297,
+          "ts": 1795853710
+        }
+      ],
+      "entry_candle_ts": 1795853700,
+      "last_leg_candle_ts": 1795853700,
+      "dry_run": true,
+      "order_id": "PAPER-TAGUSDT-1795853710",
+      "closed_at": 1795853864,
+      "close_px": 0.0006647,
+      "pnl_usdt": -11.116404637128788,
+      "close_reason": "STOP",
+      "why": "STOP"
     }
   ],
   "pending": [
-    {
-      "symbol": "XAUTUSDT",
-      "tf": "5m",
-      "candle_ts": 1795714800,
-      "side": "LONG",
-      "upper": 3575.20748451704,
-      "open": 3564.74,
-      "reported": true,
-      "filled": true
-    },
     {
       "symbol": "XAUTUSDT",
       "tf": "5m",
@@ -9597,6 +9558,15 @@
       "side": "SELL",
       "upper": 0.0005836342545444333,
       "open": 0.0006289,
+      "reported": false
+    },
+    {
+      "symbol": "VISTUSDT",
+      "tf": "15m",
+      "candle_ts": 1795853700,
+      "side": "SELL",
+      "upper": 52.4100004135187,
+      "open": 52.41,
       "reported": false
     }
   ],
