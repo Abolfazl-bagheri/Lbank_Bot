@@ -6588,16 +6588,6 @@
   ],
   "pending": [
     {
-      "symbol": "CSOPSKHYNIX2LUSDT",
-      "tf": "15m",
-      "candle_ts": 1795711500,
-      "side": "LONG",
-      "upper": 1.472578673851244,
-      "open": 1.465,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "INITUSDT",
       "tf": "15m",
       "candle_ts": 1795711500,
@@ -9571,7 +9561,8 @@
       "side": "LONG",
       "upper": 336.84,
       "open": 336.84,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "VLOUSDT",
@@ -9580,6 +9571,15 @@
       "side": "LONG",
       "upper": 336.840004150848,
       "open": 336.84,
+      "reported": false
+    },
+    {
+      "symbol": "VISTUSDT",
+      "tf": "15m",
+      "candle_ts": 1795850100,
+      "side": "SELL",
+      "upper": 52.4100004135187,
+      "open": 52.41,
       "reported": false
     }
   ],
@@ -9972,15 +9972,6 @@
   "last_trade_report_ts": 1795849899,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795653150,
-      "kind": "gap_result",
-      "symbol": "MSTUUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795654029,
       "kind": "gap_result",
@@ -13565,6 +13556,15 @@
     },
     {
       "ts": 1795849361,
+      "kind": "gap_result",
+      "symbol": "VLOUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795850189,
       "kind": "gap_result",
       "symbol": "VLOUSDT",
       "tf": "15m",
