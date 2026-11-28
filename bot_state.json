@@ -9566,7 +9566,8 @@
       "side": "SELL",
       "upper": 9.881,
       "open": 9.881,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -9957,15 +9958,6 @@
   "last_trade_report_ts": 1795826412,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795644215,
-      "kind": "gap_result",
-      "symbol": "GPROUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
     {
       "ts": 1795644217,
       "kind": "gap_result",
@@ -13552,6 +13544,15 @@
       "ts": 1795825927,
       "kind": "gap_result",
       "symbol": "XPINUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795826824,
+      "kind": "gap_result",
+      "symbol": "YOFCUSDT",
       "tf": "15m",
       "gap": 0.0,
       "filled": true,
