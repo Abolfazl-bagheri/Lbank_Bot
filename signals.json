@@ -1,36 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795835800,
+  "updated_at": 1795836007,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "YOFCUSDT",
-      "tf": "15m",
-      "gap": 1.09,
-      "ts": 1795821240
-    },
-    {
-      "kind": "SELL",
-      "symbol": "ACEUSDT",
-      "tf": "15m",
-      "gap": 5.81,
-      "ts": 1795821324
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795821437
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795821553
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,15 +1374,57 @@
       "tf": "15m",
       "gap": 1.55,
       "ts": 1795835800
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795835805
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795835872
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795835953
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795836007
     }
   ],
-  "trades": [],
+  "trades": [
+    {
+      "symbol": "CFGUSDT",
+      "side": "SELL",
+      "entry": 0.06719,
+      "tp": 0.06551024999999999,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.06668,
+      "pnl": 1.2781,
+      "tf": "15m"
+    }
+  ],
   "start": 1000.0,
   "session_start": 1795824416,
   "realized": 38.2408,
   "closed_n": 2,
-  "open_upnl": 0,
-  "equity": 1038.2408,
+  "open_upnl": 1.2781,
+  "equity": 1039.5189,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
