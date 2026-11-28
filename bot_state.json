@@ -6599,26 +6599,6 @@
   ],
   "pending": [
     {
-      "symbol": "CRCLUSDT",
-      "tf": "5m",
-      "candle_ts": 1795673400,
-      "side": "LONG",
-      "upper": 49.553144017030675,
-      "open": 48.79,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "EVAAUSDT",
-      "tf": "15m",
-      "candle_ts": 1795673700,
-      "side": "SELL",
-      "upper": 2.9449257608418997,
-      "open": 2.9727,
-      "reported": true,
-      "filled": false
-    },
-    {
       "symbol": "CLAUDIAUSDT",
       "tf": "15m",
       "candle_ts": 1795673700,
@@ -9554,7 +9534,8 @@
       "side": "SELL",
       "upper": 0.08809913999488336,
       "open": 0.09314,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ACTUSDT",
@@ -9592,6 +9573,25 @@
       "side": "SELL",
       "upper": 9.881000065020093,
       "open": 9.881,
+      "reported": true,
+      "filled": false
+    },
+    {
+      "symbol": "ROBOUSDT",
+      "tf": "15m",
+      "candle_ts": 1795827600,
+      "side": "SELL",
+      "upper": 0.003259295400191285,
+      "open": 0.00333,
+      "reported": false
+    },
+    {
+      "symbol": "ROBOUSDT",
+      "tf": "1h",
+      "candle_ts": 1795827600,
+      "side": "SELL",
+      "upper": 0.0032596196315910673,
+      "open": 0.00333,
       "reported": false
     }
   ],
@@ -9983,24 +9983,6 @@
   "last_trade_report_ts": 1795827337,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795644217,
-      "kind": "gap_result",
-      "symbol": "VKTXUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
-    {
-      "ts": 1795646828,
-      "kind": "gap_result",
-      "symbol": "SYNUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
     {
       "ts": 1795646830,
       "kind": "gap_result",
@@ -13582,6 +13564,24 @@
       "gap": 0.0,
       "filled": true,
       "note": "filled"
+    },
+    {
+      "ts": 1795827831,
+      "kind": "gap_result",
+      "symbol": "ACEUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795827834,
+      "kind": "gap_result",
+      "symbol": "YOFCUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": false,
+      "note": "miss"
     }
   ],
   "tune_history": [],
