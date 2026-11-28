@@ -1,36 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795851934,
+  "updated_at": 1795852161,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795843589
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795843600
-    },
-    {
-      "kind": "SELL",
-      "symbol": "OUSTUSDT",
-      "tf": "15m",
-      "gap": 1.06,
-      "ts": 1795843823
-    },
-    {
-      "kind": "SELL",
-      "symbol": "VLOUSDT",
-      "tf": "15m",
-      "gap": 1.39,
-      "ts": 1795843840
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,20 +1374,48 @@
       "tf": "15m",
       "gap": 1.95,
       "ts": 1795851934
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795851938
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795852008
+    },
+    {
+      "kind": "HEARTBEAT",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795852010
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795852161
     }
   ],
   "trades": [
     {
       "symbol": "VISTUSDT",
       "side": "SELL",
-      "entry": 53.59666627957873,
-      "tp": 52.25674962258926,
-      "adds": 1,
-      "pele": 2,
-      "margin": 30.0,
+      "entry": 53.51275839003135,
+      "tp": 52.17493943028057,
+      "adds": 2,
+      "pele": 3,
+      "margin": 70.0,
       "lev": 20,
-      "px": 53.45,
-      "pnl": 0.9219,
+      "px": 53.46,
+      "pnl": -0.2997,
       "tf": "15m"
     },
     {
@@ -1427,8 +1427,8 @@
       "pele": 1,
       "margin": 10.0,
       "lev": 20,
-      "px": 0.0005091,
-      "pnl": -0.24,
+      "px": 0.0005063,
+      "pnl": 0.86,
       "tf": "15m"
     }
   ],
@@ -1436,8 +1436,8 @@
   "session_start": 1795824416,
   "realized": 78.6543,
   "closed_n": 7,
-  "open_upnl": 0.6819,
-  "equity": 1079.3362,
+  "open_upnl": 0.5603,
+  "equity": 1079.2146,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
