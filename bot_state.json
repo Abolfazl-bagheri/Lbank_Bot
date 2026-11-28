@@ -1,5 +1,31 @@
 {
-  "open_trades": [],
+  "open_trades": [
+    {
+      "symbol": "CFGUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.06719,
+      "qty": 2976.6334,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.06551024999999999,
+      "tf": "15m",
+      "opened_at": 1795835802,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.06719,
+          "ts": 1795835802
+        }
+      ],
+      "entry_candle_ts": 1795835700,
+      "last_leg_candle_ts": 1795835700,
+      "dry_run": true,
+      "order_id": "PAPER-CFGUSDT-1795835802"
+    }
+  ],
   "trade_history": [
     {
       "symbol": "BULLAUSDT",
