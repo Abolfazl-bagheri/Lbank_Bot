@@ -1,5 +1,31 @@
 {
-  "open_trades": [],
+  "open_trades": [
+    {
+      "symbol": "KAVAUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.02872,
+      "qty": 6963.7883,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.028002,
+      "tf": "1h",
+      "opened_at": 1795849240,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.02872,
+          "ts": 1795849240
+        }
+      ],
+      "entry_candle_ts": 1795849200,
+      "last_leg_candle_ts": 1795849200,
+      "dry_run": true,
+      "order_id": "PAPER-KAVAUSDT-1795849240"
+    }
+  ],
   "trade_history": [
     {
       "symbol": "PROSUSDT",
