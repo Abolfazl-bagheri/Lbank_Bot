@@ -37,24 +37,30 @@
       "symbol": "LABUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.03702,
-      "qty": 5402.4851,
-      "margin": 10.0,
+      "entry": 0.03757579624887715,
+      "qty": 15967.7255,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.036094499999999995,
+      "tp_price": 0.03663640134265522,
       "tf": "1h",
       "opened_at": 1795874456,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.03791
+      ],
       "steps": [
         {
           "px": 0.03702,
           "ts": 1795874456
+        },
+        {
+          "px": 0.03786,
+          "ts": 1795874761
         }
       ],
       "entry_candle_ts": 1795874400,
-      "last_leg_candle_ts": 1795874400,
+      "last_leg_candle_ts": 1795874761,
       "dry_run": true,
       "order_id": "PAPER-LABUSDT-1795874456"
     }
@@ -9980,7 +9986,7 @@
     "BBXUSDT": 1795917852,
     "SIMOUSDT": 1795917858
   },
-  "last_trade_report_ts": 1795853944,
+  "last_trade_report_ts": 1795874748,
   "last_known_version": "2.10.0",
   "lessons": [
     {
