@@ -1,5 +1,31 @@
 {
-  "open_trades": [],
+  "open_trades": [
+    {
+      "symbol": "VISTUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 53.59,
+      "qty": 3.732,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 52.25025,
+      "tf": "15m",
+      "opened_at": 1795850130,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 53.59,
+          "ts": 1795850130
+        }
+      ],
+      "entry_candle_ts": 1795850100,
+      "last_leg_candle_ts": 1795850100,
+      "dry_run": true,
+      "order_id": "PAPER-VISTUSDT-1795850130"
+    }
+  ],
   "trade_history": [
     {
       "symbol": "HUTUSDT",
@@ -9943,7 +9969,7 @@
     "O1USDT": 1795883553,
     "UP2USDT": 1795885475
   },
-  "last_trade_report_ts": 1795848997,
+  "last_trade_report_ts": 1795849899,
   "last_known_version": "2.10.0",
   "lessons": [
     {
