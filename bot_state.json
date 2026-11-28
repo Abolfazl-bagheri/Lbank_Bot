@@ -6618,26 +6618,6 @@
   ],
   "pending": [
     {
-      "symbol": "HMSTRUSDT",
-      "tf": "15m",
-      "candle_ts": 1795680900,
-      "side": "LONG",
-      "upper": 0.00014298120892940297,
-      "open": 0.0001325,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "ZCATUSDT",
-      "tf": "15m",
-      "candle_ts": 1795680900,
-      "side": "LONG",
-      "upper": 0.01777417229370236,
-      "open": 0.01746,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "XAUTUSDT",
       "tf": "5m",
       "candle_ts": 1795681500,
@@ -9394,7 +9374,8 @@
       "side": "SELL",
       "upper": 0.1103462162184875,
       "open": 0.11324,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ACEUSDT",
@@ -9413,7 +9394,8 @@
       "side": "SELL",
       "upper": 0.009789371774007164,
       "open": 0.00995,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "XPINUSDT",
@@ -9542,7 +9524,8 @@
       "side": "SELL",
       "upper": 22.21798394236185,
       "open": 22.17,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "PORTALUSDT",
@@ -9581,7 +9564,8 @@
       "side": "LONG",
       "upper": 28.530000036430135,
       "open": 28.53,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ROBOUSDT",
@@ -9608,6 +9592,24 @@
       "side": "SELL",
       "upper": 0.0034824583062515457,
       "open": 0.00361,
+      "reported": false
+    },
+    {
+      "symbol": "CFGUSDT",
+      "tf": "4h",
+      "candle_ts": 1795838400,
+      "side": "SELL",
+      "upper": 0.06475183811386637,
+      "open": 0.0667,
+      "reported": false
+    },
+    {
+      "symbol": "OUSTUSDT",
+      "tf": "15m",
+      "candle_ts": 1795838400,
+      "side": "LONG",
+      "upper": 28.530000036430135,
+      "open": 28.53,
       "reported": false
     }
   ],
@@ -9994,47 +9996,12 @@
     "APROUSDT": 1795871819,
     "HK1888USDT": 1795876362,
     "RGTIUSDT": 1795876378,
-    "PORUSDT": 1795880943
+    "PORUSDT": 1795880943,
+    "PORTALUSDT": 1795881707
   },
   "last_trade_report_ts": 1795837840,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795648818,
-      "kind": "gap_result",
-      "symbol": "XAUTUSDT",
-      "tf": "5m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795649718,
-      "kind": "gap_result",
-      "symbol": "XAUTUSDT",
-      "tf": "5m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795651512,
-      "kind": "gap_result",
-      "symbol": "SSVUSDT",
-      "tf": "4h",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
-    {
-      "ts": 1795651514,
-      "kind": "gap_result",
-      "symbol": "BLURUSDT",
-      "tf": "4h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795651516,
       "kind": "gap_result",
@@ -13594,6 +13561,42 @@
       "ts": 1795837592,
       "kind": "gap_result",
       "symbol": "PORTALUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795838635,
+      "kind": "gap_result",
+      "symbol": "VELVETUSDT",
+      "tf": "4h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795838637,
+      "kind": "gap_result",
+      "symbol": "ACTUSDT",
+      "tf": "4h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795838639,
+      "kind": "gap_result",
+      "symbol": "KWEBUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795838641,
+      "kind": "gap_result",
+      "symbol": "OUSTUSDT",
       "tf": "15m",
       "gap": 0.0,
       "filled": true,
