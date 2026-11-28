@@ -1,62 +1,6 @@
 {
-  "open_trades": [
-    {
-      "symbol": "ROBOUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.003386,
-      "qty": 59066.7454,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.00330135,
-      "tf": "15m",
-      "opened_at": 1795827666,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.003386,
-          "ts": 1795827666
-        }
-      ],
-      "entry_candle_ts": 1795827600,
-      "last_leg_candle_ts": 1795827600,
-      "dry_run": true,
-      "order_id": "PAPER-ROBOUSDT-1795827666"
-    }
-  ],
+  "open_trades": [],
   "trade_history": [
-    {
-      "symbol": "PROSUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.626,
-      "qty": 319.4888,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.61035,
-      "tf": "15m",
-      "opened_at": 1795015823,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.626,
-          "ts": 1795015823
-        }
-      ],
-      "entry_candle_ts": 1795015800,
-      "last_leg_candle_ts": 1795015800,
-      "dry_run": true,
-      "order_id": "PAPER-PROSUSDT-1795015823",
-      "closed_at": 1795016841,
-      "close_px": 0.5711,
-      "pnl_usdt": 17.53993610223641,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "PROSUSDT",
       "side": "SELL",
@@ -6595,6 +6539,36 @@
       "pnl_usdt": 65.8019336348691,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "ROBOUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.003386,
+      "qty": 59066.7454,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.00330135,
+      "tf": "15m",
+      "opened_at": 1795827666,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.003386,
+          "ts": 1795827666
+        }
+      ],
+      "entry_candle_ts": 1795827600,
+      "last_leg_candle_ts": 1795827600,
+      "dry_run": true,
+      "order_id": "PAPER-ROBOUSDT-1795827666",
+      "closed_at": 1795827914,
+      "close_px": 0.00316,
+      "pnl_usdt": 13.349084465445957,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -9932,7 +9906,6 @@
     "TRUMPSOLUSDT": 1795698304,
     "OROCHIUSDT": 1795717003,
     "ADISTOCKUSDT": 1795723431,
-    "APROUSDT": 1795724183,
     "AMCUSDT": 1795724336,
     "AEHRUSDT": 1795748652,
     "IRENONUSDT": 1795749393,
