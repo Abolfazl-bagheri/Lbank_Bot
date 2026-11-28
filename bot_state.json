@@ -1,68 +1,6 @@
 {
-  "open_trades": [
-    {
-      "symbol": "CFGUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.06719,
-      "qty": 2976.6334,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.06551024999999999,
-      "tf": "15m",
-      "opened_at": 1795835802,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.06719,
-          "ts": 1795835802
-        }
-      ],
-      "entry_candle_ts": 1795835700,
-      "last_leg_candle_ts": 1795835700,
-      "dry_run": true,
-      "order_id": "PAPER-CFGUSDT-1795835802"
-    }
-  ],
+  "open_trades": [],
   "trade_history": [
-    {
-      "symbol": "BULLAUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.01651,
-      "qty": 36341.6112,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.01609725,
-      "tf": "15m",
-      "opened_at": 1795020421,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        0.016544
-      ],
-      "steps": [
-        {
-          "px": 0.01651,
-          "ts": 1795020421
-        },
-        {
-          "px": 0.01651,
-          "ts": 1795020502
-        }
-      ],
-      "entry_candle_ts": 1795020300,
-      "last_leg_candle_ts": 1795020502,
-      "dry_run": true,
-      "order_id": "PAPER-BULLAUSDT-1795020421",
-      "closed_at": 1795021445,
-      "close_px": 0.01554,
-      "pnl_usdt": 35.251362810417945,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "PIEVERSEUSDT",
       "side": "SELL",
@@ -6593,6 +6531,36 @@
       "closed_at": 1795833271,
       "close_px": 0.03841,
       "pnl_usdt": 24.891725552769543,
+      "close_reason": "TP50",
+      "why": "TP50"
+    },
+    {
+      "symbol": "CFGUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.06719,
+      "qty": 2976.6334,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.06551024999999999,
+      "tf": "15m",
+      "opened_at": 1795835802,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.06719,
+          "ts": 1795835802
+        }
+      ],
+      "entry_candle_ts": 1795835700,
+      "last_leg_candle_ts": 1795835700,
+      "dry_run": true,
+      "order_id": "PAPER-CFGUSDT-1795835802",
+      "closed_at": 1795836768,
+      "close_px": 0.06456,
+      "pnl_usdt": 7.828545914570602,
       "close_reason": "TP50",
       "why": "TP50"
     }
