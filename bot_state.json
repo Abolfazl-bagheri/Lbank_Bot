@@ -1,5 +1,31 @@
 {
-  "open_trades": [],
+  "open_trades": [
+    {
+      "symbol": "ROBOUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.003386,
+      "qty": 59066.7454,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.00330135,
+      "tf": "15m",
+      "opened_at": 1795827666,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.003386,
+          "ts": 1795827666
+        }
+      ],
+      "entry_candle_ts": 1795827600,
+      "last_leg_candle_ts": 1795827600,
+      "dry_run": true,
+      "order_id": "PAPER-ROBOUSDT-1795827666"
+    }
+  ],
   "trade_history": [
     {
       "symbol": "PROSUSDT",
@@ -9954,7 +9980,7 @@
     "1000000BABYDOGEUSDT": 1795867541,
     "HOTUSDT": 1795867548
   },
-  "last_trade_report_ts": 1795826412,
+  "last_trade_report_ts": 1795827337,
   "last_known_version": "2.10.0",
   "lessons": [
     {
