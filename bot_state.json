@@ -6573,16 +6573,6 @@
   ],
   "pending": [
     {
-      "symbol": "EVAAUSDT",
-      "tf": "1h",
-      "candle_ts": 1795676400,
-      "side": "SELL",
-      "upper": 3.025099697727712,
-      "open": 3.0731,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "ZCATUSDT",
       "tf": "15m",
       "candle_ts": 1795676400,
@@ -9546,7 +9536,8 @@
       "side": "SELL",
       "upper": 0.043087059355427865,
       "open": 0.0418,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "LAOPUUSDT",
@@ -9555,7 +9546,8 @@
       "side": "LONG",
       "upper": 35.5233702570291,
       "open": 35.38,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "KWEBUSDT",
@@ -9564,6 +9556,16 @@
       "side": "SELL",
       "upper": 22.222402346147838,
       "open": 22.17,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "PORTALUSDT",
+      "tf": "15m",
+      "candle_ts": 1795833900,
+      "side": "LONG",
+      "upper": 0.04411653524269078,
+      "open": 0.03784,
       "reported": false
     }
   ],
@@ -9955,33 +9957,6 @@
   "last_trade_report_ts": 1795833193,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795647806,
-      "kind": "gap_result",
-      "symbol": "NESUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795647808,
-      "kind": "gap_result",
-      "symbol": "SQDUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795647810,
-      "kind": "gap_result",
-      "symbol": "SYNUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
     {
       "ts": 1795648222,
       "kind": "gap_result",
@@ -13554,6 +13529,33 @@
       "gap": 0.0,
       "filled": false,
       "note": "miss"
+    },
+    {
+      "ts": 1795833979,
+      "kind": "gap_result",
+      "symbol": "PORTALUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795833981,
+      "kind": "gap_result",
+      "symbol": "LAOPUUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795833983,
+      "kind": "gap_result",
+      "symbol": "KWEBUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
     }
   ],
   "tune_history": [],
