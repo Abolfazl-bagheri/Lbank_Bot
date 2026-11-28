@@ -32,74 +32,9 @@
       "last_leg_candle_ts": 1795851900,
       "dry_run": true,
       "order_id": "PAPER-VISTUSDT-1795850130"
-    },
-    {
-      "symbol": "KAVAUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.02914,
-      "qty": 6863.418,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.0284115,
-      "tf": "4h",
-      "opened_at": 1795853060,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.02914,
-          "ts": 1795853060
-        }
-      ],
-      "entry_candle_ts": 1795852800,
-      "last_leg_candle_ts": 1795852800,
-      "dry_run": true,
-      "order_id": "PAPER-KAVAUSDT-1795853060"
     }
   ],
   "trade_history": [
-    {
-      "symbol": "HUMAUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.008747642085345224,
-      "qty": 160043.1277,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 0.008528951033211593,
-      "tf": "1h",
-      "opened_at": 1795024847,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [
-        0.00876
-      ],
-      "steps": [
-        {
-          "px": 0.00862,
-          "ts": 1795024847
-        },
-        {
-          "px": 0.00874,
-          "ts": 1795025492
-        },
-        {
-          "px": 0.008784,
-          "ts": 1795028467
-        }
-      ],
-      "entry_candle_ts": 1795024800,
-      "last_leg_candle_ts": 1795028400,
-      "dry_run": true,
-      "order_id": "PAPER-HUMAUSDT-1795024847",
-      "closed_at": 1795030418,
-      "close_px": 0.008501,
-      "pnl_usdt": 39.473370779742694,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "PAIDUSDT",
       "side": "SELL",
@@ -6607,6 +6542,36 @@
       "closed_at": 1795853022,
       "close_px": 0.0004867,
       "pnl_usdt": 8.79984285994891,
+      "close_reason": "TP50",
+      "why": "TP50"
+    },
+    {
+      "symbol": "KAVAUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.02914,
+      "qty": 6863.418,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.0284115,
+      "tf": "4h",
+      "opened_at": 1795853060,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.02914,
+          "ts": 1795853060
+        }
+      ],
+      "entry_candle_ts": 1795852800,
+      "last_leg_candle_ts": 1795852800,
+      "dry_run": true,
+      "order_id": "PAPER-KAVAUSDT-1795853060",
+      "closed_at": 1795853407,
+      "close_px": 0.02826,
+      "pnl_usdt": 6.039807824296492,
       "close_reason": "TP50",
       "why": "TP50"
     }
