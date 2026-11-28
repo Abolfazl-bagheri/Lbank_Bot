@@ -9585,7 +9585,8 @@
       "side": "LONG",
       "upper": 28.530000036430135,
       "open": 28.53,
-      "reported": false
+      "reported": true,
+      "filled": true
     }
   ],
   "paper_days": [
@@ -9978,15 +9979,6 @@
   "last_trade_report_ts": 1795838747,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795651516,
-      "kind": "gap_result",
-      "symbol": "MANTRAUSDT",
-      "tf": "4h",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
     {
       "ts": 1795651518,
       "kind": "gap_result",
@@ -13571,6 +13563,15 @@
     },
     {
       "ts": 1795838641,
+      "kind": "gap_result",
+      "symbol": "OUSTUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795839377,
       "kind": "gap_result",
       "symbol": "OUSTUSDT",
       "tf": "15m",
