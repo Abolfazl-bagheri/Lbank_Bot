@@ -6573,16 +6573,6 @@
   ],
   "pending": [
     {
-      "symbol": "XAUTUSDT",
-      "tf": "5m",
-      "candle_ts": 1795673400,
-      "side": "LONG",
-      "upper": 3606.7811673119336,
-      "open": 3572.36,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "CRCLUSDT",
       "tf": "5m",
       "candle_ts": 1795673400,
@@ -9566,6 +9556,16 @@
       "side": "LONG",
       "upper": 0.0008303388969924903,
       "open": 0.0006526,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "YOFCUSDT",
+      "tf": "15m",
+      "candle_ts": 1795825800,
+      "side": "SELL",
+      "upper": 9.881,
+      "open": 9.881,
       "reported": false
     }
   ],
@@ -9957,15 +9957,6 @@
   "last_trade_report_ts": 1795825512,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795644213,
-      "kind": "gap_result",
-      "symbol": "BSPUSDT",
-      "tf": "1h",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
     {
       "ts": 1795644215,
       "kind": "gap_result",
@@ -13550,6 +13541,15 @@
     },
     {
       "ts": 1795824405,
+      "kind": "gap_result",
+      "symbol": "XPINUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795825927,
       "kind": "gap_result",
       "symbol": "XPINUSDT",
       "tf": "15m",
