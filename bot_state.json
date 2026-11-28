@@ -9557,7 +9557,8 @@
       "side": "SELL",
       "upper": 0.003259295400191285,
       "open": 0.00333,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "ROBOUSDT",
@@ -9951,20 +9952,12 @@
     "ACEUSDT": 1795867357,
     "HK0992USDT": 1795867451,
     "1000000BABYDOGEUSDT": 1795867541,
-    "HOTUSDT": 1795867548
+    "HOTUSDT": 1795867548,
+    "APROUSDT": 1795871819
   },
   "last_trade_report_ts": 1795828238,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795646830,
-      "kind": "gap_result",
-      "symbol": "SYNUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
     {
       "ts": 1795647802,
       "kind": "gap_result",
@@ -13555,6 +13548,15 @@
       "gap": 0.0,
       "filled": false,
       "note": "miss"
+    },
+    {
+      "ts": 1795828632,
+      "kind": "gap_result",
+      "symbol": "ROBOUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
     }
   ],
   "tune_history": [],
