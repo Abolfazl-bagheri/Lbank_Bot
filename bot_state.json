@@ -1,31 +1,6 @@
 {
   "open_trades": [
     {
-      "symbol": "ROBOUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.003601,
-      "qty": 55540.1277,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.003510975,
-      "tf": "1h",
-      "opened_at": 1795838438,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.003601,
-          "ts": 1795838438
-        }
-      ],
-      "entry_candle_ts": 1795838400,
-      "last_leg_candle_ts": 1795838400,
-      "dry_run": true,
-      "order_id": "PAPER-ROBOUSDT-1795838438"
-    },
-    {
       "symbol": "CFGUSDT",
       "side": "SELL",
       "status": "open",
@@ -52,36 +27,6 @@
     }
   ],
   "trade_history": [
-    {
-      "symbol": "PIEVERSEUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 3.1674,
-      "qty": 63.1433,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 3.088215,
-      "tf": "4h",
-      "opened_at": 1795017663,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 3.1674,
-          "ts": 1795017663
-        }
-      ],
-      "entry_candle_ts": 1795017600,
-      "last_leg_candle_ts": 1795017600,
-      "dry_run": true,
-      "order_id": "PAPER-PIEVERSEUSDT-1795017663",
-      "closed_at": 1795023613,
-      "close_px": 3.3566,
-      "pnl_usdt": -11.946707078360774,
-      "close_reason": "STOP",
-      "why": "STOP"
-    },
     {
       "symbol": "SOONUSDT",
       "side": "SELL",
@@ -6614,6 +6559,36 @@
       "pnl_usdt": 7.828545914570602,
       "close_reason": "TP50",
       "why": "TP50"
+    },
+    {
+      "symbol": "ROBOUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.003601,
+      "qty": 55540.1277,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.003510975,
+      "tf": "1h",
+      "opened_at": 1795838438,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.003601,
+          "ts": 1795838438
+        }
+      ],
+      "entry_candle_ts": 1795838400,
+      "last_leg_candle_ts": 1795838400,
+      "dry_run": true,
+      "order_id": "PAPER-ROBOUSDT-1795838438",
+      "closed_at": 1795838747,
+      "close_px": 0.003791,
+      "pnl_usdt": -10.552624271035826,
+      "close_reason": "STOP",
+      "why": "STOP"
     }
   ],
   "pending": [
@@ -9997,9 +9972,10 @@
     "HK1888USDT": 1795876362,
     "RGTIUSDT": 1795876378,
     "PORUSDT": 1795880943,
-    "PORTALUSDT": 1795881707
+    "PORTALUSDT": 1795881707,
+    "NIULAIUSDT": 1795881910
   },
-  "last_trade_report_ts": 1795837840,
+  "last_trade_report_ts": 1795838747,
   "last_known_version": "2.10.0",
   "lessons": [
     {
