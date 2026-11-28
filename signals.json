@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795833102,
+  "updated_at": 1795833140,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795817838
-    },
-    {
-      "kind": "SELL",
-      "symbol": "YOFCUSDT",
-      "tf": "15m",
-      "gap": 1.88,
-      "ts": 1795817857
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,15 +1388,43 @@
       "tf": "15m",
       "gap": 1.78,
       "ts": 1795833102
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795833107
+    },
+    {
+      "kind": "SELL",
+      "symbol": "LAOPUUSDT",
+      "tf": "15m",
+      "gap": 1.09,
+      "ts": 1795833140
     }
   ],
-  "trades": [],
+  "trades": [
+    {
+      "symbol": "PORTALUSDT",
+      "side": "SELL",
+      "entry": 0.04387,
+      "tp": 0.04277325,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.04387,
+      "pnl": -0.24,
+      "tf": "15m"
+    }
+  ],
   "start": 1000.0,
   "session_start": 1795824416,
   "realized": 13.3491,
   "closed_n": 1,
-  "open_upnl": 0,
-  "equity": 1013.3491,
+  "open_upnl": -0.24,
+  "equity": 1013.1091,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
