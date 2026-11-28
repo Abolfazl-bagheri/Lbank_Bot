@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795849239,
+  "updated_at": 1795849293,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795840532
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795840543
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,15 +1388,43 @@
       "tf": "1h",
       "gap": 1.67,
       "ts": 1795849239
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795849243
+    },
+    {
+      "kind": "SELL",
+      "symbol": "VLOUSDT",
+      "tf": "15m",
+      "gap": 1.61,
+      "ts": 1795849293
     }
   ],
-  "trades": [],
+  "trades": [
+    {
+      "symbol": "KAVAUSDT",
+      "side": "SELL",
+      "entry": 0.02872,
+      "tp": 0.028002,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.02872,
+      "pnl": -0.24,
+      "tf": "1h"
+    }
+  ],
   "start": 1000.0,
   "session_start": 1795824416,
   "realized": 60.9663,
   "closed_n": 6,
-  "open_upnl": 0,
-  "equity": 1060.9663,
+  "open_upnl": -0.24,
+  "equity": 1060.7263,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
