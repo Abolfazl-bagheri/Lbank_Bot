@@ -1,15 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795841725,
+  "updated_at": 1795842073,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795828745
-    },
     {
       "kind": "GAP",
       "symbol": "CRCLUSDT",
@@ -1402,6 +1395,13 @@
       "tf": "—",
       "gap": 0.0,
       "ts": 1795841725
+    },
+    {
+      "kind": "SELL",
+      "symbol": "OUSTUSDT",
+      "tf": "15m",
+      "gap": 1.03,
+      "ts": 1795842073
     }
   ],
   "trades": [
@@ -1414,8 +1414,8 @@
       "pele": 2,
       "margin": 30.0,
       "lev": 20,
-      "px": 0.06747,
-      "pnl": -6.5739,
+      "px": 0.0667,
+      "pnl": 0.3404,
       "tf": "4h"
     }
   ],
@@ -1423,8 +1423,8 @@
   "session_start": 1795824416,
   "realized": 35.5167,
   "closed_n": 4,
-  "open_upnl": -6.5739,
-  "equity": 1028.9428,
+  "open_upnl": 0.3404,
+  "equity": 1035.8571,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
