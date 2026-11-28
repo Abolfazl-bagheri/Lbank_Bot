@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795827702,
+  "updated_at": 1795827916,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "OUSTUSDT",
-      "tf": "15m",
-      "gap": 1.73,
-      "ts": 1795816812
-    },
-    {
-      "kind": "SELL",
-      "symbol": "YOFCUSDT",
-      "tf": "15m",
-      "gap": 1.68,
-      "ts": 1795816820
-    },
     {
       "kind": "SELL",
       "symbol": "OUSTUSDT",
@@ -1402,35 +1388,35 @@
       "tf": "1h",
       "gap": 3.73,
       "ts": 1795827702
-    }
-  ],
-  "trades": [
+    },
     {
-      "symbol": "ROBOUSDT",
-      "side": "SELL",
-      "entry": 0.003386,
-      "tp": 0.00330135,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.003386,
-      "pnl": -0.24,
-      "tf": "15m"
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795827836
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795827916
     }
   ],
+  "trades": [],
   "start": 1000.0,
   "session_start": 1795824416,
-  "realized": 0,
-  "closed_n": 0,
-  "open_upnl": -0.24,
-  "equity": 999.76,
+  "realized": 13.3491,
+  "closed_n": 1,
+  "open_upnl": 0,
+  "equity": 1013.3491,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 0,
+    "profit": 13.3491,
     "loss": 0,
-    "count": 0
+    "count": 1
   }
 }
