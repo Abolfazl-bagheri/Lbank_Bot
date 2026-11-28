@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795853811,
+  "updated_at": 1795853879,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795844860
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795844933
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1388,20 @@
       "tf": "15m",
       "gap": 1.06,
       "ts": 1795853811
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795853867
+    },
+    {
+      "kind": "SELL",
+      "symbol": "VISTUSDT",
+      "tf": "15m",
+      "gap": 1.0,
+      "ts": 1795853879
     }
   ],
   "trades": [
@@ -1414,36 +1414,23 @@
       "pele": 3,
       "margin": 70.0,
       "lev": 20,
-      "px": 52.97,
-      "pnl": 12.5196,
-      "tf": "15m"
-    },
-    {
-      "symbol": "TAGUSDT",
-      "side": "SELL",
-      "entry": 0.0006297,
-      "tp": 0.0006139575,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.0006647,
-      "pnl": -11.3564,
+      "px": 52.94,
+      "pnl": 13.3045,
       "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1795824416,
-  "realized": 93.494,
-  "closed_n": 9,
-  "open_upnl": 1.1632,
-  "equity": 1094.6572,
+  "realized": 82.3776,
+  "closed_n": 10,
+  "open_upnl": 13.3045,
+  "equity": 1095.6821,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
     "profit": 104.0466,
-    "loss": -10.5526,
-    "count": 9
+    "loss": -21.669,
+    "count": 10
   }
 }
