@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795838436,
+  "updated_at": 1795838443,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795824625
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795824639
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,15 +1388,43 @@
       "tf": "1h",
       "gap": 2.0,
       "ts": 1795838436
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795838440
+    },
+    {
+      "kind": "SELL",
+      "symbol": "CFGUSDT",
+      "tf": "1h",
+      "gap": 1.09,
+      "ts": 1795838443
     }
   ],
-  "trades": [],
+  "trades": [
+    {
+      "symbol": "ROBOUSDT",
+      "side": "SELL",
+      "entry": 0.003601,
+      "tp": 0.003510975,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.003601,
+      "pnl": -0.24,
+      "tf": "1h"
+    }
+  ],
   "start": 1000.0,
   "session_start": 1795824416,
   "realized": 46.0694,
   "closed_n": 3,
-  "open_upnl": 0,
-  "equity": 1046.0694,
+  "open_upnl": -0.24,
+  "equity": 1045.8294,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
