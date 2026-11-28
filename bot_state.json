@@ -1,5 +1,31 @@
 {
-  "open_trades": [],
+  "open_trades": [
+    {
+      "symbol": "ROBOUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.003601,
+      "qty": 55540.1277,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.003510975,
+      "tf": "1h",
+      "opened_at": 1795838438,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.003601,
+          "ts": 1795838438
+        }
+      ],
+      "entry_candle_ts": 1795838400,
+      "last_leg_candle_ts": 1795838400,
+      "dry_run": true,
+      "order_id": "PAPER-ROBOUSDT-1795838438"
+    }
+  ],
   "trade_history": [
     {
       "symbol": "PIEVERSEUSDT",
