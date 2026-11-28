@@ -6607,16 +6607,6 @@
       "tf": "5m",
       "candle_ts": 1795714800,
       "side": "LONG",
-      "upper": 3575.23944358566,
-      "open": 3564.74,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "XAUTUSDT",
-      "tf": "5m",
-      "candle_ts": 1795714800,
-      "side": "LONG",
       "upper": 3575.20748451704,
       "open": 3564.74,
       "reported": true,
@@ -9588,7 +9578,8 @@
       "side": "SELL",
       "upper": 52.4100004135187,
       "open": 52.41,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "KAVAUSDT",
@@ -9597,6 +9588,15 @@
       "side": "SELL",
       "upper": 0.02869899726057165,
       "open": 0.02856,
+      "reported": false
+    },
+    {
+      "symbol": "TAGUSDT",
+      "tf": "15m",
+      "candle_ts": 1795853700,
+      "side": "SELL",
+      "upper": 0.0005836342545444333,
+      "open": 0.0006289,
       "reported": false
     }
   ],
@@ -9985,20 +9985,12 @@
     "PIPEDOGUSDT": 1795895196,
     "AI1USDT": 1795895352,
     "DODOUSDT": 1795896093,
-    "XPSTOCKUSDT": 1795896286
+    "XPSTOCKUSDT": 1795896286,
+    "SKY1USDT": 1795896950
   },
   "last_trade_report_ts": 1795853026,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795655419,
-      "kind": "gap_result",
-      "symbol": "SILVERUSDT",
-      "tf": "5m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795655421,
       "kind": "gap_result",
@@ -13583,6 +13575,15 @@
     },
     {
       "ts": 1795853020,
+      "kind": "gap_result",
+      "symbol": "VISTUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795853785,
       "kind": "gap_result",
       "symbol": "VISTUSDT",
       "tf": "15m",
