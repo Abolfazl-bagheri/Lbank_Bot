@@ -1,22 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795827665,
+  "updated_at": 1795827702,
   "signals": [
-    {
-      "kind": "GAP",
-      "symbol": "BANKUSDT",
-      "tf": "1h",
-      "gap": 2.89,
-      "ts": 1795816661
-    },
-    {
-      "kind": "GAP",
-      "symbol": "YOFCUSDT",
-      "tf": "15m",
-      "gap": 1.49,
-      "ts": 1795816809
-    },
     {
       "kind": "GAP",
       "symbol": "OUSTUSDT",
@@ -1402,15 +1388,43 @@
       "tf": "15m",
       "gap": 3.74,
       "ts": 1795827665
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795827669
+    },
+    {
+      "kind": "SELL",
+      "symbol": "ROBOUSDT",
+      "tf": "1h",
+      "gap": 3.73,
+      "ts": 1795827702
     }
   ],
-  "trades": [],
+  "trades": [
+    {
+      "symbol": "ROBOUSDT",
+      "side": "SELL",
+      "entry": 0.003386,
+      "tp": 0.00330135,
+      "adds": 0,
+      "pele": 1,
+      "margin": 10.0,
+      "lev": 20,
+      "px": 0.003386,
+      "pnl": -0.24,
+      "tf": "15m"
+    }
+  ],
   "start": 1000.0,
   "session_start": 1795824416,
   "realized": 0,
   "closed_n": 0,
-  "open_upnl": 0,
-  "equity": 1000.0,
+  "open_upnl": -0.24,
+  "equity": 999.76,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
