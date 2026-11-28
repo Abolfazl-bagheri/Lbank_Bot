@@ -4,24 +4,30 @@
       "symbol": "CFGUSDT",
       "side": "SELL",
       "status": "open",
-      "entry": 0.06576,
-      "qty": 3041.3625,
-      "margin": 10.0,
+      "entry": 0.06681808528232779,
+      "qty": 8979.604800000001,
+      "margin": 30.0,
       "leverage": 20,
-      "tp_price": 0.06411599999999999,
+      "tp_price": 0.06514763315026958,
       "tf": "4h",
       "opened_at": 1795838479,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.06762
+      ],
       "steps": [
         {
           "px": 0.06576,
           "ts": 1795838479
+        },
+        {
+          "px": 0.06736,
+          "ts": 1795840809
         }
       ],
       "entry_candle_ts": 1795838400,
-      "last_leg_candle_ts": 1795838400,
+      "last_leg_candle_ts": 1795840809,
       "dry_run": true,
       "order_id": "PAPER-CFGUSDT-1795838479"
     }
