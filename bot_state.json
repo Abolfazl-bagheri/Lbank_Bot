@@ -6575,26 +6575,6 @@
     {
       "symbol": "ZCATUSDT",
       "tf": "15m",
-      "candle_ts": 1795676400,
-      "side": "LONG",
-      "upper": 0.017784287614315334,
-      "open": 0.01731,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "MANTRAUSDT",
-      "tf": "15m",
-      "candle_ts": 1795677300,
-      "side": "SELL",
-      "upper": 0.0028239760258567084,
-      "open": 0.002866,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "ZCATUSDT",
-      "tf": "15m",
       "candle_ts": 1795677300,
       "side": "LONG",
       "upper": 0.017782626291706356,
@@ -9507,7 +9487,8 @@
       "side": "SELL",
       "upper": 0.0032596196315910673,
       "open": 0.00333,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "BULLAUSDT",
@@ -9566,6 +9547,25 @@
       "side": "LONG",
       "upper": 0.04411653524269078,
       "open": 0.03784,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "KWEBUSDT",
+      "tf": "15m",
+      "candle_ts": 1795834800,
+      "side": "SELL",
+      "upper": 22.244585136038772,
+      "open": 22.17,
+      "reported": false
+    },
+    {
+      "symbol": "KWEBUSDT",
+      "tf": "1h",
+      "candle_ts": 1795834800,
+      "side": "SELL",
+      "upper": 22.21798394236185,
+      "open": 22.17,
       "reported": false
     }
   ],
@@ -9957,24 +9957,6 @@
   "last_trade_report_ts": 1795834145,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795648222,
-      "kind": "gap_result",
-      "symbol": "XAUTUSDT",
-      "tf": "5m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
-    {
-      "ts": 1795648608,
-      "kind": "gap_result",
-      "symbol": "SYNUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
     {
       "ts": 1795648610,
       "kind": "gap_result",
@@ -13552,6 +13534,24 @@
       "ts": 1795833983,
       "kind": "gap_result",
       "symbol": "KWEBUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795834951,
+      "kind": "gap_result",
+      "symbol": "ROBOUSDT",
+      "tf": "1h",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795834953,
+      "kind": "gap_result",
+      "symbol": "PORTALUSDT",
       "tf": "15m",
       "gap": 0.0,
       "filled": true,
