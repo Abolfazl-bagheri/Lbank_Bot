@@ -1,79 +1,6 @@
 {
-  "open_trades": [
-    {
-      "symbol": "CFGUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.06681808528232779,
-      "qty": 8979.604800000001,
-      "margin": 30.0,
-      "leverage": 20,
-      "tp_price": 0.06514763315026958,
-      "tf": "4h",
-      "opened_at": 1795838479,
-      "adds": 1,
-      "last_leg_margin": 20.0,
-      "used_res_levels": [
-        0.06762
-      ],
-      "steps": [
-        {
-          "px": 0.06576,
-          "ts": 1795838479
-        },
-        {
-          "px": 0.06736,
-          "ts": 1795840809
-        }
-      ],
-      "entry_candle_ts": 1795838400,
-      "last_leg_candle_ts": 1795840809,
-      "dry_run": true,
-      "order_id": "PAPER-CFGUSDT-1795838479"
-    }
-  ],
+  "open_trades": [],
   "trade_history": [
-    {
-      "symbol": "SOONUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.26481883347834373,
-      "qty": 5286.6331,
-      "margin": 70.0,
-      "leverage": 20,
-      "tp_price": 0.2581983626413851,
-      "tf": "4h",
-      "opened_at": 1795017650,
-      "adds": 2,
-      "last_leg_margin": 40.0,
-      "used_res_levels": [
-        0.269,
-        0.2639
-      ],
-      "steps": [
-        {
-          "px": 0.2649,
-          "ts": 1795017650
-        },
-        {
-          "px": 0.2687,
-          "ts": 1795019196
-        },
-        {
-          "px": 0.2629,
-          "ts": 1795019758
-        }
-      ],
-      "entry_candle_ts": 1795017600,
-      "last_leg_candle_ts": 1795019758,
-      "dry_run": true,
-      "order_id": "PAPER-SOONUSDT-1795017650",
-      "closed_at": 1795024115,
-      "close_px": 0.2753,
-      "pnl_usdt": -55.41008144165373,
-      "close_reason": "STOP",
-      "why": "STOP"
-    },
     {
       "symbol": "PROSUSDT",
       "side": "SELL",
@@ -6595,6 +6522,42 @@
       "pnl_usdt": -10.552624271035826,
       "close_reason": "STOP",
       "why": "STOP"
+    },
+    {
+      "symbol": "CFGUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.06681808528232779,
+      "qty": 8979.604800000001,
+      "margin": 30.0,
+      "leverage": 20,
+      "tp_price": 0.06514763315026958,
+      "tf": "4h",
+      "opened_at": 1795838479,
+      "adds": 1,
+      "last_leg_margin": 20.0,
+      "used_res_levels": [
+        0.06762
+      ],
+      "steps": [
+        {
+          "px": 0.06576,
+          "ts": 1795838479
+        },
+        {
+          "px": 0.06736,
+          "ts": 1795840809
+        }
+      ],
+      "entry_candle_ts": 1795838400,
+      "last_leg_candle_ts": 1795840809,
+      "dry_run": true,
+      "order_id": "PAPER-CFGUSDT-1795838479",
+      "closed_at": 1795844407,
+      "close_px": 0.06466,
+      "pnl_usdt": 19.378752981704185,
+      "close_reason": "TP50",
+      "why": "TP50"
     }
   ],
   "pending": [
@@ -9981,7 +9944,7 @@
     "O1USDT": 1795883553,
     "UP2USDT": 1795885475
   },
-  "last_trade_report_ts": 1795843290,
+  "last_trade_report_ts": 1795844202,
   "last_known_version": "2.10.0",
   "lessons": [
     {
