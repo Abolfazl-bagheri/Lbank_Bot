@@ -1,29 +1,8 @@
 {
   "mode": "PAPER",
   "version": "2.10.0",
-  "updated_at": 1795852860,
+  "updated_at": 1795853059,
   "signals": [
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795844144
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795844154
-    },
-    {
-      "kind": "POS",
-      "symbol": "—",
-      "tf": "—",
-      "gap": 0.0,
-      "ts": 1795844168
-    },
     {
       "kind": "POS",
       "symbol": "—",
@@ -1402,6 +1381,27 @@
       "tf": "15m",
       "gap": 1.98,
       "ts": 1795852860
+    },
+    {
+      "kind": "POS",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795853026
+    },
+    {
+      "kind": "HEARTBEAT",
+      "symbol": "—",
+      "tf": "—",
+      "gap": 0.0,
+      "ts": 1795853026
+    },
+    {
+      "kind": "SELL",
+      "symbol": "KAVAUSDT",
+      "tf": "4h",
+      "gap": 1.51,
+      "ts": 1795853059
     }
   ],
   "trades": [
@@ -1414,36 +1414,23 @@
       "pele": 3,
       "margin": 70.0,
       "lev": 20,
-      "px": 53.47,
-      "pnl": -0.5614,
-      "tf": "15m"
-    },
-    {
-      "symbol": "TAGUSDT",
-      "side": "SELL",
-      "entry": 0.0005091,
-      "tp": 0.0004963725,
-      "adds": 0,
-      "pele": 1,
-      "margin": 10.0,
-      "lev": 20,
-      "px": 0.0004867,
-      "pnl": 8.5598,
+      "px": 52.78,
+      "pnl": 17.4904,
       "tf": "15m"
     }
   ],
   "start": 1000.0,
   "session_start": 1795824416,
-  "realized": 78.6543,
-  "closed_n": 7,
-  "open_upnl": 7.9984,
-  "equity": 1086.6527,
+  "realized": 87.4542,
+  "closed_n": 8,
+  "open_upnl": 17.4904,
+  "equity": 1104.9446,
   "lev": 20,
   "margin_leg": 10.0,
   "tp_pct": 50.0,
   "closed": {
-    "profit": 89.207,
+    "profit": 98.0068,
     "loss": -10.5526,
-    "count": 7
+    "count": 8
   }
 }
