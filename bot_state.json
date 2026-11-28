@@ -24,6 +24,31 @@
       "last_leg_candle_ts": 1795838400,
       "dry_run": true,
       "order_id": "PAPER-ROBOUSDT-1795838438"
+    },
+    {
+      "symbol": "CFGUSDT",
+      "side": "SELL",
+      "status": "open",
+      "entry": 0.06576,
+      "qty": 3041.3625,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.06411599999999999,
+      "tf": "4h",
+      "opened_at": 1795838479,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.06576,
+          "ts": 1795838479
+        }
+      ],
+      "entry_candle_ts": 1795838400,
+      "last_leg_candle_ts": 1795838400,
+      "dry_run": true,
+      "order_id": "PAPER-CFGUSDT-1795838479"
     }
   ],
   "trade_history": [
@@ -6593,36 +6618,6 @@
   ],
   "pending": [
     {
-      "symbol": "ZCATUSDT",
-      "tf": "15m",
-      "candle_ts": 1795680000,
-      "side": "LONG",
-      "upper": 0.017772089638477512,
-      "open": 0.01731,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "MUSDT",
-      "tf": "4h",
-      "candle_ts": 1795680000,
-      "side": "SELL",
-      "upper": 0.8514455480288753,
-      "open": 0.8554,
-      "reported": true,
-      "filled": true
-    },
-    {
-      "symbol": "BUSDT",
-      "tf": "4h",
-      "candle_ts": 1795680000,
-      "side": "SELL",
-      "upper": 0.09735398843324965,
-      "open": 0.0991,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "HMSTRUSDT",
       "tf": "15m",
       "candle_ts": 1795680900,
@@ -9586,6 +9581,33 @@
       "side": "LONG",
       "upper": 28.530000036430135,
       "open": 28.53,
+      "reported": false
+    },
+    {
+      "symbol": "ROBOUSDT",
+      "tf": "1h",
+      "candle_ts": 1795838400,
+      "side": "SELL",
+      "upper": 0.0035288085049839345,
+      "open": 0.00361,
+      "reported": false
+    },
+    {
+      "symbol": "CFGUSDT",
+      "tf": "1h",
+      "candle_ts": 1795838400,
+      "side": "SELL",
+      "upper": 0.06504560091598523,
+      "open": 0.0667,
+      "reported": false
+    },
+    {
+      "symbol": "ROBOUSDT",
+      "tf": "4h",
+      "candle_ts": 1795838400,
+      "side": "SELL",
+      "upper": 0.0034824583062515457,
+      "open": 0.00361,
       "reported": false
     }
   ],
