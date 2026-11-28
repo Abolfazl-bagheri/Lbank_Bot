@@ -6583,16 +6583,6 @@
       "filled": true
     },
     {
-      "symbol": "ZCATUSDT",
-      "tf": "15m",
-      "candle_ts": 1795677300,
-      "side": "LONG",
-      "upper": 0.017782626291706356,
-      "open": 0.01732,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "BULLAUSDT",
       "tf": "15m",
       "candle_ts": 1795678200,
@@ -9557,7 +9547,8 @@
       "side": "SELL",
       "upper": 22.244585136038772,
       "open": 22.17,
-      "reported": false
+      "reported": true,
+      "filled": true
     },
     {
       "symbol": "KWEBUSDT",
@@ -9566,6 +9557,15 @@
       "side": "SELL",
       "upper": 22.21798394236185,
       "open": 22.17,
+      "reported": false
+    },
+    {
+      "symbol": "PORTALUSDT",
+      "tf": "15m",
+      "candle_ts": 1795835700,
+      "side": "LONG",
+      "upper": 0.053276507812879514,
+      "open": 0.0175,
       "reported": false
     }
   ],
@@ -9957,15 +9957,6 @@
   "last_trade_report_ts": 1795835096,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795648610,
-      "kind": "gap_result",
-      "symbol": "XAUTUSDT",
-      "tf": "5m",
-      "gap": 0.0,
-      "filled": true,
-      "note": "filled"
-    },
     {
       "ts": 1795648613,
       "kind": "gap_result",
@@ -13552,6 +13543,15 @@
       "ts": 1795834953,
       "kind": "gap_result",
       "symbol": "PORTALUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795835781,
+      "kind": "gap_result",
+      "symbol": "KWEBUSDT",
       "tf": "15m",
       "gap": 0.0,
       "filled": true,
