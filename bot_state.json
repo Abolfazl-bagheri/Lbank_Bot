@@ -6592,16 +6592,6 @@
   ],
   "pending": [
     {
-      "symbol": "INITUSDT",
-      "tf": "15m",
-      "candle_ts": 1795711500,
-      "side": "SELL",
-      "upper": 0.14454541862602063,
-      "open": 0.1458,
-      "reported": true,
-      "filled": true
-    },
-    {
       "symbol": "KNTQUSDT",
       "tf": "15m",
       "candle_ts": 1795712400,
@@ -9584,6 +9574,16 @@
       "side": "SELL",
       "upper": 52.4100004135187,
       "open": 52.41,
+      "reported": true,
+      "filled": true
+    },
+    {
+      "symbol": "VISTUSDT",
+      "tf": "15m",
+      "candle_ts": 1795851000,
+      "side": "SELL",
+      "upper": 52.4100004135187,
+      "open": 52.41,
       "reported": false
     }
   ],
@@ -9976,15 +9976,6 @@
   "last_trade_report_ts": 1795850800,
   "last_known_version": "2.10.0",
   "lessons": [
-    {
-      "ts": 1795654029,
-      "kind": "gap_result",
-      "symbol": "MOVEUSDT",
-      "tf": "15m",
-      "gap": 0.0,
-      "filled": false,
-      "note": "miss"
-    },
     {
       "ts": 1795654031,
       "kind": "gap_result",
@@ -13571,6 +13562,15 @@
       "ts": 1795850189,
       "kind": "gap_result",
       "symbol": "VLOUSDT",
+      "tf": "15m",
+      "gap": 0.0,
+      "filled": true,
+      "note": "filled"
+    },
+    {
+      "ts": 1795851081,
+      "kind": "gap_result",
+      "symbol": "VISTUSDT",
       "tf": "15m",
       "gap": 0.0,
       "filled": true,
