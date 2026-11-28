@@ -1,62 +1,6 @@
 {
-  "open_trades": [
-    {
-      "symbol": "PORTALUSDT",
-      "side": "SELL",
-      "status": "open",
-      "entry": 0.04387,
-      "qty": 4558.9241,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.04277325,
-      "tf": "15m",
-      "opened_at": 1795833104,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.04387,
-          "ts": 1795833104
-        }
-      ],
-      "entry_candle_ts": 1795833000,
-      "last_leg_candle_ts": 1795833000,
-      "dry_run": true,
-      "order_id": "PAPER-PORTALUSDT-1795833104"
-    }
-  ],
+  "open_trades": [],
   "trade_history": [
-    {
-      "symbol": "PROSUSDT",
-      "side": "SELL",
-      "status": "closed",
-      "entry": 0.5844,
-      "qty": 342.2313,
-      "margin": 10.0,
-      "leverage": 20,
-      "tp_price": 0.56979,
-      "tf": "1h",
-      "opened_at": 1795017621,
-      "adds": 0,
-      "last_leg_margin": 10.0,
-      "used_res_levels": [],
-      "steps": [
-        {
-          "px": 0.5844,
-          "ts": 1795017621
-        }
-      ],
-      "entry_candle_ts": 1795017600,
-      "last_leg_candle_ts": 1795017600,
-      "dry_run": true,
-      "order_id": "PAPER-PROSUSDT-1795017621",
-      "closed_at": 1795017964,
-      "close_px": 0.5692,
-      "pnl_usdt": 5.201916495550989,
-      "close_reason": "TP50",
-      "why": "TP50"
-    },
     {
       "symbol": "BULLAUSDT",
       "side": "SELL",
@@ -6593,6 +6537,36 @@
       "closed_at": 1795827914,
       "close_px": 0.00316,
       "pnl_usdt": 13.349084465445957,
+      "close_reason": "TP50",
+      "why": "TP50"
+    },
+    {
+      "symbol": "PORTALUSDT",
+      "side": "SELL",
+      "status": "closed",
+      "entry": 0.04387,
+      "qty": 4558.9241,
+      "margin": 10.0,
+      "leverage": 20,
+      "tp_price": 0.04277325,
+      "tf": "15m",
+      "opened_at": 1795833104,
+      "adds": 0,
+      "last_leg_margin": 10.0,
+      "used_res_levels": [],
+      "steps": [
+        {
+          "px": 0.04387,
+          "ts": 1795833104
+        }
+      ],
+      "entry_candle_ts": 1795833000,
+      "last_leg_candle_ts": 1795833000,
+      "dry_run": true,
+      "order_id": "PAPER-PORTALUSDT-1795833104",
+      "closed_at": 1795833271,
+      "close_px": 0.03841,
+      "pnl_usdt": 24.891725552769543,
       "close_reason": "TP50",
       "why": "TP50"
     }
